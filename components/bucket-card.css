@@ -1,0 +1,282 @@
+.bucket-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 16px;
+  padding: 20px;
+}
+
+.bucket-topline {
+  align-items: flex-start;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.bucket-kicker {
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  margin: 0 0 6px;
+  text-transform: uppercase;
+}
+
+.bucket-card h2 {
+  font-size: 1.6rem;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.bucket-badge {
+  background: var(--accent-soft);
+  border-radius: 999px;
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 7px 10px;
+  white-space: nowrap;
+}
+
+.stats {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0;
+}
+
+.stats div {
+  background: var(--panel-soft);
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.stats dt {
+  color: var(--muted);
+  font-size: 0.78rem;
+  margin-bottom: 4px;
+}
+
+.stats dd {
+  font-size: 1.35rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.bucket-health {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.health-pill {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  padding: 5px 8px;
+}
+
+.health-pill strong {
+  color: var(--text);
+}
+
+.health-clean {
+  background: var(--status-clean-bg);
+  border-color: var(--status-clean-border);
+}
+
+.health-review {
+  background: var(--status-review-bg);
+  border-color: var(--status-review-border);
+}
+
+.health-missing {
+  background: var(--status-missing-bg);
+  border-color: var(--status-missing-border);
+}
+
+.health-duplicate {
+  background: var(--status-duplicate-bg);
+  border-color: var(--status-duplicate-border);
+}
+
+.zones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  cursor: default;
+  font-size: 0.84rem;
+  padding: 6px 9px;
+}
+
+.zone-chip {
+  background: var(--panel);
+  color: var(--accent);
+  cursor: pointer;
+}
+
+.zone-chip:hover,
+.zone-chip:focus {
+  background: var(--accent-soft);
+  outline: none;
+}
+
+.chip.is-match,
+.is-text-match {
+  background: var(--highlight-bg);
+  color: var(--highlight-text);
+}
+
+.disclosure-list {
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 0;
+}
+
+details {
+  border-bottom: 1px solid var(--line);
+}
+
+summary {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  font-weight: 800;
+  justify-content: space-between;
+  list-style: none;
+  padding: 14px 0;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::after {
+  color: var(--accent);
+  content: "+";
+  font-size: 1.35rem;
+  margin-left: 12px;
+}
+
+details[open] summary::after {
+  content: "-";
+}
+
+summary span:last-child {
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 700;
+  margin-left: auto;
+}
+
+.mob-list {
+  display: grid;
+  gap: 8px;
+  padding-bottom: 16px;
+}
+
+.mob-row {
+  align-items: baseline;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: minmax(160px, 1.2fr) 80px minmax(130px, 1fr);
+  padding: 10px 12px;
+}
+
+.mob-row span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.zone-link {
+  background: transparent;
+  border: 0;
+  border-radius: 6px;
+  color: var(--accent);
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 2px 4px;
+  text-align: left;
+}
+
+.zone-link:hover,
+.zone-link:focus {
+  background: var(--accent-soft);
+  outline: none;
+}
+
+.zone-mob-row {
+  grid-template-columns: minmax(160px, 1.2fr) 80px minmax(130px, 1fr);
+}
+
+.loot-list {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0;
+  padding: 0 0 16px;
+}
+
+.loot-list li {
+  line-height: 1.45;
+  list-style: none;
+}
+
+.loot-button {
+  align-items: center;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--accent);
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+  line-height: 1.35;
+  min-height: 40px;
+  padding: 8px 10px;
+  text-align: left;
+  width: 100%;
+}
+
+.loot-button:hover,
+.loot-button:focus {
+  background: var(--accent-soft);
+  outline: none;
+}
+
+.loot-empty {
+  color: var(--muted);
+  margin: 0 0 16px;
+}
+
+@media (max-width: 720px) {
+  .bucket-card {
+    padding: 16px;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .mob-row {
+    grid-template-columns: 1fr;
+  }
+
+  .loot-list {
+    grid-template-columns: 1fr;
+  }
+}

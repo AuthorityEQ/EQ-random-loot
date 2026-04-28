@@ -1,0 +1,27 @@
+.search {
+  display: grid;
+  gap: 6px;
+  min-width: min(420px, 100%);
+}
+
+.search span {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.search input {
+  background: var(--input-bg);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--text);
+  min-height: 46px;
+  outline: none;
+  padding: 0 14px;
+  width: 100%;
+}
+
+.search input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--focus-ring);
+}

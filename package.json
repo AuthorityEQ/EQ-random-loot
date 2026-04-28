@@ -1,0 +1,33 @@
+{
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "extract:item-names": "node --experimental-strip-types scripts/extract-item-names.ts",
+    "enrich:zam:test": "node --experimental-strip-types scripts/enrich-items-from-zam.ts --max-items=5",
+    "enrich:zam": "node --experimental-strip-types scripts/enrich-items-from-zam.ts",
+    "validate:item-details": "node --experimental-strip-types scripts/validate-item-details.ts",
+    "rebucket:classic-group-named": "node --experimental-strip-types scripts/rebucket-classic-group-named.ts",
+    "apply:manual-corrections": "node --experimental-strip-types scripts/apply-manual-item-corrections.ts",
+    "apply:missing-corrections": "node --experimental-strip-types scripts/apply-missing-item-corrections.ts",
+    "apply:small-corrections": "node --experimental-strip-types scripts/apply-small-item-corrections.ts",
+    "mark:duplicates-clean": "node --experimental-strip-types scripts/mark-duplicate-items-clean.ts"
+  },
+  "dependencies": {
+    "next": "^16.2.4",
+    "postcss": "^8.5.12",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5"
+  },
+  "overrides": {
+    "postcss": "^8.5.12"
+  },
+  "devDependencies": {
+    "@types/node": "22.15.2",
+    "@types/react": "19.0.12",
+    "@types/react-dom": "19.0.4",
+    "typescript": "5.8.3"
+  }
+}

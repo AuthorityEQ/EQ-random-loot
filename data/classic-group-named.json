@@ -1,0 +1,2849 @@
+{
+  "metadata": {
+    "game": "EverQuest",
+    "server": "Frostreaver",
+    "expansion": "Classic",
+    "content_type": "Group Named",
+    "bucket_rule": "Buckets are grouped by mob level in 5-level ranges for the app: bucket = Math.floor((level - 1) / 5) + 1. Bucket 1=1-5, 2=6-10, 3=11-15, 4=16-20, and so on.",
+    "note": "Each bucket's loot_pool is the deduplicated union of all loot listed on mobs in that 5-level bucket. Individual mob loot is preserved under each mob for verification.",
+    "source": "User-pasted Classic Named sheet"
+  },
+  "buckets": [
+    {
+      "bucket": 1,
+      "level_range": "1-5",
+      "mobs": [
+        {
+          "name": "an injured rat",
+          "level": 2,
+          "zone": "Qeynos Aqueducts",
+          "source_bucket": "1",
+          "loot": [
+            "Alligator Tooth Earring"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "an undead knight",
+          "level": 3,
+          "zone": "Qeynos Aqueducts",
+          "source_bucket": "1",
+          "loot": [
+            "Limestone Ring"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a shady mercenary",
+          "level": 4,
+          "zone": "Qeynos Aqueducts",
+          "source_bucket": "1",
+          "loot": [
+            "Thick Black Cape"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a nesting rat",
+          "level": 5,
+          "zone": "Qeynos Aqueducts",
+          "source_bucket": "1",
+          "loot": [
+            "Golden Locket"
+          ],
+          "expansion": "Classic"
+        }
+      ],
+      "loot_pool": [
+        "Alligator Tooth Earring",
+        "Golden Locket",
+        "Limestone Ring",
+        "Thick Black Cape"
+      ],
+      "zones": [
+        "Qeynos Aqueducts"
+      ],
+      "source_buckets_included": [
+        "1"
+      ],
+      "mob_count": 4,
+      "loot_count": 4,
+      "zone_count": 1,
+      "expansion": "Classic"
+    },
+    {
+      "bucket": 2,
+      "level_range": "6-10",
+      "mobs": [
+        {
+          "name": "Flotsam",
+          "level": 10,
+          "zone": "Dagnor's Cauldron",
+          "source_bucket": "2",
+          "loot": [
+            "Giant Rat Tail",
+            "Shiny Golden Coin"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Crookstinger",
+          "level": 10,
+          "zone": "Lesser Faydark",
+          "source_bucket": "2",
+          "loot": [
+            "Crookstinger",
+            "Crookstinger Poison"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Queen Nasheeji",
+          "level": 10,
+          "zone": "Lesser Faydark",
+          "source_bucket": "2",
+          "loot": [
+            "Shiny Silk Gloves"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Erg Bluntbruiser",
+          "level": 10,
+          "zone": "South Ro",
+          "source_bucket": "2",
+          "loot": [
+            "Orcish Mace",
+            "Orcish Morning Star"
+          ],
+          "expansion": "Classic"
+        }
+      ],
+      "loot_pool": [
+        "Crookstinger",
+        "Crookstinger Poison",
+        "Giant Rat Tail",
+        "Orcish Mace",
+        "Orcish Morning Star",
+        "Shiny Golden Coin",
+        "Shiny Silk Gloves"
+      ],
+      "zones": [
+        "Dagnor's Cauldron",
+        "Lesser Faydark",
+        "South Ro"
+      ],
+      "source_buckets_included": [
+        "2"
+      ],
+      "mob_count": 4,
+      "loot_count": 7,
+      "zone_count": 3,
+      "expansion": "Classic"
+    },
+    {
+      "bucket": 3,
+      "level_range": "11-15",
+      "mobs": [
+        {
+          "name": "Tisella",
+          "level": 11,
+          "zone": "Lavastorm",
+          "source_bucket": "3",
+          "loot": [
+            "Glowing Torch"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Ashenpaw",
+          "level": 11,
+          "zone": "North Karana",
+          "source_bucket": "3",
+          "loot": [
+            "Superb Wolf Hide",
+            "Wolf-Hide Sleeves"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Jetsam",
+          "level": 12,
+          "zone": "Dagnor's Cauldron",
+          "source_bucket": "3",
+          "loot": [
+            "Iron Leash Collar",
+            "Rat Bone Powder"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Spinflint",
+          "level": 12,
+          "zone": "Gorge of Xorbb",
+          "source_bucket": "3",
+          "loot": [
+            "Whirling Agate",
+            "Whirling Amber",
+            "Whirling Bloodstone",
+            "Whirling Carnelian",
+            "Whirling Crystal",
+            "Whirling Hematite",
+            "Whirling Jasper",
+            "Whirling Lapis Lazuli",
+            "Whirling Malachite",
+            "Whirling Onyx",
+            "Whirling Quartz",
+            "Whirling Turquoise"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Old Dimshimmer",
+          "level": 12,
+          "zone": "Lesser Faydark",
+          "source_bucket": "3",
+          "loot": [
+            "Bottle of Drake Breath",
+            "Illusionists Stone"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Swiftclaw",
+          "level": 12,
+          "zone": "North Karana",
+          "source_bucket": "3",
+          "loot": [
+            "Lion-Skin Leggings",
+            "Superb Lion Skin"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Dunedigger",
+          "level": 12,
+          "zone": "North Ro",
+          "source_bucket": "3",
+          "loot": [
+            "Scute Shield"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a warbone monk",
+          "level": 13,
+          "zone": "Lavastorm",
+          "source_bucket": "3",
+          "loot": [
+            "Bone Fingered Gloves"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Bristletoe",
+          "level": 13,
+          "zone": "North Karana",
+          "source_bucket": "3",
+          "loot": [
+            "Bear-Hide Jerkin",
+            "Superb Bear Hide"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Pyzjn",
+          "level": 13,
+          "zone": "Qeynos Hills",
+          "source_bucket": "3",
+          "loot": [
+            "Glowing Black Stone"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "orc taskmaster",
+          "level": 14,
+          "zone": "Crushbone",
+          "source_bucket": "3",
+          "loot": [
+            "Brass Earring"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Squallslither",
+          "level": 14,
+          "zone": "Dagnor's Cauldron",
+          "source_bucket": "3",
+          "loot": [
+            "Serpent Blood Potion",
+            "Serpentskin Eyepatch"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Brahhm",
+          "level": 14,
+          "zone": "Gorge of Xorbb",
+          "source_bucket": "3",
+          "loot": [
+            "Brahhms Horn",
+            "Labyrinth Talisman"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a warbone spearmen",
+          "level": 14,
+          "zone": "Lavastorm",
+          "source_bucket": "3",
+          "loot": [
+            "Bone Spear",
+            "Small Bone Shield"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Lieutenant Midraim",
+          "level": 14,
+          "zone": "North Karana",
+          "source_bucket": "3",
+          "loot": [
+            "Granite Earring",
+            "Pair of Bent Spectacles"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Glubbsink",
+          "level": 15,
+          "zone": "Butcherblock",
+          "source_bucket": "3",
+          "loot": [
+            "Riptide Spear"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "orc warlord",
+          "level": 15,
+          "zone": "Crushbone",
+          "source_bucket": "3",
+          "loot": [
+            "Bracers of Battle"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a gnoll embalmer",
+          "level": 15,
+          "zone": "Lake Rathe",
+          "source_bucket": "3",
+          "loot": [
+            "Skull of Jhen'Tra"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Korvik the Cursed",
+          "level": 15,
+          "zone": "North Karana",
+          "source_bucket": "3",
+          "loot": [
+            "Gypsy Medallion",
+            "Iron Shackles"
+          ],
+          "expansion": "Classic"
+        }
+      ],
+      "loot_pool": [
+        "Bear-Hide Jerkin",
+        "Bone Fingered Gloves",
+        "Bone Spear",
+        "Bottle of Drake Breath",
+        "Bracers of Battle",
+        "Brahhms Horn",
+        "Brass Earring",
+        "Glowing Black Stone",
+        "Glowing Torch",
+        "Granite Earring",
+        "Gypsy Medallion",
+        "Illusionists Stone",
+        "Iron Leash Collar",
+        "Iron Shackles",
+        "Labyrinth Talisman",
+        "Lion-Skin Leggings",
+        "Pair of Bent Spectacles",
+        "Rat Bone Powder",
+        "Riptide Spear",
+        "Scute Shield",
+        "Serpent Blood Potion",
+        "Serpentskin Eyepatch",
+        "Skull of Jhen'Tra",
+        "Small Bone Shield",
+        "Superb Bear Hide",
+        "Superb Lion Skin",
+        "Superb Wolf Hide",
+        "Whirling Agate",
+        "Whirling Amber",
+        "Whirling Bloodstone",
+        "Whirling Carnelian",
+        "Whirling Crystal",
+        "Whirling Hematite",
+        "Whirling Jasper",
+        "Whirling Lapis Lazuli",
+        "Whirling Malachite",
+        "Whirling Onyx",
+        "Whirling Quartz",
+        "Whirling Turquoise",
+        "Wolf-Hide Sleeves"
+      ],
+      "zones": [
+        "Butcherblock",
+        "Crushbone",
+        "Dagnor's Cauldron",
+        "Gorge of Xorbb",
+        "Lake Rathe",
+        "Lavastorm",
+        "Lesser Faydark",
+        "North Karana",
+        "North Ro",
+        "Qeynos Hills"
+      ],
+      "source_buckets_included": [
+        "3"
+      ],
+      "mob_count": 19,
+      "loot_count": 40,
+      "zone_count": 10,
+      "expansion": "Classic"
+    },
+    {
+      "bucket": 4,
+      "level_range": "16-20",
+      "mobs": [
+        {
+          "name": "Barnacle Bones",
+          "level": 16,
+          "zone": "Dagnor's Cauldron",
+          "source_bucket": "4",
+          "loot": [
+            "Barnacle-Covered Pauldron",
+            "Coral Trident"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Yymp the Infernal",
+          "level": 16,
+          "zone": "Gorge of Xorbb",
+          "source_bucket": "4",
+          "loot": [
+            "Minotaur Ribcage"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a lesser nightmare",
+          "level": 16,
+          "zone": "Lavastorm",
+          "source_bucket": "4",
+          "loot": [
+            "Nightmare Hide"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Whimsy Larktwitter",
+          "level": 16,
+          "zone": "Lesser Faydark",
+          "source_bucket": "4",
+          "loot": [
+            "Arrow",
+            "Arrow of Contagion",
+            "Arrow of Fire",
+            "Arrow of Lightning",
+            "LarkTwitter Arrow",
+            "Larktwitter Bow"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a goblin alchemist",
+          "level": 16,
+          "zone": "Misty Thicket",
+          "source_bucket": "4",
+          "loot": [
+            "Ribcage Chest Armor"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Rahotep",
+          "level": 16,
+          "zone": "North Ro",
+          "source_bucket": "4",
+          "loot": [
+            "Scarab Ring",
+            "Scepter of Rahotep"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Marik Clubthorn",
+          "level": 16,
+          "zone": "South Karana",
+          "source_bucket": "4",
+          "loot": [
+            "Beartooth Necklace",
+            "Hulking Spiked Club"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Priest Amiaz",
+          "level": 17,
+          "zone": "Befallen",
+          "source_bucket": "4",
+          "loot": [
+            "Blackened Wand"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a guano harvester",
+          "level": 17,
+          "zone": "SolB (Nag Lair)",
+          "source_bucket": "4",
+          "loot": [
+            "Cloak of Shadows",
+            "Large Soiled Bag"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Knari Morawk",
+          "level": 17,
+          "zone": "South Karana",
+          "source_bucket": "4",
+          "loot": [
+            "Electrum Bracelet"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a froglok gaz squire",
+          "level": 17,
+          "zone": "Upper Guk",
+          "source_bucket": "4",
+          "loot": [
+            "Collar of Undead Protection",
+            "Runed Bone Fork"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "the thaumaturgist",
+          "level": 18,
+          "zone": "Befallen",
+          "source_bucket": "4",
+          "loot": [
+            "Dagger of Marnek",
+            "Thaumaturgist's Robe"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Ekeros",
+          "level": 18,
+          "zone": "Najena",
+          "source_bucket": "4",
+          "loot": [
+            "Blackened Sapphire"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Callowwing",
+          "level": 18,
+          "zone": "North Karana",
+          "source_bucket": "4",
+          "loot": [
+            "Crystal Ring",
+            "Griffon Talon Gloves"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Kroldir Thunderhoof",
+          "level": 18,
+          "zone": "South Karana",
+          "source_bucket": "4",
+          "loot": [
+            "Runed Oak Bow",
+            "Thunderhoof Quiver"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Jo Jo",
+          "level": 18,
+          "zone": "Toxxulia Forest",
+          "source_bucket": "4",
+          "loot": [
+            "Mystical Claws of Jojo",
+            "Tiger Hide Gloves"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a giant heart spider",
+          "level": 18,
+          "zone": "Upper Guk",
+          "source_bucket": "4",
+          "loot": [
+            "Chitin Shell Armor",
+            "Chitin Shell Shield"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "lesser blade fiend",
+          "level": 19,
+          "zone": "Unrest",
+          "source_bucket": "4",
+          "loot": [
+            "Gladius",
+            "Pugius"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Grenix Mucktail",
+          "level": 20,
+          "zone": "Highpass Hold",
+          "source_bucket": "4",
+          "loot": [
+            "Polished Granite Tomahawk"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Mina Glimmerwing",
+          "level": 20,
+          "zone": "Lesser Faydark",
+          "source_bucket": "4",
+          "loot": [
+            "Red Wood Wand"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Timbur the tiny",
+          "level": 20,
+          "zone": "North Karana",
+          "source_bucket": "4",
+          "loot": [
+            "Giant Laceless Sandal",
+            "Giants Reminder String"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a goblin jailmaster",
+          "level": 20,
+          "zone": "Permafrost",
+          "source_bucket": "4",
+          "loot": [
+            "Etched Ivory Charm",
+            "Wooly Spider Silk Net"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Mroon",
+          "level": 20,
+          "zone": "South Karana",
+          "source_bucket": "4",
+          "loot": [
+            "Mroons Toy",
+            "Topknot Headband"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Hatar",
+          "level": 20,
+          "zone": "South Ro",
+          "source_bucket": "4",
+          "loot": [
+            "Fine Silk Turban",
+            "Jambiya"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Lord Gongo",
+          "level": 20,
+          "zone": "Toxxulia Forest",
+          "source_bucket": "4",
+          "loot": [
+            "Gorilla Hide leggings",
+            "Gorilla Hide Mask"
+          ],
+          "expansion": "Classic"
+        }
+      ],
+      "loot_pool": [
+        "Arrow",
+        "Arrow of Contagion",
+        "Arrow of Fire",
+        "Arrow of Lightning",
+        "Barnacle-Covered Pauldron",
+        "Beartooth Necklace",
+        "Blackened Sapphire",
+        "Blackened Wand",
+        "Chitin Shell Armor",
+        "Chitin Shell Shield",
+        "Cloak of Shadows",
+        "Collar of Undead Protection",
+        "Coral Trident",
+        "Crystal Ring",
+        "Dagger of Marnek",
+        "Electrum Bracelet",
+        "Etched Ivory Charm",
+        "Fine Silk Turban",
+        "Giant Laceless Sandal",
+        "Giants Reminder String",
+        "Gladius",
+        "Gorilla Hide leggings",
+        "Gorilla Hide Mask",
+        "Griffon Talon Gloves",
+        "Hulking Spiked Club",
+        "Jambiya",
+        "Large Soiled Bag",
+        "LarkTwitter Arrow",
+        "Larktwitter Bow",
+        "Minotaur Ribcage",
+        "Mroons Toy",
+        "Mystical Claws of Jojo",
+        "Nightmare Hide",
+        "Polished Granite Tomahawk",
+        "Pugius",
+        "Red Wood Wand",
+        "Ribcage Chest Armor",
+        "Runed Bone Fork",
+        "Runed Oak Bow",
+        "Scarab Ring",
+        "Scepter of Rahotep",
+        "Thaumaturgist's Robe",
+        "Thunderhoof Quiver",
+        "Tiger Hide Gloves",
+        "Topknot Headband",
+        "Wooly Spider Silk Net"
+      ],
+      "zones": [
+        "Befallen",
+        "Dagnor's Cauldron",
+        "Gorge of Xorbb",
+        "Highpass Hold",
+        "Lavastorm",
+        "Lesser Faydark",
+        "Misty Thicket",
+        "Najena",
+        "North Karana",
+        "North Ro",
+        "Permafrost",
+        "SolB (Nag Lair)",
+        "South Karana",
+        "South Ro",
+        "Toxxulia Forest",
+        "Unrest",
+        "Upper Guk"
+      ],
+      "source_buckets_included": [
+        "4"
+      ],
+      "mob_count": 25,
+      "loot_count": 46,
+      "zone_count": 17,
+      "expansion": "Classic"
+    },
+    {
+      "bucket": 5,
+      "level_range": "21-25",
+      "mobs": [
+        {
+          "name": "Hagnis Shralok",
+          "level": 21,
+          "zone": "Highpass Hold",
+          "source_bucket": "5",
+          "loot": [
+            "Shiny Brass Halberd"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Recfek Shralok",
+          "level": 21,
+          "zone": "Highpass Hold",
+          "source_bucket": "5",
+          "loot": [
+            "Shralok Pack"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Vexven Mucktail",
+          "level": 21,
+          "zone": "Highpass Hold",
+          "source_bucket": "5",
+          "loot": [
+            "Cracked Darkwood Shield"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a goblin archaeologist",
+          "level": 21,
+          "zone": "Permafrost",
+          "source_bucket": "5",
+          "loot": [
+            "Archaeologist Pack",
+            "Dented Brass Mask"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Alrik Pasdar",
+          "level": 21,
+          "zone": "Toxxulia Forest",
+          "source_bucket": "5",
+          "loot": [
+            "Kerran Headband"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Hamad Grarr",
+          "level": 21,
+          "zone": "Toxxulia Forest",
+          "source_bucket": "5",
+          "loot": [
+            "Hamed's Ring of Tears",
+            "Kerran Tribal headband"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a reanimated hand",
+          "level": 21,
+          "zone": "Unrest",
+          "source_bucket": "5",
+          "loot": [
+            "Ivory Bracelet",
+            "Small Stone Key"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a froglok scryer",
+          "level": 21,
+          "zone": "Upper Guk",
+          "source_bucket": "5",
+          "loot": [
+            "Bracelet of Woven Grass",
+            "Glowing Mask",
+            "Shimmering Orb"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Vopuk Shralok",
+          "level": 22,
+          "zone": "Highpass Hold",
+          "source_bucket": "5",
+          "loot": [
+            "Shiny Brass Idol"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Grimtooth",
+          "level": 22,
+          "zone": "North Karana",
+          "source_bucket": "5",
+          "loot": [
+            "Iron Shackles",
+            "Werewolf-Hide Jerkin"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Narra Tanith",
+          "level": 22,
+          "zone": "South Karana",
+          "source_bucket": "5",
+          "loot": [
+            "Crown of Leaves",
+            "Silverish Scimitar"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "The Kerran Sha'rr",
+          "level": 22,
+          "zone": "Toxxulia Forest",
+          "source_bucket": "5",
+          "loot": [
+            "Hexed Kerran Doll",
+            "Kerran War Spear"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a froglok realist",
+          "level": 22,
+          "zone": "Upper Guk",
+          "source_bucket": "5",
+          "loot": [
+            "Pouch of Ghoul Ash",
+            "Reed Ring"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a werewolf bandit",
+          "level": 22,
+          "zone": "West Karana",
+          "source_bucket": "5",
+          "loot": [
+            "Serpent Insignia Collar"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a goblin alchemist",
+          "level": 23,
+          "zone": "Permafrost",
+          "source_bucket": "5",
+          "loot": [
+            "Mammoth Hide Cloak",
+            "Mammoth Hide Leggings"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Khonza Mitty of Kerra",
+          "level": 23,
+          "zone": "Toxxulia Forest",
+          "source_bucket": "5",
+          "loot": [],
+          "expansion": "Classic"
+        },
+        {
+          "name": "reclusive ghoul magus",
+          "level": 23,
+          "zone": "Unrest",
+          "source_bucket": "5",
+          "loot": [
+            "Dusty Bloodstained Gloves",
+            "Polished Brass Key",
+            "Savant's Cap"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a goblin preacher",
+          "level": 24,
+          "zone": "Permafrost",
+          "source_bucket": "5",
+          "loot": [
+            "Cold Iron Morning Star",
+            "Runed Circlet"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "flame goblin foreman",
+          "level": 24,
+          "zone": "SolA (Solusek's Eye)",
+          "source_bucket": "5",
+          "loot": [
+            "Foreman's Tunic",
+            "Obsidian Scimitar"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a clay golem",
+          "level": 25,
+          "zone": "Cazic-Thule 1.0",
+          "source_bucket": "5",
+          "loot": [
+            "Ball of Golem Clay [ID 14315]",
+            "Lizardskin Tribal Mask"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "King Xorbb",
+          "level": 25,
+          "zone": "Gorge of Xorbb",
+          "source_bucket": "5",
+          "loot": [
+            "Ring of Xorbb",
+            "Slime Crystal Staff"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Drelzna",
+          "level": 25,
+          "zone": "Najena",
+          "source_bucket": "5",
+          "loot": [
+            "Ashenwood Short Spear",
+            "Bloodstained Key",
+            "Dull Bone Key",
+            "Earring of Disease Reflection",
+            "Stiletto of the Bloodclaw"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Rathyl",
+          "level": 25,
+          "zone": "Najena",
+          "source_bucket": "5",
+          "loot": [
+            "Bloodstained Key",
+            "Dull Bone Key",
+            "Traveler's Pack",
+            "Traveler's Pouch"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Trazdon",
+          "level": 25,
+          "zone": "Najena",
+          "source_bucket": "5",
+          "loot": [
+            "Dark Circlet"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a goblin scryer",
+          "level": 25,
+          "zone": "Permafrost",
+          "source_bucket": "5",
+          "loot": [
+            "Ice Crystal Staff",
+            "Wolf Fur Slippers"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Varsoon",
+          "level": 25,
+          "zone": "Qeynos Hills",
+          "source_bucket": "5",
+          "loot": [
+            "Crysknife",
+            "Polished Bone Hoop"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "fire goblin bartender",
+          "level": 25,
+          "zone": "SolA (Solusek's Eye)",
+          "source_bucket": "5",
+          "loot": [
+            "Drake-Hide Leggings",
+            "Drake-Hide Sleeves"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "kobold predator",
+          "level": 25,
+          "zone": "SolA (Solusek's Eye)",
+          "source_bucket": "5",
+          "loot": [
+            "kobold-hide boots",
+            "Obsidian Shard [Obsidian Shatter]"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Lockjaw",
+          "level": 25,
+          "zone": "South Ro",
+          "source_bucket": "5",
+          "loot": [
+            "Glowing Wooden Crook",
+            "Lockjaw Hide Vest"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "an undead barkeep",
+          "level": 25,
+          "zone": "Unrest",
+          "source_bucket": "5",
+          "loot": [
+            "Opalline Earring",
+            "Scuffed Silver Key",
+            "Thick Leather Apron"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "the froglok warden",
+          "level": 25,
+          "zone": "Upper Guk",
+          "source_bucket": "5",
+          "loot": [
+            "Elf-Hide Gloves",
+            "Troll-Hide Belt"
+          ],
+          "expansion": "Classic"
+        }
+      ],
+      "loot_pool": [
+        "Archaeologist Pack",
+        "Ashenwood Short Spear",
+        "Ball of Golem Clay [ID 14315]",
+        "Bloodstained Key",
+        "Bracelet of Woven Grass",
+        "Cold Iron Morning Star",
+        "Cracked Darkwood Shield",
+        "Crown of Leaves",
+        "Crysknife",
+        "Dark Circlet",
+        "Dented Brass Mask",
+        "Drake-Hide Leggings",
+        "Drake-Hide Sleeves",
+        "Dull Bone Key",
+        "Dusty Bloodstained Gloves",
+        "Earring of Disease Reflection",
+        "Elf-Hide Gloves",
+        "Foreman's Tunic",
+        "Glowing Mask",
+        "Glowing Wooden Crook",
+        "Hamed's Ring of Tears",
+        "Hexed Kerran Doll",
+        "Ice Crystal Staff",
+        "Iron Shackles",
+        "Ivory Bracelet",
+        "Kerran Headband",
+        "Kerran Tribal headband",
+        "Kerran War Spear",
+        "kobold-hide boots",
+        "Lizardskin Tribal Mask",
+        "Lockjaw Hide Vest",
+        "Mammoth Hide Cloak",
+        "Mammoth Hide Leggings",
+        "Obsidian Scimitar",
+        "Obsidian Shard [Obsidian Shatter]",
+        "Opalline Earring",
+        "Polished Bone Hoop",
+        "Polished Brass Key",
+        "Pouch of Ghoul Ash",
+        "Reed Ring",
+        "Ring of Xorbb",
+        "Runed Circlet",
+        "Savant's Cap",
+        "Scuffed Silver Key",
+        "Serpent Insignia Collar",
+        "Shimmering Orb",
+        "Shiny Brass Halberd",
+        "Shiny Brass Idol",
+        "Shralok Pack",
+        "Silverish Scimitar",
+        "Slime Crystal Staff",
+        "Small Stone Key",
+        "Stiletto of the Bloodclaw",
+        "Thick Leather Apron",
+        "Traveler's Pack",
+        "Traveler's Pouch",
+        "Troll-Hide Belt",
+        "Werewolf-Hide Jerkin",
+        "Wolf Fur Slippers"
+      ],
+      "zones": [
+        "Cazic-Thule 1.0",
+        "Gorge of Xorbb",
+        "Highpass Hold",
+        "Najena",
+        "North Karana",
+        "Permafrost",
+        "Qeynos Hills",
+        "SolA (Solusek's Eye)",
+        "South Karana",
+        "South Ro",
+        "Toxxulia Forest",
+        "Unrest",
+        "Upper Guk",
+        "West Karana"
+      ],
+      "source_buckets_included": [
+        "5"
+      ],
+      "mob_count": 31,
+      "loot_count": 59,
+      "zone_count": 14,
+      "expansion": "Classic"
+    },
+    {
+      "bucket": 6,
+      "level_range": "26-30",
+      "mobs": [
+        {
+          "name": "reckless efreeti",
+          "level": 26,
+          "zone": "SolA (Solusek's Eye)",
+          "source_bucket": "6",
+          "loot": [
+            "Obsidian Flamberge",
+            "Platinum Armband"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Synger Foxfyre",
+          "level": 26,
+          "zone": "South Karana",
+          "source_bucket": "6",
+          "loot": [
+            "Bark Shield",
+            "Double-Bladed Bone Axe"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a glyphed ghoul",
+          "level": 27,
+          "zone": "Mistmoore",
+          "source_bucket": "6",
+          "loot": [
+            "Crested Mistmoore Shield",
+            "Vial of Vampire Blood"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Officer Grush",
+          "level": 27,
+          "zone": "Najena",
+          "source_bucket": "6",
+          "loot": [
+            "Dull Wooden Spear"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "inferno goblin torturer",
+          "level": 27,
+          "zone": "SolA (Solusek's Eye)",
+          "source_bucket": "6",
+          "loot": [
+            "Memento Box",
+            "Turquoise Eyepatch"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Kindle",
+          "level": 27,
+          "zone": "SolA (Solusek's Eye)",
+          "source_bucket": "6",
+          "loot": [
+            "Impskin Gloves",
+            "Obsidian Ring"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Tae Ew Diviner",
+          "level": 28,
+          "zone": "Cazic-Thule 1.0",
+          "source_bucket": "6",
+          "loot": [
+            "Lizardscale Mantle",
+            "Ravenscale Bracer"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Najena",
+          "level": 28,
+          "zone": "Najena",
+          "source_bucket": "6",
+          "loot": [
+            "Black Tome with Silver Runes",
+            "Clawed Knuckle-Ring",
+            "Flowing Black Robe",
+            "Golden Crescent Key"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Singe",
+          "level": 28,
+          "zone": "SolA (Solusek's Eye)",
+          "source_bucket": "6",
+          "loot": [
+            "Drakescale Belt",
+            "Obsidian Bead Hoop"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Grizzleknot",
+          "level": 28,
+          "zone": "South Karana",
+          "source_bucket": "6",
+          "loot": [
+            "Cloak of Leaves",
+            "Grizzleknot Bark",
+            "Treant Staff"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "an undead knight of unrest",
+          "level": 28,
+          "zone": "Unrest",
+          "source_bucket": "6",
+          "loot": [
+            "Bloodstained Mantle",
+            "Bloodstained Tunic",
+            "Cracked Glass Key"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a froglok summoner",
+          "level": 28,
+          "zone": "Upper Guk",
+          "source_bucket": "6",
+          "loot": [
+            "Brazier of Elemental Summoning"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "goblin high shaman",
+          "level": 29,
+          "zone": "SolA (Solusek's Eye)",
+          "source_bucket": "6",
+          "loot": [
+            "Glowing Stone Band",
+            "Platinum Dragon Totem"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "inferno goblin captain",
+          "level": 29,
+          "zone": "SolA (Solusek's Eye)",
+          "source_bucket": "6",
+          "loot": [
+            "Charred Boots"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a stone golem",
+          "level": 30,
+          "zone": "Cazic-Thule 1.0",
+          "source_bucket": "6",
+          "loot": [
+            "Ravenscale Coif",
+            "Rubicite Helm",
+            "Shard of Golem Stone"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Tae Ew Templar",
+          "level": 30,
+          "zone": "Cazic-Thule 1.0",
+          "source_bucket": "6",
+          "loot": [
+            "Lizardscale Cloak",
+            "Ravenscale Leggings",
+            "Rubicite Greaves"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Bilge Farfathom",
+          "level": 30,
+          "zone": "Dagnor's Cauldron",
+          "source_bucket": "6",
+          "loot": [
+            "Pearl Kedge Totem",
+            "Reed Belt"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a werewolf gypsy",
+          "level": 30,
+          "zone": "Mistmoore",
+          "source_bucket": "6",
+          "loot": [
+            "Mistmoore Battle Drums"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "an avenging caitiff",
+          "level": 30,
+          "zone": "Mistmoore",
+          "source_bucket": "6",
+          "loot": [
+            "Crested Helm",
+            "Crested Spaulders"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "an elite honor guard",
+          "level": 30,
+          "zone": "Permafrost",
+          "source_bucket": "6",
+          "loot": [
+            "Silvery Two Handed Axe",
+            "Silvery War Axe"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "High Priest Zaharn",
+          "level": 30,
+          "zone": "Permafrost",
+          "source_bucket": "6",
+          "loot": [
+            "Zaharn's Coronet"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "CWG Model EXG",
+          "level": 30,
+          "zone": "SolA (Solusek's Eye)",
+          "source_bucket": "6",
+          "loot": [
+            "Charred Guardian Breastplate",
+            "Charred Guardian Shield"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Lord Gimblox",
+          "level": 30,
+          "zone": "SolA (Solusek's Eye)",
+          "source_bucket": "6",
+          "loot": [
+            "Lord Gimblox's Signet Ring"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Solusek goblin king",
+          "level": 30,
+          "zone": "SolA (Solusek's Eye)",
+          "source_bucket": "6",
+          "loot": [
+            "Ring of Goblin Lords",
+            "Scepter of Flame"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Quillmane",
+          "level": 30,
+          "zone": "South Karana",
+          "source_bucket": "6",
+          "loot": [
+            "Feathered Leggings",
+            "Pegasus Feather Cloak"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "an ancient cyclops",
+          "level": 30,
+          "zone": "South Ro",
+          "source_bucket": "6",
+          "loot": [
+            "Ring of the Ancients"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Minotaur Lord",
+          "level": 30,
+          "zone": "Steamfont",
+          "source_bucket": "6",
+          "loot": [
+            "Broken Minotaur Lord's Horn"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "an ancient croc",
+          "level": 30,
+          "zone": "Upper Guk",
+          "source_bucket": "6",
+          "loot": [
+            "Gatorscale Leggings",
+            "Gatorscale Sleeves"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "the froglok shin lord",
+          "level": 30,
+          "zone": "Upper Guk",
+          "source_bucket": "6",
+          "loot": [
+            "Ghoulbane",
+            "Silver-Plated Bracer"
+          ],
+          "expansion": "Classic"
+        }
+      ],
+      "loot_pool": [
+        "Bark Shield",
+        "Black Tome with Silver Runes",
+        "Bloodstained Mantle",
+        "Bloodstained Tunic",
+        "Brazier of Elemental Summoning",
+        "Broken Minotaur Lord's Horn",
+        "Charred Boots",
+        "Charred Guardian Breastplate",
+        "Charred Guardian Shield",
+        "Clawed Knuckle-Ring",
+        "Cloak of Leaves",
+        "Cracked Glass Key",
+        "Crested Helm",
+        "Crested Mistmoore Shield",
+        "Crested Spaulders",
+        "Double-Bladed Bone Axe",
+        "Drakescale Belt",
+        "Dull Wooden Spear",
+        "Feathered Leggings",
+        "Flowing Black Robe",
+        "Gatorscale Leggings",
+        "Gatorscale Sleeves",
+        "Ghoulbane",
+        "Glowing Stone Band",
+        "Golden Crescent Key",
+        "Grizzleknot Bark",
+        "Impskin Gloves",
+        "Lizardscale Cloak",
+        "Lizardscale Mantle",
+        "Lord Gimblox's Signet Ring",
+        "Memento Box",
+        "Mistmoore Battle Drums",
+        "Obsidian Bead Hoop",
+        "Obsidian Flamberge",
+        "Obsidian Ring",
+        "Pearl Kedge Totem",
+        "Pegasus Feather Cloak",
+        "Platinum Armband",
+        "Platinum Dragon Totem",
+        "Ravenscale Bracer",
+        "Ravenscale Coif",
+        "Ravenscale Leggings",
+        "Reed Belt",
+        "Ring of Goblin Lords",
+        "Ring of the Ancients",
+        "Rubicite Greaves",
+        "Rubicite Helm",
+        "Scepter of Flame",
+        "Shard of Golem Stone",
+        "Silver-Plated Bracer",
+        "Silvery Two Handed Axe",
+        "Silvery War Axe",
+        "Treant Staff",
+        "Turquoise Eyepatch",
+        "Vial of Vampire Blood",
+        "Zaharn's Coronet"
+      ],
+      "zones": [
+        "Cazic-Thule 1.0",
+        "Dagnor's Cauldron",
+        "Mistmoore",
+        "Najena",
+        "Permafrost",
+        "SolA (Solusek's Eye)",
+        "South Karana",
+        "South Ro",
+        "Steamfont",
+        "Unrest",
+        "Upper Guk"
+      ],
+      "source_buckets_included": [
+        "6"
+      ],
+      "mob_count": 29,
+      "loot_count": 56,
+      "zone_count": 11,
+      "expansion": "Classic"
+    },
+    {
+      "bucket": 7,
+      "level_range": "31-35",
+      "mobs": [
+        {
+          "name": "a lizard ritualist",
+          "level": 31,
+          "zone": "Cazic-Thule 1.0",
+          "source_bucket": "7",
+          "loot": [
+            "Decayed Breastplate",
+            "Decayed Chainmail",
+            "Decayed Helm",
+            "Decayed Left Boot",
+            "Decayed Left Bracer",
+            "Decayed Left Gauntlet",
+            "Decayed Left Legplate",
+            "Decayed Left Vambrace",
+            "Decayed Right Boot",
+            "Decayed Right Bracer",
+            "Decayed Right Gauntlet",
+            "Decayed Right Legplate",
+            "Decayed Right Vambrace",
+            "Decayed Visor",
+            "Grimy Lance",
+            "Rubicite Gauntlets"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "King Thex'Ka IV",
+          "level": 31,
+          "zone": "Permafrost",
+          "source_bucket": "7",
+          "loot": [
+            "Symbol of Loyalty to Vox",
+            "White Wolf-Hide Cloak"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Butler Syncall",
+          "level": 32,
+          "zone": "Mistmoore",
+          "source_bucket": "7",
+          "loot": [
+            "Butler Syncalls Fang",
+            "Cape of Midnight Mist"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Mynthi Davissi",
+          "level": 32,
+          "zone": "Mistmoore",
+          "source_bucket": "7",
+          "loot": [
+            "Lute of the Gypsy Princess",
+            "Mistmoore Battle Drums"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Gabbie Mardoddle",
+          "level": 32,
+          "zone": "SolA (Solusek's Eye)",
+          "source_bucket": "7",
+          "loot": [
+            "Mithril Quill",
+            "Molten Cloak"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a minotaur elder",
+          "level": 33,
+          "zone": "Lower Guk",
+          "source_bucket": "7",
+          "loot": [
+            "Carved Ivory Mask",
+            "Chrysoberyl Talisman"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a cloaked dhampyre",
+          "level": 33,
+          "zone": "Mistmoore",
+          "source_bucket": "7",
+          "loot": [
+            "Blood of the Dhampyre",
+            "Hooded Black Cloak"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Tae Ew Archon",
+          "level": 34,
+          "zone": "Cazic-Thule 1.0",
+          "source_bucket": "7",
+          "loot": [
+            "Lizardscale Belt",
+            "Ravenscale Armguards",
+            "Rubicite Vambraces"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a ghoul assassin",
+          "level": 34,
+          "zone": "Lower Guk",
+          "source_bucket": "7",
+          "loot": [
+            "Guise of the Deceiver",
+            "Serrated Bone Dirk"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a ghoul ritualist",
+          "level": 34,
+          "zone": "Lower Guk",
+          "source_bucket": "7",
+          "loot": [
+            "Embroidered Black Cape",
+            "Embroidered Black Sleeves"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a minotaur patriarch",
+          "level": 34,
+          "zone": "Lower Guk",
+          "source_bucket": "7",
+          "loot": [
+            "Azure Sleeves",
+            "Ebony Bladed Sword"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Maid Issis",
+          "level": 34,
+          "zone": "Mistmoore",
+          "source_bucket": "7",
+          "loot": [
+            "Maid Issis Fang",
+            "Nightshade Wreath"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Quid Rilstone",
+          "level": 34,
+          "zone": "Rathe Mountains",
+          "source_bucket": "7",
+          "loot": [
+            "Man-o-War",
+            "Siryn Hair Hood"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Lord Grimrot (Live Version)",
+          "level": 34,
+          "zone": "South Karana",
+          "source_bucket": "7",
+          "loot": [
+            "Pestilence Scythe [10/50]",
+            "Pestilence Scythe [16/48]"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a steel golem",
+          "level": 35,
+          "zone": "Cazic-Thule 1.0",
+          "source_bucket": "7",
+          "loot": [
+            "Golem Metal Wand",
+            "Ravenscale Gloves",
+            "Rubicite Gauntlets"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a ghoul executioner",
+          "level": 35,
+          "zone": "Lower Guk",
+          "source_bucket": "7",
+          "loot": [
+            "Executioner's Axe",
+            "Executioners Hood"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a ghoul savant",
+          "level": 35,
+          "zone": "Lower Guk",
+          "source_bucket": "7",
+          "loot": [
+            "Enameled Black Chestplate",
+            "Enameled Black Mace"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Mojo the Tainted",
+          "level": 35,
+          "zone": "Ocean of Tears",
+          "source_bucket": "7",
+          "loot": [
+            "Silver Wolf Totem"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Captain Bipnubble",
+          "level": 35,
+          "zone": "SolA (Solusek's Eye)",
+          "source_bucket": "7",
+          "loot": [
+            "Gnomish Environment Suit"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "lava elemental",
+          "level": 35,
+          "zone": "SolA (Solusek's Eye)",
+          "source_bucket": "7",
+          "loot": [
+            "Lava Potion",
+            "Power of Fire",
+            "Runed Lava Pendant"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Garanel Rucksif",
+          "level": 35,
+          "zone": "Unrest",
+          "source_bucket": "7",
+          "loot": [
+            "Dwarven Work Boots",
+            "Jagged Band",
+            "Sphere of Unrest"
+          ],
+          "expansion": "Classic"
+        }
+      ],
+      "loot_pool": [
+        "Azure Sleeves",
+        "Blood of the Dhampyre",
+        "Butler Syncalls Fang",
+        "Cape of Midnight Mist",
+        "Carved Ivory Mask",
+        "Chrysoberyl Talisman",
+        "Decayed Breastplate",
+        "Decayed Chainmail",
+        "Decayed Helm",
+        "Decayed Left Boot",
+        "Decayed Left Bracer",
+        "Decayed Left Gauntlet",
+        "Decayed Left Legplate",
+        "Decayed Left Vambrace",
+        "Decayed Right Boot",
+        "Decayed Right Bracer",
+        "Decayed Right Gauntlet",
+        "Decayed Right Legplate",
+        "Decayed Right Vambrace",
+        "Decayed Visor",
+        "Dwarven Work Boots",
+        "Ebony Bladed Sword",
+        "Embroidered Black Cape",
+        "Embroidered Black Sleeves",
+        "Enameled Black Chestplate",
+        "Enameled Black Mace",
+        "Executioner's Axe",
+        "Executioners Hood",
+        "Gnomish Environment Suit",
+        "Golem Metal Wand",
+        "Grimy Lance",
+        "Guise of the Deceiver",
+        "Hooded Black Cloak",
+        "Jagged Band",
+        "Lava Potion",
+        "Lizardscale Belt",
+        "Lute of the Gypsy Princess",
+        "Maid Issis Fang",
+        "Man-o-War",
+        "Mistmoore Battle Drums",
+        "Mithril Quill",
+        "Molten Cloak",
+        "Nightshade Wreath",
+        "Pestilence Scythe [10/50]",
+        "Pestilence Scythe [16/48]",
+        "Power of Fire",
+        "Ravenscale Armguards",
+        "Ravenscale Gloves",
+        "Rubicite Gauntlets",
+        "Rubicite Vambraces",
+        "Runed Lava Pendant",
+        "Serrated Bone Dirk",
+        "Silver Wolf Totem",
+        "Siryn Hair Hood",
+        "Sphere of Unrest",
+        "Symbol of Loyalty to Vox",
+        "White Wolf-Hide Cloak"
+      ],
+      "zones": [
+        "Cazic-Thule 1.0",
+        "Lower Guk",
+        "Mistmoore",
+        "Ocean of Tears",
+        "Permafrost",
+        "Rathe Mountains",
+        "SolA (Solusek's Eye)",
+        "South Karana",
+        "Unrest"
+      ],
+      "source_buckets_included": [
+        "7"
+      ],
+      "mob_count": 21,
+      "loot_count": 57,
+      "zone_count": 9,
+      "expansion": "Classic"
+    },
+    {
+      "bucket": 8,
+      "level_range": "36-40",
+      "mobs": [
+        {
+          "name": "Cazic Cenobite",
+          "level": 36,
+          "zone": "Cazic-Thule 1.0",
+          "source_bucket": "8",
+          "loot": [
+            "Lizard Blood Potion",
+            "Ravenscale Boots",
+            "Rubicite Boots"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a ghoul cavalier",
+          "level": 36,
+          "zone": "Lower Guk",
+          "source_bucket": "8",
+          "loot": [
+            "Adamantite Epaulets",
+            "Dark Reaver"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a ghoul supplier",
+          "level": 36,
+          "zone": "Lower Guk",
+          "source_bucket": "8",
+          "loot": [
+            "Light Burlap Sack",
+            "Thick Banded Belt"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Lasna Cheroon",
+          "level": 36,
+          "zone": "Mistmoore",
+          "source_bucket": "8",
+          "loot": [
+            "Diamondine Earring",
+            "Platinum Skull Ring"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "The Widowmistress",
+          "level": 36,
+          "zone": "Najena",
+          "source_bucket": "8",
+          "loot": [
+            "Stiletto of the Bloodclaw",
+            "Widowmistress Hair"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Minotaur Hero",
+          "level": 36,
+          "zone": "Steamfont",
+          "source_bucket": "8",
+          "loot": [
+            "Minotaur Hero Shackles"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a ghoul sage",
+          "level": 37,
+          "zone": "Lower Guk",
+          "source_bucket": "8",
+          "loot": [
+            "Braided Cinch Cord",
+            "Runed Cowl"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Garton Viswin",
+          "level": 37,
+          "zone": "Mistmoore",
+          "source_bucket": "8",
+          "loot": [
+            "Chestplate of the Dark Flame",
+            "Glowing Iron Pike"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Avatar of Fear",
+          "level": 38,
+          "zone": "Cazic-Thule 1.0",
+          "source_bucket": "8",
+          "loot": [
+            "Bladed Thulian Claws",
+            "Ravenscale Chestguard",
+            "Rubicite Breastplate"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a froglok yun priest",
+          "level": 38,
+          "zone": "Lower Guk",
+          "source_bucket": "8",
+          "loot": [
+            "Amethyst Bracelet",
+            "Silver-Plated Leggings"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Mortificator Syythrak",
+          "level": 38,
+          "zone": "Rathe Mountains",
+          "source_bucket": "8",
+          "loot": [
+            "Mortificator Staff",
+            "Syythrak Hide Vest"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a kobold noble",
+          "level": 38,
+          "zone": "SolB (Nag Lair)",
+          "source_bucket": "8",
+          "loot": [
+            "Petrified Erudite Heart Amulet",
+            "Staff of Writhing"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a froglok noble",
+          "level": 39,
+          "zone": "Lower Guk",
+          "source_bucket": "8",
+          "loot": [
+            "Gilded Cloth",
+            "White Gold Necklace"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a kobold champion",
+          "level": 39,
+          "zone": "SolB (Nag Lair)",
+          "source_bucket": "8",
+          "loot": [
+            "Painbringer",
+            "Shield of the Slain Unicorn"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Nisch Val Torash Mashk",
+          "level": 39,
+          "zone": "Splitpaw",
+          "source_bucket": "8",
+          "loot": [
+            "Devlas Ilkvel",
+            "Tesch Val Sinisch"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Rosch Val L'Vlor",
+          "level": 39,
+          "zone": "Splitpaw",
+          "source_bucket": "8",
+          "loot": [
+            "Gnoll Hide Tome"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Tesch Val Deval'Nmak",
+          "level": 39,
+          "zone": "Splitpaw",
+          "source_bucket": "8",
+          "loot": [
+            "Kicsh Der Pavz",
+            "Thick Amber Potion"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Tesch Val Kadvem",
+          "level": 39,
+          "zone": "Splitpaw",
+          "source_bucket": "8",
+          "loot": [
+            "Vacra Av Svim"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a reanimated hand",
+          "level": 40,
+          "zone": "Lower Guk",
+          "source_bucket": "8",
+          "loot": [
+            "Adamantite Band",
+            "Serpentine Bracer"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "an ancient cyclops",
+          "level": 40,
+          "zone": "Ocean of Tears",
+          "source_bucket": "8",
+          "loot": [
+            "Ring of the Ancients"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Petrifin",
+          "level": 40,
+          "zone": "Rathe Mountains",
+          "source_bucket": "8",
+          "loot": [
+            "Eye of Petrifin",
+            "Granite Bracer"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a kobold priest",
+          "level": 40,
+          "zone": "SolB (Nag Lair)",
+          "source_bucket": "8",
+          "loot": [
+            "Carnal Pauldrons",
+            "Mithril Breastplate"
+          ],
+          "expansion": "Classic"
+        }
+      ],
+      "loot_pool": [
+        "Adamantite Band",
+        "Adamantite Epaulets",
+        "Amethyst Bracelet",
+        "Bladed Thulian Claws",
+        "Braided Cinch Cord",
+        "Carnal Pauldrons",
+        "Chestplate of the Dark Flame",
+        "Dark Reaver",
+        "Devlas Ilkvel",
+        "Diamondine Earring",
+        "Eye of Petrifin",
+        "Gilded Cloth",
+        "Glowing Iron Pike",
+        "Gnoll Hide Tome",
+        "Granite Bracer",
+        "Kicsh Der Pavz",
+        "Light Burlap Sack",
+        "Lizard Blood Potion",
+        "Minotaur Hero Shackles",
+        "Mithril Breastplate",
+        "Mortificator Staff",
+        "Painbringer",
+        "Petrified Erudite Heart Amulet",
+        "Platinum Skull Ring",
+        "Ravenscale Boots",
+        "Ravenscale Chestguard",
+        "Ring of the Ancients",
+        "Rubicite Boots",
+        "Rubicite Breastplate",
+        "Runed Cowl",
+        "Serpentine Bracer",
+        "Shield of the Slain Unicorn",
+        "Silver-Plated Leggings",
+        "Staff of Writhing",
+        "Stiletto of the Bloodclaw",
+        "Syythrak Hide Vest",
+        "Tesch Val Sinisch",
+        "Thick Amber Potion",
+        "Thick Banded Belt",
+        "Vacra Av Svim",
+        "White Gold Necklace",
+        "Widowmistress Hair"
+      ],
+      "zones": [
+        "Cazic-Thule 1.0",
+        "Lower Guk",
+        "Mistmoore",
+        "Najena",
+        "Ocean of Tears",
+        "Rathe Mountains",
+        "SolB (Nag Lair)",
+        "Splitpaw",
+        "Steamfont"
+      ],
+      "source_buckets_included": [
+        "8"
+      ],
+      "mob_count": 22,
+      "loot_count": 42,
+      "zone_count": 9,
+      "expansion": "Classic"
+    },
+    {
+      "bucket": 9,
+      "level_range": "41-45",
+      "mobs": [
+        {
+          "name": "a fierce impaler",
+          "level": 42,
+          "zone": "Kedge Keep",
+          "source_bucket": "9",
+          "loot": [
+            "Darksea Harpoon",
+            "Gloomwater Harpoon"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a frenzied cauldron shark",
+          "level": 42,
+          "zone": "Kedge Keep",
+          "source_bucket": "9",
+          "loot": [
+            "Abalone Gorget",
+            "Shark Tooth"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a frenzied ghoul",
+          "level": 42,
+          "zone": "Lower Guk",
+          "source_bucket": "9",
+          "loot": [
+            "Flowing Black Silk Sash",
+            "Moonstone Ring"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a froglok crusader",
+          "level": 42,
+          "zone": "Lower Guk",
+          "source_bucket": "9",
+          "loot": [
+            "Mithril-Runed Tunic",
+            "Runed Falchion"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a ghoul sentinel",
+          "level": 42,
+          "zone": "Lower Guk",
+          "source_bucket": "9",
+          "loot": [
+            "Brigandine Tunic",
+            "Dark Mail Gauntlets"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a death beetle",
+          "level": 42,
+          "zone": "SolB (Nag Lair)",
+          "source_bucket": "9",
+          "loot": [
+            "Black Chitin leggings",
+            "Death Scarab Gland"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a kobold king",
+          "level": 42,
+          "zone": "SolB (Nag Lair)",
+          "source_bucket": "9",
+          "loot": [
+            "Blackened Mithril Boots",
+            "Fleshripper",
+            "Runed Mithril bracer"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a froglok herbalist",
+          "level": 43,
+          "zone": "Lower Guk",
+          "source_bucket": "9",
+          "loot": [
+            "Mithril Frog Totem",
+            "Shimmering White Shroud"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Oculys Ogrefiend",
+          "level": 44,
+          "zone": "Rathe Mountains",
+          "source_bucket": "9",
+          "loot": [
+            "Totemic Boots",
+            "Totemic Bracers",
+            "Totemic Breastplate",
+            "Totemic Cloak",
+            "Totemic Gauntlets",
+            "Totemic Greaves",
+            "Totemic Helm",
+            "Totemic Vambraces"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a noxious spider",
+          "level": 44,
+          "zone": "SolB (Nag Lair)",
+          "source_bucket": "9",
+          "loot": [
+            "Golden Chitin Bracer",
+            "Green Silken Drape"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a ferocious hammerhead",
+          "level": 45,
+          "zone": "Kedge Keep",
+          "source_bucket": "9",
+          "loot": [
+            "Driftwood Treasure Chest",
+            "Wand of Shadow"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a froglok tactician",
+          "level": 45,
+          "zone": "Lower Guk",
+          "source_bucket": "9",
+          "loot": [
+            "Black Tome with Silver Runes",
+            "Platinum Tiara"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "the ghoul arch magus",
+          "level": 45,
+          "zone": "Lower Guk",
+          "source_bucket": "9",
+          "loot": [
+            "Shining Metallic Robes",
+            "Silversilk Leggings"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a stone spider",
+          "level": 45,
+          "zone": "SolB (Nag Lair)",
+          "source_bucket": "9",
+          "loot": [
+            "Brown Chitin Protector",
+            "Crystalline Orb"
+          ],
+          "expansion": "Classic"
+        }
+      ],
+      "loot_pool": [
+        "Abalone Gorget",
+        "Black Chitin leggings",
+        "Black Tome with Silver Runes",
+        "Blackened Mithril Boots",
+        "Brigandine Tunic",
+        "Brown Chitin Protector",
+        "Crystalline Orb",
+        "Dark Mail Gauntlets",
+        "Darksea Harpoon",
+        "Death Scarab Gland",
+        "Driftwood Treasure Chest",
+        "Fleshripper",
+        "Flowing Black Silk Sash",
+        "Gloomwater Harpoon",
+        "Golden Chitin Bracer",
+        "Green Silken Drape",
+        "Mithril Frog Totem",
+        "Mithril-Runed Tunic",
+        "Moonstone Ring",
+        "Platinum Tiara",
+        "Runed Falchion",
+        "Runed Mithril bracer",
+        "Shark Tooth",
+        "Shimmering White Shroud",
+        "Shining Metallic Robes",
+        "Silversilk Leggings",
+        "Totemic Boots",
+        "Totemic Bracers",
+        "Totemic Breastplate",
+        "Totemic Cloak",
+        "Totemic Gauntlets",
+        "Totemic Greaves",
+        "Totemic Helm",
+        "Totemic Vambraces",
+        "Wand of Shadow"
+      ],
+      "zones": [
+        "Kedge Keep",
+        "Lower Guk",
+        "Rathe Mountains",
+        "SolB (Nag Lair)"
+      ],
+      "source_buckets_included": [
+        "9"
+      ],
+      "mob_count": 14,
+      "loot_count": 35,
+      "zone_count": 4,
+      "expansion": "Classic"
+    },
+    {
+      "bucket": 10,
+      "level_range": "46-50",
+      "mobs": [
+        {
+          "name": "Coralyn Kelpmaiden",
+          "level": 46,
+          "zone": "Kedge Keep",
+          "source_bucket": "10",
+          "loot": [
+            "Sharkbone Warhammer",
+            "Sharkskin Drum"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Shellara Ebbhunter",
+          "level": 46,
+          "zone": "Kedge Keep",
+          "source_bucket": "10",
+          "loot": [
+            "Gloomwater Arrow",
+            "Pearlescent Mask"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "an injured polar bear",
+          "level": 46,
+          "zone": "Permafrost",
+          "source_bucket": "10",
+          "loot": [
+            "Barbarian Hunting Spear"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a seahorse matriarch",
+          "level": 47,
+          "zone": "Kedge Keep",
+          "source_bucket": "10",
+          "loot": [
+            "Rod of Health",
+            "Shield of Prexus"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "a seahorse patriarch",
+          "level": 47,
+          "zone": "Kedge Keep",
+          "source_bucket": "10",
+          "loot": [
+            "Seahorse Scale Cloak",
+            "Wand of Ice"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "the froglok king",
+          "level": 47,
+          "zone": "Lower Guk",
+          "source_bucket": "10",
+          "loot": [
+            "Crown of the Froglok Kings",
+            "Mithril Two-Handed Sword"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "the ghoul lord",
+          "level": 47,
+          "zone": "Lower Guk",
+          "source_bucket": "10",
+          "loot": [
+            "Scalp of the Ghoul Lord",
+            "Short Sword of the Ykesha",
+            "Skull-Shaped Barbute"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Cauldronboil",
+          "level": 49,
+          "zone": "Kedge Keep",
+          "source_bucket": "10",
+          "loot": [
+            "Kedgemail Gauntlets",
+            "Sharkjaw Cutlass"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Undertow",
+          "level": 49,
+          "zone": "Kedge Keep",
+          "source_bucket": "10",
+          "loot": [
+            "Blazing Wand",
+            "Squallsurge Shawl"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "bejeweled elemental",
+          "level": 49,
+          "zone": "The Hole 1.0",
+          "source_bucket": "10",
+          "loot": [
+            "Loam Encrusted Sleeves"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Gibartik",
+          "level": 49,
+          "zone": "The Hole 1.0",
+          "source_bucket": "10",
+          "loot": [
+            "Loam Encrusted Sash"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "muck covered elemental",
+          "level": 49,
+          "zone": "The Hole 1.0",
+          "source_bucket": "10",
+          "loot": [
+            "Loam Encrusted Bracelet"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Rocksoul",
+          "level": 49,
+          "zone": "The Hole 1.0",
+          "source_bucket": "10",
+          "loot": [
+            "Loam Encrusted Cap"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Stonegrinder Minion",
+          "level": 49,
+          "zone": "The Hole 1.0",
+          "source_bucket": "10",
+          "loot": [
+            "Loam Encrusted Pantaloons"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Stonesoul the Unmoving",
+          "level": 49,
+          "zone": "The Hole 1.0",
+          "source_bucket": "10",
+          "loot": [
+            "Loam Encrusted Cloak"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Dark Assassin",
+          "level": 50,
+          "zone": "Everfrost",
+          "source_bucket": "10",
+          "loot": [
+            "Bloody Dirk",
+            "Bloody Mantle"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Efreeti Lord Djarn",
+          "level": 50,
+          "zone": "SolB (Nag Lair)",
+          "source_bucket": "10",
+          "loot": [
+            "Djarn's Amethyst Ring",
+            "Golden Efreeti Boots"
+          ],
+          "expansion": "Classic"
+        }
+      ],
+      "loot_pool": [
+        "Barbarian Hunting Spear",
+        "Blazing Wand",
+        "Bloody Dirk",
+        "Bloody Mantle",
+        "Crown of the Froglok Kings",
+        "Djarn's Amethyst Ring",
+        "Gloomwater Arrow",
+        "Golden Efreeti Boots",
+        "Kedgemail Gauntlets",
+        "Loam Encrusted Bracelet",
+        "Loam Encrusted Cap",
+        "Loam Encrusted Cloak",
+        "Loam Encrusted Pantaloons",
+        "Loam Encrusted Sash",
+        "Loam Encrusted Sleeves",
+        "Mithril Two-Handed Sword",
+        "Pearlescent Mask",
+        "Rod of Health",
+        "Scalp of the Ghoul Lord",
+        "Seahorse Scale Cloak",
+        "Sharkbone Warhammer",
+        "Sharkjaw Cutlass",
+        "Sharkskin Drum",
+        "Shield of Prexus",
+        "Short Sword of the Ykesha",
+        "Skull-Shaped Barbute",
+        "Squallsurge Shawl",
+        "Wand of Ice"
+      ],
+      "zones": [
+        "Everfrost",
+        "Kedge Keep",
+        "Lower Guk",
+        "Permafrost",
+        "SolB (Nag Lair)",
+        "The Hole 1.0"
+      ],
+      "source_buckets_included": [
+        "10"
+      ],
+      "mob_count": 17,
+      "loot_count": 28,
+      "zone_count": 6,
+      "expansion": "Classic"
+    },
+    {
+      "bucket": 11,
+      "level_range": "51-55",
+      "mobs": [
+        {
+          "name": "Magus Rokyl",
+          "level": 51,
+          "zone": "SolB (Nag Lair)",
+          "source_bucket": "11",
+          "loot": [
+            "Polished Mithril Mask",
+            "Rokyls Channelling Crystal"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Cazel",
+          "level": 51,
+          "zone": "South Ro",
+          "source_bucket": "11",
+          "loot": [
+            "Spoon"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Commander Yarik",
+          "level": 51,
+          "zone": "The Hole 1.0",
+          "source_bucket": "11",
+          "loot": [
+            "Withered Leather Skullcap"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Initiate Sirlis",
+          "level": 51,
+          "zone": "The Hole 1.0",
+          "source_bucket": "11",
+          "loot": [
+            "Withered Leather Leggings"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Irslak the Wretched",
+          "level": 51,
+          "zone": "The Hole 1.0",
+          "source_bucket": "11",
+          "loot": [
+            "Withered Leather Wristbands"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Niltoth the Unholy",
+          "level": 51,
+          "zone": "The Hole 1.0",
+          "source_bucket": "11",
+          "loot": [
+            "Withered Leather Gloves"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Ulrik the Devout",
+          "level": 51,
+          "zone": "The Hole 1.0",
+          "source_bucket": "11",
+          "loot": [
+            "Withered Leather Gorget"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "King Tranix",
+          "level": 52,
+          "zone": "SolB (Nag Lair)",
+          "source_bucket": "11",
+          "loot": [
+            "Crown of King Tranix",
+            "Polished Mithril Torque"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Warlord Skarlon",
+          "level": 53,
+          "zone": "SolB (Nag Lair)",
+          "source_bucket": "11",
+          "loot": [
+            "Mithril Greaves",
+            "Mithril Vambraces",
+            "Razing Sword of Skarlon"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Retseth Tretse",
+          "level": 53,
+          "zone": "The Hole 1.0",
+          "source_bucket": "11",
+          "loot": [
+            "Empyran Jerkin",
+            "Essence of Earth",
+            "Idol of the Underking",
+            "Mudman Enforcer",
+            "Stonemelder's Band"
+          ],
+          "expansion": "Classic"
+        },
+        {
+          "name": "Slizik the Mighty",
+          "level": 54,
+          "zone": "The Hole 1.0",
+          "source_bucket": "11",
+          "loot": [
+            "Idol of the Underking",
+            "Smoldering Brand"
+          ],
+          "expansion": "Classic"
+        }
+      ],
+      "loot_pool": [
+        "Crown of King Tranix",
+        "Empyran Jerkin",
+        "Essence of Earth",
+        "Idol of the Underking",
+        "Mithril Greaves",
+        "Mithril Vambraces",
+        "Mudman Enforcer",
+        "Polished Mithril Mask",
+        "Polished Mithril Torque",
+        "Razing Sword of Skarlon",
+        "Rokyls Channelling Crystal",
+        "Smoldering Brand",
+        "Spoon",
+        "Stonemelder's Band",
+        "Withered Leather Gloves",
+        "Withered Leather Gorget",
+        "Withered Leather Leggings",
+        "Withered Leather Skullcap",
+        "Withered Leather Wristbands"
+      ],
+      "zones": [
+        "SolB (Nag Lair)",
+        "South Ro",
+        "The Hole 1.0"
+      ],
+      "source_buckets_included": [
+        "11"
+      ],
+      "mob_count": 11,
+      "loot_count": 19,
+      "zone_count": 3,
+      "expansion": "Classic"
+    }
+  ]
+}

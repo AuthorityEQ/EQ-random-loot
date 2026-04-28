@@ -1,0 +1,7 @@
+Set-Location : A positional parameter cannot be found that accepts argument 'stuff'.
+At line:1 char:33
++ $env:ZAM_REQUEST_DELAY_MS=1500; cd C:\frostreaver stuff; npm run enri ...
++                                 ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+ 

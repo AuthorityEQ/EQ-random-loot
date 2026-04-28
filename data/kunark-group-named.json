@@ -1,0 +1,2211 @@
+{
+  "metadata": {
+    "game": "EverQuest",
+    "server": "Frostreaver",
+    "expansion": "Kunark",
+    "content_type": "Group Named",
+    "bucket_rule": "Buckets are grouped by mob level in 5-level ranges for the app: bucket = Math.floor((level - 1) / 5) + 1. Bucket 1=1-5, 2=6-10, 3=11-15, 4=16-20, and so on.",
+    "note": "Each bucket's loot_pool is the deduplicated union of all loot listed on mobs in that 5-level bucket. Individual mob loot is preserved under each mob for verification.",
+    "source": "User-pasted Kunark Group Named list"
+  },
+  "buckets": [
+    {
+      "bucket": 2,
+      "level_range": "6-10",
+      "expansion": "Kunark",
+      "mobs": [
+        {
+          "name": "Scaled Prowler",
+          "level": 10,
+          "zone": "Field of Bone",
+          "expansion": "Kunark",
+          "source_bucket": "2",
+          "loot": [
+            "Scaled Prowler Cloak",
+            "Scaled Prowler Belt"
+          ]
+        }
+      ],
+      "loot_pool": [
+        "Scaled Prowler Belt",
+        "Scaled Prowler Cloak"
+      ],
+      "zones": [
+        "Field of Bone"
+      ],
+      "source_buckets_included": [
+        "2"
+      ],
+      "mob_count": 1,
+      "loot_count": 2,
+      "zone_count": 1
+    },
+    {
+      "bucket": 3,
+      "level_range": "11-15",
+      "expansion": "Kunark",
+      "mobs": [
+        {
+          "name": "Carrion Queen",
+          "level": 13,
+          "zone": "Field of Bone",
+          "expansion": "Kunark",
+          "source_bucket": "3",
+          "loot": [
+            "Carrion Beetle Leggings",
+            "Carrion Queen Liver"
+          ]
+        },
+        {
+          "name": "fingered skeleton",
+          "level": 13,
+          "zone": "Kurn's Tower",
+          "expansion": "Kunark",
+          "source_bucket": "3",
+          "loot": [
+            "Withered 2.5 Inch Finger",
+            "Withered 3 Inch Finger",
+            "Withered 3.1 Inch Finger",
+            "Withered 4 Inch Finger",
+            "Burynai Hide Mask"
+          ]
+        },
+        {
+          "name": "undead crusader",
+          "level": 13,
+          "zone": "Kurn's Tower",
+          "expansion": "Kunark",
+          "source_bucket": "3",
+          "loot": [
+            "Iksar Skull with an 'X'",
+            "Burynai Hide Cloak"
+          ]
+        },
+        {
+          "name": "Scourgetail Scorpion",
+          "level": 14,
+          "zone": "Field of Bone",
+          "expansion": "Kunark",
+          "source_bucket": "3",
+          "loot": [
+            "Scourgetail Whip",
+            "Scourgetail Bracer"
+          ]
+        },
+        {
+          "name": "skeletal cook",
+          "level": 14,
+          "zone": "Kurn's Tower",
+          "expansion": "Kunark",
+          "source_bucket": "3",
+          "loot": [
+            "Shield of Kurn",
+            "Hollow Skull"
+          ]
+        },
+        {
+          "name": "undead jester",
+          "level": 14,
+          "zone": "Kurn's Tower",
+          "expansion": "Kunark",
+          "source_bucket": "3",
+          "loot": [
+            "Iksar Berserker Club"
+          ]
+        }
+      ],
+      "loot_pool": [
+        "Burynai Hide Cloak",
+        "Burynai Hide Mask",
+        "Carrion Beetle Leggings",
+        "Carrion Queen Liver",
+        "Hollow Skull",
+        "Iksar Berserker Club",
+        "Iksar Skull with an 'X'",
+        "Scourgetail Bracer",
+        "Scourgetail Whip",
+        "Shield of Kurn",
+        "Withered 2.5 Inch Finger",
+        "Withered 3 Inch Finger",
+        "Withered 3.1 Inch Finger",
+        "Withered 4 Inch Finger"
+      ],
+      "zones": [
+        "Field of Bone",
+        "Kurn's Tower"
+      ],
+      "source_buckets_included": [
+        "3"
+      ],
+      "mob_count": 6,
+      "loot_count": 14,
+      "zone_count": 2
+    },
+    {
+      "bucket": 4,
+      "level_range": "16-20",
+      "expansion": "Kunark",
+      "mobs": [
+        {
+          "name": "Iksar Dakoit",
+          "level": 18,
+          "zone": "Field of Bone",
+          "expansion": "Kunark",
+          "source_bucket": "4",
+          "loot": [
+            "Iksar Dakoit Head",
+            "Dakoit Coin Purse"
+          ]
+        },
+        {
+          "name": "lead explorer",
+          "level": 19,
+          "zone": "Lake of Ill Omen",
+          "expansion": "Kunark",
+          "source_bucket": "4",
+          "loot": [
+            "Explorer Survival Knife",
+            "Explorer's Locket"
+          ]
+        },
+        {
+          "name": "Bargynn",
+          "level": 20,
+          "zone": "Kurn's Tower",
+          "expansion": "Kunark",
+          "source_bucket": "4",
+          "loot": [
+            "Bargynn's Digger",
+            "Bargynn's Torch"
+          ]
+        }
+      ],
+      "loot_pool": [
+        "Bargynn's Digger",
+        "Bargynn's Torch",
+        "Dakoit Coin Purse",
+        "Explorer Survival Knife",
+        "Explorer's Locket",
+        "Iksar Dakoit Head"
+      ],
+      "zones": [
+        "Field of Bone",
+        "Kurn's Tower",
+        "Lake of Ill Omen"
+      ],
+      "source_buckets_included": [
+        "4"
+      ],
+      "mob_count": 3,
+      "loot_count": 6,
+      "zone_count": 3
+    },
+    {
+      "bucket": 5,
+      "level_range": "21-25",
+      "expansion": "Kunark",
+      "mobs": [
+        {
+          "name": "Burynai Cutter",
+          "level": 21,
+          "zone": "Field of Bone",
+          "expansion": "Kunark",
+          "source_bucket": "5",
+          "loot": [
+            "Blockcutter Gloves",
+            "Polished Stone Anklet"
+          ]
+        },
+        {
+          "name": "spectral crusader",
+          "level": 24,
+          "zone": "Dalnir",
+          "expansion": "Kunark",
+          "source_bucket": "5",
+          "loot": [
+            "Bamboo Bo Stick",
+            "Tattered Arm Wrappings"
+          ]
+        },
+        {
+          "name": "Ugrak da Raider",
+          "level": 24,
+          "zone": "Timorous Deep",
+          "expansion": "Kunark",
+          "source_bucket": "5",
+          "loot": [
+            "Dark Rust Boots",
+            "Dark Rust Bracer"
+          ]
+        }
+      ],
+      "loot_pool": [
+        "Bamboo Bo Stick",
+        "Blockcutter Gloves",
+        "Dark Rust Boots",
+        "Dark Rust Bracer",
+        "Polished Stone Anklet",
+        "Tattered Arm Wrappings"
+      ],
+      "zones": [
+        "Dalnir",
+        "Field of Bone",
+        "Timorous Deep"
+      ],
+      "source_buckets_included": [
+        "5"
+      ],
+      "mob_count": 3,
+      "loot_count": 6,
+      "zone_count": 3
+    },
+    {
+      "bucket": 6,
+      "level_range": "26-30",
+      "expansion": "Kunark",
+      "mobs": [
+        {
+          "name": "coerced crusader",
+          "level": 26,
+          "zone": "Dalnir",
+          "expansion": "Kunark",
+          "source_bucket": "6",
+          "loot": [
+            "Elliptical Veil",
+            "Greenwood Bo Stick"
+          ]
+        },
+        {
+          "name": "coerced penkeeper",
+          "level": 27,
+          "zone": "Dalnir",
+          "expansion": "Kunark",
+          "source_bucket": "6",
+          "loot": [
+            "Nickel Key",
+            "Sarnak Enforcer"
+          ]
+        },
+        {
+          "name": "undead blacksmith",
+          "level": 27,
+          "zone": "Dalnir",
+          "expansion": "Kunark",
+          "source_bucket": "6",
+          "loot": [
+            "Forge Hammer of Dalnir",
+            "Sarnak Enforcer",
+            "Tattered Leg Wrappings"
+          ]
+        },
+        {
+          "name": "lumpy goo",
+          "level": 28,
+          "zone": "Dalnir",
+          "expansion": "Kunark",
+          "source_bucket": "6",
+          "loot": [
+            "Two Handed Practice Sword",
+            "Human Skull",
+            "Grave Sandals"
+          ]
+        },
+        {
+          "name": "coerced revenant",
+          "level": 29,
+          "zone": "Dalnir",
+          "expansion": "Kunark",
+          "source_bucket": "6",
+          "loot": [
+            "Defiled Drape of the Brood",
+            "Tattered Tomb Shroud",
+            "Rod Segment I",
+            "Wand of Pain"
+          ]
+        },
+        {
+          "name": "sly kly imprecator",
+          "level": 30,
+          "zone": "Dalnir",
+          "expansion": "Kunark",
+          "source_bucket": "6",
+          "loot": [
+            "Jagged Metal Shard",
+            "Ancient Coin",
+            "Bo Stick",
+            "Rod Segment II"
+          ]
+        }
+      ],
+      "loot_pool": [
+        "Ancient Coin",
+        "Bo Stick",
+        "Defiled Drape of the Brood",
+        "Elliptical Veil",
+        "Forge Hammer of Dalnir",
+        "Grave Sandals",
+        "Greenwood Bo Stick",
+        "Human Skull",
+        "Jagged Metal Shard",
+        "Nickel Key",
+        "Rod Segment I",
+        "Rod Segment II",
+        "Sarnak Enforcer",
+        "Tattered Leg Wrappings",
+        "Tattered Tomb Shroud",
+        "Two Handed Practice Sword",
+        "Wand of Pain"
+      ],
+      "zones": [
+        "Dalnir"
+      ],
+      "source_buckets_included": [
+        "6"
+      ],
+      "mob_count": 6,
+      "loot_count": 17,
+      "zone_count": 1
+    },
+    {
+      "bucket": 7,
+      "level_range": "31-35",
+      "expansion": "Kunark",
+      "mobs": [
+        {
+          "name": "wry kly imprecator",
+          "level": 31,
+          "zone": "Dalnir",
+          "expansion": "Kunark",
+          "source_bucket": "7",
+          "loot": [
+            "Robe of Dalnir",
+            "Ancient Coin",
+            "Bo Stick",
+            "Dagger Hilt"
+          ]
+        },
+        {
+          "name": "shy kly imprecator",
+          "level": 33,
+          "zone": "Dalnir",
+          "expansion": "Kunark",
+          "source_bucket": "7",
+          "loot": [
+            "Sharp Metal Shard",
+            "Ancient Coin",
+            "Bo Stick"
+          ]
+        },
+        {
+          "name": "goblin soothsayer",
+          "level": 33,
+          "zone": "Droga",
+          "expansion": "Kunark",
+          "source_bucket": "7",
+          "loot": [
+            "Choker of Majdd",
+            "Eye of Melnor"
+          ]
+        },
+        {
+          "name": "goblin warder",
+          "level": 33,
+          "zone": "Droga",
+          "expansion": "Kunark",
+          "source_bucket": "7",
+          "loot": [
+            "Shroud of Nature",
+            "Opal"
+          ]
+        },
+        {
+          "name": "Grachnist the Destroyer",
+          "level": 33,
+          "zone": "Warslicks Woods",
+          "expansion": "Kunark",
+          "source_bucket": "7",
+          "loot": [
+            "Iksar Scaled Gloves",
+            "Totem of the Warrior Spirit",
+            "Earring of Grachnist",
+            "Shrunken Goblin Skull Earring",
+            "Grachnist's Head"
+          ]
+        },
+        {
+          "name": "Iksar Bandit Lord",
+          "level": 33,
+          "zone": "Warslicks Woods",
+          "expansion": "Kunark",
+          "source_bucket": "7",
+          "loot": [
+            "Bracer of Scavenging",
+            "Forsaken Pariah Mask"
+          ]
+        },
+        {
+          "name": "goblin fanatic",
+          "level": 34,
+          "zone": "Droga",
+          "expansion": "Kunark",
+          "source_bucket": "7",
+          "loot": [
+            "Tome of the Eternal",
+            "Stone of Morid",
+            "Book of the Rings"
+          ]
+        },
+        {
+          "name": "failed crypt raider",
+          "level": 34,
+          "zone": "Kaesora",
+          "expansion": "Kunark",
+          "source_bucket": "7",
+          "loot": [
+            "Ancient Coin",
+            "Illegible Scroll",
+            "Spear of Mortification",
+            "Kylong Hunting Knife"
+          ]
+        },
+        {
+          "name": "Soothsayer Dregzak",
+          "level": 35,
+          "zone": "Droga",
+          "expansion": "Kunark",
+          "source_bucket": "7",
+          "loot": [
+            "Mantle of Mirth",
+            "Earring of Essence",
+            "Bracer of Vajeen"
+          ]
+        },
+        {
+          "name": "hungered ravener",
+          "level": 35,
+          "zone": "Kaesora",
+          "expansion": "Kunark",
+          "source_bucket": "7",
+          "loot": [
+            "Icy Blade",
+            "Luminary Two Handed Sword",
+            "Truesilver Mail Bracelets"
+          ]
+        },
+        {
+          "name": "spectral librarian",
+          "level": 35,
+          "zone": "Kaesora",
+          "expansion": "Kunark",
+          "source_bucket": "7",
+          "loot": [
+            "Spectral Shroud",
+            "Spirit Tome",
+            "Sage's Battle Staff"
+          ]
+        },
+        {
+          "name": "tortured librarian",
+          "level": 35,
+          "zone": "Kaesora",
+          "expansion": "Kunark",
+          "source_bucket": "7",
+          "loot": [
+            "Kunzar Mantle",
+            "Spirit Tome",
+            "Sage's Battle Staff"
+          ]
+        }
+      ],
+      "loot_pool": [
+        "Ancient Coin",
+        "Bo Stick",
+        "Book of the Rings",
+        "Bracer of Scavenging",
+        "Bracer of Vajeen",
+        "Choker of Majdd",
+        "Dagger Hilt",
+        "Earring of Essence",
+        "Earring of Grachnist",
+        "Eye of Melnor",
+        "Forsaken Pariah Mask",
+        "Grachnist's Head",
+        "Icy Blade",
+        "Iksar Scaled Gloves",
+        "Illegible Scroll",
+        "Kunzar Mantle",
+        "Kylong Hunting Knife",
+        "Luminary Two Handed Sword",
+        "Mantle of Mirth",
+        "Opal",
+        "Robe of Dalnir",
+        "Sage's Battle Staff",
+        "Sharp Metal Shard",
+        "Shroud of Nature",
+        "Shrunken Goblin Skull Earring",
+        "Spear of Mortification",
+        "Spectral Shroud",
+        "Spirit Tome",
+        "Stone of Morid",
+        "Tome of the Eternal",
+        "Totem of the Warrior Spirit",
+        "Truesilver Mail Bracelets"
+      ],
+      "zones": [
+        "Dalnir",
+        "Droga",
+        "Kaesora",
+        "Warslicks Woods"
+      ],
+      "source_buckets_included": [
+        "7"
+      ],
+      "mob_count": 12,
+      "loot_count": 32,
+      "zone_count": 4
+    },
+    {
+      "bucket": 8,
+      "level_range": "36-40",
+      "expansion": "Kunark",
+      "mobs": [
+        {
+          "name": "goblin bodyguard",
+          "level": 36,
+          "zone": "Droga",
+          "expansion": "Kunark",
+          "source_bucket": "8",
+          "loot": [
+            "Circlet of Shadow",
+            "Whip of Strangulation",
+            "Gauntlets of Potence"
+          ]
+        },
+        {
+          "name": "frenzied strathbone",
+          "level": 36,
+          "zone": "Kaesora",
+          "expansion": "Kunark",
+          "source_bucket": "8",
+          "loot": [
+            "Mask of the Eight Eyes",
+            "Truesilver Mail Sleeves"
+          ]
+        },
+        {
+          "name": "maddened burynai",
+          "level": 37,
+          "zone": "Droga",
+          "expansion": "Kunark",
+          "source_bucket": "8",
+          "loot": [
+            "Burynai Legion Gi",
+            "Mountain Death Belt"
+          ]
+        },
+        {
+          "name": "reaver of Xalgoz",
+          "level": 37,
+          "zone": "Kaesora",
+          "expansion": "Kunark",
+          "source_bucket": "8",
+          "loot": [
+            "Deathwatch Sword",
+            "Rod of Battle",
+            "Truesilver Mail Pants",
+            "Truesilver Mail Shirt"
+          ]
+        },
+        {
+          "name": "strathbone runelord",
+          "level": 37,
+          "zone": "Kaesora",
+          "expansion": "Kunark",
+          "source_bucket": "8",
+          "loot": [
+            "Blade of Fiery Lamentations",
+            "Dagger of Frost",
+            "Kylong War Dagger"
+          ]
+        },
+        {
+          "name": "Chief RokGus",
+          "level": 38,
+          "zone": "Droga",
+          "expansion": "Kunark",
+          "source_bucket": "8",
+          "loot": [
+            "Eye of RokGus",
+            "Essence of Dol",
+            "RukGus' Sticker",
+            "Flaxen Lock of Hair",
+            "Idol of the Thorned"
+          ]
+        },
+        {
+          "name": "Xalgoz",
+          "level": 40,
+          "zone": "Kaesora",
+          "expansion": "Kunark",
+          "source_bucket": "8",
+          "loot": [
+            "Shrunken Iksar Skull Necklace",
+            "Xalgozian Fang",
+            "Blade of Xalgoz",
+            "Staff of the Dreaded Gaze"
+          ]
+        },
+        {
+          "name": "Halara",
+          "level": 40,
+          "zone": "Timorous Deep",
+          "expansion": "Kunark",
+          "source_bucket": "8",
+          "loot": [
+            "Grey Fur Cape",
+            "Fur Lined Mask"
+          ]
+        }
+      ],
+      "loot_pool": [
+        "Blade of Fiery Lamentations",
+        "Blade of Xalgoz",
+        "Burynai Legion Gi",
+        "Circlet of Shadow",
+        "Dagger of Frost",
+        "Deathwatch Sword",
+        "Essence of Dol",
+        "Eye of RokGus",
+        "Flaxen Lock of Hair",
+        "Fur Lined Mask",
+        "Gauntlets of Potence",
+        "Grey Fur Cape",
+        "Idol of the Thorned",
+        "Kylong War Dagger",
+        "Mask of the Eight Eyes",
+        "Mountain Death Belt",
+        "Rod of Battle",
+        "RukGus' Sticker",
+        "Shrunken Iksar Skull Necklace",
+        "Staff of the Dreaded Gaze",
+        "Truesilver Mail Pants",
+        "Truesilver Mail Shirt",
+        "Truesilver Mail Sleeves",
+        "Whip of Strangulation",
+        "Xalgozian Fang"
+      ],
+      "zones": [
+        "Droga",
+        "Kaesora",
+        "Timorous Deep"
+      ],
+      "source_buckets_included": [
+        "8"
+      ],
+      "mob_count": 8,
+      "loot_count": 25,
+      "zone_count": 3
+    },
+    {
+      "bucket": 9,
+      "level_range": "41-45",
+      "expansion": "Kunark",
+      "mobs": [
+        {
+          "name": "The Kly",
+          "level": 42,
+          "zone": "Dalnir",
+          "expansion": "Kunark",
+          "source_bucket": "9",
+          "loot": [
+            "Sarnak Headguard"
+          ]
+        },
+        {
+          "name": "wraithbone champion",
+          "level": 42,
+          "zone": "Dreadlands",
+          "expansion": "Kunark",
+          "source_bucket": "9",
+          "loot": [
+            "Wraith Bone Hammer"
+          ]
+        },
+        {
+          "name": "skeletal warlord",
+          "level": 42,
+          "zone": "Karnor's Castle",
+          "expansion": "Kunark",
+          "source_bucket": "9",
+          "loot": [
+            "Jarsath Scale Wrist Guards",
+            "Greyish Bone Chips",
+            "Dwarven Sap",
+            "Deepwater Boots",
+            "Tranquil Staff"
+          ]
+        },
+        {
+          "name": "Champion Arlek",
+          "level": 45,
+          "zone": "Trakanon's Teeth",
+          "expansion": "Kunark",
+          "source_bucket": "9",
+          "loot": [
+            "Knobbed Warclub"
+          ]
+        },
+        {
+          "name": "Crusader Zoglic",
+          "level": 45,
+          "zone": "Trakanon's Teeth",
+          "expansion": "Kunark",
+          "source_bucket": "9",
+          "loot": [
+            "Ceremonial Iksar Chestplate"
+          ]
+        },
+        {
+          "name": "Keeper Lasnik",
+          "level": 45,
+          "zone": "Trakanon's Teeth",
+          "expansion": "Kunark",
+          "source_bucket": "9",
+          "loot": [
+            "Lasnik's Staff"
+          ]
+        },
+        {
+          "name": "Squire Glik",
+          "level": 45,
+          "zone": "Trakanon's Teeth",
+          "expansion": "Kunark",
+          "source_bucket": "9",
+          "loot": [
+            "Gleaming Short Sword"
+          ]
+        },
+        {
+          "name": "Titail Sinok",
+          "level": 45,
+          "zone": "Trakanon's Teeth",
+          "expansion": "Kunark",
+          "source_bucket": "9",
+          "loot": [
+            "Meditative Blanket"
+          ]
+        }
+      ],
+      "loot_pool": [
+        "Ceremonial Iksar Chestplate",
+        "Deepwater Boots",
+        "Dwarven Sap",
+        "Gleaming Short Sword",
+        "Greyish Bone Chips",
+        "Jarsath Scale Wrist Guards",
+        "Knobbed Warclub",
+        "Lasnik's Staff",
+        "Meditative Blanket",
+        "Sarnak Headguard",
+        "Tranquil Staff",
+        "Wraith Bone Hammer"
+      ],
+      "zones": [
+        "Dalnir",
+        "Dreadlands",
+        "Karnor's Castle",
+        "Trakanon's Teeth"
+      ],
+      "source_buckets_included": [
+        "9"
+      ],
+      "mob_count": 8,
+      "loot_count": 12,
+      "zone_count": 4
+    },
+    {
+      "bucket": 10,
+      "level_range": "46-50",
+      "expansion": "Kunark",
+      "mobs": [
+        {
+          "name": "mountain giant patriarch",
+          "level": 46,
+          "zone": "Dreadlands",
+          "expansion": "Kunark",
+          "source_bucket": "10",
+          "loot": [
+            "Giant Sized Monocle",
+            "Tree Weave"
+          ]
+        },
+        {
+          "name": "sentry of Sathir",
+          "level": 46,
+          "zone": "Karnor's Castle",
+          "expansion": "Kunark",
+          "source_bucket": "10",
+          "loot": [
+            "Jarsath Scale Helm",
+            "Jaundiced Bone Gauntlets",
+            "Swarmcaller",
+            "Bone Amulet of Blade Turning"
+          ]
+        },
+        {
+          "name": "Gorgul Paclock",
+          "level": 47,
+          "zone": "Burning Woods",
+          "expansion": "Kunark",
+          "source_bucket": "10",
+          "loot": [
+            "Tree Weave",
+            "Axe of the Iron Back"
+          ]
+        },
+        {
+          "name": "Korasal Klyseer",
+          "level": 47,
+          "zone": "Burning Woods",
+          "expansion": "Kunark",
+          "source_bucket": "10",
+          "loot": [
+            "Runic Carver"
+          ]
+        },
+        {
+          "name": "Phurzikon",
+          "level": 47,
+          "zone": "Burning Woods",
+          "expansion": "Kunark",
+          "source_bucket": "10",
+          "loot": [
+            "Wurm Scale Coat",
+            "Burning Embers"
+          ]
+        },
+        {
+          "name": "skeletal captain",
+          "level": 47,
+          "zone": "Karnor's Castle",
+          "expansion": "Kunark",
+          "source_bucket": "10",
+          "loot": [
+            "Busted Prayer Beads [Trintle's Prayer Beads]",
+            "Sarnak-Hide Mask",
+            "Skeletal Iksar Talons",
+            "Tolan's Darkwood Gauntlets",
+            "Soul Binder",
+            "Fist of Zek"
+          ]
+        },
+        {
+          "name": "skeletal scryer",
+          "level": 47,
+          "zone": "Karnor's Castle",
+          "expansion": "Kunark",
+          "source_bucket": "10",
+          "loot": [
+            "Jarsath Scale Gauntlets",
+            "Locustlure",
+            "Deepwater Gauntlets",
+            "Jarsath Trident"
+          ]
+        },
+        {
+          "name": "spectral turnkey",
+          "level": 47,
+          "zone": "Karnor's Castle",
+          "expansion": "Kunark",
+          "source_bucket": "10",
+          "loot": [
+            "Jarsath Scale Boots",
+            "Book of Obulus",
+            "Springwood Stave",
+            "Mrylokar's Gauntlets"
+          ]
+        },
+        {
+          "name": "Bloodeye",
+          "level": 47,
+          "zone": "Trakanon's Teeth",
+          "expansion": "Kunark",
+          "source_bucket": "10",
+          "loot": [
+            "Trakanasaur Hide Leggings",
+            "Trakanasaur Hide Tunic"
+          ]
+        },
+        {
+          "name": "dread widow",
+          "level": 48,
+          "zone": "Dreadlands",
+          "expansion": "Kunark",
+          "source_bucket": "10",
+          "loot": [
+            "Drachnid Thyxl"
+          ]
+        },
+        {
+          "name": "caller of Sathir",
+          "level": 48,
+          "zone": "Karnor's Castle",
+          "expansion": "Kunark",
+          "source_bucket": "10",
+          "loot": [
+            "Kunzar Cloak",
+            "Cobalt Boots",
+            "Sionachie's Partisan"
+          ]
+        },
+        {
+          "name": "skeletal berserker",
+          "level": 48,
+          "zone": "Karnor's Castle",
+          "expansion": "Kunark",
+          "source_bucket": "10",
+          "loot": [
+            "Jarsath Scale Chestplate",
+            "Jaundiced Bone Boots",
+            "Deathbringer's Rod"
+          ]
+        },
+        {
+          "name": "Hangman",
+          "level": 48,
+          "zone": "Trakanon's Teeth",
+          "expansion": "Kunark",
+          "source_bucket": "10",
+          "loot": [
+            "Hangman's Noose"
+          ]
+        },
+        {
+          "name": "Klok Denris",
+          "level": 48,
+          "zone": "Trakanon's Teeth",
+          "expansion": "Kunark",
+          "source_bucket": "10",
+          "loot": [
+            "Korzanz Kit'ioukl"
+          ]
+        },
+        {
+          "name": "Sigra",
+          "level": 48,
+          "zone": "Trakanon's Teeth",
+          "expansion": "Kunark",
+          "source_bucket": "10",
+          "loot": [
+            "Silken Cat-Fur Girdle"
+          ]
+        },
+        {
+          "name": "Dread Wraith",
+          "level": 49,
+          "zone": "City of Mist",
+          "expansion": "Kunark",
+          "source_bucket": "10",
+          "loot": [
+            "Ornate Rune Blade"
+          ]
+        },
+        {
+          "name": "Terror Wraith",
+          "level": 49,
+          "zone": "City of Mist",
+          "expansion": "Kunark",
+          "source_bucket": "10",
+          "loot": [
+            "Ornate Rune Shield"
+          ]
+        },
+        {
+          "name": "skeletal caretaker",
+          "level": 49,
+          "zone": "Karnor's Castle",
+          "expansion": "Kunark",
+          "source_bucket": "10",
+          "loot": [
+            "Jarsath Scale Vambraces",
+            "Mrylokar's Gift",
+            "Iksar Berserker Club",
+            "Tolan's Darkwood Boots"
+          ]
+        },
+        {
+          "name": "Gullerback",
+          "level": 50,
+          "zone": "Burning Woods",
+          "expansion": "Kunark",
+          "source_bucket": "10",
+          "loot": [
+            "Tattered Mantle"
+          ]
+        },
+        {
+          "name": "Tzirathk",
+          "level": 50,
+          "zone": "City of Mist",
+          "expansion": "Kunark",
+          "source_bucket": "10",
+          "loot": [
+            "Shimmering Partisan",
+            "Essence of Tzirathk",
+            "Jade Reaver"
+          ]
+        },
+        {
+          "name": "Spectral Soldier",
+          "level": 50,
+          "zone": "Emerald Jungle",
+          "expansion": "Kunark",
+          "source_bucket": "10",
+          "loot": [
+            "Black Steel Defender"
+          ]
+        },
+        {
+          "name": "Crypt Devourer",
+          "level": 50,
+          "zone": "Howling Stones",
+          "expansion": "Kunark",
+          "source_bucket": "10",
+          "loot": [
+            "Obtenebrate Short Sword"
+          ]
+        },
+        {
+          "name": "Crypt Keeper",
+          "level": 50,
+          "zone": "Howling Stones",
+          "expansion": "Kunark",
+          "source_bucket": "10",
+          "loot": [
+            "Sigil of the Calendar",
+            "Siren Scale Robe"
+          ]
+        },
+        {
+          "name": "Golem Master",
+          "level": 50,
+          "zone": "Howling Stones",
+          "expansion": "Kunark",
+          "source_bucket": "10",
+          "loot": [
+            "Fayguard Parrying Dagger"
+          ]
+        },
+        {
+          "name": "Sentient Bile",
+          "level": 50,
+          "zone": "Howling Stones",
+          "expansion": "Kunark",
+          "source_bucket": "10",
+          "loot": [
+            "Blood Point"
+          ]
+        },
+        {
+          "name": "Skeleton Sepulcher",
+          "level": 50,
+          "zone": "Howling Stones",
+          "expansion": "Kunark",
+          "source_bucket": "10",
+          "loot": [
+            "Guardians Mace"
+          ]
+        },
+        {
+          "name": "Spectre Sepulcher",
+          "level": 50,
+          "zone": "Howling Stones",
+          "expansion": "Kunark",
+          "source_bucket": "10",
+          "loot": [
+            "Adamantite Club"
+          ]
+        },
+        {
+          "name": "Hangnail",
+          "level": 50,
+          "zone": "Karnor's Castle",
+          "expansion": "Kunark",
+          "source_bucket": "10",
+          "loot": [
+            "Elder Spiritist's Gauntlets"
+          ]
+        },
+        {
+          "name": "frenzied pox scarab",
+          "level": 50,
+          "zone": "Sebilis",
+          "expansion": "Kunark",
+          "source_bucket": "10",
+          "loot": [
+            "Beetle Stinger",
+            "Deepwater Bracer",
+            "Imbued Fighters Staff",
+            "Shovel"
+          ]
+        },
+        {
+          "name": "froglok ostiary",
+          "level": 50,
+          "zone": "Sebilis",
+          "expansion": "Kunark",
+          "source_bucket": "10",
+          "loot": [
+            "Sebilite Scale Neckguard",
+            "Donal's Vambraces of Mourning",
+            "Sebilite Scale Mantle",
+            "Arbitor's Combine Greatsword"
+          ]
+        },
+        {
+          "name": "Champion Thenrin",
+          "level": 50,
+          "zone": "Trakanon's Teeth",
+          "expansion": "Kunark",
+          "source_bucket": "10",
+          "loot": [
+            "Ghostly Robes"
+          ]
+        },
+        {
+          "name": "Dreadlord Fanrik",
+          "level": 50,
+          "zone": "Trakanon's Teeth",
+          "expansion": "Kunark",
+          "source_bucket": "10",
+          "loot": [
+            "Grim Pauldrons"
+          ]
+        },
+        {
+          "name": "Ebon lotus",
+          "level": 50,
+          "zone": "Trakanon's Teeth",
+          "expansion": "Kunark",
+          "source_bucket": "10",
+          "loot": [
+            "Ropy Tendril"
+          ]
+        },
+        {
+          "name": "Harbinger Dronik",
+          "level": 50,
+          "zone": "Trakanon's Teeth",
+          "expansion": "Kunark",
+          "source_bucket": "10",
+          "loot": [
+            "Iksar Hide Mask"
+          ]
+        },
+        {
+          "name": "Silvermane",
+          "level": 50,
+          "zone": "Trakanon's Teeth",
+          "expansion": "Kunark",
+          "source_bucket": "10",
+          "loot": [
+            "Sabertooth Amulet"
+          ]
+        },
+        {
+          "name": "Trakanasaurus Rex",
+          "level": 50,
+          "zone": "Trakanon's Teeth",
+          "expansion": "Kunark",
+          "source_bucket": "10",
+          "loot": [
+            "Trakasaur's Tooth"
+          ]
+        }
+      ],
+      "loot_pool": [
+        "Adamantite Club",
+        "Arbitor's Combine Greatsword",
+        "Axe of the Iron Back",
+        "Beetle Stinger",
+        "Black Steel Defender",
+        "Blood Point",
+        "Bone Amulet of Blade Turning",
+        "Book of Obulus",
+        "Burning Embers",
+        "Busted Prayer Beads [Trintle's Prayer Beads]",
+        "Cobalt Boots",
+        "Deathbringer's Rod",
+        "Deepwater Bracer",
+        "Deepwater Gauntlets",
+        "Donal's Vambraces of Mourning",
+        "Drachnid Thyxl",
+        "Elder Spiritist's Gauntlets",
+        "Essence of Tzirathk",
+        "Fayguard Parrying Dagger",
+        "Fist of Zek",
+        "Ghostly Robes",
+        "Giant Sized Monocle",
+        "Grim Pauldrons",
+        "Guardians Mace",
+        "Hangman's Noose",
+        "Iksar Berserker Club",
+        "Iksar Hide Mask",
+        "Imbued Fighters Staff",
+        "Jade Reaver",
+        "Jarsath Scale Boots",
+        "Jarsath Scale Chestplate",
+        "Jarsath Scale Gauntlets",
+        "Jarsath Scale Helm",
+        "Jarsath Scale Vambraces",
+        "Jarsath Trident",
+        "Jaundiced Bone Boots",
+        "Jaundiced Bone Gauntlets",
+        "Korzanz Kit'ioukl",
+        "Kunzar Cloak",
+        "Locustlure",
+        "Mrylokar's Gauntlets",
+        "Mrylokar's Gift",
+        "Obtenebrate Short Sword",
+        "Ornate Rune Blade",
+        "Ornate Rune Shield",
+        "Ropy Tendril",
+        "Runic Carver",
+        "Sabertooth Amulet",
+        "Sarnak-Hide Mask",
+        "Sebilite Scale Mantle",
+        "Sebilite Scale Neckguard",
+        "Shimmering Partisan",
+        "Shovel",
+        "Sigil of the Calendar",
+        "Silken Cat-Fur Girdle",
+        "Sionachie's Partisan",
+        "Siren Scale Robe",
+        "Skeletal Iksar Talons",
+        "Soul Binder",
+        "Springwood Stave",
+        "Swarmcaller",
+        "Tattered Mantle",
+        "Tolan's Darkwood Boots",
+        "Tolan's Darkwood Gauntlets",
+        "Trakanasaur Hide Leggings",
+        "Trakanasaur Hide Tunic",
+        "Trakasaur's Tooth",
+        "Tree Weave",
+        "Wurm Scale Coat"
+      ],
+      "zones": [
+        "Burning Woods",
+        "City of Mist",
+        "Dreadlands",
+        "Emerald Jungle",
+        "Howling Stones",
+        "Karnor's Castle",
+        "Sebilis",
+        "Trakanon's Teeth"
+      ],
+      "source_buckets_included": [
+        "10"
+      ],
+      "mob_count": 36,
+      "loot_count": 69,
+      "zone_count": 8
+    },
+    {
+      "bucket": 11,
+      "level_range": "51-55",
+      "expansion": "Kunark",
+      "mobs": [
+        {
+          "name": "Knight of Sathir",
+          "level": 51,
+          "zone": "Karnor's Castle",
+          "expansion": "Kunark",
+          "source_bucket": "11",
+          "loot": [
+            "Sathir's Wand",
+            "Blood Ember Boots",
+            "Oggok Cleaver"
+          ]
+        },
+        {
+          "name": "Observer Aq'touz",
+          "level": 52,
+          "zone": "Chardok",
+          "expansion": "Kunark",
+          "source_bucket": "11",
+          "loot": [
+            "Baton of Royal Stature",
+            "Fancy Velvet Mantle",
+            "Nathsar Bracer"
+          ]
+        },
+        {
+          "name": "Watch Sergeant Riz'oul",
+          "level": 52,
+          "zone": "Chardok",
+          "expansion": "Kunark",
+          "source_bucket": "11",
+          "loot": [
+            "Di'zok Wristsnapper",
+            "Nathsar Vambraces",
+            "Sarnak Hide Boots"
+          ]
+        },
+        {
+          "name": "Embalming Fluid",
+          "level": 52,
+          "zone": "Howling Stones",
+          "expansion": "Kunark",
+          "source_bucket": "11",
+          "loot": [
+            "Hand of the Reaper",
+            "Fingerbone Hoop"
+          ]
+        },
+        {
+          "name": "Skeletal Procurator",
+          "level": 52,
+          "zone": "Howling Stones",
+          "expansion": "Kunark",
+          "source_bucket": "11",
+          "loot": [
+            "Broken Sacrificial Blade",
+            "Mask of Obtenebration"
+          ]
+        },
+        {
+          "name": "Construct of Sathir",
+          "level": 52,
+          "zone": "Karnor's Castle",
+          "expansion": "Kunark",
+          "source_bucket": "11",
+          "loot": [
+            "Helm of Rile",
+            "Blessed Mallet",
+            "Fang Amulet of Calling",
+            "Blood Ember Gauntlets"
+          ]
+        },
+        {
+          "name": "drolvarg warlord",
+          "level": 52,
+          "zone": "Karnor's Castle",
+          "expansion": "Kunark",
+          "source_bucket": "11",
+          "loot": [
+            "Supple Scale Armband",
+            "Petrified Werewolf Skull",
+            "Donal's Boots of Mourning",
+            "Noctivagant Blade",
+            "Harmonic Dagger"
+          ]
+        },
+        {
+          "name": "undead jailer",
+          "level": 52,
+          "zone": "Karnor's Castle",
+          "expansion": "Kunark",
+          "source_bucket": "11",
+          "loot": [
+            "Jarsath Scale Leggings",
+            "Mrylokar's Boots",
+            "Baton of Faith"
+          ]
+        },
+        {
+          "name": "Froggy",
+          "level": 52,
+          "zone": "Sebilis",
+          "expansion": "Kunark",
+          "source_bucket": "11",
+          "loot": [
+            "Singing Steel Helm"
+          ]
+        },
+        {
+          "name": "froglok armorer",
+          "level": 52,
+          "zone": "Sebilis",
+          "expansion": "Kunark",
+          "source_bucket": "11",
+          "loot": [
+            "Singing Steel Bracer"
+          ]
+        },
+        {
+          "name": "froglok armsman",
+          "level": 52,
+          "zone": "Sebilis",
+          "expansion": "Kunark",
+          "source_bucket": "11",
+          "loot": [
+            "Sebilite Scale Leggings",
+            "Truncheon of Doom",
+            "Sebilite Scale Bracelet",
+            "Mrylokar's Helm"
+          ]
+        },
+        {
+          "name": "froglok bartender",
+          "level": 52,
+          "zone": "Sebilis",
+          "expansion": "Kunark",
+          "source_bucket": "11",
+          "loot": [
+            "Sebilite Scale Cape",
+            "Dark Scale Greaves",
+            "Mrylokar's Vambraces",
+            "Sebilite Scale Gloves"
+          ]
+        },
+        {
+          "name": "froglok chef",
+          "level": 52,
+          "zone": "Sebilis",
+          "expansion": "Kunark",
+          "source_bucket": "11",
+          "loot": [
+            "Mrylokar's Bracer",
+            "Sebilite Scale Cap",
+            "Sebilite Scale Vambraces",
+            "Fayguard Bladecatcher"
+          ]
+        },
+        {
+          "name": "froglok repairer",
+          "level": 52,
+          "zone": "Sebilis",
+          "expansion": "Kunark",
+          "source_bucket": "11",
+          "loot": [
+            "Singing Steel Vambraces"
+          ]
+        },
+        {
+          "name": "Captain Di'ouz",
+          "level": 53,
+          "zone": "Chardok",
+          "expansion": "Kunark",
+          "source_bucket": "11",
+          "loot": [
+            "Earring of Woven Bark",
+            "Guard Captain's Mallet",
+            "Bronze Statue of Bathezid"
+          ]
+        },
+        {
+          "name": "Imperial Gravemaster",
+          "level": 53,
+          "zone": "Chardok",
+          "expansion": "Kunark",
+          "source_bucket": "11",
+          "loot": [
+            "Incarnadine Vambraces"
+          ]
+        },
+        {
+          "name": "crypt caretaker",
+          "level": 53,
+          "zone": "Sebilis",
+          "expansion": "Kunark",
+          "source_bucket": "11",
+          "loot": [
+            "Obulus Mantle",
+            "Deepwater Helm"
+          ]
+        },
+        {
+          "name": "froglok pickler",
+          "level": 53,
+          "zone": "Sebilis",
+          "expansion": "Kunark",
+          "source_bucket": "11",
+          "loot": [
+            "Sebilite Scale Coat",
+            "Sebilite Scale Belt",
+            "Donal's Bracer of Mourning",
+            "Zealot's Incarnadine Sword"
+          ]
+        },
+        {
+          "name": "Gruplinort",
+          "level": 53,
+          "zone": "Sebilis",
+          "expansion": "Kunark",
+          "source_bucket": "11",
+          "loot": [
+            "Froglok Bonecaster's Robe",
+            "Elder Spiritist's Bracer"
+          ]
+        },
+        {
+          "name": "necrosis scarab",
+          "level": 53,
+          "zone": "Sebilis",
+          "expansion": "Kunark",
+          "source_bucket": "11",
+          "loot": [
+            "Cane of the Tranquil",
+            "Jaundiced Bone Vambraces",
+            "Crystalline Short Sword"
+          ]
+        },
+        {
+          "name": "sebilite guardian",
+          "level": 53,
+          "zone": "Sebilis",
+          "expansion": "Kunark",
+          "source_bucket": "11",
+          "loot": [
+            "Larrikan's Mask",
+            "Lamentation",
+            "Wind Saber"
+          ]
+        },
+        {
+          "name": "Battle Master Ska'tu",
+          "level": 54,
+          "zone": "Chardok",
+          "expansion": "Kunark",
+          "source_bucket": "11",
+          "loot": [
+            "Nathsar Gauntlets",
+            "Shai'din Revenant Bauble",
+            "Book of the Righteous",
+            "Jeldorin"
+          ]
+        },
+        {
+          "name": "Drill Master Dih'roul",
+          "level": 54,
+          "zone": "Chardok",
+          "expansion": "Kunark",
+          "source_bucket": "11",
+          "loot": [
+            "Etched Steel Baton",
+            "Sarnak Summoner's Dagger",
+            "Sarnak War Bow"
+          ]
+        },
+        {
+          "name": "Grave Master Zo'lun",
+          "level": 54,
+          "zone": "Chardok",
+          "expansion": "Kunark",
+          "source_bucket": "11",
+          "loot": [
+            "Earring of Blazing Energy",
+            "Crypt Master's Conjuring Stone",
+            "Hardened Bone Spaulders",
+            "Engraved Di'Zok Deathbringer"
+          ]
+        },
+        {
+          "name": "Watch Captain Hir'roul",
+          "level": 54,
+          "zone": "Chardok",
+          "expansion": "Kunark",
+          "source_bucket": "11",
+          "loot": [
+            "Earring of Everfount",
+            "Earring of Twisted Leaves",
+            "Jade Inlaid Spaulders"
+          ]
+        },
+        {
+          "name": "Crypt Excavator",
+          "level": 54,
+          "zone": "Howling Stones",
+          "expansion": "Kunark",
+          "source_bucket": "11",
+          "loot": [
+            "Helot Skull Helm"
+          ]
+        },
+        {
+          "name": "Howling Spectre",
+          "level": 54,
+          "zone": "Howling Stones",
+          "expansion": "Kunark",
+          "source_bucket": "11",
+          "loot": [
+            "Rapier of Oriin"
+          ]
+        },
+        {
+          "name": "Reanimated Plaguebone",
+          "level": 54,
+          "zone": "Howling Stones",
+          "expansion": "Kunark",
+          "source_bucket": "11",
+          "loot": [
+            "Gravebinder"
+          ]
+        },
+        {
+          "name": "Spectre Spiritualist",
+          "level": 54,
+          "zone": "Howling Stones",
+          "expansion": "Kunark",
+          "source_bucket": "11",
+          "loot": [
+            "Rod of Oblations"
+          ]
+        },
+        {
+          "name": "Mortiferous Protector",
+          "level": 55,
+          "zone": "Howling Stones",
+          "expansion": "Kunark",
+          "source_bucket": "11",
+          "loot": [
+            "Elder Spiritist's Boots"
+          ]
+        },
+        {
+          "name": "drolvarg captain",
+          "level": 55,
+          "zone": "Karnor's Castle",
+          "expansion": "Kunark",
+          "source_bucket": "11",
+          "loot": [
+            "Drolvarg Mantle",
+            "Cobalt Gauntlets",
+            "Jade Mace",
+            "Lupine Dagger"
+          ]
+        },
+        {
+          "name": "Arch Duke Latol",
+          "level": 55,
+          "zone": "Sebilis",
+          "expansion": "Kunark",
+          "source_bucket": "11",
+          "loot": [
+            "Ykeshan War Club",
+            "Silken Whip of Ensnaring",
+            "Jaundiced Bone Bracer"
+          ]
+        },
+        {
+          "name": "Baron Yosig",
+          "level": 55,
+          "zone": "Sebilis",
+          "expansion": "Kunark",
+          "source_bucket": "11",
+          "loot": [
+            "Journeyman's Walking Stick",
+            "Tolan's Darkwood Helm",
+            "Luminescent Staff"
+          ]
+        },
+        {
+          "name": "blood of chottal",
+          "level": 55,
+          "zone": "Sebilis",
+          "expansion": "Kunark",
+          "source_bucket": "11",
+          "loot": [
+            "Cone of the Mystics",
+            "Tolan's Darkwood Vambraces",
+            "Breath of Harmony"
+          ]
+        },
+        {
+          "name": "Brogg",
+          "level": 55,
+          "zone": "Sebilis",
+          "expansion": "Kunark",
+          "source_bucket": "11",
+          "loot": [
+            "Clay Guardian Shield",
+            "Tolan's Darkwood Bracer",
+            "Ebon Mace"
+          ]
+        },
+        {
+          "name": "froglok commander",
+          "level": 55,
+          "zone": "Sebilis",
+          "expansion": "Kunark",
+          "source_bucket": "11",
+          "loot": [
+            "Sebilite Scale Boots",
+            "Sebilite Scale Mask",
+            "Donal's Helm of Mourning",
+            "Green Jade Halberd"
+          ]
+        },
+        {
+          "name": "Harbinger Freglor",
+          "level": 55,
+          "zone": "Sebilis",
+          "expansion": "Kunark",
+          "source_bucket": "11",
+          "loot": [
+            "Box of Nil Space",
+            "Knuckle Dusters",
+            "Cane of Harmony"
+          ]
+        },
+        {
+          "name": "Hierophant Prime Grekal",
+          "level": 55,
+          "zone": "Sebilis",
+          "expansion": "Kunark",
+          "source_bucket": "11",
+          "loot": [
+            "Hierophant's Cloak [ID 1622]",
+            "Sword of Skyfire",
+            "Sword of the Morning"
+          ]
+        }
+      ],
+      "loot_pool": [
+        "Baton of Faith",
+        "Baton of Royal Stature",
+        "Blessed Mallet",
+        "Blood Ember Boots",
+        "Blood Ember Gauntlets",
+        "Book of the Righteous",
+        "Box of Nil Space",
+        "Breath of Harmony",
+        "Broken Sacrificial Blade",
+        "Bronze Statue of Bathezid",
+        "Cane of Harmony",
+        "Cane of the Tranquil",
+        "Clay Guardian Shield",
+        "Cobalt Gauntlets",
+        "Cone of the Mystics",
+        "Crypt Master's Conjuring Stone",
+        "Crystalline Short Sword",
+        "Dark Scale Greaves",
+        "Deepwater Helm",
+        "Di'zok Wristsnapper",
+        "Donal's Boots of Mourning",
+        "Donal's Bracer of Mourning",
+        "Donal's Helm of Mourning",
+        "Drolvarg Mantle",
+        "Earring of Blazing Energy",
+        "Earring of Everfount",
+        "Earring of Twisted Leaves",
+        "Earring of Woven Bark",
+        "Ebon Mace",
+        "Elder Spiritist's Boots",
+        "Elder Spiritist's Bracer",
+        "Engraved Di'Zok Deathbringer",
+        "Etched Steel Baton",
+        "Fancy Velvet Mantle",
+        "Fang Amulet of Calling",
+        "Fayguard Bladecatcher",
+        "Fingerbone Hoop",
+        "Froglok Bonecaster's Robe",
+        "Gravebinder",
+        "Green Jade Halberd",
+        "Guard Captain's Mallet",
+        "Hand of the Reaper",
+        "Hardened Bone Spaulders",
+        "Harmonic Dagger",
+        "Helm of Rile",
+        "Helot Skull Helm",
+        "Hierophant's Cloak [ID 1622]",
+        "Incarnadine Vambraces",
+        "Jade Inlaid Spaulders",
+        "Jade Mace",
+        "Jarsath Scale Leggings",
+        "Jaundiced Bone Bracer",
+        "Jaundiced Bone Vambraces",
+        "Jeldorin",
+        "Journeyman's Walking Stick",
+        "Knuckle Dusters",
+        "Lamentation",
+        "Larrikan's Mask",
+        "Luminescent Staff",
+        "Lupine Dagger",
+        "Mask of Obtenebration",
+        "Mrylokar's Boots",
+        "Mrylokar's Bracer",
+        "Mrylokar's Helm",
+        "Mrylokar's Vambraces",
+        "Nathsar Bracer",
+        "Nathsar Gauntlets",
+        "Nathsar Vambraces",
+        "Noctivagant Blade",
+        "Obulus Mantle",
+        "Oggok Cleaver",
+        "Petrified Werewolf Skull",
+        "Rapier of Oriin",
+        "Rod of Oblations",
+        "Sarnak Hide Boots",
+        "Sarnak Summoner's Dagger",
+        "Sarnak War Bow",
+        "Sathir's Wand",
+        "Sebilite Scale Belt",
+        "Sebilite Scale Boots",
+        "Sebilite Scale Bracelet",
+        "Sebilite Scale Cap",
+        "Sebilite Scale Cape",
+        "Sebilite Scale Coat",
+        "Sebilite Scale Gloves",
+        "Sebilite Scale Leggings",
+        "Sebilite Scale Mask",
+        "Sebilite Scale Vambraces",
+        "Shai'din Revenant Bauble",
+        "Silken Whip of Ensnaring",
+        "Singing Steel Bracer",
+        "Singing Steel Helm",
+        "Singing Steel Vambraces",
+        "Supple Scale Armband",
+        "Sword of Skyfire",
+        "Sword of the Morning",
+        "Tolan's Darkwood Bracer",
+        "Tolan's Darkwood Helm",
+        "Tolan's Darkwood Vambraces",
+        "Truncheon of Doom",
+        "Wind Saber",
+        "Ykeshan War Club",
+        "Zealot's Incarnadine Sword"
+      ],
+      "zones": [
+        "Chardok",
+        "Howling Stones",
+        "Karnor's Castle",
+        "Sebilis"
+      ],
+      "source_buckets_included": [
+        "11"
+      ],
+      "mob_count": 38,
+      "loot_count": 103,
+      "zone_count": 4
+    },
+    {
+      "bucket": 12,
+      "level_range": "56-60",
+      "expansion": "Kunark",
+      "mobs": [
+        {
+          "name": "Alchemist's Acolyte",
+          "level": 56,
+          "zone": "Chardok",
+          "expansion": "Kunark",
+          "source_bucket": "12",
+          "loot": [
+            "Vile Sarnak Brew",
+            "Di'Zok Escape Staff",
+            "Ring of Di'Zok",
+            "Greenish Metal Shard"
+          ]
+        },
+        {
+          "name": "Arch Inspector Nibi'zi",
+          "level": 56,
+          "zone": "Chardok",
+          "expansion": "Kunark",
+          "source_bucket": "12",
+          "loot": [
+            "Di'Zok Sceptre of Authority",
+            "Pearly Sarnak Bauble",
+            "Sarnak Devastator"
+          ]
+        },
+        {
+          "name": "Deathfang",
+          "level": 56,
+          "zone": "Chardok",
+          "expansion": "Kunark",
+          "source_bucket": "12",
+          "loot": [
+            "Imperial Wardog Collar",
+            "Chokidai Hide Pauldrons",
+            "Rabid Chokidai Fang"
+          ]
+        },
+        {
+          "name": "Foreman Mirt'akk",
+          "level": 56,
+          "zone": "Chardok",
+          "expansion": "Kunark",
+          "source_bucket": "12",
+          "loot": [
+            "Girdle of Flayed Iksar",
+            "Vial of Roiling Gas",
+            "Fester"
+          ]
+        },
+        {
+          "name": "Grand Herbalist Mak'ha",
+          "level": 56,
+          "zone": "Chardok",
+          "expansion": "Kunark",
+          "source_bucket": "12",
+          "loot": [
+            "Manisi Herb",
+            "Sarnak Parrying Blade",
+            "Jade Meditation Hoop"
+          ]
+        },
+        {
+          "name": "Iksar Trustee",
+          "level": 56,
+          "zone": "Chardok",
+          "expansion": "Kunark",
+          "source_bucket": "12",
+          "loot": [
+            "Earring of Purity",
+            "Earring of Cleansing"
+          ]
+        },
+        {
+          "name": "Interrogator Gi'mok",
+          "level": 56,
+          "zone": "Chardok",
+          "expansion": "Kunark",
+          "source_bucket": "12",
+          "loot": [
+            "Nathsar Helm",
+            "Ring of Stealthy Travel",
+            "Oakleaf Scimitar"
+          ]
+        },
+        {
+          "name": "Kennel Master Al'ele",
+          "level": 56,
+          "zone": "Chardok",
+          "expansion": "Kunark",
+          "source_bucket": "12",
+          "loot": [
+            "Hammered Golden Hoop",
+            "Iksar Hide Cap",
+            "Poison Washed Spaulders"
+          ]
+        },
+        {
+          "name": "Korucust's Courier",
+          "level": 56,
+          "zone": "Chardok",
+          "expansion": "Kunark",
+          "source_bucket": "12",
+          "loot": [
+            "Courier's Potion",
+            "Slick Leather Courier's Cape",
+            "Writ of Di'Zok"
+          ]
+        },
+        {
+          "name": "Sarnak Collective Auditor",
+          "level": 56,
+          "zone": "Chardok",
+          "expansion": "Kunark",
+          "source_bucket": "12",
+          "loot": [
+            "Darksight Dagger",
+            "Girdle of Rapidity",
+            "Iksar Hide Manual"
+          ]
+        },
+        {
+          "name": "Wizened Herb Collector",
+          "level": 56,
+          "zone": "Chardok",
+          "expansion": "Kunark",
+          "source_bucket": "12",
+          "loot": [
+            "Dark Scale Sleeves",
+            "Sandwich of Foul Smelling Herbs",
+            "Herbalist's Spade"
+          ]
+        },
+        {
+          "name": "myconid spore king",
+          "level": 56,
+          "zone": "Sebilis",
+          "expansion": "Kunark",
+          "source_bucket": "12",
+          "loot": [
+            "Robe of Living Fungus",
+            "Fungus Covered Scale Tunic",
+            "Fungus Covered Great Staff"
+          ]
+        },
+        {
+          "name": "Bridge Keeper",
+          "level": 57,
+          "zone": "Chardok",
+          "expansion": "Kunark",
+          "source_bucket": "12",
+          "loot": [
+            "Stained Cloth Mask",
+            "Inlaid Jade Hoop",
+            "Di'zok Oracle Shillelagh"
+          ]
+        },
+        {
+          "name": "Foreman Ku'lul",
+          "level": 57,
+          "zone": "Chardok",
+          "expansion": "Kunark",
+          "source_bucket": "12",
+          "loot": [
+            "Mask of Secrets",
+            "Sarnak Prayer Beads",
+            "Boneshear"
+          ]
+        },
+        {
+          "name": "Overseer Dal'guur",
+          "level": 57,
+          "zone": "Chardok",
+          "expansion": "Kunark",
+          "source_bucket": "12",
+          "loot": [
+            "Desiccated Halfling Mask",
+            "Iksar Hide Cape",
+            "Overseer's Signet",
+            "Sarnak Backstabber"
+          ]
+        },
+        {
+          "name": "Underboss Myli'ki",
+          "level": 57,
+          "zone": "Chardok",
+          "expansion": "Kunark",
+          "source_bucket": "12",
+          "loot": [
+            "Nathsar Leggings",
+            "Sarnak Lightning Caller",
+            "Tattered Flesh Veil"
+          ]
+        },
+        {
+          "name": "Grand Lorekeeper Kino Shai'din",
+          "level": 58,
+          "zone": "Chardok",
+          "expansion": "Kunark",
+          "source_bucket": "12",
+          "loot": [
+            "History of the Greenmist",
+            "Tanned Iksar Hide Leggings",
+            "Cloak of Imperception",
+            "Preserved Chokidai Vocal Cords",
+            "Spirit Wracked Cord"
+          ]
+        },
+        {
+          "name": "Loremaster Piza'Tak",
+          "level": 58,
+          "zone": "Chardok",
+          "expansion": "Kunark",
+          "source_bucket": "12",
+          "loot": [
+            "Anklesmasher",
+            "History of the Di'Zok",
+            "Intricate Silver Rapier",
+            "Nathsar Breastplate"
+          ]
+        },
+        {
+          "name": "Security Advisor",
+          "level": 58,
+          "zone": "Chardok",
+          "expansion": "Kunark",
+          "source_bucket": "12",
+          "loot": [
+            "Worn Shai'din Naginata",
+            "Polished Shai'din Naginata",
+            "Incarnadine Legplates"
+          ]
+        },
+        {
+          "name": "Emperor Chottal",
+          "level": 60,
+          "zone": "Sebilis",
+          "expansion": "Kunark",
+          "source_bucket": "12",
+          "loot": [
+            "Nathsar Greatsword",
+            "Deepwater Vambraces",
+            "Rod of Lamentation"
+          ]
+        }
+      ],
+      "loot_pool": [
+        "Anklesmasher",
+        "Boneshear",
+        "Chokidai Hide Pauldrons",
+        "Cloak of Imperception",
+        "Courier's Potion",
+        "Dark Scale Sleeves",
+        "Darksight Dagger",
+        "Deepwater Vambraces",
+        "Desiccated Halfling Mask",
+        "Di'Zok Escape Staff",
+        "Di'zok Oracle Shillelagh",
+        "Di'Zok Sceptre of Authority",
+        "Earring of Cleansing",
+        "Earring of Purity",
+        "Fester",
+        "Fungus Covered Great Staff",
+        "Fungus Covered Scale Tunic",
+        "Girdle of Flayed Iksar",
+        "Girdle of Rapidity",
+        "Greenish Metal Shard",
+        "Hammered Golden Hoop",
+        "Herbalist's Spade",
+        "History of the Di'Zok",
+        "History of the Greenmist",
+        "Iksar Hide Cap",
+        "Iksar Hide Cape",
+        "Iksar Hide Manual",
+        "Imperial Wardog Collar",
+        "Incarnadine Legplates",
+        "Inlaid Jade Hoop",
+        "Intricate Silver Rapier",
+        "Jade Meditation Hoop",
+        "Manisi Herb",
+        "Mask of Secrets",
+        "Nathsar Breastplate",
+        "Nathsar Greatsword",
+        "Nathsar Helm",
+        "Nathsar Leggings",
+        "Oakleaf Scimitar",
+        "Overseer's Signet",
+        "Pearly Sarnak Bauble",
+        "Poison Washed Spaulders",
+        "Polished Shai'din Naginata",
+        "Preserved Chokidai Vocal Cords",
+        "Rabid Chokidai Fang",
+        "Ring of Di'Zok",
+        "Ring of Stealthy Travel",
+        "Robe of Living Fungus",
+        "Rod of Lamentation",
+        "Sandwich of Foul Smelling Herbs",
+        "Sarnak Backstabber",
+        "Sarnak Devastator",
+        "Sarnak Lightning Caller",
+        "Sarnak Parrying Blade",
+        "Sarnak Prayer Beads",
+        "Slick Leather Courier's Cape",
+        "Spirit Wracked Cord",
+        "Stained Cloth Mask",
+        "Tanned Iksar Hide Leggings",
+        "Tattered Flesh Veil",
+        "Vial of Roiling Gas",
+        "Vile Sarnak Brew",
+        "Worn Shai'din Naginata",
+        "Writ of Di'Zok"
+      ],
+      "zones": [
+        "Chardok",
+        "Sebilis"
+      ],
+      "source_buckets_included": [
+        "12"
+      ],
+      "mob_count": 20,
+      "loot_count": 64,
+      "zone_count": 2
+    }
+  ]
+}
