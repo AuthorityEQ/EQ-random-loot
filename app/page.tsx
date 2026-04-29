@@ -156,11 +156,8 @@ export default function Home() {
           <p className="eyebrow">
             {expansionLabel} / {contentType} / {modeLabel}
           </p>
-          <h1>Frostreaver Random Loot Bucket Tool</h1>
-          <p className="subhead">
-            Bucket-first view of shared group named loot pools. Search by item, mob, or zone while
-            preserving the bucket context used by Frostreaver-style random loot.
-          </p>
+          <h1>Frostreaver Random Loot</h1>
+          <p className="wip-line">Work in progress — DM AuthorityGames on Discord</p>
         </div>
 
       </header>
