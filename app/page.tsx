@@ -31,6 +31,7 @@ import {
 import { lootModeLabel, lootModes, type LootMode } from "@/lib/lootModes";
 import { filterBuckets, type Bucket, type ItemDetailsMap, type LootDataset } from "@/lib/search";
 import { getUniversalSearchResults, type UniversalSearchResult } from "@/lib/universal-search";
+import { visibleBucketsForLevel } from "@/lib/level-bucket-filter";
 import { getZoneView } from "@/lib/zones";
 
 const datasets = [classicData, kunarkData, veliousData] as LootDataset[];
@@ -58,6 +59,20 @@ const fallbackSlotOptions = [
   "LEGS",
   "FEET",
   "WAIST",
+] as const;
+const statOptionGroups = [
+  {
+    label: "Primary",
+    options: ["HP", "MANA", "END", "AC", "Haste"],
+  },
+  {
+    label: "Attributes",
+    options: ["STR", "STA", "AGI", "DEX", "WIS", "INT", "CHA"],
+  },
+  {
+    label: "Resists",
+    options: ["MR", "FR", "CR", "DR", "PR"],
+  },
 ] as const;
 type ExpansionFilter = (typeof expansionOptions)[number];
 
@@ -202,13 +217,15 @@ export default function Home() {
     [debouncedQuery, expansionBuckets, selectedClass, selectedRace, selectedSlot, selectedStat],
   );
   const getItemDetails = (itemName: string) => itemDetails[itemName];
+  const levelVisibleBuckets = useMemo(() => visibleBucketsForLevel(expansionBuckets, playerLevel), [expansionBuckets, playerLevel]);
   const filteredBuckets = useMemo(() => {
     return filterBuckets(expansionBuckets, "")
+      .filter((bucket) => levelVisibleBuckets.has(bucket))
       .map((bucket) => {
         return { bucket, visibleLoot: sortItemNamesByStat(bucket.loot_pool.filter(itemIsVisible), selectedStat) };
       })
       .filter(({ visibleLoot }) => visibleLoot.length > 0);
-  }, [expansionBuckets, selectedClass, selectedRace, selectedSlot, selectedStat]);
+  }, [expansionBuckets, levelVisibleBuckets, selectedClass, selectedRace, selectedSlot, selectedStat]);
   const flatItemRows = useMemo(
     () => sortItemRowsByStat(uniqueSortedItemRows(filteredBuckets
       .flatMap(({ bucket, visibleLoot }) =>
@@ -428,11 +445,21 @@ export default function Home() {
           <label className="stat-filter">
             <span>Stat</span>
             <select onChange={(event) => setSelectedStat(event.target.value)} value={selectedStat}>
-              {statOptions.map((option) => (
-                <option key={option} value={option}>
-                  {option}
-                </option>
-              ))}
+              <option value="Any">Any</option>
+              {statOptionGroups.map((group) => {
+                const options = group.options.filter((option) => statOptions.includes(option));
+                if (options.length === 0) return null;
+
+                return (
+                  <optgroup key={group.label} label={group.label}>
+                    {options.map((option) => (
+                      <option key={option} value={option}>
+                        {option}
+                      </option>
+                    ))}
+                  </optgroup>
+                );
+              })}
             </select>
           </label>
         </div>
@@ -475,6 +502,7 @@ export default function Home() {
           getItemDetails={getItemDetails}
           getItemStatDisplay={getItemStatDisplay}
           itemIsVisible={itemIsVisible}
+          levelVisibleBuckets={levelVisibleBuckets}
           statFilter={selectedStat}
           onClearZone={() => {
             setSelectedZone("");

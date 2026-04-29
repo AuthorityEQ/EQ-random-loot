@@ -22,6 +22,7 @@ type ZoneViewProps = {
   getItemDetails: (itemName: string) => ItemDetails | undefined;
   getItemStatDisplay: (itemName: string) => string | null;
   itemIsVisible: (itemName: string) => boolean;
+  levelVisibleBuckets: Set<Bucket>;
   statFilter: StatFilter;
   onClearZone: () => void;
   onSelectLoot: (itemName: string, bucket: Bucket) => void;
@@ -88,6 +89,7 @@ export function ZoneView({
   getItemDetails,
   getItemStatDisplay,
   itemIsVisible,
+  levelVisibleBuckets,
   statFilter,
   onClearZone,
   onSelectLoot,
@@ -104,7 +106,8 @@ export function ZoneView({
   const allMobs = zoneView.bucketGroups
     .flatMap(({ mobs, bucket }) => mobs.map((mob) => ({ mob, bucket })))
     .sort((a, b) => a.mob.level - b.mob.level || a.mob.name.localeCompare(b.mob.name));
-  const flatItemRows = sortItemRowsByStat(uniqueSortedItemRows(zoneView.bucketGroups.flatMap(({ bucket }) =>
+  const visibleBucketGroups = zoneView.bucketGroups.filter(({ bucket }) => levelVisibleBuckets.has(bucket));
+  const flatItemRows = sortItemRowsByStat(uniqueSortedItemRows(visibleBucketGroups.flatMap(({ bucket }) =>
     bucket.loot_pool
       .filter(itemIsVisible)
       .filter((itemName) => flatSearchMatches(itemName, bucket, searchQuery))
@@ -195,7 +198,7 @@ export function ZoneView({
           {bucketed ? (
             <div className="zone-loot-actions" aria-label="Loot section controls">
               <button
-                onClick={() => setOpenLootKeys(new Set(zoneView.bucketGroups.map(({ bucket }) => getBucketKey(bucket))))}
+                onClick={() => setOpenLootKeys(new Set(visibleBucketGroups.map(({ bucket }) => getBucketKey(bucket))))}
                 type="button"
               >
                 Expand all
@@ -208,7 +211,7 @@ export function ZoneView({
         </div>
         {bucketed ? (
           <div className="zone-loot-groups">
-            {zoneView.bucketGroups.map(({ bucket }) => {
+            {visibleBucketGroups.map(({ bucket }) => {
               const visibleLoot = sortItemNamesByStat(bucket.loot_pool.filter(itemIsVisible), statFilter, getItemDetails);
               const bucketKey = getBucketKey(bucket);
 

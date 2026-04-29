@@ -2,22 +2,22 @@ import type { ItemDetails } from "@/lib/search";
 
 export const classOptions = [
   "Any",
-  "WAR",
-  "CLR",
-  "PAL",
-  "RNG",
-  "SHD",
-  "DRU",
-  "MNK",
   "BRD",
-  "ROG",
-  "SHM",
-  "NEC",
-  "WIZ",
-  "MAG",
-  "ENC",
   "BST",
   "BER",
+  "CLR",
+  "DRU",
+  "ENC",
+  "MAG",
+  "MNK",
+  "NEC",
+  "PAL",
+  "RNG",
+  "ROG",
+  "SHD",
+  "SHM",
+  "WAR",
+  "WIZ",
 ] as const;
 
 export const raceOptions = [
@@ -26,6 +26,7 @@ export const raceOptions = [
   "DEF",
   "DWF",
   "ERU",
+  "FRG",
   "GNM",
   "HEF",
   "HFL",
@@ -35,7 +36,6 @@ export const raceOptions = [
   "TRL",
   "WEF",
   "VAH",
-  "FRG",
 ] as const;
 
 export const fallbackStatOptions = [
