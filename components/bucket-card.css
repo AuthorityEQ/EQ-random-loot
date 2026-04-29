@@ -1,6 +1,9 @@
 .bucket-card {
-  background: var(--panel);
-  border: 1px solid var(--line);
+  background:
+    linear-gradient(90deg, color-mix(in srgb, var(--exp-primary, var(--accent)) 10%, transparent), transparent 48%),
+    var(--panel);
+  border: 1px solid color-mix(in srgb, var(--exp-border, var(--line)) 56%, var(--line));
+  border-left: 5px solid var(--exp-primary, var(--accent));
   border-radius: 8px;
   box-shadow: var(--shadow);
   display: grid;
@@ -31,13 +34,8 @@
 }
 
 .bucket-badge {
-  background: var(--accent-soft);
-  border-radius: 999px;
-  color: var(--accent);
   font-size: 0.82rem;
   font-weight: 700;
-  padding: 7px 10px;
-  white-space: nowrap;
 }
 
 .stats {

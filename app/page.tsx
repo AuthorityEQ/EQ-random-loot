@@ -23,6 +23,7 @@ import {
 import { findItemSearchMatch } from "@/lib/item-navigation";
 import { lootModeLabel, lootModes, type LootMode } from "@/lib/lootModes";
 import { filterBuckets, type Bucket, type ItemDetailsMap, type LootDataset } from "@/lib/search";
+import { getUniversalSearchResults, type UniversalSearchResult } from "@/lib/universal-search";
 import { getAllZones, getZoneView } from "@/lib/zones";
 
 const datasets = [classicData, kunarkData, veliousData] as LootDataset[];
@@ -32,19 +33,31 @@ const itemDetails = itemDetailsData as ItemDetailsMap;
 const expansionOptions = ["Classic", "Kunark", "Velious"] as const;
 type ExpansionFilter = (typeof expansionOptions)[number];
 
+function expansionTone(expansion: string) {
+  return `expansion-tone-${expansion.toLowerCase()}`;
+}
+
 export default function Home() {
   const [query, setQuery] = useState("");
+  const [debouncedQuery, setDebouncedQuery] = useState("");
   const [lootMode] = useState<LootMode>("random");
   const [selectedExpansions, setSelectedExpansions] = useState<ExpansionFilter[]>([...expansionOptions]);
   const [activeFilter, setActiveFilter] = useState<ItemFilter>("all");
   const [reviewMode, setReviewMode] = useState(false);
   const [selectedZone, setSelectedZone] = useState("");
   const [playerLevel, setPlayerLevel] = useState(1);
+  const [levelInputValue, setLevelInputValue] = useState("1");
+  const [isEditingLevel, setIsEditingLevel] = useState(false);
   const [selectedLoot, setSelectedLoot] = useState<{ itemName: string; bucket: Bucket } | null>(null);
+  const [focusedMob, setFocusedMob] = useState<{ name: string; level: number; zone: string; bucket: number; expansion: string } | null>(null);
   const selectedExpansionSet = useMemo(() => new Set(selectedExpansions), [selectedExpansions]);
   const expansionBuckets = useMemo(
     () => buckets.filter((bucket) => selectedExpansionSet.has(bucket.expansion as ExpansionFilter)),
     [selectedExpansionSet],
+  );
+  const maxSupportedLevel = useMemo(
+    () => Math.max(1, ...expansionBuckets.flatMap((bucket) => bucket.mobs.map((mob) => mob.level))),
+    [expansionBuckets],
   );
   const expansionLabel = selectedExpansions.length === expansionOptions.length
     ? "All expansions"
@@ -53,6 +66,10 @@ export default function Home() {
   const allZones = useMemo(() => getAllZones(expansionBuckets), [expansionBuckets]);
   const selectedZoneView = useMemo(() => getZoneView(expansionBuckets, selectedZone), [expansionBuckets, selectedZone]);
   const itemSearchMatch = useMemo(() => findItemSearchMatch(expansionBuckets, query), [expansionBuckets, query]);
+  const typeaheadResults = useMemo(
+    () => getUniversalSearchResults(expansionBuckets, debouncedQuery),
+    [debouncedQuery, expansionBuckets],
+  );
   const getItemDetails = (itemName: string) => itemDetails[itemName];
   const filteredBuckets = useMemo(() => {
     const searchedBuckets = filterBuckets(expansionBuckets, query);
@@ -92,6 +109,14 @@ export default function Home() {
   );
 
   useEffect(() => {
+    const timeout = window.setTimeout(() => {
+      setDebouncedQuery(query);
+    }, 180);
+
+    return () => window.clearTimeout(timeout);
+  }, [query]);
+
+  useEffect(() => {
     if (!itemSearchMatch || selectedZoneView) return;
     const firstBucket = itemSearchMatch.buckets[0];
     if (!firstBucket) return;
@@ -102,6 +127,64 @@ export default function Home() {
       return { itemName: itemSearchMatch.itemName, bucket: firstBucket };
     });
   }, [itemSearchMatch, selectedZoneView]);
+
+  useEffect(() => {
+    if (playerLevel <= maxSupportedLevel) return;
+    setPlayerLevel(maxSupportedLevel);
+    if (!isEditingLevel) {
+      setLevelInputValue(String(maxSupportedLevel));
+    }
+  }, [isEditingLevel, maxSupportedLevel, playerLevel]);
+
+  useEffect(() => {
+    if (!isEditingLevel) {
+      setLevelInputValue(String(playerLevel));
+    }
+  }, [isEditingLevel, playerLevel]);
+
+  function commitLevelInput() {
+    const parsedLevel = Number.parseInt(levelInputValue, 10);
+    if (!Number.isFinite(parsedLevel)) {
+      setLevelInputValue(String(playerLevel));
+      return;
+    }
+
+    const clampedLevel = Math.min(maxSupportedLevel, Math.max(1, parsedLevel));
+    setPlayerLevel(clampedLevel);
+    setLevelInputValue(String(clampedLevel));
+  }
+
+  function selectSearchResult(result: UniversalSearchResult) {
+    if (result.type === "zone") {
+      setSelectedZone(result.zone);
+      setFocusedMob(null);
+      setSelectedLoot(null);
+      setQuery("");
+      return;
+    }
+
+    if (result.type === "item") {
+      const firstBucket = result.buckets[0];
+      setSelectedZone("");
+      setFocusedMob(null);
+      setQuery(result.itemName);
+      if (firstBucket) {
+        setSelectedLoot({ itemName: result.itemName, bucket: firstBucket });
+      }
+      return;
+    }
+
+    setSelectedZone(result.mob.zone);
+    setFocusedMob({
+      name: result.mob.name,
+      level: result.mob.level,
+      zone: result.mob.zone,
+      bucket: result.bucket.bucket,
+      expansion: result.bucket.expansion,
+    });
+    setSelectedLoot(null);
+    setQuery("");
+  }
 
   return (
     <main className="page">
@@ -148,7 +231,7 @@ export default function Home() {
       </header>
 
       <div className="toolbar">
-        <SearchBox value={query} onChange={setQuery} />
+        <SearchBox results={typeaheadResults} value={query} onChange={setQuery} onSelectResult={selectSearchResult} />
         <div className="loot-mode-filter" aria-label="Loot mode">
           <span>Loot mode</span>
           <div className="expansion-toggle-group">
@@ -172,7 +255,12 @@ export default function Home() {
             {expansionOptions.map((expansion) => (
               <button
                 aria-pressed={selectedExpansionSet.has(expansion)}
-                className={selectedExpansionSet.has(expansion) ? "filter-button is-active" : "filter-button"}
+                className={[
+                  "filter-button",
+                  "expansion-filter-button",
+                  expansionTone(expansion),
+                  selectedExpansionSet.has(expansion) ? "is-active" : null,
+                ].filter(Boolean).join(" ")}
                 key={expansion}
                 onClick={() => {
                   setSelectedExpansions((current) => {
@@ -209,13 +297,28 @@ export default function Home() {
         <label className="level-filter">
           <span>Your level</span>
           <input
+            inputMode="numeric"
+            max={maxSupportedLevel}
             min={1}
             onChange={(event) => {
-              const nextLevel = Number(event.target.value);
-              setPlayerLevel(Number.isFinite(nextLevel) && nextLevel > 0 ? nextLevel : 1);
+              setLevelInputValue(event.target.value.replace(/\D/g, ""));
             }}
-            type="number"
-            value={playerLevel}
+            onBlur={() => {
+              setIsEditingLevel(false);
+              commitLevelInput();
+            }}
+            onFocus={(event) => {
+              setIsEditingLevel(true);
+              event.target.select();
+            }}
+            onKeyDown={(event) => {
+              if (event.key === "Enter") {
+                event.currentTarget.blur();
+              }
+            }}
+            pattern="[0-9]*"
+            type="text"
+            value={levelInputValue}
           />
         </label>
         <div className="review-controls" aria-label="Review filters">
@@ -263,10 +366,14 @@ export default function Home() {
         <ZoneView
           activeFilter={activeFilter}
           getItemDetails={getItemDetails}
-          onClearZone={() => setSelectedZone("")}
+          onClearZone={() => {
+            setSelectedZone("");
+            setFocusedMob(null);
+          }}
           onSelectLoot={(itemName, selectedBucket) => setSelectedLoot({ itemName, bucket: selectedBucket })}
           onSelectZone={setSelectedZone}
           reviewMode={reviewMode}
+          focusedMob={focusedMob}
           zoneView={selectedZoneView}
         />
       ) : itemSearchMatch ? (

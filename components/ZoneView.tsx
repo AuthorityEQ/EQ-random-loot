@@ -10,6 +10,13 @@ import type { ZoneView as ZoneViewData } from "@/lib/zones";
 type ZoneViewProps = {
   zoneView: ZoneViewData;
   activeFilter: ItemFilter;
+  focusedMob?: {
+    name: string;
+    level: number;
+    zone: string;
+    bucket: number;
+    expansion: string;
+  } | null;
   reviewMode: boolean;
   getItemDetails: (itemName: string) => ItemDetails | undefined;
   onClearZone: () => void;
@@ -17,9 +24,14 @@ type ZoneViewProps = {
   onSelectZone: (zone: string) => void;
 };
 
+function expansionTone(expansion: string) {
+  return `expansion-tone-${expansion.toLowerCase()}`;
+}
+
 export function ZoneView({
   zoneView,
   activeFilter,
+  focusedMob = null,
   reviewMode,
   getItemDetails,
   onClearZone,
@@ -70,11 +82,28 @@ export function ZoneView({
     }, 1800);
   }
 
+  useEffect(() => {
+    if (!focusedMob) return;
+    const match = zoneView.bucketGroups.find(({ bucket, mobs }) =>
+      bucket.expansion === focusedMob.expansion
+      && bucket.bucket === focusedMob.bucket
+      && mobs.some((mob) => mob.name === focusedMob.name && mob.level === focusedMob.level),
+    );
+    if (!match) return;
+    selectMobBucket(match.bucket, focusedMob.name, focusedMob.level);
+  }, [focusedMob, zoneView]);
+
   return (
     <section className="zone-view" aria-label={`${zoneView.zone} zone view`}>
-      <div className="zone-view-header">
+      <div className={`zone-view-header ${expansions.length === 1 ? expansionTone(expansions[0]!) : ""}`}>
         <div>
-          <p className="eyebrow">{expansions.join(", ")}</p>
+          <div className="expansion-pill-row">
+            {expansions.map((expansion) => (
+              <span className={`expansion-pill ${expansionTone(expansion)}`} key={expansion}>
+                {expansion}
+              </span>
+            ))}
+          </div>
           <h2>{zoneView.zone}</h2>
           <div className="zone-summary-line">
             <strong>{zoneView.totalMobs} named mobs</strong>

@@ -10,6 +10,10 @@ type ItemFarmViewProps = {
   onSelectZone: (zone: string) => void;
 };
 
+function expansionTone(expansion: string) {
+  return `expansion-tone-${expansion.toLowerCase()}`;
+}
+
 export function ItemFarmView({ itemName, buckets, onOpenItem, onSelectZone }: ItemFarmViewProps) {
   return (
     <section className="item-farm-view" aria-label={`Where to farm ${itemName}`}>
@@ -29,11 +33,14 @@ export function ItemFarmView({ itemName, buckets, onOpenItem, onSelectZone }: It
           const zones = bestZonesForBucket(bucket, 5);
 
           return (
-            <article className="item-farm-card is-highlighted" key={`${bucket.expansion}-${bucket.bucket}`}>
+            <article className={`item-farm-card is-highlighted ${expansionTone(bucket.expansion)}`} key={`${bucket.expansion}-${bucket.bucket}`}>
               <div>
                 <p className="bucket-kicker">Highlighted bucket</p>
                 <h3>Bucket {bucket.bucket}, levels {bucket.level_range}</h3>
-                <p>{bucket.expansion} / {bucket.mob_count ?? bucket.mobs.length} possible mobs in this bucket</p>
+                <p>
+                  <span className={`expansion-pill is-compact ${expansionTone(bucket.expansion)}`}>{bucket.expansion}</span>
+                  {" "}/ {bucket.mob_count ?? bucket.mobs.length} possible mobs in this bucket
+                </p>
               </div>
 
               <div className="farming-panel is-highlighted">

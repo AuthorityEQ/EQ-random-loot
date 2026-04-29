@@ -219,7 +219,7 @@ function FavoriteCard({ row, locked, onOpen, onRemove }: { row: FavoriteRow; loc
 
   return (
     <li>
-      <div className={`favorite-card range-tone-${rangeTone(range)}`}>
+      <div className={`favorite-card range-tone-${rangeTone(range)} ${expansionTone(bucket?.expansion)}`}>
         <button
           className="favorite-card-main"
           disabled={!bucket}
@@ -229,7 +229,14 @@ function FavoriteCard({ row, locked, onOpen, onRemove }: { row: FavoriteRow; loc
           {...previewProps(row.name, row.details)}
         >
           <strong>{row.name}</strong>
-          <span>{bucket ? `${bucket.expansion} - ${range}` : "Not in loaded buckets"}</span>
+          <span>
+            {bucket ? (
+              <>
+                <span className={`expansion-pill is-compact ${expansionTone(bucket.expansion)}`}>{bucket.expansion}</span>
+                {" "}{range}
+              </>
+            ) : "Not in loaded buckets"}
+          </span>
           {row.bestZone ? <em>Best: {row.bestZone}</em> : null}
         </button>
         <button
@@ -260,6 +267,10 @@ function rangeTone(range: string) {
   if (range === "56-59" || range === "56-60") return "teal";
   if (range === "60+" || range === "60-70" || range === "61+" || range === "61-70") return "gold";
   return "neutral";
+}
+
+function expansionTone(expansion: string | undefined) {
+  return expansion ? `expansion-tone-${expansion.toLowerCase()}` : "";
 }
 
 function bestZoneForBucket(bucket: Bucket) {

@@ -10,6 +10,10 @@ type LevelRecommendationsProps = {
   onSelectZone: (zone: string) => void;
 };
 
+function expansionTone(expansion: string) {
+  return `expansion-tone-${expansion.toLowerCase()}`;
+}
+
 export function LevelRecommendations({ buckets, level, onSelectZone }: LevelRecommendationsProps) {
   const recommendedZones = useMemo(() => {
     const recommendedBuckets = buckets.filter((bucket) => isRecommendedBucketForLevel(bucket, level));
@@ -68,7 +72,14 @@ export function LevelRecommendations({ buckets, level, onSelectZone }: LevelReco
               <span className="recommendation-main">
                 <strong>{zone}</strong>
                 <span>
-                  {expansionList.join(", ")} <b>{mobs.length} named</b>
+                  <span className="recommendation-expansions">
+                    {expansionList.map((expansion) => (
+                      <span className={`expansion-pill is-compact ${expansionTone(expansion)}`} key={expansion}>
+                        {expansion}
+                      </span>
+                    ))}
+                  </span>
+                  <b>{mobs.length} named</b>
                 </span>
               </span>
               <span className="recommendation-ranges">{rangeList.join(", ")}</span>

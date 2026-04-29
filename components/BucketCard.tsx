@@ -28,19 +28,23 @@ function HealthPill({ label, value, tone }: { label: string; value: number; tone
   );
 }
 
+function expansionTone(expansion: string) {
+  return `expansion-tone-${expansion.toLowerCase()}`;
+}
+
 export function BucketCard({ bucket, visibleLoot, query = "", getItemDetails, onSelectLoot, onSelectZone }: BucketCardProps) {
   const normalizedQuery = query.trim().toLowerCase();
   const health = countStatuses(bucket.loot_pool, getItemDetails);
   const { previewProps } = useItemPreview();
 
   return (
-    <article className="bucket-card">
+    <article className={`bucket-card ${expansionTone(bucket.expansion)}`}>
       <div className="bucket-topline">
         <div>
           <p className="bucket-kicker">Bucket {bucket.bucket}</p>
           <h2>Levels {bucket.level_range}</h2>
         </div>
-        <div className="bucket-badge">{bucket.expansion}</div>
+        <div className={`bucket-badge expansion-pill ${expansionTone(bucket.expansion)}`}>{bucket.expansion}</div>
       </div>
 
       <dl className="stats">
