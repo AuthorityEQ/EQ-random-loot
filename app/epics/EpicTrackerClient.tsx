@@ -13,13 +13,77 @@
  *   EpicProgressProvider lives at root in app/layout.tsx — no local wrapper.
  */
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useEpicProgress } from "@/components/EpicProgressProvider";
 import { EpicTrackerCheckbox } from "@/components/EpicTrackerCheckbox";
+import { ItemDrawer } from "@/components/ItemDrawer";
+import "@/components/item-drawer.css";
+import { ItemIcon } from "@/components/ItemIcon";
+import { useItemPreview } from "@/components/ItemPreviewProvider";
 import { EPIC_CLASSES, type EpicClassName, type NormalizedClassEpic, type NormalizedStep } from "./types";
 import { mobToSlug } from "@/lib/mob-slug";
 import { zoneToSlug } from "@/lib/zone-slug";
+import { itemToSlug } from "@/lib/item-slug";
+import type { Bucket, ItemDetailsMap } from "@/lib/search";
+import itemDetailsData from "@/data/item-details.json";
+
+const itemDetailsMap = itemDetailsData as unknown as ItemDetailsMap;
+
+let _epicBucketIdCounter = 100000;
+function makeEpicBucket(itemName: string, classEpic: NormalizedClassEpic, step: NormalizedStep): Bucket {
+  _epicBucketIdCounter += 1;
+  const expansion = "Velious";
+  return {
+    bucket: _epicBucketIdCounter,
+    level_range: `${classEpic.className} epic`,
+    expansion,
+    mobs: step.npcMob
+      ? [{
+          name: step.npcMob,
+          level: 0,
+          zone: step.zone ?? "",
+          expansion,
+          source_bucket: step.npcMob,
+          loot: [itemName],
+        }]
+      : [],
+    zones: step.zone ? [step.zone] : [],
+    loot_pool: [itemName],
+    mob_count: step.npcMob ? 1 : 0,
+    loot_count: 1,
+    zone_count: step.zone ? 1 : 0,
+  };
+}
+
+// ---------------------------------------------------------------------------
+// Parser
+// ---------------------------------------------------------------------------
+
+const PREFIX_RE = /^(?:receive|hand\s+in|give|loot|buy|combine|turn\s+in|reward):\s*/i;
+const TRAILING_PAREN_RE = /\s*\([^)]*\)\s*$/;
+const SPLIT_RE = /\s*,\s*|\s+and\s+|\s*&\s*/i;
+const STOP_WORDS_RE = /^(?:unknown|tba|tbd|the player|this step|none)$/i;
+
+function parseStepItems(raw: string): string[] {
+  const trimmed = raw.trim();
+  if (!trimmed) return [];
+  const stripped = trimmed
+    .replace(PREFIX_RE, "")
+    .replace(TRAILING_PAREN_RE, "");
+  const fragments = stripped.split(SPLIT_RE);
+  const seen = new Set<string>();
+  const result: string[] = [];
+  for (const frag of fragments) {
+    const name = frag.trim();
+    if (name.length < 3) continue;
+    if (STOP_WORDS_RE.test(name)) continue;
+    if (seen.has(name)) continue;
+    seen.add(name);
+    result.push(name);
+  }
+  return result;
+}
 
 // ---------------------------------------------------------------------------
 // Types
@@ -55,16 +119,21 @@ function extractDropSource(step: NormalizedStep): string | null {
 
 function EpicStepCard({
   epicClassName,
+  classEpic,
   step,
   stepIndex,
   globalIndex,
+  onSelectLoot,
 }: {
   epicClassName: EpicClassName;
+  classEpic: NormalizedClassEpic;
   step: NormalizedStep;
   stepIndex: number;
   globalIndex: number;
+  onSelectLoot: (itemName: string, bucket: Bucket) => void;
 }) {
   const { getProgress } = useEpicProgress();
+  const { previewProps } = useItemPreview();
   const progress = getProgress(epicClassName);
   const isComplete = progress.completed.includes(stepIndex);
   const dropSource = extractDropSource(step);
@@ -116,12 +185,35 @@ function EpicStepCard({
             </dd>
           </div>
         )}
-        {step.items && (
-          <div className="epic-step-meta-pair">
-            <dt>Items</dt>
-            <dd>{step.items}</dd>
-          </div>
-        )}
+        {(() => {
+          const items = parseStepItems(step.items ?? "");
+          if (items.length === 0) return null;
+          return (
+            <div className="epic-step-meta-pair">
+              <dt>Items</dt>
+              <dd>
+                <ul className="epic-items-list">
+                  {items.map((itemName) => {
+                    const details = itemDetailsMap[itemName];
+                    return (
+                      <li key={itemName}>
+                        <button
+                          className="epic-item-link"
+                          onClick={() => onSelectLoot(itemName, makeEpicBucket(itemName, classEpic, step))}
+                          type="button"
+                          {...previewProps(itemName, details)}
+                        >
+                          <ItemIcon details={details} />
+                          <span>{itemName}</span>
+                        </button>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </dd>
+            </div>
+          );
+        })()}
         {step.notes && (
           <div className="epic-step-meta-pair">
             <dt>Notes</dt>
@@ -139,8 +231,10 @@ function EpicStepCard({
 
 function ClassSection({
   classEpic,
+  onSelectLoot,
 }: {
   classEpic: NormalizedClassEpic;
+  onSelectLoot: (itemName: string, bucket: Bucket) => void;
 }) {
   const { getProgress, clearProgress } = useEpicProgress();
   const { className, weaponName, steps } = classEpic;
@@ -189,9 +283,11 @@ function ClassSection({
           <EpicStepCard
             key={`${className}-row${step.sourceRow}`}
             epicClassName={className}
+            classEpic={classEpic}
             step={step}
             stepIndex={idx}
             globalIndex={idx}
+            onSelectLoot={onSelectLoot}
           />
         ))}
       </ol>
@@ -214,6 +310,30 @@ function EpicTrackerInner({ classes, usingFallback }: EpicTrackerClientProps) {
 
   const [selectedClass, setSelectedClass] = useState<EpicClassName>(firstAvailable);
   const activeClassEpic = classMap.get(selectedClass);
+
+  const [drawerItem, setDrawerItem] = useState<{ item: string; bucket: Bucket } | null>(null);
+
+  const modifierHeldRef = useRef(false);
+  useEffect(() => {
+    function handleMouseDown(event: MouseEvent) {
+      modifierHeldRef.current = event.metaKey || event.ctrlKey;
+    }
+    document.addEventListener("mousedown", handleMouseDown, { capture: true });
+    return () => document.removeEventListener("mousedown", handleMouseDown, { capture: true });
+  }, []);
+
+  function handleSelectLoot(itemName: string, bucket: Bucket) {
+    if (modifierHeldRef.current) {
+      window.open(`/item/${itemToSlug(itemName)}`, "_blank", "noopener");
+      modifierHeldRef.current = false;
+      return;
+    }
+    setDrawerItem({ item: itemName, bucket });
+  }
+
+  function handleCloseDrawer() {
+    setDrawerItem(null);
+  }
 
   return (
     <>
@@ -253,12 +373,24 @@ function EpicTrackerInner({ classes, usingFallback }: EpicTrackerClientProps) {
 
       {/* Per-class content */}
       {activeClassEpic && activeClassEpic.steps.length > 0 ? (
-        <ClassSection classEpic={activeClassEpic} />
+        <ClassSection classEpic={activeClassEpic} onSelectLoot={handleSelectLoot} />
       ) : (
         <p className="epic-pending-state">
           {selectedClass} epic quest data is being prepared for launch — check back closer to May 27, 2026.
         </p>
       )}
+
+      {drawerItem !== null ? (
+        <ItemDrawer
+          bucket={drawerItem.bucket}
+          contentType="Epic Quest"
+          details={itemDetailsMap[drawerItem.item]}
+          expansion={drawerItem.bucket.expansion}
+          itemName={drawerItem.item}
+          onClose={handleCloseDrawer}
+          onSelectZone={() => {}}
+        />
+      ) : null}
     </>
   );
 }

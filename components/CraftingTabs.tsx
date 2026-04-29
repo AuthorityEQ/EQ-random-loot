@@ -1,7 +1,6 @@
 "use client";
 
-import { useState } from "react";
-import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
 import {
   CRAFTING_SKILLS,
   SKILL_LABELS,
@@ -9,6 +8,31 @@ import {
   type CraftingSkill,
 } from "@/lib/crafting";
 import { itemToSlug } from "@/lib/item-slug";
+import { ItemDrawer } from "@/components/ItemDrawer";
+import "@/components/item-drawer.css";
+import { ItemIcon } from "@/components/ItemIcon";
+import { useItemPreview } from "@/components/ItemPreviewProvider";
+import itemDetailsData from "@/data/item-details.json";
+import type { Bucket, ItemDetailsMap } from "@/lib/search";
+
+const itemDetailsMap = itemDetailsData as ItemDetailsMap;
+
+let _craftingBucketIdCounter = 200000;
+function makeCraftingBucket(itemName: string, recipe: CraftingRecipe): Bucket {
+  _craftingBucketIdCounter += 1;
+  const expansion = "Classic";
+  return {
+    bucket: _craftingBucketIdCounter,
+    level_range: `${SKILL_LABELS[recipe.skill]} (Trivial ${recipe.trivial ?? "?"})`,
+    expansion,
+    mobs: [],
+    zones: [],
+    loot_pool: [itemName],
+    mob_count: 0,
+    loot_count: 1,
+    zone_count: 0,
+  };
+}
 
 // ---------------------------------------------------------------------------
 // Serializable data shape passed from the server page
@@ -33,16 +57,31 @@ interface CraftingTabsProps {
 // Recipe card
 // ---------------------------------------------------------------------------
 
-function RecipeCard({ recipe }: { recipe: CraftingRecipe }) {
+function RecipeCard({
+  recipe,
+  onSelectLoot,
+}: {
+  recipe: CraftingRecipe;
+  onSelectLoot: (itemName: string, bucket: Bucket) => void;
+}) {
+  const { previewProps } = useItemPreview();
+  const outputDetails = itemDetailsMap[recipe.output.name];
+
   return (
     <article className={`recipe-card skill-tone-${recipe.skill}`}>
       <div className="recipe-card-topline">
         <div>
           <p className="recipe-card-kicker">{SKILL_LABELS[recipe.skill]}</p>
           <h3 className="recipe-card-name">
-            <Link className="recipe-output-link" href={`/item/${itemToSlug(recipe.output.name)}`}>
-              {recipe.output.name}
-            </Link>
+            <button
+              className="recipe-output-link"
+              onClick={() => onSelectLoot(recipe.output.name, makeCraftingBucket(recipe.output.name, recipe))}
+              type="button"
+              {...previewProps(recipe.output.name, outputDetails)}
+            >
+              <ItemIcon details={outputDetails} />
+              <span>{recipe.output.name}</span>
+            </button>
             {recipe.output.count > 1 ? (
               <span className="recipe-output-count">x{recipe.output.count}</span>
             ) : null}
@@ -67,16 +106,25 @@ function RecipeCard({ recipe }: { recipe: CraftingRecipe }) {
       <div className="recipe-components">
         <h4 className="recipe-components-heading">Components</h4>
         <ul className="recipe-components-list">
-          {recipe.components.map((component) => (
-            <li className="recipe-component-item" key={`${component.name}-${component.count}`}>
-              {component.count > 1 ? (
-                <span className="recipe-component-count">{component.count}x</span>
-              ) : null}
-              <Link className="recipe-component-link" href={`/item/${itemToSlug(component.name)}`}>
-                {component.name}
-              </Link>
-            </li>
-          ))}
+          {recipe.components.map((component) => {
+            const d = itemDetailsMap[component.name];
+            return (
+              <li className="recipe-component-item" key={`${component.name}-${component.count}`}>
+                {component.count > 1 ? (
+                  <span className="recipe-component-count">{component.count}x</span>
+                ) : null}
+                <button
+                  className="recipe-component-link"
+                  onClick={() => onSelectLoot(component.name, makeCraftingBucket(component.name, recipe))}
+                  type="button"
+                  {...previewProps(component.name, d)}
+                >
+                  <ItemIcon details={d} />
+                  <span>{component.name}</span>
+                </button>
+              </li>
+            );
+          })}
         </ul>
       </div>
 
@@ -91,7 +139,11 @@ function RecipeCard({ recipe }: { recipe: CraftingRecipe }) {
 // Tier section
 // ---------------------------------------------------------------------------
 
-function TierSection({ tier, recipes }: SkillTierGroup) {
+function TierSection({
+  tier,
+  recipes,
+  onSelectLoot,
+}: SkillTierGroup & { onSelectLoot: (itemName: string, bucket: Bucket) => void }) {
   return (
     <section className="recipe-tier-section">
       <h3 className="recipe-tier-heading">
@@ -102,7 +154,11 @@ function TierSection({ tier, recipes }: SkillTierGroup) {
       </h3>
       <div className="recipe-grid">
         {recipes.map((recipe) => (
-          <RecipeCard key={`${recipe.skill}-${recipe.name}`} recipe={recipe} />
+          <RecipeCard
+            key={`${recipe.skill}-${recipe.name}`}
+            recipe={recipe}
+            onSelectLoot={onSelectLoot}
+          />
         ))}
       </div>
     </section>
@@ -113,7 +169,11 @@ function TierSection({ tier, recipes }: SkillTierGroup) {
 // Skill panel
 // ---------------------------------------------------------------------------
 
-function SkillPanel({ skill, groups }: SkillData) {
+function SkillPanel({
+  skill,
+  groups,
+  onSelectLoot,
+}: SkillData & { onSelectLoot: (itemName: string, bucket: Bucket) => void }) {
   if (groups.length === 0) {
     return (
       <p className="crafting-empty">
@@ -124,7 +184,12 @@ function SkillPanel({ skill, groups }: SkillData) {
   return (
     <div className="crafting-skill-panel">
       {groups.map((group) => (
-        <TierSection key={group.tier} tier={group.tier} recipes={group.recipes} />
+        <TierSection
+          key={group.tier}
+          tier={group.tier}
+          recipes={group.recipes}
+          onSelectLoot={onSelectLoot}
+        />
       ))}
     </div>
   );
@@ -147,6 +212,30 @@ export function CraftingTabs({ skillData }: CraftingTabsProps) {
   );
 
   const active = skillData.find((s) => s.skill === activeSkill) ?? skillData[0];
+
+  const [drawerItem, setDrawerItem] = useState<{ item: string; bucket: Bucket } | null>(null);
+
+  const modifierHeldRef = useRef(false);
+  useEffect(() => {
+    function handleMouseDown(event: MouseEvent) {
+      modifierHeldRef.current = event.metaKey || event.ctrlKey;
+    }
+    document.addEventListener("mousedown", handleMouseDown, { capture: true });
+    return () => document.removeEventListener("mousedown", handleMouseDown, { capture: true });
+  }, []);
+
+  function handleSelectLoot(itemName: string, bucket: Bucket) {
+    if (modifierHeldRef.current) {
+      window.open(`/item/${itemToSlug(itemName)}`, "_blank", "noopener");
+      modifierHeldRef.current = false;
+      return;
+    }
+    setDrawerItem({ item: itemName, bucket });
+  }
+
+  function handleCloseDrawer() {
+    setDrawerItem(null);
+  }
 
   return (
     <div className="crafting-tabs">
@@ -178,8 +267,26 @@ export function CraftingTabs({ skillData }: CraftingTabsProps) {
         className="crafting-tab-panel"
         role="tabpanel"
       >
-        {active ? <SkillPanel skill={active.skill} groups={active.groups} /> : null}
+        {active ? (
+          <SkillPanel
+            skill={active.skill}
+            groups={active.groups}
+            onSelectLoot={handleSelectLoot}
+          />
+        ) : null}
       </div>
+
+      {drawerItem !== null ? (
+        <ItemDrawer
+          bucket={drawerItem.bucket}
+          contentType="Recipe"
+          details={itemDetailsMap[drawerItem.item]}
+          expansion={drawerItem.bucket.expansion}
+          itemName={drawerItem.item}
+          onClose={handleCloseDrawer}
+          onSelectZone={() => {}}
+        />
+      ) : null}
     </div>
   );
 }

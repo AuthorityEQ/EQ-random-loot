@@ -3,7 +3,7 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 type ExpansionArg = "classic" | "kunark" | "velious";
-type ContentTypeArg = "group-named" | "raid";
+type ContentTypeArg = "group-named" | "raid" | "crafting" | "epic";
 
 type ItemDetails = {
   name: string;
@@ -39,6 +39,39 @@ type RaidDataset = {
   tiers: RaidTier[];
 };
 
+type CraftingComponent = {
+  name: string;
+  count: number;
+};
+
+type CraftingRecipe = {
+  output: { name: string; count: number };
+  components: CraftingComponent[];
+};
+
+type CraftingDataset = {
+  recipes: CraftingRecipe[];
+};
+
+type EpicStep = {
+  items: string;
+};
+
+type EpicClass = {
+  class_name: string;
+  weapon_name: string;
+  steps: EpicStep[];
+};
+
+type EpicDataset = {
+  classes: EpicClass[];
+};
+
+const CRAFTING_PSEUDO_CATEGORY = /\([^)]*,[^)]*\)/;
+const EPIC_VERB_PREFIX = /^(Receive|Hand in|Give|Loot|Buy|Combine|Turn in|Reward):\s*/i;
+const EPIC_TRAILING_PAREN = /\s*\([^)]*\)\s*$/;
+const EPIC_STOP_WORDS = new Set(["the player", "this step", "unknown", "tba", "tbd"]);
+
 type ImageCandidate = {
   absoluteUrl: string;
   alt: string;
@@ -63,13 +96,21 @@ if (!args) {
 
 const datasetPath = args.contentType === "raid"
   ? path.join(root, "data", `${args.expansion}-raid.json`)
-  : path.join(root, "data", `${args.expansion}-group-named.json`);
+  : args.contentType === "crafting"
+    ? path.join(root, "data", "excel-imports", "crafting-normalized.json")
+    : args.contentType === "epic"
+      ? path.join(root, "data", "excel-imports", "epic-quests.json")
+      : path.join(root, "data", `${args.expansion}-group-named.json`);
 const details = JSON.parse(await readFile(detailsPath, "utf8")) as Record<string, ItemDetails>;
-const datasetRaw = JSON.parse(await readFile(datasetPath, "utf8")) as Dataset | RaidDataset;
+const datasetRaw = JSON.parse(await readFile(datasetPath, "utf8")) as Dataset | RaidDataset | CraftingDataset | EpicDataset;
 const selectedItemNames = getSelectedItemNames();
 const allItemNames = args.contentType === "raid"
   ? getRaidItemNames(datasetRaw as RaidDataset)
-  : getBatchItemNames(datasetRaw as Dataset);
+  : args.contentType === "crafting"
+    ? getCraftingItemNames(datasetRaw as CraftingDataset)
+    : args.contentType === "epic"
+      ? getEpicItemNames(datasetRaw as EpicDataset)
+      : getBatchItemNames(datasetRaw as Dataset);
 const itemNames = allItemNames
   .filter((itemName) => selectedItemNames.length === 0 || selectedItemNames.includes(itemName))
   .slice(0, args.limit ?? undefined);
@@ -169,9 +210,10 @@ function parseArgs(rawArgs: string[]) {
 }
 
 function printUsage() {
-  console.log("Usage: node --experimental-strip-types scripts/import-item-icons.ts <classic|kunark|velious> <group-named|raid> [limit]");
+  console.log("Usage: node --experimental-strip-types scripts/import-item-icons.ts <classic|kunark|velious> <group-named|raid|crafting|epic> [limit]");
   console.log("Example: node --experimental-strip-types scripts/import-item-icons.ts classic group-named 10");
   console.log("Example: node --experimental-strip-types scripts/import-item-icons.ts classic raid");
+  console.log("Note: for crafting and epic the expansion arg is accepted but ignored (data is not per-expansion).");
 }
 
 function isExpansion(value: string | undefined): value is ExpansionArg {
@@ -179,7 +221,7 @@ function isExpansion(value: string | undefined): value is ExpansionArg {
 }
 
 function isContentType(value: string | undefined): value is ContentTypeArg {
-  return value === "group-named" || value === "raid";
+  return value === "group-named" || value === "raid" || value === "crafting" || value === "epic";
 }
 
 function getBatchItemNames(dataset: Dataset) {
@@ -196,6 +238,39 @@ function getRaidItemNames(dataset: RaidDataset) {
       dataset.tiers.flatMap((tier) => tier.bosses.flatMap((boss) => boss.loot_pool ?? [])),
     ),
   ).sort((a, b) => a.localeCompare(b));
+}
+
+function getCraftingItemNames(dataset: CraftingDataset) {
+  const names = new Set<string>();
+  for (const recipe of dataset.recipes) {
+    names.add(recipe.output.name);
+    for (const component of recipe.components) {
+      names.add(component.name);
+    }
+  }
+  return Array.from(names)
+    .filter((name) => !CRAFTING_PSEUDO_CATEGORY.test(name))
+    .sort((a, b) => a.localeCompare(b));
+}
+
+function getEpicItemNames(dataset: EpicDataset) {
+  const names = new Set<string>();
+  for (const cls of dataset.classes) {
+    for (const step of cls.steps) {
+      const raw = (step.items ?? "").trim();
+      if (!raw) continue;
+      const stripped = raw.replace(EPIC_VERB_PREFIX, "").replace(EPIC_TRAILING_PAREN, "");
+      const fragments = stripped.split(/ and | & |, /);
+      for (const fragment of fragments) {
+        const trimmed = fragment.trim();
+        if (trimmed.length < 3) continue;
+        if (/^[a-z]/.test(trimmed)) continue;
+        if (EPIC_STOP_WORDS.has(trimmed.toLowerCase())) continue;
+        names.add(trimmed);
+      }
+    }
+  }
+  return Array.from(names).sort((a, b) => a.localeCompare(b));
 }
 
 function getSelectedItemNames() {
