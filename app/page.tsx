@@ -319,14 +319,8 @@ export default function Home() {
 
   return (
     <main className="page">
-      <header className="header">
-        <div>
-          <p className="eyebrow">
-            {expansionLabel} / {contentType} / {modeLabel}
-          </p>
-          <h1>Frostreaver Random Loot</h1>
-          <p className="wip-line">Work in progress — DM AuthorityGames on Discord</p>
-        </div>
+      <header className="header hero-header" aria-label="Loot Goblin">
+        <img className="hero-banner-image" src="/loot-goblin-banner.png" alt="Loot Goblin" />
       </header>
 
       <div className="toolbar">

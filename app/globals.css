@@ -283,6 +283,36 @@ select {
   margin-bottom: 10px;
 }
 
+.hero-header {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  display: block;
+  height: clamp(190px, 22vw, 250px);
+  margin-bottom: 14px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-banner-image {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  object-position: center right;
+  width: 100%;
+}
+
+.hero-header::after {
+  background:
+    linear-gradient(90deg, rgba(5, 8, 6, 0.52), rgba(5, 8, 6, 0.08) 38%, rgba(5, 8, 6, 0.52)),
+    linear-gradient(0deg, rgba(5, 8, 6, 0.5), rgba(5, 8, 6, 0.02) 48%, rgba(5, 8, 6, 0.52));
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+}
+
 .home-reset-button {
   align-items: center;
   background: var(--panel);
@@ -2062,6 +2092,10 @@ h1 {
   .toolbar {
     align-items: stretch;
     flex-direction: column;
+  }
+
+  .hero-header {
+    height: clamp(140px, 32vw, 180px);
   }
 
   .zone-view-header {
