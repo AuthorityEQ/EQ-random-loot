@@ -6,6 +6,8 @@
     "start": "next start",
     "lint": "next lint",
     "extract:item-names": "node --experimental-strip-types scripts/extract-item-names.ts",
+    "extract:all-item-names": "node --experimental-strip-types scripts/extract-item-names.ts --all",
+    "migrate:item-schema": "node --experimental-strip-types scripts/migrate-item-schema.ts",
     "enrich:zam:test": "node --experimental-strip-types scripts/enrich-items-from-zam.ts --max-items=5",
     "enrich:zam": "node --experimental-strip-types scripts/enrich-items-from-zam.ts",
     "validate:item-details": "node --experimental-strip-types scripts/validate-item-details.ts",
@@ -14,7 +16,19 @@
     "apply:missing-corrections": "node --experimental-strip-types scripts/apply-missing-item-corrections.ts",
     "apply:small-corrections": "node --experimental-strip-types scripts/apply-small-item-corrections.ts",
     "mark:duplicates-clean": "node --experimental-strip-types scripts/mark-duplicate-items-clean.ts",
-    "import:item-icons": "node --experimental-strip-types scripts/import-item-icons.ts"
+    "import:item-icons": "node --experimental-strip-types scripts/import-item-icons.ts",
+    "ingest:excel:test": "node --experimental-strip-types scripts/ingest-excel.ts --all --max-rows=10 --dry-run",
+    "ingest:excel:tier1": "node --experimental-strip-types scripts/ingest-excel.ts --all",
+    "ingest:excel:all": "node --experimental-strip-types scripts/ingest-excel.ts --all",
+    "normalize:crafting": "node --experimental-strip-types scripts/normalize-crafting-data.ts",
+    "normalize:factions": "node --experimental-strip-types scripts/normalize-faction-data.ts",
+    "pipeline:fast": "node --experimental-strip-types scripts/run-pipeline.ts --mode=fast",
+    "pipeline:full": "node --experimental-strip-types scripts/run-pipeline.ts --mode=full",
+    "pipeline:excel": "node --experimental-strip-types scripts/run-pipeline.ts --mode=excel",
+    "pipeline:scrape": "node --experimental-strip-types scripts/run-pipeline.ts --mode=scrape",
+    "cache:list": "node --experimental-strip-types scripts/cache-utility.ts --list",
+    "cache:prune": "node --experimental-strip-types scripts/cache-utility.ts --prune --older-than=30",
+    "generate:icons": "node scripts/generate-icons.mjs"
   },
   "dependencies": {
     "next": "^16.2.4",
@@ -29,6 +43,8 @@
     "@types/node": "22.15.2",
     "@types/react": "19.0.12",
     "@types/react-dom": "19.0.4",
-    "typescript": "5.8.3"
+    "sharp": "^0.34.5",
+    "typescript": "5.8.3",
+    "xlsx": "^0.18.5"
   }
 }

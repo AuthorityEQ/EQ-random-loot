@@ -1,0 +1,397 @@
+================================================================================
+FROSTREAVER LOOT BUCKETS — LAUNCH DAY RUNBOOK
+================================================================================
+
+Launch Date: May 27, 2026
+Launch Time: 12:00 PM PT (19:00 UTC)
+Duration: 72 hours of heightened monitoring recommended
+
+================================================================================
+T-1 DAY (May 26, 2026)
+================================================================================
+
+Morning:
+[ ] Pull latest main branch locally
+[ ] Run: npx tsc --noEmit && npm run build (must succeed)
+[ ] Run: npm run lint (must pass)
+[ ] Verify all data JSON files: data/excel-imports/ + data/item-details.json
+[ ] Verify PWA icons: public/icons/icon-{192,512,maskable}.png
+
+Afternoon:
+[ ] Deploy to Vercel (should auto-deploy on merge to main)
+[ ] Verify production URL is live
+[ ] Test all main routes:
+    - /
+    - /raids
+    - /favorites
+    - /crafting
+    - /factions
+    - /epics
+    - /offline
+[ ] Test on mobile (iPhone Safari, Android Chrome)
+[ ] Check console for errors (DevTools → Console)
+[ ] Verify dark mode toggle works
+[ ] Verify server selector (Frostreaver/Mischief/Teek) persists
+
+Evening (final pre-flight):
+[ ] Check Vercel dashboard (deployments, analytics)
+[ ] Verify analytics dashboard (Plausible/Umami) is live
+[ ] Verify Uptime Robot is monitoring the production domain
+[ ] Load production URL in incognito (fresh browser cache)
+[ ] One last mobile test
+
+Night Before:
+[ ] Get sleep — launch day requires alertness
+[ ] Have production domain URL written down
+[ ] Have Vercel dashboard bookmarked
+[ ] Have analytics dashboard bookmarked
+[ ] Have Discord/Slack team channel open for coordination
+
+================================================================================
+LAUNCH DAY (May 27, 2026)
+================================================================================
+
+T-12:00 PM PT (Launch)
+===============
+
+00:00 (T-hour):
+[ ] Post in Discord/Reddit: "Going live in 60 minutes"
+[ ] Final check: git log --oneline -5 (verify latest commit is deployed)
+[ ] Monitor Vercel deployments (should show production deployment)
+
+00:15:
+[ ] Post in Discord: "15 minutes to launch"
+[ ] Open monitoring dashboards:
+    - Vercel analytics
+    - Uptime Robot
+    - Plausible/Umami analytics
+    - Error logs (if available)
+
+00:30:
+[ ] Post in Discord: "30 minutes to launch"
+[ ] Open browser tabs:
+    - https://frostreaver-loot.com/ (main)
+    - https://frostreaver-loot.com/raids
+    - Vercel dashboard
+    - Discord launch channel
+
+00:45:
+[ ] Post in Discord: "15 minutes!"
+[ ] Refresh production URL once (ensure DNS resolved)
+[ ] Verify ServerStatusBadge component is displaying correctly
+
+00:58:
+[ ] Final checks:
+    [ ] No errors in console
+    [ ] Favicon loaded
+    [ ] Dark mode toggle works
+    [ ] Service worker registered
+
+T+00:00 (LAUNCH MOMENT)
+========================
+
+CRITICAL HOUR (First 15 minutes):
+
+At 12:00 PM PT sharp:
+[ ] Announce launch in Discord: "FROSTREAVER LOOT BUCKETS IS LIVE!"
+[ ] Post link: https://frostreaver-loot.com/
+[ ] Watch error logs like a hawk (should stay near 0)
+[ ] Monitor page load times (should be < 500ms)
+[ ] Check Uptime Robot (must show "up")
+[ ] Refresh main page 3-4 times (verify no issues)
+
+Minute 1-5:
+[ ] Verify no errors reported by users in Discord
+[ ] Check ServiceWorkerRegistration worked (user feedback: offline works)
+[ ] Monitor network requests (no 404s or 5xxs)
+
+Minute 5-10:
+[ ] Start fielding user questions in Discord
+[ ] Watch traffic spike in analytics
+[ ] Verify all routes load for users (collect feedback)
+
+Minute 10-15:
+[ ] If errors appear: assess severity
+    - Minor (UI glitch): note and monitor
+    - Major (no data): consider rollback
+    - Critical (down): ROLLBACK IMMEDIATELY
+[ ] Update Discord with status: "Everything looks good. Enjoy!"
+
+================================================================================
+FIRST HOUR POST-LAUNCH (12:00 PM - 1:00 PM PT)
+================================================================================
+
+Every 5 minutes:
+[ ] Check error rate (target: < 0.1%)
+[ ] Check response times (target: < 500ms p95)
+[ ] Check Uptime Robot status (target: 100%)
+[ ] Spot-check 2-3 user-reported items (verify data accuracy)
+
+Every 15 minutes:
+[ ] Review new Discord/Reddit comments
+[ ] Respond to feature requests ("nice feedback, thanks!")
+[ ] Respond to bugs with "we'll look into it"
+
+At 12:30 PM:
+[ ] Post: "First 30 minutes live, everything nominal. Thanks all!"
+[ ] Verify analytics data flowing (Plausible/Umami)
+
+At 1:00 PM (1 hour):
+[ ] Post in Discord: "1 hour live and stable. Metrics all green."
+[ ] Update team Slack/email: "Launch successful"
+[ ] Log any issues found
+
+================================================================================
+FIRST 24 HOURS (May 27, monitoring schedule)
+================================================================================
+
+12:00 PM - 3:00 PM (Critical):
+[ ] Continuous monitoring
+[ ] Response to issues real-time
+[ ] Check every 5-10 minutes
+
+3:00 PM - 6:00 PM (Active):
+[ ] Monitoring every 15-30 minutes
+[ ] Respond to issues same-day
+[ ] Check Discord periodically
+
+6:00 PM - 11:59 PM (Ongoing):
+[ ] Monitoring every 1-2 hours
+[ ] Check once before bed
+[ ] Have on-call person with phone nearby
+
+11:59 PM May 27 - 12:00 PM May 28 (Active):
+[ ] Hand off to next on-call shift
+[ ] Pass along any outstanding issues
+[ ] Share 24-hour metrics
+
+================================================================================
+KEY METRICS TO MONITOR
+================================================================================
+
+All targets are MINIMUM (should exceed):
+
+Availability:
+✓ Uptime: 99.9%+ (max 8.6 sec downtime per day)
+✓ No outages longer than 5 minutes
+
+Performance:
+✓ Page load time: < 500ms p95
+✓ First byte: < 200ms
+✓ Time to interactive: < 1s
+
+Errors:
+✓ Error rate: < 0.1% (< 1 error per 1000 requests)
+✓ 4xx errors: routing/user issues (acceptable)
+✓ 5xx errors: ALERT (should be zero)
+
+User Engagement:
+✓ Session duration: > 1 minute average
+✓ Bounce rate: < 50%
+✓ Return visitors: track over time
+
+================================================================================
+IF ROLLBACK IS NEEDED
+================================================================================
+
+Minor Issues (UI glitch, non-critical bug):
+- Let it run, gather feedback, plan fix for next deploy
+- Post in Discord: "We're aware of [issue], fix coming in next deploy"
+- Deploy fix on main branch → auto-deploy in < 2 minutes
+
+Critical Issues (data wrong, slow, unreachable):
+1. Assess severity:
+   - Can users access the site? (No → CRITICAL)
+   - Is data accurate? (No → CRITICAL)
+   - Is it performing? (< 1 sec load → OK)
+
+2. If CRITICAL, ROLLBACK IMMEDIATELY:
+
+   Vercel Rollback:
+   [ ] Go to vercel.com dashboard
+   [ ] Click Deployments
+   [ ] Find last deployment (before this one)
+   [ ] Click three-dot menu → "Promote to Production"
+   [ ] Wait 5-10 seconds for switch
+   [ ] Verify production URL works
+   [ ] Post in Discord: "Rolled back to previous version, investigating"
+   [ ] Time to rollback: < 30 seconds total
+
+   Docker Rollback (if self-hosted):
+   [ ] SSH to server: ssh user@server
+   [ ] List images: docker images | grep frostreaver
+   [ ] Find last good version tag (e.g., v1.9)
+   [ ] Re-tag: docker tag frostreaver:v1.9 frostreaver:latest
+   [ ] Restart: docker-compose down && docker-compose up -d
+   [ ] Verify: curl http://localhost:3000
+   [ ] Post in Discord: "Rolled back, investigating"
+   [ ] Time to rollback: < 2 minutes total
+
+3. After rollback:
+   [ ] Wait 15 minutes, verify stability
+   [ ] Debug the failed deployment (check git logs, check build output)
+   [ ] Fix the issue on a branch
+   [ ] Test locally thoroughly
+   [ ] Re-deploy once confident
+   [ ] Post post-mortem in Discord
+
+================================================================================
+ERROR RESPONSE PLAYBOOK
+================================================================================
+
+Common Scenarios:
+
+1. "Everyone's getting 404 errors"
+   → Check Vercel/Docker container is running
+   → Check domain DNS is resolving
+   → Check app built successfully
+   → If still failing: ROLLBACK
+
+2. "Page loads but no loot data showing"
+   → Check data/*.json files are in production
+   → Hard-refresh browser (Ctrl+F5)
+   → Check browser console for JS errors
+   → If widespread: ROLLBACK
+
+3. "PWA not installing on mobile"
+   → Not critical (PWA is nice-to-have)
+   → Check public/manifest.json loads
+   → Note and monitor, fix in next deploy
+   → No rollback needed
+
+4. "Service worker not updating"
+   → Not critical for launch
+   → Users can hard-refresh to force update
+   → Fix CACHE_NAME in public/sw.js and re-deploy
+   → No rollback needed
+
+5. "Dark mode not working / Server selector not persisting"
+   → Not critical
+   → Check browser DevTools → Console for JS errors
+   → Fix and re-deploy
+   → No rollback needed
+
+6. "Uptime Robot reports down"
+   → Check Vercel/Docker logs
+   → Verify domain resolves: nslookup frostreaver-loot.com
+   → Check reverse proxy (nginx) if self-hosted
+   → If actually down: ROLLBACK
+   → If false positive: update Uptime Robot health check URL
+
+================================================================================
+ESCALATION CHAIN
+================================================================================
+
+Issue Severity: MINOR
+- Response time: < 1 hour
+- Post in Discord, note for next deploy
+- No rollback
+
+Issue Severity: MAJOR
+- Response time: < 15 minutes
+- Notify team, assess rollback need
+- Rollback if affects 10%+ of users or core functionality
+
+Issue Severity: CRITICAL
+- Response time: IMMEDIATE (< 2 minutes)
+- ROLLBACK FIRST, debug second
+- Notify all stakeholders via Discord + Slack
+- Post-mortem after stabilization
+
+Contact:
+- Discord: Launch channel (watch for pings)
+- Slack: #frostreaver-launch (if available)
+- Email: escalation contact (have number ready)
+
+================================================================================
+POST-LAUNCH (May 28+)
+================================================================================
+
+May 28 Morning:
+[ ] Review 24-hour metrics
+[ ] Check for overnight issues
+[ ] Respond to any pending Discord questions
+[ ] Update GitHub issues with learnings
+
+May 28-29:
+[ ] Monitor for issues (check analytics, error logs daily)
+[ ] Respond to feature requests
+[ ] Plan any urgent fixes for next deploy
+[ ] Celebrate launch! You did it!
+
+May 30+:
+[ ] Switch to normal on-call rotation
+[ ] Monitor Uptime Robot daily
+[ ] Review analytics weekly
+[ ] Deploy improvements as needed
+
+================================================================================
+LAUNCH SUCCESS CRITERIA
+================================================================================
+
+At 24 hours post-launch:
+
+✓ Uptime: 99.9%+ (max 8.6 seconds downtime)
+✓ Error rate: < 0.1%
+✓ Page load: < 500ms p95
+✓ No critical issues reported
+✓ No rollbacks needed
+✓ User feedback positive ("Great tool!", "So useful!")
+✓ Discord/Reddit discussion active (good engagement)
+
+If all above met: LAUNCH SUCCESSFUL!
+
+================================================================================
+FINAL CHECKLIST
+================================================================================
+
+Before saying "Ready to launch":
+
+Technical:
+[ ] Deployment verified (Vercel dashboard shows current commit)
+[ ] All routes tested on production domain
+[ ] PWA tested on mobile
+[ ] No console errors
+[ ] Analytics connected
+[ ] Monitoring configured
+[ ] Error alerts set up
+
+Team:
+[ ] Launch team assembled (at least 2 people)
+[ ] On-call engineer assigned
+[ ] Discord moderators ready
+[ ] Community managers ready
+[ ] Status page updated (if applicable)
+
+Communication:
+[ ] Launch announcement written (Discord/Reddit)
+[ ] Rollback procedure documented
+[ ] Escalation chain clear
+[ ] Team knows where to report issues
+
+Documentation:
+[ ] DEPLOY.md reviewed and understood
+[ ] PWA.md reviewed (for kill-switch procedure)
+[ ] COMPETITIVE_POSITIONING.md shared with marketing
+[ ] Rollback procedure written down
+[ ] Post-mortem template ready
+
+GO/NO-GO DECISION:
+
+Before 12:00 PM PT:
+[ ] All above checks complete
+[ ] Team ready
+[ ] No blockers
+
+If any item unchecked: DO NOT LAUNCH. Delay 24 hours, fix issue, re-verify.
+
+If all checked: PROCEED WITH LAUNCH!
+
+================================================================================
+
+Good luck! You've got this. Monitor closely, respond quickly, and celebrate
+when you hit 1 hour without critical issues.
+
+Frostreaver Loot Buckets goes live May 27, 2026 12:00 PM PT.
+
+Launch time is 12:00 PM PT. Not 12:01. Not 12:05. 12:00 PM. Be ready.

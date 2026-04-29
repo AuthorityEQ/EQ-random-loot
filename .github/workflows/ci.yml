@@ -1,0 +1,86 @@
+name: CI — Lint, Type-Check, Build
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
+    branches:
+      - main
+      - develop
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [22.x]
+
+    steps:
+      # Check out the repository code
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Set up Node.js environment
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'  # Cache npm dependencies for faster builds
+
+      # Install dependencies
+      - name: Install dependencies
+        run: npm ci  # Use 'npm ci' instead of 'npm install' for CI environments
+
+      # Run ESLint (Next.js lint)
+      - name: Lint code
+        run: npm run lint
+        continue-on-error: false  # Fail if linting fails
+
+      # Run TypeScript type-checker
+      - name: Type-check TypeScript
+        run: npx tsc --noEmit
+        continue-on-error: false  # Fail if type-check fails
+
+      # Build the Next.js app
+      - name: Build app
+        run: npm run build
+        continue-on-error: false  # Fail if build fails
+
+      # Optional: Run tests if they exist
+      # - name: Run tests
+      #   run: npm test
+
+      # Optional: Build Docker image for preview
+      # - name: Build Docker image
+      #   run: docker build -t frostreaver:${{ github.sha }} .
+      #   if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+
+      # Optional: Push Docker image to registry
+      # - name: Push to Docker registry
+      #   uses: docker/build-push-action@v5
+      #   with:
+      #     context: .
+      #     push: true
+      #     tags: username/frostreaver:latest,username/frostreaver:${{ github.sha }}
+      #     cache-from: type=registry,ref=username/frostreaver:buildcache
+      #     cache-to: type=registry,ref=username/frostreaver:buildcache,mode=max
+      #   if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      #   env:
+      #     DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+      #     DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+
+  # Optional: Notify Vercel of successful build (if using Vercel)
+  # vercel:
+  #   needs: ci
+  #   runs-on: ubuntu-latest
+  #   if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+  #   steps:
+  #     - name: Notify Vercel of deployment
+  #       run: |
+  #         curl -X POST https://api.vercel.com/v1/deployments \
+  #           -H "Authorization: Bearer ${{ secrets.VERCEL_TOKEN }}" \
+  #           -H "Content-Type: application/json" \
+  #           -d '{"gitSource": {"type": "github", "repo": "${{ github.repository }}", "ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}}'

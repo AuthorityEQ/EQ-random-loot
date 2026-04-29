@@ -3,6 +3,7 @@ export type RaidBoss = {
   level: number;
   zone: string;
   notes?: string;
+  loot_pool?: string[];
 };
 
 export type RaidTier = {

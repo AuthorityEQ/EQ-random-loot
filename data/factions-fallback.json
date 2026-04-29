@@ -1,0 +1,102 @@
+{
+  "_status": "fallback_sample_data",
+  "factions": [
+    {
+      "name": "Guardians of the Vale",
+      "alignment": "good",
+      "zones": ["Kelethin", "Greater Faydark", "Lesser Faydark"],
+      "related_mobs": ["a wood elf guard", "a faerie", "Mayong Mistmoore"],
+      "quests": ["Faydwer Armor", "Wood Elf Cultural Armor"],
+      "required_items": ["Crushbone Belt", "Orc Scalp"],
+      "starting_value_by_race": {
+        "High Elf": 100,
+        "Wood Elf": 500,
+        "Half Elf": 100,
+        "Human": 0,
+        "Dark Elf": -400,
+        "Troll": -400,
+        "Ogre": -400
+      },
+      "allied_races": ["High Elf", "Wood Elf", "Half Elf"],
+      "kos_races": ["Dark Elf", "Troll", "Ogre"],
+      "tips": [
+        "Kill Crushbone orcs for fast early gains.",
+        "Lower Guk undead also grant positive faction at higher levels.",
+        "Avoid killing gnolls in the zone — they share faction loss."
+      ],
+      "notes": "Primary good faction for Faydwer wood elves and high elves. Required for cultural armor quests in Kelethin."
+    },
+    {
+      "name": "Merchants of Freeport",
+      "alignment": "neutral",
+      "zones": ["East Freeport", "West Freeport", "North Freeport", "The Commonlands"],
+      "related_mobs": ["a Freeport guard", "a militia guard", "Kane Bayle"],
+      "quests": ["Freeport Militia Armor", "Deputy Crabbok"],
+      "required_items": ["Gnoll Fang", "Gnoll Tooth"],
+      "starting_value_by_race": {
+        "Human": 100,
+        "Half Elf": 100,
+        "Erudite": 0,
+        "Dwarf": 0,
+        "Dark Elf": -100,
+        "Iksar": -500
+      },
+      "allied_races": ["Human", "Half Elf"],
+      "kos_races": ["Iksar"],
+      "tips": [
+        "Killing gnolls in Commonlands raises faction quickly and can be done solo.",
+        "The Freeport Militia quests offer steady mid-level faction gains.",
+        "Be careful about completing quests that lower guard faction."
+      ],
+      "notes": "Neutral trade faction. Most races start at indifferent or amiable. KOS only to Iksar and certain dark races."
+    },
+    {
+      "name": "Bloodsabers",
+      "alignment": "evil",
+      "zones": ["Qeynos Catacombs", "Innothule Swamp", "Befallen"],
+      "related_mobs": ["a Bloodsaber", "a dark cultist", "Garanel Rucksif"],
+      "quests": ["Bloodsaber Initiate Armor", "Darkpaw Gnoll Pelt"],
+      "required_items": ["Rat Whisker", "Bat Wing"],
+      "starting_value_by_race": {
+        "Dark Elf": 200,
+        "Erudite": -100,
+        "Human": -100,
+        "Halfling": -400,
+        "Gnome": -100,
+        "Troll": 100,
+        "Ogre": 100
+      },
+      "allied_races": ["Dark Elf", "Troll", "Ogre"],
+      "kos_races": ["Halfling", "Half Elf", "Wood Elf"],
+      "tips": [
+        "Farm Befallen undead — most grant positive Bloodsaber faction.",
+        "The Qeynos Catacombs quests are repeatable and efficient.",
+        "Watch Qeynos guard faction — grinding Bloodsabers also tanks it."
+      ],
+      "notes": "Underground evil faction tied to Qeynos underbelly. Required for Necromancer and Shadow Knight cultural quests from Qeynos."
+    },
+    {
+      "name": "Truespirit",
+      "alignment": "neutral",
+      "zones": ["Cabilis", "Field of Bone", "Warsliks Wood", "Swamp of No Hope"],
+      "related_mobs": ["a scaled mystic", "a iksar monk", "Venril Sathir"],
+      "quests": ["Iksar Cultural Armor", "Scaled Mystic Armor"],
+      "required_items": ["Froglok Shin Bone", "Froglok Tongue"],
+      "starting_value_by_race": {
+        "Iksar": 500,
+        "Human": -200,
+        "High Elf": -300,
+        "Wood Elf": -200,
+        "Halfling": -100
+      },
+      "allied_races": ["Iksar"],
+      "kos_races": ["High Elf", "Human"],
+      "tips": [
+        "Kill frogloks in Swamp of No Hope for efficient early gains.",
+        "Warsliks Wood goblin camps are a mid-level alternative.",
+        "Several quests in Field of Bone chain into Truespirit turnins."
+      ],
+      "notes": "Iksar-primary faction from the Kunark expansion. Non-Iksar players typically need illusions or charm to interact with faction-gated vendors."
+    }
+  ]
+}

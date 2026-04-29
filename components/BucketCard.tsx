@@ -4,6 +4,9 @@ import type { Bucket } from "@/lib/search";
 import type { ItemDetails } from "@/lib/search";
 import { FavoriteIndicator } from "@/components/FavoriteIndicator";
 import { useItemPreview } from "@/components/ItemPreviewProvider";
+import { ConfidenceBadge } from "@/components/ConfidenceBadge";
+import confidenceData from "@/data/loot-confidence.json";
+import { DEFAULT_CONFIDENCE, type ConfidenceMetadata } from "@/lib/confidence";
 
 type BucketCardProps = {
   bucket: Bucket;
@@ -101,6 +104,7 @@ export function BucketCard({ bucket, visibleLoot, query = "", getItemDetails, on
               <li key={item}>
                 {(() => {
                   const details = getItemDetails(item);
+                  const meta = (confidenceData as unknown as Record<string, ConfidenceMetadata>)[item] ?? DEFAULT_CONFIDENCE;
                   return (
                 <button
                   className={includesQuery(item, normalizedQuery) ? "loot-button is-text-match" : "loot-button"}
@@ -110,6 +114,9 @@ export function BucketCard({ bucket, visibleLoot, query = "", getItemDetails, on
                   {...previewProps(item, details)}
                   >
                   <span>{item}</span>
+                  {(meta.tier === "verified" || meta.tier === "high") && (
+                    <ConfidenceBadge compact meta={meta} />
+                  )}
                   <FavoriteIndicator details={details} itemName={item} />
                 </button>
                   );

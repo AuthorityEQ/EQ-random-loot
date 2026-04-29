@@ -1,0 +1,332 @@
+/* ============================================================
+   Zone Detail Page — /zone/[name]
+   Uses existing tokens from globals.css. No new tokens added.
+   ============================================================ */
+
+/* Breadcrumb */
+
+.zone-breadcrumb {
+  margin-bottom: 16px;
+}
+
+.zone-breadcrumb-list {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.zone-breadcrumb-item {
+  align-items: center;
+  display: flex;
+  gap: 4px;
+}
+
+.zone-breadcrumb-item a {
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.zone-breadcrumb-item a:hover,
+.zone-breadcrumb-item a:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+.zone-breadcrumb-item span[aria-current="page"] {
+  color: var(--text);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.zone-breadcrumb-sep {
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+/* Hero / page header */
+
+.zone-page-hero {
+  background:
+    linear-gradient(90deg, color-mix(in srgb, var(--exp-primary, var(--accent)) 10%, transparent), transparent 52%),
+    var(--panel);
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--exp-primary, var(--accent));
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  padding: 24px;
+}
+
+.zone-page-hero-body {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+}
+
+.zone-page-title {
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  line-height: 1;
+  margin: 0;
+}
+
+.zone-page-meta {
+  align-items: center;
+  color: var(--muted);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.zone-page-meta strong {
+  color: var(--text);
+}
+
+.zone-page-meta .zone-level-range {
+  background: var(--bucket-amber);
+  border: 1px solid var(--bucket-border-amber);
+  border-radius: 8px;
+  color: var(--bucket-range-text);
+  font-size: 0.88rem;
+  font-weight: 900;
+  padding: 5px 10px;
+  white-space: nowrap;
+}
+
+/* Connecting zones */
+
+.zone-connections-panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 12px;
+  padding: 18px;
+}
+
+.zone-connections-panel h3 {
+  font-size: 1.1rem;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.zone-connections-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.zone-connection-link {
+  background: var(--surface-muted);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--accent);
+  font-size: 0.88rem;
+  font-weight: 700;
+  padding: 6px 12px;
+  text-decoration: none;
+  transition: background-color 140ms ease, border-color 140ms ease;
+  white-space: nowrap;
+}
+
+.zone-connection-link:hover,
+.zone-connection-link:focus {
+  background: var(--accent-soft);
+  border-color: color-mix(in srgb, var(--accent) 54%, var(--line));
+  outline: none;
+}
+
+/* Recommended buckets panel */
+
+.zone-buckets-panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 12px;
+  padding: 18px;
+}
+
+.zone-buckets-panel h3 {
+  font-size: 1.1rem;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.zone-bucket-list {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.zone-bucket-item {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--bucket-border-amber);
+  border-radius: 8px;
+  display: grid;
+  gap: 4px;
+  padding: 10px 12px;
+}
+
+.zone-bucket-item.bucket-tone-0 {
+  background: var(--bucket-teal-card);
+  border-left-color: var(--bucket-border-teal);
+}
+
+.zone-bucket-item.bucket-tone-1 {
+  background: var(--bucket-blue-card);
+  border-left-color: var(--bucket-border-blue);
+}
+
+.zone-bucket-item.bucket-tone-2 {
+  background: var(--bucket-purple-card);
+  border-left-color: var(--bucket-border-purple);
+}
+
+.zone-bucket-item.bucket-tone-3 {
+  background: var(--bucket-amber-card);
+  border-left-color: var(--bucket-border-amber);
+}
+
+.zone-bucket-item.bucket-tone-4 {
+  background: var(--bucket-green-card);
+  border-left-color: var(--bucket-border-green);
+}
+
+.zone-bucket-item.bucket-tone-5 {
+  background: var(--bucket-rose-card);
+  border-left-color: var(--bucket-border-rose);
+}
+
+.zone-bucket-range {
+  color: var(--bucket-range-text);
+  font-size: 0.88rem;
+  font-weight: 900;
+}
+
+.zone-bucket-stats {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.zone-bucket-stats strong {
+  color: var(--text);
+}
+
+/* Sibling navigation strip — prev/next zone */
+
+.zone-siblings {
+  align-items: center;
+  border-top: 1px solid var(--line);
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  margin-top: 8px;
+  padding-top: 20px;
+}
+
+.zone-sibling-link {
+  align-items: center;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  max-width: 260px;
+  min-height: 52px;
+  padding: 10px 14px;
+  text-decoration: none;
+  transition: background-color 140ms ease, border-color 140ms ease, box-shadow 140ms ease;
+}
+
+.zone-sibling-link:hover,
+.zone-sibling-link:focus {
+  background: var(--accent-soft);
+  border-color: color-mix(in srgb, var(--accent) 54%, var(--line));
+  box-shadow: 0 0 0 3px var(--focus-ring);
+  outline: none;
+}
+
+.zone-sibling-link.is-prev {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.zone-sibling-link.is-next {
+  align-items: flex-end;
+  margin-left: auto;
+  text-align: right;
+}
+
+.zone-sibling-direction {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.zone-sibling-name {
+  color: var(--accent);
+  font-size: 0.95rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+/* Page layout — sections stack with consistent gaps */
+
+.zone-page-sections {
+  display: grid;
+  gap: 20px;
+}
+
+/* Responsive overrides */
+
+@media (max-width: 720px) {
+  .zone-page-hero {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .zone-bucket-list {
+    grid-template-columns: 1fr;
+  }
+
+  .zone-siblings {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .zone-sibling-link {
+    max-width: 100%;
+  }
+
+  .zone-sibling-link.is-next {
+    margin-left: 0;
+    align-items: flex-start;
+    text-align: left;
+  }
+}

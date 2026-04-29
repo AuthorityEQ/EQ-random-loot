@@ -6,6 +6,20 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
+# Pipeline run logs
+data/pipeline-runs/*.log
+
+# Future scraper caches (zam-pages remains tracked for reproducibility)
+cache/zam-zones/
+cache/zam-npcs/
+cache/eqprogression-pages/
+
+# Enrichment logs
+data/zam-zones-enrichment-*.log
+data/zam-npcs-enrichment-*.log
+data/eqprogression-enrichment-*.log
+data/zam-enrichment-run.*.log
+
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 

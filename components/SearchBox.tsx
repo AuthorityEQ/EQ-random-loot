@@ -17,6 +17,7 @@ export function SearchBox({ results, value, onChange, onSelectResult }: SearchBo
   const [isOpen, setIsOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
   const searchRef = useRef<HTMLLabelElement | null>(null);
+  const announcementRef = useRef<HTMLDivElement | null>(null);
   const groupedResults = [
     ["Items", results.items],
     ["Mobs", results.mobs],
@@ -42,6 +43,13 @@ export function SearchBox({ results, value, onChange, onSelectResult }: SearchBo
     return () => document.removeEventListener("pointerdown", onPointerDown);
   }, []);
 
+  // Announce result count to screen readers
+  useEffect(() => {
+    if (announcementRef.current && showResults) {
+      announcementRef.current.textContent = `${flatResults.length} result${flatResults.length !== 1 ? 's' : ''} found`;
+    }
+  }, [showResults, flatResults.length]);
+
   function selectResult(result: UniversalSearchResult) {
     onSelectResult(result);
     setIsOpen(false);
@@ -49,11 +57,12 @@ export function SearchBox({ results, value, onChange, onSelectResult }: SearchBo
 
   return (
     <label className="search" ref={searchRef}>
-      <span>Search random loot buckets</span>
+      <span>Search items, mobs, zones</span>
       <input
         aria-activedescendant={showResults ? `search-result-${activeIndex}` : undefined}
         aria-expanded={showResults}
         aria-controls="search-typeahead-results"
+        aria-label="Search items, mobs, zones"
         autoComplete="off"
         onBlur={() => {
           window.setTimeout(() => setIsOpen(false), 120);
@@ -90,6 +99,20 @@ export function SearchBox({ results, value, onChange, onSelectResult }: SearchBo
         role="combobox"
         type="search"
         value={value}
+      />
+      <div
+        ref={announcementRef}
+        id="search-announcement"
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"
+        style={{
+          position: "absolute",
+          left: "-10000px",
+          width: "1px",
+          height: "1px",
+          overflow: "hidden",
+        }}
       />
       {showResults ? (
         <div className="search-results" id="search-typeahead-results" role="listbox">

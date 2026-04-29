@@ -1,22 +1,30 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { Suspense, useEffect, useMemo, useRef, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import { BucketCard } from "@/components/BucketCard";
 import "@/components/bucket-card.css";
-import { ItemFarmView } from "@/components/ItemFarmView";
+import { ExpansionTimeline } from "@/components/ExpansionTimeline";
 import { ItemDrawer } from "@/components/ItemDrawer";
 import "@/components/item-drawer.css";
+import { ItemFarmView } from "@/components/ItemFarmView";
+import { ItemSlotFilter } from "@/components/ItemSlotFilter";
 import { LevelRecommendations } from "@/components/LevelRecommendations";
 import { SearchBox } from "@/components/SearchBox";
 import "@/components/search-box.css";
+import { ServerStatusBadge } from "@/components/ServerStatusBadge";
+import { ShareFilterButton } from "@/components/ShareFilterButton";
 import { ZoneView } from "@/components/ZoneView";
 import classicData from "@/data/classic-group-named.json";
 import itemDetailsData from "@/data/item-details.json";
 import kunarkData from "@/data/kunark-group-named.json";
 import veliousData from "@/data/velious-group-named.json";
+import { bucketHasMatchingItems, itemMatchesSlots, type SlotKey } from "@/lib/slot-filter";
+import { itemToSlug, slugToItemName } from "@/lib/item-slug";
 import { lootModeLabel, lootModes, type LootMode } from "@/lib/lootModes";
 import { filterBuckets, type Bucket, type ItemDetailsMap, type LootDataset } from "@/lib/search";
 import { getUniversalSearchResults, type UniversalSearchResult } from "@/lib/universal-search";
+import { useUrlFilterState } from "@/lib/use-url-filter-state";
 import { getZoneView } from "@/lib/zones";
 
 const datasets = [classicData, kunarkData, veliousData] as LootDataset[];
@@ -30,18 +38,42 @@ function expansionTone(expansion: string) {
   return `expansion-tone-${expansion.toLowerCase()}`;
 }
 
-export default function Home() {
-  const [query, setQuery] = useState("");
+function Home() {
+  // ── URL-synced filter state (replaces individual useState for q/exp/zone/level) ──
+  const { state: urlState, setState: setUrlState, shareUrl } = useUrlFilterState();
+  const searchParams = useSearchParams();
+
+  // Derive local names from urlState for minimal diff to the rest of the file
+  const query        = urlState.q    ?? "";
+  const selectedZone = urlState.zone ?? "";
+  const playerLevel  = urlState.level ?? 1;
+  const selectedExpansions = (
+    urlState.exp ?? [...expansionOptions].map((e) => e.toLowerCase())
+  ).map((e) => e.charAt(0).toUpperCase() + e.slice(1)) as ExpansionFilter[];
+
+  // ── Local state (not synced to URL) ──────────────────────────────────────────
   const [debouncedQuery, setDebouncedQuery] = useState("");
   const [lootMode] = useState<LootMode>("random");
-  const [selectedExpansions, setSelectedExpansions] = useState<ExpansionFilter[]>([...expansionOptions]);
-  const [selectedZone, setSelectedZone] = useState("");
-  const [playerLevel, setPlayerLevel] = useState(1);
-  const [levelInputValue, setLevelInputValue] = useState("1");
+  const [levelInputValue, setLevelInputValue] = useState(String(playerLevel));
   const [isEditingLevel, setIsEditingLevel] = useState(false);
   const [selectedLoot, setSelectedLoot] = useState<{ itemName: string; bucket: Bucket } | null>(null);
   const [selectedItemSearch, setSelectedItemSearch] = useState<{ itemName: string; buckets: Bucket[] } | null>(null);
   const [focusedMob, setFocusedMob] = useState<{ name: string; level: number; zone: string; bucket: number; expansion: string } | null>(null);
+  const [selectedSlots, setSelectedSlots] = useState<SlotKey[]>([]);
+
+  // ── Cmd/Ctrl+click tracking ───────────────────────────────────────────────────
+  // Tracks whether a modifier key was held during the most recent mousedown.
+  // Used by onSelectLoot to decide between opening the drawer vs. navigating.
+  const modifierHeldRef = useRef(false);
+  useEffect(() => {
+    function handleMouseDown(event: MouseEvent) {
+      modifierHeldRef.current = event.metaKey || event.ctrlKey;
+    }
+    document.addEventListener("mousedown", handleMouseDown, { capture: true });
+    return () => document.removeEventListener("mousedown", handleMouseDown, { capture: true });
+  }, []);
+
+  // ── Derived / memoised values ─────────────────────────────────────────────────
   const selectedExpansionSet = useMemo(() => new Set(selectedExpansions), [selectedExpansions]);
   const expansionBuckets = useMemo(
     () => buckets.filter((bucket) => selectedExpansionSet.has(bucket.expansion as ExpansionFilter)),
@@ -76,34 +108,67 @@ export default function Home() {
     [debouncedQuery, expansionBuckets],
   );
   const getItemDetails = (itemName: string) => itemDetails[itemName];
+
+  // Extended filteredBuckets — respects slot selection in addition to expansions
   const filteredBuckets = useMemo(() => {
     return filterBuckets(expansionBuckets, "")
       .map((bucket) => {
-        return { bucket, visibleLoot: bucket.loot_pool };
+        const visibleLoot = selectedSlots.length === 0
+          ? bucket.loot_pool
+          : bucket.loot_pool.filter((item) =>
+              itemMatchesSlots(item, itemDetails, selectedSlots)
+            );
+        return { bucket, visibleLoot };
       })
-      .filter(({ visibleLoot }) => visibleLoot.length > 0);
-  }, [expansionBuckets]);
+      .filter(({ bucket, visibleLoot }) =>
+        visibleLoot.length > 0 &&
+        (selectedSlots.length === 0 || bucketHasMatchingItems(bucket, itemDetails, selectedSlots))
+      );
+  }, [expansionBuckets, selectedSlots]);
+
+  // ── Effects ───────────────────────────────────────────────────────────────────
+
+  // ?item=<slug> — auto-open drawer when landing with an item slug in the URL.
+  // Runs once on mount after hydration so it doesn't conflict with SSR.
+  useEffect(() => {
+    const itemSlug = searchParams.get("item");
+    if (!itemSlug) return;
+
+    const itemName = slugToItemName(itemSlug, itemDetails);
+    if (!itemName) return;
+
+    const matchingBucket = buckets.find((b) => b.loot_pool.includes(itemName));
+    if (!matchingBucket) return;
+
+    setSelectedLoot({ itemName, bucket: matchingBucket });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []); // intentionally run only on mount
+
+  // Debounce search query
   useEffect(() => {
     const timeout = window.setTimeout(() => {
       setDebouncedQuery(query);
     }, 180);
-
     return () => window.clearTimeout(timeout);
   }, [query]);
 
+  // Clamp playerLevel when maxSupportedLevel changes
   useEffect(() => {
     if (playerLevel <= maxSupportedLevel) return;
-    setPlayerLevel(maxSupportedLevel);
+    setUrlState({ level: maxSupportedLevel });
     if (!isEditingLevel) {
       setLevelInputValue(String(maxSupportedLevel));
     }
-  }, [isEditingLevel, maxSupportedLevel, playerLevel]);
+  }, [isEditingLevel, maxSupportedLevel, playerLevel, setUrlState]);
 
+  // Keep levelInputValue in sync with playerLevel when not actively editing
   useEffect(() => {
     if (!isEditingLevel) {
       setLevelInputValue(String(playerLevel));
     }
   }, [isEditingLevel, playerLevel]);
+
+  // ── Handlers ──────────────────────────────────────────────────────────────────
 
   function commitLevelInput() {
     const parsedLevel = Number.parseInt(levelInputValue, 10);
@@ -111,26 +176,40 @@ export default function Home() {
       setLevelInputValue(String(playerLevel));
       return;
     }
-
     const clampedLevel = Math.min(maxSupportedLevel, Math.max(1, parsedLevel));
-    setPlayerLevel(clampedLevel);
+    setUrlState({ level: clampedLevel });
     setLevelInputValue(String(clampedLevel));
+  }
+
+  /**
+   * Handle a loot item click.
+   * Plain click → open the drawer.
+   * Cmd/Ctrl+click → navigate to the item's standalone page in a new tab.
+   */
+  function handleSelectLoot(itemName: string, bucket: Bucket) {
+    if (modifierHeldRef.current) {
+      const slug = itemToSlug(itemName);
+      window.open(`/item/${slug}`, "_blank", "noopener");
+      modifierHeldRef.current = false;
+      return;
+    }
+    setSelectedLoot({ itemName, bucket });
   }
 
   function selectSearchResult(result: UniversalSearchResult) {
     if (result.type === "item") {
       const firstBucket = result.buckets[0];
-      setSelectedZone("");
+      setUrlState({ zone: "" });
       setFocusedMob(null);
       setSelectedItemSearch({ itemName: result.itemName, buckets: result.buckets });
-      setQuery(result.itemName);
+      setUrlState({ q: result.itemName });
       if (firstBucket) {
         setSelectedLoot({ itemName: result.itemName, bucket: firstBucket });
       }
       return;
     }
 
-    setSelectedZone(result.mob.zone);
+    setUrlState({ zone: result.mob.zone });
     setSelectedItemSearch(null);
     setFocusedMob({
       name: result.mob.name,
@@ -140,8 +219,10 @@ export default function Home() {
       expansion: result.bucket.expansion,
     });
     setSelectedLoot(null);
-    setQuery("");
+    setUrlState({ q: "" });
   }
+
+  // ── Render ────────────────────────────────────────────────────────────────────
 
   return (
     <main className="page">
@@ -152,20 +233,25 @@ export default function Home() {
           </p>
           <h1>Frostreaver Random Loot</h1>
           <p className="wip-line">Work in progress — DM AuthorityGames on Discord</p>
+          {/* ServerStatusBadge: prominent in pre-launch hero; self-suppresses to quiet badge post-launch */}
+          <ServerStatusBadge />
         </div>
-
       </header>
+
+      {/* ExpansionTimeline: full mode, between header and toolbar */}
+      <ExpansionTimeline />
 
       <div className="toolbar">
         <SearchBox
           results={typeaheadResults}
           value={query}
           onChange={(value) => {
-            setQuery(value);
+            setUrlState({ q: value });
             setSelectedItemSearch(null);
           }}
           onSelectResult={selectSearchResult}
         />
+        <ShareFilterButton shareUrl={shareUrl} />
         <div className="loot-mode-filter" aria-label="Loot mode">
           <span>Loot mode</span>
           <div className="expansion-toggle-group">
@@ -197,16 +283,17 @@ export default function Home() {
                 ].filter(Boolean).join(" ")}
                 key={expansion}
                 onClick={() => {
-                  setSelectedExpansions((current) => {
-                    const isSelected = current.includes(expansion);
-                    const next = isSelected
-                      ? current.filter((value) => value !== expansion)
-                      : [...current, expansion].sort((a, b) => expansionOptions.indexOf(a) - expansionOptions.indexOf(b));
-                    return next.length > 0 ? next : current;
-                  });
-                  setSelectedZone("");
+                  const current = selectedExpansions;
+                  const isSelected = current.includes(expansion);
+                  const next = isSelected
+                    ? current.filter((value) => value !== expansion)
+                    : [...current, expansion].sort((a, b) => expansionOptions.indexOf(a) - expansionOptions.indexOf(b));
+                  const safeNext = next.length > 0 ? next : current;
+                  setUrlState({ exp: safeNext.map((e) => e.toLowerCase()) });
+                  setUrlState({ zone: "" });
                   setSelectedLoot(null);
                   setSelectedItemSearch(null);
+                  setSelectedSlots([]);
                 }}
                 type="button"
               >
@@ -219,7 +306,7 @@ export default function Home() {
           <span>Zone</span>
           <select
             onChange={(event) => {
-              setSelectedZone(event.target.value);
+              setUrlState({ zone: event.target.value });
               setSelectedItemSearch(null);
               setFocusedMob(null);
               setSelectedLoot(null);
@@ -265,21 +352,22 @@ export default function Home() {
             value={levelInputValue}
           />
         </label>
+        <ItemSlotFilter selected={selectedSlots} onChange={setSelectedSlots} />
       </div>
 
       {!selectedItemSearch && !selectedZoneView ? (
-        <LevelRecommendations buckets={expansionBuckets} level={playerLevel} onSelectZone={setSelectedZone} />
+        <LevelRecommendations buckets={expansionBuckets} level={playerLevel} onSelectZone={(zone) => setUrlState({ zone })} />
       ) : null}
 
       {selectedZoneView ? (
         <ZoneView
           getItemDetails={getItemDetails}
           onClearZone={() => {
-            setSelectedZone("");
+            setUrlState({ zone: "" });
             setFocusedMob(null);
           }}
-          onSelectLoot={(itemName, selectedBucket) => setSelectedLoot({ itemName, bucket: selectedBucket })}
-          onSelectZone={setSelectedZone}
+          onSelectLoot={handleSelectLoot}
+          onSelectZone={(zone) => setUrlState({ zone })}
           focusedMob={focusedMob}
           zoneView={selectedZoneView}
         />
@@ -287,8 +375,8 @@ export default function Home() {
         <ItemFarmView
           buckets={selectedItemSearch.buckets}
           itemName={selectedItemSearch.itemName}
-          onOpenItem={(itemName, bucket) => setSelectedLoot({ itemName, bucket })}
-          onSelectZone={setSelectedZone}
+          onOpenItem={handleSelectLoot}
+          onSelectZone={(zone) => setUrlState({ zone })}
         />
       ) : filteredBuckets.length > 0 ? (
         <div className="bucket-grid">
@@ -297,8 +385,8 @@ export default function Home() {
               bucket={bucket}
               getItemDetails={getItemDetails}
               key={`${bucket.expansion}-${bucket.bucket}`}
-              onSelectLoot={(itemName, selectedBucket) => setSelectedLoot({ itemName, bucket: selectedBucket })}
-              onSelectZone={setSelectedZone}
+              onSelectLoot={handleSelectLoot}
+              onSelectZone={(zone) => setUrlState({ zone })}
               query=""
               visibleLoot={visibleLoot}
             />
@@ -318,11 +406,19 @@ export default function Home() {
           itemBuckets={selectedItemSearch?.itemName === selectedLoot.itemName ? selectedItemSearch.buckets : undefined}
           onClose={() => setSelectedLoot(null)}
           onSelectZone={(zone) => {
-            setSelectedZone(zone);
+            setUrlState({ zone });
             setSelectedLoot(null);
           }}
         />
       ) : null}
     </main>
+  );
+}
+
+export default function Page() {
+  return (
+    <Suspense fallback={null}>
+      <Home />
+    </Suspense>
   );
 }

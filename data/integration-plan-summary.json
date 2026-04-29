@@ -1,0 +1,53 @@
+{
+  "report_metadata": {
+    "source": "C:/Users/rontf/EQ_Master_Database_temp.xlsx",
+    "author": "Gronnz",
+    "title": "Mischief / Teek Server -- Randomization Guide & Comprehensive Reference",
+    "generated": "2026-04-27",
+    "total_sheets": 22
+  },
+  "integration_summary": {
+    "quick_wins_count": 6,
+    "new_features_count": 12,
+    "reference_only_count": 4,
+    "estimated_total_hours": 130,
+    "tier_1_hours": 50,
+    "tier_1_critical": true,
+    "launch_status": "Ready for implementation"
+  },
+  "tier_1_quick_wins": [
+    {
+      "sheet": "Zone XP Modifiers",
+      "rows": 143,
+      "effort": "LOW",
+      "hours": 4,
+      "json_file": "zone-xp-modifiers.json",
+      "ui_component": "Zone XP Optimizer table with filters",
+      "launch_critical": true,
+      "priority": "Week 1"
+    },
+    {
+      "sheet": "Tradeable Items & Schedule",
+      "rows": 32,
+      "effort": "LOW-MEDIUM",
+      "hours": 6,
+      "json_file": "server-schedule.json",
+      "ui_component": "Timeline visualization",
+      "launch_critical": true,
+      "priority": "Week 1"
+    }
+  ],
+  "json_files_to_create": [
+    "zone-xp-modifiers.json",
+    "leveling-paths.json",
+    "faction-system.json",
+    "spell-vendors.json",
+    "epic-quests.json",
+    "pop-progression.json",
+    "server-schedule.json",
+    "bis-gear.json",
+    "crafting-system.json",
+    "raid-strategies.json",
+    "potions.json"
+  ]
+}

@@ -1,0 +1,50 @@
+import type { Metadata } from "next";
+import { CraftingTabs, type SkillData } from "@/components/CraftingTabs";
+import {
+  isLiveData,
+  CRAFTING_SKILLS,
+  getRecipesBySkillGrouped,
+} from "@/lib/crafting";
+import "./crafting-page.css";
+
+export const metadata: Metadata = {
+  title: "Crafting Recipes | Frostreaver Loot",
+  description:
+    "Browse EverQuest tradeskill recipes for Tailoring, Fletching, Blacksmithing, Jewelcraft, and Spell Research on Frostreaver.",
+};
+
+// ---------------------------------------------------------------------------
+// Page
+// ---------------------------------------------------------------------------
+
+export default function CraftingPage() {
+  // Pre-compute all skill data on the server so CraftingTabs only handles
+  // tab-state switching (RSC-compatible: no function props cross the boundary).
+  const skillData: SkillData[] = CRAFTING_SKILLS.map((skill) => ({
+    skill,
+    groups: getRecipesBySkillGrouped(skill),
+  }));
+
+  return (
+    <main className="page">
+      <header className="header">
+        <div>
+          <p className="eyebrow">Tradeskills / Recipes</p>
+          <h1>Crafting Recipes</h1>
+          <p className="subhead">
+            Browse tradeskill recipes grouped by skill level tier. Component names link to item
+            detail pages where available.
+          </p>
+          {!isLiveData ? (
+            <p className="crafting-tier2-notice">
+              Crafting data unlocking post-launch — Tier 2 feature.
+              Displaying sample stub recipes until the Excel ingest pipeline runs.
+            </p>
+          ) : null}
+        </div>
+      </header>
+
+      <CraftingTabs skillData={skillData} />
+    </main>
+  );
+}

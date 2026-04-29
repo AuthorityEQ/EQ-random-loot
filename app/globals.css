@@ -66,11 +66,18 @@
   --exp-velious-bg: #edf6f8;
   --exp-velious-border: #95c4cb;
   --exp-velious-text: #2d6570;
+  --exp-luclin-primary: #8b6fb5;
+  --exp-luclin-bg: #f1edf7;
+  --exp-luclin-border: #b4a4cd;
+  --exp-luclin-text: #5d4282;
+  --exp-pop-primary: #b58a4f;
+  --exp-pop-bg: #f8f1e9;
+  --exp-pop-border: #cdb88e;
+  --exp-pop-text: #815a25;
   --panel: var(--surface);
   --panel-soft: var(--surface-muted);
   --muted: var(--text-muted);
   --line: var(--border);
-}
 
 :root[data-theme="dark"] {
   color-scheme: dark;
@@ -140,33 +147,36 @@
   --exp-velious-bg: rgba(45, 76, 88, 0.38);
   --exp-velious-border: #5e8f9c;
   --exp-velious-text: #d8f7fb;
+  --exp-luclin-primary: #b89bd9;
+  --exp-luclin-bg: rgba(80, 60, 110, 0.36);
+  --exp-luclin-border: #6e548f;
+  --exp-luclin-text: #e2d3f5;
+  --exp-pop-primary: #d6b07b;
+  --exp-pop-bg: rgba(110, 80, 40, 0.36);
+  --exp-pop-border: #97744a;
+  --exp-pop-text: #f5e0c2;
   --panel: var(--surface);
   --panel-soft: var(--surface-muted);
   --muted: var(--text-muted);
   --line: var(--border);
-}
 
 * {
   box-sizing: border-box;
-}
 
 html,
 body {
   margin: 0;
   min-height: 100%;
-}
 
 body {
   background: var(--bg);
   color: var(--text);
   font-family: Arial, Helvetica, sans-serif;
-}
 
 button,
 input,
 select {
   font: inherit;
-}
 
 .app-nav {
   align-items: center;
@@ -179,19 +189,16 @@ select {
   position: sticky;
   top: 0;
   z-index: 5;
-}
 
 .app-nav-links {
   display: flex;
   gap: 8px;
   margin: 0 auto;
-}
 
 .app-nav-controls {
   align-items: center;
   display: flex;
   gap: 8px;
-}
 
 .app-nav a {
   border: 1px solid var(--line);
@@ -201,14 +208,12 @@ select {
   font-weight: 800;
   padding: 8px 12px;
   text-decoration: none;
-}
 
 .theme-toggle {
   border: 1px solid var(--line);
   border-radius: 999px;
   display: inline-flex;
   overflow: hidden;
-}
 
 .item-preview-toggle {
   align-items: center;
@@ -216,7 +221,6 @@ select {
   border-radius: 999px;
   display: inline-flex;
   overflow: hidden;
-}
 
 .item-preview-toggle span {
   color: var(--muted);
@@ -224,7 +228,6 @@ select {
   font-weight: 900;
   padding: 0 9px;
   white-space: nowrap;
-}
 
 .theme-toggle-button {
   background: var(--panel);
@@ -235,19 +238,16 @@ select {
   font-weight: 800;
   min-height: 34px;
   padding: 0 10px;
-}
 
 .theme-toggle-button:hover,
 .theme-toggle-button:focus {
   background: var(--accent-soft);
   color: var(--accent);
   outline: none;
-}
 
 .theme-toggle-button.is-active {
   background: var(--accent);
   color: var(--accent-contrast);
-}
 
 .item-preview-tooltip {
   background: transparent;
@@ -257,25 +257,21 @@ select {
   position: fixed;
   width: min(420px, calc(100vw - 24px));
   z-index: 80;
-}
 
 .app-nav a:hover,
 .app-nav a:focus {
   background: var(--accent-soft);
   outline: none;
-}
 
 .page {
   margin: 0 auto;
   max-width: 1180px;
   padding: 24px 18px 56px;
-}
 
 .header {
   display: grid;
   gap: 10px;
   margin-bottom: 10px;
-}
 
 .eyebrow {
   color: var(--accent);
@@ -284,14 +280,12 @@ select {
   letter-spacing: 0.08em;
   margin: 0 0 8px;
   text-transform: uppercase;
-}
 
 h1 {
   font-size: clamp(2rem, 6vw, 4rem);
   line-height: 1;
   margin: 0;
   max-width: 820px;
-}
 
 .subhead {
   color: var(--muted);
@@ -299,7 +293,6 @@ h1 {
   line-height: 1.55;
   margin: 10px 0 0;
   max-width: 720px;
-}
 
 .wip-line {
   color: var(--muted);
@@ -308,33 +301,28 @@ h1 {
   font-weight: 500;
   line-height: 1.35;
   margin: 8px 0 0;
-}
 
 .summary {
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-}
 
 .summary-item {
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: 8px;
   padding: 14px;
-}
 
 .summary-value {
   display: block;
   font-size: 1.55rem;
   font-weight: 800;
-}
 
 .summary-label {
   color: var(--muted);
   display: block;
   font-size: 0.85rem;
   margin-top: 2px;
-}
 
 .toolbar {
   align-items: flex-end;
@@ -343,14 +331,12 @@ h1 {
   gap: 14px;
   justify-content: space-between;
   margin: 12px 0 18px;
-}
 
 .result-count {
   color: var(--muted);
   display: block;
   font-size: 0.92rem;
   margin: -8px 0 16px;
-}
 
 .filter-button {
   background: var(--filter-bg);
@@ -363,7 +349,6 @@ h1 {
   min-height: 36px;
   padding: 0 12px;
   transition: background-color 140ms ease, border-color 140ms ease, box-shadow 140ms ease, color 140ms ease;
-}
 
 .filter-button:hover,
 .filter-button:focus {
@@ -371,78 +356,66 @@ h1 {
   border-color: var(--filter-hover-border);
   color: var(--filter-hover-text);
   outline: none;
-}
 
 .filter-button.is-active {
   background: var(--filter-active-bg);
   border-color: var(--filter-active-border);
   box-shadow: var(--filter-active-shadow);
   color: var(--filter-active-text);
-}
 
 .filter-button.is-active:hover,
 .filter-button.is-active:focus {
   background: var(--filter-active-bg);
   border-color: var(--filter-active-border);
   color: var(--filter-active-text);
-}
 
 .expansion-tone-classic {
   --exp-primary: var(--exp-classic-primary);
   --exp-bg: var(--exp-classic-bg);
   --exp-border: var(--exp-classic-border);
   --exp-text: var(--exp-classic-text);
-}
 
 .expansion-tone-kunark {
   --exp-primary: var(--exp-kunark-primary);
   --exp-bg: var(--exp-kunark-bg);
   --exp-border: var(--exp-kunark-border);
   --exp-text: var(--exp-kunark-text);
-}
 
 .expansion-tone-velious {
   --exp-primary: var(--exp-velious-primary);
   --exp-bg: var(--exp-velious-bg);
   --exp-border: var(--exp-velious-border);
   --exp-text: var(--exp-velious-text);
-}
 
 .expansion-filter-button {
   --filter-hover-bg: var(--exp-bg);
   --filter-hover-border: var(--exp-border);
   --filter-hover-text: var(--exp-text);
-}
 
 .expansion-filter-button.is-active {
   background: var(--exp-primary);
   border-color: color-mix(in srgb, var(--exp-primary) 74%, white);
   box-shadow: 0 0 0 1px color-mix(in srgb, var(--exp-primary) 38%, transparent), 0 0 16px color-mix(in srgb, var(--exp-primary) 28%, transparent);
   color: #ffffff;
-}
 
 :root[data-theme="dark"] .expansion-filter-button.is-active {
   color: #06100d;
-}
 
 .expansion-filter-button.is-active:hover,
 .expansion-filter-button.is-active:focus {
   background: var(--exp-primary);
   border-color: color-mix(in srgb, var(--exp-primary) 74%, white);
   color: #ffffff;
-}
 
 :root[data-theme="dark"] .expansion-filter-button.is-active:hover,
 :root[data-theme="dark"] .expansion-filter-button.is-active:focus {
   color: #06100d;
-}
 
 .expansion-pill-row {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
   margin-bottom: 8px;
-}
 
 .expansion-pill {
   background: var(--exp-bg);
@@ -457,12 +430,10 @@ h1 {
   padding: 6px 9px;
   text-transform: uppercase;
   white-space: nowrap;
-}
 
 .expansion-pill.is-compact {
   font-size: 0.68rem;
   padding: 4px 7px;
-}
 
 .expansion-filter,
 .loot-mode-filter,
@@ -471,19 +442,15 @@ h1 {
   display: grid;
   gap: 6px;
   min-width: min(300px, 100%);
-}
 
 .expansion-filter {
   min-width: min(330px, 100%);
-}
 
 .loot-mode-filter {
   min-width: min(360px, 100%);
-}
 
 .level-filter {
   min-width: 120px;
-}
 
 .expansion-filter span,
 .loot-mode-filter span,
@@ -492,12 +459,10 @@ h1 {
   color: var(--muted);
   font-size: 0.82rem;
   font-weight: 700;
-}
 
 .filter-button:disabled {
   cursor: not-allowed;
   opacity: 0.52;
-}
 
 .zone-filter select,
 .level-filter input {
@@ -509,24 +474,20 @@ h1 {
   outline: none;
   padding: 0 14px;
   width: 100%;
-}
 
 .zone-filter select:focus,
 .level-filter input:focus {
   border-color: var(--accent);
   box-shadow: 0 0 0 3px var(--focus-ring);
-}
 
 .expansion-toggle-group {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-}
 
 .zone-view {
   display: grid;
   gap: 18px;
-}
 
 .zone-view-header {
   align-items: flex-start;
@@ -541,13 +502,11 @@ h1 {
   gap: 16px;
   justify-content: space-between;
   padding: 20px;
-}
 
 .zone-view-header h2 {
   font-size: clamp(1.8rem, 5vw, 3rem);
   line-height: 1;
   margin: 0;
-}
 
 .zone-summary-line {
   align-items: center;
@@ -556,11 +515,9 @@ h1 {
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 10px;
-}
 
 .zone-summary-line strong {
   color: var(--text);
-}
 
 .zone-best-bucket {
   align-items: center;
@@ -571,18 +528,15 @@ h1 {
   gap: 10px;
   margin-top: 14px;
   padding: 8px 10px;
-}
 
 .zone-best-bucket span {
   color: var(--bucket-range-text);
   font-size: 0.88rem;
   font-weight: 900;
-}
 
 .zone-best-bucket strong {
   color: var(--text);
   font-size: 1rem;
-}
 
 .clear-zone-button {
   background: var(--accent);
@@ -594,7 +548,6 @@ h1 {
   min-height: 40px;
   padding: 0 14px;
   white-space: nowrap;
-}
 
 .zone-panel {
   background: var(--panel);
@@ -604,32 +557,27 @@ h1 {
   display: grid;
   gap: 12px;
   padding: 18px;
-}
 
 .zone-panel-heading {
   align-items: baseline;
   display: flex;
   gap: 10px;
   justify-content: space-between;
-}
 
 .zone-panel-heading h3 {
   font-size: 1.25rem;
   line-height: 1.1;
   margin: 0;
-}
 
 .zone-panel-heading span {
   color: var(--muted);
   font-size: 0.9rem;
   font-weight: 800;
-}
 
 .zone-loot-actions {
   display: inline-flex;
   gap: 6px;
   margin-left: auto;
-}
 
 .zone-loot-actions button {
   background: var(--panel-soft);
@@ -641,74 +589,48 @@ h1 {
   font-weight: 900;
   min-height: 30px;
   padding: 0 9px;
-}
 
 .zone-loot-actions button:hover,
 .zone-loot-actions button:focus {
   background: var(--accent-soft);
   color: var(--accent);
   outline: none;
-}
 
 .zone-mob-list {
   display: grid;
   gap: 5px 8px;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-}
 
-.zone-mob-item {
-  align-items: center;
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-left: 4px solid #c9d6cd;
-  border-radius: 6px;
-  color: var(--text);
-  cursor: pointer;
-  display: grid;
-  gap: 8px;
-  grid-template-columns: minmax(0, 1fr) auto;
-  min-height: 32px;
-  padding: 6px 8px;
-  text-align: left;
-  transition: background 140ms ease, border-color 140ms ease, box-shadow 140ms ease;
-  width: 100%;
-}
 
 .zone-mob-item.bucket-tone-0 {
   background: var(--bucket-teal-card);
   border-color: color-mix(in srgb, var(--bucket-border-teal) 38%, var(--line));
   border-left-color: var(--bucket-border-teal);
-}
 
 .zone-mob-item.bucket-tone-1 {
   background: var(--bucket-blue-card);
   border-color: color-mix(in srgb, var(--bucket-border-blue) 38%, var(--line));
   border-left-color: var(--bucket-border-blue);
-}
 
 .zone-mob-item.bucket-tone-2 {
   background: var(--bucket-purple-card);
   border-color: color-mix(in srgb, var(--bucket-border-purple) 38%, var(--line));
   border-left-color: var(--bucket-border-purple);
-}
 
 .zone-mob-item.bucket-tone-3 {
   background: var(--bucket-amber-card);
   border-color: color-mix(in srgb, var(--bucket-border-amber) 38%, var(--line));
   border-left-color: var(--bucket-border-amber);
-}
 
 .zone-mob-item.bucket-tone-4 {
   background: var(--bucket-green-card);
   border-color: color-mix(in srgb, var(--bucket-border-green) 38%, var(--line));
   border-left-color: var(--bucket-border-green);
-}
 
 .zone-mob-item.bucket-tone-5 {
   background: var(--bucket-rose-card);
   border-color: color-mix(in srgb, var(--bucket-border-rose) 38%, var(--line));
   border-left-color: var(--bucket-border-rose);
-}
 
 .zone-mob-item:hover,
 .zone-mob-item:focus {
@@ -716,7 +638,6 @@ h1 {
   border-color: var(--bucket-border-amber);
   box-shadow: 0 0 0 2px var(--focus-ring);
   outline: none;
-}
 
 .zone-mob-item strong {
   font-size: 0.9rem;
@@ -724,7 +645,6 @@ h1 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
 
 .zone-mob-item span {
   color: var(--muted);
@@ -732,7 +652,6 @@ h1 {
   font-weight: 800;
   text-align: right;
   white-space: nowrap;
-}
 
 .zone-mob-item span b {
   color: var(--bucket-range-text);
@@ -740,12 +659,10 @@ h1 {
   font-size: 0.72rem;
   font-weight: 900;
   margin-right: 6px;
-}
 
 .zone-loot-groups {
   display: grid;
   gap: 10px;
-}
 
 .zone-loot-group {
   background: var(--card);
@@ -755,42 +672,34 @@ h1 {
   display: grid;
   gap: 8px;
   padding: 12px;
-}
 
 .zone-loot-group.bucket-tone-0 {
   background: var(--bucket-teal);
   border-left-color: var(--bucket-border-teal);
-}
 
 .zone-loot-group.bucket-tone-1 {
   background: var(--bucket-blue);
   border-left-color: var(--bucket-border-blue);
-}
 
 .zone-loot-group.bucket-tone-2 {
   background: var(--bucket-purple);
   border-left-color: var(--bucket-border-purple);
-}
 
 .zone-loot-group.bucket-tone-3 {
   background: var(--bucket-amber);
   border-left-color: var(--bucket-border-amber);
-}
 
 .zone-loot-group.bucket-tone-4 {
   background: var(--bucket-green);
   border-left-color: var(--bucket-border-green);
-}
 
 .zone-loot-group.bucket-tone-5 {
   background: var(--bucket-rose);
   border-left-color: var(--bucket-border-rose);
-}
 
 .zone-loot-group h4 {
   font-size: 1rem;
   margin: 0;
-}
 
 .zone-loot-summary {
   align-items: center;
@@ -801,11 +710,9 @@ h1 {
   list-style: none;
   margin: -12px;
   padding: 12px;
-}
 
 .zone-loot-summary::-webkit-details-marker {
   display: none;
-}
 
 .zone-loot-summary::after {
   color: var(--muted);
@@ -813,41 +720,34 @@ h1 {
   font-size: 0.78rem;
   font-weight: 900;
   margin-left: 12px;
-}
 
 .zone-loot-group[open] .zone-loot-summary::after {
   content: "HIDE";
-}
 
 .zone-loot-summary:hover,
 .zone-loot-summary:focus {
   background: color-mix(in srgb, var(--accent-soft) 48%, transparent);
   outline: none;
-}
 
 .zone-loot-summary span {
   color: var(--text);
   font-size: 1rem;
   font-weight: 900;
-}
 
 .zone-loot-summary strong {
   color: var(--muted);
   font-size: 0.88rem;
   margin-left: auto;
   white-space: nowrap;
-}
 
 .zone-loot-group {
   scroll-margin-top: 78px;
   transition: background 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
-}
 
 .zone-loot-group.is-highlighted {
   background: var(--highlight-bg);
   border-color: var(--bucket-border-amber);
   box-shadow: 0 0 0 3px var(--focus-ring), var(--shadow);
-}
 
 .zone-loot-list {
   display: grid;
@@ -855,18 +755,15 @@ h1 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   margin: 0;
   padding: 0;
-}
 
 .zone-loot-list li {
   list-style: none;
-}
 
 @media (max-width: 980px) {
   .zone-mob-list,
   .zone-loot-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-}
 
 .level-recommendations {
   background: var(--panel);
@@ -877,12 +774,10 @@ h1 {
   gap: 14px;
   margin-bottom: 18px;
   padding: 18px;
-}
 
 .item-farm-view {
   display: grid;
   gap: 16px;
-}
 
 .item-farm-header {
   align-items: flex-start;
@@ -894,18 +789,15 @@ h1 {
   gap: 16px;
   justify-content: space-between;
   padding: 20px;
-}
 
 .item-farm-header h2 {
   font-size: clamp(1.8rem, 5vw, 3rem);
   line-height: 1;
   margin: 0;
-}
 
 .item-farm-grid {
   display: grid;
   gap: 16px;
-}
 
 .item-farm-card {
   background:
@@ -918,18 +810,15 @@ h1 {
   display: grid;
   gap: 14px;
   padding: 18px;
-}
 
 .item-farm-card.is-highlighted {
   border-color: color-mix(in srgb, var(--exp-border, #e1c766) 70%, #e1c766);
   border-left-color: var(--exp-primary, #e1c766);
   box-shadow: 0 0 0 3px rgba(225, 199, 102, 0.18), var(--shadow);
-}
 
 .item-farm-card h3 {
   font-size: 1.3rem;
   margin: 0;
-}
 
 .item-farm-card p {
   align-items: center;
@@ -938,19 +827,16 @@ h1 {
   flex-wrap: wrap;
   gap: 6px;
   margin: 6px 0 0;
-}
 
 .level-recommendations-header h2 {
   font-size: 1.35rem;
   line-height: 1.15;
   margin: 0;
-}
 
 .recommendation-card-grid {
   display: grid;
   gap: 9px;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-}
 
 .recommendation-card {
   background:
@@ -967,7 +853,6 @@ h1 {
   padding: 9px 11px;
   text-align: left;
   transition: border-color 140ms ease, box-shadow 140ms ease, transform 140ms ease;
-}
 
 .recommendation-card.is-top {
   background:
@@ -975,7 +860,6 @@ h1 {
     var(--bucket-amber-card);
   border-color: var(--bucket-border-amber);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.62), 0 2px 8px rgba(78, 58, 28, 0.08);
-}
 
 .recommendation-card:hover,
 .recommendation-card:focus {
@@ -983,7 +867,6 @@ h1 {
   box-shadow: 0 7px 18px rgba(40, 50, 36, 0.13), 0 0 0 3px var(--focus-ring), inset 0 0 0 1px rgba(255, 255, 255, 0.18);
   outline: none;
   transform: translateY(-1px);
-}
 
 .recommendation-rank {
   color: var(--bucket-range-text);
@@ -991,14 +874,12 @@ h1 {
   font-weight: 900;
   line-height: 1.1;
   padding-top: 1px;
-}
 
 .recommendation-main {
   display: grid;
   gap: 3px;
   grid-column: 2;
   min-width: 0;
-}
 
 .recommendation-main strong {
   color: var(--text);
@@ -1007,7 +888,6 @@ h1 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
 
 .recommendation-main span {
   align-items: center;
@@ -1018,25 +898,21 @@ h1 {
   font-size: 0.78rem;
   font-weight: 800;
   text-transform: uppercase;
-}
 
 .recommendation-expansions {
   display: inline-flex;
   flex-wrap: wrap;
   gap: 4px;
-}
 
 .recommendation-main .expansion-pill {
   color: var(--exp-text);
   font-size: 0.66rem;
-}
 
 .recommendation-main b {
   color: var(--text);
   font-size: 0.95rem;
   font-weight: 950;
   text-transform: none;
-}
 
 .recommendation-ranges {
   color: var(--muted);
@@ -1044,12 +920,10 @@ h1 {
   grid-column: 2;
   line-height: 1.2;
   white-space: nowrap;
-}
 
 .bucket-grid {
   display: grid;
   gap: 16px;
-}
 
 .empty {
   background: var(--panel);
@@ -1058,7 +932,6 @@ h1 {
   color: var(--muted);
   padding: 28px;
   text-align: center;
-}
 
 .favorites-grid {
   display: grid;
@@ -1066,11 +939,9 @@ h1 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   margin: 0;
   padding: 0;
-}
 
 .favorites-grid li {
   list-style: none;
-}
 
 .favorites-controls {
   align-items: center;
@@ -1078,14 +949,12 @@ h1 {
   flex-wrap: wrap;
   gap: 8px;
   justify-content: flex-end;
-}
 
 .favorites-view-toggle,
 .favorites-lock {
   align-items: center;
   display: flex;
   gap: 8px;
-}
 
 .favorites-lock {
   background: var(--panel);
@@ -1093,7 +962,6 @@ h1 {
   border-radius: 8px;
   color: var(--muted);
   padding: 6px;
-}
 
 .favorites-lock span {
   color: var(--text);
@@ -1101,20 +969,16 @@ h1 {
   font-weight: 900;
   padding: 0 6px;
   white-space: nowrap;
-}
 
 .favorites-lock.is-locked {
   border-color: color-mix(in srgb, var(--bucket-border-amber) 58%, var(--line));
-}
 
 .favorites-lock.is-unlocked {
   border-color: color-mix(in srgb, var(--accent) 58%, var(--line));
-}
 
 .favorites-group-list {
   display: grid;
   gap: 14px;
-}
 
 .favorites-group {
   background: var(--panel);
@@ -1124,27 +988,23 @@ h1 {
   display: grid;
   gap: 12px;
   padding: 14px;
-}
 
 .favorites-group-heading {
   align-items: flex-end;
   display: flex;
   gap: 14px;
   justify-content: space-between;
-}
 
 .favorites-group-heading h2 {
   font-size: 1.2rem;
   line-height: 1;
   margin: 0;
-}
 
 .favorites-group-heading span {
   color: var(--muted);
   font-size: 0.86rem;
   font-weight: 900;
   white-space: nowrap;
-}
 
 .favorite-card {
   background: var(--card);
@@ -1155,42 +1015,34 @@ h1 {
   grid-template-columns: minmax(0, 1fr) 38px;
   min-height: 82px;
   overflow: hidden;
-}
 
 .favorite-card.range-tone-blue {
   background: var(--bucket-blue-card);
   border-left-color: var(--bucket-border-blue);
-}
 
 .favorite-card.range-tone-purple {
   background: var(--bucket-purple-card);
   border-left-color: var(--bucket-border-purple);
-}
 
 .favorite-card.range-tone-amber {
   background: var(--bucket-amber-card);
   border-left-color: var(--bucket-border-amber);
-}
 
 .favorite-card.range-tone-green {
   background: var(--bucket-green-card);
   border-left-color: var(--bucket-border-green);
-}
 
 .favorite-card.range-tone-red {
   background: var(--bucket-rose-card);
   border-left-color: var(--bucket-border-rose);
-}
 
 .favorite-card.range-tone-teal {
   background: var(--bucket-teal-card);
   border-left-color: var(--bucket-border-teal);
-}
 
 .favorite-card.range-tone-gold {
   background: var(--bucket-amber);
   border-left-color: var(--bucket-border-amber);
-}
 
 .favorite-card-main {
   background: transparent;
@@ -1202,18 +1054,15 @@ h1 {
   min-width: 0;
   padding: 10px 12px;
   text-align: left;
-}
 
 .favorite-card-main:hover,
 .favorite-card-main:focus {
   background: color-mix(in srgb, var(--accent-soft) 46%, transparent);
   outline: none;
-}
 
 .favorite-card-main:disabled {
   cursor: not-allowed;
   opacity: 0.58;
-}
 
 .favorite-card-main strong {
   font-size: 0.98rem;
@@ -1221,7 +1070,6 @@ h1 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
 
 .favorite-card-main span,
 .favorite-card-main em {
@@ -1234,16 +1082,13 @@ h1 {
   font-style: normal;
   font-weight: 800;
   line-height: 1.2;
-}
 
 .favorite-card-main .expansion-pill {
   color: var(--exp-text);
   font-size: 0.66rem;
-}
 
 .favorite-card-main em {
   color: var(--bucket-range-text);
-}
 
 .favorite-remove-button {
   align-items: center;
@@ -1254,28 +1099,23 @@ h1 {
   display: flex;
   justify-content: center;
   padding: 0;
-}
 
 .favorite-remove-button:hover,
 .favorite-remove-button:focus {
   background: color-mix(in srgb, var(--highlight-bg) 55%, transparent);
   outline: none;
-}
 
 .favorite-remove-button:disabled,
 .favorite-remove-button.is-locked {
   cursor: not-allowed;
   opacity: 0.58;
-}
 
 .favorite-remove-button:disabled:hover,
 .favorite-remove-button:disabled:focus {
   background: transparent;
-}
 
 .favorite-remove-button .favorite-indicator {
   margin-left: 0;
-}
 
 .favorite-indicator {
   color: var(--muted);
@@ -1284,16 +1124,13 @@ h1 {
   font-weight: 900;
   line-height: 1;
   margin-left: auto;
-}
 
 .favorite-indicator.is-active {
   color: var(--bucket-border-amber);
-}
 
 .raid-tier-list {
   display: grid;
   gap: 16px;
-}
 
 .raid-tier-card {
   background: var(--panel);
@@ -1303,60 +1140,51 @@ h1 {
   display: grid;
   gap: 16px;
   padding: 20px;
-}
 
 .raid-tier-header {
   align-items: flex-start;
   display: flex;
   gap: 16px;
   justify-content: space-between;
-}
 
 .raid-tier-header h2 {
   font-size: 1.6rem;
   line-height: 1.1;
   margin: 0;
-}
 
 .raid-tier-summary,
 .raid-meta {
   display: flex;
   gap: 10px;
   margin: 0;
-}
 
 .raid-tier-summary div,
 .raid-meta div {
   background: var(--panel-soft);
   border-radius: 8px;
   padding: 10px 12px;
-}
 
 .raid-tier-summary dt,
 .raid-meta dt {
   color: var(--muted);
   font-size: 0.78rem;
   margin-bottom: 4px;
-}
 
 .raid-tier-summary dd,
 .raid-meta dd {
   font-weight: 800;
   margin: 0;
-}
 
 .raid-boss-grid {
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
 
 .raid-boss-card {
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: 8px;
   overflow: hidden;
-}
 
 .raid-boss-trigger {
   align-items: center;
@@ -1370,37 +1198,31 @@ h1 {
   padding: 12px;
   text-align: left;
   width: 100%;
-}
 
 .raid-boss-trigger:hover,
 .raid-boss-trigger:focus {
   background: var(--accent-soft);
   outline: none;
-}
 
 .raid-boss-trigger strong,
 .raid-boss-trigger small {
   display: block;
-}
 
 .raid-boss-trigger small,
 .raid-boss-trigger > span:last-child {
   color: var(--muted);
   font-size: 0.85rem;
-}
 
 .raid-boss-details {
   border-top: 1px solid var(--line);
   display: grid;
   gap: 12px;
   padding: 12px;
-}
 
 .raid-notes {
   color: var(--muted);
   line-height: 1.45;
   margin: 0;
-}
 
 @media (max-width: 720px) {
   .app-nav {
@@ -1467,4 +1289,1055 @@ h1 {
   .raid-boss-grid {
     grid-template-columns: 1fr;
   }
+
+/* ============= Server Toggle ============= */
+
+.server-toggle {
+  border: 1px solid var(--filter-border);
+  border-radius: 999px;
+  display: inline-flex;
+  overflow: hidden;
+
+.server-toggle-button {
+  background: var(--filter-bg);
+  border: 0;
+  color: var(--filter-text);
+  cursor: pointer;
+  font-size: 0.82rem;
+  font-weight: 800;
+  min-height: 34px;
+  padding: 0 10px;
+  transition: background-color 140ms ease, color 140ms ease;
+
+.server-toggle-button:hover,
+.server-toggle-button:focus {
+  background: var(--filter-hover-bg);
+  color: var(--filter-hover-text);
+  outline: none;
+
+.server-toggle-button.is-active {
+  background: var(--filter-active-bg);
+  box-shadow: var(--filter-active-shadow);
+  color: var(--filter-active-text);
+
+.server-toggle-button.is-active:hover,
+.server-toggle-button.is-active:focus {
+  background: var(--filter-active-bg);
+  color: var(--filter-active-text);
+
+@media (max-width: 720px) {
+  .server-toggle {
+    align-self: center;
+  }
+
+/* ============= Expansion Timeline ============= */
+
+.expansion-tone-luclin {
+  --exp-primary: var(--exp-luclin-primary);
+  --exp-bg: var(--exp-luclin-bg);
+  --exp-border: var(--exp-luclin-border);
+  --exp-text: var(--exp-luclin-text);
+
+.expansion-tone-pop {
+  --exp-primary: var(--exp-pop-primary);
+  --exp-bg: var(--exp-pop-bg);
+  --exp-border: var(--exp-pop-border);
+  --exp-text: var(--exp-pop-text);
+
+.etl-panel {
+  background:
+    linear-gradient(90deg, color-mix(in srgb, var(--accent) 6%, transparent), transparent 52%),
+    var(--panel);
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--accent);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 16px;
+  margin-bottom: 18px;
+  padding: 18px 20px;
+
+/* Live banner overrides left-border accent with green pulse */
+.etl-panel[data-phase="launch-week"] {
+  border-left-color: #27ae60;
+
+.etl-header {
+  display: grid;
+  gap: 3px;
+
+.etl-title {
+  font-size: 1.35rem;
+  line-height: 1.15;
+  margin: 0;
+
+.etl-launch-human {
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 700;
+  margin: 0;
+
+/* ── Clock ─────────────────────────────────────────────────────────────── */
+
+.etl-clock {
+  align-items: flex-end;
+  display: flex;
+  gap: 4px;
+
+.etl-clock--small .etl-clock-digits {
+  font-size: 1.6rem;
+
+.etl-clock-block {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 52px;
+  text-align: center;
+
+.etl-clock--small .etl-clock-block {
+  min-width: 40px;
+
+.etl-clock-digits {
+  color: var(--text);
+  font-size: 2.4rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1;
+
+.etl-clock-label {
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+
+.etl-clock-sep {
+  color: var(--muted);
+  font-size: 2.2rem;
+  font-weight: 300;
+  line-height: 1;
+  margin-bottom: 6px;
+  user-select: none;
+
+.etl-clock--small .etl-clock-sep {
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+
+/* ── Live banner ───────────────────────────────────────────────────────── */
+
+.etl-live-banner {
+  align-items: center;
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 900;
+  gap: 10px;
+
+.etl-live-dot {
+  animation: etl-pulse 1.6s ease-in-out infinite;
+  background: #27ae60;
+  border-radius: 50%;
+  display: inline-block;
+  flex: 0 0 auto;
+  height: 10px;
+  width: 10px;
+
+@keyframes etl-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.36; }
+
+/* ── Launch content ────────────────────────────────────────────────────── */
+
+.etl-launch-content {
+  display: grid;
+  gap: 8px;
+
+.etl-launch-content-label,
+.etl-upcoming-label,
+.etl-next-unlock-label {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  margin: 0;
+  text-transform: uppercase;
+
+.etl-upcoming {
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 8px;
+  padding-top: 14px;
+
+/* ── Next unlock ───────────────────────────────────────────────────────── */
+
+.etl-next-unlock {
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 8px;
+  padding-top: 14px;
+
+/* ── Expansion rows ────────────────────────────────────────────────────── */
+
+.etl-expansion-list {
+  display: grid;
+  gap: 6px;
+
+.etl-expansion-row {
+  align-items: center;
+  background: var(--exp-bg, var(--surface-muted));
+  border: 1px solid var(--exp-border, var(--line));
+  border-left: 5px solid var(--exp-primary, var(--accent));
+  border-radius: 6px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 8px 10px;
+
+.etl-expansion-row--compact {
+  padding: 5px 8px;
+
+.etl-expansion-row--future {
+  background: transparent;
+  border-color: var(--line);
+  border-left-color: color-mix(in srgb, var(--exp-primary, var(--accent)) 45%, var(--line));
+  opacity: 0.72;
+
+.etl-expansion-row--unlocked {
+  background: var(--exp-bg, var(--surface-muted));
+  border-color: var(--exp-border, var(--line));
+  border-left-color: var(--exp-primary, var(--accent));
+
+.etl-expansion-row--next {
+  background: var(--exp-bg, var(--surface-muted));
+  border-color: var(--exp-border, var(--line));
+  border-left-color: var(--exp-primary, var(--accent));
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--exp-primary, var(--accent)) 18%, transparent);
+
+.etl-expansion-left {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  min-width: 0;
+
+.etl-expansion-right {
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+  gap: 7px;
+
+.etl-expansion-status-dot {
+  background: color-mix(in srgb, var(--exp-primary, var(--accent)) 62%, transparent);
+  border-radius: 50%;
+  display: inline-block;
+  flex: 0 0 auto;
+  height: 7px;
+  width: 7px;
+
+.etl-expansion-row--unlocked .etl-expansion-status-dot {
+  background: #27ae60;
+
+.etl-expansion-row--future .etl-expansion-status-dot {
+  background: var(--line);
+
+.etl-expansion-name {
+  color: var(--exp-text, var(--text));
+  font-size: 0.9rem;
+  font-weight: 800;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+.etl-expansion-row--compact .etl-expansion-name {
+  font-size: 0.82rem;
+
+.etl-expansion-date {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 700;
+  white-space: nowrap;
+
+.etl-expansion-relative {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-style: italic;
+  white-space: nowrap;
+
+.etl-expansion-unlocked-badge {
+  background: color-mix(in srgb, #27ae60 14%, transparent);
+  border: 1px solid color-mix(in srgb, #27ae60 38%, var(--line));
+  border-radius: 999px;
+  color: #27ae60;
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  padding: 2px 7px;
+  text-transform: uppercase;
+
+:root[data-theme="dark"] .etl-expansion-unlocked-badge {
+  color: #7fc59b;
+  background: color-mix(in srgb, #7fc59b 14%, transparent);
+  border-color: color-mix(in srgb, #7fc59b 36%, var(--line));
+
+.etl-expansion-next-label {
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent) 36%, var(--line));
+  border-radius: 999px;
+  color: var(--accent);
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  padding: 2px 7px;
+  text-transform: uppercase;
+
+.etl-tentative-badge {
+  background: var(--warning-bg);
+  border: 1px solid var(--warning-border);
+  border-radius: 999px;
+  color: var(--warning-text);
+  cursor: help;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  padding: 2px 6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+/* ── Caveat + source ───────────────────────────────────────────────────── */
+
+.etl-caveat {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-style: italic;
+  line-height: 1.45;
+  margin: 0;
+
+.etl-source {
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin: 0;
+  padding-top: 10px;
+
+/* ── Compact widget ────────────────────────────────────────────────────── */
+
+.etl-compact {
+  align-items: center;
+  display: inline-flex;
+  gap: 6px;
+
+.etl-compact--live {
+  gap: 7px;
+
+.etl-compact-live-dot {
+  animation: etl-pulse 1.6s ease-in-out infinite;
+  background: #27ae60;
+  border-radius: 50%;
+  display: inline-block;
+  height: 7px;
+  width: 7px;
+
+:root[data-theme="dark"] .etl-compact-live-dot {
+  background: #7fc59b;
+
+.etl-compact-label {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+  white-space: nowrap;
+
+.etl-compact-countdown {
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 900;
+  white-space: nowrap;
+
+.etl-compact-tbd {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-style: italic;
+  white-space: nowrap;
+
+/* ── Responsive ────────────────────────────────────────────────────────── */
+
+@media (max-width: 720px) {
+  .etl-clock-digits {
+    font-size: 1.8rem;
+  }
+
+  .etl-clock-block {
+    min-width: 40px;
+  }
+
+  .etl-clock--small .etl-clock-digits {
+    font-size: 1.4rem;
+  }
+
+  .etl-expansion-row {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .etl-expansion-right {
+    flex-wrap: wrap;
+  }
+
+/* ============= ACCESSIBILITY IMPROVEMENTS ============= */
+    scroll-behavior: auto !important;
+  }
+
+/* ============= Slot Filter ============= */
+
+/*
+  Layout tokens (no new colors -- all color work reuses existing --filter-* tokens).
+  --slot-filter-gap:        spacing between category + child buttons
+  --slot-filter-child-size: slightly smaller font for sub-slot buttons
+*/
+:root {
+  --slot-filter-gap: 6px;
+  --slot-filter-child-size: 0.8rem;
+
+/* Outer wrapper -- mirrors .expansion-filter / .loot-mode-filter grid layout */
+.slot-filter-group {
+  display: grid;
+  gap: 6px;
+  min-width: min(300px, 100%);
+
+.slot-filter-group > span {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+
+/* Horizontally scrollable row of category + child groups */
+.slot-filter-scroll {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--slot-filter-gap);
+
+/* Each category wrapper (parent button + optional children panel) */
+.slot-filter-category {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  position: relative;
+
+/*
+  Base slot button -- extends .filter-button visually.
+  Defined as a standalone rule so it can inherit any future .filter-button
+  changes without re-duplicating the full declaration.
+*/
+.slot-filter-button {
+  background: var(--filter-bg);
+  border: 1px solid var(--filter-border);
+  border-radius: 999px;
+  color: var(--filter-text);
+  cursor: pointer;
+  font-size: 0.88rem;
+  font-weight: 700;
+  min-height: 36px;
+  padding: 0 12px;
+  transition: background-color 140ms ease, border-color 140ms ease, box-shadow 140ms ease, color 140ms ease;
+  white-space: nowrap;
+
+.slot-filter-button:hover,
+.slot-filter-button:focus {
+  background: var(--filter-hover-bg);
+  border-color: var(--filter-hover-border);
+  color: var(--filter-hover-text);
+  outline: none;
+
+.slot-filter-button.is-active {
+  background: var(--filter-active-bg);
+  border-color: var(--filter-active-border);
+  box-shadow: var(--filter-active-shadow);
+  color: var(--filter-active-text);
+
+.slot-filter-button.is-active:hover,
+.slot-filter-button.is-active:focus {
+  background: var(--filter-active-bg);
+  border-color: var(--filter-active-border);
+  color: var(--filter-active-text);
+
+/* Category parent button -- carries the expand chevron */
+.slot-filter-button.is-category {
+  align-items: center;
+  display: inline-flex;
+  gap: 6px;
+
+/*
+  Partially-active state: some (not all) children are selected.
+  Uses the softer hover style to signal "something here is on".
+*/
+.slot-filter-button.is-partial {
+  background: var(--filter-hover-bg);
+  border-color: var(--filter-hover-border);
+  color: var(--filter-hover-text);
+
+.slot-filter-button.is-partial:hover,
+.slot-filter-button.is-partial:focus {
+  background: var(--filter-hover-bg);
+  border-color: var(--filter-hover-border);
+  color: var(--filter-hover-text);
+
+/* Small expand/collapse chevron inside the category button */
+.slot-filter-expand-icon {
+  font-size: 0.62rem;
+  line-height: 1;
+  opacity: 0.72;
+  pointer-events: auto;
+  user-select: none;
+
+/* Expanded children panel -- renders below the parent button */
+.slot-filter-children {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 2px 0 2px 4px;
+
+/* Child sub-slot buttons -- slightly smaller than category buttons */
+.slot-filter-button--child {
+  font-size: var(--slot-filter-child-size);
+  min-height: 30px;
+  padding: 0 10px;
+
+@media (max-width: 720px) {
+  .slot-filter-scroll {
+    flex-wrap: wrap;
+  }
+
+  .slot-filter-group {
+    min-width: 100%;
+  }
+
+  .slot-filter-button--child {
+    min-height: 36px;
+  }
+
+/* ============= Share Filter Button ============= */
+
+.share-filter-button {
+  align-items: center;
+  background: var(--filter-bg);
+  border: 1px solid var(--filter-border);
+  border-radius: 999px;
+  color: var(--filter-text);
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 0.82rem;
+  font-weight: 800;
+  gap: 5px;
+  min-height: 34px;
+  padding: 0 13px;
+  transition: background-color 140ms ease, border-color 140ms ease, color 140ms ease;
+  white-space: nowrap;
+
+.share-filter-button:hover,
+.share-filter-button:focus {
+  background: var(--filter-hover-bg);
+  border-color: var(--filter-hover-border);
+  color: var(--filter-hover-text);
+  outline: none;
+
+.share-filter-button.is-copied {
+  background: var(--accent-soft);
+  border-color: color-mix(in srgb, var(--accent) 54%, var(--line));
+  color: var(--accent);
+
+.share-filter-button.is-copied:hover,
+.share-filter-button.is-copied:focus {
+  background: var(--accent-soft);
+  color: var(--accent);
+
+@media (max-width: 720px) {
+  .share-filter-button {
+    align-self: center;
+  }
+
+/* ============= Faction Guide ============= */
+/*
+ * Faction alignment tones reuse existing --bucket-* tokens.
+ * good    -> --bucket-green-*
+ * neutral -> --bucket-blue-*
+ * evil    -> --bucket-rose-*
+ *
+ * The .faction-tone-* classes and component styles live in
+ * app/factions/faction-page.css so they are only loaded on /factions.
+ * The token assignments below are available globally (e.g. for any
+ * cross-page faction badge that might appear in mob/zone views).
+ */
+
+.faction-tone-good {
+  --faction-bg: var(--bucket-green);
+  --faction-card: var(--bucket-green-card);
+  --faction-border: var(--bucket-border-green);
+  --faction-row: var(--bucket-green-row);
+
+.faction-tone-neutral {
+  --faction-bg: var(--bucket-blue);
+  --faction-card: var(--bucket-blue-card);
+  --faction-border: var(--bucket-border-blue);
+  --faction-row: var(--bucket-blue-row);
+
+.faction-tone-evil {
+  --faction-bg: var(--bucket-rose);
+  --faction-card: var(--bucket-rose-card);
+  --faction-border: var(--bucket-border-rose);
+  --faction-row: var(--bucket-rose-row);
+
+/* ============= Server Status Badge ============= */
+
+/*
+  Base layout — inline pill that sits beside ServerToggle in the nav bar
+  or on its own line in the hero area.
+
+  Height matches the existing toggle controls (34px min-height).
+  Font size and weight mirror .server-toggle-button for visual parity.
+*/
+.server-status-badge {
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  display: inline-flex;
+  font-size: 0.82rem;
+  font-weight: 800;
+  gap: 2px;
+  min-height: 34px;
+  padding: 0 12px;
+  white-space: nowrap;
+
+/* Pre-launch: amber / warning palette */
+.server-status-badge.is-prelaunch {
+  background: var(--warning-bg);
+  border-color: var(--warning-border);
+  color: var(--warning-text);
+
+/* Live (T0 to T0+30 d): accent palette with subtle glow pulse */
+.server-status-badge.is-live {
+  animation: server-status-pulse 2s ease-in-out infinite;
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent);
+
+/* Active (T0+30 d onwards): quiet accent text, no background or border */
+.server-status-badge.is-active {
+  background: transparent;
+  border-color: transparent;
+  color: var(--accent);
+
+@keyframes server-status-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 var(--focus-ring);
+  }
+  50% {
+    box-shadow: 0 0 0 6px transparent;
+  }
+
+/* Respect user motion preference — suppress the pulse entirely */
+@media (prefers-reduced-motion: reduce) {
+  .server-status-badge.is-live {
+    animation: none;
+  }
+
+@media (max-width: 720px) {
+  .server-status-badge {
+    align-self: center;
+  }
+
+/* ============= PWA Install Prompt Banner ============= */
+
+.install-prompt-banner {
+  align-items: center;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  bottom: 0;
+  box-shadow: 0 -4px 18px rgba(24, 34, 27, 0.1);
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  left: 0;
+  padding: 12px 18px;
+  position: fixed;
+  right: 0;
+  z-index: 100;
+
+:root[data-theme="dark"] .install-prompt-banner {
+  box-shadow: 0 -4px 18px rgba(0, 0, 0, 0.3);
+
+.install-prompt-text {
+  color: var(--text);
+  font-size: 0.92rem;
+  font-weight: 700;
+  margin: 0;
+
+.install-prompt-actions {
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+  gap: 8px;
+
+.install-prompt-button {
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.88rem;
+  font-weight: 800;
+  min-height: 36px;
+  padding: 0 14px;
+  transition: background-color 140ms ease, color 140ms ease, border-color 140ms ease;
+
+.install-prompt-button--install {
+  background: var(--accent);
+  border: 1px solid transparent;
+  color: var(--accent-contrast);
+
+.install-prompt-button--install:hover,
+.install-prompt-button--install:focus {
+  background: color-mix(in srgb, var(--accent) 85%, #000);
+  outline: none;
+
+.install-prompt-button--dismiss {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+
+.install-prompt-button--dismiss:hover,
+.install-prompt-button--dismiss:focus {
+  background: var(--surface-muted);
+  border-color: var(--accent);
+  color: var(--text);
+  outline: none;
+
+@media (max-width: 480px) {
+  .install-prompt-banner {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .install-prompt-actions {
+    width: 100%;
+  }
+
+  .install-prompt-button {
+    flex: 1;
+    text-align: center;
+  }
+
+}
+
+/* ============= Crafting Skill Tokens (Feature G) ============= */
+/*
+  One token group per skill: -bg, -border, -text.
+  Palette follows existing expansion-tone hue families:
+    tailoring      -> amber  (cloth / thread)
+    fletching      -> green  (wood / nature)
+    blacksmithing  -> blue   (steel / forge)
+    jewelcraft     -> purple (gems / arcane)
+    spell-research -> teal   (magical / esoteric)
+*/
+
+:root {
+  /* Tailoring — warm amber */
+  --skill-tailoring-bg:     #c97a1e;
+  --skill-tailoring-border: #a85e10;
+  --skill-tailoring-text:   #ffffff;
+
+  /* Fletching — forest green */
+  --skill-fletching-bg:     #3d7a42;
+  --skill-fletching-border: #2b5c30;
+  --skill-fletching-text:   #ffffff;
+
+  /* Blacksmithing — steel blue */
+  --skill-blacksmithing-bg:     #3f5f8c;
+  --skill-blacksmithing-border: #2d4668;
+  --skill-blacksmithing-text:   #ffffff;
+
+  /* Jewelcraft — deep purple */
+  --skill-jewelcraft-bg:     #6b4e9a;
+  --skill-jewelcraft-border: #4e3572;
+  --skill-jewelcraft-text:   #ffffff;
+
+  /* Spell Research — teal */
+  --skill-spell-research-bg:     #2d7b82;
+  --skill-spell-research-border: #1f5a60;
+  --skill-spell-research-text:   #ffffff;
+}
+
+:root[data-theme="dark"] {
+  /* Tailoring — amber brightened for dark bg */
+  --skill-tailoring-bg:     #e0952a;
+  --skill-tailoring-border: #c9761a;
+  --skill-tailoring-text:   #07100b;
+
+  /* Fletching — bright green */
+  --skill-fletching-bg:     #5faa65;
+  --skill-fletching-border: #3d8445;
+  --skill-fletching-text:   #07100b;
+
+  /* Blacksmithing — brighter steel blue */
+  --skill-blacksmithing-bg:     #6a90c8;
+  --skill-blacksmithing-border: #4a6fa0;
+  --skill-blacksmithing-text:   #07100b;
+
+  /* Jewelcraft — vibrant purple */
+  --skill-jewelcraft-bg:     #9e78d8;
+  --skill-jewelcraft-border: #7655b0;
+  --skill-jewelcraft-text:   #07100b;
+
+  /* Spell Research — bright teal */
+  --skill-spell-research-bg:     #4ab8c0;
+  --skill-spell-research-border: #2e8f97;
+  --skill-spell-research-text:   #07100b;
+}
+
+/*
+  Skill tone utility classes — applied to card roots and tab buttons.
+  They inject scoped --skill-* aliases consumed by crafting-page.css.
+  Mirrors the .expansion-tone-* convention exactly.
+*/
+
+.skill-tone-tailoring {
+  --skill-primary: var(--skill-tailoring-bg);
+  --skill-border:  var(--skill-tailoring-border);
+  --skill-text:    var(--skill-tailoring-text);
+}
+
+.skill-tone-fletching {
+  --skill-primary: var(--skill-fletching-bg);
+  --skill-border:  var(--skill-fletching-border);
+  --skill-text:    var(--skill-fletching-text);
+}
+
+.skill-tone-blacksmithing {
+  --skill-primary: var(--skill-blacksmithing-bg);
+  --skill-border:  var(--skill-blacksmithing-border);
+  --skill-text:    var(--skill-blacksmithing-text);
+}
+
+.skill-tone-jewelcraft {
+  --skill-primary: var(--skill-jewelcraft-bg);
+  --skill-border:  var(--skill-jewelcraft-border);
+  --skill-text:    var(--skill-jewelcraft-text);
+}
+
+.skill-tone-spell-research {
+  --skill-primary: var(--skill-spell-research-bg);
+  --skill-border:  var(--skill-spell-research-border);
+  --skill-text:    var(--skill-spell-research-text);
+}
+
+/* ============= ACCESSIBILITY IMPROVEMENTS ============= */
+
+/* Touch target sizing - ensure minimum 44px height for mobile accessibility */
+.zone-mob-item {
+  min-height: 44px;
+}
+
+.drawer-close {
+  min-height: 44px;
+  width: 44px;
+}
+
+.zone-loot-actions button {
+  min-height: 36px;
+}
+
+/* Focus-visible patterns for keyboard navigation and high-contrast modes */
+.filter-button:focus-visible,
+.zone-link-button:focus-visible,
+.loot-button:focus-visible,
+.search-input:focus-visible,
+.theme-toggle-button:focus-visible,
+.item-preview-toggle:focus-visible,
+.drawer-close:focus-visible,
+.favorite-button:focus-visible,
+.app-nav a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Reduced motion preferences - disable animations for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============= Confidence Badge ============= */
+
+/*
+  New tokens — rust/warning palette for the "guess" tier only.
+  All other tiers reuse existing tokens defined in :root above.
+*/
+:root {
+  --confidence-guess-primary: #a85c3e;
+  --confidence-guess-bg: #fdf0eb;
+  --confidence-guess-border: #d9a48a;
+  --confidence-guess-text: #7a3520;
+}
+
+:root[data-theme="dark"] {
+  --confidence-guess-primary: #d4856a;
+  --confidence-guess-bg: rgba(168, 92, 62, 0.18);
+  --confidence-guess-border: #9b5237;
+  --confidence-guess-text: #f5c4b0;
+}
+
+/*
+  Base pill — shared geometry and typography.
+  Intentionally small so the badge reads as metadata, not a primary label.
+  The verbose variant stacks a detail line below the tier label.
+*/
+.confidence-badge {
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  display: inline-flex;
+  flex-direction: column;
+  font-size: 0.68rem;
+  font-weight: 900;
+  gap: 1px;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  padding: 3px 7px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+/* Compact variant — single row, minimal padding */
+.confidence-badge.is-compact {
+  flex-direction: row;
+  padding: 2px 6px;
+}
+
+/* Verbose inner elements */
+.confidence-badge-label {
+  display: block;
+}
+
+.confidence-badge-detail {
+  color: inherit;
+  display: block;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  opacity: 0.82;
+  text-transform: none;
+}
+
+/* ── Tier color modifiers ─────────────────────────────────────────────────── */
+
+/* verified → accent green */
+.confidence-badge.is-verified {
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  border-color: color-mix(in srgb, var(--accent) 36%, var(--border));
+  color: var(--accent);
+}
+
+:root[data-theme="dark"] .confidence-badge.is-verified {
+  background: color-mix(in srgb, var(--accent) 16%, transparent);
+  border-color: color-mix(in srgb, var(--accent) 40%, var(--border));
+}
+
+/* high → classic expansion blue */
+.confidence-badge.is-high {
+  background: color-mix(in srgb, var(--exp-classic-primary) 10%, transparent);
+  border-color: color-mix(in srgb, var(--exp-classic-primary) 32%, var(--border));
+  color: var(--exp-classic-primary);
+}
+
+:root[data-theme="dark"] .confidence-badge.is-high {
+  background: color-mix(in srgb, var(--exp-classic-primary) 16%, transparent);
+  border-color: color-mix(in srgb, var(--exp-classic-primary) 36%, var(--border));
+}
+
+/* medium → amber bucket palette */
+.confidence-badge.is-medium {
+  background: var(--bucket-amber-card);
+  border-color: var(--bucket-border-amber);
+  color: var(--bucket-range-text);
+}
+
+/* low → muted gray */
+.confidence-badge.is-low {
+  background: color-mix(in srgb, var(--text-muted) 8%, transparent);
+  border-color: color-mix(in srgb, var(--text-muted) 28%, var(--border));
+  color: var(--text-muted);
+}
+
+/* guess → rust/warning */
+.confidence-badge.is-guess {
+  background: var(--confidence-guess-bg);
+  border-color: var(--confidence-guess-border);
+  color: var(--confidence-guess-text);
+}
+
+/* ============= Epic Tracker Checkbox ============= */
+
+/*
+  Provides the custom checkbox used in EpicTrackerCheckbox.tsx.
+  The label wraps input + visual box. min-height: 44px ensures the
+  touch target meets the a11y 44px requirement on mobile.
+*/
+
+.epic-checkbox {
+  align-items: center;
+  cursor: pointer;
+  display: inline-flex;
+  gap: 8px;
+  min-height: 44px;
+  padding: 2px 0;
+  user-select: none;
+}
+
+/* Visually-hidden native input -- still keyboard and screen-reader accessible */
+.epic-checkbox-input {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* Custom visual box */
+.epic-checkbox-box {
+  background: var(--card);
+  border: 2px solid var(--border);
+  border-radius: 4px;
+  display: inline-block;
+  flex: 0 0 auto;
+  height: 20px;
+  transition: background 140ms ease, border-color 140ms ease;
+  width: 20px;
+}
+
+/* Checked state: accent fill */
+.epic-checkbox.is-checked .epic-checkbox-box {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+/* Keyboard focus ring on the custom box */
+.epic-checkbox-input:focus-visible + .epic-checkbox-box {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Hover state */
+.epic-checkbox:hover .epic-checkbox-box {
+  border-color: var(--accent);
+}
+
+/* Active / tap state */
+.epic-checkbox:active .epic-checkbox-box {
+  background: var(--accent-soft);
 }

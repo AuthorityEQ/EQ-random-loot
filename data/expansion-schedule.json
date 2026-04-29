@@ -1,0 +1,42 @@
+{
+  "_comment": "Update unlock_iso when Daybreak publishes the official cadence (typically 2-4 weeks before launch). Set tentative:false when confirmed.",
+  "server": "frostreaver",
+  "launch_at_iso": "2026-05-27T19:00:00Z",
+  "launch_at_human": "May 27, 2026 12:00 PM PT",
+  "schedule_source": "Daybreak Producer's Letter April 2026",
+  "schedule_caveat": "Pre-PoP cadence not yet published — placeholder dates marked tentative:true",
+  "expansions": [
+    {
+      "name": "Classic",
+      "unlock_iso": "2026-05-27T19:00:00Z",
+      "tentative": false,
+      "tone": "classic"
+    },
+    {
+      "name": "Ruins of Kunark",
+      "unlock_iso": "2026-05-27T19:00:00Z",
+      "tentative": false,
+      "tone": "kunark"
+    },
+    {
+      "name": "Scars of Velious",
+      "unlock_iso": "2026-05-27T19:00:00Z",
+      "tentative": false,
+      "tone": "velious"
+    },
+    {
+      "name": "Shadows of Luclin",
+      "unlock_iso": null,
+      "tentative": true,
+      "tone": "luclin",
+      "estimated_after_weeks": 8
+    },
+    {
+      "name": "Planes of Power + Legacy of Ykesha",
+      "unlock_iso": null,
+      "tentative": true,
+      "tone": "pop",
+      "estimated_after_weeks": 16
+    }
+  ]
+}

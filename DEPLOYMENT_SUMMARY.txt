@@ -1,0 +1,379 @@
+================================================================================
+FROSTREAVER LOOT BUCKETS — DEPLOYMENT SUMMARY
+================================================================================
+
+Date: April 29, 2026
+Launch: May 27, 2026 12:00 PM PT
+Status: Pre-launch deployment guide complete
+
+================================================================================
+FILES CREATED
+================================================================================
+
+1. docs/DEPLOY.md (5000+ words)
+   - Comprehensive pre-deploy checklist
+   - Three deployment strategies (Vercel, Cloudflare, Docker)
+   - SEO setup (robots.txt, sitemap, OG image)
+   - Analytics integration (Plausible, Umami)
+   - Uptime monitoring (Uptime Robot)
+   - Post-deploy verification
+   - Launch day procedures
+   - Troubleshooting guide
+
+2. Dockerfile
+   - Multi-stage build (deps → builder → runtime)
+   - Node 22 Alpine base (minimal size)
+   - Non-root user (security)
+   - Health check included
+   - Proper signal handling (dumb-init)
+   - Production-optimized
+
+3. .dockerignore
+   - Excludes unnecessary files from build context
+   - Reduces image size
+   - Excludes dev/CI files
+
+4. docker-compose.yml
+   - Simple single-container setup
+   - Health checks configured
+   - Resource limits (optional)
+   - Logging configured
+   - Commented examples for nginx, watchtower
+
+5. .github/workflows/ci.yml
+   - Runs on: push to main/develop, all PRs
+   - Steps: checkout, Node 22, install, lint, type-check, build
+   - npm ci for reproducible installs
+   - Optional Docker build/push steps (commented)
+
+================================================================================
+DEPLOYMENT RECOMMENDATION: VERCEL
+================================================================================
+
+PRIMARY CHOICE:
+
+Why Vercel?
+✓ Next.js 16 is first-class (zero config)
+✓ Auto-deploys on git push (CI/CD integrated)
+✓ Preview deployments for PRs (team collaboration)
+✓ Instant rollback (one click, < 1 second)
+✓ Free tier handles Frostreaver's traffic easily
+✓ Global CDN (fast for worldwide EQ players)
+✓ No ops burden (Vercel manages scaling, security, SSL)
+✓ Git-native (no separate deploy pipeline)
+
+Setup (5 minutes):
+1. Go to vercel.com
+2. Sign in with GitHub
+3. Import repository
+4. Done — auto-deploys on main branch push
+
+Cost: Free tier (perfect for static loot database)
+Scaling: Automatic
+Monitoring: Built-in Vercel dashboard
+
+SECONDARY CHOICE: Cloudflare Pages
+
+Why Cloudflare?
+✓ Edge runtime (lowest latency globally)
+✓ Excellent free tier
+✓ Works well with static sites
+✗ Some Next.js 16 features may need workarounds (ISR, Server Actions)
+
+Only choose this if:
+- You already use Cloudflare
+- You need edge computing features
+- You prefer Cloudflare infrastructure
+
+ALTERNATIVE: Self-Hosted Docker
+
+Why Docker?
+✓ Full control
+✓ No vendor lock-in
+✓ Integrates with existing DevOps
+✗ Ops overhead (monitoring, updates, security)
+✗ Longer deployments (build → push → pull)
+
+Only choose this if:
+- You have a DevOps team
+- You have existing infrastructure
+- You need maximum customization
+
+================================================================================
+PRE-LAUNCH CHECKLIST (from DEPLOY.md)
+================================================================================
+
+Code Quality:
+[ ] npx tsc --noEmit (zero TS errors)
+[ ] npm run build (succeeds)
+[ ] npm run lint (passes)
+[ ] No hardcoded secrets
+
+Data Integrity:
+[ ] All JSON files in data/excel-imports/
+[ ] item-details.json present
+[ ] all-item-names.json current
+[ ] No .next/cache/ committed
+
+Assets & PWA:
+[ ] Icons at public/icons/ (192, 512, maskable)
+[ ] public/manifest.json valid
+[ ] public/sw.js active (public/sw-killswitch.js backup)
+[ ] public/robots.txt configured
+[ ] public/sitemap.xml or sitemap route
+
+Testing:
+[ ] All routes load (/, /raids, /favorites, etc.)
+[ ] Favicon loads
+[ ] PWA manifest loads
+[ ] Service worker registers
+[ ] Dark mode toggles
+[ ] Server selector persists
+
+================================================================================
+LAUNCH DAY (May 27, 2026)
+================================================================================
+
+Pre-Launch (May 26):
+- Final data sync
+- Deploy pending changes
+- Test all routes on production domain
+- PWA test on mobile (iOS/Android)
+
+Launch Hour (12:00 PM PT):
+- Monitor error logs (first 15 min critical)
+- Verify ServerStatusBadge transitions to "live"
+- Watch traffic dashboard
+
+First 24 Hours:
+- Error rate < 0.1%
+- Response time < 500ms p95
+- Uptime 99.9%+
+- Respond to Discord/Reddit feedback
+
+================================================================================
+VERCEL SETUP CHECKLIST (Recommended)
+================================================================================
+
+1. [ ] Create Vercel account (free)
+2. [ ] Connect GitHub repository
+3. [ ] Vercel auto-detects Next.js (no config needed)
+4. [ ] main branch auto-deploys to production
+5. [ ] PRs get preview URLs automatically
+6. [ ] Add custom domain (frostreaver-loot.com)
+7. [ ] SSL auto-provisions (Let's Encrypt)
+8. [ ] Set up Uptime Robot monitoring (optional)
+9. [ ] Add Plausible or Umami analytics (optional)
+10. [ ] Submit to Google Search Console
+
+Rollback: Click Deployments → last good version → Promote to Production
+
+================================================================================
+CI/CD WORKFLOW
+================================================================================
+
+GitHub Actions workflow (.github/workflows/ci.yml) runs on:
+- Every push to main/develop
+- Every pull request
+
+Steps:
+1. Checkout code
+2. Setup Node 22
+3. npm ci (install deps)
+4. npm run lint (ESLint)
+5. npx tsc --noEmit (TypeScript)
+6. npm run build (Next.js build)
+
+All steps must pass before merge to main.
+
+Optional additions (commented in ci.yml):
+- Docker image build/push
+- Test suite
+- Vercel deployment notification
+
+================================================================================
+DOCKER QUICK START
+================================================================================
+
+Build:
+  docker build -t frostreaver:latest .
+
+Run (local test):
+  docker run -p 3000:3000 frostreaver:latest
+  # Visit http://localhost:3000
+
+Production (with docker-compose):
+  docker-compose up -d
+  docker-compose logs -f
+  # Visit http://localhost:3000 (behind nginx for HTTPS)
+
+Rollback:
+  docker tag frostreaver:v1.9 frostreaver:latest
+  docker-compose down && docker-compose up -d
+
+================================================================================
+SEO SETUP (from DEPLOY.md)
+================================================================================
+
+Files needed:
+1. public/robots.txt (provided in DEPLOY.md)
+2. public/sitemap.xml (or app/sitemap.ts route handler)
+3. OG image: public/og-image.png (1200x630 px)
+
+Updated metadata in app/layout.tsx:
+- openGraph.images with OG image URL
+- og:title, og:description, og:url
+
+Search Console:
+1. Google Search Console: verify domain → submit sitemap
+2. Bing Webmaster Tools: verify domain → submit sitemap
+
+Analytics:
+- Plausible.io (recommended: $10/mo, no cookies, GDPR-compliant)
+- Umami (self-hosted option)
+
+================================================================================
+POST-DEPLOY VERIFICATION
+================================================================================
+
+First hour after deploy:
+[ ] Main page loads (/), renders loot buckets
+[ ] /raids loads, data displays
+[ ] /favorites loads, empty state or saved items
+[ ] /offline page loads (PWA fallback)
+[ ] Favicon visible in browser tab
+[ ] PWA manifest loads (DevTools → Application)
+[ ] Service worker registered (DevTools → Service Workers)
+[ ] Dark mode toggle works
+[ ] Server selector works (Frostreaver/Mischief/Teek)
+[ ] Responsive on mobile
+[ ] No console errors
+[ ] /robots.txt accessible
+[ ] /sitemap.xml accessible
+[ ] HTTPS enforced
+
+================================================================================
+ONGOING OPERATIONS
+================================================================================
+
+Data Updates:
+- Update JSON files in data/
+- npm run build
+- Push to main → auto-deploy
+
+Service Worker Updates:
+- Edit public/sw.js
+- Update CACHE_NAME (e.g., frostreaver-v2)
+- Deploy → old caches auto-delete on activate
+
+Alerts to configure:
+- Error rate > 1%
+- Response time p95 > 1s
+- Downtime (Uptime Robot)
+- SSL certificate expiry (if self-hosted)
+
+================================================================================
+CRITICAL SUCCESS FACTORS
+================================================================================
+
+1. Deployment Simplicity
+   → Choose Vercel (recommended): one-click setup, auto-scaling, instant rollback
+
+2. Data Integrity
+   → All JSON files committed before deploy
+   → Validate with npm run validate:item-details
+
+3. Zero-Downtime Deploys
+   → Vercel/Cloudflare handle this automatically
+   → Docker: rolling updates with health checks
+
+4. Instant Rollback
+   → Vercel: click one button (< 1 second)
+   → Cloudflare: select prior deployment
+   → Docker: re-tag and restart previous image
+
+5. Monitoring & Alerts
+   → Uptime Robot for 24/7 monitoring
+   → Plausible for user analytics
+   → Error tracking (Vercel built-in)
+
+6. SEO from Day 1
+   → robots.txt, sitemap, OG image
+   → Google/Bing Search Console submissions
+   → Launch day coordination (May 27 12:00 PM PT)
+
+================================================================================
+SUPPORT & ESCALATION
+================================================================================
+
+Deployment Fails:
+- Check GitHub Actions logs (.github/workflows/ci.yml)
+- Verify npm run build passes locally
+- Check data/*.json files are valid
+
+Service Worker Issues:
+- Hard-refresh (Ctrl+F5)
+- Clear caches (DevTools → Application → Storage)
+- Update CACHE_NAME in public/sw.js
+- Emergency: use kill-switch (see docs/PWA.md)
+
+Outage Response:
+- Vercel: Promote previous deployment (< 1 second)
+- Docker: Re-tag and restart previous image
+
+Questions:
+- See docs/DEPLOY.md (5000+ word guide)
+- See docs/PWA.md (service worker procedures)
+- See docs/COMPETITIVE_POSITIONING.md (GTM playbook)
+
+================================================================================
+FINAL CHECKLIST
+================================================================================
+
+Before May 27, 2026 launch:
+
+Code & Build:
+[ ] npx tsc --noEmit passes
+[ ] npm run build succeeds
+[ ] npm run lint passes
+[ ] All data JSON files valid and present
+[ ] .next/cache/ is gitignored
+
+Deployment Platform (Vercel recommended):
+[ ] GitHub repository connected to Vercel
+[ ] main branch configured for auto-deploy
+[ ] Custom domain set (frostreaver-loot.com or similar)
+[ ] SSL certificate provisioned
+
+Monitoring:
+[ ] Uptime Robot configured
+[ ] Plausible/Umami analytics setup
+[ ] Error alerts configured
+[ ] Dashboard accessible
+
+SEO:
+[ ] robots.txt at public/robots.txt
+[ ] sitemap.xml available
+[ ] OG image at public/og-image.png
+[ ] Google Search Console verification started
+[ ] Bing Webmaster Tools verification started
+
+Testing:
+[ ] All main routes tested on staging
+[ ] PWA tested on mobile (iOS/Android)
+[ ] Dark mode verified
+[ ] Server selector verified
+[ ] No console errors
+
+Launch Coordination:
+[ ] Team notified of May 27 12:00 PM PT launch
+[ ] Discord/Reddit community managers ready
+[ ] ServerStatusBadge transition tested
+[ ] Rollback procedure documented and tested
+[ ] On-call engineer assigned for first 24 hours
+
+================================================================================
+
+Questions or issues? See docs/DEPLOY.md for detailed guidance.
+
+Ready to launch! 🚀

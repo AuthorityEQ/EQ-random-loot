@@ -1,0 +1,66 @@
+# Git and version control
+.git
+.gitignore
+.gitattributes
+
+# Node dependencies (will be fresh-installed in Docker)
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Build outputs (will be rebuilt in Docker)
+.next
+dist
+build
+out
+
+# Development files
+.env.local
+.env.development
+.env.test
+
+# IDE and editor files
+.vscode
+.idea
+.DS_Store
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# Testing
+coverage
+.nyc_output
+*.lcov
+
+# Local development
+.turbo
+tsconfig.tsbuildinfo
+
+# Cache directories (will be rebuilt)
+.cache
+cache/*
+!cache/.gitkeep
+
+# Logs
+*.log
+logs
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Documentation (not needed in runtime image)
+docs
+README.md
+CONTRIBUTING.md
+
+# CI/CD
+.github
+.gitlab-ci.yml
+.circleci
+
+# Optional: pipeline-related artifacts
+data/pipeline-runs/*.log
+data/**/*-errors.json
+data/**/*-review.json

@@ -4,6 +4,9 @@ import { useEffect, useRef, useState } from "react";
 import { FavoriteIndicator } from "@/components/FavoriteIndicator";
 import { ItemIcon } from "@/components/ItemIcon";
 import { useItemPreview } from "@/components/ItemPreviewProvider";
+import { ConfidenceBadge } from "@/components/ConfidenceBadge";
+import confidenceData from "@/data/loot-confidence.json";
+import { DEFAULT_CONFIDENCE, type ConfidenceMetadata } from "@/lib/confidence";
 import type { Bucket, ItemDetails } from "@/lib/search";
 import type { ZoneView as ZoneViewData } from "@/lib/zones";
 
@@ -182,13 +185,21 @@ export function ZoneView({
                       const details = getItemDetails(item);
                       return (
                         <li key={item}>
+                          {(() => {
+                            const meta = (confidenceData as unknown as Record<string, ConfidenceMetadata>)[item] ?? DEFAULT_CONFIDENCE;
+                            return (
                           <button className="loot-button" onClick={() => onSelectLoot(item, bucket)} type="button" {...previewProps(item, details)}>
                             <span className="loot-item-label">
                               <ItemIcon details={details} />
                               <span>{item}</span>
                             </span>
+                            {(meta.tier === "verified" || meta.tier === "high") && (
+                              <ConfidenceBadge compact meta={meta} />
+                            )}
                             <FavoriteIndicator details={details} itemName={item} />
                           </button>
+                            );
+                          })()}
                         </li>
                       );
                     })}

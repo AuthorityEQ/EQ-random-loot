@@ -5,6 +5,7 @@ export type Mob = {
   expansion: string;
   source_bucket: string;
   loot: string[];
+  faction?: string;
 };
 
 export type Bucket = {

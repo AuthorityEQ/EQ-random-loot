@@ -25,12 +25,12 @@
   color: var(--text);
   cursor: pointer;
   display: inline-flex;
-  height: 34px;
+  height: 44px;
   justify-content: center;
   position: absolute;
-  right: 18px;
-  top: 18px;
-  width: 34px;
+  right: 12px;
+  top: 12px;
+  width: 44px;
 }
 
 .drawer-kicker {
@@ -38,14 +38,14 @@
   font-size: 0.76rem;
   font-weight: 800;
   letter-spacing: 0.08em;
-  margin: 0 42px 8px 0;
+  margin: 0 52px 8px 0;
   text-transform: uppercase;
 }
 
 .item-drawer h2 {
   font-size: 1.8rem;
   line-height: 1.12;
-  margin: 0 42px 10px 0;
+  margin: 0 52px 10px 0;
 }
 
 .drawer-actions {
@@ -61,7 +61,7 @@
   border-radius: 8px;
   font-size: 0.86rem;
   font-weight: 700;
-  min-height: 34px;
+  min-height: 44px;
   padding: 0 10px;
 }
 
@@ -102,6 +102,36 @@
   background: var(--panel-soft);
   color: var(--muted);
   cursor: not-allowed;
+}
+
+/* Discord share button — uses the --filter-* token system */
+.share-discord-button {
+  background: var(--filter-bg);
+  border: 1px solid var(--filter-border);
+  border-radius: 8px;
+  color: var(--filter-text);
+  cursor: pointer;
+  font-size: 0.86rem;
+  font-weight: 700;
+  min-height: 44px;
+  padding: 0 10px;
+  transition: background 0.14s, border-color 0.14s, color 0.14s;
+  white-space: nowrap;
+}
+
+.share-discord-button:hover,
+.share-discord-button:focus {
+  background: var(--filter-hover-bg);
+  border-color: var(--filter-hover-border);
+  color: var(--filter-hover-text);
+  outline: none;
+}
+
+.share-discord-button.is-copied {
+  background: var(--filter-active-bg);
+  border-color: var(--filter-active-border);
+  box-shadow: var(--filter-active-shadow);
+  color: var(--filter-active-text);
 }
 
 .eq-inspect-window {
@@ -365,7 +395,7 @@
 .eq-stat-value {
   color: #f2f2e9;
   font-weight: 700;
-  padding-right: 18px;
+  padding-right: 12px;
   text-align: right;
   white-space: nowrap;
 }

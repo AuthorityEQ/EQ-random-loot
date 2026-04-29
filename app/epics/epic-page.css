@@ -1,0 +1,267 @@
+/* ============= Epic Tracker Page ============= */
+
+/* ------------------------------------------------------------------
+   Class selector bar
+   ------------------------------------------------------------------ */
+
+.epic-class-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0 20px;
+}
+
+/* ------------------------------------------------------------------
+   Progress summary row (under the class header)
+   ------------------------------------------------------------------ */
+
+.epic-progress-summary {
+  align-items: center;
+  display: flex;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.epic-progress-track {
+  background: var(--border);
+  border-radius: 999px;
+  flex: 1;
+  height: 6px;
+  overflow: hidden;
+}
+
+.epic-progress-fill {
+  background: var(--accent);
+  border-radius: 999px;
+  height: 100%;
+  transition: width 220ms ease;
+}
+
+.epic-progress-label {
+  color: var(--text-muted);
+  font-size: 0.84rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.epic-progress-label strong {
+  color: var(--accent);
+}
+
+.epic-clear-button {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-weight: 800;
+  min-height: 28px;
+  padding: 0 10px;
+  transition: background 140ms ease, border-color 140ms ease, color 140ms ease;
+}
+
+.epic-clear-button:hover,
+.epic-clear-button:focus {
+  background: var(--filter-hover-bg);
+  border-color: var(--filter-hover-border);
+  color: var(--filter-hover-text);
+  outline: none;
+}
+
+/* ------------------------------------------------------------------
+   Steps list
+   ------------------------------------------------------------------ */
+
+.epic-steps-list {
+  display: grid;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ------------------------------------------------------------------
+   Step card — mirrors BucketCard visual pattern
+   ------------------------------------------------------------------ */
+
+.epic-step-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+  display: grid;
+  gap: 10px;
+  padding: 14px 16px;
+  transition: background 140ms ease, border-color 140ms ease, box-shadow 140ms ease;
+}
+
+.epic-step-card.is-complete {
+  border-left-color: color-mix(in srgb, var(--accent) 48%, var(--border));
+  opacity: 0.72;
+}
+
+.epic-step-card.is-complete .epic-step-name {
+  text-decoration: line-through;
+  text-decoration-color: var(--text-muted);
+}
+
+/* ------------------------------------------------------------------
+   Step header row: checkbox + number + name
+   ------------------------------------------------------------------ */
+
+.epic-step-header {
+  align-items: flex-start;
+  display: flex;
+  gap: 10px;
+}
+
+.epic-step-number {
+  background: var(--accent);
+  border-radius: 999px;
+  color: var(--card);
+  flex: 0 0 auto;
+  font-size: 0.72rem;
+  font-weight: 900;
+  line-height: 1;
+  padding: 4px 8px;
+}
+
+.epic-step-card.is-complete .epic-step-number {
+  background: color-mix(in srgb, var(--accent) 46%, var(--border));
+}
+
+.epic-step-title {
+  display: grid;
+  flex: 1;
+  gap: 2px;
+  min-width: 0;
+}
+
+.epic-step-name {
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.epic-step-type-pill {
+  background: var(--surface-muted);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text-muted);
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  padding: 2px 7px;
+  text-transform: uppercase;
+}
+
+/* ------------------------------------------------------------------
+   Step metadata grid (zone, NPC, drop source)
+   ------------------------------------------------------------------ */
+
+.epic-step-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  margin: 0;
+}
+
+.epic-step-meta dt {
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.epic-step-meta dd {
+  color: var(--text);
+  font-size: 0.88rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.epic-step-meta-pair {
+  display: grid;
+  gap: 2px;
+}
+
+/* ------------------------------------------------------------------
+   Description text
+   ------------------------------------------------------------------ */
+
+.epic-step-description {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.52;
+  margin: 0;
+}
+
+/* ------------------------------------------------------------------
+   Cross-links — zone/mob/item anchors
+   ------------------------------------------------------------------ */
+
+.epic-link {
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 46%, transparent);
+  color: var(--accent);
+  font-weight: 800;
+  text-decoration: none;
+  transition: border-color 120ms ease, color 120ms ease;
+}
+
+.epic-link:hover,
+.epic-link:focus {
+  border-bottom-color: var(--accent);
+  color: var(--accent);
+  outline: none;
+}
+
+/* ------------------------------------------------------------------
+   Placeholder badge
+   ------------------------------------------------------------------ */
+
+.epic-placeholder-badge {
+  background: var(--warning-bg);
+  border: 1px solid var(--warning-border);
+  border-radius: 6px;
+  color: var(--warning-text);
+  font-size: 0.8rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+  padding: 6px 12px;
+}
+
+/* ------------------------------------------------------------------
+   Empty / pending state
+   ------------------------------------------------------------------ */
+
+.epic-pending-state {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.55;
+  padding: 32px 28px;
+  text-align: center;
+}
+
+/* ------------------------------------------------------------------
+   Responsive
+   ------------------------------------------------------------------ */
+
+@media (max-width: 720px) {
+  .epic-class-bar {
+    gap: 6px;
+  }
+
+  .epic-step-card {
+    padding: 12px 14px;
+  }
+
+  .epic-progress-summary {
+    flex-wrap: wrap;
+  }
+}

@@ -1,9 +1,7 @@
 "use client";
 
-import { useMemo, useState } from "react";
-import { EqItemInspect } from "@/components/EqItemInspect";
-import { useFavorites } from "@/components/FavoritesProvider";
-import { bestZonesForBucket } from "@/lib/buckets";
+import { useEffect, useRef } from "react";
+import { ItemDetailBody } from "@/components/ItemDetailBody";
 import type { Bucket, ItemDetails } from "@/lib/search";
 
 type ItemDrawerProps = {
@@ -22,22 +20,28 @@ export function ItemDrawer({
   details,
   bucket,
   itemBuckets,
-  expansion,
   contentType: _contentType,
   onClose,
   onSelectZone,
 }: ItemDrawerProps) {
-  const [copied, setCopied] = useState(false);
-  const { isFavorite, toggleFavorite } = useFavorites();
-  const farmingLocations = useMemo(() => bestZonesForBucket(bucket, Number.POSITIVE_INFINITY), [bucket]);
-  const allItemBuckets = itemBuckets?.length ? itemBuckets : [bucket];
-  const favorite = isFavorite(itemName, details);
+  const allBuckets = itemBuckets?.length ? itemBuckets : [bucket];
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
 
-  async function copyItemName() {
-    await navigator.clipboard.writeText(itemName);
-    setCopied(true);
-    window.setTimeout(() => setCopied(false), 1400);
-  }
+  // Close on Escape
+  useEffect(() => {
+    function handleKeyDown(event: KeyboardEvent) {
+      if (event.key === "Escape") {
+        onClose();
+      }
+    }
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [onClose]);
+
+  // Move focus to the close button when the drawer mounts
+  useEffect(() => {
+    closeButtonRef.current?.focus();
+  }, []);
 
   return (
     <div className="drawer-backdrop" role="presentation" onClick={onClose}>
@@ -48,79 +52,22 @@ export function ItemDrawer({
         role="dialog"
         onClick={(event) => event.stopPropagation()}
       >
-        <button aria-label="Close item details" className="drawer-close" onClick={onClose}>
+        <button
+          ref={closeButtonRef}
+          aria-label="Close item details"
+          className="drawer-close"
+          onClick={onClose}
+        >
           x
         </button>
 
-        <p className="drawer-kicker">Loot item</p>
-        <h2 id="item-drawer-title">{itemName}</h2>
-        <div className="drawer-actions">
-          <button className="copy-button" onClick={copyItemName} type="button">
-            {copied ? "Copied" : "Copy name"}
-          </button>
-          <button
-            aria-pressed={favorite}
-            className={favorite ? "favorite-button is-active" : "favorite-button"}
-            onClick={() => toggleFavorite(itemName, details)}
-            title={favorite ? "Remove from favorites" : "Add to favorites"}
-            type="button"
-          >
-            <span aria-hidden="true">{favorite ? "★" : "☆"}</span>
-            Favorite
-          </button>
-          <button className="save-button" disabled title="Editing is not wired up yet" type="button">
-            Save
-          </button>
-        </div>
-
-        {details ? (
-          <>
-            <EqItemInspect details={details} itemName={itemName} />
-
-            {details.sources.length > 0 ? (
-              <div className="sources">
-                <h3>Sources</h3>
-                {details.sources.map((source) => (
-                  <a href={source.url} key={source.url} rel="noreferrer" target="_blank">
-                    {source.name}
-                  </a>
-                ))}
-              </div>
-            ) : null}
-          </>
-        ) : (
-          <p className="no-details">Item details not added yet.</p>
-        )}
-
-        <section className="farming-panel is-highlighted">
-          <h3>Best Farming Locations</h3>
-          <p>Zones ranked by number of possible mobs in this bucket</p>
-          <div className="item-bucket-highlight-list">
-            {allItemBuckets.map((itemBucket) => (
-              <div className="item-bucket-highlight" key={`${itemBucket.expansion}-${itemBucket.bucket}`}>
-                <strong>{itemBucket.expansion}</strong>
-                <span>Levels {itemBucket.level_range}</span>
-              </div>
-            ))}
-          </div>
-          <div className="farming-list">
-            {farmingLocations.map(({ zone, mobs }) => (
-              <div className="farming-zone is-highlighted" key={zone}>
-                <button className="zone-link farming-zone-name" onClick={() => onSelectZone(zone)} type="button">
-                  {zone}
-                </button>
-                <span>{mobs.length} mobs in this bucket</span>
-                <ul>
-                  {mobs.map((mob) => (
-                    <li key={`${mob.name}-${mob.level}-${mob.zone}`}>
-                      {mob.name}, level {mob.level}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </section>
+        <ItemDetailBody
+          allBuckets={allBuckets}
+          bucket={bucket}
+          details={details}
+          itemName={itemName}
+          onSelectZone={onSelectZone}
+        />
       </aside>
     </div>
   );
