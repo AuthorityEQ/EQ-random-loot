@@ -17,7 +17,9 @@ import { useState } from "react";
 import Link from "next/link";
 import { useEpicProgress } from "@/components/EpicProgressProvider";
 import { EpicTrackerCheckbox } from "@/components/EpicTrackerCheckbox";
-import { EPIC_CLASSES, type EpicClassName, type NormalizedClassEpic, type NormalizedStep } from "./page";
+import { EPIC_CLASSES, type EpicClassName, type NormalizedClassEpic, type NormalizedStep } from "./types";
+import { mobToSlug } from "@/lib/mob-slug";
+import { zoneToSlug } from "@/lib/zone-slug";
 
 // ---------------------------------------------------------------------------
 // Types
@@ -31,10 +33,6 @@ type EpicTrackerClientProps = {
 // ---------------------------------------------------------------------------
 // Helpers
 // ---------------------------------------------------------------------------
-
-function toUrlSlug(value: string): string {
-  return value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
-}
 
 /**
  * Extract a meaningful "drop source" mob from the items/action text when
@@ -92,7 +90,7 @@ function EpicStepCard({
           <div className="epic-step-meta-pair">
             <dt>Zone</dt>
             <dd>
-              <Link className="epic-link" href={`/zone/${toUrlSlug(step.zone)}`}>
+              <Link className="epic-link" href={`/zone/${zoneToSlug(step.zone)}`}>
                 {step.zone}
               </Link>
             </dd>
@@ -102,7 +100,7 @@ function EpicStepCard({
           <div className="epic-step-meta-pair">
             <dt>NPC / Mob</dt>
             <dd>
-              <Link className="epic-link" href={`/mob/${toUrlSlug(step.npcMob!)}`}>
+              <Link className="epic-link" href={`/mob/${mobToSlug(step.npcMob!)}`}>
                 {step.npcMob}
               </Link>
             </dd>
@@ -112,7 +110,7 @@ function EpicStepCard({
           <div className="epic-step-meta-pair">
             <dt>Drops from</dt>
             <dd>
-              <Link className="epic-link" href={`/mob/${toUrlSlug(dropSource)}`}>
+              <Link className="epic-link" href={`/mob/${mobToSlug(dropSource)}`}>
                 {dropSource}
               </Link>
             </dd>

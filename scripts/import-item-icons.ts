@@ -3,7 +3,7 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 type ExpansionArg = "classic" | "kunark" | "velious";
-type ContentTypeArg = "group-named";
+type ContentTypeArg = "group-named" | "raid";
 
 type ItemDetails = {
   name: string;
@@ -23,6 +23,20 @@ type Bucket = {
 
 type Dataset = {
   buckets: Bucket[];
+};
+
+type RaidBoss = {
+  name: string;
+  loot_pool?: string[];
+};
+
+type RaidTier = {
+  bosses: RaidBoss[];
+};
+
+type RaidDataset = {
+  expansion: string;
+  tiers: RaidTier[];
 };
 
 type ImageCandidate = {
@@ -47,11 +61,16 @@ if (!args) {
   process.exit(1);
 }
 
-const datasetPath = path.join(root, "data", `${args.expansion}-group-named.json`);
+const datasetPath = args.contentType === "raid"
+  ? path.join(root, "data", `${args.expansion}-raid.json`)
+  : path.join(root, "data", `${args.expansion}-group-named.json`);
 const details = JSON.parse(await readFile(detailsPath, "utf8")) as Record<string, ItemDetails>;
-const dataset = JSON.parse(await readFile(datasetPath, "utf8")) as Dataset;
+const datasetRaw = JSON.parse(await readFile(datasetPath, "utf8")) as Dataset | RaidDataset;
 const selectedItemNames = getSelectedItemNames();
-const itemNames = getBatchItemNames(dataset)
+const allItemNames = args.contentType === "raid"
+  ? getRaidItemNames(datasetRaw as RaidDataset)
+  : getBatchItemNames(datasetRaw as Dataset);
+const itemNames = allItemNames
   .filter((itemName) => selectedItemNames.length === 0 || selectedItemNames.includes(itemName))
   .slice(0, args.limit ?? undefined);
 const log = {
@@ -150,8 +169,9 @@ function parseArgs(rawArgs: string[]) {
 }
 
 function printUsage() {
-  console.log("Usage: node --experimental-strip-types scripts/import-item-icons.ts <classic|kunark|velious> group-named [limit]");
+  console.log("Usage: node --experimental-strip-types scripts/import-item-icons.ts <classic|kunark|velious> <group-named|raid> [limit]");
   console.log("Example: node --experimental-strip-types scripts/import-item-icons.ts classic group-named 10");
+  console.log("Example: node --experimental-strip-types scripts/import-item-icons.ts classic raid");
 }
 
 function isExpansion(value: string | undefined): value is ExpansionArg {
@@ -159,13 +179,21 @@ function isExpansion(value: string | undefined): value is ExpansionArg {
 }
 
 function isContentType(value: string | undefined): value is ContentTypeArg {
-  return value === "group-named";
+  return value === "group-named" || value === "raid";
 }
 
 function getBatchItemNames(dataset: Dataset) {
   return Array.from(
     new Set(
       dataset.buckets.flatMap((bucket) => bucket.loot_pool ?? bucket.mobs.flatMap((mob) => mob.loot)),
+    ),
+  ).sort((a, b) => a.localeCompare(b));
+}
+
+function getRaidItemNames(dataset: RaidDataset) {
+  return Array.from(
+    new Set(
+      dataset.tiers.flatMap((tier) => tier.bosses.flatMap((boss) => boss.loot_pool ?? [])),
     ),
   ).sort((a, b) => a.localeCompare(b));
 }

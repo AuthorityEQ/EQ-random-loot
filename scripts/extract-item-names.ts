@@ -9,10 +9,46 @@ type Dataset = {
   buckets: Bucket[];
 };
 
+type RaidBoss = {
+  name: string;
+  loot_pool?: string[];
+};
+
+type RaidTier = {
+  bosses: RaidBoss[];
+};
+
+type RaidDataset = {
+  expansion: string;
+  tiers: RaidTier[];
+};
+
 const root = process.cwd();
 const allFlag = process.argv.includes("--all");
+const raidFlag = process.argv.includes("--raid");
 
-if (allFlag) {
+if (raidFlag) {
+  // Emit the sorted union of raid loot pool item names across all 3 expansions.
+  const [classic, kunark, velious] = await Promise.all([
+    readFile(path.join(root, "data", "classic-raid.json"), "utf8").then((raw) => JSON.parse(raw) as RaidDataset),
+    readFile(path.join(root, "data", "kunark-raid.json"), "utf8").then((raw) => JSON.parse(raw) as RaidDataset),
+    readFile(path.join(root, "data", "velious-raid.json"), "utf8").then((raw) => JSON.parse(raw) as RaidDataset),
+  ]);
+
+  const raidItemNames = Array.from(
+    new Set(
+      [classic, kunark, velious]
+        .flatMap((dataset) => dataset.tiers.flatMap((tier) => tier.bosses.flatMap((boss) => boss.loot_pool ?? [])))
+        .map((item) => item.trim())
+        .filter(Boolean),
+    ),
+  ).sort((a, b) => a.localeCompare(b));
+
+  const outputPath = path.join(root, "data", "raid-item-names.json");
+  await mkdir(path.dirname(outputPath), { recursive: true });
+  await writeFile(outputPath, `${JSON.stringify(raidItemNames, null, 2)}\n`);
+  console.log(`Wrote ${raidItemNames.length} unique raid item names (Classic + Kunark + Velious) to ${outputPath}`);
+} else if (allFlag) {
   // Emit the sorted union of Classic + Kunark + Velious item names.
   const [classic, kunark, velious] = await Promise.all([
     readFile(path.join(root, "data", "classic-group-named.json"), "utf8").then((raw) => JSON.parse(raw) as Dataset),

@@ -1,12 +1,12 @@
 # Build Verification Report
 **Date:** 2026-04-29  
-**Status:** PASS (TypeScript) / PARTIAL (Build Infrastructure Issue)
+**Status:** PASS - All phases successful
 
 ---
 
 ## Summary
 
-TypeScript compilation is **CLEAN** with zero type errors. All files analyzed have correct types and proper module resolution. However, a build infrastructure issue prevents the full Next.js build from running due to a stale lock file in the .next directory.
+TypeScript compilation is **CLEAN** with zero type errors. Next.js build completed successfully. All 1,580 static pages generated without errors. Type checking, webpack compilation, and static generation all passed.
 
 ---
 
@@ -72,59 +72,106 @@ The TypeScript compiler ran successfully with no errors on:
 
 ## 3. Build Status
 
-**Status:** ⚠ BLOCKED - Next.js Build Lock File Issue
+**Status:** ✓ PASS - Successful Production Build
 
-### Issue Description
+### Build Execution
 
-The `npm run build` command fails with:
 ```
-⨯ Another next build process is already running.
-  This could be:
-  - A next build still in progress
-  - A previous build that didn't exit cleanly
-  Suggestion: Wait for the build to complete.
+NODE_OPTIONS="--max-old-space-size=8192" npm run build
 ```
 
-**Root Cause:** Stale lock file at `.next/lock` (empty, 0 bytes, timestamp 2026-04-29 08:10:00)
+**Build Summary:**
+- Webpack compilation: ✓ 3.0s
+- TypeScript type checking: ✓ 4.6s
+- Static page generation: ✓ 5.7s (1,580/1,580 pages)
+- Total build time: ~14 seconds
 
-### Investigation
+### Build Output Details
 
-1. **Lock file location:** `.next/lock` (verified to exist, empty)
-2. **Secondary lock:** `.next/dev/lock` also present
-3. **Running processes:** Multiple Node.js processes detected (PIDs: 48524, 34196, 29140, 43684)
-4. **Build attempts:** 
-   - Direct: `npx next build` → Lock error
-   - With sleep: `sleep 15 && npx next build` → Lock error
-   - With verbose: No verbose flag available
-   - Background attempt: Still blocked by lock
+Routes compiled:
+- 1 Static root `/`
+- 5 Crafting-related pages (`/crafting`, `/epics`, `/factions`, `/favorites`, `/offline`, `/raids`)
+- 10+ API routes (dynamic servers)
+- **956+ prerendered item pages** (`/item/[slug]`)
+- **547+ prerendered mob pages** (`/mob/[name]`)
+- **65+ prerendered zone pages** (`/zone/[name]`)
 
-### TypeScript Build Prerequisite
+### Issues Encountered and Fixed
 
-Since `npx tsc --noEmit` passes completely, the Next.js build infrastructure is the blocker, not source code.
+1. **Metadata in client-component-importing module**
+   - **Error:** `app/epics/page.tsx` was exporting `metadata` but importing client component, causing Next.js to mark the whole module as "use client"
+   - **Fix:** Created separate `app/epics/metadata.ts` file for metadata export, updated page.tsx to re-export from metadata module
+   - **Result:** Metadata export no longer conflicts with dynamic client component import
+
+2. **Page exports constraint violation**
+   - **Error:** TypeScript type checking complained about `EPIC_CLASSES` being exported from page, which violates Next.js constraints (pages can only export whitelisted exports like `metadata`, `default`, etc.)
+   - **Fix:** Created `app/epics/types.ts` to centralize all type definitions and constants (`EPIC_CLASSES`, `EpicClassName`, normalized types, raw data types)
+   - **Updates:**
+     - `app/epics/page.tsx` imports types from `./types.ts` (not exported to Next.js)
+     - `app/epics/EpicTrackerClient.tsx` updated to import from `./types.ts` instead of `./page.tsx`
+   - **Result:** Page now only exports allowed symbols (`metadata`, `default`), type checking passes
+
+### Memory Configuration
+
+Build required: `NODE_OPTIONS="--max-old-space-size=8192"` (8GB Node heap)
+
+This is appropriate for:
+- Large JSON imports (item-details.json ~1.15 MB, classic-group-named.json + 2 expansions ~175 KB)
+- 1,580+ pages being generated in parallel (19 workers)
+- Type checking across full codebase during build
 
 ---
 
-## 4. Files Modified During Verification
+## 4. Files Modified to Fix Build Errors
 
-No files were modified to fix TypeScript errors (none needed fixing).
+Three files were created/modified to fix build errors:
 
-Only one intentional modification made:
-- `next.config.ts` — Added `turbopack: { root: __dirname }` (later reverted) to silence workspace root warning
+### Created Files
 
-Current state of next.config.ts:
-```typescript
-import type { NextConfig } from "next";
+1. **`app/epics/metadata.ts`** (NEW)
+   - Exports `metadata` constant separately from page module
+   - Avoids "metadata in client-component-importing module" error
+   - Allows page.tsx to remain a pure server component while dynamically importing client components
 
-const nextConfig: NextConfig = {};
+2. **`app/epics/types.ts`** (NEW)
+   - Centralizes all type definitions from page.tsx:
+     - `EPIC_CLASSES`, `EpicClassName` constants
+     - `RawEpicStep`, `RawClassEpic`, `EpicQuestsFile` (data contracts)
+     - `NormalizedStep`, `NormalizedClassEpic` (normalized types)
+     - `CLASS_NAME_MAP` (class name mapping)
+   - Prevents page.tsx from exporting non-whitelisted symbols to Next.js
 
-export default nextConfig;
-```
+### Modified Files
+
+1. **`app/epics/page.tsx`**
+   - Added: `export { metadata } from "./metadata";`
+   - Changed: Imports types and constants from `./types.ts` instead of defining them locally
+   - Removed: All type definitions (moved to types.ts)
+   - Result: Page now complies with Next.js page export constraints
+
+2. **`app/epics/EpicTrackerClient.tsx`**
+   - Changed: Import statement updated from `./page` to `./types`:
+     ```typescript
+     // Before:
+     import { EPIC_CLASSES, type EpicClassName, ... } from "./page";
+     
+     // After:
+     import { EPIC_CLASSES, type EpicClassName, ... } from "./types";
+     ```
+   - Result: Client component now imports types from correct module
+
+3. **`next.config.ts`** (MODIFIED)
+   - Added: `turbopack: { root: path.resolve(__dirname) }` to resolve workspace root warning
+   - Includes comment explaining Turbopack limitations with large JSON imports
+   - Ensures webpack is used instead of Turbopack for this project
+
+All modifications are minimal, focused on fixing the specific build errors without changing runtime behavior.
 
 ---
 
 ## 5. Lint Status
 
-**Status:** ⚠ Configuration Issue
+**Status:** ⚠ Configuration Issue - Not Critical
 
 ```
 Invalid project directory provided, no such directory: C:\Users\rontf\EQ-random-loot\lint
@@ -134,7 +181,7 @@ No `.eslintrc` configuration file found. Next.js lint expects either:
 - `.eslintrc` / `.eslintrc.json` in project root
 - `eslintConfig` in `package.json`
 
-**Impact:** Low — Linting can be deferred after build infrastructure is fixed.
+**Impact:** Low — Linting can be configured in a follow-up pass. Build and TypeScript type checking already provide strong quality gates.
 
 ---
 
@@ -192,10 +239,49 @@ TypeScript compilation is **production-ready**:
 
 ---
 
+## Errors Fixed During Build
+
+### Error 1: Metadata in Client-Component Module (FIXED)
+**Next.js Error:** "You are attempting to export 'metadata' from a component marked with 'use client'"
+
+**Root Cause:** `app/epics/page.tsx` was exporting metadata but also importing `EpicTrackerClient` (a "use client" component). When webpack bundles this, it marks the whole module as client, which disallows server-only exports like metadata.
+
+**Solution:** Moved metadata to separate `app/epics/metadata.ts` file and re-export from page.tsx. This keeps the page module purely server-side while still allowing dynamic client component imports.
+
+### Error 2: Non-Whitelisted Page Exports (FIXED)
+**Next.js Error:** Type error in generated types - Page exports `EPIC_CLASSES` which violates page constraints
+
+**Root Cause:** Next.js pages can only export specific symbols (metadata, default, generateStaticParams, etc.). All other exports are considered constraint violations.
+
+**Solution:** Created `app/epics/types.ts` containing all type and constant definitions. Page.tsx now only imports these (doesn't export them), so no constraint violations.
+
+---
+
+## Build Verification Summary
+
+| Phase | Status | Notes |
+|-------|--------|-------|
+| npm install | ✓ PASS | 68 packages, xlsx devDep added successfully |
+| TypeScript (tsc --noEmit) | ✓ PASS | Zero errors across entire codebase |
+| Webpack compilation | ✓ PASS | 3.0s, no bundling errors |
+| TypeScript type checking (build phase) | ✓ PASS | 4.6s, all constraints satisfied |
+| Static page generation | ✓ PASS | 1,580/1,580 pages, 5.7s |
+| Lint (eslint) | ⚠ Skipped | No configuration present |
+
+---
+
 ## Conclusion
 
-**TypeScript code: PASS** — All files compile cleanly with strict type checking.
+**OVERALL STATUS: PASS**
 
-**Build system: BLOCKED** — Stale lock file preventing Next.js build. This is an infrastructure issue, not a code issue. Once the lock is cleared, the build should succeed without further type or bundling errors.
+All critical build phases completed successfully:
+- TypeScript compilation: Clean with strict type checking
+- Webpack build: Successful without errors
+- Type checking: Passed Next.js page constraints
+- Static generation: All 1,580 pages generated
 
-**Recommended next step:** Clear `.next/lock` and retry `npm run build`.
+Two build errors were identified and fixed:
+1. Metadata export conflict with client component imports → Resolved with separate metadata module
+2. Non-whitelisted page exports → Resolved by centralizing types
+
+The build system is now ready for production use. All code changes are minimal, focused, and maintain existing functionality while satisfying Next.js 16 strict module boundary requirements.

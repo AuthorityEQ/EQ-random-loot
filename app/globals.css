@@ -79,6 +79,7 @@
   --muted: var(--text-muted);
   --line: var(--border);
 
+}
 :root[data-theme="dark"] {
   color-scheme: dark;
   --bg: #0d1411;
@@ -160,24 +161,29 @@
   --muted: var(--text-muted);
   --line: var(--border);
 
+}
 * {
   box-sizing: border-box;
 
+}
 html,
 body {
   margin: 0;
   min-height: 100%;
 
+}
 body {
   background: var(--bg);
   color: var(--text);
   font-family: Arial, Helvetica, sans-serif;
 
+}
 button,
 input,
 select {
   font: inherit;
 
+}
 .app-nav {
   align-items: center;
   background: var(--nav-bg);
@@ -190,16 +196,19 @@ select {
   top: 0;
   z-index: 5;
 
+}
 .app-nav-links {
   display: flex;
   gap: 8px;
   margin: 0 auto;
 
+}
 .app-nav-controls {
   align-items: center;
   display: flex;
   gap: 8px;
 
+}
 .app-nav a {
   border: 1px solid var(--line);
   border-radius: 999px;
@@ -209,12 +218,14 @@ select {
   padding: 8px 12px;
   text-decoration: none;
 
+}
 .theme-toggle {
   border: 1px solid var(--line);
   border-radius: 999px;
   display: inline-flex;
   overflow: hidden;
 
+}
 .item-preview-toggle {
   align-items: center;
   border: 1px solid var(--line);
@@ -222,6 +233,7 @@ select {
   display: inline-flex;
   overflow: hidden;
 
+}
 .item-preview-toggle span {
   color: var(--muted);
   font-size: 0.78rem;
@@ -229,6 +241,7 @@ select {
   padding: 0 9px;
   white-space: nowrap;
 
+}
 .theme-toggle-button {
   background: var(--panel);
   border: 0;
@@ -239,16 +252,19 @@ select {
   min-height: 34px;
   padding: 0 10px;
 
+}
 .theme-toggle-button:hover,
 .theme-toggle-button:focus {
   background: var(--accent-soft);
   color: var(--accent);
   outline: none;
 
+}
 .theme-toggle-button.is-active {
   background: var(--accent);
   color: var(--accent-contrast);
 
+}
 .item-preview-tooltip {
   background: transparent;
   max-height: min(520px, calc(100vh - 24px));
@@ -258,21 +274,25 @@ select {
   width: min(420px, calc(100vw - 24px));
   z-index: 80;
 
+}
 .app-nav a:hover,
 .app-nav a:focus {
   background: var(--accent-soft);
   outline: none;
 
+}
 .page {
   margin: 0 auto;
   max-width: 1180px;
   padding: 24px 18px 56px;
 
+}
 .header {
   display: grid;
   gap: 10px;
   margin-bottom: 10px;
 
+}
 .eyebrow {
   color: var(--accent);
   font-size: 0.78rem;
@@ -281,12 +301,14 @@ select {
   margin: 0 0 8px;
   text-transform: uppercase;
 
+}
 h1 {
   font-size: clamp(2rem, 6vw, 4rem);
   line-height: 1;
   margin: 0;
   max-width: 820px;
 
+}
 .subhead {
   color: var(--muted);
   font-size: 1rem;
@@ -294,6 +316,7 @@ h1 {
   margin: 10px 0 0;
   max-width: 720px;
 
+}
 .wip-line {
   color: var(--muted);
   font-size: 1rem;
@@ -302,28 +325,33 @@ h1 {
   line-height: 1.35;
   margin: 8px 0 0;
 
+}
 .summary {
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(3, minmax(0, 1fr));
 
+}
 .summary-item {
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: 8px;
   padding: 14px;
 
+}
 .summary-value {
   display: block;
   font-size: 1.55rem;
   font-weight: 800;
 
+}
 .summary-label {
   color: var(--muted);
   display: block;
   font-size: 0.85rem;
   margin-top: 2px;
 
+}
 .toolbar {
   align-items: flex-end;
   display: flex;
@@ -332,12 +360,14 @@ h1 {
   justify-content: space-between;
   margin: 12px 0 18px;
 
+}
 .result-count {
   color: var(--muted);
   display: block;
   font-size: 0.92rem;
   margin: -8px 0 16px;
 
+}
 .filter-button {
   background: var(--filter-bg);
   border: 1px solid var(--filter-border);
@@ -350,6 +380,7 @@ h1 {
   padding: 0 12px;
   transition: background-color 140ms ease, border-color 140ms ease, box-shadow 140ms ease, color 140ms ease;
 
+}
 .filter-button:hover,
 .filter-button:focus {
   background: var(--filter-hover-bg);
@@ -357,66 +388,78 @@ h1 {
   color: var(--filter-hover-text);
   outline: none;
 
+}
 .filter-button.is-active {
   background: var(--filter-active-bg);
   border-color: var(--filter-active-border);
   box-shadow: var(--filter-active-shadow);
   color: var(--filter-active-text);
 
+}
 .filter-button.is-active:hover,
 .filter-button.is-active:focus {
   background: var(--filter-active-bg);
   border-color: var(--filter-active-border);
   color: var(--filter-active-text);
 
+}
 .expansion-tone-classic {
   --exp-primary: var(--exp-classic-primary);
   --exp-bg: var(--exp-classic-bg);
   --exp-border: var(--exp-classic-border);
   --exp-text: var(--exp-classic-text);
 
+}
 .expansion-tone-kunark {
   --exp-primary: var(--exp-kunark-primary);
   --exp-bg: var(--exp-kunark-bg);
   --exp-border: var(--exp-kunark-border);
   --exp-text: var(--exp-kunark-text);
 
+}
 .expansion-tone-velious {
   --exp-primary: var(--exp-velious-primary);
   --exp-bg: var(--exp-velious-bg);
   --exp-border: var(--exp-velious-border);
   --exp-text: var(--exp-velious-text);
 
+}
 .expansion-filter-button {
   --filter-hover-bg: var(--exp-bg);
   --filter-hover-border: var(--exp-border);
   --filter-hover-text: var(--exp-text);
 
+}
 .expansion-filter-button.is-active {
   background: var(--exp-primary);
   border-color: color-mix(in srgb, var(--exp-primary) 74%, white);
   box-shadow: 0 0 0 1px color-mix(in srgb, var(--exp-primary) 38%, transparent), 0 0 16px color-mix(in srgb, var(--exp-primary) 28%, transparent);
   color: #ffffff;
 
+}
 :root[data-theme="dark"] .expansion-filter-button.is-active {
   color: #06100d;
 
+}
 .expansion-filter-button.is-active:hover,
 .expansion-filter-button.is-active:focus {
   background: var(--exp-primary);
   border-color: color-mix(in srgb, var(--exp-primary) 74%, white);
   color: #ffffff;
 
+}
 :root[data-theme="dark"] .expansion-filter-button.is-active:hover,
 :root[data-theme="dark"] .expansion-filter-button.is-active:focus {
   color: #06100d;
 
+}
 .expansion-pill-row {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
   margin-bottom: 8px;
 
+}
 .expansion-pill {
   background: var(--exp-bg);
   border: 1px solid var(--exp-border);
@@ -431,10 +474,12 @@ h1 {
   text-transform: uppercase;
   white-space: nowrap;
 
+}
 .expansion-pill.is-compact {
   font-size: 0.68rem;
   padding: 4px 7px;
 
+}
 .expansion-filter,
 .loot-mode-filter,
 .zone-filter,
@@ -443,15 +488,19 @@ h1 {
   gap: 6px;
   min-width: min(300px, 100%);
 
+}
 .expansion-filter {
   min-width: min(330px, 100%);
 
+}
 .loot-mode-filter {
   min-width: min(360px, 100%);
 
+}
 .level-filter {
   min-width: 120px;
 
+}
 .expansion-filter span,
 .loot-mode-filter span,
 .zone-filter span,
@@ -460,10 +509,12 @@ h1 {
   font-size: 0.82rem;
   font-weight: 700;
 
+}
 .filter-button:disabled {
   cursor: not-allowed;
   opacity: 0.52;
 
+}
 .zone-filter select,
 .level-filter input {
   background: var(--input-bg);
@@ -475,20 +526,24 @@ h1 {
   padding: 0 14px;
   width: 100%;
 
+}
 .zone-filter select:focus,
 .level-filter input:focus {
   border-color: var(--accent);
   box-shadow: 0 0 0 3px var(--focus-ring);
 
+}
 .expansion-toggle-group {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 
+}
 .zone-view {
   display: grid;
   gap: 18px;
 
+}
 .zone-view-header {
   align-items: flex-start;
   background:
@@ -503,11 +558,13 @@ h1 {
   justify-content: space-between;
   padding: 20px;
 
+}
 .zone-view-header h2 {
   font-size: clamp(1.8rem, 5vw, 3rem);
   line-height: 1;
   margin: 0;
 
+}
 .zone-summary-line {
   align-items: center;
   color: var(--muted);
@@ -516,9 +573,11 @@ h1 {
   gap: 10px;
   margin-top: 10px;
 
+}
 .zone-summary-line strong {
   color: var(--text);
 
+}
 .zone-best-bucket {
   align-items: center;
   background: var(--bucket-amber);
@@ -529,15 +588,18 @@ h1 {
   margin-top: 14px;
   padding: 8px 10px;
 
+}
 .zone-best-bucket span {
   color: var(--bucket-range-text);
   font-size: 0.88rem;
   font-weight: 900;
 
+}
 .zone-best-bucket strong {
   color: var(--text);
   font-size: 1rem;
 
+}
 .clear-zone-button {
   background: var(--accent);
   border: 0;
@@ -549,6 +611,7 @@ h1 {
   padding: 0 14px;
   white-space: nowrap;
 
+}
 .zone-panel {
   background: var(--panel);
   border: 1px solid var(--line);
@@ -558,27 +621,32 @@ h1 {
   gap: 12px;
   padding: 18px;
 
+}
 .zone-panel-heading {
   align-items: baseline;
   display: flex;
   gap: 10px;
   justify-content: space-between;
 
+}
 .zone-panel-heading h3 {
   font-size: 1.25rem;
   line-height: 1.1;
   margin: 0;
 
+}
 .zone-panel-heading span {
   color: var(--muted);
   font-size: 0.9rem;
   font-weight: 800;
 
+}
 .zone-loot-actions {
   display: inline-flex;
   gap: 6px;
   margin-left: auto;
 
+}
 .zone-loot-actions button {
   background: var(--panel-soft);
   border: 1px solid var(--line);
@@ -590,48 +658,57 @@ h1 {
   min-height: 30px;
   padding: 0 9px;
 
+}
 .zone-loot-actions button:hover,
 .zone-loot-actions button:focus {
   background: var(--accent-soft);
   color: var(--accent);
   outline: none;
 
+}
 .zone-mob-list {
   display: grid;
   gap: 5px 8px;
   grid-template-columns: repeat(3, minmax(0, 1fr));
 
 
+}
 .zone-mob-item.bucket-tone-0 {
   background: var(--bucket-teal-card);
   border-color: color-mix(in srgb, var(--bucket-border-teal) 38%, var(--line));
   border-left-color: var(--bucket-border-teal);
 
+}
 .zone-mob-item.bucket-tone-1 {
   background: var(--bucket-blue-card);
   border-color: color-mix(in srgb, var(--bucket-border-blue) 38%, var(--line));
   border-left-color: var(--bucket-border-blue);
 
+}
 .zone-mob-item.bucket-tone-2 {
   background: var(--bucket-purple-card);
   border-color: color-mix(in srgb, var(--bucket-border-purple) 38%, var(--line));
   border-left-color: var(--bucket-border-purple);
 
+}
 .zone-mob-item.bucket-tone-3 {
   background: var(--bucket-amber-card);
   border-color: color-mix(in srgb, var(--bucket-border-amber) 38%, var(--line));
   border-left-color: var(--bucket-border-amber);
 
+}
 .zone-mob-item.bucket-tone-4 {
   background: var(--bucket-green-card);
   border-color: color-mix(in srgb, var(--bucket-border-green) 38%, var(--line));
   border-left-color: var(--bucket-border-green);
 
+}
 .zone-mob-item.bucket-tone-5 {
   background: var(--bucket-rose-card);
   border-color: color-mix(in srgb, var(--bucket-border-rose) 38%, var(--line));
   border-left-color: var(--bucket-border-rose);
 
+}
 .zone-mob-item:hover,
 .zone-mob-item:focus {
   background: var(--highlight-bg);
@@ -639,6 +716,7 @@ h1 {
   box-shadow: 0 0 0 2px var(--focus-ring);
   outline: none;
 
+}
 .zone-mob-item strong {
   font-size: 0.9rem;
   line-height: 1.2;
@@ -646,6 +724,7 @@ h1 {
   text-overflow: ellipsis;
   white-space: nowrap;
 
+}
 .zone-mob-item span {
   color: var(--muted);
   font-size: 0.82rem;
@@ -653,6 +732,7 @@ h1 {
   text-align: right;
   white-space: nowrap;
 
+}
 .zone-mob-item span b {
   color: var(--bucket-range-text);
   display: inline-block;
@@ -660,10 +740,12 @@ h1 {
   font-weight: 900;
   margin-right: 6px;
 
+}
 .zone-loot-groups {
   display: grid;
   gap: 10px;
 
+}
 .zone-loot-group {
   background: var(--card);
   border: 1px solid var(--line);
@@ -673,34 +755,42 @@ h1 {
   gap: 8px;
   padding: 12px;
 
+}
 .zone-loot-group.bucket-tone-0 {
   background: var(--bucket-teal);
   border-left-color: var(--bucket-border-teal);
 
+}
 .zone-loot-group.bucket-tone-1 {
   background: var(--bucket-blue);
   border-left-color: var(--bucket-border-blue);
 
+}
 .zone-loot-group.bucket-tone-2 {
   background: var(--bucket-purple);
   border-left-color: var(--bucket-border-purple);
 
+}
 .zone-loot-group.bucket-tone-3 {
   background: var(--bucket-amber);
   border-left-color: var(--bucket-border-amber);
 
+}
 .zone-loot-group.bucket-tone-4 {
   background: var(--bucket-green);
   border-left-color: var(--bucket-border-green);
 
+}
 .zone-loot-group.bucket-tone-5 {
   background: var(--bucket-rose);
   border-left-color: var(--bucket-border-rose);
 
+}
 .zone-loot-group h4 {
   font-size: 1rem;
   margin: 0;
 
+}
 .zone-loot-summary {
   align-items: center;
   cursor: pointer;
@@ -711,9 +801,11 @@ h1 {
   margin: -12px;
   padding: 12px;
 
+}
 .zone-loot-summary::-webkit-details-marker {
   display: none;
 
+}
 .zone-loot-summary::after {
   color: var(--muted);
   content: "VIEW";
@@ -721,34 +813,41 @@ h1 {
   font-weight: 900;
   margin-left: 12px;
 
+}
 .zone-loot-group[open] .zone-loot-summary::after {
   content: "HIDE";
 
+}
 .zone-loot-summary:hover,
 .zone-loot-summary:focus {
   background: color-mix(in srgb, var(--accent-soft) 48%, transparent);
   outline: none;
 
+}
 .zone-loot-summary span {
   color: var(--text);
   font-size: 1rem;
   font-weight: 900;
 
+}
 .zone-loot-summary strong {
   color: var(--muted);
   font-size: 0.88rem;
   margin-left: auto;
   white-space: nowrap;
 
+}
 .zone-loot-group {
   scroll-margin-top: 78px;
   transition: background 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
 
+}
 .zone-loot-group.is-highlighted {
   background: var(--highlight-bg);
   border-color: var(--bucket-border-amber);
   box-shadow: 0 0 0 3px var(--focus-ring), var(--shadow);
 
+}
 .zone-loot-list {
   display: grid;
   gap: 6px;
@@ -756,15 +855,18 @@ h1 {
   margin: 0;
   padding: 0;
 
+}
 .zone-loot-list li {
   list-style: none;
 
+}
 @media (max-width: 980px) {
   .zone-mob-list,
   .zone-loot-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+}
 .level-recommendations {
   background: var(--panel);
   border: 1px solid var(--line);
@@ -775,10 +877,12 @@ h1 {
   margin-bottom: 18px;
   padding: 18px;
 
+}
 .item-farm-view {
   display: grid;
   gap: 16px;
 
+}
 .item-farm-header {
   align-items: flex-start;
   background: var(--panel);
@@ -790,15 +894,18 @@ h1 {
   justify-content: space-between;
   padding: 20px;
 
+}
 .item-farm-header h2 {
   font-size: clamp(1.8rem, 5vw, 3rem);
   line-height: 1;
   margin: 0;
 
+}
 .item-farm-grid {
   display: grid;
   gap: 16px;
 
+}
 .item-farm-card {
   background:
     linear-gradient(90deg, color-mix(in srgb, var(--exp-primary, var(--accent)) 8%, transparent), transparent 52%),
@@ -811,15 +918,18 @@ h1 {
   gap: 14px;
   padding: 18px;
 
+}
 .item-farm-card.is-highlighted {
   border-color: color-mix(in srgb, var(--exp-border, #e1c766) 70%, #e1c766);
   border-left-color: var(--exp-primary, #e1c766);
   box-shadow: 0 0 0 3px rgba(225, 199, 102, 0.18), var(--shadow);
 
+}
 .item-farm-card h3 {
   font-size: 1.3rem;
   margin: 0;
 
+}
 .item-farm-card p {
   align-items: center;
   color: var(--muted);
@@ -828,16 +938,19 @@ h1 {
   gap: 6px;
   margin: 6px 0 0;
 
+}
 .level-recommendations-header h2 {
   font-size: 1.35rem;
   line-height: 1.15;
   margin: 0;
 
+}
 .recommendation-card-grid {
   display: grid;
   gap: 9px;
   grid-template-columns: repeat(3, minmax(0, 1fr));
 
+}
 .recommendation-card {
   background:
     linear-gradient(145deg, rgba(80, 68, 43, 0.18), transparent 48%),
@@ -854,6 +967,7 @@ h1 {
   text-align: left;
   transition: border-color 140ms ease, box-shadow 140ms ease, transform 140ms ease;
 
+}
 .recommendation-card.is-top {
   background:
     linear-gradient(145deg, rgba(154, 123, 54, 0.24), transparent 50%),
@@ -861,6 +975,7 @@ h1 {
   border-color: var(--bucket-border-amber);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.62), 0 2px 8px rgba(78, 58, 28, 0.08);
 
+}
 .recommendation-card:hover,
 .recommendation-card:focus {
   border-color: var(--accent);
@@ -868,6 +983,7 @@ h1 {
   outline: none;
   transform: translateY(-1px);
 
+}
 .recommendation-rank {
   color: var(--bucket-range-text);
   font-size: 0.9rem;
@@ -875,12 +991,14 @@ h1 {
   line-height: 1.1;
   padding-top: 1px;
 
+}
 .recommendation-main {
   display: grid;
   gap: 3px;
   grid-column: 2;
   min-width: 0;
 
+}
 .recommendation-main strong {
   color: var(--text);
   font-size: 1.03rem;
@@ -889,6 +1007,7 @@ h1 {
   text-overflow: ellipsis;
   white-space: nowrap;
 
+}
 .recommendation-main span {
   align-items: center;
   color: var(--muted);
@@ -899,21 +1018,25 @@ h1 {
   font-weight: 800;
   text-transform: uppercase;
 
+}
 .recommendation-expansions {
   display: inline-flex;
   flex-wrap: wrap;
   gap: 4px;
 
+}
 .recommendation-main .expansion-pill {
   color: var(--exp-text);
   font-size: 0.66rem;
 
+}
 .recommendation-main b {
   color: var(--text);
   font-size: 0.95rem;
   font-weight: 950;
   text-transform: none;
 
+}
 .recommendation-ranges {
   color: var(--muted);
   font-size: 0.78rem;
@@ -921,10 +1044,12 @@ h1 {
   line-height: 1.2;
   white-space: nowrap;
 
+}
 .bucket-grid {
   display: grid;
   gap: 16px;
 
+}
 .empty {
   background: var(--panel);
   border: 1px solid var(--line);
@@ -933,6 +1058,7 @@ h1 {
   padding: 28px;
   text-align: center;
 
+}
 .favorites-grid {
   display: grid;
   gap: 10px;
@@ -940,9 +1066,11 @@ h1 {
   margin: 0;
   padding: 0;
 
+}
 .favorites-grid li {
   list-style: none;
 
+}
 .favorites-controls {
   align-items: center;
   display: flex;
@@ -950,12 +1078,14 @@ h1 {
   gap: 8px;
   justify-content: flex-end;
 
+}
 .favorites-view-toggle,
 .favorites-lock {
   align-items: center;
   display: flex;
   gap: 8px;
 
+}
 .favorites-lock {
   background: var(--panel);
   border: 1px solid var(--line);
@@ -963,6 +1093,7 @@ h1 {
   color: var(--muted);
   padding: 6px;
 
+}
 .favorites-lock span {
   color: var(--text);
   font-size: 0.82rem;
@@ -970,16 +1101,20 @@ h1 {
   padding: 0 6px;
   white-space: nowrap;
 
+}
 .favorites-lock.is-locked {
   border-color: color-mix(in srgb, var(--bucket-border-amber) 58%, var(--line));
 
+}
 .favorites-lock.is-unlocked {
   border-color: color-mix(in srgb, var(--accent) 58%, var(--line));
 
+}
 .favorites-group-list {
   display: grid;
   gap: 14px;
 
+}
 .favorites-group {
   background: var(--panel);
   border: 1px solid var(--line);
@@ -989,23 +1124,27 @@ h1 {
   gap: 12px;
   padding: 14px;
 
+}
 .favorites-group-heading {
   align-items: flex-end;
   display: flex;
   gap: 14px;
   justify-content: space-between;
 
+}
 .favorites-group-heading h2 {
   font-size: 1.2rem;
   line-height: 1;
   margin: 0;
 
+}
 .favorites-group-heading span {
   color: var(--muted);
   font-size: 0.86rem;
   font-weight: 900;
   white-space: nowrap;
 
+}
 .favorite-card {
   background: var(--card);
   border: 1px solid var(--line);
@@ -1016,34 +1155,42 @@ h1 {
   min-height: 82px;
   overflow: hidden;
 
+}
 .favorite-card.range-tone-blue {
   background: var(--bucket-blue-card);
   border-left-color: var(--bucket-border-blue);
 
+}
 .favorite-card.range-tone-purple {
   background: var(--bucket-purple-card);
   border-left-color: var(--bucket-border-purple);
 
+}
 .favorite-card.range-tone-amber {
   background: var(--bucket-amber-card);
   border-left-color: var(--bucket-border-amber);
 
+}
 .favorite-card.range-tone-green {
   background: var(--bucket-green-card);
   border-left-color: var(--bucket-border-green);
 
+}
 .favorite-card.range-tone-red {
   background: var(--bucket-rose-card);
   border-left-color: var(--bucket-border-rose);
 
+}
 .favorite-card.range-tone-teal {
   background: var(--bucket-teal-card);
   border-left-color: var(--bucket-border-teal);
 
+}
 .favorite-card.range-tone-gold {
   background: var(--bucket-amber);
   border-left-color: var(--bucket-border-amber);
 
+}
 .favorite-card-main {
   background: transparent;
   border: 0;
@@ -1055,15 +1202,18 @@ h1 {
   padding: 10px 12px;
   text-align: left;
 
+}
 .favorite-card-main:hover,
 .favorite-card-main:focus {
   background: color-mix(in srgb, var(--accent-soft) 46%, transparent);
   outline: none;
 
+}
 .favorite-card-main:disabled {
   cursor: not-allowed;
   opacity: 0.58;
 
+}
 .favorite-card-main strong {
   font-size: 0.98rem;
   line-height: 1.2;
@@ -1071,6 +1221,7 @@ h1 {
   text-overflow: ellipsis;
   white-space: nowrap;
 
+}
 .favorite-card-main span,
 .favorite-card-main em {
   align-items: center;
@@ -1083,13 +1234,16 @@ h1 {
   font-weight: 800;
   line-height: 1.2;
 
+}
 .favorite-card-main .expansion-pill {
   color: var(--exp-text);
   font-size: 0.66rem;
 
+}
 .favorite-card-main em {
   color: var(--bucket-range-text);
 
+}
 .favorite-remove-button {
   align-items: center;
   background: transparent;
@@ -1100,23 +1254,28 @@ h1 {
   justify-content: center;
   padding: 0;
 
+}
 .favorite-remove-button:hover,
 .favorite-remove-button:focus {
   background: color-mix(in srgb, var(--highlight-bg) 55%, transparent);
   outline: none;
 
+}
 .favorite-remove-button:disabled,
 .favorite-remove-button.is-locked {
   cursor: not-allowed;
   opacity: 0.58;
 
+}
 .favorite-remove-button:disabled:hover,
 .favorite-remove-button:disabled:focus {
   background: transparent;
 
+}
 .favorite-remove-button .favorite-indicator {
   margin-left: 0;
 
+}
 .favorite-indicator {
   color: var(--muted);
   flex: 0 0 auto;
@@ -1125,13 +1284,16 @@ h1 {
   line-height: 1;
   margin-left: auto;
 
+}
 .favorite-indicator.is-active {
   color: var(--bucket-border-amber);
 
+}
 .raid-tier-list {
   display: grid;
   gap: 16px;
 
+}
 .raid-tier-card {
   background: var(--panel);
   border: 1px solid var(--line);
@@ -1141,51 +1303,60 @@ h1 {
   gap: 16px;
   padding: 20px;
 
+}
 .raid-tier-header {
   align-items: flex-start;
   display: flex;
   gap: 16px;
   justify-content: space-between;
 
+}
 .raid-tier-header h2 {
   font-size: 1.6rem;
   line-height: 1.1;
   margin: 0;
 
+}
 .raid-tier-summary,
 .raid-meta {
   display: flex;
   gap: 10px;
   margin: 0;
 
+}
 .raid-tier-summary div,
 .raid-meta div {
   background: var(--panel-soft);
   border-radius: 8px;
   padding: 10px 12px;
 
+}
 .raid-tier-summary dt,
 .raid-meta dt {
   color: var(--muted);
   font-size: 0.78rem;
   margin-bottom: 4px;
 
+}
 .raid-tier-summary dd,
 .raid-meta dd {
   font-weight: 800;
   margin: 0;
 
+}
 .raid-boss-grid {
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
 
+}
 .raid-boss-card {
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: 8px;
   overflow: hidden;
 
+}
 .raid-boss-trigger {
   align-items: center;
   background: transparent;
@@ -1199,31 +1370,57 @@ h1 {
   text-align: left;
   width: 100%;
 
+}
 .raid-boss-trigger:hover,
 .raid-boss-trigger:focus {
   background: var(--accent-soft);
   outline: none;
 
+}
 .raid-boss-trigger strong,
 .raid-boss-trigger small {
   display: block;
 
+}
 .raid-boss-trigger small,
 .raid-boss-trigger > span:last-child {
   color: var(--muted);
   font-size: 0.85rem;
 
+}
 .raid-boss-details {
   border-top: 1px solid var(--line);
   display: grid;
   gap: 12px;
   padding: 12px;
 
+}
 .raid-notes {
   color: var(--muted);
   line-height: 1.45;
   margin: 0;
 
+}
+.raid-loot-pool {
+  display: grid;
+  gap: 4px 10px;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.raid-loot-pool li {
+  font-size: 0.85rem;
+  line-height: 1.35;
+}
+.raid-loot-link {
+  color: var(--accent);
+  text-decoration: none;
+}
+.raid-loot-link:hover,
+.raid-loot-link:focus {
+  text-decoration: underline;
+}
 @media (max-width: 720px) {
   .app-nav {
     align-items: stretch;
@@ -1290,6 +1487,7 @@ h1 {
     grid-template-columns: 1fr;
   }
 
+}
 /* ============= Server Toggle ============= */
 
 .server-toggle {
@@ -1298,6 +1496,7 @@ h1 {
   display: inline-flex;
   overflow: hidden;
 
+}
 .server-toggle-button {
   background: var(--filter-bg);
   border: 0;
@@ -1309,27 +1508,32 @@ h1 {
   padding: 0 10px;
   transition: background-color 140ms ease, color 140ms ease;
 
+}
 .server-toggle-button:hover,
 .server-toggle-button:focus {
   background: var(--filter-hover-bg);
   color: var(--filter-hover-text);
   outline: none;
 
+}
 .server-toggle-button.is-active {
   background: var(--filter-active-bg);
   box-shadow: var(--filter-active-shadow);
   color: var(--filter-active-text);
 
+}
 .server-toggle-button.is-active:hover,
 .server-toggle-button.is-active:focus {
   background: var(--filter-active-bg);
   color: var(--filter-active-text);
 
+}
 @media (max-width: 720px) {
   .server-toggle {
     align-self: center;
   }
 
+}
 /* ============= Expansion Timeline ============= */
 
 .expansion-tone-luclin {
@@ -1338,12 +1542,14 @@ h1 {
   --exp-border: var(--exp-luclin-border);
   --exp-text: var(--exp-luclin-text);
 
+}
 .expansion-tone-pop {
   --exp-primary: var(--exp-pop-primary);
   --exp-bg: var(--exp-pop-bg);
   --exp-border: var(--exp-pop-border);
   --exp-text: var(--exp-pop-text);
 
+}
 .etl-panel {
   background:
     linear-gradient(90deg, color-mix(in srgb, var(--accent) 6%, transparent), transparent 52%),
@@ -1357,25 +1563,30 @@ h1 {
   margin-bottom: 18px;
   padding: 18px 20px;
 
+}
 /* Live banner overrides left-border accent with green pulse */
 .etl-panel[data-phase="launch-week"] {
   border-left-color: #27ae60;
 
+}
 .etl-header {
   display: grid;
   gap: 3px;
 
+}
 .etl-title {
   font-size: 1.35rem;
   line-height: 1.15;
   margin: 0;
 
+}
 .etl-launch-human {
   color: var(--muted);
   font-size: 0.88rem;
   font-weight: 700;
   margin: 0;
 
+}
 /* ── Clock ─────────────────────────────────────────────────────────────── */
 
 .etl-clock {
@@ -1383,9 +1594,11 @@ h1 {
   display: flex;
   gap: 4px;
 
+}
 .etl-clock--small .etl-clock-digits {
   font-size: 1.6rem;
 
+}
 .etl-clock-block {
   align-items: center;
   display: flex;
@@ -1394,9 +1607,11 @@ h1 {
   min-width: 52px;
   text-align: center;
 
+}
 .etl-clock--small .etl-clock-block {
   min-width: 40px;
 
+}
 .etl-clock-digits {
   color: var(--text);
   font-size: 2.4rem;
@@ -1404,6 +1619,7 @@ h1 {
   letter-spacing: -0.02em;
   line-height: 1;
 
+}
 .etl-clock-label {
   color: var(--muted);
   font-size: 0.68rem;
@@ -1411,6 +1627,7 @@ h1 {
   letter-spacing: 0.07em;
   text-transform: uppercase;
 
+}
 .etl-clock-sep {
   color: var(--muted);
   font-size: 2.2rem;
@@ -1419,10 +1636,12 @@ h1 {
   margin-bottom: 6px;
   user-select: none;
 
+}
 .etl-clock--small .etl-clock-sep {
   font-size: 1.5rem;
   margin-bottom: 4px;
 
+}
 /* ── Live banner ───────────────────────────────────────────────────────── */
 
 .etl-live-banner {
@@ -1432,6 +1651,7 @@ h1 {
   font-weight: 900;
   gap: 10px;
 
+}
 .etl-live-dot {
   animation: etl-pulse 1.6s ease-in-out infinite;
   background: #27ae60;
@@ -1441,16 +1661,19 @@ h1 {
   height: 10px;
   width: 10px;
 
+}
 @keyframes etl-pulse {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.36; }
 
+}
 /* ── Launch content ────────────────────────────────────────────────────── */
 
 .etl-launch-content {
   display: grid;
   gap: 8px;
 
+}
 .etl-launch-content-label,
 .etl-upcoming-label,
 .etl-next-unlock-label {
@@ -1461,12 +1684,14 @@ h1 {
   margin: 0;
   text-transform: uppercase;
 
+}
 .etl-upcoming {
   border-top: 1px solid var(--line);
   display: grid;
   gap: 8px;
   padding-top: 14px;
 
+}
 /* ── Next unlock ───────────────────────────────────────────────────────── */
 
 .etl-next-unlock {
@@ -1475,12 +1700,14 @@ h1 {
   gap: 8px;
   padding-top: 14px;
 
+}
 /* ── Expansion rows ────────────────────────────────────────────────────── */
 
 .etl-expansion-list {
   display: grid;
   gap: 6px;
 
+}
 .etl-expansion-row {
   align-items: center;
   background: var(--exp-bg, var(--surface-muted));
@@ -1492,26 +1719,31 @@ h1 {
   justify-content: space-between;
   padding: 8px 10px;
 
+}
 .etl-expansion-row--compact {
   padding: 5px 8px;
 
+}
 .etl-expansion-row--future {
   background: transparent;
   border-color: var(--line);
   border-left-color: color-mix(in srgb, var(--exp-primary, var(--accent)) 45%, var(--line));
   opacity: 0.72;
 
+}
 .etl-expansion-row--unlocked {
   background: var(--exp-bg, var(--surface-muted));
   border-color: var(--exp-border, var(--line));
   border-left-color: var(--exp-primary, var(--accent));
 
+}
 .etl-expansion-row--next {
   background: var(--exp-bg, var(--surface-muted));
   border-color: var(--exp-border, var(--line));
   border-left-color: var(--exp-primary, var(--accent));
   box-shadow: 0 0 0 2px color-mix(in srgb, var(--exp-primary, var(--accent)) 18%, transparent);
 
+}
 .etl-expansion-left {
   align-items: center;
   display: flex;
@@ -1519,12 +1751,14 @@ h1 {
   gap: 7px;
   min-width: 0;
 
+}
 .etl-expansion-right {
   align-items: center;
   display: flex;
   flex-shrink: 0;
   gap: 7px;
 
+}
 .etl-expansion-status-dot {
   background: color-mix(in srgb, var(--exp-primary, var(--accent)) 62%, transparent);
   border-radius: 50%;
@@ -1533,12 +1767,15 @@ h1 {
   height: 7px;
   width: 7px;
 
+}
 .etl-expansion-row--unlocked .etl-expansion-status-dot {
   background: #27ae60;
 
+}
 .etl-expansion-row--future .etl-expansion-status-dot {
   background: var(--line);
 
+}
 .etl-expansion-name {
   color: var(--exp-text, var(--text));
   font-size: 0.9rem;
@@ -1547,21 +1784,25 @@ h1 {
   text-overflow: ellipsis;
   white-space: nowrap;
 
+}
 .etl-expansion-row--compact .etl-expansion-name {
   font-size: 0.82rem;
 
+}
 .etl-expansion-date {
   color: var(--muted);
   font-size: 0.8rem;
   font-weight: 700;
   white-space: nowrap;
 
+}
 .etl-expansion-relative {
   color: var(--muted);
   font-size: 0.78rem;
   font-style: italic;
   white-space: nowrap;
 
+}
 .etl-expansion-unlocked-badge {
   background: color-mix(in srgb, #27ae60 14%, transparent);
   border: 1px solid color-mix(in srgb, #27ae60 38%, var(--line));
@@ -1573,11 +1814,13 @@ h1 {
   padding: 2px 7px;
   text-transform: uppercase;
 
+}
 :root[data-theme="dark"] .etl-expansion-unlocked-badge {
   color: #7fc59b;
   background: color-mix(in srgb, #7fc59b 14%, transparent);
   border-color: color-mix(in srgb, #7fc59b 36%, var(--line));
 
+}
 .etl-expansion-next-label {
   background: color-mix(in srgb, var(--accent) 12%, transparent);
   border: 1px solid color-mix(in srgb, var(--accent) 36%, var(--line));
@@ -1589,6 +1832,7 @@ h1 {
   padding: 2px 7px;
   text-transform: uppercase;
 
+}
 .etl-tentative-badge {
   background: var(--warning-bg);
   border: 1px solid var(--warning-border);
@@ -1602,6 +1846,7 @@ h1 {
   text-transform: uppercase;
   white-space: nowrap;
 
+}
 /* ── Caveat + source ───────────────────────────────────────────────────── */
 
 .etl-caveat {
@@ -1611,6 +1856,7 @@ h1 {
   line-height: 1.45;
   margin: 0;
 
+}
 .etl-source {
   border-top: 1px solid var(--line);
   color: var(--muted);
@@ -1619,6 +1865,7 @@ h1 {
   margin: 0;
   padding-top: 10px;
 
+}
 /* ── Compact widget ────────────────────────────────────────────────────── */
 
 .etl-compact {
@@ -1626,9 +1873,11 @@ h1 {
   display: inline-flex;
   gap: 6px;
 
+}
 .etl-compact--live {
   gap: 7px;
 
+}
 .etl-compact-live-dot {
   animation: etl-pulse 1.6s ease-in-out infinite;
   background: #27ae60;
@@ -1637,27 +1886,32 @@ h1 {
   height: 7px;
   width: 7px;
 
+}
 :root[data-theme="dark"] .etl-compact-live-dot {
   background: #7fc59b;
 
+}
 .etl-compact-label {
   color: var(--muted);
   font-size: 0.82rem;
   font-weight: 700;
   white-space: nowrap;
 
+}
 .etl-compact-countdown {
   color: var(--accent);
   font-size: 0.82rem;
   font-weight: 900;
   white-space: nowrap;
 
+}
 .etl-compact-tbd {
   color: var(--muted);
   font-size: 0.78rem;
   font-style: italic;
   white-space: nowrap;
 
+}
 /* ── Responsive ────────────────────────────────────────────────────────── */
 
 @media (max-width: 720px) {
@@ -1682,10 +1936,7 @@ h1 {
     flex-wrap: wrap;
   }
 
-/* ============= ACCESSIBILITY IMPROVEMENTS ============= */
-    scroll-behavior: auto !important;
-  }
-
+}
 /* ============= Slot Filter ============= */
 
 /*
@@ -1697,17 +1948,20 @@ h1 {
   --slot-filter-gap: 6px;
   --slot-filter-child-size: 0.8rem;
 
+}
 /* Outer wrapper -- mirrors .expansion-filter / .loot-mode-filter grid layout */
 .slot-filter-group {
   display: grid;
   gap: 6px;
   min-width: min(300px, 100%);
 
+}
 .slot-filter-group > span {
   color: var(--muted);
   font-size: 0.82rem;
   font-weight: 700;
 
+}
 /* Horizontally scrollable row of category + child groups */
 .slot-filter-scroll {
   align-items: flex-start;
@@ -1715,6 +1969,7 @@ h1 {
   flex-wrap: wrap;
   gap: var(--slot-filter-gap);
 
+}
 /* Each category wrapper (parent button + optional children panel) */
 .slot-filter-category {
   display: flex;
@@ -1722,6 +1977,7 @@ h1 {
   gap: 4px;
   position: relative;
 
+}
 /*
   Base slot button -- extends .filter-button visually.
   Defined as a standalone rule so it can inherit any future .filter-button
@@ -1740,6 +1996,7 @@ h1 {
   transition: background-color 140ms ease, border-color 140ms ease, box-shadow 140ms ease, color 140ms ease;
   white-space: nowrap;
 
+}
 .slot-filter-button:hover,
 .slot-filter-button:focus {
   background: var(--filter-hover-bg);
@@ -1747,24 +2004,28 @@ h1 {
   color: var(--filter-hover-text);
   outline: none;
 
+}
 .slot-filter-button.is-active {
   background: var(--filter-active-bg);
   border-color: var(--filter-active-border);
   box-shadow: var(--filter-active-shadow);
   color: var(--filter-active-text);
 
+}
 .slot-filter-button.is-active:hover,
 .slot-filter-button.is-active:focus {
   background: var(--filter-active-bg);
   border-color: var(--filter-active-border);
   color: var(--filter-active-text);
 
+}
 /* Category parent button -- carries the expand chevron */
 .slot-filter-button.is-category {
   align-items: center;
   display: inline-flex;
   gap: 6px;
 
+}
 /*
   Partially-active state: some (not all) children are selected.
   Uses the softer hover style to signal "something here is on".
@@ -1774,12 +2035,14 @@ h1 {
   border-color: var(--filter-hover-border);
   color: var(--filter-hover-text);
 
+}
 .slot-filter-button.is-partial:hover,
 .slot-filter-button.is-partial:focus {
   background: var(--filter-hover-bg);
   border-color: var(--filter-hover-border);
   color: var(--filter-hover-text);
 
+}
 /* Small expand/collapse chevron inside the category button */
 .slot-filter-expand-icon {
   font-size: 0.62rem;
@@ -1788,6 +2051,7 @@ h1 {
   pointer-events: auto;
   user-select: none;
 
+}
 /* Expanded children panel -- renders below the parent button */
 .slot-filter-children {
   display: flex;
@@ -1795,12 +2059,14 @@ h1 {
   gap: 4px;
   padding: 2px 0 2px 4px;
 
+}
 /* Child sub-slot buttons -- slightly smaller than category buttons */
 .slot-filter-button--child {
   font-size: var(--slot-filter-child-size);
   min-height: 30px;
   padding: 0 10px;
 
+}
 @media (max-width: 720px) {
   .slot-filter-scroll {
     flex-wrap: wrap;
@@ -1814,6 +2080,7 @@ h1 {
     min-height: 36px;
   }
 
+}
 /* ============= Share Filter Button ============= */
 
 .share-filter-button {
@@ -1832,6 +2099,7 @@ h1 {
   transition: background-color 140ms ease, border-color 140ms ease, color 140ms ease;
   white-space: nowrap;
 
+}
 .share-filter-button:hover,
 .share-filter-button:focus {
   background: var(--filter-hover-bg);
@@ -1839,21 +2107,25 @@ h1 {
   color: var(--filter-hover-text);
   outline: none;
 
+}
 .share-filter-button.is-copied {
   background: var(--accent-soft);
   border-color: color-mix(in srgb, var(--accent) 54%, var(--line));
   color: var(--accent);
 
+}
 .share-filter-button.is-copied:hover,
 .share-filter-button.is-copied:focus {
   background: var(--accent-soft);
   color: var(--accent);
 
+}
 @media (max-width: 720px) {
   .share-filter-button {
     align-self: center;
   }
 
+}
 /* ============= Faction Guide ============= */
 /*
  * Faction alignment tones reuse existing --bucket-* tokens.
@@ -1873,18 +2145,21 @@ h1 {
   --faction-border: var(--bucket-border-green);
   --faction-row: var(--bucket-green-row);
 
+}
 .faction-tone-neutral {
   --faction-bg: var(--bucket-blue);
   --faction-card: var(--bucket-blue-card);
   --faction-border: var(--bucket-border-blue);
   --faction-row: var(--bucket-blue-row);
 
+}
 .faction-tone-evil {
   --faction-bg: var(--bucket-rose);
   --faction-card: var(--bucket-rose-card);
   --faction-border: var(--bucket-border-rose);
   --faction-row: var(--bucket-rose-row);
 
+}
 /* ============= Server Status Badge ============= */
 
 /*
@@ -1906,12 +2181,14 @@ h1 {
   padding: 0 12px;
   white-space: nowrap;
 
+}
 /* Pre-launch: amber / warning palette */
 .server-status-badge.is-prelaunch {
   background: var(--warning-bg);
   border-color: var(--warning-border);
   color: var(--warning-text);
 
+}
 /* Live (T0 to T0+30 d): accent palette with subtle glow pulse */
 .server-status-badge.is-live {
   animation: server-status-pulse 2s ease-in-out infinite;
@@ -1919,12 +2196,14 @@ h1 {
   border-color: var(--accent);
   color: var(--accent);
 
+}
 /* Active (T0+30 d onwards): quiet accent text, no background or border */
 .server-status-badge.is-active {
   background: transparent;
   border-color: transparent;
   color: var(--accent);
 
+}
 @keyframes server-status-pulse {
   0%,
   100% {
@@ -1934,17 +2213,20 @@ h1 {
     box-shadow: 0 0 0 6px transparent;
   }
 
+}
 /* Respect user motion preference — suppress the pulse entirely */
 @media (prefers-reduced-motion: reduce) {
   .server-status-badge.is-live {
     animation: none;
   }
 
+}
 @media (max-width: 720px) {
   .server-status-badge {
     align-self: center;
   }
 
+}
 /* ============= PWA Install Prompt Banner ============= */
 
 .install-prompt-banner {
@@ -1962,21 +2244,25 @@ h1 {
   right: 0;
   z-index: 100;
 
+}
 :root[data-theme="dark"] .install-prompt-banner {
   box-shadow: 0 -4px 18px rgba(0, 0, 0, 0.3);
 
+}
 .install-prompt-text {
   color: var(--text);
   font-size: 0.92rem;
   font-weight: 700;
   margin: 0;
 
+}
 .install-prompt-actions {
   align-items: center;
   display: flex;
   flex-shrink: 0;
   gap: 8px;
 
+}
 .install-prompt-button {
   border-radius: 999px;
   cursor: pointer;
@@ -1986,21 +2272,25 @@ h1 {
   padding: 0 14px;
   transition: background-color 140ms ease, color 140ms ease, border-color 140ms ease;
 
+}
 .install-prompt-button--install {
   background: var(--accent);
   border: 1px solid transparent;
   color: var(--accent-contrast);
 
+}
 .install-prompt-button--install:hover,
 .install-prompt-button--install:focus {
   background: color-mix(in srgb, var(--accent) 85%, #000);
   outline: none;
 
+}
 .install-prompt-button--dismiss {
   background: var(--surface);
   border: 1px solid var(--border);
   color: var(--text-muted);
 
+}
 .install-prompt-button--dismiss:hover,
 .install-prompt-button--dismiss:focus {
   background: var(--surface-muted);
@@ -2008,6 +2298,7 @@ h1 {
   color: var(--text);
   outline: none;
 
+}
 @media (max-width: 480px) {
   .install-prompt-banner {
     align-items: flex-start;

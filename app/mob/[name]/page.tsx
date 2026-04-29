@@ -10,6 +10,7 @@ import veliousRaidData from "@/data/velious-raid.json";
 import type { LootDataset } from "@/lib/search";
 import type { RaidDataset } from "@/lib/raidTiers";
 import { buildMobIndex, mobToSlug } from "@/lib/mob-slug";
+import { itemToSlug } from "@/lib/item-slug";
 import { Breadcrumb } from "./Breadcrumb";
 import "./mob-page.css";
 
@@ -185,8 +186,8 @@ export default async function MobPage({
           {record.lootPool.length > 0 ? (
             <ul className="mob-loot-list">
               {record.lootPool.map((item) => {
-                // Item slug: kebab-case name (Feature D links — may 404 until D ships)
-                const itemSlug = mobToSlug(item);
+                // Item slug: canonical slug strips apostrophes before normalising
+                const itemSlug = itemToSlug(item);
                 return (
                   <li key={item}>
                     <Link

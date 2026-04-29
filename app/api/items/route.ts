@@ -21,7 +21,8 @@ import kunarkData from "@/data/kunark-group-named.json";
 import veliousData from "@/data/velious-group-named.json";
 import type { ItemDetailsMap, LootDataset } from "@/lib/search";
 import { buildItemSlugMap } from "@/lib/item-slug";
-import { parseRawSlot } from "@/lib/slot-filter";
+import { parseRawSlot, ALL_SLOT_KEYS } from "@/lib/slot-filter";
+import type { SlotKey } from "@/lib/slot-filter";
 import { jsonOk, jsonBadRequest, corsOptions, strParam } from "@/lib/api-helpers";
 
 const itemDetails = itemDetailsData as ItemDetailsMap;
@@ -65,11 +66,15 @@ export async function GET(request: Request) {
   // Filter by slot — parseRawSlot works on raw uppercase tokens, so we
   // normalise the incoming lowercase API param to match SlotKey membership.
   if (slot) {
-    entries = entries.filter(([, details]) => {
-      const slots = parseRawSlot(details.slot);
-      // SlotKey values are lowercase (e.g. "primary") — the param is already lowercased
-      return (slots as Set<string>).has(slot);
-    });
+    // Narrow the raw query string to SlotKey before calling the typed Set.has().
+    // ALL_SLOT_KEYS membership is the runtime proof that the string is a valid SlotKey.
+    const slotKey = ALL_SLOT_KEYS.has(slot as SlotKey) ? (slot as SlotKey) : null;
+    if (slotKey) {
+      entries = entries.filter(([, details]) => {
+        const slots = parseRawSlot(details.slot);
+        return slots.has(slotKey);
+      });
+    }
   }
 
   // Filter by expansion (stored as capitalized in ItemDetails)

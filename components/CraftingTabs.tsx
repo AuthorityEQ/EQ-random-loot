@@ -5,10 +5,10 @@ import Link from "next/link";
 import {
   CRAFTING_SKILLS,
   SKILL_LABELS,
-  itemSlug,
   type CraftingRecipe,
   type CraftingSkill,
 } from "@/lib/crafting";
+import { itemToSlug } from "@/lib/item-slug";
 
 // ---------------------------------------------------------------------------
 // Serializable data shape passed from the server page
@@ -40,7 +40,7 @@ function RecipeCard({ recipe }: { recipe: CraftingRecipe }) {
         <div>
           <p className="recipe-card-kicker">{SKILL_LABELS[recipe.skill]}</p>
           <h3 className="recipe-card-name">
-            <Link className="recipe-output-link" href={`/item/${itemSlug(recipe.output.name)}`}>
+            <Link className="recipe-output-link" href={`/item/${itemToSlug(recipe.output.name)}`}>
               {recipe.output.name}
             </Link>
             {recipe.output.count > 1 ? (
@@ -72,7 +72,7 @@ function RecipeCard({ recipe }: { recipe: CraftingRecipe }) {
               {component.count > 1 ? (
                 <span className="recipe-component-count">{component.count}x</span>
               ) : null}
-              <Link className="recipe-component-link" href={`/item/${itemSlug(component.name)}`}>
+              <Link className="recipe-component-link" href={`/item/${itemToSlug(component.name)}`}>
                 {component.name}
               </Link>
             </li>

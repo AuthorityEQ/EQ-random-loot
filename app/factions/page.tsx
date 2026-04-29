@@ -6,6 +6,8 @@ import {
   type FactionEntry,
   type FactionDataFile,
 } from "@/lib/factions";
+import { mobToSlug } from "@/lib/mob-slug";
+import { zoneToSlug } from "@/lib/zone-slug";
 import factionNormalized from "@/data/excel-imports/factions-normalized.json";
 import factionFallback from "@/data/factions-fallback.json";
 import "./faction-page.css";
@@ -64,22 +66,6 @@ const ALIGNMENT_CONFIG: Record<
   },
 };
 
-// Mob names to slugs: lowercase + hyphenated (mirrors the expected /mob/[name] route)
-function mobSlug(name: string): string {
-  return name
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-|-$/g, "");
-}
-
-// Zone names to slugs
-function zoneSlug(name: string): string {
-  return name
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-|-$/g, "");
-}
-
 // ---- Sub-components (plain functions — server component file) ----
 
 function FactionZoneChips({ zones }: { zones: string[] }) {
@@ -91,7 +77,7 @@ function FactionZoneChips({ zones }: { zones: string[] }) {
         {zones.map((zone) => (
           <Link
             className="faction-zone-chip"
-            href={`/zone/${zoneSlug(zone)}`}
+            href={`/zone/${zoneToSlug(zone)}`}
             key={zone}
             title={`View ${zone} zone details`}
           >
@@ -112,7 +98,7 @@ function FactionMobChips({ mobs }: { mobs: string[] }) {
         {mobs.map((mob) => (
           <Link
             className="faction-mob-chip"
-            href={`/mob/${mobSlug(mob)}`}
+            href={`/mob/${mobToSlug(mob)}`}
             key={mob}
             title={`View mob details for ${mob}`}
           >
