@@ -2,7 +2,10 @@
 
 Fast, accurate loot lookup for EverQuest's Frostreaver TLP server. Random loot discovery made simple.
 
-**Positioning**: "Loot lookup, zero clutter."  
+**Positioning**: "Loot lookup, zero clutter."
+
+<!-- webhook-test: 2026-04-29T08:28 PDT -->
+
 **Current Build**: v0.2.0 (April 29, 2026)  
 **Status**: Feature Complete - Ready for Launch (May 27, 2026 12:00 PM PT)  
 **Tech Stack**: Next.js 16, React 19, TypeScript, Custom CSS  
