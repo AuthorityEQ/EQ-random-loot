@@ -4,6 +4,7 @@ import { Fragment } from "react";
 type EqItemInspectProps = {
   itemName: string;
   details: ItemDetails;
+  compact?: boolean;
 };
 
 const attributeLabels: Record<string, string> = {
@@ -34,6 +35,7 @@ type OptionalInspectFields = {
   magic_damage?: string | number | null;
   disease_damage?: string | number | null;
   poison_damage?: string | number | null;
+  iconPath?: string | null;
   icon?: string | null;
   icon_url?: string | null;
 };
@@ -182,7 +184,7 @@ function AttributeResistMatrix({
   );
 }
 
-export function EqItemInspect({ itemName, details }: EqItemInspectProps) {
+export function EqItemInspect({ itemName, details, compact = false }: EqItemInspectProps) {
   const optional = details as ItemDetails & OptionalInspectFields;
   const flags = [
     details.magic ? "Magic" : null,
@@ -242,8 +244,12 @@ export function EqItemInspect({ itemName, details }: EqItemInspectProps) {
     || details.click_effects.length > 0
     || details.proc_effects.length > 0;
   const itemNameClass = details.no_drop ? "eq-item-name is-nodrop" : details.magic ? "eq-item-name is-magic" : "eq-item-name";
-  const iconUrl = optional.icon_url ?? optional.icon;
-  const inspectClass = hasWeaponStats || hasEffects ? "eq-inspect-window is-detailed" : "eq-inspect-window";
+  const iconUrl = optional.iconPath ?? optional.icon_url ?? optional.icon;
+  const inspectClass = [
+    "eq-inspect-window",
+    hasWeaponStats || hasEffects ? "is-detailed" : null,
+    compact ? "is-compact" : null,
+  ].filter(Boolean).join(" ");
 
   return (
     <section className={inspectClass} aria-label={`${itemName} EverQuest item inspect`}>

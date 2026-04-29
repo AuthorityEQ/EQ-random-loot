@@ -11,14 +11,27 @@ type FavoritesContextValue = {
 };
 
 const storageKey = "frostreaver-favorites";
+const favoriteAliases = new Map([
+  ["zam:104165", { id: "zam:2619", name: "Travelers Pack" }],
+  ["name:golden traveler's pack", { id: "zam:2619", name: "Travelers Pack" }],
+  ["name:traveler's pack", { id: "zam:2619", name: "Travelers Pack" }],
+]);
 const FavoritesContext = createContext<FavoritesContextValue | null>(null);
 
 function readFavorites() {
   try {
     const parsed = JSON.parse(window.localStorage.getItem(storageKey) ?? "[]");
-    return Array.isArray(parsed)
-      ? parsed.filter((item): item is FavoriteItem => typeof item?.id === "string" && typeof item?.name === "string")
-      : [];
+    if (!Array.isArray(parsed)) return [];
+
+    const migrated = new Map<string, FavoriteItem>();
+    for (const item of parsed) {
+      if (typeof item?.id !== "string" || typeof item?.name !== "string") continue;
+      const alias = favoriteAliases.get(item.id) ?? favoriteAliases.get(`name:${item.name.toLowerCase()}`);
+      const favorite = alias ?? item;
+      migrated.set(favorite.id, favorite);
+    }
+
+    return Array.from(migrated.values()).sort((a, b) => a.name.localeCompare(b.name));
   } catch {
     return [];
   }

@@ -60,6 +60,7 @@ export type ItemDetails = {
   weight_reduction?: string | null;
   capacity?: number | null;
   size_capacity?: string | null;
+  iconPath?: string | null;
   lore: boolean | null;
   magic: boolean | null;
   no_drop: boolean | null;

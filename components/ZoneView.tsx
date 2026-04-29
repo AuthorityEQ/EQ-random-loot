@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { FavoriteIndicator } from "@/components/FavoriteIndicator";
+import { useItemPreview } from "@/components/ItemPreviewProvider";
 import { matchesStatusFilter, type ItemFilter } from "@/lib/item-status";
 import type { Bucket, ItemDetails } from "@/lib/search";
 import type { ZoneView as ZoneViewData } from "@/lib/zones";
@@ -28,6 +29,7 @@ export function ZoneView({
   const [selectedMobKey, setSelectedMobKey] = useState<string | null>(null);
   const [openBucketKeys, setOpenBucketKeys] = useState<Set<string>>(new Set());
   const [openLootKeys, setOpenLootKeys] = useState<Set<string>>(new Set());
+  const { previewProps } = useItemPreview();
   const lootRefs = useRef<Record<string, HTMLElement | null>>({});
   const highlightTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const expansions = Array.from(new Set(zoneView.bucketGroups.map(({ bucket }) => bucket.expansion))).sort((a, b) => a.localeCompare(b));
@@ -198,14 +200,17 @@ export function ZoneView({
                 </summary>
                 {visibleLoot.length > 0 ? (
                   <ul className="zone-loot-list">
-                    {visibleLoot.map((item) => (
-                      <li key={item}>
-                        <button className="loot-button" onClick={() => onSelectLoot(item, bucket)} type="button">
-                          <span>{item}</span>
-                          <FavoriteIndicator details={getItemDetails(item)} itemName={item} />
-                        </button>
-                      </li>
-                    ))}
+                    {visibleLoot.map((item) => {
+                      const details = getItemDetails(item);
+                      return (
+                        <li key={item}>
+                          <button className="loot-button" onClick={() => onSelectLoot(item, bucket)} type="button" {...previewProps(item, details)}>
+                            <span>{item}</span>
+                            <FavoriteIndicator details={details} itemName={item} />
+                          </button>
+                        </li>
+                      );
+                    })}
                   </ul>
                 ) : (
                   <p className="loot-empty">No loot items in this bucket match the active review filters.</p>

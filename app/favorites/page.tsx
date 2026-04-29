@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import { FavoriteIndicator } from "@/components/FavoriteIndicator";
 import { useFavorites } from "@/components/FavoritesProvider";
+import { useItemPreview } from "@/components/ItemPreviewProvider";
 import { ItemDrawer } from "@/components/ItemDrawer";
 import "@/components/item-drawer.css";
 import "@/components/bucket-card.css";
@@ -170,6 +171,7 @@ export default function FavoritesPage() {
 function FavoriteCard({ row, onOpen, onRemove }: { row: FavoriteRow; onOpen: () => void; onRemove: () => void }) {
   const bucket = row.firstBucket;
   const range = bucket?.level_range ?? "No bucket";
+  const { previewProps } = useItemPreview();
 
   return (
     <li>
@@ -180,9 +182,10 @@ function FavoriteCard({ row, onOpen, onRemove }: { row: FavoriteRow; onOpen: () 
           onClick={onOpen}
           title={bucket ? "Open item details" : "This favorite is not present in the loaded bucket data"}
           type="button"
+          {...previewProps(row.name, row.details)}
         >
           <strong>{row.name}</strong>
-          <span>{bucket ? `${bucket.expansion} • ${range}` : "Not in loaded buckets"}</span>
+          <span>{bucket ? `${bucket.expansion} - ${range}` : "Not in loaded buckets"}</span>
           {row.bestZone ? <em>Best: {row.bestZone}</em> : null}
         </button>
         <button className="favorite-remove-button" onClick={onRemove} title="Remove from favorites" type="button">

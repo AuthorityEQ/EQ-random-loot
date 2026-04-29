@@ -4,6 +4,7 @@ import type { Bucket } from "@/lib/search";
 import { countStatuses, type StatusCounts } from "@/lib/item-status";
 import type { ItemDetails } from "@/lib/search";
 import { FavoriteIndicator } from "@/components/FavoriteIndicator";
+import { useItemPreview } from "@/components/ItemPreviewProvider";
 import { StatusBadge } from "@/components/StatusBadge";
 
 type BucketCardProps = {
@@ -30,6 +31,7 @@ function HealthPill({ label, value, tone }: { label: string; value: number; tone
 export function BucketCard({ bucket, visibleLoot, query = "", getItemDetails, onSelectLoot, onSelectZone }: BucketCardProps) {
   const normalizedQuery = query.trim().toLowerCase();
   const health = countStatuses(bucket.loot_pool, getItemDetails);
+  const { previewProps } = useItemPreview();
 
   return (
     <article className="bucket-card">
@@ -112,16 +114,22 @@ export function BucketCard({ bucket, visibleLoot, query = "", getItemDetails, on
           <ul className="loot-list">
             {visibleLoot.map((item) => (
               <li key={item}>
+                {(() => {
+                  const details = getItemDetails(item);
+                  return (
                 <button
                   className={includesQuery(item, normalizedQuery) ? "loot-button is-text-match" : "loot-button"}
                   onClick={() => onSelectLoot(item, bucket)}
                   title="Open item details"
                   type="button"
+                  {...previewProps(item, details)}
                 >
                   <span>{item}</span>
-                  <FavoriteIndicator details={getItemDetails(item)} itemName={item} />
-                  <StatusBadge details={getItemDetails(item)} />
+                  <FavoriteIndicator details={details} itemName={item} />
+                  <StatusBadge details={details} />
                 </button>
+                  );
+                })()}
               </li>
             ))}
           </ul>

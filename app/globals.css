@@ -167,6 +167,12 @@ select {
   margin: 0 auto;
 }
 
+.app-nav-controls {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+
 .app-nav a {
   border: 1px solid var(--line);
   border-radius: 999px;
@@ -182,6 +188,22 @@ select {
   border-radius: 999px;
   display: inline-flex;
   overflow: hidden;
+}
+
+.item-preview-toggle {
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  display: inline-flex;
+  overflow: hidden;
+}
+
+.item-preview-toggle span {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 900;
+  padding: 0 9px;
+  white-space: nowrap;
 }
 
 .theme-toggle-button {
@@ -205,6 +227,16 @@ select {
 .theme-toggle-button.is-active {
   background: var(--accent);
   color: var(--accent-contrast);
+}
+
+.item-preview-tooltip {
+  background: transparent;
+  max-height: min(520px, calc(100vh - 24px));
+  overflow: auto;
+  pointer-events: none;
+  position: fixed;
+  width: min(420px, calc(100vw - 24px));
+  z-index: 80;
 }
 
 .app-nav a:hover,
@@ -1357,6 +1389,11 @@ h1 {
   .app-nav-links {
     justify-content: center;
     margin: 0;
+  }
+
+  .app-nav-controls {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .theme-toggle {

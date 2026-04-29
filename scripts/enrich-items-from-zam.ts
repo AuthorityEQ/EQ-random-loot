@@ -23,6 +23,8 @@ type ItemDetails = {
   ac: number | null;
   damage: number | null;
   delay: number | null;
+  skill?: string | null;
+  damage_bonus?: number | null;
   stats: Record<string, number | string>;
   resists: Record<string, number | string>;
   hp_regen?: number | null;
@@ -49,6 +51,7 @@ type ItemDetails = {
   no_drop: boolean | null;
   prestige: boolean | null;
   aug_slots: string[];
+  iconPath?: string | null;
   sources: Source[];
   confidence: MatchConfidence;
   match_confidence: MatchConfidence;
@@ -146,6 +149,10 @@ function sleep(ms: number) {
 
 function normalizeName(value: string) {
   return value.replace(/\s+/g, " ").trim().toLowerCase();
+}
+
+function normalizeComparableItemName(value: string) {
+  return normalizeName(value.replace(/\s*\[[^\]]+\]\s*$/g, "").replace(/['`’]/g, ""));
 }
 
 function htmlDecode(value: string) {
@@ -311,7 +318,7 @@ function readEffects(label: string, text: string) {
   );
 }
 
-function hasAnyCoreStats(item: Pick<ItemDetails, "slot" | "ac" | "damage" | "delay" | "stats" | "resists" | "haste" | "worn_effects" | "focus_effects" | "click_effects" | "proc_effects" | "classes" | "races">) {
+function hasAnyCoreStats(item: Pick<ItemDetails, "slot" | "ac" | "damage" | "delay" | "stats" | "resists" | "haste" | "worn_effects" | "focus_effects" | "click_effects" | "proc_effects" | "classes" | "races" | "weight" | "size" | "item_type" | "weight_reduction" | "capacity" | "size_capacity">) {
   return Boolean(
     item.slot
       || item.ac !== null
@@ -325,7 +332,13 @@ function hasAnyCoreStats(item: Pick<ItemDetails, "slot" | "ac" | "damage" | "del
       || item.click_effects.length
       || item.proc_effects.length
       || item.classes.length
-      || item.races.length,
+      || item.races.length
+      || item.weight !== null
+      || item.size
+      || item.item_type
+      || item.weight_reduction
+      || item.capacity !== null
+      || item.size_capacity,
   );
 }
 
@@ -376,6 +389,8 @@ function parseItemPage(
     ac: readNumber(/\bAC:\s*(\d+)/i, text),
     damage: readNumber(/\b(?:DMG|Damage):\s*(\d+)/i, text),
     delay: readNumber(/\bDelay:\s*(\d+)/i, text),
+    skill: readString(/\bSkill:\s*([^\n]*?)(?:\s+Atk Delay:|$)/i, text),
+    damage_bonus: readNumber(/\b(?:Dmg Bon|Damage Bonus):\s*(\d+)/i, text),
     stats,
     resists,
     hp_regen: readRegen("HP", text),
@@ -405,6 +420,7 @@ function parseItemPage(
     no_drop: /\bNO DROP\b/i.test(text) ? true : null,
     prestige: /\bPRESTIGE\b/i.test(text) ? true : null,
     aug_slots: [],
+    iconPath: null,
     sources: [{ name: "Allakhazam" as const, url }],
     expansion: targetExpansion,
   };
@@ -429,6 +445,8 @@ function notFoundItem(itemName: string, notes: string[]): ItemDetails {
     ac: null,
     damage: null,
     delay: null,
+    skill: null,
+    damage_bonus: null,
     stats: {},
     resists: {},
     hp_regen: null,
@@ -455,6 +473,7 @@ function notFoundItem(itemName: string, notes: string[]): ItemDetails {
     no_drop: null,
     prestige: null,
     aug_slots: [],
+    iconPath: null,
     sources: [{ name: "Allakhazam" as const, url: searchUrl(itemName) }],
     expansion: targetExpansion,
   };
@@ -630,10 +649,9 @@ for (const [index, itemName] of selectedNames.entries()) {
       const exactHtml = await fetchCached(exactUrl, `item:${exactUrl}`);
       const exactText = stripTags(exactHtml);
       const parsedTitle = readString(/<meta property=["']og:title["'] content=["']([^"']+)["']/i, exactHtml)?.replace(/^Item\s*:\s*/i, "").trim();
-      const exactName = parsedTitle ? normalizeName(parsedTitle) === normalizeName(itemName) : true;
+      const exactName = parsedTitle ? normalizeComparableItemName(parsedTitle) === normalizeComparableItemName(itemName) : true;
       const expansion = extractExpansion(exactHtml);
       const matchNotes = [
-        ...(details[itemName]?.match_notes ?? []),
         `Reprocessed exact Allakhazam item URL: ${exactUrl}.`,
         expansion ? `Exact URL page is tagged as Expansion: ${expansion}.` : "Exact URL page has no parsed expansion tag.",
       ];
@@ -642,6 +660,8 @@ for (const [index, itemName] of selectedNames.entries()) {
         matchNotes.push(`Exact URL title "${parsedTitle}" does not match requested item name "${itemName}".`);
       }
       const parsed = parseItemPage(exactHtml, itemName, exactUrl, details[itemName]?.duplicate_name_risk ?? false, matchNotes, confidence);
+      parsed.name = details[itemName]?.name ?? itemName;
+      parsed.iconPath = details[itemName]?.iconPath ?? parsed.iconPath ?? null;
       parsed.expansion = details[itemName]?.expansion ?? targetExpansion;
 
       if (details[itemName]?.confidence === "exact_match" && parsed.confidence !== "not_found") {

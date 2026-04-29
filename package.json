@@ -13,7 +13,8 @@
     "apply:manual-corrections": "node --experimental-strip-types scripts/apply-manual-item-corrections.ts",
     "apply:missing-corrections": "node --experimental-strip-types scripts/apply-missing-item-corrections.ts",
     "apply:small-corrections": "node --experimental-strip-types scripts/apply-small-item-corrections.ts",
-    "mark:duplicates-clean": "node --experimental-strip-types scripts/mark-duplicate-items-clean.ts"
+    "mark:duplicates-clean": "node --experimental-strip-types scripts/mark-duplicate-items-clean.ts",
+    "import:item-icons": "node --experimental-strip-types scripts/import-item-icons.ts"
   },
   "dependencies": {
     "next": "^16.2.4",

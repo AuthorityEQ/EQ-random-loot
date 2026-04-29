@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { FavoritesProvider } from "@/components/FavoritesProvider";
+import { ItemPreviewProvider } from "@/components/ItemPreviewProvider";
+import { ItemPreviewToggle } from "@/components/ItemPreviewToggle";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import "./globals.css";
 
@@ -35,15 +37,20 @@ export default function RootLayout({
       </head>
       <body>
         <FavoritesProvider>
-          <nav className="app-nav" aria-label="Primary navigation">
-            <div className="app-nav-links">
-              <Link href="/">Group Named</Link>
-              <Link href="/raids">Raid Bosses</Link>
-              <Link href="/favorites">Favorites</Link>
-            </div>
-            <ThemeToggle />
-          </nav>
-          {children}
+          <ItemPreviewProvider>
+            <nav className="app-nav" aria-label="Primary navigation">
+              <div className="app-nav-links">
+                <Link href="/">Group Named</Link>
+                <Link href="/raids">Raid Bosses</Link>
+                <Link href="/favorites">Favorites</Link>
+              </div>
+              <div className="app-nav-controls">
+                <ItemPreviewToggle />
+                <ThemeToggle />
+              </div>
+            </nav>
+            {children}
+          </ItemPreviewProvider>
         </FavoritesProvider>
       </body>
     </html>
