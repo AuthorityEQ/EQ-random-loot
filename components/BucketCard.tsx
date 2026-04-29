@@ -1,11 +1,9 @@
 "use client";
 
 import type { Bucket } from "@/lib/search";
-import { countStatuses, type StatusCounts } from "@/lib/item-status";
 import type { ItemDetails } from "@/lib/search";
 import { FavoriteIndicator } from "@/components/FavoriteIndicator";
 import { useItemPreview } from "@/components/ItemPreviewProvider";
-import { StatusBadge } from "@/components/StatusBadge";
 
 type BucketCardProps = {
   bucket: Bucket;
@@ -20,21 +18,12 @@ function includesQuery(value: string, query: string) {
   return query.length > 0 && value.toLowerCase().includes(query);
 }
 
-function HealthPill({ label, value, tone }: { label: string; value: number; tone: keyof StatusCounts }) {
-  return (
-    <span className={`health-pill health-${tone}`} title={`${label}: ${value}`}>
-      <strong>{value}</strong> {label}
-    </span>
-  );
-}
-
 function expansionTone(expansion: string) {
   return `expansion-tone-${expansion.toLowerCase()}`;
 }
 
 export function BucketCard({ bucket, visibleLoot, query = "", getItemDetails, onSelectLoot, onSelectZone }: BucketCardProps) {
   const normalizedQuery = query.trim().toLowerCase();
-  const health = countStatuses(bucket.loot_pool, getItemDetails);
   const { previewProps } = useItemPreview();
 
   return (
@@ -61,14 +50,6 @@ export function BucketCard({ bucket, visibleLoot, query = "", getItemDetails, on
           <dd>{bucket.zone_count ?? bucket.zones.length}</dd>
         </div>
       </dl>
-
-      <section className="bucket-health" aria-label={`Bucket ${bucket.bucket} item health`}>
-        <HealthPill label="total" tone="total" value={health.total} />
-        <HealthPill label="clean" tone="clean" value={health.clean} />
-        <HealthPill label="review" tone="review" value={health.review} />
-        <HealthPill label="missing" tone="missing" value={health.missing} />
-        <HealthPill label="duplicate" tone="duplicate" value={health.duplicate} />
-      </section>
 
       <section className="zones" aria-label={`Bucket ${bucket.bucket} zones`}>
         {bucket.zones.map((zone) => (
@@ -127,10 +108,9 @@ export function BucketCard({ bucket, visibleLoot, query = "", getItemDetails, on
                   title="Open item details"
                   type="button"
                   {...previewProps(item, details)}
-                >
+                  >
                   <span>{item}</span>
                   <FavoriteIndicator details={details} itemName={item} />
-                  <StatusBadge details={details} />
                 </button>
                   );
                 })()}

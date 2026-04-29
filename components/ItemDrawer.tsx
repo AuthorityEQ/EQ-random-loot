@@ -5,7 +5,6 @@ import { EqItemInspect } from "@/components/EqItemInspect";
 import { useFavorites } from "@/components/FavoritesProvider";
 import { bestZonesForBucket } from "@/lib/buckets";
 import type { Bucket, ItemDetails } from "@/lib/search";
-import { StatusBadge } from "@/components/StatusBadge";
 
 type ItemDrawerProps = {
   itemName: string;
@@ -17,10 +16,6 @@ type ItemDrawerProps = {
   onClose: () => void;
   onSelectZone: (zone: string) => void;
 };
-
-function confidenceFor(details: ItemDetails) {
-  return details.match_confidence ?? details.confidence;
-}
 
 export function ItemDrawer({
   itemName,
@@ -36,7 +31,6 @@ export function ItemDrawer({
   const { isFavorite, toggleFavorite } = useFavorites();
   const farmingLocations = useMemo(() => bestZonesForBucket(bucket, Number.POSITIVE_INFINITY), [bucket]);
   const allItemBuckets = itemBuckets?.length ? itemBuckets : [bucket];
-  const confidence = details ? confidenceFor(details) : "not_found";
   const favorite = isFavorite(itemName, details);
 
   async function copyItemName() {
@@ -81,13 +75,6 @@ export function ItemDrawer({
 
         {details ? (
           <>
-            <div className="status-row">
-              <StatusBadge details={details} />
-              <span className="confidence">Confidence: {confidence}</span>
-            </div>
-            {confidence !== "exact_match" ? (
-              <p className="review-warning">Item data may need review</p>
-            ) : null}
             <EqItemInspect details={details} itemName={itemName} />
 
             {details.sources.length > 0 ? (
@@ -102,7 +89,7 @@ export function ItemDrawer({
             ) : null}
           </>
         ) : (
-          <p className="missing-details">Item details not added yet.</p>
+          <p className="no-details">Item details not added yet.</p>
         )}
 
         <section className="farming-panel is-highlighted">

@@ -14,14 +14,10 @@ import classicData from "@/data/classic-group-named.json";
 import itemDetailsData from "@/data/item-details.json";
 import kunarkData from "@/data/kunark-group-named.json";
 import veliousData from "@/data/velious-group-named.json";
-import {
-  matchesStatusFilter,
-  type ItemFilter,
-} from "@/lib/item-status";
 import { lootModeLabel, lootModes, type LootMode } from "@/lib/lootModes";
 import { filterBuckets, type Bucket, type ItemDetailsMap, type LootDataset } from "@/lib/search";
 import { getUniversalSearchResults, type UniversalSearchResult } from "@/lib/universal-search";
-import { getAllZones, getZoneView } from "@/lib/zones";
+import { getZoneView } from "@/lib/zones";
 
 const datasets = [classicData, kunarkData, veliousData] as LootDataset[];
 const buckets = datasets.flatMap((dataset) => dataset.buckets);
@@ -39,8 +35,6 @@ export default function Home() {
   const [debouncedQuery, setDebouncedQuery] = useState("");
   const [lootMode] = useState<LootMode>("random");
   const [selectedExpansions, setSelectedExpansions] = useState<ExpansionFilter[]>([...expansionOptions]);
-  const activeFilter: ItemFilter = "all";
-  const reviewMode = false;
   const [selectedZone, setSelectedZone] = useState("");
   const [playerLevel, setPlayerLevel] = useState(1);
   const [levelInputValue, setLevelInputValue] = useState("1");
@@ -61,7 +55,21 @@ export default function Home() {
     ? "All expansions"
     : selectedExpansions.join(", ");
   const modeLabel = lootModeLabel(lootMode);
-  const allZones = useMemo(() => getAllZones(expansionBuckets), [expansionBuckets]);
+  const zoneGroups = useMemo(() => {
+    return expansionOptions
+      .filter((expansion) => selectedExpansionSet.has(expansion))
+      .map((expansion) => {
+        const zones = Array.from(
+          new Set(
+            expansionBuckets
+              .filter((bucket) => bucket.expansion === expansion)
+              .flatMap((bucket) => bucket.zones),
+          ),
+        ).sort((a, b) => a.localeCompare(b));
+        return { expansion, zones };
+      })
+      .filter(({ zones }) => zones.length > 0);
+  }, [expansionBuckets, selectedExpansionSet]);
   const selectedZoneView = useMemo(() => getZoneView(expansionBuckets, selectedZone), [expansionBuckets, selectedZone]);
   const typeaheadResults = useMemo(
     () => getUniversalSearchResults(expansionBuckets, debouncedQuery),
@@ -71,15 +79,10 @@ export default function Home() {
   const filteredBuckets = useMemo(() => {
     return filterBuckets(expansionBuckets, "")
       .map((bucket) => {
-        const visibleLoot = bucket.loot_pool.filter((item) => {
-          const details = itemDetails[item];
-          return matchesStatusFilter(details, activeFilter, reviewMode);
-        });
-
-        return { bucket, visibleLoot };
+        return { bucket, visibleLoot: bucket.loot_pool };
       })
       .filter(({ visibleLoot }) => visibleLoot.length > 0);
-  }, [activeFilter, expansionBuckets, reviewMode]);
+  }, [expansionBuckets]);
   useEffect(() => {
     const timeout = window.setTimeout(() => {
       setDebouncedQuery(query);
@@ -115,15 +118,6 @@ export default function Home() {
   }
 
   function selectSearchResult(result: UniversalSearchResult) {
-    if (result.type === "zone") {
-      setSelectedZone(result.zone);
-      setSelectedItemSearch(null);
-      setFocusedMob(null);
-      setSelectedLoot(null);
-      setQuery("");
-      return;
-    }
-
     if (result.type === "item") {
       const firstBucket = result.buckets[0];
       setSelectedZone("");
@@ -222,22 +216,27 @@ export default function Home() {
           </div>
         </div>
         <label className="zone-filter">
-          <span>Zone filter</span>
-          <input
-            list="zone-options"
+          <span>Zone</span>
+          <select
             onChange={(event) => {
               setSelectedZone(event.target.value);
               setSelectedItemSearch(null);
               setFocusedMob(null);
+              setSelectedLoot(null);
             }}
-            placeholder="Select or type a zone"
             value={selectedZone}
-          />
-          <datalist id="zone-options">
-            {allZones.map((zone) => (
-              <option key={zone} value={zone} />
+          >
+            <option value="">All zones</option>
+            {zoneGroups.map(({ expansion, zones }) => (
+              <optgroup key={expansion} label={expansion}>
+                {zones.map((zone) => (
+                  <option key={`${expansion}-${zone}`} value={zone}>
+                    {zone}
+                  </option>
+                ))}
+              </optgroup>
             ))}
-          </datalist>
+          </select>
         </label>
         <label className="level-filter">
           <span>Your level</span>
@@ -274,7 +273,6 @@ export default function Home() {
 
       {selectedZoneView ? (
         <ZoneView
-          activeFilter={activeFilter}
           getItemDetails={getItemDetails}
           onClearZone={() => {
             setSelectedZone("");
@@ -282,7 +280,6 @@ export default function Home() {
           }}
           onSelectLoot={(itemName, selectedBucket) => setSelectedLoot({ itemName, bucket: selectedBucket })}
           onSelectZone={setSelectedZone}
-          reviewMode={reviewMode}
           focusedMob={focusedMob}
           zoneView={selectedZoneView}
         />

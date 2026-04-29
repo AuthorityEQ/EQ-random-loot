@@ -3,13 +3,11 @@
 import { useEffect, useRef, useState } from "react";
 import { FavoriteIndicator } from "@/components/FavoriteIndicator";
 import { useItemPreview } from "@/components/ItemPreviewProvider";
-import { matchesStatusFilter, type ItemFilter } from "@/lib/item-status";
 import type { Bucket, ItemDetails } from "@/lib/search";
 import type { ZoneView as ZoneViewData } from "@/lib/zones";
 
 type ZoneViewProps = {
   zoneView: ZoneViewData;
-  activeFilter: ItemFilter;
   focusedMob?: {
     name: string;
     level: number;
@@ -17,7 +15,6 @@ type ZoneViewProps = {
     bucket: number;
     expansion: string;
   } | null;
-  reviewMode: boolean;
   getItemDetails: (itemName: string) => ItemDetails | undefined;
   onClearZone: () => void;
   onSelectLoot: (itemName: string, bucket: Bucket) => void;
@@ -30,16 +27,12 @@ function expansionTone(expansion: string) {
 
 export function ZoneView({
   zoneView,
-  activeFilter,
   focusedMob = null,
-  reviewMode,
   getItemDetails,
   onClearZone,
   onSelectLoot,
 }: ZoneViewProps) {
   const [highlightedBucketKey, setHighlightedBucketKey] = useState<string | null>(null);
-  const [selectedMobKey, setSelectedMobKey] = useState<string | null>(null);
-  const [openBucketKeys, setOpenBucketKeys] = useState<Set<string>>(new Set());
   const [openLootKeys, setOpenLootKeys] = useState<Set<string>>(new Set());
   const { previewProps } = useItemPreview();
   const lootRefs = useRef<Record<string, HTMLElement | null>>({});
@@ -61,11 +54,8 @@ export function ZoneView({
   }, []);
 
   const getBucketKey = (bucket: Bucket) => `${bucket.expansion}-${bucket.bucket}-${bucket.level_range}`;
-  const getMobKey = (bucket: Bucket, mobName: string, level: number) => `${getBucketKey(bucket)}-${mobName}-${level}`;
-  function selectMobBucket(bucket: Bucket, mobName: string, level: number) {
+  function selectMobBucket(bucket: Bucket) {
     const bucketKey = getBucketKey(bucket);
-    setSelectedMobKey(getMobKey(bucket, mobName, level));
-    setOpenBucketKeys((current) => new Set(current).add(bucketKey));
     setOpenLootKeys((current) => new Set(current).add(bucketKey));
     setHighlightedBucketKey(bucketKey);
 
@@ -90,7 +80,7 @@ export function ZoneView({
       && mobs.some((mob) => mob.name === focusedMob.name && mob.level === focusedMob.level),
     );
     if (!match) return;
-    selectMobBucket(match.bucket, focusedMob.name, focusedMob.level);
+    selectMobBucket(match.bucket);
   }, [focusedMob, zoneView]);
 
   return (
@@ -128,55 +118,13 @@ export function ZoneView({
         </div>
         <div className="zone-mob-list">
           {allMobs.map(({ mob, bucket }) => (
-            <button className={`zone-mob-item bucket-tone-${bucket.bucket % 6}`} key={`${bucket.expansion}-${bucket.bucket}-${mob.name}-${mob.level}`} onClick={() => selectMobBucket(bucket, mob.name, mob.level)} type="button">
+            <button className={`zone-mob-item bucket-tone-${bucket.bucket % 6}`} key={`${bucket.expansion}-${bucket.bucket}-${mob.name}-${mob.level}`} onClick={() => selectMobBucket(bucket)} type="button">
               <strong>{mob.name}</strong>
               <span>
                 <b>{bucket.level_range}</b>
                 Level {mob.level}
               </span>
             </button>
-          ))}
-        </div>
-      </section>
-
-      <section className="zone-panel">
-        <div className="zone-panel-heading">
-          <h3>Buckets</h3>
-          <span>{zoneView.bucketGroups.length}</span>
-        </div>
-        <div className="zone-bucket-overview">
-          {zoneView.bucketGroups.map(({ bucket, mobs }) => (
-            <details
-              className={`zone-bucket-card bucket-tone-${bucket.bucket % 6}`}
-              key={`${bucket.expansion}-${bucket.bucket}`}
-              onToggle={(event) => {
-                const bucketKey = getBucketKey(bucket);
-                const isOpen = event.currentTarget.open;
-                setOpenBucketKeys((current) => {
-                  const next = new Set(current);
-                  if (isOpen) {
-                    next.add(bucketKey);
-                  } else {
-                    next.delete(bucketKey);
-                  }
-                  return next;
-                });
-              }}
-              open={openBucketKeys.has(getBucketKey(bucket))}
-            >
-              <summary>
-                <span>Bucket {bucket.level_range}</span>
-                <strong>{mobs.length} mobs</strong>
-              </summary>
-              <ul>
-                {mobs.map((mob) => (
-                  <li className={selectedMobKey === getMobKey(bucket, mob.name, mob.level) ? "is-selected" : undefined} key={`${mob.name}-${mob.level}`}>
-                    <span>{mob.name}</span>
-                    <strong>{mob.level}</strong>
-                  </li>
-                ))}
-              </ul>
-            </details>
           ))}
         </div>
       </section>
@@ -198,7 +146,7 @@ export function ZoneView({
         </div>
         <div className="zone-loot-groups">
           {zoneView.bucketGroups.map(({ bucket }) => {
-            const visibleLoot = bucket.loot_pool.filter((item) => matchesStatusFilter(getItemDetails(item), activeFilter, reviewMode));
+            const visibleLoot = bucket.loot_pool;
             const bucketKey = getBucketKey(bucket);
 
             return (
@@ -242,7 +190,7 @@ export function ZoneView({
                     })}
                   </ul>
                 ) : (
-                  <p className="loot-empty">No loot items in this bucket match the active review filters.</p>
+                  <p className="loot-empty">No loot items in this bucket.</p>
                 )}
               </details>
             );

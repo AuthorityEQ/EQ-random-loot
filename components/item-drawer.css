@@ -104,30 +104,6 @@
   cursor: not-allowed;
 }
 
-.confidence {
-  color: var(--muted);
-  font-size: 0.8rem;
-  font-weight: 800;
-}
-
-.status-row {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 12px;
-}
-
-.review-warning {
-  background: var(--warning-bg);
-  border: 1px solid var(--warning-border);
-  border-radius: 8px;
-  color: var(--warning-text);
-  font-weight: 700;
-  margin: 0 0 16px;
-  padding: 10px 12px;
-}
-
 .eq-inspect-window {
   background:
     linear-gradient(145deg, rgba(45, 56, 82, 0.34), transparent 36%),
@@ -444,7 +420,7 @@
   font-weight: 700;
 }
 
-.missing-details {
+.no-details {
   background: var(--panel-soft);
   border-radius: 8px;
   color: var(--muted);
