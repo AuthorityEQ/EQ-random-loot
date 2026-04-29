@@ -3,6 +3,7 @@
 import type { Bucket } from "@/lib/search";
 import type { ItemDetails } from "@/lib/search";
 import { FavoriteIndicator } from "@/components/FavoriteIndicator";
+import { ItemIcon } from "@/components/ItemIcon";
 import { useItemPreview } from "@/components/ItemPreviewProvider";
 import { ConfidenceBadge } from "@/components/ConfidenceBadge";
 import confidenceData from "@/data/loot-confidence.json";
@@ -13,6 +14,7 @@ type BucketCardProps = {
   visibleLoot: string[];
   query?: string;
   getItemDetails: (itemName: string) => ItemDetails | undefined;
+  getItemStatDisplay: (itemName: string) => string | null;
   onSelectLoot: (itemName: string, bucket: Bucket) => void;
   onSelectZone: (zone: string) => void;
 };
@@ -25,7 +27,7 @@ function expansionTone(expansion: string) {
   return `expansion-tone-${expansion.toLowerCase()}`;
 }
 
-export function BucketCard({ bucket, visibleLoot, query = "", getItemDetails, onSelectLoot, onSelectZone }: BucketCardProps) {
+export function BucketCard({ bucket, visibleLoot, query = "", getItemDetails, getItemStatDisplay, onSelectLoot, onSelectZone }: BucketCardProps) {
   const normalizedQuery = query.trim().toLowerCase();
   const { previewProps } = useItemPreview();
 
@@ -46,7 +48,7 @@ export function BucketCard({ bucket, visibleLoot, query = "", getItemDetails, on
         </div>
         <div>
           <dt>Loot</dt>
-          <dd>{bucket.loot_count ?? bucket.loot_pool.length}</dd>
+          <dd>{visibleLoot.length}</dd>
         </div>
         <div>
           <dt>Zones</dt>
@@ -104,6 +106,7 @@ export function BucketCard({ bucket, visibleLoot, query = "", getItemDetails, on
               <li key={item}>
                 {(() => {
                   const details = getItemDetails(item);
+                  const statDisplay = getItemStatDisplay(item);
                   const meta = (confidenceData as unknown as Record<string, ConfidenceMetadata>)[item] ?? DEFAULT_CONFIDENCE;
                   return (
                 <button
@@ -113,11 +116,17 @@ export function BucketCard({ bucket, visibleLoot, query = "", getItemDetails, on
                   type="button"
                   {...previewProps(item, details)}
                   >
-                  <span>{item}</span>
-                  {(meta.tier === "verified" || meta.tier === "high") && (
-                    <ConfidenceBadge compact meta={meta} />
-                  )}
-                  <FavoriteIndicator details={details} itemName={item} />
+                  <span className="loot-item-label">
+                    <ItemIcon details={details} />
+                    <span>{item}</span>
+                  </span>
+                  <span className="loot-item-actions">
+                    {statDisplay ? <span className="loot-stat-value">{statDisplay}</span> : null}
+                    {(meta.tier === "verified" || meta.tier === "high") && (
+                      <ConfidenceBadge compact meta={meta} />
+                    )}
+                    <FavoriteIndicator details={details} itemName={item} />
+                  </span>
                 </button>
                   );
                 })()}

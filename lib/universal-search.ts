@@ -6,6 +6,7 @@ export type UniversalSearchResult =
     label: string;
     itemName: string;
     buckets: Bucket[];
+    statDisplay?: string | null;
   }
   | {
     type: "mob";
@@ -52,7 +53,12 @@ function sortResults(a: RankedResult, b: RankedResult) {
     || (typeOrder.get(a.type) ?? 99) - (typeOrder.get(b.type) ?? 99);
 }
 
-export function getUniversalSearchResults(buckets: Bucket[], query: string) {
+export function getUniversalSearchResults(
+  buckets: Bucket[],
+  query: string,
+  itemIsVisible: (itemName: string) => boolean = () => true,
+  getItemStatDisplay: (itemName: string) => string | null = () => null,
+) {
   const normalizedQuery = normalize(query);
   if (normalizedQuery.length < 2) {
     return {
@@ -66,6 +72,7 @@ export function getUniversalSearchResults(buckets: Bucket[], query: string) {
 
   for (const bucket of buckets) {
     for (const itemName of bucket.loot_pool) {
+      if (!itemIsVisible(itemName)) continue;
       itemMap.set(itemName, [...(itemMap.get(itemName) ?? []), bucket]);
     }
 
@@ -82,6 +89,7 @@ export function getUniversalSearchResults(buckets: Bucket[], query: string) {
         label: itemName,
         itemName,
         buckets: itemBuckets,
+        statDisplay: getItemStatDisplay(itemName),
         rank,
       };
     })

@@ -4,12 +4,14 @@ import { Suspense, useEffect, useMemo, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { BucketCard } from "@/components/BucketCard";
 import "@/components/bucket-card.css";
+import { useBucketDisplay } from "@/components/BucketDisplayProvider";
 import { ExpansionTimeline } from "@/components/ExpansionTimeline";
 import { ItemDrawer } from "@/components/ItemDrawer";
 import "@/components/item-drawer.css";
 import { ItemFarmView } from "@/components/ItemFarmView";
 import { ItemSlotFilter } from "@/components/ItemSlotFilter";
 import { LevelRecommendations } from "@/components/LevelRecommendations";
+import { MatchingItemList, type MatchingItemRow } from "@/components/MatchingItemList";
 import { SearchBox } from "@/components/SearchBox";
 import "@/components/search-box.css";
 import { ServerStatusBadge } from "@/components/ServerStatusBadge";
@@ -19,10 +21,23 @@ import classicData from "@/data/classic-group-named.json";
 import itemDetailsData from "@/data/item-details.json";
 import kunarkData from "@/data/kunark-group-named.json";
 import veliousData from "@/data/velious-group-named.json";
-import { bucketHasMatchingItems, itemMatchesSlots, type SlotKey } from "@/lib/slot-filter";
+import {
+  classOptions,
+  fallbackStatOptions,
+  formatItemStatValue,
+  getComparableStatValue,
+  itemMatchesUseFilters,
+  raceOptions,
+  type ClassFilter,
+  type RaceFilter,
+  type SlotFilter,
+  type StatFilter,
+} from "@/lib/item-use-filters";
 import { itemToSlug, slugToItemName } from "@/lib/item-slug";
+import { visibleBucketsForLevel } from "@/lib/level-bucket-filter";
 import { lootModeLabel, lootModes, type LootMode } from "@/lib/lootModes";
 import { filterBuckets, type Bucket, type ItemDetailsMap, type LootDataset } from "@/lib/search";
+import { bucketHasMatchingItems, itemMatchesSlots, type SlotKey } from "@/lib/slot-filter";
 import { getUniversalSearchResults, type UniversalSearchResult } from "@/lib/universal-search";
 import { useUrlFilterState } from "@/lib/use-url-filter-state";
 import { getZoneView } from "@/lib/zones";
@@ -32,26 +47,110 @@ const buckets = datasets.flatMap((dataset) => dataset.buckets);
 const contentType = "Group Named";
 const itemDetails = itemDetailsData as ItemDetailsMap;
 const expansionOptions = ["Classic", "Kunark", "Velious"] as const;
+const fallbackSlotOptions = [
+  "Any",
+  "PRIMARY",
+  "SECONDARY",
+  "RANGE",
+  "AMMO",
+  "HEAD",
+  "FACE",
+  "EAR",
+  "NECK",
+  "SHOULDERS",
+  "ARMS",
+  "BACK",
+  "WRIST",
+  "HANDS",
+  "FINGER",
+  "CHEST",
+  "LEGS",
+  "FEET",
+  "WAIST",
+] as const;
+const statOptionGroups = [
+  {
+    label: "Primary",
+    options: ["HP", "MANA", "END", "AC", "Haste"],
+  },
+  {
+    label: "Attributes",
+    options: ["STR", "STA", "AGI", "DEX", "WIS", "INT", "CHA"],
+  },
+  {
+    label: "Resists",
+    options: ["MR", "FR", "CR", "DR", "PR"],
+  },
+] as const;
 type ExpansionFilter = (typeof expansionOptions)[number];
 
 function expansionTone(expansion: string) {
   return `expansion-tone-${expansion.toLowerCase()}`;
 }
 
+function bucketSortValue(bucket: Bucket) {
+  return Number(bucket.level_range.match(/\d+/)?.[0] ?? 999);
+}
+
+function uniqueSortedItemRows(rows: MatchingItemRow[]) {
+  const itemMap = new Map<string, MatchingItemRow>();
+
+  for (const row of [...rows].sort((a, b) => bucketSortValue(a.bucket) - bucketSortValue(b.bucket) || a.itemName.localeCompare(b.itemName))) {
+    if (!itemMap.has(row.itemName)) {
+      itemMap.set(row.itemName, row);
+    }
+  }
+
+  return Array.from(itemMap.values()).sort((a, b) => bucketSortValue(a.bucket) - bucketSortValue(b.bucket) || a.itemName.localeCompare(b.itemName));
+}
+
+function sortItemNamesByStat(itemNames: string[], statFilter: StatFilter) {
+  if (statFilter === "Any") return itemNames;
+
+  return [...itemNames].sort((a, b) => {
+    const aValue = getComparableStatValue(itemDetails[a], statFilter) ?? Number.NEGATIVE_INFINITY;
+    const bValue = getComparableStatValue(itemDetails[b], statFilter) ?? Number.NEGATIVE_INFINITY;
+    return bValue - aValue || a.localeCompare(b);
+  });
+}
+
+function sortItemRowsByStat(rows: MatchingItemRow[], statFilter: StatFilter) {
+  if (statFilter === "Any") return rows;
+
+  return [...rows].sort((a, b) => {
+    const aValue = getComparableStatValue(a.details, statFilter) ?? Number.NEGATIVE_INFINITY;
+    const bValue = getComparableStatValue(b.details, statFilter) ?? Number.NEGATIVE_INFINITY;
+    return bValue - aValue || a.itemName.localeCompare(b.itemName);
+  });
+}
+
+function normalizeSearch(value: string) {
+  return value.trim().toLowerCase();
+}
+
+function flatSearchMatches(itemName: string, bucket: Bucket, searchQuery: string) {
+  const normalizedQuery = normalizeSearch(searchQuery);
+  if (normalizedQuery.length < 2) return true;
+
+  return itemName.toLowerCase().includes(normalizedQuery)
+    || bucket.mobs.some((mob) => mob.name.toLowerCase().includes(normalizedQuery));
+}
+
 function Home() {
-  // ── URL-synced filter state (replaces individual useState for q/exp/zone/level) ──
+  // ── URL-synced filter state ───────────────────────────────────────────────
   const { state: urlState, setState: setUrlState, shareUrl } = useUrlFilterState();
   const searchParams = useSearchParams();
+  const { bucketed } = useBucketDisplay();
 
   // Derive local names from urlState for minimal diff to the rest of the file
-  const query        = urlState.q    ?? "";
-  const selectedZone = urlState.zone ?? "";
-  const playerLevel  = urlState.level ?? 1;
+  const query           = urlState.q    ?? "";
+  const selectedZone    = urlState.zone ?? "";
+  const playerLevel     = urlState.level ?? 1;
   const selectedExpansions = (
     urlState.exp ?? [...expansionOptions].map((e) => e.toLowerCase())
   ).map((e) => e.charAt(0).toUpperCase() + e.slice(1)) as ExpansionFilter[];
 
-  // ── Local state (not synced to URL) ──────────────────────────────────────────
+  // ── Local state (not synced to URL) ──────────────────────────────────────
   const [debouncedQuery, setDebouncedQuery] = useState("");
   const [lootMode] = useState<LootMode>("random");
   const [levelInputValue, setLevelInputValue] = useState(String(playerLevel));
@@ -59,11 +158,17 @@ function Home() {
   const [selectedLoot, setSelectedLoot] = useState<{ itemName: string; bucket: Bucket } | null>(null);
   const [selectedItemSearch, setSelectedItemSearch] = useState<{ itemName: string; buckets: Bucket[] } | null>(null);
   const [focusedMob, setFocusedMob] = useState<{ name: string; level: number; zone: string; bucket: number; expansion: string } | null>(null);
+
+  // ── Class / race / slot / stat filters (from main) ───────────────────────
+  const [selectedClass, setSelectedClass] = useState<ClassFilter>("Any");
+  const [selectedRace, setSelectedRace] = useState<RaceFilter>("Any");
+  const [selectedSlot, setSelectedSlot] = useState<SlotFilter>("Any");
+  const [selectedStat, setSelectedStat] = useState<StatFilter>("Any");
+
+  // ── Slot-chip filter (from HEAD) ─────────────────────────────────────────
   const [selectedSlots, setSelectedSlots] = useState<SlotKey[]>([]);
 
-  // ── Cmd/Ctrl+click tracking ───────────────────────────────────────────────────
-  // Tracks whether a modifier key was held during the most recent mousedown.
-  // Used by onSelectLoot to decide between opening the drawer vs. navigating.
+  // ── Cmd/Ctrl+click tracking ───────────────────────────────────────────────
   const modifierHeldRef = useRef(false);
   useEffect(() => {
     function handleMouseDown(event: MouseEvent) {
@@ -73,7 +178,7 @@ function Home() {
     return () => document.removeEventListener("mousedown", handleMouseDown, { capture: true });
   }, []);
 
-  // ── Derived / memoised values ─────────────────────────────────────────────────
+  // ── Derived / memoised values ─────────────────────────────────────────────
   const selectedExpansionSet = useMemo(() => new Set(selectedExpansions), [selectedExpansions]);
   const expansionBuckets = useMemo(
     () => buckets.filter((bucket) => selectedExpansionSet.has(bucket.expansion as ExpansionFilter)),
@@ -103,33 +208,84 @@ function Home() {
       .filter(({ zones }) => zones.length > 0);
   }, [expansionBuckets, selectedExpansionSet]);
   const selectedZoneView = useMemo(() => getZoneView(expansionBuckets, selectedZone), [expansionBuckets, selectedZone]);
+  const slotOptions = useMemo(() => {
+    const slots = new Set<string>();
+    for (const details of Object.values(itemDetails)) {
+      if (!details.slot) continue;
+      for (const slot of details.slot.toUpperCase().split(/[,\s/]+/)) {
+        if (slot) slots.add(slot);
+      }
+    }
+
+    const derived = Array.from(slots).sort((a, b) => a.localeCompare(b));
+    return derived.length > 0 ? ["Any", ...derived] : [...fallbackSlotOptions];
+  }, []);
+  const statOptions = useMemo(() => {
+    const stats = new Set<string>();
+    for (const details of Object.values(itemDetails)) {
+      if (details.ac !== null && details.ac !== undefined && details.ac !== 0) stats.add("AC");
+      if (details.haste) stats.add("Haste");
+      for (const [key, value] of Object.entries(details.stats ?? {})) {
+        if (value !== null && value !== undefined && value !== "" && value !== 0 && value !== "0") {
+          stats.add(key.toUpperCase());
+        }
+      }
+      for (const [key, value] of Object.entries(details.resists ?? {})) {
+        if (value !== null && value !== undefined && value !== "" && value !== 0 && value !== "0") {
+          stats.add(key.toUpperCase());
+        }
+      }
+    }
+
+    for (const option of fallbackStatOptions) {
+      if (option !== "Any") stats.add(option);
+    }
+
+    const derived = Array.from(stats).sort((a, b) => a.localeCompare(b));
+    return ["Any", ...derived];
+  }, []);
+
+  // itemIsVisible applies class/race/slot/stat filters (main's use-filters)
+  const itemIsVisible = (itemName: string) => itemMatchesUseFilters(itemDetails[itemName], selectedClass, selectedRace, selectedSlot, selectedStat);
+  const getItemStatDisplay = (itemName: string) => formatItemStatValue(itemDetails[itemName], selectedStat);
   const typeaheadResults = useMemo(
-    () => getUniversalSearchResults(expansionBuckets, debouncedQuery),
-    [debouncedQuery, expansionBuckets],
+    () => getUniversalSearchResults(expansionBuckets, debouncedQuery, itemIsVisible, getItemStatDisplay),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [debouncedQuery, expansionBuckets, selectedClass, selectedRace, selectedSlot, selectedStat],
   );
   const getItemDetails = (itemName: string) => itemDetails[itemName];
+  const levelVisibleBuckets = useMemo(() => visibleBucketsForLevel(expansionBuckets, playerLevel), [expansionBuckets, playerLevel]);
 
-  // Extended filteredBuckets — respects slot selection in addition to expansions
+  // filteredBuckets: level filter (main) + class/race/slot/stat (main) + slot-chip filter (HEAD)
   const filteredBuckets = useMemo(() => {
     return filterBuckets(expansionBuckets, "")
+      .filter((bucket) => levelVisibleBuckets.has(bucket))
       .map((bucket) => {
+        // Apply class/race/slot/stat use-filter first, then slot-chip filter
+        const useFilteredLoot = bucket.loot_pool.filter(itemIsVisible);
         const visibleLoot = selectedSlots.length === 0
-          ? bucket.loot_pool
-          : bucket.loot_pool.filter((item) =>
-              itemMatchesSlots(item, itemDetails, selectedSlots)
-            );
-        return { bucket, visibleLoot };
+          ? useFilteredLoot
+          : useFilteredLoot.filter((item) => itemMatchesSlots(item, itemDetails, selectedSlots));
+        return { bucket, visibleLoot: sortItemNamesByStat(visibleLoot, selectedStat) };
       })
-      .filter(({ bucket, visibleLoot }) =>
-        visibleLoot.length > 0 &&
-        (selectedSlots.length === 0 || bucketHasMatchingItems(bucket, itemDetails, selectedSlots))
-      );
-  }, [expansionBuckets, selectedSlots]);
+      .filter(({ visibleLoot }) => visibleLoot.length > 0);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [expansionBuckets, levelVisibleBuckets, selectedClass, selectedRace, selectedSlot, selectedStat, selectedSlots]);
 
-  // ── Effects ───────────────────────────────────────────────────────────────────
+  const flatItemRows = useMemo(
+    () => sortItemRowsByStat(uniqueSortedItemRows(filteredBuckets
+      .flatMap(({ bucket, visibleLoot }) =>
+        visibleLoot
+          .filter((itemName) => flatSearchMatches(itemName, bucket, debouncedQuery))
+          .map((itemName) => ({ itemName, bucket, details: itemDetails[itemName], statDisplay: getItemStatDisplay(itemName) })),
+    )), selectedStat),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [debouncedQuery, filteredBuckets, selectedStat],
+  );
 
-  // ?item=<slug> — auto-open drawer when landing with an item slug in the URL.
-  // Runs once on mount after hydration so it doesn't conflict with SSR.
+  // ── Effects ───────────────────────────────────────────────────────────────
+
+  // ?item=<slug> — auto-open drawer when landing with an item slug in the URL
   useEffect(() => {
     const itemSlug = searchParams.get("item");
     if (!itemSlug) return;
@@ -168,7 +324,7 @@ function Home() {
     }
   }, [isEditingLevel, playerLevel]);
 
-  // ── Handlers ──────────────────────────────────────────────────────────────────
+  // ── Handlers ──────────────────────────────────────────────────────────────
 
   function commitLevelInput() {
     const parsedLevel = Number.parseInt(levelInputValue, 10);
@@ -196,6 +352,26 @@ function Home() {
     setSelectedLoot({ itemName, bucket });
   }
 
+  function resetHome() {
+    setUrlState({ q: "", zone: "", level: 1, exp: [...expansionOptions].map((e) => e.toLowerCase()) });
+    setDebouncedQuery("");
+    setSelectedClass("Any");
+    setSelectedRace("Any");
+    setSelectedSlot("Any");
+    setSelectedStat("Any");
+    setSelectedSlots([]);
+    setLevelInputValue("1");
+    setIsEditingLevel(false);
+    setSelectedLoot(null);
+    setSelectedItemSearch(null);
+    setFocusedMob(null);
+  }
+
+  useEffect(() => {
+    window.addEventListener("frostreaver:reset-home", resetHome);
+    return () => window.removeEventListener("frostreaver:reset-home", resetHome);
+  });
+
   function selectSearchResult(result: UniversalSearchResult) {
     if (result.type === "item") {
       const firstBucket = result.buckets[0];
@@ -222,7 +398,7 @@ function Home() {
     setUrlState({ q: "" });
   }
 
-  // ── Render ────────────────────────────────────────────────────────────────────
+  // ── Render ────────────────────────────────────────────────────────────────
 
   return (
     <main className="page">
@@ -325,6 +501,58 @@ function Home() {
             ))}
           </select>
         </label>
+        <div className="use-filter-group" aria-label="Item usability filters">
+          <label className="class-filter">
+            <span>Class</span>
+            <select onChange={(event) => setSelectedClass(event.target.value as ClassFilter)} value={selectedClass}>
+              {classOptions.map((option) => (
+                <option key={option} value={option}>
+                  {option}
+                </option>
+              ))}
+            </select>
+          </label>
+          <label className="race-filter">
+            <span>Race</span>
+            <select onChange={(event) => setSelectedRace(event.target.value as RaceFilter)} value={selectedRace}>
+              {raceOptions.map((option) => (
+                <option key={option} value={option}>
+                  {option}
+                </option>
+              ))}
+            </select>
+          </label>
+          <label className="slot-filter">
+            <span>Slot</span>
+            <select onChange={(event) => setSelectedSlot(event.target.value)} value={selectedSlot}>
+              {slotOptions.map((option) => (
+                <option key={option} value={option}>
+                  {option}
+                </option>
+              ))}
+            </select>
+          </label>
+          <label className="stat-filter">
+            <span>Stat</span>
+            <select onChange={(event) => setSelectedStat(event.target.value)} value={selectedStat}>
+              <option value="Any">Any</option>
+              {statOptionGroups.map((group) => {
+                const options = group.options.filter((option) => statOptions.includes(option));
+                if (options.length === 0) return null;
+
+                return (
+                  <optgroup key={group.label} label={group.label}>
+                    {options.map((option) => (
+                      <option key={option} value={option}>
+                        {option}
+                      </option>
+                    ))}
+                  </optgroup>
+                );
+              })}
+            </select>
+          </label>
+        </div>
         <label className="level-filter">
           <span>Your level</span>
           <input
@@ -361,7 +589,12 @@ function Home() {
 
       {selectedZoneView ? (
         <ZoneView
+          bucketed={bucketed}
           getItemDetails={getItemDetails}
+          getItemStatDisplay={getItemStatDisplay}
+          itemIsVisible={itemIsVisible}
+          levelVisibleBuckets={levelVisibleBuckets}
+          statFilter={selectedStat}
           onClearZone={() => {
             setUrlState({ zone: "" });
             setFocusedMob(null);
@@ -369,6 +602,7 @@ function Home() {
           onSelectLoot={handleSelectLoot}
           onSelectZone={(zone) => setUrlState({ zone })}
           focusedMob={focusedMob}
+          searchQuery={debouncedQuery}
           zoneView={selectedZoneView}
         />
       ) : selectedItemSearch ? (
@@ -378,12 +612,13 @@ function Home() {
           onOpenItem={handleSelectLoot}
           onSelectZone={(zone) => setUrlState({ zone })}
         />
-      ) : filteredBuckets.length > 0 ? (
+      ) : bucketed && filteredBuckets.length > 0 ? (
         <div className="bucket-grid">
           {filteredBuckets.map(({ bucket, visibleLoot }) => (
             <BucketCard
               bucket={bucket}
               getItemDetails={getItemDetails}
+              getItemStatDisplay={getItemStatDisplay}
               key={`${bucket.expansion}-${bucket.bucket}`}
               onSelectLoot={handleSelectLoot}
               onSelectZone={(zone) => setUrlState({ zone })}
@@ -392,6 +627,11 @@ function Home() {
             />
           ))}
         </div>
+      ) : !bucketed ? (
+        <MatchingItemList
+          rows={flatItemRows}
+          onSelectLoot={(itemName, selectedBucket) => setSelectedLoot({ itemName, bucket: selectedBucket })}
+        />
       ) : (
         <p className="empty">No {expansionLabel} Group Named buckets match the active filters.</p>
       )}

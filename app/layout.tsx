@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { AppNavLinks } from "@/components/AppNavLinks";
+import { BucketDisplayProvider } from "@/components/BucketDisplayProvider";
+import { BucketDisplayToggle } from "@/components/BucketDisplayToggle";
 import { EpicProgressProvider } from "@/components/EpicProgressProvider";
 import { FavoritesProvider } from "@/components/FavoritesProvider";
+import { HomeResetButton } from "@/components/HomeResetButton";
 import { InstallPromptBanner } from "@/components/InstallPromptBanner";
 import { ItemPreviewProvider } from "@/components/ItemPreviewProvider";
 import { ItemPreviewToggle } from "@/components/ItemPreviewToggle";
@@ -60,27 +63,24 @@ export default function RootLayout({
       <body>
         <ServerProvider>
           <FavoritesProvider>
-            <EpicProgressProvider>
-              <ItemPreviewProvider>
-                <nav className="app-nav" aria-label="Primary navigation">
-                  <div className="app-nav-links">
-                    <Link href="/">Group Named</Link>
-                    <Link href="/raids">Raid Bosses</Link>
-                    <Link href="/favorites">Favorites</Link>
-                    <Link href="/factions">Factions</Link>
-                    <Link href="/epics">Epic Quests</Link>
-                    <Link href="/crafting">Crafting</Link>
-                  </div>
-                  <div className="app-nav-controls">
-                    <ServerStatusBadge />
-                    <ServerToggle />
-                    <ItemPreviewToggle />
-                    <ThemeToggle />
-                  </div>
-                </nav>
-                {children}
-              </ItemPreviewProvider>
-            </EpicProgressProvider>
+            <BucketDisplayProvider>
+              <EpicProgressProvider>
+                <ItemPreviewProvider>
+                  <nav className="app-nav" aria-label="Primary navigation">
+                    <AppNavLinks />
+                    <div className="app-nav-controls">
+                      <HomeResetButton />
+                      <ServerStatusBadge />
+                      <ServerToggle />
+                      <BucketDisplayToggle />
+                      <ItemPreviewToggle />
+                      <ThemeToggle />
+                    </div>
+                  </nav>
+                  {children}
+                </ItemPreviewProvider>
+              </EpicProgressProvider>
+            </BucketDisplayProvider>
           </FavoritesProvider>
         </ServerProvider>
         <ServiceWorkerRegistration />
