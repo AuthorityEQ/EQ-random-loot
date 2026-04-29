@@ -14,6 +14,13 @@ import classicData from "@/data/classic-group-named.json";
 import itemDetailsData from "@/data/item-details.json";
 import kunarkData from "@/data/kunark-group-named.json";
 import veliousData from "@/data/velious-group-named.json";
+import {
+  classOptions,
+  itemMatchesUseFilters,
+  raceOptions,
+  type ClassFilter,
+  type RaceFilter,
+} from "@/lib/item-use-filters";
 import { lootModeLabel, lootModes, type LootMode } from "@/lib/lootModes";
 import { filterBuckets, type Bucket, type ItemDetailsMap, type LootDataset } from "@/lib/search";
 import { getUniversalSearchResults, type UniversalSearchResult } from "@/lib/universal-search";
@@ -36,6 +43,8 @@ export default function Home() {
   const [lootMode] = useState<LootMode>("random");
   const [selectedExpansions, setSelectedExpansions] = useState<ExpansionFilter[]>([...expansionOptions]);
   const [selectedZone, setSelectedZone] = useState("");
+  const [selectedClass, setSelectedClass] = useState<ClassFilter>("Any");
+  const [selectedRace, setSelectedRace] = useState<RaceFilter>("Any");
   const [playerLevel, setPlayerLevel] = useState(1);
   const [levelInputValue, setLevelInputValue] = useState("1");
   const [isEditingLevel, setIsEditingLevel] = useState(false);
@@ -71,18 +80,19 @@ export default function Home() {
       .filter(({ zones }) => zones.length > 0);
   }, [expansionBuckets, selectedExpansionSet]);
   const selectedZoneView = useMemo(() => getZoneView(expansionBuckets, selectedZone), [expansionBuckets, selectedZone]);
+  const itemIsVisible = (itemName: string) => itemMatchesUseFilters(itemDetails[itemName], selectedClass, selectedRace);
   const typeaheadResults = useMemo(
-    () => getUniversalSearchResults(expansionBuckets, debouncedQuery),
-    [debouncedQuery, expansionBuckets],
+    () => getUniversalSearchResults(expansionBuckets, debouncedQuery, itemIsVisible),
+    [debouncedQuery, expansionBuckets, selectedClass, selectedRace],
   );
   const getItemDetails = (itemName: string) => itemDetails[itemName];
   const filteredBuckets = useMemo(() => {
     return filterBuckets(expansionBuckets, "")
       .map((bucket) => {
-        return { bucket, visibleLoot: bucket.loot_pool };
+        return { bucket, visibleLoot: bucket.loot_pool.filter(itemIsVisible) };
       })
       .filter(({ visibleLoot }) => visibleLoot.length > 0);
-  }, [expansionBuckets]);
+  }, [expansionBuckets, selectedClass, selectedRace]);
   useEffect(() => {
     const timeout = window.setTimeout(() => {
       setDebouncedQuery(query);
@@ -116,6 +126,26 @@ export default function Home() {
     setPlayerLevel(clampedLevel);
     setLevelInputValue(String(clampedLevel));
   }
+
+  function resetHome() {
+    setQuery("");
+    setDebouncedQuery("");
+    setSelectedExpansions([...expansionOptions]);
+    setSelectedZone("");
+    setSelectedClass("Any");
+    setSelectedRace("Any");
+    setPlayerLevel(1);
+    setLevelInputValue("1");
+    setIsEditingLevel(false);
+    setSelectedLoot(null);
+    setSelectedItemSearch(null);
+    setFocusedMob(null);
+  }
+
+  useEffect(() => {
+    window.addEventListener("frostreaver:reset-home", resetHome);
+    return () => window.removeEventListener("frostreaver:reset-home", resetHome);
+  });
 
   function selectSearchResult(result: UniversalSearchResult) {
     if (result.type === "item") {
@@ -153,7 +183,6 @@ export default function Home() {
           <h1>Frostreaver Random Loot</h1>
           <p className="wip-line">Work in progress — DM AuthorityGames on Discord</p>
         </div>
-
       </header>
 
       <div className="toolbar">
@@ -238,6 +267,26 @@ export default function Home() {
             ))}
           </select>
         </label>
+        <label className="class-filter">
+          <span>Class</span>
+          <select onChange={(event) => setSelectedClass(event.target.value as ClassFilter)} value={selectedClass}>
+            {classOptions.map((option) => (
+              <option key={option} value={option}>
+                {option}
+              </option>
+            ))}
+          </select>
+        </label>
+        <label className="race-filter">
+          <span>Race</span>
+          <select onChange={(event) => setSelectedRace(event.target.value as RaceFilter)} value={selectedRace}>
+            {raceOptions.map((option) => (
+              <option key={option} value={option}>
+                {option}
+              </option>
+            ))}
+          </select>
+        </label>
         <label className="level-filter">
           <span>Your level</span>
           <input
@@ -274,6 +323,7 @@ export default function Home() {
       {selectedZoneView ? (
         <ZoneView
           getItemDetails={getItemDetails}
+          itemIsVisible={itemIsVisible}
           onClearZone={() => {
             setSelectedZone("");
             setFocusedMob(null);

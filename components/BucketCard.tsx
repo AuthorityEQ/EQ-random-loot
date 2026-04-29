@@ -43,7 +43,7 @@ export function BucketCard({ bucket, visibleLoot, query = "", getItemDetails, on
         </div>
         <div>
           <dt>Loot</dt>
-          <dd>{bucket.loot_count ?? bucket.loot_pool.length}</dd>
+          <dd>{visibleLoot.length}</dd>
         </div>
         <div>
           <dt>Zones</dt>

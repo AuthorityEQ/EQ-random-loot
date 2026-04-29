@@ -54,10 +54,10 @@
   --filter-active-border: color-mix(in srgb, var(--accent) 82%, #ffffff);
   --filter-active-text: var(--accent-contrast);
   --filter-active-shadow: 0 0 0 3px var(--focus-ring), 0 5px 14px rgba(45, 106, 79, 0.18);
-  --exp-classic-primary: #4f6f95;
-  --exp-classic-bg: #eef3f9;
-  --exp-classic-border: #9baec7;
-  --exp-classic-text: #29496f;
+  --exp-classic-primary: #9a6b24;
+  --exp-classic-bg: #f7efe0;
+  --exp-classic-border: #c79b56;
+  --exp-classic-text: #68420f;
   --exp-kunark-primary: #2d7b57;
   --exp-kunark-bg: #eaf5ef;
   --exp-kunark-border: #8fbea7;
@@ -128,10 +128,10 @@
   --filter-active-border: #b7efc9;
   --filter-active-text: #06110b;
   --filter-active-shadow: 0 0 0 1px rgba(183, 239, 201, 0.26), 0 0 16px rgba(127, 197, 155, 0.28);
-  --exp-classic-primary: #7fa8d6;
-  --exp-classic-bg: rgba(47, 70, 99, 0.36);
-  --exp-classic-border: #557391;
-  --exp-classic-text: #d6e8ff;
+  --exp-classic-primary: #d1a04f;
+  --exp-classic-bg: rgba(92, 66, 28, 0.42);
+  --exp-classic-border: #a97d3a;
+  --exp-classic-text: #ffe4ad;
   --exp-kunark-primary: #74c89b;
   --exp-kunark-bg: rgba(35, 78, 55, 0.36);
   --exp-kunark-border: #4c8a65;
@@ -275,6 +275,29 @@ select {
   display: grid;
   gap: 10px;
   margin-bottom: 10px;
+}
+
+.home-reset-button {
+  align-items: center;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--accent);
+  cursor: pointer;
+  display: inline-flex;
+  flex: 0 0 auto;
+  font-size: 0.9rem;
+  font-weight: 800;
+  gap: 7px;
+  min-height: 38px;
+  padding: 0 13px;
+}
+
+.home-reset-button:hover,
+.home-reset-button:focus {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  outline: none;
 }
 
 .eyebrow {
@@ -467,6 +490,8 @@ h1 {
 .expansion-filter,
 .loot-mode-filter,
 .zone-filter,
+.class-filter,
+.race-filter,
 .level-filter {
   display: grid;
   gap: 6px;
@@ -485,9 +510,16 @@ h1 {
   min-width: 120px;
 }
 
+.class-filter,
+.race-filter {
+  min-width: 110px;
+}
+
 .expansion-filter span,
 .loot-mode-filter span,
 .zone-filter span,
+.class-filter span,
+.race-filter span,
 .level-filter span {
   color: var(--muted);
   font-size: 0.82rem;
@@ -500,6 +532,8 @@ h1 {
 }
 
 .zone-filter select,
+.class-filter select,
+.race-filter select,
 .level-filter input {
   background: var(--input-bg);
   border: 1px solid var(--line);
@@ -512,6 +546,8 @@ h1 {
 }
 
 .zone-filter select:focus,
+.class-filter select:focus,
+.race-filter select:focus,
 .level-filter input:focus {
   border-color: var(--accent);
   box-shadow: 0 0 0 3px var(--focus-ring);
@@ -560,28 +596,6 @@ h1 {
 
 .zone-summary-line strong {
   color: var(--text);
-}
-
-.zone-best-bucket {
-  align-items: center;
-  background: var(--bucket-amber);
-  border: 1px solid var(--bucket-border-amber);
-  border-radius: 8px;
-  display: inline-flex;
-  gap: 10px;
-  margin-top: 14px;
-  padding: 8px 10px;
-}
-
-.zone-best-bucket span {
-  color: var(--bucket-range-text);
-  font-size: 0.88rem;
-  font-weight: 900;
-}
-
-.zone-best-bucket strong {
-  color: var(--text);
-  font-size: 1rem;
 }
 
 .clear-zone-button {

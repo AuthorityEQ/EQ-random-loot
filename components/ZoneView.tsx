@@ -17,6 +17,7 @@ type ZoneViewProps = {
     expansion: string;
   } | null;
   getItemDetails: (itemName: string) => ItemDetails | undefined;
+  itemIsVisible: (itemName: string) => boolean;
   onClearZone: () => void;
   onSelectLoot: (itemName: string, bucket: Bucket) => void;
   onSelectZone: (zone: string) => void;
@@ -30,6 +31,7 @@ export function ZoneView({
   zoneView,
   focusedMob = null,
   getItemDetails,
+  itemIsVisible,
   onClearZone,
   onSelectLoot,
 }: ZoneViewProps) {
@@ -44,7 +46,6 @@ export function ZoneView({
   const allMobs = zoneView.bucketGroups
     .flatMap(({ mobs, bucket }) => mobs.map((mob) => ({ mob, bucket })))
     .sort((a, b) => a.mob.level - b.mob.level || a.mob.name.localeCompare(b.mob.name));
-  const bestBucket = [...zoneView.bucketGroups].sort((a, b) => b.mobs.length - a.mobs.length || Number(a.bucket.level_range.split("-")[0]) - Number(b.bucket.level_range.split("-")[0]))[0];
 
   useEffect(() => {
     return () => {
@@ -100,12 +101,6 @@ export function ZoneView({
             <strong>{zoneView.totalMobs} named mobs</strong>
             <span>Levels {levelRanges.join(", ")}</span>
           </div>
-          {bestBucket ? (
-            <div className="zone-best-bucket">
-              <span>Best bucket: {bestBucket.bucket.level_range}</span>
-              <strong>{bestBucket.mobs.length} mobs</strong>
-            </div>
-          ) : null}
         </div>
         <button className="clear-zone-button" onClick={onClearZone} type="button">
           Clear zone filter
@@ -147,7 +142,7 @@ export function ZoneView({
         </div>
         <div className="zone-loot-groups">
           {zoneView.bucketGroups.map(({ bucket }) => {
-            const visibleLoot = bucket.loot_pool;
+            const visibleLoot = bucket.loot_pool.filter(itemIsVisible);
             const bucketKey = getBucketKey(bucket);
 
             return (

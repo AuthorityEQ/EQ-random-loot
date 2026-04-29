@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { FavoritesProvider } from "@/components/FavoritesProvider";
+import { HomeResetButton } from "@/components/HomeResetButton";
 import { ItemPreviewProvider } from "@/components/ItemPreviewProvider";
 import { ItemPreviewToggle } from "@/components/ItemPreviewToggle";
 import { ThemeToggle } from "@/components/ThemeToggle";
@@ -45,6 +46,7 @@ export default function RootLayout({
                 <Link href="/favorites">Favorites</Link>
               </div>
               <div className="app-nav-controls">
+                <HomeResetButton />
                 <ItemPreviewToggle />
                 <ThemeToggle />
               </div>
