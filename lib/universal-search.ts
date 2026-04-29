@@ -6,6 +6,7 @@ export type UniversalSearchResult =
     label: string;
     itemName: string;
     buckets: Bucket[];
+    statDisplay?: string | null;
   }
   | {
     type: "mob";
@@ -56,6 +57,7 @@ export function getUniversalSearchResults(
   buckets: Bucket[],
   query: string,
   itemIsVisible: (itemName: string) => boolean = () => true,
+  getItemStatDisplay: (itemName: string) => string | null = () => null,
 ) {
   const normalizedQuery = normalize(query);
   if (normalizedQuery.length < 2) {
@@ -87,6 +89,7 @@ export function getUniversalSearchResults(
         label: itemName,
         itemName,
         buckets: itemBuckets,
+        statDisplay: getItemStatDisplay(itemName),
         rank,
       };
     })

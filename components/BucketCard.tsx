@@ -10,6 +10,7 @@ type BucketCardProps = {
   visibleLoot: string[];
   query?: string;
   getItemDetails: (itemName: string) => ItemDetails | undefined;
+  getItemStatDisplay: (itemName: string) => string | null;
   onSelectLoot: (itemName: string, bucket: Bucket) => void;
   onSelectZone: (zone: string) => void;
 };
@@ -22,7 +23,7 @@ function expansionTone(expansion: string) {
   return `expansion-tone-${expansion.toLowerCase()}`;
 }
 
-export function BucketCard({ bucket, visibleLoot, query = "", getItemDetails, onSelectLoot, onSelectZone }: BucketCardProps) {
+export function BucketCard({ bucket, visibleLoot, query = "", getItemDetails, getItemStatDisplay, onSelectLoot, onSelectZone }: BucketCardProps) {
   const normalizedQuery = query.trim().toLowerCase();
   const { previewProps } = useItemPreview();
 
@@ -101,6 +102,7 @@ export function BucketCard({ bucket, visibleLoot, query = "", getItemDetails, on
               <li key={item}>
                 {(() => {
                   const details = getItemDetails(item);
+                  const statDisplay = getItemStatDisplay(item);
                   return (
                 <button
                   className={includesQuery(item, normalizedQuery) ? "loot-button is-text-match" : "loot-button"}
@@ -110,7 +112,10 @@ export function BucketCard({ bucket, visibleLoot, query = "", getItemDetails, on
                   {...previewProps(item, details)}
                   >
                   <span>{item}</span>
-                  <FavoriteIndicator details={details} itemName={item} />
+                  <span className="loot-item-actions">
+                    {statDisplay ? <span className="loot-stat-value">{statDisplay}</span> : null}
+                    <FavoriteIndicator details={details} itemName={item} />
+                  </span>
                 </button>
                   );
                 })()}

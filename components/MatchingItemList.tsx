@@ -9,6 +9,7 @@ export type MatchingItemRow = {
   itemName: string;
   bucket: Bucket;
   details?: ItemDetails;
+  statDisplay?: string | null;
 };
 
 type MatchingItemListProps = {
@@ -27,14 +28,17 @@ export function MatchingItemList({ rows, onSelectLoot }: MatchingItemListProps) 
       </div>
       {rows.length > 0 ? (
         <ul className="zone-loot-list matching-item-list">
-          {rows.map(({ itemName, bucket, details }) => (
+          {rows.map(({ itemName, bucket, details, statDisplay }) => (
             <li key={itemName}>
               <button className="loot-button" onClick={() => onSelectLoot(itemName, bucket)} type="button" {...previewProps(itemName, details)}>
                 <span className="loot-item-label">
                   <ItemIcon details={details} />
                   <span>{itemName}</span>
                 </span>
-                <FavoriteIndicator details={details} itemName={itemName} />
+                <span className="loot-item-actions">
+                  {statDisplay ? <span className="loot-stat-value">{statDisplay}</span> : null}
+                  <FavoriteIndicator details={details} itemName={itemName} />
+                </span>
               </button>
             </li>
           ))}

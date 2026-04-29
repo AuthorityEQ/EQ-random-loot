@@ -18,11 +18,15 @@ import kunarkData from "@/data/kunark-group-named.json";
 import veliousData from "@/data/velious-group-named.json";
 import {
   classOptions,
+  fallbackStatOptions,
+  formatItemStatValue,
+  getComparableStatValue,
   itemMatchesUseFilters,
   raceOptions,
   type ClassFilter,
   type RaceFilter,
   type SlotFilter,
+  type StatFilter,
 } from "@/lib/item-use-filters";
 import { lootModeLabel, lootModes, type LootMode } from "@/lib/lootModes";
 import { filterBuckets, type Bucket, type ItemDetailsMap, type LootDataset } from "@/lib/search";
@@ -77,6 +81,38 @@ function uniqueSortedItemRows(rows: MatchingItemRow[]) {
   return Array.from(itemMap.values()).sort((a, b) => bucketSortValue(a.bucket) - bucketSortValue(b.bucket) || a.itemName.localeCompare(b.itemName));
 }
 
+function sortItemNamesByStat(itemNames: string[], statFilter: StatFilter) {
+  if (statFilter === "Any") return itemNames;
+
+  return [...itemNames].sort((a, b) => {
+    const aValue = getComparableStatValue(itemDetails[a], statFilter) ?? Number.NEGATIVE_INFINITY;
+    const bValue = getComparableStatValue(itemDetails[b], statFilter) ?? Number.NEGATIVE_INFINITY;
+    return bValue - aValue || a.localeCompare(b);
+  });
+}
+
+function sortItemRowsByStat(rows: MatchingItemRow[], statFilter: StatFilter) {
+  if (statFilter === "Any") return rows;
+
+  return [...rows].sort((a, b) => {
+    const aValue = getComparableStatValue(a.details, statFilter) ?? Number.NEGATIVE_INFINITY;
+    const bValue = getComparableStatValue(b.details, statFilter) ?? Number.NEGATIVE_INFINITY;
+    return bValue - aValue || a.itemName.localeCompare(b.itemName);
+  });
+}
+
+function normalizeSearch(value: string) {
+  return value.trim().toLowerCase();
+}
+
+function flatSearchMatches(itemName: string, bucket: Bucket, searchQuery: string) {
+  const normalizedQuery = normalizeSearch(searchQuery);
+  if (normalizedQuery.length < 2) return true;
+
+  return itemName.toLowerCase().includes(normalizedQuery)
+    || bucket.mobs.some((mob) => mob.name.toLowerCase().includes(normalizedQuery));
+}
+
 export default function Home() {
   const { bucketed } = useBucketDisplay();
   const [query, setQuery] = useState("");
@@ -87,6 +123,7 @@ export default function Home() {
   const [selectedClass, setSelectedClass] = useState<ClassFilter>("Any");
   const [selectedRace, setSelectedRace] = useState<RaceFilter>("Any");
   const [selectedSlot, setSelectedSlot] = useState<SlotFilter>("Any");
+  const [selectedStat, setSelectedStat] = useState<StatFilter>("Any");
   const [playerLevel, setPlayerLevel] = useState(1);
   const [levelInputValue, setLevelInputValue] = useState("1");
   const [isEditingLevel, setIsEditingLevel] = useState(false);
@@ -134,24 +171,52 @@ export default function Home() {
     const derived = Array.from(slots).sort((a, b) => a.localeCompare(b));
     return derived.length > 0 ? ["Any", ...derived] : [...fallbackSlotOptions];
   }, []);
-  const itemIsVisible = (itemName: string) => itemMatchesUseFilters(itemDetails[itemName], selectedClass, selectedRace, selectedSlot);
+  const statOptions = useMemo(() => {
+    const stats = new Set<string>();
+    for (const details of Object.values(itemDetails)) {
+      if (details.ac !== null && details.ac !== undefined && details.ac !== 0) stats.add("AC");
+      if (details.haste) stats.add("Haste");
+      for (const [key, value] of Object.entries(details.stats ?? {})) {
+        if (value !== null && value !== undefined && value !== "" && value !== 0 && value !== "0") {
+          stats.add(key.toUpperCase());
+        }
+      }
+      for (const [key, value] of Object.entries(details.resists ?? {})) {
+        if (value !== null && value !== undefined && value !== "" && value !== 0 && value !== "0") {
+          stats.add(key.toUpperCase());
+        }
+      }
+    }
+
+    for (const option of fallbackStatOptions) {
+      if (option !== "Any") stats.add(option);
+    }
+
+    const derived = Array.from(stats).sort((a, b) => a.localeCompare(b));
+    return ["Any", ...derived];
+  }, []);
+  const itemIsVisible = (itemName: string) => itemMatchesUseFilters(itemDetails[itemName], selectedClass, selectedRace, selectedSlot, selectedStat);
+  const getItemStatDisplay = (itemName: string) => formatItemStatValue(itemDetails[itemName], selectedStat);
   const typeaheadResults = useMemo(
-    () => getUniversalSearchResults(expansionBuckets, debouncedQuery, itemIsVisible),
-    [debouncedQuery, expansionBuckets, selectedClass, selectedRace, selectedSlot],
+    () => getUniversalSearchResults(expansionBuckets, debouncedQuery, itemIsVisible, getItemStatDisplay),
+    [debouncedQuery, expansionBuckets, selectedClass, selectedRace, selectedSlot, selectedStat],
   );
   const getItemDetails = (itemName: string) => itemDetails[itemName];
   const filteredBuckets = useMemo(() => {
     return filterBuckets(expansionBuckets, "")
       .map((bucket) => {
-        return { bucket, visibleLoot: bucket.loot_pool.filter(itemIsVisible) };
+        return { bucket, visibleLoot: sortItemNamesByStat(bucket.loot_pool.filter(itemIsVisible), selectedStat) };
       })
       .filter(({ visibleLoot }) => visibleLoot.length > 0);
-  }, [expansionBuckets, selectedClass, selectedRace, selectedSlot]);
+  }, [expansionBuckets, selectedClass, selectedRace, selectedSlot, selectedStat]);
   const flatItemRows = useMemo(
-    () => uniqueSortedItemRows(filteredBuckets.flatMap(({ bucket, visibleLoot }) =>
-      visibleLoot.map((itemName) => ({ itemName, bucket, details: itemDetails[itemName] })),
-    )),
-    [filteredBuckets],
+    () => sortItemRowsByStat(uniqueSortedItemRows(filteredBuckets
+      .flatMap(({ bucket, visibleLoot }) =>
+        visibleLoot
+          .filter((itemName) => flatSearchMatches(itemName, bucket, debouncedQuery))
+          .map((itemName) => ({ itemName, bucket, details: itemDetails[itemName], statDisplay: getItemStatDisplay(itemName) })),
+    )), selectedStat),
+    [debouncedQuery, filteredBuckets, selectedStat],
   );
   useEffect(() => {
     const timeout = window.setTimeout(() => {
@@ -195,6 +260,7 @@ export default function Home() {
     setSelectedClass("Any");
     setSelectedRace("Any");
     setSelectedSlot("Any");
+    setSelectedStat("Any");
     setPlayerLevel(1);
     setLevelInputValue("1");
     setIsEditingLevel(false);
@@ -359,6 +425,16 @@ export default function Home() {
               ))}
             </select>
           </label>
+          <label className="stat-filter">
+            <span>Stat</span>
+            <select onChange={(event) => setSelectedStat(event.target.value)} value={selectedStat}>
+              {statOptions.map((option) => (
+                <option key={option} value={option}>
+                  {option}
+                </option>
+              ))}
+            </select>
+          </label>
         </div>
         <label className="level-filter">
           <span>Your level</span>
@@ -397,7 +473,9 @@ export default function Home() {
         <ZoneView
           bucketed={bucketed}
           getItemDetails={getItemDetails}
+          getItemStatDisplay={getItemStatDisplay}
           itemIsVisible={itemIsVisible}
+          statFilter={selectedStat}
           onClearZone={() => {
             setSelectedZone("");
             setFocusedMob(null);
@@ -405,6 +483,7 @@ export default function Home() {
           onSelectLoot={(itemName, selectedBucket) => setSelectedLoot({ itemName, bucket: selectedBucket })}
           onSelectZone={setSelectedZone}
           focusedMob={focusedMob}
+          searchQuery={debouncedQuery}
           zoneView={selectedZoneView}
         />
       ) : selectedItemSearch ? (
@@ -420,6 +499,7 @@ export default function Home() {
             <BucketCard
               bucket={bucket}
               getItemDetails={getItemDetails}
+              getItemStatDisplay={getItemStatDisplay}
               key={`${bucket.expansion}-${bucket.bucket}`}
               onSelectLoot={(itemName, selectedBucket) => setSelectedLoot({ itemName, bucket: selectedBucket })}
               onSelectZone={setSelectedZone}

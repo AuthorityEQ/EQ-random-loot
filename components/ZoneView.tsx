@@ -5,6 +5,7 @@ import { FavoriteIndicator } from "@/components/FavoriteIndicator";
 import { ItemIcon } from "@/components/ItemIcon";
 import { useItemPreview } from "@/components/ItemPreviewProvider";
 import type { MatchingItemRow } from "@/components/MatchingItemList";
+import { getComparableStatValue, type StatFilter } from "@/lib/item-use-filters";
 import type { Bucket, ItemDetails } from "@/lib/search";
 import type { ZoneView as ZoneViewData } from "@/lib/zones";
 
@@ -19,10 +20,13 @@ type ZoneViewProps = {
     expansion: string;
   } | null;
   getItemDetails: (itemName: string) => ItemDetails | undefined;
+  getItemStatDisplay: (itemName: string) => string | null;
   itemIsVisible: (itemName: string) => boolean;
+  statFilter: StatFilter;
   onClearZone: () => void;
   onSelectLoot: (itemName: string, bucket: Bucket) => void;
   onSelectZone: (zone: string) => void;
+  searchQuery?: string;
 };
 
 function expansionTone(expansion: string) {
@@ -45,14 +49,49 @@ function uniqueSortedItemRows(rows: MatchingItemRow[]) {
   return Array.from(itemMap.values()).sort((a, b) => bucketSortValue(a.bucket) - bucketSortValue(b.bucket) || a.itemName.localeCompare(b.itemName));
 }
 
+function sortItemRowsByStat(rows: MatchingItemRow[], statFilter: StatFilter) {
+  if (statFilter === "Any") return rows;
+
+  return [...rows].sort((a, b) => {
+    const aValue = getComparableStatValue(a.details, statFilter) ?? Number.NEGATIVE_INFINITY;
+    const bValue = getComparableStatValue(b.details, statFilter) ?? Number.NEGATIVE_INFINITY;
+    return bValue - aValue || a.itemName.localeCompare(b.itemName);
+  });
+}
+
+function sortItemNamesByStat(itemNames: string[], statFilter: StatFilter, getItemDetails: (itemName: string) => ItemDetails | undefined) {
+  if (statFilter === "Any") return itemNames;
+
+  return [...itemNames].sort((a, b) => {
+    const aValue = getComparableStatValue(getItemDetails(a), statFilter) ?? Number.NEGATIVE_INFINITY;
+    const bValue = getComparableStatValue(getItemDetails(b), statFilter) ?? Number.NEGATIVE_INFINITY;
+    return bValue - aValue || a.localeCompare(b);
+  });
+}
+
+function normalizeSearch(value: string) {
+  return value.trim().toLowerCase();
+}
+
+function flatSearchMatches(itemName: string, bucket: Bucket, searchQuery = "") {
+  const normalizedQuery = normalizeSearch(searchQuery);
+  if (normalizedQuery.length < 2) return true;
+
+  return itemName.toLowerCase().includes(normalizedQuery)
+    || bucket.mobs.some((mob) => mob.name.toLowerCase().includes(normalizedQuery));
+}
+
 export function ZoneView({
   zoneView,
   bucketed,
   focusedMob = null,
   getItemDetails,
+  getItemStatDisplay,
   itemIsVisible,
+  statFilter,
   onClearZone,
   onSelectLoot,
+  searchQuery = "",
 }: ZoneViewProps) {
   const [highlightedBucketKey, setHighlightedBucketKey] = useState<string | null>(null);
   const [openLootKeys, setOpenLootKeys] = useState<Set<string>>(new Set());
@@ -65,11 +104,12 @@ export function ZoneView({
   const allMobs = zoneView.bucketGroups
     .flatMap(({ mobs, bucket }) => mobs.map((mob) => ({ mob, bucket })))
     .sort((a, b) => a.mob.level - b.mob.level || a.mob.name.localeCompare(b.mob.name));
-  const flatItemRows = uniqueSortedItemRows(zoneView.bucketGroups.flatMap(({ bucket }) =>
+  const flatItemRows = sortItemRowsByStat(uniqueSortedItemRows(zoneView.bucketGroups.flatMap(({ bucket }) =>
     bucket.loot_pool
       .filter(itemIsVisible)
-      .map((itemName) => ({ itemName, bucket, details: getItemDetails(itemName) })),
-  ));
+      .filter((itemName) => flatSearchMatches(itemName, bucket, searchQuery))
+      .map((itemName) => ({ itemName, bucket, details: getItemDetails(itemName), statDisplay: getItemStatDisplay(itemName) })),
+  )), statFilter);
 
   useEffect(() => {
     return () => {
@@ -169,7 +209,7 @@ export function ZoneView({
         {bucketed ? (
           <div className="zone-loot-groups">
             {zoneView.bucketGroups.map(({ bucket }) => {
-              const visibleLoot = bucket.loot_pool.filter(itemIsVisible);
+              const visibleLoot = sortItemNamesByStat(bucket.loot_pool.filter(itemIsVisible), statFilter, getItemDetails);
               const bucketKey = getBucketKey(bucket);
 
               return (
@@ -202,6 +242,7 @@ export function ZoneView({
                     <ul className="zone-loot-list">
                       {visibleLoot.map((item) => {
                         const details = getItemDetails(item);
+                        const statDisplay = getItemStatDisplay(item);
                         return (
                           <li key={item}>
                             <button className="loot-button" onClick={() => onSelectLoot(item, bucket)} type="button" {...previewProps(item, details)}>
@@ -209,7 +250,10 @@ export function ZoneView({
                                 <ItemIcon details={details} />
                                 <span>{item}</span>
                               </span>
-                              <FavoriteIndicator details={details} itemName={item} />
+                              <span className="loot-item-actions">
+                                {statDisplay ? <span className="loot-stat-value">{statDisplay}</span> : null}
+                                <FavoriteIndicator details={details} itemName={item} />
+                              </span>
                             </button>
                           </li>
                         );
@@ -224,14 +268,17 @@ export function ZoneView({
           </div>
         ) : flatItemRows.length > 0 ? (
           <ul className="zone-loot-list matching-item-list">
-            {flatItemRows.map(({ itemName, bucket, details }) => (
+            {flatItemRows.map(({ itemName, bucket, details, statDisplay }) => (
               <li key={itemName}>
                 <button className="loot-button" onClick={() => onSelectLoot(itemName, bucket)} type="button" {...previewProps(itemName, details)}>
                   <span className="loot-item-label">
                     <ItemIcon details={details} />
                     <span>{itemName}</span>
                   </span>
-                  <FavoriteIndicator details={details} itemName={itemName} />
+                  <span className="loot-item-actions">
+                    {statDisplay ? <span className="loot-stat-value">{statDisplay}</span> : null}
+                    <FavoriteIndicator details={details} itemName={itemName} />
+                  </span>
                 </button>
               </li>
             ))}

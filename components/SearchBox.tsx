@@ -118,7 +118,7 @@ export function SearchBox({ results, value, onChange, onSelectResult }: SearchBo
                             type="button"
                           >
                             <strong>{result.label}</strong>
-                            {result.type === "item" ? <span>{result.buckets.map((bucket) => bucket.expansion).filter((expansion, index, list) => list.indexOf(expansion) === index).join(", ")}</span> : null}
+                            {result.type === "item" ? <span>{[result.buckets.map((bucket) => bucket.expansion).filter((expansion, index, list) => list.indexOf(expansion) === index).join(", "), result.statDisplay].filter(Boolean).join(" - ")}</span> : null}
                             {result.type === "mob" ? <span>{result.mob.zone} - Level {result.mob.level}</span> : null}
                           </button>
                         </li>

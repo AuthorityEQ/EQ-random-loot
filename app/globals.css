@@ -506,7 +506,8 @@ h1 {
 
 .class-filter,
 .race-filter,
-.slot-filter {
+.slot-filter,
+.stat-filter {
   display: grid;
   gap: 6px;
   min-width: 96px;
@@ -533,12 +534,17 @@ h1 {
   min-width: 132px;
 }
 
+.stat-filter {
+  min-width: 118px;
+}
+
 .expansion-filter span,
 .loot-mode-filter span,
 .zone-filter span,
 .class-filter span,
 .race-filter span,
 .slot-filter span,
+.stat-filter span,
 .level-filter span {
   color: var(--muted);
   font-size: 0.82rem;
@@ -554,6 +560,7 @@ h1 {
 .class-filter select,
 .race-filter select,
 .slot-filter select,
+.stat-filter select,
 .level-filter input {
   background: var(--input-bg);
   border: 1px solid var(--line);
@@ -569,6 +576,7 @@ h1 {
 .class-filter select:focus,
 .race-filter select:focus,
 .slot-filter select:focus,
+.stat-filter select:focus,
 .level-filter input:focus {
   border-color: var(--accent);
   box-shadow: 0 0 0 3px var(--focus-ring);
