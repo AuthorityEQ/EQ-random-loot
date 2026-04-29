@@ -40,6 +40,7 @@ export const raceOptions = [
 
 export type ClassFilter = (typeof classOptions)[number];
 export type RaceFilter = (typeof raceOptions)[number];
+export type SlotFilter = "Any" | string;
 
 function tokenizeRestrictions(values?: string[] | string | null) {
   const list = Array.isArray(values) ? values : values ? [values] : [];
@@ -68,6 +69,24 @@ function allowsSelected(values: string[] | string | null | undefined, selected: 
   return tokens.includes(selected);
 }
 
-export function itemMatchesUseFilters(details: ItemDetails | undefined, classFilter: ClassFilter, raceFilter: RaceFilter) {
-  return allowsSelected(details?.classes, classFilter) && allowsSelected(details?.races, raceFilter);
+function matchesSlot(details: ItemDetails | undefined, slotFilter: SlotFilter) {
+  if (slotFilter === "Any") return true;
+  if (!details?.slot) return false;
+
+  return details.slot
+    .toUpperCase()
+    .split(/[,\s/]+/)
+    .filter(Boolean)
+    .includes(slotFilter);
+}
+
+export function itemMatchesUseFilters(
+  details: ItemDetails | undefined,
+  classFilter: ClassFilter,
+  raceFilter: RaceFilter,
+  slotFilter: SlotFilter = "Any",
+) {
+  return allowsSelected(details?.classes, classFilter)
+    && allowsSelected(details?.races, raceFilter)
+    && matchesSlot(details, slotFilter);
 }

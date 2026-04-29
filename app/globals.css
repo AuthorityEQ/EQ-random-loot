@@ -490,12 +490,26 @@ h1 {
 .expansion-filter,
 .loot-mode-filter,
 .zone-filter,
-.class-filter,
-.race-filter,
 .level-filter {
   display: grid;
   gap: 6px;
   min-width: min(300px, 100%);
+}
+
+.use-filter-group {
+  align-items: flex-end;
+  display: flex;
+  flex: 0 1 auto;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.class-filter,
+.race-filter,
+.slot-filter {
+  display: grid;
+  gap: 6px;
+  min-width: 96px;
 }
 
 .expansion-filter {
@@ -515,11 +529,16 @@ h1 {
   min-width: 110px;
 }
 
+.slot-filter {
+  min-width: 132px;
+}
+
 .expansion-filter span,
 .loot-mode-filter span,
 .zone-filter span,
 .class-filter span,
 .race-filter span,
+.slot-filter span,
 .level-filter span {
   color: var(--muted);
   font-size: 0.82rem;
@@ -534,6 +553,7 @@ h1 {
 .zone-filter select,
 .class-filter select,
 .race-filter select,
+.slot-filter select,
 .level-filter input {
   background: var(--input-bg);
   border: 1px solid var(--line);
@@ -548,6 +568,7 @@ h1 {
 .zone-filter select:focus,
 .class-filter select:focus,
 .race-filter select:focus,
+.slot-filter select:focus,
 .level-filter input:focus {
   border-color: var(--accent);
   box-shadow: 0 0 0 3px var(--focus-ring);

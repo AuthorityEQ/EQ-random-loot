@@ -20,6 +20,7 @@ import {
   raceOptions,
   type ClassFilter,
   type RaceFilter,
+  type SlotFilter,
 } from "@/lib/item-use-filters";
 import { lootModeLabel, lootModes, type LootMode } from "@/lib/lootModes";
 import { filterBuckets, type Bucket, type ItemDetailsMap, type LootDataset } from "@/lib/search";
@@ -31,6 +32,27 @@ const buckets = datasets.flatMap((dataset) => dataset.buckets);
 const contentType = "Group Named";
 const itemDetails = itemDetailsData as ItemDetailsMap;
 const expansionOptions = ["Classic", "Kunark", "Velious"] as const;
+const fallbackSlotOptions = [
+  "Any",
+  "PRIMARY",
+  "SECONDARY",
+  "RANGE",
+  "AMMO",
+  "HEAD",
+  "FACE",
+  "EAR",
+  "NECK",
+  "SHOULDERS",
+  "ARMS",
+  "BACK",
+  "WRIST",
+  "HANDS",
+  "FINGER",
+  "CHEST",
+  "LEGS",
+  "FEET",
+  "WAIST",
+] as const;
 type ExpansionFilter = (typeof expansionOptions)[number];
 
 function expansionTone(expansion: string) {
@@ -45,6 +67,7 @@ export default function Home() {
   const [selectedZone, setSelectedZone] = useState("");
   const [selectedClass, setSelectedClass] = useState<ClassFilter>("Any");
   const [selectedRace, setSelectedRace] = useState<RaceFilter>("Any");
+  const [selectedSlot, setSelectedSlot] = useState<SlotFilter>("Any");
   const [playerLevel, setPlayerLevel] = useState(1);
   const [levelInputValue, setLevelInputValue] = useState("1");
   const [isEditingLevel, setIsEditingLevel] = useState(false);
@@ -80,10 +103,22 @@ export default function Home() {
       .filter(({ zones }) => zones.length > 0);
   }, [expansionBuckets, selectedExpansionSet]);
   const selectedZoneView = useMemo(() => getZoneView(expansionBuckets, selectedZone), [expansionBuckets, selectedZone]);
-  const itemIsVisible = (itemName: string) => itemMatchesUseFilters(itemDetails[itemName], selectedClass, selectedRace);
+  const slotOptions = useMemo(() => {
+    const slots = new Set<string>();
+    for (const details of Object.values(itemDetails)) {
+      if (!details.slot) continue;
+      for (const slot of details.slot.toUpperCase().split(/[,\s/]+/)) {
+        if (slot) slots.add(slot);
+      }
+    }
+
+    const derived = Array.from(slots).sort((a, b) => a.localeCompare(b));
+    return derived.length > 0 ? ["Any", ...derived] : [...fallbackSlotOptions];
+  }, []);
+  const itemIsVisible = (itemName: string) => itemMatchesUseFilters(itemDetails[itemName], selectedClass, selectedRace, selectedSlot);
   const typeaheadResults = useMemo(
     () => getUniversalSearchResults(expansionBuckets, debouncedQuery, itemIsVisible),
-    [debouncedQuery, expansionBuckets, selectedClass, selectedRace],
+    [debouncedQuery, expansionBuckets, selectedClass, selectedRace, selectedSlot],
   );
   const getItemDetails = (itemName: string) => itemDetails[itemName];
   const filteredBuckets = useMemo(() => {
@@ -92,7 +127,7 @@ export default function Home() {
         return { bucket, visibleLoot: bucket.loot_pool.filter(itemIsVisible) };
       })
       .filter(({ visibleLoot }) => visibleLoot.length > 0);
-  }, [expansionBuckets, selectedClass, selectedRace]);
+  }, [expansionBuckets, selectedClass, selectedRace, selectedSlot]);
   useEffect(() => {
     const timeout = window.setTimeout(() => {
       setDebouncedQuery(query);
@@ -134,6 +169,7 @@ export default function Home() {
     setSelectedZone("");
     setSelectedClass("Any");
     setSelectedRace("Any");
+    setSelectedSlot("Any");
     setPlayerLevel(1);
     setLevelInputValue("1");
     setIsEditingLevel(false);
@@ -267,26 +303,38 @@ export default function Home() {
             ))}
           </select>
         </label>
-        <label className="class-filter">
-          <span>Class</span>
-          <select onChange={(event) => setSelectedClass(event.target.value as ClassFilter)} value={selectedClass}>
-            {classOptions.map((option) => (
-              <option key={option} value={option}>
-                {option}
-              </option>
-            ))}
-          </select>
-        </label>
-        <label className="race-filter">
-          <span>Race</span>
-          <select onChange={(event) => setSelectedRace(event.target.value as RaceFilter)} value={selectedRace}>
-            {raceOptions.map((option) => (
-              <option key={option} value={option}>
-                {option}
-              </option>
-            ))}
-          </select>
-        </label>
+        <div className="use-filter-group" aria-label="Item usability filters">
+          <label className="class-filter">
+            <span>Class</span>
+            <select onChange={(event) => setSelectedClass(event.target.value as ClassFilter)} value={selectedClass}>
+              {classOptions.map((option) => (
+                <option key={option} value={option}>
+                  {option}
+                </option>
+              ))}
+            </select>
+          </label>
+          <label className="race-filter">
+            <span>Race</span>
+            <select onChange={(event) => setSelectedRace(event.target.value as RaceFilter)} value={selectedRace}>
+              {raceOptions.map((option) => (
+                <option key={option} value={option}>
+                  {option}
+                </option>
+              ))}
+            </select>
+          </label>
+          <label className="slot-filter">
+            <span>Slot</span>
+            <select onChange={(event) => setSelectedSlot(event.target.value)} value={selectedSlot}>
+              {slotOptions.map((option) => (
+                <option key={option} value={option}>
+                  {option}
+                </option>
+              ))}
+            </select>
+          </label>
+        </div>
         <label className="level-filter">
           <span>Your level</span>
           <input
