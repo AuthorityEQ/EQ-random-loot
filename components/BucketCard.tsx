@@ -3,6 +3,7 @@
 import type { Bucket } from "@/lib/search";
 import type { ItemDetails } from "@/lib/search";
 import { FavoriteIndicator } from "@/components/FavoriteIndicator";
+import { ItemIcon } from "@/components/ItemIcon";
 import { useItemPreview } from "@/components/ItemPreviewProvider";
 
 type BucketCardProps = {
@@ -111,7 +112,10 @@ export function BucketCard({ bucket, visibleLoot, query = "", getItemDetails, ge
                   type="button"
                   {...previewProps(item, details)}
                   >
-                  <span>{item}</span>
+                  <span className="loot-item-label">
+                    <ItemIcon details={details} />
+                    <span>{item}</span>
+                  </span>
                   <span className="loot-item-actions">
                     {statDisplay ? <span className="loot-stat-value">{statDisplay}</span> : null}
                     <FavoriteIndicator details={details} itemName={item} />
