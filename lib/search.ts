@@ -45,6 +45,7 @@ export type ItemDetails = {
   mana_regen?: number | null;
   endurance_regen?: number | null;
   haste: string | null;
+  charges?: number | string | null;
   worn_effects: string[];
   focus_effects: string[];
   click_effects: string[];

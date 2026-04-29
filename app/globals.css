@@ -508,7 +508,8 @@ h1 {
 .expansion-filter,
 .loot-mode-filter,
 .zone-filter,
-.level-filter {
+.level-filter,
+.bulk-spell-add {
   display: grid;
   gap: 6px;
   min-width: min(300px, 100%);
@@ -543,6 +544,10 @@ h1 {
   min-width: 120px;
 }
 
+.bulk-spell-add {
+  min-width: min(360px, 100%);
+}
+
 .class-filter,
 .race-filter {
   min-width: 110px;
@@ -563,7 +568,8 @@ h1 {
 .race-filter span,
 .slot-filter span,
 .stat-filter span,
-.level-filter span {
+.level-filter span,
+.bulk-spell-add > span {
   color: var(--muted);
   font-size: 0.82rem;
   font-weight: 700;
@@ -579,7 +585,8 @@ h1 {
 .race-filter select,
 .slot-filter select,
 .stat-filter select,
-.level-filter input {
+.level-filter input,
+.bulk-spell-add input {
   background: var(--input-bg);
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -595,7 +602,8 @@ h1 {
 .race-filter select:focus,
 .slot-filter select:focus,
 .stat-filter select:focus,
-.level-filter input:focus {
+.level-filter input:focus,
+.bulk-spell-add input:focus {
   border-color: var(--accent);
   box-shadow: 0 0 0 3px var(--focus-ring);
 }
@@ -1150,6 +1158,34 @@ h1 {
   justify-content: center;
   min-width: 22px;
   padding: 2px 7px;
+}
+
+.bulk-spell-add-controls {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.bulk-spell-add input {
+  min-height: 38px;
+  padding: 0 10px;
+  width: 72px;
+}
+
+.bulk-spell-add .spell-list-button {
+  min-height: 38px;
+}
+
+.bulk-spell-message {
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.bulk-spell-message.is-error {
+  color: #d95e4d;
 }
 
 .spell-list {

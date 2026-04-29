@@ -31,6 +31,7 @@ type ItemDetails = {
   mana_regen?: number | null;
   endurance_regen?: number | null;
   haste: string | null;
+  charges?: number | string | null;
   worn_effects: string[];
   focus_effects: string[];
   click_effects: string[];
@@ -231,6 +232,13 @@ function readString(pattern: RegExp, text: string) {
   return match ? match[1].replace(/\s+/g, " ").trim() : null;
 }
 
+function readCharges(text: string) {
+  const value = readString(/\bCharges:\s*([^\n]+)/i, text);
+  if (!value) return null;
+  const trimmed = value.replace(/\s+/g, " ").trim();
+  return /^\d+$/.test(trimmed) ? Number(trimmed) : trimmed;
+}
+
 function readList(pattern: RegExp, text: string) {
   const value = readString(pattern, text);
   if (!value) return [];
@@ -397,6 +405,7 @@ function parseItemPage(
     mana_regen: readRegen("Mana", text),
     endurance_regen: readRegen("Endurance", text),
     haste,
+    charges: readCharges(text),
     worn_effects: readEffects("Worn", text),
     focus_effects: readEffects("Focus", text),
     click_effects: readEffects("Effect", text).filter((effect) => /click|casting time|must equip|can equip/i.test(effect)),
@@ -453,6 +462,7 @@ function notFoundItem(itemName: string, notes: string[]): ItemDetails {
     mana_regen: null,
     endurance_regen: null,
     haste: null,
+    charges: null,
     worn_effects: [],
     focus_effects: [],
     click_effects: [],

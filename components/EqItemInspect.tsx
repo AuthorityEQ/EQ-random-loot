@@ -95,10 +95,53 @@ function normalizeEffect(effect: string, combat = false) {
   const kind = combat ? "Combat" : cleaned.match(/\(([^)]+)\)/)?.[1]?.replace(/,\s*Casting Time:.*/i, "").trim();
 
   return {
-    display: `${baseName}${kind ? ` (${kind})` : ""}`,
+    display: cleanRepeatedEffectText(`${baseName}${kind ? ` (${kind})` : ""}`),
     name: baseName,
     requiredLevel: levelMatch?.[1],
   };
+}
+
+function cleanRepeatedEffectText(value: string) {
+  let cleaned = value.replace(/\s+/g, " ").trim();
+  cleaned = cleaned.replace(/\(([^)]*)\)\s*\(\1\)/gi, "($1)");
+  cleaned = cleaned.replace(/\b(Any Slot|Can Equip|Combat|Worn|Focus|Click)\b(?:\s*,\s*\1\b)+/gi, "$1");
+  return cleaned;
+}
+
+function effectKey(label: string, effect: string, combat = false) {
+  const normalized = normalizeEffect(effect, combat);
+  return `${label.toLowerCase()}\u0000${normalized.display.toLowerCase().replace(/\s+/g, " ").trim()}`;
+}
+
+function uniqueEffects(label: string, effects: string[], combat = false) {
+  const seen = new Set<string>();
+  return effects.filter((effect) => {
+    const key = effectKey(label, effect, combat);
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
+function collectEffectSections(details: ItemDetails) {
+  const seen = new Set<string>();
+  const sections = [
+    { label: "Worn Effect", effects: details.worn_effects, combat: false },
+    { label: "Focus Effect", effects: details.focus_effects, combat: false },
+    { label: "Effect", effects: details.click_effects, combat: false },
+    { label: "Effect", effects: details.proc_effects, combat: true },
+  ];
+
+  return sections.map((section) => ({
+    ...section,
+    effects: section.effects.filter((effect) => {
+      const normalized = normalizeEffect(effect, section.combat);
+      const key = normalized.display.toLowerCase().replace(/\s+/g, " ").trim();
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    }),
+  }));
 }
 
 function EffectLine({ label, effects, combat = false }: { label: string; effects: string[]; combat?: boolean }) {
@@ -106,7 +149,7 @@ function EffectLine({ label, effects, combat = false }: { label: string; effects
 
   return (
     <>
-      {effects.map((effect) => {
+      {uniqueEffects(label, effects, combat).map((effect) => {
         const normalized = normalizeEffect(effect, combat);
 
         return (
@@ -115,7 +158,6 @@ function EffectLine({ label, effects, combat = false }: { label: string; effects
               <span>{label}: </span>
               <strong>{normalized.display}</strong>
             </p>
-            <p className="eq-effect-name">{normalized.name}</p>
             {normalized.requiredLevel ? <p>Required Level: {normalized.requiredLevel}</p> : null}
           </div>
         );
@@ -243,6 +285,7 @@ export function EqItemInspect({ itemName, details, compact = false }: EqItemInsp
     || details.focus_effects.length > 0
     || details.click_effects.length > 0
     || details.proc_effects.length > 0;
+  const effectSections = collectEffectSections(details);
   const itemNameClass = details.no_drop ? "eq-item-name is-nodrop" : details.magic ? "eq-item-name is-magic" : "eq-item-name";
   const iconUrl = optional.iconPath ?? optional.icon_url ?? optional.icon;
   const inspectClass = [
@@ -282,10 +325,15 @@ export function EqItemInspect({ itemName, details, compact = false }: EqItemInsp
 
         {hasEffects ? (
           <div className="eq-effects-block">
-            <EffectLine label="Worn Effect" effects={details.worn_effects} />
-            <EffectLine label="Focus Effect" effects={details.focus_effects} />
-            <EffectLine label="Effect" effects={details.click_effects} />
-            <EffectLine combat label="Effect" effects={details.proc_effects} />
+            {effectSections.map((section) => (
+              <EffectLine combat={section.combat} effects={section.effects} key={`${section.label}-${section.combat}`} label={section.label} />
+            ))}
+            {hasValue(details.charges) ? (
+              <p className="eq-effect-line">
+                <span>Charges: </span>
+                <strong>{formatValue(details.charges as number | string)}</strong>
+              </p>
+            ) : null}
           </div>
         ) : null}
       </div>
