@@ -15,12 +15,9 @@ import itemDetailsData from "@/data/item-details.json";
 import kunarkData from "@/data/kunark-group-named.json";
 import veliousData from "@/data/velious-group-named.json";
 import {
-  countStatuses,
   matchesStatusFilter,
-  statusMeta,
   type ItemFilter,
 } from "@/lib/item-status";
-import { findItemSearchMatch } from "@/lib/item-navigation";
 import { lootModeLabel, lootModes, type LootMode } from "@/lib/lootModes";
 import { filterBuckets, type Bucket, type ItemDetailsMap, type LootDataset } from "@/lib/search";
 import { getUniversalSearchResults, type UniversalSearchResult } from "@/lib/universal-search";
@@ -42,13 +39,14 @@ export default function Home() {
   const [debouncedQuery, setDebouncedQuery] = useState("");
   const [lootMode] = useState<LootMode>("random");
   const [selectedExpansions, setSelectedExpansions] = useState<ExpansionFilter[]>([...expansionOptions]);
-  const [activeFilter, setActiveFilter] = useState<ItemFilter>("all");
-  const [reviewMode, setReviewMode] = useState(false);
+  const activeFilter: ItemFilter = "all";
+  const reviewMode = false;
   const [selectedZone, setSelectedZone] = useState("");
   const [playerLevel, setPlayerLevel] = useState(1);
   const [levelInputValue, setLevelInputValue] = useState("1");
   const [isEditingLevel, setIsEditingLevel] = useState(false);
   const [selectedLoot, setSelectedLoot] = useState<{ itemName: string; bucket: Bucket } | null>(null);
+  const [selectedItemSearch, setSelectedItemSearch] = useState<{ itemName: string; buckets: Bucket[] } | null>(null);
   const [focusedMob, setFocusedMob] = useState<{ name: string; level: number; zone: string; bucket: number; expansion: string } | null>(null);
   const selectedExpansionSet = useMemo(() => new Set(selectedExpansions), [selectedExpansions]);
   const expansionBuckets = useMemo(
@@ -65,49 +63,23 @@ export default function Home() {
   const modeLabel = lootModeLabel(lootMode);
   const allZones = useMemo(() => getAllZones(expansionBuckets), [expansionBuckets]);
   const selectedZoneView = useMemo(() => getZoneView(expansionBuckets, selectedZone), [expansionBuckets, selectedZone]);
-  const itemSearchMatch = useMemo(() => findItemSearchMatch(expansionBuckets, query), [expansionBuckets, query]);
   const typeaheadResults = useMemo(
     () => getUniversalSearchResults(expansionBuckets, debouncedQuery),
     [debouncedQuery, expansionBuckets],
   );
   const getItemDetails = (itemName: string) => itemDetails[itemName];
   const filteredBuckets = useMemo(() => {
-    const searchedBuckets = filterBuckets(expansionBuckets, query);
-    const normalizedQuery = query.trim().toLowerCase();
-
-    return searchedBuckets
+    return filterBuckets(expansionBuckets, "")
       .map((bucket) => {
-        const contextMatch = normalizedQuery.length > 0 && (
-          bucket.zones.some((zone) => zone.toLowerCase().includes(normalizedQuery))
-          || bucket.mobs.some((mob) => mob.name.toLowerCase().includes(normalizedQuery) || mob.zone.toLowerCase().includes(normalizedQuery))
-        );
         const visibleLoot = bucket.loot_pool.filter((item) => {
           const details = itemDetails[item];
-          const itemMatch = normalizedQuery.length === 0 || item.toLowerCase().includes(normalizedQuery) || contextMatch;
-          return itemMatch && matchesStatusFilter(details, activeFilter, reviewMode);
+          return matchesStatusFilter(details, activeFilter, reviewMode);
         });
 
         return { bucket, visibleLoot };
       })
       .filter(({ visibleLoot }) => visibleLoot.length > 0);
-  }, [activeFilter, expansionBuckets, query, reviewMode]);
-  const globalHealth = useMemo(
-    () => countStatuses(expansionBuckets.flatMap((bucket) => bucket.loot_pool), getItemDetails),
-    [expansionBuckets],
-  );
-  const totals = useMemo(
-    () =>
-      expansionBuckets.reduce(
-        (acc, bucket) => ({
-          mobs: acc.mobs + (bucket.mob_count ?? bucket.mobs.length),
-          loot: acc.loot + (bucket.loot_count ?? bucket.loot_pool.length),
-          zones: acc.zones + (bucket.zone_count ?? bucket.zones.length),
-        }),
-        { mobs: 0, loot: 0, zones: 0 },
-      ),
-    [expansionBuckets],
-  );
-
+  }, [activeFilter, expansionBuckets, reviewMode]);
   useEffect(() => {
     const timeout = window.setTimeout(() => {
       setDebouncedQuery(query);
@@ -115,18 +87,6 @@ export default function Home() {
 
     return () => window.clearTimeout(timeout);
   }, [query]);
-
-  useEffect(() => {
-    if (!itemSearchMatch || selectedZoneView) return;
-    const firstBucket = itemSearchMatch.buckets[0];
-    if (!firstBucket) return;
-    setSelectedLoot((current) => {
-      if (current?.itemName === itemSearchMatch.itemName && current.bucket.bucket === firstBucket.bucket) {
-        return current;
-      }
-      return { itemName: itemSearchMatch.itemName, bucket: firstBucket };
-    });
-  }, [itemSearchMatch, selectedZoneView]);
 
   useEffect(() => {
     if (playerLevel <= maxSupportedLevel) return;
@@ -157,6 +117,7 @@ export default function Home() {
   function selectSearchResult(result: UniversalSearchResult) {
     if (result.type === "zone") {
       setSelectedZone(result.zone);
+      setSelectedItemSearch(null);
       setFocusedMob(null);
       setSelectedLoot(null);
       setQuery("");
@@ -167,6 +128,7 @@ export default function Home() {
       const firstBucket = result.buckets[0];
       setSelectedZone("");
       setFocusedMob(null);
+      setSelectedItemSearch({ itemName: result.itemName, buckets: result.buckets });
       setQuery(result.itemName);
       if (firstBucket) {
         setSelectedLoot({ itemName: result.itemName, bucket: firstBucket });
@@ -175,6 +137,7 @@ export default function Home() {
     }
 
     setSelectedZone(result.mob.zone);
+    setSelectedItemSearch(null);
     setFocusedMob({
       name: result.mob.name,
       level: result.mob.level,
@@ -200,38 +163,18 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="summary" aria-label="Dataset summary">
-          <div className="summary-item">
-            <span className="summary-value">{expansionBuckets.length}</span>
-            <span className="summary-label">Buckets</span>
-          </div>
-          <div className="summary-item">
-            <span className="summary-value">{totals.mobs}</span>
-            <span className="summary-label">Named mobs</span>
-          </div>
-          <div className="summary-item">
-            <span className="summary-value">{totals.loot}</span>
-            <span className="summary-label">Loot entries</span>
-          </div>
-        </div>
-        <div className="review-summary" aria-label="Item enrichment summary">
-          <span className="status-badge status-clean" title={statusMeta.clean.tooltip}>
-            {globalHealth.clean} Clean
-          </span>
-          <span className="status-badge status-review" title={statusMeta.review.tooltip}>
-            {globalHealth.review} Review
-          </span>
-          <span className="status-badge status-missing" title={statusMeta.missing.tooltip}>
-            {globalHealth.missing} Missing
-          </span>
-          <span className="status-badge status-duplicate" title={statusMeta.duplicate.tooltip}>
-            {globalHealth.duplicate} Duplicate
-          </span>
-        </div>
       </header>
 
       <div className="toolbar">
-        <SearchBox results={typeaheadResults} value={query} onChange={setQuery} onSelectResult={selectSearchResult} />
+        <SearchBox
+          results={typeaheadResults}
+          value={query}
+          onChange={(value) => {
+            setQuery(value);
+            setSelectedItemSearch(null);
+          }}
+          onSelectResult={selectSearchResult}
+        />
         <div className="loot-mode-filter" aria-label="Loot mode">
           <span>Loot mode</span>
           <div className="expansion-toggle-group">
@@ -272,6 +215,7 @@ export default function Home() {
                   });
                   setSelectedZone("");
                   setSelectedLoot(null);
+                  setSelectedItemSearch(null);
                 }}
                 type="button"
               >
@@ -284,7 +228,11 @@ export default function Home() {
           <span>Zone filter</span>
           <input
             list="zone-options"
-            onChange={(event) => setSelectedZone(event.target.value)}
+            onChange={(event) => {
+              setSelectedZone(event.target.value);
+              setSelectedItemSearch(null);
+              setFocusedMob(null);
+            }}
             placeholder="Select or type a zone"
             value={selectedZone}
           />
@@ -321,44 +269,9 @@ export default function Home() {
             value={levelInputValue}
           />
         </label>
-        <div className="review-controls" aria-label="Review filters">
-          {[
-            ["all", "All"],
-            ["clean", "Clean"],
-            ["review", "Needs Review"],
-            ["missing", "Missing Stats"],
-            ["duplicate", "Duplicate Risk"],
-          ].map(([value, label]) => (
-            <button
-              aria-pressed={activeFilter === value}
-              className={activeFilter === value ? "filter-button is-active" : "filter-button"}
-              key={value}
-              onClick={() => setActiveFilter(value as ItemFilter)}
-              title={value === "all" ? "Show every item status" : statusMeta[value as Exclude<ItemFilter, "all">].tooltip}
-              type="button"
-            >
-              {label}
-            </button>
-          ))}
-          <label className="review-toggle" title="Show only items that are not clean">
-            <input
-              checked={reviewMode}
-              onChange={(event) => setReviewMode(event.target.checked)}
-              type="checkbox"
-            />
-            Review mode
-          </label>
-        </div>
       </div>
-      <span className="result-count">
-        {selectedZoneView
-          ? `Zone filter active: ${selectedZoneView.zone}`
-          : itemSearchMatch
-            ? `Item search active: ${itemSearchMatch.itemName}`
-          : `Showing ${filteredBuckets.length} of ${expansionBuckets.length} ${expansionLabel} buckets`}
-      </span>
 
-      {!itemSearchMatch && !selectedZoneView ? (
+      {!selectedItemSearch && !selectedZoneView ? (
         <LevelRecommendations buckets={expansionBuckets} level={playerLevel} onSelectZone={setSelectedZone} />
       ) : null}
 
@@ -376,10 +289,10 @@ export default function Home() {
           focusedMob={focusedMob}
           zoneView={selectedZoneView}
         />
-      ) : itemSearchMatch ? (
+      ) : selectedItemSearch ? (
         <ItemFarmView
-          buckets={itemSearchMatch.buckets}
-          itemName={itemSearchMatch.itemName}
+          buckets={selectedItemSearch.buckets}
+          itemName={selectedItemSearch.itemName}
           onOpenItem={(itemName, bucket) => setSelectedLoot({ itemName, bucket })}
           onSelectZone={setSelectedZone}
         />
@@ -392,13 +305,13 @@ export default function Home() {
               key={`${bucket.expansion}-${bucket.bucket}`}
               onSelectLoot={(itemName, selectedBucket) => setSelectedLoot({ itemName, bucket: selectedBucket })}
               onSelectZone={setSelectedZone}
-              query={query}
+              query=""
               visibleLoot={visibleLoot}
             />
           ))}
         </div>
       ) : (
-        <p className="empty">No {expansionLabel} Group Named buckets match this search.</p>
+        <p className="empty">No {expansionLabel} Group Named buckets match the active filters.</p>
       )}
 
       {selectedLoot ? (
@@ -408,7 +321,7 @@ export default function Home() {
           details={itemDetails[selectedLoot.itemName]}
           expansion={selectedLoot.bucket.expansion}
           itemName={selectedLoot.itemName}
-          itemBuckets={itemSearchMatch?.itemName === selectedLoot.itemName ? itemSearchMatch.buckets : undefined}
+          itemBuckets={selectedItemSearch?.itemName === selectedLoot.itemName ? selectedItemSearch.buckets : undefined}
           onClose={() => setSelectedLoot(null)}
           onSelectZone={(zone) => {
             setSelectedZone(zone);
