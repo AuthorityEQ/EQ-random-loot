@@ -31,14 +31,15 @@ function canHoverPreview() {
 
 function readEnabled() {
   try {
-    return window.localStorage.getItem(storageKey) === "on";
+    const saved = window.localStorage.getItem(storageKey);
+    return saved === null ? true : saved === "on";
   } catch {
-    return false;
+    return true;
   }
 }
 
 export function ItemPreviewProvider({ children }: { children: React.ReactNode }) {
-  const [enabled, setEnabledState] = useState(false);
+  const [enabled, setEnabledState] = useState(true);
   const [preview, setPreview] = useState<PreviewState | null>(null);
 
   useEffect(() => {

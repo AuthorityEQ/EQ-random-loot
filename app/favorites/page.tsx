@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { FavoriteIndicator } from "@/components/FavoriteIndicator";
 import { useFavorites } from "@/components/FavoritesProvider";
 import { useItemPreview } from "@/components/ItemPreviewProvider";
@@ -17,6 +17,7 @@ const datasets = [classicData, kunarkData, veliousData] as LootDataset[];
 const buckets = datasets.flatMap((dataset) => dataset.buckets);
 const itemDetails = itemDetailsData as ItemDetailsMap;
 const expansionOrder = ["Classic", "Kunark", "Velious"];
+const lockStorageKey = "frostreaver-favorites-locked";
 type ViewMode = "grouped" | "flat";
 
 type FavoriteSelection = {
@@ -38,6 +39,26 @@ export default function FavoritesPage() {
   const { favorites, toggleFavorite } = useFavorites();
   const [selectedLoot, setSelectedLoot] = useState<FavoriteSelection | null>(null);
   const [viewMode, setViewMode] = useState<ViewMode>("grouped");
+  const [favoritesLocked, setFavoritesLocked] = useState(true);
+
+  useEffect(() => {
+    try {
+      const saved = window.localStorage.getItem(lockStorageKey);
+      setFavoritesLocked(saved === null ? true : saved !== "unlocked");
+    } catch {
+      setFavoritesLocked(true);
+    }
+  }, []);
+
+  function setLockState(locked: boolean) {
+    setFavoritesLocked(locked);
+    window.localStorage.setItem(lockStorageKey, locked ? "locked" : "unlocked");
+  }
+
+  function removeFavorite(name: string, details: FavoriteRow["details"]) {
+    if (favoritesLocked) return;
+    toggleFavorite(name, details);
+  }
   const favoriteRows = useMemo(
     () =>
       favorites.map((favorite) => {
@@ -103,13 +124,34 @@ export default function FavoritesPage() {
           <h1>Favorites</h1>
           <p className="subhead">A color-coded farming checklist grouped by expansion and level range.</p>
         </div>
-        <div className="favorites-view-toggle" aria-label="Favorites view">
-          <button className={viewMode === "grouped" ? "filter-button is-active" : "filter-button"} onClick={() => setViewMode("grouped")} type="button">
-            Grouped
-          </button>
-          <button className={viewMode === "flat" ? "filter-button is-active" : "filter-button"} onClick={() => setViewMode("flat")} type="button">
-            Flat
-          </button>
+        <div className="favorites-controls">
+          <div className={favoritesLocked ? "favorites-lock is-locked" : "favorites-lock is-unlocked"} aria-label="Favorites lock">
+            <span>{favoritesLocked ? "Favorites locked" : "Favorites unlocked"}</span>
+            <button
+              aria-pressed={favoritesLocked}
+              className={favoritesLocked ? "filter-button is-active" : "filter-button"}
+              onClick={() => setLockState(true)}
+              type="button"
+            >
+              Lock
+            </button>
+            <button
+              aria-pressed={!favoritesLocked}
+              className={!favoritesLocked ? "filter-button is-active" : "filter-button"}
+              onClick={() => setLockState(false)}
+              type="button"
+            >
+              Unlock
+            </button>
+          </div>
+          <div className="favorites-view-toggle" aria-label="Favorites view">
+            <button className={viewMode === "grouped" ? "filter-button is-active" : "filter-button"} onClick={() => setViewMode("grouped")} type="button">
+              Grouped
+            </button>
+            <button className={viewMode === "flat" ? "filter-button is-active" : "filter-button"} onClick={() => setViewMode("flat")} type="button">
+              Flat
+            </button>
+          </div>
         </div>
       </header>
 
@@ -129,8 +171,9 @@ export default function FavoritesPage() {
                   <FavoriteCard
                     key={row.id}
                     row={row}
+                    locked={favoritesLocked}
                     onOpen={() => openFavorite(row.name, row.firstBucket, row.itemBuckets)}
-                    onRemove={() => toggleFavorite(row.name, row.details)}
+                    onRemove={() => removeFavorite(row.name, row.details)}
                   />
                 ))}
               </ul>
@@ -143,8 +186,9 @@ export default function FavoritesPage() {
             <FavoriteCard
               key={row.id}
               row={row}
+              locked={favoritesLocked}
               onOpen={() => openFavorite(row.name, row.firstBucket, row.itemBuckets)}
-              onRemove={() => toggleFavorite(row.name, row.details)}
+              onRemove={() => removeFavorite(row.name, row.details)}
             />
           ))}
         </ul>
@@ -168,7 +212,7 @@ export default function FavoritesPage() {
   );
 }
 
-function FavoriteCard({ row, onOpen, onRemove }: { row: FavoriteRow; onOpen: () => void; onRemove: () => void }) {
+function FavoriteCard({ row, locked, onOpen, onRemove }: { row: FavoriteRow; locked: boolean; onOpen: () => void; onRemove: () => void }) {
   const bucket = row.firstBucket;
   const range = bucket?.level_range ?? "No bucket";
   const { previewProps } = useItemPreview();
@@ -188,7 +232,14 @@ function FavoriteCard({ row, onOpen, onRemove }: { row: FavoriteRow; onOpen: () 
           <span>{bucket ? `${bucket.expansion} - ${range}` : "Not in loaded buckets"}</span>
           {row.bestZone ? <em>Best: {row.bestZone}</em> : null}
         </button>
-        <button className="favorite-remove-button" onClick={onRemove} title="Remove from favorites" type="button">
+        <button
+          aria-disabled={locked}
+          className={locked ? "favorite-remove-button is-locked" : "favorite-remove-button"}
+          disabled={locked}
+          onClick={onRemove}
+          title={locked ? "Favorites locked" : "Remove from favorites"}
+          type="button"
+        >
           <FavoriteIndicator details={row.details} itemName={row.name} />
         </button>
       </div>

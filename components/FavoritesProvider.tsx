@@ -12,6 +12,8 @@ type FavoritesContextValue = {
 
 const storageKey = "frostreaver-favorites";
 const favoriteAliases = new Map([
+  ["zam:14315", { id: "zam:49561", name: "Ball of Golem Clay" }],
+  ["name:ball of golem clay [id 14315]", { id: "zam:49561", name: "Ball of Golem Clay" }],
   ["zam:104165", { id: "zam:2619", name: "Travelers Pack" }],
   ["name:golden traveler's pack", { id: "zam:2619", name: "Travelers Pack" }],
   ["name:traveler's pack", { id: "zam:2619", name: "Travelers Pack" }],

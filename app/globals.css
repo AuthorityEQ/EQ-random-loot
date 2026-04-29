@@ -1104,9 +1104,43 @@ h1 {
   list-style: none;
 }
 
-.favorites-view-toggle {
+.favorites-controls {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.favorites-view-toggle,
+.favorites-lock {
+  align-items: center;
   display: flex;
   gap: 8px;
+}
+
+.favorites-lock {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--muted);
+  padding: 6px;
+}
+
+.favorites-lock span {
+  color: var(--text);
+  font-size: 0.82rem;
+  font-weight: 900;
+  padding: 0 6px;
+  white-space: nowrap;
+}
+
+.favorites-lock.is-locked {
+  border-color: color-mix(in srgb, var(--bucket-border-amber) 58%, var(--line));
+}
+
+.favorites-lock.is-unlocked {
+  border-color: color-mix(in srgb, var(--accent) 58%, var(--line));
 }
 
 .favorites-group-list {
@@ -1249,6 +1283,17 @@ h1 {
 .favorite-remove-button:focus {
   background: color-mix(in srgb, var(--highlight-bg) 55%, transparent);
   outline: none;
+}
+
+.favorite-remove-button:disabled,
+.favorite-remove-button.is-locked {
+  cursor: not-allowed;
+  opacity: 0.58;
+}
+
+.favorite-remove-button:disabled:hover,
+.favorite-remove-button:disabled:focus {
+  background: transparent;
 }
 
 .favorite-remove-button .favorite-indicator {
