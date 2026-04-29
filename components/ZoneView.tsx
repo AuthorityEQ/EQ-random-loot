@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { FavoriteIndicator } from "@/components/FavoriteIndicator";
+import { ItemIcon } from "@/components/ItemIcon";
 import { useItemPreview } from "@/components/ItemPreviewProvider";
 import type { Bucket, ItemDetails } from "@/lib/search";
 import type { ZoneView as ZoneViewData } from "@/lib/zones";
@@ -182,7 +183,10 @@ export function ZoneView({
                       return (
                         <li key={item}>
                           <button className="loot-button" onClick={() => onSelectLoot(item, bucket)} type="button" {...previewProps(item, details)}>
-                            <span>{item}</span>
+                            <span className="loot-item-label">
+                              <ItemIcon details={details} />
+                              <span>{item}</span>
+                            </span>
                             <FavoriteIndicator details={details} itemName={item} />
                           </button>
                         </li>
