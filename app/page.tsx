@@ -3,10 +3,12 @@
 import { useEffect, useMemo, useState } from "react";
 import { BucketCard } from "@/components/BucketCard";
 import "@/components/bucket-card.css";
+import { useBucketDisplay } from "@/components/BucketDisplayProvider";
 import { ItemFarmView } from "@/components/ItemFarmView";
 import { ItemDrawer } from "@/components/ItemDrawer";
 import "@/components/item-drawer.css";
 import { LevelRecommendations } from "@/components/LevelRecommendations";
+import { MatchingItemList, type MatchingItemRow } from "@/components/MatchingItemList";
 import { SearchBox } from "@/components/SearchBox";
 import "@/components/search-box.css";
 import { ZoneView } from "@/components/ZoneView";
@@ -59,7 +61,24 @@ function expansionTone(expansion: string) {
   return `expansion-tone-${expansion.toLowerCase()}`;
 }
 
+function bucketSortValue(bucket: Bucket) {
+  return Number(bucket.level_range.match(/\d+/)?.[0] ?? 999);
+}
+
+function uniqueSortedItemRows(rows: MatchingItemRow[]) {
+  const itemMap = new Map<string, MatchingItemRow>();
+
+  for (const row of [...rows].sort((a, b) => bucketSortValue(a.bucket) - bucketSortValue(b.bucket) || a.itemName.localeCompare(b.itemName))) {
+    if (!itemMap.has(row.itemName)) {
+      itemMap.set(row.itemName, row);
+    }
+  }
+
+  return Array.from(itemMap.values()).sort((a, b) => bucketSortValue(a.bucket) - bucketSortValue(b.bucket) || a.itemName.localeCompare(b.itemName));
+}
+
 export default function Home() {
+  const { bucketed } = useBucketDisplay();
   const [query, setQuery] = useState("");
   const [debouncedQuery, setDebouncedQuery] = useState("");
   const [lootMode] = useState<LootMode>("random");
@@ -128,6 +147,12 @@ export default function Home() {
       })
       .filter(({ visibleLoot }) => visibleLoot.length > 0);
   }, [expansionBuckets, selectedClass, selectedRace, selectedSlot]);
+  const flatItemRows = useMemo(
+    () => uniqueSortedItemRows(filteredBuckets.flatMap(({ bucket, visibleLoot }) =>
+      visibleLoot.map((itemName) => ({ itemName, bucket, details: itemDetails[itemName] })),
+    )),
+    [filteredBuckets],
+  );
   useEffect(() => {
     const timeout = window.setTimeout(() => {
       setDebouncedQuery(query);
@@ -370,6 +395,7 @@ export default function Home() {
 
       {selectedZoneView ? (
         <ZoneView
+          bucketed={bucketed}
           getItemDetails={getItemDetails}
           itemIsVisible={itemIsVisible}
           onClearZone={() => {
@@ -388,7 +414,7 @@ export default function Home() {
           onOpenItem={(itemName, bucket) => setSelectedLoot({ itemName, bucket })}
           onSelectZone={setSelectedZone}
         />
-      ) : filteredBuckets.length > 0 ? (
+      ) : bucketed && filteredBuckets.length > 0 ? (
         <div className="bucket-grid">
           {filteredBuckets.map(({ bucket, visibleLoot }) => (
             <BucketCard
@@ -402,6 +428,11 @@ export default function Home() {
             />
           ))}
         </div>
+      ) : !bucketed ? (
+        <MatchingItemList
+          rows={flatItemRows}
+          onSelectLoot={(itemName, selectedBucket) => setSelectedLoot({ itemName, bucket: selectedBucket })}
+        />
       ) : (
         <p className="empty">No {expansionLabel} Group Named buckets match the active filters.</p>
       )}
