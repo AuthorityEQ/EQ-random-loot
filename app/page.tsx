@@ -320,7 +320,7 @@ export default function Home() {
   return (
     <main className="page">
       <header className="header hero-header" aria-label="Loot Goblin">
-        <img className="hero-banner-image" src="/loot-goblin-banner.png" alt="Loot Goblin" />
+        <img className="hero-banner-image" src="/loot-goblin-banner4.png" alt="Loot Goblin" />
       </header>
 
       <div className="toolbar">
