@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useDeferredValue, useMemo, useState } from "react";
 
 import droppedSpellsData from "@/data/dropped-spells.json";
 import spellsData from "@/data/spells.json";
@@ -99,10 +99,12 @@ function levelTone(level: number) {
 }
 
 export default function SpellsPage() {
-  const classOptions = ["Any", ...Array.from(new Set(spells.map((spell) => spell.class))).sort()];
-  const [selectedClass, setSelectedClass] = useState("Any");
+  const classOptions = Array.from(new Set(spells.map((spell) => spell.class))).sort();
+  const [selectedClass, setSelectedClass] = useState("");
   const [selectedExpansions, setSelectedExpansions] = useState<Set<SpellExpansion>>(() => new Set(expansionOrder));
   const [levelInput, setLevelInput] = useState("");
+  const deferredLevelInput = useDeferredValue(levelInput);
+  const [showAll, setShowAll] = useState(false);
   const [bulkMinLevel, setBulkMinLevel] = useState("");
   const [bulkMaxLevel, setBulkMaxLevel] = useState("");
   const [bulkMessage, setBulkMessage] = useState("");
@@ -117,7 +119,7 @@ export default function SpellsPage() {
   const [purchasedReady, setPurchasedReady] = useState(false);
   const [showResetConfirm, setShowResetConfirm] = useState(false);
 
-  const selectedLevel = levelInput.trim() === "" ? null : Number.parseInt(levelInput, 10);
+  const selectedLevel = deferredLevelInput.trim() === "" ? null : Number.parseInt(deferredLevelInput, 10);
   const shoppingKeys = useMemo(() => new Set(shoppingList.map(spellShoppingKey)), [shoppingList]);
   const purchasedKeys = useMemo(() => new Set(purchasedSpellKeys), [purchasedSpellKeys]);
   const activeShoppingList = useMemo(
@@ -205,11 +207,20 @@ export default function SpellsPage() {
     () => formatEqPriceTotal(getShoppingListMinTotal(activeShoppingList)),
     [activeShoppingList],
   );
-  const visibleSpells = spells
-    .filter((spell) => selectedClass === "Any" || spell.class === selectedClass)
-    .filter((spell) => selectedExpansions.has(spell.expansion))
-    .filter((spell) => selectedLevel === null || spell.level === selectedLevel)
-    .sort((a, b) => a.level - b.level || a.name.localeCompare(b.name));
+  const visibleSpells = useMemo(
+    () =>
+      spells
+        .filter((spell) => selectedClass === "Any" || spell.class === selectedClass)
+        .filter((spell) => selectedExpansions.has(spell.expansion))
+        .filter((spell) => selectedLevel === null || spell.level === selectedLevel)
+        .sort((a, b) => a.level - b.level || a.name.localeCompare(b.name)),
+    [selectedClass, selectedExpansions, selectedLevel],
+  );
+
+  // Reset showAll whenever the class filter changes.
+  useEffect(() => {
+    setShowAll(false);
+  }, [selectedClass]);
 
   function toggleExpansion(expansion: SpellExpansion) {
     setSelectedExpansions((current) => {
@@ -681,6 +692,8 @@ export default function SpellsPage() {
         <label className="class-filter">
           <span>Class</span>
           <select value={selectedClass} onChange={(event) => setSelectedClass(event.target.value)}>
+            <option value="" disabled>Select class…</option>
+            <option value="Any">Any class</option>
             {classOptions.map((className) => (
               <option key={className} value={className}>
                 {className}
@@ -754,75 +767,86 @@ export default function SpellsPage() {
         </div>
       </section>
 
-      {visibleSpells.length > 0 ? (
-        <section className="spell-list" aria-label="Spell results">
-          {visibleSpells.map((spell) => (
-            <article className={`spell-row ${expansionTone(spell.expansion)}`} key={`${spell.name}-${spell.class}-${spell.expansion}-${spell.level}`}>
-              <div className={`spell-level-badge ${levelTone(spell.level)}`} aria-label={`Level ${spell.level}`}>
-                <span>{spell.level}</span>
-              </div>
-              <div className="spell-row-main">
-                <a className="spell-name" href={spell.sourceUrl} target="_blank" rel="noopener noreferrer">
-                  {spell.name}
-                </a>
-                <p className="spell-description">{spell.description}</p>
-                {isDroppedSpell(spell) && (spell.dropSources?.length || spell.questSource) ? (
-                  <div className="spell-source-detail">
-                    {spell.dropSources?.length ? (
-                      <ul className="spell-drop-sources" aria-label={`${spell.name} drop sources`}>
-                        {spell.dropSources.map((src) => {
-                          const mobSlug = mobToSlug(src.mob);
-                          const zoneSlug = zoneToSlug(src.zone);
-                          return (
-                            <li key={`${src.mob}-${src.zone}`}>
-                              <span className="spell-drop-mob">
-                                {validMobSlugs.has(mobSlug)
-                                  ? <Link className="spell-source-link-inline" href={`/mob/${mobSlug}`}>{src.mob}</Link>
-                                  : <span className="spell-source-link-inline">{src.mob}</span>}
-                              </span>
-                              <span className="spell-drop-sep">in</span>
-                              <span className="spell-drop-zone">
-                                {validZoneSlugs.has(zoneSlug)
-                                  ? <Link className="spell-source-link-inline" href={`/zone/${zoneSlug}`}>{src.zone}</Link>
-                                  : <span className="spell-source-link-inline">{src.zone}</span>}
-                              </span>
-                            </li>
-                          );
-                        })}
-                      </ul>
-                    ) : null}
-                    {spell.questSource ? (
-                      <p className="spell-quest-source">
-                        <span className="spell-quest-label">Quest:</span> {spell.questSource.name}
-                        {spell.questSource.npc ? <> from {spell.questSource.npc}</> : null}
-                        {spell.questSource.zone ? <> in {spell.questSource.zone}</> : null}
-                      </p>
-                    ) : null}
-                  </div>
-                ) : null}
-                {isDroppedSpell(spell) && !spell.dropSources?.length && !spell.questSource ? (
-                  <p className="spell-source-unknown">No drop or quest data available.</p>
-                ) : null}
-              </div>
-              <div className="spell-meta">
-                <span>{spell.class}</span>
-                <span className={`expansion-pill is-compact ${expansionTone(spell.expansion)}`}>{spell.expansion}</span>
-              </div>
-              {isDroppedSpell(spell) ? (
-                <>
-                  <span className="spell-badge spell-badge--dropped">Dropped</span>
-                  <a className="spell-source-link" href={spell.sourceUrl} target="_blank" rel="noopener noreferrer">View on Allakhazam</a>
-                </>
-              ) : (
-                <button className={`spell-list-button${shoppingKeys.has(spellShoppingKey(spell)) ? " is-active" : ""}`} onClick={() => toggleShoppingListSpell(spell)} type="button">
-                  {shoppingKeys.has(spellShoppingKey(spell)) ? "In list" : "Add to list"}
-                </button>
-              )}
-            </article>
-          ))}
-        </section>
-      ) : (
+      {!selectedClass ? (
+        <p className="empty">Select a class to view spells.</p>
+      ) : visibleSpells.length === 0 ? (
         <p className="empty">No spells found.</p>
+      ) : (
+        <>
+          <section className="spell-list" aria-label="Spell results">
+            {(selectedClass === "Any" && !showAll ? visibleSpells.slice(0, 200) : visibleSpells).map((spell) => (
+              <article className={`spell-row ${expansionTone(spell.expansion)}`} key={`${spell.name}-${spell.class}-${spell.expansion}-${spell.level}`}>
+                <div className={`spell-level-badge ${levelTone(spell.level)}`} aria-label={`Level ${spell.level}`}>
+                  <span>{spell.level}</span>
+                </div>
+                <div className="spell-row-main">
+                  <a className="spell-name" href={spell.sourceUrl} target="_blank" rel="noopener noreferrer">
+                    {spell.name}
+                  </a>
+                  <p className="spell-description">{spell.description}</p>
+                  {isDroppedSpell(spell) && (spell.dropSources?.length || spell.questSource) ? (
+                    <div className="spell-source-detail">
+                      {spell.dropSources?.length ? (
+                        <ul className="spell-drop-sources" aria-label={`${spell.name} drop sources`}>
+                          {spell.dropSources.map((src) => {
+                            const mobSlug = mobToSlug(src.mob);
+                            const zoneSlug = zoneToSlug(src.zone);
+                            return (
+                              <li key={`${src.mob}-${src.zone}`}>
+                                <span className="spell-drop-mob">
+                                  {validMobSlugs.has(mobSlug)
+                                    ? <Link className="spell-source-link-inline" href={`/mob/${mobSlug}`}>{src.mob}</Link>
+                                    : <span className="spell-source-link-inline">{src.mob}</span>}
+                                </span>
+                                <span className="spell-drop-sep">in</span>
+                                <span className="spell-drop-zone">
+                                  {validZoneSlugs.has(zoneSlug)
+                                    ? <Link className="spell-source-link-inline" href={`/zone/${zoneSlug}`}>{src.zone}</Link>
+                                    : <span className="spell-source-link-inline">{src.zone}</span>}
+                                </span>
+                              </li>
+                            );
+                          })}
+                        </ul>
+                      ) : null}
+                      {spell.questSource ? (
+                        <p className="spell-quest-source">
+                          <span className="spell-quest-label">Quest:</span> {spell.questSource.name}
+                          {spell.questSource.npc ? <> from {spell.questSource.npc}</> : null}
+                          {spell.questSource.zone ? <> in {spell.questSource.zone}</> : null}
+                        </p>
+                      ) : null}
+                    </div>
+                  ) : null}
+                  {isDroppedSpell(spell) && !spell.dropSources?.length && !spell.questSource ? (
+                    <p className="spell-source-unknown">No drop or quest data available.</p>
+                  ) : null}
+                </div>
+                <div className="spell-meta">
+                  <span>{spell.class}</span>
+                  <span className={`expansion-pill is-compact ${expansionTone(spell.expansion)}`}>{spell.expansion}</span>
+                </div>
+                {isDroppedSpell(spell) ? (
+                  <>
+                    <span className="spell-badge spell-badge--dropped">Dropped</span>
+                    <a className="spell-source-link" href={spell.sourceUrl} target="_blank" rel="noopener noreferrer">View on Allakhazam</a>
+                  </>
+                ) : (
+                  <button className={`spell-list-button${shoppingKeys.has(spellShoppingKey(spell)) ? " is-active" : ""}`} onClick={() => toggleShoppingListSpell(spell)} type="button">
+                    {shoppingKeys.has(spellShoppingKey(spell)) ? "In list" : "Add to list"}
+                  </button>
+                )}
+              </article>
+            ))}
+          </section>
+          {selectedClass === "Any" && !showAll && visibleSpells.length > 200 ? (
+            <div className="spell-list-show-all">
+              <button className="spell-list-button" onClick={() => setShowAll(true)} type="button">
+                Show all {visibleSpells.length} spells
+              </button>
+            </div>
+          ) : null}
+        </>
       )}
         </>
       )}

@@ -1,6 +1,6 @@
 "use client";
 
-import { Suspense, useEffect, useMemo, useRef, useState } from "react";
+import { Suspense, useEffect, useDeferredValue, useMemo, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { BucketCard } from "@/components/BucketCard";
 import "@/components/bucket-card.css";
@@ -152,6 +152,7 @@ function Home() {
 
   // ── Local state (not synced to URL) ──────────────────────────────────────
   const [debouncedQuery, setDebouncedQuery] = useState("");
+  const deferredQuery = useDeferredValue(debouncedQuery);
   const [lootMode] = useState<LootMode>("random");
   const [levelInputValue, setLevelInputValue] = useState(String(playerLevel));
   const [isEditingLevel, setIsEditingLevel] = useState(false);
@@ -276,11 +277,11 @@ function Home() {
     () => sortItemRowsByStat(uniqueSortedItemRows(filteredBuckets
       .flatMap(({ bucket, visibleLoot }) =>
         visibleLoot
-          .filter((itemName) => flatSearchMatches(itemName, bucket, debouncedQuery))
+          .filter((itemName) => flatSearchMatches(itemName, bucket, deferredQuery))
           .map((itemName) => ({ itemName, bucket, details: itemDetails[itemName], statDisplay: getItemStatDisplay(itemName) })),
     )), selectedStat),
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [debouncedQuery, filteredBuckets, selectedStat],
+    [deferredQuery, filteredBuckets, selectedStat],
   );
 
   // ── Effects ───────────────────────────────────────────────────────────────
