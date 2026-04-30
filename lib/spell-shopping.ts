@@ -115,6 +115,32 @@ export function getVendorSpellPriceTotal(spells: VendorRouteSpell[]) {
   return { knownCopper, unknownCount };
 }
 
+export function getShoppingListMinTotal(spells: ShoppingListSpell[]) {
+  let knownCopper = 0;
+  let unknownCount = 0;
+
+  for (const spell of spells) {
+    const vendors = (spell.vendors ?? []).filter(isIncludedVendor);
+    if (vendors.length === 0) {
+      unknownCount += 1;
+      continue;
+    }
+    let cheapest: number | null = null;
+    for (const vendor of vendors) {
+      const copper = parseEqPriceToCopper(vendor.price);
+      if (copper === null) continue;
+      if (cheapest === null || copper < cheapest) cheapest = copper;
+    }
+    if (cheapest === null) {
+      unknownCount += 1;
+    } else {
+      knownCopper += cheapest;
+    }
+  }
+
+  return { knownCopper, unknownCount };
+}
+
 export function getZoneSpellPriceTotal(vendors: { spells: VendorRouteSpell[] }[]) {
   const spellsByKey = new Map<string, VendorRouteSpell>();
 

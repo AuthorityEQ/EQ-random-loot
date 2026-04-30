@@ -21,7 +21,8 @@ export type CraftingSkill =
   | "fletching"
   | "blacksmithing"
   | "jewelcraft"
-  | "spell-research";
+  | "spell-research"
+  | "alchemy";
 
 export interface CraftingComponent {
   name: string;
@@ -83,6 +84,7 @@ export const SKILL_LABELS: Record<CraftingSkill, string> = {
   blacksmithing:    "Blacksmithing",
   jewelcraft:       "Jewelcraft",
   "spell-research": "Spell Research",
+  alchemy:          "Alchemy",
 };
 
 export const CRAFTING_SKILLS: CraftingSkill[] = [
@@ -91,22 +93,22 @@ export const CRAFTING_SKILLS: CraftingSkill[] = [
   "blacksmithing",
   "jewelcraft",
   "spell-research",
+  "alchemy",
 ];
 
 // ---------------------------------------------------------------------------
 // Slug helper (for /item/[slug] cross-links)
 // ---------------------------------------------------------------------------
 
+import { itemToSlug } from "@/lib/item-slug";
+
 /**
  * Converts an item name into a URL-safe slug.
- * "Cloak of Flames" -> "cloak-of-flames"
+ * Delegates to the canonical itemToSlug helper which strips apostrophes
+ * before normalising, fixing the 233-item divergence for names like
+ * "Tolan's Darkwood Fists".
  */
-export function itemSlug(name: string): string {
-  return name
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-}
+export const itemSlug = itemToSlug;
 
 // ---------------------------------------------------------------------------
 // Raw JSON shape (as emitted by Feature F / fallback)

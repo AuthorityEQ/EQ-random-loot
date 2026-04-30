@@ -16,9 +16,9 @@ export const ZONE_CONNECTIONS: Record<string, string[]> = {
   "Qeynos Aqueducts": ["Qeynos Hills"],
   "Qeynos Hills": ["Qeynos Aqueducts", "North Karana"],
   "North Karana": ["Qeynos Hills", "South Karana", "West Karana", "Highpass Hold"],
-  "South Karana": ["North Karana", "West Karana", "Lake Rathe"],
+  "South Karana": ["North Karana", "West Karana", "Lake Rathe", "Rathe Mountains", "Splitpaw"],
   "West Karana": ["North Karana", "South Karana", "Highpass Hold"],
-  "Highpass Hold": ["West Karana", "North Karana"],
+  "Highpass Hold": ["West Karana", "North Karana", "Gorge of Xorbb"],
   "Rathe Mountains": ["South Karana", "Lake Rathe"],
   "Lake Rathe": ["Rathe Mountains", "South Karana"],
 
@@ -26,10 +26,10 @@ export const ZONE_CONNECTIONS: Record<string, string[]> = {
   "Misty Thicket": ["South Ro"],
   "North Ro": ["South Ro", "Ocean of Tears"],
   "South Ro": ["North Ro", "Misty Thicket"],
-  "Ocean of Tears": ["North Ro", "Butcherblock"],
+  "Ocean of Tears": ["North Ro", "Butcherblock", "Toxxulia Forest"],
 
   // Faydwer
-  "Lesser Faydark": ["Mistmoore", "Butcherblock"],
+  "Lesser Faydark": ["Mistmoore", "Butcherblock", "Crushbone", "Unrest", "Steamfont"],
   "Mistmoore": ["Lesser Faydark"],
   "Crushbone": ["Lesser Faydark"],
   "Butcherblock": ["Lesser Faydark", "Ocean of Tears"],
@@ -53,10 +53,10 @@ export const ZONE_CONNECTIONS: Record<string, string[]> = {
 
   // ── Kunark ─────────────────────────────────────────────────────────────────
 
-  "Field of Bone": ["Kurn's Tower", "Kaesora", "Lake of Ill Omen", "Warslicks Woods"],
+  "Field of Bone": ["Kurn's Tower", "Kaesora", "Lake of Ill Omen", "Warslicks Woods", "Timorous Deep"],
   "Kurn's Tower": ["Field of Bone"],
   "Kaesora": ["Field of Bone"],
-  "Lake of Ill Omen": ["Field of Bone", "Burning Woods", "Dreadlands"],
+  "Lake of Ill Omen": ["Field of Bone", "Burning Woods", "Dreadlands", "Dalnir"],
   "Burning Woods": ["Lake of Ill Omen", "Warslicks Woods", "Sebilis", "Trakanon's Teeth"],
   "Warslicks Woods": ["Field of Bone", "Burning Woods", "City of Mist", "Karnor's Castle"],
   "City of Mist": ["Warslicks Woods"],
@@ -64,7 +64,7 @@ export const ZONE_CONNECTIONS: Record<string, string[]> = {
   "Sebilis": ["Burning Woods"],
   "Trakanon's Teeth": ["Burning Woods", "Emerald Jungle"],
   "Emerald Jungle": ["Trakanon's Teeth"],
-  "Dreadlands": ["Lake of Ill Omen", "Howling Stones"],
+  "Dreadlands": ["Lake of Ill Omen", "Howling Stones", "Chardok", "Droga"],
   "Howling Stones": ["Dreadlands"],
   "Chardok": ["Dreadlands"],
   "Droga": ["Dreadlands"],
@@ -74,7 +74,7 @@ export const ZONE_CONNECTIONS: Record<string, string[]> = {
   // ── Velious ────────────────────────────────────────────────────────────────
 
   "Eastern Wastes": ["Wakening Lands", "Dragon Necropolis", "Kael Drakkel", "Great Divide"],
-  "Great Divide": ["Eastern Wastes", "Crystal Caverns", "Icewell Keep"],
+  "Great Divide": ["Eastern Wastes", "Crystal Caverns", "Icewell Keep", "Tower Frozen Shadow"],
   "Crystal Caverns": ["Great Divide"],
   "Icewell Keep": ["Great Divide"],
   "Kael Drakkel": ["Eastern Wastes"],

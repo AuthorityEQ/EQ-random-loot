@@ -5,9 +5,35 @@ import { useEffect, useMemo, useState } from "react";
 
 import droppedSpellsData from "@/data/dropped-spells.json";
 import spellsData from "@/data/spells.json";
-import { formatEqPriceTotal, getVendorOptionsForShoppingList, getZoneSpellPriceTotal, spellShoppingKey, type ShoppingListSpell, type SpellVendor } from "@/lib/spell-shopping";
-import { mobToSlug } from "@/lib/mob-slug";
+import classicData from "@/data/classic-group-named.json";
+import kunarkData from "@/data/kunark-group-named.json";
+import veliousData from "@/data/velious-group-named.json";
+import classicRaidData from "@/data/classic-raid.json";
+import kunarkRaidData from "@/data/kunark-raid.json";
+import veliousRaidData from "@/data/velious-raid.json";
+import { formatEqPriceTotal, getShoppingListMinTotal, getVendorOptionsForShoppingList, getZoneSpellPriceTotal, spellShoppingKey, type ShoppingListSpell, type SpellVendor } from "@/lib/spell-shopping";
+import { buildMobIndex, mobToSlug } from "@/lib/mob-slug";
 import { zoneToSlug } from "@/lib/zone-slug";
+import type { LootDataset } from "@/lib/search";
+import type { RaidDataset } from "@/lib/raidTiers";
+
+// ---------------------------------------------------------------------------
+// Valid slug sets — built once at module level from the same data sources used
+// by app/mob/[name]/page.tsx and app/zone/[name]/page.tsx. Mob links and zone
+// links are only rendered as <Link> when the slug is present in these sets;
+// otherwise plain <span> text is rendered to avoid 404 navigation.
+// ---------------------------------------------------------------------------
+
+const _groupDatasets = [classicData, kunarkData, veliousData] as LootDataset[];
+const _raidDatasets = [classicRaidData, kunarkRaidData, veliousRaidData] as RaidDataset[];
+const _allGroupBuckets = _groupDatasets.flatMap((d) => d.buckets);
+const _mobIndex = buildMobIndex(_allGroupBuckets, _raidDatasets);
+
+const validMobSlugs = new Set(_mobIndex.keys());
+
+const validZoneSlugs = new Set(
+  _allGroupBuckets.flatMap((b) => b.zones).map(zoneToSlug),
+);
 
 type SpellExpansion = "Classic" | "Kunark" | "Velious";
 
@@ -174,6 +200,10 @@ export default function SpellsPage() {
   const routeGrandTotal = useMemo(
     () => formatEqPriceTotal(getZoneSpellPriceTotal(routeStops.flatMap((stop) => stop.vendors))),
     [routeStops],
+  );
+  const shoppingListMinTotal = useMemo(
+    () => formatEqPriceTotal(getShoppingListMinTotal(activeShoppingList)),
+    [activeShoppingList],
   );
   const visibleSpells = spells
     .filter((spell) => selectedClass === "Any" || spell.class === selectedClass)
@@ -581,7 +611,7 @@ export default function SpellsPage() {
                         <strong>{vendor.npc}</strong>
                         <ul>
                           {vendor.spells.map((spell) => (
-                            <li key={`${vendor.npc}-${spell.name}`}>
+                            <li key={`${vendor.npc}-${spell.key}`}>
                               <span>{spell.name}</span>
                               <em>{spell.price}</em>
                             </li>
@@ -607,6 +637,9 @@ export default function SpellsPage() {
               <div className="spell-shopping-summary">
                 <strong>{shoppingList.length} spells selected</strong>
                 <span>{allVendorOptions.length} vendor zones with known purchase data</span>
+                {shoppingListMinTotal ? (
+                  <span className="vendor-route-total">Cheapest possible: {shoppingListMinTotal}</span>
+                ) : null}
                 <button className="spell-list-button" onClick={() => setViewMode("vendor")} type="button">
                   Plan vendor route
                 </button>
@@ -737,17 +770,25 @@ export default function SpellsPage() {
                   <div className="spell-source-detail">
                     {spell.dropSources?.length ? (
                       <ul className="spell-drop-sources" aria-label={`${spell.name} drop sources`}>
-                        {spell.dropSources.map((src) => (
-                          <li key={`${src.mob}-${src.zone}`}>
-                            <span className="spell-drop-mob">
-                              <Link className="spell-source-link-inline" href={`/mob/${mobToSlug(src.mob)}`}>{src.mob}</Link>
-                            </span>
-                            <span className="spell-drop-sep">in</span>
-                            <span className="spell-drop-zone">
-                              <Link className="spell-source-link-inline" href={`/zone/${zoneToSlug(src.zone)}`}>{src.zone}</Link>
-                            </span>
-                          </li>
-                        ))}
+                        {spell.dropSources.map((src) => {
+                          const mobSlug = mobToSlug(src.mob);
+                          const zoneSlug = zoneToSlug(src.zone);
+                          return (
+                            <li key={`${src.mob}-${src.zone}`}>
+                              <span className="spell-drop-mob">
+                                {validMobSlugs.has(mobSlug)
+                                  ? <Link className="spell-source-link-inline" href={`/mob/${mobSlug}`}>{src.mob}</Link>
+                                  : <span className="spell-source-link-inline">{src.mob}</span>}
+                              </span>
+                              <span className="spell-drop-sep">in</span>
+                              <span className="spell-drop-zone">
+                                {validZoneSlugs.has(zoneSlug)
+                                  ? <Link className="spell-source-link-inline" href={`/zone/${zoneSlug}`}>{src.zone}</Link>
+                                  : <span className="spell-source-link-inline">{src.zone}</span>}
+                              </span>
+                            </li>
+                          );
+                        })}
                       </ul>
                     ) : null}
                     {spell.questSource ? (

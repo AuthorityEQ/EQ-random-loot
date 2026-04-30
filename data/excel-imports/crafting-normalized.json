@@ -3143,6 +3143,1515 @@
         "count": 1
       },
       "notes": "Improved mana regen"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Potion of Lesser Stability",
+      "trivial": 17,
+      "components": [
+        {
+          "name": "Lucerne",
+          "count": 1
+        },
+        {
+          "name": "Sage Leaf",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Potion of Lesser Stability",
+        "count": 1
+      },
+      "notes": "+5str +5sta -5agi"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Potion of Lesser Accuracy",
+      "trivial": 22,
+      "components": [
+        {
+          "name": "Birthwort",
+          "count": 1
+        },
+        {
+          "name": "Fenugreek",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Potion of Lesser Accuracy",
+        "count": 1
+      },
+      "notes": "+5agi +5dex -5sta"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Potion of Lesser Adroitness",
+      "trivial": 22,
+      "components": [
+        {
+          "name": "Sage Leaf",
+          "count": 1
+        },
+        {
+          "name": "Birthwort",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Potion of Lesser Adroitness",
+        "count": 1
+      },
+      "notes": "+5agi +5sta -5dex"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Potion of Lesser Cohesion",
+      "trivial": 22,
+      "components": [
+        {
+          "name": "Sage Leaf",
+          "count": 1
+        },
+        {
+          "name": "Fenugreek",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Potion of Lesser Cohesion",
+        "count": 1
+      },
+      "notes": "+5sta +5dex -5agi"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Potion of Lesser Power",
+      "trivial": 22,
+      "components": [
+        {
+          "name": "Lucerne",
+          "count": 1
+        },
+        {
+          "name": "Fenugreek",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Potion of Lesser Power",
+        "count": 1
+      },
+      "notes": "+5dex +5str -5sta"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Potion of Lesser Vigor",
+      "trivial": 22,
+      "components": [
+        {
+          "name": "Lucerne",
+          "count": 1
+        },
+        {
+          "name": "Birthwort",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Potion of Lesser Vigor",
+        "count": 1
+      },
+      "notes": "+5agi +5str -5sta"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Minor Potion of Heat",
+      "trivial": 25,
+      "components": [
+        {
+          "name": "Sage Leaf",
+          "count": 1
+        },
+        {
+          "name": "Benzoin",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Minor Potion of Heat",
+        "count": 1
+      },
+      "notes": "+5sta +5CR -3str"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Minor Null Potion",
+      "trivial": 27,
+      "components": [
+        {
+          "name": "Fenugreek",
+          "count": 1
+        },
+        {
+          "name": "Mandrake Root",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Minor Null Potion",
+        "count": 1
+      },
+      "notes": "+5dex +5MR -3agi"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Minor Potion of Antibody",
+      "trivial": 27,
+      "components": [
+        {
+          "name": "Mullein",
+          "count": 1
+        },
+        {
+          "name": "Maidenhair Fern",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Minor Potion of Antibody",
+        "count": 1
+      },
+      "notes": "+5cha +5DR -3dex"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Minor Potion of Cold",
+      "trivial": 27,
+      "components": [
+        {
+          "name": "Birthwort",
+          "count": 1
+        },
+        {
+          "name": "Allspice",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Minor Potion of Cold",
+        "count": 1
+      },
+      "notes": "+5agi +5FR -3sta"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Minor Potion of Purity",
+      "trivial": 32,
+      "components": [
+        {
+          "name": "Lucerne",
+          "count": 1
+        },
+        {
+          "name": "Night Shade",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Minor Potion of Purity",
+        "count": 1
+      },
+      "notes": "+5str +5PR -3cha"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Berry Red Dye",
+      "trivial": 36,
+      "components": [
+        {
+          "name": "Sarcoscypha Fungus",
+          "count": 1
+        },
+        {
+          "name": "Empty Vial",
+          "count": 1
+        },
+        {
+          "name": "Water Flask",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Berry Red Dye",
+        "count": 1
+      },
+      "notes": "fungus types in Upper Guk & Innothule Swamp, on ground in LFay Faerie camp"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Black Dye",
+      "trivial": 36,
+      "components": [
+        {
+          "name": "Charcoal",
+          "count": 1
+        },
+        {
+          "name": "Empty Vial",
+          "count": 1
+        },
+        {
+          "name": "Water Flask",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Black Dye",
+        "count": 1
+      },
+      "notes": "various elementals, elemental warriors in The Hole, iron & stone guardians in Nektulos, golem-types, including Terror (plane of Fear)"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Blue Dye",
+      "trivial": 36,
+      "components": [
+        {
+          "name": "Permafrost Crystals",
+          "count": 1
+        },
+        {
+          "name": "Empty Vial",
+          "count": 1
+        },
+        {
+          "name": "Water Flask",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Blue Dye",
+        "count": 1
+      },
+      "notes": "many creatures in Permafrost, on ground in Dire Wolf Pens in Permafrost, ground spawn on the golra island in Timorous Deep"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Brown Dye",
+      "trivial": 36,
+      "components": [
+        {
+          "name": "Russet Oxide",
+          "count": 1
+        },
+        {
+          "name": "Empty Vial",
+          "count": 1
+        },
+        {
+          "name": "Water Flask",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Brown Dye",
+        "count": 1
+      },
+      "notes": "various elementals, also some lying on ground in Steamfont, elemental warriors in The Hole iron & stone guardians in Nektulos"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Evergreen Extract",
+      "trivial": 36,
+      "components": [
+        {
+          "name": "Evergreen Leaf",
+          "count": 1
+        },
+        {
+          "name": "Empty Vial",
+          "count": 1
+        },
+        {
+          "name": "Water Flask",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Evergreen Extract",
+        "count": 1
+      },
+      "notes": "found lying on ground in Greater Faydark, lighter shade of green, uncommon and hard to see"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Rust Red Dye",
+      "trivial": 36,
+      "components": [
+        {
+          "name": "Iron Oxide",
+          "count": 1
+        },
+        {
+          "name": "Empty Vial",
+          "count": 1
+        },
+        {
+          "name": "Water Flask",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Rust Red Dye",
+        "count": 1
+      },
+      "notes": "various elementals, also some lying on ground in Steamfont, elemental warriors in The Hole, iron & stone guardians in Nektulos"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Yellow Dye",
+      "trivial": 36,
+      "components": [
+        {
+          "name": "Jack-O-Lantern Fungus",
+          "count": 1
+        },
+        {
+          "name": "Empty Vial",
+          "count": 1
+        },
+        {
+          "name": "Water Flask",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Yellow Dye",
+        "count": 1
+      },
+      "notes": "on ground in LFay Faerie camp, scarecrow types in WK, Unrest, etc."
+    },
+    {
+      "skill": "alchemy",
+      "name": "Blood of the Wolf",
+      "trivial": 37,
+      "components": [
+        {
+          "name": "Birthwort",
+          "count": 1
+        },
+        {
+          "name": "Fenugreek",
+          "count": 1
+        },
+        {
+          "name": "Wolf Blood",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Blood of the Wolf",
+        "count": 1
+      },
+      "notes": "Spirit of the Wolf"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Potion of Lesser Rejuvenation",
+      "trivial": 37,
+      "components": [
+        {
+          "name": "Lucerne",
+          "count": 1
+        },
+        {
+          "name": "Sage Leaf",
+          "count": 1
+        },
+        {
+          "name": "Yarrow",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Potion of Lesser Rejuvenation",
+        "count": 1
+      },
+      "notes": "10hp/tick"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Potion of Unlife Awareness",
+      "trivial": 42,
+      "components": [
+        {
+          "name": "Fennel",
+          "count": 1
+        },
+        {
+          "name": "Elderberry",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Potion of Unlife Awareness",
+        "count": 1
+      },
+      "notes": "Invisibility versus Undead"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Potion of Aquatic Haunt",
+      "trivial": 49,
+      "components": [
+        {
+          "name": "Jatamasi",
+          "count": 1
+        },
+        {
+          "name": "Hydrangea",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Potion of Aquatic Haunt",
+        "count": 1
+      },
+      "notes": "Enduring Breath for 30 minutes (Does NOT require fish scale)"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Potion of Negation",
+      "trivial": 49,
+      "components": [
+        {
+          "name": "Mystic Ash",
+          "count": 1
+        },
+        {
+          "name": "Mercury",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Potion of Negation",
+        "count": 1
+      },
+      "notes": "Cancel Magic"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Kilva's Blistering Flesh",
+      "trivial": 52,
+      "components": [
+        {
+          "name": "Jatamasi",
+          "count": 1
+        },
+        {
+          "name": "Clubmoss",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Kilva's Blistering Flesh",
+        "count": 1
+      },
+      "notes": "Damage Shield (Lv/4)+1 for 10? Minutes"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Potion of Antiweight",
+      "trivial": 52,
+      "components": [
+        {
+          "name": "Hydrangea",
+          "count": 1
+        },
+        {
+          "name": "Sumbul",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Potion of Antiweight",
+        "count": 1
+      },
+      "notes": "Levitate for 12 Minutes (Does NOT require bat wing)"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Ethira's Poison Antidote",
+      "trivial": 57,
+      "components": [
+        {
+          "name": "Lady's Mantle",
+          "count": 1
+        },
+        {
+          "name": "Hyssop",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Ethira's Poison Antidote",
+        "count": 1
+      },
+      "notes": "Counteract Poison"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Kithar's Disease Treatment",
+      "trivial": 57,
+      "components": [
+        {
+          "name": "Lady's Mantle",
+          "count": 1
+        },
+        {
+          "name": "Echinacea",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Kithar's Disease Treatment",
+        "count": 1
+      },
+      "notes": "Counteract Disease"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Serpent's Conviction",
+      "trivial": 63,
+      "components": [
+        {
+          "name": "Fennel",
+          "count": 1
+        },
+        {
+          "name": "Eucalyptus Leaf",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Serpent's Conviction",
+        "count": 1
+      },
+      "notes": "Infravision"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Serpent's Drink",
+      "trivial": 63,
+      "components": [
+        {
+          "name": "Sumbul",
+          "count": 1
+        },
+        {
+          "name": "Clubmoss",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Serpent's Drink",
+        "count": 1
+      },
+      "notes": "6 AC Buff - Requires consuming a Snake Scales when imbibed"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Ant's Potion",
+      "trivial": 70,
+      "components": [
+        {
+          "name": "Sumbul",
+          "count": 1
+        },
+        {
+          "name": "Celandine Herb",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Ant's Potion",
+        "count": 1
+      },
+      "notes": "Shrink (Works outdoors)"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Vial of Tamed Mercury",
+      "trivial": 70,
+      "components": [
+        {
+          "name": "Comfrey",
+          "count": 1
+        },
+        {
+          "name": "Mercury",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Vial of Tamed Mercury",
+        "count": 1
+      },
+      "notes": "Increase attack speed by ??% (L?) to 20% (L?)"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Potion of Cohesion",
+      "trivial": 76,
+      "components": [
+        {
+          "name": "Sage Leaf",
+          "count": 1
+        },
+        {
+          "name": "Fenugreek",
+          "count": 1
+        },
+        {
+          "name": "Blue Vervain Bulb",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Potion of Cohesion",
+        "count": 1
+      },
+      "notes": "+10sta +10dex -10agi"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Potion of Stability",
+      "trivial": 76,
+      "components": [
+        {
+          "name": "Lucerne",
+          "count": 1
+        },
+        {
+          "name": "Sage Leaf",
+          "count": 1
+        },
+        {
+          "name": "Blue Vervain Bulb",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Potion of Stability",
+        "count": 1
+      },
+      "notes": "+10str +10sta -10agi"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Potion of Vigor",
+      "trivial": 76,
+      "components": [
+        {
+          "name": "Lucerne",
+          "count": 1
+        },
+        {
+          "name": "Birthwort",
+          "count": 1
+        },
+        {
+          "name": "Blue Vervain Bulb",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Potion of Vigor",
+        "count": 1
+      },
+      "notes": "+10agi +10str -10sta"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Potion of Accuracy",
+      "trivial": 83,
+      "components": [
+        {
+          "name": "Birthwort",
+          "count": 1
+        },
+        {
+          "name": "Fenugreek",
+          "count": 1
+        },
+        {
+          "name": "Blue Vervain Bulb",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Potion of Accuracy",
+        "count": 1
+      },
+      "notes": "+10agi +10dex -10sta"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Potion of Adroitness",
+      "trivial": 83,
+      "components": [
+        {
+          "name": "Sage Leaf",
+          "count": 1
+        },
+        {
+          "name": "Birthwort",
+          "count": 1
+        },
+        {
+          "name": "Blue Vervain Bulb",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Potion of Adroitness",
+        "count": 1
+      },
+      "notes": "+10agi +10sta -10dex"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Potion of Power",
+      "trivial": 83,
+      "components": [
+        {
+          "name": "Lucerne",
+          "count": 1
+        },
+        {
+          "name": "Fenugreek",
+          "count": 1
+        },
+        {
+          "name": "Blue Vervain Bulb",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Potion of Power",
+        "count": 1
+      },
+      "notes": "+10dex +10str -10sta"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Null Potion",
+      "trivial": 90,
+      "components": [
+        {
+          "name": "Fenugreek",
+          "count": 1
+        },
+        {
+          "name": "Mandrake Root",
+          "count": 1
+        },
+        {
+          "name": "Blue Vervain Bulb",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Null Potion",
+        "count": 1
+      },
+      "notes": "+15 DEX +15MR -8 AGI"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Potion of Antibody",
+      "trivial": 90,
+      "components": [
+        {
+          "name": "Mullein",
+          "count": 1
+        },
+        {
+          "name": "Maidenhair Fern",
+          "count": 1
+        },
+        {
+          "name": "Blue Vervain Bulb",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Potion of Antibody",
+        "count": 1
+      },
+      "notes": "+15 CHA +15DR -8 DEX"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Potion of Cold",
+      "trivial": 96,
+      "components": [
+        {
+          "name": "Birthwort",
+          "count": 1
+        },
+        {
+          "name": "Allspice",
+          "count": 1
+        },
+        {
+          "name": "Blue Vervain Bulb",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Potion of Cold",
+        "count": 1
+      },
+      "notes": "+15 AGI +15FR -8 STA"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Potion of Heat",
+      "trivial": 96,
+      "components": [
+        {
+          "name": "Sage Leaf",
+          "count": 1
+        },
+        {
+          "name": "Benzoin",
+          "count": 1
+        },
+        {
+          "name": "Blue Vervain Bulb",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Potion of Heat",
+        "count": 1
+      },
+      "notes": "+15 STA +15CR -8 STR"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Potion of Purity",
+      "trivial": 103,
+      "components": [
+        {
+          "name": "Lucerne",
+          "count": 1
+        },
+        {
+          "name": "Night Shade",
+          "count": 1
+        },
+        {
+          "name": "Blue Vervain Bulb",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Potion of Purity",
+        "count": 1
+      },
+      "notes": "+15str +15PR -8cha"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Potion of Rejuvenation",
+      "trivial": 103,
+      "components": [
+        {
+          "name": "Lucerne",
+          "count": 1
+        },
+        {
+          "name": "Sage Leaf",
+          "count": 1
+        },
+        {
+          "name": "Figwort",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Potion of Rejuvenation",
+        "count": 1
+      },
+      "notes": "20hp/tick"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Greater Potion of Negation",
+      "trivial": 107,
+      "components": [
+        {
+          "name": "Mystic Ash",
+          "count": 1
+        },
+        {
+          "name": "Mystic Ash",
+          "count": 1
+        },
+        {
+          "name": "Mercury",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Greater Potion of Negation",
+        "count": 1
+      },
+      "notes": "Nullify Magic"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Potion of Dulsehound",
+      "trivial": 131,
+      "components": [
+        {
+          "name": "Hill Giant Toes",
+          "count": 1
+        },
+        {
+          "name": "Balm Leaves",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Potion of Dulsehound",
+        "count": 1
+      },
+      "notes": "Instantaneous +18 to STR - 25 to INT add 180 point Regen at 3 per tick"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Kilva's Skin of Flame",
+      "trivial": 136,
+      "components": [
+        {
+          "name": "Jatamasi",
+          "count": 1
+        },
+        {
+          "name": "Clubmoss",
+          "count": 1
+        },
+        {
+          "name": "Clover",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Kilva's Skin of Flame",
+        "count": 1
+      },
+      "notes": "Damage Shield (Lv/2)+1 for 12+ Minutes"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Greater Potion of Cohesion",
+      "trivial": 143,
+      "components": [
+        {
+          "name": "Sage Leaf",
+          "count": 1
+        },
+        {
+          "name": "Fenugreek",
+          "count": 1
+        },
+        {
+          "name": "Valerian Root",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Greater Potion of Cohesion",
+        "count": 1
+      },
+      "notes": "+15sta +25dex -20agi"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Greater Potion of Stability",
+      "trivial": 143,
+      "components": [
+        {
+          "name": "Lucerne",
+          "count": 1
+        },
+        {
+          "name": "Sage Leaf",
+          "count": 1
+        },
+        {
+          "name": "Valerian Root",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Greater Potion of Stability",
+        "count": 1
+      },
+      "notes": "+25str +15sta -20agi"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Greater Potion of Vigor",
+      "trivial": 143,
+      "components": [
+        {
+          "name": "Lucerne",
+          "count": 1
+        },
+        {
+          "name": "Birthwort",
+          "count": 1
+        },
+        {
+          "name": "Valerian Root",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Greater Potion of Vigor",
+        "count": 1
+      },
+      "notes": "+15agi +25str -25sta"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Greater Potion of Accuracy",
+      "trivial": 150,
+      "components": [
+        {
+          "name": "Birthwort",
+          "count": 1
+        },
+        {
+          "name": "Fenugreek",
+          "count": 1
+        },
+        {
+          "name": "Valerian Root",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Greater Potion of Accuracy",
+        "count": 1
+      },
+      "notes": "+15agi +25dex -20sta"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Greater Potion of Adroitness",
+      "trivial": 150,
+      "components": [
+        {
+          "name": "Sage Leaf",
+          "count": 1
+        },
+        {
+          "name": "Birthwort",
+          "count": 1
+        },
+        {
+          "name": "Valerian Root",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Greater Potion of Adroitness",
+        "count": 1
+      },
+      "notes": "+15agi +25sta -20dex"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Greater Potion of Power",
+      "trivial": 150,
+      "components": [
+        {
+          "name": "Lucerne",
+          "count": 1
+        },
+        {
+          "name": "Fenugreek",
+          "count": 1
+        },
+        {
+          "name": "Valerian Root",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Greater Potion of Power",
+        "count": 1
+      },
+      "notes": "+15dex +25str -20sta"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Greater Null Potion",
+      "trivial": 156,
+      "components": [
+        {
+          "name": "Fenugreek",
+          "count": 1
+        },
+        {
+          "name": "Mandrake Root",
+          "count": 1
+        },
+        {
+          "name": "Valerian Root",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Greater Null Potion",
+        "count": 1
+      },
+      "notes": "+25dex +25MR -15agi"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Greater Potion of Antibody",
+      "trivial": 156,
+      "components": [
+        {
+          "name": "Mullein",
+          "count": 1
+        },
+        {
+          "name": "Maidenhair Fern",
+          "count": 1
+        },
+        {
+          "name": "Valerian Root",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Greater Potion of Antibody",
+        "count": 1
+      },
+      "notes": "+25 CHA +25DR -15 DEX"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Greater Potion of Cold",
+      "trivial": 156,
+      "components": [
+        {
+          "name": "Birthwort",
+          "count": 1
+        },
+        {
+          "name": "Allspice",
+          "count": 1
+        },
+        {
+          "name": "Valerian Root",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Greater Potion of Cold",
+        "count": 1
+      },
+      "notes": "+25 AGI +25FR -15 STA"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Greater Potion of Heat",
+      "trivial": 156,
+      "components": [
+        {
+          "name": "Sage Leaf",
+          "count": 1
+        },
+        {
+          "name": "Benzoin",
+          "count": 1
+        },
+        {
+          "name": "Valerian Root",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Greater Potion of Heat",
+        "count": 1
+      },
+      "notes": "+25 STA +25CR -15 STR"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Potion of Stinging Wort",
+      "trivial": 156,
+      "components": [
+        {
+          "name": "Ice Giant Toes",
+          "count": 1
+        },
+        {
+          "name": "Balm Leaves",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Potion of Stinging Wort",
+        "count": 1
+      },
+      "notes": "Instantaneous +17 STR and +300 HP , drains 2 HP /tick for 6 minutes"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Greater Potion of Purity",
+      "trivial": 163,
+      "components": [
+        {
+          "name": "Lucerne",
+          "count": 1
+        },
+        {
+          "name": "Night Shade",
+          "count": 1
+        },
+        {
+          "name": "Valerian Root",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Greater Potion of Purity",
+        "count": 1
+      },
+      "notes": "+25 STR +25PR -15 CHA"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Potion of Greater Rejuvenation",
+      "trivial": 163,
+      "components": [
+        {
+          "name": "Lucerne",
+          "count": 1
+        },
+        {
+          "name": "Sage Leaf",
+          "count": 1
+        },
+        {
+          "name": "Agrimony",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Potion of Greater Rejuvenation",
+        "count": 1
+      },
+      "notes": "40hp/tick"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Adrenaline Tap",
+      "trivial": 170,
+      "components": [
+        {
+          "name": "Comfrey",
+          "count": 1
+        },
+        {
+          "name": "Dhea",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Adrenaline Tap",
+        "count": 1
+      },
+      "notes": "Increase attack speed by 11% (L1) to 40% (L30)"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Potion of Graveyard Dust",
+      "trivial": 170,
+      "components": [
+        {
+          "name": "Fire Giant Toes",
+          "count": 1
+        },
+        {
+          "name": "Dragonwart",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Potion of Graveyard Dust",
+        "count": 1
+      },
+      "notes": "Instantaneous +27 to +48 STR and +20 to AGI and increases attack speed - Dot decline with slightly negative STR & AGI after effects"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Potion of the Bone Field",
+      "trivial": 170,
+      "components": [
+        {
+          "name": "Heliotrope",
+          "count": 1
+        },
+        {
+          "name": "Sandalwood",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Potion of the Bone Field",
+        "count": 1
+      },
+      "notes": "Self-teleport Field of Bone 340, -1961"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Potion of the Frost",
+      "trivial": 170,
+      "components": [
+        {
+          "name": "Heliotrope",
+          "count": 1
+        },
+        {
+          "name": "Oakmoss",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Potion of the Frost",
+        "count": 1
+      },
+      "notes": "Self-teleport Everfrost 115,919,-58"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Potion of the Swamp",
+      "trivial": 170,
+      "components": [
+        {
+          "name": "Heliotrope",
+          "count": 1
+        },
+        {
+          "name": "Bladderwrack",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Potion of the Swamp",
+        "count": 1
+      },
+      "notes": "Self-teleport Innothule Swamp 882,-256,20"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Potion of Spirit Shield",
+      "trivial": null,
+      "components": [
+        {
+          "name": "Sumbul",
+          "count": 1
+        },
+        {
+          "name": "Clubmoss",
+          "count": 1
+        },
+        {
+          "name": "Clover",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Potion of Spirit Shield",
+        "count": 1
+      },
+      "notes": "18 AC Buff"
     }
   ]
 }

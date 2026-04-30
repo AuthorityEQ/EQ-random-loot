@@ -3014,6 +3014,11 @@ h1 {
   --skill-spell-research-bg:     #2d7b82;
   --skill-spell-research-border: #1f5a60;
   --skill-spell-research-text:   #ffffff;
+
+  /* Alchemy — gold/yellow (reagents, potions) */
+  --skill-alchemy-bg:     #9a7c10;
+  --skill-alchemy-border: #735c08;
+  --skill-alchemy-text:   #ffffff;
 }
 
 :root[data-theme="dark"] {
@@ -3041,6 +3046,11 @@ h1 {
   --skill-spell-research-bg:     #4ab8c0;
   --skill-spell-research-border: #2e8f97;
   --skill-spell-research-text:   #07100b;
+
+  /* Alchemy — bright gold for dark bg */
+  --skill-alchemy-bg:     #d4a820;
+  --skill-alchemy-border: #b08a10;
+  --skill-alchemy-text:   #07100b;
 }
 
 /*
@@ -3077,6 +3087,12 @@ h1 {
   --skill-primary: var(--skill-spell-research-bg);
   --skill-border:  var(--skill-spell-research-border);
   --skill-text:    var(--skill-spell-research-text);
+}
+
+.skill-tone-alchemy {
+  --skill-primary: var(--skill-alchemy-bg);
+  --skill-border:  var(--skill-alchemy-border);
+  --skill-text:    var(--skill-alchemy-text);
 }
 
 /* ============= ACCESSIBILITY IMPROVEMENTS ============= */

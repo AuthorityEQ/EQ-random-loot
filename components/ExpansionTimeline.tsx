@@ -215,7 +215,7 @@ type ExpansionTimelineProps = {
 
 export function ExpansionTimeline({ compact = false }: ExpansionTimelineProps) {
   const labelId = useId();
-  const [now, setNow] = useState<number>(() => Date.now());
+  const [now, setNow] = useState<number>(0);
   const [serverMatch, setServerMatch] = useState<boolean>(true);
   const tickRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
@@ -226,6 +226,7 @@ export function ExpansionTimeline({ compact = false }: ExpansionTimelineProps) {
 
   // Tick every second while pre-launch, every minute after
   useEffect(() => {
+    setNow(Date.now());
     const isPreLaunch = Date.now() < LAUNCH_DATE.getTime();
     const interval = isPreLaunch ? 1000 : 60_000;
 
@@ -290,7 +291,7 @@ export function ExpansionTimeline({ compact = false }: ExpansionTimelineProps) {
         <div className="etl-compact" aria-label="Frostreaver launch countdown">
           <span className="etl-compact-label">Launch in</span>
           <span className="etl-compact-countdown">
-            {timeToLaunch.days}d {pad(timeToLaunch.hours)}h {pad(timeToLaunch.minutes)}m
+            {now === 0 ? "—" : `${timeToLaunch.days}d ${pad(timeToLaunch.hours)}h ${pad(timeToLaunch.minutes)}m`}
           </span>
         </div>
       );
@@ -344,13 +345,19 @@ export function ExpansionTimeline({ compact = false }: ExpansionTimelineProps) {
           </div>
 
           <div className="etl-clock" aria-label={`${timeToLaunch.days} days, ${timeToLaunch.hours} hours, ${timeToLaunch.minutes} minutes, ${timeToLaunch.seconds} seconds`} role="timer">
-            <CountdownBlock value={timeToLaunch.days} label="days" />
-            <span className="etl-clock-sep" aria-hidden="true">:</span>
-            <CountdownBlock value={timeToLaunch.hours} label="hrs" />
-            <span className="etl-clock-sep" aria-hidden="true">:</span>
-            <CountdownBlock value={timeToLaunch.minutes} label="min" />
-            <span className="etl-clock-sep" aria-hidden="true">:</span>
-            <CountdownBlock value={timeToLaunch.seconds} label="sec" />
+            {now === 0 ? (
+              <span className="etl-clock-placeholder">—</span>
+            ) : (
+              <>
+                <CountdownBlock value={timeToLaunch.days} label="days" />
+                <span className="etl-clock-sep" aria-hidden="true">:</span>
+                <CountdownBlock value={timeToLaunch.hours} label="hrs" />
+                <span className="etl-clock-sep" aria-hidden="true">:</span>
+                <CountdownBlock value={timeToLaunch.minutes} label="min" />
+                <span className="etl-clock-sep" aria-hidden="true">:</span>
+                <CountdownBlock value={timeToLaunch.seconds} label="sec" />
+              </>
+            )}
           </div>
 
           <div className="etl-launch-content">

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import classicData from "@/data/classic-group-named.json";
 import kunarkData from "@/data/kunark-group-named.json";
 import veliousData from "@/data/velious-group-named.json";
@@ -156,14 +157,7 @@ export default async function ZonePage({
   const resolved = slugToZone(slug, allBuckets);
 
   if (!resolved) {
-    // Graceful 404-like fallback — Next.js will render a 404 if notFound() is called,
-    // but we keep a plain message here to avoid importing next/navigation in a file
-    // that must stay statically exportable. Feature B adds a proper not-found.tsx.
-    return (
-      <main className="page">
-        <p className="empty">Zone not found.</p>
-      </main>
-    );
+    notFound();
   }
 
   const { name: zoneName, expansion } = resolved;
@@ -171,11 +165,7 @@ export default async function ZonePage({
 
   // Should never happen once slugToZone resolves, but TypeScript needs the guard
   if (!zoneView) {
-    return (
-      <main className="page">
-        <p className="empty">Zone not found.</p>
-      </main>
-    );
+    notFound();
   }
 
   const expansionLabel = deriveExpansionLabel(allBuckets, zoneName);
