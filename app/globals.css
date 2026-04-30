@@ -3708,3 +3708,50 @@ header.header h1 {
   font-size: 0.92rem;
   margin: 0;
 }
+
+/* Shared loot pool view (used when BucketDisplayToggle is OFF) */
+.shared-pool-section {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  margin: 18px 0;
+  padding: 18px;
+}
+.shared-pool-header {
+  margin-bottom: 14px;
+}
+.shared-pool-kicker {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin: 0 0 4px;
+  text-transform: uppercase;
+}
+.shared-pool-title {
+  color: var(--page-title-gold);
+  font-size: 1.4rem;
+  margin: 0 0 4px;
+}
+.shared-pool-summary {
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin: 0;
+}
+.shared-pool-list {
+  display: grid;
+  gap: 6px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.shared-pool-dropped-by {
+  background: var(--accent-soft);
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  color: var(--accent);
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 1px 7px;
+}

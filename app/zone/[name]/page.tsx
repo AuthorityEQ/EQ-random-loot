@@ -4,6 +4,9 @@ import { notFound } from "next/navigation";
 import classicData from "@/data/classic-group-named.json";
 import kunarkData from "@/data/kunark-group-named.json";
 import veliousData from "@/data/velious-group-named.json";
+import classicRaidData from "@/data/classic-raid.json";
+import kunarkRaidData from "@/data/kunark-raid.json";
+import veliousRaidData from "@/data/velious-raid.json";
 import { bucketLevelRange } from "@/lib/buckets";
 import type { Bucket, LootDataset } from "@/lib/search";
 import { getZoneView } from "@/lib/zones";
@@ -19,6 +22,68 @@ import "./zone-page.css";
 const allDatasets = [classicData, kunarkData, veliousData] as LootDataset[];
 const allBuckets: Bucket[] = allDatasets.flatMap((d) => d.buckets);
 
+// ---------------------------------------------------------------------------
+// Raid data types and aggregation
+// ---------------------------------------------------------------------------
+
+type RaidBoss = {
+  name: string;
+  level: number;
+  zone: string;
+  loot_pool: string[];
+};
+
+type RaidTier = {
+  tier: number;
+  name: string;
+  bosses: RaidBoss[];
+};
+
+type RaidDataset = {
+  expansion: string;
+  tiers: RaidTier[];
+};
+
+const allRaidDatasets: RaidDataset[] = [
+  classicRaidData as RaidDataset,
+  kunarkRaidData as RaidDataset,
+  veliousRaidData as RaidDataset,
+];
+
+/** All raid bosses across all expansions, with their expansion attached. */
+const allRaidBossesWithExpansion: (RaidBoss & { expansion: string })[] =
+  allRaidDatasets.flatMap((d) =>
+    d.tiers.flatMap((t) => t.bosses.map((b) => ({ ...b, expansion: d.expansion }))),
+  );
+
+/** Map from canonical zone name -> array of raid bosses in that zone. */
+const raidBossesByZone = new Map<string, (RaidBoss & { expansion: string })[]>();
+for (const boss of allRaidBossesWithExpansion) {
+  const list = raidBossesByZone.get(boss.zone) ?? [];
+  list.push(boss);
+  raidBossesByZone.set(boss.zone, list);
+}
+
+/** All unique raid zone names. */
+const allRaidZoneNames: string[] = Array.from(raidBossesByZone.keys()).sort((a, b) =>
+  a.localeCompare(b),
+);
+
+/**
+ * Resolves a slug back to a raid zone name.
+ * Returns { name, expansion } using the first boss's expansion, or undefined.
+ */
+function slugToRaidZone(
+  slug: string,
+): { name: string; expansion: string } | undefined {
+  for (const [zoneName, bosses] of raidBossesByZone) {
+    if (zoneToSlug(zoneName) === slug) {
+      return { name: zoneName, expansion: bosses[0].expansion };
+    }
+  }
+  return undefined;
+}
+
 // Unique zone names, deduplicated across expansions
 function getAllUniqueZones(buckets: Bucket[]): string[] {
   return Array.from(new Set(buckets.flatMap((b) => b.zones))).sort((a, b) =>
@@ -31,8 +96,22 @@ function getAllUniqueZones(buckets: Bucket[]): string[] {
 // ---------------------------------------------------------------------------
 
 export async function generateStaticParams(): Promise<{ name: string }[]> {
-  const zones = getAllUniqueZones(allBuckets);
-  return zones.map((zone) => ({ name: zoneToSlug(zone) }));
+  const groupZones = getAllUniqueZones(allBuckets);
+  const raidZones = allRaidZoneNames;
+
+  // Merge, deduplicate by slug (group-named wins canonical name on collision)
+  const seen = new Set<string>();
+  const params: { name: string }[] = [];
+
+  for (const zone of [...groupZones, ...raidZones]) {
+    const slug = zoneToSlug(zone);
+    if (!seen.has(slug)) {
+      seen.add(slug);
+      params.push({ name: slug });
+    }
+  }
+
+  return params;
 }
 
 // ---------------------------------------------------------------------------
@@ -45,7 +124,7 @@ export async function generateMetadata({
   params: Promise<{ name: string }>;
 }): Promise<Metadata> {
   const { name: slug } = await params;
-  const resolved = slugToZone(slug, allBuckets);
+  const resolved = slugToZone(slug, allBuckets) ?? slugToRaidZone(slug);
   const zoneName = resolved?.name ?? slug;
   const displayName = toTitleCase(zoneName);
 
@@ -154,7 +233,9 @@ export default async function ZonePage({
   params: Promise<{ name: string }>;
 }) {
   const { name: slug } = await params;
-  const resolved = slugToZone(slug, allBuckets);
+
+  // Resolve slug — try group-named first, then raid
+  const resolved = slugToZone(slug, allBuckets) ?? slugToRaidZone(slug);
 
   if (!resolved) {
     notFound();
@@ -162,16 +243,147 @@ export default async function ZonePage({
 
   const { name: zoneName, expansion } = resolved;
   const zoneView = getZoneView(allBuckets, zoneName);
+  const raidBossesHere = raidBossesByZone.get(zoneName) ?? [];
 
-  // Should never happen once slugToZone resolves, but TypeScript needs the guard
-  if (!zoneView) {
+  // Unknown to both group-named AND raid data → 404
+  if (!zoneView && raidBossesHere.length === 0) {
     notFound();
   }
+
+  const connections = ZONE_CONNECTIONS[zoneName] ?? [];
+
+  // ---------------------------------------------------------------------------
+  // Raid-only zone render path
+  // ---------------------------------------------------------------------------
+  if (!zoneView) {
+    const raidExpansions = Array.from(new Set(raidBossesHere.map((b) => b.expansion)));
+    const primaryExpTone = expansionToneClass(expansion);
+
+    return (
+      <main className="page">
+        <header className="hero-header" aria-label="Loot Goblin">
+          <Link href="/" aria-label="Loot Goblin home">
+            <img className="hero-banner-image" src="/loot-goblin-banner4.png" alt="Loot Goblin" />
+          </Link>
+        </header>
+        <Breadcrumb
+          items={[
+            { label: "Frostreaver Loot", href: "/" },
+            { label: raidExpansions.join(" / ") },
+            { label: zoneName },
+          ]}
+        />
+
+        {/* Hero */}
+        <div className={`zone-page-hero ${primaryExpTone}`}>
+          <div className="zone-page-hero-body">
+            <div className="expansion-pill-row">
+              {raidExpansions.map((exp) => (
+                <span
+                  className={`expansion-pill ${expansionToneClass(exp)}`}
+                  key={exp}
+                >
+                  {exp}
+                </span>
+              ))}
+              <span className="expansion-pill expansion-pill-raid">Raid</span>
+            </div>
+            <h1 className="zone-page-title">{zoneName}</h1>
+            <div className="zone-page-meta">
+              <strong>{raidBossesHere.length} raid {raidBossesHere.length === 1 ? "boss" : "bosses"}</strong>
+            </div>
+          </div>
+        </div>
+
+        <div className="zone-page-sections">
+          {/* Raid bosses and their loot */}
+          <section className="zone-panel zone-named-panel">
+            <div className="zone-panel-heading">
+              <h2>Raid bosses in {zoneName}</h2>
+              <span>{raidBossesHere.length}</span>
+            </div>
+            <div className="zone-mob-list">
+              {raidBossesHere
+                .slice()
+                .sort((a, b) => a.level - b.level || a.name.localeCompare(b.name))
+                .map((boss) => (
+                  <div
+                    className="zone-mob-item bucket-tone-0"
+                    key={`${boss.expansion}-${boss.name}`}
+                  >
+                    <strong>{boss.name}</strong>
+                    <span>
+                      <b>Raid</b>
+                      Level {boss.level}
+                    </span>
+                  </div>
+                ))}
+            </div>
+          </section>
+
+          {/* Per-boss loot pools */}
+          <section className="zone-panel">
+            <div className="zone-panel-heading">
+              <h2>Loot pool in {zoneName}</h2>
+              <span>
+                {Array.from(new Set(raidBossesHere.flatMap((b) => b.loot_pool))).length} items
+              </span>
+            </div>
+            <div className="zone-loot-groups">
+              {raidBossesHere
+                .slice()
+                .sort((a, b) => a.level - b.level || a.name.localeCompare(b.name))
+                .map((boss, i) => {
+                  const toneClass = `zone-loot-group bucket-tone-${i % 6}`;
+                  return (
+                    <details className={toneClass} key={`${boss.expansion}-${boss.name}`}>
+                      <summary className="zone-loot-summary">
+                        <span>{boss.name}</span>
+                        <strong>{boss.loot_pool.length} items</strong>
+                      </summary>
+                      <ul className="zone-loot-list">
+                        {boss.loot_pool.map((item) => (
+                          <li key={item}>
+                            <span className="loot-button">{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </details>
+                  );
+                })}
+            </div>
+          </section>
+
+          {/* Connecting zones */}
+          {connections.length > 0 && (
+            <section className="zone-connections-panel">
+              <h3>Connecting zones</h3>
+              <ul className="zone-connections-list">
+                {connections.map((connectedZone) => (
+                  <li key={connectedZone}>
+                    <Link
+                      className="zone-connection-link"
+                      href={`/zone/${zoneToSlug(connectedZone)}`}
+                    >
+                      {connectedZone}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+        </div>
+      </main>
+    );
+  }
+
+  // ---------------------------------------------------------------------------
+  // Normal group-named zone render path
+  // ---------------------------------------------------------------------------
 
   const expansionLabel = deriveExpansionLabel(allBuckets, zoneName);
   const mobLevelRange = levelRange(allBuckets, zoneName);
   const { previous, next } = getExpansionNeighbors(allBuckets, zoneName);
-  const connections = ZONE_CONNECTIONS[zoneName] ?? [];
 
   // Buckets that include this zone, for the "Recommended buckets" panel
   const relatedBuckets = allBuckets.filter((b) => b.zones.includes(zoneName));

@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { ItemDrawer } from "@/components/ItemDrawer";
 import "@/components/item-drawer.css";
 import { RaidTierCard } from "@/components/raid/RaidTierCard";
@@ -10,10 +11,13 @@ import classicRaidData from "@/data/classic-raid.json";
 import itemDetailsData from "@/data/item-details.json";
 import kunarkRaidData from "@/data/kunark-raid.json";
 import veliousRaidData from "@/data/velious-raid.json";
+import { SharedPoolSection } from "@/components/SharedPoolSection";
+import { useBucketDisplay } from "@/components/BucketDisplayProvider";
 import { itemToSlug } from "@/lib/item-slug";
-import { raidTotals, type RaidBoss, type RaidDataset } from "@/lib/raidTiers";
+import { raidTotals, dedupeTierLoot, bossesDroppingItem, type RaidBoss, type RaidDataset } from "@/lib/raidTiers";
 import { SERVER_META, isRandomLootServer } from "@/lib/server";
 import { type Bucket, type ItemDetailsMap } from "@/lib/search";
+import { zoneToSlug } from "@/lib/zone-slug";
 
 const datasets = [classicRaidData, kunarkRaidData, veliousRaidData] as RaidDataset[];
 const expansionOptions = datasets.map((dataset) => dataset.expansion);
@@ -52,8 +56,10 @@ export default function RaidsPage() {
   const [activeExpansion, setActiveExpansion] = useState(expansionOptions[0]);
   const dataset = datasets.find((candidate) => candidate.expansion === activeExpansion) ?? datasets[0];
   const totals = useMemo(() => raidTotals(dataset.tiers), [dataset]);
+  const { bucketed } = useBucketDisplay();
   const { server } = useServer();
   const randomLoot = isRandomLootServer(server);
+  const router = useRouter();
 
   const [drawerItem, setDrawerItem] = useState<{ item: string; bucket: Bucket } | null>(null);
 
@@ -80,6 +86,28 @@ export default function RaidsPage() {
     }
     return map;
   }, []);
+
+  // Build item→Bucket[] map so multi-boss items show all farming locations in the drawer
+  const itemToBuckets = useMemo(() => {
+    const map = new Map<string, Bucket[]>();
+    for (const ds of datasets) {
+      for (const tier of ds.tiers) {
+        for (const boss of tier.bosses) {
+          const bucket = bossBucketMap.get(`${ds.expansion}|${boss.name}`);
+          if (!bucket) continue;
+          for (const item of boss.loot_pool ?? []) {
+            const existing = map.get(item);
+            if (existing) {
+              existing.push(bucket);
+            } else {
+              map.set(item, [bucket]);
+            }
+          }
+        }
+      }
+    }
+    return map;
+  }, [bossBucketMap]);
 
   function handleSelectLoot(item: string, bucket: Bucket) {
     if (modifierHeldRef.current) {
@@ -143,16 +171,36 @@ export default function RaidsPage() {
       </div>
 
       <div className="raid-tier-list">
-        {dataset.tiers.map((tier) => (
-          <RaidTierCard
-            bossBucketMap={bossBucketMap}
-            expansion={dataset.expansion}
-            getItemDetails={getItemDetails}
-            key={tier.tier}
-            onSelectLoot={handleSelectLoot}
-            tier={tier}
-          />
-        ))}
+        {bucketed
+          ? dataset.tiers.map((tier) => (
+              <RaidTierCard
+                bossBucketMap={bossBucketMap}
+                expansion={dataset.expansion}
+                getItemDetails={getItemDetails}
+                key={tier.tier}
+                onSelectLoot={handleSelectLoot}
+                tier={tier}
+              />
+            ))
+          : dataset.tiers.map((tier) => (
+              <SharedPoolSection
+                key={tier.tier}
+                title={tier.name ?? `Tier ${tier.tier}`}
+                kicker={`${dataset.expansion} Raid Tier`}
+                summary={`${tier.bosses.length} bosses · ${dedupeTierLoot(tier).length} unique items`}
+                items={dedupeTierLoot(tier)}
+                getItemDetails={getItemDetails}
+                getDroppedBy={(itemName) => bossesDroppingItem(tier, itemName).map((b) => b.name)}
+                getBucketForItem={(itemName) => {
+                  const bosses = bossesDroppingItem(tier, itemName);
+                  return (
+                    bossBucketMap.get(`${dataset.expansion}|${bosses[0]?.name}`) ??
+                    makeBossBucket(bosses[0], dataset.expansion)
+                  );
+                }}
+                onSelectLoot={handleSelectLoot}
+              />
+            ))}
       </div>
 
       {drawerItem !== null ? (
@@ -161,9 +209,13 @@ export default function RaidsPage() {
           contentType="Raid Boss"
           details={getItemDetails(drawerItem.item)}
           expansion={drawerItem.bucket.expansion}
+          itemBuckets={itemToBuckets.get(drawerItem.item) ?? []}
           itemName={drawerItem.item}
           onClose={handleCloseDrawer}
-          onSelectZone={() => {}}
+          onSelectZone={(zone) => {
+            setDrawerItem(null);
+            router.push(`/zone/${zoneToSlug(zone)}`);
+          }}
         />
       ) : null}
     </main>
