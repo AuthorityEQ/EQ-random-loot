@@ -57,12 +57,12 @@ export function SearchBox({ results, value, onChange, onSelectResult }: SearchBo
 
   return (
     <label className="search" ref={searchRef}>
-      <span>Search items, mobs, zones</span>
+      <span>Items, Mobs</span>
       <input
         aria-activedescendant={showResults ? `search-result-${activeIndex}` : undefined}
         aria-expanded={showResults}
         aria-controls="search-typeahead-results"
-        aria-label="Search items, mobs, zones"
+        aria-label="Search items and mobs"
         autoComplete="off"
         onBlur={() => {
           window.setTimeout(() => setIsOpen(false), 120);
