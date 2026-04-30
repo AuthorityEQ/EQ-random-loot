@@ -12,6 +12,7 @@ import type { Bucket, LootDataset } from "@/lib/search";
 import { getZoneView } from "@/lib/zones";
 import { zoneToSlug, slugToZone } from "@/lib/zone-slug";
 import { ZONE_CONNECTIONS } from "@/lib/zone-connections";
+import { ZoneLootList } from "@/components/ZoneLootList";
 import { Breadcrumb } from "./Breadcrumb";
 import "./zone-page.css";
 
@@ -335,19 +336,21 @@ export default async function ZonePage({
                 .sort((a, b) => a.level - b.level || a.name.localeCompare(b.name))
                 .map((boss, i) => {
                   const toneClass = `zone-loot-group bucket-tone-${i % 6}`;
+                  const bossBucket: import("@/lib/search").Bucket = {
+                    bucket: i,
+                    level_range: `${boss.level}`,
+                    expansion: boss.expansion,
+                    mobs: [{ name: boss.name, level: boss.level, zone: boss.zone, expansion: boss.expansion, source_bucket: boss.name, loot: boss.loot_pool }],
+                    loot_pool: boss.loot_pool,
+                    zones: [boss.zone],
+                  };
                   return (
                     <details className={toneClass} key={`${boss.expansion}-${boss.name}`}>
                       <summary className="zone-loot-summary">
                         <span>{boss.name}</span>
                         <strong>{boss.loot_pool.length} items</strong>
                       </summary>
-                      <ul className="zone-loot-list">
-                        {boss.loot_pool.map((item) => (
-                          <li key={item}>
-                            <span className="loot-button">{item}</span>
-                          </li>
-                        ))}
-                      </ul>
+                      <ZoneLootList bucket={bossBucket} items={boss.loot_pool} />
                     </details>
                   );
                 })}
@@ -476,13 +479,7 @@ export default async function ZonePage({
                     <span>Levels {bucket.level_range}</span>
                     <strong>{bucket.loot_pool.length} items</strong>
                   </summary>
-                  <ul className="zone-loot-list">
-                    {bucket.loot_pool.map((item) => (
-                      <li key={item}>
-                        <span className="loot-button">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  <ZoneLootList bucket={bucket} items={bucket.loot_pool} />
                 </details>
               );
             })}
