@@ -51,18 +51,29 @@ export function FavoritesProvider({ children }: { children: React.ReactNode }) {
   }, [favorites]);
 
   const value = useMemo<FavoritesContextValue>(() => {
+    // The id may be stored as either `zam:<NNN>` or `name:<lower>` depending
+    // on whether item-details had a real Allakhazam URL at the time of
+    // favoriting. Match against BOTH forms so removal works even if the
+    // stored shape differs from what we'd compute now.
+    function matchIds(itemName: string, details?: ItemDetails) {
+      const computed = getFavoriteId(itemName, details);
+      const nameForm = `name:${itemName.toLowerCase()}`;
+      return new Set([computed, nameForm]);
+    }
+
     function isFavorite(itemName: string, details?: ItemDetails) {
-      const id = getFavoriteId(itemName, details);
-      return favorites.some((favorite) => favorite.id === id);
+      const ids = matchIds(itemName, details);
+      return favorites.some((favorite) => ids.has(favorite.id));
     }
 
     function toggleFavorite(itemName: string, details?: ItemDetails) {
-      const id = getFavoriteId(itemName, details);
+      const ids = matchIds(itemName, details);
       setFavorites((current) => {
-        if (current.some((favorite) => favorite.id === id)) {
-          return current.filter((favorite) => favorite.id !== id);
+        if (current.some((favorite) => ids.has(favorite.id))) {
+          return current.filter((favorite) => !ids.has(favorite.id));
         }
 
+        const id = getFavoriteId(itemName, details);
         return [...current, { id, name: itemName }].sort((a, b) => a.name.localeCompare(b.name));
       });
     }
