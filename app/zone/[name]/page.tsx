@@ -462,6 +462,33 @@ export default async function ZonePage({
           </div>
         </section>
 
+        {/* Raid bosses panel — only shown on mixed group+raid zones */}
+        {raidBossesHere.length > 0 && (
+          <section className="zone-panel zone-named-panel">
+            <div className="zone-panel-heading">
+              <h2>Raid bosses in {zoneName}</h2>
+              <span>{raidBossesHere.length}</span>
+            </div>
+            <div className="zone-mob-list">
+              {raidBossesHere
+                .slice()
+                .sort((a, b) => a.level - b.level || a.name.localeCompare(b.name))
+                .map((boss) => (
+                  <div
+                    className="zone-mob-item bucket-tone-0"
+                    key={`raid-${boss.expansion}-${boss.name}`}
+                  >
+                    <strong>{boss.name}</strong>
+                    <span>
+                      <b>Raid</b>
+                      Level {boss.level}
+                    </span>
+                  </div>
+                ))}
+            </div>
+          </section>
+        )}
+
         {/* Loot pool */}
         <section className="zone-panel">
           <div className="zone-panel-heading">
@@ -485,6 +512,54 @@ export default async function ZonePage({
             })}
           </div>
         </section>
+
+        {/* Raid loot panel — only shown on mixed group+raid zones */}
+        {raidBossesHere.length > 0 && (
+          <section className="zone-panel">
+            <div className="zone-panel-heading">
+              <h2>Raid loot in {zoneName}</h2>
+              <span>
+                {Array.from(new Set(raidBossesHere.flatMap((b) => b.loot_pool))).length} items
+              </span>
+            </div>
+            <div className="zone-loot-groups">
+              {raidBossesHere
+                .slice()
+                .sort((a, b) => a.level - b.level || a.name.localeCompare(b.name))
+                .map((boss, i) => {
+                  const bossBucket: Bucket = {
+                    bucket: 900000 + i,
+                    level_range: String(boss.level),
+                    expansion: boss.expansion,
+                    mobs: [
+                      {
+                        name: boss.name,
+                        level: boss.level,
+                        zone: zoneName,
+                        expansion: boss.expansion,
+                        source_bucket: boss.name,
+                        loot: boss.loot_pool,
+                      },
+                    ],
+                    zones: [zoneName],
+                    loot_pool: boss.loot_pool,
+                  };
+                  return (
+                    <details
+                      className={`zone-loot-group bucket-tone-${i % 6}`}
+                      key={`raid-${boss.expansion}-${boss.name}`}
+                    >
+                      <summary className="zone-loot-summary">
+                        <span>{boss.name}</span>
+                        <strong>{boss.loot_pool.length} items</strong>
+                      </summary>
+                      <ZoneLootList bucket={bossBucket} items={boss.loot_pool} />
+                    </details>
+                  );
+                })}
+            </div>
+          </section>
+        )}
 
         {/* Connecting zones */}
         {connections.length > 0 && (
