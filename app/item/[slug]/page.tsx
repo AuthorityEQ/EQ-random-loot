@@ -104,7 +104,7 @@ export default async function ItemPage({
         <nav aria-label="Breadcrumb">
           <ol className="item-page-breadcrumb">
             <li>
-              <a href="/">Loot</a>
+              <a href="/loot">Loot</a>
             </li>
             {slot ? (
               <li>

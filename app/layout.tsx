@@ -4,7 +4,6 @@ import { BucketDisplayProvider } from "@/components/BucketDisplayProvider";
 import { BucketDisplayToggle } from "@/components/BucketDisplayToggle";
 import { EpicProgressProvider } from "@/components/EpicProgressProvider";
 import { FavoritesProvider } from "@/components/FavoritesProvider";
-import { HomeResetButton } from "@/components/HomeResetButton";
 import { InstallPromptBanner } from "@/components/InstallPromptBanner";
 import { ItemPreviewProvider } from "@/components/ItemPreviewProvider";
 import { ItemPreviewToggle } from "@/components/ItemPreviewToggle";
@@ -75,9 +74,6 @@ export default function RootLayout({
               <EpicProgressProvider>
                 <ItemPreviewProvider>
                   <nav className="app-nav" aria-label="Primary navigation">
-                    <div className="app-nav-left">
-                      <HomeResetButton />
-                    </div>
                     <AppNavLinks />
                     <div className="app-nav-controls">
                       <BucketDisplayToggle />

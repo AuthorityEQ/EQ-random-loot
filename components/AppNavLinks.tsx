@@ -4,7 +4,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const links = [
-  { href: "/", label: "Group Named" },
+  { href: "/", label: "Home" },
+  { href: "/loot", label: "Group Named" },
   { href: "/raids", label: "Raid Bosses" },
   { href: "/spells", label: "Spells" },
   { href: "/crafting", label: "Crafting" },

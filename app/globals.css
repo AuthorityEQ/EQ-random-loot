@@ -190,34 +190,28 @@ select {
   align-items: center;
   background: var(--nav-bg);
   border-bottom: 1px solid var(--line);
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  gap: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
   padding: 12px 18px;
   position: sticky;
   top: 0;
   z-index: 5;
-
-}
-.app-nav-left {
-  align-items: center;
-  display: flex;
-  justify-content: flex-start;
-
 }
 .app-nav-links {
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   justify-content: center;
-
 }
 .app-nav-controls {
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
-  justify-content: flex-end;
-
+  justify-content: center;
 }
 .app-nav a {
   border: 1px solid var(--line);
@@ -2064,10 +2058,6 @@ header.header h1 {
     gap: 8px;
   }
 
-  .app-nav-left {
-    justify-content: center;
-  }
-
   .app-nav-links {
     justify-content: center;
   }
@@ -3491,6 +3481,7 @@ header.header h1 {
 
 /* Loot Goblin hero banner — adopted from upstream main */
 .hero-header {
+  aspect-ratio: 1881 / 780;
   background: transparent;
   border: 0;
   border-radius: 12px;
@@ -3503,12 +3494,15 @@ header.header h1 {
 }
 .hero-header > a {
   display: block;
+  height: 100%;
   width: 100%;
 }
 .hero-banner-image {
   border-radius: 12px;
   display: block;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
   width: 100%;
 }
 
@@ -3645,3 +3639,52 @@ header.header h1 {
   font-weight: 900;
 }
 
+/* ─── Landing page ─────────────────────────────────────────────────────────── */
+
+.home-intro {
+  margin: 18px 0;
+  text-align: center;
+}
+.home-intro h1 {
+  color: var(--page-title-gold);
+  font-size: 2rem;
+  margin: 0 0 8px;
+}
+.home-intro p {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  margin: 0 auto;
+  max-width: 720px;
+}
+.home-tools-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  margin: 24px 0;
+}
+.home-tool-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  color: var(--text);
+  display: block;
+  padding: 18px;
+  text-decoration: none;
+  transition: background 140ms ease, border-color 140ms ease, transform 140ms ease;
+}
+.home-tool-card:hover,
+.home-tool-card:focus {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+.home-tool-card h2 {
+  color: var(--page-title-gold);
+  font-size: 1.2rem;
+  margin: 0 0 6px;
+}
+.home-tool-card p {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  margin: 0;
+}
