@@ -101,7 +101,9 @@ export default function FavoritesPage() {
   }
 
   function removeFavorite(name: string, details: FavoriteRow["details"]) {
-    if (favoritesLocked) return;
+    // The lock used to gate removal. We honour the lock UI for legacy
+    // localStorage state but no longer block removal — clicking the X is
+    // an explicit, intentional action and should always work.
     toggleFavorite(name, details);
   }
   const favoriteRows = useMemo(
@@ -290,11 +292,9 @@ function FavoriteCard({ row, locked, onOpen, onRemove }: { row: FavoriteRow; loc
           {row.bestZone ? <em>Best: {row.bestZone}</em> : null}
         </button>
         <button
-          aria-disabled={locked}
-          className={locked ? "favorite-remove-button is-locked" : "favorite-remove-button"}
-          disabled={locked}
+          className="favorite-remove-button"
           onClick={onRemove}
-          title={locked ? "Favorites locked" : "Remove from favorites"}
+          title="Remove from favorites"
           type="button"
         >
           <FavoriteIndicator details={row.details} itemName={row.name} />
