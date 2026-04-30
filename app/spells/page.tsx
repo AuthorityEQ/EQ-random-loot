@@ -1,11 +1,27 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 
+import droppedSpellsData from "@/data/dropped-spells.json";
 import spellsData from "@/data/spells.json";
 import { getVendorOptionsForShoppingList, spellShoppingKey, type ShoppingListSpell, type SpellVendor } from "@/lib/spell-shopping";
+import { mobToSlug } from "@/lib/mob-slug";
+import { zoneToSlug } from "@/lib/zone-slug";
 
 type SpellExpansion = "Classic" | "Kunark" | "Velious";
+
+type SpellDropSource = {
+  mob: string;
+  zone: string;
+  sourceUrl: string;
+};
+
+type SpellQuestSource = {
+  name: string;
+  npc?: string;
+  zone?: string;
+};
 
 type SpellRecord = {
   name: string;
@@ -16,6 +32,10 @@ type SpellRecord = {
   sourceUrl: string;
   vendors?: SpellVendor[];
   vendorStatus?: "requires_manual_entry" | "no_vendor_data_found";
+  sourceType?: "dropped_or_quested";
+  dropSources?: SpellDropSource[];
+  questSource?: SpellQuestSource;
+  enrichmentStatus?: "ok" | "no_source_data" | "fetch_error";
 };
 
 type SelectedVendorStop = {
@@ -23,8 +43,23 @@ type SelectedVendorStop = {
   coveredSpellKeys: string[];
 };
 
+function isDroppedSpell(spell: SpellRecord): boolean {
+  return (!spell.vendors || spell.vendors.length === 0) && spell.sourceType === "dropped_or_quested";
+}
+
 const expansionOrder: SpellExpansion[] = ["Classic", "Kunark", "Velious"];
-const spells = spellsData as SpellRecord[];
+const spells: SpellRecord[] = [
+  ...(spellsData as SpellRecord[]),
+  ...(droppedSpellsData as SpellRecord[]),
+].sort((a, b) => {
+  const classComp = a.class.localeCompare(b.class);
+  if (classComp !== 0) return classComp;
+  const expComp = expansionOrder.indexOf(a.expansion) - expansionOrder.indexOf(b.expansion);
+  if (expComp !== 0) return expComp;
+  const levelComp = a.level - b.level;
+  if (levelComp !== 0) return levelComp;
+  return a.name.localeCompare(b.name);
+});
 const shoppingListStorageKey = "frostreaver-spell-shopping-list";
 const vendorPlanStorageKey = "frostreaver-spell-vendor-plan";
 const purchasedSpellsStorageKey = "frostreaver-spell-purchased-list";
@@ -176,7 +211,8 @@ export default function SpellsPage() {
     try {
       const rawList = window.localStorage.getItem(shoppingListStorageKey);
       if (rawList) {
-        setShoppingList(JSON.parse(rawList));
+        const parsed = JSON.parse(rawList) as ShoppingListSpell[];
+        setShoppingList(parsed.filter((spell) => !isDroppedSpell(spell as SpellRecord)));
       }
     } catch {
       setShoppingList([]);
@@ -587,18 +623,54 @@ export default function SpellsPage() {
                 <span>{spell.level}</span>
               </div>
               <div className="spell-row-main">
-                <a className="spell-name" href={spell.sourceUrl} target="_blank" rel="noreferrer">
+                <a className="spell-name" href={spell.sourceUrl} target="_blank" rel="noopener noreferrer">
                   {spell.name}
                 </a>
                 <p className="spell-description">{spell.description}</p>
+                {isDroppedSpell(spell) && (spell.dropSources?.length || spell.questSource) ? (
+                  <div className="spell-source-detail">
+                    {spell.dropSources?.length ? (
+                      <ul className="spell-drop-sources" aria-label={`${spell.name} drop sources`}>
+                        {spell.dropSources.map((src) => (
+                          <li key={`${src.mob}-${src.zone}`}>
+                            <span className="spell-drop-mob">
+                              <Link className="spell-source-link-inline" href={`/mob/${mobToSlug(src.mob)}`}>{src.mob}</Link>
+                            </span>
+                            <span className="spell-drop-sep">in</span>
+                            <span className="spell-drop-zone">
+                              <Link className="spell-source-link-inline" href={`/zone/${zoneToSlug(src.zone)}`}>{src.zone}</Link>
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
+                    ) : null}
+                    {spell.questSource ? (
+                      <p className="spell-quest-source">
+                        <span className="spell-quest-label">Quest:</span> {spell.questSource.name}
+                        {spell.questSource.npc ? <> from {spell.questSource.npc}</> : null}
+                        {spell.questSource.zone ? <> in {spell.questSource.zone}</> : null}
+                      </p>
+                    ) : null}
+                  </div>
+                ) : null}
+                {isDroppedSpell(spell) && !spell.dropSources?.length && !spell.questSource ? (
+                  <p className="spell-source-unknown">No drop or quest data available.</p>
+                ) : null}
               </div>
               <div className="spell-meta">
                 <span>{spell.class}</span>
                 <span className={`expansion-pill is-compact ${expansionTone(spell.expansion)}`}>{spell.expansion}</span>
               </div>
-              <button className={`spell-list-button${shoppingKeys.has(spellShoppingKey(spell)) ? " is-active" : ""}`} onClick={() => toggleShoppingListSpell(spell)} type="button">
-                {shoppingKeys.has(spellShoppingKey(spell)) ? "In list" : "Add to list"}
-              </button>
+              {isDroppedSpell(spell) ? (
+                <>
+                  <span className="spell-badge spell-badge--dropped">Dropped</span>
+                  <a className="spell-source-link" href={spell.sourceUrl} target="_blank" rel="noopener noreferrer">View on Allakhazam</a>
+                </>
+              ) : (
+                <button className={`spell-list-button${shoppingKeys.has(spellShoppingKey(spell)) ? " is-active" : ""}`} onClick={() => toggleShoppingListSpell(spell)} type="button">
+                  {shoppingKeys.has(spellShoppingKey(spell)) ? "In list" : "Add to list"}
+                </button>
+              )}
             </article>
           ))}
         </section>

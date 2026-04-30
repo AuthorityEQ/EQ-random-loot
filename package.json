@@ -42,7 +42,9 @@
     "pipeline:scrape": "node --experimental-strip-types scripts/run-pipeline.ts --mode=scrape",
     "cache:list": "node --experimental-strip-types scripts/cache-utility.ts --list",
     "cache:prune": "node --experimental-strip-types scripts/cache-utility.ts --prune --older-than=30",
-    "generate:icons": "node scripts/generate-icons.mjs"
+    "generate:icons": "node scripts/generate-icons.mjs",
+    "enrich:dropped-spells": "node --experimental-strip-types scripts/enrich-dropped-spells.ts",
+    "enrich:dropped-spells:test": "node --experimental-strip-types scripts/enrich-dropped-spells.ts --max=5 --dry"
   },
   "dependencies": {
     "next": "^16.2.4",
