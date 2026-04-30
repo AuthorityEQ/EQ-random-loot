@@ -36,6 +36,7 @@ const excludedVendorZones = new Set([
   "Shar Vahl",
   "Shar Vahl, Divided (NoS)",
   "The Bazaar",
+  "The Rathe Mountains",
 ]);
 
 function isIncludedVendor(vendor: SpellVendor) {
