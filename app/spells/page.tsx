@@ -486,9 +486,16 @@ export default function SpellsPage() {
             </button>
           </>
         ) : (
-          <button className="home-reset-button" onClick={() => setViewMode("shopping")} type="button">
-            Shopping List <span>{shoppingList.length}</span>
-          </button>
+          <>
+            <button className="home-reset-button" onClick={() => setViewMode("shopping")} type="button">
+              Shopping List <span>{shoppingList.length}</span>
+            </button>
+            {shoppingList.length > 0 ? (
+              <button className="home-reset-button is-danger" onClick={() => setShowResetConfirm(true)} type="button">
+                Reset shopping list
+              </button>
+            ) : null}
+          </>
         )}
       </div>
 
