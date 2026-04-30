@@ -68,6 +68,7 @@ export default function HomePage() {
 
       <section className="home-intro">
         <h1>Loot Goblin EQ Tools</h1>
+        <ExpansionTimeline compact />
         <p>
           Tools and references for EverQuest TLP servers. Random-loot bucket
           lookups, vendor planning for spells, crafting recipes, faction guides,
@@ -76,8 +77,6 @@ export default function HomePage() {
       </section>
 
       <HomeSearchBox />
-
-      <ExpansionTimeline />
 
       <section className="home-tools-grid" aria-label="Available tools">
         {tools.map((tool) => (

@@ -404,8 +404,7 @@ function Home() {
       <header className="hero-header" aria-label="Loot Goblin">
         <Link href="/" aria-label="Loot Goblin home"><img className="hero-banner-image" src="/loot-goblin-banner4.png" alt="Loot Goblin" /></Link>
       </header>
-      {/* ExpansionTimeline: full mode, between hero banner and toolbar */}
-      <ExpansionTimeline />
+      <ExpansionTimeline compact />
 
       <div className="toolbar">
         <SearchBox
