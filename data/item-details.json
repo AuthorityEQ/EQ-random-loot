@@ -16152,20 +16152,18 @@
   "Rubicite Greaves": {
     "name": "Rubicite Greaves",
     "slot": "LEGS",
-    "ac": 22,
+    "ac": 12,
     "damage": null,
     "delay": null,
-    "stats": {
-      "DEX": 3,
-      "STA": 3,
-      "WIS": 3,
-      "HP": 65
-    },
-    "resists": {
-      "FR": 3,
-      "CR": 3
-    },
+    "skill": null,
+    "damage_bonus": null,
+    "stats": {},
+    "resists": {},
+    "hp_regen": null,
+    "mana_regen": null,
+    "endurance_regen": null,
     "haste": null,
+    "charges": null,
     "worn_effects": [],
     "focus_effects": [],
     "click_effects": [],
@@ -16184,56 +16182,67 @@
       "BER"
     ],
     "races": [
-      "ALL"
+      "ALL",
+      "except",
+      "IKS"
     ],
-    "weight": 2,
-    "size": "MEDIUM",
-    "lore": null,
+    "weight": 4.2,
+    "size": "LARGE",
+    "item_type": "Armor",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": true,
     "magic": null,
     "no_drop": null,
     "prestige": null,
     "aug_slots": [],
+    "iconPath": "/item-icons/rubicite-greaves-1329.png",
     "sources": [
       {
         "name": "Allakhazam",
         "url": "https://everquest.allakhazam.com/db/item.html?item=1329"
       }
     ],
+    "expansion": "Classic",
     "confidence": "exact_match",
     "match_notes": [
-      "Manually tagged clean."
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=1329.",
+      "Exact URL page is tagged as Expansion: Original."
     ],
     "missing_core_stats": false,
     "duplicate_name_risk": false,
     "parsing_warnings": [],
-    "match_confidence": "exact_match",
-    "expansion": "Classic",
-    "iconPath": "/item-icons/rubicite-greaves-1329.png"
+    "match_confidence": "exact_match"
   },
   "Loam Encrusted Cloak": {
     "name": "Loam Encrusted Cloak",
     "slot": "BACK",
-    "ac": 16,
+    "ac": 5,
     "damage": null,
     "delay": null,
+    "skill": null,
+    "damage_bonus": null,
     "stats": {
-      "STR": 12,
-      "STA": 12,
-      "CHA": 12,
-      "WIS": 12,
-      "INT": 12,
-      "AGI": 12,
-      "HP": 215,
-      "MANA": 215
+      "STR": 2,
+      "CHA": 3,
+      "INT": 1,
+      "AGI": 8,
+      "MANA": 5
     },
     "resists": {
-      "FR": 5,
-      "DR": 15,
-      "CR": 10,
-      "MR": 15,
-      "PR": 15
+      "FR": 3,
+      "DR": 3,
+      "CR": 3,
+      "MR": 3,
+      "PR": 3
     },
+    "hp_regen": null,
+    "mana_regen": null,
+    "endurance_regen": null,
     "haste": null,
+    "charges": null,
     "worn_effects": [],
     "focus_effects": [],
     "click_effects": [],
@@ -16241,40 +16250,50 @@
     "required_level": null,
     "recommended_level": null,
     "classes": [
-      "CLR",
-      "DRU",
-      "SHM",
       "NEC",
       "WIZ",
       "MAG",
       "ENC"
     ],
     "races": [
-      "ALL"
+      "HUM",
+      "ERU",
+      "HIE",
+      "DEF",
+      "GNM",
+      "IKS",
+      "FRG",
+      "DRK"
     ],
-    "weight": 1.1,
-    "size": "SMALL",
+    "weight": 0.5,
+    "size": "MEDIUM",
+    "item_type": "Armor",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
     "lore": true,
     "magic": null,
     "no_drop": null,
     "prestige": null,
     "aug_slots": [],
+    "iconPath": "/item-icons/loam-encrusted-cloak-2154.png",
     "sources": [
       {
         "name": "Allakhazam",
         "url": "https://everquest.allakhazam.com/db/item.html?item=2154"
       }
     ],
+    "expansion": "Classic",
     "confidence": "exact_match",
     "match_notes": [
-      "Manually tagged clean."
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=2154.",
+      "Exact URL page is tagged as Expansion: Original."
     ],
     "missing_core_stats": false,
     "duplicate_name_risk": false,
     "parsing_warnings": [],
-    "match_confidence": "exact_match",
-    "expansion": "Classic",
-    "iconPath": "/item-icons/loam-encrusted-cloak-2154.png"
+    "match_confidence": "exact_match"
   },
   "Bloodstained Key": {
     "name": "Bloodstained Key",
