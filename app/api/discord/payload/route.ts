@@ -32,7 +32,17 @@ import { buildItemSlugMap } from "@/lib/item-slug";
 import { mobToSlug } from "@/lib/mob-slug";
 import { jsonBadRequest, jsonNotFound, corsOptions, strParam } from "@/lib/api-helpers";
 
-const BASE_URL = "https://frostreaver-loot-buckets.app";
+const FOOTER_TEXT = "loot-goblin";
+
+function resolveBaseUrl(request: Request): string {
+  // Prefer the actual request origin so the URL matches whatever host the
+  // request came in on (Vercel preview, prod custom domain, localhost).
+  try {
+    return new URL(request.url).origin;
+  } catch {
+    return "";
+  }
+}
 
 /** Discord embed colour — EQ green */
 const EMBED_COLOR = 0x2d6a4f;
@@ -87,17 +97,17 @@ const allMobsWithContext = allDatasets.flatMap((ds) =>
 // Helpers
 // ---------------------------------------------------------------------------
 
-function itemUrl(slug: string): string {
-  return `${BASE_URL}/item/${slug}`;
+function itemUrl(baseUrl: string, slug: string): string {
+  return `${baseUrl}/item/${slug}`;
 }
 
-function mobUrl(slug: string): string {
-  return `${BASE_URL}/mob/${slug}`;
+function mobUrl(baseUrl: string, slug: string): string {
+  return `${baseUrl}/mob/${slug}`;
 }
 
-function bucketUrl(expansion: string, bucketNumber: number): string {
+function bucketUrl(baseUrl: string, expansion: string, bucketNumber: number): string {
   const expSlug = expansion.toLowerCase();
-  return `${BASE_URL}/buckets/${expSlug}-${bucketNumber}`;
+  return `${baseUrl}/buckets/${expSlug}-${bucketNumber}`;
 }
 
 /** Trim an array to `max` entries and append a "…and N more" note. */
@@ -107,25 +117,25 @@ function truncateList(items: string[], max: number): string {
 }
 
 /** Return the item's best thumbnail URL from its iconPath, or undefined. */
-function itemThumbnail(details: ItemDetailsMap[string] | undefined): string | undefined {
+function itemThumbnail(baseUrl: string, details: ItemDetailsMap[string] | undefined): string | undefined {
   if (!details || !details.iconPath) return undefined;
   // iconPath is relative like "/icons/foo.png"; make it absolute
   if (details.iconPath.startsWith("http")) return details.iconPath;
-  return `${BASE_URL}${details.iconPath}`;
+  return `${baseUrl}${details.iconPath}`;
 }
 
 // ---------------------------------------------------------------------------
 // Payload builders
 // ---------------------------------------------------------------------------
 
-function buildItemPayload(slug: string): DiscordPayload | null {
+function buildItemPayload(baseUrl: string, slug: string): DiscordPayload | null {
   const itemName = slugToName.get(slug);
   if (!itemName) return null;
 
   const details = itemDetails[itemName];
   if (!details) return null;
 
-  const pageUrl = itemUrl(slug);
+  const pageUrl = itemUrl(baseUrl, slug);
 
   // Collect the buckets this item appears in
   const buckets = allBuckets.filter((b) => b.loot_pool.includes(itemName));
@@ -191,31 +201,31 @@ function buildItemPayload(slug: string): DiscordPayload | null {
     description,
     color: EMBED_COLOR,
     fields,
-    footer: { text: "frostreaver-loot-buckets.app" },
+    footer: { text: FOOTER_TEXT },
   };
 
-  const thumb = itemThumbnail(details as Parameters<typeof itemThumbnail>[0]);
+  const thumb = itemThumbnail(baseUrl, details as Parameters<typeof itemThumbnail>[1]);
   if (thumb) {
     embed.thumbnail = { url: thumb };
   }
 
-  const content = `**${itemName}** — [View on Frostreaver Loot Buckets](${pageUrl})`;
+  const content = `**${itemName}** — [View on Loot Goblin](${pageUrl})`;
 
   return { content, embeds: [embed] };
 }
 
-function buildMobPayload(slug: string): DiscordPayload | null {
+function buildMobPayload(baseUrl: string, slug: string): DiscordPayload | null {
   // Find the mob by base slug match
   const match = allMobsWithContext.find(({ mob }) => mobToSlug(mob.name) === slug);
   if (!match) return null;
 
   const { mob, bucket } = match;
   const mobSlug = mobToSlug(mob.name);
-  const pageUrl = mobUrl(mobSlug);
+  const pageUrl = mobUrl(baseUrl, mobSlug);
 
   const lootSample = bucket.loot_pool.slice(0, 8).map((name) => {
     const s = nameToSlug.get(name);
-    return s ? `[${name}](${itemUrl(s)})` : name;
+    return s ? `[${name}](${itemUrl(baseUrl, s)})` : name;
   });
 
   const fields: DiscordField[] = [
@@ -232,15 +242,15 @@ function buildMobPayload(slug: string): DiscordPayload | null {
     description: `Named mob in ${mob.zone} — drops from Bucket ${bucket.bucket} (${bucket.level_range})`,
     color: EMBED_COLOR,
     fields,
-    footer: { text: "frostreaver-loot-buckets.app" },
+    footer: { text: FOOTER_TEXT },
   };
 
-  const content = `**${mob.name}** — [View on Frostreaver Loot Buckets](${pageUrl})`;
+  const content = `**${mob.name}** — [View on Loot Goblin](${pageUrl})`;
 
   return { content, embeds: [embed] };
 }
 
-function buildBucketPayload(id: string): DiscordPayload | null {
+function buildBucketPayload(baseUrl: string, id: string): DiscordPayload | null {
   // id format: "classic-9" | "kunark-3" | "velious-13"
   const parts = id.match(/^(classic|kunark|velious)-(\d+)$/i);
   if (!parts) return null;
@@ -255,7 +265,7 @@ function buildBucketPayload(id: string): DiscordPayload | null {
   );
   if (!bucket) return null;
 
-  const pageUrl = bucketUrl(expansion, bucketNumber);
+  const pageUrl = bucketUrl(baseUrl, expansion, bucketNumber);
 
   const topZones = Array.from(
     new Map(
@@ -268,7 +278,7 @@ function buildBucketPayload(id: string): DiscordPayload | null {
 
   const lootSample = bucket.loot_pool.slice(0, 6).map((name) => {
     const s = nameToSlug.get(name);
-    return s ? `[${name}](${itemUrl(s)})` : name;
+    return s ? `[${name}](${itemUrl(baseUrl, s)})` : name;
   });
 
   const fields: DiscordField[] = [
@@ -291,10 +301,10 @@ function buildBucketPayload(id: string): DiscordPayload | null {
     description: `${bucket.expansion} group-named loot bucket for levels ${bucket.level_range}. ${bucket.mobs.length} named mobs across ${bucket.zones.length} zones.`,
     color: EMBED_COLOR,
     fields,
-    footer: { text: "frostreaver-loot-buckets.app" },
+    footer: { text: FOOTER_TEXT },
   };
 
-  const content = `**${expansion} Bucket ${bucketNumber}** (${bucket.level_range}) — [View on Frostreaver Loot Buckets](${pageUrl})`;
+  const content = `**${expansion} Bucket ${bucketNumber}** (${bucket.level_range}) — [View on Loot Goblin](${pageUrl})`;
 
   return { content, embeds: [embed] };
 }
@@ -324,14 +334,16 @@ export async function GET(request: Request) {
     return jsonBadRequest(`Unknown type "${type}". Valid values: ${validTypes.join(", ")}`);
   }
 
+  const baseUrl = resolveBaseUrl(request);
+
   let payload: DiscordPayload | null = null;
 
   if (type === "item") {
-    payload = buildItemPayload(id);
+    payload = buildItemPayload(baseUrl, id);
   } else if (type === "mob") {
-    payload = buildMobPayload(id);
+    payload = buildMobPayload(baseUrl, id);
   } else if (type === "bucket") {
-    payload = buildBucketPayload(id);
+    payload = buildBucketPayload(baseUrl, id);
   }
 
   if (!payload) {

@@ -23,7 +23,12 @@ interface ShareToDiscordButtonProps {
 // Helpers
 // ---------------------------------------------------------------------------
 
-const BASE_URL = "https://frostreaver-loot-buckets.app";
+function getBaseUrl(): string {
+  if (typeof window !== "undefined" && window.location?.origin) {
+    return window.location.origin;
+  }
+  return "";
+}
 
 function buildDiscordText(
   itemName: string,
@@ -31,7 +36,7 @@ function buildDiscordText(
   bucketLabel?: string,
   dropLocations?: string,
 ): string {
-  const pageUrl = `${BASE_URL}/item/${itemSlug}`;
+  const pageUrl = `${getBaseUrl()}/item/${itemSlug}`;
   const lines: string[] = [
     `**${itemName}** — [click to view](${pageUrl})`,
   ];
