@@ -9,6 +9,7 @@ import { ItemPreviewProvider } from "@/components/ItemPreviewProvider";
 import { ItemPreviewToggle } from "@/components/ItemPreviewToggle";
 import { ServerProvider } from "@/components/ServerProvider";
 import { ServiceWorkerRegistration } from "@/components/ServiceWorkerRegistration";
+import { SharedLootToggle } from "@/components/SharedLootToggle";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import "./globals.css";
 
@@ -76,6 +77,7 @@ export default function RootLayout({
                   <nav className="app-nav" aria-label="Primary navigation">
                     <AppNavLinks />
                     <div className="app-nav-controls">
+                      <SharedLootToggle />
                       <BucketDisplayToggle />
                       <ItemPreviewToggle />
                       <ThemeToggle />

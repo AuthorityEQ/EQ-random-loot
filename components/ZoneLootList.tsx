@@ -8,6 +8,7 @@ import { ItemDrawer } from "@/components/ItemDrawer";
 import "@/components/item-drawer.css";
 import { ItemIcon } from "@/components/ItemIcon";
 import { useItemPreview } from "@/components/ItemPreviewProvider";
+import { useSharedLoot } from "@/components/SharedLootToggle";
 import confidenceData from "@/data/loot-confidence.json";
 import itemDetailsData from "@/data/item-details.json";
 import { DEFAULT_CONFIDENCE, type ConfidenceMetadata } from "@/lib/confidence";
@@ -31,7 +32,17 @@ type ZoneLootListProps = {
 export function ZoneLootList({ items, bucket, itemBucketMap }: ZoneLootListProps) {
   const router = useRouter();
   const { previewProps } = useItemPreview();
+  const { enabled: sharedLoot } = useSharedLoot();
   const [drawerItem, setDrawerItem] = useState<{ item: string; bucket: Bucket } | null>(null);
+
+  // When sharedLoot is off, narrow to items that appear in at least one mob's
+  // own loot array (per-mob mode for non-random-loot servers).
+  const displayItems: string[] = sharedLoot
+    ? items
+    : (() => {
+        const mobOwned = new Set(bucket.mobs.flatMap((m) => m.loot));
+        return items.filter((item) => mobOwned.has(item));
+      })();
 
   // Cmd/Ctrl+click → open /item/<slug> in new tab
   const modifierHeldRef = useRef(false);
@@ -55,7 +66,7 @@ export function ZoneLootList({ items, bucket, itemBucketMap }: ZoneLootListProps
   return (
     <>
       <ul className="zone-loot-list">
-        {items.map((itemName) => {
+        {displayItems.map((itemName) => {
           const details = itemDetailsMap[itemName];
           const meta =
             (confidenceData as unknown as Record<string, ConfidenceMetadata>)[itemName] ??

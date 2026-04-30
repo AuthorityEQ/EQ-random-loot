@@ -246,6 +246,22 @@ select {
   white-space: nowrap;
 
 }
+.shared-loot-toggle {
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  display: inline-flex;
+  overflow: hidden;
+
+}
+.shared-loot-toggle > span {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0 9px;
+  white-space: nowrap;
+
+}
 .theme-toggle-button {
   background: var(--panel);
   border: 0;
@@ -3824,5 +3840,59 @@ header.header h1 {
 .home-search-result.is-active {
   background: var(--accent-soft);
   color: var(--accent);
+  outline: none;
+}
+
+/* ============================================================
+   Zone mob filter — active state + "Show all" bar
+   ============================================================ */
+
+/* Reset button defaults so zone-mob-item works as a <button> */
+button.zone-mob-item {
+  appearance: none;
+  background: none;
+  border: none;
+  font: inherit;
+  text-align: left;
+  width: 100%;
+}
+
+.zone-mob-item.is-active {
+  background: var(--highlight-bg);
+  border-color: var(--bucket-border-amber);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--bucket-border-amber) 40%, transparent);
+  outline: none;
+}
+
+.zone-mob-item.is-active strong {
+  color: var(--accent);
+}
+
+.zone-mob-filter-bar {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  padding: 0 0 4px;
+}
+
+.zone-mob-filter-clear {
+  appearance: none;
+  background: var(--surface-muted);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--accent);
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  padding: 4px 12px;
+  text-transform: uppercase;
+  transition: background-color 140ms ease, border-color 140ms ease;
+}
+
+.zone-mob-filter-clear:hover,
+.zone-mob-filter-clear:focus {
+  background: var(--accent-soft);
+  border-color: color-mix(in srgb, var(--accent) 54%, var(--line));
   outline: none;
 }

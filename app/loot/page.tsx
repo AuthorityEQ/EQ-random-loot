@@ -4,6 +4,7 @@ import { Suspense, useEffect, useDeferredValue, useMemo, useRef, useState } from
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { BucketCard } from "@/components/BucketCard";
+import { useSharedLoot } from "@/components/SharedLootToggle";
 import "@/components/bucket-card.css";
 import { useBucketDisplay } from "@/components/BucketDisplayProvider";
 import { ExpansionTimeline } from "@/components/ExpansionTimeline";
@@ -106,6 +107,7 @@ function Home() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const { bucketed } = useBucketDisplay();
+  const { enabled: sharedLoot } = useSharedLoot();
 
   // Derive local names from urlState for minimal diff to the rest of the file
   const query           = urlState.q    ?? "";
@@ -614,6 +616,7 @@ function Home() {
               onSelectLoot={handleSelectLoot}
               onSelectZone={(zone) => setUrlState({ zone })}
               query=""
+              sharedLoot={sharedLoot}
               showAllLoot={showAllLoot}
               visibleLoot={visibleLoot}
             />
