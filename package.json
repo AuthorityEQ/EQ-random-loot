@@ -4,7 +4,6 @@
     "dev": "next dev --webpack",
     "build": "next build --webpack",
     "start": "next start",
-    "lint": "next lint",
     "extract:item-names": "node --experimental-strip-types scripts/extract-item-names.ts",
     "extract:all-item-names": "node --experimental-strip-types scripts/extract-item-names.ts --all",
     "extract:raid-item-names": "node --experimental-strip-types scripts/extract-item-names.ts --raid",

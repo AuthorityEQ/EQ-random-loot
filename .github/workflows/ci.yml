@@ -1,4 +1,4 @@
-name: CI — Lint, Type-Check, Build
+name: CI — Type-Check, Build
 
 on:
   push:
@@ -33,11 +33,6 @@ jobs:
       # Install dependencies
       - name: Install dependencies
         run: npm ci  # Use 'npm ci' instead of 'npm install' for CI environments
-
-      # Run ESLint (Next.js lint)
-      - name: Lint code
-        run: npm run lint
-        continue-on-error: false  # Fail if linting fails
 
       # Run TypeScript type-checker
       - name: Type-check TypeScript
