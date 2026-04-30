@@ -15,18 +15,19 @@ import type { RaidBoss } from "@/lib/raidTiers";
 type RaidBossCardProps = {
   boss: RaidBoss;
   bossBucket: Bucket | undefined;
+  domId?: string;
   getItemDetails: (name: string) => ItemDetails | undefined;
   onSelectLoot: (item: string, bucket: Bucket) => void;
 };
 
-export function RaidBossCard({ boss, bossBucket, getItemDetails, onSelectLoot }: RaidBossCardProps) {
+export function RaidBossCard({ boss, bossBucket, domId, getItemDetails, onSelectLoot }: RaidBossCardProps) {
   const [open, setOpen] = useState(false);
   const { server } = useServer();
   const showLoot = isRandomLootServer(server) && (boss.loot_pool?.length ?? 0) > 0;
   const { previewProps } = useItemPreview();
 
   return (
-    <article className="raid-boss-card">
+    <article className="raid-boss-card" id={domId}>
       <button
         aria-expanded={open}
         className="raid-boss-trigger"

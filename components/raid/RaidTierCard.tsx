@@ -39,6 +39,7 @@ export function RaidTierCard({
           <RaidBossCard
             boss={boss}
             bossBucket={bossBucketMap.get(`${expansion}|${boss.name}`)}
+            domId={`raid-boss-${boss.name.replace(/[^a-z0-9]+/gi, "-").toLowerCase()}`}
             getItemDetails={getItemDetails}
             key={`${tier.tier}-${boss.name}`}
             onSelectLoot={onSelectLoot}

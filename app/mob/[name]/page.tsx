@@ -7,10 +7,12 @@ import veliousData from "@/data/velious-group-named.json";
 import classicRaidData from "@/data/classic-raid.json";
 import kunarkRaidData from "@/data/kunark-raid.json";
 import veliousRaidData from "@/data/velious-raid.json";
-import type { LootDataset } from "@/lib/search";
+import itemDetailsData from "@/data/item-details.json";
+import type { ItemDetailsMap, LootDataset } from "@/lib/search";
 import type { RaidDataset } from "@/lib/raidTiers";
 import { buildMobIndex, mobToSlug } from "@/lib/mob-slug";
 import { itemToSlug } from "@/lib/item-slug";
+import { ItemIcon } from "@/components/ItemIcon";
 import { Breadcrumb } from "./Breadcrumb";
 import "./mob-page.css";
 
@@ -22,6 +24,8 @@ const allGroupBuckets = groupDatasets.flatMap((d) => d.buckets);
 
 // Build the index once; it's cheap (~1k mobs) and the module is server-only.
 const mobIndex = buildMobIndex(allGroupBuckets, raidDatasets);
+
+const itemDetailsMap = itemDetailsData as ItemDetailsMap;
 
 // ── generateStaticParams ──────────────────────────────────────────────────────
 
@@ -191,12 +195,14 @@ export default async function MobPage({
               {record.lootPool.map((item) => {
                 // Item slug: canonical slug strips apostrophes before normalising
                 const itemSlug = itemToSlug(item);
+                const details = itemDetailsMap[item];
                 return (
                   <li key={item}>
                     <Link
                       href={`/item/${itemSlug}`}
                       className="mob-loot-item-link"
                     >
+                      <ItemIcon details={details} />
                       <span className="mob-loot-item-name">{item}</span>
                     </Link>
                   </li>

@@ -56,6 +56,7 @@ export default function RaidsPage() {
   const [activeExpansion, setActiveExpansion] = useState(expansionOptions[0]);
   const dataset = datasets.find((candidate) => candidate.expansion === activeExpansion) ?? datasets[0];
   const totals = useMemo(() => raidTotals(dataset.tiers), [dataset]);
+  const [searchQuery, setSearchQuery] = useState("");
   const { bucketed } = useBucketDisplay();
   const { server } = useServer();
   const randomLoot = isRandomLootServer(server);
@@ -108,6 +109,30 @@ export default function RaidsPage() {
     }
     return map;
   }, [bossBucketMap]);
+
+  type RaidSearchResult =
+    | { type: "item"; itemName: string; bossName: string; tierName: string }
+    | { type: "boss"; bossName: string; tierName: string; level: number; zone: string };
+
+  const raidSearchResults = useMemo<RaidSearchResult[]>(() => {
+    const q = searchQuery.trim().toLowerCase();
+    if (q.length < 2) return [];
+    const out: RaidSearchResult[] = [];
+    for (const tier of dataset.tiers) {
+      const tierName = tier.name ?? `Tier ${tier.tier}`;
+      for (const boss of tier.bosses) {
+        if (boss.name.toLowerCase().includes(q)) {
+          out.push({ type: "boss", bossName: boss.name, tierName, level: boss.level, zone: boss.zone });
+        }
+        for (const item of boss.loot_pool ?? []) {
+          if (item.toLowerCase().includes(q)) {
+            out.push({ type: "item", itemName: item, bossName: boss.name, tierName });
+          }
+        }
+      }
+    }
+    return out.slice(0, 30);
+  }, [searchQuery, dataset]);
 
   function handleSelectLoot(item: string, bucket: Bucket) {
     if (modifierHeldRef.current) {
@@ -168,6 +193,65 @@ export default function RaidsPage() {
             ))}
           </select>
         </label>
+      </div>
+
+      <div className="raid-search-box">
+        <input
+          type="search"
+          placeholder="Search raid items or bosses..."
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          className="raid-search-input"
+          aria-label="Search raid items or bosses"
+        />
+        {raidSearchResults.length > 0 && (
+          <ul className="raid-search-results" role="listbox" aria-label="Search results">
+            {raidSearchResults.map((r, i) =>
+              r.type === "item" ? (
+                <li key={i} role="option" aria-selected={false}>
+                  <button
+                    type="button"
+                    className="raid-search-result"
+                    onClick={() => {
+                      const bossBucket =
+                        bossBucketMap.get(`${dataset.expansion}|${r.bossName}`) ??
+                        makeBossBucket(
+                          dataset.tiers.flatMap((t) => t.bosses).find((b) => b.name === r.bossName)!,
+                          dataset.expansion
+                        );
+                      handleSelectLoot(r.itemName, bossBucket);
+                      setSearchQuery("");
+                    }}
+                  >
+                    <span className="raid-search-type">Item</span>
+                    <span className="raid-search-name">{r.itemName}</span>
+                    <span className="raid-search-meta">{r.bossName} · {r.tierName}</span>
+                  </button>
+                </li>
+              ) : (
+                <li key={i} role="option" aria-selected={false}>
+                  <button
+                    type="button"
+                    className="raid-search-result"
+                    onClick={() => {
+                      const el = document.getElementById(
+                        `raid-boss-${r.bossName.replace(/[^a-z0-9]+/gi, "-").toLowerCase()}`
+                      );
+                      el?.scrollIntoView({ behavior: "smooth", block: "start" });
+                      el?.classList.add("is-highlighted");
+                      setTimeout(() => el?.classList.remove("is-highlighted"), 1800);
+                      setSearchQuery("");
+                    }}
+                  >
+                    <span className="raid-search-type">Boss</span>
+                    <span className="raid-search-name">{r.bossName}</span>
+                    <span className="raid-search-meta">Level {r.level} · {r.zone}</span>
+                  </button>
+                </li>
+              )
+            )}
+          </ul>
+        )}
       </div>
 
       <div className="raid-tier-list">
