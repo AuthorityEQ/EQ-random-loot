@@ -344,7 +344,7 @@ export function ExpansionTimeline({ compact = false }: ExpansionTimelineProps) {
             <p className="etl-launch-human">{scheduleData.launch_at_human}</p>
           </div>
 
-          <div className="etl-clock" aria-label={`${timeToLaunch.days} days, ${timeToLaunch.hours} hours, ${timeToLaunch.minutes} minutes, ${timeToLaunch.seconds} seconds`} role="timer">
+          <div className="etl-clock" aria-label={now === 0 ? "Loading countdown" : `${timeToLaunch.days} days, ${timeToLaunch.hours} hours, ${timeToLaunch.minutes} minutes, ${timeToLaunch.seconds} seconds`} role="timer">
             {now === 0 ? (
               <span className="etl-clock-placeholder">—</span>
             ) : (
@@ -484,7 +484,7 @@ export function ExpansionTimeline({ compact = false }: ExpansionTimelineProps) {
               <p className="etl-next-unlock-label">
                 {nextExpansion.name} unlocks in
               </p>
-              <div className="etl-clock etl-clock--small" role="timer" aria-label={`${timeToNext.days} days until ${nextExpansion.name}`}>
+              <div className="etl-clock etl-clock--small" role="timer" aria-label={now === 0 ? `Loading ${nextExpansion.name} countdown` : `${timeToNext.days} days until ${nextExpansion.name}`}>
                 <CountdownBlock value={timeToNext.days} label="days" />
                 <span className="etl-clock-sep" aria-hidden="true">:</span>
                 <CountdownBlock value={timeToNext.hours} label="hrs" />
