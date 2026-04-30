@@ -3480,6 +3480,24 @@ header.header h1 {
 }
 
 /* Loot Goblin hero banner — adopted from upstream main */
+/* Item icon — 22x22 framed icon used by ItemIcon across every page. */
+.loot-item-icon {
+  background: #10141a;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.55);
+  display: inline-block;
+  flex: 0 0 auto;
+  height: 22px;
+  image-rendering: auto;
+  object-fit: cover;
+  width: 22px;
+}
+.loot-item-icon.is-placeholder {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.06), transparent 45%),
+    #10141a;
+}
+
 .hero-header {
   aspect-ratio: 1881 / 780;
   background: transparent;
