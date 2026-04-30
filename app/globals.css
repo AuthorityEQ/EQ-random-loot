@@ -1534,6 +1534,30 @@ h1 {
   margin-top: 8px;
 }
 
+.vendor-price-total {
+  background: color-mix(in srgb, var(--exp-classic-bg) 72%, transparent);
+  border: 1px solid color-mix(in srgb, var(--exp-classic-border) 70%, var(--line));
+  border-radius: 999px;
+  color: var(--exp-classic-text);
+  font-size: 0.82rem;
+  font-weight: 900;
+  line-height: 1.1;
+  padding: 7px 10px;
+  white-space: nowrap;
+}
+
+.vendor-price-total.is-inline {
+  font-size: 0.74rem;
+  padding: 5px 8px;
+}
+
+.vendor-zone-title {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
 .vendor-zone-actions {
   display: flex;
   flex-wrap: wrap;
@@ -1588,6 +1612,12 @@ h1 {
   display: grid;
   gap: 8px;
   justify-items: end;
+}
+
+.vendor-route-total {
+  color: var(--exp-classic-text);
+  font-size: 0.86rem;
+  font-weight: 900;
 }
 
 .vendor-route-card {

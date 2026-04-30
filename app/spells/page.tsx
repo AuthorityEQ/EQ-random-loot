@@ -3,7 +3,14 @@
 import { useEffect, useMemo, useState } from "react";
 
 import spellsData from "@/data/spells.json";
-import { getVendorOptionsForShoppingList, spellShoppingKey, type ShoppingListSpell, type SpellVendor } from "@/lib/spell-shopping";
+import {
+  formatEqPriceTotal,
+  getVendorOptionsForShoppingList,
+  getZoneSpellPriceTotal,
+  spellShoppingKey,
+  type ShoppingListSpell,
+  type SpellVendor,
+} from "@/lib/spell-shopping";
 
 type SpellExpansion = "Classic" | "Kunark" | "Velious";
 
@@ -135,6 +142,10 @@ export default function SpellsPage() {
   const plannedRemainingCount = useMemo(
     () => Array.from(plannedSpellKeys).filter((key) => !purchasedKeys.has(key)).length,
     [plannedSpellKeys, purchasedKeys],
+  );
+  const routeGrandTotal = useMemo(
+    () => formatEqPriceTotal(getZoneSpellPriceTotal(routeStops.flatMap((stop) => stop.vendors))),
+    [routeStops],
   );
   const visibleSpells = spells
     .filter((spell) => selectedClass === "Any" || spell.class === selectedClass)
@@ -365,7 +376,6 @@ export default function SpellsPage() {
         <div>
           <p className="eyebrow">EverQuest / Spells</p>
           <h1>Spells</h1>
-          <p className="wip-line">Bard spell data preview</p>
         </div>
       </header>
 
@@ -428,6 +438,7 @@ export default function SpellsPage() {
               <strong>
                 {plannedRemainingCount === 0 && plannedSpellKeys.size > 0 ? "All planned spells purchased." : `Remaining planned spells: ${plannedRemainingCount}`}
               </strong>
+              {routeGrandTotal ? <span className="vendor-route-total">Total left: {routeGrandTotal}</span> : null}
               {purchasedSpellKeys.length > 0 ? (
                 <button onClick={clearPurchased} type="button">Clear purchased</button>
               ) : null}
@@ -439,7 +450,10 @@ export default function SpellsPage() {
 
           {routeStops.length > 0 ? (
             <div className="vendor-route-list">
-              {routeStops.map((stop) => (
+              {routeStops.map((stop) => {
+                const zoneTotal = formatEqPriceTotal(getZoneSpellPriceTotal(stop.vendors));
+
+                return (
                 <article className="vendor-zone-card vendor-route-card" key={stop.zone}>
                   <div className="vendor-zone-card-header">
                     <div>
@@ -447,6 +461,7 @@ export default function SpellsPage() {
                       <p>{stop.remainingSpells} spells to buy here</p>
                       <span>{stop.vendors.length} vendors</span>
                     </div>
+                    {zoneTotal ? <strong className="vendor-price-total">Total: {zoneTotal}</strong> : null}
                   </div>
                   <div className="vendor-list">
                     {stop.vendors.map((vendor) => (
@@ -472,7 +487,8 @@ export default function SpellsPage() {
                     ))}
                   </div>
                 </article>
-              ))}
+                );
+              })}
             </div>
           ) : (
             <p className="empty">
@@ -487,12 +503,16 @@ export default function SpellsPage() {
               <h2>Selected stops</h2>
               {selectedPlan.length > 0 ? (
                 <ul>
-                  {selectedPlan.map((stop) => (
-                    <li key={stop.zone}>
-                      <span>{stop.zone} - {stop.totalSpells} spells</span>
-                      <button onClick={() => removeVendorZone(stop.zone)} type="button">Remove</button>
-                    </li>
-                  ))}
+                  {selectedPlan.map((stop) => {
+                    const selectedStopTotal = formatEqPriceTotal(getZoneSpellPriceTotal(stop.vendors));
+
+                    return (
+                      <li key={stop.zone}>
+                        <span>{stop.zone} - {stop.totalSpells} spells{selectedStopTotal ? ` - ${selectedStopTotal}` : ""}</span>
+                        <button onClick={() => removeVendorZone(stop.zone)} type="button">Remove</button>
+                      </li>
+                    );
+                  })}
                 </ul>
               ) : (
                 <p>No vendor stops selected.</p>
@@ -508,11 +528,17 @@ export default function SpellsPage() {
 
           {vendorOptions.length > 0 ? (
             <div className="vendor-zone-grid">
-              {vendorOptions.map((zoneOption) => (
-                <article className="vendor-zone-card" key={zoneOption.zone}>
-                  <div className="vendor-zone-card-header">
-                    <div>
-                      <h3>{zoneOption.zone}</h3>
+              {vendorOptions.map((zoneOption) => {
+                const zoneOptionTotal = formatEqPriceTotal(getZoneSpellPriceTotal(zoneOption.vendors));
+
+                return (
+                  <article className="vendor-zone-card" key={zoneOption.zone}>
+                    <div className="vendor-zone-card-header">
+                      <div>
+                        <div className="vendor-zone-title">
+                          <h3>{zoneOption.zone}</h3>
+                          {zoneOptionTotal ? <strong className="vendor-price-total is-inline">Total: {zoneOptionTotal}</strong> : null}
+                        </div>
                       <p>{zoneOption.totalSpells} remaining uncovered spells sold here</p>
                       <span>{zoneOption.vendors.length} vendors</span>
                     </div>
@@ -537,7 +563,8 @@ export default function SpellsPage() {
                     ))}
                   </div>
                 </article>
-              ))}
+                );
+              })}
             </div>
           ) : (
             <p className="empty">

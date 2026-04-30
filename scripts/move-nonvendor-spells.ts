@@ -100,8 +100,10 @@ async function findPreviouslyRemovedSpells() {
 
 const spells = JSON.parse(await readFile(spellsPath, "utf8")) as SpellRecord[];
 const existingDropped = existsSync(droppedPath) ? JSON.parse(await readFile(droppedPath, "utf8")) as SpellRecord[] : [];
+const nonVendorStatuses = new Set(["no_vendor_data_found", "no_vendor_data_found_after_filter"]);
+const isNonVendorSpell = (spell: SpellRecord) => nonVendorStatuses.has(spell.vendorStatus ?? "");
 const toMove = spells
-  .filter((spell) => spell.vendorStatus === "no_vendor_data_found_after_filter")
+  .filter(isNonVendorSpell)
   .map((spell) => {
     const { vendorStatus: _vendorStatus, ...rest } = spell;
     return {
@@ -118,7 +120,7 @@ for (const spell of [...toMove, ...recovered]) {
 }
 
 const remainingSpells = spells
-  .filter((spell) => spell.vendorStatus !== "no_vendor_data_found_after_filter")
+  .filter((spell) => !isNonVendorSpell(spell))
   .sort((a, b) => a.expansion.localeCompare(b.expansion) || a.class.localeCompare(b.class) || a.level - b.level || a.name.localeCompare(b.name));
 const droppedSpells = Array.from(droppedByKey.values())
   .sort((a, b) => a.expansion.localeCompare(b.expansion) || a.class.localeCompare(b.class) || a.level - b.level || a.name.localeCompare(b.name));

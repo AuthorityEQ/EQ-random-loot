@@ -15,16 +15,108 @@ export type ShoppingListSpell = {
   vendors?: SpellVendor[];
 };
 
+export type VendorRouteSpell = {
+  key: string;
+  name: string;
+  level: number;
+  class: string;
+  expansion: string;
+  price: string;
+};
+
 export function spellShoppingKey(spell: Pick<ShoppingListSpell, "name" | "class" | "expansion" | "level">) {
   return `${spell.name}\u0000${spell.class}\u0000${spell.expansion}\u0000${spell.level}`;
 }
 
+export function parseEqPriceToCopper(price: string | null | undefined) {
+  if (!price?.trim()) return null;
+
+  const unitValues: Record<string, number> = {
+    pp: 1000,
+    gp: 100,
+    sp: 10,
+    cp: 1,
+  };
+  let total = 0;
+  let matched = false;
+  const pricePattern = /(\d+)\s*(pp|gp|sp|cp)\b/gi;
+  let match: RegExpExecArray | null;
+
+  while ((match = pricePattern.exec(price)) !== null) {
+    total += Number(match[1]) * unitValues[match[2].toLowerCase()];
+    matched = true;
+  }
+
+  return matched ? total : null;
+}
+
+export function formatCopperAsEqPrice(copper: number | null | undefined) {
+  if (copper === null || copper === undefined || !Number.isFinite(copper) || copper <= 0) {
+    return "";
+  }
+
+  const pp = Math.floor(copper / 1000);
+  const gp = Math.floor((copper % 1000) / 100);
+  const sp = Math.floor((copper % 100) / 10);
+  const cp = copper % 10;
+  const parts = [
+    pp ? `${pp}pp` : "",
+    gp ? `${gp}gp` : "",
+    sp ? `${sp}sp` : "",
+    cp ? `${cp}cp` : "",
+  ].filter(Boolean);
+
+  return parts.join(" ");
+}
+
+export function formatEqPriceTotal(total: { knownCopper: number; unknownCount: number }) {
+  const knownPrice = formatCopperAsEqPrice(total.knownCopper);
+  if (knownPrice && total.unknownCount > 0) return `${knownPrice} + unknown`;
+  if (knownPrice) return knownPrice;
+  if (total.unknownCount > 0) return "Unknown";
+  return "";
+}
+
+export function getVendorSpellPriceTotal(spells: VendorRouteSpell[]) {
+  const seen = new Set<string>();
+  let knownCopper = 0;
+  let unknownCount = 0;
+
+  for (const spell of spells) {
+    if (seen.has(spell.key)) continue;
+    seen.add(spell.key);
+    const copper = parseEqPriceToCopper(spell.price);
+    if (copper === null) {
+      unknownCount += 1;
+    } else {
+      knownCopper += copper;
+    }
+  }
+
+  return { knownCopper, unknownCount };
+}
+
+export function getZoneSpellPriceTotal(vendors: { spells: VendorRouteSpell[] }[]) {
+  const spellsByKey = new Map<string, VendorRouteSpell>();
+
+  for (const vendor of vendors) {
+    for (const spell of vendor.spells) {
+      const current = spellsByKey.get(spell.key);
+      if (!current || parseEqPriceToCopper(current.price) === null) {
+        spellsByKey.set(spell.key, spell);
+      }
+    }
+  }
+
+  return getVendorSpellPriceTotal(Array.from(spellsByKey.values()));
+}
+
 export function getVendorOptionsForShoppingList(spells: ShoppingListSpell[]) {
-  const zones = new Map<string, Map<string, { npc: string; spells: { key: string; name: string; level: number; class: string; expansion: string; price: string }[] }>>();
+  const zones = new Map<string, Map<string, { npc: string; spells: VendorRouteSpell[] }>>();
 
   for (const spell of spells) {
     for (const vendor of spell.vendors ?? []) {
-      const zoneVendors = zones.get(vendor.zone) ?? new Map<string, { npc: string; spells: { key: string; name: string; level: number; class: string; expansion: string; price: string }[] }>();
+      const zoneVendors = zones.get(vendor.zone) ?? new Map<string, { npc: string; spells: VendorRouteSpell[] }>();
       const vendorEntry = zoneVendors.get(vendor.npc) ?? { npc: vendor.npc, spells: [] };
       vendorEntry.spells.push({
         key: spellShoppingKey(spell),
