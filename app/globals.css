@@ -3491,13 +3491,13 @@ header.header h1 {
 
 /* Loot Goblin hero banner — adopted from upstream main */
 .hero-header {
-  aspect-ratio: 2172 / 724;
+  aspect-ratio: 1881 / 836;
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: 12px;
   display: block;
   margin-bottom: 14px;
-  max-height: 320px;
+  max-height: 420px;
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -3510,19 +3510,9 @@ header.header h1 {
 .hero-banner-image {
   display: block;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   width: 100%;
-}
-.hero-header::after {
-  background:
-    linear-gradient(90deg, rgba(5, 8, 6, 0.52), rgba(5, 8, 6, 0.08) 38%, rgba(5, 8, 6, 0.52)),
-    linear-gradient(0deg, rgba(5, 8, 6, 0.5), rgba(5, 8, 6, 0.02) 48%, rgba(5, 8, 6, 0.52));
-  content: "";
-  inset: 0;
-  pointer-events: none;
-  position: absolute;
-  z-index: 1;
 }
 
 /* ── Show-more pagination (MatchingItemList, MobLootList) ─────────────────── */
