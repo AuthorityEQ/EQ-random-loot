@@ -22,6 +22,7 @@
     "extract:spells": "node --experimental-strip-types scripts/extract-zam-spells.ts",
     "import:spells": "node --experimental-strip-types scripts/import-zam-spells.ts",
     "filter:spell-vendors": "node --experimental-strip-types scripts/filter-spell-vendor-zones.ts",
+    "audit:item-charges": "node --experimental-strip-types scripts/audit-item-charges.ts",
     "rebucket:classic-group-named": "node --experimental-strip-types scripts/rebucket-classic-group-named.ts",
     "apply:manual-corrections": "node --experimental-strip-types scripts/apply-manual-item-corrections.ts",
     "apply:missing-corrections": "node --experimental-strip-types scripts/apply-missing-item-corrections.ts",

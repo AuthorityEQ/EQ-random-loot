@@ -3,7 +3,7 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 type SpellExpansion = "Classic" | "Kunark" | "Velious";
-type VendorStatus = "requires_manual_entry" | "no_vendor_data_found";
+type VendorStatus = "requires_manual_entry" | "no_vendor_data_found" | "no_vendor_data_found_after_filter";
 
 type SpellVendor = {
   zone: string;
@@ -192,26 +192,33 @@ function normalizeZone(zone: string) {
 function parseVendors(html: string, spellUrl: string) {
   const vendors: SpellVendor[] = [];
   const sourceUrl = `${spellUrl.split("#")[0]}#Sold_By`;
+  let filteredOut = 0;
 
   for (const block of extractSoldByBlocks(html)) {
     const zonePattern = /<strong>\s*<a\b[^>]*>([\s\S]*?)<\/a>\s*<\/strong>\s*<ul\b[^>]*>([\s\S]*?)<\/ul>/gi;
     let zoneMatch: RegExpExecArray | null;
     while ((zoneMatch = zonePattern.exec(block)) !== null) {
       const zone = normalizeZone(zoneMatch[1]);
-      if (excludedVendorZones.has(zone)) continue;
       const list = zoneMatch[2];
       const vendorPattern = /<li>\s*<a\b[^>]*>([\s\S]*?)<\/a>\s*(?:-\s*<i>([\s\S]*?)<\/i>)?/gi;
       let vendorMatch: RegExpExecArray | null;
       while ((vendorMatch = vendorPattern.exec(list)) !== null) {
         const npc = inlineText(vendorMatch[1]);
         if (!zone || !npc) continue;
+        if (excludedVendorZones.has(zone)) {
+          filteredOut += 1;
+          continue;
+        }
         vendors.push({ zone, npc, price: inlineText(vendorMatch[2] ?? ""), sourceUrl });
       }
     }
   }
 
-  return Array.from(new Map(vendors.map((vendor) => [vendorKey(vendor), vendor])).values())
-    .sort((a, b) => a.zone.localeCompare(b.zone) || a.npc.localeCompare(b.npc) || a.price.localeCompare(b.price));
+  return {
+    filteredOut,
+    vendors: Array.from(new Map(vendors.map((vendor) => [vendorKey(vendor), vendor])).values())
+      .sort((a, b) => a.zone.localeCompare(b.zone) || a.npc.localeCompare(b.npc) || a.price.localeCompare(b.price)),
+  };
 }
 
 async function delay(ms: number) {
@@ -253,9 +260,14 @@ async function main() {
       const spellId = spell.sourceUrl.match(/spell=(\d+)/)?.[1] ?? encodeURIComponent(spell.name);
       const html = await readOrFetch(spell.sourceUrl, path.join(cacheDir, `${classType}-${spellId}.html`));
       fetched += 1;
-      const parsedVendors = parseVendors(html, spell.sourceUrl);
+      const parsedVendorResult = parseVendors(html, spell.sourceUrl);
+      const parsedVendors = parsedVendorResult.vendors;
       if (parsedVendors.length === 0) {
-        if (!spell.vendors?.length) spell.vendorStatus = "no_vendor_data_found";
+        if (!spell.vendors?.length) {
+          spell.vendorStatus = parsedVendorResult.filteredOut > 0
+            ? "no_vendor_data_found_after_filter"
+            : "no_vendor_data_found";
+        }
         await delay(220);
         continue;
       }
@@ -296,6 +308,7 @@ async function main() {
     spellsWithVendors,
     vendorEntriesAdded,
     noVendorData: classSpells.filter((spell) => spell.vendorStatus === "no_vendor_data_found").length,
+    noVendorDataAfterFilter: classSpells.filter((spell) => spell.vendorStatus === "no_vendor_data_found_after_filter").length,
     requiresManualEntry: classSpells.filter((spell) => spell.vendorStatus === "requires_manual_entry").length,
     failures,
   }, null, 2));

@@ -24,7 +24,11 @@ export function AppNavLinks() {
   return (
     <div className="app-nav-links">
       {links.map((link) => (
-        <Link className={isActive(pathname, link.href) ? "is-active" : undefined} href={link.href} key={link.href}>
+        <Link
+          className={isActive(pathname, link.href) ? "is-active" : undefined}
+          href={link.href}
+          key={link.href}
+        >
           {link.label}
         </Link>
       ))}

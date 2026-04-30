@@ -16,8 +16,18 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Frostreaver Loot Buckets",
-  description: "Classic Group Named random loot bucket analysis for EverQuest Frostreaver.",
+  title: "Loot Goblin - EverQuest Tools",
+  description: "EverQuest loot, spell, and vendor planning tools.",
+  openGraph: {
+    title: "Loot Goblin - EverQuest Tools",
+    description: "EverQuest loot, spell, and vendor planning tools.",
+    siteName: "Loot Goblin",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Loot Goblin - EverQuest Tools",
+    description: "EverQuest loot, spell, and vendor planning tools.",
+  },
 };
 
 export default function RootLayout({
