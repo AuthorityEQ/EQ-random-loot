@@ -402,6 +402,9 @@ function Home() {
 
   return (
     <main className="page">
+      <header className="hero-header" aria-label="Loot Goblin">
+        <img className="hero-banner-image" src="/loot-goblin-banner4.png" alt="Loot Goblin" />
+      </header>
       <header className="header">
         <div>
           <p className="eyebrow">
