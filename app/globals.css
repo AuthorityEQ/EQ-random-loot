@@ -3491,27 +3491,24 @@ header.header h1 {
 
 /* Loot Goblin hero banner — adopted from upstream main */
 .hero-header {
-  aspect-ratio: 1881 / 836;
-  background: var(--panel);
-  border: 1px solid var(--line);
+  background: transparent;
+  border: 0;
   border-radius: 12px;
   display: block;
-  margin-bottom: 14px;
-  max-height: 420px;
+  margin: 0 auto 14px;
+  max-width: 1100px;
   overflow: hidden;
   position: relative;
   width: 100%;
 }
 .hero-header > a {
   display: block;
-  height: 100%;
   width: 100%;
 }
 .hero-banner-image {
+  border-radius: 12px;
   display: block;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
+  height: auto;
   width: 100%;
 }
 
