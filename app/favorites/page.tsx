@@ -9,13 +9,57 @@ import { ItemDrawer } from "@/components/ItemDrawer";
 import "@/components/item-drawer.css";
 import "@/components/bucket-card.css";
 import classicData from "@/data/classic-group-named.json";
+import classicRaidData from "@/data/classic-raid.json";
 import itemDetailsData from "@/data/item-details.json";
 import kunarkData from "@/data/kunark-group-named.json";
+import kunarkRaidData from "@/data/kunark-raid.json";
 import veliousData from "@/data/velious-group-named.json";
+import veliousRaidData from "@/data/velious-raid.json";
 import type { Bucket, ItemDetailsMap, LootDataset } from "@/lib/search";
+import type { RaidDataset } from "@/lib/raidTiers";
 
 const datasets = [classicData, kunarkData, veliousData] as LootDataset[];
 const buckets = datasets.flatMap((dataset) => dataset.buckets);
+
+// Build a synthetic Bucket for each raid boss so raid-only favorites
+// can open the item drawer (and be unfavorited) just like group-named items.
+const raidDatasets = [classicRaidData, kunarkRaidData, veliousRaidData] as RaidDataset[];
+let _raidBucketCounter = 0;
+/** Maps item name → first raid Bucket that contains it. */
+const raidItemBucketMap = new Map<string, Bucket>();
+for (const ds of raidDatasets) {
+  for (const tier of ds.tiers) {
+    for (const boss of tier.bosses) {
+      if (!boss.loot_pool?.length) continue;
+      _raidBucketCounter += 1;
+      const syntheticBucket: Bucket = {
+        bucket: _raidBucketCounter,
+        level_range: String(boss.level),
+        expansion: ds.expansion,
+        mobs: [
+          {
+            name: boss.name,
+            level: boss.level,
+            zone: boss.zone,
+            expansion: ds.expansion,
+            source_bucket: boss.name,
+            loot: boss.loot_pool,
+          },
+        ],
+        zones: [boss.zone],
+        loot_pool: boss.loot_pool,
+        mob_count: 1,
+        loot_count: boss.loot_pool.length,
+        zone_count: 1,
+      };
+      for (const itemName of boss.loot_pool) {
+        if (!raidItemBucketMap.has(itemName)) {
+          raidItemBucketMap.set(itemName, syntheticBucket);
+        }
+      }
+    }
+  }
+}
 const itemDetails = itemDetailsData as ItemDetailsMap;
 const expansionOrder = ["Classic", "Kunark", "Velious"];
 const lockStorageKey = "frostreaver-favorites-locked";
@@ -64,12 +108,14 @@ export default function FavoritesPage() {
     () =>
       favorites.map((favorite) => {
         const itemBuckets = buckets.filter((bucket) => bucket.loot_pool.includes(favorite.name));
-        const firstBucket = itemBuckets
+        const groupFirstBucket = itemBuckets
           .sort((a, b) =>
             expansionOrder.indexOf(a.expansion) - expansionOrder.indexOf(b.expansion)
             || rangeSortValue(a.level_range) - rangeSortValue(b.level_range)
             || a.level_range.localeCompare(b.level_range),
           )[0];
+        // Fall back to a synthetic raid bucket when the item has no group-named bucket.
+        const firstBucket = groupFirstBucket ?? raidItemBucketMap.get(favorite.name);
         const bestZone = firstBucket ? bestZoneForBucket(firstBucket) : null;
         return {
           ...favorite,

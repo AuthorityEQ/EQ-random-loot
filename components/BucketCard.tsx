@@ -13,6 +13,7 @@ type BucketCardProps = {
   bucket: Bucket;
   visibleLoot: string[];
   query?: string;
+  showAllLoot?: boolean;
   getItemDetails: (itemName: string) => ItemDetails | undefined;
   getItemStatDisplay: (itemName: string) => string | null;
   onSelectLoot: (itemName: string, bucket: Bucket) => void;
@@ -27,7 +28,7 @@ function expansionTone(expansion: string) {
   return `expansion-tone-${expansion.toLowerCase()}`;
 }
 
-export function BucketCard({ bucket, visibleLoot, query = "", getItemDetails, getItemStatDisplay, onSelectLoot, onSelectZone }: BucketCardProps) {
+export function BucketCard({ bucket, visibleLoot, query = "", showAllLoot = false, getItemDetails, getItemStatDisplay, onSelectLoot, onSelectZone }: BucketCardProps) {
   const normalizedQuery = query.trim().toLowerCase();
   const { previewProps } = useItemPreview();
 
@@ -96,7 +97,7 @@ export function BucketCard({ bucket, visibleLoot, query = "", getItemDetails, ge
           </div>
         </details>
 
-        <details>
+        <details key={String(showAllLoot)} open={showAllLoot}>
           <summary>
             <span>Loot pool</span>
             <span>{visibleLoot.length} / {bucket.loot_pool.length}</span>

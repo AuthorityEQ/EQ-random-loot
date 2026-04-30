@@ -32,6 +32,7 @@ type MobLootListProps = {
   getItemDetails: (itemName: string) => ItemDetails | undefined;
   getItemStatDisplay: (itemName: string) => string | null;
   statFilter: StatFilter;
+  showAllLoot?: boolean;
   pageSize?: number;
 };
 
@@ -40,6 +41,7 @@ export function MobLootList({
   onSelectLoot,
   getItemDetails,
   getItemStatDisplay,
+  showAllLoot = false,
   pageSize = 50,
 }: MobLootListProps) {
   const { previewProps } = useItemPreview();
@@ -67,7 +69,8 @@ export function MobLootList({
               return (
                 <details
                   className={`zone-loot-group bucket-tone-${bucket.bucket % 6} mob-loot-row`}
-                  key={key}
+                  key={`${key}-${String(showAllLoot)}`}
+                  open={showAllLoot}
                 >
                   <summary className="zone-loot-summary mob-loot-summary">
                     <span className="mob-loot-name">{mob.name}</span>
