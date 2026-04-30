@@ -443,6 +443,9 @@ export default function SpellsPage() {
 
   return (
     <main className="page spells-page">
+      <header className="hero-header" aria-label="Loot Goblin">
+        <Link href="/" aria-label="Loot Goblin home"><img className="hero-banner-image" src="/loot-goblin-banner4.png" alt="Loot Goblin" /></Link>
+      </header>
       <header className="header spells-header">
         <div>
           <p className="eyebrow">EverQuest / Spells</p>

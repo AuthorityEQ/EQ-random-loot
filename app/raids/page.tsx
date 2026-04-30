@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
+import Link from "next/link";
 import { ItemDrawer } from "@/components/ItemDrawer";
 import "@/components/item-drawer.css";
 import { RaidTierCard } from "@/components/raid/RaidTierCard";
@@ -95,6 +96,9 @@ export default function RaidsPage() {
 
   return (
     <main className="page">
+      <header className="hero-header" aria-label="Loot Goblin">
+        <Link href="/" aria-label="Loot Goblin home"><img className="hero-banner-image" src="/loot-goblin-banner4.png" alt="Loot Goblin" /></Link>
+      </header>
       <header className="header">
         <div>
           <p className="eyebrow">{dataset.expansion} / Raid Bosses</p>

@@ -190,6 +190,9 @@ export default async function ZonePage({
 
   return (
     <main className="page">
+      <header className="hero-header" aria-label="Loot Goblin">
+        <Link href="/" aria-label="Loot Goblin home"><img className="hero-banner-image" src="/loot-goblin-banner4.png" alt="Loot Goblin" /></Link>
+      </header>
       <Breadcrumb
         items={[
           { label: "Frostreaver Loot", href: "/" },

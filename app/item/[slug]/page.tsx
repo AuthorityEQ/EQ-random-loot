@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import "@/components/item-drawer.css";
 import "./item-page.css";
@@ -95,6 +96,9 @@ export default async function ItemPage({
 
   return (
     <main className="page">
+      <header className="hero-header" aria-label="Loot Goblin">
+        <Link href="/" aria-label="Loot Goblin home"><img className="hero-banner-image" src="/loot-goblin-banner4.png" alt="Loot Goblin" /></Link>
+      </header>
       <div className="item-page-content">
         {/* Breadcrumb */}
         <nav aria-label="Breadcrumb">

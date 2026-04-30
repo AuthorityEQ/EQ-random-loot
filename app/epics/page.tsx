@@ -25,6 +25,7 @@
  */
 
 import dynamic from "next/dynamic";
+import Link from "next/link";
 import "./epic-page.css";
 
 // Import types and constants from types module (not exported from page itself)
@@ -135,6 +136,9 @@ async function EpicsPageContent() {
 
   return (
     <main className="page">
+      <header className="hero-header" aria-label="Loot Goblin">
+        <Link href="/" aria-label="Loot Goblin home"><img className="hero-banner-image" src="/loot-goblin-banner4.png" alt="Loot Goblin" /></Link>
+      </header>
       <header className="header">
         <div>
           <p className="eyebrow">Epic 1.0 Quests</p>

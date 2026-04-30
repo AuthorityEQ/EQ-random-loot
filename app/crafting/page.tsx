@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { CraftingTabs, type SkillData } from "@/components/CraftingTabs";
 import {
   isLiveData,
@@ -27,6 +28,9 @@ export default function CraftingPage() {
 
   return (
     <main className="page">
+      <header className="hero-header" aria-label="Loot Goblin">
+        <Link href="/" aria-label="Loot Goblin home"><img className="hero-banner-image" src="/loot-goblin-banner4.png" alt="Loot Goblin" /></Link>
+      </header>
       <header className="header">
         <div>
           <p className="eyebrow">Tradeskills / Recipes</p>

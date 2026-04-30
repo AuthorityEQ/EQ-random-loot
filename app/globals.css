@@ -78,6 +78,7 @@
   --panel-soft: var(--surface-muted);
   --muted: var(--text-muted);
   --line: var(--border);
+  --page-title-gold: #d4af37;
 
 }
 :root[data-theme="dark"] {
@@ -160,6 +161,7 @@
   --panel-soft: var(--surface-muted);
   --muted: var(--text-muted);
   --line: var(--border);
+  --page-title-gold: #e8c971;
 
 }
 * {
@@ -188,25 +190,33 @@ select {
   align-items: center;
   background: var(--nav-bg);
   border-bottom: 1px solid var(--line);
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   gap: 8px;
-  justify-content: space-between;
   padding: 12px 18px;
   position: sticky;
   top: 0;
   z-index: 5;
 
 }
+.app-nav-left {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+
+}
 .app-nav-links {
+  align-items: center;
   display: flex;
   gap: 8px;
-  margin: 0 auto;
+  justify-content: center;
 
 }
 .app-nav-controls {
   align-items: center;
   display: flex;
   gap: 8px;
+  justify-content: flex-end;
 
 }
 .app-nav a {
@@ -348,6 +358,14 @@ h1 {
   line-height: 1;
   margin: 0;
   max-width: 820px;
+
+}
+.page > .header h1,
+.page > .hero-header h1,
+.page > .header .h1,
+.spells-header h1,
+header.header h1 {
+  color: var(--page-title-gold);
 
 }
 .subhead {
@@ -2040,13 +2058,18 @@ h1 {
 }
 @media (max-width: 720px) {
   .app-nav {
-    align-items: stretch;
+    display: flex;
     flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .app-nav-left {
+    justify-content: center;
   }
 
   .app-nav-links {
     justify-content: center;
-    margin: 0;
   }
 
   .app-nav-controls {
@@ -3479,6 +3502,11 @@ h1 {
   position: relative;
   width: 100%;
 }
+.hero-header > a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
 .hero-banner-image {
   display: block;
   height: 100%;
@@ -3496,3 +3524,137 @@ h1 {
   position: absolute;
   z-index: 1;
 }
+
+/* ── Show-more pagination (MatchingItemList, MobLootList) ─────────────────── */
+.show-more-row {
+  display: flex;
+  justify-content: center;
+  padding: 12px 0 4px;
+}
+
+.show-more-button {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--accent);
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 7px 18px;
+  transition: background 120ms ease, border-color 120ms ease;
+}
+
+.show-more-button:hover,
+.show-more-button:focus-visible {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  outline: none;
+}
+
+/* ── MobLootList ──────────────────────────────────────────────────────────── */
+.mob-loot-panel .mob-loot-list {
+  display: grid;
+  gap: 6px;
+}
+
+/* Summary row overrides: show mob name + meta + count in one line */
+.mob-loot-summary {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+}
+
+.mob-loot-name {
+  flex: 1 1 auto;
+  font-size: 0.93rem;
+  font-weight: 600;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mob-loot-meta {
+  align-items: center;
+  color: var(--text-muted);
+  display: flex;
+  flex-shrink: 0;
+  font-size: 0.82rem;
+  gap: 6px;
+}
+
+.mob-loot-level {
+  color: var(--bucket-range-text);
+  font-weight: 600;
+}
+
+.mob-loot-zone-link {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.mob-loot-zone-link:hover {
+  text-decoration: underline;
+}
+
+.mob-loot-count {
+  color: var(--text-muted);
+  flex-shrink: 0;
+  font-size: 0.82rem;
+  font-weight: 500;
+}
+
+/* Tighten the loot list padding inside mob rows */
+.mob-loot-row .zone-loot-list {
+  padding: 6px 10px 8px;
+}
+
+/* ── Adopted from Authority origin/main (additive refinements) ──────────────
+   These rules existed upstream and are missing locally; they add a base
+   `.zone-mob-item` block (we only had .bucket-tone variants) and refine
+   the vendor-price-total pill styling. Purely additive, no removals. */
+
+.zone-mob-item {
+  align-items: center;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-left: 4px solid #c9d6cd;
+  border-radius: 6px;
+  color: var(--text);
+  cursor: pointer;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  min-height: 32px;
+  padding: 6px 8px;
+  text-align: left;
+  transition: background 140ms ease, border-color 140ms ease, box-shadow 140ms ease;
+  width: 100%;
+}
+
+/* Refined vendor-price-total: pill-style chip with classic tone */
+.vendor-price-total {
+  background: color-mix(in srgb, var(--exp-classic-bg) 72%, transparent);
+  border: 1px solid color-mix(in srgb, var(--exp-classic-border) 70%, var(--line));
+  border-radius: 999px;
+  color: var(--exp-classic-text);
+  font-size: 0.82rem;
+  font-weight: 900;
+  line-height: 1.1;
+  padding: 7px 10px;
+  white-space: nowrap;
+}
+
+.vendor-price-total.is-inline {
+  font-size: 0.74rem;
+  margin-left: 8px;
+  padding: 5px 8px;
+}
+
+.vendor-route-total {
+  color: var(--exp-classic-text);
+  font-size: 0.86rem;
+  font-weight: 900;
+}
+

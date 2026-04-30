@@ -106,10 +106,10 @@ function RecipeCard({
       <div className="recipe-components">
         <h4 className="recipe-components-heading">Components</h4>
         <ul className="recipe-components-list">
-          {recipe.components.map((component) => {
+          {recipe.components.map((component, idx) => {
             const d = itemDetailsMap[component.name];
             return (
-              <li className="recipe-component-item" key={`${component.name}-${component.count}`}>
+              <li className="recipe-component-item" key={`${component.name}-${component.count}-${idx}`}>
                 {component.count > 1 ? (
                   <span className="recipe-component-count">{component.count}x</span>
                 ) : null}

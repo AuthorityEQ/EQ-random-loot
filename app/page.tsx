@@ -1,6 +1,7 @@
 "use client";
 
 import { Suspense, useEffect, useDeferredValue, useMemo, useRef, useState } from "react";
+import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { BucketCard } from "@/components/BucketCard";
 import "@/components/bucket-card.css";
@@ -11,10 +12,9 @@ import "@/components/item-drawer.css";
 import { ItemFarmView } from "@/components/ItemFarmView";
 import { ItemSlotFilter } from "@/components/ItemSlotFilter";
 import { LevelRecommendations } from "@/components/LevelRecommendations";
-import { MatchingItemList, type MatchingItemRow } from "@/components/MatchingItemList";
+import { MobLootList, type MobLootEntry } from "@/components/MobLootList";
 import { SearchBox } from "@/components/SearchBox";
 import "@/components/search-box.css";
-import { ServerStatusBadge } from "@/components/ServerStatusBadge";
 import { ShareFilterButton } from "@/components/ShareFilterButton";
 import { ZoneView } from "@/components/ZoneView";
 import classicData from "@/data/classic-group-named.json";
@@ -88,22 +88,6 @@ function expansionTone(expansion: string) {
   return `expansion-tone-${expansion.toLowerCase()}`;
 }
 
-function bucketSortValue(bucket: Bucket) {
-  return Number(bucket.level_range.match(/\d+/)?.[0] ?? 999);
-}
-
-function uniqueSortedItemRows(rows: MatchingItemRow[]) {
-  const itemMap = new Map<string, MatchingItemRow>();
-
-  for (const row of [...rows].sort((a, b) => bucketSortValue(a.bucket) - bucketSortValue(b.bucket) || a.itemName.localeCompare(b.itemName))) {
-    if (!itemMap.has(row.itemName)) {
-      itemMap.set(row.itemName, row);
-    }
-  }
-
-  return Array.from(itemMap.values()).sort((a, b) => bucketSortValue(a.bucket) - bucketSortValue(b.bucket) || a.itemName.localeCompare(b.itemName));
-}
-
 function sortItemNamesByStat(itemNames: string[], statFilter: StatFilter) {
   if (statFilter === "Any") return itemNames;
 
@@ -112,28 +96,6 @@ function sortItemNamesByStat(itemNames: string[], statFilter: StatFilter) {
     const bValue = getComparableStatValue(itemDetails[b], statFilter) ?? Number.NEGATIVE_INFINITY;
     return bValue - aValue || a.localeCompare(b);
   });
-}
-
-function sortItemRowsByStat(rows: MatchingItemRow[], statFilter: StatFilter) {
-  if (statFilter === "Any") return rows;
-
-  return [...rows].sort((a, b) => {
-    const aValue = getComparableStatValue(a.details, statFilter) ?? Number.NEGATIVE_INFINITY;
-    const bValue = getComparableStatValue(b.details, statFilter) ?? Number.NEGATIVE_INFINITY;
-    return bValue - aValue || a.itemName.localeCompare(b.itemName);
-  });
-}
-
-function normalizeSearch(value: string) {
-  return value.trim().toLowerCase();
-}
-
-function flatSearchMatches(itemName: string, bucket: Bucket, searchQuery: string) {
-  const normalizedQuery = normalizeSearch(searchQuery);
-  if (normalizedQuery.length < 2) return true;
-
-  return itemName.toLowerCase().includes(normalizedQuery)
-    || bucket.mobs.some((mob) => mob.name.toLowerCase().includes(normalizedQuery));
 }
 
 function Home() {
@@ -273,16 +235,42 @@ function Home() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [expansionBuckets, levelVisibleBuckets, selectedClass, selectedRace, selectedSlot, selectedStat, selectedSlots]);
 
-  const flatItemRows = useMemo(
-    () => sortItemRowsByStat(uniqueSortedItemRows(filteredBuckets
-      .flatMap(({ bucket, visibleLoot }) =>
-        visibleLoot
-          .filter((itemName) => flatSearchMatches(itemName, bucket, deferredQuery))
-          .map((itemName) => ({ itemName, bucket, details: itemDetails[itemName], statDisplay: getItemStatDisplay(itemName) })),
-    )), selectedStat),
+  // mob-grouped rows for non-bucketed view
+  const mobLootRows = useMemo<MobLootEntry[]>(() => {
+    const normalizedQuery = deferredQuery.trim().toLowerCase();
+    const seen = new Map<string, MobLootEntry>();
+
+    for (const { bucket, visibleLoot } of filteredBuckets) {
+      const visibleSet = new Set(visibleLoot);
+      for (const mob of bucket.mobs) {
+        const mobKey = `${mob.name}__${mob.zone}__${mob.level}`;
+
+        // Apply search filter: match on item name OR mob name
+        const matchingItems = mob.loot.filter((item) => {
+          if (!visibleSet.has(item)) return false;
+          if (normalizedQuery.length < 2) return true;
+          return item.toLowerCase().includes(normalizedQuery)
+            || mob.name.toLowerCase().includes(normalizedQuery);
+        });
+
+        if (matchingItems.length === 0) continue;
+
+        if (!seen.has(mobKey)) {
+          seen.set(mobKey, {
+            key: mobKey,
+            mob: { name: mob.name, level: mob.level, zone: mob.zone, expansion: mob.expansion },
+            bucket,
+            items: matchingItems,
+          });
+        }
+      }
+    }
+
+    return Array.from(seen.values()).sort(
+      (a, b) => a.mob.level - b.mob.level || a.mob.name.localeCompare(b.mob.name),
+    );
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [deferredQuery, filteredBuckets, selectedStat],
-  );
+  }, [deferredQuery, filteredBuckets]);
 
   // ── Effects ───────────────────────────────────────────────────────────────
 
@@ -404,21 +392,9 @@ function Home() {
   return (
     <main className="page">
       <header className="hero-header" aria-label="Loot Goblin">
-        <img className="hero-banner-image" src="/loot-goblin-banner4.png" alt="Loot Goblin" />
+        <Link href="/" aria-label="Loot Goblin home"><img className="hero-banner-image" src="/loot-goblin-banner4.png" alt="Loot Goblin" /></Link>
       </header>
-      <header className="header">
-        <div>
-          <p className="eyebrow">
-            {expansionLabel} / {contentType} / {modeLabel}
-          </p>
-          <h1>Frostreaver Random Loot</h1>
-          <p className="wip-line">Work in progress — DM AuthorityGames on Discord</p>
-          {/* ServerStatusBadge: prominent in pre-launch hero; self-suppresses to quiet badge post-launch */}
-          <ServerStatusBadge />
-        </div>
-      </header>
-
-      {/* ExpansionTimeline: full mode, between header and toolbar */}
+      {/* ExpansionTimeline: full mode, between hero banner and toolbar */}
       <ExpansionTimeline />
 
       <div className="toolbar">
@@ -632,9 +608,12 @@ function Home() {
           ))}
         </div>
       ) : !bucketed ? (
-        <MatchingItemList
-          rows={flatItemRows}
-          onSelectLoot={(itemName, selectedBucket) => setSelectedLoot({ itemName, bucket: selectedBucket })}
+        <MobLootList
+          rows={mobLootRows}
+          onSelectLoot={handleSelectLoot}
+          getItemDetails={getItemDetails}
+          getItemStatDisplay={getItemStatDisplay}
+          statFilter={selectedStat}
         />
       ) : (
         <p className="empty">No {expansionLabel} Group Named buckets match the active filters.</p>

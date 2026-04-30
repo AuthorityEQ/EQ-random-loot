@@ -284,6 +284,9 @@ export default function FactionsPage() {
 
   return (
     <main className="factions-page">
+      <header className="hero-header" aria-label="Loot Goblin">
+        <Link href="/" aria-label="Loot Goblin home"><img className="hero-banner-image" src="/loot-goblin-banner4.png" alt="Loot Goblin" /></Link>
+      </header>
       <header className="factions-hero">
         <p className="eyebrow">Reference / Faction Guide</p>
         <h1>Faction Guide</h1>

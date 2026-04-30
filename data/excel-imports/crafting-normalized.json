@@ -3983,6 +3983,31 @@
     },
     {
       "skill": "alchemy",
+      "name": "Spirit Shift",
+      "trivial": 87,
+      "components": [
+        {
+          "name": "Sumbul",
+          "count": 1
+        },
+        {
+          "name": "Mystic Ash",
+          "count": 1
+        },
+        {
+          "name": "Mercury",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Spirit Shift",
+        "count": 1
+      },
+      "notes": "Shadowstep"
+    },
+    {
+      "skill": "alchemy",
       "name": "Null Potion",
       "trivial": 90,
       "components": [
@@ -4475,6 +4500,27 @@
     },
     {
       "skill": "alchemy",
+      "name": "Essence of <Race>",
+      "trivial": 162,
+      "components": [
+        {
+          "name": "Wormwood",
+          "count": 1
+        },
+        {
+          "name": "Racial Parts",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Essence of <Race>",
+        "count": 1
+      },
+      "notes": "Illusion <Race>"
+    },
+    {
+      "skill": "alchemy",
       "name": "Greater Potion of Purity",
       "trivial": 163,
       "components": [
@@ -4630,6 +4676,98 @@
     },
     {
       "skill": "alchemy",
+      "name": "Shadeweaver",
+      "trivial": 170,
+      "components": [
+        {
+          "name": "Comfrey",
+          "count": 1
+        },
+        {
+          "name": "Figwort",
+          "count": 1
+        },
+        {
+          "name": "Heliotrope",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Shadeweaver",
+        "count": 1
+      },
+      "notes": "Shadeweaver port"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Gate",
+      "trivial": 176,
+      "components": [
+        {
+          "name": "Heliotrope",
+          "count": 1
+        },
+        {
+          "name": "Heliotrope",
+          "count": 1
+        },
+        {
+          "name": "Heliotrope",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Gate",
+        "count": 1
+      },
+      "notes": "Gate"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Titan",
+      "trivial": 180,
+      "components": [
+        {
+          "name": "Tri-Fern Leaf",
+          "count": 1
+        },
+        {
+          "name": "Maliak Leaf",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Titan",
+        "count": 1
+      },
+      "notes": "Grow"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Assailing",
+      "trivial": null,
+      "components": [
+        {
+          "name": "Bugbane",
+          "count": 1
+        },
+        {
+          "name": "Cyclops Eye",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Assailing",
+        "count": 1
+      },
+      "notes": "10% haste, 5 str/agi"
+    },
+    {
+      "skill": "alchemy",
       "name": "Potion of Spirit Shield",
       "trivial": null,
       "components": [
@@ -4652,6 +4790,27 @@
         "count": 1
       },
       "notes": "18 AC Buff"
+    },
+    {
+      "skill": "alchemy",
+      "name": "Twilight Sea",
+      "trivial": null,
+      "components": [
+        {
+          "name": "Heliotrope",
+          "count": 1
+        },
+        {
+          "name": "Star Reach Clover",
+          "count": 1
+        }
+      ],
+      "container": "Medicine Bag",
+      "output": {
+        "name": "Twilight Sea",
+        "count": 1
+      },
+      "notes": "Twilight Sea Port (LUCLIN ONLY)"
     }
   ]
 }

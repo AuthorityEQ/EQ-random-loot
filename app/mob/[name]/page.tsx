@@ -107,6 +107,9 @@ export default async function MobPage({
 
   return (
     <main className="page">
+      <header className="hero-header" aria-label="Loot Goblin">
+        <Link href="/" aria-label="Loot Goblin home"><img className="hero-banner-image" src="/loot-goblin-banner4.png" alt="Loot Goblin" /></Link>
+      </header>
       <Breadcrumb
         contentType={isGroupNamed ? "Group Named" : "Raid Boss"}
         bucketNumber={record.bucketNumber}

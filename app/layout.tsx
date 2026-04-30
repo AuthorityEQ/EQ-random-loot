@@ -9,8 +9,6 @@ import { InstallPromptBanner } from "@/components/InstallPromptBanner";
 import { ItemPreviewProvider } from "@/components/ItemPreviewProvider";
 import { ItemPreviewToggle } from "@/components/ItemPreviewToggle";
 import { ServerProvider } from "@/components/ServerProvider";
-import { ServerStatusBadge } from "@/components/ServerStatusBadge";
-import { ServerToggle } from "@/components/ServerToggle";
 import { ServiceWorkerRegistration } from "@/components/ServiceWorkerRegistration";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import "./globals.css";
@@ -77,11 +75,11 @@ export default function RootLayout({
               <EpicProgressProvider>
                 <ItemPreviewProvider>
                   <nav className="app-nav" aria-label="Primary navigation">
+                    <div className="app-nav-left">
+                      <HomeResetButton />
+                    </div>
                     <AppNavLinks />
                     <div className="app-nav-controls">
-                      <HomeResetButton />
-                      <ServerStatusBadge />
-                      <ServerToggle />
                       <BucketDisplayToggle />
                       <ItemPreviewToggle />
                       <ThemeToggle />

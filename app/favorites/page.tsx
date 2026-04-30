@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import Link from "next/link";
 import { FavoriteIndicator } from "@/components/FavoriteIndicator";
 import { useFavorites } from "@/components/FavoritesProvider";
 import { useItemPreview } from "@/components/ItemPreviewProvider";
@@ -118,6 +119,9 @@ export default function FavoritesPage() {
 
   return (
     <main className="page">
+      <header className="hero-header" aria-label="Loot Goblin">
+        <Link href="/" aria-label="Loot Goblin home"><img className="hero-banner-image" src="/loot-goblin-banner4.png" alt="Loot Goblin" /></Link>
+      </header>
       <header className="header">
         <div>
           <p className="eyebrow">Local favorites</p>
