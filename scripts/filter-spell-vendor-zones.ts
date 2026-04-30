@@ -19,8 +19,11 @@ const excludedVendorZones = new Set([
   "Plane of Knowledge",
   "Abysmal Sea",
   "Crescent Reach",
+  "Divided (NoS)",
   "Shar Vahl",
+  "Shar Vahl, Divided (NoS)",
   "Shadow Haven",
+  "The Bazaar",
   "The Mines of Gloomingdeep",
   "Katta Castellum",
 ]);

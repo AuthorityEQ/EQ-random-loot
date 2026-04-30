@@ -24,6 +24,24 @@ export type VendorRouteSpell = {
   price: string;
 };
 
+const excludedVendorNames = new Set([
+  "Ealyson Roloius",
+  "Eywen Nalous",
+  "Palunrion Shyeitia",
+  "Quanan Mahius",
+  "Quelolista Samautia",
+]);
+const excludedVendorZones = new Set([
+  "Divided (NoS)",
+  "Shar Vahl",
+  "Shar Vahl, Divided (NoS)",
+  "The Bazaar",
+]);
+
+function isIncludedVendor(vendor: SpellVendor) {
+  return !excludedVendorNames.has(vendor.npc) && !excludedVendorZones.has(vendor.zone);
+}
+
 export function spellShoppingKey(spell: Pick<ShoppingListSpell, "name" | "class" | "expansion" | "level">) {
   return `${spell.name}\u0000${spell.class}\u0000${spell.expansion}\u0000${spell.level}`;
 }
@@ -116,6 +134,7 @@ export function getVendorOptionsForShoppingList(spells: ShoppingListSpell[]) {
 
   for (const spell of spells) {
     for (const vendor of spell.vendors ?? []) {
+      if (!isIncludedVendor(vendor)) continue;
       const zoneVendors = zones.get(vendor.zone) ?? new Map<string, { npc: string; spells: VendorRouteSpell[] }>();
       const vendorEntry = zoneVendors.get(vendor.npc) ?? { npc: vendor.npc, spells: [] };
       vendorEntry.spells.push({
