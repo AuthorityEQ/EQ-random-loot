@@ -726,6 +726,434 @@ h1 {
   font-weight: 800;
 }
 
+.zone-panel-heading p {
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin: 5px 0 0;
+}
+
+.zone-panel-heading a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.zone-panel-heading a:hover,
+.zone-panel-heading a:focus {
+  color: var(--accent);
+  outline: none;
+}
+
+.normal-loot-page {
+  display: grid;
+  gap: 18px;
+}
+
+.normal-loot-header {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  padding: 20px;
+  position: relative;
+}
+
+.normal-loot-header h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+}
+
+.normal-loot-note {
+  color: var(--muted);
+  line-height: 1.5;
+  margin: 10px 0 0;
+  max-width: 780px;
+}
+
+.normal-loot-status {
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.35;
+  margin: 0;
+  position: absolute;
+  right: 20px;
+  text-align: right;
+  top: 20px;
+}
+
+.normal-zone-stack,
+.normal-npc-list,
+.normal-loot-sections {
+  display: grid;
+  gap: 12px;
+}
+
+.normal-loot-controls {
+  align-items: end;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 12px;
+  grid-template-columns: minmax(180px, 1fr) auto minmax(220px, 1.3fr) repeat(3, minmax(145px, 1fr)) auto;
+  padding: 14px;
+}
+
+.normal-loot-controls label {
+  display: grid;
+  gap: 6px;
+}
+
+.normal-loot-controls label span {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.normal-loot-controls input,
+.normal-loot-controls select {
+  background: var(--input-bg);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--text);
+  min-height: 38px;
+  padding: 0 11px;
+}
+
+.normal-loot-controls input:focus,
+.normal-loot-controls select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--focus-ring);
+  outline: none;
+}
+
+.normal-loot-controls p {
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 900;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.normal-clear-filter-button {
+  background: var(--panel-soft);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--accent);
+  cursor: pointer;
+  font-size: 0.82rem;
+  font-weight: 900;
+  min-height: 38px;
+  padding: 0 11px;
+}
+
+.normal-clear-filter-button:hover,
+.normal-clear-filter-button:focus {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  outline: none;
+}
+
+.normal-zone-panel {
+  gap: 16px;
+}
+
+.normal-zone-summary {
+  align-items: center;
+  cursor: pointer;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: minmax(220px, 1fr) auto;
+  list-style: none;
+  margin: -18px -18px 0;
+  padding: 18px;
+}
+
+.normal-zone-summary::-webkit-details-marker {
+  display: none;
+}
+
+.normal-zone-summary::after {
+  color: var(--muted);
+  content: "VIEW";
+  font-size: 0.78rem;
+  font-weight: 900;
+  justify-self: end;
+}
+
+.normal-zone-panel[open] .normal-zone-summary::after {
+  content: "HIDE";
+}
+
+.normal-zone-summary:hover,
+.normal-zone-summary:focus {
+  background: color-mix(in srgb, var(--accent-soft) 44%, transparent);
+  outline: none;
+}
+
+.normal-zone-summary h3 {
+  font-size: 1.25rem;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.normal-zone-summary h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.normal-zone-summary h3 a:hover,
+.normal-zone-summary h3 a:focus {
+  color: var(--accent);
+  outline: none;
+}
+
+.normal-zone-summary p {
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin: 5px 0 0;
+}
+
+.normal-zone-counts {
+  align-items: center;
+  color: var(--muted);
+  display: inline-flex;
+  flex-wrap: wrap;
+  font-size: 0.82rem;
+  gap: 7px;
+  justify-content: flex-end;
+}
+
+.normal-zone-counts b {
+  background: var(--panel-soft);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 0.76rem;
+  padding: 5px 8px;
+  white-space: nowrap;
+}
+
+.normal-npc-list {
+  grid-template-columns: 1fr;
+}
+
+.normal-npc-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--bucket-border-blue);
+  border-radius: 8px;
+  display: grid;
+  gap: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.normal-npc-card.has-normal-loot {
+  border-left-color: var(--accent);
+}
+
+.normal-npc-summary {
+  align-items: center;
+  cursor: pointer;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: minmax(180px, 1fr) auto;
+  list-style: none;
+  min-height: 42px;
+  padding: 8px 11px;
+}
+
+.normal-npc-summary::-webkit-details-marker {
+  display: none;
+}
+
+.normal-npc-summary::after {
+  color: var(--muted);
+  content: "VIEW";
+  font-size: 0.72rem;
+  font-weight: 900;
+  grid-column: 2;
+  justify-self: end;
+  margin-left: 8px;
+}
+
+.normal-npc-card[open] .normal-npc-summary::after {
+  content: "HIDE";
+}
+
+.normal-npc-summary:hover,
+.normal-npc-summary:focus {
+  background: color-mix(in srgb, var(--accent-soft) 48%, transparent);
+  outline: none;
+}
+
+.normal-npc-name {
+  color: var(--accent);
+  font-size: 0.94rem;
+  font-weight: 900;
+  line-height: 1.2;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.normal-npc-meta {
+  align-items: center;
+  color: var(--muted);
+  display: inline-flex;
+  flex-wrap: wrap;
+  font-size: 0.78rem;
+  font-weight: 800;
+  gap: 6px;
+  justify-content: flex-end;
+}
+
+.normal-npc-card h4 {
+  font-size: 1rem;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.normal-npc-card h4 a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.normal-npc-card h4 a:hover,
+.normal-npc-card h4 a:focus {
+  text-decoration: underline;
+}
+
+.normal-npc-type,
+.normal-npc-level {
+  background: var(--panel-soft);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  display: inline-flex;
+  font-size: 0.7rem;
+  font-weight: 900;
+  line-height: 1;
+  padding: 5px 7px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.normal-npc-level {
+  color: var(--bucket-range-text);
+  text-transform: none;
+}
+
+.normal-npc-card p {
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.35;
+  margin: 5px 0 0;
+}
+
+.normal-npc-details {
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 12px;
+  padding: 12px;
+}
+
+.normal-npc-links {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.normal-npc-links a,
+.normal-npc-links span {
+  background: var(--panel-soft);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 900;
+  padding: 5px 8px;
+}
+
+.normal-npc-links a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.normal-npc-links a:hover,
+.normal-npc-links a:focus {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  outline: none;
+}
+
+.normal-loot-section {
+  display: grid;
+  gap: 7px;
+}
+
+.normal-loot-section h4 {
+  color: var(--text);
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.normal-loot-item-list {
+  display: grid;
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+}
+
+.normal-loot-item-list li {
+  align-items: center;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  display: grid;
+  gap: 6px 10px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  list-style: none;
+  min-height: 34px;
+  padding: 7px 9px;
+}
+
+.normal-loot-item-list a {
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.normal-loot-item-list a:hover,
+.normal-loot-item-list a:focus {
+  text-decoration: underline;
+}
+
+.normal-loot-item-list span {
+  color: var(--text);
+  font-size: 0.8rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.normal-loot-item-list small {
+  color: var(--muted);
+  font-size: 0.76rem;
+  grid-column: 1 / -1;
+  line-height: 1.3;
+}
+
+.normal-loot-empty {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
 .zone-loot-actions {
   display: inline-flex;
   gap: 6px;
@@ -966,6 +1394,57 @@ h1 {
   .zone-mob-list,
   .zone-loot-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .normal-loot-controls {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .normal-clear-filter-button {
+    align-self: end;
+  }
+
+  .normal-loot-controls p {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 720px) {
+  .normal-loot-status {
+    margin-top: 12px;
+    position: static;
+    text-align: left;
+  }
+
+  .normal-loot-item-list li {
+    grid-template-columns: 1fr;
+  }
+
+  .normal-loot-controls,
+  .normal-zone-summary,
+  .normal-npc-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .normal-zone-summary::after {
+    justify-self: start;
+  }
+
+  .normal-zone-counts {
+    justify-content: flex-start;
+  }
+
+  .normal-npc-summary::after {
+    grid-column: 1;
+    justify-self: start;
+  }
+
+  .normal-npc-meta {
+    justify-content: flex-start;
+  }
+
+  .normal-loot-item-list span {
+    white-space: normal;
   }
 }
 

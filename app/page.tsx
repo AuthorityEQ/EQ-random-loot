@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import { useRouter } from "next/navigation";
 import { BucketCard } from "@/components/BucketCard";
 import "@/components/bucket-card.css";
 import { useBucketDisplay } from "@/components/BucketDisplayProvider";
@@ -28,7 +29,7 @@ import {
   type SlotFilter,
   type StatFilter,
 } from "@/lib/item-use-filters";
-import { lootModeLabel, lootModes, type LootMode } from "@/lib/lootModes";
+import { lootModes, type LootMode } from "@/lib/lootModes";
 import { filterBuckets, type Bucket, type ItemDetailsMap, type LootDataset } from "@/lib/search";
 import { getUniversalSearchResults, type UniversalSearchResult } from "@/lib/universal-search";
 import { visibleBucketsForLevel } from "@/lib/level-bucket-filter";
@@ -129,6 +130,7 @@ function flatSearchMatches(itemName: string, bucket: Bucket, searchQuery: string
 }
 
 export default function Home() {
+  const router = useRouter();
   const { bucketed } = useBucketDisplay();
   const [query, setQuery] = useState("");
   const [debouncedQuery, setDebouncedQuery] = useState("");
@@ -157,7 +159,6 @@ export default function Home() {
   const expansionLabel = selectedExpansions.length === expansionOptions.length
     ? "All expansions"
     : selectedExpansions.join(", ");
-  const modeLabel = lootModeLabel(lootMode);
   const zoneGroups = useMemo(() => {
     return expansionOptions
       .filter((expansion) => selectedExpansionSet.has(expansion))
@@ -342,6 +343,11 @@ export default function Home() {
                 className={mode.value === lootMode ? "filter-button is-active" : "filter-button"}
                 disabled={!mode.enabled}
                 key={mode.value}
+                onClick={() => {
+                  if (mode.value === "normal") {
+                    router.push("/normal-loot");
+                  }
+                }}
                 title={mode.enabled ? mode.label : "Normal Loot mode is planned but not active yet"}
                 type="button"
               >
