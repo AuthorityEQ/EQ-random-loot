@@ -3392,3 +3392,60 @@ h1 {
   font-style: italic;
   margin: 6px 0 0;
 }
+
+/* Bulk spell add controls */
+.bulk-spell-add {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.bulk-spell-add > span {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+.bulk-spell-add-controls {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.bulk-spell-add-controls input {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: inherit;
+  font-size: 0.9rem;
+  padding: 6px 10px;
+  width: 90px;
+}
+.bulk-spell-message {
+  color: var(--accent);
+  font-size: 0.82rem;
+  margin: 0;
+}
+.bulk-spell-message.is-error {
+  color: var(--danger, #e55);
+}
+
+/* Vendor price totals */
+.vendor-price-total {
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.vendor-price-total.is-inline {
+  margin-left: 8px;
+}
+.vendor-zone-title {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.vendor-route-total {
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 600;
+}

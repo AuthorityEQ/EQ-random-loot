@@ -5,7 +5,7 @@ import { useEffect, useMemo, useState } from "react";
 
 import droppedSpellsData from "@/data/dropped-spells.json";
 import spellsData from "@/data/spells.json";
-import { getVendorOptionsForShoppingList, spellShoppingKey, type ShoppingListSpell, type SpellVendor } from "@/lib/spell-shopping";
+import { formatEqPriceTotal, getVendorOptionsForShoppingList, getZoneSpellPriceTotal, spellShoppingKey, type ShoppingListSpell, type SpellVendor } from "@/lib/spell-shopping";
 import { mobToSlug } from "@/lib/mob-slug";
 import { zoneToSlug } from "@/lib/zone-slug";
 
@@ -77,6 +77,10 @@ export default function SpellsPage() {
   const [selectedClass, setSelectedClass] = useState("Any");
   const [selectedExpansions, setSelectedExpansions] = useState<Set<SpellExpansion>>(() => new Set(expansionOrder));
   const [levelInput, setLevelInput] = useState("");
+  const [bulkMinLevel, setBulkMinLevel] = useState("");
+  const [bulkMaxLevel, setBulkMaxLevel] = useState("");
+  const [bulkMessage, setBulkMessage] = useState("");
+  const [bulkError, setBulkError] = useState("");
   const [shoppingList, setShoppingList] = useState<ShoppingListSpell[]>([]);
   const [shoppingListReady, setShoppingListReady] = useState(false);
   const [viewMode, setViewMode] = useState<"spells" | "shopping" | "vendor" | "route">("spells");
@@ -167,6 +171,10 @@ export default function SpellsPage() {
     () => Array.from(plannedSpellKeys).filter((key) => !purchasedKeys.has(key)).length,
     [plannedSpellKeys, purchasedKeys],
   );
+  const routeGrandTotal = useMemo(
+    () => formatEqPriceTotal(getZoneSpellPriceTotal(routeStops.flatMap((stop) => stop.vendors))),
+    [routeStops],
+  );
   const visibleSpells = spells
     .filter((spell) => selectedClass === "Any" || spell.class === selectedClass)
     .filter((spell) => selectedExpansions.has(spell.expansion))
@@ -205,6 +213,59 @@ export default function SpellsPage() {
         },
       ].sort((a, b) => a.level - b.level || a.name.localeCompare(b.name));
     });
+  }
+
+  function toShoppingListSpell(spell: SpellRecord): ShoppingListSpell {
+    return {
+      name: spell.name,
+      level: spell.level,
+      class: spell.class,
+      expansion: spell.expansion,
+      description: spell.description,
+      sourceUrl: spell.sourceUrl,
+      vendors: spell.vendors,
+    };
+  }
+
+  function bulkAddSpellsInRange() {
+    setBulkError("");
+    setBulkMessage("");
+
+    const minLevel = Number.parseInt(bulkMinLevel, 10);
+    const maxLevel = Number.parseInt(bulkMaxLevel, 10);
+    if (!Number.isFinite(minLevel) || !Number.isFinite(maxLevel)) {
+      setBulkError("Enter both levels.");
+      return;
+    }
+    if (minLevel < 1 || maxLevel < 1) {
+      setBulkError("Levels must be 1 or higher.");
+      return;
+    }
+    if (minLevel > maxLevel) {
+      setBulkError("Min level must be less than or equal to max level.");
+      return;
+    }
+
+    const matchingSpells = visibleSpells.filter(
+      (spell) =>
+        !isDroppedSpell(spell) &&
+        (spell.vendors?.length ?? 0) > 0 &&
+        spell.level >= minLevel &&
+        spell.level <= maxLevel,
+    );
+    const matchingKeys = new Set(matchingSpells.map(spellShoppingKey));
+    const existingKeys = new Set(shoppingList.map(spellShoppingKey));
+    const addedCount = matchingSpells.filter((spell) => !existingKeys.has(spellShoppingKey(spell))).length;
+
+    setShoppingList((current) => {
+      const currentKeys = new Set(current.map(spellShoppingKey));
+      const additions = matchingSpells
+        .filter((spell) => !currentKeys.has(spellShoppingKey(spell)))
+        .map(toShoppingListSpell);
+      return [...current, ...additions].sort((a, b) => a.level - b.level || a.name.localeCompare(b.name));
+    });
+    setPurchasedSpellKeys((current) => current.filter((key) => !matchingKeys.has(key)));
+    setBulkMessage(`Added ${addedCount} ${addedCount === 1 ? "spell" : "spells"} to shopping list.`);
   }
 
   useEffect(() => {
@@ -408,6 +469,7 @@ export default function SpellsPage() {
               <strong>
                 {plannedRemainingCount === 0 && plannedSpellKeys.size > 0 ? "All planned spells purchased." : `Remaining planned spells: ${plannedRemainingCount}`}
               </strong>
+              {routeGrandTotal ? <span className="vendor-route-total">Total: {routeGrandTotal}</span> : null}
               {purchasedSpellKeys.length > 0 ? (
                 <button onClick={clearPurchased} type="button">Clear purchased</button>
               ) : null}
@@ -419,7 +481,9 @@ export default function SpellsPage() {
 
           {routeStops.length > 0 ? (
             <div className="vendor-route-list">
-              {routeStops.map((stop) => (
+              {routeStops.map((stop) => {
+                const zoneTotal = formatEqPriceTotal(getZoneSpellPriceTotal(stop.vendors));
+                return (
                 <article className="vendor-zone-card vendor-route-card" key={stop.zone}>
                   <div className="vendor-zone-card-header">
                     <div>
@@ -427,6 +491,7 @@ export default function SpellsPage() {
                       <p>{stop.remainingSpells} spells to buy here</p>
                       <span>{stop.vendors.length} vendors</span>
                     </div>
+                    {zoneTotal ? <strong className="vendor-price-total">Total: {zoneTotal}</strong> : null}
                   </div>
                   <div className="vendor-list">
                     {stop.vendors.map((vendor) => (
@@ -452,7 +517,8 @@ export default function SpellsPage() {
                     ))}
                   </div>
                 </article>
-              ))}
+                );
+              })}
             </div>
           ) : (
             <p className="empty">
@@ -467,12 +533,15 @@ export default function SpellsPage() {
               <h2>Selected stops</h2>
               {selectedPlan.length > 0 ? (
                 <ul>
-                  {selectedPlan.map((stop) => (
-                    <li key={stop.zone}>
-                      <span>{stop.zone} - {stop.totalSpells} spells</span>
-                      <button onClick={() => removeVendorZone(stop.zone)} type="button">Remove</button>
-                    </li>
-                  ))}
+                  {selectedPlan.map((stop) => {
+                    const selectedStopTotal = formatEqPriceTotal(getZoneSpellPriceTotal(stop.vendors));
+                    return (
+                      <li key={stop.zone}>
+                        <span>{stop.zone} - {stop.totalSpells} spells{selectedStopTotal ? ` - ${selectedStopTotal}` : ""}</span>
+                        <button onClick={() => removeVendorZone(stop.zone)} type="button">Remove</button>
+                      </li>
+                    );
+                  })}
                 </ul>
               ) : (
                 <p>No vendor stops selected.</p>
@@ -488,11 +557,16 @@ export default function SpellsPage() {
 
           {vendorOptions.length > 0 ? (
             <div className="vendor-zone-grid">
-              {vendorOptions.map((zoneOption) => (
+              {vendorOptions.map((zoneOption) => {
+                const zoneOptionTotal = formatEqPriceTotal(getZoneSpellPriceTotal(zoneOption.vendors));
+                return (
                 <article className="vendor-zone-card" key={zoneOption.zone}>
                   <div className="vendor-zone-card-header">
                     <div>
-                      <h3>{zoneOption.zone}</h3>
+                      <div className="vendor-zone-title">
+                        <h3>{zoneOption.zone}</h3>
+                        {zoneOptionTotal ? <strong className="vendor-price-total is-inline">Total: {zoneOptionTotal}</strong> : null}
+                      </div>
                       <p>{zoneOption.totalSpells} remaining uncovered spells sold here</p>
                       <span>{zoneOption.vendors.length} vendors</span>
                     </div>
@@ -517,7 +591,8 @@ export default function SpellsPage() {
                     ))}
                   </div>
                 </article>
-              ))}
+                );
+              })}
             </div>
           ) : (
             <p className="empty">
@@ -613,6 +688,37 @@ export default function SpellsPage() {
             value={levelInput}
           />
         </label>
+
+        <div className="bulk-spell-add" aria-label="Bulk add spells">
+          <span>Add range</span>
+          <div className="bulk-spell-add-controls">
+            <input
+              aria-label="Minimum spell level"
+              inputMode="numeric"
+              min={1}
+              onChange={(event) => setBulkMinLevel(event.target.value.replace(/\D/g, ""))}
+              pattern="[0-9]*"
+              placeholder="Min level"
+              type="text"
+              value={bulkMinLevel}
+            />
+            <input
+              aria-label="Maximum spell level"
+              inputMode="numeric"
+              min={1}
+              onChange={(event) => setBulkMaxLevel(event.target.value.replace(/\D/g, ""))}
+              pattern="[0-9]*"
+              placeholder="Max level"
+              type="text"
+              value={bulkMaxLevel}
+            />
+            <button className="spell-list-button" onClick={bulkAddSpellsInRange} type="button">
+              Add all in range
+            </button>
+          </div>
+          {bulkError ? <p className="bulk-spell-message is-error">{bulkError}</p> : null}
+          {bulkMessage ? <p className="bulk-spell-message">{bulkMessage}</p> : null}
+        </div>
       </section>
 
       {visibleSpells.length > 0 ? (
