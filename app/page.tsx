@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ExpansionTimeline } from "@/components/ExpansionTimeline";
+import { HomeSearchBox } from "@/components/HomeSearchBox";
 
 const tools = [
   {
@@ -73,6 +74,8 @@ export default function HomePage() {
           epic quest trackers, and more.
         </p>
       </section>
+
+      <HomeSearchBox />
 
       <ExpansionTimeline />
 
