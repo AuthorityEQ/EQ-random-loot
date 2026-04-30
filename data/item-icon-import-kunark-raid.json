@@ -1,0 +1,597 @@
+{
+  "expansion": "kunark",
+  "contentType": "raid",
+  "totalCandidates": 147,
+  "imported": [],
+  "skipped": [
+    {
+      "item": "Acid Etched Girdle (OOE)",
+      "reason": "No exact Allakhazam /db/item.html?item=ID URL."
+    },
+    {
+      "item": "Ancient Blade",
+      "reason": "Already has iconPath: /item-icons/ancient-blade-18309.png"
+    },
+    {
+      "item": "Ancient Shissar Gauntlets",
+      "reason": "No exact Allakhazam /db/item.html?item=ID URL."
+    },
+    {
+      "item": "Argent Defender",
+      "reason": "Already has iconPath: /item-icons/argent-defender-456.png"
+    },
+    {
+      "item": "Argent Protector",
+      "reason": "Already has iconPath: /item-icons/argent-protector-6991.png"
+    },
+    {
+      "item": "Blackened Iksar Bones",
+      "reason": "Already has iconPath: /item-icons/blackened-iksar-bones-11398.png"
+    },
+    {
+      "item": "Blackstone Maul",
+      "reason": "Already has iconPath: /item-icons/blackstone-maul-6197.png"
+    },
+    {
+      "item": "Blade of Falling Stars",
+      "reason": "Already has iconPath: /item-icons/blade-of-falling-stars-6645.png"
+    },
+    {
+      "item": "Blazing X of Fennin Ro",
+      "reason": "No exact Allakhazam /db/item.html?item=ID URL."
+    },
+    {
+      "item": "Blight, Hammer of the Scourge",
+      "reason": "Already has iconPath: /item-icons/blight-hammer-of-the-scourge-556.png"
+    },
+    {
+      "item": "Blood Ember Breastplate",
+      "reason": "Already has iconPath: /item-icons/blood-ember-breastplate-2060.png"
+    },
+    {
+      "item": "Blood Ember Greaves",
+      "reason": "Already has iconPath: /item-icons/blood-ember-greaves-1363.png"
+    },
+    {
+      "item": "Blood Orchid Katana",
+      "reason": "Already has iconPath: /item-icons/blood-orchid-katana-6483.png"
+    },
+    {
+      "item": "Blued Flower Katana",
+      "reason": "Already has iconPath: /item-icons/blued-flower-katana-3557.png"
+    },
+    {
+      "item": "Bo Staff of Trorsmang",
+      "reason": "Already has iconPath: /item-icons/bo-staff-of-trorsmang-3731.png"
+    },
+    {
+      "item": "Claw of Phara Dar",
+      "reason": "Already has iconPath: /item-icons/claw-of-phara-dar-337.png"
+    },
+    {
+      "item": "Cloak of Flames",
+      "reason": "Already has iconPath: /item-icons/cloak-of-flames-2190.png"
+    },
+    {
+      "item": "Cloak of Piety",
+      "reason": "Already has iconPath: /item-icons/cloak-of-piety-2197.png"
+    },
+    {
+      "item": "Cobalt Breastplate",
+      "reason": "Already has iconPath: /item-icons/cobalt-breastplate-2062.png"
+    },
+    {
+      "item": "Cobalt Greaves",
+      "reason": "Already has iconPath: /item-icons/cobalt-greaves-1365.png"
+    },
+    {
+      "item": "Crown of Rile",
+      "reason": "Already has iconPath: /item-icons/crown-of-rile-6061.png"
+    },
+    {
+      "item": "Crystalline Spear",
+      "reason": "Already has iconPath: /item-icons/crystalline-spear-97523.png"
+    },
+    {
+      "item": "Deepwater Breastplate",
+      "reason": "Already has iconPath: /item-icons/deepwater-breastplate-2059.png"
+    },
+    {
+      "item": "Deepwater Greaves",
+      "reason": "Already has iconPath: /item-icons/deepwater-greaves-1364.png"
+    },
+    {
+      "item": "Di'zok Imperial Katana",
+      "reason": "Already has iconPath: /item-icons/dizok-imperial-katana-6898.png"
+    },
+    {
+      "item": "Diamond Encrusted Staff",
+      "reason": "Already has iconPath: /item-icons/diamond-encrusted-staff-511.png"
+    },
+    {
+      "item": "Donal's Chestplate of Mourning",
+      "reason": "Already has iconPath: /item-icons/donals-chestplate-of-mourning-2061.png"
+    },
+    {
+      "item": "Donal's Leggings of Mourning",
+      "reason": "Already has iconPath: /item-icons/donals-leggings-of-mourning-2656.png"
+    },
+    {
+      "item": "Dragon Bone Bracelet",
+      "reason": "Already has iconPath: /item-icons/dragon-bone-bracelet-822.png"
+    },
+    {
+      "item": "Dragon Claw Main Gauche",
+      "reason": "Already has iconPath: /item-icons/dragon-claw-main-gauche-2713.png"
+    },
+    {
+      "item": "Dragon Hero Bracer",
+      "reason": "Already has iconPath: /item-icons/dragon-hero-bracer-889.png"
+    },
+    {
+      "item": "Dragon Spine Staff",
+      "reason": "Already has iconPath: /item-icons/dragon-spine-staff-482.png"
+    },
+    {
+      "item": "Elder Spiritist's Breastplate",
+      "reason": "Already has iconPath: /item-icons/elder-spiritists-breastplate-2017.png"
+    },
+    {
+      "item": "Elder Spiritist's Greaves",
+      "reason": "Already has iconPath: /item-icons/elder-spiritists-greaves-1326.png"
+    },
+    {
+      "item": "Enchanted Teir'Dal Great Staff",
+      "reason": "Already has iconPath: /item-icons/enchanted-teirdal-great-staff-522.png"
+    },
+    {
+      "item": "Executioner's Blade",
+      "reason": "Already has iconPath: /item-icons/executioners-blade-464.png"
+    },
+    {
+      "item": "Fatesealer",
+      "reason": "Already has iconPath: /item-icons/fatesealer-3566.png"
+    },
+    {
+      "item": "Frozen Zweihander",
+      "reason": "Already has iconPath: /item-icons/frozen-zweihander-463.png"
+    },
+    {
+      "item": "Gauntlets of Fiery Might",
+      "reason": "Already has iconPath: /item-icons/gauntlets-of-fiery-might-1593.png"
+    },
+    {
+      "item": "Gnarled Staff",
+      "reason": "Already has iconPath: /item-icons/gnarled-staff-2687.png"
+    },
+    {
+      "item": "Green Dragon Scales",
+      "reason": "Already has iconPath: /item-icons/green-dragon-scales-5856.png"
+    },
+    {
+      "item": "Grey Suede Boots",
+      "reason": "Already has iconPath: /item-icons/grey-suede-boots-3567.png"
+    },
+    {
+      "item": "Hammer of the Dragonborn",
+      "reason": "Already has iconPath: /item-icons/hammer-of-the-dragonborn-536.png"
+    },
+    {
+      "item": "Head of a Prince",
+      "reason": "Already has iconPath: /item-icons/head-of-a-prince-10523.png"
+    },
+    {
+      "item": "Hierophant`s Crook",
+      "reason": "Already has iconPath: /item-icons/hierophants-crook-549.png"
+    },
+    {
+      "item": "Howling Cutlass",
+      "reason": "Already has iconPath: /item-icons/howling-cutlass-6647.png"
+    },
+    {
+      "item": "Impure Heart of Zordak",
+      "reason": "Already has iconPath: /item-icons/impure-heart-of-zordak-27531.png"
+    },
+    {
+      "item": "Incarnadine Boots",
+      "reason": "Already has iconPath: /item-icons/incarnadine-boots-1811.png"
+    },
+    {
+      "item": "Incarnadine Breastplate",
+      "reason": "Already has iconPath: /item-icons/incarnadine-breastplate-2054.png"
+    },
+    {
+      "item": "Incarnadine Helm",
+      "reason": "Already has iconPath: /item-icons/incarnadine-helm-6106.png"
+    },
+    {
+      "item": "Indigo Sabre",
+      "reason": "Already has iconPath: /item-icons/indigo-sabre-280.png"
+    },
+    {
+      "item": "Insignia Protector",
+      "reason": "Already has iconPath: /item-icons/insignia-protector-2383.png"
+    },
+    {
+      "item": "Jaundiced Bone Breastplate",
+      "reason": "Already has iconPath: /item-icons/jaundiced-bone-breastplate-2056.png"
+    },
+    {
+      "item": "Jaundiced Bone Greaves",
+      "reason": "Already has iconPath: /item-icons/jaundiced-bone-greaves-1361.png"
+    },
+    {
+      "item": "Katana of Endurance",
+      "reason": "Already has iconPath: /item-icons/katana-of-endurance-4600.png"
+    },
+    {
+      "item": "Kavruul's Mystic Pouch",
+      "reason": "Already has iconPath: /item-icons/kavruuls-mystic-pouch-2592.png"
+    },
+    {
+      "item": "Kavruul`s Mystic Pouch",
+      "reason": "Already has iconPath: /item-icons/kavruuls-mystic-pouch-2592.png"
+    },
+    {
+      "item": "Korucust's Report on Vrasyk",
+      "reason": "Already has iconPath: /item-icons/korucusts-report-on-vrasyk-20898.png"
+    },
+    {
+      "item": "Korucust's Report to the Di'zok",
+      "reason": "Already has iconPath: /item-icons/korucusts-report-to-the-dizok-62549.png"
+    },
+    {
+      "item": "Left Eye of Xygoz",
+      "reason": "Already has iconPath: /item-icons/left-eye-of-xygoz-6730.png"
+    },
+    {
+      "item": "Leggings of Wrath (OOE)",
+      "reason": "No exact Allakhazam /db/item.html?item=ID URL."
+    },
+    {
+      "item": "Lycanthropic Staff",
+      "reason": "Already has iconPath: /item-icons/lycanthropic-staff-509.png"
+    },
+    {
+      "item": "Lyran's Mystical Lute",
+      "reason": "Already has iconPath: /item-icons/lyrans-mystical-lute-2633.png"
+    },
+    {
+      "item": "Maelstrom",
+      "reason": "Already has iconPath: /item-icons/maelstrom-6005.png"
+    },
+    {
+      "item": "Malevolent Runeblade",
+      "reason": "Already has iconPath: /item-icons/malevolent-runeblade-4797.png"
+    },
+    {
+      "item": "Mana Robe",
+      "reason": "Already has iconPath: /item-icons/mana-robe-2117.png"
+    },
+    {
+      "item": "McVaxius` Horn of War",
+      "reason": "Already has iconPath: /item-icons/mcvaxius-horn-of-war-2469.png"
+    },
+    {
+      "item": "Meshed Mail of Audacity (OOE)",
+      "reason": "No exact Allakhazam /db/item.html?item=ID URL."
+    },
+    {
+      "item": "Mirror of Self-Loathing",
+      "reason": "Already has iconPath: /item-icons/mirror-of-self-loathing-22997.png"
+    },
+    {
+      "item": "Mrylokar's Breastplate",
+      "reason": "Already has iconPath: /item-icons/mrylokars-breastplate-2055.png"
+    },
+    {
+      "item": "Mrylokar's Greaves",
+      "reason": "Already has iconPath: /item-icons/mrylokars-greaves-1360.png"
+    },
+    {
+      "item": "Necklace of Superiority",
+      "reason": "Already has iconPath: /item-icons/necklace-of-superiority-1236.png"
+    },
+    {
+      "item": "Nightfall",
+      "reason": "Already has iconPath: /item-icons/nightfall-3562.png"
+    },
+    {
+      "item": "Nightshade Scented Staff",
+      "reason": "Already has iconPath: /item-icons/nightshade-scented-staff-508.png"
+    },
+    {
+      "item": "Note from Prince Selrach",
+      "reason": "Already has iconPath: /item-icons/note-from-prince-selrach-24621.png"
+    },
+    {
+      "item": "Orb of Tishan",
+      "reason": "Already has iconPath: /item-icons/orb-of-tishan-84.png"
+    },
+    {
+      "item": "Palladium Axe",
+      "reason": "Already has iconPath: /item-icons/palladium-axe-425.png"
+    },
+    {
+      "item": "Pod of Seawater",
+      "reason": "Already has iconPath: /item-icons/pod-of-seawater-19569.png"
+    },
+    {
+      "item": "Poisoned Mantle",
+      "reason": "Already has iconPath: /item-icons/poisoned-mantle-1068.png"
+    },
+    {
+      "item": "Prayers of Life",
+      "reason": "Already has iconPath: /item-icons/prayers-of-life-3655.png"
+    },
+    {
+      "item": "Pulsing Green Stone",
+      "reason": "Already has iconPath: /item-icons/pulsing-green-stone-12249.png"
+    },
+    {
+      "item": "Razor Fang of Xygoz",
+      "reason": "Already has iconPath: /item-icons/razor-fang-of-xygoz-6604.png"
+    },
+    {
+      "item": "Razor Sharp Short Sword",
+      "reason": "Already has iconPath: /item-icons/razor-sharp-short-sword-6303.png"
+    },
+    {
+      "item": "Red Dragon Scales",
+      "reason": "Already has iconPath: /item-icons/red-dragon-scales-3226.png"
+    },
+    {
+      "item": "Robe of Adversity",
+      "reason": "Already has iconPath: /item-icons/robe-of-adversity-6064.png"
+    },
+    {
+      "item": "Robe of Invocation (removed)",
+      "reason": "No exact Allakhazam /db/item.html?item=ID URL."
+    },
+    {
+      "item": "Robe of Smothering",
+      "reason": "Already has iconPath: /item-icons/robe-of-smothering-3953.png"
+    },
+    {
+      "item": "Robe of the Azure Sky",
+      "reason": "Already has iconPath: /item-icons/robe-of-the-azure-sky-4070.png"
+    },
+    {
+      "item": "Robe of the Ishva",
+      "reason": "Already has iconPath: /item-icons/robe-of-the-ishva-2089.png"
+    },
+    {
+      "item": "Robe of the Kedge",
+      "reason": "Already has iconPath: /item-icons/robe-of-the-kedge-2090.png"
+    },
+    {
+      "item": "Robe of the Spring (removed)",
+      "reason": "No exact Allakhazam /db/item.html?item=ID URL."
+    },
+    {
+      "item": "Ruined Battleworn Morning Star",
+      "reason": "Already has iconPath: /item-icons/ruined-battleworn-morning-star-74.png"
+    },
+    {
+      "item": "Runebladed Sword of Night",
+      "reason": "Already has iconPath: /item-icons/runebladed-sword-of-night-332.png"
+    },
+    {
+      "item": "Runebranded Girdle",
+      "reason": "Already has iconPath: /item-icons/runebranded-girdle-969.png"
+    },
+    {
+      "item": "Runed Bolster Belt",
+      "reason": "Already has iconPath: /item-icons/runed-bolster-belt-953.png"
+    },
+    {
+      "item": "Runed Morning Star",
+      "reason": "Already has iconPath: /item-icons/runed-morning-star-140.png"
+    },
+    {
+      "item": "Runestone Maul",
+      "reason": "Already has iconPath: /item-icons/runestone-maul-581.png"
+    },
+    {
+      "item": "Sarnak Channeler's Staff",
+      "reason": "No exact Allakhazam /db/item.html?item=ID URL."
+    },
+    {
+      "item": "Sarnak Summoners Staff",
+      "reason": "Already has iconPath: /item-icons/sarnak-summoners-staff-6795.png"
+    },
+    {
+      "item": "Sceptre of Ixiblat Fer (CLR EPIC)",
+      "reason": "No exact Allakhazam /db/item.html?item=ID URL."
+    },
+    {
+      "item": "Scimitar of the Ykesha",
+      "reason": "Already has iconPath: /item-icons/scimitar-of-the-ykesha-304.png"
+    },
+    {
+      "item": "Sea Dragon Meat",
+      "reason": "Already has iconPath: /item-icons/sea-dragon-meat-5617.png"
+    },
+    {
+      "item": "Selo`s Drums of the March",
+      "reason": "Already has iconPath: /item-icons/selos-drums-of-the-march-2475.png"
+    },
+    {
+      "item": "Shard of Night",
+      "reason": "Already has iconPath: /item-icons/shard-of-night-6901.png"
+    },
+    {
+      "item": "Shield of Elders",
+      "reason": "Already has iconPath: /item-icons/shield-of-elders-3728.png"
+    },
+    {
+      "item": "Shield of the Green Dragon",
+      "reason": "Already has iconPath: /item-icons/shield-of-the-green-dragon-1133.png"
+    },
+    {
+      "item": "Shield of the Red Dragon",
+      "reason": "Already has iconPath: /item-icons/shield-of-the-red-dragon-4767.png"
+    },
+    {
+      "item": "Shield of the Water Dragon",
+      "reason": "Already has iconPath: /item-icons/shield-of-the-water-dragon-2704.png"
+    },
+    {
+      "item": "Shield of the White Dragon",
+      "reason": "Already has iconPath: /item-icons/shield-of-the-white-dragon-6422.png"
+    },
+    {
+      "item": "Shissar Deathspeaker Staff",
+      "reason": "Already has iconPath: /item-icons/shissar-deathspeaker-staff-4849.png"
+    },
+    {
+      "item": "Shissar Focus Staff",
+      "reason": "Already has iconPath: /item-icons/shissar-focus-staff-5840.png"
+    },
+    {
+      "item": "Shissar Protection Staff",
+      "reason": "Already has iconPath: /item-icons/shissar-protection-staff-6899.png"
+    },
+    {
+      "item": "Shroud of Veeshan",
+      "reason": "Already has iconPath: /item-icons/shroud-of-veeshan-3555.png"
+    },
+    {
+      "item": "Singed Scroll",
+      "reason": "Already has iconPath: /item-icons/singed-scroll-15974.png"
+    },
+    {
+      "item": "Skullcrusher of Kragg",
+      "reason": "Already has iconPath: /item-icons/skullcrusher-of-kragg-4067.png"
+    },
+    {
+      "item": "Smoldering Cudgel",
+      "reason": "Already has iconPath: /item-icons/smoldering-cudgel-5614.png"
+    },
+    {
+      "item": "Spear of Constriction",
+      "reason": "Already has iconPath: /item-icons/spear-of-constriction-6644.png"
+    },
+    {
+      "item": "Spirit Wracked Urn",
+      "reason": "Already has iconPath: /item-icons/spirit-wracked-urn-12319.png"
+    },
+    {
+      "item": "Sprinkler of Suffering",
+      "reason": "Already has iconPath: /item-icons/sprinkler-of-suffering-3730.png"
+    },
+    {
+      "item": "Staff of Null",
+      "reason": "Already has iconPath: /item-icons/staff-of-null-5881.png"
+    },
+    {
+      "item": "Sword of Rile",
+      "reason": "Already has iconPath: /item-icons/sword-of-rile-3729.png"
+    },
+    {
+      "item": "Sword of the Shissar",
+      "reason": "Already has iconPath: /item-icons/sword-of-the-shissar-4700.png"
+    },
+    {
+      "item": "The Scimitar of Lifestealing",
+      "reason": "Already has iconPath: /item-icons/the-scimitar-of-lifestealing-2649.png"
+    },
+    {
+      "item": "Tobrin's Mystical Eyepatch",
+      "reason": "Already has iconPath: /item-icons/tobrins-mystical-eyepatch-1825.png"
+    },
+    {
+      "item": "Tolan's Darkwood Breastplate",
+      "reason": "Already has iconPath: /item-icons/tolans-darkwood-breastplate-2057.png"
+    },
+    {
+      "item": "Torn, Burnt Book",
+      "reason": "Already has iconPath: /item-icons/torn-burnt-book-6123.png"
+    },
+    {
+      "item": "Torn, Frost-Covered Book",
+      "reason": "Already has iconPath: /item-icons/torn-frost-covered-book-17068.png"
+    },
+    {
+      "item": "Trakanon's Tooth",
+      "reason": "Already has iconPath: /item-icons/trakanons-tooth-587.png"
+    },
+    {
+      "item": "Treasure Hunter`s Satchel",
+      "reason": "Already has iconPath: /item-icons/treasure-hunters-satchel-2621.png"
+    },
+    {
+      "item": "Tunic of Wrath (OOE)",
+      "reason": "No exact Allakhazam /db/item.html?item=ID URL."
+    },
+    {
+      "item": "Two handed Sword",
+      "reason": "Already has iconPath: /item-icons/two-handed-sword-376.png"
+    },
+    {
+      "item": "Two Handed Sword",
+      "reason": "Already has iconPath: /item-icons/two-handed-sword-376.png"
+    },
+    {
+      "item": "Undead Dragon Sinew",
+      "reason": "Already has iconPath: /item-icons/undead-dragon-sinew-8923.png"
+    },
+    {
+      "item": "Undead Dragongut Strings",
+      "reason": "Already has iconPath: /item-icons/undead-dragongut-strings-23766.png"
+    },
+    {
+      "item": "Veldrak's Shortblade",
+      "reason": "Already has iconPath: /item-icons/veldraks-shortblade-3565.png"
+    },
+    {
+      "item": "Veridix's Shortsword",
+      "reason": "Already has iconPath: /item-icons/veridixs-shortsword-339.png"
+    },
+    {
+      "item": "Vibrating Gauntlets of Infuse",
+      "reason": "Already has iconPath: /item-icons/vibrating-gauntlets-of-infuse-2385.png"
+    },
+    {
+      "item": "Warding Star (Limited Time)",
+      "reason": "No exact Allakhazam /db/item.html?item=ID URL."
+    },
+    {
+      "item": "Warhammer of Divine Grace",
+      "reason": "Already has iconPath: /item-icons/warhammer-of-divine-grace-534.png"
+    },
+    {
+      "item": "Water Dragon Meat",
+      "reason": "Already has iconPath: /item-icons/water-dragon-meat-45689.png"
+    },
+    {
+      "item": "Water Dragon Scales",
+      "reason": "Already has iconPath: /item-icons/water-dragon-scales-28659.png"
+    },
+    {
+      "item": "White Dragon Hide",
+      "reason": "Already has iconPath: /item-icons/white-dragon-hide-16194.png"
+    },
+    {
+      "item": "White Dragon Scales",
+      "reason": "Already has iconPath: /item-icons/white-dragon-scales-3233.png"
+    },
+    {
+      "item": "White Satin Gloves",
+      "reason": "Already has iconPath: /item-icons/white-satin-gloves-1561.png"
+    },
+    {
+      "item": "Wrapped Leggings of the Berserker (OOE)",
+      "reason": "No exact Allakhazam /db/item.html?item=ID URL."
+    },
+    {
+      "item": "Ykeshan Broad Axe",
+      "reason": "Already has iconPath: /item-icons/ykeshan-broad-axe-25727.png"
+    },
+    {
+      "item": "Yunnb's Earring",
+      "reason": "Already has iconPath: /item-icons/yunnbs-earring-6164.png"
+    }
+  ],
+  "failed": []
+}

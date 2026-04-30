@@ -112,7 +112,8 @@ const onlyItems = (process.env.ITEM_NAMES ?? "")
   .split("|")
   .map((item) => item.trim())
   .filter(Boolean);
-const itemNamesFile = process.env.ITEM_NAMES_FILE;
+const itemNamesFile = process.env.ITEM_NAMES_FILE
+  ?? process.argv.find((arg) => arg.startsWith("--names="))?.split("=")[1];
 const removeItems = (process.env.REMOVE_ITEM_NAMES ?? "")
   .split("|")
   .map((item) => item.trim())

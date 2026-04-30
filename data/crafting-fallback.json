@@ -1,0 +1,130 @@
+{
+  "_status": "fallback_stub",
+  "_note": "Replace with data/excel-imports/crafting.json once the Excel ingest pipeline (Feature F) runs. Shape must match CraftingRecipe[] from lib/crafting.ts.",
+  "recipes": [
+    {
+      "skill": "tailoring",
+      "name": "Backpack",
+      "trivial": 21,
+      "components": [
+        { "name": "Thick Leather Pelt", "count": 8 }
+      ],
+      "container": "Loom",
+      "output": { "name": "Backpack", "count": 1 },
+      "notes": "Starter tailoring recipe."
+    },
+    {
+      "skill": "tailoring",
+      "name": "Fine Plate Gorget",
+      "trivial": 122,
+      "components": [
+        { "name": "Spinneret Fluid", "count": 1 },
+        { "name": "Fine Plate Pattern", "count": 1 },
+        { "name": "Silk Thread", "count": 1 }
+      ],
+      "container": "Loom",
+      "output": { "name": "Fine Plate Gorget", "count": 1 },
+      "notes": null
+    },
+    {
+      "skill": "fletching",
+      "name": "Practice Arrow",
+      "trivial": 21,
+      "components": [
+        { "name": "Arrow Shaft", "count": 1 },
+        { "name": "Fletch", "count": 1 },
+        { "name": "Arrow Head", "count": 1 }
+      ],
+      "container": "Fletcher's Kit",
+      "output": { "name": "Practice Arrow", "count": 6 },
+      "notes": null
+    },
+    {
+      "skill": "fletching",
+      "name": "Crystallized Sulfur Arrow",
+      "trivial": 200,
+      "components": [
+        { "name": "Arrow Shaft", "count": 1 },
+        { "name": "Fletch", "count": 1 },
+        { "name": "Crystallized Sulfur", "count": 1 }
+      ],
+      "container": "Fletcher's Kit",
+      "output": { "name": "Crystallized Sulfur Arrow", "count": 6 },
+      "notes": null
+    },
+    {
+      "skill": "blacksmithing",
+      "name": "Short Sword",
+      "trivial": 21,
+      "components": [
+        { "name": "Small Brick of Ore", "count": 1 },
+        { "name": "Water Flask", "count": 1 }
+      ],
+      "container": "Forge",
+      "output": { "name": "Short Sword", "count": 1 },
+      "notes": null
+    },
+    {
+      "skill": "blacksmithing",
+      "name": "Mithril Breastplate",
+      "trivial": 188,
+      "components": [
+        { "name": "Mithril Ore", "count": 2 },
+        { "name": "Water Flask", "count": 1 },
+        { "name": "Smithy Hammer", "count": 1 }
+      ],
+      "container": "Forge",
+      "output": { "name": "Mithril Breastplate", "count": 1 },
+      "notes": null
+    },
+    {
+      "skill": "jewelcraft",
+      "name": "Sapphire Bracelet",
+      "trivial": 68,
+      "components": [
+        { "name": "Sapphire", "count": 1 },
+        { "name": "Silver Bar", "count": 1 }
+      ],
+      "container": "Jeweler's Kit",
+      "output": { "name": "Sapphire Bracelet", "count": 1 },
+      "notes": null
+    },
+    {
+      "skill": "jewelcraft",
+      "name": "Diamond Ring",
+      "trivial": 164,
+      "components": [
+        { "name": "Diamond", "count": 1 },
+        { "name": "Gold Bar", "count": 1 }
+      ],
+      "container": "Jeweler's Kit",
+      "output": { "name": "Diamond Ring", "count": 1 },
+      "notes": null
+    },
+    {
+      "skill": "spell-research",
+      "name": "Minor Healing",
+      "trivial": 21,
+      "components": [
+        { "name": "Bat Wing", "count": 1 },
+        { "name": "Parchment", "count": 1 }
+      ],
+      "container": "Spell Research Kit",
+      "output": { "name": "Spell: Minor Healing", "count": 1 },
+      "notes": "Cleric / Druid / Shaman."
+    },
+    {
+      "skill": "spell-research",
+      "name": "Complete Heal",
+      "trivial": 200,
+      "components": [
+        { "name": "Lambent Stone", "count": 1 },
+        { "name": "Glowing Rune", "count": 1 },
+        { "name": "Parchment", "count": 1 }
+      ],
+      "container": "Spell Research Kit",
+      "output": { "name": "Spell: Complete Heal", "count": 1 },
+      "notes": "Cleric only."
+    }
+  ]
+}

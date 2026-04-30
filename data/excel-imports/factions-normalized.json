@@ -1,0 +1,210 @@
+{
+  "_status": "normalized",
+  "_normalized_at": "2026-04-29T15:12:35.496Z",
+  "_source": "data/excel-imports/factions.json",
+  "factions": [
+    {
+      "name": "Coldain (Dwarves)",
+      "alignment": "good",
+      "zones": [
+        "Great Divide",
+        "Eastern Wastes",
+        "Thurgadin",
+        "Icewell Keep"
+      ],
+      "related_mobs": [
+        "Dain Frostreaver IV",
+        "Loremaster Borannin",
+        "Garadain Glacierbane",
+        "Chamberlain Krystorf"
+      ],
+      "quests": [
+        "Coldain Ring Quest (10 rings total, quest giver: Garadain Glacierbane)",
+        "Coldain Shawl Quest (8 shawls total, tradeskill-based)",
+        "Thurgadin Armor Quests (Group-Level)"
+      ],
+      "required_items": [
+        "Coldain Skin",
+        "Coldain Head"
+      ],
+      "starting_value_by_race": {
+        "Dwarf": 500,
+        "Human": 0,
+        "Half Elf": 0,
+        "Gnome": 0,
+        "Halfling": 0,
+        "Erudite": 0,
+        "High Elf": 0,
+        "Wood Elf": 0,
+        "Barbarian": -100,
+        "Dark Elf": -400,
+        "Troll": -500,
+        "Ogre": -500,
+        "Iksar": -500
+      },
+      "allied_races": [
+        "Dwarf",
+        "Halfling",
+        "Gnome"
+      ],
+      "kos_races": [
+        "Troll",
+        "Ogre",
+        "Iksar",
+        "Dark Elf"
+      ],
+      "tips": [
+        "Kill Ry'Gorr Orcs in Eastern Wastes for fast early Coldain faction.",
+        "Complete the 10-part Coldain Ring Quest with Garadain Glacierbane for large faction gains.",
+        "Each ring quest gives +5 Coldain, +1 Dain, -1 Kromzek, -2 Kromrif.",
+        "Thurgadin armor requires only Kindly faction — achievable by most players.",
+        "Dain Frostreaver IV requires Ally faction; plan for 200+ hours of farming.",
+        "Shawl quests (8 tiers) require tradeskills at 95%+ success rate."
+      ],
+      "notes": "Leader: Dain Frostreaver IV. City: Thurgadin / Icewell Keep. Armor tier: Kindly (Group). Armor quality: Lowest tier, easiest."
+    },
+    {
+      "name": "Kromzek/Kromrif (Giants)",
+      "alignment": "evil",
+      "zones": [
+        "Kael",
+        "Wakening Land",
+        "Kael Drakkel"
+      ],
+      "related_mobs": [
+        "King Tormax",
+        "Kragek Thunderforge",
+        "Captain Bvellos",
+        "Slaggak The Trainer"
+      ],
+      "quests": [
+        "Kael Armor Quests (Raid-Level, HIGHEST AC)"
+      ],
+      "required_items": [
+        "Kromzek Hide",
+        "Giant Warrior Helmet",
+        "Giant Warrior Shoulderpads",
+        "Kromrif Head",
+        "Kromrif Helm"
+      ],
+      "starting_value_by_race": {
+        "Dark Elf": 0,
+        "Troll": 0,
+        "Ogre": 0,
+        "Human": -100,
+        "Dwarf": -500,
+        "High Elf": -400,
+        "Gnome": -400,
+        "Halfling": -400
+      },
+      "allied_races": [
+        "Troll",
+        "Ogre",
+        "Dark Elf"
+      ],
+      "kos_races": [
+        "Dwarf",
+        "Halfling",
+        "High Elf",
+        "Gnome"
+      ],
+      "tips": [
+        "Kill Coldain (dwarves) in Great Divide or Icewell Keep for Kromzek faction.",
+        "Kael Drakkel armor requires Ally faction — the highest tier.",
+        "Kael armor has the HIGHEST AC values of all Velious faction armor.",
+        "Warrior and melee classes benefit most from Kael armor.",
+        "Be aware: grinding Kael faction destroys Coldain faction."
+      ],
+      "notes": "Leader: King Tormax. City: Kael Drakkel. Armor tier: Ally (Raid). Armor quality: HIGHEST AC."
+    },
+    {
+      "name": "Claws of Veeshan (Dragons)",
+      "alignment": "good",
+      "zones": [
+        "Cobalt Scar",
+        "Western Wastes",
+        "Skyshrine",
+        "Temple of Veeshan"
+      ],
+      "related_mobs": [
+        "Lord Yelinak",
+        "Lady Mirenilla"
+      ],
+      "quests": [
+        "Skyshrine Armor Quests (Raid-Level, HIGHEST Stats/Mana/Resists)"
+      ],
+      "required_items": [
+        "Dragon Scales",
+        "Dragon Hide"
+      ],
+      "starting_value_by_race": {
+        "High Elf": 0,
+        "Gnome": 0,
+        "Human": 0,
+        "Iksar": 200,
+        "Dwarf": -100,
+        "Dark Elf": -100
+      },
+      "allied_races": [
+        "Iksar"
+      ],
+      "kos_races": [],
+      "tips": [
+        "Claws of Veeshan faction is gained by killing Coldain and dragons in Western Wastes.",
+        "Skyshrine armor has the HIGHEST Stats, Mana, and Resists of Velious faction armor.",
+        "Caster and priest classes benefit most from Skyshrine armor.",
+        "Lord Yelinak is the key NPC gating access to Skyshrine quests.",
+        "CoV faction conflicts with both Coldain and Kael — plan your path carefully."
+      ],
+      "notes": "Leader: Lord Yelinak. City: Skyshrine / Temple of Veeshan. Armor tier: Ally (Raid). Armor quality: HIGHEST Stats/Mana."
+    },
+    {
+      "name": "Katta Castellum",
+      "alignment": "good",
+      "zones": [
+        "Katta Castellum",
+        "Sanctus Seru",
+        "Mons Letalis"
+      ],
+      "related_mobs": [
+        "a Katta guard",
+        "Nathyn Illuminious"
+      ],
+      "quests": [
+        "Katta Castellum Armor Quests"
+      ],
+      "required_items": [],
+      "starting_value_by_race": {},
+      "allied_races": [],
+      "kos_races": [],
+      "tips": [
+        "Katta Castellum is the good-aligned Luclin city faction."
+      ],
+      "notes": "Luclin faction. Based in Katta Castellum. Allied with most good-aligned races."
+    },
+    {
+      "name": "Sanctus Seru",
+      "alignment": "evil",
+      "zones": [
+        "Sanctus Seru",
+        "Mons Letalis",
+        "The Grey"
+      ],
+      "related_mobs": [
+        "a Seru guard",
+        "Lord Inquisitor Seru"
+      ],
+      "quests": [
+        "Sanctus Seru Armor Quests"
+      ],
+      "required_items": [],
+      "starting_value_by_race": {},
+      "allied_races": [],
+      "kos_races": [],
+      "tips": [
+        "Sanctus Seru is the law/order (evil-leaning) Luclin city faction."
+      ],
+      "notes": "Luclin faction. Based in Sanctus Seru. Authoritarian law faction; KOS to many classes."
+    }
+  ]
+}

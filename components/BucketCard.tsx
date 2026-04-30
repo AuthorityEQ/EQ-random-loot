@@ -5,11 +5,18 @@ import type { ItemDetails } from "@/lib/search";
 import { FavoriteIndicator } from "@/components/FavoriteIndicator";
 import { ItemIcon } from "@/components/ItemIcon";
 import { useItemPreview } from "@/components/ItemPreviewProvider";
+import { ConfidenceBadge } from "@/components/ConfidenceBadge";
+import confidenceData from "@/data/loot-confidence.json";
+import { DEFAULT_CONFIDENCE, type ConfidenceMetadata } from "@/lib/confidence";
 
 type BucketCardProps = {
   bucket: Bucket;
   visibleLoot: string[];
   query?: string;
+  showAllLoot?: boolean;
+  /** When false, narrow the displayed loot to only items found in specific mob
+   *  loot arrays (per-mob mode for TLP/non-random-loot servers). Defaults true. */
+  sharedLoot?: boolean;
   getItemDetails: (itemName: string) => ItemDetails | undefined;
   getItemStatDisplay: (itemName: string) => string | null;
   onSelectLoot: (itemName: string, bucket: Bucket) => void;
@@ -24,9 +31,19 @@ function expansionTone(expansion: string) {
   return `expansion-tone-${expansion.toLowerCase()}`;
 }
 
-export function BucketCard({ bucket, visibleLoot, query = "", getItemDetails, getItemStatDisplay, onSelectLoot, onSelectZone }: BucketCardProps) {
+export function BucketCard({ bucket, visibleLoot, query = "", showAllLoot = false, sharedLoot = true, getItemDetails, getItemStatDisplay, onSelectLoot, onSelectZone }: BucketCardProps) {
   const normalizedQuery = query.trim().toLowerCase();
   const { previewProps } = useItemPreview();
+
+  // When sharedLoot is off, narrow visibleLoot to only items that appear in at
+  // least one mob's own loot array (per-mob mode for non-random-loot servers).
+  const perMobItems: string[] = sharedLoot
+    ? visibleLoot
+    : (() => {
+        const mobOwned = new Set(bucket.mobs.flatMap((m) => m.loot));
+        return visibleLoot.filter((item) => mobOwned.has(item));
+      })();
+  const displayLoot = perMobItems;
 
   return (
     <article className={`bucket-card ${expansionTone(bucket.expansion)}`}>
@@ -45,7 +62,7 @@ export function BucketCard({ bucket, visibleLoot, query = "", getItemDetails, ge
         </div>
         <div>
           <dt>Loot</dt>
-          <dd>{visibleLoot.length}</dd>
+          <dd>{displayLoot.length}</dd>
         </div>
         <div>
           <dt>Zones</dt>
@@ -93,17 +110,18 @@ export function BucketCard({ bucket, visibleLoot, query = "", getItemDetails, ge
           </div>
         </details>
 
-        <details>
+        <details key={String(showAllLoot)} open={showAllLoot}>
           <summary>
             <span>Loot pool</span>
-            <span>{visibleLoot.length} / {bucket.loot_pool.length}</span>
+            <span>{displayLoot.length} / {bucket.loot_pool.length}</span>
           </summary>
           <ul className="loot-list">
-            {visibleLoot.map((item) => (
+            {displayLoot.map((item) => (
               <li key={item}>
                 {(() => {
                   const details = getItemDetails(item);
                   const statDisplay = getItemStatDisplay(item);
+                  const meta = (confidenceData as unknown as Record<string, ConfidenceMetadata>)[item] ?? DEFAULT_CONFIDENCE;
                   return (
                 <button
                   className={includesQuery(item, normalizedQuery) ? "loot-button is-text-match" : "loot-button"}
@@ -118,6 +136,9 @@ export function BucketCard({ bucket, visibleLoot, query = "", getItemDetails, ge
                   </span>
                   <span className="loot-item-actions">
                     {statDisplay ? <span className="loot-stat-value">{statDisplay}</span> : null}
+                    {(meta.tier === "verified" || meta.tier === "high") && (
+                      <ConfidenceBadge compact meta={meta} />
+                    )}
                     <FavoriteIndicator details={details} itemName={item} />
                   </span>
                 </button>
@@ -126,7 +147,7 @@ export function BucketCard({ bucket, visibleLoot, query = "", getItemDetails, ge
               </li>
             ))}
           </ul>
-          {visibleLoot.length === 0 ? (
+          {displayLoot.length === 0 ? (
             <p className="loot-empty">No loot items in this bucket match the active filters.</p>
           ) : null}
         </details>

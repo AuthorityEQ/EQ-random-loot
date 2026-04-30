@@ -152,12 +152,14 @@ function parseSpellList(html: string, source: SourceList) {
     if (!spellLinkMatch) continue;
 
     const classLevel = inlineText(cells[2] ?? "");
-    const classLevelMatch = Array.from(classLevel.matchAll(/\b([A-Z]{3})\/(\d+)\b/g))
-      .find((entry) => entry[1] === source.class);
+    // Multi-class spells are listed like "CLR/1 PAL/6 RNG/8 DRU/1 SHM/1 BST/6" —
+    // find the level for the target class anywhere in the list.
+    const classLevelRegex = new RegExp(`\\b${source.class}\\/(\\d+)\\b`);
+    const classLevelMatch = classLevel.match(classLevelRegex);
     if (!classLevelMatch) continue;
 
     const name = htmlToPlainText(spellLinkMatch[2]);
-    const level = Number(classLevelMatch[2]);
+    const level = Number(classLevelMatch[1]);
     const description = htmlToPlainText(cells[3] ?? "");
     const sourceUrl = new URL(spellLinkMatch[1], "https://everquest.allakhazam.com").toString();
 

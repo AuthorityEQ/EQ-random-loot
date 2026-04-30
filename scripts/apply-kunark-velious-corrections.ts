@@ -297,9 +297,10 @@ for (const [filePath, dataset] of dataPaths.map((filePath, index) => [filePath, 
 await writeFile(detailsPath, `${JSON.stringify(details, null, 2)}\n`);
 await writeFile(errorsPath, "[]\n");
 await writeFile(reviewPath, `${JSON.stringify(buildReview(details), null, 2)}\n`);
+const veliousItemNames = Array.from(new Set(datasets[1].buckets.flatMap((bucket) => bucket.loot_pool)));
 await writeFile(
   veliousReviewPath,
-  `${JSON.stringify(buildVeliousReview(details, datasets[1].buckets.flatMap((bucket) => bucket.loot_pool)), null, 2)}\n`,
+  `${JSON.stringify(buildVeliousReview(details, veliousItemNames), null, 2)}\n`,
 );
 
 console.log(`Corrected ${scopedItemNames.size} Kunark/Velious item names and marked them clean.`);

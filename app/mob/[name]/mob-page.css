@@ -1,0 +1,298 @@
+/* ============================================================
+   Mob Detail Page — /mob/[name]
+   Uses only existing tokens from app/globals.css and
+   bucket-card.css. No new tokens introduced.
+   ============================================================ */
+
+/* ── Breadcrumb ─────────────────────────────────────────── */
+
+.mob-breadcrumb {
+  margin-bottom: 18px;
+}
+
+.mob-breadcrumb-list {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mob-breadcrumb-sep {
+  color: var(--muted);
+  font-size: 0.82rem;
+  user-select: none;
+}
+
+.mob-breadcrumb-link {
+  border-radius: 6px;
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 2px 4px;
+  text-decoration: none;
+}
+
+.mob-breadcrumb-link:hover,
+.mob-breadcrumb-link:focus {
+  background: var(--accent-soft);
+  outline: none;
+}
+
+.mob-breadcrumb-current {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 2px 4px;
+}
+
+/* ── Hero section ───────────────────────────────────────── */
+
+.mob-hero {
+  background:
+    linear-gradient(90deg, color-mix(in srgb, var(--exp-primary, var(--accent)) 10%, transparent), transparent 48%),
+    var(--panel);
+  border: 1px solid color-mix(in srgb, var(--exp-border, var(--line)) 56%, var(--line));
+  border-left: 5px solid var(--exp-primary, var(--accent));
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 14px;
+  margin-bottom: 24px;
+  padding: 24px;
+}
+
+.mob-hero-topline {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.mob-hero h1 {
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  line-height: 1;
+  margin: 0;
+}
+
+.mob-hero-kicker {
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  margin: 0 0 8px;
+  text-transform: uppercase;
+}
+
+.mob-hero-stats {
+  align-items: center;
+  color: var(--muted);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.mob-hero-stats strong {
+  color: var(--text);
+}
+
+.mob-hero-stat-sep {
+  color: var(--muted);
+  user-select: none;
+}
+
+/* ── Content grid ───────────────────────────────────────── */
+
+.mob-page-grid {
+  display: grid;
+  gap: 18px;
+}
+
+/* ── Section panels (reuses .zone-panel visual pattern) ─── */
+
+.mob-section {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 14px;
+  padding: 20px;
+}
+
+.mob-section-heading {
+  align-items: baseline;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.mob-section-heading h2 {
+  font-size: 1.2rem;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.mob-section-heading span {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+/* ── Bucket info strip ──────────────────────────────────── */
+
+.mob-bucket-strip {
+  align-items: center;
+  background: var(--surface-muted);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 12px 14px;
+}
+
+.mob-bucket-strip-label {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.mob-bucket-strip-value {
+  color: var(--text);
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+/* ── Sibling mob list ───────────────────────────────────── */
+
+.mob-siblings-list {
+  display: grid;
+  gap: 6px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+}
+
+.mob-sibling-item {
+  list-style: none;
+}
+
+.mob-sibling-link {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--accent);
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 700;
+  overflow: hidden;
+  padding: 8px 10px;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mob-sibling-link:hover,
+.mob-sibling-link:focus {
+  background: var(--accent-soft);
+  outline: none;
+}
+
+/* ── Loot list (server-side version of .loot-list) ──────── */
+
+.mob-loot-list {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+}
+
+.mob-loot-list li {
+  line-height: 1.45;
+  list-style: none;
+}
+
+.mob-loot-item-link {
+  align-items: center;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--accent);
+  display: flex;
+  font-size: 0.9rem;
+  gap: 8px;
+  justify-content: flex-start;
+  line-height: 1.35;
+  min-height: 44px;
+  overflow: hidden;
+  padding: 8px 10px;
+  text-decoration: none;
+  width: 100%;
+}
+
+.mob-loot-item-link:hover,
+.mob-loot-item-link:focus {
+  background: var(--accent-soft);
+  outline: none;
+}
+
+.mob-loot-item-name {
+  overflow-wrap: anywhere;
+}
+
+/* ── Zone link (anchor variant of .zone-link button) ────── */
+
+.mob-zone-link {
+  background: transparent;
+  border-radius: 6px;
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 2px 4px;
+  text-decoration: none;
+}
+
+.mob-zone-link:hover,
+.mob-zone-link:focus {
+  background: var(--accent-soft);
+  outline: none;
+}
+
+/* ── Empty state ────────────────────────────────────────── */
+
+.mob-loot-empty {
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin: 0;
+}
+
+/* ── Responsive ─────────────────────────────────────────── */
+
+@media (max-width: 720px) {
+  .mob-siblings-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .mob-loot-list {
+    grid-template-columns: 1fr;
+  }
+
+  .mob-hero {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 380px) {
+  .mob-siblings-list {
+    grid-template-columns: 1fr;
+  }
+}

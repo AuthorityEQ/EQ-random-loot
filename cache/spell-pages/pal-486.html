@@ -257,7 +257,20 @@
 <li onclick="tablistview(this.childNodes[0]);"><a id="NPCs_with_Ability_tab" href="javascript:;" onclick="tablistview(this);">NPCs with Ability (7)<b></b></a></li>
 <li onclick="tablistview(this.childNodes[0]);"><a id="Screenshots_tab" href="javascript:;" onclick="tablistview(this);">Screenshots<b></b></a></li>
 </ul><div class="clear" style="height:0;overflow:hidden;zoom:100%"></div>
-<div id="Sold_By_t" class="tbcont" style="display:none"><div class="bcont no-margin"><h3>Merchants:</h3><br><strong><a href="/db/zone.html?zstrat=236">Abysmal Sea</a></strong><ul style="margin: 1,0,3,30;"><li><a href="/db/npc.html?id=22355">Slewar Belsgog</a> - <i>1pp 9gp 4sp 2cp</i> </li>
+<div id="NPCs_with_Ability_t" class="tbcont" style="display:none"><div class="bcont no-margin"><ul><li><a href="/db/npc.html?id=20073">a Dark Mistletoe guard</a></li><li><a href="/db/npc.html?id=3449">a froglok yun priest</a></li><li><a href="/db/npc.html?id=3471">a kobold priest - Nagafen's Lair</a></li><li><a href="/db/npc.html?id=1848">a soothebrine seahorse</a></li><li><a href="/db/npc.html?id=2418">Brother Nallin</a></li><li><a href="/db/npc.html?id=12803">Emissary Shinsere</a></li><li><a href="/db/npc.html?id=5460">Historian Baenek</a></li></ul></div></div><div id="Screenshots_t" class="tbcont" style="display:none"><div class="bcont no-margin">
+    <div class="ssUpload">
+      <a href="javascript:;" onclick="var frm=ge('ssform');if($()){$(frm).slideToggle('fast')}else{if(frm.style.display != 'block'){frm.style.display = 'block'} else {frm.style.display='none'}}" class="text-button round bcont" style="float:left">Add Image</a>
+      <div class="clear"></div>
+      <form onsubmit="if(!this.file.value) return false;" method="post" action="/Im/Upload" enctype="multipart/form-data" id="ssform">
+        <input type="hidden" name="catid" value="spell:486">
+        <div id="fileups">
+          <input type="file" name="file" size="40">
+        </div>
+        <button type="submit" name="action"> Upload </button>
+        
+      </form>
+    </div>
+  <div class="ssListView"></div></div></div><div id="Sold_By_t" class="tbcont" style="display:none"><div class="bcont no-margin"><h3>Merchants:</h3><br><strong><a href="/db/zone.html?zstrat=236">Abysmal Sea</a></strong><ul style="margin: 1,0,3,30;"><li><a href="/db/npc.html?id=22355">Slewar Belsgog</a> - <i>1pp 9gp 4sp 2cp</i> </li>
 <li><a href="/db/npc.html?id=24195">Sosina Mardar</a> - <i>1pp 9gp 4sp 2cp</i> </li>
 </ul><br><strong><a href="/db/zone.html?zstrat=54">Ak'Anon</a></strong><ul style="margin: 1,0,3,30;"><li><a href="/db/npc.html?id=53249">Clockwork Merchant - 2139, -359, -182</a> - <i>1pp 9gp 4sp 2cp</i> </li>
 </ul><br><strong><a href="/db/zone.html?zstrat=1">East Freeport</a></strong><ul style="margin: 1,0,3,30;"><li><a href="/db/npc.html?id=21202">Palunrion Shyeitia</a> - <i>4pp 1gp 9sp 9cp</i> </li>
@@ -437,20 +450,7 @@
     <h3 style="margin-top:0" id="post">Free account required to post</h3>
     You must <a href="https://secure.allakhazam.com/login.html">log in</a> or
     <a href="https://secure.allakhazam.com/login.html?action=new">create an account</a> to post messages.
-  </div></div></div><div id="Screenshots_t" class="tbcont" style="display:none"><div class="bcont no-margin">
-    <div class="ssUpload">
-      <a href="javascript:;" onclick="var frm=ge('ssform');if($()){$(frm).slideToggle('fast')}else{if(frm.style.display != 'block'){frm.style.display = 'block'} else {frm.style.display='none'}}" class="text-button round bcont" style="float:left">Add Image</a>
-      <div class="clear"></div>
-      <form onsubmit="if(!this.file.value) return false;" method="post" action="/Im/Upload" enctype="multipart/form-data" id="ssform">
-        <input type="hidden" name="catid" value="spell:486">
-        <div id="fileups">
-          <input type="file" name="file" size="40">
-        </div>
-        <button type="submit" name="action"> Upload </button>
-        
-      </form>
-    </div>
-  <div class="ssListView"></div></div></div><div id="NPCs_with_Ability_t" class="tbcont" style="display:none"><div class="bcont no-margin"><ul><li><a href="/db/npc.html?id=20073">a Dark Mistletoe guard</a></li><li><a href="/db/npc.html?id=3449">a froglok yun priest</a></li><li><a href="/db/npc.html?id=3471">a kobold priest - Nagafen's Lair</a></li><li><a href="/db/npc.html?id=1848">a soothebrine seahorse</a></li><li><a href="/db/npc.html?id=2418">Brother Nallin</a></li><li><a href="/db/npc.html?id=12803">Emissary Shinsere</a></li><li><a href="/db/npc.html?id=5460">Historian Baenek</a></li></ul></div></div></div>
+  </div></div></div></div>
     <script><!--
       function hashtab () {
         if (document.location.hash) {

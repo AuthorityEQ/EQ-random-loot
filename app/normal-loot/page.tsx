@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { NormalLootCatalog, type ZoneLoot } from "@/components/NormalLootCatalog";
 import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
@@ -35,6 +36,9 @@ export default async function NormalLootPage() {
 
   return (
     <main className="page normal-loot-page">
+      <header className="hero-header" aria-label="Loot Goblin">
+        <Link href="/" aria-label="Loot Goblin home"><img className="hero-banner-image" src="/loot-goblin-banner4.png" alt="Loot Goblin" /></Link>
+      </header>
       <header className="normal-loot-header">
         <p className="eyebrow">EverQuest / Normal Loot</p>
         <h1>Normal Loot</h1>

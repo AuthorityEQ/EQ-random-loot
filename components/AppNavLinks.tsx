@@ -4,9 +4,13 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const links = [
-  { href: "/spells", label: "Spells" },
-  { href: "/", label: "Group Named" },
+  { href: "/", label: "Home" },
+  { href: "/loot", label: "Group Named" },
   { href: "/raids", label: "Raid Bosses" },
+  { href: "/spells", label: "Spells" },
+  { href: "/crafting", label: "Crafting" },
+  { href: "/factions", label: "Factions" },
+  { href: "/epics", label: "Epic Quests" },
   { href: "/favorites", label: "Favorites" },
 ];
 
@@ -21,7 +25,11 @@ export function AppNavLinks() {
   return (
     <div className="app-nav-links">
       {links.map((link) => (
-        <Link className={isActive(pathname, link.href) ? "is-active" : undefined} href={link.href} key={link.href}>
+        <Link
+          className={isActive(pathname, link.href) ? "is-active" : undefined}
+          href={link.href}
+          key={link.href}
+        >
           {link.label}
         </Link>
       ))}

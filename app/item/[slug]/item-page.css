@@ -1,0 +1,120 @@
+/* Item detail standalone page layout.
+   The body content reuses .item-drawer CSS (imported in page.tsx via
+   `import "@/components/item-drawer.css"`).
+   This file adds page-specific chrome: breadcrumb, back button, and
+   strips the modal-only sizing from .item-detail-body when rendered
+   in a .page context. */
+
+/* ── Breadcrumb ────────────────────────────────────────────── */
+.item-page-breadcrumb {
+  align-items: center;
+  color: var(--muted);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.82rem;
+  font-weight: 600;
+  gap: 4px;
+  letter-spacing: 0.02em;
+  list-style: none;
+  margin: 0 0 18px;
+  padding: 0;
+}
+
+.item-page-breadcrumb li + li::before {
+  color: var(--line);
+  content: "/";
+  margin-right: 4px;
+}
+
+.item-page-breadcrumb a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.item-page-breadcrumb a:hover,
+.item-page-breadcrumb a:focus {
+  text-decoration: underline;
+}
+
+.item-page-breadcrumb .breadcrumb-current {
+  color: var(--text);
+}
+
+/* ── Back button ───────────────────────────────────────────── */
+.item-page-back-button {
+  align-items: center;
+  background: var(--panel-soft);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--text);
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 0.86rem;
+  font-weight: 700;
+  gap: 6px;
+  margin-bottom: 20px;
+  min-height: 34px;
+  padding: 0 12px;
+  position: sticky;
+  top: 12px;
+  z-index: 1;
+}
+
+.item-page-back-button:hover,
+.item-page-back-button:focus {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  outline: none;
+}
+
+/* ── Page content wrapper ──────────────────────────────────── */
+.item-page-content {
+  margin: 0 auto;
+  max-width: 680px;
+  padding: 24px 20px 48px;
+}
+
+/* Strip the modal-chrome spacing when the body lives in a page, not
+   a drawer. The .item-drawer h2 rule in item-drawer.css adds right
+   margin for the close-button — we don't need that here. */
+.item-page-content .item-detail-body h2 {
+  margin-right: 0;
+}
+
+.item-page-content .drawer-kicker {
+  margin-right: 0;
+}
+
+/* "Open as page" button should not show on the page itself */
+.item-page-content .open-page-button {
+  display: none;
+}
+
+/* ── Open-as-page button (shown in drawer only) ────────────── */
+.open-page-button {
+  background: var(--panel-soft);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--text);
+  cursor: pointer;
+  font-size: 0.86rem;
+  font-weight: 700;
+  min-height: 34px;
+  padding: 0 10px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.open-page-button:hover,
+.open-page-button:focus {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  outline: none;
+}
+
+@media (max-width: 620px) {
+  .item-page-content {
+    padding: 16px 14px 32px;
+  }
+}

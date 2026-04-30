@@ -257,20 +257,8 @@
 <li onclick="tablistview(this.childNodes[0]);"><a id="Quested_tab" href="javascript:;" onclick="tablistview(this);">Quested (1)<b></b></a></li>
 <li onclick="tablistview(this.childNodes[0]);"><a id="Screenshots_tab" href="javascript:;" onclick="tablistview(this);">Screenshots<b></b></a></li>
 </ul><div class="clear" style="height:0;overflow:hidden;zoom:100%"></div>
-<div id="Screenshots_t" class="tbcont" style="display:none"><div class="bcont no-margin">
-    <div class="ssUpload">
-      <a href="javascript:;" onclick="var frm=ge('ssform');if($()){$(frm).slideToggle('fast')}else{if(frm.style.display != 'block'){frm.style.display = 'block'} else {frm.style.display='none'}}" class="text-button round bcont" style="float:left">Add Image</a>
-      <div class="clear"></div>
-      <form onsubmit="if(!this.file.value) return false;" method="post" action="/Im/Upload" enctype="multipart/form-data" id="ssform">
-        <input type="hidden" name="catid" value="spell:212">
-        <div id="fileups">
-          <input type="file" name="file" size="40">
-        </div>
-        <button type="submit" name="action"> Upload </button>
-        
-      </form>
-    </div>
-  <div class="ssListView"></div></div></div><div id="Sold_By_t" class="tbcont" style="display:none"><div class="bcont no-margin"><h3>Merchants:</h3><br><strong><a href="/db/zone.html?zstrat=54">Ak'Anon</a></strong><ul style="margin: 1,0,3,30;"><li><a href="/db/npc.html?id=57173">Clockwork Merchant 1183, -561, -38</a> - <i>4sp 6cp</i> </li>
+<div id="Quested_t" class="tbcont" style="display:none"><div class="bcont no-margin"><ul><li><a href="/db/quest.html?quest=143">Kobold Shaman Paws</a></li>
+</ul></div></div><div id="Sold_By_t" class="tbcont" style="display:none"><div class="bcont no-margin"><h3>Merchants:</h3><br><strong><a href="/db/zone.html?zstrat=54">Ak'Anon</a></strong><ul style="margin: 1,0,3,30;"><li><a href="/db/npc.html?id=57173">Clockwork Merchant 1183, -561, -38</a> - <i>4sp 6cp</i> </li>
 </ul><br><strong><a href="/db/zone.html?zstrat=96">Cabilis East</a></strong><ul style="margin: 1,0,3,30;"><li><a href="/db/npc.html?id=4808">Vessel Kirtokk</a> - <i>5sp 6cp</i> </li>
 </ul><br><strong><a href="/db/zone.html?zstrat=431">Crescent Reach</a></strong><ul style="margin: 1,0,3,30;"><li><a href="/db/npc.html?id=22961">Amilan</a> - <i>2gp 9cp</i> </li>
 <li><a href="/db/npc.html?id=22968">Quelor</a> - <i>2gp 9cp</i> </li>
@@ -289,8 +277,20 @@
 </ul><br><strong><a href="/db/zone.html?zstrat=102">Thurgadin</a></strong><ul style="margin: 1,0,3,30;"><li><a href="/db/npc.html?id=33735">Lorekeeper Zama</a> - <i>4sp 6cp</i> </li>
 <li><a href="/db/npc.html?id=5957">Lorekeeper Zorik</a> - <i>0 Money</i> </li>
 </ul><br><strong><a href="/db/zone.html?zstrat=2">West Freeport</a></strong><ul style="margin: 1,0,3,30;"><li><a href="/db/npc.html?id=1038">Geep Tresoj</a> - <i>2gp 9cp</i> </li>
-</ul></div></div><div id="Quested_t" class="tbcont" style="display:none"><div class="bcont no-margin"><ul><li><a href="/db/quest.html?quest=143">Kobold Shaman Paws</a></li>
-</ul></div></div><div id="Comments_t" class="tbcont" style=""><div class="bcont no-margin"><div class="forums" id="comments"><div class="pagesel"></div><div class="post-buttons"><a href="#post"><span>Post Comment</span><b></b></a></div><div class="post-indent">
+</ul></div></div><div id="Screenshots_t" class="tbcont" style="display:none"><div class="bcont no-margin">
+    <div class="ssUpload">
+      <a href="javascript:;" onclick="var frm=ge('ssform');if($()){$(frm).slideToggle('fast')}else{if(frm.style.display != 'block'){frm.style.display = 'block'} else {frm.style.display='none'}}" class="text-button round bcont" style="float:left">Add Image</a>
+      <div class="clear"></div>
+      <form onsubmit="if(!this.file.value) return false;" method="post" action="/Im/Upload" enctype="multipart/form-data" id="ssform">
+        <input type="hidden" name="catid" value="spell:212">
+        <div id="fileups">
+          <input type="file" name="file" size="40">
+        </div>
+        <button type="submit" name="action"> Upload </button>
+        
+      </form>
+    </div>
+  <div class="ssListView"></div></div></div><div id="Comments_t" class="tbcont" style=""><div class="bcont no-margin"><div class="forums" id="comments"><div class="pagesel"></div><div class="post-buttons"><a href="#post"><span>Post Comment</span><b></b></a></div><div class="post-indent">
     <div  class="post compact odd"><div class="post-inner">
       <div class="head" id="msg111627227928307">
         <div class="info" id="m111627227928307">

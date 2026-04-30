@@ -4,6 +4,9 @@ import { useEffect, useRef, useState } from "react";
 import { FavoriteIndicator } from "@/components/FavoriteIndicator";
 import { ItemIcon } from "@/components/ItemIcon";
 import { useItemPreview } from "@/components/ItemPreviewProvider";
+import { ConfidenceBadge } from "@/components/ConfidenceBadge";
+import confidenceData from "@/data/loot-confidence.json";
+import { DEFAULT_CONFIDENCE, type ConfidenceMetadata } from "@/lib/confidence";
 import type { MatchingItemRow } from "@/components/MatchingItemList";
 import { getComparableStatValue, type StatFilter } from "@/lib/item-use-filters";
 import type { Bucket, ItemDetails } from "@/lib/search";
@@ -246,6 +249,7 @@ export function ZoneView({
                       {visibleLoot.map((item) => {
                         const details = getItemDetails(item);
                         const statDisplay = getItemStatDisplay(item);
+                        const meta = (confidenceData as unknown as Record<string, ConfidenceMetadata>)[item] ?? DEFAULT_CONFIDENCE;
                         return (
                           <li key={item}>
                             <button className="loot-button" onClick={() => onSelectLoot(item, bucket)} type="button" {...previewProps(item, details)}>
@@ -255,6 +259,9 @@ export function ZoneView({
                               </span>
                               <span className="loot-item-actions">
                                 {statDisplay ? <span className="loot-stat-value">{statDisplay}</span> : null}
+                                {(meta.tier === "verified" || meta.tier === "high") && (
+                                  <ConfidenceBadge compact meta={meta} />
+                                )}
                                 <FavoriteIndicator details={details} itemName={item} />
                               </span>
                             </button>
@@ -271,20 +278,26 @@ export function ZoneView({
           </div>
         ) : flatItemRows.length > 0 ? (
           <ul className="zone-loot-list matching-item-list">
-            {flatItemRows.map(({ itemName, bucket, details, statDisplay }) => (
-              <li key={itemName}>
-                <button className="loot-button" onClick={() => onSelectLoot(itemName, bucket)} type="button" {...previewProps(itemName, details)}>
-                  <span className="loot-item-label">
-                    <ItemIcon details={details} />
-                    <span>{itemName}</span>
-                  </span>
-                  <span className="loot-item-actions">
-                    {statDisplay ? <span className="loot-stat-value">{statDisplay}</span> : null}
-                    <FavoriteIndicator details={details} itemName={itemName} />
-                  </span>
-                </button>
-              </li>
-            ))}
+            {flatItemRows.map(({ itemName, bucket, details, statDisplay }) => {
+              const meta = (confidenceData as unknown as Record<string, ConfidenceMetadata>)[itemName] ?? DEFAULT_CONFIDENCE;
+              return (
+                <li key={itemName}>
+                  <button className="loot-button" onClick={() => onSelectLoot(itemName, bucket)} type="button" {...previewProps(itemName, details)}>
+                    <span className="loot-item-label">
+                      <ItemIcon details={details} />
+                      <span>{itemName}</span>
+                    </span>
+                    <span className="loot-item-actions">
+                      {statDisplay ? <span className="loot-stat-value">{statDisplay}</span> : null}
+                      {(meta.tier === "verified" || meta.tier === "high") && (
+                        <ConfidenceBadge compact meta={meta} />
+                      )}
+                      <FavoriteIndicator details={details} itemName={itemName} />
+                    </span>
+                  </button>
+                </li>
+              );
+            })}
           </ul>
         ) : (
           <p className="loot-empty">No matching items found.</p>

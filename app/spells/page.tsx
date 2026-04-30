@@ -1,18 +1,53 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import Link from "next/link";
+import { useEffect, useDeferredValue, useMemo, useState } from "react";
 
+import droppedSpellsData from "@/data/dropped-spells.json";
 import spellsData from "@/data/spells.json";
-import {
-  formatEqPriceTotal,
-  getVendorOptionsForShoppingList,
-  getZoneSpellPriceTotal,
-  spellShoppingKey,
-  type ShoppingListSpell,
-  type SpellVendor,
-} from "@/lib/spell-shopping";
+import classicData from "@/data/classic-group-named.json";
+import kunarkData from "@/data/kunark-group-named.json";
+import veliousData from "@/data/velious-group-named.json";
+import classicRaidData from "@/data/classic-raid.json";
+import kunarkRaidData from "@/data/kunark-raid.json";
+import veliousRaidData from "@/data/velious-raid.json";
+import { formatEqPriceTotal, getShoppingListMinTotal, getVendorOptionsForShoppingList, getZoneSpellPriceTotal, spellShoppingKey, type ShoppingListSpell, type SpellVendor } from "@/lib/spell-shopping";
+import { buildMobIndex, mobToSlug } from "@/lib/mob-slug";
+import { zoneToSlug } from "@/lib/zone-slug";
+import type { LootDataset } from "@/lib/search";
+import type { RaidDataset } from "@/lib/raidTiers";
+
+// ---------------------------------------------------------------------------
+// Valid slug sets — built once at module level from the same data sources used
+// by app/mob/[name]/page.tsx and app/zone/[name]/page.tsx. Mob links and zone
+// links are only rendered as <Link> when the slug is present in these sets;
+// otherwise plain <span> text is rendered to avoid 404 navigation.
+// ---------------------------------------------------------------------------
+
+const _groupDatasets = [classicData, kunarkData, veliousData] as LootDataset[];
+const _raidDatasets = [classicRaidData, kunarkRaidData, veliousRaidData] as RaidDataset[];
+const _allGroupBuckets = _groupDatasets.flatMap((d) => d.buckets);
+const _mobIndex = buildMobIndex(_allGroupBuckets, _raidDatasets);
+
+const validMobSlugs = new Set(_mobIndex.keys());
+
+const validZoneSlugs = new Set(
+  _allGroupBuckets.flatMap((b) => b.zones).map(zoneToSlug),
+);
 
 type SpellExpansion = "Classic" | "Kunark" | "Velious";
+
+type SpellDropSource = {
+  mob: string;
+  zone: string;
+  sourceUrl: string;
+};
+
+type SpellQuestSource = {
+  name: string;
+  npc?: string;
+  zone?: string;
+};
 
 type SpellRecord = {
   name: string;
@@ -23,6 +58,10 @@ type SpellRecord = {
   sourceUrl: string;
   vendors?: SpellVendor[];
   vendorStatus?: "requires_manual_entry" | "no_vendor_data_found";
+  sourceType?: "dropped_or_quested";
+  dropSources?: SpellDropSource[];
+  questSource?: SpellQuestSource;
+  enrichmentStatus?: "ok" | "no_source_data" | "fetch_error";
 };
 
 type SelectedVendorStop = {
@@ -30,8 +69,23 @@ type SelectedVendorStop = {
   coveredSpellKeys: string[];
 };
 
+function isDroppedSpell(spell: SpellRecord): boolean {
+  return (!spell.vendors || spell.vendors.length === 0) && spell.sourceType === "dropped_or_quested";
+}
+
 const expansionOrder: SpellExpansion[] = ["Classic", "Kunark", "Velious"];
-const spells = spellsData as SpellRecord[];
+const spells: SpellRecord[] = [
+  ...(spellsData as SpellRecord[]),
+  ...(droppedSpellsData as SpellRecord[]),
+].sort((a, b) => {
+  const classComp = a.class.localeCompare(b.class);
+  if (classComp !== 0) return classComp;
+  const expComp = expansionOrder.indexOf(a.expansion) - expansionOrder.indexOf(b.expansion);
+  if (expComp !== 0) return expComp;
+  const levelComp = a.level - b.level;
+  if (levelComp !== 0) return levelComp;
+  return a.name.localeCompare(b.name);
+});
 const shoppingListStorageKey = "frostreaver-spell-shopping-list";
 const vendorPlanStorageKey = "frostreaver-spell-vendor-plan";
 const purchasedSpellsStorageKey = "frostreaver-spell-purchased-list";
@@ -45,10 +99,12 @@ function levelTone(level: number) {
 }
 
 export default function SpellsPage() {
-  const classOptions = ["Any", ...Array.from(new Set(spells.map((spell) => spell.class))).sort()];
-  const [selectedClass, setSelectedClass] = useState("Any");
+  const classOptions = Array.from(new Set(spells.map((spell) => spell.class))).sort();
+  const [selectedClass, setSelectedClass] = useState("");
   const [selectedExpansions, setSelectedExpansions] = useState<Set<SpellExpansion>>(() => new Set(expansionOrder));
   const [levelInput, setLevelInput] = useState("");
+  const deferredLevelInput = useDeferredValue(levelInput);
+  const [showAll, setShowAll] = useState(false);
   const [bulkMinLevel, setBulkMinLevel] = useState("");
   const [bulkMaxLevel, setBulkMaxLevel] = useState("");
   const [bulkMessage, setBulkMessage] = useState("");
@@ -63,7 +119,7 @@ export default function SpellsPage() {
   const [purchasedReady, setPurchasedReady] = useState(false);
   const [showResetConfirm, setShowResetConfirm] = useState(false);
 
-  const selectedLevel = levelInput.trim() === "" ? null : Number.parseInt(levelInput, 10);
+  const selectedLevel = deferredLevelInput.trim() === "" ? null : Number.parseInt(deferredLevelInput, 10);
   const shoppingKeys = useMemo(() => new Set(shoppingList.map(spellShoppingKey)), [shoppingList]);
   const purchasedKeys = useMemo(() => new Set(purchasedSpellKeys), [purchasedSpellKeys]);
   const activeShoppingList = useMemo(
@@ -147,11 +203,24 @@ export default function SpellsPage() {
     () => formatEqPriceTotal(getZoneSpellPriceTotal(routeStops.flatMap((stop) => stop.vendors))),
     [routeStops],
   );
-  const visibleSpells = spells
-    .filter((spell) => selectedClass === "Any" || spell.class === selectedClass)
-    .filter((spell) => selectedExpansions.has(spell.expansion))
-    .filter((spell) => selectedLevel === null || spell.level === selectedLevel)
-    .sort((a, b) => a.level - b.level || a.name.localeCompare(b.name));
+  const shoppingListMinTotal = useMemo(
+    () => formatEqPriceTotal(getShoppingListMinTotal(activeShoppingList)),
+    [activeShoppingList],
+  );
+  const visibleSpells = useMemo(
+    () =>
+      spells
+        .filter((spell) => selectedClass === "Any" || spell.class === selectedClass)
+        .filter((spell) => selectedExpansions.has(spell.expansion))
+        .filter((spell) => selectedLevel === null || spell.level === selectedLevel)
+        .sort((a, b) => a.level - b.level || a.name.localeCompare(b.name)),
+    [selectedClass, selectedExpansions, selectedLevel],
+  );
+
+  // Reset showAll whenever the class filter changes.
+  useEffect(() => {
+    setShowAll(false);
+  }, [selectedClass]);
 
   function toggleExpansion(expansion: SpellExpansion) {
     setSelectedExpansions((current) => {
@@ -218,11 +287,12 @@ export default function SpellsPage() {
       return;
     }
 
-    const matchingSpells = spells.filter((spell) =>
-      (selectedClass === "Any" || spell.class === selectedClass)
-      && selectedExpansions.has(spell.expansion)
-      && spell.level >= minLevel
-      && spell.level <= maxLevel,
+    const matchingSpells = visibleSpells.filter(
+      (spell) =>
+        !isDroppedSpell(spell) &&
+        (spell.vendors?.length ?? 0) > 0 &&
+        spell.level >= minLevel &&
+        spell.level <= maxLevel,
     );
     const matchingKeys = new Set(matchingSpells.map(spellShoppingKey));
     const existingKeys = new Set(shoppingList.map(spellShoppingKey));
@@ -243,7 +313,8 @@ export default function SpellsPage() {
     try {
       const rawList = window.localStorage.getItem(shoppingListStorageKey);
       if (rawList) {
-        setShoppingList(JSON.parse(rawList));
+        const parsed = JSON.parse(rawList) as ShoppingListSpell[];
+        setShoppingList(parsed.filter((spell) => !isDroppedSpell(spell as SpellRecord)));
       }
     } catch {
       setShoppingList([]);
@@ -372,10 +443,14 @@ export default function SpellsPage() {
 
   return (
     <main className="page spells-page">
+      <header className="hero-header" aria-label="Loot Goblin">
+        <Link href="/" aria-label="Loot Goblin home"><img className="hero-banner-image" src="/loot-goblin-banner4.png" alt="Loot Goblin" /></Link>
+      </header>
       <header className="header spells-header">
         <div>
           <p className="eyebrow">EverQuest / Spells</p>
           <h1>Spells</h1>
+          <p className="wip-line">Bard spell data preview</p>
         </div>
       </header>
 
@@ -411,9 +486,16 @@ export default function SpellsPage() {
             </button>
           </>
         ) : (
-          <button className="home-reset-button" onClick={() => setViewMode("shopping")} type="button">
-            Shopping List <span>{shoppingList.length}</span>
-          </button>
+          <>
+            <button className="home-reset-button" onClick={() => setViewMode("shopping")} type="button">
+              Shopping List <span>{shoppingList.length}</span>
+            </button>
+            {shoppingList.length > 0 ? (
+              <button className="home-reset-button is-danger" onClick={() => setShowResetConfirm(true)} type="button">
+                Reset shopping list
+              </button>
+            ) : null}
+          </>
         )}
       </div>
 
@@ -438,7 +520,7 @@ export default function SpellsPage() {
               <strong>
                 {plannedRemainingCount === 0 && plannedSpellKeys.size > 0 ? "All planned spells purchased." : `Remaining planned spells: ${plannedRemainingCount}`}
               </strong>
-              {routeGrandTotal ? <span className="vendor-route-total">Total left: {routeGrandTotal}</span> : null}
+              {routeGrandTotal ? <span className="vendor-route-total">Total: {routeGrandTotal}</span> : null}
               {purchasedSpellKeys.length > 0 ? (
                 <button onClick={clearPurchased} type="button">Clear purchased</button>
               ) : null}
@@ -452,7 +534,6 @@ export default function SpellsPage() {
             <div className="vendor-route-list">
               {routeStops.map((stop) => {
                 const zoneTotal = formatEqPriceTotal(getZoneSpellPriceTotal(stop.vendors));
-
                 return (
                 <article className="vendor-zone-card vendor-route-card" key={stop.zone}>
                   <div className="vendor-zone-card-header">
@@ -505,7 +586,6 @@ export default function SpellsPage() {
                 <ul>
                   {selectedPlan.map((stop) => {
                     const selectedStopTotal = formatEqPriceTotal(getZoneSpellPriceTotal(stop.vendors));
-
                     return (
                       <li key={stop.zone}>
                         <span>{stop.zone} - {stop.totalSpells} spells{selectedStopTotal ? ` - ${selectedStopTotal}` : ""}</span>
@@ -530,15 +610,14 @@ export default function SpellsPage() {
             <div className="vendor-zone-grid">
               {vendorOptions.map((zoneOption) => {
                 const zoneOptionTotal = formatEqPriceTotal(getZoneSpellPriceTotal(zoneOption.vendors));
-
                 return (
-                  <article className="vendor-zone-card" key={zoneOption.zone}>
-                    <div className="vendor-zone-card-header">
-                      <div>
-                        <div className="vendor-zone-title">
-                          <h3>{zoneOption.zone}</h3>
-                          {zoneOptionTotal ? <strong className="vendor-price-total is-inline">Total: {zoneOptionTotal}</strong> : null}
-                        </div>
+                <article className="vendor-zone-card" key={zoneOption.zone}>
+                  <div className="vendor-zone-card-header">
+                    <div>
+                      <div className="vendor-zone-title">
+                        <h3>{zoneOption.zone}</h3>
+                        {zoneOptionTotal ? <strong className="vendor-price-total is-inline">Total: {zoneOptionTotal}</strong> : null}
+                      </div>
                       <p>{zoneOption.totalSpells} remaining uncovered spells sold here</p>
                       <span>{zoneOption.vendors.length} vendors</span>
                     </div>
@@ -553,7 +632,7 @@ export default function SpellsPage() {
                         <strong>{vendor.npc}</strong>
                         <ul>
                           {vendor.spells.map((spell) => (
-                            <li key={`${vendor.npc}-${spell.name}`}>
+                            <li key={`${vendor.npc}-${spell.key}`}>
                               <span>{spell.name}</span>
                               <em>{spell.price}</em>
                             </li>
@@ -579,6 +658,9 @@ export default function SpellsPage() {
               <div className="spell-shopping-summary">
                 <strong>{shoppingList.length} spells selected</strong>
                 <span>{allVendorOptions.length} vendor zones with known purchase data</span>
+                {shoppingListMinTotal ? (
+                  <span className="vendor-route-total">Cheapest possible: {shoppingListMinTotal}</span>
+                ) : null}
                 <button className="spell-list-button" onClick={() => setViewMode("vendor")} type="button">
                   Plan vendor route
                 </button>
@@ -620,6 +702,8 @@ export default function SpellsPage() {
         <label className="class-filter">
           <span>Class</span>
           <select value={selectedClass} onChange={(event) => setSelectedClass(event.target.value)}>
+            <option value="" disabled>Select class…</option>
+            <option value="Any">Any class</option>
             {classOptions.map((className) => (
               <option key={className} value={className}>
                 {className}
@@ -670,7 +754,7 @@ export default function SpellsPage() {
               min={1}
               onChange={(event) => setBulkMinLevel(event.target.value.replace(/\D/g, ""))}
               pattern="[0-9]*"
-              placeholder="Min"
+              placeholder="Min level"
               type="text"
               value={bulkMinLevel}
             />
@@ -680,12 +764,12 @@ export default function SpellsPage() {
               min={1}
               onChange={(event) => setBulkMaxLevel(event.target.value.replace(/\D/g, ""))}
               pattern="[0-9]*"
-              placeholder="Max"
+              placeholder="Max level"
               type="text"
               value={bulkMaxLevel}
             />
             <button className="spell-list-button" onClick={bulkAddSpellsInRange} type="button">
-              Add spells in range
+              Add all in range
             </button>
           </div>
           {bulkError ? <p className="bulk-spell-message is-error">{bulkError}</p> : null}
@@ -693,31 +777,86 @@ export default function SpellsPage() {
         </div>
       </section>
 
-      {visibleSpells.length > 0 ? (
-        <section className="spell-list" aria-label="Spell results">
-          {visibleSpells.map((spell) => (
-            <article className={`spell-row ${expansionTone(spell.expansion)}`} key={`${spell.name}-${spell.class}-${spell.expansion}-${spell.level}`}>
-              <div className={`spell-level-badge ${levelTone(spell.level)}`} aria-label={`Level ${spell.level}`}>
-                <span>{spell.level}</span>
-              </div>
-              <div className="spell-row-main">
-                <a className="spell-name" href={spell.sourceUrl} target="_blank" rel="noreferrer">
-                  {spell.name}
-                </a>
-                <p className="spell-description">{spell.description}</p>
-              </div>
-              <div className="spell-meta">
-                <span>{spell.class}</span>
-                <span className={`expansion-pill is-compact ${expansionTone(spell.expansion)}`}>{spell.expansion}</span>
-              </div>
-              <button className={`spell-list-button${shoppingKeys.has(spellShoppingKey(spell)) ? " is-active" : ""}`} onClick={() => toggleShoppingListSpell(spell)} type="button">
-                {shoppingKeys.has(spellShoppingKey(spell)) ? "In list" : "Add to list"}
-              </button>
-            </article>
-          ))}
-        </section>
-      ) : (
+      {!selectedClass ? (
+        <p className="empty">Select a class to view spells.</p>
+      ) : visibleSpells.length === 0 ? (
         <p className="empty">No spells found.</p>
+      ) : (
+        <>
+          <section className="spell-list" aria-label="Spell results">
+            {(selectedClass === "Any" && !showAll ? visibleSpells.slice(0, 200) : visibleSpells).map((spell) => (
+              <article className={`spell-row ${expansionTone(spell.expansion)}`} key={`${spell.name}-${spell.class}-${spell.expansion}-${spell.level}`}>
+                <div className={`spell-level-badge ${levelTone(spell.level)}`} aria-label={`Level ${spell.level}`}>
+                  <span>{spell.level}</span>
+                </div>
+                <div className="spell-row-main">
+                  <a className="spell-name" href={spell.sourceUrl} target="_blank" rel="noopener noreferrer">
+                    {spell.name}
+                  </a>
+                  <p className="spell-description">{spell.description}</p>
+                  {isDroppedSpell(spell) && (spell.dropSources?.length || spell.questSource) ? (
+                    <div className="spell-source-detail">
+                      {spell.dropSources?.length ? (
+                        <ul className="spell-drop-sources" aria-label={`${spell.name} drop sources`}>
+                          {spell.dropSources.map((src) => {
+                            const mobSlug = mobToSlug(src.mob);
+                            const zoneSlug = zoneToSlug(src.zone);
+                            return (
+                              <li key={`${src.mob}-${src.zone}`}>
+                                <span className="spell-drop-mob">
+                                  {validMobSlugs.has(mobSlug)
+                                    ? <Link className="spell-source-link-inline" href={`/mob/${mobSlug}`}>{src.mob}</Link>
+                                    : <span className="spell-source-link-inline">{src.mob}</span>}
+                                </span>
+                                <span className="spell-drop-sep">in</span>
+                                <span className="spell-drop-zone">
+                                  {validZoneSlugs.has(zoneSlug)
+                                    ? <Link className="spell-source-link-inline" href={`/zone/${zoneSlug}`}>{src.zone}</Link>
+                                    : <span className="spell-source-link-inline">{src.zone}</span>}
+                                </span>
+                              </li>
+                            );
+                          })}
+                        </ul>
+                      ) : null}
+                      {spell.questSource ? (
+                        <p className="spell-quest-source">
+                          <span className="spell-quest-label">Quest:</span> {spell.questSource.name}
+                          {spell.questSource.npc ? <> from {spell.questSource.npc}</> : null}
+                          {spell.questSource.zone ? <> in {spell.questSource.zone}</> : null}
+                        </p>
+                      ) : null}
+                    </div>
+                  ) : null}
+                  {isDroppedSpell(spell) && !spell.dropSources?.length && !spell.questSource ? (
+                    <p className="spell-source-unknown">No drop or quest data available.</p>
+                  ) : null}
+                </div>
+                <div className="spell-meta">
+                  <span>{spell.class}</span>
+                  <span className={`expansion-pill is-compact ${expansionTone(spell.expansion)}`}>{spell.expansion}</span>
+                </div>
+                {isDroppedSpell(spell) ? (
+                  <>
+                    <span className="spell-badge spell-badge--dropped">Dropped</span>
+                    <a className="spell-source-link" href={spell.sourceUrl} target="_blank" rel="noopener noreferrer">View on Allakhazam</a>
+                  </>
+                ) : (
+                  <button className={`spell-list-button${shoppingKeys.has(spellShoppingKey(spell)) ? " is-active" : ""}`} onClick={() => toggleShoppingListSpell(spell)} type="button">
+                    {shoppingKeys.has(spellShoppingKey(spell)) ? "In list" : "Add to list"}
+                  </button>
+                )}
+              </article>
+            ))}
+          </section>
+          {selectedClass === "Any" && !showAll && visibleSpells.length > 200 ? (
+            <div className="spell-list-show-all">
+              <button className="spell-list-button" onClick={() => setShowAll(true)} type="button">
+                Show all {visibleSpells.length} spells
+              </button>
+            </div>
+          ) : null}
+        </>
       )}
         </>
       )}

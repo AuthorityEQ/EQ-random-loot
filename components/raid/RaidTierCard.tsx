@@ -1,13 +1,24 @@
 "use client";
 
 import { RaidBossCard } from "@/components/raid/RaidBossCard";
+import type { Bucket, ItemDetails } from "@/lib/search";
 import type { RaidTier } from "@/lib/raidTiers";
 
 type RaidTierCardProps = {
   tier: RaidTier;
+  expansion: string;
+  bossBucketMap: Map<string, Bucket>;
+  getItemDetails: (name: string) => ItemDetails | undefined;
+  onSelectLoot: (item: string, bucket: Bucket) => void;
 };
 
-export function RaidTierCard({ tier }: RaidTierCardProps) {
+export function RaidTierCard({
+  tier,
+  expansion,
+  bossBucketMap,
+  getItemDetails,
+  onSelectLoot,
+}: RaidTierCardProps) {
   return (
     <section className="raid-tier-card">
       <div className="raid-tier-header">
@@ -25,7 +36,14 @@ export function RaidTierCard({ tier }: RaidTierCardProps) {
 
       <div className="raid-boss-grid">
         {tier.bosses.map((boss) => (
-          <RaidBossCard boss={boss} key={`${tier.tier}-${boss.name}`} />
+          <RaidBossCard
+            boss={boss}
+            bossBucket={bossBucketMap.get(`${expansion}|${boss.name}`)}
+            domId={`raid-boss-${boss.name.replace(/[^a-z0-9]+/gi, "-").toLowerCase()}`}
+            getItemDetails={getItemDetails}
+            key={`${tier.tier}-${boss.name}`}
+            onSelectLoot={onSelectLoot}
+          />
         ))}
       </div>
     </section>

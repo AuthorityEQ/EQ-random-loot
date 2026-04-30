@@ -1,0 +1,936 @@
+{
+  "sheet_name": "Spell Vendors",
+  "row_count": 116,
+  "extracted_at": "2026-04-29T14:51:47.569Z",
+  "warnings": [],
+  "records": [
+    {
+      "_source_row": 9,
+      "class": "Bard",
+      "vendor_npc_name": "Minstrel Eoweril",
+      "location": "Library, 2nd Level",
+      "floor_area": "2nd Level",
+      "levels": "1-65"
+    },
+    {
+      "_source_row": 10,
+      "class": "Beastlord",
+      "vendor_npc_name": "Primalist Saosith",
+      "location": "Library, 4th Level Balcony",
+      "floor_area": "4th Level Balcony",
+      "levels": "1-65"
+    },
+    {
+      "_source_row": 11,
+      "class": "Cleric",
+      "vendor_npc_name": "Vicar Ceraen",
+      "location": "Library, 2nd Level Balcony",
+      "floor_area": "2nd Level Balcony",
+      "levels": "1-65"
+    },
+    {
+      "_source_row": 12,
+      "class": "Druid",
+      "vendor_npc_name": "Wanderer Astobin",
+      "location": "Library, 3rd Level",
+      "floor_area": "3rd Level",
+      "levels": "1-65"
+    },
+    {
+      "_source_row": 13,
+      "class": "Enchanter",
+      "vendor_npc_name": "Illusionist Jerup",
+      "location": "Library, 2nd Level",
+      "floor_area": "2nd Level",
+      "levels": "1-65"
+    },
+    {
+      "_source_row": 14,
+      "class": "Magician",
+      "vendor_npc_name": "Elementalist Somat",
+      "location": "Library, 3rd Level Balcony",
+      "floor_area": "3rd Level Balcony",
+      "levels": "1-65"
+    },
+    {
+      "_source_row": 15,
+      "class": "Necromancer",
+      "vendor_npc_name": "Heretic Drahur",
+      "location": "Library, Bottom Level",
+      "floor_area": "Bottom Level",
+      "levels": "1-65"
+    },
+    {
+      "_source_row": 16,
+      "class": "Paladin",
+      "vendor_npc_name": "Cavalier Waut",
+      "location": "Library, 4th Level",
+      "floor_area": "4th Level",
+      "levels": "9-65"
+    },
+    {
+      "_source_row": 17,
+      "class": "Ranger",
+      "vendor_npc_name": "Pathfinder Viliken",
+      "location": "Library, 4th Level",
+      "floor_area": "4th Level",
+      "levels": "9-65"
+    },
+    {
+      "_source_row": 18,
+      "class": "Shadow Knight",
+      "vendor_npc_name": "Reaver Nydlil",
+      "location": "Library, Bottom Level",
+      "floor_area": "Bottom Level",
+      "levels": "9-65"
+    },
+    {
+      "_source_row": 19,
+      "class": "Shaman",
+      "vendor_npc_name": "Mystic Abomin",
+      "location": "Library, 3rd Level",
+      "floor_area": "3rd Level",
+      "levels": "1-65"
+    },
+    {
+      "_source_row": 20,
+      "class": "Wizard",
+      "vendor_npc_name": "Channeler Olaemos",
+      "location": "Library, 2nd Level",
+      "floor_area": "2nd Level",
+      "levels": "1-65"
+    },
+    {
+      "_source_row": 24,
+      "class": "Class Type",
+      "vendor_npc_name": "Classes",
+      "location": "Levels 1-50",
+      "floor_area": "Levels 51-60",
+      "levels": "Notes"
+    },
+    {
+      "_source_row": 25,
+      "class": "Priest Classes",
+      "vendor_npc_name": "CLR, DRU, SHM, PAL, RNG, BST",
+      "location": "ALL vendor-purchasable",
+      "floor_area": "Mix of vendor and drop-only",
+      "levels": "NO research required"
+    },
+    {
+      "_source_row": 26,
+      "class": "INT Caster Classes",
+      "vendor_npc_name": "ENC, MAG, NEC, WIZ",
+      "location": "Many require SPELL RESEARCH (20+)",
+      "floor_area": "Most DROP-ONLY",
+      "levels": "Research combines spell components"
+    },
+    {
+      "_source_row": 27,
+      "class": "Hybrid Classes",
+      "vendor_npc_name": "PAL, RNG, SHD, BRD, BST",
+      "location": "All vendor-purchasable",
+      "floor_area": "Mix of vendor and drop-only",
+      "levels": "Get spells at level 9 (BRD: level 1)"
+    },
+    {
+      "_source_row": 30,
+      "class": "Expansion",
+      "vendor_npc_name": "Vendor Zone(s)",
+      "location": "Notes",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 31,
+      "class": "Kunark (51-60)",
+      "vendor_npc_name": "Cabilis, Firiona Vie",
+      "location": "Many 51+ drop-only",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 32,
+      "class": "Velious (51-60)",
+      "vendor_npc_name": "Thurgadin, Skyshrine, Kael, Wakening Lands",
+      "location": "Faction-gated vendors",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 33,
+      "class": "Luclin (51-60)",
+      "vendor_npc_name": "Shadowhaven, Katta, Shar Vahl",
+      "location": "BST spells here",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 34,
+      "class": "Planes of Power (61-65)",
+      "vendor_npc_name": "Plane of Knowledge Library",
+      "location": "ONE-STOP SHOP! ALL prior spells here",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 35,
+      "class": "Gates of Discord",
+      "vendor_npc_name": "Abysmal Sea",
+      "location": "Raid spells",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 36,
+      "class": "OoW",
+      "vendor_npc_name": "Dranik's Scar vendors",
+      "location": "",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 37,
+      "class": "DoN",
+      "vendor_npc_name": "Crystal vendors (level 61)",
+      "location": "120 crystals each",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 38,
+      "class": "TSS",
+      "vendor_npc_name": "Various zone vendors",
+      "location": "Class-specific zone vendors",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 41,
+      "class": "Zone",
+      "vendor_npc_name": "Location Coordinates",
+      "location": "Notes",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 42,
+      "class": "Greater Faydark",
+      "vendor_npc_name": "-615, 210, 77",
+      "location": "Druid Guild area",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 43,
+      "class": "North Kaladim",
+      "vendor_npc_name": "770, 145, 2",
+      "location": "Near caster areas",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 44,
+      "class": "Neriak Commons",
+      "vendor_npc_name": "147, -955, -24",
+      "location": "Spell casters guild area",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 45,
+      "class": "East Cabilis",
+      "vendor_npc_name": "1022, -194, 19",
+      "location": "Shaman guild area",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 46,
+      "class": "Erudin Palace",
+      "vendor_npc_name": "(Library area)",
+      "location": "Primary research hub",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 47,
+      "class": "Ak'Anon",
+      "vendor_npc_name": "(Library area)",
+      "location": "Gnome research hub",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 48,
+      "class": "Plane of Knowledge",
+      "vendor_npc_name": "Library, various floors",
+      "location": "Post-PoP research supplies",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 54,
+      "class": "City/Zone",
+      "vendor_npc_name": "Vendor NPC Name",
+      "location": "Spell Levels Sold",
+      "floor_area": "Notes",
+      "levels": ""
+    },
+    {
+      "_source_row": 55,
+      "class": "South Qeynos",
+      "vendor_npc_name": "Tralyn Marsinger, Eve Marsinger",
+      "location": "1-50",
+      "floor_area": "Classic bard guild",
+      "levels": ""
+    },
+    {
+      "_source_row": 56,
+      "class": "East Freeport",
+      "vendor_npc_name": "Felisity Starbright, Malusuard Blolus",
+      "location": "1-50",
+      "floor_area": "Classic bard guild",
+      "levels": ""
+    },
+    {
+      "_source_row": 57,
+      "class": "Kelethin (GFay)",
+      "vendor_npc_name": "Idia, Jakum Webdancer, Lyra, others",
+      "location": "1-50",
+      "floor_area": "Multiple vendors in GFay",
+      "levels": ""
+    },
+    {
+      "_source_row": 58,
+      "class": "Katta Castellum",
+      "vendor_npc_name": "Sellar Mulletune (loc 640, -330)",
+      "location": "Luclin-era",
+      "floor_area": "Luclin expansion songs",
+      "levels": ""
+    },
+    {
+      "_source_row": 59,
+      "class": "Plane of Knowledge",
+      "vendor_npc_name": "Minstrel Eoweril",
+      "location": "1-65",
+      "floor_area": "Post-PoP one-stop shop",
+      "levels": ""
+    },
+    {
+      "_source_row": 64,
+      "class": "City/Zone",
+      "vendor_npc_name": "Vendor NPC Name",
+      "location": "Spell Levels Sold",
+      "floor_area": "Notes",
+      "levels": ""
+    },
+    {
+      "_source_row": 65,
+      "class": "Shar Vahl",
+      "vendor_npc_name": "Scribe Gefna, Omtia Sami",
+      "location": "1-50+",
+      "floor_area": "Primary BST vendor city",
+      "levels": ""
+    },
+    {
+      "_source_row": 66,
+      "class": "Rivervale",
+      "vendor_npc_name": "Samuel Peltzgum",
+      "location": "Select",
+      "floor_area": "Limited selection",
+      "levels": ""
+    },
+    {
+      "_source_row": 67,
+      "class": "Plane of Knowledge",
+      "vendor_npc_name": "Primalist Saosith",
+      "location": "1-65",
+      "floor_area": "Post-PoP one-stop shop",
+      "levels": ""
+    },
+    {
+      "_source_row": 72,
+      "class": "City/Zone",
+      "vendor_npc_name": "Vendor NPC Name",
+      "location": "Spell Levels Sold",
+      "floor_area": "Notes",
+      "levels": ""
+    },
+    {
+      "_source_row": 73,
+      "class": "North Qeynos",
+      "vendor_npc_name": "Henlom Visrek",
+      "location": "1-29",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 74,
+      "class": "East Freeport",
+      "vendor_npc_name": "Palunrion Shyeitia",
+      "location": "1-34",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 75,
+      "class": "N. Freeport (Temple of Marr)",
+      "vendor_npc_name": "Egasia Reenix (top floor)",
+      "location": "1-50",
+      "floor_area": "Full classic selection",
+      "levels": ""
+    },
+    {
+      "_source_row": 76,
+      "class": "North Kaladim",
+      "vendor_npc_name": "Krako Stonesplitter",
+      "location": "1-50",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 77,
+      "class": "Neriak 3rd Gate",
+      "vendor_npc_name": "Sol Punox",
+      "location": "1-50",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 78,
+      "class": "South Felwithe",
+      "vendor_npc_name": "(Temple vendors)",
+      "location": "1-50",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 79,
+      "class": "Erudin",
+      "vendor_npc_name": "(Temple vendors)",
+      "location": "1-50",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 80,
+      "class": "Paineel",
+      "vendor_npc_name": "(Cleric guild vendors)",
+      "location": "1-50",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 81,
+      "class": "East Cabilis",
+      "vendor_npc_name": "(Shaman guild area)",
+      "location": "1-50",
+      "floor_area": "Iksar CLR",
+      "levels": ""
+    },
+    {
+      "_source_row": 82,
+      "class": "Plane of Knowledge",
+      "vendor_npc_name": "Vicar Ceraen",
+      "location": "1-65",
+      "floor_area": "Post-PoP one-stop shop",
+      "levels": ""
+    },
+    {
+      "_source_row": 87,
+      "class": "City/Zone",
+      "vendor_npc_name": "Vendor NPC Name",
+      "location": "Spell Levels Sold",
+      "floor_area": "Notes",
+      "levels": ""
+    },
+    {
+      "_source_row": 88,
+      "class": "Surefall Glade",
+      "vendor_npc_name": "(Druid guild vendors)",
+      "location": "1-50",
+      "floor_area": "Primary druid location",
+      "levels": ""
+    },
+    {
+      "_source_row": 89,
+      "class": "Rivervale",
+      "vendor_npc_name": "(Druid guild vendors)",
+      "location": "1-50",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 90,
+      "class": "Kelethin (GFay)",
+      "vendor_npc_name": "(Druid guild vendors)",
+      "location": "1-50",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 91,
+      "class": "East Freeport",
+      "vendor_npc_name": "Ennarn Shotius",
+      "location": "44-50+",
+      "floor_area": "Higher level spells",
+      "levels": ""
+    },
+    {
+      "_source_row": 92,
+      "class": "Druid Rings (various)",
+      "vendor_npc_name": "Tox Forest, BB Mtns, N.Karana, etc.",
+      "location": "19+",
+      "floor_area": "Available at druid rings in multiple zones",
+      "levels": ""
+    },
+    {
+      "_source_row": 93,
+      "class": "Wakening Lands",
+      "vendor_npc_name": "(Druid Ring vendor)",
+      "location": "Velious",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 94,
+      "class": "Shadowhaven",
+      "vendor_npc_name": "(Luclin vendors)",
+      "location": "Luclin",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 95,
+      "class": "Plane of Knowledge",
+      "vendor_npc_name": "Wanderer Astobin",
+      "location": "1-65",
+      "floor_area": "Post-PoP one-stop shop",
+      "levels": ""
+    },
+    {
+      "_source_row": 100,
+      "class": "City/Zone",
+      "vendor_npc_name": "Vendor NPC Name",
+      "location": "Spell Levels Sold",
+      "floor_area": "Notes",
+      "levels": ""
+    },
+    {
+      "_source_row": 101,
+      "class": "Erudin Palace",
+      "vendor_npc_name": "(Enchanter guild vendors)",
+      "location": "1-50",
+      "floor_area": "Primary ENC location",
+      "levels": ""
+    },
+    {
+      "_source_row": 102,
+      "class": "South Felwithe",
+      "vendor_npc_name": "Porra, Srell Tumblebrook",
+      "location": "1-50",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 103,
+      "class": "Ak'Anon",
+      "vendor_npc_name": "Clockwork Merchant (1100, -980)",
+      "location": "1-50",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 104,
+      "class": "Neriak Commons",
+      "vendor_npc_name": "(Caster guild, 147, -955)",
+      "location": "1-34",
+      "floor_area": "Limited selection",
+      "levels": ""
+    },
+    {
+      "_source_row": 105,
+      "class": "Plane of Knowledge",
+      "vendor_npc_name": "Illusionist Jerup",
+      "location": "1-65",
+      "floor_area": "Post-PoP one-stop shop",
+      "levels": ""
+    },
+    {
+      "_source_row": 110,
+      "class": "City/Zone",
+      "vendor_npc_name": "Vendor NPC Name",
+      "location": "Spell Levels Sold",
+      "floor_area": "Notes",
+      "levels": ""
+    },
+    {
+      "_source_row": 111,
+      "class": "Erudin Palace",
+      "vendor_npc_name": "(Magician guild vendors)",
+      "location": "1-50",
+      "floor_area": "Primary MAG location",
+      "levels": ""
+    },
+    {
+      "_source_row": 112,
+      "class": "South Felwithe",
+      "vendor_npc_name": "(Mage guild vendors)",
+      "location": "1-50",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 113,
+      "class": "Ak'Anon",
+      "vendor_npc_name": "(Clockwork vendors)",
+      "location": "1-50",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 114,
+      "class": "Neriak Commons",
+      "vendor_npc_name": "(Caster guild area)",
+      "location": "1-34",
+      "floor_area": "Limited selection",
+      "levels": ""
+    },
+    {
+      "_source_row": 115,
+      "class": "Plane of Knowledge",
+      "vendor_npc_name": "Elementalist Somat",
+      "location": "1-65",
+      "floor_area": "Post-PoP one-stop shop",
+      "levels": ""
+    },
+    {
+      "_source_row": 120,
+      "class": "City/Zone",
+      "vendor_npc_name": "Vendor NPC Name",
+      "location": "Spell Levels Sold",
+      "floor_area": "Notes",
+      "levels": ""
+    },
+    {
+      "_source_row": 121,
+      "class": "Neriak 3rd Gate",
+      "vendor_npc_name": "Jys D'Bious, Vissa D'Dbth, Camor V'Retta",
+      "location": "1-50",
+      "floor_area": "Primary NEC location",
+      "levels": ""
+    },
+    {
+      "_source_row": 122,
+      "class": "Paineel",
+      "vendor_npc_name": "Sheras Milaku, Dovan Sires, Danus Kelmun",
+      "location": "1-50",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 123,
+      "class": "East Cabilis",
+      "vendor_npc_name": "Keeper Bile, Squire Rygle",
+      "location": "1-50",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 124,
+      "class": "Qeynos Catacombs",
+      "vendor_npc_name": "(Hidden necro guild vendors)",
+      "location": "1-34",
+      "floor_area": "Limited selection",
+      "levels": ""
+    },
+    {
+      "_source_row": 125,
+      "class": "Plane of Knowledge",
+      "vendor_npc_name": "Heretic Drahur",
+      "location": "1-65",
+      "floor_area": "Post-PoP one-stop shop",
+      "levels": ""
+    },
+    {
+      "_source_row": 130,
+      "class": "City/Zone",
+      "vendor_npc_name": "Vendor NPC Name",
+      "location": "Spell Levels Sold",
+      "floor_area": "Notes",
+      "levels": ""
+    },
+    {
+      "_source_row": 131,
+      "class": "North Felwithe",
+      "vendor_npc_name": "(Paladin guild / Temple)",
+      "location": "9-50",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 132,
+      "class": "North Freeport",
+      "vendor_npc_name": "(Temple of Marr)",
+      "location": "9-50",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 133,
+      "class": "North Kaladim",
+      "vendor_npc_name": "Gunlok Jure + guild vendors",
+      "location": "9-50",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 134,
+      "class": "Erudin",
+      "vendor_npc_name": "(Temple vendors)",
+      "location": "9-50",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 135,
+      "class": "Plane of Knowledge",
+      "vendor_npc_name": "Cavalier Waut",
+      "location": "9-65",
+      "floor_area": "Post-PoP one-stop shop",
+      "levels": ""
+    },
+    {
+      "_source_row": 140,
+      "class": "City/Zone",
+      "vendor_npc_name": "Vendor NPC Name",
+      "location": "Spell Levels Sold",
+      "floor_area": "Notes",
+      "levels": ""
+    },
+    {
+      "_source_row": 141,
+      "class": "Surefall Glade",
+      "vendor_npc_name": "Bukem Breewood",
+      "location": "9-50",
+      "floor_area": "Primary RNG location",
+      "levels": ""
+    },
+    {
+      "_source_row": 142,
+      "class": "Kelethin (GFay)",
+      "vendor_npc_name": "Aleena Lightleaf",
+      "location": "9-50",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 143,
+      "class": "North Freeport",
+      "vendor_npc_name": "(Ranger trainers area)",
+      "location": "9-50",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 144,
+      "class": "Plane of Knowledge",
+      "vendor_npc_name": "Pathfinder Viliken",
+      "location": "9-65",
+      "floor_area": "Post-PoP one-stop shop",
+      "levels": ""
+    },
+    {
+      "_source_row": 149,
+      "class": "City/Zone",
+      "vendor_npc_name": "Vendor NPC Name",
+      "location": "Spell Levels Sold",
+      "floor_area": "Notes",
+      "levels": ""
+    },
+    {
+      "_source_row": 150,
+      "class": "Neriak 3rd Gate",
+      "vendor_npc_name": "(Spurned/SK guild vendors)",
+      "location": "9-50",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 151,
+      "class": "Paineel",
+      "vendor_npc_name": "(SK guild vendors)",
+      "location": "9-50",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 152,
+      "class": "Oggok",
+      "vendor_npc_name": "(SK guild vendors)",
+      "location": "9-50",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 153,
+      "class": "East Cabilis",
+      "vendor_npc_name": "(Crusaders of Greenmist guild)",
+      "location": "9-50",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 154,
+      "class": "Grobb",
+      "vendor_npc_name": "(Troll SK guild)",
+      "location": "9-50",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 155,
+      "class": "Plane of Knowledge",
+      "vendor_npc_name": "Reaver Nydlil",
+      "location": "9-65",
+      "floor_area": "Post-PoP one-stop shop",
+      "levels": ""
+    },
+    {
+      "_source_row": 160,
+      "class": "City/Zone",
+      "vendor_npc_name": "Vendor NPC Name",
+      "location": "Spell Levels Sold",
+      "floor_area": "Notes",
+      "levels": ""
+    },
+    {
+      "_source_row": 161,
+      "class": "Oggok",
+      "vendor_npc_name": "Crilt, Barsk",
+      "location": "1-50",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 162,
+      "class": "Grobb",
+      "vendor_npc_name": "(Shaman guild near bank)",
+      "location": "1-50",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 163,
+      "class": "Halas",
+      "vendor_npc_name": "Boraskor",
+      "location": "1-50",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 164,
+      "class": "East Cabilis",
+      "vendor_npc_name": "(Scaled Mystics guild, 1022, -194)",
+      "location": "1-50",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 165,
+      "class": "Shar Vahl",
+      "vendor_npc_name": "Scribe Gefna",
+      "location": "1-50+",
+      "floor_area": "Luclin era",
+      "levels": ""
+    },
+    {
+      "_source_row": 166,
+      "class": "Rivervale",
+      "vendor_npc_name": "(Shaman guild vendors)",
+      "location": "1-50",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 167,
+      "class": "Plane of Knowledge",
+      "vendor_npc_name": "Mystic Abomin",
+      "location": "1-65",
+      "floor_area": "Post-PoP one-stop shop",
+      "levels": ""
+    },
+    {
+      "_source_row": 172,
+      "class": "City/Zone",
+      "vendor_npc_name": "Vendor NPC Name",
+      "location": "Spell Levels Sold",
+      "floor_area": "Notes",
+      "levels": ""
+    },
+    {
+      "_source_row": 173,
+      "class": "Erudin Palace",
+      "vendor_npc_name": "Junice Weslent",
+      "location": "1-50",
+      "floor_area": "Primary WIZ location",
+      "levels": ""
+    },
+    {
+      "_source_row": 174,
+      "class": "North Felwithe",
+      "vendor_npc_name": "Terren Starwatcher",
+      "location": "1-50",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 175,
+      "class": "Qeynos Catacombs",
+      "vendor_npc_name": "Senst Ereek, Fellweni The Kraven",
+      "location": "1-34",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 176,
+      "class": "North Qeynos",
+      "vendor_npc_name": "Ladia Qursii",
+      "location": "1-24",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 177,
+      "class": "East Freeport",
+      "vendor_npc_name": "Itzia Vunpe, Ealyson Roloius",
+      "location": "1-50",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 178,
+      "class": "Ak'Anon",
+      "vendor_npc_name": "(Wizard guild vendors)",
+      "location": "1-50",
+      "floor_area": "",
+      "levels": ""
+    },
+    {
+      "_source_row": 179,
+      "class": "Neriak Commons",
+      "vendor_npc_name": "(Caster guild area)",
+      "location": "1-34",
+      "floor_area": "Limited selection",
+      "levels": ""
+    },
+    {
+      "_source_row": 180,
+      "class": "Plane of Knowledge",
+      "vendor_npc_name": "Channeler Olaemos",
+      "location": "1-65",
+      "floor_area": "Post-PoP one-stop shop",
+      "levels": ""
+    }
+  ]
+}

@@ -1,0 +1,4552 @@
+{
+  "sheet_name": "Epic 1.0 Quests",
+  "row_count": 446,
+  "extracted_at": "2026-04-29T14:51:47.578Z",
+  "warnings": [],
+  "classes": [
+    {
+      "class_name": "BARD",
+      "weapon_name": "SINGING SHORT SWORD",
+      "steps": [
+        {
+          "_source_row": 7,
+          "step": "1",
+          "phase": "",
+          "action": "Talk to Konia Swiftfoot at guard tower",
+          "npc_mob": "Konia Swiftfoot",
+          "zone": "West Karana",
+          "items": "Receive: Torch of Misty (loc -516, -2434)",
+          "notes": ""
+        },
+        {
+          "_source_row": 8,
+          "step": "2",
+          "phase": "",
+          "action": "Give Torch of Misty to Fajio Knejo",
+          "npc_mob": "Fajio Knejo",
+          "zone": "Misty Thicket",
+          "items": "Receive: Torch of Ro (loc -120, -54)",
+          "notes": ""
+        },
+        {
+          "_source_row": 9,
+          "step": "3",
+          "phase": "",
+          "action": "Give Torch of Ro to Andad Filla",
+          "npc_mob": "Andad Filla",
+          "zone": "South Ro",
+          "items": "Receive: Torch of Rathe (loc -3032, 1216)",
+          "notes": ""
+        },
+        {
+          "_source_row": 10,
+          "step": "4",
+          "phase": "",
+          "action": "Give Torch of Rathe to Misty Tekchita",
+          "npc_mob": "Misty Tekchita",
+          "zone": "Lake Rathetear",
+          "items": "Receive: Proof of Speed (loc 2419, 2583)",
+          "notes": ""
+        },
+        {
+          "_source_row": 11,
+          "step": "5",
+          "phase": "",
+          "action": "Give Proof of Speed to Konia Swiftfoot",
+          "npc_mob": "Konia Swiftfoot",
+          "zone": "West Karana",
+          "items": "Receive: PAGE 24 TOP",
+          "notes": ""
+        },
+        {
+          "_source_row": 12,
+          "step": "1",
+          "phase": "",
+          "action": "Talk to Serra in Unrest",
+          "npc_mob": "Serra",
+          "zone": "Estate of Unrest",
+          "items": "Receive: Ripped Qeynos Bards Guild Flyer (loc 679, -280)",
+          "notes": ""
+        },
+        {
+          "_source_row": 13,
+          "step": "2",
+          "phase": "",
+          "action": "Talk to Belious Naliedin in Bards Guild",
+          "npc_mob": "Belious Naliedin",
+          "zone": "Qeynos (S)",
+          "items": "(dialogue only)",
+          "notes": ""
+        },
+        {
+          "_source_row": 14,
+          "step": "3",
+          "phase": "",
+          "action": "Talk to Braenar Swiftsong",
+          "npc_mob": "Braenar Swiftsong",
+          "zone": "South Karana",
+          "items": "Receive: Solusek Mining Co. Invoice (loc -21, 88)",
+          "notes": ""
+        },
+        {
+          "_source_row": 15,
+          "step": "4",
+          "phase": "",
+          "action": "Give invoice to Marfen Birkdirple",
+          "npc_mob": "Marfen Birkdirple",
+          "zone": "South Karana",
+          "items": "Receive: Mechanical Doll (loc -304, -1083)",
+          "notes": ""
+        },
+        {
+          "_source_row": 16,
+          "step": "5",
+          "phase": "",
+          "action": "Give doll to Serra",
+          "npc_mob": "Serra",
+          "zone": "Estate of Unrest",
+          "items": "Receive: Note to Braenar",
+          "notes": ""
+        },
+        {
+          "_source_row": 17,
+          "step": "6",
+          "phase": "",
+          "action": "Give note to Braenar Swiftsong",
+          "npc_mob": "Braenar Swiftsong",
+          "zone": "South Karana",
+          "items": "Receive: Note to Maligar",
+          "notes": ""
+        },
+        {
+          "_source_row": 18,
+          "step": "7",
+          "phase": "",
+          "action": "Give note to Maligar (charm him first, 30-min spawn, loc 1179, -10878)",
+          "npc_mob": "Maligar",
+          "zone": "West Karana",
+          "items": "(triggers doppelganger spawn)",
+          "notes": ""
+        },
+        {
+          "_source_row": 19,
+          "step": "8",
+          "phase": "",
+          "action": "Kill Maligar's Enraged Doppelganger",
+          "npc_mob": "Maligar's Doppelganger",
+          "zone": "West Karana",
+          "items": "Loot: Maligar's Head",
+          "notes": ""
+        },
+        {
+          "_source_row": 20,
+          "step": "9",
+          "phase": "",
+          "action": "Give head to Braenar Swiftsong",
+          "npc_mob": "Braenar Swiftsong",
+          "zone": "South Karana",
+          "items": "Receive: Mahlin's Mystical Bongos",
+          "notes": ""
+        },
+        {
+          "_source_row": 21,
+          "step": "10",
+          "phase": "",
+          "action": "Give bongos to Konia Swiftfoot",
+          "npc_mob": "Konia Swiftfoot",
+          "zone": "West Karana",
+          "items": "Receive: PAGE 24 BOTTOM",
+          "notes": ""
+        },
+        {
+          "_source_row": 22,
+          "step": "1",
+          "phase": "",
+          "action": "Talk to Kelkim Menkia",
+          "npc_mob": "Kelkim Menkia",
+          "zone": "South Karana",
+          "items": "(needs 3 types of guts) (loc -236, -3662)",
+          "notes": ""
+        },
+        {
+          "_source_row": 23,
+          "step": "2",
+          "phase": "",
+          "action": "Kill Blackwing",
+          "npc_mob": "Blackwing",
+          "zone": "Rathe Mountains",
+          "items": "Loot: Huge Onyx Drake Guts",
+          "notes": ""
+        },
+        {
+          "_source_row": 24,
+          "step": "3",
+          "phase": "",
+          "action": "Kill Nezekezena or Phurzicon",
+          "npc_mob": "Nezekezena/Phurzicon",
+          "zone": "Burning Woods",
+          "items": "Loot: Red Wurm Guts",
+          "notes": ""
+        },
+        {
+          "_source_row": 25,
+          "step": "4",
+          "phase": "",
+          "action": "Kill Eldrig the Old",
+          "npc_mob": "Eldrig the Old",
+          "zone": "Skyfire Mountains",
+          "items": "Loot: Chromodrac Guts",
+          "notes": ""
+        },
+        {
+          "_source_row": 26,
+          "step": "5",
+          "phase": "",
+          "action": "Give all 3 guts to Kelkim Menkia",
+          "npc_mob": "Kelkim Menkia",
+          "zone": "South Karana",
+          "items": "Receive: PAGE 25",
+          "notes": ""
+        },
+        {
+          "_source_row": 27,
+          "step": "1",
+          "phase": "",
+          "action": "Talk to Vedico Windwhisper in shop",
+          "npc_mob": "Vedico Windwhisper",
+          "zone": "Butcherblock Mtns",
+          "items": "(dialogue) (loc 1010, 3010)",
+          "notes": ""
+        },
+        {
+          "_source_row": 28,
+          "step": "2",
+          "phase": "",
+          "action": "Kill Quag Maelstrom on Seafury Cyclops island",
+          "npc_mob": "Quag Maelstrom",
+          "zone": "Ocean of Tears",
+          "items": "Loot: Alluring Horn",
+          "notes": ""
+        },
+        {
+          "_source_row": 29,
+          "step": "3",
+          "phase": "",
+          "action": "Give horn to Vedico",
+          "npc_mob": "Vedico Windwhisper",
+          "zone": "Butcherblock Mtns",
+          "items": "Receive: Note to Forpar Fizfla",
+          "notes": ""
+        },
+        {
+          "_source_row": 30,
+          "step": "4",
+          "phase": "",
+          "action": "Give note to Forpar Fizfla",
+          "npc_mob": "Forpar Fizfla",
+          "zone": "Steamfont Mountains Receive: Forpar's Note to Himself",
+          "items": "",
+          "notes": ""
+        },
+        {
+          "_source_row": 31,
+          "step": "5",
+          "phase": "",
+          "action": "Kill Phinigel Autropos",
+          "npc_mob": "Phinigel Autropos",
+          "zone": "Kedge Keep",
+          "items": "Loot: Kedge Backbone",
+          "notes": ""
+        },
+        {
+          "_source_row": 32,
+          "step": "6",
+          "phase": "",
+          "action": "Kill Amygdalan Warrior",
+          "npc_mob": "Amygdalan Warrior",
+          "zone": "Plane of Fear",
+          "items": "Loot: Amygdalan Tendril",
+          "notes": ""
+        },
+        {
+          "_source_row": 33,
+          "step": "7",
+          "phase": "",
+          "action": "Kill Drolvarg Warlord",
+          "npc_mob": "Drolvarg Warlord",
+          "zone": "Karnor's Castle",
+          "items": "Loot: Petrified Werewolf Skull",
+          "notes": ""
+        },
+        {
+          "_source_row": 34,
+          "step": "8",
+          "phase": "",
+          "action": "Give note + backbone + tendril + skull to Forpar Forpar Fizfla",
+          "npc_mob": "Steamfont Mountains Receive: MYSTICAL LUTE HEAD",
+          "zone": "",
+          "items": "",
+          "notes": ""
+        },
+        {
+          "_source_row": 35,
+          "step": "1",
+          "phase": "",
+          "action": "Kill a red dragon",
+          "npc_mob": "Nagafen/Talendor/etc.",
+          "zone": "Various",
+          "items": "Loot: Red Dragon Scale",
+          "notes": ""
+        },
+        {
+          "_source_row": 36,
+          "step": "2",
+          "phase": "",
+          "action": "Kill a white dragon",
+          "npc_mob": "Vox/Gorenaire",
+          "zone": "Various",
+          "items": "Loot: White Dragon Scale",
+          "notes": ""
+        },
+        {
+          "_source_row": 37,
+          "step": "3",
+          "phase": "",
+          "action": "Obtain a Metal Bit (smithed item)",
+          "npc_mob": "(crafted)",
+          "zone": "Any forge",
+          "items": "Need: Metal Bit",
+          "notes": ""
+        },
+        {
+          "_source_row": 38,
+          "step": "4",
+          "phase": "",
+          "action": "Give metal bit + red scale + white scale to Forpar",
+          "npc_mob": "Forpar Fizfla",
+          "zone": "Steamfont Mountains Receive: MYSTICAL LUTE BODY",
+          "items": "",
+          "notes": ""
+        },
+        {
+          "_source_row": 39,
+          "step": "1",
+          "phase": "",
+          "action": "Give Mystical Lute Body to An Undead Bard",
+          "npc_mob": "An Undead Bard",
+          "zone": "Dreadlands",
+          "items": "(spawns Trakanon copy)",
+          "notes": ""
+        },
+        {
+          "_source_row": 40,
+          "step": "2",
+          "phase": "",
+          "action": "Kill spawned Trakanon",
+          "npc_mob": "Trakanon (copy)",
+          "zone": "Dreadlands",
+          "items": "Loot: Undead Dragongut Strings",
+          "notes": ""
+        },
+        {
+          "_source_row": 41,
+          "step": "3",
+          "phase": "",
+          "action": "Give Lute Head + Lute Body + Strings to Forpar",
+          "npc_mob": "Forpar Fizfla",
+          "zone": "Steamfont Mountains Receive: MYSTICAL LUTE",
+          "items": "",
+          "notes": ""
+        },
+        {
+          "_source_row": 43,
+          "step": "FIN",
+          "phase": "FINAL TURN-IN",
+          "action": "Give Page 24 Top + Page 24 Bottom + Page 25 + Mystical Lute to Baldric Slezaf => Receive: SINGING SHORT SWORD",
+          "npc_mob": "",
+          "zone": "",
+          "items": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "class_name": "CLERIC",
+      "weapon_name": "WATER SPRINKLER OF NEM ANKH",
+      "steps": [
+        {
+          "_source_row": 54,
+          "step": "1",
+          "phase": "",
+          "action": "Kill Schmendrik Lavawalker",
+          "npc_mob": "Schmendrik Lavawalker",
+          "zone": "Lake Rathetear",
+          "items": "Spawns: A Spirit of Flame",
+          "notes": ""
+        },
+        {
+          "_source_row": 55,
+          "step": "2",
+          "phase": "",
+          "action": "Kill A Spirit of Flame",
+          "npc_mob": "A Spirit of Flame",
+          "zone": "Lake Rathetear",
+          "items": "Loot: Damaged Crown",
+          "notes": ""
+        },
+        {
+          "_source_row": 56,
+          "step": "3",
+          "phase": "",
+          "action": "Kill Lord Bergurgle",
+          "npc_mob": "Lord Bergurgle",
+          "zone": "Lake Rathetear",
+          "items": "Loot: Lord Bergurgle's Crown",
+          "notes": ""
+        },
+        {
+          "_source_row": 57,
+          "step": "4",
+          "phase": "",
+          "action": "Give Crown to Schmendrik Lavawalker",
+          "npc_mob": "Schmendrik Lavawalker",
+          "zone": "Lake Rathetear",
+          "items": "Spawns: Natasha Whitewater",
+          "notes": ""
+        },
+        {
+          "_source_row": 58,
+          "step": "5",
+          "phase": "",
+          "action": "Kill Schmendrik Lavawalker (again)",
+          "npc_mob": "Schmendrik Lavawalker",
+          "zone": "Lake Rathetear",
+          "items": "Spawns: A Spirit of Flame",
+          "notes": ""
+        },
+        {
+          "_source_row": 59,
+          "step": "6",
+          "phase": "",
+          "action": "Kill A Spirit of Flame (again)",
+          "npc_mob": "A Spirit of Flame",
+          "zone": "Lake Rathetear",
+          "items": "(completes sub-event)",
+          "notes": ""
+        },
+        {
+          "_source_row": 60,
+          "step": "7",
+          "phase": "",
+          "action": "Give Damaged Crown to Natasha Whitewater",
+          "npc_mob": "Natasha Whitewater",
+          "zone": "Lake Rathetear",
+          "items": "Receive: Ornate Sea Shell (I)",
+          "notes": ""
+        },
+        {
+          "_source_row": 61,
+          "step": "8",
+          "phase": "",
+          "action": "Give Ornate Sea Shell (I) to Omat Vastsea",
+          "npc_mob": "Omat Vastsea",
+          "zone": "Timorous Deep",
+          "items": "Receive: Coral Statue of Tarew (Hidden Inn area)",
+          "notes": ""
+        },
+        {
+          "_source_row": 62,
+          "step": "9",
+          "phase": "",
+          "action": "Give Coral Statue to a Seeker",
+          "npc_mob": "a Seeker",
+          "zone": "Temple of Solusek Ro Spawns: Plasmatic Priest",
+          "items": "",
+          "notes": ""
+        },
+        {
+          "_source_row": 63,
+          "step": "10",
+          "phase": "",
+          "action": "Kill Plasmatic Priest",
+          "npc_mob": "Plasmatic Priest",
+          "zone": "Temple of Solusek Ro Loot: Blood Soaked Plasmatic Priest Robe",
+          "items": "",
+          "notes": ""
+        },
+        {
+          "_source_row": 64,
+          "step": "11",
+          "phase": "",
+          "action": "Kill Lord Gimblox",
+          "npc_mob": "Lord Gimblox",
+          "zone": "Solusek's Eye",
+          "items": "Loot: Lord Gimblox's Signet Ring",
+          "notes": ""
+        },
+        {
+          "_source_row": 65,
+          "step": "12",
+          "phase": "",
+          "action": "Give Robe to Omat Vastsea",
+          "npc_mob": "Omat Vastsea",
+          "zone": "Timorous Deep",
+          "items": "Receive: ORB OF FROZEN WATER (also spawns Natasha)",
+          "notes": ""
+        },
+        {
+          "_source_row": 66,
+          "step": "13",
+          "phase": "",
+          "action": "Give Ring to Natasha Whitewater",
+          "npc_mob": "Natasha Whitewater",
+          "zone": "Timorous Deep",
+          "items": "Receive: Ornate Sea Shell (II)",
+          "notes": ""
+        },
+        {
+          "_source_row": 67,
+          "step": "14",
+          "phase": "",
+          "action": "Give Ornate Sea Shell (II) to Naxot Deepwater",
+          "npc_mob": "Naxot Deepwater",
+          "zone": "Burning Woods",
+          "items": "Receive: Message to Natasha (also spawns Ixiblat Fer)",
+          "notes": ""
+        },
+        {
+          "_source_row": 68,
+          "step": "15",
+          "phase": "",
+          "action": "Kill Ixiblat Fer",
+          "npc_mob": "Ixiblat Fer",
+          "zone": "Burning Woods",
+          "items": "Loot: Sceptre of Ixiblat Fer",
+          "notes": ""
+        },
+        {
+          "_source_row": 69,
+          "step": "16",
+          "phase": "",
+          "action": "Kill Overking Bathezid",
+          "npc_mob": "Overking Bathezid",
+          "zone": "Chardok",
+          "items": "Loot: Singed Scroll",
+          "notes": ""
+        },
+        {
+          "_source_row": 70,
+          "step": "17",
+          "phase": "",
+          "action": "Give Scroll + Sceptre to Omat Vastsea",
+          "npc_mob": "Omat Vastsea",
+          "zone": "Timorous Deep",
+          "items": "Receive: ORB OF CLEAR WATER (also spawns Natasha)",
+          "notes": ""
+        },
+        {
+          "_source_row": 71,
+          "step": "18",
+          "phase": "",
+          "action": "Give Message to Natasha",
+          "npc_mob": "Natasha Whitewater",
+          "zone": "Timorous Deep",
+          "items": "Receive: Shimmering Pearl",
+          "notes": ""
+        },
+        {
+          "_source_row": 72,
+          "step": "19",
+          "phase": "",
+          "action": "Give Shimmering Pearl to Zordak Ragefire",
+          "npc_mob": "Zordak Ragefire",
+          "zone": "Solusek's Eye",
+          "items": "Receive: Swirling Pearl + Zordak's Box",
+          "notes": ""
+        },
+        {
+          "_source_row": 73,
+          "step": "20",
+          "phase": "",
+          "action": "Kill mobs in Skyfire for 4 Pearlescent Fragments various mobs",
+          "npc_mob": "Skyfire Mountains",
+          "zone": "Loot: 4x Pearlescent Fragment",
+          "items": "",
+          "notes": ""
+        },
+        {
+          "_source_row": 74,
+          "step": "21",
+          "phase": "",
+          "action": "Combine 4 fragments in Zordak's Box",
+          "npc_mob": "(container combine)",
+          "zone": "Any",
+          "items": "Create: Assembled Pearlescent Shard",
+          "notes": ""
+        },
+        {
+          "_source_row": 75,
+          "step": "22",
+          "phase": "",
+          "action": "Give Assembled Shard to Warder Cecilia",
+          "npc_mob": "Warder Cecilia",
+          "zone": "Skyfire Mountains",
+          "items": "Receive: Seal (spawns Zordak Ragefire in Skyfire)",
+          "notes": ""
+        },
+        {
+          "_source_row": 76,
+          "step": "23",
+          "phase": "",
+          "action": "Kill Zordak Ragefire (in Skyfire)",
+          "npc_mob": "Zordak Ragefire",
+          "zone": "Skyfire Mountains",
+          "items": "Spawns: Zordakalicus Ragefire",
+          "notes": ""
+        },
+        {
+          "_source_row": 77,
+          "step": "24",
+          "phase": "",
+          "action": "Kill Zordakalicus Ragefire",
+          "npc_mob": "Zordakalicus Ragefire",
+          "zone": "Skyfire Mountains",
+          "items": "Loot: Impure Heart of Zordak (container)",
+          "notes": ""
+        },
+        {
+          "_source_row": 78,
+          "step": "25",
+          "phase": "",
+          "action": "Combine Seal + Swirling Pearl in Impure Heart",
+          "npc_mob": "(container combine)",
+          "zone": "Any",
+          "items": "Create: Zordak Ragefire's Heart",
+          "notes": ""
+        },
+        {
+          "_source_row": 79,
+          "step": "26",
+          "phase": "",
+          "action": "Give Heart to Omat Vastsea",
+          "npc_mob": "Omat Vastsea",
+          "zone": "Timorous Deep",
+          "items": "Receive: ORB OF VAPOR (spawns Jhassad Oceanson)",
+          "notes": ""
+        },
+        {
+          "_source_row": 81,
+          "step": "27",
+          "phase": "FINAL ASSEMBLY",
+          "action": "Give all 3 orbs to Jhassad Oceanson",
+          "npc_mob": "Jhassad Oceanson",
+          "zone": "Timorous Deep",
+          "items": "Receive: Orb of the Triumvirate (Frozen + Clear + Vapor) Spawns: Avatar of Water",
+          "notes": ""
+        },
+        {
+          "_source_row": 82,
+          "step": "28",
+          "phase": "FINAL ASSEMBLY",
+          "action": "Give Orb of Triumvirate to Avatar of Water",
+          "npc_mob": "Avatar of Water",
+          "zone": "Timorous Deep",
+          "items": "Receive: WATER SPRINKLER OF NEM ANKH",
+          "notes": ""
+        },
+        {
+          "_source_row": 84,
+          "step": "FIN",
+          "phase": "FINAL TURN-IN",
+          "action": "27 Give all 3 orbs to Jhassad Oceanson Jhassad Oceanson Timorous Deep Receive: Orb of the Triumvirate (Frozen + Clear + Vapor) Spawns: Avatar of Water 28 Give Orb of Triumvirate to Avatar of Water Avatar of Water Timorous Deep Receive: WATER SPRINKLER OF NEM ANKH",
+          "npc_mob": "",
+          "zone": "",
+          "items": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "class_name": "DRUID",
+      "weapon_name": "NATURE WALKER'S SCIMITAR",
+      "steps": [
+        {
+          "_source_row": 95,
+          "step": "1",
+          "phase": "",
+          "action": "Talk to Telin Darkforest, say \"action\"",
+          "npc_mob": "Telin Darkforest",
+          "zone": "Burning Woods",
+          "items": "Receive: Worn Note",
+          "notes": ""
+        },
+        {
+          "_source_row": 96,
+          "step": "2",
+          "phase": "",
+          "action": "Spawn Faelin Bloodbriar (kill orc pawns at +1535, +570 until she spawns), give note",
+          "npc_mob": "Faelin Bloodbriar",
+          "zone": "Greater Faydark",
+          "items": "Receive: Faelin's Ring",
+          "notes": ""
+        },
+        {
+          "_source_row": 97,
+          "step": "3",
+          "phase": "",
+          "action": "Give ring to Giz X'Tin (roams, use track)",
+          "npc_mob": "Giz X'Tin",
+          "zone": "Kithicor Forest",
+          "items": "Receive: Dark Metal Coin",
+          "notes": ""
+        },
+        {
+          "_source_row": 98,
+          "step": "4",
+          "phase": "",
+          "action": "Give coin to Telin Darkforest",
+          "npc_mob": "Telin Darkforest",
+          "zone": "Burning Woods",
+          "items": "Receive: Worn Dark Metal Coin",
+          "notes": ""
+        },
+        {
+          "_source_row": 99,
+          "step": "5",
+          "phase": "",
+          "action": "Give coin to Athele",
+          "npc_mob": "Athele",
+          "zone": "East Karana",
+          "items": "Receive: Braided Grass Amulet",
+          "notes": ""
+        },
+        {
+          "_source_row": 100,
+          "step": "6",
+          "phase": "",
+          "action": "Give amulet to Sionae (track nearby)",
+          "npc_mob": "Sionae",
+          "zone": "East Karana",
+          "items": "Receive: Frayed Braided Grass Amulet",
+          "notes": ""
+        },
+        {
+          "_source_row": 101,
+          "step": "7",
+          "phase": "",
+          "action": "Give amulet to Nuien, then to Teloa",
+          "npc_mob": "Nuien, then Teloa",
+          "zone": "East Karana",
+          "items": "Spawns: Dark Elf Corruptor",
+          "notes": ""
+        },
+        {
+          "_source_row": 102,
+          "step": "8",
+          "phase": "",
+          "action": "Kill Dark Elf Corruptor",
+          "npc_mob": "Dark Elf Corruptor",
+          "zone": "East Karana",
+          "items": "Loot: Fleshbound Tome",
+          "notes": ""
+        },
+        {
+          "_source_row": 103,
+          "step": "9",
+          "phase": "",
+          "action": "Give tome to Athele",
+          "npc_mob": "Athele",
+          "zone": "East Karana",
+          "items": "Receive: Earth Stained Note",
+          "notes": ""
+        },
+        {
+          "_source_row": 104,
+          "step": "10",
+          "phase": "",
+          "action": "Give note to Ella Foodcrafter",
+          "npc_mob": "Ella Foodcrafter",
+          "zone": "Misty Thicket",
+          "items": "Receive: Shiny Tin Bowl",
+          "notes": ""
+        },
+        {
+          "_source_row": 105,
+          "step": "11",
+          "phase": "",
+          "action": "Forage 4 items: Chilled Tundra Root (Everfrost), Sweetened Mudroot, Speckled Molded Mushroom, Ripened Heartfruit",
+          "npc_mob": "Various",
+          "zone": "4 foraged items",
+          "items": "",
+          "notes": ""
+        },
+        {
+          "_source_row": 106,
+          "step": "12",
+          "phase": "",
+          "action": "Combine all 4 items in Shiny Tin Bowl",
+          "npc_mob": "(container combine)",
+          "zone": "Any",
+          "items": "Create: HARDENED MIXTURE",
+          "notes": ""
+        },
+        {
+          "_source_row": 107,
+          "step": "13",
+          "phase": "",
+          "action": "Get Crushed Pot from Alrik Farsight",
+          "npc_mob": "Alrik Farsight",
+          "zone": "Timorous Deep",
+          "items": "Receive: Crushed Pot",
+          "notes": ""
+        },
+        {
+          "_source_row": 108,
+          "step": "14",
+          "phase": "",
+          "action": "Give pot to Farios Elianos",
+          "npc_mob": "Farios Elianos",
+          "zone": "Firiona Vie",
+          "items": "Receive: Grocery List",
+          "notes": ""
+        },
+        {
+          "_source_row": 109,
+          "step": "15",
+          "phase": "",
+          "action": "Give list to Merchant Nora",
+          "npc_mob": "Merchant Nora",
+          "zone": "Firiona Vie",
+          "items": "Receive: Bag of Provisions",
+          "notes": ""
+        },
+        {
+          "_source_row": 110,
+          "step": "16",
+          "phase": "",
+          "action": "Give provisions to Farios",
+          "npc_mob": "Farios Elianos",
+          "zone": "Firiona Vie",
+          "items": "Receive: Receipt",
+          "notes": ""
+        },
+        {
+          "_source_row": 111,
+          "step": "17",
+          "phase": "",
+          "action": "Give receipt to Alrik Farsight",
+          "npc_mob": "Alrik Farsight",
+          "zone": "Timorous Deep",
+          "items": "Receive: Ancient Pattern",
+          "notes": ""
+        },
+        {
+          "_source_row": 112,
+          "step": "18",
+          "phase": "",
+          "action": "Forage Rose of Firiona in Firiona Vie",
+          "npc_mob": "(forage)",
+          "zone": "Firiona Vie",
+          "items": "Rose of Firiona",
+          "notes": ""
+        },
+        {
+          "_source_row": 113,
+          "step": "19",
+          "phase": "",
+          "action": "Give rose to Merdan in Surefall Glade",
+          "npc_mob": "Merdan",
+          "zone": "Surefall Glade",
+          "items": "Receive: Wood Painting",
+          "notes": ""
+        },
+        {
+          "_source_row": 114,
+          "step": "20",
+          "phase": "",
+          "action": "Give painting to human skeleton",
+          "npc_mob": "human skeleton",
+          "zone": "Frontier Mountains",
+          "items": "Receive: Silver Chained Locket",
+          "notes": ""
+        },
+        {
+          "_source_row": 115,
+          "step": "21",
+          "phase": "",
+          "action": "Give locket to Niera Farbreeze",
+          "npc_mob": "Niera Farbreeze",
+          "zone": "Surefall Glade",
+          "items": "Receive: Platinum Speckled Powder",
+          "notes": ""
+        },
+        {
+          "_source_row": 116,
+          "step": "22",
+          "phase": "",
+          "action": "Kill Jade Reaver in City of Mist, give jade to Kinlo Strongarm",
+          "npc_mob": "Kinlo Strongarm",
+          "zone": "City of Mist /",
+          "items": "Receive: Enchanted Clay",
+          "notes": ""
+        },
+        {
+          "_source_row": 117,
+          "step": "23",
+          "phase": "",
+          "action": "Combine Ancient Pattern + Plat. Powder + Enchanted Clay on pottery wheel",
+          "npc_mob": "(pottery wheel)",
+          "zone": "Any",
+          "items": "Create: RUNECRESTED BOWL",
+          "notes": ""
+        },
+        {
+          "_source_row": 118,
+          "step": "24",
+          "phase": "",
+          "action": "Give Runecrested Bowl + Hardened Mixture to Ella Foodcrafter",
+          "npc_mob": "Ella Foodcrafter",
+          "zone": "Misty Thicket",
+          "items": "Receive: Softly Glowing Stone",
+          "notes": ""
+        },
+        {
+          "_source_row": 119,
+          "step": "25",
+          "phase": "",
+          "action": "Kill Venril Sathir",
+          "npc_mob": "Venril Sathir",
+          "zone": "Karnor's Castle",
+          "items": "Loot: Pulsing Green Stone",
+          "notes": ""
+        },
+        {
+          "_source_row": 120,
+          "step": "26",
+          "phase": "",
+          "action": "Give both stones to Foloal Stormforest",
+          "npc_mob": "Foloal Stormforest",
+          "zone": "Frontier Mountains",
+          "items": "Receive: Warmly Glowing Stone",
+          "notes": ""
+        },
+        {
+          "_source_row": 121,
+          "step": "27",
+          "phase": "",
+          "action": "Give stone to Ealla in Misty Thicket",
+          "npc_mob": "Ealla",
+          "zone": "Misty Thicket",
+          "items": "Receive: ELABORATE SCIMITAR",
+          "notes": ""
+        },
+        {
+          "_source_row": 122,
+          "step": "28",
+          "phase": "",
+          "action": "Kill Corrupted Shaman",
+          "npc_mob": "Corrupted Shaman",
+          "zone": "Lake Rathetear",
+          "items": "Loot: Clean Lakewater",
+          "notes": ""
+        },
+        {
+          "_source_row": 123,
+          "step": "29",
+          "phase": "",
+          "action": "Kill Corrupted Wooly Mammoth",
+          "npc_mob": "Corrupted Mammoth",
+          "zone": "Everfrost Peaks",
+          "items": "Loot: Chunk of Tundra",
+          "notes": ""
+        },
+        {
+          "_source_row": 124,
+          "step": "30",
+          "phase": "",
+          "action": "Kill Corrupted Hill Giant",
+          "npc_mob": "Corrupted Hill Giant",
+          "zone": "Rathe Mountains",
+          "items": "Loot: An Ancient Rock",
+          "notes": ""
+        },
+        {
+          "_source_row": 125,
+          "step": "31",
+          "phase": "",
+          "action": "Give all 3 items to Xanuusus",
+          "npc_mob": "Xanuusus",
+          "zone": "North Karana",
+          "items": "Receive: Warm Pulsing Treant Heart",
+          "notes": ""
+        },
+        {
+          "_source_row": 126,
+          "step": "32",
+          "phase": "",
+          "action": "Give heart to Yeka Ias",
+          "npc_mob": "Yeka Ias",
+          "zone": "South Karana",
+          "items": "Receive: CLEANSED SPIRIT OF ANTONICA",
+          "notes": ""
+        },
+        {
+          "_source_row": 127,
+          "step": "33",
+          "phase": "",
+          "action": "Kill Corrupted Seahorse",
+          "npc_mob": "Corrupted Seahorse",
+          "zone": "Kedge Keep",
+          "items": "Loot: Kedge Cave Crystals",
+          "notes": ""
+        },
+        {
+          "_source_row": 128,
+          "step": "34",
+          "phase": "",
+          "action": "Kill Corrupted Seafury Cyclops",
+          "npc_mob": "Corrupted Seafury Cyclops Ocean of Tears",
+          "zone": "Loot: Ocean of Tears Seavine",
+          "items": "",
+          "notes": ""
+        },
+        {
+          "_source_row": 129,
+          "step": "35",
+          "phase": "",
+          "action": "Kill Corrupted Brownie",
+          "npc_mob": "Corrupted Brownie",
+          "zone": "Lesser Faydark",
+          "items": "Loot: Green Heartwood Branch",
+          "notes": ""
+        },
+        {
+          "_source_row": 130,
+          "step": "36",
+          "phase": "",
+          "action": "Give all 3 items to Pained Unicorn",
+          "npc_mob": "Pained Unicorn",
+          "zone": "Lesser Faydark",
+          "items": "Receive: Gleaming Unicorn Horn",
+          "notes": ""
+        },
+        {
+          "_source_row": 131,
+          "step": "37",
+          "phase": "",
+          "action": "Give horn to Silox Azrix",
+          "npc_mob": "Silox Azrix",
+          "zone": "Ak'Anon",
+          "items": "Receive: CLEANSED SPIRIT OF FAYDWER",
+          "notes": ""
+        },
+        {
+          "_source_row": 132,
+          "step": "38",
+          "phase": "",
+          "action": "Kill Corrupted Gorilla",
+          "npc_mob": "Corrupted Gorilla",
+          "zone": "Emerald Jungle",
+          "items": "Loot: Green Tree Bark",
+          "notes": ""
+        },
+        {
+          "_source_row": 133,
+          "step": "39",
+          "phase": "",
+          "action": "Kill Corrupted Barracuda",
+          "npc_mob": "Corrupted Barracuda",
+          "zone": "Lake of Ill Omen",
+          "items": "Loot: Pure Lakewater",
+          "notes": ""
+        },
+        {
+          "_source_row": 134,
+          "step": "40",
+          "phase": "",
+          "action": "Kill Ulump Pujik",
+          "npc_mob": "Ulump Pujik",
+          "zone": "Swamp of No Hope",
+          "items": "Loot: Froglok Essence",
+          "notes": ""
+        },
+        {
+          "_source_row": 135,
+          "step": "41",
+          "phase": "",
+          "action": "Give essence to Dolgin Codslayer",
+          "npc_mob": "Dolgin Codslayer",
+          "zone": "Timorous Deep",
+          "items": "Spawns: Faydedar",
+          "notes": ""
+        },
+        {
+          "_source_row": 136,
+          "step": "42",
+          "phase": "",
+          "action": "Kill Faydedar",
+          "npc_mob": "Faydedar",
+          "zone": "Timorous Deep",
+          "items": "Loot: Pod of Seawater",
+          "notes": ""
+        },
+        {
+          "_source_row": 137,
+          "step": "43",
+          "phase": "",
+          "action": "Give Essence+Bark+Lakewater+Seawater to Nekexin Virulence",
+          "npc_mob": "Nekexin Virulence",
+          "zone": "The Overthere",
+          "items": "Receive: CLEANSED SPIRIT OF KUNARK",
+          "notes": ""
+        },
+        {
+          "_source_row": 139,
+          "step": "FIN",
+          "phase": "FINAL TURN-IN",
+          "action": "Give Cleansed Spirit of Antonica + Cleansed Spirit of Faydwer + Cleansed Spirit of Kunark + Elaborate Scimitar to Xanuusus in North Karana => Receive: NATURE WALKER'S SCIMITAR",
+          "npc_mob": "",
+          "zone": "",
+          "items": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "class_name": "ENCHANTER",
+      "weapon_name": "STAFF OF THE SERPENT",
+      "steps": [
+        {
+          "_source_row": 150,
+          "step": "1",
+          "phase": "",
+          "action": "Hail Stofo Olan",
+          "npc_mob": "Stofo Olan",
+          "zone": "Erudin",
+          "items": "(dialogue)",
+          "notes": ""
+        },
+        {
+          "_source_row": 151,
+          "step": "2",
+          "phase": "",
+          "action": "Hail Reania Jukle",
+          "npc_mob": "Reania Jukle",
+          "zone": "Qeynos",
+          "items": "Receive: Empty Ink Vial",
+          "notes": ""
+        },
+        {
+          "_source_row": 152,
+          "step": "3",
+          "phase": "",
+          "action": "Charm Ghoul Scribe in Lower Guk, give vial",
+          "npc_mob": "Ghoul Scribe",
+          "zone": "Lower Guk",
+          "items": "Receive: Ink of the Dark",
+          "notes": ""
+        },
+        {
+          "_source_row": 153,
+          "step": "4",
+          "phase": "",
+          "action": "Give Shiny Metallic Robe to Rilgor Plegnog",
+          "npc_mob": "Rilgor Plegnog",
+          "zone": "Ak'Anon",
+          "items": "Receive: Mechanical Pen (Enchanter GM)",
+          "notes": ""
+        },
+        {
+          "_source_row": 154,
+          "step": "5",
+          "phase": "",
+          "action": "Give paper + quill to Chrislin Baker",
+          "npc_mob": "Chrislin Baker",
+          "zone": "West Karana",
+          "items": "Receive: Bandit Sash (spawns Thracken Griften)",
+          "notes": ""
+        },
+        {
+          "_source_row": 155,
+          "step": "6",
+          "phase": "",
+          "action": "Kill Thracken Griften",
+          "npc_mob": "Thracken Griften",
+          "zone": "West Karana",
+          "items": "Loot: White Paper",
+          "notes": ""
+        },
+        {
+          "_source_row": 156,
+          "step": "7",
+          "phase": "",
+          "action": "Give Ink + Pen + Paper to Stofo Olan",
+          "npc_mob": "Stofo Olan",
+          "zone": "Erudin",
+          "items": "Receive: COPY OF NOTES",
+          "notes": ""
+        },
+        {
+          "_source_row": 157,
+          "step": "8",
+          "phase": "",
+          "action": "Say \"Are you Jeb Lurnsed\" to Sarnak Imitators",
+          "npc_mob": "Sarnak Imitators",
+          "zone": "Burning Woods",
+          "items": "(find the right one)",
+          "notes": ""
+        },
+        {
+          "_source_row": 158,
+          "step": "9",
+          "phase": "",
+          "action": "Give Jeb Copy of Notes",
+          "npc_mob": "Jeb Lurnsed",
+          "zone": "Burning Woods",
+          "items": "Receive: Jeb's Seal",
+          "notes": ""
+        },
+        {
+          "_source_row": 159,
+          "step": "10",
+          "phase": "",
+          "action": "Ask Jeb for sack",
+          "npc_mob": "Jeb Lurnsed",
+          "zone": "Burning Woods",
+          "items": "Receive: Enchanter's Sack",
+          "notes": ""
+        },
+        {
+          "_source_row": 160,
+          "step": "11",
+          "phase": "",
+          "action": "Hail Modani Qu'Loni (Scorpikis form)",
+          "npc_mob": "Modani Qu'Loni",
+          "zone": "The Overthere",
+          "items": "(dialogue)",
+          "notes": ""
+        },
+        {
+          "_source_row": 161,
+          "step": "12",
+          "phase": "",
+          "action": "Give Modani Jeb's Seal",
+          "npc_mob": "Modani Qu'Loni",
+          "zone": "The Overthere",
+          "items": "(starts test)",
+          "notes": ""
+        },
+        {
+          "_source_row": 162,
+          "step": "13",
+          "phase": "",
+          "action": "Hail Joren Nobleheart",
+          "npc_mob": "Joren Nobleheart",
+          "zone": "Chardok",
+          "items": "(dialogue)",
+          "notes": ""
+        },
+        {
+          "_source_row": 163,
+          "step": "14",
+          "phase": "",
+          "action": "Kill Prince Selrach Di'zok",
+          "npc_mob": "Prince Selrach Di'zok",
+          "zone": "Chardok",
+          "items": "Loot: Head of a Prince",
+          "notes": ""
+        },
+        {
+          "_source_row": 164,
+          "step": "15",
+          "phase": "",
+          "action": "Give Head to Joren",
+          "npc_mob": "Joren Nobleheart",
+          "zone": "Chardok",
+          "items": "Receive: Chalice of Kings",
+          "notes": ""
+        },
+        {
+          "_source_row": 165,
+          "step": "16",
+          "phase": "",
+          "action": "Kill Vessel Drozlin",
+          "npc_mob": "Vessel Drozlin",
+          "zone": "East Cabilis",
+          "items": "Loot: Xolion Rod",
+          "notes": ""
+        },
+        {
+          "_source_row": 166,
+          "step": "17",
+          "phase": "",
+          "action": "Give large muddy sandals to Bozlum Blossom",
+          "npc_mob": "Bozlum Blossom",
+          "zone": "Oggok",
+          "items": "Receive: Scribbled Parchment",
+          "notes": ""
+        },
+        {
+          "_source_row": 167,
+          "step": "18",
+          "phase": "",
+          "action": "Give Parchment to Brokk Boxtripper",
+          "npc_mob": "Brokk Boxtripper",
+          "zone": "Ak'Anon",
+          "items": "Receive: Gift to Bozlum",
+          "notes": ""
+        },
+        {
+          "_source_row": 168,
+          "step": "19",
+          "phase": "",
+          "action": "Give Gift to Bozlum",
+          "npc_mob": "Bozlum Blossom",
+          "zone": "Oggok",
+          "items": "Receive: Snow Blossums",
+          "notes": ""
+        },
+        {
+          "_source_row": 169,
+          "step": "20",
+          "phase": "",
+          "action": "Kill Verina Tomb",
+          "npc_mob": "Verina Tomb",
+          "zone": "Neriak 3rd Gate",
+          "items": "Loot: Innoruuk's Word",
+          "notes": ""
+        },
+        {
+          "_source_row": 170,
+          "step": "21",
+          "phase": "",
+          "action": "Combine Chalice + Rod + Blossums + Word in sack, give to Modani",
+          "npc_mob": "(Enchanter's Sack)",
+          "zone": "Any",
+          "items": "Give to Modani",
+          "notes": ""
+        },
+        {
+          "_source_row": 171,
+          "step": "22",
+          "phase": "",
+          "action": "Hail Mizzle Gepple (Clockwork VIIX form)",
+          "npc_mob": "Mizzle Gepple",
+          "zone": "Ak'Anon",
+          "items": "(dialogue)",
+          "notes": ""
+        },
+        {
+          "_source_row": 172,
+          "step": "23",
+          "phase": "",
+          "action": "Kill Cazel",
+          "npc_mob": "Cazel",
+          "zone": "Oasis of Marr",
+          "items": "Loot: Spoon",
+          "notes": ""
+        },
+        {
+          "_source_row": 173,
+          "step": "24",
+          "phase": "",
+          "action": "Kill Mesa",
+          "npc_mob": "Mesa",
+          "zone": "The Overthere",
+          "items": "Loot: The One Key",
+          "notes": ""
+        },
+        {
+          "_source_row": 174,
+          "step": "25",
+          "phase": "",
+          "action": "Retrieve Lost Scroll from behind bed",
+          "npc_mob": "(ground spawn)",
+          "zone": "Crypt of Dalnir",
+          "items": "Lost Scroll",
+          "notes": ""
+        },
+        {
+          "_source_row": 175,
+          "step": "26",
+          "phase": "",
+          "action": "Retrieve Book of Charm and Sacrifice from table",
+          "npc_mob": "(ground spawn)",
+          "zone": "Plane of Sky",
+          "items": "Book of Charm and Sacrifice",
+          "notes": ""
+        },
+        {
+          "_source_row": 176,
+          "step": "27",
+          "phase": "",
+          "action": "Combine Spoon + Key + Scroll + Book in sack give to Clockwork VIIX",
+          "npc_mob": "(Enchanter's Sack)",
+          "zone": "Any",
+          "items": "Give to Clockwork VIIX",
+          "notes": ""
+        },
+        {
+          "_source_row": 177,
+          "step": "28",
+          "phase": "",
+          "action": "Hail Nadia Starfeast",
+          "npc_mob": "Nadia Starfeast",
+          "zone": "Firiona Vie",
+          "items": "Receive: Enchanter's Bag + 4 gems (get Diamond, Sapphire, Ruby, Emerald)",
+          "notes": ""
+        },
+        {
+          "_source_row": 178,
+          "step": "29",
+          "phase": "",
+          "action": "Charm Spectral Librarian, give Diamond",
+          "npc_mob": "Spectral Librarian",
+          "zone": "Kaesora",
+          "items": "Receive: Enchanted Diamond",
+          "notes": ""
+        },
+        {
+          "_source_row": 179,
+          "step": "30",
+          "phase": "",
+          "action": "Charm Felia Goldenwing, give Sapphire",
+          "npc_mob": "Felia Goldenwing",
+          "zone": "Skyfire Mountains",
+          "items": "Receive: Enchanted Sapphire",
+          "notes": ""
+        },
+        {
+          "_source_row": 180,
+          "step": "31",
+          "phase": "",
+          "action": "Charm Wraith of Jaxion, give Ruby",
+          "npc_mob": "Wraith of Jaxion",
+          "zone": "City of Mist",
+          "items": "Receive: Enchanted Ruby",
+          "notes": ""
+        },
+        {
+          "_source_row": 181,
+          "step": "32",
+          "phase": "",
+          "action": "Charm Impaler Tzilug, give Emerald",
+          "npc_mob": "Impaler Tzilug",
+          "zone": "The Overthere",
+          "items": "Receive: Enchanted Emerald",
+          "notes": ""
+        },
+        {
+          "_source_row": 182,
+          "step": "33",
+          "phase": "",
+          "action": "Combine 4 enchanted gems in Enchanter's Bag give to Nadia",
+          "npc_mob": "(container combine)",
+          "zone": "Any",
+          "items": "Give to Nadia",
+          "notes": ""
+        },
+        {
+          "_source_row": 183,
+          "step": "34",
+          "phase": "",
+          "action": "Hail Polzin Mrid in The Hole, give Jeb's Seal",
+          "npc_mob": "Polzin Mrid",
+          "zone": "The Hole",
+          "items": "(starts test)",
+          "notes": ""
+        },
+        {
+          "_source_row": 184,
+          "step": "35",
+          "phase": "",
+          "action": "Kill Wraith of the Shissar (top of large temple) Wraith of the Shissar",
+          "npc_mob": "Plane of Fear",
+          "zone": "Loot: Head of a Serpent",
+          "items": "",
+          "notes": ""
+        },
+        {
+          "_source_row": 185,
+          "step": "36",
+          "phase": "",
+          "action": "Kill Kindle's Ghost",
+          "npc_mob": "Kindle's Ghost",
+          "zone": "The Hole",
+          "items": "Loot: Essence of a Ghost",
+          "notes": ""
+        },
+        {
+          "_source_row": 186,
+          "step": "37",
+          "phase": "",
+          "action": "Kill Forsaken Revenants",
+          "npc_mob": "Forsaken Revenants",
+          "zone": "Plane of Hate",
+          "items": "Loot: Essence of a Vampire",
+          "notes": ""
+        },
+        {
+          "_source_row": 187,
+          "step": "38",
+          "phase": "",
+          "action": "Kill The Tangrin",
+          "npc_mob": "The Tangrin",
+          "zone": "Field of Bone",
+          "items": "Loot: Sands of the Mystic",
+          "notes": ""
+        },
+        {
+          "_source_row": 188,
+          "step": "39",
+          "phase": "",
+          "action": "Combine 4 items in sack, give to Polzin",
+          "npc_mob": "Polzin Mrid",
+          "zone": "The Hole",
+          "items": "Receive: 4TH PIECE OF STAFF",
+          "notes": ""
+        },
+        {
+          "_source_row": 190,
+          "step": "FIN",
+          "phase": "FINAL TURN-IN",
+          "action": "Combine all 4 staff pieces in Enchanter's Sack => Bundle of Staves Give Bundle to Jeb Lurnsed => Receive: STAFF OF THE SERPENT",
+          "npc_mob": "",
+          "zone": "",
+          "items": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "class_name": "MAGICIAN",
+      "weapon_name": "ORB OF MASTERY",
+      "steps": [
+        {
+          "_source_row": 201,
+          "step": "1",
+          "phase": "",
+          "action": "Hail Rykas on southwestern island",
+          "npc_mob": "Rykas",
+          "zone": "Lake Rathetear",
+          "items": "Receive: Token of Mastery",
+          "notes": ""
+        },
+        {
+          "_source_row": 202,
+          "step": "2",
+          "phase": "",
+          "action": "Give Token to Jahsohn Aksot (western road)",
+          "npc_mob": "Jahsohn Aksot",
+          "zone": "West Commonlands",
+          "items": "(starts page collection)",
+          "notes": ""
+        },
+        {
+          "_source_row": 203,
+          "step": "3",
+          "phase": "",
+          "action": "Kill Enraged Dread Wolf (nighttime spawn)",
+          "npc_mob": "Enraged Dread Wolf",
+          "zone": "Kithicor Forest",
+          "items": "Loot: Torn Page Magi'kot pg.1",
+          "notes": ""
+        },
+        {
+          "_source_row": 204,
+          "step": "4",
+          "phase": "",
+          "action": "Kill Tentacle Terror/Dark Terror (basement)",
+          "npc_mob": "Tentacle Terror",
+          "zone": "Estate of Unrest",
+          "items": "Loot: Torn Page Magi'kot pg.2",
+          "notes": ""
+        },
+        {
+          "_source_row": 205,
+          "step": "5",
+          "phase": "",
+          "action": "Kill Bloodthirsty Ghouls (eastern portion)",
+          "npc_mob": "Bloodthirsty Ghoul",
+          "zone": "Lower Guk",
+          "items": "Loot: Torn Page Magi'kot pg.3",
+          "notes": ""
+        },
+        {
+          "_source_row": 206,
+          "step": "6",
+          "phase": "",
+          "action": "Give all 3 pages to Jahsohn Aksot",
+          "npc_mob": "Jahsohn Aksot",
+          "zone": "West Commonlands",
+          "items": "Receive: WORDS OF MAGI'KOT",
+          "notes": ""
+        },
+        {
+          "_source_row": 207,
+          "step": "7",
+          "phase": "",
+          "action": "Give Words of Magi'Kot to Walnan (near docks)",
+          "npc_mob": "Walnan",
+          "zone": "Butcherblock Mtns",
+          "items": "(starts power collection)",
+          "notes": ""
+        },
+        {
+          "_source_row": 208,
+          "step": "8",
+          "phase": "",
+          "action": "Kill Faerie Guards",
+          "npc_mob": "Faerie Guards",
+          "zone": "Lesser Faydark",
+          "items": "Loot: Power of Earth",
+          "notes": ""
+        },
+        {
+          "_source_row": 209,
+          "step": "9",
+          "phase": "",
+          "action": "Kill Gypsy Dancer",
+          "npc_mob": "Gypsy Dancer",
+          "zone": "Castle Mistmoore",
+          "items": "Loot: Power of Wind",
+          "notes": ""
+        },
+        {
+          "_source_row": 210,
+          "step": "10",
+          "phase": "",
+          "action": "Kill Famished Ravener",
+          "npc_mob": "Famished Ravener",
+          "zone": "Kaesora",
+          "items": "Loot: Power of Water",
+          "notes": ""
+        },
+        {
+          "_source_row": 211,
+          "step": "11",
+          "phase": "",
+          "action": "Kill Blazing Elemental (northern area)",
+          "npc_mob": "Blazing Elemental",
+          "zone": "Solusek's Eye",
+          "items": "Loot: Power of Fire",
+          "notes": ""
+        },
+        {
+          "_source_row": 212,
+          "step": "12",
+          "phase": "",
+          "action": "Give all 4 powers to Walnan",
+          "npc_mob": "Walnan",
+          "zone": "Butcherblock Mtns",
+          "items": "Receive: POWER OF THE ELEMENTS",
+          "notes": ""
+        },
+        {
+          "_source_row": 213,
+          "step": "13",
+          "phase": "",
+          "action": "Kill goblins/dark elf mages throughout Najena Collect all 4: Earth, Fire, Water, Wind",
+          "npc_mob": "Various mages",
+          "zone": "Najena",
+          "items": "Loot: Torn Words of Mastery",
+          "notes": ""
+        },
+        {
+          "_source_row": 214,
+          "step": "14",
+          "phase": "",
+          "action": "Give all 4 torn words to Akksstaff (NE area)",
+          "npc_mob": "Akksstaff",
+          "zone": "Najena",
+          "items": "Receive: WORDS OF MASTERY",
+          "notes": ""
+        },
+        {
+          "_source_row": 215,
+          "step": "15",
+          "phase": "",
+          "action": "Give Words of Magi'Kot + Power of Elements + Words of Mastery to Rykas",
+          "npc_mob": "Rykas",
+          "zone": "Lake Rathetear",
+          "items": "Receive: POWER OF THE ORB",
+          "notes": ""
+        },
+        {
+          "_source_row": 216,
+          "step": "16",
+          "phase": "",
+          "action": "Hail Jennus Lyklobar",
+          "npc_mob": "Jennus Lyklobar",
+          "zone": "Skyfire Mountains",
+          "items": "(need 3 fire items)",
+          "notes": ""
+        },
+        {
+          "_source_row": 217,
+          "step": "17",
+          "phase": "",
+          "action": "Kill named wurms (Phurzikon/Nezekenza/Gylton)",
+          "npc_mob": "Named Wurms",
+          "zone": "Burning Woods",
+          "items": "Loot: Burning Embers",
+          "notes": ""
+        },
+        {
+          "_source_row": 218,
+          "step": "18",
+          "phase": "",
+          "action": "Kill Neh'Ashiir (spawns from Black Reaver)",
+          "npc_mob": "Neh'Ashiir",
+          "zone": "City of Mist",
+          "items": "Loot: Torch of Elements",
+          "notes": ""
+        },
+        {
+          "_source_row": 219,
+          "step": "19",
+          "phase": "",
+          "action": "Kill Undertow",
+          "npc_mob": "Undertow",
+          "zone": "Kedge Keep",
+          "items": "Loot: Blazing Wand",
+          "notes": ""
+        },
+        {
+          "_source_row": 220,
+          "step": "20",
+          "phase": "",
+          "action": "Give Torch + Embers + Wand + Power of Orb to Jennus",
+          "npc_mob": "Jennus Lyklobar",
+          "zone": "Skyfire Mountains",
+          "items": "Receive: ELEMENT OF FIRE",
+          "notes": ""
+        },
+        {
+          "_source_row": 221,
+          "step": "21",
+          "phase": "",
+          "action": "Kill Magi P'Tasa (or male forsaken revenants)",
+          "npc_mob": "Magi P'Tasa",
+          "zone": "Plane of Hate",
+          "items": "Loot: Staff of Elemental Mastery: Earth",
+          "notes": ""
+        },
+        {
+          "_source_row": 222,
+          "step": "22",
+          "phase": "",
+          "action": "Kill Slixin Klex (SE portion)",
+          "npc_mob": "Slixin Klex",
+          "zone": "Burning Woods",
+          "items": "Loot: Dirt of Underfoot",
+          "notes": ""
+        },
+        {
+          "_source_row": 223,
+          "step": "23",
+          "phase": "",
+          "action": "Obtain Shovel of Ponz and Broom of Trilon",
+          "npc_mob": "(sub-quests)",
+          "zone": "Various",
+          "items": "Shovel of Ponz, Broom of Trilon",
+          "notes": ""
+        },
+        {
+          "_source_row": 224,
+          "step": "24",
+          "phase": "",
+          "action": "Give Staff + Dirt + Shovel + Broom to Tiblner",
+          "npc_mob": "Tiblner Milnik",
+          "zone": "Firiona Vie",
+          "items": "Receive: ELEMENT OF EARTH",
+          "notes": ""
+        },
+        {
+          "_source_row": 225,
+          "step": "25",
+          "phase": "",
+          "action": "Kill Phinigel Autropos",
+          "npc_mob": "Phinigel Autropos",
+          "zone": "Kedge Keep",
+          "items": "Loot: Staff of Elemental Mastery: Water",
+          "notes": ""
+        },
+        {
+          "_source_row": 226,
+          "step": "26",
+          "phase": "",
+          "action": "Kill Captain Rottgrime",
+          "npc_mob": "Captain Rottgrime",
+          "zone": "The Overthere",
+          "items": "Loot: Tears of Erolisi",
+          "notes": ""
+        },
+        {
+          "_source_row": 227,
+          "step": "27",
+          "phase": "",
+          "action": "Kill Trabul Earthstrider",
+          "npc_mob": "Trabul Earthstrider",
+          "zone": "East Karana",
+          "items": "Loot: Rain of Karana",
+          "notes": ""
+        },
+        {
+          "_source_row": 228,
+          "step": "28",
+          "phase": "",
+          "action": "Give Staff + Tears + Rain to Jinalis Andir",
+          "npc_mob": "Jinalis Andir",
+          "zone": "Dagnor's Cauldron",
+          "items": "Receive: ELEMENT OF WATER",
+          "notes": ""
+        },
+        {
+          "_source_row": 229,
+          "step": "29",
+          "phase": "",
+          "action": "Kill mobs on 7th island for Crown",
+          "npc_mob": "various mobs",
+          "zone": "Plane of Sky",
+          "items": "Loot: Crown of Elemental Mastery",
+          "notes": ""
+        },
+        {
+          "_source_row": 230,
+          "step": "30",
+          "phase": "",
+          "action": "Kill mobs in The Hole for Binder",
+          "npc_mob": "various mobs",
+          "zone": "The Hole",
+          "items": "Loot: Elemental Binder",
+          "notes": ""
+        },
+        {
+          "_source_row": 231,
+          "step": "31",
+          "phase": "",
+          "action": "Kill Quillmane",
+          "npc_mob": "Quillmane",
+          "zone": "South Karana",
+          "items": "Loot: Pegasus Cloak",
+          "notes": ""
+        },
+        {
+          "_source_row": 232,
+          "step": "32",
+          "phase": "",
+          "action": "Give Crown + Binder + Cloak to Kihun Solstin",
+          "npc_mob": "Kihun Solstin",
+          "zone": "Plane of Sky",
+          "items": "Receive: ELEMENT OF WIND",
+          "notes": ""
+        },
+        {
+          "_source_row": 234,
+          "step": "33",
+          "phase": "FINAL: Spell Summon Orb",
+          "action": "Hail Kihun Solstin, say \"I want to see the master\" to spawn Master of Elements",
+          "npc_mob": "Master of Elements",
+          "zone": "Plane of Sky",
+          "items": "(spawns Master if needed)",
+          "notes": ""
+        },
+        {
+          "_source_row": 235,
+          "step": "34",
+          "phase": "FINAL: Spell Summon Orb",
+          "action": "Give all 4 Elements to Master of Elements",
+          "npc_mob": "Master of Elements",
+          "zone": "Plane of Sky",
+          "items": "Receive: Spell: Summon Orb",
+          "notes": ""
+        },
+        {
+          "_source_row": 236,
+          "step": "35",
+          "phase": "FINAL: Spell Summon Orb",
+          "action": "Scribe spell and cast it to summon ORB OF MASTERY",
+          "npc_mob": "",
+          "zone": "",
+          "items": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "class_name": "MONK",
+      "weapon_name": "CELESTIAL FISTS",
+      "steps": [
+        {
+          "_source_row": 248,
+          "step": "1",
+          "phase": "",
+          "action": "Kill Targin the Rock in King chamber",
+          "npc_mob": "Targin the Rock",
+          "zone": "Solusek's Eye (B)",
+          "items": "Loot: Code of Zan Fi",
+          "notes": ""
+        },
+        {
+          "_source_row": 249,
+          "step": "2",
+          "phase": "",
+          "action": "Give purple headband + Code of Zan Fi to Brother Qwinn",
+          "npc_mob": "Brother Qwinn",
+          "zone": "South Karana",
+          "items": "Receive: Needle of the Void",
+          "notes": ""
+        },
+        {
+          "_source_row": 250,
+          "step": "3",
+          "phase": "",
+          "action": "Camp Raster of Guk (near Mino Elders room)",
+          "npc_mob": "Raster of Guk",
+          "zone": "Lower Guk",
+          "items": "Loot: Idol of Zan Fi",
+          "notes": ""
+        },
+        {
+          "_source_row": 251,
+          "step": "4",
+          "phase": "",
+          "action": "Give red sash + Idol to Brother Zephyl",
+          "npc_mob": "Brother Zephyl",
+          "zone": "Rathe Mountains",
+          "items": "Receive: Rare Robe Pattern",
+          "notes": ""
+        },
+        {
+          "_source_row": 252,
+          "step": "5",
+          "phase": "",
+          "action": "Craft Shadow Silk: combine Shadow Wolf Pelt + Silk Swatch + Spell: Gather Shadows",
+          "npc_mob": "(sewing kit)",
+          "zone": "Any",
+          "items": "Create: Shadow Silk",
+          "notes": ""
+        },
+        {
+          "_source_row": 253,
+          "step": "6",
+          "phase": "",
+          "action": "Craft Robe: combine Shadow Silk + Needle of the Void + Rare Robe Pattern + Song: Jonthan's Whistling Warsong",
+          "npc_mob": "(sewing kit)",
+          "zone": "Any",
+          "items": "Create: ROBE OF THE LOST CIRCLE",
+          "notes": ""
+        },
+        {
+          "_source_row": 254,
+          "step": "7",
+          "phase": "",
+          "action": "Kill Iksar Betrayer",
+          "npc_mob": "Iksar Betrayer",
+          "zone": "Chardok",
+          "items": "Loot: Metal Pipe (Zan)",
+          "notes": ""
+        },
+        {
+          "_source_row": 255,
+          "step": "8",
+          "phase": "",
+          "action": "Kill Drolvarg Pawbuster",
+          "npc_mob": "Drolvarg Pawbuster",
+          "zone": "Karnor's Castle",
+          "items": "Loot: Metal Pipe (Fi)",
+          "notes": ""
+        },
+        {
+          "_source_row": 256,
+          "step": "9",
+          "phase": "",
+          "action": "Charm Brother Balatin (near druid ring), give 2 Metal Pipes + Robe of Lost Circle",
+          "npc_mob": "Brother Balatin",
+          "zone": "Dreadlands",
+          "items": "Receive: ROBE OF WHISTLING FISTS",
+          "notes": ""
+        },
+        {
+          "_source_row": 257,
+          "step": "10",
+          "phase": "",
+          "action": "Kill named mobs for Book of Immortals",
+          "npc_mob": "Various named",
+          "zone": "Skyfire Mountains",
+          "items": "Loot: Book of Immortals",
+          "notes": ""
+        },
+        {
+          "_source_row": 258,
+          "step": "11",
+          "phase": "",
+          "action": "Give Book to Tomekeeper Danl in library",
+          "npc_mob": "Tomekeeper Danl",
+          "zone": "Erudin",
+          "items": "Receive: Danl's Reference",
+          "notes": ""
+        },
+        {
+          "_source_row": 259,
+          "step": "12",
+          "phase": "",
+          "action": "Give Danl's Reference + Robe of Whistling Fists to Lheao (loc -11600, -2200)",
+          "npc_mob": "Lheao",
+          "zone": "Timorous Deep",
+          "items": "Receive: Book of Celestial Fists",
+          "notes": ""
+        },
+        {
+          "_source_row": 260,
+          "step": "13",
+          "phase": "",
+          "action": "Find \"crazy\" Kaiaren (SE side near Old Sebilis)",
+          "npc_mob": "Kaiaren (crazy)",
+          "zone": "Trakanon's Teeth",
+          "items": "Give Book, he returns it + attacks",
+          "notes": ""
+        },
+        {
+          "_source_row": 261,
+          "step": "14",
+          "phase": "",
+          "action": "Have enchanter cast Blanket of Forgetfulness on Kaiaren; hail sane form",
+          "npc_mob": "Kaiaren (sane)",
+          "zone": "Trakanon's Teeth",
+          "items": "(dialogue - assigns Eejag mission)",
+          "notes": ""
+        },
+        {
+          "_source_row": 263,
+          "step": "15",
+          "phase": "Fist of Fire",
+          "action": "Go to Lavastorm, find fire sprite, say \"I challenge you, Eejag\" to spawn him",
+          "npc_mob": "Eejag",
+          "zone": "Lavastorm Mountains Kill Eejag",
+          "items": "",
+          "notes": ""
+        },
+        {
+          "_source_row": 264,
+          "step": "16",
+          "phase": "Fist of Fire",
+          "action": "Kill Eejag (in lava pit near Sol A/B entrance)",
+          "npc_mob": "Eejag",
+          "zone": "Lavastorm Mountains Loot: Charred Scale",
+          "items": "",
+          "notes": ""
+        },
+        {
+          "_source_row": 265,
+          "step": "17",
+          "phase": "Fist of Fire",
+          "action": "Return to sane Kaiaren with scales",
+          "npc_mob": "Kaiaren (sane)",
+          "zone": "Trakanon's Teeth",
+          "items": "(returns scales, next mission)",
+          "notes": ""
+        },
+        {
+          "_source_row": 267,
+          "step": "18",
+          "phase": "Fist of Air",
+          "action": "Go to Plane of Sky, Djorn's Island; give scales to \"a presence\"",
+          "npc_mob": "a presence",
+          "zone": "Plane of Sky",
+          "items": "(spawns Gwan)",
+          "notes": ""
+        },
+        {
+          "_source_row": 268,
+          "step": "19",
+          "phase": "Fist of Air",
+          "action": "Kill Gwan",
+          "npc_mob": "Gwan",
+          "zone": "Plane of Sky",
+          "items": "Loot: Breath of Gwan",
+          "notes": ""
+        },
+        {
+          "_source_row": 270,
+          "step": "20",
+          "phase": "Fist of Earth",
+          "action": "Go to Mines of Nurga, give breath to \"a sleeping ogre\"",
+          "npc_mob": "a sleeping ogre",
+          "zone": "Mines of Nurga",
+          "items": "(spawns Trunt)",
+          "notes": ""
+        },
+        {
+          "_source_row": 271,
+          "step": "21",
+          "phase": "Fist of Earth",
+          "action": "Kill Trunt",
+          "npc_mob": "Trunt",
+          "zone": "Mines of Nurga",
+          "items": "Loot: Trunt's Head",
+          "notes": ""
+        },
+        {
+          "_source_row": 273,
+          "step": "22",
+          "phase": "Fist of Water",
+          "action": "(Optional) Find Deep in Lake Rathe underwater cavern, give head",
+          "npc_mob": "Deep",
+          "zone": "Lake Rathetear",
+          "items": "(returns head, despawns)",
+          "notes": ""
+        },
+        {
+          "_source_row": 274,
+          "step": "23",
+          "phase": "Fist of Water",
+          "action": "Go to Overthere, find Astral Projection (monk), give head",
+          "npc_mob": "Astral Projection",
+          "zone": "The Overthere",
+          "items": "Receive: Eye of Kaiaren",
+          "notes": ""
+        },
+        {
+          "_source_row": 275,
+          "step": "24",
+          "phase": "Fist of Water",
+          "action": "Go to Lake of Ill Omen platform, find Astral Projection, give Eye",
+          "npc_mob": "Astral Projection",
+          "zone": "Lake of Ill Omen",
+          "items": "Spawns: Vorash and Deep",
+          "notes": ""
+        },
+        {
+          "_source_row": 276,
+          "step": "25",
+          "phase": "Fist of Water",
+          "action": "Kill Vorash and Deep; Xenovorash spawns",
+          "npc_mob": "Xenovorash",
+          "zone": "Lake of Ill Omen",
+          "items": "Loot: Demon Fangs",
+          "notes": ""
+        },
+        {
+          "_source_row": 277,
+          "step": "26",
+          "phase": "Fist of Water",
+          "action": "Kill Xenovorash",
+          "npc_mob": "Xenovorash",
+          "zone": "Lake of Ill Omen",
+          "items": "",
+          "notes": ""
+        },
+        {
+          "_source_row": 279,
+          "step": "FIN",
+          "phase": "FINAL TURN-IN",
+          "action": "Give Book of Celestial Fists + Demon Fangs to Kaiaren (either form) => Receive: CELESTIAL FISTS",
+          "npc_mob": "",
+          "zone": "",
+          "items": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "class_name": "NECROMANCER",
+      "weapon_name": "SCYTHE OF THE SHADOWED SOUL",
+      "steps": [
+        {
+          "_source_row": 291,
+          "step": "1",
+          "phase": "",
+          "action": "Hail Venenzi Oberzendi",
+          "npc_mob": "Venenzi Oberzendi",
+          "zone": "Nektulos Forest",
+          "items": "(dialogue)",
+          "notes": ""
+        },
+        {
+          "_source_row": 292,
+          "step": "2",
+          "phase": "",
+          "action": "Hail Kazen Fecae, say \"wish to study dark arts\"",
+          "npc_mob": "Kazen Fecae",
+          "zone": "Lake Rathetear",
+          "items": "(dialogue)",
+          "notes": ""
+        },
+        {
+          "_source_row": 293,
+          "step": "3",
+          "phase": "",
+          "action": "Kill Sir Edwin Motte",
+          "npc_mob": "Sir Edwin Motte",
+          "zone": "East Freeport",
+          "items": "Loot: Head of Sir Edwin Motte",
+          "notes": ""
+        },
+        {
+          "_source_row": 294,
+          "step": "4",
+          "phase": "",
+          "action": "Give head to Kazen Fecae",
+          "npc_mob": "Kazen Fecae",
+          "zone": "Lake Rathetear",
+          "items": "Receive: SYMBOL OF THE APPRENTICE",
+          "notes": ""
+        },
+        {
+          "_source_row": 295,
+          "step": "5",
+          "phase": "",
+          "action": "Give Symbol to Venenzi Oberzendi",
+          "npc_mob": "Venenzi Oberzendi",
+          "zone": "Nektulos Forest",
+          "items": "Receive: Twisted Symbol of the Apprentice",
+          "notes": ""
+        },
+        {
+          "_source_row": 296,
+          "step": "6",
+          "phase": "",
+          "action": "Kill Najena",
+          "npc_mob": "Najena",
+          "zone": "Najena",
+          "items": "Loot: Flowing Black Robe",
+          "notes": ""
+        },
+        {
+          "_source_row": 297,
+          "step": "7",
+          "phase": "",
+          "action": "Give robe to Venenzi",
+          "npc_mob": "Venenzi Oberzendi",
+          "zone": "Nektulos Forest",
+          "items": "Receive: Rolling Stone Moss",
+          "notes": ""
+        },
+        {
+          "_source_row": 298,
+          "step": "8",
+          "phase": "",
+          "action": "Give Rolling Stone Moss + Twisted Symbol to Emkel Kabae",
+          "npc_mob": "Emkel Kabae",
+          "zone": "Lake Rathetear",
+          "items": "Receive: SYMBOL OF THE SERPENT",
+          "notes": ""
+        },
+        {
+          "_source_row": 299,
+          "step": "9",
+          "phase": "",
+          "action": "Hail Ssessthrass, give Symbol of Serpent",
+          "npc_mob": "Ssessthrass",
+          "zone": "Swamp of No Hope",
+          "items": "Receive: Scaled Symbol of the Serpent",
+          "notes": ""
+        },
+        {
+          "_source_row": 300,
+          "step": "10",
+          "phase": "",
+          "action": "Kill the Herbalist in Chardok",
+          "npc_mob": "The Herbalist",
+          "zone": "Chardok",
+          "items": "Loot: Mainsi Herb",
+          "notes": ""
+        },
+        {
+          "_source_row": 301,
+          "step": "11",
+          "phase": "",
+          "action": "Give Mainsi Herb + Scaled Symbol to Ssessthrass",
+          "npc_mob": "Ssessthrass",
+          "zone": "Swamp of No Hope",
+          "items": "Receive: Refined Mainsi Herb",
+          "notes": ""
+        },
+        {
+          "_source_row": 302,
+          "step": "12",
+          "phase": "",
+          "action": "Give Refined Mainsi Herb to Emkel",
+          "npc_mob": "Emkel Kabae",
+          "zone": "Lake Rathetear",
+          "items": "Receive: SYMBOL OF TESTING",
+          "notes": ""
+        },
+        {
+          "_source_row": 303,
+          "step": "13",
+          "phase": "",
+          "action": "Give Symbol of Testing to Kazen",
+          "npc_mob": "Kazen Fecae",
+          "zone": "Lake Rathetear",
+          "items": "(triggers spawns)",
+          "notes": ""
+        },
+        {
+          "_source_row": 304,
+          "step": "14",
+          "phase": "",
+          "action": "Kill Bone Golem (small inlet east of Emkel)",
+          "npc_mob": "Bone Golem",
+          "zone": "Lake Rathetear",
+          "items": "(killed for progression)",
+          "notes": ""
+        },
+        {
+          "_source_row": 305,
+          "step": "15",
+          "phase": "",
+          "action": "Kill Failed Apprentice",
+          "npc_mob": "Failed Apprentice",
+          "zone": "Lake Rathetear",
+          "items": "(killed for progression)",
+          "notes": ""
+        },
+        {
+          "_source_row": 306,
+          "step": "16",
+          "phase": "",
+          "action": "Kill Tormented Spirit",
+          "npc_mob": "Tormented Spirit",
+          "zone": "Lake Rathetear",
+          "items": "Loot: SYMBOL OF INSANITY",
+          "notes": ""
+        },
+        {
+          "_source_row": 307,
+          "step": "17",
+          "phase": "",
+          "action": "Give Symbol of Insanity to Drendico Metalbones",
+          "npc_mob": "Drendico Metalbones",
+          "zone": "Timorous Deep",
+          "items": "Receive: Journal of Drendico",
+          "notes": ""
+        },
+        {
+          "_source_row": 308,
+          "step": "18",
+          "phase": "",
+          "action": "Say \"i wish to be tested by jzil\" to Drakis Bloodcaster",
+          "npc_mob": "Drakis Bloodcaster",
+          "zone": "Plane of Sky",
+          "items": "Spawns: Jzil G'Six",
+          "notes": ""
+        },
+        {
+          "_source_row": 309,
+          "step": "19",
+          "phase": "",
+          "action": "Kill Azeraks (2nd isle monsters)",
+          "npc_mob": "Azeraks",
+          "zone": "Plane of Sky",
+          "items": "Loot: Silver Disc",
+          "notes": ""
+        },
+        {
+          "_source_row": 310,
+          "step": "20",
+          "phase": "",
+          "action": "Kill Watchful Guardian",
+          "npc_mob": "Watchful Guardian",
+          "zone": "Plane of Sky",
+          "items": "Loot: Spiroc Feathers",
+          "notes": ""
+        },
+        {
+          "_source_row": 311,
+          "step": "21",
+          "phase": "",
+          "action": "Kill Keeper of Souls (4th island boss)",
+          "npc_mob": "Keeper of Souls",
+          "zone": "Plane of Sky",
+          "items": "Loot: Black Silk Cape",
+          "notes": ""
+        },
+        {
+          "_source_row": 312,
+          "step": "22",
+          "phase": "",
+          "action": "Give Silver Disc + Spiroc Feathers + Black Silk Cape to Jzil G'Six",
+          "npc_mob": "Jzil G'Six",
+          "zone": "Plane of Sky",
+          "items": "Receive: Cloak of Spiroc Feathers",
+          "notes": ""
+        },
+        {
+          "_source_row": 313,
+          "step": "23",
+          "phase": "",
+          "action": "Kill Innoruuk/mini-bosses in Plane of Hate",
+          "npc_mob": "Innoruuk/mini-bosses",
+          "zone": "Plane of Hate",
+          "items": "Loot: Eye of Innoruuk",
+          "notes": ""
+        },
+        {
+          "_source_row": 314,
+          "step": "24",
+          "phase": "",
+          "action": "Kill Cazic Thule (or Dread/Fright/Terror in Velious+)",
+          "npc_mob": "Cazic Thule",
+          "zone": "Plane of Fear",
+          "items": "Loot: Slime Blood of Cazic Thule",
+          "notes": ""
+        },
+        {
+          "_source_row": 315,
+          "step": "25",
+          "phase": "",
+          "action": "Give Journal + Slime Blood + Eye of Innoruuk + Cloak of Spiroc Feathers to Drendico",
+          "npc_mob": "Drendico Metalbones",
+          "zone": "Timorous Deep",
+          "items": "Receive: Prepared Reagent Box",
+          "notes": ""
+        },
+        {
+          "_source_row": 316,
+          "step": "26",
+          "phase": "",
+          "action": "Give Prepared Reagent Box to Kazen",
+          "npc_mob": "Kazen Fecae",
+          "zone": "Lake Rathetear",
+          "items": "Receive: Tome of Instruction",
+          "notes": ""
+        },
+        {
+          "_source_row": 317,
+          "step": "27",
+          "phase": "",
+          "action": "Give Tome to Gkzzallk",
+          "npc_mob": "Gkzzallk",
+          "zone": "Lake Rathetear",
+          "items": "Receive: Gkzzallk in a Box",
+          "notes": ""
+        },
+        {
+          "_source_row": 319,
+          "step": "FIN",
+          "phase": "FINAL TURN-IN",
+          "action": "Give Gkzzallk in a Box to Kazen Fecae => Receive: SCYTHE OF THE SHADOWED SOUL",
+          "npc_mob": "",
+          "zone": "",
+          "items": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "class_name": "PALADIN",
+      "weapon_name": "FIERY DEFENDER",
+      "steps": [
+        {
+          "_source_row": 330,
+          "step": "1",
+          "phase": "",
+          "action": "Hail Kalatrina Plossen (Hall of Truth basement)",
+          "npc_mob": "Kalatrina Plossen",
+          "zone": "West Freeport",
+          "items": "Receive: Sealed Letter to Alayle",
+          "notes": ""
+        },
+        {
+          "_source_row": 331,
+          "step": "2",
+          "phase": "",
+          "action": "Give letter to Guard Alayle (Militia guardhouse) say \"Truth is good\" first",
+          "npc_mob": "Guard Alayle",
+          "zone": "East Freeport",
+          "items": "Receive: Tattered Flier",
+          "notes": ""
+        },
+        {
+          "_source_row": 332,
+          "step": "3",
+          "phase": "",
+          "action": "Return flier to Kalatrina, visit Office of People, say \"Blades\"",
+          "npc_mob": "Rashinda Elore",
+          "zone": "East Freeport",
+          "items": "(dialogue about Zimel)",
+          "notes": ""
+        },
+        {
+          "_source_row": 333,
+          "step": "4",
+          "phase": "",
+          "action": "Visit Groflah's Forge, give tattered flier",
+          "npc_mob": "Groflah Steadirt",
+          "zone": "West Freeport",
+          "items": "Receive: Decoded Flier (meet him at Seafarer's Roost at night)",
+          "notes": ""
+        },
+        {
+          "_source_row": 334,
+          "step": "5",
+          "phase": "",
+          "action": "Wait for Tykar Renlin at bar, give 4 bottles of Drom's Champagne",
+          "npc_mob": "Tykar Renlin",
+          "zone": "East Freeport",
+          "items": "Receive: Blanket (Bunker Cell #1)",
+          "notes": ""
+        },
+        {
+          "_source_row": 335,
+          "step": "6",
+          "phase": "",
+          "action": "Craft Edible Goo (Fire Beetle Eye + Rat Ear) Craft Bog Juice (Snake Scales + Water + Bottle)",
+          "npc_mob": "(oven)",
+          "zone": "Any",
+          "items": "Create: Edible Goo Create: Bog Juice",
+          "notes": ""
+        },
+        {
+          "_source_row": 336,
+          "step": "7",
+          "phase": "",
+          "action": "Give blanket + goo + juice to prisoner",
+          "npc_mob": "a prisoner",
+          "zone": "East Freeport Arena Receive: Key H.K. 102",
+          "items": "",
+          "notes": ""
+        },
+        {
+          "_source_row": 337,
+          "step": "8",
+          "phase": "",
+          "action": "Give key to Assistant Kiolna in Highpass Keep",
+          "npc_mob": "Assistant Kiolna",
+          "zone": "Highpass Keep",
+          "items": "Receive: Sealed Note from Hayle",
+          "notes": ""
+        },
+        {
+          "_source_row": 338,
+          "step": "9",
+          "phase": "",
+          "action": "Kill Sir Lucan D'Lere (spawns twice: living then undead); loot Testimony from undead form",
+          "npc_mob": "Sir Lucan D'Lere",
+          "zone": "East Freeport",
+          "items": "Loot: Testimony of Truth",
+          "notes": ""
+        },
+        {
+          "_source_row": 339,
+          "step": "10",
+          "phase": "",
+          "action": "Give Testimony to Valeron Dushire (upstairs Hall of Truth)",
+          "npc_mob": "Valeron Dushire",
+          "zone": "West Freeport",
+          "items": "Receive: Brilliant Sword of Faith",
+          "notes": ""
+        },
+        {
+          "_source_row": 340,
+          "step": "11",
+          "phase": "",
+          "action": "Get Testimony of Truth from Merko Quetalis to Altunic, get tokens, kill Guard Willia)",
+          "npc_mob": "Merko Quetalis",
+          "zone": "West Freeport",
+          "items": "Receive: Testimony of Truth (long sub-quest: kill Squire Narl, give head (sub-quest - see details)",
+          "notes": ""
+        },
+        {
+          "_source_row": 341,
+          "step": "12",
+          "phase": "",
+          "action": "Kill Xicotl in Castle Mistmoore",
+          "npc_mob": "Xicotl",
+          "zone": "Castle Mistmoore",
+          "items": "Loot: Glowing Sword Hilt",
+          "notes": ""
+        },
+        {
+          "_source_row": 342,
+          "step": "13",
+          "phase": "",
+          "action": "Find Brother Hayle in South Karana (-1514, 2246) Give all 4 items simultaneously",
+          "npc_mob": "Brother Hayle",
+          "zone": "South Karana",
+          "items": "Give: Note + Testimony + Receive: SOULFIRE",
+          "notes": ""
+        },
+        {
+          "_source_row": 343,
+          "step": "1",
+          "phase": "",
+          "action": "Get Crazed Ghoul's Heart",
+          "npc_mob": "Crazed Ghoul",
+          "zone": "Estate of Unrest",
+          "items": "Loot: Crazed Ghoul's Heart (Right Tower in Unrest)",
+          "notes": ""
+        },
+        {
+          "_source_row": 344,
+          "step": "2",
+          "phase": "",
+          "action": "Get Sword of Nobility",
+          "npc_mob": "(mob drop)",
+          "zone": "Butcherblock Mtns",
+          "items": "Loot: Sword of Nobility",
+          "notes": ""
+        },
+        {
+          "_source_row": 345,
+          "step": "3",
+          "phase": "",
+          "action": "Get Nobleman's Hilt",
+          "npc_mob": "(mob drop)",
+          "zone": "Highpass Keep",
+          "items": "Loot: Nobleman's Hilt",
+          "notes": ""
+        },
+        {
+          "_source_row": 346,
+          "step": "4",
+          "phase": "",
+          "action": "Get Scroll of Amstaf",
+          "npc_mob": "(mob drop)",
+          "zone": "Lavastorm Mountains Loot: Scroll of Amstaf",
+          "items": "",
+          "notes": ""
+        },
+        {
+          "_source_row": 347,
+          "step": "5",
+          "phase": "",
+          "action": "Obtain combine container from NPC",
+          "npc_mob": "Ruathey",
+          "zone": "Lavastorm Mountains Receive: Ghoulbane container",
+          "items": "",
+          "notes": ""
+        },
+        {
+          "_source_row": 348,
+          "step": "6",
+          "phase": "",
+          "action": "Combine all 4 items OR: Kill Froglok Shin Lord in Upper Guk for direct drop OR: Kill Joren Nobleheart in Felwithe B for direct drop",
+          "npc_mob": "(container combine)",
+          "zone": "Any",
+          "items": "Create: GHOULBANE",
+          "notes": ""
+        },
+        {
+          "_source_row": 349,
+          "step": "1",
+          "phase": "",
+          "action": "Obtain Torn Book of Fire: kill Nagafen, Severilous, Talendor, or Melalafen",
+          "npc_mob": "Various dragons",
+          "zone": "Various",
+          "items": "Loot: Torn Book of Fire",
+          "notes": ""
+        },
+        {
+          "_source_row": 350,
+          "step": "2",
+          "phase": "",
+          "action": "Obtain Torn Book of Frost: kill Vox, Gorenaire, or Faydedar",
+          "npc_mob": "Various dragons",
+          "zone": "Various",
+          "items": "Loot: Torn Book of Frost",
+          "notes": ""
+        },
+        {
+          "_source_row": 351,
+          "step": "3",
+          "phase": "",
+          "action": "Create Book of Scale: give both torn books + 1000pp to NPC",
+          "npc_mob": "Rineval Talyas (Qeynos)",
+          "zone": "N. Qeynos or",
+          "items": "Receive: BOOK OF SCALE",
+          "notes": ""
+        },
+        {
+          "_source_row": 352,
+          "step": "4",
+          "phase": "",
+          "action": "Give Book of Scale to Oracle of K'Arnon",
+          "npc_mob": "Oracle of K'Arnon",
+          "zone": "Ocean of Tears",
+          "items": "Receive: Miragul's Phylactery",
+          "notes": ""
+        },
+        {
+          "_source_row": 353,
+          "step": "5",
+          "phase": "",
+          "action": "Give Phylactery to Lich of Miragul",
+          "npc_mob": "Lich of Miragul",
+          "zone": "Everfrost Peaks",
+          "items": "Spawns: True Miragul",
+          "notes": ""
+        },
+        {
+          "_source_row": 354,
+          "step": "6",
+          "phase": "",
+          "action": "Kill Miragul (level 53+ necromancer, dragon difficulty)",
+          "npc_mob": "Miragul",
+          "zone": "Everfrost Peaks",
+          "items": "Loot: Miragul's Head +",
+          "notes": ""
+        },
+        {
+          "_source_row": 355,
+          "step": "7",
+          "phase": "",
+          "action": "Go to Plane of Sky; have friend buy Efreeti Key from Keymaster, enter quest room, hail Dason, return book, give 500pp to Dirkog Steelhand",
+          "npc_mob": "(friend) Dason Goldblade",
+          "zone": "Plane of Sky",
+          "items": "(friend spawns Inte Akera)",
+          "notes": ""
+        },
+        {
+          "_source_row": 356,
+          "step": "8",
+          "phase": "",
+          "action": "INTE AKERA spawns on 4th island windmill",
+          "npc_mob": "Inte Akera",
+          "zone": "Plane of Sky",
+          "items": "(5 min despawn timer!)",
+          "notes": ""
+        },
+        {
+          "_source_row": 357,
+          "step": "9",
+          "phase": "",
+          "action": "Give SoulFire to Inte Akera (alone)",
+          "npc_mob": "Inte Akera",
+          "zone": "Plane of Sky",
+          "items": "Receive: Inte's 1st Blessing (Nobility)",
+          "notes": ""
+        },
+        {
+          "_source_row": 358,
+          "step": "10",
+          "phase": "",
+          "action": "Give Ghoulbane to Inte Akera (alone)",
+          "npc_mob": "Inte Akera",
+          "zone": "Plane of Sky",
+          "items": "Receive: Inte's 2nd Blessing (Sacrifice)",
+          "notes": ""
+        },
+        {
+          "_source_row": 359,
+          "step": "11",
+          "phase": "",
+          "action": "Give Inte's 1st Blessing + 2nd Blessing + Miragul's Head + Miragul's Robe together FACTION: Must be better than Apprehensive with Deepwater Knights",
+          "npc_mob": "Inte Akera",
+          "zone": "Plane of Sky",
+          "items": "Receive: FIERY AVENGER",
+          "notes": ""
+        },
+        {
+          "_source_row": 360,
+          "step": "1",
+          "phase": "",
+          "action": "Kill Kirak Vil (tell him \"I am a paladin\" to make him attack)",
+          "npc_mob": "Kirak Vil",
+          "zone": "Nektulos Forest",
+          "items": "Loot: Tainted Darksteel Shield",
+          "notes": ""
+        },
+        {
+          "_source_row": 361,
+          "step": "2",
+          "phase": "",
+          "action": "Kill Keeper of the Tombs (throne room)",
+          "npc_mob": "Keeper of the Tombs",
+          "zone": "The Hole",
+          "items": "Loot: Tainted Darksteel Sword",
+          "notes": ""
+        },
+        {
+          "_source_row": 362,
+          "step": "3",
+          "phase": "",
+          "action": "Kill Thought Destroyer",
+          "npc_mob": "Thought Destroyer",
+          "zone": "Plane of Hate",
+          "items": "Loot: Tainted Darksteel Breastplate",
+          "notes": ""
+        },
+        {
+          "_source_row": 364,
+          "step": "4",
+          "phase": "Cleansing the Tainted Items",
+          "action": "Find Jark in N. Kaladim mines, say \"get your dinner\", find Nella, get food, return to Jark",
+          "npc_mob": "Jark / Nella Stonebraids",
+          "zone": "North Kaladim",
+          "items": "Receive: Pure Crystal",
+          "notes": ""
+        },
+        {
+          "_source_row": 365,
+          "step": "5",
+          "phase": "Cleansing the Tainted Items",
+          "action": "Give Tainted BP + Pure Crystal to Reklon Gnallen",
+          "npc_mob": "Reklon Gnallen",
+          "zone": "Erudin (Temple",
+          "items": "Receive: Gleaming Crested Breastplate",
+          "notes": ""
+        },
+        {
+          "_source_row": 366,
+          "step": "6",
+          "phase": "Cleansing the Tainted Items",
+          "action": "Find peasant woman in E. Freeport, say \"take it to him\", give bucket to Joshua",
+          "npc_mob": "peasant woman / Joshua",
+          "zone": "East Freeport",
+          "items": "Receive: Bucket of Pure Water",
+          "notes": ""
+        },
+        {
+          "_source_row": 367,
+          "step": "7",
+          "phase": "Cleansing the Tainted Items",
+          "action": "Give Tainted Sword + Bucket of Pure Water to Reklon Gnallen",
+          "npc_mob": "Reklon Gnallen",
+          "zone": "Erudin",
+          "items": "Receive: Gleaming Crested Sword",
+          "notes": ""
+        },
+        {
+          "_source_row": 368,
+          "step": "8",
+          "phase": "Cleansing the Tainted Items",
+          "action": "Give Tainted Shield to Elia the Pure",
+          "npc_mob": "Elia the Pure",
+          "zone": "Northern Felwithe",
+          "items": "Receive: Gleaming Crested Shield",
+          "notes": ""
+        },
+        {
+          "_source_row": 369,
+          "step": "9",
+          "phase": "Cleansing the Tainted Items",
+          "action": "Give all 3 Gleaming items to Reklon Gnallen",
+          "npc_mob": "Reklon Gnallen",
+          "zone": "Erudin",
+          "items": "Receive: MARK OF ATONEMENT",
+          "notes": ""
+        },
+        {
+          "_source_row": 370,
+          "step": "10",
+          "phase": "Cleansing the Tainted Items",
+          "action": "Give Mark of Atonement + Fiery Avenger to Irak Altil in Plane of Fear",
+          "npc_mob": "Irak Altil (skeleton)",
+          "zone": "Plane of Fear",
+          "items": "Receive: FIERY DEFENDER (17-18 hour respawn timer)",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "class_name": "RANGER",
+      "weapon_name": "EARTHCALLER & SWIFTWIND",
+      "steps": [
+        {
+          "_source_row": 384,
+          "step": "1",
+          "phase": "",
+          "action": "Talk to Telin Darkforest, say \"what action\"",
+          "npc_mob": "Telin Darkforest",
+          "zone": "Burning Woods",
+          "items": "Receive: Worn Note",
+          "notes": ""
+        },
+        {
+          "_source_row": 385,
+          "step": "2",
+          "phase": "",
+          "action": "Spawn Faelin Bloodbriar (kill orc pawn PHs) give note",
+          "npc_mob": "Faelin Bloodbriar",
+          "zone": "Greater Faydark",
+          "items": "Receive: Faelin's Ring",
+          "notes": ""
+        },
+        {
+          "_source_row": 386,
+          "step": "3",
+          "phase": "",
+          "action": "Give ring to Giz X'Tin (roams)",
+          "npc_mob": "Giz X'Tin",
+          "zone": "Kithicor Forest",
+          "items": "Receive: Dark Metal Coin",
+          "notes": ""
+        },
+        {
+          "_source_row": 387,
+          "step": "4",
+          "phase": "",
+          "action": "Give coin to Telin Darkforest",
+          "npc_mob": "Telin Darkforest",
+          "zone": "Burning Woods",
+          "items": "Receive: Worn Dark Metal Coin",
+          "notes": ""
+        },
+        {
+          "_source_row": 388,
+          "step": "5",
+          "phase": "",
+          "action": "Give coin to Arch Druid Althele",
+          "npc_mob": "Althele",
+          "zone": "East Karana",
+          "items": "Receive: Braided Grass Amulet",
+          "notes": ""
+        },
+        {
+          "_source_row": 389,
+          "step": "6",
+          "phase": "",
+          "action": "Give amulet to Sionae, Nuien, then Teloa",
+          "npc_mob": "Sionae/Nuien/Teloa",
+          "zone": "East Karana",
+          "items": "Spawns: Dark Elf Corruptor",
+          "notes": ""
+        },
+        {
+          "_source_row": 390,
+          "step": "7",
+          "phase": "",
+          "action": "Kill Dark Elf Corruptor + 3 dark elves",
+          "npc_mob": "Dark Elf Corruptor",
+          "zone": "East Karana",
+          "items": "Loot: Fleshbound Tome",
+          "notes": ""
+        },
+        {
+          "_source_row": 391,
+          "step": "8",
+          "phase": "",
+          "action": "Althele gives Earth Stained Note",
+          "npc_mob": "Althele",
+          "zone": "East Karana",
+          "items": "Receive: Earth Stained Note",
+          "notes": ""
+        },
+        {
+          "_source_row": 392,
+          "step": "9",
+          "phase": "",
+          "action": "Give note to Ella Foodcrafter",
+          "npc_mob": "Ella Foodcrafter",
+          "zone": "Misty Thicket",
+          "items": "Receive: Shiny Tin Bowl",
+          "notes": ""
+        },
+        {
+          "_source_row": 393,
+          "step": "10",
+          "phase": "",
+          "action": "Forage 4 items, combine in bowl",
+          "npc_mob": "(forage + combine)",
+          "zone": "Various",
+          "items": "Create: Hardened Mixture",
+          "notes": ""
+        },
+        {
+          "_source_row": 394,
+          "step": "11",
+          "phase": "",
+          "action": "Get Crushed Pot from Alrik Farsight",
+          "npc_mob": "Alrik Farsight",
+          "zone": "Timorous Deep",
+          "items": "Receive: Crushed Pot",
+          "notes": ""
+        },
+        {
+          "_source_row": 395,
+          "step": "12",
+          "phase": "",
+          "action": "Pot -> Farios -> Grocery List -> Nora -> Provisions -> Farios -> Receipt",
+          "npc_mob": "Various NPCs",
+          "zone": "Firiona Vie",
+          "items": "Receive: Receipt",
+          "notes": ""
+        },
+        {
+          "_source_row": 396,
+          "step": "13",
+          "phase": "",
+          "action": "Receipt to Alrik",
+          "npc_mob": "Alrik Farsight",
+          "zone": "Timorous Deep",
+          "items": "Receive: Ancient Pattern",
+          "notes": ""
+        },
+        {
+          "_source_row": 397,
+          "step": "14",
+          "phase": "",
+          "action": "Forage Rose of Firiona",
+          "npc_mob": "(forage)",
+          "zone": "Firiona Vie",
+          "items": "Rose of Firiona",
+          "notes": ""
+        },
+        {
+          "_source_row": 398,
+          "step": "15",
+          "phase": "",
+          "action": "Rose -> Merdan -> Painting -> skeleton -> locket -> Niera Farbreeze -> Powder",
+          "npc_mob": "Merdan/skeleton",
+          "zone": "Surefall/Frontier",
+          "items": "Receive: Plat. Speckled Powder",
+          "notes": ""
+        },
+        {
+          "_source_row": 399,
+          "step": "16",
+          "phase": "",
+          "action": "Kill Jade Reaver, give jade to Kinlo Strongarm",
+          "npc_mob": "Kinlo Strongarm",
+          "zone": "City of Mist/Kaladim Receive: Enchanted Clay",
+          "items": "",
+          "notes": ""
+        },
+        {
+          "_source_row": 400,
+          "step": "17",
+          "phase": "",
+          "action": "Combine Pattern + Powder + Clay on pottery wheel (pottery wheel)",
+          "npc_mob": "Any",
+          "zone": "Create: Runecrested Bowl",
+          "items": "",
+          "notes": ""
+        },
+        {
+          "_source_row": 401,
+          "step": "18",
+          "phase": "",
+          "action": "Give Runecrested Bowl + Hardened Mixture to Ella Ella Foodcrafter",
+          "npc_mob": "Misty Thicket",
+          "zone": "Receive: Softly Glowing Stone",
+          "items": "",
+          "notes": ""
+        },
+        {
+          "_source_row": 402,
+          "step": "19",
+          "phase": "",
+          "action": "Kill Venril Sathir (live version)",
+          "npc_mob": "Venril Sathir",
+          "zone": "Karnor's Castle",
+          "items": "Loot: Pulsing Green Stone",
+          "notes": ""
+        },
+        {
+          "_source_row": 403,
+          "step": "20",
+          "phase": "",
+          "action": "Give both stones to Foloal Stormforest",
+          "npc_mob": "Foloal Stormforest",
+          "zone": "Frontier Mountains",
+          "items": "Receive: Warmly Glowing Stone",
+          "notes": ""
+        },
+        {
+          "_source_row": 404,
+          "step": "21",
+          "phase": "",
+          "action": "Give Warmly Glowing Stone to Telin Darkforest",
+          "npc_mob": "Telin Darkforest",
+          "zone": "Burning Woods",
+          "items": "Receive: Ancient Longsword",
+          "notes": ""
+        },
+        {
+          "_source_row": 405,
+          "step": "22",
+          "phase": "",
+          "action": "Give Shiny Tin Bowl to Jaeil the Wretched",
+          "npc_mob": "Jaeil the Wretched",
+          "zone": "Various",
+          "items": "Spawns: Jaeil the Insane (spawns Jaeil the Insane)",
+          "notes": ""
+        },
+        {
+          "_source_row": 406,
+          "step": "23",
+          "phase": "",
+          "action": "Kill Jaeil the Insane",
+          "npc_mob": "Jaeil the Insane",
+          "zone": "Various",
+          "items": "Loot: Soulbound Hammer",
+          "notes": ""
+        },
+        {
+          "_source_row": 407,
+          "step": "24",
+          "phase": "",
+          "action": "Give hammer to Kinlo Strongarm",
+          "npc_mob": "Kinlo Strongarm",
+          "zone": "Kaladim",
+          "items": "(returned)",
+          "notes": ""
+        },
+        {
+          "_source_row": 408,
+          "step": "25",
+          "phase": "",
+          "action": "Give Soulbound Hammer to Mairee Silentone",
+          "npc_mob": "Mairee Silentone",
+          "zone": "Kaladim",
+          "items": "Receive: Dwarven Smiths Hammer",
+          "notes": ""
+        },
+        {
+          "_source_row": 409,
+          "step": "26",
+          "phase": "",
+          "action": "Kill Essence Tamer",
+          "npc_mob": "Essence Tamer",
+          "zone": "Various",
+          "items": "Loot: Swirling Sphere of Color",
+          "notes": ""
+        },
+        {
+          "_source_row": 410,
+          "step": "27",
+          "phase": "",
+          "action": "Give Hammer + Sphere to Mairee",
+          "npc_mob": "Mairee Silentone",
+          "zone": "Kaladim",
+          "items": "Receive: Hammer of the Ancients",
+          "notes": ""
+        },
+        {
+          "_source_row": 411,
+          "step": "28",
+          "phase": "",
+          "action": "Give Hammer of Ancients to Kinlo",
+          "npc_mob": "Kinlo Strongarm",
+          "zone": "Kaladim",
+          "items": "Spawns: Usbak the Old (also receive: small bit of mithril ore) Receive: Mithril Ore",
+          "notes": ""
+        },
+        {
+          "_source_row": 412,
+          "step": "29",
+          "phase": "",
+          "action": "Give Ancient Longsword to Usbak the Old",
+          "npc_mob": "Usbak the Old",
+          "zone": "Kaladim",
+          "items": "Receive: Refined Ancient Sword",
+          "notes": ""
+        },
+        {
+          "_source_row": 413,
+          "step": "30",
+          "phase": "",
+          "action": "Give mithril ore to Kinlo",
+          "npc_mob": "Kinlo Strongarm",
+          "zone": "Kaladim",
+          "items": "Receive: Refined Mithril Blade",
+          "notes": ""
+        },
+        {
+          "_source_row": 415,
+          "step": "31",
+          "phase": "SWIFTWIND",
+          "action": "Give Refined Ancient Sword to Telin Darkforest",
+          "npc_mob": "Telin Darkforest",
+          "zone": "Burning Woods",
+          "items": "(spawns Faelin Bloodbriar)",
+          "notes": ""
+        },
+        {
+          "_source_row": 416,
+          "step": "32",
+          "phase": "SWIFTWIND",
+          "action": "Give Refined Ancient Sword to Faelin",
+          "npc_mob": "Faelin Bloodbriar",
+          "zone": "Burning Woods",
+          "items": "Receive: SWIFTWIND",
+          "notes": ""
+        },
+        {
+          "_source_row": 418,
+          "step": "33",
+          "phase": "EARTHCALLER",
+          "action": "Obtain Shattered Emerald of Corruption",
+          "npc_mob": "(various sources)",
+          "zone": "Various",
+          "items": "Shattered Emerald of Corruption",
+          "notes": ""
+        },
+        {
+          "_source_row": 419,
+          "step": "34",
+          "phase": "EARTHCALLER",
+          "action": "Give Emerald + Refined Mithril Blade to Xanuusus (loc +1340, +500)",
+          "npc_mob": "Xanuusus",
+          "zone": "North Karana",
+          "items": "Receive: EARTHCALLER",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "class_name": "ROGUE",
+      "weapon_name": "RAGEBRINGER",
+      "steps": [
+        {
+          "_source_row": 430,
+          "step": "1",
+          "phase": "",
+          "action": "Find Anson McBale (underwater tunnel entrance)",
+          "npc_mob": "Anson McBale",
+          "zone": "Highpass Hold",
+          "items": "(dialogue about Stanos)",
+          "notes": ""
+        },
+        {
+          "_source_row": 431,
+          "step": "2",
+          "phase": "",
+          "action": "Find Malka Rale in Qeynos Aqueducts",
+          "npc_mob": "Malka Rale",
+          "zone": "Qeynos Aqueducts",
+          "items": "Receive: Stanos' Pack",
+          "notes": ""
+        },
+        {
+          "_source_row": 432,
+          "step": "3",
+          "phase": "",
+          "action": "Pickpocket Stained Parchment Top from Founy Jestands",
+          "npc_mob": "Founy Jestands",
+          "zone": "North Kaladim",
+          "items": "Pickpocket: Stained Parchment Top",
+          "notes": ""
+        },
+        {
+          "_source_row": 433,
+          "step": "4",
+          "phase": "",
+          "action": "Pickpocket Stained Parchment Bottom from Tani N'Mar",
+          "npc_mob": "Tani N'Mar",
+          "zone": "Neriak 3rd Gate",
+          "items": "Pickpocket: Stained Parchment Bottom",
+          "notes": ""
+        },
+        {
+          "_source_row": 434,
+          "step": "5",
+          "phase": "",
+          "action": "Give both parchments to Stanos (spawned)",
+          "npc_mob": "Stanos Herkanor",
+          "zone": "Highpass Hold",
+          "items": "Receive: Combined Parchment",
+          "notes": ""
+        },
+        {
+          "_source_row": 435,
+          "step": "6",
+          "phase": "",
+          "action": "Give Combined Parchment + 100pp + 2 Bottles of Milk to Eldreth",
+          "npc_mob": "Eldreth",
+          "zone": "Lake Rathetear",
+          "items": "Receive: Scribbled Parchment",
+          "notes": ""
+        },
+        {
+          "_source_row": 436,
+          "step": "7",
+          "phase": "",
+          "action": "Retrieve Book of Souls from Maestro of Rancor's nightstand in Plane of Hate",
+          "npc_mob": "(ground spawn/loot)",
+          "zone": "Plane of Hate",
+          "items": "Book of Souls",
+          "notes": ""
+        },
+        {
+          "_source_row": 437,
+          "step": "8",
+          "phase": "",
+          "action": "Give Scribbled Parchment to Yendar Starpyre",
+          "npc_mob": "Yendar Starpyre",
+          "zone": "Steamfont Mountains Receive: Tattered Parchment",
+          "items": "",
+          "notes": ""
+        },
+        {
+          "_source_row": 438,
+          "step": "9",
+          "phase": "",
+          "action": "Give Tattered Parchment + Book of Souls to Yendar (on respawn)",
+          "npc_mob": "Yendar Starpyre",
+          "zone": "Steamfont Mountains Spawns: Renux",
+          "items": "",
+          "notes": ""
+        },
+        {
+          "_source_row": 439,
+          "step": "10",
+          "phase": "",
+          "action": "Kill Renux Translated Parchment",
+          "npc_mob": "Renux",
+          "zone": "Steamfont Mountains Loot: Jagged Diamond Dagger +",
+          "items": "",
+          "notes": ""
+        },
+        {
+          "_source_row": 440,
+          "step": "11",
+          "phase": "",
+          "action": "Give Translated Parchment to Stanos",
+          "npc_mob": "Stanos Herkanor",
+          "zone": "Highpass Hold",
+          "items": "Receive: Sealed Box",
+          "notes": ""
+        },
+        {
+          "_source_row": 441,
+          "step": "12",
+          "phase": "",
+          "action": "Give Sealed Box to Dark Elf at Cabin Ruins",
+          "npc_mob": "Dark Elf NPC",
+          "zone": "Kithicor Forest",
+          "items": "Spawns: General V'Ghera (nighttime; use Sneak if KoS)",
+          "notes": ""
+        },
+        {
+          "_source_row": 442,
+          "step": "13",
+          "phase": "",
+          "action": "Kill General V'Ghera",
+          "npc_mob": "General V'Ghera",
+          "zone": "Kithicor Forest",
+          "items": "Loot: GENERAL'S POUCH",
+          "notes": ""
+        },
+        {
+          "_source_row": 443,
+          "step": "14",
+          "phase": "",
+          "action": "Kill Phinigel Autropos",
+          "npc_mob": "Phinigel Autropos",
+          "zone": "Kedge Keep",
+          "items": "Loot: Robe of the Kedge",
+          "notes": ""
+        },
+        {
+          "_source_row": 444,
+          "step": "15",
+          "phase": "",
+          "action": "Kill Ishva Mal",
+          "npc_mob": "Ishva Mal",
+          "zone": "Splitpaw Lair",
+          "items": "Loot: Robe of the Ishva",
+          "notes": ""
+        },
+        {
+          "_source_row": 445,
+          "step": "16",
+          "phase": "",
+          "action": "Kill Ghoul Archmagus",
+          "npc_mob": "Ghoul Archmagus",
+          "zone": "Lower Guk",
+          "items": "Loot: Shiny Metallic Robe",
+          "notes": ""
+        },
+        {
+          "_source_row": 446,
+          "step": "17",
+          "phase": "",
+          "action": "Kill Oracle",
+          "npc_mob": "The Oracle",
+          "zone": "Ocean of Tears",
+          "items": "Loot: Robe of the Oracle",
+          "notes": ""
+        },
+        {
+          "_source_row": 447,
+          "step": "18",
+          "phase": "",
+          "action": "Give all 4 robes to Vilinus the Small",
+          "npc_mob": "Vilinus the Small",
+          "zone": "West Karana",
+          "items": "Receive: CAZIC'S QUILL",
+          "notes": ""
+        },
+        {
+          "_source_row": 449,
+          "step": "FIN",
+          "phase": "FINAL TURN-IN",
+          "action": "Give General's Pouch + Cazic's Quill + Jagged Diamond Dagger to Stanos Herkanor => Receive: RAGEBRINGER",
+          "npc_mob": "",
+          "zone": "",
+          "items": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "class_name": "SHADOW KNIGHT",
+      "weapon_name": "INNORUUK'S CURSE",
+      "steps": [
+        {
+          "_source_row": 462,
+          "step": "1",
+          "phase": "",
+          "action": "Hail Kurron Ni at Overthere Outpost",
+          "npc_mob": "Kurron Ni",
+          "zone": "The Overthere",
+          "items": "(dialogue)",
+          "notes": ""
+        },
+        {
+          "_source_row": 463,
+          "step": "2",
+          "phase": "",
+          "action": "Trade Darkforge Breastplate + Darkforge Greaves + Darkforge Helm + 900pp to Kurron Ni",
+          "npc_mob": "Kurron Ni",
+          "zone": "The Overthere",
+          "items": "Receive: Letter to Duriek (NOTE: Must first quest the 3 Darkforge pieces)",
+          "notes": ""
+        },
+        {
+          "_source_row": 464,
+          "step": "3",
+          "phase": "",
+          "action": "Kill Kurron Ni",
+          "npc_mob": "Kurron Ni",
+          "zone": "The Overthere",
+          "items": "(faction adjustment)",
+          "notes": ""
+        },
+        {
+          "_source_row": 465,
+          "step": "4",
+          "phase": "",
+          "action": "Give Letter to Duriek Bloodpool",
+          "npc_mob": "Duriek Bloodpool",
+          "zone": "Paineel",
+          "items": "(dialogue)",
+          "notes": ""
+        },
+        {
+          "_source_row": 466,
+          "step": "5",
+          "phase": "",
+          "action": "Hail Smaka in Neriak Foreign Quarter",
+          "npc_mob": "Smaka",
+          "zone": "Neriak Foreign Qtr",
+          "items": "(purchase elixir)",
+          "notes": ""
+        },
+        {
+          "_source_row": 467,
+          "step": "6",
+          "phase": "",
+          "action": "Purchase Cough Elixir from Smaka (1000pp)",
+          "npc_mob": "Smaka",
+          "zone": "Neriak Foreign Qtr",
+          "items": "Receive: Cough Elixir",
+          "notes": ""
+        },
+        {
+          "_source_row": 468,
+          "step": "7",
+          "phase": "",
+          "action": "Give Cough Elixir to Duriek",
+          "npc_mob": "Duriek Bloodpool",
+          "zone": "Paineel",
+          "items": "(continues quest)",
+          "notes": ""
+        },
+        {
+          "_source_row": 469,
+          "step": "8",
+          "phase": "",
+          "action": "Kill ratman guard",
+          "npc_mob": "ratman guard",
+          "zone": "Paineel/The Hole",
+          "items": "Loot: DUSTY TOME",
+          "notes": ""
+        },
+        {
+          "_source_row": 470,
+          "step": "9",
+          "phase": "",
+          "action": "Give Dusty Tome to Duriek",
+          "npc_mob": "Duriek Bloodpool",
+          "zone": "Paineel",
+          "items": "(continues quest)",
+          "notes": ""
+        },
+        {
+          "_source_row": 471,
+          "step": "10",
+          "phase": "",
+          "action": "Get Ghoulbane: kill Froglok Shin Lord",
+          "npc_mob": "Froglok Shin Lord",
+          "zone": "Upper Guk",
+          "items": "Loot: Ghoulbane (or Joren Nobleheart in Felwithe B)",
+          "notes": ""
+        },
+        {
+          "_source_row": 472,
+          "step": "11",
+          "phase": "",
+          "action": "Get Soul Leech: kill Cazic-Thule/Dread/Fright/ Terror",
+          "npc_mob": "Cazic-Thule",
+          "zone": "Plane of Fear",
+          "items": "Loot: Soul Leech",
+          "notes": ""
+        },
+        {
+          "_source_row": 473,
+          "step": "12",
+          "phase": "",
+          "action": "Get Dark Sword of Blood: same source as above",
+          "npc_mob": "Cazic-Thule",
+          "zone": "Plane of Fear",
+          "items": "Loot: Dark Sword of Blood",
+          "notes": ""
+        },
+        {
+          "_source_row": 474,
+          "step": "13",
+          "phase": "",
+          "action": "Get Blade of Abrogation: kill trash mobs",
+          "npc_mob": "Various",
+          "zone": "Plane of Sky",
+          "items": "Loot: Blade of Abrogation",
+          "notes": ""
+        },
+        {
+          "_source_row": 475,
+          "step": "14",
+          "phase": "",
+          "action": "Get Drake Spine: kill Rharzar",
+          "npc_mob": "Rharzar",
+          "zone": "Rathe Mountains",
+          "items": "Loot: Drake Spine",
+          "notes": ""
+        },
+        {
+          "_source_row": 476,
+          "step": "15",
+          "phase": "",
+          "action": "Get Decrepit Hide: kill ashenbone drakes",
+          "npc_mob": "Ashenbone Drake",
+          "zone": "Plane of Hate",
+          "items": "Loot: Decrepit Hide",
+          "notes": ""
+        },
+        {
+          "_source_row": 477,
+          "step": "16",
+          "phase": "",
+          "action": "Get Bar of Enchanted Platinum",
+          "npc_mob": "(crafted/purchased)",
+          "zone": "Any",
+          "items": "Bar of Enchanted Platinum",
+          "notes": ""
+        },
+        {
+          "_source_row": 478,
+          "step": "17",
+          "phase": "",
+          "action": "Create Decrepit Sheath: combine Drake Spine + Decrepit Hide + Bar of Enchanted Platinum",
+          "npc_mob": "(smithing)",
+          "zone": "Any",
+          "items": "Create: Decrepit Sheath",
+          "notes": ""
+        },
+        {
+          "_source_row": 479,
+          "step": "18",
+          "phase": "",
+          "action": "Trade Ghoulbane + Soul Leech + Dark Sword + Blade of Abrogation + Decrepit Sheath to Duriek",
+          "npc_mob": "Duriek Bloodpool",
+          "zone": "Paineel",
+          "items": "Receive: CORRUPTED GHOULBANE",
+          "notes": ""
+        },
+        {
+          "_source_row": 480,
+          "step": "19",
+          "phase": "",
+          "action": "Hail Lhranc in City of Mist",
+          "npc_mob": "Lhranc",
+          "zone": "City of Mist",
+          "items": "(dialogue)",
+          "notes": ""
+        },
+        {
+          "_source_row": 481,
+          "step": "20",
+          "phase": "",
+          "action": "Get Soulcase from Hnarthenne Skurl",
+          "npc_mob": "Hnarthenne Skurl",
+          "zone": "Toxxulia Forest",
+          "items": "Loot/Receive: Soulcase",
+          "notes": ""
+        },
+        {
+          "_source_row": 482,
+          "step": "21",
+          "phase": "",
+          "action": "Get Seal of Kastane from Marl Kastane",
+          "npc_mob": "Marl Kastane",
+          "zone": "Kerra Isle",
+          "items": "Loot/Receive: Seal of Kastane",
+          "notes": ""
+        },
+        {
+          "_source_row": 483,
+          "step": "22",
+          "phase": "",
+          "action": "Get Note to Marl from Gerot Kastane",
+          "npc_mob": "Gerot Kastane",
+          "zone": "Paineel",
+          "items": "Receive: Note to Marl",
+          "notes": ""
+        },
+        {
+          "_source_row": 484,
+          "step": "23",
+          "phase": "",
+          "action": "Give note to Marl Kastane",
+          "npc_mob": "Marl Kastane",
+          "zone": "Kerra Isle",
+          "items": "(advances quest)",
+          "notes": ""
+        },
+        {
+          "_source_row": 485,
+          "step": "24",
+          "phase": "",
+          "action": "Free Caradon from jail in The Hole (use cell key from chest)",
+          "npc_mob": "Caradon",
+          "zone": "The Hole",
+          "items": "(use Cell Key from chest)",
+          "notes": ""
+        },
+        {
+          "_source_row": 486,
+          "step": "25",
+          "phase": "",
+          "action": "Kill Kyrenna and Caradon Heart of Kyrenna",
+          "npc_mob": "Kyrenna / Caradon",
+          "zone": "The Hole",
+          "items": "Loot: Blood of Kyrenna +",
+          "notes": ""
+        },
+        {
+          "_source_row": 487,
+          "step": "26",
+          "phase": "",
+          "action": "Give Blood of Kyrenna to Marl Kastane",
+          "npc_mob": "Marl Kastane",
+          "zone": "Kerra Isle",
+          "items": "Receive: DARK SHROUD",
+          "notes": ""
+        },
+        {
+          "_source_row": 488,
+          "step": "27",
+          "phase": "",
+          "action": "Give Dark Shroud to Ghost of Glohnor",
+          "npc_mob": "Ghost of Glohnor",
+          "zone": "The Hole",
+          "items": "Spawns: Mummy of Glohnor",
+          "notes": ""
+        },
+        {
+          "_source_row": 489,
+          "step": "28",
+          "phase": "",
+          "action": "Kill Mummy of Glohnor Glohnor's Wrappings",
+          "npc_mob": "Mummy of Glohnor",
+          "zone": "The Hole",
+          "items": "Loot: Head of Glohnor +",
+          "notes": ""
+        },
+        {
+          "_source_row": 490,
+          "step": "29",
+          "phase": "",
+          "action": "Give Head of Glohnor to Gerot Kastane",
+          "npc_mob": "Gerot Kastane",
+          "zone": "Paineel",
+          "items": "Receive: HEAD OF THE VALIANT",
+          "notes": ""
+        },
+        {
+          "_source_row": 491,
+          "step": "30",
+          "phase": "",
+          "action": "Give Wrappings to Marl Kastane",
+          "npc_mob": "Marl Kastane",
+          "zone": "Kerra Isle",
+          "items": "Receive: WILL OF INNORUUK",
+          "notes": ""
+        },
+        {
+          "_source_row": 492,
+          "step": "31",
+          "phase": "",
+          "action": "Combine Heart of Kyrenna + Soulcase",
+          "npc_mob": "(container combine)",
+          "zone": "Any",
+          "items": "Create: HEART OF THE INNOCENT",
+          "notes": ""
+        },
+        {
+          "_source_row": 493,
+          "step": "32",
+          "phase": "",
+          "action": "Give Corrupted Ghoulbane + Heart of the Innocent + Head of the Valiant + Will of Innoruuk to Lhranc",
+          "npc_mob": "Lhranc",
+          "zone": "City of Mist",
+          "items": "Receive: Lhranc's Token",
+          "notes": ""
+        },
+        {
+          "_source_row": 494,
+          "step": "33",
+          "phase": "",
+          "action": "Hail human Lhranc (he attacks)",
+          "npc_mob": "Lhranc (human form)",
+          "zone": "City of Mist",
+          "items": "(boss fight - raid recommended)",
+          "notes": ""
+        },
+        {
+          "_source_row": 495,
+          "step": "34",
+          "phase": "",
+          "action": "Kill Lhranc; Marl Kastane spawns outside",
+          "npc_mob": "Lhranc (human)",
+          "zone": "City of Mist",
+          "items": "",
+          "notes": ""
+        },
+        {
+          "_source_row": 496,
+          "step": "35",
+          "phase": "",
+          "action": "Give Lhranc's Token to Marl Kastane",
+          "npc_mob": "Marl Kastane",
+          "zone": "City of Mist",
+          "items": "Receive: INNORUUK'S CURSE",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "class_name": "SHAMAN",
+      "weapon_name": "SPEAR OF FATE",
+      "steps": [
+        {
+          "_source_row": 509,
+          "step": "1",
+          "phase": "",
+          "action": "Kill Captain Sureshot",
+          "npc_mob": "Captain Sureshot",
+          "zone": "Ocean of Tears",
+          "items": "(faction kill)",
+          "notes": ""
+        },
+        {
+          "_source_row": 510,
+          "step": "2",
+          "phase": "",
+          "action": "Hail Lesser Spirit",
+          "npc_mob": "Lesser Spirit",
+          "zone": "Various",
+          "items": "Receive: Tiny Gem",
+          "notes": ""
+        },
+        {
+          "_source_row": 511,
+          "step": "3",
+          "phase": "",
+          "action": "Hail Bondl Felligan in sewers",
+          "npc_mob": "Bondl Felligan",
+          "zone": "North Freeport",
+          "items": "(dialogue)",
+          "notes": ""
+        },
+        {
+          "_source_row": 512,
+          "step": "4",
+          "phase": "",
+          "action": "Give Tiny Gem to Bondl",
+          "npc_mob": "Bondl Felligan",
+          "zone": "North Freeport",
+          "items": "(follow him)",
+          "notes": ""
+        },
+        {
+          "_source_row": 513,
+          "step": "5",
+          "phase": "",
+          "action": "Follow Bondl, hail Greater Spirit",
+          "npc_mob": "Greater Spirit",
+          "zone": "North Freeport",
+          "items": "(dialogue)",
+          "notes": ""
+        },
+        {
+          "_source_row": 514,
+          "step": "6",
+          "phase": "",
+          "action": "Claim your deity",
+          "npc_mob": "Greater Spirit",
+          "zone": "North Freeport",
+          "items": "(deity varies by race)",
+          "notes": ""
+        },
+        {
+          "_source_row": 515,
+          "step": "7",
+          "phase": "",
+          "action": "Hail the OTHER Greater Spirit down the hall",
+          "npc_mob": "Greater Spirit (2nd)",
+          "zone": "North Freeport",
+          "items": "Receive: Opaque Gem",
+          "notes": ""
+        },
+        {
+          "_source_row": 516,
+          "step": "8",
+          "phase": "",
+          "action": "Give Opaque Gem to Ooglyn",
+          "npc_mob": "Ooglyn",
+          "zone": "Erud's Crossing",
+          "items": "(follow her)",
+          "notes": ""
+        },
+        {
+          "_source_row": 517,
+          "step": "9",
+          "phase": "",
+          "action": "Follow Ooglyn, hail various NPCs: Srafen, Dillon, Froham, Abe",
+          "npc_mob": "Srafen the Soaked,",
+          "zone": "Erud's Crossing",
+          "items": "Receive: Broken Arrow",
+          "notes": ""
+        },
+        {
+          "_source_row": 518,
+          "step": "10",
+          "phase": "",
+          "action": "Hail another Greater Spirit",
+          "npc_mob": "Greater Spirit",
+          "zone": "Erud's Crossing",
+          "items": "Receive: Small Gem",
+          "notes": ""
+        },
+        {
+          "_source_row": 519,
+          "step": "11",
+          "phase": "",
+          "action": "Find wandering spirit in West Karana",
+          "npc_mob": "Wandering Spirit",
+          "zone": "West Karana",
+          "items": "(dialogue)",
+          "notes": ""
+        },
+        {
+          "_source_row": 520,
+          "step": "12",
+          "phase": "",
+          "action": "Give Small Gem to wandering spirit",
+          "npc_mob": "Wandering Spirit",
+          "zone": "West Karana",
+          "items": "(+100 faction)",
+          "notes": ""
+        },
+        {
+          "_source_row": 521,
+          "step": "13",
+          "phase": "",
+          "action": "Kill Tabien the Goodly (Level 32)",
+          "npc_mob": "Tabien the Goodly",
+          "zone": "Rathe Mountains",
+          "items": "Loot: Marr's Promise",
+          "notes": ""
+        },
+        {
+          "_source_row": 522,
+          "step": "14",
+          "phase": "",
+          "action": "Kill Glaron the Wicked (Level 32)",
+          "npc_mob": "Glaron the Wicked",
+          "zone": "Rathe Mountains",
+          "items": "Loot: Envy and Woe",
+          "notes": ""
+        },
+        {
+          "_source_row": 523,
+          "step": "15",
+          "phase": "",
+          "action": "Give Marr's Promise + Envy + Woe to wandering spirit",
+          "npc_mob": "Wandering Spirit",
+          "zone": "West Karana",
+          "items": "Receive: Sparkling Gem +",
+          "notes": ""
+        },
+        {
+          "_source_row": 524,
+          "step": "16",
+          "phase": "",
+          "action": "Give Sparkling Gem to Spirit Sentinel",
+          "npc_mob": "Spirit Sentinel",
+          "zone": "Emerald Jungle",
+          "items": "(advances quest)",
+          "notes": ""
+        },
+        {
+          "_source_row": 525,
+          "step": "17",
+          "phase": "",
+          "action": "Hail Black Dire in Castle Mistmoore",
+          "npc_mob": "Black Dire",
+          "zone": "Castle Mistmoore",
+          "items": "(dialogue)",
+          "notes": ""
+        },
+        {
+          "_source_row": 526,
+          "step": "18",
+          "phase": "",
+          "action": "Kill Black Dire",
+          "npc_mob": "Black Dire",
+          "zone": "Castle Mistmoore",
+          "items": "Loot: Black Dire Pelt",
+          "notes": ""
+        },
+        {
+          "_source_row": 527,
+          "step": "19",
+          "phase": "",
+          "action": "Give pelt to Spirit Sentinel Ancient Journal",
+          "npc_mob": "Spirit Sentinel",
+          "zone": "Emerald Jungle",
+          "items": "Receive: Black Fur Boots +",
+          "notes": ""
+        },
+        {
+          "_source_row": 528,
+          "step": "20",
+          "phase": "",
+          "action": "Collect 6 documents in City of Mist: Personal Diary Page, Crier's Scroll, Merchant's Letter, Written Announcement, Priest's Diary Page, Student's Log Priest's Diary Page, Student's Log",
+          "npc_mob": "Various mobs/ground spawns City of Mist",
+          "zone": "Personal Diary Page,",
+          "items": "",
+          "notes": ""
+        },
+        {
+          "_source_row": 529,
+          "step": "21",
+          "phase": "",
+          "action": "Combine all 6 in Ancient Journal",
+          "npc_mob": "(container combine)",
+          "zone": "Any",
+          "items": "Create: Completed Report",
+          "notes": ""
+        },
+        {
+          "_source_row": 530,
+          "step": "22",
+          "phase": "",
+          "action": "Give Completed Report to Spirit Sentinel",
+          "npc_mob": "Spirit Sentinel",
+          "zone": "Emerald Jungle",
+          "items": "(advances quest)",
+          "notes": ""
+        },
+        {
+          "_source_row": 531,
+          "step": "23",
+          "phase": "",
+          "action": "Pick up Icon of High Scale (ground spawn)",
+          "npc_mob": "(ground spawn)",
+          "zone": "City of Mist",
+          "items": "Icon of High Scale",
+          "notes": ""
+        },
+        {
+          "_source_row": 532,
+          "step": "24",
+          "phase": "",
+          "action": "Kill Lord Ghiosk in City of Mist Crusades of High Scale, Head Housekeeper's Log",
+          "npc_mob": "Lord Ghiosk",
+          "zone": "City of Mist",
+          "items": "Loot: Historic Article,",
+          "notes": ""
+        },
+        {
+          "_source_row": 533,
+          "step": "25",
+          "phase": "",
+          "action": "Give 3 items to Spirit Sentinel",
+          "npc_mob": "Spirit Sentinel",
+          "zone": "Emerald Jungle",
+          "items": "(advances quest)",
+          "notes": ""
+        },
+        {
+          "_source_row": 534,
+          "step": "26",
+          "phase": "",
+          "action": "Give Icon of High Scale to High Scale Kirn",
+          "npc_mob": "High Scale Kirn",
+          "zone": "The Hole",
+          "items": "(starts fight)",
+          "notes": ""
+        },
+        {
+          "_source_row": 535,
+          "step": "27",
+          "phase": "",
+          "action": "Kill High Scale Kirn",
+          "npc_mob": "High Scale Kirn",
+          "zone": "The Hole",
+          "items": "Loot: Engraved Ring",
+          "notes": ""
+        },
+        {
+          "_source_row": 536,
+          "step": "28",
+          "phase": "",
+          "action": "Give ring to Neh'Ashiir",
+          "npc_mob": "Neh'Ashiir",
+          "zone": "City of Mist",
+          "items": "(starts fight)",
+          "notes": ""
+        },
+        {
+          "_source_row": 537,
+          "step": "29",
+          "phase": "",
+          "action": "Kill Neh'Ashiir",
+          "npc_mob": "Neh'Ashiir",
+          "zone": "City of Mist",
+          "items": "Loot: Neh'Ashiir's Diary",
+          "notes": ""
+        },
+        {
+          "_source_row": 538,
+          "step": "30",
+          "phase": "",
+          "action": "Give diary to 2nd Spirit Sentinel",
+          "npc_mob": "Spirit Sentinel (2nd)",
+          "zone": "Emerald Jungle",
+          "items": "(advances quest)",
+          "notes": ""
+        },
+        {
+          "_source_row": 539,
+          "step": "31",
+          "phase": "",
+          "action": "Kill any golem in Plane of Fear",
+          "npc_mob": "Various Golems",
+          "zone": "Plane of Fear",
+          "items": "(progression kill)",
+          "notes": ""
+        },
+        {
+          "_source_row": 540,
+          "step": "32",
+          "phase": "",
+          "action": "Kill Iksar Child",
+          "npc_mob": "Iksar Child",
+          "zone": "Plane of Fear",
+          "items": "Loot: Child's Tear",
+          "notes": ""
+        },
+        {
+          "_source_row": 541,
+          "step": "33",
+          "phase": "",
+          "action": "Give Child's Tear to Rak'Ashiir",
+          "npc_mob": "Rak'Ashiir",
+          "zone": "Plane of Fear",
+          "items": "(starts fight)",
+          "notes": ""
+        },
+        {
+          "_source_row": 542,
+          "step": "34",
+          "phase": "",
+          "action": "Kill Rak'Ashiir",
+          "npc_mob": "Rak'Ashiir",
+          "zone": "Plane of Fear",
+          "items": "Loot: Iksar Scale",
+          "notes": ""
+        },
+        {
+          "_source_row": 543,
+          "step": "35",
+          "phase": "",
+          "action": "Give Iksar Scale to Spirit Sentinel",
+          "npc_mob": "Spirit Sentinel (2nd)",
+          "zone": "Emerald Jungle",
+          "items": "Receive: SPEAR OF FATE",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "class_name": "WARRIOR",
+      "weapon_name": "JAGGED BLADE OF WAR",
+      "steps": [
+        {
+          "_source_row": 558,
+          "step": "1",
+          "phase": "",
+          "action": "Hail Kargek Redblade, ask about \"scabbard\" then \"what favor\"",
+          "npc_mob": "Kargek Redblade",
+          "zone": "East Freeport",
+          "items": "Receive: Wax Sealed Note",
+          "notes": ""
+        },
+        {
+          "_source_row": 559,
+          "step": "2",
+          "phase": "",
+          "action": "Give note to Oknoggin Stonesmacker loc 800, 1140)",
+          "npc_mob": "Oknoggin Stonesmacker",
+          "zone": "The Feerrott",
+          "items": "Receive: Tiny Lute (between stone bridge and fallen totem,",
+          "notes": ""
+        },
+        {
+          "_source_row": 560,
+          "step": "3",
+          "phase": "",
+          "action": "Give Tiny Lute to Kargek Redblade",
+          "npc_mob": "Kargek Redblade",
+          "zone": "East Freeport",
+          "items": "Receive: Redblade's Legacy (book)",
+          "notes": ""
+        },
+        {
+          "_source_row": 561,
+          "step": "4",
+          "phase": "",
+          "action": "Give book to Tenal Redblade (end of canyon near Highpass ramp)",
+          "npc_mob": "Tenal Redblade",
+          "zone": "East Karana",
+          "items": "Receive: Totem of Freezing War",
+          "notes": ""
+        },
+        {
+          "_source_row": 562,
+          "step": "5",
+          "phase": "",
+          "action": "Kill Ice Goblin Wizard in Permafrost",
+          "npc_mob": "Ice Goblin Wizard",
+          "zone": "Permafrost Keep",
+          "items": "Loot: Heart of Frost",
+          "notes": ""
+        },
+        {
+          "_source_row": 563,
+          "step": "6",
+          "phase": "",
+          "action": "Give Heart of Frost + Totem of Freezing War to Tenal",
+          "npc_mob": "Tenal Redblade",
+          "zone": "East Karana",
+          "items": "Receive: Totem of Fiery War",
+          "notes": ""
+        },
+        {
+          "_source_row": 564,
+          "step": "7",
+          "phase": "",
+          "action": "Kill red dragon (Nagafen/Talendor/Nortlav/ Ragefire)",
+          "npc_mob": "Various red dragons",
+          "zone": "Various",
+          "items": "Loot: Red Dragon Scales",
+          "notes": ""
+        },
+        {
+          "_source_row": 565,
+          "step": "8",
+          "phase": "",
+          "action": "Kill Severilous (or Hoshkar)",
+          "npc_mob": "Severilous/Hoshkar",
+          "zone": "Emerald Jungle/VP",
+          "items": "Loot: Green Dragon Scales",
+          "notes": ""
+        },
+        {
+          "_source_row": 566,
+          "step": "9",
+          "phase": "",
+          "action": "Give Totem of Fiery War + Red Dragon Scales + Green Dragon Scales to Tenal",
+          "npc_mob": "Tenal Redblade",
+          "zone": "East Karana",
+          "items": "Receive: Mark of the Sword",
+          "notes": ""
+        },
+        {
+          "_source_row": 567,
+          "step": "10",
+          "phase": "",
+          "action": "Kill Hand of the Maestro (or Cursed Hand)",
+          "npc_mob": "Hand of the Maestro",
+          "zone": "Plane of Hate",
+          "items": "Loot: Hand of the Maestro",
+          "notes": ""
+        },
+        {
+          "_source_row": 568,
+          "step": "11",
+          "phase": "",
+          "action": "Give Mark of the Sword + Hand of Maestro to Tenal",
+          "npc_mob": "Tenal Redblade",
+          "zone": "East Karana",
+          "items": "Receive: Tenal's Note to Kargek",
+          "notes": ""
+        },
+        {
+          "_source_row": 569,
+          "step": "12",
+          "phase": "",
+          "action": "Kill Spiroc Lord on 5th island",
+          "npc_mob": "Spiroc Lord",
+          "zone": "Plane of Sky",
+          "items": "Loot: Spiroc Wingblade",
+          "notes": ""
+        },
+        {
+          "_source_row": 570,
+          "step": "13",
+          "phase": "",
+          "action": "Give Tenal's Note + Spiroc Wingblade to Kargek",
+          "npc_mob": "Kargek Redblade",
+          "zone": "East Freeport",
+          "items": "Receive: RED SCABBARD",
+          "notes": ""
+        },
+        {
+          "_source_row": 571,
+          "step": "14",
+          "phase": "",
+          "action": "Purchase Keg of Vox Tail Ale from vendors",
+          "npc_mob": "(vendor purchase)",
+          "zone": "Various",
+          "items": "Keg of Vox Tail Ale",
+          "notes": ""
+        },
+        {
+          "_source_row": 572,
+          "step": "15",
+          "phase": "",
+          "action": "Kill Ice Giants in Permafrost",
+          "npc_mob": "Ice Giants",
+          "zone": "Permafrost Keep",
+          "items": "Loot: Block of Permafrost",
+          "notes": ""
+        },
+        {
+          "_source_row": 573,
+          "step": "16",
+          "phase": "",
+          "action": "Obtain 2 Rebreathers (tinkered or purchased)",
+          "npc_mob": "(crafted/purchased)",
+          "zone": "Any",
+          "items": "2x Rebreather",
+          "notes": ""
+        },
+        {
+          "_source_row": 574,
+          "step": "17",
+          "phase": "",
+          "action": "Give Block + Keg + 2 Rebreathers to Denken Strongpick (Aviak Isle)",
+          "npc_mob": "Denken Strongpick",
+          "zone": "Ocean of Tears",
+          "items": "Receive: ANCIENT SWORD BLADE",
+          "notes": ""
+        },
+        {
+          "_source_row": 575,
+          "step": "18",
+          "phase": "",
+          "action": "Retrieve Severely Damaged Dragon Head Hilt",
+          "npc_mob": "(ground spawn)",
+          "zone": "Timorous Deep",
+          "items": "Severely Damaged Dragon Head Hilt (chessboard area, by king chess piece)",
+          "notes": ""
+        },
+        {
+          "_source_row": 576,
+          "step": "19",
+          "phase": "",
+          "action": "Kill Mountain Giant Patriarch",
+          "npc_mob": "Mountain Giant Patriarch",
+          "zone": "Dreadlands",
+          "items": "Loot: Giant Sized Monocle",
+          "notes": ""
+        },
+        {
+          "_source_row": 577,
+          "step": "20",
+          "phase": "",
+          "action": "Give Monocle to Mentrax Mountainbone",
+          "npc_mob": "Mentrax Mountainbone",
+          "zone": "Frontier Mountains",
+          "items": "Receive: Rejesiam Ore (giant fortress, end of mine)",
+          "notes": ""
+        },
+        {
+          "_source_row": 578,
+          "step": "21",
+          "phase": "",
+          "action": "Kill Fright/Dread/Terror in Plane of Fear",
+          "npc_mob": "Fright/Dread/Terror",
+          "zone": "Plane of Fear",
+          "items": "Loot: Ball of Everliving Golem",
+          "notes": ""
+        },
+        {
+          "_source_row": 579,
+          "step": "22",
+          "phase": "",
+          "action": "Give Damaged Hilt + Rejesiam Ore + Ball to Wenden Blackhammer",
+          "npc_mob": "Wenden Blackhammer",
+          "zone": "East Freeport",
+          "items": "Receive: FINELY CRAFTED DRAGON",
+          "notes": ""
+        },
+        {
+          "_source_row": 580,
+          "step": "23",
+          "phase": "",
+          "action": "Retrieve Unjeweled Dragon Head Hilt (underwater beneath aviak tower, +2513, +920)",
+          "npc_mob": "(ground spawn)",
+          "zone": "Lake Rathetear",
+          "items": "Unjeweled Dragon Head Hilt",
+          "notes": ""
+        },
+        {
+          "_source_row": 581,
+          "step": "24",
+          "phase": "",
+          "action": "Obtain: Diamond, Black Sapphire, Jacinth",
+          "npc_mob": "(purchase/loot)",
+          "zone": "Various",
+          "items": "3 gems",
+          "notes": ""
+        },
+        {
+          "_source_row": 582,
+          "step": "25",
+          "phase": "",
+          "action": "Give Unjeweled Hilt + Diamond + Black Sapphire + Jacinth to Wenden Blackhammer",
+          "npc_mob": "Wenden Blackhammer",
+          "zone": "East Freeport",
+          "items": "Receive: JEWELED DRAGON HEAD HILT",
+          "notes": ""
+        },
+        {
+          "_source_row": 583,
+          "step": "26",
+          "phase": "",
+          "action": "Kill Queen Velazul Di'zok",
+          "npc_mob": "Queen Velazul Di'zok",
+          "zone": "Chardok",
+          "items": "Loot: ANCIENT BLADE",
+          "notes": ""
+        },
+        {
+          "_source_row": 584,
+          "step": "27",
+          "phase": "",
+          "action": "Place Ancient Sword Blade + Finely Crafted Dragon Head Hilt + Jeweled Dragon Head Hilt + Ancient Blade into Red Scabbard and combine",
+          "npc_mob": "(container: Red Scabbard) Any",
+          "zone": "Create: JAGGED BLADE OF WAR",
+          "items": "",
+          "notes": ""
+        },
+        {
+          "_source_row": 586,
+          "step": "FIN",
+          "phase": "FINAL TURN-IN",
+          "action": "Step Action NPC/Mob Zone Items ---- ------ ------- ---- ----- 27 Place Ancient Sword Blade + Finely Crafted (container: Red Scabbard) Any Create: JAGGED BLADE OF WAR Dragon Head Hilt + Jeweled Dragon Head Hilt + Ancient Blade into Red Scabbard and combine",
+          "npc_mob": "",
+          "zone": "",
+          "items": "",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "class_name": "WIZARD",
+      "weapon_name": "STAFF OF THE FOUR",
+      "steps": [
+        {
+          "_source_row": 600,
+          "step": "1",
+          "phase": "",
+          "action": "Hail Solomen (2nd floor, go to back of zone, fake dresser, take left up stairs)",
+          "npc_mob": "Solomen",
+          "zone": "Temple of Solusek Ro Receive: Note for Camin",
+          "items": "",
+          "notes": ""
+        },
+        {
+          "_source_row": 601,
+          "step": "2",
+          "phase": "",
+          "action": "Go to Erudin, find Camin in Vasty Deep Inn, give note, hail him",
+          "npc_mob": "Camin",
+          "zone": "Erudin",
+          "items": "(needs 1000pp; gives info",
+          "notes": ""
+        },
+        {
+          "_source_row": 602,
+          "step": "3",
+          "phase": "",
+          "action": "Go to Halas, purchase Ro's Breath from Dargon",
+          "npc_mob": "Dargon",
+          "zone": "Halas",
+          "items": "Receive: Ro's Breath (~1000pp)",
+          "notes": ""
+        },
+        {
+          "_source_row": 603,
+          "step": "4",
+          "phase": "",
+          "action": "Return to Camin, give potion",
+          "npc_mob": "Camin",
+          "zone": "Erudin",
+          "items": "Receive: New Potion",
+          "notes": ""
+        },
+        {
+          "_source_row": 604,
+          "step": "5",
+          "phase": "",
+          "action": "Return to Halas, give New Potion to Dargon",
+          "npc_mob": "Dargon/Arantir",
+          "zone": "Halas",
+          "items": "Receive: Note + Ring for Challice (transforms into Arantir Karondor)",
+          "notes": ""
+        },
+        {
+          "_source_row": 605,
+          "step": "6",
+          "phase": "",
+          "action": "Go to Felwithe paladin guild, give ring to Challice",
+          "npc_mob": "Challice",
+          "zone": "Felwithe",
+          "items": "Receive: Ring back + dialogue",
+          "notes": ""
+        },
+        {
+          "_source_row": 606,
+          "step": "7",
+          "phase": "",
+          "action": "Return to Halas, give new ring to Dargon",
+          "npc_mob": "Dargon/Arantir",
+          "zone": "Halas",
+          "items": "Spawns Arantir; receive note (spawns Arantir - tells about 3 other wizards) for Kandin Firepot",
+          "notes": ""
+        },
+        {
+          "_source_row": 607,
+          "step": "8",
+          "phase": "",
+          "action": "Kill Phinigel Autropos",
+          "npc_mob": "Phinigel Autropos",
+          "zone": "Kedge Keep",
+          "items": "Loot: BLUE CRYSTAL STAFF",
+          "notes": ""
+        },
+        {
+          "_source_row": 608,
+          "step": "9",
+          "phase": "",
+          "action": "Kill Venril Sathir",
+          "npc_mob": "Venril Sathir",
+          "zone": "Karnor's Castle",
+          "items": "Loot: GNARLED STAFF",
+          "notes": ""
+        },
+        {
+          "_source_row": 609,
+          "step": "10",
+          "phase": "",
+          "action": "Hail Kandin Firepot in Butcherblock",
+          "npc_mob": "Kandin Firepot",
+          "zone": "Butcherblock Mtns",
+          "items": "Receive: Spare Gear",
+          "notes": ""
+        },
+        {
+          "_source_row": 610,
+          "step": "11",
+          "phase": "",
+          "action": "Enter Plane of Fear, find Broken Golem",
+          "npc_mob": "Broken Golem",
+          "zone": "Plane of Fear",
+          "items": "Give: Spare Gear (repair golem)",
+          "notes": ""
+        },
+        {
+          "_source_row": 611,
+          "step": "12",
+          "phase": "",
+          "action": "Kill Broken Golem (repaired, attacks you)",
+          "npc_mob": "Broken Golem",
+          "zone": "Plane of Fear",
+          "items": "Loot: Green Oil",
+          "notes": ""
+        },
+        {
+          "_source_row": 612,
+          "step": "13",
+          "phase": "",
+          "action": "Return to Kandin in Butcherblock, give Green Oil",
+          "npc_mob": "Kandin Firepot",
+          "zone": "Butcherblock Mtns",
+          "items": "Receive: STAFF OF GABSTIK + Note",
+          "notes": ""
+        },
+        {
+          "_source_row": 613,
+          "step": "14",
+          "phase": "",
+          "action": "Return to Halas, give note to Dargon",
+          "npc_mob": "Dargon/Arantir",
+          "zone": "Halas",
+          "items": "Spawns Arantir",
+          "notes": ""
+        },
+        {
+          "_source_row": 614,
+          "step": "15",
+          "phase": "",
+          "action": "Give all 3 staves (Blue Crystal Staff + Gnarled Staff + Staff of Gabstik) to Arantir",
+          "npc_mob": "Arantir Karondor",
+          "zone": "Halas",
+          "items": "Receive: Pack (container)",
+          "notes": ""
+        },
+        {
+          "_source_row": 615,
+          "step": "16",
+          "phase": "",
+          "action": "Return to Solomen in Temple of Solusek Ro give Pack",
+          "npc_mob": "Solomen",
+          "zone": "Temple of Solusek Ro Receive: STAFF OF THE FOUR",
+          "items": "",
+          "notes": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "_placeholder": true,
+  "_note": "Hardcoded placeholder steps for UI testing only. Replace with real excel-imports/epic-quests.json data.",
+  "classes": [
+    {
+      "name": "Paladin",
+      "_placeholder": true,
+      "steps": [
+        {
+          "step": 1,
+          "_placeholder": true,
+          "name": "Soulfire",
+          "type": "item",
+          "description": "Obtain the Ghoulbane sword as a precursor. Spawn Lord Nagafen in Nagafen's Lair and loot Ghoulbane from him, or alternatively purchase one from the bazaar.",
+          "zone": "Nagafen's Lair",
+          "npc_giver": null,
+          "drops_from": "Lord Nagafen",
+          "item_slug": "soulfire"
+        },
+        {
+          "step": 2,
+          "_placeholder": true,
+          "name": "Words of Bidding",
+          "type": "task",
+          "description": "Speak with Irak Altil in East Freeport. He will send you on a series of tasks to recover the words that unlock the next stage of your epic.",
+          "zone": "East Freeport",
+          "npc_giver": "Irak Altil",
+          "drops_from": null,
+          "item_slug": null
+        }
+      ]
+    },
+    {
+      "name": "Cleric",
+      "_placeholder": true,
+      "steps": [
+        {
+          "step": 1,
+          "_placeholder": true,
+          "name": "Head of the Valiant",
+          "type": "item",
+          "description": "You must first obtain the Head of the Valiant. Adventurers in the Plane of Sky can find this on the island drake encounters.",
+          "zone": "Plane of Sky",
+          "npc_giver": null,
+          "drops_from": "Bazzt Zzzt",
+          "item_slug": "head-of-the-valiant"
+        },
+        {
+          "step": 2,
+          "_placeholder": true,
+          "name": "Speak with Vual Stoutest",
+          "type": "task",
+          "description": "Take the Head of the Valiant to Vual Stoutest in North Qeynos. He will examine it and provide the next step in the quest chain.",
+          "zone": "North Qeynos",
+          "npc_giver": "Vual Stoutest",
+          "drops_from": null,
+          "item_slug": null
+        }
+      ]
+    }
+  ]
+}

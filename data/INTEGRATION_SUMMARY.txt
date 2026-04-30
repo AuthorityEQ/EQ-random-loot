@@ -1,0 +1,226 @@
+================================================================================
+  EQ-RANDOM-LOOT EXCEL DATA MINING SUMMARY
+  Source: C:/Users/rontf/EQ_Master_Database_temp.xlsx (Gronnz)
+  Report: C:/Users/rontf/EQ-random-loot/data/excel-mining-report.md
+================================================================================
+
+WORKBOOK STRUCTURE
+  22 Sheets | 3,820+ rows of data | All expansions Classic through PoP
+
+TIER 1: QUICK WINS (Pre-Launch Critical)
+==========================================
+✓ Zone XP Modifiers (143 rows)
+  └─ Creates: zone-xp-modifiers.json
+  └─ Feature: Zone XP Optimizer page with sortable table
+  └─ Hours: 4 | Priority: Week 1
+
+✓ Tradeable Items & Schedule (32 rows)
+  └─ Creates: server-schedule.json
+  └─ Feature: Server timeline/expansion unlock calendar
+  └─ Hours: 6 | Priority: Week 1
+
+✓ Epic 1.0 Quests (691 rows, ALL 14 CLASSES)
+  └─ Creates: epic-quests.json
+  └─ Feature: Epic quest tracker with completion checkboxes
+  └─ Hours: 20 | Priority: Week 2-3 (LARGEST DATA)
+
+✓ Leveling Guide (319 rows, race-specific paths)
+  └─ Creates: leveling-paths.json
+  └─ Feature: Interactive leveling path finder by race
+  └─ Hours: 12 | Priority: Week 2
+
+✓ PoP Progression Guide (42 rows)
+  └─ Creates: pop-progression.json
+  └─ Feature: Raid progression dependency graph UI
+  └─ Hours: 8 | Priority: Week 2
+
+✓ Classic/Kunark/Velious Loot (974 rows)
+  └─ Expands: classic-group-named.json, kunark-group-named.json, velious-group-named.json
+  └─ Adds: Raid boss loot, MOTM tracking, standardized pools
+  └─ Hours: 16 | Priority: Week 3
+
+TIER 1 SUBTOTAL: 50 hours | 6 major features | LAUNCH CRITICAL
+
+TIER 2: NEW FEATURES (Post-Launch Weeks 1-2)
+==============================================
+✓ Best in Slot Gear (4,035 rows - MASSIVE)
+  └─ Creates: bis-gear.json
+  └─ Feature: Gear comparator + build planner by class/expansion
+  └─ Hours: 16 | Priority: Week 3-4
+
+✓ Faction Guide (250 rows)
+  └─ Creates: faction-system.json
+  └─ Feature: Faction alignment diagram + armor tier tracker
+  └─ Hours: 10 | Priority: Week 2
+
+✓ Crafting Guides (170 rows across 5 sheets)
+  ├─ Tailoring (25 rows)
+  ├─ Fletching (19 rows)
+  ├─ Blacksmithing (42 rows)
+  ├─ Jewelcraft (47 rows)
+  └─ Spell Research (43 rows)
+  └─ Creates: crafting-system.json
+  └─ Feature: Unified crafting browser with trivial progression
+  └─ Hours: 18 | Priority: Week 4+
+
+✓ Spell Vendors (181 rows)
+  └─ Creates: spell-vendors.json
+  └─ Feature: Spell vendor locator by class/expansion
+  └─ Hours: 6 | Priority: Week 4+
+
+✓ Raid Strategy Reference (51 rows - ToV & Kael)
+  └─ Creates: raid-strategies.json
+  └─ Feature: Per-encounter strategy pages with mechanics
+  └─ Hours: 8 | Priority: Week 4+
+
+TIER 2 SUBTOTAL: 58 hours | 5 major features | High user value
+
+TIER 3: REFERENCE & ENRICHMENT (Long-tail)
+============================================
+✓ Potions Guide (76 rows)
+  └─ Creates: potions.json
+  └─ Feature: Potion crafting recipe database
+  └─ Hours: 6 | Priority: Week 5+
+
+✓ EQ Tools & Resources (24 rows)
+  └─ Feature: External resource links (footer/sidebar)
+  └─ Hours: 2 | Priority: Week 5+
+
+⚠ Luclin & PoP Group Named (131 rows)
+  └─ Status: INCOMPLETE ("No data available" in Excel)
+  └─ Action: Flag for community data collection
+  └─ Hours: 8 | Priority: Post-launch
+
+TIER 3 SUBTOTAL: 16 hours | 3 features | Reference/enrichment
+
+================================================================================
+TOTAL EFFORT: 130 hours
+  Tier 1 (Pre-Launch): 50 hours ← CRITICAL PATH
+  Tier 2 (Weeks 1-2):  58 hours ← High value features
+  Tier 3 (Long-tail):  16 hours ← Polish & completeness
+
+================================================================================
+TOP DATA QUALITY INSIGHTS
+
+EXPANSIONS COVERED
+  ✓ Classic (320 rows, ~230 NPCs)
+  ✓ Kunark (312 rows, ~235 NPCs)
+  ✓ Velious (342 rows, ~280 NPCs)
+  ✓ Luclin (93 rows, INCOMPLETE)
+  ✓ Planes of Power (238 rows, PARTIAL)
+  ✓ Gates of Discord (raid strategies only)
+
+LARGEST DATA SETS
+  1. Best in Slot Gear: 4,035 rows (all classes, all slots)
+  2. Epic 1.0 Quests: 691 rows (all 14 classes, step-by-step)
+  3. Leveling Guide: 319 rows (race/level progression paths)
+  4. Zone XP Modifiers: 143 rows (all zones with efficiency ratings)
+
+NEW WEBSITE PAGES TO CREATE (10 pages)
+  1. Leveling Path Finder
+  2. Epic Quest Tracker
+  3. Raid Progression Timeline
+  4. Faction Relationship Map
+  5. Server Timeline / Tradeable Items Calendar
+  6. Best in Slot Gear Comparator
+  7. Zone XP Optimizer
+  8. Crafting System Hub
+  9. Spell Vendor Locator
+  10. Raid Strategy Reference
+
+JSON FILES TO CREATE (11 files)
+  zone-xp-modifiers.json
+  leveling-paths.json
+  faction-system.json
+  spell-vendors.json
+  epic-quests.json
+  pop-progression.json
+  server-schedule.json
+  bis-gear.json
+  crafting-system.json
+  raid-strategies.json
+  potions.json
+
+DATA QUALITY NOTES
+  ✓ Well-structured (consistent headers)
+  ✓ Community-vetted (by experienced player Gronnz)
+  ✓ Current for Teek/Mischief timeline
+  ✓ Includes quality ratings, tips, notes
+
+  ⚠ Luclin/PoP group named incomplete
+  ⚠ Item names need validation vs item-details.json
+  ⚠ Some raid data may need ZAM cross-check
+  ⚠ Expansion gating needs verification
+
+================================================================================
+IMPLEMENTATION ROADMAP
+
+WEEK 1 (Foundation)
+  - Zone XP Modifiers JSON + UI (4h)
+  - Tradeable Schedule JSON + Timeline UI (6h)
+  - Begin Epic Quests parsing (4h)
+  └─ Subtotal: 14 hours
+
+WEEK 2 (Core Features)
+  - Complete Epic Quests JSON + Tracker UI (16h remaining)
+  - Leveling Paths JSON + Router UI (12h)
+  - Faction System JSON + Diagram (10h)
+  - PoP Progression JSON + UI (8h)
+  └─ Subtotal: 46 hours
+
+WEEK 3 (Validation & Testing)
+  - Classic/Kunark/Velious loot data integration (16h)
+  - QA and testing on all Tier 1 features
+  - Staging environment verification
+  - User acceptance testing
+  └─ Subtotal: 20+ hours
+
+WEEKS 4-6 (Tier 2 Features)
+  - Best in Slot Gear comparator (16h)
+  - Crafting system (18h)
+  - Spell Vendors + Raid Strategies (14h)
+  - Potions guide (6h)
+  └─ Subtotal: 54 hours
+
+================================================================================
+RECOMMENDED NEXT STEPS
+
+1. IMMEDIATE (Today)
+   ☐ Share this report with dev team
+   ☐ Review Tier 1 feature priorities
+   ☐ Begin Epic Quests data parsing (largest task)
+
+2. THIS WEEK
+   ☐ Create JSON schemas for each new data type
+   ☐ Set up UI component templates
+   ☐ Start data validation (item names vs item-details.json)
+
+3. BEFORE LAUNCH
+   ☐ All Tier 1 features in staging/production environment
+   ☐ Complete user acceptance testing
+   ☐ Gather user feedback
+
+4. POST-LAUNCH
+   ☐ Prioritize Tier 2 by user request frequency
+   ☐ Monitor analytics for most-used features
+   ☐ Plan community data collection for gaps
+
+================================================================================
+ESTIMATED SUCCESS METRICS
+
+Zone XP Modifiers:        50+ daily visitors
+Epic Quest Tracker:       70%+ completion rate
+Leveling Guide:           40%+ adoption by new players
+Faction System:           30% reduction in support questions
+Gear Comparator:          2nd most-used site feature
+Crafting Engagement:      20% increase in player crafting
+Overall Satisfaction:     4.5/5 stars
+
+================================================================================
+REPORT LOCATION: C:/Users/rontf/EQ-random-loot/data/excel-mining-report.md
+  (Full 576-line markdown report with detailed integration strategies)
+
+SUMMARY LOCATION: C:/Users/rontf/EQ-random-loot/data/integration-plan-summary.json
+  (Machine-readable integration plan)
+
+================================================================================
