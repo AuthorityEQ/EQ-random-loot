@@ -33,6 +33,7 @@ type OptionalInspectFields = {
   damage_bonus?: string | number | null;
   dmg_bonus?: string | number | null;
   manaRegen?: number | null;
+  atk?: number | null;
   attack?: number | null;
   fire_damage?: string | number | null;
   cold_damage?: string | number | null;
@@ -314,7 +315,7 @@ export function EqItemInspect({ itemName, details, compact = false }: EqItemInsp
     ["HP", details.stats.HP],
     ["Mana", details.stats.MANA],
     ["End", details.stats.END],
-    ["Attack", hasNonZeroValue(optional.attack) ? optional.attack : null],
+    ["Attack", hasNonZeroValue(optional.attack ?? optional.atk) ? optional.attack ?? optional.atk : null],
     ["HP Regen", details.hp_regen],
     ["Mana Regen", hasNonZeroValue(optional.manaRegen ?? details.mana_regen) ? optional.manaRegen ?? details.mana_regen : null],
     ["End Regen", details.endurance_regen],

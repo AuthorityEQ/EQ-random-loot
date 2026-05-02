@@ -144,7 +144,10 @@ export function getItemStatValue(details: ItemDetails | undefined, statFilter: S
     const manaRegen = details.manaRegen ?? details.mana_regen;
     return hasValue(manaRegen) ? manaRegen : null;
   }
-  if (normalized === "ATTACK") return hasValue(details.attack) ? details.attack : null;
+  if (normalized === "ATTACK") {
+    const attack = details.attack ?? details.atk;
+    return hasValue(attack) ? attack : null;
+  }
 
   const statValue = details.stats?.[normalized];
   if (hasValue(statValue)) return statValue;

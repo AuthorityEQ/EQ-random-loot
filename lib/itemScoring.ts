@@ -17,6 +17,7 @@ export const CLASS_STAT_WEIGHTS = {
     CR: 1,
     DR: 1,
     PR: 1,
+    ATK: 1,
   },
 
   CLR: {
@@ -35,6 +36,7 @@ export const CLASS_STAT_WEIGHTS = {
     CR: 1,
     DR: 1,
     PR: 1,
+    ATK: 0,
   },
 
   PAL: {
@@ -53,6 +55,7 @@ export const CLASS_STAT_WEIGHTS = {
     CR: 1,
     DR: 1,
     PR: 1,
+    ATK: 0,
   },
 
   RNG: {
@@ -71,6 +74,7 @@ export const CLASS_STAT_WEIGHTS = {
     CR: 1,
     DR: 1,
     PR: 1,
+    ATK: 6,
   },
 
   SHD: {
@@ -89,6 +93,7 @@ export const CLASS_STAT_WEIGHTS = {
     CR: 1,
     DR: 1,
     PR: 1,
+    ATK: 2,
   },
 
   DRU: {
@@ -107,6 +112,7 @@ export const CLASS_STAT_WEIGHTS = {
     CR: 1,
     DR: 1,
     PR: 1,
+    ATK: 0,
   },
 
   MNK: {
@@ -125,6 +131,7 @@ export const CLASS_STAT_WEIGHTS = {
     CR: 2,
     DR: 1,
     PR: 1,
+    ATK: 45,
   },
 
   BRD: {
@@ -143,6 +150,7 @@ export const CLASS_STAT_WEIGHTS = {
     CR: 2,
     DR: 2,
     PR: 2,
+    ATK: 1,
   },
 
   ROG: {
@@ -161,6 +169,7 @@ export const CLASS_STAT_WEIGHTS = {
     CR: 1,
     DR: 1,
     PR: 1,
+    ATK: 45,
   },
 
   SHM: {
@@ -179,6 +188,7 @@ export const CLASS_STAT_WEIGHTS = {
     CR: 1,
     DR: 1,
     PR: 1,
+    ATK: 0,
   },
 
   NEC: {
@@ -197,6 +207,7 @@ export const CLASS_STAT_WEIGHTS = {
     CR: 1,
     DR: 1,
     PR: 1,
+    ATK: 0,
   },
 
   WIZ: {
@@ -215,6 +226,7 @@ export const CLASS_STAT_WEIGHTS = {
     CR: 1,
     DR: 1,
     PR: 1,
+    ATK: 0,
   },
 
   MAG: {
@@ -233,6 +245,7 @@ export const CLASS_STAT_WEIGHTS = {
     CR: 1,
     DR: 1,
     PR: 1,
+    ATK: 0,
   },
 
   ENC: {
@@ -251,6 +264,7 @@ export const CLASS_STAT_WEIGHTS = {
     CR: 1,
     DR: 1,
     PR: 1,
+    ATK: 0,
   },
 
   BST: {
@@ -269,6 +283,7 @@ export const CLASS_STAT_WEIGHTS = {
     CR: 1,
     DR: 1,
     PR: 1,
+    ATK: 25,
   },
 
   // Initial Berserker heuristic: melee DPS weighting close to Rogue/Monk.
@@ -289,33 +304,34 @@ export const CLASS_STAT_WEIGHTS = {
     CR: 1,
     DR: 1,
     PR: 1,
+    ATK: 45,
   },
 } as const;
 
 export type ClassCode = keyof typeof CLASS_STAT_WEIGHTS;
 type BaseScoredStat = keyof (typeof CLASS_STAT_WEIGHTS)[ClassCode];
-type AdditionalScoredStat = "MANA_REGEN" | "ATTACK";
+type AdditionalScoredStat = "MANA_REGEN";
 export type ScoredStat = BaseScoredStat | AdditionalScoredStat;
 
 // Conservative first-pass additions for newer parsed item fields. These are
 // intentionally low-impact and should be tuned after real comparison review.
 const ADDITIONAL_STAT_WEIGHTS = {
-  WAR: { MANA_REGEN: 0, ATTACK: 1 },
-  CLR: { MANA_REGEN: 2, ATTACK: 0.25 },
-  PAL: { MANA_REGEN: 1, ATTACK: 1 },
-  RNG: { MANA_REGEN: 1, ATTACK: 1 },
-  SHD: { MANA_REGEN: 1, ATTACK: 1 },
-  DRU: { MANA_REGEN: 2, ATTACK: 0.25 },
-  MNK: { MANA_REGEN: 0, ATTACK: 1 },
-  BRD: { MANA_REGEN: 0, ATTACK: 1 },
-  ROG: { MANA_REGEN: 0, ATTACK: 1 },
-  SHM: { MANA_REGEN: 2, ATTACK: 0.5 },
-  NEC: { MANA_REGEN: 2, ATTACK: 0.25 },
-  WIZ: { MANA_REGEN: 2, ATTACK: 0.25 },
-  MAG: { MANA_REGEN: 2, ATTACK: 0.25 },
-  ENC: { MANA_REGEN: 2, ATTACK: 0.25 },
-  BST: { MANA_REGEN: 1, ATTACK: 1 },
-  BER: { MANA_REGEN: 0, ATTACK: 1 },
+  WAR: { MANA_REGEN: 0 },
+  CLR: { MANA_REGEN: 2 },
+  PAL: { MANA_REGEN: 1 },
+  RNG: { MANA_REGEN: 1 },
+  SHD: { MANA_REGEN: 1 },
+  DRU: { MANA_REGEN: 2 },
+  MNK: { MANA_REGEN: 0 },
+  BRD: { MANA_REGEN: 0 },
+  ROG: { MANA_REGEN: 0 },
+  SHM: { MANA_REGEN: 2 },
+  NEC: { MANA_REGEN: 2 },
+  WIZ: { MANA_REGEN: 2 },
+  MAG: { MANA_REGEN: 2 },
+  ENC: { MANA_REGEN: 2 },
+  BST: { MANA_REGEN: 1 },
+  BER: { MANA_REGEN: 0 },
 } as const satisfies Record<ClassCode, Record<AdditionalScoredStat, number>>;
 
 const SCORED_STATS = [
@@ -334,8 +350,8 @@ const SCORED_STATS = [
   "CR",
   "DR",
   "PR",
+  "ATK",
   "MANA_REGEN",
-  "ATTACK",
 ] as const satisfies readonly ScoredStat[];
 
 export type ItemScoreContribution = {
@@ -372,16 +388,32 @@ function numericStat(value: unknown): number {
   return 0;
 }
 
+const STAT_VALUE_READERS = {
+  AC: (item: ItemDetails) => item.ac,
+  HP: (item: ItemDetails) => item.stats?.HP,
+  MANA: (item: ItemDetails) => item.stats?.MANA,
+  STR: (item: ItemDetails) => item.stats?.STR,
+  STA: (item: ItemDetails) => item.stats?.STA,
+  AGI: (item: ItemDetails) => item.stats?.AGI,
+  DEX: (item: ItemDetails) => item.stats?.DEX,
+  WIS: (item: ItemDetails) => item.stats?.WIS,
+  INT: (item: ItemDetails) => item.stats?.INT,
+  CHA: (item: ItemDetails) => item.stats?.CHA,
+  MR: (item: ItemDetails) => item.resists?.MR,
+  FR: (item: ItemDetails) => item.resists?.FR,
+  CR: (item: ItemDetails) => item.resists?.CR,
+  DR: (item: ItemDetails) => item.resists?.DR,
+  PR: (item: ItemDetails) => item.resists?.PR,
+  ATK: (item: ItemDetails) => item.attack ?? item.atk,
+  MANA_REGEN: (item: ItemDetails) => item.manaRegen ?? item.mana_regen,
+} satisfies Record<ScoredStat, (item: ItemDetails) => unknown>;
+
 function getItemStatValue(item: ItemDetails, stat: ScoredStat): number {
-  if (stat === "AC") return numericStat(item.ac);
-  if (stat === "MANA_REGEN") return numericStat(item.manaRegen ?? item.mana_regen);
-  if (stat === "ATTACK") return numericStat(item.attack);
-  if (stat in item.resists) return numericStat(item.resists[stat]);
-  return numericStat(item.stats?.[stat]);
+  return numericStat(STAT_VALUE_READERS[stat](item));
 }
 
 function getStatWeight(classCode: ClassCode, stat: ScoredStat) {
-  if (stat === "MANA_REGEN" || stat === "ATTACK") {
+  if (stat === "MANA_REGEN") {
     return ADDITIONAL_STAT_WEIGHTS[classCode][stat];
   }
 
@@ -390,7 +422,7 @@ function getStatWeight(classCode: ClassCode, stat: ScoredStat) {
 
 export function formatScoredStatLabel(stat: ScoredStat) {
   if (stat === "MANA_REGEN") return "Mana Regen";
-  if (stat === "ATTACK") return "Attack";
+  if (stat === "ATK") return "Attack";
   return stat;
 }
 
@@ -400,6 +432,14 @@ function getItemScoreExplanation(item: ItemDetails, classCode: ClassCode): ItemS
   const contributions = SCORED_STATS.map((stat) => {
     const value = getItemStatValue(item, stat);
     const weight = getStatWeight(classCode, stat);
+    if (
+      stat === "ATK"
+      && value !== 0
+      && weight !== 0
+      && process.env.NEXT_PUBLIC_DEBUG_ITEM_SCORING_ATK === "1"
+    ) {
+      console.log("ATK SCORE", item.name, item.attack ?? item.atk, weight);
+    }
     return {
       stat,
       value,

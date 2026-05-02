@@ -57,6 +57,7 @@ export type ItemDetails = {
   mana_regen?: number | null;
   manaRegen?: number | null;
   endurance_regen?: number | null;
+  atk?: number | null;
   attack?: number | null;
   haste: string | null;
   charges?: number | string | null;

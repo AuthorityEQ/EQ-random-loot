@@ -1,6 +1,6 @@
 export const CLASS_STAT_WEIGHTS = {
   WAR: {
-    AC: 3,
+    AC: 7,
     HP: 3,
     MANA: 0,
     STR: 2,
@@ -38,7 +38,7 @@ export const CLASS_STAT_WEIGHTS = {
   },
 
   PAL: {
-    AC: 3,
+    AC: 7,
     HP: 3,
     MANA: 2,
     STR: 2,
@@ -73,11 +73,11 @@ export const CLASS_STAT_WEIGHTS = {
     DR: 2,
     PR: 2,
     atk: 6,
-    baseDmg: 20,
+    baseDmg: 30,
   },
 
   SHD: {
-    AC: 3,
+    AC: 7,
     HP: 3,
     MANA: 2,
     STR: 2,
@@ -131,7 +131,7 @@ export const CLASS_STAT_WEIGHTS = {
     CR: 3,
     DR: 3,
     PR: 3,
-    atk: 25,
+    ATK: 30,
   },
 
   BRD: {
@@ -169,7 +169,7 @@ export const CLASS_STAT_WEIGHTS = {
     CR: 2,
     DR: 2,
     PR: 2,
-    atk: 6,
+    atk: 30,
   },
 
   SHM: {
@@ -285,7 +285,7 @@ export const CLASS_STAT_WEIGHTS = {
     CR: 2,
     DR: 2,
     PR: 2,
-    atk: 4,
+    atk: 25,
     manaregen: 4,
   },
 };
