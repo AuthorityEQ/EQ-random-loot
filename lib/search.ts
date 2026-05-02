@@ -34,23 +34,37 @@ export type LootDataset = {
   buckets: Bucket[];
 };
 
+export type ItemEffectType = "focus" | "bardMod" | "worn" | "click" | "proc" | "unknown";
+
+export type ItemEffect = {
+  name: string;
+  type: ItemEffectType;
+  description?: string;
+};
+
 export type ItemDetails = {
   name: string;
+  itemId?: string | null;
   slot: string | null;
   ac: number | null;
   damage: number | null;
   delay: number | null;
+  skill?: string | number | null;
+  damage_bonus?: string | number | null;
   stats: Record<string, number | string>;
   resists: Record<string, number | string>;
   hp_regen?: number | null;
   mana_regen?: number | null;
+  manaRegen?: number | null;
   endurance_regen?: number | null;
+  attack?: number | null;
   haste: string | null;
   charges?: number | string | null;
   worn_effects: string[];
   focus_effects: string[];
   click_effects: string[];
   proc_effects: string[];
+  effects?: ItemEffect[];
   required_level: number | null;
   recommended_level: number | null;
   classes: string[];
@@ -58,11 +72,23 @@ export type ItemDetails = {
   weight: number | null;
   size: string | null;
   item_type?: string | null;
+  itemType?: string | null;
+  weaponType?: "1H" | "2H" | "shield" | "ranged" | "other" | null;
+  isTwoHanded?: boolean | null;
   stackable?: boolean | null;
   weight_reduction?: string | null;
   capacity?: number | null;
   size_capacity?: string | null;
+  quest?: boolean | null;
+  placeable?: boolean | null;
+  augmentation?: Array<{
+    slot: number;
+    type: number;
+    description: string;
+  }>;
   iconPath?: string | null;
+  icon?: string | null;
+  icon_url?: string | null;
   lore: boolean | null;
   magic: boolean | null;
   no_drop: boolean | null;
@@ -76,6 +102,24 @@ export type ItemDetails = {
   duplicate_name_risk?: boolean;
   parsing_warnings?: string[];
   expansion: string;
+  acquisitionType?: "quest" | string;
+  sourceNpcName?: string;
+  sourceNpcId?: string;
+  raidBucket?: number;
+  sourceItemName?: string;
+  sourceItemId?: string;
+  questId?: string;
+  questName?: string;
+  turnInNpcName?: string;
+  questSources?: Array<{
+    sourceNpcName?: string;
+    sourceNpcId?: string;
+    sourceItemName: string;
+    sourceItemId?: string;
+    questId?: string;
+    questName?: string;
+    turnInNpcName?: string;
+  }>;
 };
 
 export type ItemDetailsMap = Record<string, ItemDetails>;

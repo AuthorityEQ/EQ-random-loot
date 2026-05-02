@@ -56,8 +56,11 @@ export async function generateMetadata({
     .filter(Boolean)
     .join(". ");
 
-  const iconUrl = details?.iconPath
-    ? `https://frostreaver.com${details.iconPath}`
+  const itemIconUrl = details?.iconPath ?? details?.icon ?? details?.icon_url;
+  const iconUrl = itemIconUrl
+    ? itemIconUrl.startsWith("http")
+      ? itemIconUrl
+      : `https://frostreaver.com${itemIconUrl}`
     : undefined;
 
   return {

@@ -116,12 +116,13 @@ function truncateList(items: string[], max: number): string {
   return `${items.slice(0, max).join(", ")} … and ${items.length - max} more`;
 }
 
-/** Return the item's best thumbnail URL from its iconPath, or undefined. */
+/** Return the item's best thumbnail URL from its iconPath/icon URL, or undefined. */
 function itemThumbnail(baseUrl: string, details: ItemDetailsMap[string] | undefined): string | undefined {
-  if (!details || !details.iconPath) return undefined;
-  // iconPath is relative like "/icons/foo.png"; make it absolute
-  if (details.iconPath.startsWith("http")) return details.iconPath;
-  return `${baseUrl}${details.iconPath}`;
+  const iconUrl = details?.iconPath ?? details?.icon ?? details?.icon_url;
+  if (!iconUrl) return undefined;
+  // iconPath is relative like "/icons/foo.png"; make it absolute.
+  if (iconUrl.startsWith("http")) return iconUrl;
+  return `${baseUrl}${iconUrl}`;
 }
 
 // ---------------------------------------------------------------------------

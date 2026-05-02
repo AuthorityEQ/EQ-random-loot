@@ -6,6 +6,7 @@ import { ItemIcon } from "@/components/ItemIcon";
 import { useItemPreview } from "@/components/ItemPreviewProvider";
 import confidenceData from "@/data/loot-confidence.json";
 import { DEFAULT_CONFIDENCE, type ConfidenceMetadata } from "@/lib/confidence";
+import { itemHasFocusEffect } from "@/lib/item-effects";
 import type { Bucket, ItemDetails } from "@/lib/search";
 
 type SharedPoolSectionProps = {
@@ -65,6 +66,7 @@ export function SharedPoolSection({
                   <span>{itemName}</span>
                 </span>
                 <span className="loot-item-actions">
+                  {itemHasFocusEffect(details) ? <span className="loot-focus-badge">Focus</span> : null}
                   {droppedBy.length > 1 ? (
                     <span className="shared-pool-dropped-by" title={droppedBy.join(", ")}>
                       ×{droppedBy.length}

@@ -4,14 +4,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const links = [
-  { href: "/", label: "Home" },
-  { href: "/loot", label: "Group Named" },
-  { href: "/raids", label: "Raid Bosses" },
-  { href: "/spells", label: "Spells" },
-  { href: "/crafting", label: "Crafting" },
-  { href: "/factions", label: "Factions" },
-  { href: "/epics", label: "Epic Quests" },
-  { href: "/favorites", label: "Favorites" },
+  { href: "/", label: "Frostreaver" },
+  { href: "/normal-tlp", label: "Normal TLP" },
+  { href: "/other", label: "Other" },
 ];
 
 function isActive(pathname: string, href: string) {

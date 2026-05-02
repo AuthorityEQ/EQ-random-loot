@@ -1,4 +1,6 @@
-import type { ItemDetails } from "@/lib/search";
+import { effectTypeLabel, getItemEffects, type NormalizedItemEffect } from "@/lib/item-effects";
+import { getQuestRewardsForSourceItem, getQuestSourceItemsForRewardItem, type QuestRewardMapping } from "@/lib/quest-rewards";
+import type { ItemDetails, ItemEffectType } from "@/lib/search";
 import { Fragment } from "react";
 
 type EqItemInspectProps = {
@@ -30,6 +32,8 @@ type OptionalInspectFields = {
   skill?: string | number | null;
   damage_bonus?: string | number | null;
   dmg_bonus?: string | number | null;
+  manaRegen?: number | null;
+  attack?: number | null;
   fire_damage?: string | number | null;
   cold_damage?: string | number | null;
   magic_damage?: string | number | null;
@@ -42,6 +46,10 @@ type OptionalInspectFields = {
 
 function hasValue(value: unknown) {
   return value !== null && value !== undefined && value !== "" && !(Array.isArray(value) && value.length === 0);
+}
+
+function hasNonZeroValue(value: unknown) {
+  return hasValue(value) && value !== 0 && value !== "0";
 }
 
 function formatValue(value: number | string) {
@@ -124,44 +132,34 @@ function uniqueEffects(label: string, effects: string[], combat = false) {
 }
 
 function collectEffectSections(details: ItemDetails) {
-  const seen = new Set<string>();
-  const sections = [
-    { label: "Worn Effect", effects: details.worn_effects, combat: false },
-    { label: "Focus Effect", effects: details.focus_effects, combat: false },
-    { label: "Effect", effects: details.click_effects, combat: false },
-    { label: "Effect", effects: details.proc_effects, combat: true },
-  ];
+  const order: ItemEffectType[] = ["focus", "bardMod", "worn", "click", "proc", "unknown"];
+  const grouped = new Map<ItemEffectType, NormalizedItemEffect[]>();
 
-  return sections.map((section) => ({
-    ...section,
-    effects: section.effects.filter((effect) => {
-      const normalized = normalizeEffect(effect, section.combat);
-      const key = normalized.display.toLowerCase().replace(/\s+/g, " ").trim();
-      if (seen.has(key)) return false;
-      seen.add(key);
-      return true;
-    }),
+  for (const effect of getItemEffects(details)) {
+    grouped.set(effect.type, [...(grouped.get(effect.type) ?? []), effect]);
+  }
+
+  return order.map((type) => ({
+    label: effectTypeLabel(type),
+    effects: grouped.get(type) ?? [],
   }));
 }
 
-function EffectLine({ label, effects, combat = false }: { label: string; effects: string[]; combat?: boolean }) {
+function EffectLine({ label, effects }: { label: string; effects: NormalizedItemEffect[] }) {
   if (effects.length === 0) return null;
 
   return (
     <>
-      {uniqueEffects(label, effects, combat).map((effect) => {
-        const normalized = normalizeEffect(effect, combat);
-
-        return (
-          <div className="eq-effect-entry" key={`${label}-${effect}`}>
-            <p className="eq-effect-line">
-              <span>{label}: </span>
-              <strong>{normalized.display}</strong>
-            </p>
-            {normalized.requiredLevel ? <p>Required Level: {normalized.requiredLevel}</p> : null}
-          </div>
-        );
-      })}
+      {effects.map((effect) => (
+        <div className="eq-effect-entry" key={`${label}-${effect.name}-${effect.description ?? ""}`}>
+          <p className="eq-effect-line">
+            <span>{label}: </span>
+            <strong>{effect.name}</strong>
+          </p>
+          {effect.description ? <p className="eq-effect-description">{effect.description}</p> : null}
+          {effect.requiredLevel ? <p>Required Level: {effect.requiredLevel}</p> : null}
+        </div>
+      ))}
     </>
   );
 }
@@ -226,6 +224,65 @@ function AttributeResistMatrix({
   );
 }
 
+function formatClasses(classes?: string[]) {
+  return classes && classes.length > 0 ? classes.join(" ") : null;
+}
+
+function QuestRewardBlock({
+  compact,
+  mappings,
+}: {
+  compact: boolean;
+  mappings: QuestRewardMapping[];
+}) {
+  if (mappings.length === 0) return null;
+
+  return (
+    <div className="eq-quest-rewards-block">
+      <p className="eq-quest-heading">{compact ? "Can be turned in for" : "Quest Rewards"}</p>
+      <ul className="eq-quest-reward-list">
+        {mappings.map((mapping) => (
+          <li key={`${mapping.sourceItemId}-${mapping.rewardItemId}-${mapping.questName}`}>
+            <strong>{mapping.rewardItemName}</strong>
+            <span>
+              {[mapping.rewardSlot ? `Slot: ${mapping.rewardSlot}` : null, formatClasses(mapping.rewardClasses) ? `Class: ${formatClasses(mapping.rewardClasses)}` : null]
+                .filter(Boolean)
+                .join(" · ")}
+            </span>
+            <small>
+              {[mapping.questName, mapping.questId ? `Quest ${mapping.questId}` : null, mapping.sourceNpcName ? `Source: ${mapping.sourceNpcName}` : null].filter(Boolean).join(" · ")}
+            </small>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+function QuestSourceBlock({
+  compact,
+  mappings,
+}: {
+  compact: boolean;
+  mappings: QuestRewardMapping[];
+}) {
+  if (mappings.length === 0) return null;
+
+  return (
+    <div className="eq-quest-rewards-block">
+      <p className="eq-quest-heading">{compact ? "Quest reward from" : "Quest Source"}</p>
+      <ul className="eq-quest-reward-list">
+        {mappings.map((mapping) => (
+          <li key={`${mapping.rewardItemId}-${mapping.sourceItemId}-${mapping.questName}`}>
+            <strong>{mapping.sourceItemName ?? (mapping.questId ? `Quest ${mapping.questId}` : "Quest reward")}</strong>
+            <span>{[mapping.questId ? `Source: Quest ${mapping.questId}` : null, mapping.sourceNpcName, mapping.questName].filter(Boolean).join(" · ")}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 export function EqItemInspect({ itemName, details, compact = false }: EqItemInspectProps) {
   const optional = details as ItemDetails & OptionalInspectFields;
   const flags = [
@@ -257,8 +314,9 @@ export function EqItemInspect({ itemName, details, compact = false }: EqItemInsp
     ["HP", details.stats.HP],
     ["Mana", details.stats.MANA],
     ["End", details.stats.END],
+    ["Attack", hasNonZeroValue(optional.attack) ? optional.attack : null],
     ["HP Regen", details.hp_regen],
-    ["Mana Regen", details.mana_regen],
+    ["Mana Regen", hasNonZeroValue(optional.manaRegen ?? details.mana_regen) ? optional.manaRegen ?? details.mana_regen : null],
     ["End Regen", details.endurance_regen],
   ];
   const rightRows: Array<[string, number | string | null | undefined]> = [
@@ -281,16 +339,16 @@ export function EqItemInspect({ itemName, details, compact = false }: EqItemInsp
   ];
   const attributeRows = Object.entries(attributeLabels).map(([key, label]) => [label, details.stats[key]] as const);
   const resistRows = Object.entries(resistLabels).map(([key, label]) => [label, details.resists[key]] as const);
-  const hasEffects = details.worn_effects.length > 0
-    || details.focus_effects.length > 0
-    || details.click_effects.length > 0
-    || details.proc_effects.length > 0;
   const effectSections = collectEffectSections(details);
+  const hasEffects = effectSections.some((section) => section.effects.length > 0);
+  const questRewards = getQuestRewardsForSourceItem(itemName);
+  const questSources = getQuestSourceItemsForRewardItem(itemName);
+  const hasQuestMappings = questRewards.length > 0 || questSources.length > 0;
   const itemNameClass = details.no_drop ? "eq-item-name is-nodrop" : details.magic ? "eq-item-name is-magic" : "eq-item-name";
   const iconUrl = optional.iconPath ?? optional.icon_url ?? optional.icon;
   const inspectClass = [
     "eq-inspect-window",
-    hasWeaponStats || hasEffects ? "is-detailed" : null,
+    hasWeaponStats || hasEffects || hasQuestMappings ? "is-detailed" : null,
     compact ? "is-compact" : null,
   ].filter(Boolean).join(" ");
 
@@ -326,7 +384,7 @@ export function EqItemInspect({ itemName, details, compact = false }: EqItemInsp
         {hasEffects ? (
           <div className="eq-effects-block">
             {effectSections.map((section) => (
-              <EffectLine combat={section.combat} effects={section.effects} key={`${section.label}-${section.combat}`} label={section.label} />
+              <EffectLine effects={section.effects} key={section.label} label={section.label} />
             ))}
             {hasValue(details.charges) ? (
               <p className="eq-effect-line">
@@ -336,6 +394,9 @@ export function EqItemInspect({ itemName, details, compact = false }: EqItemInsp
             ) : null}
           </div>
         ) : null}
+
+        <QuestRewardBlock compact={compact} mappings={questRewards} />
+        <QuestSourceBlock compact={compact} mappings={questSources} />
       </div>
     </section>
   );

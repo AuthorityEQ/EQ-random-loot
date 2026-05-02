@@ -57,12 +57,12 @@ export function SearchBox({ results, value, onChange, onSelectResult }: SearchBo
 
   return (
     <label className="search" ref={searchRef}>
-      <span>Items, Mobs</span>
+      <span>Items, Mobs, Effects</span>
       <input
         aria-activedescendant={showResults ? `search-result-${activeIndex}` : undefined}
         aria-expanded={showResults}
         aria-controls="search-typeahead-results"
-        aria-label="Search items and mobs"
+        aria-label="Search items, mobs, and item effects"
         autoComplete="off"
         onBlur={() => {
           window.setTimeout(() => setIsOpen(false), 120);
@@ -95,7 +95,7 @@ export function SearchBox({ results, value, onChange, onSelectResult }: SearchBo
             }
           }
         }}
-        placeholder="Item or mob"
+        placeholder="Item, mob, or effect"
         role="combobox"
         type="search"
         value={value}

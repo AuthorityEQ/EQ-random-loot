@@ -25,11 +25,15 @@ type ItemDetails = {
   delay: number | null;
   skill?: string | null;
   damage_bonus?: number | null;
+  weaponType?: "1H" | "2H" | "shield" | "ranged" | "other" | null;
+  isTwoHanded?: boolean | null;
   stats: Record<string, number | string>;
   resists: Record<string, number | string>;
   hp_regen?: number | null;
   mana_regen?: number | null;
+  manaRegen?: number | null;
   endurance_regen?: number | null;
+  attack?: number | null;
   haste: string | null;
   charges?: number | string | null;
   worn_effects: string[];
@@ -43,6 +47,7 @@ type ItemDetails = {
   weight: number | null;
   size: string | null;
   item_type?: string | null;
+  itemType?: string | null;
   stackable?: boolean | null;
   weight_reduction?: string | null;
   capacity?: number | null;
@@ -249,6 +254,14 @@ function readList(pattern: RegExp, text: string) {
     .filter(Boolean);
 }
 
+const classTokenAliases = new Map([
+  ["BERSERKER", "BER"],
+]);
+
+function normalizeClassList(values: string[]) {
+  return values.map((value) => classTokenAliases.get(value.toUpperCase()) ?? value);
+}
+
 function readTableValue(label: string, html: string) {
   const pattern = new RegExp(`<tr><th[^>]*>[\\s\\S]*?${label.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}[\\s\\S]*?<\\/th><td[^>]*>([\\s\\S]*?)<\\/td><\\/tr>`, "i");
   const match = html.match(pattern);
@@ -312,7 +325,7 @@ function parseStatBlock(text: string) {
 }
 
 function readRegen(label: "HP" | "Mana" | "Endurance", text: string) {
-  return readNumber(new RegExp(`\\b${label}\\s+Regen\\s*:?\\s*([+-]?\\d+)`, "i"), text);
+  return readNumber(new RegExp(`\\b${label}\\s+(?:Regen|Regeneration)\\s*:?\\s*([+-]?\\d+)`, "i"), text);
 }
 
 function readEffects(label: string, text: string) {
@@ -327,7 +340,7 @@ function readEffects(label: string, text: string) {
   );
 }
 
-function hasAnyCoreStats(item: Pick<ItemDetails, "slot" | "ac" | "damage" | "delay" | "stats" | "resists" | "haste" | "worn_effects" | "focus_effects" | "click_effects" | "proc_effects" | "classes" | "races" | "weight" | "size" | "item_type" | "weight_reduction" | "capacity" | "size_capacity">) {
+function hasAnyCoreStats(item: Pick<ItemDetails, "slot" | "ac" | "damage" | "delay" | "stats" | "resists" | "attack" | "haste" | "worn_effects" | "focus_effects" | "click_effects" | "proc_effects" | "classes" | "races" | "weight" | "size" | "item_type" | "weight_reduction" | "capacity" | "size_capacity">) {
   return Boolean(
     item.slot
       || item.ac !== null
@@ -335,6 +348,7 @@ function hasAnyCoreStats(item: Pick<ItemDetails, "slot" | "ac" | "damage" | "del
       || item.delay !== null
       || Object.keys(item.stats).length
       || Object.keys(item.resists).length
+      || item.attack
       || item.haste
       || item.worn_effects.length
       || item.focus_effects.length
@@ -349,6 +363,19 @@ function hasAnyCoreStats(item: Pick<ItemDetails, "slot" | "ac" | "damage" | "del
       || item.capacity !== null
       || item.size_capacity,
   );
+}
+
+function inferWeaponType(item: Pick<ItemDetails, "name" | "slot" | "skill" | "item_type" | "itemType">): ItemDetails["weaponType"] {
+  if (/\bbuckler\b/i.test(item.name ?? "")) return "shield";
+  const slot = String(item.slot ?? "").toUpperCase();
+  const combined = `${item.skill ?? ""} ${item.item_type ?? ""} ${item.itemType ?? ""}`.replace(/\s+/g, " ");
+
+  if (/\bshield\b/i.test(combined)) return "shield";
+  if (/\b(?:2H|2HB|2HS|2HP|2\s*H|two[-\s]?hand(?:ed)?)\b/i.test(combined)) return "2H";
+  if (/\b(?:1H|1HB|1HS|1HP|1\s*H|one[-\s]?hand(?:ed)?)\b/i.test(combined)) return "1H";
+  if (slot.includes("RANGE") || slot.includes("RANGED")) return "ranged";
+  if (slot.includes("PRIMARY")) return "other";
+  return null;
 }
 
 function isAcceptedEra(expansion: string | null) {
@@ -395,16 +422,18 @@ function parseItemPage(
   const baseItem = {
     name: parsedName || itemName,
     slot: readString(/\bSlot:\s*([^\n]+)/i, text),
-    ac: readNumber(/\bAC:\s*(\d+)/i, text),
+    ac: readNumber(/\bAC:\s*([+-]?\d+)/i, text),
     damage: readNumber(/\b(?:DMG|Damage):\s*(\d+)/i, text),
     delay: readNumber(/\bDelay:\s*(\d+)/i, text),
     skill: readString(/\bSkill:\s*([^\n]*?)(?:\s+Atk Delay:|$)/i, text),
-    damage_bonus: readNumber(/\b(?:Dmg Bon|Damage Bonus):\s*(\d+)/i, text),
+    damage_bonus: readNumber(/\b(?:Dmg Bon|Damage Bonus):\s*([+-]?\d+)/i, text),
     stats,
     resists,
     hp_regen: readRegen("HP", text),
     mana_regen: readRegen("Mana", text),
+    manaRegen: readRegen("Mana", text),
     endurance_regen: readRegen("Endurance", text),
+    attack: readNumber(/\bAttack:\s*([+-]?\d+)/i, text),
     haste,
     charges: readCharges(text),
     worn_effects: readEffects("Worn", text),
@@ -413,7 +442,7 @@ function parseItemPage(
     proc_effects: Array.from(new Set(readEffects("Combat Effects", text).concat(readEffects("Proc", text)))),
     required_level: readNumber(/\bRequired level(?: of)?:\s*(\d+)/i, text),
     recommended_level: readNumber(/\bRecommended level(?: of)?:\s*(\d+)/i, text),
-    classes: readList(/\bClass(?:es)?:\s*([^\n]+)/i, text),
+    classes: normalizeClassList(readList(/\bClass(?:es)?:\s*([^\n]+)/i, text)),
     races: readList(/\bRace(?:s)?:\s*([^\n]+)/i, text),
     weight: readNumber(/\bWT:\s*(\d+(?:\.\d+)?)/i, text),
     size: readString(/\bSize:\s*([^\n]+)/i, text),
@@ -425,15 +454,17 @@ function parseItemPage(
     weight_reduction: readString(/\bWeight Reduction:\s*([+-]?\d+%)/i, text),
     capacity: readNumber(/\bCapacity:\s*(\d+)/i, text),
     size_capacity: readString(/\bSize Capacity:\s*([^\n]+)/i, text),
-    lore: /\bLORE ITEM\b/i.test(text) ? true : null,
-    magic: /\bMAGIC ITEM\b/i.test(text) ? true : null,
-    no_drop: /\bNO DROP\b/i.test(text) ? true : null,
+    lore: /\bLORE(?:\s+ITEM)?\b/i.test(text) ? true : null,
+    magic: /\bMAGIC(?:\s+ITEM)?\b/i.test(text) ? true : null,
+    no_drop: /\b(?:NO\s+DROP|NO\s+TRADE)\b/i.test(text) ? true : null,
     prestige: /\bPRESTIGE\b/i.test(text) ? true : null,
     aug_slots: [],
     iconPath: null,
     sources: [{ name: "Allakhazam" as const, url }],
     expansion: targetExpansion,
   };
+  const weaponType = inferWeaponType(baseItem);
+  const itemType = weaponType === "shield" ? "shield" : null;
   const qualityFlags = makeQualityFlags(baseItem, matchConfidence, duplicateNameRisk, warnings);
   const finalConfidence: MatchConfidence = qualityFlags.missing_core_stats || duplicateNameRisk || warnings.length || matchConfidence !== "exact_match"
     ? matchConfidence === "not_found" ? "not_found" : "needs_review"
@@ -441,6 +472,9 @@ function parseItemPage(
 
   return {
     ...baseItem,
+    itemType,
+    weaponType,
+    isTwoHanded: weaponType === "2H" ? true : null,
     confidence: finalConfidence,
     match_notes: matchNotes,
     ...qualityFlags,
@@ -457,11 +491,15 @@ function notFoundItem(itemName: string, notes: string[]): ItemDetails {
     delay: null,
     skill: null,
     damage_bonus: null,
+    weaponType: null,
+    isTwoHanded: null,
     stats: {},
     resists: {},
     hp_regen: null,
     mana_regen: null,
+    manaRegen: null,
     endurance_regen: null,
+    attack: null,
     haste: null,
     charges: null,
     worn_effects: [],

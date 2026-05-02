@@ -177,6 +177,9 @@ export default function FavoritesPage() {
           <p className="subhead">A color-coded farming checklist grouped by expansion and level range.</p>
         </div>
         <div className="favorites-controls">
+          <Link className="filter-button favorites-back-button" href="/loot">
+            ← Back to Loot Search
+          </Link>
           <div className={favoritesLocked ? "favorites-lock is-locked" : "favorites-lock is-unlocked"} aria-label="Favorites lock">
             <span>{favoritesLocked ? "Favorites locked" : "Favorites unlocked"}</span>
             <button

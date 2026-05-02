@@ -243,6 +243,20 @@ summary span:last-child {
   white-space: nowrap;
 }
 
+.loot-focus-badge {
+  background: color-mix(in srgb, #8fd9ff 15%, var(--panel-soft));
+  border: 1px solid color-mix(in srgb, #8fd9ff 50%, var(--line));
+  border-radius: 999px;
+  color: #c9f0ff;
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  padding: 5px 7px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
 .loot-item-icon {
   background: #10141a;
   border: 1px solid rgba(255, 255, 255, 0.18);

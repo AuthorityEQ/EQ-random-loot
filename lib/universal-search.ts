@@ -23,6 +23,7 @@ const typeOrder = new Map<UniversalSearchResult["type"], number>([
   ["item", 0],
   ["mob", 1],
 ]);
+type MatchRank = NonNullable<ReturnType<typeof matchRank>>;
 
 function normalize(value: string) {
   return value.trim().toLowerCase();
@@ -58,6 +59,7 @@ export function getUniversalSearchResults(
   query: string,
   itemIsVisible: (itemName: string) => boolean = () => true,
   getItemStatDisplay: (itemName: string) => string | null = () => null,
+  getItemSearchText: (itemName: string) => string[] = () => [],
 ) {
   const normalizedQuery = normalize(query);
   if (normalizedQuery.length < 2) {
@@ -83,8 +85,17 @@ export function getUniversalSearchResults(
 
   const items = Array.from(itemMap.entries())
     .map(([itemName, itemBuckets]): RankedResult | null => {
-      const rank = matchRank(itemName, normalizedQuery);
-      return rank === null ? null : {
+      const itemNameRank = matchRank(itemName, normalizedQuery);
+      const secondaryRanks = getItemSearchText(itemName)
+        .map((text) => matchRank(text, normalizedQuery))
+        .filter((rank): rank is MatchRank => rank !== null)
+        .map((rank) => rank + 1);
+      const candidateRanks = itemNameRank === null ? secondaryRanks : [itemNameRank, ...secondaryRanks];
+      if (candidateRanks.length === 0) return null;
+
+      const rank = Math.min(...candidateRanks);
+
+      return {
         type: "item",
         label: itemName,
         itemName,

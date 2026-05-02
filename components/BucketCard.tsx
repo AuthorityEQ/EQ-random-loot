@@ -8,6 +8,7 @@ import { useItemPreview } from "@/components/ItemPreviewProvider";
 import { ConfidenceBadge } from "@/components/ConfidenceBadge";
 import confidenceData from "@/data/loot-confidence.json";
 import { DEFAULT_CONFIDENCE, type ConfidenceMetadata } from "@/lib/confidence";
+import { itemHasFocusEffect } from "@/lib/item-effects";
 
 type BucketCardProps = {
   bucket: Bucket;
@@ -135,6 +136,7 @@ export function BucketCard({ bucket, visibleLoot, query = "", showAllLoot = fals
                     <span>{item}</span>
                   </span>
                   <span className="loot-item-actions">
+                    {itemHasFocusEffect(details) ? <span className="loot-focus-badge">Focus</span> : null}
                     {statDisplay ? <span className="loot-stat-value">{statDisplay}</span> : null}
                     {(meta.tier === "verified" || meta.tier === "high") && (
                       <ConfidenceBadge compact meta={meta} />

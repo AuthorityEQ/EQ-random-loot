@@ -585,6 +585,7 @@
     "mana_regen": null,
     "endurance_regen": null,
     "item_type": "Shield",
+    "itemType": "shield",
     "stackable": false,
     "weight_reduction": null,
     "capacity": null,
@@ -2638,6 +2639,7 @@
     "mana_regen": null,
     "endurance_regen": null,
     "item_type": "Shield",
+    "itemType": "shield",
     "stackable": false,
     "weight_reduction": null,
     "capacity": null,
@@ -19207,25 +19209,22 @@
   "Loam Encrusted Cloak": {
     "name": "Loam Encrusted Cloak",
     "slot": "BACK",
-    "ac": 16,
+    "ac": 5,
     "damage": null,
     "delay": null,
     "stats": {
-      "STR": 12,
-      "STA": 12,
-      "CHA": 12,
-      "WIS": 12,
-      "INT": 12,
-      "AGI": 12,
-      "HP": 215,
-      "MANA": 215
+      "STR": 2,
+      "CHA": 3,
+      "INT": 1,
+      "AGI": 8,
+      "MANA": 5
     },
     "resists": {
-      "FR": 5,
-      "DR": 15,
-      "CR": 10,
-      "MR": 15,
-      "PR": 15
+      "FR": 3,
+      "DR": 3,
+      "CR": 3,
+      "MR": 3,
+      "PR": 3
     },
     "haste": null,
     "worn_effects": [],
@@ -19235,19 +19234,21 @@
     "required_level": null,
     "recommended_level": null,
     "classes": [
-      "CLR",
-      "DRU",
-      "SHM",
       "NEC",
       "WIZ",
       "MAG",
       "ENC"
     ],
     "races": [
-      "ALL"
+      "HUM",
+      "ERU",
+      "HIE",
+      "DEF",
+      "GNM",
+      "IKS"
     ],
-    "weight": 1.1,
-    "size": "SMALL",
+    "weight": 0.5,
+    "size": "MEDIUM",
     "lore": true,
     "magic": null,
     "no_drop": null,
@@ -24481,7 +24482,8 @@
     "capacity": null,
     "size_capacity": null,
     "skill": "2H Blunt",
-    "damage_bonus": null
+    "damage_bonus": null,
+    "icon": "https://everquest.allakhazam.com/pgfx/item_602.png"
   },
   "Bone Amulet of Blade Turning": {
     "name": "Bone Amulet of Blade Turning",
@@ -31251,9 +31253,11 @@
   "Hammered Golden Hoop": {
     "name": "Hammered Golden Hoop",
     "slot": "EAR",
-    "ac": null,
+    "ac": -15,
     "damage": null,
     "delay": null,
+    "skill": null,
+    "damage_bonus": null,
     "stats": {
       "STA": 8,
       "HP": 75
@@ -31261,7 +31265,13 @@
     "resists": {
       "MR": 5
     },
+    "hp_regen": null,
+    "mana_regen": null,
+    "manaRegen": null,
+    "endurance_regen": null,
+    "attack": null,
     "haste": null,
+    "charges": null,
     "worn_effects": [],
     "focus_effects": [],
     "click_effects": [],
@@ -31276,11 +31286,17 @@
     ],
     "weight": 0.1,
     "size": "TINY",
+    "item_type": "Jewelry",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
     "lore": true,
-    "magic": null,
+    "magic": true,
     "no_drop": null,
     "prestige": null,
     "aug_slots": [],
+    "iconPath": "/item-icons/hammered-golden-hoop-6886.png",
     "sources": [
       {
         "name": "Allakhazam",
@@ -31290,23 +31306,13 @@
     "expansion": "Kunark",
     "confidence": "exact_match",
     "match_notes": [
-      "Manually corrected and marked clean."
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=6886.",
+      "Exact URL page is tagged as Expansion: Ruins of Kunark."
     ],
     "missing_core_stats": false,
     "duplicate_name_risk": false,
     "parsing_warnings": [],
-    "match_confidence": "exact_match",
-    "iconPath": "/item-icons/hammered-golden-hoop-6886.png",
-    "hp_regen": null,
-    "mana_regen": null,
-    "endurance_regen": null,
-    "item_type": "Jewelry",
-    "stackable": false,
-    "weight_reduction": null,
-    "capacity": null,
-    "size_capacity": null,
-    "skill": null,
-    "damage_bonus": null
+    "match_confidence": "exact_match"
   },
   "Hand of the Reaper": {
     "name": "Hand of the Reaper",
@@ -41607,7 +41613,9 @@
     "iconPath": "/item-icons/spirit-wracked-cord-12318.png",
     "hp_regen": 2,
     "mana_regen": null,
+    "manaRegen": null,
     "endurance_regen": null,
+    "attack": 10,
     "item_type": "Armor",
     "stackable": false,
     "weight_reduction": null,
@@ -64270,40 +64278,22 @@
   },
   "Crystalline Spear": {
     "name": "Crystalline Spear",
-    "slot": "PRIMARY SECONDARY",
-    "ac": 63,
-    "damage": 81,
-    "delay": 19,
+    "itemId": "752",
+    "slot": "PRIMARY",
+    "ac": null,
+    "damage": 13,
+    "delay": 30,
     "skill": "1H Piercing",
-    "damage_bonus": null,
-    "stats": {
-      "STR": 35,
-      "DEX": 41,
-      "STA": 38,
-      "CHA": 25,
-      "WIS": 42,
-      "INT": 5,
-      "AGI": 15,
-      "HP": 1988,
-      "MANA": 1948,
-      "END": 1943
-    },
-    "resists": {
-      "FR": 61,
-      "DR": 45,
-      "CR": 87,
-      "MR": 56,
-      "PR": 55
-    },
-    "hp_regen": 7,
+    "damage_bonus": 35,
+    "stats": {},
+    "resists": {},
+    "hp_regen": null,
     "mana_regen": null,
     "endurance_regen": null,
     "haste": null,
     "worn_effects": [],
     "focus_effects": [],
-    "click_effects": [
-      "Burst of Ice III (Combat, Casting Time: Instant)"
-    ],
+    "click_effects": [],
     "proc_effects": [],
     "required_level": null,
     "recommended_level": null,
@@ -64315,40 +64305,36 @@
       "BST"
     ],
     "races": [
-      "ALL",
-      "except",
-      "ERU",
-      "HIE"
+      "ALL"
     ],
-    "weight": 3.5,
+    "weight": 6.8,
     "size": "MEDIUM",
     "item_type": "1H Piercing",
+    "weaponType": "1H",
+    "isTwoHanded": false,
     "stackable": false,
     "weight_reduction": null,
     "capacity": null,
     "size_capacity": null,
-    "lore": true,
-    "magic": null,
-    "no_drop": null,
+    "lore": false,
+    "magic": false,
+    "no_drop": false,
     "prestige": null,
     "aug_slots": [],
-    "iconPath": "/item-icons/crystalline-spear-97523.png",
+    "iconPath": "/item-icons/crystalline-spear-752.png",
     "sources": [
       {
         "name": "Allakhazam",
-        "url": "https://everquest.allakhazam.com/db/item.html?item=97523"
+        "url": "https://everquest.allakhazam.com/db/item.html?item=752"
       }
     ],
     "expansion": "Classic",
-    "confidence": "needs_review",
-    "match_notes": [
-      "Multiple exact-name ZAM item pages found: https://everquest.allakhazam.com/db/item.html?item=97523; https://everquest.allakhazam.com/db/item.html?item=85522 (Seeds of Destruction); https://everquest.allakhazam.com/db/item.html?item=752",
-      "No exact-name ZAM candidate found for \"Crystalline Spear\"; selected the highest-scoring possible match."
-    ],
+    "confidence": "exact_match",
+    "match_notes": [],
     "missing_core_stats": false,
-    "duplicate_name_risk": true,
+    "duplicate_name_risk": false,
     "parsing_warnings": [],
-    "match_confidence": "needs_review"
+    "match_confidence": "exact_match"
   },
   "Dagarn's Tail": {
     "name": "Dagarn",
@@ -73981,88 +73967,9 @@
     "parsing_warnings": [],
     "match_confidence": "exact_match"
   },
-  "McVaxius' Horn of War": {
-    "name": "McVaxius` Horn of War",
-    "slot": "SECONDARY",
-    "ac": 103,
-    "damage": null,
-    "delay": null,
-    "skill": null,
-    "damage_bonus": null,
-    "stats": {
-      "STR": 31,
-      "DEX": 31,
-      "STA": 32,
-      "CHA": 26,
-      "WIS": 14,
-      "INT": 16,
-      "AGI": 30,
-      "HP": 1935,
-      "MANA": 1804,
-      "END": 1905
-    },
-    "resists": {
-      "FR": 80,
-      "DR": 36,
-      "CR": 39,
-      "MR": 58,
-      "PR": 76
-    },
-    "hp_regen": 5,
-    "mana_regen": null,
-    "endurance_regen": null,
-    "haste": null,
-    "worn_effects": [],
-    "focus_effects": [
-      "Brass Resonance 34"
-    ],
-    "click_effects": [
-      "Instrumental Combat (Worn, Casting Time: Instant)"
-    ],
-    "proc_effects": [],
-    "required_level": null,
-    "recommended_level": null,
-    "classes": [
-      "BRD"
-    ],
-    "races": [
-      "HUM",
-      "ELF",
-      "HEF",
-      "VAH",
-      "DRK"
-    ],
-    "weight": 1.7,
-    "size": "MEDIUM",
-    "item_type": "Misc",
-    "stackable": false,
-    "weight_reduction": null,
-    "capacity": null,
-    "size_capacity": null,
-    "lore": true,
-    "magic": null,
-    "no_drop": null,
-    "prestige": null,
-    "aug_slots": [],
-    "iconPath": "/item-icons/mcvaxius-horn-of-war-97557.png",
-    "sources": [
-      {
-        "name": "Allakhazam",
-        "url": "https://everquest.allakhazam.com/db/item.html?item=97557"
-      }
-    ],
-    "expansion": "Classic",
-    "confidence": "needs_review",
-    "match_notes": [
-      "No exact-name ZAM candidate found for \"McVaxius' Horn of War\"; selected the highest-scoring possible match."
-    ],
-    "missing_core_stats": false,
-    "duplicate_name_risk": false,
-    "parsing_warnings": [],
-    "match_confidence": "needs_review"
-  },
   "McVaxius` Horn of War": {
     "name": "McVaxius` Horn of War",
+    "itemId": "2469",
     "slot": "PRIMARY SECONDARY",
     "ac": null,
     "damage": null,
@@ -74080,8 +73987,12 @@
     "endurance_regen": null,
     "haste": null,
     "worn_effects": [],
-    "focus_effects": [
-      "Brass Resonance 14"
+    "focus_effects": [],
+    "effects": [
+      {
+        "name": "Brass Resonance 14",
+        "type": "bardMod"
+      }
     ],
     "click_effects": [],
     "proc_effects": [],
@@ -74096,15 +74007,28 @@
     "weight": 0.6,
     "size": "SMALL",
     "item_type": "Brass Instrument",
+    "weaponType": "other",
+    "isTwoHanded": false,
     "stackable": false,
     "weight_reduction": null,
     "capacity": null,
     "size_capacity": null,
+    "quest": true,
+    "placeable": true,
     "lore": true,
     "magic": null,
     "no_drop": null,
     "prestige": null,
-    "aug_slots": [],
+    "aug_slots": [
+      "Slot 1, Type 7 (General: Group)"
+    ],
+    "augmentation": [
+      {
+        "slot": 1,
+        "type": 7,
+        "description": "General: Group"
+      }
+    ],
     "iconPath": "/item-icons/mcvaxius-horn-of-war-2469.png",
     "sources": [
       {
@@ -74113,15 +74037,13 @@
       }
     ],
     "expansion": "Classic",
-    "confidence": "needs_review",
-    "match_notes": [
-      "Multiple exact-name ZAM item pages found: https://everquest.allakhazam.com/db/item.html?item=2469; https://everquest.allakhazam.com/db/item.html?item=85527 (Seeds of Destruction); https://everquest.allakhazam.com/db/item.html?item=97557; https://everquest.allakhazam.com/db/item.html?item=85383",
-      "No exact-name ZAM candidate found for \"McVaxius` Horn of War\"; selected the highest-scoring possible match."
-    ],
+    "acquisitionType": "quest",
+    "confidence": "exact_match",
+    "match_notes": [],
     "missing_core_stats": false,
-    "duplicate_name_risk": true,
+    "duplicate_name_risk": false,
     "parsing_warnings": [],
-    "match_confidence": "needs_review"
+    "match_confidence": "exact_match"
   },
   "Medal of Deep Thought": {
     "name": "Medal of Deep Thought",
@@ -133889,5 +133811,3333 @@
     "duplicate_name_risk": false,
     "parsing_warnings": [],
     "match_confidence": "exact_match"
+  },
+  "Boots of Deep Thought": {
+    "name": "Boots of Deep Thought",
+    "slot": "FEET",
+    "ac": 20,
+    "damage": null,
+    "delay": null,
+    "skill": null,
+    "damage_bonus": null,
+    "stats": {
+      "STA": 15,
+      "INT": 15,
+      "HP": 65,
+      "MANA": 65
+    },
+    "resists": {
+      "FR": 3,
+      "DR": 3,
+      "CR": 3,
+      "MR": 3,
+      "PR": 3
+    },
+    "hp_regen": 2,
+    "mana_regen": null,
+    "manaRegen": null,
+    "endurance_regen": null,
+    "attack": 10,
+    "haste": null,
+    "charges": null,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "NEC",
+      "WIZ",
+      "MAG",
+      "ENC"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 0,
+    "size": "TINY",
+    "item_type": "Armor",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": true,
+    "magic": true,
+    "no_drop": true,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=6097"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=6097.",
+      "Exact URL page is tagged as Expansion: Scars of Velious."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "acquisitionType": "quest",
+    "sourceNpcName": "Dozekar the Cursed",
+    "sourceNpcId": "6448",
+    "sourceItemName": "Black Tear",
+    "sourceItemId": "15931",
+    "questSources": [
+      {
+        "sourceNpcName": "Dozekar the Cursed",
+        "sourceNpcId": "6448",
+        "sourceItemName": "Black Tear",
+        "sourceItemId": "15931",
+        "questName": "The Second Arcane Test",
+        "turnInNpcName": "Lendiniara the Keeper"
+      },
+      {
+        "sourceNpcName": "Dozekar the Cursed",
+        "sourceNpcId": "6448",
+        "sourceItemName": "Ruby Tear",
+        "sourceItemId": "15928",
+        "questName": "The Second Arcane Test",
+        "turnInNpcName": "Lendiniara the Keeper"
+      }
+    ],
+    "icon": "https://everquest.allakhazam.com/pgfx/item_525.png"
+  },
+  "Boots of Silent Striding": {
+    "name": "Boots of Silent Striding",
+    "slot": "FEET",
+    "ac": 35,
+    "damage": null,
+    "delay": null,
+    "skill": null,
+    "damage_bonus": null,
+    "stats": {
+      "STA": 10,
+      "WIS": 15,
+      "MANA": 50
+    },
+    "resists": {
+      "FR": 3,
+      "DR": 3,
+      "CR": 3,
+      "MR": 3,
+      "PR": 3
+    },
+    "hp_regen": 2,
+    "mana_regen": null,
+    "manaRegen": null,
+    "endurance_regen": null,
+    "attack": 10,
+    "haste": null,
+    "charges": null,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "CLR",
+      "DRU",
+      "SHM"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 0,
+    "size": "TINY",
+    "item_type": "Armor",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": true,
+    "magic": true,
+    "no_drop": true,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=6510"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=6510.",
+      "Exact URL page is tagged as Expansion: Scars of Velious."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "acquisitionType": "quest",
+    "sourceNpcName": "Dozekar the Cursed",
+    "sourceNpcId": "6448",
+    "sourceItemName": "Flame Kissed Tear",
+    "sourceItemId": "15935",
+    "questSources": [
+      {
+        "sourceNpcName": "Dozekar the Cursed",
+        "sourceNpcId": "6448",
+        "sourceItemName": "Flame Kissed Tear",
+        "sourceItemId": "15935",
+        "questName": "Wisdom - The Long Battle",
+        "turnInNpcName": "Lendiniara the Keeper"
+      },
+      {
+        "sourceNpcName": "Dozekar the Cursed",
+        "sourceNpcId": "6448",
+        "sourceItemName": "Runed Tear",
+        "sourceItemId": "15933",
+        "questName": "Wisdom - The Long Battle",
+        "turnInNpcName": "Lendiniara the Keeper"
+      }
+    ],
+    "icon": "https://everquest.allakhazam.com/pgfx/item_764.png"
+  },
+  "Buckler of Insight": {
+    "name": "Buckler of Insight",
+    "slot": "SECONDARY",
+    "ac": 45,
+    "damage": null,
+    "delay": null,
+    "skill": null,
+    "damage_bonus": null,
+    "stats": {
+      "STR": 5,
+      "DEX": 5,
+      "STA": 5,
+      "CHA": 5,
+      "WIS": 12,
+      "INT": 12,
+      "AGI": 5,
+      "HP": 75,
+      "MANA": 75
+    },
+    "resists": {
+      "FR": 10,
+      "DR": 10,
+      "CR": 10,
+      "MR": 10,
+      "PR": 10
+    },
+    "hp_regen": null,
+    "mana_regen": 1,
+    "manaRegen": 1,
+    "endurance_regen": null,
+    "attack": null,
+    "haste": null,
+    "charges": null,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "ALL",
+      "except",
+      "BER"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 0.5,
+    "size": "TINY",
+    "item_type": "Shield",
+    "itemType": "shield",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": true,
+    "magic": true,
+    "no_drop": true,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=6508"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=6508.",
+      "Exact URL page is tagged as Expansion: Scars of Velious."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "acquisitionType": "quest",
+    "sourceNpcName": "Dozekar the Cursed",
+    "sourceNpcId": "6448",
+    "sourceItemName": "Emerald Tear",
+    "sourceItemId": "15929",
+    "questSources": [
+      {
+        "sourceNpcName": "Dozekar the Cursed",
+        "sourceNpcId": "6448",
+        "sourceItemName": "Emerald Tear",
+        "sourceItemId": "15929",
+        "questName": "Test of the Emerald Tear",
+        "turnInNpcName": "Lendiniara the Keeper"
+      }
+    ],
+    "icon": "https://everquest.allakhazam.com/pgfx/item_542.png"
+  },
+  "Cloak of the Fire Storm": {
+    "name": "Cloak of the Fire Storm",
+    "slot": "BACK",
+    "ac": 24,
+    "damage": null,
+    "delay": null,
+    "skill": null,
+    "damage_bonus": null,
+    "stats": {
+      "STR": 15,
+      "DEX": 15,
+      "STA": 15,
+      "AGI": 15,
+      "HP": 100
+    },
+    "resists": {
+      "FR": 35
+    },
+    "hp_regen": null,
+    "mana_regen": null,
+    "manaRegen": null,
+    "endurance_regen": null,
+    "attack": null,
+    "haste": "+40%",
+    "charges": null,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "WAR",
+      "PAL",
+      "RNG",
+      "SHD",
+      "MNK",
+      "BRD",
+      "ROG",
+      "BST",
+      "BER"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 0,
+    "size": "TINY",
+    "item_type": "Armor",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": true,
+    "magic": null,
+    "no_drop": true,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=6311"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=6311.",
+      "Exact URL page is tagged as Expansion: Scars of Velious."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "acquisitionType": "quest",
+    "sourceNpcName": "Dozekar the Cursed",
+    "sourceNpcId": "6448",
+    "sourceItemName": "Poison Tear",
+    "sourceItemId": "6134",
+    "questSources": [
+      {
+        "sourceNpcName": "Dozekar the Cursed",
+        "sourceNpcId": "6448",
+        "sourceItemName": "Poison Tear",
+        "sourceItemId": "6134",
+        "questName": "Test of the Fire Storm",
+        "turnInNpcName": "Lendiniara the Keeper"
+      },
+      {
+        "sourceNpcName": "Dozekar the Cursed",
+        "sourceNpcId": "6448",
+        "sourceItemName": "Serrated Tear",
+        "sourceItemId": "15941",
+        "questName": "Test of the Fire Storm",
+        "turnInNpcName": "Lendiniara the Keeper"
+      }
+    ],
+    "icon": "https://everquest.allakhazam.com/pgfx/item_658.png"
+  },
+  "Earring of the Living Flame": {
+    "name": "Earring of the Living Flame",
+    "slot": "EAR",
+    "ac": 20,
+    "damage": null,
+    "delay": null,
+    "skill": null,
+    "damage_bonus": null,
+    "stats": {
+      "STR": 15,
+      "STA": 10
+    },
+    "resists": {
+      "FR": 20
+    },
+    "hp_regen": null,
+    "mana_regen": null,
+    "manaRegen": null,
+    "endurance_regen": null,
+    "attack": null,
+    "haste": null,
+    "charges": null,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [
+      "Truesight (Worn, Casting Time: Instant)"
+    ],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "WAR",
+      "PAL",
+      "RNG",
+      "SHD",
+      "MNK",
+      "BRD",
+      "ROG",
+      "BST",
+      "BER"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 0,
+    "size": "TINY",
+    "item_type": "Armor",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": true,
+    "magic": null,
+    "no_drop": true,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=6165"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=6165.",
+      "Exact URL page is tagged as Expansion: Scars of Velious."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "acquisitionType": "quest",
+    "sourceNpcName": "Dozekar the Cursed",
+    "sourceNpcId": "6448",
+    "sourceItemName": "Black Tear",
+    "sourceItemId": "15931",
+    "questSources": [
+      {
+        "sourceNpcName": "Dozekar the Cursed",
+        "sourceNpcId": "6448",
+        "sourceItemName": "Black Tear",
+        "sourceItemId": "15931",
+        "questName": "Test of the Living Flame",
+        "turnInNpcName": "Lendiniara the Keeper"
+      }
+    ],
+    "icon": "https://everquest.allakhazam.com/pgfx/item_619.png"
+  },
+  "Mask of the Silver Eyes": {
+    "name": "Mask of the Silver Eyes",
+    "slot": "FACE",
+    "ac": 25,
+    "damage": null,
+    "delay": null,
+    "skill": null,
+    "damage_bonus": null,
+    "stats": {
+      "STA": 12,
+      "WIS": 12,
+      "INT": 12,
+      "HP": 20,
+      "MANA": 80
+    },
+    "resists": {
+      "FR": 5,
+      "DR": 5,
+      "CR": 5,
+      "MR": 5,
+      "PR": 5
+    },
+    "hp_regen": null,
+    "mana_regen": 1,
+    "manaRegen": 1,
+    "endurance_regen": null,
+    "attack": null,
+    "haste": null,
+    "charges": null,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "CLR",
+      "DRU",
+      "SHM",
+      "NEC",
+      "WIZ",
+      "MAG",
+      "ENC"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 0.5,
+    "size": "TINY",
+    "item_type": "Armor",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": true,
+    "magic": true,
+    "no_drop": true,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=6187"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=6187.",
+      "Exact URL page is tagged as Expansion: Scars of Velious."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "acquisitionType": "quest",
+    "sourceNpcName": "Dozekar the Cursed",
+    "sourceNpcId": "6448",
+    "sourceItemName": "Black Tear",
+    "sourceItemId": "15931",
+    "questSources": [
+      {
+        "sourceNpcName": "Dozekar the Cursed",
+        "sourceNpcId": "6448",
+        "sourceItemName": "Black Tear",
+        "sourceItemId": "15931",
+        "questName": "Request of the Arcane",
+        "turnInNpcName": "Lendiniara the Keeper"
+      },
+      {
+        "sourceNpcName": "Dozekar the Cursed",
+        "sourceNpcId": "6448",
+        "sourceItemName": "Runed Tear",
+        "sourceItemId": "15933",
+        "questName": "Request of the Arcane",
+        "turnInNpcName": "Lendiniara the Keeper"
+      },
+      {
+        "sourceNpcName": "Dozekar the Cursed",
+        "sourceNpcId": "6448",
+        "sourceItemName": "White Tear",
+        "sourceItemId": "15932",
+        "questName": "Request of the Arcane",
+        "turnInNpcName": "Lendiniara the Keeper"
+      }
+    ],
+    "icon": "https://everquest.allakhazam.com/pgfx/item_772.png"
+  },
+  "Pauldrons of the Deep Flame": {
+    "name": "Pauldrons of the Deep Flame",
+    "slot": "SHOULDERS",
+    "ac": 35,
+    "damage": null,
+    "delay": null,
+    "skill": null,
+    "damage_bonus": null,
+    "stats": {
+      "STA": 15,
+      "HP": 100
+    },
+    "resists": {
+      "FR": 20,
+      "DR": 20,
+      "CR": 20,
+      "MR": 20,
+      "PR": 20
+    },
+    "hp_regen": null,
+    "mana_regen": null,
+    "manaRegen": null,
+    "endurance_regen": null,
+    "attack": null,
+    "haste": null,
+    "charges": null,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "WAR",
+      "PAL",
+      "RNG",
+      "SHD",
+      "MNK",
+      "BRD",
+      "ROG",
+      "BST",
+      "BER"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 0.5,
+    "size": "TINY",
+    "item_type": "Armor",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": true,
+    "magic": true,
+    "no_drop": true,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=6507"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=6507.",
+      "Exact URL page is tagged as Expansion: Scars of Velious."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "acquisitionType": "quest",
+    "sourceNpcName": "Dozekar the Cursed",
+    "sourceNpcId": "6448",
+    "sourceItemName": "Emerald Tear",
+    "sourceItemId": "15929",
+    "questSources": [
+      {
+        "sourceNpcName": "Dozekar the Cursed",
+        "sourceNpcId": "6448",
+        "sourceItemName": "Emerald Tear",
+        "sourceItemId": "15929",
+        "questName": "Test of Protection",
+        "turnInNpcName": "Lendiniara the Keeper"
+      },
+      {
+        "sourceNpcName": "Dozekar the Cursed",
+        "sourceNpcId": "6448",
+        "sourceItemName": "Ruby Tear",
+        "sourceItemId": "15928",
+        "questName": "Test of Protection",
+        "turnInNpcName": "Lendiniara the Keeper"
+      }
+    ],
+    "icon": "https://everquest.allakhazam.com/pgfx/item_769.png"
+  },
+  "Serrated Dragon Tooth": {
+    "name": "Serrated Dragon Tooth",
+    "slot": "RANGE PRIMARY SECONDARY",
+    "ac": 30,
+    "damage": 13,
+    "delay": 18,
+    "skill": "1H Piercing",
+    "damage_bonus": null,
+    "stats": {
+      "DEX": 10,
+      "STA": 10,
+      "AGI": 10
+    },
+    "resists": {
+      "FR": 12,
+      "DR": 12,
+      "CR": 12,
+      "MR": 12,
+      "PR": 12
+    },
+    "hp_regen": null,
+    "mana_regen": null,
+    "manaRegen": null,
+    "endurance_regen": null,
+    "attack": null,
+    "haste": "+41%",
+    "charges": null,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "WAR",
+      "PAL",
+      "RNG",
+      "SHD",
+      "MNK",
+      "BRD",
+      "ROG",
+      "BST"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 0,
+    "size": "TINY",
+    "item_type": "1H Piercing",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": true,
+    "magic": true,
+    "no_drop": true,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=6379"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=6379.",
+      "Exact URL page is tagged as Expansion: Scars of Velious."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "acquisitionType": "quest",
+    "sourceNpcName": "Dozekar the Cursed",
+    "sourceNpcId": "6448",
+    "sourceItemName": "White Tear",
+    "sourceItemId": "15932",
+    "questSources": [
+      {
+        "sourceNpcName": "Dozekar the Cursed",
+        "sourceNpcId": "6448",
+        "sourceItemName": "White Tear",
+        "sourceItemId": "15932",
+        "questName": "Test of the Tooth",
+        "turnInNpcName": "Lendiniara the Keeper"
+      }
+    ],
+    "icon": "https://everquest.allakhazam.com/pgfx/item_800.png"
+  },
+  "Silver Bracelet of Speed": {
+    "name": "Silver Bracelet of Speed",
+    "slot": "WRIST",
+    "ac": 38,
+    "damage": null,
+    "delay": null,
+    "skill": null,
+    "damage_bonus": null,
+    "stats": {
+      "STR": 10,
+      "STA": 10,
+      "WIS": 10,
+      "INT": 10,
+      "HP": 100,
+      "END": 100
+    },
+    "resists": {
+      "FR": 5,
+      "DR": 5,
+      "CR": 5,
+      "MR": 5,
+      "PR": 5
+    },
+    "hp_regen": null,
+    "mana_regen": null,
+    "manaRegen": null,
+    "endurance_regen": null,
+    "attack": null,
+    "haste": "+41%",
+    "charges": null,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "ALL"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 0,
+    "size": "TINY",
+    "item_type": "Armor",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": true,
+    "magic": true,
+    "no_drop": true,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=6096"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=6096.",
+      "Exact URL page is tagged as Expansion: Scars of Velious."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "acquisitionType": "quest",
+    "sourceNpcName": "Dozekar the Cursed",
+    "sourceNpcId": "6448",
+    "sourceItemName": "Platinum Tear",
+    "sourceItemId": "15930",
+    "questSources": [
+      {
+        "sourceNpcName": "Dozekar the Cursed",
+        "sourceNpcId": "6448",
+        "sourceItemName": "Platinum Tear",
+        "sourceItemId": "15930",
+        "questName": "Test of the Platinum Tear",
+        "turnInNpcName": "Lendiniara the Keeper"
+      }
+    ],
+    "icon": "https://everquest.allakhazam.com/pgfx/item_521.png"
+  },
+  "Silver Charm of Tranquility": {
+    "name": "Silver Charm of Tranquility",
+    "slot": "NECK WRIST",
+    "ac": 35,
+    "damage": null,
+    "delay": null,
+    "skill": null,
+    "damage_bonus": null,
+    "stats": {
+      "STR": 10,
+      "STA": 15,
+      "HP": 100,
+      "MANA": 100
+    },
+    "resists": {
+      "FR": 8,
+      "DR": 8,
+      "CR": 8,
+      "MR": 8,
+      "PR": 8
+    },
+    "hp_regen": null,
+    "mana_regen": null,
+    "manaRegen": null,
+    "endurance_regen": null,
+    "attack": null,
+    "haste": null,
+    "charges": null,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "ALL"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 0.5,
+    "size": "TINY",
+    "item_type": "Armor",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": true,
+    "magic": true,
+    "no_drop": true,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=6334"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=6334.",
+      "Exact URL page is tagged as Expansion: Scars of Velious."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "acquisitionType": "quest",
+    "sourceNpcName": "Dozekar the Cursed",
+    "sourceNpcId": "6448",
+    "sourceItemName": "Ruby Tear",
+    "sourceItemId": "15928",
+    "questSources": [
+      {
+        "sourceNpcName": "Dozekar the Cursed",
+        "sourceNpcId": "6448",
+        "sourceItemName": "Ruby Tear",
+        "sourceItemId": "15928",
+        "questName": "Test of the Ruby Tear",
+        "turnInNpcName": "Lendiniara the Keeper"
+      }
+    ],
+    "icon": "https://everquest.allakhazam.com/pgfx/item_1056.png"
+  },
+  "Silver Mask of the Slayer": {
+    "name": "Silver Mask of the Slayer",
+    "slot": "FACE",
+    "ac": 25,
+    "damage": null,
+    "delay": null,
+    "skill": null,
+    "damage_bonus": null,
+    "stats": {
+      "STR": 12,
+      "DEX": 12,
+      "STA": 12,
+      "HP": 80
+    },
+    "resists": {
+      "FR": 7,
+      "DR": 7,
+      "CR": 7,
+      "MR": 7,
+      "PR": 7
+    },
+    "hp_regen": 2,
+    "mana_regen": null,
+    "manaRegen": null,
+    "endurance_regen": null,
+    "attack": 10,
+    "haste": null,
+    "charges": null,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "WAR",
+      "PAL",
+      "RNG",
+      "SHD",
+      "MNK",
+      "BRD",
+      "ROG",
+      "BER"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 0,
+    "size": "TINY",
+    "item_type": "Armor",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": true,
+    "magic": true,
+    "no_drop": true,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=6418"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=6418.",
+      "Exact URL page is tagged as Expansion: Scars of Velious."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "acquisitionType": "quest",
+    "sourceNpcName": "Dozekar the Cursed",
+    "sourceNpcId": "6448",
+    "sourceItemName": "Flame Kissed Tear",
+    "sourceItemId": "15935",
+    "questSources": [
+      {
+        "sourceNpcName": "Dozekar the Cursed",
+        "sourceNpcId": "6448",
+        "sourceItemName": "Flame Kissed Tear",
+        "sourceItemId": "15935",
+        "questName": "Request of the Strong",
+        "turnInNpcName": "Lendiniara the Keeper"
+      },
+      {
+        "sourceNpcName": "Dozekar the Cursed",
+        "sourceNpcId": "6448",
+        "sourceItemName": "Poison Tear",
+        "sourceItemId": "6134",
+        "questName": "Request of the Strong",
+        "turnInNpcName": "Lendiniara the Keeper"
+      },
+      {
+        "sourceNpcName": "Dozekar the Cursed",
+        "sourceNpcId": "6448",
+        "sourceItemName": "Serrated Tear",
+        "sourceItemId": "15941",
+        "questName": "Request of the Strong",
+        "turnInNpcName": "Lendiniara the Keeper"
+      },
+      {
+        "sourceNpcName": "Dozekar the Cursed",
+        "sourceNpcId": "6448",
+        "sourceItemName": "Silver Tear",
+        "sourceItemId": "15936",
+        "questName": "Request of the Strong",
+        "turnInNpcName": "Lendiniara the Keeper"
+      }
+    ],
+    "icon": "https://everquest.allakhazam.com/pgfx/item_772.png"
+  },
+  "White Dragon Idol": {
+    "name": "White Dragon Idol",
+    "slot": "RANGE",
+    "ac": 15,
+    "damage": null,
+    "delay": null,
+    "skill": null,
+    "damage_bonus": null,
+    "stats": {
+      "STR": 15,
+      "WIS": 15,
+      "HP": 50,
+      "MANA": 100
+    },
+    "resists": {
+      "FR": 12,
+      "DR": 12,
+      "CR": 12,
+      "MR": 12,
+      "PR": 12
+    },
+    "hp_regen": null,
+    "mana_regen": 1,
+    "manaRegen": 1,
+    "endurance_regen": null,
+    "attack": null,
+    "haste": null,
+    "charges": null,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "CLR",
+      "DRU",
+      "SHM"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 0,
+    "size": "TINY",
+    "item_type": "Armor",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": true,
+    "magic": true,
+    "no_drop": true,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=14610"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=14610.",
+      "Exact URL page is tagged as Expansion: Scars of Velious."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "acquisitionType": "quest",
+    "sourceNpcName": "Dozekar the Cursed",
+    "sourceNpcId": "6448",
+    "sourceItemName": "Platinum Tear",
+    "sourceItemId": "15930",
+    "questSources": [
+      {
+        "sourceNpcName": "Dozekar the Cursed",
+        "sourceNpcId": "6448",
+        "sourceItemName": "Platinum Tear",
+        "sourceItemId": "15930",
+        "questName": "Wisdom - The Short Battle",
+        "turnInNpcName": "Lendiniara the Keeper"
+      }
+    ],
+    "icon": "https://everquest.allakhazam.com/pgfx/item_895.png"
+  },
+  "White Dragon Statue": {
+    "name": "White Dragon Statue",
+    "slot": "RANGE",
+    "ac": 15,
+    "damage": null,
+    "delay": null,
+    "skill": null,
+    "damage_bonus": null,
+    "stats": {
+      "STA": 15,
+      "INT": 15,
+      "HP": 50,
+      "MANA": 100
+    },
+    "resists": {
+      "FR": 12,
+      "DR": 12,
+      "CR": 12,
+      "MR": 12,
+      "PR": 12
+    },
+    "hp_regen": null,
+    "mana_regen": 1,
+    "manaRegen": 1,
+    "endurance_regen": null,
+    "attack": null,
+    "haste": null,
+    "charges": null,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "NEC",
+      "WIZ",
+      "MAG",
+      "ENC"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 0,
+    "size": "TINY",
+    "item_type": "Armor",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": true,
+    "magic": true,
+    "no_drop": true,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=6131"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=6131.",
+      "Exact URL page is tagged as Expansion: Scars of Velious."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "acquisitionType": "quest",
+    "sourceNpcName": "Dozekar the Cursed",
+    "sourceNpcId": "6448",
+    "sourceItemName": "Poison Tear",
+    "sourceItemId": "6134",
+    "questSources": [
+      {
+        "sourceNpcName": "Dozekar the Cursed",
+        "sourceNpcId": "6448",
+        "sourceItemName": "Poison Tear",
+        "sourceItemId": "6134",
+        "questName": "The First Arcane Test",
+        "turnInNpcName": "Lendiniara the Keeper"
+      }
+    ],
+    "icon": "https://everquest.allakhazam.com/pgfx/item_895.png"
+  },
+  "Gauntlets of Dragon Slaying": {
+    "name": "Gauntlets of Dragon Slaying",
+    "slot": "HANDS",
+    "ac": 30,
+    "damage": null,
+    "delay": null,
+    "skill": null,
+    "damage_bonus": null,
+    "stats": {
+      "STR": 9,
+      "WIS": 9,
+      "INT": 9,
+      "HP": 75,
+      "MANA": 75,
+      "END": 75
+    },
+    "resists": {
+      "FR": 9,
+      "DR": 9,
+      "CR": 9,
+      "MR": 9,
+      "PR": 9
+    },
+    "hp_regen": null,
+    "mana_regen": null,
+    "manaRegen": null,
+    "endurance_regen": null,
+    "attack": null,
+    "haste": "+41%",
+    "charges": null,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "ALL"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 0,
+    "size": "TINY",
+    "item_type": "Armor",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": true,
+    "magic": true,
+    "no_drop": true,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=4363"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=4363.",
+      "Exact URL page is tagged as Expansion: Scars of Velious.",
+      "Targeted quest item import requested from exact Allakhazam URL."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "acquisitionType": "quest",
+    "icon": "https://everquest.allakhazam.com/pgfx/item_846.png"
+  },
+  "Belt of Dwarf Slaying": {
+    "name": "Belt of Dwarf Slaying",
+    "slot": "WAIST",
+    "ac": 20,
+    "damage": null,
+    "delay": null,
+    "skill": null,
+    "damage_bonus": null,
+    "stats": {
+      "STR": 15,
+      "WIS": 15,
+      "INT": 15,
+      "HP": 100,
+      "MANA": 100,
+      "END": 100
+    },
+    "resists": {
+      "FR": 5,
+      "DR": 5,
+      "CR": 5,
+      "MR": 5,
+      "PR": 5
+    },
+    "hp_regen": 2,
+    "mana_regen": null,
+    "manaRegen": null,
+    "endurance_regen": null,
+    "attack": 10,
+    "haste": null,
+    "charges": null,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "ALL"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 0,
+    "size": "TINY",
+    "item_type": "Armor",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": true,
+    "magic": true,
+    "no_drop": true,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=4362"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=4362.",
+      "Exact URL page is tagged as Expansion: Scars of Velious.",
+      "Targeted quest item import requested from exact Allakhazam URL."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "acquisitionType": "quest",
+    "icon": "https://everquest.allakhazam.com/pgfx/item_718.png"
+  },
+  "Clawed Griffin Sword": {
+    "name": "Clawed Griffin Sword",
+    "slot": "PRIMARY",
+    "ac": null,
+    "damage": 37,
+    "delay": 37,
+    "skill": "2H Slashing",
+    "damage_bonus": null,
+    "stats": {
+      "STR": 10,
+      "DEX": 15,
+      "HP": 70
+    },
+    "resists": {
+      "CR": 15,
+      "MR": 15
+    },
+    "hp_regen": null,
+    "mana_regen": null,
+    "manaRegen": null,
+    "endurance_regen": null,
+    "attack": null,
+    "haste": null,
+    "charges": null,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [
+      "Frost Strike (Combat, Casting Time: Instant) at Level 50"
+    ],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "WAR",
+      "PAL",
+      "RNG",
+      "SHD",
+      "BER"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 1.5,
+    "size": "MEDIUM",
+    "item_type": "2H Slashing",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": true,
+    "magic": true,
+    "no_drop": true,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=6764"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=6764.",
+      "Exact URL page is tagged as Expansion: Scars of Velious.",
+      "Quest 1289 reward imported from Tormax's Head - Dragons."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "acquisitionType": "quest",
+    "questId": "1289",
+    "questName": "Tormax's Head - Dragons",
+    "turnInNpcName": "Lord Yelinak",
+    "sourceItemName": "King Tormax's Head",
+    "sourceItemId": "16178",
+    "questSources": [
+      {
+        "sourceItemName": "King Tormax's Head",
+        "sourceItemId": "16178",
+        "questId": "1289",
+        "questName": "Tormax's Head - Dragons",
+        "turnInNpcName": "Lord Yelinak"
+      }
+    ],
+    "icon": "https://everquest.allakhazam.com/pgfx/item_1211.png"
+  },
+  "White Dragonscale Boots": {
+    "name": "White Dragonscale Boots",
+    "slot": "FEET",
+    "ac": 15,
+    "damage": null,
+    "delay": null,
+    "skill": null,
+    "damage_bonus": null,
+    "stats": {
+      "WIS": 17,
+      "INT": 17,
+      "HP": 85,
+      "MANA": 110
+    },
+    "resists": {
+      "FR": 5,
+      "DR": 5,
+      "CR": 20,
+      "MR": 10,
+      "PR": 5
+    },
+    "hp_regen": null,
+    "mana_regen": 2,
+    "manaRegen": 2,
+    "endurance_regen": null,
+    "attack": null,
+    "haste": null,
+    "charges": null,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "CLR",
+      "DRU",
+      "SHM",
+      "NEC",
+      "WIZ",
+      "MAG",
+      "ENC"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 1.5,
+    "size": "SMALL",
+    "item_type": "Armor",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": true,
+    "magic": true,
+    "no_drop": true,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=6765"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=6765.",
+      "Exact URL page is tagged as Expansion: Scars of Velious.",
+      "Quest 1289 reward imported from Tormax's Head - Dragons."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "acquisitionType": "quest",
+    "questId": "1289",
+    "questName": "Tormax's Head - Dragons",
+    "turnInNpcName": "Lord Yelinak",
+    "sourceItemName": "King Tormax's Head",
+    "sourceItemId": "16178",
+    "questSources": [
+      {
+        "sourceItemName": "King Tormax's Head",
+        "sourceItemId": "16178",
+        "questId": "1289",
+        "questName": "Tormax's Head - Dragons",
+        "turnInNpcName": "Lord Yelinak"
+      }
+    ],
+    "icon": "https://everquest.allakhazam.com/pgfx/item_633.png"
+  },
+  "White Dragon Helm": {
+    "name": "White Dragon Helm",
+    "slot": "HEAD",
+    "ac": 22,
+    "damage": null,
+    "delay": null,
+    "skill": null,
+    "damage_bonus": null,
+    "stats": {
+      "STR": 10,
+      "DEX": 15,
+      "STA": 12,
+      "HP": 100,
+      "MANA": 60,
+      "END": 60
+    },
+    "resists": {
+      "FR": 10,
+      "DR": 10,
+      "CR": 10,
+      "MR": 30,
+      "PR": 10
+    },
+    "hp_regen": null,
+    "mana_regen": null,
+    "manaRegen": null,
+    "endurance_regen": null,
+    "attack": null,
+    "haste": null,
+    "charges": null,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "ALL"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 1.5,
+    "size": "SMALL",
+    "item_type": "Armor",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": true,
+    "magic": true,
+    "no_drop": null,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=6766"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=6766.",
+      "Exact URL page is tagged as Expansion: Scars of Velious.",
+      "Quest 1289 reward imported from Tormax's Head - Dragons."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "acquisitionType": "quest",
+    "questId": "1289",
+    "questName": "Tormax's Head - Dragons",
+    "turnInNpcName": "Lord Yelinak",
+    "sourceItemName": "King Tormax's Head",
+    "sourceItemId": "16178",
+    "questSources": [
+      {
+        "sourceItemName": "King Tormax's Head",
+        "sourceItemId": "16178",
+        "questId": "1289",
+        "questName": "Tormax's Head - Dragons",
+        "turnInNpcName": "Lord Yelinak"
+      }
+    ],
+    "icon": "https://everquest.allakhazam.com/pgfx/item_625.png"
+  },
+  "Black Marble": {
+    "name": "Black Marble",
+    "slot": null,
+    "ac": null,
+    "damage": null,
+    "delay": null,
+    "skill": null,
+    "damage_bonus": null,
+    "stats": {},
+    "resists": {},
+    "hp_regen": null,
+    "mana_regen": null,
+    "manaRegen": null,
+    "endurance_regen": null,
+    "attack": null,
+    "haste": null,
+    "charges": null,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "ALL"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 0.1,
+    "size": "TINY",
+    "item_type": "Combinable",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": null,
+    "magic": null,
+    "no_drop": null,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=3760"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=3760.",
+      "Exact URL page is tagged as Expansion: Scars of Velious.",
+      "Tagged as a Zlandicar Velious raid bucket 3 drop."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "acquisitionType": "drop",
+    "sourceNpcName": "Zlandicar",
+    "sourceNpcId": "5441",
+    "raidBucket": 3,
+    "icon": "https://everquest.allakhazam.com/pgfx/item_956.png"
+  },
+  "Cowl of Mortality": {
+    "name": "Cowl of Mortality",
+    "slot": "HEAD",
+    "ac": 16,
+    "damage": null,
+    "delay": null,
+    "skill": null,
+    "damage_bonus": null,
+    "stats": {
+      "STA": 9,
+      "AGI": 12,
+      "HP": 50
+    },
+    "resists": {
+      "DR": 15
+    },
+    "hp_regen": null,
+    "mana_regen": null,
+    "manaRegen": null,
+    "endurance_regen": null,
+    "attack": null,
+    "haste": "+36%",
+    "charges": null,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "ALL"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 0.1,
+    "size": "MEDIUM",
+    "item_type": "Armor",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": true,
+    "magic": null,
+    "no_drop": null,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=4805"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=4805.",
+      "Exact URL page is tagged as Expansion: Scars of Velious.",
+      "Tagged as a Zlandicar Velious raid bucket 3 drop."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "acquisitionType": "drop",
+    "sourceNpcName": "Zlandicar",
+    "sourceNpcId": "5441",
+    "raidBucket": 3,
+    "icon": "https://everquest.allakhazam.com/pgfx/item_625.png"
+  },
+  "Cracked Claw of Zlandicar": {
+    "name": "Cracked Claw of Zlandicar",
+    "slot": "PRIMARY",
+    "ac": null,
+    "damage": 14,
+    "delay": 25,
+    "skill": "1H Slashing",
+    "damage_bonus": null,
+    "stats": {},
+    "resists": {},
+    "hp_regen": null,
+    "mana_regen": null,
+    "manaRegen": null,
+    "endurance_regen": null,
+    "attack": null,
+    "haste": null,
+    "charges": null,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [
+      "Incapacitate (Combat, Casting Time: Instant) at Level 50"
+    ],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "WAR",
+      "PAL",
+      "RNG",
+      "SHD",
+      "BRD",
+      "ROG"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 1.5,
+    "size": "MEDIUM",
+    "item_type": "1H Slashing",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": true,
+    "magic": null,
+    "no_drop": true,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=4774"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=4774.",
+      "Exact URL page is tagged as Expansion: Scars of Velious.",
+      "Tagged as a Zlandicar Velious raid bucket 3 drop."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "acquisitionType": "drop",
+    "sourceNpcName": "Zlandicar",
+    "sourceNpcId": "5441",
+    "raidBucket": 3,
+    "icon": "https://everquest.allakhazam.com/pgfx/item_975.png"
+  },
+  "First Brood Talisman": {
+    "name": "First Brood Talisman",
+    "slot": "NECK",
+    "ac": 15,
+    "damage": null,
+    "delay": null,
+    "skill": null,
+    "damage_bonus": null,
+    "stats": {
+      "STR": 5,
+      "DEX": 5,
+      "STA": 5,
+      "CHA": 5,
+      "WIS": 5,
+      "INT": 5,
+      "AGI": 5,
+      "HP": 50,
+      "MANA": 50,
+      "END": 50
+    },
+    "resists": {
+      "FR": 7,
+      "DR": 7,
+      "CR": 7,
+      "MR": 7,
+      "PR": 7
+    },
+    "hp_regen": null,
+    "mana_regen": null,
+    "manaRegen": null,
+    "endurance_regen": null,
+    "attack": null,
+    "haste": null,
+    "charges": null,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "ALL"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 0,
+    "size": "TINY",
+    "item_type": "Jewelry",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": true,
+    "magic": true,
+    "no_drop": true,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=4822"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=4822.",
+      "Exact URL page is tagged as Expansion: Scars of Velious.",
+      "Tagged as a Zlandicar Velious raid bucket 3 drop."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "acquisitionType": "drop",
+    "sourceNpcName": "Zlandicar",
+    "sourceNpcId": "5441",
+    "raidBucket": 3,
+    "icon": "https://everquest.allakhazam.com/pgfx/item_752.png"
+  },
+  "Flawless Diamond": {
+    "name": "Flawless Diamond",
+    "slot": null,
+    "ac": null,
+    "damage": null,
+    "delay": null,
+    "skill": null,
+    "damage_bonus": null,
+    "stats": {},
+    "resists": {},
+    "hp_regen": null,
+    "mana_regen": null,
+    "manaRegen": null,
+    "endurance_regen": null,
+    "attack": null,
+    "haste": null,
+    "charges": null,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "ALL"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 0.1,
+    "size": "TINY",
+    "item_type": "Combinable",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": null,
+    "magic": null,
+    "no_drop": null,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=3755"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=3755.",
+      "Exact URL page is tagged as Expansion: Scars of Velious.",
+      "Tagged as a Zlandicar Velious raid bucket 3 drop."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "acquisitionType": "drop",
+    "sourceNpcName": "Zlandicar",
+    "sourceNpcId": "5441",
+    "raidBucket": 3,
+    "icon": "https://everquest.allakhazam.com/pgfx/item_966.png"
+  },
+  "Frakadar's Talisman": {
+    "name": "Frakadar's Talisman",
+    "slot": "NECK",
+    "ac": 5,
+    "damage": null,
+    "delay": null,
+    "skill": null,
+    "damage_bonus": null,
+    "stats": {
+      "STR": 4,
+      "DEX": 4,
+      "STA": 4,
+      "CHA": 4,
+      "WIS": 4,
+      "INT": 4,
+      "AGI": 4,
+      "HP": 10,
+      "MANA": 10,
+      "END": 10
+    },
+    "resists": {
+      "FR": 4,
+      "DR": 4,
+      "CR": 4,
+      "MR": 4,
+      "PR": 4
+    },
+    "hp_regen": null,
+    "mana_regen": null,
+    "manaRegen": null,
+    "endurance_regen": null,
+    "attack": null,
+    "haste": null,
+    "charges": null,
+    "worn_effects": [],
+    "focus_effects": [
+      "Improved Healing II"
+    ],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "ALL"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 0.5,
+    "size": "TINY",
+    "item_type": "Armor",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": true,
+    "magic": true,
+    "no_drop": true,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=4640"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "needs_review",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=4640.",
+      "Exact URL page is tagged as Expansion: Scars of Velious.",
+      "Exact URL title \"Frakadar\" does not match requested item name \"Frakadar's Talisman\".",
+      "Tagged as a Zlandicar Velious raid bucket 3 drop."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "needs_review",
+    "acquisitionType": "drop",
+    "sourceNpcName": "Zlandicar",
+    "sourceNpcId": "5441",
+    "raidBucket": 3,
+    "icon": "https://everquest.allakhazam.com/pgfx/item_510.png"
+  },
+  "Gauntlets of Mortality": {
+    "name": "Gauntlets of Mortality",
+    "slot": "HANDS",
+    "ac": 14,
+    "damage": null,
+    "delay": null,
+    "skill": null,
+    "damage_bonus": null,
+    "stats": {
+      "STR": 15,
+      "DEX": 9,
+      "STA": -7,
+      "CHA": -4
+    },
+    "resists": {
+      "FR": -5,
+      "DR": -5,
+      "CR": -5,
+      "MR": -5,
+      "PR": -5
+    },
+    "hp_regen": null,
+    "mana_regen": null,
+    "manaRegen": null,
+    "endurance_regen": null,
+    "attack": null,
+    "haste": null,
+    "charges": null,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "ALL"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 0.3,
+    "size": "SMALL",
+    "item_type": "Armor",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": true,
+    "magic": true,
+    "no_drop": null,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=4804"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=4804.",
+      "Exact URL page is tagged as Expansion: Scars of Velious.",
+      "Tagged as a Zlandicar Velious raid bucket 3 drop."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "acquisitionType": "drop",
+    "sourceNpcName": "Zlandicar",
+    "sourceNpcId": "5441",
+    "raidBucket": 3,
+    "icon": "https://everquest.allakhazam.com/pgfx/item_529.png"
+  },
+  "Jaundice Gem": {
+    "name": "Jaundice Gem",
+    "slot": null,
+    "ac": null,
+    "damage": null,
+    "delay": null,
+    "skill": null,
+    "damage_bonus": null,
+    "stats": {},
+    "resists": {},
+    "hp_regen": null,
+    "mana_regen": null,
+    "manaRegen": null,
+    "endurance_regen": null,
+    "attack": null,
+    "haste": null,
+    "charges": null,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "ALL"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 0.1,
+    "size": "TINY",
+    "item_type": "Combinable",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": null,
+    "magic": null,
+    "no_drop": null,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=3762"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=3762.",
+      "Exact URL page is tagged as Expansion: Scars of Velious.",
+      "Tagged as a Zlandicar Velious raid bucket 3 drop."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "acquisitionType": "drop",
+    "sourceNpcName": "Zlandicar",
+    "sourceNpcId": "5441",
+    "raidBucket": 3,
+    "icon": "https://everquest.allakhazam.com/pgfx/item_6504.png"
+  },
+  "Massive Dragonclaw Shard": {
+    "name": "Massive Dragonclaw Shard",
+    "slot": "PRIMARY",
+    "ac": null,
+    "damage": 28,
+    "delay": 30,
+    "skill": "1H Slashing",
+    "damage_bonus": null,
+    "stats": {
+      "WIS": 3,
+      "INT": 3
+    },
+    "resists": {},
+    "hp_regen": null,
+    "mana_regen": null,
+    "manaRegen": null,
+    "endurance_regen": null,
+    "attack": null,
+    "haste": null,
+    "charges": null,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "PAL",
+      "SHD"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 7.5,
+    "size": "LARGE",
+    "item_type": "1H Slashing",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": true,
+    "magic": null,
+    "no_drop": null,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=4931"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=4931.",
+      "Exact URL page is tagged as Expansion: Scars of Velious.",
+      "Tagged as a Zlandicar Velious raid bucket 3 drop."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "acquisitionType": "drop",
+    "sourceNpcName": "Zlandicar",
+    "sourceNpcId": "5441",
+    "raidBucket": 3,
+    "icon": "https://everquest.allakhazam.com/pgfx/item_577.png"
+  },
+  "Song: Composition of Ervaj": {
+    "name": "Song: Composition of Ervaj",
+    "slot": null,
+    "ac": null,
+    "damage": null,
+    "delay": null,
+    "skill": null,
+    "damage_bonus": null,
+    "stats": {},
+    "resists": {},
+    "hp_regen": null,
+    "mana_regen": null,
+    "manaRegen": null,
+    "endurance_regen": null,
+    "attack": null,
+    "haste": null,
+    "charges": 1,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "BRD"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 0.1,
+    "size": "SMALL",
+    "item_type": "Scroll",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": null,
+    "magic": null,
+    "no_drop": null,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=9410"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=9410.",
+      "Exact URL page is tagged as Expansion: Scars of Velious.",
+      "Tagged as a Zlandicar Velious raid bucket 3 drop."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "acquisitionType": "drop",
+    "sourceNpcName": "Zlandicar",
+    "sourceNpcId": "5441",
+    "raidBucket": 3,
+    "icon": "https://everquest.allakhazam.com/pgfx/item_504.png"
+  },
+  "Spell: Aegolism": {
+    "name": "Spell: Aegolism",
+    "slot": null,
+    "ac": null,
+    "damage": null,
+    "delay": null,
+    "skill": null,
+    "damage_bonus": null,
+    "stats": {},
+    "resists": {},
+    "hp_regen": null,
+    "mana_regen": null,
+    "manaRegen": null,
+    "endurance_regen": null,
+    "attack": null,
+    "haste": null,
+    "charges": 1,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "CLR"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 0.1,
+    "size": "SMALL",
+    "item_type": "Scroll",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": null,
+    "magic": null,
+    "no_drop": null,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=8540"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=8540.",
+      "Exact URL page is tagged as Expansion: Scars of Velious.",
+      "Tagged as a Zlandicar Velious raid bucket 3 drop."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "acquisitionType": "drop",
+    "sourceNpcName": "Zlandicar",
+    "sourceNpcId": "5441",
+    "raidBucket": 3,
+    "icon": "https://everquest.allakhazam.com/pgfx/item_504.png"
+  },
+  "Spell: Arch Lich": {
+    "name": "Spell: Arch Lich",
+    "slot": null,
+    "ac": null,
+    "damage": null,
+    "delay": null,
+    "skill": null,
+    "damage_bonus": null,
+    "stats": {},
+    "resists": {},
+    "hp_regen": null,
+    "mana_regen": null,
+    "manaRegen": null,
+    "endurance_regen": null,
+    "attack": null,
+    "haste": null,
+    "charges": 1,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "NEC"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 0.1,
+    "size": "SMALL",
+    "item_type": "Scroll",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": null,
+    "magic": null,
+    "no_drop": null,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=8475"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=8475.",
+      "Exact URL page is tagged as Expansion: Scars of Velious.",
+      "Tagged as a Zlandicar Velious raid bucket 3 drop."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "acquisitionType": "drop",
+    "sourceNpcName": "Zlandicar",
+    "sourceNpcId": "5441",
+    "raidBucket": 3,
+    "icon": "https://everquest.allakhazam.com/pgfx/item_504.png"
+  },
+  "Spell: Banishment": {
+    "name": "Spell: Banishment",
+    "slot": null,
+    "ac": null,
+    "damage": null,
+    "delay": null,
+    "skill": null,
+    "damage_bonus": null,
+    "stats": {},
+    "resists": {},
+    "hp_regen": null,
+    "mana_regen": null,
+    "manaRegen": null,
+    "endurance_regen": null,
+    "attack": null,
+    "haste": null,
+    "charges": 1,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "DRU",
+      "MAG"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 0.1,
+    "size": "SMALL",
+    "item_type": "Scroll",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": null,
+    "magic": null,
+    "no_drop": null,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=8490"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=8490.",
+      "Exact URL page is tagged as Expansion: Ruins of Kunark.",
+      "Tagged as a Zlandicar Velious raid bucket 3 drop."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "acquisitionType": "drop",
+    "sourceNpcName": "Zlandicar",
+    "sourceNpcId": "5441",
+    "raidBucket": 3,
+    "icon": "https://everquest.allakhazam.com/pgfx/item_504.png"
+  },
+  "Spell: Call of the Predator": {
+    "name": "Spell: Call of the Predator",
+    "slot": null,
+    "ac": null,
+    "damage": null,
+    "delay": null,
+    "skill": null,
+    "damage_bonus": null,
+    "stats": {},
+    "resists": {},
+    "hp_regen": null,
+    "mana_regen": null,
+    "manaRegen": null,
+    "endurance_regen": null,
+    "attack": null,
+    "haste": null,
+    "charges": 1,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "RNG"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 0.1,
+    "size": "SMALL",
+    "item_type": "Scroll",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": null,
+    "magic": null,
+    "no_drop": null,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=8459"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=8459.",
+      "Exact URL page is tagged as Expansion: Scars of Velious.",
+      "Tagged as a Zlandicar Velious raid bucket 3 drop."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "acquisitionType": "drop",
+    "sourceNpcName": "Zlandicar",
+    "sourceNpcId": "5441",
+    "raidBucket": 3,
+    "icon": "https://everquest.allakhazam.com/pgfx/item_504.png"
+  },
+  "Spell: Death Peace": {
+    "name": "Spell: Death Peace",
+    "slot": null,
+    "ac": null,
+    "damage": null,
+    "delay": null,
+    "skill": null,
+    "damage_bonus": null,
+    "stats": {},
+    "resists": {},
+    "hp_regen": null,
+    "mana_regen": null,
+    "manaRegen": null,
+    "endurance_regen": null,
+    "attack": null,
+    "haste": null,
+    "charges": 1,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "SHD",
+      "NEC"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 0.1,
+    "size": "SMALL",
+    "item_type": "Scroll",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": null,
+    "magic": null,
+    "no_drop": null,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=8453"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=8453.",
+      "Exact URL page is tagged as Expansion: Scars of Velious.",
+      "Tagged as a Zlandicar Velious raid bucket 3 drop."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "acquisitionType": "drop",
+    "sourceNpcName": "Zlandicar",
+    "sourceNpcId": "5441",
+    "raidBucket": 3,
+    "icon": "https://everquest.allakhazam.com/pgfx/item_504.png"
+  },
+  "Spell: Divine Strength": {
+    "name": "Spell: Divine Strength",
+    "slot": null,
+    "ac": null,
+    "damage": null,
+    "delay": null,
+    "skill": null,
+    "damage_bonus": null,
+    "stats": {},
+    "resists": {},
+    "hp_regen": null,
+    "mana_regen": null,
+    "manaRegen": null,
+    "endurance_regen": null,
+    "attack": null,
+    "haste": null,
+    "charges": 1,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "PAL"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 0.1,
+    "size": "SMALL",
+    "item_type": "Scroll",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": null,
+    "magic": null,
+    "no_drop": null,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=8464"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=8464.",
+      "Exact URL page is tagged as Expansion: Scars of Velious.",
+      "Tagged as a Zlandicar Velious raid bucket 3 drop."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "acquisitionType": "drop",
+    "sourceNpcName": "Zlandicar",
+    "sourceNpcId": "5441",
+    "raidBucket": 3,
+    "icon": "https://everquest.allakhazam.com/pgfx/item_504.png"
+  },
+  "Spell: Focus of Spirit": {
+    "name": "Spell: Focus of Spirit",
+    "slot": null,
+    "ac": null,
+    "damage": null,
+    "delay": null,
+    "skill": null,
+    "damage_bonus": null,
+    "stats": {},
+    "resists": {},
+    "hp_regen": null,
+    "mana_regen": null,
+    "manaRegen": null,
+    "endurance_regen": null,
+    "attack": null,
+    "haste": null,
+    "charges": 1,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "SHM"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 0.1,
+    "size": "SMALL",
+    "item_type": "Scroll",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": null,
+    "magic": null,
+    "no_drop": null,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=8431"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=8431.",
+      "Exact URL page is tagged as Expansion: Scars of Velious.",
+      "Tagged as a Zlandicar Velious raid bucket 3 drop."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "acquisitionType": "drop",
+    "sourceNpcName": "Zlandicar",
+    "sourceNpcId": "5441",
+    "raidBucket": 3,
+    "icon": "https://everquest.allakhazam.com/pgfx/item_504.png"
+  },
+  "Spell: Gift of Brilliance": {
+    "name": "Spell: Gift of Brilliance",
+    "slot": null,
+    "ac": null,
+    "damage": null,
+    "delay": null,
+    "skill": null,
+    "damage_bonus": null,
+    "stats": {},
+    "resists": {},
+    "hp_regen": null,
+    "mana_regen": null,
+    "manaRegen": null,
+    "endurance_regen": null,
+    "attack": null,
+    "haste": null,
+    "charges": 1,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "ENC"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 0.1,
+    "size": "SMALL",
+    "item_type": "Scroll",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": null,
+    "magic": null,
+    "no_drop": null,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=8505"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=8505.",
+      "Exact URL page is tagged as Expansion: Scars of Velious.",
+      "Tagged as a Zlandicar Velious raid bucket 3 drop."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "acquisitionType": "drop",
+    "sourceNpcName": "Zlandicar",
+    "sourceNpcId": "5441",
+    "raidBucket": 3,
+    "icon": "https://everquest.allakhazam.com/pgfx/item_504.png"
+  },
+  "Spell: Ice Spear of Solist": {
+    "name": "Spell: Ice Spear of Solist",
+    "slot": null,
+    "ac": null,
+    "damage": null,
+    "delay": null,
+    "skill": null,
+    "damage_bonus": null,
+    "stats": {},
+    "resists": {},
+    "hp_regen": null,
+    "mana_regen": null,
+    "manaRegen": null,
+    "endurance_regen": null,
+    "attack": null,
+    "haste": null,
+    "charges": 1,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "WIZ"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 0.1,
+    "size": "SMALL",
+    "item_type": "Scroll",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": null,
+    "magic": null,
+    "no_drop": null,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=8425"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=8425.",
+      "Exact URL page is tagged as Expansion: Scars of Velious.",
+      "Tagged as a Zlandicar Velious raid bucket 3 drop."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "acquisitionType": "drop",
+    "sourceNpcName": "Zlandicar",
+    "sourceNpcId": "5441",
+    "raidBucket": 3,
+    "icon": "https://everquest.allakhazam.com/pgfx/item_504.png"
+  },
+  "Spell: Monster Summoning III": {
+    "name": "Spell: Monster Summoning III",
+    "slot": null,
+    "ac": null,
+    "damage": null,
+    "delay": null,
+    "skill": null,
+    "damage_bonus": null,
+    "stats": {},
+    "resists": {},
+    "hp_regen": null,
+    "mana_regen": null,
+    "manaRegen": null,
+    "endurance_regen": null,
+    "attack": null,
+    "haste": null,
+    "charges": 1,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "MAG"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 0.1,
+    "size": "SMALL",
+    "item_type": "Scroll",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": null,
+    "magic": null,
+    "no_drop": null,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=8487"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=8487.",
+      "Exact URL page is tagged as Expansion: Scars of Velious.",
+      "Tagged as a Zlandicar Velious raid bucket 3 drop."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "acquisitionType": "drop",
+    "sourceNpcName": "Zlandicar",
+    "sourceNpcId": "5441",
+    "raidBucket": 3,
+    "icon": "https://everquest.allakhazam.com/pgfx/item_504.png"
+  },
+  "Spell: Protection of the Glades": {
+    "name": "Spell: Protection of the Glades",
+    "slot": null,
+    "ac": null,
+    "damage": null,
+    "delay": null,
+    "skill": null,
+    "damage_bonus": null,
+    "stats": {},
+    "resists": {},
+    "hp_regen": null,
+    "mana_regen": null,
+    "manaRegen": null,
+    "endurance_regen": null,
+    "attack": null,
+    "haste": null,
+    "charges": 1,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "DRU"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 0.1,
+    "size": "SMALL",
+    "item_type": "Scroll",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": null,
+    "magic": null,
+    "no_drop": null,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=8517"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=8517.",
+      "Exact URL page is tagged as Expansion: Scars of Velious.",
+      "Tagged as a Zlandicar Velious raid bucket 3 drop."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "acquisitionType": "drop",
+    "sourceNpcName": "Zlandicar",
+    "sourceNpcId": "5441",
+    "raidBucket": 3,
+    "icon": "https://everquest.allakhazam.com/pgfx/item_504.png"
+  },
+  "Spell: Wrath of the Elements": {
+    "name": "Spell: Wrath of the Elements",
+    "slot": null,
+    "ac": null,
+    "damage": null,
+    "delay": null,
+    "skill": null,
+    "damage_bonus": null,
+    "stats": {},
+    "resists": {},
+    "hp_regen": null,
+    "mana_regen": null,
+    "manaRegen": null,
+    "endurance_regen": null,
+    "attack": null,
+    "haste": null,
+    "charges": 1,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "MAG"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 0.1,
+    "size": "SMALL",
+    "item_type": "Scroll",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": null,
+    "magic": null,
+    "no_drop": null,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=8630"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=8630.",
+      "Exact URL page is tagged as Expansion: Scars of Velious.",
+      "Tagged as a Zlandicar Velious raid bucket 3 drop."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "acquisitionType": "drop",
+    "sourceNpcName": "Zlandicar",
+    "sourceNpcId": "5441",
+    "raidBucket": 3,
+    "icon": "https://everquest.allakhazam.com/pgfx/item_504.png"
+  },
+  "Zlandicar's Heart": {
+    "name": "Zlandicar's Heart",
+    "slot": "PRIMARY",
+    "ac": null,
+    "damage": null,
+    "delay": null,
+    "skill": null,
+    "damage_bonus": null,
+    "stats": {
+      "STR": 1,
+      "DEX": 2,
+      "STA": 1,
+      "CHA": -10,
+      "WIS": 2,
+      "INT": 20,
+      "AGI": 3
+    },
+    "resists": {
+      "FR": 5,
+      "DR": 5,
+      "CR": 5,
+      "MR": 5,
+      "PR": 5
+    },
+    "hp_regen": 5,
+    "mana_regen": null,
+    "manaRegen": null,
+    "endurance_regen": null,
+    "attack": null,
+    "haste": null,
+    "charges": null,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "SHD",
+      "NEC",
+      "WIZ",
+      "MAG",
+      "ENC"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 0,
+    "size": "MEDIUM",
+    "item_type": "Misc",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": true,
+    "magic": true,
+    "no_drop": null,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=4778"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "needs_review",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=4778.",
+      "Exact URL page is tagged as Expansion: Scars of Velious.",
+      "Exact URL title \"Zlandicar\" does not match requested item name \"Zlandicar's Heart\".",
+      "Tagged as a Zlandicar Velious raid bucket 3 drop."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "needs_review",
+    "acquisitionType": "drop",
+    "sourceNpcName": "Zlandicar",
+    "sourceNpcId": "5441",
+    "raidBucket": 3,
+    "icon": "https://everquest.allakhazam.com/pgfx/item_1003.png"
+  },
+  "Zlandicar's Talisman": {
+    "name": "Zlandicar's Talisman",
+    "slot": "NECK",
+    "ac": 10,
+    "damage": null,
+    "delay": null,
+    "skill": null,
+    "damage_bonus": null,
+    "stats": {
+      "STR": 10,
+      "STA": 9,
+      "CHA": -7,
+      "WIS": 5,
+      "INT": 10,
+      "AGI": 3,
+      "HP": 60,
+      "MANA": 60,
+      "END": 60
+    },
+    "resists": {
+      "FR": 5,
+      "DR": 6,
+      "CR": 5,
+      "MR": 2,
+      "PR": 6
+    },
+    "hp_regen": null,
+    "mana_regen": null,
+    "manaRegen": null,
+    "endurance_regen": null,
+    "attack": null,
+    "haste": null,
+    "charges": null,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "ALL"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 0.5,
+    "size": "TINY",
+    "item_type": "Armor",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "lore": true,
+    "magic": true,
+    "no_drop": null,
+    "prestige": null,
+    "aug_slots": [],
+    "iconPath": null,
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=4803"
+      }
+    ],
+    "expansion": "Velious",
+    "confidence": "needs_review",
+    "match_notes": [
+      "Reprocessed exact Allakhazam item URL: https://everquest.allakhazam.com/db/item.html?item=4803.",
+      "Exact URL page is tagged as Expansion: Scars of Velious.",
+      "Exact URL title \"Zlandicar\" does not match requested item name \"Zlandicar's Talisman\".",
+      "Tagged as a Zlandicar Velious raid bucket 3 drop."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "needs_review",
+    "acquisitionType": "drop",
+    "sourceNpcName": "Zlandicar",
+    "sourceNpcId": "5441",
+    "raidBucket": 3,
+    "icon": "https://everquest.allakhazam.com/pgfx/item_510.png"
   }
 }

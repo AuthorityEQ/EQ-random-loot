@@ -21,7 +21,9 @@ type ItemDetails = {
   resists: Record<string, number | string>;
   hp_regen?: number | null;
   mana_regen?: number | null;
+  manaRegen?: number | null;
   endurance_regen?: number | null;
+  attack?: number | null;
   haste: string | null;
   worn_effects: string[];
   focus_effects: string[];
@@ -82,7 +84,9 @@ type MigrationReport = {
 const PARTIAL_SCHEMA_FIELDS = [
   "hp_regen",
   "mana_regen",
+  "manaRegen",
   "endurance_regen",
+  "attack",
   "item_type",
   "stackable",
   "weight_reduction",
@@ -138,7 +142,7 @@ function readTableValue(label: string, html: string) {
 }
 
 function readRegen(label: "HP" | "Mana" | "Endurance", text: string) {
-  return readNumber(new RegExp(`\\b${label}\\s+Regen\\s*:?\\s*([+-]?\\d+)`, "i"), text);
+  return readNumber(new RegExp(`\\b${label}\\s+(?:Regen|Regeneration)\\s*:?\\s*([+-]?\\d+)`, "i"), text);
 }
 
 /**
@@ -153,7 +157,9 @@ function extractPartialFields(html: string): Record<PartialSchemaField, unknown>
   return {
     hp_regen: readRegen("HP", text),
     mana_regen: readRegen("Mana", text),
+    manaRegen: readRegen("Mana", text),
     endurance_regen: readRegen("Endurance", text),
+    attack: readNumber(/\bAttack:\s*([+-]?\d+)/i, text),
     item_type: readTableValue("Item Type", html),
     stackable: (() => {
       const value = readTableValue("Stackable", html);

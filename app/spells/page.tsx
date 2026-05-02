@@ -35,7 +35,7 @@ const validZoneSlugs = new Set(
   _allGroupBuckets.flatMap((b) => b.zones).map(zoneToSlug),
 );
 
-type SpellExpansion = "Classic" | "Kunark" | "Velious";
+type SpellExpansion = "Classic" | "Kunark" | "Velious" | "Luclin";
 
 type SpellDropSource = {
   mob: string;
@@ -73,7 +73,7 @@ function isDroppedSpell(spell: SpellRecord): boolean {
   return (!spell.vendors || spell.vendors.length === 0) && spell.sourceType === "dropped_or_quested";
 }
 
-const expansionOrder: SpellExpansion[] = ["Classic", "Kunark", "Velious"];
+const expansionOrder: SpellExpansion[] = ["Classic", "Kunark", "Velious", "Luclin"];
 const spells: SpellRecord[] = [
   ...(spellsData as SpellRecord[]),
   ...(droppedSpellsData as SpellRecord[]),
@@ -118,6 +118,7 @@ export default function SpellsPage() {
   const [purchasedSpellKeys, setPurchasedSpellKeys] = useState<string[]>([]);
   const [purchasedReady, setPurchasedReady] = useState(false);
   const [showResetConfirm, setShowResetConfirm] = useState(false);
+  const [expandedDropSourceKeys, setExpandedDropSourceKeys] = useState<Set<string>>(() => new Set());
 
   const selectedLevel = deferredLevelInput.trim() === "" ? null : Number.parseInt(deferredLevelInput, 10);
   const shoppingKeys = useMemo(() => new Set(shoppingList.map(spellShoppingKey)), [shoppingList]);
@@ -229,6 +230,18 @@ export default function SpellsPage() {
         next.delete(expansion);
       } else {
         next.add(expansion);
+      }
+      return next;
+    });
+  }
+
+  function toggleDropSources(key: string) {
+    setExpandedDropSourceKeys((current) => {
+      const next = new Set(current);
+      if (next.has(key)) {
+        next.delete(key);
+      } else {
+        next.add(key);
       }
       return next;
     });
@@ -784,7 +797,14 @@ export default function SpellsPage() {
       ) : (
         <>
           <section className="spell-list" aria-label="Spell results">
-            {(selectedClass === "Any" && !showAll ? visibleSpells.slice(0, 200) : visibleSpells).map((spell) => (
+            {(selectedClass === "Any" && !showAll ? visibleSpells.slice(0, 200) : visibleSpells).map((spell) => {
+              const dropped = isDroppedSpell(spell);
+              const spellKey = spellShoppingKey(spell);
+              const hasSourceDetail = dropped && Boolean(spell.dropSources?.length || spell.questSource);
+              const sourceDetailId = `spell-sources-${spellKey.replace(/\W+/g, "-")}`;
+              const sourceDetailExpanded = expandedDropSourceKeys.has(spellKey);
+
+              return (
               <article className={`spell-row ${expansionTone(spell.expansion)}`} key={`${spell.name}-${spell.class}-${spell.expansion}-${spell.level}`}>
                 <div className={`spell-level-badge ${levelTone(spell.level)}`} aria-label={`Level ${spell.level}`}>
                   <span>{spell.level}</span>
@@ -794,8 +814,8 @@ export default function SpellsPage() {
                     {spell.name}
                   </a>
                   <p className="spell-description">{spell.description}</p>
-                  {isDroppedSpell(spell) && (spell.dropSources?.length || spell.questSource) ? (
-                    <div className="spell-source-detail">
+                  {hasSourceDetail && sourceDetailExpanded ? (
+                    <div className="spell-source-detail" id={sourceDetailId}>
                       {spell.dropSources?.length ? (
                         <ul className="spell-drop-sources" aria-label={`${spell.name} drop sources`}>
                           {spell.dropSources.map((src) => {
@@ -828,7 +848,7 @@ export default function SpellsPage() {
                       ) : null}
                     </div>
                   ) : null}
-                  {isDroppedSpell(spell) && !spell.dropSources?.length && !spell.questSource ? (
+                  {dropped && !spell.dropSources?.length && !spell.questSource ? (
                     <p className="spell-source-unknown">No drop or quest data available.</p>
                   ) : null}
                 </div>
@@ -836,9 +856,21 @@ export default function SpellsPage() {
                   <span>{spell.class}</span>
                   <span className={`expansion-pill is-compact ${expansionTone(spell.expansion)}`}>{spell.expansion}</span>
                 </div>
-                {isDroppedSpell(spell) ? (
+                {dropped ? (
                   <>
-                    <span className="spell-badge spell-badge--dropped">Dropped</span>
+                    {hasSourceDetail ? (
+                      <button
+                        aria-controls={sourceDetailId}
+                        aria-expanded={sourceDetailExpanded}
+                        className="spell-badge spell-badge--dropped spell-badge-button"
+                        onClick={() => toggleDropSources(spellKey)}
+                        type="button"
+                      >
+                        Dropped
+                      </button>
+                    ) : (
+                      <span className="spell-badge spell-badge--dropped">Dropped</span>
+                    )}
                     <a className="spell-source-link" href={spell.sourceUrl} target="_blank" rel="noopener noreferrer">View on Allakhazam</a>
                   </>
                 ) : (
@@ -847,7 +879,8 @@ export default function SpellsPage() {
                   </button>
                 )}
               </article>
-            ))}
+              );
+            })}
           </section>
           {selectedClass === "Any" && !showAll && visibleSpells.length > 200 ? (
             <div className="spell-list-show-all">

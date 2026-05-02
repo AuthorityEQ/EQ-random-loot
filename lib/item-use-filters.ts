@@ -1,4 +1,6 @@
 import type { ItemDetails } from "@/lib/search";
+import { itemEffectsMatchQuery, itemHasFocusEffect } from "@/lib/item-effects";
+import { isShieldItem } from "@/lib/item-weapon";
 
 export const classOptions = [
   "Any",
@@ -57,6 +59,8 @@ export const fallbackStatOptions = [
   "DR",
   "PR",
   "Haste",
+  "Mana Regen",
+  "Attack",
 ] as const;
 
 export type ClassFilter = (typeof classOptions)[number];
@@ -64,12 +68,32 @@ export type RaceFilter = (typeof raceOptions)[number];
 export type SlotFilter = "Any" | string;
 export type StatFilter = "Any" | string;
 
+export const noShieldClasses = new Set(["RNG", "BRD", "BER", "ROG", "MNK", "BST"]);
+
+export function classCanUseShields(classCode: string) {
+  return !noShieldClasses.has(classCode.toUpperCase());
+}
+
+const classTokenAliases: Record<string, string> = {
+  BERSERKER: "BER",
+};
+
+export const classDisplayNames: Record<string, string> = {
+  BER: "Berserker",
+};
+
+export function formatClassOption(option: string) {
+  const displayName = classDisplayNames[option];
+  return displayName ? `${option} - ${displayName}` : option;
+}
+
 function tokenizeRestrictions(values?: string[] | string | null) {
   const list = Array.isArray(values) ? values : values ? [values] : [];
 
   return list
     .flatMap((value) => String(value).toUpperCase().split(/[,\s]+/))
     .map((value) => value.trim())
+    .map((value) => classTokenAliases[value] ?? value)
     .filter(Boolean);
 }
 
@@ -106,12 +130,21 @@ function hasValue(value: unknown) {
   return value !== null && value !== undefined && value !== "" && value !== 0 && value !== "0";
 }
 
+function normalizeStatFilter(statFilter: StatFilter) {
+  return statFilter.trim().toUpperCase().replace(/[\s-]+/g, "_");
+}
+
 export function getItemStatValue(details: ItemDetails | undefined, statFilter: StatFilter) {
   if (!details || statFilter === "Any") return null;
 
-  const normalized = statFilter.toUpperCase();
+  const normalized = normalizeStatFilter(statFilter);
   if (normalized === "AC") return hasValue(details.ac) ? details.ac : null;
   if (normalized === "HASTE") return hasValue(details.haste) ? details.haste : null;
+  if (normalized === "MANA_REGEN") {
+    const manaRegen = details.manaRegen ?? details.mana_regen;
+    return hasValue(manaRegen) ? manaRegen : null;
+  }
+  if (normalized === "ATTACK") return hasValue(details.attack) ? details.attack : null;
 
   const statValue = details.stats?.[normalized];
   if (hasValue(statValue)) return statValue;
@@ -140,21 +173,22 @@ export function formatItemStatValue(details: ItemDetails | undefined, statFilter
     return `${value} Haste`;
   }
 
-  const normalized = statFilter.toUpperCase();
+  const normalized = normalizeStatFilter(statFilter);
+  const displayLabel = normalized === "MANA_REGEN" ? "Mana Regen" : normalized === "ATTACK" ? "Attack" : normalized;
   if (normalized === "AC") {
     return `${value} AC`;
   }
 
   if (typeof value === "number") {
-    return `${value > 0 ? "+" : ""}${value} ${normalized}`;
+    return `${value > 0 ? "+" : ""}${value} ${displayLabel}`;
   }
 
   const textValue = String(value);
   if (/^-/.test(textValue) || /^\+/.test(textValue)) {
-    return `${textValue} ${normalized}`;
+    return `${textValue} ${displayLabel}`;
   }
 
-  return `+${textValue} ${normalized}`;
+  return `+${textValue} ${displayLabel}`;
 }
 
 export function itemMatchesUseFilters(
@@ -163,9 +197,17 @@ export function itemMatchesUseFilters(
   raceFilter: RaceFilter,
   slotFilter: SlotFilter = "Any",
   statFilter: StatFilter = "Any",
+  focusOnly = false,
+  effectQuery = "",
 ) {
+  if (classFilter !== "Any" && !classCanUseShields(classFilter) && isShieldItem(details)) {
+    return false;
+  }
+
   return allowsSelected(details?.classes, classFilter)
     && allowsSelected(details?.races, raceFilter)
     && matchesSlot(details, slotFilter)
-    && (statFilter === "Any" || getItemStatValue(details, statFilter) !== null);
+    && (statFilter === "Any" || getItemStatValue(details, statFilter) !== null)
+    && (!focusOnly || itemHasFocusEffect(details))
+    && itemEffectsMatchQuery(details, effectQuery);
 }

@@ -15,6 +15,7 @@ type PreviewState = {
 type ItemPreviewContextValue = {
   enabled: boolean;
   setEnabled: (enabled: boolean) => void;
+  hidePreview: () => void;
   previewProps: (itemName: string, details?: ItemDetails) => {
     onMouseEnter: (event: React.MouseEvent<HTMLElement>) => void;
     onMouseMove: (event: React.MouseEvent<HTMLElement>) => void;
@@ -61,6 +62,7 @@ export function ItemPreviewProvider({ children }: { children: React.ReactNode })
     return {
       enabled,
       setEnabled,
+      hidePreview: () => setPreview(null),
       previewProps: (itemName: string, details?: ItemDetails) => ({
         onMouseEnter: (event) => updatePreview(itemName, details, event),
         onMouseMove: (event) => updatePreview(itemName, details, event),

@@ -8,7 +8,7 @@ export const lootModes: Array<{ value: LootMode; label: string; enabled: boolean
   },
   {
     value: "normal",
-    label: "Normal Loot",
+    label: "Items Only",
     enabled: true,
   },
 ];

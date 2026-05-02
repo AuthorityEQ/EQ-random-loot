@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { FavoriteIndicator } from "@/components/FavoriteIndicator";
 import { ItemIcon } from "@/components/ItemIcon";
 import { useItemPreview } from "@/components/ItemPreviewProvider";
+import { itemHasFocusEffect } from "@/lib/item-effects";
 import type { Bucket, ItemDetails } from "@/lib/search";
 
 export type MatchingItemRow = {
@@ -48,6 +49,7 @@ export function MatchingItemList({ rows, onSelectLoot, pageSize = 100 }: Matchin
                     <span>{itemName}</span>
                   </span>
                   <span className="loot-item-actions">
+                    {itemHasFocusEffect(details) ? <span className="loot-focus-badge">Focus</span> : null}
                     {statDisplay ? <span className="loot-stat-value">{statDisplay}</span> : null}
                     <FavoriteIndicator details={details} itemName={itemName} />
                   </span>

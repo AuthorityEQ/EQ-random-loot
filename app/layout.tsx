@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { AppNavLinks } from "@/components/AppNavLinks";
 import { BucketDisplayProvider } from "@/components/BucketDisplayProvider";
-import { BucketDisplayToggle } from "@/components/BucketDisplayToggle";
 import { EpicProgressProvider } from "@/components/EpicProgressProvider";
 import { FavoritesProvider } from "@/components/FavoritesProvider";
 import { InstallPromptBanner } from "@/components/InstallPromptBanner";
@@ -9,7 +8,6 @@ import { ItemPreviewProvider } from "@/components/ItemPreviewProvider";
 import { ItemPreviewToggle } from "@/components/ItemPreviewToggle";
 import { ServerProvider } from "@/components/ServerProvider";
 import { ServiceWorkerRegistration } from "@/components/ServiceWorkerRegistration";
-import { SharedLootToggle } from "@/components/SharedLootToggle";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import "./globals.css";
 
@@ -77,8 +75,6 @@ export default function RootLayout({
                   <nav className="app-nav" aria-label="Primary navigation">
                     <AppNavLinks />
                     <div className="app-nav-controls">
-                      <SharedLootToggle />
-                      <BucketDisplayToggle />
                       <ItemPreviewToggle />
                       <ThemeToggle />
                     </div>
