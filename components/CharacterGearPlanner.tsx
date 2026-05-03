@@ -25,7 +25,7 @@ import {
 } from "@/lib/item-effects";
 import { isShieldItem, isTwoHandedItem } from "@/lib/item-weapon";
 import { CLASS_STAT_WEIGHTS, explainItemScore, formatScoredStatLabel, type ClassCode } from "@/lib/itemScoring";
-import { classCanUseShields, formatClassOption, itemMatchesUseFilters } from "@/lib/item-use-filters";
+import { classCanUseShields, itemMatchesUseFilters } from "@/lib/item-use-filters";
 import { parseRawSlot, type SlotKey } from "@/lib/slot-filter";
 import type { ItemDetails, ItemDetailsMap, LootDataset } from "@/lib/search";
 import type { RaidDataset } from "@/lib/raidTiers";
@@ -163,15 +163,15 @@ function buildGearCandidates(): GearCandidate[] {
   }
 
   for (const [itemName, details] of Object.entries(itemDetails)) {
-    if (details.acquisitionType !== "quest") continue;
+    if (details.acquisitionType !== "quest" && details.sourceCategory !== "Targeted Allakhazam item import") continue;
     if (parseRawSlot(details.slot).size === 0) continue;
 
     const questSourceLabel = details.sourceNpcName
       ?? details.questName
-      ?? (details.questId ? `Quest ${details.questId}` : "Quest item");
-    const sourceLabel = questSourceLabel.toLowerCase().includes("quest")
-      ? questSourceLabel
-      : `${questSourceLabel} quest`;
+      ?? (details.questId ? `Quest ${details.questId}` : details.sourceCategory ?? "Item database");
+    const sourceLabel = details.acquisitionType === "quest"
+      ? (questSourceLabel.toLowerCase().includes("quest") ? questSourceLabel : `${questSourceLabel} quest`)
+      : questSourceLabel;
 
     touchItem(itemName, details.expansion ?? "Velious", [sourceLabel]);
   }
@@ -1241,7 +1241,7 @@ export function CharacterGearPlanner() {
             <select value={selectedClass} onChange={(event) => setSelectedClass(event.target.value as ClassCode)}>
               {classCodes.map((classCode) => (
                 <option key={classCode} value={classCode}>
-                  {formatClassOption(classCode)}
+                  {classCode}
                 </option>
               ))}
             </select>

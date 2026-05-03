@@ -43,6 +43,7 @@ type OptionalInspectFields = {
   iconPath?: string | null;
   icon?: string | null;
   icon_url?: string | null;
+  extraStats?: Record<string, string | number | boolean>;
 };
 
 function hasValue(value: unknown) {
@@ -71,6 +72,15 @@ function titleCase(value: string) {
     .split(/([\s/]+)/)
     .map((part) => (/^[a-z]/.test(part) ? part[0].toUpperCase() + part.slice(1) : part))
     .join("");
+}
+
+function formatExtraStatLabel(value: string) {
+  return value
+    .replace(/([a-z0-9])([A-Z])/g, "$1 $2")
+    .replace(/_/g, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .replace(/\b\w/g, (char) => char.toUpperCase());
 }
 
 function StatPair({ label, value }: { label?: string; value?: number | string | null }) {
@@ -338,6 +348,9 @@ export function EqItemInspect({ itemName, details, compact = false }: EqItemInsp
     ["Size Cap", details.size_capacity],
     ["Stackable", typeof details.stackable === "boolean" ? (details.stackable ? "Yes" : "No") : null],
   ];
+  const extraRows: Array<[string, number | string | null | undefined]> = Object.entries(optional.extraStats ?? {})
+    .filter(([, value]) => hasValue(value))
+    .map(([key, value]) => [formatExtraStatLabel(key), typeof value === "boolean" ? (value ? "Yes" : "No") : value]);
   const attributeRows = Object.entries(attributeLabels).map(([key, label]) => [label, details.stats[key]] as const);
   const resistRows = Object.entries(resistLabels).map(([key, label]) => [label, details.resists[key]] as const);
   const effectSections = collectEffectSections(details);
@@ -381,6 +394,13 @@ export function EqItemInspect({ itemName, details, compact = false }: EqItemInsp
         />
 
         <AttributeResistMatrix attributes={attributeRows} resists={resistRows} />
+
+        {extraRows.length > 0 ? (
+          <div className="eq-extra-stats-block">
+            <p className="eq-quest-heading">Additional</p>
+            <StatMatrix columns={[extraRows]} />
+          </div>
+        ) : null}
 
         {hasEffects ? (
           <div className="eq-effects-block">

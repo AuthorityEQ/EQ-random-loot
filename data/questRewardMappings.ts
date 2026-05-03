@@ -1,3 +1,5 @@
+import { veliousClassArmorQuestMappings } from "./veliousClassArmorQuestMappings";
+
 export type QuestRewardMapping = {
   questId?: string;
   sourceItemName?: string;
@@ -30,6 +32,7 @@ const quest1289Source = {
 // Lightweight HoT quest reward mappings from Dozekar's tear drops.
 // Keep this focused on source item -> possible reward, not walkthrough text.
 export const questRewardMappings: QuestRewardMapping[] = [
+  ...veliousClassArmorQuestMappings,
   {
     ...quest1289Source,
     rewardItemName: "Clawed Griffin Sword",

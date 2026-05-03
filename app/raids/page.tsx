@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { ItemDrawer } from "@/components/ItemDrawer";
 import "@/components/item-drawer.css";
+import "@/components/bucket-card.css";
 import { RaidTierCard } from "@/components/raid/RaidTierCard";
 import { useServer } from "@/components/ServerProvider";
 import classicRaidData from "@/data/classic-raid.json";

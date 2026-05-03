@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
 import { AppNavLinks } from "@/components/AppNavLinks";
 import { BucketDisplayProvider } from "@/components/BucketDisplayProvider";
 import { EpicProgressProvider } from "@/components/EpicProgressProvider";
@@ -87,6 +88,7 @@ export default function RootLayout({
         </ServerProvider>
         <ServiceWorkerRegistration />
         <InstallPromptBanner />
+        <Analytics />
       </body>
     </html>
   );

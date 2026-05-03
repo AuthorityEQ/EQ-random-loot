@@ -45,6 +45,7 @@ export type ItemEffect = {
 export type ItemDetails = {
   name: string;
   itemId?: string | null;
+  sourceUrl?: string | null;
   slot: string | null;
   ac: number | null;
   damage: number | null;
@@ -104,6 +105,8 @@ export type ItemDetails = {
   parsing_warnings?: string[];
   expansion: string;
   acquisitionType?: "quest" | string;
+  sourceCategory?: string;
+  armorSet?: "Thurgadin" | "Kael" | "Skyshrine" | string;
   sourceNpcName?: string;
   sourceNpcId?: string;
   raidBucket?: number;
@@ -112,6 +115,8 @@ export type ItemDetails = {
   questId?: string;
   questName?: string;
   turnInNpcName?: string;
+  extraStats?: Record<string, string | number | boolean>;
+  rawItemText?: string;
   questSources?: Array<{
     sourceNpcName?: string;
     sourceNpcId?: string;
