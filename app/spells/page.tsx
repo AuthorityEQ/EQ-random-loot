@@ -463,7 +463,6 @@ export default function SpellsPage() {
         <div>
           <p className="eyebrow">EverQuest / Spells</p>
           <h1>Spells</h1>
-          <p className="wip-line">Bard spell data preview</p>
         </div>
       </header>
 

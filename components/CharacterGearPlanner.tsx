@@ -124,6 +124,13 @@ const focusCategoryLabels: Record<FocusEffectCategory, string> = {
   bard: "Bard Mod",
   pet: "Pet Focus",
 };
+const classicPlanarGearSource = "Classic Planar Gear";
+
+function isClassicPlanarQuestArmor(details: ItemDetails) {
+  return details.expansion === "Classic"
+    && details.acquisitionType === "questTurnIn"
+    && String(details.relatedQuestId ?? "") === "2459";
+}
 
 function buildGearCandidates(): GearCandidate[] {
   const sourceMap = new Map<string, { expansions: Set<string>; zones: Set<string> }>();
@@ -163,6 +170,13 @@ function buildGearCandidates(): GearCandidate[] {
   }
 
   for (const [itemName, details] of Object.entries(itemDetails)) {
+    if (isClassicPlanarQuestArmor(details)) {
+      if (parseRawSlot(details.slot).size > 0) {
+        touchItem(itemName, "Classic", [classicPlanarGearSource]);
+      }
+      continue;
+    }
+
     if (details.acquisitionType !== "quest" && details.sourceCategory !== "Targeted Allakhazam item import") continue;
     if (parseRawSlot(details.slot).size === 0) continue;
 

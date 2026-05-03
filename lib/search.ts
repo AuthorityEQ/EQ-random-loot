@@ -105,6 +105,8 @@ export type ItemDetails = {
   parsing_warnings?: string[];
   expansion: string;
   acquisitionType?: "quest" | string;
+  relatedQuestId?: string | number;
+  source?: string;
   sourceCategory?: string;
   armorSet?: "Thurgadin" | "Kael" | "Skyshrine" | string;
   sourceNpcName?: string;
