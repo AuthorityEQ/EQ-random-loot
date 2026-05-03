@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 type BaseItem = {
   name: string;
@@ -54,6 +54,8 @@ type SortMode = "name" | "level-asc" | "level-desc" | "type" | "items-desc";
 type NormalLootCatalogProps = {
   zones: ZoneLoot[];
 };
+
+const npcSuggestionLimit = 20;
 
 function itemMeta(item: BaseItem | DropItem | VendorItem) {
   return [item.expansion, item.availability].filter(Boolean).join(" - ");
@@ -201,36 +203,114 @@ function NpcRow({ npc }: { npc: ImportedNpc }) {
 
 export function NormalLootCatalog({ zones }: NormalLootCatalogProps) {
   const [searchQuery, setSearchQuery] = useState("");
-  const [selectedZoneId, setSelectedZoneId] = useState("");
+  const [selectedZoneId, setSelectedZoneId] = useState<string | null>(null);
+  const [selectedNpcId, setSelectedNpcId] = useState<string | null>(null);
+  const [isNpcSearchOpen, setIsNpcSearchOpen] = useState(false);
+  const [activeNpcSuggestionIndex, setActiveNpcSuggestionIndex] = useState(0);
   const [npcTypeFilter, setNpcTypeFilter] = useState<NpcTypeFilter>("all");
   const [contentFilter, setContentFilter] = useState<ContentFilter>("all");
   const [sortMode, setSortMode] = useState<SortMode>("name");
+  const npcSearchRef = useRef<HTMLLabelElement | null>(null);
   const normalizedSearch = searchQuery.trim().toLowerCase();
+  const selectedZone = zones.find((zone) => zone.zoneId === selectedZoneId);
+  const hasZoneSelection = Boolean(selectedZone);
+
+  const suggestionSourceNpcs = useMemo(() => {
+    return selectedZone?.mobs ?? [];
+  }, [selectedZone]);
+
+  const allNpcSuggestions = useMemo(() => {
+    if (normalizedSearch.length < 2) return [];
+
+    const startsWithMatches: ImportedNpc[] = [];
+    const includesMatches: ImportedNpc[] = [];
+
+    for (const npc of suggestionSourceNpcs) {
+      const normalizedName = npc.name.toLowerCase();
+      if (normalizedName.startsWith(normalizedSearch)) {
+        startsWithMatches.push(npc);
+      } else if (normalizedName.includes(normalizedSearch)) {
+        includesMatches.push(npc);
+      }
+    }
+
+    startsWithMatches.sort((a, b) => a.name.localeCompare(b.name));
+    includesMatches.sort((a, b) => a.name.localeCompare(b.name));
+
+    return [...startsWithMatches, ...includesMatches];
+  }, [normalizedSearch, suggestionSourceNpcs]);
+
+  const npcSuggestions = allNpcSuggestions.slice(0, npcSuggestionLimit);
+  const showNpcSuggestions = isNpcSearchOpen && normalizedSearch.length >= 2 && npcSuggestions.length > 0;
+  const hasMoreNpcSuggestions = allNpcSuggestions.length > npcSuggestionLimit;
+
+  useEffect(() => {
+    setActiveNpcSuggestionIndex(0);
+  }, [searchQuery, selectedZoneId]);
+
+  useEffect(() => {
+    function onPointerDown(event: PointerEvent) {
+      if (!npcSearchRef.current?.contains(event.target as Node)) {
+        setIsNpcSearchOpen(false);
+      }
+    }
+
+    document.addEventListener("pointerdown", onPointerDown);
+    return () => document.removeEventListener("pointerdown", onPointerDown);
+  }, []);
 
   const filteredZones = useMemo(() => {
-    return zones
-      .filter((zone) => selectedZoneId === "" || zone.zoneId === selectedZoneId)
+    if (!selectedZone) return [];
+
+    return [selectedZone]
       .map((zone) => {
         const mobs = sortNpcs(zone.mobs.filter((npc) => {
-          const matchesSearch = normalizedSearch.length === 0 || npc.name.toLowerCase().includes(normalizedSearch);
+          const matchesSearch = selectedNpcId
+            ? npc.id === selectedNpcId
+            : normalizedSearch.length === 0 || npc.name.toLowerCase().includes(normalizedSearch);
           return matchesSearch && npcTypeMatches(npc, npcTypeFilter) && contentMatches(npc, contentFilter);
         }), sortMode);
         return { ...zone, mobs };
       })
       .filter((zone) => zone.mobs.length > 0);
-  }, [contentFilter, normalizedSearch, npcTypeFilter, selectedZoneId, sortMode, zones]);
+  }, [contentFilter, normalizedSearch, npcTypeFilter, selectedNpcId, selectedZone, sortMode]);
 
   const visibleNpcCount = filteredZones.reduce((sum, zone) => sum + zone.mobs.length, 0);
-  const selectedZone = zones.find((zone) => zone.zoneId === selectedZoneId);
-  const singleZoneSelected = Boolean(selectedZoneId);
+  const singleZoneSelected = Boolean(selectedZone);
+
+  function updateZone(value: string) {
+    setSelectedZoneId(value || null);
+    setSelectedNpcId(null);
+    setSearchQuery("");
+    setIsNpcSearchOpen(false);
+  }
+
+  function updateNpcSearch(value: string) {
+    if (!selectedZone) return;
+    setSearchQuery(value);
+    setSelectedNpcId(null);
+    setIsNpcSearchOpen(true);
+  }
+
+  function clearNpcSearch() {
+    setSearchQuery("");
+    setSelectedNpcId(null);
+    setIsNpcSearchOpen(false);
+  }
+
+  function selectNpcSuggestion(npc: ImportedNpc) {
+    setSearchQuery(npc.name);
+    setSelectedNpcId(npc.id);
+    setIsNpcSearchOpen(false);
+  }
 
   return (
     <>
       <section className="normal-loot-controls" aria-label="Normal loot filters">
         <label>
           <span>Zone</span>
-          <select onChange={(event) => setSelectedZoneId(event.target.value)} value={selectedZoneId}>
-            <option value="">All zones</option>
+          <select onChange={(event) => updateZone(event.target.value)} value={selectedZoneId ?? ""}>
+            <option value="">Select a zone...</option>
             {zones.map((zone) => (
               <option key={zone.zoneId} value={zone.zoneId}>
                 {zone.zone}
@@ -238,24 +318,83 @@ export function NormalLootCatalog({ zones }: NormalLootCatalogProps) {
             ))}
           </select>
         </label>
-        {selectedZone ? (
-          <button className="normal-clear-filter-button" onClick={() => setSelectedZoneId("")} type="button">
+        {hasZoneSelection ? (
+          <button className="normal-clear-filter-button" onClick={() => updateZone("")} type="button">
             Clear zone
           </button>
         ) : null}
-        <label>
+        <label className="normal-npc-search" ref={npcSearchRef}>
           <span>NPC search</span>
           <input
+            aria-activedescendant={showNpcSuggestions ? `normal-npc-suggestion-${activeNpcSuggestionIndex}` : undefined}
+            aria-autocomplete="list"
+            aria-controls={showNpcSuggestions ? "normal-npc-suggestions" : undefined}
+            aria-expanded={showNpcSuggestions}
             autoComplete="off"
-            onChange={(event) => setSearchQuery(event.target.value)}
+            disabled={!selectedZone}
+            onChange={(event) => updateNpcSearch(event.target.value)}
+            onFocus={() => setIsNpcSearchOpen(true)}
+            onKeyDown={(event) => {
+              if (event.key === "Escape") {
+                clearNpcSearch();
+                return;
+              }
+
+              if (!showNpcSuggestions) return;
+
+              if (event.key === "ArrowDown") {
+                event.preventDefault();
+                setActiveNpcSuggestionIndex((current) => (current + 1) % npcSuggestions.length);
+              }
+
+              if (event.key === "ArrowUp") {
+                event.preventDefault();
+                setActiveNpcSuggestionIndex((current) => (current - 1 + npcSuggestions.length) % npcSuggestions.length);
+              }
+
+              if (event.key === "Enter") {
+                event.preventDefault();
+                const npc = npcSuggestions[activeNpcSuggestionIndex];
+                if (npc) selectNpcSuggestion(npc);
+              }
+            }}
             placeholder="NPC name"
+            role="combobox"
             type="search"
             value={searchQuery}
           />
+          {searchQuery ? (
+            <button className="normal-npc-search-clear" onClick={clearNpcSearch} type="button">
+              Clear
+            </button>
+          ) : null}
+          {showNpcSuggestions ? (
+            <div className="normal-npc-suggestions" id="normal-npc-suggestions" role="listbox">
+              {npcSuggestions.map((npc, index) => (
+                <button
+                  aria-selected={index === activeNpcSuggestionIndex}
+                  className={index === activeNpcSuggestionIndex ? "normal-npc-suggestion is-active" : "normal-npc-suggestion"}
+                  id={`normal-npc-suggestion-${index}`}
+                  key={npc.id}
+                  onClick={() => selectNpcSuggestion(npc)}
+                  onMouseDown={(event) => event.preventDefault()}
+                  onMouseEnter={() => setActiveNpcSuggestionIndex(index)}
+                  role="option"
+                  type="button"
+                >
+                  <strong>{npc.name}</strong>
+                  <span>{npc.zone}</span>
+                </button>
+              ))}
+              {hasMoreNpcSuggestions ? (
+                <p className="normal-npc-suggestion-help">Showing top 20 matches. Keep typing to narrow results.</p>
+              ) : null}
+            </div>
+          ) : null}
         </label>
         <label>
           <span>NPC type</span>
-          <select onChange={(event) => setNpcTypeFilter(event.target.value as NpcTypeFilter)} value={npcTypeFilter}>
+          <select disabled={!selectedZone} onChange={(event) => setNpcTypeFilter(event.target.value as NpcTypeFilter)} value={npcTypeFilter}>
             <option value="all">All</option>
             <option value="mob">Mob</option>
             <option value="vendor">Vendor</option>
@@ -265,7 +404,7 @@ export function NormalLootCatalog({ zones }: NormalLootCatalogProps) {
         </label>
         <label>
           <span>Content</span>
-          <select onChange={(event) => setContentFilter(event.target.value as ContentFilter)} value={contentFilter}>
+          <select disabled={!selectedZone} onChange={(event) => setContentFilter(event.target.value as ContentFilter)} value={contentFilter}>
             <option value="all">All</option>
             <option value="drops">Has drops</option>
             <option value="vendor">Has vendor items</option>
@@ -275,7 +414,7 @@ export function NormalLootCatalog({ zones }: NormalLootCatalogProps) {
         </label>
         <label>
           <span>Sort</span>
-          <select onChange={(event) => setSortMode(event.target.value as SortMode)} value={sortMode}>
+          <select disabled={!selectedZone} onChange={(event) => setSortMode(event.target.value as SortMode)} value={sortMode}>
             <option value="name">Name A-Z</option>
             <option value="level-asc">Level low to high</option>
             <option value="level-desc">Level high to low</option>
@@ -286,7 +425,9 @@ export function NormalLootCatalog({ zones }: NormalLootCatalogProps) {
         <p>{visibleNpcCount} NPCs shown</p>
       </section>
 
-      {filteredZones.length === 0 ? (
+      {!hasZoneSelection ? (
+        <p className="empty">Select a zone to view normal loot.</p>
+      ) : filteredZones.length === 0 ? (
         <p className="empty">No NPCs match the active filters.</p>
       ) : (
         <div className="normal-zone-stack">

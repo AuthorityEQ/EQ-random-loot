@@ -56,6 +56,7 @@ type SavedBuild = {
   version: number;
   characterName: string;
   class: string;
+  race?: string;
   equippedGear: Record<string, string>;
 };
 
@@ -63,6 +64,7 @@ type GearBuild = {
   id: string;
   name: string;
   class: string;
+  race?: string;
   equippedItems: Record<string, string | null>;
   createdAt?: string;
   updatedAt?: string;
@@ -103,6 +105,8 @@ const groupDatasets = [classicData, kunarkData, veliousData] as LootDataset[];
 const raidDatasets = [classicRaidData, kunarkRaidData, veliousRaidData] as RaidDataset[];
 const itemDetails = itemDetailsData as ItemDetailsMap;
 const classCodes = (Object.keys(CLASS_STAT_WEIGHTS) as ClassCode[]).sort((a, b) => a.localeCompare(b));
+const raceCodes = ["BAR", "DEF", "DWF", "ERU", "GNM", "HAF", "HEF", "HUM", "IKS", "OGR", "TRL", "VAH", "WEF"] as const;
+type RaceCode = (typeof raceCodes)[number];
 const gearSlotSelectOptions = [...gearSlots].sort((a, b) => a.label.localeCompare(b.label));
 const gearSlotIds = new Set(gearSlots.map((slot) => slot.id));
 const legacyGearSlotIdMap: Record<string, string> = {
@@ -125,6 +129,10 @@ const focusCategoryLabels: Record<FocusEffectCategory, string> = {
   pet: "Pet Focus",
 };
 const classicPlanarGearSource = "Classic Planar Gear";
+const raceTokenAliases: Record<string, RaceCode | string> = {
+  ELF: "WEF",
+  HFL: "HAF",
+};
 
 function isClassicPlanarQuestArmor(details: ItemDetails) {
   return details.expansion === "Classic"
@@ -243,13 +251,56 @@ function isLoreDuplicate(
   });
 }
 
+function normalizeRaceCode(value: unknown): RaceCode | "" {
+  const raceCode = String(value ?? "").toUpperCase().trim();
+  if (!raceCode) return "";
+  const normalizedRaceCode = raceTokenAliases[raceCode] ?? raceCode;
+  return raceCodes.includes(normalizedRaceCode as RaceCode) ? normalizedRaceCode as RaceCode : "";
+}
+
+function tokenizeRaceRestrictions(values?: string[] | string | null) {
+  const list = Array.isArray(values) ? values : values ? [values] : [];
+
+  return list
+    .flatMap((value) => String(value).toUpperCase().split(/[,\s]+/))
+    .map((value) => value.trim())
+    .map((value) => raceTokenAliases[value] ?? value)
+    .filter(Boolean);
+}
+
+function itemMatchesRace(details: ItemDetails | undefined, raceCode: RaceCode | "") {
+  if (!raceCode) return true;
+
+  const tokens = tokenizeRaceRestrictions(details?.races);
+  if (tokens.length === 0) return true;
+
+  const allIndex = tokens.indexOf("ALL");
+  const exceptIndex = tokens.findIndex((token) => token === "EXCEPT" || token === "BUT");
+
+  if (allIndex !== -1 && exceptIndex !== -1 && exceptIndex > allIndex) {
+    return !tokens.slice(exceptIndex + 1).includes(raceCode);
+  }
+
+  if (allIndex !== -1) return true;
+
+  return tokens.includes(raceCode);
+}
+
 function canEquipItem(
   itemName: string,
   equippedGear: Record<string, string>,
   targetSlotId: string,
   classCode: ClassCode,
+  raceCode: RaceCode | "",
 ) {
   const details = itemDetails[itemName];
+
+  if (!itemMatchesRace(details, raceCode)) {
+    return {
+      canEquip: false,
+      reason: "This item cannot be equipped by your selected race.",
+    };
+  }
 
   if (!classCanUseShields(classCode) && isShieldItem(details)) {
     return {
@@ -302,12 +353,13 @@ function sanitizeEquippedGear(equippedGear: Record<string, string>) {
   return next;
 }
 
-function getBisCandidatesForSlot(slot: GearSlot, classCode: ClassCode): BisCandidate[] {
+function getBisCandidatesForSlot(slot: GearSlot, classCode: ClassCode, raceCode: RaceCode | ""): BisCandidate[] {
   const bestByItem = new Map<string, BisCandidate>();
 
   for (const candidate of gearCandidates) {
     if (!itemMatchesSlot(candidate.details, slot.slotKey)) continue;
     if (!itemMatchesUseFilters(candidate.details, classCode, "Any")) continue;
+    if (!itemMatchesRace(candidate.details, raceCode)) continue;
 
     const score = explainItemScore(candidate.details, classCode).score;
     const existing = bestByItem.get(candidate.itemName);
@@ -602,6 +654,7 @@ function validateBuild(raw: unknown): SavedBuild {
     version: 1,
     characterName: candidate.characterName,
     class: normalizeClassCode(candidate.class),
+    race: normalizeRaceCode(candidate.race),
     equippedGear: normalizeEquippedGear(candidate.equippedGear),
   };
 }
@@ -612,6 +665,7 @@ function savedBuildToGearBuild(build: SavedBuild): GearBuild {
     id: createBuildId(),
     name: build.characterName.trim() || `${build.class} Character`,
     class: build.class,
+    race: normalizeRaceCode(build.race) || undefined,
     equippedItems: gearRecordToEquippedItems(build.equippedGear),
     createdAt: now,
     updatedAt: now,
@@ -625,6 +679,7 @@ function validateGearBuild(raw: unknown): GearBuild {
 
   const candidate = raw as Partial<GearBuild> & { characterName?: unknown; equippedGear?: unknown };
   const classCode = normalizeClassCode(candidate.class);
+  const raceCode = normalizeRaceCode(candidate.race);
   const name = String(candidate.name ?? candidate.characterName ?? "").trim() || `${classCode} Character`;
   const equippedSource = candidate.equippedItems ?? candidate.equippedGear ?? {};
   const equippedGear = normalizeEquippedGear(equippedSource);
@@ -634,6 +689,7 @@ function validateGearBuild(raw: unknown): GearBuild {
     id: typeof candidate.id === "string" && candidate.id.trim() ? candidate.id : createBuildId(),
     name,
     class: classCode,
+    race: raceCode || undefined,
     equippedItems: gearRecordToEquippedItems(equippedGear),
     createdAt: typeof candidate.createdAt === "string" ? candidate.createdAt : now,
     updatedAt: typeof candidate.updatedAt === "string" ? candidate.updatedAt : now,
@@ -672,6 +728,7 @@ function validateRoster(raw: unknown): GearRoster {
 export function CharacterGearPlanner() {
   const [selectedSlotId, setSelectedSlotId] = useState("head");
   const [selectedClass, setSelectedClass] = useState<ClassCode>("WAR");
+  const [selectedRace, setSelectedRace] = useState<RaceCode | "">("");
   const [characterName, setCharacterName] = useState("");
   const [equippedGear, setEquippedGear] = useState<Record<string, string>>({});
   const [roster, setRoster] = useState<GearBuild[]>([]);
@@ -771,6 +828,7 @@ export function CharacterGearPlanner() {
     return gearCandidates
       .filter((candidate) => itemMatchesSlot(candidate.details, selectedGearSlot.slotKey))
       .filter((candidate) => itemMatchesUseFilters(candidate.details, selectedClass, "Any"))
+      .filter((candidate) => itemMatchesRace(candidate.details, selectedRace))
       .filter((candidate) => !isLoreDuplicate(candidate.itemName, equippedGear, selectedGearSlot.id))
       .filter((candidate) => {
         if (!focusOnly) return true;
@@ -799,7 +857,7 @@ export function CharacterGearPlanner() {
         return b.score - a.score || a.itemName.localeCompare(b.itemName);
       })
       .slice(0, recommendationLimit);
-  }, [equippedGear, focusOnly, secondaryBlockedByTwoHander, selectedBardMod, selectedClass, selectedPetFocus, selectedSpellFocus, selectedGearSlot.id, selectedGearSlot.slotKey]);
+  }, [equippedGear, focusOnly, secondaryBlockedByTwoHander, selectedBardMod, selectedClass, selectedPetFocus, selectedRace, selectedSpellFocus, selectedGearSlot.id, selectedGearSlot.slotKey]);
 
   const equippedFocusSummary = useMemo(() => {
     const summary: Record<FocusEffectCategory, Array<{ slot: string; effect: string }>> = {
@@ -877,7 +935,7 @@ export function CharacterGearPlanner() {
 
   function equipItem(itemName: string) {
     const details = itemDetails[itemName];
-    const validation = canEquipItem(itemName, equippedGear, selectedGearSlot.id, selectedClass);
+    const validation = canEquipItem(itemName, equippedGear, selectedGearSlot.id, selectedClass, selectedRace);
     if (!validation.canEquip) {
       hidePreview();
       setPreviewItemName(itemName);
@@ -905,7 +963,7 @@ export function CharacterGearPlanner() {
   }
 
   function currentHasContent() {
-    return characterName.trim().length > 0 || Object.keys(equippedGear).length > 0;
+    return characterName.trim().length > 0 || Boolean(selectedRace) || Object.keys(equippedGear).length > 0;
   }
 
   function buildFromCurrent(id: string, existing?: GearBuild): GearBuild {
@@ -915,6 +973,7 @@ export function CharacterGearPlanner() {
       id,
       name: characterName.trim() || `${classCode} Character`,
       class: classCode,
+      race: selectedRace || undefined,
       equippedItems: gearRecordToEquippedItems(equippedGear),
       createdAt: existing?.createdAt ?? now,
       updatedAt: now,
@@ -1001,7 +1060,7 @@ export function CharacterGearPlanner() {
 
     return () => window.clearTimeout(timeout);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [autosaveReady, roster, activeCharacterId, characterName, selectedClass, equippedGear]);
+  }, [autosaveReady, roster, activeCharacterId, characterName, selectedClass, selectedRace, equippedGear]);
 
   function loadRosterMember(build: GearBuild) {
     hidePreview();
@@ -1009,6 +1068,7 @@ export function CharacterGearPlanner() {
     setPreviewItemName(null);
     setCharacterName(build.name);
     setSelectedClass(normalizeClassCode(build.class));
+    setSelectedRace(normalizeRaceCode(build.race));
     setEquippedGear(equippedItemsToGearRecord(build.equippedItems));
     setActiveCharacterId(build.id);
   }
@@ -1025,6 +1085,7 @@ export function CharacterGearPlanner() {
     setActiveCharacterId(null);
     setCharacterName("");
     setSelectedClass("WAR");
+    setSelectedRace("");
     setEquippedGear({});
     setPreviewItemName(null);
     setLoadError(null);
@@ -1048,6 +1109,7 @@ export function CharacterGearPlanner() {
     setActiveCharacterId(null);
     setCharacterName("");
     setSelectedClass("WAR");
+    setSelectedRace("");
     setEquippedGear({});
     setPreviewItemName(null);
     setLoadError(null);
@@ -1060,6 +1122,7 @@ export function CharacterGearPlanner() {
     setActiveCharacterId(null);
     setCharacterName("");
     setSelectedClass("WAR");
+    setSelectedRace("");
     setSelectedSlotId("head");
     setEquippedGear({});
     setPreviewItemName(null);
@@ -1148,7 +1211,7 @@ export function CharacterGearPlanner() {
 
   function confirmEquipBis() {
     const candidatesBySlot = Object.fromEntries(
-      gearSlots.map((slot) => [slot.id, getBisCandidatesForSlot(slot, selectedClass)]),
+      gearSlots.map((slot) => [slot.id, getBisCandidatesForSlot(slot, selectedClass, selectedRace)]),
     );
     const nextGear = sanitizeEquippedGear(findBestBisCombination(gearSlots, candidatesBySlot));
 
@@ -1217,6 +1280,7 @@ export function CharacterGearPlanner() {
         setActiveCharacterId(null);
         setCharacterName("");
         setSelectedClass("WAR");
+        setSelectedRace("");
         setEquippedGear({});
         setPreviewItemName(null);
       }
@@ -1256,6 +1320,17 @@ export function CharacterGearPlanner() {
               {classCodes.map((classCode) => (
                 <option key={classCode} value={classCode}>
                   {classCode}
+                </option>
+              ))}
+            </select>
+          </label>
+          <label className="class-filter character-race-filter">
+            <span>Race</span>
+            <select value={selectedRace} onChange={(event) => setSelectedRace(normalizeRaceCode(event.target.value))}>
+              <option value="">Any</option>
+              {raceCodes.map((raceCode) => (
+                <option key={raceCode} value={raceCode}>
+                  {raceCode}
                 </option>
               ))}
             </select>
@@ -1371,7 +1446,7 @@ export function CharacterGearPlanner() {
                     >
                       <span>
                         <strong>{character.name}</strong>
-                        <small>{character.class}</small>
+                        <small>{character.race ? `${character.class} / ${character.race}` : character.class}</small>
                       </span>
                       <em>{equippedCount}/{gearSlots.length} slots equipped</em>
                     </button>

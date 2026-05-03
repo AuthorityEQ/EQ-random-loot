@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
-import { AppNavLinks } from "@/components/AppNavLinks";
+import { AppNavLinks, AppSubNavLinks } from "@/components/AppNavLinks";
 import { BucketDisplayProvider } from "@/components/BucketDisplayProvider";
 import { EpicProgressProvider } from "@/components/EpicProgressProvider";
 import { FavoritesProvider } from "@/components/FavoritesProvider";
@@ -80,6 +80,7 @@ export default function RootLayout({
                       <ThemeToggle />
                     </div>
                   </nav>
+                  <AppSubNavLinks />
                   {children}
                 </ItemPreviewProvider>
               </EpicProgressProvider>
