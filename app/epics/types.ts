@@ -44,6 +44,8 @@ export const CLASS_NAME_MAP: Record<string, EpicClassName> = {
 
 // Normalized types — what the client component receives
 
+export type EpicStepTag = "solo" | "duo" | "group" | "raid" | "rare";
+
 export type NormalizedStep = {
   /** 1-based step number (parsed from the raw string). */
   stepNumber: number;
@@ -55,6 +57,7 @@ export type NormalizedStep = {
   zone: string | null;
   items: string | null;
   notes: string | null;
+  tags: EpicStepTag[];
   sourceRow: number;
 };
 
@@ -103,6 +106,7 @@ export type RawEpicStep = {
   zone: string;
   items: string;
   notes: string;
+  tags?: EpicStepTag[];
 };
 
 export type RawClassEpic = {

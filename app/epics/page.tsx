@@ -64,6 +64,7 @@ function normalizeStep(raw: RawEpicStep): NormalizedStep {
     zone: raw.zone || null,
     items: raw.items || null,
     notes: raw.notes || null,
+    tags: raw.tags ?? [],
     sourceRow: raw._source_row,
   };
 }

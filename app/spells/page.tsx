@@ -464,52 +464,71 @@ export default function SpellsPage() {
           <p className="eyebrow">EverQuest / Spells</p>
           <h1>Spells</h1>
         </div>
-      </header>
-
-      <div className="spell-view-actions">
-        {viewMode === "route" ? (
-          <>
-            <button className="home-reset-button" onClick={() => setViewMode("vendor")} type="button">
-              Back to Vendor Plan
-            </button>
-            <button className="home-reset-button" onClick={() => setViewMode("spells")} type="button">
-              Back to Spells
-            </button>
-            <button className="home-reset-button is-danger" onClick={() => setShowResetConfirm(true)} type="button">
-              Reset shopping list
-            </button>
-          </>
-        ) : viewMode === "vendor" ? (
-          <>
-            <button className="home-reset-button" onClick={() => setViewMode("shopping")} type="button">
-              Back to Shopping List
-            </button>
-            <button className="home-reset-button is-danger" onClick={() => setShowResetConfirm(true)} type="button">
-              Reset shopping list
-            </button>
-          </>
-        ) : viewMode === "shopping" ? (
-          <>
-            <button className="home-reset-button" onClick={() => setViewMode("spells")} type="button">
-              Back to Spells
-            </button>
-            <button className="home-reset-button is-danger" onClick={() => setShowResetConfirm(true)} type="button">
-              Reset shopping list
-            </button>
-          </>
-        ) : (
-          <>
-            <button className="home-reset-button" onClick={() => setViewMode("shopping")} type="button">
-              Shopping List <span>{shoppingList.length}</span>
+        {viewMode === "spells" ? (
+          <div className="spells-header-actions">
+            <button className="spell-shopping-primary-button" onClick={() => setViewMode("shopping")} type="button">
+              <span aria-hidden="true">🛒</span>
+              View Shopping List <span className="spell-shopping-count">{shoppingList.length}</span>
             </button>
             {shoppingList.length > 0 ? (
-              <button className="home-reset-button is-danger" onClick={() => setShowResetConfirm(true)} type="button">
+              <button className="spell-action-button is-reset" onClick={() => setShowResetConfirm(true)} type="button">
                 Reset shopping list
               </button>
             ) : null}
+          </div>
+        ) : null}
+      </header>
+
+      {viewMode !== "spells" ? (
+        <div className="spell-view-actions">
+          {viewMode === "route" ? (
+          <>
+            <div className="spell-action-zone spell-action-zone-left">
+              <button className="spell-action-button is-ghost" onClick={() => setViewMode("vendor")} type="button">
+                Back to Vendor Plan
+              </button>
+              <button className="spell-action-button is-ghost" onClick={() => setViewMode("spells")} type="button">
+                Back to Spells
+              </button>
+              <button className="spell-action-button is-reset" onClick={() => setShowResetConfirm(true)} type="button">
+                Reset shopping list
+              </button>
+            </div>
           </>
-        )}
-      </div>
+        ) : viewMode === "vendor" ? (
+          <>
+            <div className="spell-action-zone spell-action-zone-left">
+              <button className="spell-action-button is-ghost" onClick={() => setViewMode("shopping")} type="button">
+                Back to Shopping List
+              </button>
+              <button className="spell-action-button is-reset" onClick={() => setShowResetConfirm(true)} type="button">
+                Reset shopping list
+              </button>
+            </div>
+          </>
+        ) : viewMode === "shopping" ? (
+          <>
+            <div className="spell-action-zone spell-action-zone-left">
+              <button className="spell-action-button is-ghost" onClick={() => setViewMode("spells")} type="button">
+                Back to Spells
+              </button>
+              <button className="spell-action-button is-reset" onClick={() => setShowResetConfirm(true)} type="button">
+                Reset shopping list
+              </button>
+            </div>
+            {shoppingList.length > 0 ? (
+              <div className="spell-action-zone spell-action-zone-primary">
+                <span>Next step: Plan your vendor route</span>
+                <button className="spell-route-primary-button" onClick={() => setViewMode("vendor")} type="button">
+                  <span aria-hidden="true">⚔</span>
+                  Plan Vendor Route
+                </button>
+              </div>
+            ) : null}
+          </>
+          ) : null}
+        </div>
+      ) : null}
 
       {viewMode === "route" ? (
         <section className="vendor-route-view" aria-label="Final vendor shopping route">
@@ -610,12 +629,16 @@ export default function SpellsPage() {
                 <p>No vendor stops selected.</p>
               )}
             </div>
-            <strong>
-              {remainingSpells.length === 0 ? "All shopping list spells are covered." : `Remaining spells: ${remainingSpells.length}`}
-            </strong>
-            <button disabled={selectedPlan.length === 0} onClick={() => setViewMode("route")} type="button">
-              View shopping route
-            </button>
+            <div className="vendor-plan-next-step">
+              <strong>
+                {remainingSpells.length === 0 ? "All shopping list spells are covered." : `Remaining spells: ${remainingSpells.length}`}
+              </strong>
+              <span>Next step: generate your optimized vendor route</span>
+              <button className="vendor-route-primary-button" disabled={selectedPlan.length === 0} onClick={() => setViewMode("route")} type="button">
+                <span aria-hidden="true">→</span>
+                View Shopping Route
+              </button>
+            </div>
           </div>
 
           {vendorOptions.length > 0 ? (
@@ -673,9 +696,6 @@ export default function SpellsPage() {
                 {shoppingListMinTotal ? (
                   <span className="vendor-route-total">Cheapest possible: {shoppingListMinTotal}</span>
                 ) : null}
-                <button className="spell-list-button" onClick={() => setViewMode("vendor")} type="button">
-                  Plan vendor route
-                </button>
               </div>
               <div className="spell-list">
                 {shoppingList.map((spell) => (

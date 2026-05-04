@@ -88,12 +88,25 @@
 .epic-step-card {
   background: var(--card);
   border: 1px solid var(--border);
-  border-left: 4px solid var(--accent);
+  border-left: 3px solid color-mix(in srgb, var(--accent) 72%, var(--border));
   border-radius: 8px;
+  cursor: pointer;
   display: grid;
-  gap: 10px;
-  padding: 14px 16px;
-  transition: background 140ms ease, border-color 140ms ease, box-shadow 140ms ease;
+  gap: 0;
+  padding: 10px 12px;
+  transition: background 140ms ease, border-color 140ms ease, box-shadow 140ms ease, opacity 140ms ease;
+}
+
+.epic-step-card:hover,
+.epic-step-card:focus-visible {
+  background: color-mix(in srgb, var(--card) 86%, var(--accent));
+  border-color: color-mix(in srgb, var(--accent) 42%, var(--border));
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent) 16%, transparent);
+  outline: none;
+}
+
+.epic-step-card.is-expanded {
+  background: color-mix(in srgb, var(--card) 92%, var(--accent));
 }
 
 .epic-step-card.is-complete {
@@ -111,81 +124,181 @@
    ------------------------------------------------------------------ */
 
 .epic-step-header {
-  align-items: flex-start;
+  align-items: center;
   display: flex;
-  gap: 10px;
+  gap: 9px;
+  min-width: 0;
 }
 
 .epic-step-number {
-  background: var(--accent);
-  border-radius: 999px;
-  color: var(--card);
+  color: var(--accent);
   flex: 0 0 auto;
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   font-weight: 900;
   line-height: 1;
-  padding: 4px 8px;
 }
 
 .epic-step-card.is-complete .epic-step-number {
-  background: color-mix(in srgb, var(--accent) 46%, var(--border));
+  color: color-mix(in srgb, var(--accent) 46%, var(--text-muted));
 }
 
-.epic-step-title {
-  display: grid;
+.epic-step-summary {
+  align-items: baseline;
+  display: flex;
   flex: 1;
-  gap: 2px;
+  gap: 6px;
   min-width: 0;
 }
 
 .epic-step-name {
-  font-size: 1rem;
+  font-size: 0.92rem;
   font-weight: 800;
-  line-height: 1.2;
+  line-height: 1.25;
   margin: 0;
 }
 
-.epic-step-type-pill {
-  background: var(--surface-muted);
-  border: 1px solid var(--border);
-  border-radius: 999px;
+.epic-step-zone-inline {
   color: var(--text-muted);
+  flex: 0 1 auto;
+  font-size: 0.8rem;
+  font-weight: 650;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.epic-step-tags {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 6px;
+  margin-left: auto;
+  min-width: 0;
+}
+
+.epic-tag-dots {
+  align-items: center;
+  display: inline-flex;
+  gap: 4px;
+}
+
+.epic-tag-dot {
+  border-radius: 999px;
   display: inline-block;
-  font-size: 0.7rem;
-  font-weight: 900;
-  letter-spacing: 0.06em;
-  padding: 2px 7px;
-  text-transform: uppercase;
+  height: 8px;
+  width: 8px;
+}
+
+.epic-tag-dot.is-solo {
+  background: #4ade80;
+}
+
+.epic-tag-dot.is-duo {
+  background: #facc15;
+}
+
+.epic-tag-dot.is-group {
+  background: #fb923c;
+}
+
+.epic-tag-dot.is-raid {
+  background: #ef4444;
+}
+
+.epic-tag-dot.is-rare {
+  background: #60a5fa;
+}
+
+.epic-tag-text {
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  font-weight: 750;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.epic-step-chevron {
+  color: var(--text-muted);
+  flex: 0 0 auto;
+  font-size: 1.05rem;
+  line-height: 1;
+  transition: color 140ms ease, transform 160ms ease;
+}
+
+.epic-step-card.is-expanded .epic-step-chevron {
+  color: var(--accent);
+  transform: rotate(180deg);
 }
 
 /* ------------------------------------------------------------------
    Step metadata grid (zone, NPC, drop source)
    ------------------------------------------------------------------ */
 
+.epic-step-details-shell {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+  transition: grid-template-rows 180ms ease, opacity 160ms ease, padding-top 180ms ease, visibility 180ms ease;
+  visibility: hidden;
+}
+
+.epic-step-card.is-expanded .epic-step-details-shell {
+  grid-template-rows: 1fr;
+  opacity: 1;
+  padding-top: 10px;
+  pointer-events: auto;
+  visibility: visible;
+}
+
 .epic-step-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px 18px;
+  display: grid;
+  gap: 8px 18px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   margin: 0;
+  min-height: 0;
+  overflow: hidden;
 }
 
 .epic-step-meta dt {
   color: var(--text-muted);
-  font-size: 0.78rem;
-  font-weight: 700;
+  font-size: 0.68rem;
+  font-weight: 850;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 
 .epic-step-meta dd {
   color: var(--text);
-  font-size: 0.88rem;
+  font-size: 0.84rem;
   font-weight: 700;
   margin: 0;
 }
 
 .epic-step-meta-pair {
   display: grid;
-  gap: 2px;
+  gap: 3px;
+  min-width: 0;
+}
+
+.epic-step-items-pair,
+.epic-step-notes-pair {
+  grid-column: 1 / -1;
+}
+
+.epic-step-header .epic-checkbox {
+  min-height: 24px;
+  padding: 0;
+}
+
+.epic-step-card .epic-item-link {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font-weight: 800;
+  padding: 0;
+  text-align: left;
 }
 
 /* ------------------------------------------------------------------
@@ -259,6 +372,30 @@
 
   .epic-step-card {
     padding: 12px 14px;
+  }
+
+  .epic-step-header {
+    align-items: flex-start;
+  }
+
+  .epic-step-summary {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .epic-step-tags {
+    margin-left: 0;
+  }
+
+  .epic-tag-text {
+    max-width: 92px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .epic-step-meta {
+    grid-template-columns: 1fr;
   }
 
   .epic-progress-summary {

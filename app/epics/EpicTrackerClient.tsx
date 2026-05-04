@@ -14,6 +14,7 @@
  */
 
 import { useEffect, useRef, useState } from "react";
+import type { KeyboardEvent } from "react";
 import Link from "next/link";
 import { useEpicProgress } from "@/components/EpicProgressProvider";
 import { EpicTrackerCheckbox } from "@/components/EpicTrackerCheckbox";
@@ -21,7 +22,7 @@ import { ItemDrawer } from "@/components/ItemDrawer";
 import "@/components/item-drawer.css";
 import { ItemIcon } from "@/components/ItemIcon";
 import { useItemPreview } from "@/components/ItemPreviewProvider";
-import { EPIC_CLASSES, type EpicClassName, type NormalizedClassEpic, type NormalizedStep } from "./types";
+import { EPIC_CLASSES, type EpicClassName, type EpicStepTag, type NormalizedClassEpic, type NormalizedStep } from "./types";
 import { mobToSlug } from "@/lib/mob-slug";
 import { zoneToSlug } from "@/lib/zone-slug";
 import { itemToSlug } from "@/lib/item-slug";
@@ -29,6 +30,30 @@ import type { Bucket, ItemDetailsMap } from "@/lib/search";
 import itemDetailsData from "@/data/item-details.json";
 
 const itemDetailsMap = itemDetailsData as unknown as ItemDetailsMap;
+
+const tagLabels: Record<EpicStepTag, string> = {
+  solo: "Solo",
+  duo: "Duo",
+  group: "Group",
+  raid: "Raid",
+  rare: "Rare",
+};
+
+function TagDots({ tags }: { tags: EpicStepTag[] }) {
+  if (tags.length === 0) return null;
+  return (
+    <span className="epic-tag-dots" aria-hidden="true">
+      {tags.map((tag) => (
+        <span className={`epic-tag-dot is-${tag}`} key={tag} />
+      ))}
+    </span>
+  );
+}
+
+function TagText({ tags }: { tags: EpicStepTag[] }) {
+  if (tags.length === 0) return null;
+  return <span className="epic-tag-text">{tags.map((tag) => tagLabels[tag]).join(" • ")}</span>;
+}
 
 let _epicBucketIdCounter = 100000;
 function makeEpicBucket(itemName: string, classEpic: NormalizedClassEpic, step: NormalizedStep): Bucket {
@@ -138,59 +163,76 @@ function EpicStepCard({
   const isComplete = progress.completed.includes(stepIndex);
   const dropSource = extractDropSource(step);
   const showMobAsNpc = step.npcMob && !dropSource;
+  const items = parseStepItems(step.items ?? "");
+  const [isExpanded, setIsExpanded] = useState(false);
+  const npcMobLabel = showMobAsNpc ? step.npcMob : dropSource;
+  const visibleTags = step.tags;
+
+  function toggleExpanded() {
+    setIsExpanded((current) => !current);
+  }
+
+  function handleKeyDown(event: KeyboardEvent<HTMLLIElement>) {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      toggleExpanded();
+    }
+  }
 
   return (
-    <li className={`epic-step-card${isComplete ? " is-complete" : ""}`}>
+    <li
+      aria-expanded={isExpanded}
+      className={`epic-step-card${isComplete ? " is-complete" : ""}${isExpanded ? " is-expanded" : ""}`}
+      onClick={toggleExpanded}
+      onKeyDown={handleKeyDown}
+      role="button"
+      tabIndex={0}
+    >
       <div className="epic-step-header">
-        <EpicTrackerCheckbox
-          className={epicClassName}
-          stepIndex={stepIndex}
-          label={`Step ${globalIndex + 1}: ${step.action}`}
-        />
+        <span onClick={(event) => event.stopPropagation()} onKeyDown={(event) => event.stopPropagation()}>
+          <EpicTrackerCheckbox
+            className={epicClassName}
+            stepIndex={stepIndex}
+            label={`Step ${globalIndex + 1}: ${step.action}`}
+          />
+        </span>
         <span className="epic-step-number">Step {globalIndex + 1}</span>
-        <div className="epic-step-title">
+        <div className="epic-step-summary">
           <h3 className="epic-step-name">{step.action}</h3>
-          {step.phase && <span className="epic-step-type-pill">{step.phase}</span>}
+          {step.zone && <span className="epic-step-zone-inline">({step.zone})</span>}
         </div>
+        <div className="epic-step-tags" aria-label={visibleTags.length > 0 ? `Tags: ${visibleTags.map((tag) => tagLabels[tag]).join(", ")}` : undefined}>
+          <TagDots tags={visibleTags} />
+          <TagText tags={visibleTags} />
+        </div>
+        <span className="epic-step-chevron" aria-hidden="true">⌄</span>
       </div>
 
-      <dl className="epic-step-meta">
-        {step.zone && (
-          <div className="epic-step-meta-pair">
-            <dt>Zone</dt>
-            <dd>
-              <Link className="epic-link" href={`/zone/${zoneToSlug(step.zone)}`}>
-                {step.zone}
-              </Link>
-            </dd>
-          </div>
-        )}
-        {showMobAsNpc && (
-          <div className="epic-step-meta-pair">
-            <dt>NPC / Mob</dt>
-            <dd>
-              <Link className="epic-link" href={`/mob/${mobToSlug(step.npcMob!)}`}>
-                {step.npcMob}
-              </Link>
-            </dd>
-          </div>
-        )}
-        {dropSource && (
-          <div className="epic-step-meta-pair">
-            <dt>Drops from</dt>
-            <dd>
-              <Link className="epic-link" href={`/mob/${mobToSlug(dropSource)}`}>
-                {dropSource}
-              </Link>
-            </dd>
-          </div>
-        )}
-        {(() => {
-          const items = parseStepItems(step.items ?? "");
-          if (items.length === 0) return null;
-          return (
+      <div className="epic-step-details-shell" aria-hidden={!isExpanded}>
+        <dl className="epic-step-meta">
+          {step.zone && (
             <div className="epic-step-meta-pair">
-              <dt>Items</dt>
+              <dt>Zone</dt>
+              <dd>
+                <Link className="epic-link" href={`/zone/${zoneToSlug(step.zone)}`} onClick={(event) => event.stopPropagation()}>
+                  {step.zone}
+                </Link>
+              </dd>
+            </div>
+          )}
+          {npcMobLabel && (
+            <div className="epic-step-meta-pair">
+              <dt>NPC / Mob</dt>
+              <dd>
+                <Link className="epic-link" href={`/mob/${mobToSlug(npcMobLabel)}`} onClick={(event) => event.stopPropagation()}>
+                  {npcMobLabel}
+                </Link>
+              </dd>
+            </div>
+          )}
+          {items.length > 0 && (
+            <div className="epic-step-meta-pair epic-step-items-pair">
+              <dt>Required items</dt>
               <dd>
                 <ul className="epic-items-list">
                   {items.map((itemName) => {
@@ -199,7 +241,10 @@ function EpicStepCard({
                       <li key={itemName}>
                         <button
                           className="epic-item-link"
-                          onClick={() => onSelectLoot(itemName, makeEpicBucket(itemName, classEpic, step))}
+                          onClick={(event) => {
+                            event.stopPropagation();
+                            onSelectLoot(itemName, makeEpicBucket(itemName, classEpic, step));
+                          }}
                           type="button"
                           {...previewProps(itemName, details)}
                         >
@@ -212,15 +257,15 @@ function EpicStepCard({
                 </ul>
               </dd>
             </div>
-          );
-        })()}
-        {step.notes && (
-          <div className="epic-step-meta-pair">
-            <dt>Notes</dt>
-            <dd>{step.notes}</dd>
-          </div>
-        )}
-      </dl>
+          )}
+          {step.notes && (
+            <div className="epic-step-meta-pair epic-step-notes-pair">
+              <dt>Notes</dt>
+              <dd>{step.notes}</dd>
+            </div>
+          )}
+        </dl>
+      </div>
     </li>
   );
 }
