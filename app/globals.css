@@ -229,6 +229,10 @@ select {
   box-shadow:
     inset 0 1px 0 rgba(255, 220, 139, 0.05),
     0 3px 10px rgba(0, 0, 0, 0.18);
+  display: grid;
+  gap: 10px;
+  grid-template-columns: minmax(140px, 1fr) auto minmax(140px, 1fr);
+  align-items: center;
   padding: 6px 18px;
   position: sticky;
   top: var(--app-nav-sticky-height);
@@ -239,7 +243,15 @@ select {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  grid-column: 2;
   justify-content: center;
+}
+.app-sub-nav-countdown {
+  align-items: center;
+  display: flex;
+  grid-column: 3;
+  justify-content: flex-end;
+  min-width: 0;
 }
 .app-nav-links {
   align-items: center;
@@ -2528,7 +2540,17 @@ select option {
   }
 
   .app-sub-nav {
+    grid-template-columns: 1fr;
     padding: 8px 12px;
+  }
+
+  .app-sub-nav-links,
+  .app-sub-nav-countdown {
+    grid-column: 1;
+  }
+
+  .app-sub-nav-countdown {
+    justify-content: center;
   }
 
   .theme-toggle {
@@ -3064,6 +3086,12 @@ select option {
   gap: 6px;
 
 }
+.app-sub-nav-countdown .etl-compact {
+  background: color-mix(in srgb, #17251b 64%, transparent);
+  border: 1px solid rgba(127, 197, 155, 0.2);
+  border-radius: 999px;
+  padding: 3px 9px;
+}
 .etl-compact--live {
   gap: 7px;
 
@@ -3082,15 +3110,15 @@ select option {
 
 }
 .etl-compact-label {
-  color: var(--muted);
-  font-size: 0.82rem;
-  font-weight: 700;
+  color: #9db49a;
+  font-size: 0.76rem;
+  font-weight: 800;
   white-space: nowrap;
 
 }
 .etl-compact-countdown {
-  color: var(--accent);
-  font-size: 0.82rem;
+  color: #e1c16a;
+  font-size: 0.78rem;
   font-weight: 900;
   white-space: nowrap;
 

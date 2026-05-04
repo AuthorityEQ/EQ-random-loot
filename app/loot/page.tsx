@@ -6,7 +6,6 @@ import { useSearchParams } from "next/navigation";
 import { BucketCard } from "@/components/BucketCard";
 import { useSharedLoot } from "@/components/SharedLootToggle";
 import "@/components/bucket-card.css";
-import { ExpansionTimeline } from "@/components/ExpansionTimeline";
 import { ItemDrawer } from "@/components/ItemDrawer";
 import "@/components/item-drawer.css";
 import { ItemFarmView } from "@/components/ItemFarmView";
@@ -441,8 +440,6 @@ function Home() {
       <header className="hero-header" aria-label="Loot Goblin">
         <Link href="/" aria-label="Loot Goblin home"><img className="hero-banner-image" src="/loot-goblin-banner4.png" alt="Loot Goblin" /></Link>
       </header>
-      <ExpansionTimeline compact />
-
       <div className="toolbar">
         <SearchBox
           results={typeaheadResults}

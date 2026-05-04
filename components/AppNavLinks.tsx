@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { ExpansionTimeline } from "@/components/ExpansionTimeline";
 
 type NavSection = "frostreaver" | "normal-tlp";
 
@@ -113,6 +114,9 @@ export function AppSubNavLinks() {
             {link.label}
           </Link>
         ))}
+      </div>
+      <div className="app-sub-nav-countdown">
+        <ExpansionTimeline compact />
       </div>
     </nav>
   );
