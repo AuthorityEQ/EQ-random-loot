@@ -85,7 +85,7 @@ type ImageCandidate = {
   score: number;
 };
 
-const targetUrls = [
+const defaultTargetUrls = [
   "https://everquest.allakhazam.com/db/item.html?item=348",
   "https://everquest.allakhazam.com/db/item.html?item=152",
   "https://everquest.allakhazam.com/db/item.html?item=3571",
@@ -104,6 +104,15 @@ const targetUrls = [
   "https://everquest.allakhazam.com/db/item.html?item=2629",
   "https://everquest.allakhazam.com/db/item.html?item=3719",
 ];
+
+const targetUrls = (process.env.TARGET_URLS ?? "")
+  .split(",")
+  .map((url) => url.trim())
+  .filter(Boolean);
+
+if (targetUrls.length === 0) {
+  targetUrls.push(...defaultTargetUrls);
+}
 
 const root = process.cwd();
 const detailsPath = path.join(root, "data", "item-details.json");
