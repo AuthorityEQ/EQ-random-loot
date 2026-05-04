@@ -296,6 +296,9 @@ export default function FactionsPage() {
           attack on sight. Browse factions by alignment, find which mobs to kill for
           reputation gains, and see related quests and starting values by race.
         </p>
+        <Link className="faction-feature-link" href="/velious-class-armor">
+          ⚔ Velious Class Armor
+        </Link>
       </header>
 
       {pending && (

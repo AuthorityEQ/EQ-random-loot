@@ -5435,6 +5435,389 @@ select option {
   padding: 8px 9px 2px;
 }
 
+.velious-armor-page {
+  max-width: 1320px;
+}
+
+.velious-armor-hero {
+  margin-bottom: 24px;
+}
+
+.velious-armor-hero h1 {
+  font-size: clamp(2rem, 5vw, 3.6rem);
+  line-height: 1;
+  margin: 0;
+}
+
+.velious-armor-hero p:last-child {
+  color: var(--muted);
+  line-height: 1.55;
+  margin: 10px 0 0;
+  max-width: 720px;
+}
+
+.velious-armor-page-shell,
+.velious-armor-layout,
+.velious-preview-panel,
+.velious-preview-slots {
+  display: grid;
+  gap: 16px;
+}
+
+.velious-armor-controls {
+  align-items: end;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  display: flex;
+  gap: 12px;
+  padding: 14px;
+}
+
+.velious-armor-controls label {
+  display: grid;
+  gap: 6px;
+  min-width: min(240px, 100%);
+}
+
+.velious-armor-controls span,
+.velious-preview-slot span {
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.velious-faction-summary {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.velious-faction-card,
+.velious-preview-panel {
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--panel) 92%, var(--accent-soft)), var(--panel));
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  padding: 14px;
+}
+
+.velious-faction-card.is-thurgadin,
+.velious-faction-card.is-kael,
+.velious-faction-card.is-skyshrine,
+.velious-armor-comparison th.is-thurgadin,
+.velious-armor-comparison th.is-kael,
+.velious-armor-comparison th.is-skyshrine,
+.velious-armor-comparison td.is-thurgadin,
+.velious-armor-comparison td.is-kael,
+.velious-armor-comparison td.is-skyshrine {
+  --velious-faction-accent: var(--accent);
+}
+
+.velious-faction-card.is-thurgadin,
+.velious-armor-comparison th.is-thurgadin,
+.velious-armor-comparison td.is-thurgadin {
+  --velious-faction-accent: #78a8c9;
+}
+
+.velious-faction-card.is-kael,
+.velious-armor-comparison th.is-kael,
+.velious-armor-comparison td.is-kael {
+  --velious-faction-accent: #b76454;
+}
+
+.velious-faction-card.is-skyshrine,
+.velious-armor-comparison th.is-skyshrine,
+.velious-armor-comparison td.is-skyshrine {
+  --velious-faction-accent: #7da66f;
+}
+
+.velious-faction-card.is-thurgadin,
+.velious-faction-card.is-kael,
+.velious-faction-card.is-skyshrine {
+  border-color: color-mix(in srgb, var(--velious-faction-accent) 44%, var(--line));
+  box-shadow:
+    inset 3px 0 0 color-mix(in srgb, var(--velious-faction-accent) 70%, transparent),
+    var(--shadow);
+}
+
+.velious-faction-card > span {
+  color: var(--accent);
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.velious-faction-card h2 {
+  font-size: 1.05rem;
+  margin: 4px 0 2px;
+}
+
+.velious-faction-card small,
+.velious-faction-card em {
+  color: var(--muted);
+  display: block;
+  font-size: 0.78rem;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.velious-faction-card p {
+  color: var(--muted);
+  line-height: 1.45;
+  margin: 7px 0 0;
+}
+
+.velious-faction-card .velious-faction-primary {
+  display: none;
+}
+
+.velious-faction-card .velious-faction-metrics {
+  color: var(--text);
+  font-weight: 900;
+  margin-top: 12px;
+}
+
+.velious-faction-card em {
+  margin-top: 8px;
+}
+
+.velious-armor-layout {
+  align-items: start;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 340px);
+}
+
+.velious-armor-comparison {
+  overflow-x: auto;
+}
+
+.velious-armor-comparison table {
+  border-collapse: separate;
+  border-spacing: 0;
+  min-width: 880px;
+  width: 100%;
+}
+
+.velious-armor-comparison th,
+.velious-armor-comparison td {
+  background: var(--panel);
+  border-bottom: 1px solid var(--line);
+  border-right: 1px solid var(--line);
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.velious-armor-comparison thead th,
+.velious-armor-comparison tbody th {
+  background: var(--panel-soft);
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.velious-armor-comparison tr > :first-child {
+  border-left: 1px solid var(--line);
+}
+
+.velious-armor-comparison thead th {
+  border-top: 1px solid var(--line);
+}
+
+.velious-armor-comparison thead th.is-thurgadin,
+.velious-armor-comparison thead th.is-kael,
+.velious-armor-comparison thead th.is-skyshrine {
+  border-top-color: color-mix(in srgb, var(--velious-faction-accent) 55%, var(--line));
+  box-shadow: inset 0 3px 0 color-mix(in srgb, var(--velious-faction-accent) 64%, transparent);
+  color: color-mix(in srgb, var(--velious-faction-accent) 70%, var(--accent));
+}
+
+.velious-armor-comparison td.is-thurgadin,
+.velious-armor-comparison td.is-kael,
+.velious-armor-comparison td.is-skyshrine {
+  border-right-color: color-mix(in srgb, var(--velious-faction-accent) 18%, var(--line));
+}
+
+.velious-armor-item {
+  align-items: start;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: var(--text);
+  cursor: pointer;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: auto minmax(0, 1fr);
+  padding: 8px;
+  text-align: left;
+  width: 100%;
+}
+
+.velious-armor-item:hover,
+.velious-armor-item:focus,
+.velious-armor-item.is-selected {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  outline: none;
+}
+
+.velious-armor-comparison td.is-thurgadin .velious-armor-item:hover,
+.velious-armor-comparison td.is-thurgadin .velious-armor-item:focus,
+.velious-armor-comparison td.is-thurgadin .velious-armor-item.is-selected,
+.velious-armor-comparison td.is-kael .velious-armor-item:hover,
+.velious-armor-comparison td.is-kael .velious-armor-item:focus,
+.velious-armor-comparison td.is-kael .velious-armor-item.is-selected,
+.velious-armor-comparison td.is-skyshrine .velious-armor-item:hover,
+.velious-armor-comparison td.is-skyshrine .velious-armor-item:focus,
+.velious-armor-comparison td.is-skyshrine .velious-armor-item.is-selected {
+  border-color: color-mix(in srgb, var(--velious-faction-accent) 58%, var(--accent));
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--velious-faction-accent) 18%, transparent);
+}
+
+.velious-armor-item span {
+  display: grid;
+  gap: 3px;
+}
+
+.velious-armor-item small,
+.velious-armor-item em,
+.velious-armor-missing,
+.velious-preview-slot em {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-style: normal;
+}
+
+.velious-armor-missing {
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.velious-preview-panel {
+  position: sticky;
+  top: calc(var(--app-nav-sticky-height) + 58px);
+}
+
+.velious-preview-header {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.velious-preview-header h2 {
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+.velious-preview-header button {
+  background: var(--accent-soft);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--accent);
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-weight: 900;
+  padding: 7px 10px;
+}
+
+.velious-preview-header button:hover,
+.velious-preview-header button:focus {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-contrast);
+  outline: none;
+}
+
+.velious-preview-warning {
+  background: var(--accent-soft);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 800;
+  margin: 0;
+  padding: 9px 10px;
+}
+
+.velious-preview-totals {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0;
+}
+
+.velious-preview-totals div {
+  background: var(--panel-soft);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 9px;
+}
+
+.velious-preview-totals dt {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.velious-preview-totals dd {
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin: 2px 0 0;
+}
+
+.velious-preview-stat-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.velious-preview-stat-grid span {
+  background: var(--accent-soft);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 900;
+  padding: 4px 8px;
+}
+
+.velious-preview-stat-grid p {
+  color: var(--muted);
+  margin: 0;
+}
+
+.velious-preview-slot {
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 3px;
+  padding-top: 10px;
+}
+
+.velious-preview-slot strong {
+  font-size: 0.88rem;
+}
+
+@media (max-width: 900px) {
+  .velious-armor-layout,
+  .velious-faction-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .velious-preview-panel {
+    position: static;
+  }
+}
+
 /* Reset button defaults so zone-mob-item works as a <button> */
 button.zone-mob-item {
   appearance: none;
