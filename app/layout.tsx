@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 import { AppNavLinks, AppSubNavLinks } from "@/components/AppNavLinks";
+import { AuthSessionProvider } from "@/components/AuthSessionProvider";
 import { BucketDisplayProvider } from "@/components/BucketDisplayProvider";
 import { EpicProgressProvider } from "@/components/EpicProgressProvider";
 import { FavoritesProvider } from "@/components/FavoritesProvider";
@@ -68,25 +69,27 @@ export default function RootLayout({
         <meta name="theme-color" content="#2d6a4f" />
       </head>
       <body>
-        <ServerProvider>
-          <FavoritesProvider>
-            <BucketDisplayProvider>
-              <EpicProgressProvider>
-                <ItemPreviewProvider>
-                  <nav className="app-nav" aria-label="Primary navigation">
-                    <AppNavLinks />
-                    <div className="app-nav-controls">
-                      <ItemPreviewToggle />
-                      <ThemeToggle />
-                    </div>
-                  </nav>
-                  <AppSubNavLinks />
-                  {children}
-                </ItemPreviewProvider>
-              </EpicProgressProvider>
-            </BucketDisplayProvider>
-          </FavoritesProvider>
-        </ServerProvider>
+        <AuthSessionProvider>
+          <ServerProvider>
+            <FavoritesProvider>
+              <BucketDisplayProvider>
+                <EpicProgressProvider>
+                  <ItemPreviewProvider>
+                    <nav className="app-nav" aria-label="Primary navigation">
+                      <AppNavLinks />
+                      <div className="app-nav-controls">
+                        <ItemPreviewToggle />
+                        <ThemeToggle />
+                      </div>
+                    </nav>
+                    <AppSubNavLinks />
+                    {children}
+                  </ItemPreviewProvider>
+                </EpicProgressProvider>
+              </BucketDisplayProvider>
+            </FavoritesProvider>
+          </ServerProvider>
+        </AuthSessionProvider>
         <ServiceWorkerRegistration />
         <InstallPromptBanner />
         <Analytics />
