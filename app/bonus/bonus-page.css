@@ -256,7 +256,7 @@
 }
 
 .bonus-zone-card.is-reported {
-  gap: 14px;
+  gap: 11px;
 }
 
 .bonus-zone-card.bonus-expansion-tone-pop {
@@ -468,6 +468,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 7px;
+  margin-top: -1px;
 }
 
 .bonus-report-pill {
@@ -621,13 +622,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  justify-content: space-between;
-}
-
-.bonus-report-ownership-summary span {
-  color: var(--muted);
-  font-size: 0.78rem;
-  font-weight: 800;
+  justify-content: flex-start;
+  margin-top: -2px;
 }
 
 .bonus-report-ownership-summary button,

@@ -750,7 +750,6 @@ export function BonusTrackerClient() {
 
         {isReported ? (
           <div className="bonus-report-ownership-summary">
-            <span>Reported by {zone.totalReports} {zone.totalReports === 1 ? "player" : "players"}</span>
             {isAdmin ? (
               <button
                 aria-expanded={isDetailsOpen}
