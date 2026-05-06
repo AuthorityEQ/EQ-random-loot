@@ -138,6 +138,51 @@
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
 
+.bonus-section-stack {
+  display: grid;
+  gap: 18px;
+}
+
+.bonus-zone-section {
+  display: grid;
+  gap: 12px;
+}
+
+.bonus-section-heading {
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  padding-bottom: 8px;
+}
+
+.bonus-section-heading h2 {
+  color: var(--page-title-gold);
+  font-size: 1.18rem;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.bonus-section-heading button {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--accent);
+  cursor: pointer;
+  font-size: 0.82rem;
+  font-weight: 900;
+  min-height: 34px;
+  padding: 0 12px;
+}
+
+.bonus-section-heading button:hover,
+.bonus-section-heading button:focus {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  outline: none;
+}
+
 .bonus-zone-card {
   background:
     radial-gradient(circle at 18% 0%, rgba(224, 166, 64, 0.1), transparent 34%),
@@ -148,6 +193,24 @@
   display: grid;
   gap: 14px;
   padding: 14px;
+}
+
+.bonus-zone-card.is-reported {
+  background:
+    radial-gradient(circle at 18% 0%, color-mix(in srgb, var(--page-title-gold) 22%, transparent), transparent 38%),
+    linear-gradient(180deg, color-mix(in srgb, var(--panel) 90%, var(--accent-soft)), var(--panel));
+  border-color: color-mix(in srgb, var(--page-title-gold) 48%, var(--line));
+  box-shadow:
+    inset 3px 0 0 color-mix(in srgb, var(--page-title-gold) 72%, transparent),
+    var(--shadow);
+}
+
+.bonus-zone-card.is-unreported {
+  background: color-mix(in srgb, var(--panel) 82%, transparent);
+  box-shadow: none;
+  gap: 10px;
+  opacity: 0.86;
+  padding: 12px;
 }
 
 .bonus-zone-card-main {
@@ -188,6 +251,34 @@
   font-size: 0.9rem;
   line-height: 1.35;
   margin: 6px 0 0;
+}
+
+.bonus-leading-report {
+  display: grid;
+  gap: 2px;
+  margin-top: 8px;
+}
+
+.bonus-leading-report span {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.bonus-leading-report strong {
+  color: var(--page-title-gold);
+  font-size: 1.28rem;
+  line-height: 1.1;
+}
+
+.bonus-leading-report em,
+.bonus-no-reports {
+  color: var(--muted);
+  font-size: 0.84rem;
+  font-style: normal;
+  font-weight: 800;
 }
 
 .bonus-zone-card strong {
@@ -272,6 +363,19 @@
   font-weight: 900;
 }
 
+.bonus-zone-actions .bonus-your-report {
+  background: color-mix(in srgb, var(--accent-soft) 72%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent) 34%, var(--line));
+  border-radius: 999px;
+  color: var(--accent);
+  padding: 5px 9px;
+}
+
+.bonus-zone-card.is-unreported .bonus-zone-actions {
+  border-top: 0;
+  padding-top: 0;
+}
+
 .bonus-report-action,
 .bonus-report-submit {
   background: var(--accent);
@@ -351,6 +455,17 @@
   margin-top: 0;
 }
 
+.bonus-unreported-summary {
+  background: color-mix(in srgb, var(--panel) 72%, transparent);
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 800;
+  margin: 0;
+  padding: 12px;
+}
+
 @media (max-width: 680px) {
   .bonus-toolbar {
     padding: 12px;
@@ -358,6 +473,11 @@
 
   .bonus-zone-grid {
     grid-template-columns: 1fr;
+  }
+
+  .bonus-section-heading {
+    align-items: stretch;
+    flex-direction: column;
   }
 
   .bonus-zone-card-main {

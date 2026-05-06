@@ -23,7 +23,8 @@ type Zone = {
 
 type BonusStatus = "Unreported" | "Single Report" | "Likely" | "Confirmed" | "Disputed";
 type BonusFilter = "All" | BonusType;
-type StatusFilter = "All" | BonusStatus;
+type StatusFilter = "All" | "Reported" | "Unreported";
+type ZoneWithStatus = Zone & { status: BonusStatus; totalReports: number };
 
 type ServerBonusReport = {
   id: string;
@@ -46,11 +47,8 @@ const bonusTypes: BonusType[] = [
 
 const statusFilters: StatusFilter[] = [
   "All",
+  "Reported",
   "Unreported",
-  "Single Report",
-  "Likely",
-  "Confirmed",
-  "Disputed",
 ];
 
 const baseZones = [
@@ -257,6 +255,21 @@ function getZoneStatus(zone: Zone): BonusStatus {
   return "Confirmed";
 }
 
+function getTotalReports(zone: Zone) {
+  return zone.reports.reduce((sum, report) => sum + report.count, 0);
+}
+
+function getReportedSortValue(status: BonusStatus) {
+  const order: Record<BonusStatus, number> = {
+    Confirmed: 0,
+    Likely: 1,
+    "Single Report": 2,
+    Disputed: 3,
+    Unreported: 4,
+  };
+  return order[status];
+}
+
 function getStatusClass(status: BonusStatus) {
   return `bonus-status-${status.toLowerCase().replace(/\s+/g, "-")}`;
 }
@@ -297,6 +310,7 @@ export function BonusTrackerClient() {
   const [userReports, setUserReports] = useState<Record<string, BonusType | undefined>>({});
   const [reportMessage, setReportMessage] = useState("");
   const [isSubmittingReport, setIsSubmittingReport] = useState(false);
+  const [showUnreportedZones, setShowUnreportedZones] = useState(false);
   const isLoggedIn = authStatus === "authenticated" && Boolean(session?.user?.discordUserId);
 
   const expansionOptions = useMemo(() => {
@@ -331,20 +345,41 @@ export function BonusTrackerClient() {
     };
   }, [authStatus]);
 
-  const visibleZones = useMemo(() => {
-    return reportedZones.filter((zone) => {
+  const visibleZones = useMemo<ZoneWithStatus[]>(() => {
+    return reportedZones.map((zone) => ({
+      ...zone,
+      status: getZoneStatus(zone),
+      totalReports: getTotalReports(zone),
+    })).filter((zone) => {
       const searchMatches = zone.zoneName.toLowerCase().includes(normalizedQuery);
       const expansionMatches = selectedExpansion === "All" || zone.expansion === selectedExpansion;
-      const statusMatches = selectedStatus === "All" || getZoneStatus(zone) === selectedStatus;
+      const statusMatches = selectedStatus === "All"
+        || (selectedStatus === "Reported" && zone.totalReports > 0)
+        || (selectedStatus === "Unreported" && zone.totalReports === 0);
       return searchMatches && expansionMatches && statusMatches && reportMatchesFilter(zone, selectedBonus);
     });
   }, [normalizedQuery, reportedZones, selectedBonus, selectedExpansion, selectedStatus]);
+
+  const visibleReportedZones = useMemo(() => {
+    return visibleZones
+      .filter((zone) => zone.totalReports > 0)
+      .sort((a, b) =>
+        getReportedSortValue(a.status) - getReportedSortValue(b.status)
+        || a.zoneName.localeCompare(b.zoneName)
+      );
+  }, [visibleZones]);
+
+  const visibleUnreportedZones = useMemo(() => {
+    return visibleZones
+      .filter((zone) => zone.totalReports === 0)
+      .sort((a, b) => a.zoneName.localeCompare(b.zoneName));
+  }, [visibleZones]);
 
   const activeFilters = [
     normalizedQuery ? `search ${query.trim()}` : null,
     selectedExpansion !== "All" ? `expansion ${selectedExpansion}` : null,
     selectedBonus !== "All" ? `bonus ${selectedBonus}` : null,
-    selectedStatus !== "All" ? `status ${selectedStatus}` : null,
+    selectedStatus !== "All" ? `reporting ${selectedStatus}` : null,
   ].filter(Boolean);
   const emptyMessage = activeFilters.length > 0
     ? `No zones match the active filters: ${activeFilters.join(", ")}.`
@@ -402,6 +437,105 @@ export function BonusTrackerClient() {
     } finally {
       setIsSubmittingReport(false);
     }
+  }
+
+  function renderZoneCard(zone: ZoneWithStatus, mode: "reported" | "unreported") {
+    const leadingReport = getLeadingReport(zone);
+    const isReported = mode === "reported";
+
+    return (
+      <article
+        className={isReported ? "bonus-zone-card is-reported" : "bonus-zone-card is-unreported"}
+        key={zone.zoneName}
+      >
+        <div className="bonus-zone-card-main">
+          <div>
+            <div className="bonus-zone-title-row">
+              <h2>{zone.zoneName}</h2>
+              <span className="bonus-expansion-label">{zone.expansion}</span>
+            </div>
+            {isReported ? (
+              <div className="bonus-leading-report">
+                <span>Leading bonus</span>
+                <strong>{leadingReport?.bonus}</strong>
+                <em>{leadingReport?.count ?? 0} {(leadingReport?.count ?? 0) === 1 ? "report" : "reports"}</em>
+              </div>
+            ) : (
+              <p className="bonus-no-reports">No reports yet</p>
+            )}
+          </div>
+          <span className={`bonus-status ${getStatusClass(zone.status)}`}>{zone.status}</span>
+        </div>
+
+        {isReported ? (
+          <div className="bonus-report-list" aria-label={`${zone.zoneName} reported bonuses`}>
+            {zone.reports.map((report) => (
+              <span className="bonus-report-pill" key={report.bonus}>
+                <strong>{report.bonus}</strong>
+                <span>{report.count} {report.count === 1 ? "report" : "reports"}</span>
+              </span>
+            ))}
+          </div>
+        ) : null}
+
+        <div className="bonus-zone-actions">
+          {userReports[zone.zoneName] ? <span className="bonus-your-report">Your report: {userReports[zone.zoneName]}</span> : null}
+          {isLoggedIn ? (
+            <button
+              className="bonus-report-action"
+              onClick={() => openReportPanel(zone.zoneName)}
+              type="button"
+            >
+              {userReports[zone.zoneName] ? "Change Report" : "Submit Report"}
+            </button>
+          ) : (
+            <button
+              className="bonus-report-action"
+              onClick={() => signIn("discord")}
+              type="button"
+            >
+              Sign in with Discord to submit reports
+            </button>
+          )}
+        </div>
+
+        {isLoggedIn && openReportZone === zone.zoneName ? (
+          <div className="bonus-report-panel">
+            <div className="bonus-report-panel-heading">
+              <h3>{userReports[zone.zoneName] ? "Change your report" : "Submit your report"}</h3>
+              <button onClick={() => setOpenReportZone(null)} type="button">Cancel</button>
+            </div>
+            <div className="bonus-report-options" aria-label={`Select bonus for ${zone.zoneName}`}>
+              {bonusTypes.map((bonus) => {
+                const isSelected = draftReports[zone.zoneName] === bonus;
+                return (
+                  <button
+                    aria-pressed={isSelected}
+                    className={isSelected ? "filter-button is-active" : "filter-button"}
+                    key={bonus}
+                    onClick={() => setDraftReports((currentReports) => ({
+                      ...currentReports,
+                      [zone.zoneName]: bonus,
+                    }))}
+                    type="button"
+                  >
+                    {bonus}
+                  </button>
+                );
+              })}
+            </div>
+            <button
+              className="bonus-report-submit"
+              disabled={isSubmittingReport}
+              onClick={() => submitReport(zone.zoneName)}
+              type="button"
+            >
+              {isSubmittingReport ? "Saving..." : "Save Report"}
+            </button>
+          </div>
+        ) : null}
+      </article>
+    );
   }
 
   return (
@@ -505,102 +639,57 @@ export function BonusTrackerClient() {
 
       {reportMessage ? <p className="bonus-report-message">{reportMessage}</p> : null}
 
-      {visibleZones.length > 0 ? (
+      {visibleZones.length > 0 && selectedStatus !== "All" ? (
         <div className="bonus-zone-grid">
-          {visibleZones.map((zone) => {
-            const leadingReport = getLeadingReport(zone);
-            const status = getZoneStatus(zone);
+          {visibleZones
+            .slice()
+            .sort((a, b) => {
+              if (selectedStatus === "Reported") {
+                return getReportedSortValue(a.status) - getReportedSortValue(b.status)
+                  || a.zoneName.localeCompare(b.zoneName);
+              }
+              return a.zoneName.localeCompare(b.zoneName);
+            })
+            .map((zone) => renderZoneCard(zone, zone.totalReports > 0 ? "reported" : "unreported"))}
+        </div>
+      ) : visibleZones.length > 0 ? (
+        <div className="bonus-section-stack">
+          <section className="bonus-zone-section is-reported" aria-label="Reported bonuses">
+            <div className="bonus-section-heading">
+              <h2>Reported Bonuses ({visibleReportedZones.length})</h2>
+            </div>
+            {visibleReportedZones.length > 0 ? (
+              <div className="bonus-zone-grid is-reported">
+                {visibleReportedZones.map((zone) => renderZoneCard(zone, "reported"))}
+              </div>
+            ) : (
+              <p className="empty bonus-empty">No reported zones match the active filters.</p>
+            )}
+          </section>
 
-            return (
-              <article className="bonus-zone-card" key={zone.zoneName}>
-                <div className="bonus-zone-card-main">
-                  <div>
-                    <div className="bonus-zone-title-row">
-                      <h2>{zone.zoneName}</h2>
-                      <span className="bonus-expansion-label">{zone.expansion}</span>
-                    </div>
-                    <p>
-                      Leading bonus: <strong>{leadingReport?.bonus ?? "Unreported"}</strong>
-                    </p>
-                  </div>
-                  <span className={`bonus-status ${getStatusClass(status)}`}>{status}</span>
+          {visibleUnreportedZones.length > 0 ? (
+            <section className="bonus-zone-section is-unreported" aria-label="Unreported zones">
+              <div className="bonus-section-heading">
+                <h2>Unreported Zones ({visibleUnreportedZones.length})</h2>
+                <button
+                  aria-expanded={showUnreportedZones}
+                  onClick={() => setShowUnreportedZones((isVisible) => !isVisible)}
+                  type="button"
+                >
+                  {showUnreportedZones ? "Hide Unreported Zones" : "Show Unreported Zones"}
+                </button>
+              </div>
+              {showUnreportedZones ? (
+                <div className="bonus-zone-grid is-unreported">
+                  {visibleUnreportedZones.map((zone) => renderZoneCard(zone, "unreported"))}
                 </div>
-
-                <div className="bonus-report-list" aria-label={`${zone.zoneName} reported bonuses`}>
-                  {zone.reports.length > 0 ? (
-                    zone.reports.map((report) => (
-                      <span className="bonus-report-pill" key={report.bonus}>
-                        <strong>{report.bonus}</strong>
-                        <span>{report.count} {report.count === 1 ? "report" : "reports"}</span>
-                      </span>
-                    ))
-                  ) : (
-                    <span className="bonus-report-pill">
-                      <strong>Unreported</strong>
-                      <span>0 reports</span>
-                    </span>
-                  )}
-                </div>
-
-                <div className="bonus-zone-actions">
-                  {userReports[zone.zoneName] ? <span>Your report: {userReports[zone.zoneName]}</span> : null}
-                  {isLoggedIn ? (
-                    <button
-                      className="bonus-report-action"
-                      onClick={() => openReportPanel(zone.zoneName)}
-                      type="button"
-                    >
-                      {userReports[zone.zoneName] ? "Change Report" : "Submit Report"}
-                    </button>
-                  ) : (
-                    <button
-                      className="bonus-report-action"
-                      onClick={() => signIn("discord")}
-                      type="button"
-                    >
-                      Sign in with Discord to submit reports
-                    </button>
-                  )}
-                </div>
-
-                {isLoggedIn && openReportZone === zone.zoneName ? (
-                  <div className="bonus-report-panel">
-                    <div className="bonus-report-panel-heading">
-                      <h3>{userReports[zone.zoneName] ? "Change your report" : "Submit your report"}</h3>
-                      <button onClick={() => setOpenReportZone(null)} type="button">Cancel</button>
-                    </div>
-                    <div className="bonus-report-options" aria-label={`Select bonus for ${zone.zoneName}`}>
-                      {bonusTypes.map((bonus) => {
-                        const isSelected = draftReports[zone.zoneName] === bonus;
-                        return (
-                          <button
-                            aria-pressed={isSelected}
-                            className={isSelected ? "filter-button is-active" : "filter-button"}
-                            key={bonus}
-                            onClick={() => setDraftReports((currentReports) => ({
-                              ...currentReports,
-                              [zone.zoneName]: bonus,
-                            }))}
-                            type="button"
-                          >
-                            {bonus}
-                          </button>
-                        );
-                      })}
-                    </div>
-                    <button
-                      className="bonus-report-submit"
-                      disabled={isSubmittingReport}
-                      onClick={() => submitReport(zone.zoneName)}
-                      type="button"
-                    >
-                      {isSubmittingReport ? "Saving..." : "Save Report"}
-                    </button>
-                  </div>
-                ) : null}
-              </article>
-            );
-          })}
+              ) : (
+                <p className="bonus-unreported-summary">
+                  {visibleUnreportedZones.length} quiet zones are hidden so reported bonuses stay easy to scan.
+                </p>
+              )}
+            </section>
+          ) : null}
         </div>
       ) : (
         <p className="empty bonus-empty">{emptyMessage}</p>
