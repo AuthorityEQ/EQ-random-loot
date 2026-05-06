@@ -270,13 +270,39 @@ function getReportedSortValue(status: BonusStatus) {
   return order[status];
 }
 
-function getStatusClass(status: BonusStatus) {
-  return `bonus-status-${status.toLowerCase().replace(/\s+/g, "-")}`;
+function getExpansionToneClass(expansion: string) {
+  const toneByExpansion: Record<string, string> = {
+    Classic: "expansion-tone-classic",
+    Kunark: "expansion-tone-kunark",
+    Velious: "expansion-tone-velious",
+    Luclin: "expansion-tone-luclin",
+    "Planes of Power": "bonus-expansion-tone-pop",
+    "Legacy of Ykesha": "bonus-expansion-tone-yks",
+    Unknown: "bonus-expansion-tone-unknown",
+  };
+  return toneByExpansion[expansion] ?? "bonus-expansion-tone-unknown";
 }
 
 function reportMatchesFilter(zone: Zone, selectedBonus: BonusFilter) {
   if (selectedBonus === "All") return true;
   return zone.reports.some((report) => report.bonus === selectedBonus && report.count > 0);
+}
+
+function BonusIcon({ bonus }: { bonus: BonusType }) {
+  if (bonus === "Experience") {
+    return <span className="bonus-icon bonus-icon-xp" aria-label="Experience">XP</span>;
+  }
+
+  const icons: Record<Exclude<BonusType, "Experience">, string> = {
+    Coin: "💰",
+    Loot: "📦",
+    Rare: "⭐",
+    Skill: "🧠",
+    Respawn: "⏱️",
+    Faction: "🏛️",
+  };
+
+  return <span className="bonus-icon" aria-hidden="true">{icons[bonus]}</span>;
 }
 
 function applyServerReports(zone: Zone, reports: ServerBonusReport[]): Zone {
@@ -445,26 +471,36 @@ export function BonusTrackerClient() {
 
     return (
       <article
-        className={isReported ? "bonus-zone-card is-reported" : "bonus-zone-card is-unreported"}
+        className={[
+          "bonus-zone-card",
+          isReported ? "is-reported" : "is-unreported",
+          getExpansionToneClass(zone.expansion),
+        ].join(" ")}
         key={zone.zoneName}
       >
         <div className="bonus-zone-card-main">
           <div>
             <div className="bonus-zone-title-row">
               <h2>{zone.zoneName}</h2>
-              <span className="bonus-expansion-label">{zone.expansion}</span>
+              <span className={`bonus-expansion-label ${getExpansionToneClass(zone.expansion)}`}>
+                {zone.expansion}
+              </span>
             </div>
             {isReported ? (
               <div className="bonus-leading-report">
                 <span>Leading bonus</span>
-                <strong>{leadingReport?.bonus}</strong>
+                {leadingReport ? (
+                  <strong>
+                    <span>{leadingReport.bonus}</span>
+                    <BonusIcon bonus={leadingReport.bonus} />
+                  </strong>
+                ) : null}
                 <em>{leadingReport?.count ?? 0} {(leadingReport?.count ?? 0) === 1 ? "report" : "reports"}</em>
               </div>
             ) : (
               <p className="bonus-no-reports">No reports yet</p>
             )}
           </div>
-          <span className={`bonus-status ${getStatusClass(zone.status)}`}>{zone.status}</span>
         </div>
 
         {isReported ? (
@@ -473,14 +509,16 @@ export function BonusTrackerClient() {
               <span className="bonus-report-pill" key={report.bonus}>
                 <strong>{report.bonus}</strong>
                 <span>{report.count} {report.count === 1 ? "report" : "reports"}</span>
+                <BonusIcon bonus={report.bonus} />
               </span>
             ))}
           </div>
         ) : null}
 
-        <div className="bonus-zone-actions">
-          {userReports[zone.zoneName] ? <span className="bonus-your-report">Your report: {userReports[zone.zoneName]}</span> : null}
-          {isLoggedIn ? (
+        {isLoggedIn || userReports[zone.zoneName] ? (
+          <div className="bonus-zone-actions">
+            {userReports[zone.zoneName] ? <span className="bonus-your-report">Your report: {userReports[zone.zoneName]}</span> : null}
+            {isLoggedIn ? (
             <button
               className="bonus-report-action"
               onClick={() => openReportPanel(zone.zoneName)}
@@ -488,16 +526,9 @@ export function BonusTrackerClient() {
             >
               {userReports[zone.zoneName] ? "Change Report" : "Submit Report"}
             </button>
-          ) : (
-            <button
-              className="bonus-report-action"
-              onClick={() => signIn("discord")}
-              type="button"
-            >
-              Sign in with Discord to submit reports
-            </button>
-          )}
-        </div>
+            ) : null}
+          </div>
+        ) : null}
 
         {isLoggedIn && openReportZone === zone.zoneName ? (
           <div className="bonus-report-panel">
@@ -558,7 +589,12 @@ export function BonusTrackerClient() {
             return (
               <button
                 aria-pressed={isActive}
-                className={isActive ? "filter-button is-active" : "filter-button"}
+                className={[
+                  "filter-button",
+                  expansion === "All" ? null : "expansion-filter-button",
+                  expansion === "All" ? null : getExpansionToneClass(expansion),
+                  isActive ? "is-active" : null,
+                ].filter(Boolean).join(" ")}
                 key={expansion}
                 onClick={() => setSelectedExpansion(expansion)}
                 type="button"

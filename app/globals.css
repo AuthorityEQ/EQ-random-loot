@@ -656,15 +656,22 @@ header.header h1 {
 
 }
 .expansion-filter-button {
+  background: color-mix(in srgb, var(--exp-bg) 68%, var(--filter-bg));
+  border-color: color-mix(in srgb, var(--exp-border) 68%, var(--filter-border));
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--exp-primary) 12%, transparent);
+  color: color-mix(in srgb, var(--exp-text) 82%, var(--filter-text));
   --filter-hover-bg: var(--exp-bg);
   --filter-hover-border: var(--exp-border);
   --filter-hover-text: var(--exp-text);
 
 }
 .expansion-filter-button.is-active {
-  background: var(--exp-primary);
-  border-color: color-mix(in srgb, var(--exp-primary) 74%, white);
-  box-shadow: 0 0 0 1px color-mix(in srgb, var(--exp-primary) 38%, transparent), 0 0 16px color-mix(in srgb, var(--exp-primary) 28%, transparent);
+  background: color-mix(in srgb, var(--exp-primary) 92%, white);
+  border-color: color-mix(in srgb, var(--exp-primary) 78%, white);
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--exp-primary) 44%, transparent),
+    0 0 16px color-mix(in srgb, var(--exp-primary) 34%, transparent),
+    0 5px 14px color-mix(in srgb, var(--exp-primary) 16%, transparent);
   color: #ffffff;
 
 }
@@ -674,7 +681,7 @@ header.header h1 {
 }
 .expansion-filter-button.is-active:hover,
 .expansion-filter-button.is-active:focus {
-  background: var(--exp-primary);
+  background: color-mix(in srgb, var(--exp-primary) 92%, white);
   border-color: color-mix(in srgb, var(--exp-primary) 74%, white);
   color: #ffffff;
 

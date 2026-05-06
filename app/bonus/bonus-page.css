@@ -61,6 +61,48 @@
   flex: 1 0 100%;
 }
 
+.bonus-expansion-tone-pop {
+  --exp-primary: #8f2632;
+  --exp-bg: #f0dddd;
+  --exp-border: #b56a70;
+  --exp-text: #6f1f29;
+}
+
+.bonus-expansion-tone-yks {
+  --exp-primary: #b7bdc4;
+  --exp-bg: rgba(244, 246, 248, 0.74);
+  --exp-border: #d4d9de;
+  --exp-text: #68717a;
+}
+
+.bonus-expansion-tone-unknown {
+  --exp-primary: #72777f;
+  --exp-bg: #e4e6e8;
+  --exp-border: #a5abb2;
+  --exp-text: #4f555d;
+}
+
+:root[data-theme="dark"] .bonus-expansion-tone-yks {
+  --exp-primary: #c7cdd4;
+  --exp-bg: rgba(232, 237, 242, 0.08);
+  --exp-border: rgba(220, 226, 233, 0.26);
+  --exp-text: #d6dce3;
+}
+
+:root[data-theme="dark"] .bonus-expansion-tone-pop {
+  --exp-primary: #c34b57;
+  --exp-bg: rgba(116, 33, 44, 0.32);
+  --exp-border: #8d3b44;
+  --exp-text: #f2c0c5;
+}
+
+:root[data-theme="dark"] .bonus-expansion-tone-unknown {
+  --exp-primary: #aab1bc;
+  --exp-bg: rgba(84, 92, 102, 0.34);
+  --exp-border: #747d8a;
+  --exp-text: #e3e8ef;
+}
+
 .bonus-results-heading {
   align-items: center;
   color: var(--muted);
@@ -185,31 +227,61 @@
 
 .bonus-zone-card {
   background:
-    radial-gradient(circle at 18% 0%, rgba(224, 166, 64, 0.1), transparent 34%),
+    radial-gradient(circle at 18% 0%, color-mix(in srgb, var(--exp-primary, var(--page-title-gold)) 22%, transparent), transparent 38%),
+    linear-gradient(135deg, color-mix(in srgb, var(--exp-bg, var(--accent-soft)) 34%, transparent), transparent 58%),
     var(--panel);
-  border: 1px solid var(--line);
+  border: 1px solid color-mix(in srgb, var(--exp-primary, var(--line)) 44%, var(--line));
   border-radius: 8px;
-  box-shadow: var(--shadow);
+  box-shadow:
+    inset 3px 0 0 color-mix(in srgb, var(--exp-primary, var(--page-title-gold)) 66%, transparent),
+    var(--shadow);
   display: grid;
   gap: 14px;
   padding: 14px;
+  transition: background 160ms ease, border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.bonus-zone-card:hover,
+.bonus-zone-card:focus-within {
+  background:
+    radial-gradient(circle at 18% 0%, color-mix(in srgb, var(--exp-primary, var(--page-title-gold)) 30%, transparent), transparent 40%),
+    linear-gradient(135deg, color-mix(in srgb, var(--exp-bg, var(--accent-soft)) 46%, transparent), transparent 60%),
+    var(--panel);
+  border-color: color-mix(in srgb, var(--exp-primary, var(--line)) 62%, var(--line));
+  box-shadow:
+    inset 3px 0 0 color-mix(in srgb, var(--exp-primary, var(--page-title-gold)) 80%, transparent),
+    0 0 18px color-mix(in srgb, var(--exp-primary, var(--page-title-gold)) 14%, transparent),
+    var(--shadow);
+  transform: translateY(-1px);
 }
 
 .bonus-zone-card.is-reported {
+  gap: 14px;
+}
+
+.bonus-zone-card.bonus-expansion-tone-pop {
   background:
-    radial-gradient(circle at 18% 0%, color-mix(in srgb, var(--page-title-gold) 22%, transparent), transparent 38%),
-    linear-gradient(180deg, color-mix(in srgb, var(--panel) 90%, var(--accent-soft)), var(--panel));
-  border-color: color-mix(in srgb, var(--page-title-gold) 48%, var(--line));
+    radial-gradient(circle at 18% 0%, color-mix(in srgb, var(--exp-primary) 16%, transparent), transparent 42%),
+    linear-gradient(180deg, color-mix(in srgb, var(--panel) 92%, var(--exp-bg)), var(--panel));
   box-shadow:
-    inset 3px 0 0 color-mix(in srgb, var(--page-title-gold) 72%, transparent),
+    inset 3px 0 0 color-mix(in srgb, var(--exp-primary) 54%, transparent),
+    0 0 18px color-mix(in srgb, var(--exp-primary) 10%, transparent),
+    var(--shadow);
+}
+
+.bonus-zone-card.bonus-expansion-tone-pop:hover,
+.bonus-zone-card.bonus-expansion-tone-pop:focus-within {
+  background:
+    radial-gradient(circle at 18% 0%, color-mix(in srgb, var(--exp-primary) 24%, transparent), transparent 44%),
+    linear-gradient(180deg, color-mix(in srgb, var(--panel) 88%, var(--exp-bg)), var(--panel));
+  box-shadow:
+    inset 3px 0 0 color-mix(in srgb, var(--exp-primary) 66%, transparent),
+    0 0 22px color-mix(in srgb, var(--exp-primary) 14%, transparent),
     var(--shadow);
 }
 
 .bonus-zone-card.is-unreported {
-  background: color-mix(in srgb, var(--panel) 82%, transparent);
-  box-shadow: none;
   gap: 10px;
-  opacity: 0.86;
   padding: 12px;
 }
 
@@ -235,15 +307,22 @@
 }
 
 .bonus-expansion-label {
-  background: color-mix(in srgb, var(--panel-soft) 74%, transparent);
-  border: 1px solid var(--line);
+  background: var(--exp-bg, color-mix(in srgb, var(--panel-soft) 74%, transparent));
+  border: 1px solid var(--exp-border, var(--line));
   border-radius: 999px;
-  color: var(--muted);
+  color: var(--exp-text, var(--muted));
   font-size: 0.68rem;
   font-weight: 900;
   letter-spacing: 0.04em;
   padding: 4px 7px;
   text-transform: uppercase;
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--exp-primary, var(--line)) 18%, transparent);
+}
+
+.bonus-expansion-label.bonus-expansion-tone-pop {
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--exp-primary) 14%, transparent),
+    0 0 12px color-mix(in srgb, var(--exp-primary) 10%, transparent);
 }
 
 .bonus-zone-card p {
@@ -268,8 +347,11 @@
 }
 
 .bonus-leading-report strong {
+  align-items: center;
   color: var(--page-title-gold);
+  display: inline-flex;
   font-size: 1.28rem;
+  gap: 7px;
   line-height: 1.1;
 }
 
@@ -285,43 +367,6 @@
   color: var(--text);
 }
 
-.bonus-status {
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  color: var(--accent);
-  flex: 0 0 auto;
-  font-size: 0.72rem;
-  font-weight: 900;
-  letter-spacing: 0.04em;
-  padding: 5px 8px;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
-.bonus-status-unreported,
-.bonus-status-single-report {
-  background: var(--panel-soft);
-  color: var(--muted);
-}
-
-.bonus-status-likely {
-  background: var(--exp-velious-bg);
-  border-color: var(--exp-velious-border);
-  color: var(--exp-velious-text);
-}
-
-.bonus-status-confirmed {
-  background: var(--exp-kunark-bg);
-  border-color: var(--exp-kunark-border);
-  color: var(--exp-kunark-text);
-}
-
-.bonus-status-disputed {
-  background: var(--warning-bg);
-  border-color: var(--warning-border);
-  color: var(--warning-text);
-}
-
 .bonus-report-list {
   display: flex;
   flex-wrap: wrap;
@@ -329,6 +374,7 @@
 }
 
 .bonus-report-pill {
+  align-items: center;
   background: color-mix(in srgb, var(--accent-soft) 68%, transparent);
   border: 1px solid color-mix(in srgb, var(--accent) 34%, var(--line));
   border-radius: 999px;
@@ -340,6 +386,30 @@
   gap: 5px;
   line-height: 1.15;
   padding: 6px 9px;
+}
+
+.bonus-icon {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  font-size: 0.92em;
+  justify-content: center;
+  line-height: 1;
+  margin-left: 2px;
+  min-width: 1.15em;
+}
+
+.bonus-icon-xp {
+  background: color-mix(in srgb, var(--page-title-gold) 22%, transparent);
+  border: 1px solid color-mix(in srgb, var(--page-title-gold) 48%, var(--line));
+  border-radius: 999px;
+  color: var(--page-title-gold);
+  font-size: 0.68em;
+  font-weight: 900;
+  letter-spacing: 0.03em;
+  min-height: 1.45em;
+  min-width: 2.2em;
+  padding: 0 0.36em;
 }
 
 .bonus-report-pill em {
@@ -482,10 +552,6 @@
 
   .bonus-zone-card-main {
     display: grid;
-  }
-
-  .bonus-status {
-    justify-self: start;
   }
 
   .bonus-report-action,
