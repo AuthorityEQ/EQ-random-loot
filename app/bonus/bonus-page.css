@@ -383,6 +383,17 @@
   letter-spacing: 0.02em;
 }
 
+.bonus-large-icon.is-none-mark {
+  background:
+    radial-gradient(circle at 50% 42%, rgba(244, 114, 114, 0.16), transparent 68%);
+  border-color: rgba(248, 113, 113, 0.24);
+  box-shadow:
+    0 0 22px rgba(248, 113, 113, 0.12),
+    inset 0 0 18px rgba(248, 113, 113, 0.08);
+  color: #d98b8b;
+  font-size: clamp(1.05rem, 3.8vw, 1.45rem);
+}
+
 .bonus-large-icon.is-coin-mark {
   background:
     radial-gradient(circle at 50% 50%, rgba(230, 240, 255, 0.2), transparent 66%),
@@ -428,6 +439,37 @@
   padding: 6px 9px;
 }
 
+.bonus-leading-report strong.is-none-bonus {
+  color: #d98b8b;
+}
+
+.bonus-report-pill.is-none-bonus,
+.bonus-type-button.is-none-bonus {
+  background: rgba(127, 29, 29, 0.14);
+  border-color: rgba(248, 113, 113, 0.28);
+  color: #d9a0a0;
+}
+
+.bonus-report-pill.is-none-bonus strong {
+  color: #e1b0b0;
+}
+
+.bonus-type-button.is-none-bonus:hover,
+.bonus-type-button.is-none-bonus:focus {
+  background: rgba(127, 29, 29, 0.2);
+  border-color: rgba(248, 113, 113, 0.4);
+  color: #f0c0c0;
+}
+
+.bonus-type-button.is-none-bonus.is-active {
+  background: rgba(185, 28, 28, 0.32);
+  border-color: rgba(248, 113, 113, 0.54);
+  box-shadow:
+    0 0 0 1px rgba(248, 113, 113, 0.18),
+    0 0 14px rgba(248, 113, 113, 0.12);
+  color: #ffe1e1;
+}
+
 .bonus-icon {
   align-items: center;
   display: inline-flex;
@@ -450,6 +492,18 @@
   min-height: 1.45em;
   min-width: 2.2em;
   padding: 0 0.36em;
+}
+
+.bonus-icon-none {
+  background: rgba(127, 29, 29, 0.18);
+  border: 1px solid rgba(248, 113, 113, 0.32);
+  border-radius: 999px;
+  color: #d9a0a0;
+  font-size: 0.62em;
+  font-weight: 900;
+  min-height: 1.45em;
+  min-width: 3.2em;
+  padding: 0 0.4em;
 }
 
 .bonus-icon-coin {
@@ -678,6 +732,13 @@
 
 .bonus-type-button {
   min-width: 74px;
+}
+
+.bonus-report-footer {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .bonus-report-submit {

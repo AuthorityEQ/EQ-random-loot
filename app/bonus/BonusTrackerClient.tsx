@@ -11,7 +11,8 @@ type BonusType =
   | "Rare"
   | "Skill"
   | "Respawn"
-  | "Faction";
+  | "Faction"
+  | "None";
 
 type Zone = {
   zoneName: string;
@@ -24,7 +25,8 @@ type Zone = {
 };
 
 type BonusStatus = "Unreported" | "Single Report" | "Likely" | "Confirmed" | "Disputed";
-type BonusFilter = "All" | BonusType;
+type FilterBonusType = Exclude<BonusType, "None">;
+type BonusFilter = "All" | FilterBonusType;
 type StatusFilter = "All" | "Reported" | "Unreported";
 type ZoneWithStatus = Zone & { status: BonusStatus; totalReports: number };
 
@@ -43,7 +45,7 @@ type ReportSubmission = Pick<
   "id" | "bonus" | "discordUserId" | "discordUsername" | "createdAt" | "updatedAt"
 >;
 
-const bonusTypes: BonusType[] = [
+const reportBonusTypes: BonusType[] = [
   "Experience",
   "AA",
   "Coin",
@@ -52,7 +54,10 @@ const bonusTypes: BonusType[] = [
   "Skill",
   "Respawn",
   "Faction",
+  "None",
 ];
+
+const filterBonusTypes: FilterBonusType[] = reportBonusTypes.filter((bonus): bonus is FilterBonusType => bonus !== "None");
 
 const statusFilters: StatusFilter[] = [
   "All",
@@ -297,8 +302,12 @@ function reportMatchesFilter(zone: Zone, selectedBonus: BonusFilter) {
   return zone.reports.some((report) => report.bonus === selectedBonus && report.count > 0);
 }
 
-function formatBonusLabel(bonus: BonusFilter) {
+function formatBonusLabel(bonus: BonusFilter | BonusType) {
   return bonus;
+}
+
+function getBonusToneClass(bonus: BonusType) {
+  return bonus === "None" ? "is-none-bonus" : null;
 }
 
 function BonusIcon({ bonus }: { bonus: BonusType }) {
@@ -323,7 +332,11 @@ function BonusIcon({ bonus }: { bonus: BonusType }) {
     );
   }
 
-  const icons: Record<Exclude<BonusType, "Experience" | "AA" | "Coin">, string> = {
+  if (bonus === "None") {
+    return <span className="bonus-icon bonus-icon-none" aria-label="None">None</span>;
+  }
+
+  const icons: Record<Exclude<BonusType, "Experience" | "AA" | "Coin" | "None">, string> = {
     Loot: "📦",
     Rare: "⭐",
     Skill: "🧠",
@@ -368,7 +381,15 @@ function LargeBonusIcon({ bonus }: { bonus: BonusType }) {
     );
   }
 
-  const emojiMarks: Record<Exclude<BonusType, "Experience" | "AA" | "Coin">, string> = {
+  if (bonus === "None") {
+    return (
+      <span aria-hidden="true" className="bonus-large-icon is-none-mark">
+        None
+      </span>
+    );
+  }
+
+  const emojiMarks: Record<Exclude<BonusType, "Experience" | "AA" | "Coin" | "None">, string> = {
     Loot: "📦",
     Rare: "⭐",
     Skill: "🧠",
@@ -653,7 +674,7 @@ export function BonusTrackerClient() {
               <div className="bonus-leading-report">
                 <span>Leading bonus</span>
                 {leadingReport ? (
-                  <strong>
+                  <strong className={getBonusToneClass(leadingReport.bonus) ?? undefined}>
                     <span className="bonus-label-text">{formatBonusLabel(leadingReport.bonus)}</span>
                   </strong>
                 ) : null}
@@ -669,7 +690,10 @@ export function BonusTrackerClient() {
         {isReported ? (
           <div className="bonus-report-list" aria-label={`${zone.zoneName} reported bonuses`}>
             {zone.reports.map((report) => (
-              <span className="bonus-report-pill" key={report.bonus}>
+              <span
+                className={["bonus-report-pill", getBonusToneClass(report.bonus)].filter(Boolean).join(" ")}
+                key={report.bonus}
+              >
                 <strong>{formatBonusLabel(report.bonus)}</strong>
                 <span>{report.count} {report.count === 1 ? "report" : "reports"}</span>
                 <BonusIcon bonus={report.bonus} />
@@ -704,7 +728,9 @@ export function BonusTrackerClient() {
                 <div className="bonus-admin-detail-row" key={submission.id}>
                   <div>
                     <strong>{formatReporterName(submission)}</strong>
-                    <span>{formatBonusLabel(submission.bonus)}</span>
+                    <span className={getBonusToneClass(submission.bonus) ?? undefined}>
+                      {formatBonusLabel(submission.bonus)}
+                    </span>
                     {createdAt ? <small>Created: {createdAt}</small> : null}
                     {updatedAt ? <small>Updated: {updatedAt}</small> : null}
                   </div>
@@ -752,12 +778,17 @@ export function BonusTrackerClient() {
               <button onClick={() => setOpenReportZone(null)} type="button">Cancel</button>
             </div>
             <div className="bonus-report-options" aria-label={`Select bonus for ${zone.zoneName}`}>
-              {bonusTypes.map((bonus) => {
+              {filterBonusTypes.map((bonus) => {
                 const isSelected = draftReports[zone.zoneName] === bonus;
                 return (
                   <button
                     aria-pressed={isSelected}
-                    className={isSelected ? "filter-button bonus-type-button is-active" : "filter-button bonus-type-button"}
+                    className={[
+                      "filter-button",
+                      "bonus-type-button",
+                      getBonusToneClass(bonus),
+                      isSelected ? "is-active" : null,
+                    ].filter(Boolean).join(" ")}
                     key={bonus}
                     onClick={() => setDraftReports((currentReports) => ({
                       ...currentReports,
@@ -770,14 +801,38 @@ export function BonusTrackerClient() {
                 );
               })}
             </div>
-            <button
-              className="bonus-report-submit"
-              disabled={isSubmittingReport}
-              onClick={() => submitReport(zone.zoneName)}
-              type="button"
-            >
-              {isSubmittingReport ? "Saving..." : "Save Report"}
-            </button>
+            <div className="bonus-report-footer">
+              <button
+                className="bonus-report-submit"
+                disabled={isSubmittingReport}
+                onClick={() => submitReport(zone.zoneName)}
+                type="button"
+              >
+                {isSubmittingReport ? "Saving..." : "Save Report"}
+              </button>
+              {(["None"] as const).map((bonus) => {
+                const isSelected = draftReports[zone.zoneName] === bonus;
+                return (
+                  <button
+                    aria-pressed={isSelected}
+                    className={[
+                      "filter-button",
+                      "bonus-type-button",
+                      getBonusToneClass(bonus),
+                      isSelected ? "is-active" : null,
+                    ].filter(Boolean).join(" ")}
+                    key={bonus}
+                    onClick={() => setDraftReports((currentReports) => ({
+                      ...currentReports,
+                      [zone.zoneName]: bonus,
+                    }))}
+                    type="button"
+                  >
+                    {formatBonusLabel(bonus)}
+                  </button>
+                );
+              })}
+            </div>
           </div>
         ) : null}
       </article>
@@ -822,7 +877,7 @@ export function BonusTrackerClient() {
 
         <div className="bonus-filter-group" aria-label="Bonus filters">
           <span className="bonus-filter-label">Bonus</span>
-          {(["All", ...bonusTypes] as BonusFilter[]).map((bonus) => {
+          {(["All", ...filterBonusTypes] as BonusFilter[]).map((bonus) => {
             const isActive = selectedBonus === bonus;
             return (
               <button

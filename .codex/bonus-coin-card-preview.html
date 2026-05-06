@@ -222,6 +222,99 @@
       height: 1.22em;
       width: 1.22em;
     }
+
+    .bonus-report-panel {
+      background: color-mix(in srgb, var(--panel-soft) 78%, transparent);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      display: grid;
+      gap: 12px;
+      padding: 12px;
+    }
+
+    .bonus-report-panel-heading {
+      align-items: center;
+      display: flex;
+      gap: 10px;
+      justify-content: space-between;
+    }
+
+    .bonus-report-panel-heading h3 {
+      color: var(--page-title-gold);
+      font-size: 0.98rem;
+      margin: 0;
+    }
+
+    .bonus-report-panel-heading button,
+    .bonus-report-submit {
+      background: transparent;
+      border: 0;
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 900;
+      padding: 4px 0;
+    }
+
+    .bonus-report-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .filter-button {
+      background: rgba(8, 14, 11, 0.34);
+      border: 1px solid #3b4b40;
+      border-radius: 999px;
+      color: #98a795;
+      cursor: pointer;
+      font-size: 0.88rem;
+      font-weight: 700;
+      min-height: 36px;
+      padding: 0 12px;
+    }
+
+    .filter-button.is-active {
+      background: #7fc59b;
+      border-color: #b7efc9;
+      box-shadow: 0 0 0 1px rgba(183, 239, 201, 0.26), 0 0 16px rgba(127, 197, 155, 0.28);
+      color: #06110b;
+    }
+
+    .bonus-type-button {
+      min-width: 74px;
+    }
+
+    .bonus-report-footer {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .bonus-type-button.is-none-bonus {
+      background: rgba(127, 29, 29, 0.14);
+      border-color: rgba(248, 113, 113, 0.28);
+      color: #d9a0a0;
+    }
+
+    .bonus-type-button.is-none-bonus.is-active {
+      background: rgba(185, 28, 28, 0.32);
+      border-color: rgba(248, 113, 113, 0.54);
+      box-shadow:
+        0 0 0 1px rgba(248, 113, 113, 0.18),
+        0 0 14px rgba(248, 113, 113, 0.12);
+      color: #ffe1e1;
+    }
+
+    .bonus-report-submit {
+      background: #7fc59b;
+      border: 1px solid #b7efc9;
+      border-radius: 999px;
+      color: #06110b;
+      justify-self: start;
+      min-height: 36px;
+      padding: 0 12px;
+    }
   </style>
 </head>
 <body>
@@ -251,6 +344,26 @@
             <img alt="" aria-hidden="true" class="bonus-coin-pill-image object-contain drop-shadow-[0_0_12px_rgba(180,200,255,0.35)] opacity-90" src="../public/icons/ppcoin.png">
           </span>
         </span>
+      </div>
+      <div class="bonus-report-panel">
+        <div class="bonus-report-panel-heading">
+          <h3>Change your report</h3>
+          <button type="button">Cancel</button>
+        </div>
+        <div class="bonus-report-options" aria-label="Select bonus for Crystal Caverns">
+          <button class="filter-button bonus-type-button" type="button">Experience</button>
+          <button class="filter-button bonus-type-button" type="button">AA</button>
+          <button class="filter-button bonus-type-button is-active" type="button">Coin</button>
+          <button class="filter-button bonus-type-button" type="button">Loot</button>
+          <button class="filter-button bonus-type-button" type="button">Rare</button>
+          <button class="filter-button bonus-type-button" type="button">Skill</button>
+          <button class="filter-button bonus-type-button" type="button">Respawn</button>
+          <button class="filter-button bonus-type-button" type="button">Faction</button>
+        </div>
+        <div class="bonus-report-footer">
+          <button class="bonus-report-submit" type="button">Save Report</button>
+          <button class="filter-button bonus-type-button is-none-bonus" type="button">None</button>
+        </div>
       </div>
     </article>
   </main>

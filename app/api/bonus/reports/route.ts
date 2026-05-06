@@ -5,7 +5,7 @@ import { authOptions } from "@/lib/auth";
 export const runtime = "nodejs";
 
 const REPORT_COOLDOWN_SECONDS = 60;
-const bonusTypes = ["Experience", "AA", "Coin", "Loot", "Rare", "Skill", "Respawn", "Faction"] as const;
+const bonusTypes = ["Experience", "AA", "Coin", "Loot", "Rare", "Skill", "Respawn", "Faction", "None"] as const;
 
 type BonusType = (typeof bonusTypes)[number];
 
