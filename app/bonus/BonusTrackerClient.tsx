@@ -376,6 +376,7 @@ export function BonusTrackerClient() {
         reports?: ServerBonusReport[];
         currentUserReports?: Record<string, BonusType | undefined>;
         error?: string;
+        message?: string;
         remainingSeconds?: number;
       };
 
@@ -391,6 +392,10 @@ export function BonusTrackerClient() {
         setReportMessage(`You can submit another zone report in ${payload.remainingSeconds} seconds.`);
       } else if (response.status === 401) {
         setReportMessage("Sign in with Discord to submit reports.");
+      } else if (payload.error === "STORAGE_NOT_CONFIGURED") {
+        setReportMessage(payload.message ?? "Report storage is not configured for production yet.");
+      } else if (payload.error === "DATABASE_ERROR") {
+        setReportMessage(payload.message ?? "Report storage is temporarily unavailable.");
       } else {
         setReportMessage("Could not save that report. Please try again.");
       }

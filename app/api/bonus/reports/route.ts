@@ -1,5 +1,4 @@
-import { promises as fs } from "node:fs";
-import path from "node:path";
+import { Pool, type PoolClient } from "pg";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/lib/auth";
 
@@ -15,45 +14,65 @@ type BonusReportRecord = {
   zoneName: string;
   bonus: BonusType;
   discordUserId: string;
+  discordUsername: string | null;
   createdAt: string;
   updatedAt: string;
 };
 
-type BonusUserRecord = {
-  discordUserId: string;
-  username?: string | null;
-  avatarUrl?: string | null;
-  banned?: boolean;
-  trustScore?: number;
+type BonusReportRow = {
+  id: string;
+  zonename: string;
+  bonus: BonusType;
+  discorduserid: string;
+  discordusername: string | null;
+  createdat: Date;
+  updatedat: Date;
 };
 
-type BonusReportStore = {
-  reports: BonusReportRecord[];
-  users: BonusUserRecord[];
-};
+let pool: Pool | undefined;
 
-const storePath = path.join(process.cwd(), "data", "bonus-reports.json");
-
-async function readStore(): Promise<BonusReportStore> {
-  try {
-    const contents = await fs.readFile(storePath, "utf8");
-    const parsed = JSON.parse(contents) as Partial<BonusReportStore>;
-    return {
-      reports: Array.isArray(parsed.reports) ? parsed.reports : [],
-      users: Array.isArray(parsed.users) ? parsed.users : [],
-    };
-  } catch {
-    return { reports: [], users: [] };
+function getPool() {
+  if (!process.env.DATABASE_URL) {
+    throw new Error("DATABASE_URL is required for bonus report storage.");
   }
-}
 
-async function writeStore(store: BonusReportStore) {
-  await fs.mkdir(path.dirname(storePath), { recursive: true });
-  await fs.writeFile(storePath, `${JSON.stringify(store, null, 2)}\n`, "utf8");
+  pool ??= new Pool({
+    connectionString: process.env.DATABASE_URL,
+    ssl: process.env.NODE_ENV === "production" ? { rejectUnauthorized: false } : undefined,
+  });
+  return pool;
 }
 
 function isBonusType(value: unknown): value is BonusType {
   return typeof value === "string" && bonusTypes.includes(value as BonusType);
+}
+
+function mapReport(row: BonusReportRow): BonusReportRecord {
+  return {
+    id: row.id,
+    zoneName: row.zonename,
+    bonus: row.bonus,
+    discordUserId: row.discorduserid,
+    discordUsername: row.discordusername,
+    createdAt: row.createdat.toISOString(),
+    updatedAt: row.updatedat.toISOString(),
+  };
+}
+
+async function getAllReports() {
+  const result = await getPool().query<BonusReportRow>(
+    `select
+       id,
+       "zoneName" as zonename,
+       bonus,
+       "discordUserId" as discorduserid,
+       "discordUsername" as discordusername,
+       "createdAt" as createdat,
+       "updatedAt" as updatedat
+     from bonus_reports
+     order by "zoneName" asc, "updatedAt" desc`,
+  );
+  return result.rows.map(mapReport);
 }
 
 function getCurrentUserReports(reports: BonusReportRecord[], discordUserId: string | undefined) {
@@ -74,18 +93,37 @@ async function getDiscordSessionUser() {
   return {
     discordUserId,
     username: session.user?.discordUsername ?? session.user?.name ?? null,
-    avatarUrl: session.user?.image ?? null,
   };
 }
 
+function databaseErrorResponse(error: unknown, context: Record<string, unknown>) {
+  console.error("[bonus-reports] Database operation failed", {
+    ...context,
+    hasDatabaseUrl: Boolean(process.env.DATABASE_URL),
+    error,
+  });
+
+  return Response.json(
+    {
+      error: "DATABASE_ERROR",
+      message: "Report storage is temporarily unavailable.",
+    },
+    { status: 500 },
+  );
+}
+
 export async function GET() {
-  const store = await readStore();
   const currentUser = await getDiscordSessionUser();
 
-  return Response.json({
-    reports: store.reports,
-    currentUserReports: getCurrentUserReports(store.reports, currentUser?.discordUserId),
-  });
+  try {
+    const reports = await getAllReports();
+    return Response.json({
+      reports,
+      currentUserReports: getCurrentUserReports(reports, currentUser?.discordUserId),
+    });
+  } catch (error) {
+    return databaseErrorResponse(error, { action: "list-reports" });
+  }
 }
 
 export async function POST(request: Request) {
@@ -102,77 +140,90 @@ export async function POST(request: Request) {
     return Response.json({ error: "INVALID_REPORT" }, { status: 400 });
   }
 
-  const store = await readStore();
-  const user = store.users.find((record) => record.discordUserId === currentUser.discordUserId);
-  // TODO: Add admin banning controls and an audit trail for moderator actions.
-  if (user?.banned) {
-    return Response.json({ error: "USER_BANNED" }, { status: 403 });
-  }
+  let client: PoolClient | undefined;
 
-  if (user) {
-    user.username = currentUser.username;
-    user.avatarUrl = currentUser.avatarUrl;
-  } else {
-    store.users.push({
-      discordUserId: currentUser.discordUserId,
-      username: currentUser.username,
-      avatarUrl: currentUser.avatarUrl,
-      banned: false,
-      trustScore: 0,
-    });
-  }
+  try {
+    client = await getPool().connect();
+    await client.query("begin");
 
-  const now = new Date();
-  const existingReport = store.reports.find((report) =>
-    report.discordUserId === currentUser.discordUserId && report.zoneName === zoneName
-  );
+    const existingReport = await client.query<{ id: string }>(
+      `select id
+       from bonus_reports
+       where "discordUserId" = $1 and "zoneName" = $2
+       for update`,
+      [currentUser.discordUserId, zoneName],
+    );
 
-  if (existingReport) {
-    existingReport.bonus = bonus;
-    existingReport.updatedAt = now.toISOString();
-    await writeStore(store);
+    if (existingReport.rowCount === 0) {
+      const latestReport = await client.query<{ createdat: Date }>(
+        `select "createdAt" as createdat
+         from bonus_reports
+         where "discordUserId" = $1
+         order by "createdAt" desc
+         limit 1`,
+        [currentUser.discordUserId],
+      );
 
+      const latestCreatedAt = latestReport.rows[0]?.createdat;
+      if (latestCreatedAt) {
+        const elapsedSeconds = Math.floor((Date.now() - latestCreatedAt.getTime()) / 1000);
+        if (elapsedSeconds < REPORT_COOLDOWN_SECONDS) {
+          await client.query("rollback");
+          return Response.json(
+            {
+              error: "RATE_LIMITED",
+              remainingSeconds: REPORT_COOLDOWN_SECONDS - elapsedSeconds,
+            },
+            { status: 429 },
+          );
+        }
+      }
+    }
+
+    // TODO: Add admin banning controls and an audit trail for moderator actions.
+    // TODO: Add screenshot proof metadata when report verification is introduced.
+    // TODO: Add max zones per 10 minutes once report volume is high enough to tune it.
+    // TODO: Add trust weighting when the confidence system starts using reporter reputation.
+    await client.query(
+      `insert into bonus_reports ("zoneName", bonus, "discordUserId", "discordUsername")
+       values ($1, $2, $3, $4)
+       on conflict ("discordUserId", "zoneName")
+       do update set
+         bonus = excluded.bonus,
+         "discordUsername" = excluded."discordUsername",
+         "updatedAt" = now()`,
+      [zoneName, bonus, currentUser.discordUserId, currentUser.username],
+    );
+
+    const reportsResult = await client.query<BonusReportRow>(
+      `select
+         id,
+         "zoneName" as zonename,
+         bonus,
+         "discordUserId" as discorduserid,
+         "discordUsername" as discordusername,
+         "createdAt" as createdat,
+         "updatedAt" as updatedat
+       from bonus_reports
+       order by "zoneName" asc, "updatedAt" desc`,
+    );
+
+    await client.query("commit");
+
+    const reports = reportsResult.rows.map(mapReport);
     return Response.json({
       success: true,
-      reports: store.reports,
-      currentUserReports: getCurrentUserReports(store.reports, currentUser.discordUserId),
+      reports,
+      currentUserReports: getCurrentUserReports(reports, currentUser.discordUserId),
     });
+  } catch (error) {
+    await client?.query("rollback").catch(() => {});
+    return databaseErrorResponse(error, {
+      action: "submit-report",
+      zoneName,
+      discordUserId: currentUser.discordUserId,
+    });
+  } finally {
+    client?.release();
   }
-
-  const latestNewZoneReport = store.reports
-    .filter((report) => report.discordUserId === currentUser.discordUserId)
-    .sort((a, b) => Date.parse(b.createdAt) - Date.parse(a.createdAt))[0];
-
-  if (latestNewZoneReport) {
-    const elapsedSeconds = Math.floor((now.getTime() - Date.parse(latestNewZoneReport.createdAt)) / 1000);
-    if (elapsedSeconds < REPORT_COOLDOWN_SECONDS) {
-      return Response.json(
-        {
-          error: "RATE_LIMITED",
-          remainingSeconds: REPORT_COOLDOWN_SECONDS - elapsedSeconds,
-        },
-        { status: 429 },
-      );
-    }
-  }
-
-  // TODO: Add screenshot proof metadata when report verification is introduced.
-  // TODO: Add max zones per 10 minutes once report volume is high enough to tune it.
-  // TODO: Add trust weighting when the confidence system starts using reporter reputation.
-  store.reports.push({
-    id: crypto.randomUUID(),
-    zoneName,
-    bonus,
-    discordUserId: currentUser.discordUserId,
-    createdAt: now.toISOString(),
-    updatedAt: now.toISOString(),
-  });
-
-  await writeStore(store);
-
-  return Response.json({
-    success: true,
-    reports: store.reports,
-    currentUserReports: getCurrentUserReports(store.reports, currentUser.discordUserId),
-  });
 }
