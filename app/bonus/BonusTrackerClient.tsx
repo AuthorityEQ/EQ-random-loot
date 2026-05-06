@@ -310,8 +310,20 @@ function BonusIcon({ bonus }: { bonus: BonusType }) {
     return <span className="bonus-icon bonus-icon-xp" aria-label="AA">AA</span>;
   }
 
-  const icons: Record<Exclude<BonusType, "Experience" | "AA">, string> = {
-    Coin: "💰",
+  if (bonus === "Coin") {
+    return (
+      <span className="bonus-icon bonus-icon-coin" aria-label="Coin">
+        <img
+          alt=""
+          aria-hidden="true"
+          className="bonus-coin-pill-image object-contain drop-shadow-[0_0_12px_rgba(180,200,255,0.35)] opacity-90"
+          src="/icons/ppcoin.png"
+        />
+      </span>
+    );
+  }
+
+  const icons: Record<Exclude<BonusType, "Experience" | "AA" | "Coin">, string> = {
     Loot: "📦",
     Rare: "⭐",
     Skill: "🧠",
@@ -344,8 +356,19 @@ function LargeBonusIcon({ bonus }: { bonus: BonusType }) {
     );
   }
 
-  const emojiMarks: Record<typeof bonus, string> = {
-    Coin: "💰",
+  if (bonus === "Coin") {
+    return (
+      <span aria-hidden="true" className="bonus-large-icon is-coin-mark">
+        <img
+          alt=""
+          className="bonus-coin-image w-12 h-12 object-contain drop-shadow-[0_0_12px_rgba(180,200,255,0.35)] opacity-90"
+          src="/icons/ppcoin.png"
+        />
+      </span>
+    );
+  }
+
+  const emojiMarks: Record<Exclude<BonusType, "Experience" | "AA" | "Coin">, string> = {
     Loot: "📦",
     Rare: "⭐",
     Skill: "🧠",

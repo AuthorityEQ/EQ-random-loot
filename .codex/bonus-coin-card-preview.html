@@ -1,0 +1,253 @@
+<!doctype html>
+<html data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daily Bonus Coin Card Preview</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0d1411;
+      --surface: #17211d;
+      --surface-muted: #202d27;
+      --text: #efeade;
+      --text-muted: #aeb9ac;
+      --border: #35463b;
+      --accent: #7fc59b;
+      --accent-soft: #203b2d;
+      --shadow: 0 16px 42px rgba(0, 0, 0, 0.32);
+      --panel: var(--surface);
+      --panel-soft: var(--surface-muted);
+      --muted: var(--text-muted);
+      --line: var(--border);
+      --page-title-gold: #e8c971;
+      --exp-primary: #83cbd3;
+      --exp-bg: rgba(45, 76, 88, 0.38);
+      --exp-border: #5e8f9c;
+      --exp-text: #d8f7fb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      align-items: center;
+      background:
+        radial-gradient(circle at 24% 18%, rgba(127, 197, 155, 0.16), transparent 34%),
+        var(--bg);
+      color: var(--text);
+      display: grid;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      min-height: 100vh;
+      padding: 32px;
+    }
+
+    .preview-wrap {
+      max-width: 440px;
+      width: 100%;
+    }
+
+    .bonus-zone-card {
+      background:
+        radial-gradient(circle at 18% 0%, color-mix(in srgb, var(--exp-primary) 22%, transparent), transparent 38%),
+        linear-gradient(135deg, color-mix(in srgb, var(--exp-bg) 34%, transparent), transparent 58%),
+        var(--panel);
+      border: 1px solid color-mix(in srgb, var(--exp-primary) 44%, var(--line));
+      border-radius: 8px;
+      box-shadow:
+        inset 3px 0 0 color-mix(in srgb, var(--exp-primary) 66%, transparent),
+        var(--shadow);
+      display: grid;
+      gap: 14px;
+      padding: 14px;
+    }
+
+    .bonus-zone-card-main {
+      align-items: start;
+      display: grid;
+      gap: 12px;
+      grid-template-columns: minmax(0, 1fr) auto;
+    }
+
+    .bonus-zone-title-row {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .bonus-zone-card h2 {
+      color: var(--page-title-gold);
+      font-size: 1.08rem;
+      line-height: 1.2;
+      margin: 0;
+    }
+
+    .bonus-expansion-label {
+      background: var(--exp-bg);
+      border: 1px solid var(--exp-border);
+      border-radius: 999px;
+      box-shadow: 0 0 0 1px color-mix(in srgb, var(--exp-primary) 18%, transparent);
+      color: var(--exp-text);
+      font-size: 0.68rem;
+      font-weight: 900;
+      letter-spacing: 0.04em;
+      padding: 4px 7px;
+      text-transform: uppercase;
+    }
+
+    .bonus-leading-report {
+      display: grid;
+      gap: 2px;
+      margin-top: 8px;
+    }
+
+    .bonus-leading-report > span {
+      color: var(--muted);
+      font-size: 0.72rem;
+      font-weight: 900;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .bonus-leading-report strong {
+      color: var(--text);
+      display: block;
+      font-size: 1.28rem;
+      line-height: 1.1;
+    }
+
+    .bonus-leading-report em {
+      color: var(--muted);
+      font-size: 0.84rem;
+      font-style: normal;
+      font-weight: 800;
+    }
+
+    .bonus-large-icon {
+      align-items: center;
+      align-self: center;
+      background:
+        radial-gradient(circle at 45% 34%, rgba(255, 255, 255, 0.32), transparent 46%),
+        radial-gradient(circle at 50% 50%, rgba(200, 220, 255, 0.18), transparent 68%);
+      border: 1px solid rgba(200, 220, 255, 0.28);
+      border-radius: 999px;
+      box-shadow:
+        0 0 24px rgba(200, 220, 255, 0.22),
+        inset 0 0 18px rgba(255, 255, 255, 0.08);
+      display: inline-flex;
+      height: clamp(62px, 9vw, 86px);
+      justify-content: center;
+      min-width: clamp(62px, 9vw, 86px);
+      opacity: 0.72;
+      padding: 0 12px;
+      pointer-events: none;
+    }
+
+    .bonus-large-icon.is-coin-mark {
+      background: transparent;
+      border: 0;
+      box-shadow: none;
+      padding: 0;
+    }
+
+    .bonus-report-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .bonus-report-pill {
+      align-items: center;
+      background: color-mix(in srgb, var(--accent-soft) 68%, transparent);
+      border: 1px solid color-mix(in srgb, var(--accent) 34%, var(--line));
+      border-radius: 999px;
+      color: var(--muted);
+      display: inline-flex;
+      flex-wrap: wrap;
+      font-size: 0.78rem;
+      font-weight: 800;
+      gap: 5px;
+      line-height: 1.15;
+      padding: 6px 9px;
+    }
+
+    .bonus-report-pill strong {
+      color: var(--text);
+    }
+
+    .bonus-icon {
+      align-items: center;
+      display: inline-flex;
+      flex: 0 0 auto;
+      font-size: 0.92em;
+      justify-content: center;
+      line-height: 1;
+      margin-left: 2px;
+      min-width: 1.15em;
+    }
+
+    .bonus-icon-coin {
+      height: 1.35em;
+      margin-left: 3px;
+      min-width: 1.35em;
+    }
+
+    .bonus-coin-image,
+    .bonus-coin-pill-image {
+      border-radius: 999px;
+      clip-path: circle(50%);
+      display: block;
+      filter: drop-shadow(0 0 12px rgba(180, 200, 255, 0.35));
+      mask-image: radial-gradient(circle, white 70%, transparent 100%);
+      mix-blend-mode: screen;
+      object-fit: contain;
+      opacity: 0.9;
+      -webkit-mask-image: radial-gradient(circle, white 70%, transparent 100%);
+    }
+
+    .bonus-coin-image {
+      height: 3rem;
+      width: 3rem;
+    }
+
+    .bonus-coin-pill-image {
+      height: 1.22em;
+      width: 1.22em;
+    }
+  </style>
+</head>
+<body>
+  <main class="preview-wrap">
+    <article class="bonus-zone-card is-reported" aria-label="Coin bonus zone card preview">
+      <div class="bonus-zone-card-main">
+        <div>
+          <div class="bonus-zone-title-row">
+            <h2>Crystal Caverns</h2>
+            <span class="bonus-expansion-label">Velious</span>
+          </div>
+          <div class="bonus-leading-report">
+            <span>Leading Bonus</span>
+            <strong>Coin</strong>
+            <em>2 reports</em>
+          </div>
+        </div>
+        <span aria-hidden="true" class="bonus-large-icon is-coin-mark">
+          <img alt="" class="bonus-coin-image w-12 h-12 object-contain drop-shadow-[0_0_12px_rgba(180,200,255,0.35)] opacity-90" src="../public/icons/ppcoin.png">
+        </span>
+      </div>
+      <div class="bonus-report-list" aria-label="Crystal Caverns reported bonuses">
+        <span class="bonus-report-pill">
+          <strong>Coin</strong>
+          <span>2 reports</span>
+          <span class="bonus-icon bonus-icon-coin" aria-label="Coin">
+            <img alt="" aria-hidden="true" class="bonus-coin-pill-image object-contain drop-shadow-[0_0_12px_rgba(180,200,255,0.35)] opacity-90" src="../public/icons/ppcoin.png">
+          </span>
+        </span>
+      </div>
+    </article>
+  </main>
+</body>
+</html>

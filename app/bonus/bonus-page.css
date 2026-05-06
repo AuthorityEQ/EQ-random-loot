@@ -383,6 +383,14 @@
   letter-spacing: 0.02em;
 }
 
+.bonus-large-icon.is-coin-mark {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  min-width: clamp(62px, 9vw, 86px);
+  padding: 0;
+}
+
 .bonus-leading-report em,
 .bonus-no-reports {
   color: var(--muted);
@@ -438,6 +446,35 @@
   min-height: 1.45em;
   min-width: 2.2em;
   padding: 0 0.36em;
+}
+
+.bonus-icon-coin {
+  height: 1.35em;
+  margin-left: 3px;
+  min-width: 1.35em;
+}
+
+.bonus-coin-image,
+.bonus-coin-pill-image {
+  border-radius: 999px;
+  clip-path: circle(50%);
+  display: block;
+  filter: drop-shadow(0 0 12px rgba(180, 200, 255, 0.35));
+  mask-image: radial-gradient(circle, white 70%, transparent 100%);
+  mix-blend-mode: screen;
+  object-fit: contain;
+  opacity: 0.9;
+  -webkit-mask-image: radial-gradient(circle, white 70%, transparent 100%);
+}
+
+.bonus-coin-image {
+  height: 3rem;
+  width: 3rem;
+}
+
+.bonus-coin-pill-image {
+  height: 1.22em;
+  width: 1.22em;
 }
 
 .bonus-report-pill em {
