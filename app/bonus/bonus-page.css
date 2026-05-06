@@ -635,12 +635,8 @@
   gap: 8px;
 }
 
-.bonus-filter-group .filter-button,
-.bonus-report-options .filter-button {
-  align-items: center;
-  display: inline-flex;
-  gap: 6px;
-  justify-content: center;
+.bonus-type-button {
+  min-width: 74px;
 }
 
 .bonus-report-submit {

@@ -298,7 +298,6 @@ function reportMatchesFilter(zone: Zone, selectedBonus: BonusFilter) {
 }
 
 function formatBonusLabel(bonus: BonusFilter) {
-  if (bonus === "AA") return "AA Bonus";
   return bonus;
 }
 
@@ -321,19 +320,6 @@ function BonusIcon({ bonus }: { bonus: BonusType }) {
   };
 
   return <span className="bonus-icon" aria-hidden="true">{icons[bonus]}</span>;
-}
-
-function BonusLabel({ bonus }: { bonus: BonusFilter }) {
-  if (bonus === "All") return "All";
-  if (bonus === "AA") {
-    return (
-      <>
-        <span className="bonus-label-text">{formatBonusLabel(bonus)}</span>
-        <BonusIcon bonus={bonus} />
-      </>
-    );
-  }
-  return formatBonusLabel(bonus);
 }
 
 function formatReporterName(submission: ReportSubmission) {
@@ -748,7 +734,7 @@ export function BonusTrackerClient() {
                 return (
                   <button
                     aria-pressed={isSelected}
-                    className={isSelected ? "filter-button is-active" : "filter-button"}
+                    className={isSelected ? "filter-button bonus-type-button is-active" : "filter-button bonus-type-button"}
                     key={bonus}
                     onClick={() => setDraftReports((currentReports) => ({
                       ...currentReports,
@@ -756,7 +742,7 @@ export function BonusTrackerClient() {
                     }))}
                     type="button"
                   >
-                    <BonusLabel bonus={bonus} />
+                    {formatBonusLabel(bonus)}
                   </button>
                 );
               })}
@@ -818,12 +804,12 @@ export function BonusTrackerClient() {
             return (
               <button
                 aria-pressed={isActive}
-                className={isActive ? "filter-button is-active" : "filter-button"}
+                className={isActive ? "filter-button bonus-type-button is-active" : "filter-button bonus-type-button"}
                 key={bonus}
                 onClick={() => setSelectedBonus(bonus)}
                 type="button"
               >
-                <BonusLabel bonus={bonus} />
+                {formatBonusLabel(bonus)}
               </button>
             );
           })}
