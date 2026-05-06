@@ -76,6 +76,15 @@ export default function RootLayout({
                 <EpicProgressProvider>
                   <ItemPreviewProvider>
                     <nav className="app-nav" aria-label="Primary navigation">
+                      <a
+                        className="app-donate-link"
+                        href="https://www.paypal.com/donate/?hosted_button_id=GRK8K9JWNVALW"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <span className="app-donate-mark" aria-hidden="true">P</span>
+                        Donate
+                      </a>
                       <AppNavLinks />
                       <div className="app-nav-controls">
                         <ItemPreviewToggle />

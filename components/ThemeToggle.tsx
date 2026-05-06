@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useSession } from "next-auth/react";
+import { fetchUserSettings, saveUserSettings } from "@/lib/user-settings-client";
 
 type Theme = "light" | "dark";
 
@@ -13,17 +15,44 @@ function getPreferredTheme(): Theme {
 
 export function ThemeToggle() {
   const [theme, setTheme] = useState<Theme>("light");
+  const [ready, setReady] = useState(false);
+  const { status: authStatus, data: session } = useSession();
+  const isSignedIn = authStatus === "authenticated" && Boolean(session?.user?.discordUserId);
 
   useEffect(() => {
     const nextTheme = getPreferredTheme();
     setTheme(nextTheme);
     document.documentElement.dataset.theme = nextTheme;
+    setReady(true);
   }, []);
+
+  useEffect(() => {
+    if (!ready || !isSignedIn) return;
+    let cancelled = false;
+    fetchUserSettings()
+      .then((settings) => {
+        const remoteTheme = settings?.preferences.theme;
+        if (!cancelled && (remoteTheme === "light" || remoteTheme === "dark")) {
+          setTheme(remoteTheme);
+          document.documentElement.dataset.theme = remoteTheme;
+          window.localStorage.setItem("frostreaver-theme", remoteTheme);
+        }
+      })
+      .catch(() => {});
+    return () => {
+      cancelled = true;
+    };
+  }, [isSignedIn, ready]);
 
   function updateTheme(nextTheme: Theme) {
     setTheme(nextTheme);
     document.documentElement.dataset.theme = nextTheme;
     window.localStorage.setItem("frostreaver-theme", nextTheme);
+    if (isSignedIn) {
+      window.setTimeout(() => {
+        saveUserSettings({ preferences: { theme: nextTheme } }).catch(() => {});
+      }, 400);
+    }
   }
 
   return (

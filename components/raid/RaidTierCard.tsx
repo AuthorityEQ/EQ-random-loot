@@ -8,6 +8,7 @@ type RaidTierCardProps = {
   tier: RaidTier;
   expansion: string;
   bossBucketMap: Map<string, Bucket>;
+  bossOpenRequest: { domId: string; requestId: number } | null;
   getItemDetails: (name: string) => ItemDetails | undefined;
   onSelectLoot: (item: string, bucket: Bucket) => void;
 };
@@ -16,6 +17,7 @@ export function RaidTierCard({
   tier,
   expansion,
   bossBucketMap,
+  bossOpenRequest,
   getItemDetails,
   onSelectLoot,
 }: RaidTierCardProps) {
@@ -42,6 +44,11 @@ export function RaidTierCard({
             domId={`raid-boss-${boss.name.replace(/[^a-z0-9]+/gi, "-").toLowerCase()}`}
             getItemDetails={getItemDetails}
             key={`${tier.tier}-${boss.name}`}
+            openRequest={
+              bossOpenRequest?.domId === `raid-boss-${boss.name.replace(/[^a-z0-9]+/gi, "-").toLowerCase()}`
+                ? bossOpenRequest.requestId
+                : undefined
+            }
             onSelectLoot={onSelectLoot}
           />
         ))}

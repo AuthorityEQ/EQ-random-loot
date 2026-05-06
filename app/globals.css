@@ -271,6 +271,51 @@ select {
   justify-self: end;
   margin-left: 0;
 }
+.app-nav .app-donate-link {
+  align-items: center;
+  align-self: center;
+  background: #0070ba;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 7px;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.18),
+    0 2px 7px rgba(0, 0, 0, 0.24);
+  color: #ffffff;
+  display: inline-flex;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  grid-column: 1;
+  justify-self: start;
+  letter-spacing: 0;
+  line-height: 1;
+  padding: 7px 11px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.app-donate-mark {
+  align-items: center;
+  background: #ffffff;
+  border-radius: 3px;
+  color: #003087;
+  display: inline-flex;
+  font-size: 0.72rem;
+  font-weight: 900;
+  height: 15px;
+  justify-content: center;
+  line-height: 1;
+  width: 15px;
+}
+.app-nav .app-donate-link:hover,
+.app-nav .app-donate-link:focus {
+  background: #005ea6;
+  border-color: rgba(255, 255, 255, 0.24);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.16),
+    0 2px 7px rgba(0, 0, 0, 0.28);
+  color: #ffffff;
+  outline: none;
+}
 .app-nav a {
   background:
     linear-gradient(180deg, rgba(62, 42, 20, 0.88), rgba(20, 15, 10, 0.92));
@@ -2457,6 +2502,13 @@ select option {
   border: 1px solid var(--line);
   border-radius: 8px;
   overflow: hidden;
+  transition: border-color 140ms ease, box-shadow 140ms ease;
+
+}
+.raid-boss-card:hover,
+.raid-boss-card:focus-within {
+  border-color: color-mix(in srgb, var(--accent) 48%, var(--line));
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent) 16%, transparent), 0 8px 20px rgba(0, 0, 0, 0.08);
 
 }
 .raid-boss-trigger {
@@ -2525,7 +2577,7 @@ select option {
 }
 @media (max-width: 720px) {
   :root {
-    --app-nav-sticky-height: 106px;
+    --app-nav-sticky-height: 146px;
   }
 
   .app-nav {
@@ -2537,6 +2589,11 @@ select option {
 
   .app-nav-links {
     justify-content: center;
+  }
+
+  .app-nav .app-donate-link {
+    align-self: flex-start;
+    padding: 6px 9px;
   }
 
   .app-nav-controls {
@@ -3686,6 +3743,48 @@ select option {
 .favorite-button:focus-visible,
 .app-nav a:focus-visible {
   outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.user-sync-banner {
+  align-items: center;
+  background: color-mix(in srgb, var(--panel) 88%, var(--accent-soft));
+  border: 1px solid color-mix(in srgb, var(--accent) 34%, var(--line));
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  color: var(--muted);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.84rem;
+  font-weight: 800;
+  gap: 8px;
+  margin: 12px auto 0;
+  max-width: 1220px;
+  padding: 10px 12px;
+}
+
+.user-sync-banner button {
+  background: var(--accent);
+  border: 1px solid color-mix(in srgb, var(--accent) 82%, var(--accent-contrast));
+  border-radius: 999px;
+  color: var(--accent-contrast);
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-weight: 900;
+  min-height: 30px;
+  padding: 0 10px;
+}
+
+.user-sync-banner button:last-child {
+  background: transparent;
+  border-color: var(--line);
+  color: var(--muted);
+}
+
+.user-sync-banner button:hover,
+.user-sync-banner button:focus {
+  border-color: var(--accent);
+  outline: 2px solid var(--focus-ring);
   outline-offset: 2px;
 }
 

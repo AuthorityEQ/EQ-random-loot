@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Skill Bonus Card Preview</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #0d1411;
+        --panel: #17211d;
+        --muted: #aeb9ac;
+        --text: #efeade;
+        --page-title-gold: #e8c971;
+        --line: #35463b;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        align-items: center;
+        background: #0d1411;
+        color: var(--text);
+        display: flex;
+        font-family: Arial, Helvetica, sans-serif;
+        justify-content: center;
+        margin: 0;
+        min-height: 100vh;
+        padding: 18px;
+      }
+
+      .bonus-zone-card {
+        background:
+          radial-gradient(circle at 18% 0%, rgba(210, 210, 220, 0.12), transparent 40%),
+          linear-gradient(135deg, rgba(214, 222, 230, 0.06), transparent 58%),
+          var(--panel);
+        border: 1px solid rgba(214, 222, 230, 0.34);
+        border-radius: 8px;
+        box-shadow: 0 16px 42px rgba(0, 0, 0, 0.34);
+        display: grid;
+        gap: 14px;
+        max-width: 255px;
+        padding: 12px;
+        width: 255px;
+      }
+
+      .bonus-zone-card-main {
+        align-items: start;
+        display: grid;
+        gap: 12px;
+        grid-template-columns: minmax(0, 1fr) auto;
+      }
+
+      h2 {
+        color: var(--page-title-gold);
+        font-size: 1rem;
+        line-height: 1.2;
+        margin: 0 0 8px;
+      }
+
+      .bonus-expansion-badge {
+        align-items: center;
+        background: rgba(238, 242, 247, 0.12);
+        border: 1px solid rgba(238, 242, 247, 0.38);
+        border-radius: 999px;
+        color: #eef2f7;
+        display: inline-flex;
+        font-size: 0.67rem;
+        font-weight: 900;
+        line-height: 1.05;
+        padding: 7px 12px;
+        text-transform: uppercase;
+      }
+
+      .bonus-leading-report {
+        display: grid;
+        gap: 2px;
+        margin-top: 8px;
+      }
+
+      .bonus-leading-report > span,
+      .bonus-reporter-count {
+        color: var(--muted);
+        font-size: 0.72rem;
+        font-weight: 900;
+        letter-spacing: 0.04em;
+      }
+
+      .bonus-leading-report > span {
+        text-transform: uppercase;
+      }
+
+      .bonus-leading-report strong {
+        color: var(--page-title-gold);
+        display: block;
+        font-size: 1.28rem;
+        line-height: 1.05;
+      }
+
+      .bonus-leading-report em {
+        color: var(--muted);
+        font-size: 0.84rem;
+        font-style: normal;
+        font-weight: 800;
+      }
+
+      .bonus-large-icon {
+        align-items: center;
+        align-self: center;
+        background:
+          radial-gradient(circle at 50% 50%, rgba(220, 255, 112, 0.16), transparent 66%),
+          radial-gradient(circle at 50% 50%, rgba(232, 201, 113, 0.12), transparent 72%);
+        border: 1px solid rgba(220, 255, 112, 0.16);
+        border-radius: 999px;
+        box-shadow:
+          0 0 24px rgba(220, 255, 112, 0.12),
+          inset 0 0 18px rgba(232, 201, 113, 0.08);
+        display: inline-flex;
+        height: 82px;
+        justify-content: center;
+        min-width: 72px;
+        opacity: 0.94;
+        padding: 5px;
+        pointer-events: none;
+      }
+
+      .bonus-skill-large-image {
+        display: block;
+        filter: drop-shadow(0 0 16px rgba(220, 255, 112, 0.28));
+        height: 100%;
+        object-fit: contain;
+        width: 100%;
+      }
+
+      .bonus-report-pill,
+      .bonus-details-button,
+      .bonus-user-report,
+      .bonus-change-button {
+        border-radius: 999px;
+        display: inline-flex;
+        font-size: 0.78rem;
+        font-weight: 900;
+        width: fit-content;
+      }
+
+      .bonus-report-pill {
+        align-items: center;
+        background: rgba(11, 18, 14, 0.5);
+        border: 1px solid rgba(127, 197, 155, 0.24);
+        color: #d7ead9;
+        gap: 6px;
+        margin-top: 12px;
+        padding: 5px 9px;
+      }
+
+      .bonus-report-pill img {
+        height: 14px;
+        width: 14px;
+      }
+
+      .bonus-reporter-count {
+        margin: 14px 0 8px;
+      }
+
+      .bonus-details-button {
+        background: transparent;
+        border: 1px solid rgba(127, 197, 155, 0.34);
+        color: #9ee6b5;
+        padding: 5px 9px;
+      }
+
+      .bonus-actions {
+        border-top: 1px solid rgba(214, 222, 230, 0.2);
+        display: grid;
+        gap: 9px;
+        margin-top: 6px;
+        padding-top: 12px;
+      }
+
+      .bonus-user-report {
+        background: rgba(74, 222, 128, 0.16);
+        border: 1px solid rgba(74, 222, 128, 0.34);
+        color: #9ee6b5;
+        padding: 7px 10px;
+      }
+
+      .bonus-change-button {
+        background: #9ee6b5;
+        border: 1px solid #c4f7d2;
+        color: #06110b;
+        padding: 9px 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <article class="bonus-zone-card">
+      <div class="bonus-zone-card-main">
+        <div>
+          <h2>Crypt of Nadox</h2>
+          <span class="bonus-expansion-badge">Legacy of Ykesha</span>
+          <div class="bonus-leading-report">
+            <span>Leading bonus</span>
+            <strong>Skill</strong>
+            <em>1 report</em>
+          </div>
+        </div>
+        <span aria-hidden="true" class="bonus-large-icon is-skill-mark">
+          <img alt="" class="bonus-skill-large-image" src="/skillups.png" />
+        </span>
+      </div>
+
+      <span class="bonus-report-pill">
+        Skill 1 report
+        <img alt="" src="/skillups.png" />
+      </span>
+
+      <p class="bonus-reporter-count">Reported by 1 player</p>
+      <span class="bonus-details-button">View report details</span>
+
+      <div class="bonus-actions">
+        <span class="bonus-user-report">Your report: Skill</span>
+        <span class="bonus-change-button">Change Report</span>
+      </div>
+    </article>
+  </body>
+</html>

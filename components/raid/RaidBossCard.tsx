@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ConfidenceBadge } from "@/components/ConfidenceBadge";
 import { FavoriteIndicator } from "@/components/FavoriteIndicator";
 import { ItemIcon } from "@/components/ItemIcon";
@@ -17,18 +17,34 @@ type RaidBossCardProps = {
   bossBucket: Bucket | undefined;
   domId?: string;
   getItemDetails: (name: string) => ItemDetails | undefined;
+  openRequest?: number;
   onSelectLoot: (item: string, bucket: Bucket) => void;
 };
 
-export function RaidBossCard({ boss, bossBucket, domId, getItemDetails, onSelectLoot }: RaidBossCardProps) {
+export function RaidBossCard({ boss, bossBucket, domId, getItemDetails, openRequest, onSelectLoot }: RaidBossCardProps) {
   const [open, setOpen] = useState(false);
+  const detailsRef = useRef<HTMLDivElement | null>(null);
   const { server } = useServer();
   const showLoot = isRandomLootServer(server) && (boss.loot_pool?.length ?? 0) > 0;
   const { previewProps } = useItemPreview();
+  const detailsId = domId ? `${domId}-details` : undefined;
+
+  useEffect(() => {
+    if (openRequest === undefined) return;
+    setOpen(true);
+  }, [openRequest]);
+
+  useEffect(() => {
+    if (!open || openRequest === undefined) return;
+    requestAnimationFrame(() => {
+      detailsRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    });
+  }, [open, openRequest]);
 
   return (
     <article className="raid-boss-card" id={domId}>
       <button
+        aria-controls={detailsId}
         aria-expanded={open}
         className="raid-boss-trigger"
         onClick={() => setOpen((current) => !current)}
@@ -42,7 +58,7 @@ export function RaidBossCard({ boss, bossBucket, domId, getItemDetails, onSelect
       </button>
 
       {open ? (
-        <div className="raid-boss-details">
+        <div className="raid-boss-details" id={detailsId} ref={detailsRef}>
           <dl className="raid-meta">
             <div>
               <dt>Zone</dt>

@@ -7,7 +7,9 @@ import {
   useMemo,
   useState,
 } from "react";
+import { useSession } from "next-auth/react";
 import { DEFAULT_SERVER, SERVER_IDS, type ServerId } from "@/lib/server";
+import { fetchUserSettings, saveUserSettings } from "@/lib/user-settings-client";
 
 // ---------------------------------------------------------------------------
 // Context contract
@@ -74,22 +76,49 @@ export function ServerProvider({ children }: { children: React.ReactNode }) {
   // Start with the default; swap in the real value after mount to avoid
   // hydration mismatches (same pattern as FavoritesProvider / ThemeToggle).
   const [server, setServerState] = useState<ServerId>(DEFAULT_SERVER);
+  const [ready, setReady] = useState(false);
+  const { status: authStatus, data: session } = useSession();
+  const isSignedIn = authStatus === "authenticated" && Boolean(session?.user?.discordUserId);
 
   useEffect(() => {
     const initial = readInitialServer();
     setServerState(initial);
     document.documentElement.dataset.server = initial;
+    setReady(true);
   }, []);
+
+  useEffect(() => {
+    if (!ready || !isSignedIn) return;
+    let cancelled = false;
+    fetchUserSettings()
+      .then((settings) => {
+        const remoteServer = resolveStoredValue(settings?.preferences.server ?? null);
+        if (!cancelled && remoteServer) {
+          setServerState(remoteServer);
+          document.documentElement.dataset.server = remoteServer;
+          window.localStorage.setItem(storageKey, remoteServer);
+        }
+      })
+      .catch(() => {});
+    return () => {
+      cancelled = true;
+    };
+  }, [isSignedIn, ready]);
 
   const value = useMemo<ServerContextValue>(() => {
     function setServer(next: ServerId) {
       setServerState(next);
       document.documentElement.dataset.server = next;
       window.localStorage.setItem(storageKey, next);
+      if (isSignedIn) {
+        window.setTimeout(() => {
+          saveUserSettings({ preferences: { server: next } }).catch(() => {});
+        }, 400);
+      }
     }
 
     return { server, setServer };
-  }, [server]);
+  }, [isSignedIn, server]);
 
   return (
     <ServerContext.Provider value={value}>{children}</ServerContext.Provider>

@@ -2,8 +2,10 @@
 
 import { createContext, useContext, useEffect, useMemo, useState } from "react";
 import type React from "react";
+import { useSession } from "next-auth/react";
 import { EqItemInspect } from "@/components/EqItemInspect";
 import type { ItemDetails } from "@/lib/search";
+import { fetchUserSettings, saveUserSettings } from "@/lib/user-settings-client";
 
 type PreviewState = {
   itemName: string;
@@ -42,15 +44,41 @@ function readEnabled() {
 export function ItemPreviewProvider({ children }: { children: React.ReactNode }) {
   const [enabled, setEnabledState] = useState(true);
   const [preview, setPreview] = useState<PreviewState | null>(null);
+  const [ready, setReady] = useState(false);
+  const { status: authStatus, data: session } = useSession();
+  const isSignedIn = authStatus === "authenticated" && Boolean(session?.user?.discordUserId);
 
   useEffect(() => {
     setEnabledState(readEnabled());
+    setReady(true);
   }, []);
+
+  useEffect(() => {
+    if (!ready || !isSignedIn) return;
+    let cancelled = false;
+    fetchUserSettings()
+      .then((settings) => {
+        const remoteEnabled = settings?.preferences.itemPreview;
+        if (!cancelled && typeof remoteEnabled === "boolean") {
+          setEnabledState(remoteEnabled);
+          window.localStorage.setItem(storageKey, remoteEnabled ? "on" : "off");
+        }
+      })
+      .catch(() => {});
+    return () => {
+      cancelled = true;
+    };
+  }, [isSignedIn, ready]);
 
   function setEnabled(nextEnabled: boolean) {
     setEnabledState(nextEnabled);
     setPreview(null);
     window.localStorage.setItem(storageKey, nextEnabled ? "on" : "off");
+    if (isSignedIn) {
+      window.setTimeout(() => {
+        saveUserSettings({ preferences: { itemPreview: nextEnabled } }).catch(() => {});
+      }, 400);
+    }
   }
 
   const value = useMemo<ItemPreviewContextValue>(() => {

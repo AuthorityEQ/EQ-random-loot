@@ -406,6 +406,52 @@
   padding: 0 10px;
 }
 
+.bonus-large-icon.is-skill-mark {
+  background:
+    radial-gradient(circle at 50% 50%, rgba(220, 255, 112, 0.16), transparent 66%),
+    radial-gradient(circle at 50% 50%, rgba(232, 201, 113, 0.12), transparent 72%);
+  border-color: rgba(220, 255, 112, 0.16);
+  box-shadow:
+    0 0 24px rgba(220, 255, 112, 0.12),
+    inset 0 0 18px rgba(232, 201, 113, 0.08);
+  height: clamp(92px, 12vw, 132px);
+  min-width: clamp(82px, 11vw, 112px);
+  opacity: 0.94;
+  padding: 6px;
+  text-shadow: none;
+}
+
+.bonus-large-icon.is-loot-mark {
+  background:
+    radial-gradient(circle at 50% 50%, rgba(232, 201, 113, 0.16), transparent 66%),
+    radial-gradient(circle at 50% 50%, rgba(180, 130, 47, 0.12), transparent 72%);
+  border-color: rgba(232, 201, 113, 0.18);
+  box-shadow:
+    0 0 24px rgba(232, 201, 113, 0.14),
+    inset 0 0 18px rgba(232, 201, 113, 0.08);
+  height: clamp(82px, 11vw, 118px);
+  min-width: clamp(82px, 11vw, 118px);
+  opacity: 0.94;
+  padding: 5px;
+  text-shadow: none;
+}
+
+.bonus-skill-large-image {
+  display: block;
+  filter: drop-shadow(0 0 16px rgba(220, 255, 112, 0.28));
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+.bonus-loot-large-image {
+  display: block;
+  filter: drop-shadow(0 0 16px rgba(232, 201, 113, 0.28));
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
 .bonus-leading-report em,
 .bonus-no-reports {
   color: var(--muted);
@@ -512,6 +558,18 @@
   min-width: 1.35em;
 }
 
+.bonus-icon-skill {
+  height: 1.35em;
+  margin-left: 3px;
+  min-width: 1.35em;
+}
+
+.bonus-icon-loot {
+  height: 1.35em;
+  margin-left: 3px;
+  min-width: 1.35em;
+}
+
 .bonus-coin-image,
 .bonus-coin-pill-image {
   border-radius: 999px;
@@ -533,6 +591,24 @@
 .bonus-coin-pill-image {
   height: 1.22em;
   width: 1.22em;
+}
+
+.bonus-skill-pill-image {
+  display: block;
+  filter: drop-shadow(0 0 7px rgba(220, 255, 112, 0.24));
+  height: 1.3em;
+  object-fit: contain;
+  opacity: 0.95;
+  width: 1.3em;
+}
+
+.bonus-loot-pill-image {
+  display: block;
+  filter: drop-shadow(0 0 7px rgba(232, 201, 113, 0.24));
+  height: 1.3em;
+  object-fit: contain;
+  opacity: 0.95;
+  width: 1.3em;
 }
 
 .bonus-report-pill em {
@@ -788,6 +864,18 @@
     height: 58px;
     min-width: 58px;
     padding: 0 6px;
+  }
+
+  .bonus-large-icon.is-skill-mark {
+    height: 82px;
+    min-width: 72px;
+    padding: 5px;
+  }
+
+  .bonus-large-icon.is-loot-mark {
+    height: 78px;
+    min-width: 78px;
+    padding: 5px;
   }
 
   .bonus-coin-image {

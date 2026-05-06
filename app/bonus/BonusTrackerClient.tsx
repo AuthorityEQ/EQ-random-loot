@@ -336,10 +336,34 @@ function BonusIcon({ bonus }: { bonus: BonusType }) {
     return <span className="bonus-icon bonus-icon-none" aria-label="None">None</span>;
   }
 
-  const icons: Record<Exclude<BonusType, "Experience" | "AA" | "Coin" | "None">, string> = {
-    Loot: "📦",
+  if (bonus === "Skill") {
+    return (
+      <span className="bonus-icon bonus-icon-skill" aria-label="Skill">
+        <img
+          alt=""
+          aria-hidden="true"
+          className="bonus-skill-pill-image"
+          src="/skillups.png"
+        />
+      </span>
+    );
+  }
+
+  if (bonus === "Loot") {
+    return (
+      <span className="bonus-icon bonus-icon-loot" aria-label="Loot">
+        <img
+          alt=""
+          aria-hidden="true"
+          className="bonus-loot-pill-image"
+          src="/lootbonus.png"
+        />
+      </span>
+    );
+  }
+
+  const icons: Record<Exclude<BonusType, "Experience" | "AA" | "Coin" | "Loot" | "Skill" | "None">, string> = {
     Rare: "⭐",
-    Skill: "🧠",
     Respawn: "⏱️",
     Faction: "🏛️",
   };
@@ -381,6 +405,30 @@ function LargeBonusIcon({ bonus }: { bonus: BonusType }) {
     );
   }
 
+  if (bonus === "Skill") {
+    return (
+      <span aria-hidden="true" className="bonus-large-icon is-skill-mark">
+        <img
+          alt=""
+          className="bonus-skill-large-image"
+          src="/skillups.png"
+        />
+      </span>
+    );
+  }
+
+  if (bonus === "Loot") {
+    return (
+      <span aria-hidden="true" className="bonus-large-icon is-loot-mark">
+        <img
+          alt=""
+          className="bonus-loot-large-image"
+          src="/lootbonus.png"
+        />
+      </span>
+    );
+  }
+
   if (bonus === "None") {
     return (
       <span aria-hidden="true" className="bonus-large-icon is-none-mark">
@@ -389,10 +437,8 @@ function LargeBonusIcon({ bonus }: { bonus: BonusType }) {
     );
   }
 
-  const emojiMarks: Record<Exclude<BonusType, "Experience" | "AA" | "Coin" | "None">, string> = {
-    Loot: "📦",
+  const emojiMarks: Record<Exclude<BonusType, "Experience" | "AA" | "Coin" | "Loot" | "Skill" | "None">, string> = {
     Rare: "⭐",
-    Skill: "🧠",
     Respawn: "⏱️",
     Faction: "🏛️",
   };

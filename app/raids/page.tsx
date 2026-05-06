@@ -24,6 +24,14 @@ const datasets = [classicRaidData, kunarkRaidData, veliousRaidData] as RaidDatas
 const expansionOptions = datasets.map((dataset) => dataset.expansion);
 const itemDetailsMap = itemDetailsData as ItemDetailsMap;
 
+function expansionTone(expansion: string) {
+  return `expansion-tone-${expansion.toLowerCase()}`;
+}
+
+function getRaidBossDomId(bossName: string) {
+  return `raid-boss-${bossName.replace(/[^a-z0-9]+/gi, "-").toLowerCase()}`;
+}
+
 function getItemDetails(name: string) {
   return itemDetailsMap[name];
 }
@@ -64,6 +72,7 @@ export default function RaidsPage() {
   const router = useRouter();
 
   const [drawerItem, setDrawerItem] = useState<{ item: string; bucket: Bucket } | null>(null);
+  const [bossOpenRequest, setBossOpenRequest] = useState<{ domId: string; requestId: number } | null>(null);
 
   // Cmd/Ctrl+click tracking — modifier held during mousedown opens item page instead of drawer
   const modifierHeldRef = useRef(false);
@@ -181,19 +190,25 @@ export default function RaidsPage() {
       </header>
 
       <div className="toolbar">
-        <label className="expansion-filter">
+        <div className="expansion-filter" aria-label="Expansion filter">
           <span>Expansion</span>
-          <select
-            onChange={(event) => setActiveExpansion(event.target.value)}
-            value={activeExpansion}
-          >
-            {expansionOptions.map((expansion) => (
-              <option key={expansion} value={expansion}>
+          <div className="expansion-toggle-group">
+            {expansionOptions.map((expansion) => {
+              const active = activeExpansion === expansion;
+              return (
+                <button
+                  aria-pressed={active}
+                  className={`filter-button expansion-filter-button ${expansionTone(expansion)}${active ? " is-active" : ""}`}
+                  key={expansion}
+                  onClick={() => setActiveExpansion(expansion)}
+                  type="button"
+                >
                 {expansion}
-              </option>
-            ))}
-          </select>
-        </label>
+                </button>
+              );
+            })}
+          </div>
+        </div>
       </div>
 
       <div className="raid-search-box">
@@ -235,13 +250,14 @@ export default function RaidsPage() {
                     type="button"
                     className="raid-search-result"
                     onClick={() => {
-                      const el = document.getElementById(
-                        `raid-boss-${r.bossName.replace(/[^a-z0-9]+/gi, "-").toLowerCase()}`
-                      );
-                      el?.scrollIntoView({ behavior: "smooth", block: "start" });
-                      el?.classList.add("is-highlighted");
-                      setTimeout(() => el?.classList.remove("is-highlighted"), 1800);
-                      setSearchQuery("");
+                      const domId = getRaidBossDomId(r.bossName);
+                      setBossOpenRequest({ domId, requestId: Date.now() });
+                      requestAnimationFrame(() => {
+                        const el = document.getElementById(domId);
+                        el?.scrollIntoView({ behavior: "smooth", block: "start" });
+                        el?.classList.add("is-highlighted");
+                        setTimeout(() => el?.classList.remove("is-highlighted"), 1800);
+                      });
                     }}
                   >
                     <span className="raid-search-type">Boss</span>
@@ -265,6 +281,7 @@ export default function RaidsPage() {
                 key={tier.tier}
                 onSelectLoot={handleSelectLoot}
                 tier={tier}
+                bossOpenRequest={bossOpenRequest}
               />
             ))
           : dataset.tiers.map((tier) => (

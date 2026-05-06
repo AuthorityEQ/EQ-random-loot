@@ -1,11 +1,13 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
+import { useSession } from "next-auth/react";
 import "@/components/item-drawer.css";
 import { EqItemInspect } from "@/components/EqItemInspect";
 import { FavoriteIndicator } from "@/components/FavoriteIndicator";
 import { ItemIcon } from "@/components/ItemIcon";
 import { useItemPreview } from "@/components/ItemPreviewProvider";
+import { useServer } from "@/components/ServerProvider";
 import { questRewardMappings } from "@/data/questRewardMappings";
 import classicData from "@/data/classic-group-named.json";
 import classicRaidData from "@/data/classic-raid.json";
@@ -29,6 +31,7 @@ import { classCanUseShields, itemMatchesUseFilters } from "@/lib/item-use-filter
 import { parseRawSlot, type SlotKey } from "@/lib/slot-filter";
 import type { ItemDetails, ItemDetailsMap, LootDataset } from "@/lib/search";
 import type { RaidDataset } from "@/lib/raidTiers";
+import { fetchUserSettings, saveUserSettings } from "@/lib/user-settings-client";
 
 type GearSlot = {
   id: string;
@@ -65,6 +68,7 @@ type GearBuild = {
   name: string;
   class: string;
   race?: string;
+  server?: string;
   equippedItems: Record<string, string | null>;
   createdAt?: string;
   updatedAt?: string;
@@ -120,6 +124,7 @@ const legacyGearSlotIdMap: Record<string, string> = {
 const recommendationLimit = 30;
 const bisCandidateLimit = 10;
 const rosterAutosaveKey = "loot-goblin-my-characters-roster-v1";
+const cloudRosterPreferenceKey = "myCharacters";
 const anySpellFocus = "Any spell focus";
 const anyBardMod = "Any bard mod";
 const anyPetFocus = "Any pet focus";
@@ -640,6 +645,59 @@ function upsertBuild(roster: GearBuild[], build: GearBuild) {
   return roster.map((entry) => (entry.id === build.id ? build : entry));
 }
 
+function serializeRoster(roster: GearRoster | null) {
+  return roster ? JSON.stringify(roster) : "";
+}
+
+function readLocalRoster(): { roster: GearRoster | null; raw: string | null } {
+  const raw = window.localStorage.getItem(rosterAutosaveKey);
+  if (!raw) return { roster: null, raw: null };
+  return { roster: validateRoster(JSON.parse(raw)), raw };
+}
+
+function persistRosterSnapshotToLocal(snapshot: GearRoster | null) {
+  if (!snapshot || snapshot.characters.length === 0) {
+    window.localStorage.removeItem(rosterAutosaveKey);
+    return null;
+  }
+
+  const payload = JSON.stringify(snapshot);
+  window.localStorage.setItem(rosterAutosaveKey, payload);
+  return payload;
+}
+
+function characterMergeKey(character: GearBuild) {
+  return [
+    character.name.trim().toLocaleLowerCase(),
+    character.class.trim().toLocaleLowerCase(),
+    (character.server ?? "").trim().toLocaleLowerCase(),
+  ].join("|");
+}
+
+function mergeRosters(remoteRoster: GearRoster | null, localRoster: GearRoster | null): GearRoster | null {
+  const remoteCharacters = remoteRoster?.characters ?? [];
+  const localCharacters = localRoster?.characters ?? [];
+  if (remoteCharacters.length === 0 && localCharacters.length === 0) return null;
+
+  const merged = [...remoteCharacters];
+  const seen = new Set(merged.map(characterMergeKey));
+
+  for (const character of localCharacters) {
+    const key = characterMergeKey(character);
+    if (seen.has(key)) continue;
+    merged.push(character);
+    seen.add(key);
+  }
+
+  return {
+    version: 1,
+    rosterName: remoteRoster?.rosterName ?? localRoster?.rosterName ?? "Loot Goblin Roster",
+    characters: merged,
+    activeCharacterId: remoteRoster?.activeCharacterId ?? localRoster?.activeCharacterId ?? merged[0]?.id,
+    updatedAt: new Date().toISOString(),
+  };
+}
+
 function validateBuild(raw: unknown): SavedBuild {
   if (!raw || typeof raw !== "object") {
     throw new Error("That file is not a valid character build.");
@@ -690,6 +748,7 @@ function validateGearBuild(raw: unknown): GearBuild {
     name,
     class: classCode,
     race: raceCode || undefined,
+    server: typeof candidate.server === "string" && candidate.server.trim() ? candidate.server : undefined,
     equippedItems: gearRecordToEquippedItems(equippedGear),
     createdAt: typeof candidate.createdAt === "string" ? candidate.createdAt : now,
     updatedAt: typeof candidate.updatedAt === "string" ? candidate.updatedAt : now,
@@ -744,10 +803,16 @@ export function CharacterGearPlanner() {
   const [selectedPetFocus, setSelectedPetFocus] = useState(anyPetFocus);
   const [autosaveStatus, setAutosaveStatus] = useState<string | null>(null);
   const [autosaveReady, setAutosaveReady] = useState(false);
+  const [cloudReady, setCloudReady] = useState(false);
+  const [cloudImportPrompt, setCloudImportPrompt] = useState<{ merged: GearRoster; localCount: number } | null>(null);
   const fileInputRef = useRef<HTMLInputElement | null>(null);
   const draftBuildIdRef = useRef<string | null>(null);
   const lastAutosavePayloadRef = useRef<string | null>(null);
+  const lastCloudRosterPayloadRef = useRef<string | null>(null);
   const { hidePreview } = useItemPreview();
+  const { server } = useServer();
+  const { status: authStatus, data: session } = useSession();
+  const isSignedIn = authStatus === "authenticated" && Boolean(session?.user?.discordUserId);
 
   const selectedGearSlot = gearSlots.find((slot) => slot.id === selectedSlotId) ?? gearSlots[0];
   const equippedItemName = equippedGear[selectedGearSlot.id];
@@ -765,13 +830,12 @@ export function CharacterGearPlanner() {
 
   useEffect(() => {
     try {
-      const saved = window.localStorage.getItem(rosterAutosaveKey);
-      if (!saved) {
+      const { roster: parsed, raw: saved } = readLocalRoster();
+      if (!parsed || !saved) {
         setAutosaveReady(true);
         return;
       }
 
-      const parsed = validateRoster(JSON.parse(saved));
       lastAutosavePayloadRef.current = saved;
       setRoster(parsed.characters);
 
@@ -792,6 +856,75 @@ export function CharacterGearPlanner() {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  useEffect(() => {
+    if (!autosaveReady) return;
+
+    if (!isSignedIn) {
+      setCloudReady(false);
+      setCloudImportPrompt(null);
+      lastCloudRosterPayloadRef.current = null;
+      return;
+    }
+
+    let cancelled = false;
+    setCloudReady(false);
+    fetchUserSettings()
+      .then((settings) => {
+        if (cancelled) return;
+
+        const localSnapshot = readLocalRoster().roster;
+        const remoteSnapshot = settings?.preferences?.[cloudRosterPreferenceKey]
+          ? validateRoster(settings.preferences[cloudRosterPreferenceKey])
+          : null;
+
+        if (remoteSnapshot?.characters.length) {
+          const remotePayload = serializeRoster(remoteSnapshot);
+          lastCloudRosterPayloadRef.current = remotePayload;
+          const localPayload = serializeRoster(localSnapshot);
+          const localHasDifferentCharacters = Boolean(localSnapshot?.characters.length) && localPayload !== remotePayload;
+
+          setRoster(remoteSnapshot.characters);
+          const activeBuild = remoteSnapshot.characters.find((character) => character.id === remoteSnapshot.activeCharacterId)
+            ?? remoteSnapshot.characters[0];
+          if (activeBuild) {
+            loadRosterMember(activeBuild);
+          }
+          const localPayloadWritten = persistRosterSnapshotToLocal(remoteSnapshot);
+          lastAutosavePayloadRef.current = localPayloadWritten;
+          setAutosaveStatus("Loaded from Discord account");
+          setLoadError(null);
+
+          if (localHasDifferentCharacters) {
+            const merged = mergeRosters(remoteSnapshot, localSnapshot);
+            if (merged) {
+              setCloudImportPrompt({ merged, localCount: localSnapshot?.characters.length ?? 0 });
+            }
+          }
+          return;
+        }
+
+        if (localSnapshot?.characters.length) {
+          const merged = mergeRosters(null, localSnapshot);
+          if (merged) {
+            setCloudImportPrompt({ merged, localCount: localSnapshot.characters.length });
+          }
+        }
+      })
+      .catch(() => {
+        if (!cancelled) {
+          setLoadError("Unable to load Discord character save. Local autosave is still available.");
+        }
+      })
+      .finally(() => {
+        if (!cancelled) setCloudReady(true);
+      });
+
+    return () => {
+      cancelled = true;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [autosaveReady, isSignedIn]);
 
   const focusFamilyOptions = useMemo(() => {
     const families: Record<FocusEffectCategory, Set<string>> = {
@@ -974,6 +1107,7 @@ export function CharacterGearPlanner() {
       name: characterName.trim() || `${classCode} Character`,
       class: classCode,
       race: selectedRace || undefined,
+      server,
       equippedItems: gearRecordToEquippedItems(equippedGear),
       createdAt: existing?.createdAt ?? now,
       updatedAt: now,
@@ -1043,6 +1177,16 @@ export function CharacterGearPlanner() {
           window.localStorage.removeItem(rosterAutosaveKey);
           lastAutosavePayloadRef.current = null;
           setAutosaveStatus(null);
+          if (isSignedIn && cloudReady && !cloudImportPrompt && lastCloudRosterPayloadRef.current) {
+            saveUserSettings({ preferences: { [cloudRosterPreferenceKey]: null } })
+              .then(() => {
+                lastCloudRosterPayloadRef.current = null;
+                setAutosaveStatus("Discord character save cleared");
+              })
+              .catch(() => {
+                setLoadError("Unable to clear Discord character save.");
+              });
+          }
           return;
         }
 
@@ -1052,7 +1196,20 @@ export function CharacterGearPlanner() {
         window.localStorage.setItem(rosterAutosaveKey, payload);
         lastAutosavePayloadRef.current = payload;
         const savedTime = snapshot.updatedAt ? formatAutosaveTime(snapshot.updatedAt) : null;
-        setAutosaveStatus(savedTime ? `Last autosaved: ${savedTime}` : "Autosaved locally");
+        setAutosaveStatus(savedTime ? `Last autosaved locally: ${savedTime}` : "Autosaved locally");
+
+        if (isSignedIn && cloudReady && !cloudImportPrompt) {
+          if (payload === lastCloudRosterPayloadRef.current) return;
+          saveUserSettings({ preferences: { [cloudRosterPreferenceKey]: snapshot } })
+            .then(() => {
+              lastCloudRosterPayloadRef.current = payload;
+              const cloudSavedTime = snapshot.updatedAt ? formatAutosaveTime(snapshot.updatedAt) : null;
+              setAutosaveStatus(cloudSavedTime ? `Last saved to Discord: ${cloudSavedTime}` : "Saved to Discord account");
+            })
+            .catch(() => {
+              setLoadError("Unable to save characters to Discord. Local autosave is still available.");
+            });
+        }
       } catch {
         setLoadError("Unable to write local character autosave.");
       }
@@ -1060,7 +1217,7 @@ export function CharacterGearPlanner() {
 
     return () => window.clearTimeout(timeout);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [autosaveReady, roster, activeCharacterId, characterName, selectedClass, selectedRace, equippedGear]);
+  }, [autosaveReady, roster, activeCharacterId, characterName, selectedClass, selectedRace, equippedGear, isSignedIn, cloudReady, cloudImportPrompt]);
 
   function loadRosterMember(build: GearBuild) {
     hidePreview();
@@ -1181,6 +1338,45 @@ export function CharacterGearPlanner() {
     if (confirmAction === "delete-group") {
       confirmDeleteGroup();
     }
+  }
+
+  function applyCloudRoster(snapshot: GearRoster, message: string) {
+    setRoster(snapshot.characters);
+    const activeBuild = snapshot.characters.find((character) => character.id === snapshot.activeCharacterId)
+      ?? snapshot.characters[0];
+    if (activeBuild) {
+      loadRosterMember(activeBuild);
+    } else {
+      clearCurrentBuildState();
+    }
+    const payload = persistRosterSnapshotToLocal(snapshot);
+    lastAutosavePayloadRef.current = payload;
+    lastCloudRosterPayloadRef.current = JSON.stringify(snapshot);
+    setCloudImportPrompt(null);
+    setLoadError(null);
+    setAutosaveStatus(message);
+  }
+
+  function importLocalCharactersToCloud() {
+    if (!cloudImportPrompt) return;
+    const snapshot = cloudImportPrompt.merged;
+    applyCloudRoster(snapshot, "Importing local characters...");
+    saveUserSettings({ preferences: { [cloudRosterPreferenceKey]: snapshot } })
+      .then(() => {
+        lastCloudRosterPayloadRef.current = JSON.stringify(snapshot);
+        setAutosaveStatus("Local characters imported to Discord account");
+      })
+      .catch(() => {
+        setLoadError("Unable to import local characters to Discord.");
+      });
+  }
+
+  function dismissCloudImportPrompt() {
+    const snapshot = buildAutosaveRosterSnapshot();
+    lastCloudRosterPayloadRef.current = snapshot ? JSON.stringify(snapshot) : null;
+    setCloudImportPrompt(null);
+    setLoadError(null);
+    setLoadMessage("Local character import skipped.");
   }
 
   function unequipSelectedSlot() {
@@ -1411,8 +1607,20 @@ export function CharacterGearPlanner() {
 
       {loadMessage ? <p className="gear-load-feedback">{loadMessage}</p> : null}
       {loadError ? <p className="gear-load-feedback is-error">{loadError}</p> : null}
+      {isSignedIn && !cloudReady ? (
+        <p className="gear-load-feedback">Loading Discord character save...</p>
+      ) : null}
+      {cloudImportPrompt ? (
+        <div className="user-sync-banner" role="status">
+          <span>
+            Import {cloudImportPrompt.localCount} local {cloudImportPrompt.localCount === 1 ? "character" : "characters"} into this Discord account?
+          </span>
+          <button onClick={importLocalCharactersToCloud} type="button">Import</button>
+          <button onClick={dismissCloudImportPrompt} type="button">Skip</button>
+        </div>
+      ) : null}
       <div className="gear-autosave-row">
-        <p>{autosaveStatus ?? "Autosaves locally in this browser"}</p>
+        <p>{autosaveStatus ?? (isSignedIn ? "Autosaves to Discord after loading" : "Autosaves locally in this browser")}</p>
         <button className="character-action-button is-secondary" onClick={clearLocalAutosave} type="button">
           Clear Local Save
         </button>
