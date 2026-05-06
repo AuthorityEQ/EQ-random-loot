@@ -287,9 +287,9 @@
 
 .bonus-zone-card-main {
   align-items: start;
-  display: flex;
+  display: grid;
   gap: 12px;
-  justify-content: space-between;
+  grid-template-columns: minmax(0, 1fr) auto;
 }
 
 .bonus-zone-card h2 {
@@ -338,7 +338,7 @@
   margin-top: 8px;
 }
 
-.bonus-leading-report span {
+.bonus-leading-report > span {
   color: var(--muted);
   font-size: 0.72rem;
   font-weight: 900;
@@ -349,10 +349,38 @@
 .bonus-leading-report strong {
   align-items: center;
   color: var(--page-title-gold);
-  display: inline-flex;
+  display: block;
   font-size: 1.28rem;
-  gap: 7px;
   line-height: 1.1;
+}
+
+.bonus-large-icon {
+  align-items: center;
+  align-self: center;
+  background:
+    radial-gradient(circle at 50% 42%, color-mix(in srgb, var(--page-title-gold) 22%, transparent), transparent 68%);
+  border: 1px solid color-mix(in srgb, var(--page-title-gold) 22%, transparent);
+  border-radius: 999px;
+  box-shadow:
+    0 0 24px color-mix(in srgb, var(--page-title-gold) 16%, transparent),
+    inset 0 0 18px color-mix(in srgb, var(--page-title-gold) 10%, transparent);
+  color: var(--page-title-gold);
+  display: inline-flex;
+  font-size: clamp(2rem, 7vw, 3.4rem);
+  font-weight: 900;
+  height: clamp(62px, 9vw, 86px);
+  justify-content: center;
+  line-height: 1;
+  min-width: clamp(62px, 9vw, 86px);
+  opacity: 0.72;
+  padding: 0 12px;
+  pointer-events: none;
+  text-shadow: 0 0 18px color-mix(in srgb, var(--page-title-gold) 28%, transparent);
+}
+
+.bonus-large-icon.is-text-mark {
+  font-size: clamp(1.7rem, 5.8vw, 2.7rem);
+  letter-spacing: 0.02em;
 }
 
 .bonus-leading-report em,
@@ -415,6 +443,96 @@
 .bonus-report-pill em {
   color: var(--accent);
   font-style: normal;
+}
+
+.bonus-report-ownership-summary {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.bonus-report-ownership-summary span {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.bonus-report-ownership-summary button,
+.bonus-admin-detail-row button {
+  background: color-mix(in srgb, var(--panel) 76%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent) 32%, var(--line));
+  border-radius: 999px;
+  color: var(--accent);
+  cursor: pointer;
+  font-size: 0.68rem;
+  font-weight: 900;
+  min-height: 26px;
+  padding: 0 8px;
+}
+
+.bonus-report-ownership-summary button:hover,
+.bonus-report-ownership-summary button:focus,
+.bonus-admin-detail-row button:hover,
+.bonus-admin-detail-row button:focus {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-contrast);
+  outline: none;
+}
+
+.bonus-admin-detail-row button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.bonus-admin-details {
+  background: color-mix(in srgb, var(--panel-soft) 72%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent) 24%, var(--line));
+  border-radius: 8px;
+  display: grid;
+  gap: 8px;
+  padding: 10px;
+}
+
+.bonus-admin-detail-row {
+  align-items: start;
+  border-top: 1px solid color-mix(in srgb, var(--accent) 18%, transparent);
+  display: grid;
+  gap: 8px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  padding-top: 8px;
+}
+
+.bonus-admin-detail-row:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.bonus-admin-detail-row > div {
+  display: grid;
+  gap: 3px;
+}
+
+.bonus-admin-detail-row > div:last-child {
+  align-content: start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: end;
+}
+
+.bonus-admin-detail-row strong {
+  color: var(--text);
+  font-size: 0.84rem;
+}
+
+.bonus-admin-detail-row span,
+.bonus-admin-detail-row small {
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 800;
 }
 
 .bonus-zone-actions {
@@ -517,6 +635,14 @@
   gap: 8px;
 }
 
+.bonus-filter-group .filter-button,
+.bonus-report-options .filter-button {
+  align-items: center;
+  display: inline-flex;
+  gap: 6px;
+  justify-content: center;
+}
+
 .bonus-report-submit {
   justify-self: start;
 }
@@ -551,7 +677,13 @@
   }
 
   .bonus-zone-card-main {
-    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .bonus-large-icon {
+    height: 52px;
+    min-width: 52px;
+    padding: 0 9px;
   }
 
   .bonus-report-action,

@@ -5,6 +5,7 @@ import { signIn, signOut, useSession } from "next-auth/react";
 
 type BonusType =
   | "Experience"
+  | "AA"
   | "Coin"
   | "Loot"
   | "Rare"
@@ -18,6 +19,7 @@ type Zone = {
   reports: {
     bonus: BonusType;
     count: number;
+    submissions: ReportSubmission[];
   }[];
 };
 
@@ -31,12 +33,19 @@ type ServerBonusReport = {
   zoneName: string;
   bonus: BonusType;
   discordUserId: string;
+  discordUsername: string | null;
   createdAt: string;
   updatedAt: string;
 };
 
+type ReportSubmission = Pick<
+  ServerBonusReport,
+  "id" | "bonus" | "discordUserId" | "discordUsername" | "createdAt" | "updatedAt"
+>;
+
 const bonusTypes: BonusType[] = [
   "Experience",
+  "AA",
   "Coin",
   "Loot",
   "Rare",
@@ -288,12 +297,21 @@ function reportMatchesFilter(zone: Zone, selectedBonus: BonusFilter) {
   return zone.reports.some((report) => report.bonus === selectedBonus && report.count > 0);
 }
 
+function formatBonusLabel(bonus: BonusFilter) {
+  if (bonus === "AA") return "AA Bonus";
+  return bonus;
+}
+
 function BonusIcon({ bonus }: { bonus: BonusType }) {
   if (bonus === "Experience") {
     return <span className="bonus-icon bonus-icon-xp" aria-label="Experience">XP</span>;
   }
 
-  const icons: Record<Exclude<BonusType, "Experience">, string> = {
+  if (bonus === "AA") {
+    return <span className="bonus-icon bonus-icon-xp" aria-label="AA">AA</span>;
+  }
+
+  const icons: Record<Exclude<BonusType, "Experience" | "AA">, string> = {
     Coin: "💰",
     Loot: "📦",
     Rare: "⭐",
@@ -303,6 +321,57 @@ function BonusIcon({ bonus }: { bonus: BonusType }) {
   };
 
   return <span className="bonus-icon" aria-hidden="true">{icons[bonus]}</span>;
+}
+
+function BonusLabel({ bonus }: { bonus: BonusFilter }) {
+  if (bonus === "All") return "All";
+  if (bonus === "AA") {
+    return (
+      <>
+        <span className="bonus-label-text">{formatBonusLabel(bonus)}</span>
+        <BonusIcon bonus={bonus} />
+      </>
+    );
+  }
+  return formatBonusLabel(bonus);
+}
+
+function formatReporterName(submission: ReportSubmission) {
+  return submission.discordUsername ?? submission.discordUserId;
+}
+
+function formatReportTimestamp(value: string) {
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return null;
+  return date.toLocaleString(undefined, {
+    dateStyle: "medium",
+    timeStyle: "short",
+  });
+}
+
+function LargeBonusIcon({ bonus }: { bonus: BonusType }) {
+  if (bonus === "Experience" || bonus === "AA") {
+    return (
+      <span aria-hidden="true" className="bonus-large-icon is-text-mark">
+        {bonus === "Experience" ? "XP" : "AA"}
+      </span>
+    );
+  }
+
+  const emojiMarks: Record<typeof bonus, string> = {
+    Coin: "💰",
+    Loot: "📦",
+    Rare: "⭐",
+    Skill: "🧠",
+    Respawn: "⏱️",
+    Faction: "🏛️",
+  };
+
+  return (
+    <span aria-hidden="true" className="bonus-large-icon">
+      {emojiMarks[bonus]}
+    </span>
+  );
 }
 
 function applyServerReports(zone: Zone, reports: ServerBonusReport[]): Zone {
@@ -315,6 +384,17 @@ function applyServerReports(zone: Zone, reports: ServerBonusReport[]): Zone {
     reportsByBonus.set(report.bonus, {
       bonus: report.bonus,
       count: (currentReport?.count ?? 0) + 1,
+      submissions: [
+        ...(currentReport?.submissions ?? []),
+        {
+          id: report.id,
+          bonus: report.bonus,
+          discordUserId: report.discordUserId,
+          discordUsername: report.discordUsername,
+          createdAt: report.createdAt,
+          updatedAt: report.updatedAt,
+        },
+      ],
     });
   }
 
@@ -331,11 +411,14 @@ export function BonusTrackerClient() {
   const [selectedBonus, setSelectedBonus] = useState<BonusFilter>("All");
   const [selectedStatus, setSelectedStatus] = useState<StatusFilter>("All");
   const [openReportZone, setOpenReportZone] = useState<string | null>(null);
+  const [openReportDetailsZone, setOpenReportDetailsZone] = useState<string | null>(null);
   const [draftReports, setDraftReports] = useState<Record<string, BonusType | undefined>>({});
   const [serverReports, setServerReports] = useState<ServerBonusReport[]>([]);
   const [userReports, setUserReports] = useState<Record<string, BonusType | undefined>>({});
+  const [isAdmin, setIsAdmin] = useState(false);
   const [reportMessage, setReportMessage] = useState("");
   const [isSubmittingReport, setIsSubmittingReport] = useState(false);
+  const [isModeratingReport, setIsModeratingReport] = useState(false);
   const [showUnreportedZones, setShowUnreportedZones] = useState(false);
   const isLoggedIn = authStatus === "authenticated" && Boolean(session?.user?.discordUserId);
 
@@ -359,10 +442,12 @@ export function BonusTrackerClient() {
       const payload = await response.json() as {
         reports?: ServerBonusReport[];
         currentUserReports?: Record<string, BonusType | undefined>;
+        isAdmin?: boolean;
       };
       if (isCancelled) return;
       setServerReports(Array.isArray(payload.reports) ? payload.reports : []);
       setUserReports(payload.currentUserReports ?? {});
+      setIsAdmin(Boolean(payload.isAdmin));
     }
 
     loadReports();
@@ -404,7 +489,7 @@ export function BonusTrackerClient() {
   const activeFilters = [
     normalizedQuery ? `search ${query.trim()}` : null,
     selectedExpansion !== "All" ? `expansion ${selectedExpansion}` : null,
-    selectedBonus !== "All" ? `bonus ${selectedBonus}` : null,
+    selectedBonus !== "All" ? `bonus ${formatBonusLabel(selectedBonus)}` : null,
     selectedStatus !== "All" ? `reporting ${selectedStatus}` : null,
   ].filter(Boolean);
   const emptyMessage = activeFilters.length > 0
@@ -436,6 +521,7 @@ export function BonusTrackerClient() {
       const payload = await response.json().catch(() => ({})) as {
         reports?: ServerBonusReport[];
         currentUserReports?: Record<string, BonusType | undefined>;
+        isAdmin?: boolean;
         error?: string;
         message?: string;
         remainingSeconds?: number;
@@ -444,6 +530,7 @@ export function BonusTrackerClient() {
       if (response.ok) {
         setServerReports(Array.isArray(payload.reports) ? payload.reports : []);
         setUserReports(payload.currentUserReports ?? {});
+        setIsAdmin(Boolean(payload.isAdmin));
         setOpenReportZone(null);
         setReportMessage("Report saved.");
         return;
@@ -451,6 +538,8 @@ export function BonusTrackerClient() {
 
       if (response.status === 429 && typeof payload.remainingSeconds === "number") {
         setReportMessage(`You can submit another zone report in ${payload.remainingSeconds} seconds.`);
+      } else if (response.status === 403 && payload.error === "USER_BANNED") {
+        setReportMessage("You cannot submit bonus reports.");
       } else if (response.status === 401) {
         setReportMessage("Sign in with Discord to submit reports.");
       } else if (payload.error === "STORAGE_NOT_CONFIGURED") {
@@ -465,9 +554,74 @@ export function BonusTrackerClient() {
     }
   }
 
+  async function deleteReport(reportId: string) {
+    if (!isAdmin) return;
+    setIsModeratingReport(true);
+    setReportMessage("");
+
+    try {
+      const response = await fetch(`/api/bonus/reports?id=${encodeURIComponent(reportId)}`, {
+        method: "DELETE",
+      });
+      const payload = await response.json().catch(() => ({})) as {
+        reports?: ServerBonusReport[];
+        currentUserReports?: Record<string, BonusType | undefined>;
+        isAdmin?: boolean;
+        error?: string;
+      };
+
+      if (response.ok) {
+        setServerReports(Array.isArray(payload.reports) ? payload.reports : []);
+        setUserReports(payload.currentUserReports ?? {});
+        setIsAdmin(Boolean(payload.isAdmin));
+        setReportMessage("Report deleted.");
+        return;
+      }
+
+      setReportMessage(payload.error === "ADMIN_REQUIRED"
+        ? "Only the configured admin can delete reports."
+        : "Could not delete that report.");
+    } finally {
+      setIsModeratingReport(false);
+    }
+  }
+
+  async function banUser(discordUserId: string) {
+    if (!isAdmin) return;
+    setIsModeratingReport(true);
+    setReportMessage("");
+
+    try {
+      const response = await fetch("/api/bonus/reports", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ action: "banUser", discordUserId }),
+      });
+      const payload = await response.json().catch(() => ({})) as { error?: string };
+
+      setReportMessage(response.ok
+        ? "User banned from future reports."
+        : payload.error === "ADMIN_REQUIRED"
+          ? "Only the configured admin can ban users."
+          : "Could not ban that user.");
+    } finally {
+      setIsModeratingReport(false);
+    }
+  }
+
+  function selectStatusFilter(status: StatusFilter) {
+    setSelectedStatus(status);
+    if (status === "Unreported") {
+      setSelectedBonus("All");
+    }
+  }
+
   function renderZoneCard(zone: ZoneWithStatus, mode: "reported" | "unreported") {
     const leadingReport = getLeadingReport(zone);
     const isReported = mode === "reported";
+    const userReport = userReports[zone.zoneName];
+    const isDetailsOpen = openReportDetailsZone === zone.zoneName;
+    const reportSubmissions = zone.reports.flatMap((report) => report.submissions);
 
     return (
       <article
@@ -491,8 +645,7 @@ export function BonusTrackerClient() {
                 <span>Leading bonus</span>
                 {leadingReport ? (
                   <strong>
-                    <span>{leadingReport.bonus}</span>
-                    <BonusIcon bonus={leadingReport.bonus} />
+                    <span className="bonus-label-text">{formatBonusLabel(leadingReport.bonus)}</span>
                   </strong>
                 ) : null}
                 <em>{leadingReport?.count ?? 0} {(leadingReport?.count ?? 0) === 1 ? "report" : "reports"}</em>
@@ -501,13 +654,14 @@ export function BonusTrackerClient() {
               <p className="bonus-no-reports">No reports yet</p>
             )}
           </div>
+          {isReported && leadingReport ? <LargeBonusIcon bonus={leadingReport.bonus} /> : null}
         </div>
 
         {isReported ? (
           <div className="bonus-report-list" aria-label={`${zone.zoneName} reported bonuses`}>
             {zone.reports.map((report) => (
               <span className="bonus-report-pill" key={report.bonus}>
-                <strong>{report.bonus}</strong>
+                <strong>{formatBonusLabel(report.bonus)}</strong>
                 <span>{report.count} {report.count === 1 ? "report" : "reports"}</span>
                 <BonusIcon bonus={report.bonus} />
               </span>
@@ -515,16 +669,68 @@ export function BonusTrackerClient() {
           </div>
         ) : null}
 
-        {isLoggedIn || userReports[zone.zoneName] ? (
+        {isReported ? (
+          <div className="bonus-report-ownership-summary">
+            <span>Reported by {zone.totalReports} {zone.totalReports === 1 ? "player" : "players"}</span>
+            {isAdmin ? (
+              <button
+                aria-expanded={isDetailsOpen}
+                onClick={() => setOpenReportDetailsZone((currentZone) => (
+                  currentZone === zone.zoneName ? null : zone.zoneName
+                ))}
+                type="button"
+              >
+                {isDetailsOpen ? "Hide report details" : "View report details"}
+              </button>
+            ) : null}
+          </div>
+        ) : null}
+
+        {isAdmin && isReported && isDetailsOpen ? (
+          <div className="bonus-admin-details">
+            {reportSubmissions.map((submission) => {
+              const createdAt = formatReportTimestamp(submission.createdAt);
+              const updatedAt = formatReportTimestamp(submission.updatedAt);
+              return (
+                <div className="bonus-admin-detail-row" key={submission.id}>
+                  <div>
+                    <strong>{formatReporterName(submission)}</strong>
+                    <span>{formatBonusLabel(submission.bonus)}</span>
+                    {createdAt ? <small>Created: {createdAt}</small> : null}
+                    {updatedAt ? <small>Updated: {updatedAt}</small> : null}
+                  </div>
+                  <div>
+                    <button
+                      disabled={isModeratingReport}
+                      onClick={() => deleteReport(submission.id)}
+                      type="button"
+                    >
+                      Delete Report
+                    </button>
+                    <button
+                      disabled={isModeratingReport}
+                      onClick={() => banUser(submission.discordUserId)}
+                      type="button"
+                    >
+                      Ban User
+                    </button>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        ) : null}
+
+        {isLoggedIn || userReport ? (
           <div className="bonus-zone-actions">
-            {userReports[zone.zoneName] ? <span className="bonus-your-report">Your report: {userReports[zone.zoneName]}</span> : null}
+            {userReport ? <span className="bonus-your-report">Your report: {formatBonusLabel(userReport)}</span> : null}
             {isLoggedIn ? (
             <button
               className="bonus-report-action"
               onClick={() => openReportPanel(zone.zoneName)}
               type="button"
             >
-              {userReports[zone.zoneName] ? "Change Report" : "Submit Report"}
+              {userReport ? "Change Report" : "Submit Report"}
             </button>
             ) : null}
           </div>
@@ -533,7 +739,7 @@ export function BonusTrackerClient() {
         {isLoggedIn && openReportZone === zone.zoneName ? (
           <div className="bonus-report-panel">
             <div className="bonus-report-panel-heading">
-              <h3>{userReports[zone.zoneName] ? "Change your report" : "Submit your report"}</h3>
+              <h3>{userReport ? "Change your report" : "Submit your report"}</h3>
               <button onClick={() => setOpenReportZone(null)} type="button">Cancel</button>
             </div>
             <div className="bonus-report-options" aria-label={`Select bonus for ${zone.zoneName}`}>
@@ -550,7 +756,7 @@ export function BonusTrackerClient() {
                     }))}
                     type="button"
                   >
-                    {bonus}
+                    <BonusLabel bonus={bonus} />
                   </button>
                 );
               })}
@@ -617,7 +823,7 @@ export function BonusTrackerClient() {
                 onClick={() => setSelectedBonus(bonus)}
                 type="button"
               >
-                {bonus}
+                <BonusLabel bonus={bonus} />
               </button>
             );
           })}
@@ -632,7 +838,7 @@ export function BonusTrackerClient() {
                 aria-pressed={isActive}
                 className={isActive ? "filter-button is-active" : "filter-button"}
                 key={status}
-                onClick={() => setSelectedStatus(status)}
+                onClick={() => selectStatusFilter(status)}
                 type="button"
               >
                 {status}

@@ -41,6 +41,7 @@ export const authOptions: NextAuthOptions = {
     },
     async session({ session, token }) {
       if (session.user) {
+        session.user.id = typeof token.discordUserId === "string" ? token.discordUserId : undefined;
         session.user.discordUserId = typeof token.discordUserId === "string" ? token.discordUserId : undefined;
         session.user.discordUsername = typeof token.discordUsername === "string" ? token.discordUsername : undefined;
         session.user.discordAvatar = typeof token.discordAvatar === "string" ? token.discordAvatar : undefined;

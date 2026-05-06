@@ -5,7 +5,7 @@ import { authOptions } from "@/lib/auth";
 export const runtime = "nodejs";
 
 const REPORT_COOLDOWN_SECONDS = 60;
-const bonusTypes = ["Experience", "Coin", "Loot", "Rare", "Skill", "Respawn", "Faction"] as const;
+const bonusTypes = ["Experience", "AA", "Coin", "Loot", "Rare", "Skill", "Respawn", "Faction"] as const;
 
 type BonusType = (typeof bonusTypes)[number];
 
@@ -29,6 +29,17 @@ type BonusReportRow = {
   updatedat: Date;
 };
 
+type BonusPostBody =
+  | {
+      action?: undefined;
+      zoneName?: unknown;
+      bonus?: unknown;
+    }
+  | {
+      action: "banUser";
+      discordUserId?: unknown;
+    };
+
 let pool: Pool | undefined;
 
 function getPool() {
@@ -45,6 +56,10 @@ function getPool() {
 
 function isBonusType(value: unknown): value is BonusType {
   return typeof value === "string" && bonusTypes.includes(value as BonusType);
+}
+
+function isAdminSessionUserId(sessionUserId: string | undefined) {
+  return Boolean(sessionUserId && process.env.ADMIN_DISCORD_ID && sessionUserId === process.env.ADMIN_DISCORD_ID);
 }
 
 function mapReport(row: BonusReportRow): BonusReportRecord {
@@ -75,6 +90,27 @@ async function getAllReports() {
   return result.rows.map(mapReport);
 }
 
+async function ensureModerationTables(client: Pool | PoolClient = getPool()) {
+  await client.query(
+    `create table if not exists banned_users (
+       "discordUserId" text primary key,
+       "createdAt" timestamptz not null default now()
+     )`,
+  );
+}
+
+async function isBannedUser(client: Pool | PoolClient, discordUserId: string) {
+  const result = await client.query<{ exists: boolean }>(
+    `select exists(
+       select 1
+       from banned_users
+       where "discordUserId" = $1
+     )`,
+    [discordUserId],
+  );
+  return Boolean(result.rows[0]?.exists);
+}
+
 function getCurrentUserReports(reports: BonusReportRecord[], discordUserId: string | undefined) {
   if (!discordUserId) return {};
 
@@ -87,12 +123,14 @@ function getCurrentUserReports(reports: BonusReportRecord[], discordUserId: stri
 
 async function getDiscordSessionUser() {
   const session = await getServerSession(authOptions);
-  const discordUserId = session?.user?.discordUserId;
+  const sessionUserId = session?.user?.id;
+  const discordUserId = session?.user?.discordUserId ?? sessionUserId;
   if (!discordUserId) return null;
 
   return {
     discordUserId,
-    username: session.user?.discordUsername ?? session.user?.name ?? null,
+    sessionUserId,
+    username: session?.user?.discordUsername ?? session?.user?.name ?? null,
   };
 }
 
@@ -120,6 +158,7 @@ export async function GET() {
     return Response.json({
       reports,
       currentUserReports: getCurrentUserReports(reports, currentUser?.discordUserId),
+      isAdmin: isAdminSessionUserId(currentUser?.sessionUserId),
     });
   } catch (error) {
     return databaseErrorResponse(error, { action: "list-reports" });
@@ -132,7 +171,38 @@ export async function POST(request: Request) {
     return Response.json({ error: "AUTH_REQUIRED" }, { status: 401 });
   }
 
-  const body = await request.json().catch(() => null) as { zoneName?: unknown; bonus?: unknown } | null;
+  const body = await request.json().catch(() => null) as BonusPostBody | null;
+
+  if (body?.action === "banUser") {
+    if (!isAdminSessionUserId(currentUser.sessionUserId)) {
+      return Response.json({ error: "ADMIN_REQUIRED" }, { status: 403 });
+    }
+
+    const bannedDiscordUserId = typeof body.discordUserId === "string" ? body.discordUserId.trim() : "";
+    if (!bannedDiscordUserId) {
+      return Response.json({ error: "INVALID_BAN" }, { status: 400 });
+    }
+
+    try {
+      const pool = getPool();
+      await ensureModerationTables(pool);
+      await pool.query(
+        `insert into banned_users ("discordUserId")
+         values ($1)
+         on conflict ("discordUserId") do nothing`,
+        [bannedDiscordUserId],
+      );
+
+      return Response.json({ success: true, isAdmin: true });
+    } catch (error) {
+      return databaseErrorResponse(error, {
+        action: "ban-user",
+        discordUserId: currentUser.discordUserId,
+        bannedDiscordUserId,
+      });
+    }
+  }
+
   const zoneName = typeof body?.zoneName === "string" ? body.zoneName.trim() : "";
   const bonus = body?.bonus;
 
@@ -145,6 +215,12 @@ export async function POST(request: Request) {
   try {
     client = await getPool().connect();
     await client.query("begin");
+    await ensureModerationTables(client);
+
+    if (await isBannedUser(client, currentUser.discordUserId)) {
+      await client.query("rollback");
+      return Response.json({ error: "USER_BANNED" }, { status: 403 });
+    }
 
     const existingReport = await client.query<{ id: string }>(
       `select id
@@ -215,6 +291,7 @@ export async function POST(request: Request) {
       success: true,
       reports,
       currentUserReports: getCurrentUserReports(reports, currentUser.discordUserId),
+      isAdmin: isAdminSessionUserId(currentUser.sessionUserId),
     });
   } catch (error) {
     await client?.query("rollback").catch(() => {});
@@ -225,5 +302,51 @@ export async function POST(request: Request) {
     });
   } finally {
     client?.release();
+  }
+}
+
+export async function DELETE(request: Request) {
+  const currentUser = await getDiscordSessionUser();
+  if (!currentUser) {
+    return Response.json({ error: "AUTH_REQUIRED" }, { status: 401 });
+  }
+  if (!isAdminSessionUserId(currentUser.sessionUserId)) {
+    return Response.json({ error: "ADMIN_REQUIRED" }, { status: 403 });
+  }
+
+  const url = new URL(request.url);
+  const body = await request.json().catch(() => null) as { id?: unknown } | null;
+  const reportId = (url.searchParams.get("id") ?? (typeof body?.id === "string" ? body.id : "")).trim();
+
+  if (!reportId) {
+    return Response.json({ error: "INVALID_REPORT_ID" }, { status: 400 });
+  }
+
+  try {
+    const pool = getPool();
+    const deletedReport = await pool.query<{ id: string }>(
+      `delete from bonus_reports
+       where id = $1
+       returning id`,
+      [reportId],
+    );
+
+    if (deletedReport.rowCount === 0) {
+      return Response.json({ error: "REPORT_NOT_FOUND" }, { status: 404 });
+    }
+
+    const reports = await getAllReports();
+    return Response.json({
+      success: true,
+      reports,
+      currentUserReports: getCurrentUserReports(reports, currentUser.discordUserId),
+      isAdmin: true,
+    });
+  } catch (error) {
+    return databaseErrorResponse(error, {
+      action: "delete-report",
+      reportId,
+      discordUserId: currentUser.discordUserId,
+    });
   }
 }
