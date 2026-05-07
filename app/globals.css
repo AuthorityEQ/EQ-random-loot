@@ -6176,6 +6176,145 @@ select option {
   margin: 0;
 }
 
+.gear-source-expand-button {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(205, 196, 169, 0.1), transparent 72%),
+    linear-gradient(180deg, rgba(37, 34, 28, 0.9), rgba(14, 14, 12, 0.94));
+  border: 1px solid rgba(128, 113, 82, 0.68);
+  border-radius: 999px;
+  color: #d7c8a0;
+  cursor: pointer;
+  font-size: 0.76rem;
+  font-weight: 900;
+  justify-self: start;
+  min-height: 32px;
+  padding: 6px 10px;
+}
+
+.gear-source-expand-button:hover,
+.gear-source-expand-button:focus-visible {
+  border-color: rgba(172, 148, 96, 0.86);
+  color: #f1e0b4;
+  outline: 2px solid var(--focus-ring);
+}
+
+.gear-source-detail-list {
+  display: grid;
+  gap: 8px;
+}
+
+.gear-source-detail {
+  background:
+    radial-gradient(circle at 12% 0%, color-mix(in srgb, var(--accent) 9%, transparent), transparent 56%),
+    color-mix(in srgb, var(--panel-soft) 54%, transparent);
+  border: 1px solid color-mix(in srgb, var(--line) 82%, transparent);
+  border-radius: 8px;
+  display: grid;
+  gap: 8px;
+  padding: 9px 10px;
+}
+
+.gear-source-detail-heading {
+  display: grid;
+  gap: 2px;
+}
+
+.gear-source-detail-heading strong {
+  color: var(--page-title-gold);
+  font-size: 0.86rem;
+  line-height: 1.25;
+}
+
+.gear-source-detail-heading span {
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.gear-source-detail dl {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+}
+
+.gear-source-detail dl > div {
+  display: grid;
+  gap: 3px;
+}
+
+.gear-source-detail dt {
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 950;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.gear-source-detail dd {
+  color: var(--text);
+  font-size: 0.78rem;
+  font-weight: 760;
+  line-height: 1.35;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.gear-source-zone-groups {
+  display: grid;
+  gap: 8px;
+}
+
+.gear-source-zone-group {
+  display: grid;
+  gap: 3px;
+}
+
+.gear-source-zone-group strong {
+  color: var(--page-title-gold);
+  font-size: 0.78rem;
+  font-weight: 950;
+}
+
+.gear-source-zone-group ul {
+  display: grid;
+  gap: 2px;
+  list-style: disc;
+  margin: 0;
+  padding-left: 18px;
+}
+
+.gear-source-zone-group li {
+  color: var(--text);
+  font-size: 0.77rem;
+  font-weight: 720;
+  line-height: 1.35;
+}
+
+.gear-source-raid-targets {
+  display: grid;
+  gap: 3px;
+  list-style: disc;
+  margin: 0;
+  padding-left: 18px;
+}
+
+.gear-source-raid-targets li {
+  color: var(--text);
+  font-size: 0.78rem;
+  font-weight: 760;
+  line-height: 1.35;
+}
+
+.gear-source-overlap-summary {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 760;
+  line-height: 1.35;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
 @media (max-width: 1540px) {
   .character-roster-layout {
     grid-template-columns: 1fr;

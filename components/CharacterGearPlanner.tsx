@@ -29,7 +29,7 @@ import { isShieldItem, isTwoHandedItem } from "@/lib/item-weapon";
 import { CLASS_STAT_WEIGHTS, explainItemScore, formatScoredStatLabel, type ClassCode } from "@/lib/itemScoring";
 import { classCanUseShields, itemMatchesUseFilters } from "@/lib/item-use-filters";
 import { parseRawSlot, type SlotKey } from "@/lib/slot-filter";
-import type { ItemDetails, ItemDetailsMap, LootDataset } from "@/lib/search";
+import type { ItemDetails, ItemDetailsMap, LootDataset, Mob } from "@/lib/search";
 import type { RaidDataset } from "@/lib/raidTiers";
 import { fetchUserSettings, saveUserSettings } from "@/lib/user-settings-client";
 
@@ -56,8 +56,14 @@ type GearSourceInfo = {
   sourceName: string;
   sourceType: "group" | "raid" | "quest" | "item";
   npcNames?: string[];
+  sourceMobs?: Pick<Mob, "name" | "zone" | "level">[];
   bucket?: number;
   levelRange?: string;
+  bossLevel?: number;
+  tierName?: string;
+  sourceItemNames?: string[];
+  mobCount?: number;
+  lootCount?: number;
 };
 
 type BisCandidate = {
@@ -255,11 +261,15 @@ function buildGearCandidates(): GearCandidate[] {
       const sourceInfo: GearSourceInfo = {
         expansion: bucket.expansion,
         zones: bucket.zones,
-        sourceName: `Bucket ${bucket.bucket} group mobs`,
+        sourceName: `Bucket ${bucket.bucket} Group Mobs`,
         sourceType: "group",
         npcNames: bucket.mobs.map((mob) => mob.name),
+        sourceMobs: bucket.mobs.map((mob) => ({ name: mob.name, zone: mob.zone, level: mob.level })),
         bucket: bucket.bucket,
         levelRange: bucket.level_range,
+        sourceItemNames: bucket.loot_pool,
+        mobCount: bucket.mob_count ?? bucket.mobs.length,
+        lootCount: bucket.loot_pool.length,
       };
       for (const itemName of bucket.loot_pool) {
         touchItem(itemName, bucket.expansion, bucket.zones, sourceInfo);
@@ -269,6 +279,8 @@ function buildGearCandidates(): GearCandidate[] {
 
   for (const dataset of raidDatasets) {
     for (const tier of dataset.tiers) {
+      const tierBosses = tier.bosses.map((boss) => ({ name: boss.name, zone: boss.zone, level: boss.level }));
+      const tierLootPool = Array.from(new Set(tier.bosses.flatMap((boss) => boss.loot_pool ?? []))).sort((a, b) => a.localeCompare(b));
       for (const boss of tier.bosses) {
         for (const itemName of boss.loot_pool ?? []) {
           touchItem(itemName, dataset.expansion, [boss.zone], {
@@ -276,7 +288,13 @@ function buildGearCandidates(): GearCandidate[] {
             zones: [boss.zone],
             sourceName: boss.name,
             sourceType: "raid",
-            npcNames: [boss.name],
+            npcNames: tierBosses.map((tierBoss) => tierBoss.name),
+            sourceMobs: tierBosses,
+            bossLevel: boss.level,
+            tierName: tier.name,
+            sourceItemNames: tierLootPool,
+            mobCount: tierBosses.length,
+            lootCount: tierLootPool.length,
           });
         }
       }
@@ -295,6 +313,8 @@ function buildGearCandidates(): GearCandidate[] {
         sourceName: questSourceLabel,
         sourceType: "quest",
         npcNames: mapping.sourceNpcName ? [mapping.sourceNpcName] : undefined,
+        sourceItemNames: [mapping.rewardItemName],
+        lootCount: 1,
       },
     );
   }
@@ -307,6 +327,8 @@ function buildGearCandidates(): GearCandidate[] {
           zones: [classicPlanarGearSource],
           sourceName: classicPlanarGearSource,
           sourceType: "quest",
+          sourceItemNames: [itemName],
+          lootCount: 1,
         });
       }
       continue;
@@ -328,6 +350,8 @@ function buildGearCandidates(): GearCandidate[] {
       sourceName: questSourceLabel,
       sourceType: details.acquisitionType === "quest" ? "quest" : "item",
       npcNames: details.sourceNpcName ? [details.sourceNpcName] : undefined,
+      sourceItemNames: [itemName],
+      lootCount: 1,
     });
   }
 
@@ -348,6 +372,7 @@ function buildGearCandidates(): GearCandidate[] {
 
 const gearCandidates = buildGearCandidates();
 const gearCandidateByName = new Map(gearCandidates.map((candidate) => [candidate.itemName, candidate]));
+const fullGearSourceByItemName = new Map(gearCandidates.map((candidate) => [candidate.itemName, candidate.sources]));
 const plannerExpansionOptions = sortExpansions(new Set(gearCandidates.flatMap((candidate) => candidate.expansions)));
 
 function getGearSlotLabel(slotId: string) {
@@ -383,6 +408,8 @@ function getCandidateForItem(itemName: string) {
       sourceName: fallbackSourceName,
       sourceType: details.sourceNpcName || details.questName ? "quest" as const : "item" as const,
       npcNames: details.sourceNpcName ? [details.sourceNpcName] : undefined,
+      sourceItemNames: [itemName],
+      lootCount: 1,
     }],
   };
 }
@@ -391,14 +418,96 @@ function sourceMatchesQuery(source: GearSourceInfo, query: string) {
   if (!query) return true;
   return source.sourceName.toLowerCase().includes(query)
     || source.zones.some((zone) => zone.toLowerCase().includes(query))
-    || (source.npcNames ?? []).some((npcName) => npcName.toLowerCase().includes(query));
+    || (source.npcNames ?? []).some((npcName) => npcName.toLowerCase().includes(query))
+    || (source.sourceItemNames ?? []).some((itemName) => itemName.toLowerCase().includes(query));
 }
 
 function formatSourceSummary(source: GearSourceInfo) {
+  if (source.sourceType === "raid") {
+    const zoneLabel = source.zones.slice(0, 2).join(", ");
+    return [source.sourceName, zoneLabel].filter(Boolean).join(" / ");
+  }
   const zoneLabel = source.zones.slice(0, 2).join(", ");
   const npcLabel = source.npcNames?.slice(0, 2).join(", ");
   const bucketLabel = source.bucket ? `Bucket ${source.bucket}${source.levelRange ? `, levels ${source.levelRange}` : ""}` : null;
   return [source.sourceName, zoneLabel, npcLabel, bucketLabel].filter(Boolean).join(" / ");
+}
+
+function sourceIdentity(source: GearSourceInfo) {
+  const sourceName = source.sourceType === "raid" && source.tierName ? source.tierName : source.sourceName;
+  const sourceLocation = source.sourceType === "raid" && source.sourceMobs?.length
+    ? source.sourceMobs.map((mob) => mob.name).sort((a, b) => a.localeCompare(b)).join("|")
+    : source.zones.join("|");
+  return [
+    source.sourceType,
+    source.expansion,
+    source.bucket ?? "",
+    sourceName,
+    sourceLocation,
+  ].join("::");
+}
+
+function mergeGearSources(primarySources: GearSourceInfo[] | undefined, fallbackSources: GearSourceInfo[] | undefined) {
+  const merged = new Map<string, GearSourceInfo>();
+  for (const source of [...(primarySources ?? []), ...(fallbackSources ?? [])]) {
+    merged.set(sourceIdentity(source), source);
+  }
+  return Array.from(merged.values());
+}
+
+function getFullGearSources(itemName: string, fallbackSources: GearSourceInfo[] = []) {
+  return mergeGearSources(fullGearSourceByItemName.get(itemName), fallbackSources);
+}
+
+function sourceTypeLabel(source: GearSourceInfo) {
+  if (source.sourceType === "raid") return "Raid";
+  if (source.sourceType === "group") return "Group";
+  if (source.sourceType === "quest") return "Quest";
+  return "Item";
+}
+
+function formatSourceDetailList(values: string[] | undefined, fallback: string) {
+  return values?.length ? values.join(", ") : fallback;
+}
+
+function formatMobLevel(level: Mob["level"] | undefined) {
+  if (level === undefined || level === null) return null;
+  return String(level);
+}
+
+function groupSourceMobsByZone(source: GearSourceInfo) {
+  const zones = new Map<string, Pick<Mob, "name" | "zone" | "level">[]>();
+  for (const mob of source.sourceMobs ?? []) {
+    const zoneName = mob.zone || "Unknown";
+    const mobs = zones.get(zoneName) ?? [];
+    mobs.push(mob);
+    zones.set(zoneName, mobs);
+  }
+
+  return Array.from(zones.entries())
+    .sort(([zoneA], [zoneB]) => zoneA.localeCompare(zoneB))
+    .map(([zoneName, mobs]) => ({
+      zoneName,
+      mobs: mobs.sort((mobA, mobB) => mobA.name.localeCompare(mobB.name)),
+    }));
+}
+
+function sortRaidSourceMobs(source: GearSourceInfo) {
+  const zoneGroups = new Map<string, { order: number; mobs: Pick<Mob, "name" | "zone" | "level">[] }>();
+  for (const [index, mob] of (source.sourceMobs ?? []).entries()) {
+    const zoneName = mob.zone || "Unknown";
+    const zoneGroup = zoneGroups.get(zoneName) ?? { order: index, mobs: [] };
+    zoneGroup.mobs.push(mob);
+    zoneGroups.set(zoneName, zoneGroup);
+  }
+
+  const groups = Array.from(zoneGroups.entries())
+    .sort(([zoneA, groupA], [zoneB, groupB]) => {
+      if (groupA.order !== groupB.order) return groupA.order - groupB.order;
+      return zoneA.localeCompare(zoneB);
+    });
+
+  return groups.flatMap(([, group]) => group.mobs.sort((mobA, mobB) => mobA.name.localeCompare(mobB.name)));
 }
 
 function itemMatchesSlot(details: ItemDetails, slotKey: SlotKey) {
@@ -1047,6 +1156,7 @@ export function CharacterGearPlanner() {
   const [addPlannerUtilitySlot, setAddPlannerUtilitySlot] = useState<number | null>(null);
   const [expandedUtilityBags, setExpandedUtilityBags] = useState<Set<string>>(() => new Set());
   const [selectedUtilityItem, setSelectedUtilityItem] = useState<{ characterId: string; itemId: string } | null>(null);
+  const [expandedSourceItems, setExpandedSourceItems] = useState<Set<string>>(() => new Set());
   const fileInputRef = useRef<HTMLInputElement | null>(null);
   const draftBuildIdRef = useRef<string | null>(null);
   const lastAutosavePayloadRef = useRef<string | null>(null);
@@ -1219,6 +1329,18 @@ export function CharacterGearPlanner() {
 
     return { obtained, remaining: total - obtained, total };
   }, [gearShoppingItems, gearShoppingObtainedNeedKeys]);
+  const sourcePlannerOverlapItems = useMemo(() => {
+    const itemsBySource = new Map<string, Set<string>>();
+    for (const item of gearShoppingItems) {
+      for (const source of getFullGearSources(item.itemName, item.sources)) {
+        const key = sourceIdentity(source);
+        const itemNames = itemsBySource.get(key) ?? new Set<string>();
+        itemNames.add(item.itemName);
+        itemsBySource.set(key, itemNames);
+      }
+    }
+    return itemsBySource;
+  }, [gearShoppingItems]);
   const plannerAssignedGearCount = useMemo(
     () => plannerRoster.reduce((sum, character) => sum + equippedSlotCountFromItems(character.equippedItems), 0),
     [plannerRoster],
@@ -2060,6 +2182,18 @@ export function CharacterGearPlanner() {
     setSelectedUtilityItem(null);
   }
 
+  function toggleSourceDetails(itemName: string) {
+    setExpandedSourceItems((current) => {
+      const next = new Set(current);
+      if (next.has(itemName)) {
+        next.delete(itemName);
+      } else {
+        next.add(itemName);
+      }
+      return next;
+    });
+  }
+
   function toggleGearShoppingNeedObtained(itemName: string, need: GearShoppingNeed) {
     const key = gearShoppingNeedKey(itemName, need);
     setGearShoppingObtainedNeedKeys((current) => {
@@ -2699,7 +2833,9 @@ export function CharacterGearPlanner() {
             </p>
           ) : (
             <div className="gear-shopping-list">
-              {filteredGearShoppingItems.map((item) => (
+              {filteredGearShoppingItems.map((item) => {
+                const fullSources = getFullGearSources(item.itemName, item.sources);
+                return (
                 <article
                   className={item.remainingNeeds.length === 0 ? "gear-shopping-card is-obtained" : "gear-shopping-card"}
                   key={item.itemName}
@@ -2767,21 +2903,131 @@ export function CharacterGearPlanner() {
 
                   <div className="gear-shopping-sources">
                     <h4>Sources</h4>
-                    {item.sources.length > 0 ? (
-                      <ul>
-                        {item.sources.slice(0, 4).map((source, index) => (
-                          <li key={`${item.itemName}-${source.sourceName}-${index}`}>
-                            <strong>{source.expansion}</strong>
-                            <span>{formatSourceSummary(source)}</span>
-                          </li>
-                        ))}
-                      </ul>
+                    {fullSources.length > 0 ? (
+                      <>
+                        <ul>
+                          {fullSources.slice(0, 4).map((source, index) => (
+                            <li key={`${item.itemName}-${source.sourceName}-${index}`}>
+                              <strong>{source.expansion}</strong>
+                              <span>{formatSourceSummary(source)}</span>
+                            </li>
+                          ))}
+                        </ul>
+                        <button
+                          aria-expanded={expandedSourceItems.has(item.itemName)}
+                          className="gear-source-expand-button"
+                          onClick={() => toggleSourceDetails(item.itemName)}
+                          type="button"
+                        >
+                          {expandedSourceItems.has(item.itemName) ? "Collapse Sources" : `Show Full Sources (${fullSources.length})`}
+                        </button>
+                        {expandedSourceItems.has(item.itemName) ? (
+                          <div className="gear-source-detail-list">
+                            {fullSources.map((source, index) => {
+                              const groupedMobs = groupSourceMobsByZone(source);
+                              const raidMobs = source.sourceType === "raid" ? sortRaidSourceMobs(source) : [];
+                              const isRaidBucketSource = source.sourceType === "raid" && raidMobs.length > 0;
+                              const overlapItems = Array.from(sourcePlannerOverlapItems.get(sourceIdentity(source)) ?? [])
+                                .filter((overlapItemName) => overlapItemName !== item.itemName)
+                                .sort((a, b) => a.localeCompare(b));
+                              return (
+                                <section className="gear-source-detail" key={`${item.itemName}-${source.sourceName}-detail-${index}`}>
+                                  <div className="gear-source-detail-heading">
+                                    <strong>{isRaidBucketSource ? `${source.tierName ?? source.sourceName} / ${source.expansion}` : source.sourceName}</strong>
+                                    {isRaidBucketSource ? null : <span>{sourceTypeLabel(source)} / {source.expansion}</span>}
+                                  </div>
+                                  {isRaidBucketSource ? (
+                                    <>
+                                      <ul className="gear-source-raid-targets">
+                                        {raidMobs.map((mob) => (
+                                          <li key={`${source.sourceName}-${mob.name}`}>
+                                            {mob.name}
+                                          </li>
+                                        ))}
+                                      </ul>
+                                      {overlapItems.length > 0 ? (
+                                        <p className="gear-source-overlap-summary">
+                                          Also sources {overlapItems.length} other planner {overlapItems.length === 1 ? "item" : "items"}: {overlapItems.join(", ")}.
+                                        </p>
+                                      ) : null}
+                                    </>
+                                  ) : (
+                                  <dl>
+                                    <div>
+                                      <dt>Zones</dt>
+                                      <dd>{formatSourceDetailList(source.zones, "Unknown")}</dd>
+                                    </div>
+                                    {source.bucket ? (
+                                      <div>
+                                        <dt>Bucket</dt>
+                                        <dd>Bucket {source.bucket}{source.levelRange ? ` / Levels ${source.levelRange}` : ""}</dd>
+                                      </div>
+                                    ) : null}
+                                    {source.tierName || source.bossLevel ? (
+                                      <div>
+                                        <dt>Raid Context</dt>
+                                        <dd>{[source.tierName, source.bossLevel ? `Level ${source.bossLevel}` : null].filter(Boolean).join(" / ")}</dd>
+                                      </div>
+                                    ) : null}
+                                    {groupedMobs.length > 0 ? (
+                                      <div>
+                                        <dt>Farm Targets</dt>
+                                        <dd>
+                                          <div className="gear-source-zone-groups">
+                                            {groupedMobs.map((zoneGroup) => (
+                                              <section className="gear-source-zone-group" key={`${source.sourceName}-${zoneGroup.zoneName}`}>
+                                                <strong>{zoneGroup.zoneName}</strong>
+                                                <ul>
+                                                  {zoneGroup.mobs.map((mob) => {
+                                                    const levelLabel = formatMobLevel(mob.level);
+                                                    return (
+                                                      <li key={`${source.sourceName}-${zoneGroup.zoneName}-${mob.name}`}>
+                                                        {mob.name}{levelLabel ? ` (${levelLabel})` : ""}
+                                                      </li>
+                                                    );
+                                                  })}
+                                                </ul>
+                                              </section>
+                                            ))}
+                                          </div>
+                                        </dd>
+                                      </div>
+                                    ) : source.npcNames?.length ? (
+                                      <div>
+                                        <dt>NPCs</dt>
+                                        <dd>{formatSourceDetailList(source.npcNames, "Unknown")}</dd>
+                                      </div>
+                                    ) : null}
+                                    {source.mobCount || source.lootCount ? (
+                                      <div>
+                                        <dt>Source Size</dt>
+                                        <dd>{[
+                                          source.mobCount ? `${source.mobCount} ${source.mobCount === 1 ? "NPC" : "NPCs"}` : null,
+                                          source.lootCount ? `${source.lootCount} loot ${source.lootCount === 1 ? "item" : "items"}` : null,
+                                        ].filter(Boolean).join(" / ")}</dd>
+                                      </div>
+                                    ) : null}
+                                    {overlapItems.length > 0 ? (
+                                      <div>
+                                        <dt>Overlap</dt>
+                                        <dd>Also sources {overlapItems.length} other planner {overlapItems.length === 1 ? "item" : "items"}: {overlapItems.join(", ")}.</dd>
+                                      </div>
+                                    ) : null}
+                                  </dl>
+                                  )}
+                                </section>
+                              );
+                            })}
+                          </div>
+                        ) : null}
+                      </>
                     ) : (
                       <p>No source metadata available.</p>
                     )}
                   </div>
                 </article>
-              ))}
+                );
+              })}
             </div>
           )}
         </section>
