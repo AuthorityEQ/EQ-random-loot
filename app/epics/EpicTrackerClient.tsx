@@ -13,20 +13,17 @@
  *   EpicProgressProvider lives at root in app/layout.tsx — no local wrapper.
  */
 
-import { useEffect, useRef, useState } from "react";
-import type { KeyboardEvent } from "react";
+import type { KeyboardEvent, ReactNode } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { useEpicProgress } from "@/components/EpicProgressProvider";
 import { EpicTrackerCheckbox } from "@/components/EpicTrackerCheckbox";
-import { ItemDrawer } from "@/components/ItemDrawer";
-import "@/components/item-drawer.css";
 import { ItemIcon } from "@/components/ItemIcon";
 import { useItemPreview } from "@/components/ItemPreviewProvider";
-import { EPIC_CLASSES, type EpicClassName, type EpicStepTag, type NormalizedClassEpic, type NormalizedStep } from "./types";
+import { EPIC_CLASSES, type EpicClassName, type EpicQuestLink, type EpicStepTag, type NormalizedClassEpic, type NormalizedStep } from "./types";
 import { mobToSlug } from "@/lib/mob-slug";
 import { zoneToSlug } from "@/lib/zone-slug";
-import { itemToSlug } from "@/lib/item-slug";
-import type { Bucket, ItemDetailsMap } from "@/lib/search";
+import type { ItemDetailsMap } from "@/lib/search";
 import itemDetailsData from "@/data/item-details.json";
 
 const itemDetailsMap = itemDetailsData as unknown as ItemDetailsMap;
@@ -37,6 +34,7 @@ const tagLabels: Record<EpicStepTag, string> = {
   group: "Group",
   raid: "Raid",
   rare: "Rare",
+  skippable: "Skippable",
 };
 
 function TagDots({ tags }: { tags: EpicStepTag[] }) {
@@ -53,32 +51,6 @@ function TagDots({ tags }: { tags: EpicStepTag[] }) {
 function TagText({ tags }: { tags: EpicStepTag[] }) {
   if (tags.length === 0) return null;
   return <span className="epic-tag-text">{tags.map((tag) => tagLabels[tag]).join(" • ")}</span>;
-}
-
-let _epicBucketIdCounter = 100000;
-function makeEpicBucket(itemName: string, classEpic: NormalizedClassEpic, step: NormalizedStep): Bucket {
-  _epicBucketIdCounter += 1;
-  const expansion = "Velious";
-  return {
-    bucket: _epicBucketIdCounter,
-    level_range: `${classEpic.className} epic`,
-    expansion,
-    mobs: step.npcMob
-      ? [{
-          name: step.npcMob,
-          level: 0,
-          zone: step.zone ?? "",
-          expansion,
-          source_bucket: step.npcMob,
-          loot: [itemName],
-        }]
-      : [],
-    zones: step.zone ? [step.zone] : [],
-    loot_pool: [itemName],
-    mob_count: step.npcMob ? 1 : 0,
-    loot_count: 1,
-    zone_count: step.zone ? 1 : 0,
-  };
 }
 
 // ---------------------------------------------------------------------------
@@ -138,35 +110,118 @@ function extractDropSource(step: NormalizedStep): string | null {
   return null;
 }
 
+function EpicExternalOrInternalLink({
+  className = "epic-link",
+  href,
+  internalHref,
+  children,
+}: {
+  className?: string;
+  href?: string;
+  internalHref: string;
+  children: ReactNode;
+}) {
+  if (href) {
+    return (
+      <a
+        className={className}
+        href={href}
+        onClick={(event) => event.stopPropagation()}
+        rel="noreferrer"
+        target="_blank"
+      >
+        {children}
+      </a>
+    );
+  }
+
+  return (
+    <Link className={className} href={internalHref} onClick={(event) => event.stopPropagation()}>
+      {children}
+    </Link>
+  );
+}
+
+function EpicItemLinks({
+  className,
+  items,
+}: {
+  className: string;
+  items: EpicQuestLink[];
+}) {
+  const { previewProps } = useItemPreview();
+
+  return (
+    <ul className="epic-items-list">
+      {items.map((item) => {
+        const details = itemDetailsMap[item.name];
+        const detailsAllakhazamUrl = details?.sources?.find((source) => source.name === "Allakhazam")?.url;
+        const externalUrl = item.url ?? detailsAllakhazamUrl;
+        return (
+          <li key={`${item.name}-${item.url ?? "local"}`}>
+            {externalUrl ? (
+              <a
+                className={className}
+                href={externalUrl}
+                onClick={(event) => event.stopPropagation()}
+                rel="noreferrer"
+                target="_blank"
+                {...previewProps(item.name, details)}
+              >
+                <ItemIcon details={details} />
+                <span>{item.name}</span>
+              </a>
+            ) : (
+              <span
+                className={className}
+                {...previewProps(item.name, details)}
+              >
+                <ItemIcon details={details} />
+                <span>{item.name}</span>
+              </span>
+            )}
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+
 // ---------------------------------------------------------------------------
 // Step card — mirrors BucketCard visual pattern
 // ---------------------------------------------------------------------------
 
 function EpicStepCard({
   epicClassName,
-  classEpic,
   step,
   stepIndex,
   globalIndex,
-  onSelectLoot,
 }: {
   epicClassName: EpicClassName;
-  classEpic: NormalizedClassEpic;
   step: NormalizedStep;
   stepIndex: number;
   globalIndex: number;
-  onSelectLoot: (itemName: string, bucket: Bucket) => void;
 }) {
   const { getProgress } = useEpicProgress();
-  const { previewProps } = useItemPreview();
   const progress = getProgress(epicClassName);
   const isComplete = progress.completed.includes(stepIndex);
   const dropSource = extractDropSource(step);
   const showMobAsNpc = step.npcMob && !dropSource;
-  const items = parseStepItems(step.items ?? "");
+  const requiredItems =
+    step.requiredItems.length > 0
+      ? step.requiredItems
+      : parseStepItems(step.items ?? "").map((name) => ({ name }));
+  const dropItems = step.dropItems;
   const [isExpanded, setIsExpanded] = useState(false);
   const npcMobLabel = showMobAsNpc ? step.npcMob : dropSource;
-  const visibleTags = step.tags;
+  const npcLinks =
+    step.npcLinks.length > 0
+      ? step.npcLinks
+      : npcMobLabel
+        ? [{ name: npcMobLabel }]
+        : [];
+  const isSkippable = step.tags.includes("skippable");
+  const visibleTags = step.tags.filter((tag) => tag !== "skippable");
 
   function toggleExpanded() {
     setIsExpanded((current) => !current);
@@ -201,6 +256,7 @@ function EpicStepCard({
           <h3 className="epic-step-name">{step.action}</h3>
           {step.zone && <span className="epic-step-zone-inline">({step.zone})</span>}
         </div>
+        {isSkippable && <span className="epic-skippable-badge">Skippable</span>}
         <div className="epic-step-tags" aria-label={visibleTags.length > 0 ? `Tags: ${visibleTags.map((tag) => tagLabels[tag]).join(", ")}` : undefined}>
           <TagDots tags={visibleTags} />
           <TagText tags={visibleTags} />
@@ -220,41 +276,41 @@ function EpicStepCard({
               </dd>
             </div>
           )}
-          {npcMobLabel && (
+          {npcLinks.length > 0 && (
             <div className="epic-step-meta-pair">
               <dt>NPC / Mob</dt>
               <dd>
-                <Link className="epic-link" href={`/mob/${mobToSlug(npcMobLabel)}`} onClick={(event) => event.stopPropagation()}>
-                  {npcMobLabel}
-                </Link>
+                <ul className="epic-inline-link-list">
+                  {npcLinks.map((npc) => (
+                    <li key={`${npc.name}-${npc.url ?? "local"}`}>
+                      <EpicExternalOrInternalLink href={npc.url} internalHref={`/mob/${mobToSlug(npc.name)}`}>
+                        {npc.name}
+                      </EpicExternalOrInternalLink>
+                    </li>
+                  ))}
+                </ul>
               </dd>
             </div>
           )}
-          {items.length > 0 && (
+          {requiredItems.length > 0 && (
             <div className="epic-step-meta-pair epic-step-items-pair">
               <dt>Required items</dt>
               <dd>
-                <ul className="epic-items-list">
-                  {items.map((itemName) => {
-                    const details = itemDetailsMap[itemName];
-                    return (
-                      <li key={itemName}>
-                        <button
-                          className="epic-item-link"
-                          onClick={(event) => {
-                            event.stopPropagation();
-                            onSelectLoot(itemName, makeEpicBucket(itemName, classEpic, step));
-                          }}
-                          type="button"
-                          {...previewProps(itemName, details)}
-                        >
-                          <ItemIcon details={details} />
-                          <span>{itemName}</span>
-                        </button>
-                      </li>
-                    );
-                  })}
-                </ul>
+                <EpicItemLinks
+                  className="epic-item-link"
+                  items={requiredItems}
+                />
+              </dd>
+            </div>
+          )}
+          {dropItems.length > 0 && (
+            <div className="epic-step-meta-pair epic-step-drops-pair">
+              <dt>Drops Item</dt>
+              <dd>
+                <EpicItemLinks
+                  className="epic-item-link epic-drop-link"
+                  items={dropItems}
+                />
               </dd>
             </div>
           )}
@@ -274,13 +330,7 @@ function EpicStepCard({
 // Class section: progress bar + step list
 // ---------------------------------------------------------------------------
 
-function ClassSection({
-  classEpic,
-  onSelectLoot,
-}: {
-  classEpic: NormalizedClassEpic;
-  onSelectLoot: (itemName: string, bucket: Bucket) => void;
-}) {
+function ClassSection({ classEpic }: { classEpic: NormalizedClassEpic }) {
   const { getProgress, clearProgress } = useEpicProgress();
   const { className, weaponName, steps } = classEpic;
   const progress = getProgress(className);
@@ -328,11 +378,9 @@ function ClassSection({
           <EpicStepCard
             key={`${className}-row${step.sourceRow}`}
             epicClassName={className}
-            classEpic={classEpic}
             step={step}
             stepIndex={idx}
             globalIndex={idx}
-            onSelectLoot={onSelectLoot}
           />
         ))}
       </ol>
@@ -355,30 +403,6 @@ function EpicTrackerInner({ classes, usingFallback }: EpicTrackerClientProps) {
 
   const [selectedClass, setSelectedClass] = useState<EpicClassName>(firstAvailable);
   const activeClassEpic = classMap.get(selectedClass);
-
-  const [drawerItem, setDrawerItem] = useState<{ item: string; bucket: Bucket } | null>(null);
-
-  const modifierHeldRef = useRef(false);
-  useEffect(() => {
-    function handleMouseDown(event: MouseEvent) {
-      modifierHeldRef.current = event.metaKey || event.ctrlKey;
-    }
-    document.addEventListener("mousedown", handleMouseDown, { capture: true });
-    return () => document.removeEventListener("mousedown", handleMouseDown, { capture: true });
-  }, []);
-
-  function handleSelectLoot(itemName: string, bucket: Bucket) {
-    if (modifierHeldRef.current) {
-      window.open(`/item/${itemToSlug(itemName)}`, "_blank", "noopener");
-      modifierHeldRef.current = false;
-      return;
-    }
-    setDrawerItem({ item: itemName, bucket });
-  }
-
-  function handleCloseDrawer() {
-    setDrawerItem(null);
-  }
 
   return (
     <>
@@ -418,24 +442,13 @@ function EpicTrackerInner({ classes, usingFallback }: EpicTrackerClientProps) {
 
       {/* Per-class content */}
       {activeClassEpic && activeClassEpic.steps.length > 0 ? (
-        <ClassSection classEpic={activeClassEpic} onSelectLoot={handleSelectLoot} />
+        <ClassSection classEpic={activeClassEpic} />
       ) : (
         <p className="epic-pending-state">
           {selectedClass} epic quest data is being prepared for launch — check back closer to May 27, 2026.
         </p>
       )}
 
-      {drawerItem !== null ? (
-        <ItemDrawer
-          bucket={drawerItem.bucket}
-          contentType="Epic Quest"
-          details={itemDetailsMap[drawerItem.item]}
-          expansion={drawerItem.bucket.expansion}
-          itemName={drawerItem.item}
-          onClose={handleCloseDrawer}
-          onSelectZone={() => {}}
-        />
-      ) : null}
     </>
   );
 }

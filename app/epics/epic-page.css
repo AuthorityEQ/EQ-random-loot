@@ -209,6 +209,10 @@
   background: #60a5fa;
 }
 
+.epic-tag-dot.is-skippable {
+  background: #c4a15a;
+}
+
 .epic-tag-text {
   color: var(--text-muted);
   font-size: 0.72rem;
@@ -283,8 +287,35 @@
 }
 
 .epic-step-items-pair,
+.epic-step-drops-pair,
 .epic-step-notes-pair {
   grid-column: 1 / -1;
+}
+
+.epic-skippable-badge {
+  background: color-mix(in srgb, var(--accent) 18%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent) 52%, var(--border));
+  border-radius: 999px;
+  color: color-mix(in srgb, var(--accent) 78%, var(--text));
+  flex: 0 0 auto;
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  padding: 3px 8px;
+  text-transform: uppercase;
+}
+
+.epic-inline-link-list,
+.epic-items-list {
+  display: grid;
+  gap: 6px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.epic-inline-link-list {
+  gap: 3px;
 }
 
 .epic-step-header .epic-checkbox {
@@ -293,12 +324,32 @@
 }
 
 .epic-step-card .epic-item-link {
+  align-items: center;
   background: transparent;
   border: 0;
+  color: var(--accent);
   cursor: pointer;
+  display: inline-flex;
+  gap: 7px;
   font-weight: 800;
   padding: 0;
   text-align: left;
+  text-decoration: none;
+}
+
+.epic-step-card .epic-item-link:hover,
+.epic-step-card .epic-item-link:focus {
+  color: var(--accent);
+  outline: none;
+  text-decoration: underline;
+}
+
+.epic-step-card .epic-drop-link {
+  color: color-mix(in srgb, #f0b36b 82%, var(--text));
+}
+
+.epic-step-drops-pair dt {
+  color: color-mix(in srgb, #f0b36b 72%, var(--text-muted));
 }
 
 /* ------------------------------------------------------------------

@@ -12,13 +12,21 @@
           "_source_row": 7,
           "step": "1",
           "phase": "",
-          "action": "Talk to Konia Swiftfoot at guard tower",
+          "action": "Talk to Konia Swiftfoot at the guard tower",
           "npc_mob": "Konia Swiftfoot",
           "zone": "West Karana",
-          "items": "Receive: Torch of Misty (loc -516, -2434)",
-          "notes": "",
+          "items": "",
+          "notes": "Very start of quest.",
           "tags": [
             "solo"
+          ],
+          "required_items": [],
+          "drop_items": [],
+          "npc_links": [
+            {
+              "name": "Konia Swiftfoot",
+              "url": "https://everquest.allakhazam.com/db/npc.html?id=7694"
+            }
           ]
         },
         {
@@ -28,10 +36,23 @@
           "action": "Give Torch of Misty to Fajio Knejo",
           "npc_mob": "Fajio Knejo",
           "zone": "Misty Thicket",
-          "items": "Receive: Torch of Ro (loc -120, -54)",
+          "items": "",
           "notes": "",
           "tags": [
             "solo"
+          ],
+          "required_items": [
+            {
+              "name": "Torch of Misty",
+              "url": "https://everquest.allakhazam.com/db/item.html?item=18471"
+            }
+          ],
+          "drop_items": [],
+          "npc_links": [
+            {
+              "name": "Fajio Knejo",
+              "url": "https://everquest.allakhazam.com/db/npc.html?id=6648"
+            }
           ]
         },
         {
@@ -41,23 +62,49 @@
           "action": "Give Torch of Ro to Andad Filla",
           "npc_mob": "Andad Filla",
           "zone": "South Ro",
-          "items": "Receive: Torch of Rathe (loc -3032, 1216)",
+          "items": "",
           "notes": "",
           "tags": [
             "solo"
+          ],
+          "required_items": [
+            {
+              "name": "Torch of Ro",
+              "url": "https://everquest.allakhazam.com/db/item.html?item=18473"
+            }
+          ],
+          "drop_items": [],
+          "npc_links": [
+            {
+              "name": "Andad Filla",
+              "url": "https://everquest.allakhazam.com/db/npc.html?id=5150"
+            }
           ]
         },
         {
           "_source_row": 10,
           "step": "4",
           "phase": "",
-          "action": "Give Torch of Rathe to Misty Tekchita",
-          "npc_mob": "Misty Tekchita",
+          "action": "Give Torch of Rathe to Misty Tekcihta",
+          "npc_mob": "Misty Tekcihta",
           "zone": "Lake Rathetear",
-          "items": "Receive: Proof of Speed (loc 2419, 2583)",
+          "items": "",
           "notes": "",
           "tags": [
             "solo"
+          ],
+          "required_items": [
+            {
+              "name": "Torch of Rathe",
+              "url": "https://everquest.allakhazam.com/db/item.html?item=18472"
+            }
+          ],
+          "drop_items": [],
+          "npc_links": [
+            {
+              "name": "Misty Tekcihta",
+              "url": "https://everquest.allakhazam.com/db/npc.html?id=7696"
+            }
           ]
         },
         {
@@ -67,421 +114,780 @@
           "action": "Give Proof of Speed to Konia Swiftfoot",
           "npc_mob": "Konia Swiftfoot",
           "zone": "West Karana",
-          "items": "Receive: PAGE 24 TOP",
+          "items": "",
           "notes": "",
           "tags": [
             "solo"
+          ],
+          "required_items": [
+            {
+              "name": "Proof of Speed",
+              "url": "https://everquest.allakhazam.com/db/item.html?item=18474"
+            }
+          ],
+          "drop_items": [],
+          "npc_links": [
+            {
+              "name": "Konia Swiftfoot",
+              "url": "https://everquest.allakhazam.com/db/npc.html?id=7694"
+            }
           ]
         },
         {
           "_source_row": 12,
-          "step": "1",
+          "step": "6",
           "phase": "",
           "action": "Talk to Serra in Unrest",
           "npc_mob": "Serra",
           "zone": "Estate of Unrest",
-          "items": "Receive: Ripped Qeynos Bards Guild Flyer (loc 679, -280)",
+          "items": "",
           "notes": "",
           "tags": [
-            "solo"
+            "solo",
+            "skippable"
+          ],
+          "required_items": [],
+          "drop_items": [],
+          "npc_links": [
+            {
+              "name": "Serra",
+              "url": "https://everquest.allakhazam.com/db/npc.html?id=5219"
+            }
           ]
         },
         {
           "_source_row": 13,
-          "step": "2",
+          "step": "7",
           "phase": "",
-          "action": "Talk to Belious Naliedin in Bards Guild",
+          "action": "Talk to Belious Naliedin in the Bards Guild",
           "npc_mob": "Belious Naliedin",
           "zone": "Qeynos (S)",
-          "items": "(dialogue only)",
+          "items": "",
           "notes": "",
           "tags": [
-            "solo"
+            "solo",
+            "skippable"
+          ],
+          "required_items": [],
+          "drop_items": [],
+          "npc_links": [
+            {
+              "name": "Belious Naliedin",
+              "url": "https://everquest.allakhazam.com/db/npc.html?id=2881"
+            }
           ]
         },
         {
           "_source_row": 14,
-          "step": "3",
+          "step": "8",
           "phase": "",
-          "action": "Talk to Braenar Swiftsong",
-          "npc_mob": "Braenar Swiftsong",
+          "action": "Talk to Baenar Swiftsong",
+          "npc_mob": "Baenar Swiftsong",
           "zone": "South Karana",
-          "items": "Receive: Solusek Mining Co. Invoice (loc -21, 88)",
+          "items": "",
           "notes": "",
           "tags": [
             "solo"
+          ],
+          "required_items": [],
+          "drop_items": [],
+          "npc_links": [
+            {
+              "name": "Baenar Swiftsong",
+              "url": "https://everquest.allakhazam.com/db/npc.html?id=7697"
+            }
           ]
         },
         {
           "_source_row": 15,
-          "step": "4",
+          "step": "9",
           "phase": "",
-          "action": "Give invoice to Marfen Birkdirple",
-          "npc_mob": "Marfen Birkdirple",
-          "zone": "South Karana",
-          "items": "Receive: Mechanical Doll (loc -304, -1083)",
-          "notes": "",
+          "action": "Give Solusek Mining Company Invoice to Marfen Binkdirple",
+          "npc_mob": "Marfen Binkdirple",
+          "zone": "Solusek's Eye / Solusek A",
+          "items": "",
+          "notes": "This item needs a new item icon image if missing or wrong.",
           "tags": [
             "solo"
+          ],
+          "required_items": [
+            {
+              "name": "Solusek Mining Company Invoice",
+              "url": "https://everquest.allakhazam.com/db/item.html?item=18476"
+            }
+          ],
+          "drop_items": [],
+          "npc_links": [
+            {
+              "name": "Marfen Binkdirple",
+              "url": "https://everquest.allakhazam.com/db/npc.html?id=3256"
+            }
           ]
         },
         {
           "_source_row": 16,
-          "step": "5",
+          "step": "10",
           "phase": "",
-          "action": "Give doll to Serra",
+          "action": "Give Mechanical Doll to Serra",
           "npc_mob": "Serra",
           "zone": "Estate of Unrest",
-          "items": "Receive: Note to Braenar",
+          "items": "",
           "notes": "",
           "tags": [
             "solo"
-          ]
+          ],
+          "required_items": [
+            {
+              "name": "Mechanical Doll",
+              "url": "https://everquest.allakhazam.com/db/item.html?item=18427"
+            }
+          ],
+          "drop_items": [],
+          "npc_links": []
         },
         {
           "_source_row": 17,
-          "step": "6",
+          "step": "11",
           "phase": "",
-          "action": "Give note to Braenar Swiftsong",
-          "npc_mob": "Braenar Swiftsong",
+          "action": "Give Note for Baener to Baenar Swiftsong",
+          "npc_mob": "Baenar Swiftsong",
           "zone": "South Karana",
-          "items": "Receive: Note to Maligar",
-          "notes": "",
+          "items": "",
+          "notes": "This item needs an image/icon if missing.",
           "tags": [
             "solo"
-          ]
+          ],
+          "required_items": [
+            {
+              "name": "Note for Baener",
+              "url": "https://everquest.allakhazam.com/db/item.html?item=18428"
+            }
+          ],
+          "drop_items": [],
+          "npc_links": []
         },
         {
           "_source_row": 18,
-          "step": "7",
+          "step": "12",
           "phase": "",
-          "action": "Give note to Maligar (charm him first, 30-min spawn, loc 1179, -10878)",
+          "action": "Give Note to Maligar to Maligar",
           "npc_mob": "Maligar",
           "zone": "West Karana",
-          "items": "(triggers doppelganger spawn)",
+          "items": "",
           "notes": "",
           "tags": [
             "solo"
+          ],
+          "required_items": [
+            {
+              "name": "Note to Maligar",
+              "url": "https://everquest.allakhazam.com/db/item.html?item=18429"
+            }
+          ],
+          "drop_items": [],
+          "npc_links": [
+            {
+              "name": "Maligar",
+              "url": "https://everquest.allakhazam.com/db/npc.html?id=5159"
+            }
           ]
         },
         {
           "_source_row": 19,
-          "step": "8",
+          "step": "13",
           "phase": "",
-          "action": "Kill Maligar's Enraged Doppelganger",
-          "npc_mob": "Maligar's Doppelganger",
+          "action": "Kill Maligar's Enraged Doppleganger",
+          "npc_mob": "Maligar's Enraged Doppleganger",
           "zone": "West Karana",
-          "items": "Loot: Maligar's Head",
+          "items": "",
           "notes": "",
           "tags": [
             "duo"
+          ],
+          "required_items": [],
+          "drop_items": [],
+          "npc_links": [
+            {
+              "name": "Maligar's Enraged Doppleganger",
+              "url": "https://everquest.allakhazam.com/db/npc.html?id=7695"
+            }
           ]
         },
         {
           "_source_row": 20,
-          "step": "9",
+          "step": "14",
           "phase": "",
-          "action": "Give head to Braenar Swiftsong",
-          "npc_mob": "Braenar Swiftsong",
+          "action": "Give Maligar's Head to Baenar Swiftsong",
+          "npc_mob": "Baenar Swiftsong",
           "zone": "South Karana",
-          "items": "Receive: Mahlin's Mystical Bongos",
+          "items": "",
           "notes": "",
           "tags": [
             "solo"
-          ]
+          ],
+          "required_items": [
+            {
+              "name": "Maligar's Head",
+              "url": "https://everquest.allakhazam.com/db/item.html?item=18430"
+            }
+          ],
+          "drop_items": [],
+          "npc_links": []
         },
         {
           "_source_row": 21,
-          "step": "10",
+          "step": "15",
           "phase": "",
-          "action": "Give bongos to Konia Swiftfoot",
+          "action": "Give Mahlin's Mystical Bongos to Konia Swiftfoot",
           "npc_mob": "Konia Swiftfoot",
           "zone": "West Karana",
-          "items": "Receive: PAGE 24 BOTTOM",
+          "items": "",
           "notes": "",
           "tags": [
             "solo"
-          ]
+          ],
+          "required_items": [
+            {
+              "name": "Mahlin's Mystical Bongos"
+            }
+          ],
+          "drop_items": [],
+          "npc_links": []
         },
         {
           "_source_row": 22,
-          "step": "1",
+          "step": "16",
           "phase": "",
           "action": "Talk to Kelkim Menkia",
           "npc_mob": "Kelkim Menkia",
           "zone": "South Karana",
-          "items": "(needs 3 types of guts) (loc -236, -3662)",
+          "items": "",
           "notes": "",
           "tags": [
-            "solo"
-          ]
+            "solo",
+            "skippable"
+          ],
+          "required_items": [],
+          "drop_items": [],
+          "npc_links": []
         },
         {
           "_source_row": 23,
-          "step": "2",
+          "step": "17",
           "phase": "",
           "action": "Kill Blackwing",
           "npc_mob": "Blackwing",
           "zone": "Rathe Mountains",
-          "items": "Loot: Huge Onyx Drake Guts",
+          "items": "",
           "notes": "",
           "tags": [
             "solo",
             "rare"
+          ],
+          "required_items": [],
+          "drop_items": [
+            {
+              "name": "Onyx Drake Gut",
+              "url": "https://everquest.allakhazam.com/db/item.html?item=18419"
+            }
+          ],
+          "npc_links": [
+            {
+              "name": "Blackwing",
+              "url": "https://everquest.allakhazam.com/db/npc.html?id=7698"
+            }
           ]
         },
         {
           "_source_row": 24,
-          "step": "3",
+          "step": "18",
           "phase": "",
-          "action": "Kill Nezekezena or Phurzicon",
-          "npc_mob": "Nezekezena/Phurzicon",
+          "action": "Kill Phurzikon or Nezekezena",
+          "npc_mob": "Phurzikon / Nezekezena",
           "zone": "Burning Woods",
-          "items": "Loot: Red Wurm Guts",
+          "items": "",
           "notes": "",
           "tags": [
             "duo",
             "rare"
+          ],
+          "required_items": [],
+          "drop_items": [
+            {
+              "name": "Red Wurm Gut",
+              "url": "https://everquest.allakhazam.com/db/item.html?item=22031"
+            }
+          ],
+          "npc_links": [
+            {
+              "name": "Phurzikon",
+              "url": "https://everquest.allakhazam.com/db/npc.html?id=6706"
+            },
+            {
+              "name": "Nezekezena",
+              "url": "https://everquest.allakhazam.com/db/npc.html?id=6357"
+            }
           ]
         },
         {
           "_source_row": 25,
-          "step": "4",
+          "step": "19",
           "phase": "",
           "action": "Kill Eldrig the Old",
           "npc_mob": "Eldrig the Old",
           "zone": "Skyfire Mountains",
-          "items": "Loot: Chromodrac Guts",
+          "items": "",
           "notes": "",
           "tags": [
             "duo",
             "rare"
+          ],
+          "required_items": [],
+          "drop_items": [
+            {
+              "name": "Chromodrac Gut",
+              "url": "https://everquest.allakhazam.com/db/item.html?item=22032"
+            }
+          ],
+          "npc_links": [
+            {
+              "name": "Eldrig the Old",
+              "url": "https://everquest.allakhazam.com/db/npc.html?id=5171"
+            }
           ]
         },
         {
           "_source_row": 26,
-          "step": "5",
+          "step": "20",
           "phase": "",
-          "action": "Give all 3 guts to Kelkim Menkia",
+          "action": "Give the three guts to Kelkim Menkia",
           "npc_mob": "Kelkim Menkia",
           "zone": "South Karana",
-          "items": "Receive: PAGE 25",
+          "items": "",
           "notes": "",
           "tags": [
             "solo"
-          ]
+          ],
+          "required_items": [
+            {
+              "name": "Onyx Drake Gut"
+            },
+            {
+              "name": "Red Wurm Gut"
+            },
+            {
+              "name": "Chromodrac Gut"
+            }
+          ],
+          "drop_items": [],
+          "npc_links": []
         },
         {
           "_source_row": 27,
-          "step": "1",
+          "step": "21",
           "phase": "",
-          "action": "Talk to Vedico Windwhisper in shop",
-          "npc_mob": "Vedico Windwhisper",
+          "action": "Talk to Vedico Windwisper",
+          "npc_mob": "Vedico Windwisper",
           "zone": "Butcherblock Mtns",
-          "items": "(dialogue) (loc 1010, 3010)",
+          "items": "",
           "notes": "",
           "tags": [
-            "solo"
+            "solo",
+            "skippable"
+          ],
+          "required_items": [],
+          "drop_items": [],
+          "npc_links": [
+            {
+              "name": "Vedico Windwisper",
+              "url": "https://everquest.allakhazam.com/db/npc.html?id=7699"
+            }
           ]
         },
         {
           "_source_row": 28,
-          "step": "2",
+          "step": "22",
           "phase": "",
-          "action": "Kill Quag Maelstrom on Seafury Cyclops island",
+          "action": "Kill Quag Maelstrom",
           "npc_mob": "Quag Maelstrom",
           "zone": "Ocean of Tears",
-          "items": "Loot: Alluring Horn",
+          "items": "",
           "notes": "",
           "tags": [
             "duo"
+          ],
+          "required_items": [],
+          "drop_items": [
+            {
+              "name": "Alluring Horn",
+              "url": "https://everquest.allakhazam.com/db/item.html?item=2448"
+            }
+          ],
+          "npc_links": [
+            {
+              "name": "Quag Maelstrom",
+              "url": "https://everquest.allakhazam.com/db/npc.html?id=5270"
+            }
           ]
         },
         {
           "_source_row": 29,
-          "step": "3",
+          "step": "23",
           "phase": "",
-          "action": "Give horn to Vedico",
-          "npc_mob": "Vedico Windwhisper",
+          "action": "Give Alluring Horn to Vedico Windwisper",
+          "npc_mob": "Vedico Windwisper",
           "zone": "Butcherblock Mtns",
-          "items": "Receive: Note to Forpar Fizfla",
-          "notes": "",
-          "tags": [
-            "solo"
-          ]
-        },
-        {
-          "_source_row": 30,
-          "step": "4",
-          "phase": "",
-          "action": "Give note to Forpar Fizfla",
-          "npc_mob": "Forpar Fizfla",
-          "zone": "Steamfont Mountains Receive: Forpar's Note to Himself",
           "items": "",
           "notes": "",
           "tags": [
             "solo"
+          ],
+          "required_items": [
+            {
+              "name": "Alluring Horn"
+            }
+          ],
+          "drop_items": [],
+          "npc_links": []
+        },
+        {
+          "_source_row": 30,
+          "step": "24",
+          "phase": "",
+          "action": "Give Note to Forpar Fizfla to Forpar Fizfla",
+          "npc_mob": "Forpar Fizfla",
+          "zone": "Steamfont Mountains",
+          "items": "",
+          "notes": "",
+          "tags": [
+            "solo"
+          ],
+          "required_items": [
+            {
+              "name": "Note to Forpar Fizfla",
+              "url": "https://everquest.allakhazam.com/db/item.html?item=18619"
+            }
+          ],
+          "drop_items": [],
+          "npc_links": [
+            {
+              "name": "Forpar Fizfla",
+              "url": "https://everquest.allakhazam.com/db/npc.html?id=5167"
+            }
           ]
         },
         {
           "_source_row": 31,
-          "step": "5",
+          "step": "25",
           "phase": "",
           "action": "Kill Phinigel Autropos",
           "npc_mob": "Phinigel Autropos",
           "zone": "Kedge Keep",
-          "items": "Loot: Kedge Backbone",
+          "items": "",
           "notes": "",
           "tags": [
             "group"
+          ],
+          "required_items": [],
+          "drop_items": [
+            {
+              "name": "Kedge Backbone",
+              "url": "https://everquest.allakhazam.com/db/item.html?item=17190"
+            }
+          ],
+          "npc_links": [
+            {
+              "name": "Phinigel Autropos",
+              "url": "https://everquest.allakhazam.com/db/npc.html?id=1852"
+            }
           ]
         },
         {
           "_source_row": 32,
-          "step": "6",
+          "step": "26",
           "phase": "",
-          "action": "Kill Amygdalan Warrior",
-          "npc_mob": "Amygdalan Warrior",
+          "action": "Kill Amygdalan knight or Amygdalan warrior",
+          "npc_mob": "Amygdalan knight / Amygdalan warrior",
           "zone": "Plane of Fear",
-          "items": "Loot: Amygdalan Tendril",
+          "items": "",
           "notes": "",
           "tags": [
             "group",
             "raid"
+          ],
+          "required_items": [],
+          "drop_items": [
+            {
+              "name": "Amygdalan Tendril",
+              "url": "https://everquest.allakhazam.com/db/item.html?item=308"
+            }
+          ],
+          "npc_links": [
+            {
+              "name": "Amygdalan knight",
+              "url": "https://everquest.allakhazam.com/db/npc.html?id=727"
+            },
+            {
+              "name": "Amygdalan warrior",
+              "url": "https://everquest.allakhazam.com/db/npc.html?id=728"
+            }
           ]
         },
         {
           "_source_row": 33,
-          "step": "7",
+          "step": "27",
           "phase": "",
           "action": "Kill Drolvarg Warlord",
           "npc_mob": "Drolvarg Warlord",
           "zone": "Karnor's Castle",
-          "items": "Loot: Petrified Werewolf Skull",
+          "items": "",
           "notes": "",
           "tags": [
             "duo",
             "group"
+          ],
+          "required_items": [],
+          "drop_items": [
+            {
+              "name": "Petrified Werewolf Skull",
+              "url": "https://everquest.allakhazam.com/db/item.html?item=11934"
+            }
+          ],
+          "npc_links": [
+            {
+              "name": "Drolvarg Warlord",
+              "url": "https://everquest.allakhazam.com/db/npc.html?id=5243"
+            }
           ]
         },
         {
           "_source_row": 34,
-          "step": "8",
+          "step": "28",
           "phase": "",
-          "action": "Give note + backbone + tendril + skull to Forpar Forpar Fizfla",
-          "npc_mob": "Steamfont Mountains Receive: MYSTICAL LUTE HEAD",
-          "zone": "",
+          "action": "Give Forpar's Note to Himself, backbone, tendril, and skull to Forpar Fizfla",
+          "npc_mob": "Forpar Fizfla",
+          "zone": "Steamfont Mountains",
           "items": "",
           "notes": "",
           "tags": [
             "solo"
-          ]
+          ],
+          "required_items": [
+            {
+              "name": "Forpar's Note to Himself"
+            },
+            {
+              "name": "Kedge Backbone"
+            },
+            {
+              "name": "Amygdalan Tendril"
+            },
+            {
+              "name": "Petrified Werewolf Skull"
+            }
+          ],
+          "drop_items": [],
+          "npc_links": []
         },
         {
           "_source_row": 35,
-          "step": "1",
+          "step": "29",
           "phase": "",
-          "action": "Kill a red dragon",
-          "npc_mob": "Nagafen/Talendor/etc.",
+          "action": "Kill Lord Nagafen or Talendor",
+          "npc_mob": "Lord Nagafen / Talendor",
           "zone": "Various",
-          "items": "Loot: Red Dragon Scale",
+          "items": "",
           "notes": "",
           "tags": [
             "group",
             "raid"
+          ],
+          "required_items": [],
+          "drop_items": [
+            {
+              "name": "Red Dragon Scales",
+              "url": "https://everquest.allakhazam.com/db/item.html?item=3226"
+            }
+          ],
+          "npc_links": [
+            {
+              "name": "Lord Nagafen",
+              "url": "https://everquest.allakhazam.com/db/npc.html?id=3283"
+            },
+            {
+              "name": "Talendor",
+              "url": "https://everquest.allakhazam.com/db/npc.html?id=5072"
+            }
           ]
         },
         {
           "_source_row": 36,
-          "step": "2",
+          "step": "30",
           "phase": "",
-          "action": "Kill a white dragon",
-          "npc_mob": "Vox/Gorenaire",
+          "action": "Kill Gorenaire or Lady Vox",
+          "npc_mob": "Gorenaire / Lady Vox",
           "zone": "Various",
-          "items": "Loot: White Dragon Scale",
+          "items": "",
           "notes": "",
           "tags": [
             "group",
             "raid"
+          ],
+          "required_items": [],
+          "drop_items": [
+            {
+              "name": "White Dragon Scales",
+              "url": "https://everquest.allakhazam.com/db/item.html?item=3233"
+            }
+          ],
+          "npc_links": [
+            {
+              "name": "Gorenaire",
+              "url": "https://everquest.allakhazam.com/db/npc.html?id=5034"
+            },
+            {
+              "name": "Lady Vox",
+              "url": "https://everquest.allakhazam.com/db/npc.html?id=2620"
+            }
           ]
         },
         {
           "_source_row": 37,
-          "step": "3",
+          "step": "31",
           "phase": "",
-          "action": "Obtain a Metal Bit (smithed item)",
+          "action": "Obtain smithing supplies for Metal Bits",
           "npc_mob": "(crafted)",
           "zone": "Any forge",
-          "items": "Need: Metal Bit",
-          "notes": "",
-          "tags": [
-            "solo"
-          ]
-        },
-        {
-          "_source_row": 38,
-          "step": "4",
-          "phase": "",
-          "action": "Give metal bit + red scale + white scale to Forpar",
-          "npc_mob": "Forpar Fizfla",
-          "zone": "Steamfont Mountains Receive: MYSTICAL LUTE BODY",
           "items": "",
           "notes": "",
           "tags": [
             "solo"
-          ]
+          ],
+          "required_items": [
+            {
+              "name": "1 Water Flask",
+              "url": "https://everquest.allakhazam.com/db/item.html?item=7773"
+            },
+            {
+              "name": "2 Small Piece of Ore",
+              "url": "https://everquest.allakhazam.com/db/item.html?item=14294"
+            }
+          ],
+          "drop_items": [],
+          "npc_links": []
         },
         {
-          "_source_row": 39,
-          "step": "1",
+          "_source_row": 38,
+          "step": "32",
           "phase": "",
-          "action": "Give Mystical Lute Body to An Undead Bard",
-          "npc_mob": "An Undead Bard",
-          "zone": "Dreadlands",
-          "items": "(spawns Trakanon copy)",
+          "action": "Give Metal Bits and dragon scales to Forpar Fizfla",
+          "npc_mob": "Forpar Fizfla",
+          "zone": "Steamfont Mountains",
+          "items": "",
           "notes": "",
           "tags": [
             "solo"
-          ]
+          ],
+          "required_items": [
+            {
+              "name": "Metal Bits"
+            },
+            {
+              "name": "White Dragon Scales"
+            },
+            {
+              "name": "Red Dragon Scales"
+            }
+          ],
+          "drop_items": [],
+          "npc_links": []
         },
         {
           "_source_row": 40,
-          "step": "2",
+          "step": "33",
           "phase": "",
           "action": "Kill Trakanon",
-          "npc_mob": "Trakanon (copy)",
+          "npc_mob": "Trakanon",
           "zone": "Old Sebilis",
-          "items": "Loot: Undead Dragongut Strings",
+          "items": "",
           "notes": "",
           "tags": [
             "raid"
+          ],
+          "required_items": [],
+          "drop_items": [
+            {
+              "name": "Undead Dragongut Strings",
+              "url": "https://everquest.allakhazam.com/db/item.html?item=23766"
+            }
+          ],
+          "npc_links": [
+            {
+              "name": "Trakanon",
+              "url": "https://everquest.allakhazam.com/db/npc.html?id=4503"
+            }
           ]
         },
         {
           "_source_row": 41,
-          "step": "3",
+          "step": "34",
           "phase": "",
-          "action": "Give Lute Head + Lute Body + Strings to Forpar",
+          "action": "Give the lute body, lute head, and strings to Forpar Fizfla",
           "npc_mob": "Forpar Fizfla",
-          "zone": "Steamfont Mountains Receive: MYSTICAL LUTE",
+          "zone": "Steamfont Mountains",
           "items": "",
           "notes": "",
           "tags": [
             "solo"
-          ]
+          ],
+          "required_items": [
+            {
+              "name": "Mystical Lute Body",
+              "url": "https://everquest.allakhazam.com/db/item.html?item=10030"
+            },
+            {
+              "name": "Mystical Lute Head",
+              "url": "https://everquest.allakhazam.com/db/item.html?item=17186"
+            },
+            {
+              "name": "Undead Dragongut Strings"
+            }
+          ],
+          "drop_items": [],
+          "npc_links": []
         },
         {
           "_source_row": 43,
-          "step": "FIN",
+          "step": "35",
           "phase": "FINAL TURN-IN",
-          "action": "Give Page 24 Top + Page 24 Bottom + Page 25 + Mystical Lute to Baldric Slezaf => Receive: SINGING SHORT SWORD",
-          "npc_mob": "",
+          "action": "Give the pages and Mystical Lute to Baldric Slezaf to receive the Singing Short Sword",
+          "npc_mob": "Baldric Slezaf",
           "zone": "",
           "items": "",
           "notes": "",
           "tags": [
             "solo"
-          ]
+          ],
+          "required_items": [
+            {
+              "name": "Maestro's Symphony Page 24 Top",
+              "url": "https://everquest.allakhazam.com/db/item.html?item=18475"
+            },
+            {
+              "name": "Maestro's Symphony Page 24 Bottom",
+              "url": "https://everquest.allakhazam.com/db/item.html?item=18432"
+            },
+            {
+              "name": "Maestro's Symphony Page 25",
+              "url": "https://everquest.allakhazam.com/db/item.html?item=38159"
+            },
+            {
+              "name": "Mystical Lute",
+              "url": "https://everquest.allakhazam.com/db/item.html?item=21430"
+            }
+          ],
+          "drop_items": [],
+          "npc_links": []
         }
       ]
     },

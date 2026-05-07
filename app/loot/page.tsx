@@ -409,14 +409,11 @@ function Home() {
 
   function selectSearchResult(result: UniversalSearchResult) {
     if (result.type === "item") {
-      const firstBucket = result.buckets[0];
       setUrlState({ zone: "" });
       setFocusedMob(null);
       setSelectedItemSearch({ itemName: result.itemName, buckets: result.buckets });
+      setSelectedLoot(null);
       setUrlState({ q: result.itemName });
-      if (firstBucket) {
-        setSelectedLoot({ itemName: result.itemName, bucket: firstBucket });
-      }
       return;
     }
 

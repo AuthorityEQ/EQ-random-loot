@@ -27,7 +27,7 @@ type Zone = {
 type BonusStatus = "Unreported" | "Single Report" | "Likely" | "Confirmed" | "Disputed";
 type FilterBonusType = Exclude<BonusType, "None">;
 type BonusFilter = "All" | FilterBonusType;
-type StatusFilter = "All" | "Reported" | "Unreported";
+type StatusFilter = "All" | "Reported" | "Disputed" | "Unreported";
 type ZoneWithStatus = Zone & { status: BonusStatus; totalReports: number };
 type ZoneGroup = {
   key: string;
@@ -83,8 +83,19 @@ const reportedBonusGroupOrder: BonusType[] = [
   "Faction",
   "None",
 ];
-const submissionBonusTypes: FilterBonusType[] = [...filterBonusTypes].sort((bonusA, bonusB) => bonusA.localeCompare(bonusB));
-const managementBonusTypes: BonusType[] = [...reportBonusTypes].sort((bonusA, bonusB) => bonusA.localeCompare(bonusB));
+const orderedBonusDropdownOptions: BonusType[] = [
+  "AA",
+  "Coin",
+  "Experience",
+  "Faction",
+  "Loot",
+  "Rare",
+  "Respawn",
+  "Skill",
+  "None",
+];
+const submissionBonusTypes: FilterBonusType[] = orderedBonusDropdownOptions.filter((bonus): bonus is FilterBonusType => bonus !== "None");
+const managementBonusTypes: BonusType[] = orderedBonusDropdownOptions;
 const activeReportsPreviewReports: Record<string, BonusType> = {
   "Burning Woods": "Coin",
   "Cobalt Scar": "Experience",
@@ -96,6 +107,7 @@ const activeReportsPreviewReports: Record<string, BonusType> = {
 const statusFilters: StatusFilter[] = [
   "All",
   "Reported",
+  "Disputed",
   "Unreported",
 ];
 
@@ -293,8 +305,22 @@ function getBonusSortValue(bonus: BonusType) {
 
 function getLeadingReport(zone: Zone) {
   return zone.reports
+    .filter((report) => report.count > 0)
     .slice()
     .sort((a, b) => b.count - a.count || a.bonus.localeCompare(b.bonus))[0];
+}
+
+function getTiedLeadingReports(zone: Zone) {
+  const reports = zone.reports.filter((report) => report.count > 0);
+  const topCount = Math.max(0, ...reports.map((report) => report.count));
+  if (topCount === 0) return [];
+  return reports
+    .filter((report) => report.count === topCount)
+    .sort((reportA, reportB) => reportA.bonus.localeCompare(reportB.bonus));
+}
+
+function isZoneDisputed(zone: Zone) {
+  return getTiedLeadingReports(zone).length > 1;
 }
 
 function getZoneStatus(zone: Zone): BonusStatus {
@@ -302,7 +328,7 @@ function getZoneStatus(zone: Zone): BonusStatus {
   const totalReports = reports.reduce((sum, report) => sum + report.count, 0);
 
   if (totalReports === 0) return "Unreported";
-  if (reports.length > 1) return "Disputed";
+  if (isZoneDisputed(zone)) return "Disputed";
   if (totalReports === 1) return "Single Report";
   if (totalReports === 2) return "Likely";
   return "Confirmed";
@@ -336,9 +362,13 @@ function getExpansionToneClass(expansion: string) {
   return toneByExpansion[expansion] ?? "bonus-expansion-tone-unknown";
 }
 
-function reportMatchesFilter(zone: Zone, selectedBonus: BonusFilter) {
+function reportMatchesFilter(zone: Zone, selectedBonus: BonusFilter, selectedStatus: StatusFilter) {
   if (selectedBonus === "All") return true;
-  return zone.reports.some((report) => report.bonus === selectedBonus && report.count > 0);
+  if (isZoneDisputed(zone)) {
+    return selectedStatus === "Disputed"
+      && getTiedLeadingReports(zone).some((report) => report.bonus === selectedBonus);
+  }
+  return getLeadingReport(zone)?.bonus === selectedBonus;
 }
 
 function formatBonusLabel(bonus: BonusFilter | BonusType) {
@@ -692,19 +722,30 @@ export function BonusTrackerClient() {
     })).filter((zone) => {
       const searchMatches = zone.zoneName.toLowerCase().includes(normalizedQuery);
       const expansionMatches = selectedExpansionSet.has(zone.expansion);
+      const isDisputed = zone.status === "Disputed";
       const statusMatches = selectedStatus === "All"
-        || (selectedStatus === "Reported" && zone.totalReports > 0)
+        || (selectedStatus === "Reported" && zone.totalReports > 0 && !isDisputed)
+        || (selectedStatus === "Disputed" && isDisputed)
         || (selectedStatus === "Unreported" && zone.totalReports === 0);
-      return searchMatches && expansionMatches && statusMatches && reportMatchesFilter(zone, selectedBonus);
+      return searchMatches && expansionMatches && statusMatches && reportMatchesFilter(zone, selectedBonus, selectedStatus);
     });
   }, [normalizedQuery, reportedZones, selectedBonus, selectedExpansionSet, selectedStatus]);
 
   const visibleReportedZones = useMemo(() => {
     return visibleZones
-      .filter((zone) => zone.totalReports > 0)
+      .filter((zone) => zone.totalReports > 0 && zone.status !== "Disputed")
       .sort((a, b) =>
         getReportedSortValue(a.status) - getReportedSortValue(b.status)
         || a.zoneName.localeCompare(b.zoneName)
+      );
+  }, [visibleZones]);
+
+  const visibleDisputedZones = useMemo(() => {
+    return visibleZones
+      .filter((zone) => zone.status === "Disputed")
+      .sort((zoneA, zoneB) =>
+        getExpansionSortValue(zoneA.expansion) - getExpansionSortValue(zoneB.expansion)
+        || zoneA.zoneName.localeCompare(zoneB.zoneName)
       );
   }, [visibleZones]);
 
@@ -916,9 +957,11 @@ export function BonusTrackerClient() {
     });
   }
 
-  function renderZoneCard(zone: ZoneWithStatus, mode: "reported" | "unreported") {
+  function renderZoneCard(zone: ZoneWithStatus, mode: "reported" | "disputed" | "unreported") {
     const leadingReport = getLeadingReport(zone);
     const isReported = mode === "reported";
+    const isDisputed = mode === "disputed";
+    const tiedReports = isDisputed ? getTiedLeadingReports(zone) : [];
     const userReport = userReports[zone.zoneName];
     const isDetailsOpen = openReportDetailsZone === zone.zoneName;
     const reportSubmissions = zone.reports.flatMap((report) => report.submissions);
@@ -927,7 +970,7 @@ export function BonusTrackerClient() {
       <article
         className={[
           "bonus-zone-card",
-          isReported ? "is-reported" : "is-unreported",
+          isDisputed ? "is-disputed" : isReported ? "is-reported" : "is-unreported",
           getExpansionToneClass(zone.expansion),
         ].join(" ")}
         key={zone.zoneName}
@@ -940,7 +983,13 @@ export function BonusTrackerClient() {
                 {zone.expansion}
               </span>
             </div>
-            {isReported ? (
+            {isDisputed ? (
+              <div className="bonus-leading-report is-disputed">
+                <span>Disputed bonus</span>
+                <strong>Contested</strong>
+                <em>{tiedReports.length} tied leaders</em>
+              </div>
+            ) : isReported ? (
               <div className="bonus-leading-report">
                 <span>Leading bonus</span>
                 {leadingReport ? (
@@ -955,9 +1004,19 @@ export function BonusTrackerClient() {
             )}
           </div>
           {isReported && leadingReport ? <LargeBonusIcon bonus={leadingReport.bonus} /> : null}
+          {isDisputed ? <span className="bonus-disputed-mark" aria-label="Disputed bonus">!</span> : null}
         </div>
 
-        {isReported ? (
+        {isDisputed ? (
+          <div className="bonus-disputed-list" aria-label={`${zone.zoneName} disputed bonus leaders`}>
+            <span>Disputed Bonus</span>
+            {tiedReports.map((report) => (
+              <strong className={getBonusToneClass(report.bonus) ?? undefined} key={report.bonus}>
+                {formatBonusLabel(report.bonus)} ({report.count})
+              </strong>
+            ))}
+          </div>
+        ) : isReported ? (
           <div className="bonus-report-list" aria-label={`${zone.zoneName} reported bonuses`}>
             {zone.reports.map((report) => (
               <span
@@ -1294,6 +1353,19 @@ export function BonusTrackerClient() {
             <p className="empty bonus-empty">No reported zones match the active filters.</p>
           )}
         </section>
+      ) : visibleZones.length > 0 && selectedStatus === "Disputed" ? (
+        <section className="bonus-zone-section is-disputed" aria-label="Disputed bonuses">
+          <div className="bonus-section-heading is-disputed">
+            <h2>Disputed Bonuses ({visibleDisputedZones.length})</h2>
+          </div>
+          {visibleDisputedZones.length > 0 ? (
+            <div className="bonus-zone-grid is-disputed">
+              {visibleDisputedZones.map((zone) => renderZoneCard(zone, "disputed"))}
+            </div>
+          ) : (
+            <p className="empty bonus-empty">No disputed zones match the active filters.</p>
+          )}
+        </section>
       ) : visibleZones.length > 0 && selectedStatus === "Unreported" ? (
         <section className="bonus-zone-section is-unreported" aria-label="Unreported zones">
           <div className="bonus-section-heading">
@@ -1317,6 +1389,17 @@ export function BonusTrackerClient() {
               <p className="empty bonus-empty">No reported zones match the active filters.</p>
             )}
           </section>
+
+          {visibleDisputedZones.length > 0 ? (
+            <section className="bonus-zone-section is-disputed" aria-label="Disputed bonuses">
+              <div className="bonus-section-heading is-disputed">
+                <h2>Disputed Bonuses ({visibleDisputedZones.length})</h2>
+              </div>
+              <div className="bonus-zone-grid is-disputed">
+                {visibleDisputedZones.map((zone) => renderZoneCard(zone, "disputed"))}
+              </div>
+            </section>
+          ) : null}
 
           {visibleUnreportedZones.length > 0 ? (
             <section className="bonus-zone-section is-unreported" aria-label="Unreported zones">

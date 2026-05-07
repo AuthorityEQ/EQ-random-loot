@@ -44,7 +44,12 @@ export const CLASS_NAME_MAP: Record<string, EpicClassName> = {
 
 // Normalized types — what the client component receives
 
-export type EpicStepTag = "solo" | "duo" | "group" | "raid" | "rare";
+export type EpicStepTag = "solo" | "duo" | "group" | "raid" | "rare" | "skippable";
+
+export type EpicQuestLink = {
+  name: string;
+  url?: string;
+};
 
 export type NormalizedStep = {
   /** 1-based step number (parsed from the raw string). */
@@ -56,6 +61,9 @@ export type NormalizedStep = {
   npcMob: string | null;
   zone: string | null;
   items: string | null;
+  requiredItems: EpicQuestLink[];
+  dropItems: EpicQuestLink[];
+  npcLinks: EpicQuestLink[];
   notes: string | null;
   tags: EpicStepTag[];
   sourceRow: number;
@@ -105,6 +113,9 @@ export type RawEpicStep = {
   npc_mob: string;
   zone: string;
   items: string;
+  required_items?: EpicQuestLink[];
+  drop_items?: EpicQuestLink[];
+  npc_links?: EpicQuestLink[];
   notes: string;
   tags?: EpicStepTag[];
 };

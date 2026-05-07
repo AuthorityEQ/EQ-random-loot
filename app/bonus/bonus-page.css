@@ -334,7 +334,7 @@
 }
 
 .bonus-active-report-list {
-  max-height: 260px;
+  max-height: 430px;
   overflow: auto;
   padding: 4px 2px 2px 0;
 }
@@ -534,6 +534,10 @@
   margin: 0;
 }
 
+.bonus-section-heading.is-disputed h2 {
+  color: #ffcf8a;
+}
+
 .bonus-section-heading button {
   background: var(--panel);
   border: 1px solid var(--line);
@@ -585,6 +589,16 @@
 
 .bonus-zone-card.is-reported {
   gap: 11px;
+}
+
+.bonus-zone-card.is-disputed {
+  --exp-primary: #f59e0b;
+  --exp-bg: rgba(245, 158, 11, 0.16);
+  border-color: rgba(245, 158, 11, 0.72);
+  box-shadow:
+    inset 3px 0 0 rgba(245, 158, 11, 0.82),
+    0 0 22px rgba(245, 158, 11, 0.13),
+    var(--shadow);
 }
 
 .bonus-zone-card.bonus-expansion-tone-pop {
@@ -816,6 +830,61 @@
 
 .bonus-leading-report strong.is-none-bonus {
   color: #d98b8b;
+}
+
+.bonus-leading-report.is-disputed > span {
+  color: #ffcf8a;
+}
+
+.bonus-leading-report.is-disputed strong {
+  color: #ffcf8a;
+  text-transform: uppercase;
+}
+
+.bonus-disputed-mark {
+  align-items: center;
+  background:
+    radial-gradient(circle at 50% 25%, rgba(255, 255, 255, 0.26), transparent 58%),
+    linear-gradient(180deg, #f59e0b, #7c2d12);
+  border: 1px solid rgba(255, 207, 138, 0.78);
+  border-radius: 999px;
+  box-shadow: 0 0 18px rgba(245, 158, 11, 0.28);
+  color: #1d1205;
+  display: inline-flex;
+  font-size: 1.15rem;
+  font-weight: 950;
+  height: 44px;
+  justify-content: center;
+  width: 44px;
+}
+
+.bonus-disputed-list {
+  background: rgba(124, 45, 18, 0.18);
+  border: 1px solid rgba(245, 158, 11, 0.38);
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 9px 10px;
+}
+
+.bonus-disputed-list > span {
+  color: #ffcf8a;
+  flex: 1 0 100%;
+  font-size: 0.7rem;
+  font-weight: 950;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.bonus-disputed-list strong {
+  background: rgba(245, 158, 11, 0.14);
+  border: 1px solid rgba(245, 158, 11, 0.34);
+  border-radius: 999px;
+  color: #ffe2aa;
+  font-size: 0.82rem;
+  font-weight: 900;
+  padding: 4px 8px;
 }
 
 .bonus-report-pill.is-none-bonus,
@@ -1184,6 +1253,10 @@
     grid-template-columns: 1fr;
     min-height: 0;
     padding: 12px;
+  }
+
+  .bonus-active-report-list {
+    max-height: 320px;
   }
 
   .bonus-active-report-row.is-header {

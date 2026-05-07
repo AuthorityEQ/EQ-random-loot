@@ -30,7 +30,7 @@ export function ItemFarmView({ itemName, buckets, onOpenItem, onSelectZone }: It
 
       <div className="item-farm-grid">
         {buckets.map((bucket) => {
-          const zones = bestZonesForBucket(bucket, 5);
+          const zones = bestZonesForBucket(bucket, Number.POSITIVE_INFINITY);
 
           return (
             <article className={`item-farm-card is-highlighted ${expansionTone(bucket.expansion)}`} key={`${bucket.expansion}-${bucket.bucket}`}>

@@ -53,8 +53,14 @@ type CraftingDataset = {
   recipes: CraftingRecipe[];
 };
 
+type EpicLinkedItem = {
+  name: string;
+};
+
 type EpicStep = {
   items: string;
+  required_items?: EpicLinkedItem[];
+  drop_items?: EpicLinkedItem[];
 };
 
 type EpicClass = {
@@ -257,6 +263,15 @@ function getEpicItemNames(dataset: EpicDataset) {
   const names = new Set<string>();
   for (const cls of dataset.classes) {
     for (const step of cls.steps) {
+      for (const item of step.required_items ?? []) {
+        const trimmed = item.name?.trim();
+        if (trimmed) names.add(trimmed);
+      }
+      for (const item of step.drop_items ?? []) {
+        const trimmed = item.name?.trim();
+        if (trimmed) names.add(trimmed);
+      }
+
       const raw = (step.items ?? "").trim();
       if (!raw) continue;
       const stripped = raw.replace(EPIC_VERB_PREFIX, "").replace(EPIC_TRAILING_PAREN, "");
