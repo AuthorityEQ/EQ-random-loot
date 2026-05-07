@@ -1208,6 +1208,7 @@ export function BonusTrackerClient() {
             <label>
               <span>Zone</span>
               <select
+                className="bonus-zone-submit-select"
                 onChange={(event) => setSubmitZoneName(event.target.value)}
                 value={submitZoneName}
               >

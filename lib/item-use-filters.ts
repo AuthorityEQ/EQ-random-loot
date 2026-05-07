@@ -78,9 +78,7 @@ const classTokenAliases: Record<string, string> = {
   BERSERKER: "BER",
 };
 
-export const classDisplayNames: Record<string, string> = {
-  BER: "Berserker",
-};
+export const classDisplayNames: Record<string, string> = {};
 
 export function formatClassOption(option: string) {
   const displayName = classDisplayNames[option];
