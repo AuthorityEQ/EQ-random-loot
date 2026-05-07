@@ -85,6 +85,13 @@ const reportedBonusGroupOrder: BonusType[] = [
 ];
 const submissionBonusTypes: FilterBonusType[] = [...filterBonusTypes].sort((bonusA, bonusB) => bonusA.localeCompare(bonusB));
 const managementBonusTypes: BonusType[] = [...reportBonusTypes].sort((bonusA, bonusB) => bonusA.localeCompare(bonusB));
+const activeReportsPreviewReports: Record<string, BonusType> = {
+  "Burning Woods": "Coin",
+  "Cobalt Scar": "Experience",
+  "Lower Guk": "Rare",
+  "Plane of Fire": "Loot",
+  "Velketor's Labyrinth": "AA",
+};
 
 const statusFilters: StatusFilter[] = [
   "All",
@@ -598,7 +605,10 @@ export function BonusTrackerClient() {
   const [isSubmittingReport, setIsSubmittingReport] = useState(false);
   const [isModeratingReport, setIsModeratingReport] = useState(false);
   const [showUnreportedZones, setShowUnreportedZones] = useState(true);
+  const [showActiveReports, setShowActiveReports] = useState(false);
+  const [showActiveReportsPreview, setShowActiveReportsPreview] = useState(false);
   const isLoggedIn = authStatus === "authenticated" && Boolean(session?.user?.discordUserId);
+  const shouldShowActiveReports = isLoggedIn || showActiveReportsPreview;
 
   const expansionOptions = useMemo(() => {
     return Array.from(new Set(zones.map((zone) => zone.expansion))).sort((a, b) => {
@@ -614,9 +624,10 @@ export function BonusTrackerClient() {
   const reportedZones = useMemo(() => {
     return zones.map((zone) => applyServerReports(zone, serverReports));
   }, [serverReports]);
+  const displayedUserReports = showActiveReportsPreview ? activeReportsPreviewReports : userReports;
   const activeUserReports = useMemo<ActiveUserReport[]>(() => {
     const zoneByName = new Map(zones.map((zone) => [zone.zoneName, zone]));
-    return Object.entries(userReports)
+    return Object.entries(displayedUserReports)
       .map(([zoneName, bonus]) => {
         if (!bonus) return null;
         const zone = zoneByName.get(zoneName);
@@ -631,7 +642,7 @@ export function BonusTrackerClient() {
         getExpansionSortValue(reportA.expansion) - getExpansionSortValue(reportB.expansion)
         || reportA.zoneName.localeCompare(reportB.zoneName)
       );
-  }, [userReports]);
+  }, [displayedUserReports]);
 
   useEffect(() => {
     let isCancelled = false;
@@ -655,6 +666,12 @@ export function BonusTrackerClient() {
       isCancelled = true;
     };
   }, [authStatus]);
+
+  useEffect(() => {
+    if (process.env.NODE_ENV !== "development") return;
+    const params = new URLSearchParams(window.location.search);
+    setShowActiveReportsPreview(params.get("previewActiveReports") === "1");
+  }, []);
 
   useEffect(() => {
     setActiveReportDrafts((currentDrafts) => {
@@ -1035,64 +1052,73 @@ export function BonusTrackerClient() {
   }
 
   function renderActiveReports() {
-    if (!isLoggedIn || activeUserReports.length === 0) return null;
+    if (!shouldShowActiveReports || activeUserReports.length === 0) return null;
 
     return (
       <section className="bonus-active-reports" aria-label="Your active bonus reports">
         <div className="bonus-active-reports-heading">
           <h2>Your Active Reports <span>({activeUserReports.length})</span></h2>
+          <button
+            aria-expanded={showActiveReports}
+            onClick={() => setShowActiveReports((isVisible) => !isVisible)}
+            type="button"
+          >
+            {showActiveReports ? "Hide Active Reports" : "Show Active Reports"}
+          </button>
         </div>
-        <div className="bonus-active-report-list">
-          <div className="bonus-active-report-row is-header" aria-hidden="true">
-            <span>Zone</span>
-            <span>Current Bonus</span>
-            <span>Actions</span>
-          </div>
-          {activeUserReports.map((report) => (
-            <div className="bonus-active-report-row" key={report.zoneName}>
-              <div className="bonus-active-report-zone">
-                <strong>{report.zoneName}</strong>
-                <span className={`bonus-expansion-label ${getExpansionToneClass(report.expansion)}`}>
-                  {report.expansion}
-                </span>
-              </div>
-              <label className="bonus-active-report-select">
-                <span>Current Bonus</span>
-                <select
-                  onChange={(event) => setActiveReportDrafts((currentDrafts) => ({
-                    ...currentDrafts,
-                    [report.zoneName]: event.target.value as BonusType,
-                  }))}
-                  value={activeReportDrafts[report.zoneName] ?? report.bonus}
-                >
-                  {managementBonusTypes.map((bonus) => (
-                    <option key={bonus} value={bonus}>
-                      {formatBonusLabel(bonus)}
-                    </option>
-                  ))}
-                </select>
-              </label>
-              <div className="bonus-active-report-actions">
-                <button
-                  className="bonus-active-report-change"
-                  disabled={isSubmittingReport}
-                  onClick={() => changeUserReport(report.zoneName)}
-                  type="button"
-                >
-                  Change
-                </button>
-                <button
-                  className="bonus-active-report-remove"
-                  disabled={isSubmittingReport}
-                  onClick={() => removeUserReport(report.zoneName)}
-                  type="button"
-                >
-                  Remove
-                </button>
-              </div>
+        {showActiveReports ? (
+          <div className="bonus-active-report-list">
+            <div className="bonus-active-report-row is-header" aria-hidden="true">
+              <span>Zone</span>
+              <span>Current Bonus</span>
+              <span>Actions</span>
             </div>
-          ))}
-        </div>
+            {activeUserReports.map((report) => (
+              <div className="bonus-active-report-row" key={report.zoneName}>
+                <div className="bonus-active-report-zone">
+                  <strong>{report.zoneName}</strong>
+                  <span className={`bonus-expansion-label ${getExpansionToneClass(report.expansion)}`}>
+                    {report.expansion}
+                  </span>
+                </div>
+                <label className="bonus-active-report-select">
+                  <span>Current Bonus</span>
+                  <select
+                    onChange={(event) => setActiveReportDrafts((currentDrafts) => ({
+                      ...currentDrafts,
+                      [report.zoneName]: event.target.value as BonusType,
+                    }))}
+                    value={activeReportDrafts[report.zoneName] ?? report.bonus}
+                  >
+                    {managementBonusTypes.map((bonus) => (
+                      <option key={bonus} value={bonus}>
+                        {formatBonusLabel(bonus)}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+                <div className="bonus-active-report-actions">
+                  <button
+                    className="bonus-active-report-change"
+                    disabled={isSubmittingReport}
+                    onClick={() => changeUserReport(report.zoneName)}
+                    type="button"
+                  >
+                    Change
+                  </button>
+                  <button
+                    className="bonus-active-report-remove"
+                    disabled={isSubmittingReport}
+                    onClick={() => removeUserReport(report.zoneName)}
+                    type="button"
+                  >
+                    Remove
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : null}
       </section>
     );
   }

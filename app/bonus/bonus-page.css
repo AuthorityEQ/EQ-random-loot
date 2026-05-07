@@ -258,15 +258,14 @@
   box-shadow: var(--shadow);
   display: grid;
   gap: 8px;
-  padding: 12px;
+  padding: 10px 12px;
 }
 
 .bonus-active-reports-heading {
   align-items: center;
-  border-bottom: 1px solid var(--line);
   display: flex;
+  gap: 12px;
   justify-content: space-between;
-  padding-bottom: 7px;
 }
 
 .bonus-active-reports-heading h2 {
@@ -282,24 +281,46 @@
   font-size: 0.82rem;
 }
 
+.bonus-active-reports-heading button {
+  background: var(--panel);
+  border: 1px solid color-mix(in srgb, var(--accent) 32%, var(--line));
+  border-radius: 999px;
+  color: var(--accent);
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-weight: 900;
+  min-height: 32px;
+  padding: 0 11px;
+  white-space: nowrap;
+}
+
+.bonus-active-reports-heading button:hover,
+.bonus-active-reports-heading button:focus-visible {
+  background: var(--accent-soft);
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
 .bonus-active-report-list {
-  display: grid;
-  gap: 6px;
   max-height: 260px;
   overflow: auto;
-  padding-right: 2px;
+  padding: 4px 2px 2px 0;
 }
 
 .bonus-active-report-row {
-  align-items: center;
+  align-items: end;
   background: color-mix(in srgb, var(--panel-soft) 55%, transparent);
   border: 1px solid color-mix(in srgb, var(--line) 72%, transparent);
   border-radius: 8px;
   display: grid;
-  gap: 10px;
-  grid-template-columns: minmax(180px, 1.15fr) minmax(150px, 0.8fr) auto;
-  min-height: 46px;
-  padding: 8px 10px;
+  gap: 12px;
+  grid-template-columns: minmax(190px, 1.1fr) minmax(170px, 0.85fr) minmax(150px, auto);
+  min-height: 58px;
+  padding: 10px 12px;
+}
+
+.bonus-active-report-row + .bonus-active-report-row {
+  margin-top: 8px;
 }
 
 .bonus-active-report-row.is-header {
@@ -310,7 +331,7 @@
   font-weight: 950;
   letter-spacing: 0.06em;
   min-height: 0;
-  padding-block: 0;
+  padding: 0 12px;
   text-transform: uppercase;
 }
 
@@ -334,6 +355,7 @@
 }
 
 .bonus-active-report-select > span {
+  display: none;
   color: var(--muted);
   font-size: 0.68rem;
   font-weight: 950;
@@ -1123,14 +1145,34 @@
 
   .bonus-active-report-row,
   .bonus-active-report-row.is-header {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     grid-template-columns: 1fr;
+    min-height: 0;
+    padding: 12px;
   }
 
   .bonus-active-report-row.is-header {
     display: none;
   }
 
+  .bonus-active-reports-heading {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .bonus-active-reports-heading button {
+    width: 100%;
+  }
+
+  .bonus-active-report-select > span {
+    display: block;
+  }
+
   .bonus-active-report-actions {
+    display: flex;
     justify-content: stretch;
   }
 
