@@ -1,3 +1,3 @@
 @echo off
-set NODE_OPTIONS=--max-old-space-size=8192
-node C:\Users\rontf\EQ-random-loot\node_modules\next\dist\bin\next dev
+cd /d "%~dp0"
+powershell -ExecutionPolicy Bypass -File "%~dp0scripts\restart-dev-server.ps1"

@@ -310,26 +310,34 @@ export async function DELETE(request: Request) {
   if (!currentUser) {
     return Response.json({ error: "AUTH_REQUIRED" }, { status: 401 });
   }
-  if (!isAdminSessionUserId(currentUser.sessionUserId)) {
-    return Response.json({ error: "ADMIN_REQUIRED" }, { status: 403 });
-  }
 
   const url = new URL(request.url);
-  const body = await request.json().catch(() => null) as { id?: unknown } | null;
+  const body = await request.json().catch(() => null) as { id?: unknown; zoneName?: unknown } | null;
   const reportId = (url.searchParams.get("id") ?? (typeof body?.id === "string" ? body.id : "")).trim();
+  const zoneName = (url.searchParams.get("zoneName") ?? (typeof body?.zoneName === "string" ? body.zoneName : "")).trim();
+  const isAdmin = isAdminSessionUserId(currentUser.sessionUserId);
 
-  if (!reportId) {
-    return Response.json({ error: "INVALID_REPORT_ID" }, { status: 400 });
+  if (!reportId && !zoneName) {
+    return Response.json({ error: "INVALID_REPORT" }, { status: 400 });
   }
 
   try {
     const pool = getPool();
-    const deletedReport = await pool.query<{ id: string }>(
-      `delete from bonus_reports
-       where id = $1
-       returning id`,
-      [reportId],
-    );
+    const deletedReport = reportId
+      ? await pool.query<{ id: string }>(
+          `delete from bonus_reports
+           where id = $1
+             and ($2 = true or "discordUserId" = $3)
+           returning id`,
+          [reportId, isAdmin, currentUser.discordUserId],
+        )
+      : await pool.query<{ id: string }>(
+          `delete from bonus_reports
+           where "zoneName" = $1
+             and "discordUserId" = $2
+           returning id`,
+          [zoneName, currentUser.discordUserId],
+        );
 
     if (deletedReport.rowCount === 0) {
       return Response.json({ error: "REPORT_NOT_FOUND" }, { status: 404 });
@@ -340,12 +348,13 @@ export async function DELETE(request: Request) {
       success: true,
       reports,
       currentUserReports: getCurrentUserReports(reports, currentUser.discordUserId),
-      isAdmin: true,
+      isAdmin,
     });
   } catch (error) {
     return databaseErrorResponse(error, {
       action: "delete-report",
       reportId,
+      zoneName,
       discordUserId: currentUser.discordUserId,
     });
   }

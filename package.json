@@ -2,6 +2,8 @@
   "type": "module",
   "scripts": {
     "dev": "next dev --webpack",
+    "dev:fix": "powershell -ExecutionPolicy Bypass -File scripts/restart-dev-server.ps1",
+    "dev:restart": "powershell -ExecutionPolicy Bypass -File scripts/restart-dev-server.ps1",
     "build": "next build --webpack",
     "start": "next start",
     "extract:item-names": "node --experimental-strip-types scripts/extract-item-names.ts",

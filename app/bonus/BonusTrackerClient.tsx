@@ -29,6 +29,20 @@ type FilterBonusType = Exclude<BonusType, "None">;
 type BonusFilter = "All" | FilterBonusType;
 type StatusFilter = "All" | "Reported" | "Unreported";
 type ZoneWithStatus = Zone & { status: BonusStatus; totalReports: number };
+type ZoneGroup = {
+  key: string;
+  label: string;
+  zones: ZoneWithStatus[];
+};
+type ZoneOptionGroup = {
+  expansion: string;
+  zones: Zone[];
+};
+type ActiveUserReport = {
+  zoneName: string;
+  expansion: string;
+  bonus: BonusType;
+};
 
 type ServerBonusReport = {
   id: string;
@@ -58,6 +72,19 @@ const reportBonusTypes: BonusType[] = [
 ];
 
 const filterBonusTypes: FilterBonusType[] = reportBonusTypes.filter((bonus): bonus is FilterBonusType => bonus !== "None");
+const reportedBonusGroupOrder: BonusType[] = [
+  "Experience",
+  "AA",
+  "Coin",
+  "Loot",
+  "Rare",
+  "Skill",
+  "Respawn",
+  "Faction",
+  "None",
+];
+const submissionBonusTypes: FilterBonusType[] = [...filterBonusTypes].sort((bonusA, bonusB) => bonusA.localeCompare(bonusB));
+const managementBonusTypes: BonusType[] = [...reportBonusTypes].sort((bonusA, bonusB) => bonusA.localeCompare(bonusB));
 
 const statusFilters: StatusFilter[] = [
   "All",
@@ -252,6 +279,11 @@ function getExpansionSortValue(expansion: string) {
   return index === -1 ? order.length : index;
 }
 
+function getBonusSortValue(bonus: BonusType) {
+  const index = reportedBonusGroupOrder.indexOf(bonus);
+  return index === -1 ? reportedBonusGroupOrder.length : index;
+}
+
 function getLeadingReport(zone: Zone) {
   return zone.reports
     .slice()
@@ -306,8 +338,78 @@ function formatBonusLabel(bonus: BonusFilter | BonusType) {
   return bonus;
 }
 
+function formatBonusGroupLabel(bonus: BonusType) {
+  return bonus === "None" ? "No Bonus" : `${formatBonusLabel(bonus)} Bonus`;
+}
+
 function getBonusToneClass(bonus: BonusType) {
   return bonus === "None" ? "is-none-bonus" : null;
+}
+
+function groupUnreportedZonesByExpansion(zones: ZoneWithStatus[]): ZoneGroup[] {
+  const groups = new Map<string, ZoneWithStatus[]>();
+  for (const zone of zones) {
+    const expansion = zone.expansion || "Unknown";
+    const groupZones = groups.get(expansion) ?? [];
+    groupZones.push(zone);
+    groups.set(expansion, groupZones);
+  }
+
+  return Array.from(groups.entries())
+    .sort(([expansionA], [expansionB]) =>
+      getExpansionSortValue(expansionA) - getExpansionSortValue(expansionB)
+      || expansionA.localeCompare(expansionB)
+    )
+    .map(([expansion, groupZones]) => ({
+      key: expansion,
+      label: expansion,
+      zones: groupZones.sort((zoneA, zoneB) => zoneA.zoneName.localeCompare(zoneB.zoneName)),
+    }));
+}
+
+function groupZoneOptionsByExpansion(zoneOptions: Zone[]): ZoneOptionGroup[] {
+  const groups = new Map<string, Zone[]>();
+  for (const zone of zoneOptions) {
+    const expansion = zone.expansion || "Unknown";
+    const groupZones = groups.get(expansion) ?? [];
+    groupZones.push(zone);
+    groups.set(expansion, groupZones);
+  }
+
+  return Array.from(groups.entries())
+    .sort(([expansionA], [expansionB]) =>
+      getExpansionSortValue(expansionA) - getExpansionSortValue(expansionB)
+      || expansionA.localeCompare(expansionB)
+    )
+    .map(([expansion, groupZones]) => ({
+      expansion,
+      zones: groupZones.sort((zoneA, zoneB) => zoneA.zoneName.localeCompare(zoneB.zoneName)),
+    }));
+}
+
+function getDefaultSubmissionZoneName() {
+  return groupZoneOptionsByExpansion(zones)[0]?.zones[0]?.zoneName ?? "";
+}
+
+function groupReportedZonesByBonus(zones: ZoneWithStatus[]): ZoneGroup[] {
+  const groups = new Map<BonusType, ZoneWithStatus[]>();
+  for (const zone of zones) {
+    const leadingBonus = getLeadingReport(zone)?.bonus ?? "None";
+    const groupZones = groups.get(leadingBonus) ?? [];
+    groupZones.push(zone);
+    groups.set(leadingBonus, groupZones);
+  }
+
+  return Array.from(groups.entries())
+    .sort(([bonusA], [bonusB]) =>
+      getBonusSortValue(bonusA) - getBonusSortValue(bonusB)
+      || bonusA.localeCompare(bonusB)
+    )
+    .map(([bonus, groupZones]) => ({
+      key: bonus,
+      label: formatBonusGroupLabel(bonus),
+      zones: groupZones.sort((zoneA, zoneB) => zoneA.zoneName.localeCompare(zoneB.zoneName)),
+    }));
 }
 
 function BonusIcon({ bonus }: { bonus: BonusType }) {
@@ -485,9 +587,10 @@ export function BonusTrackerClient() {
   const [query, setQuery] = useState("");
   const [selectedBonus, setSelectedBonus] = useState<BonusFilter>("All");
   const [selectedStatus, setSelectedStatus] = useState<StatusFilter>("All");
-  const [openReportZone, setOpenReportZone] = useState<string | null>(null);
   const [openReportDetailsZone, setOpenReportDetailsZone] = useState<string | null>(null);
-  const [draftReports, setDraftReports] = useState<Record<string, BonusType | undefined>>({});
+  const [submitZoneName, setSubmitZoneName] = useState(getDefaultSubmissionZoneName);
+  const [submitBonus, setSubmitBonus] = useState<FilterBonusType>("Experience");
+  const [activeReportDrafts, setActiveReportDrafts] = useState<Record<string, BonusType | undefined>>({});
   const [serverReports, setServerReports] = useState<ServerBonusReport[]>([]);
   const [userReports, setUserReports] = useState<Record<string, BonusType | undefined>>({});
   const [isAdmin, setIsAdmin] = useState(false);
@@ -502,6 +605,7 @@ export function BonusTrackerClient() {
       return getExpansionSortValue(a) - getExpansionSortValue(b) || a.localeCompare(b);
     });
   }, []);
+  const submissionZoneGroups = useMemo(() => groupZoneOptionsByExpansion(zones), []);
   const [selectedExpansions, setSelectedExpansions] = useState<Set<string>>(() => new Set(expansionOptions));
   const selectedExpansionSet = useMemo(() => selectedExpansions, [selectedExpansions]);
   const allExpansionsSelected = selectedExpansionSet.size === expansionOptions.length;
@@ -510,6 +614,24 @@ export function BonusTrackerClient() {
   const reportedZones = useMemo(() => {
     return zones.map((zone) => applyServerReports(zone, serverReports));
   }, [serverReports]);
+  const activeUserReports = useMemo<ActiveUserReport[]>(() => {
+    const zoneByName = new Map(zones.map((zone) => [zone.zoneName, zone]));
+    return Object.entries(userReports)
+      .map(([zoneName, bonus]) => {
+        if (!bonus) return null;
+        const zone = zoneByName.get(zoneName);
+        return {
+          zoneName,
+          expansion: zone?.expansion ?? "Unknown",
+          bonus,
+        };
+      })
+      .filter((report): report is ActiveUserReport => Boolean(report))
+      .sort((reportA, reportB) =>
+        getExpansionSortValue(reportA.expansion) - getExpansionSortValue(reportB.expansion)
+        || reportA.zoneName.localeCompare(reportB.zoneName)
+      );
+  }, [userReports]);
 
   useEffect(() => {
     let isCancelled = false;
@@ -533,6 +655,17 @@ export function BonusTrackerClient() {
       isCancelled = true;
     };
   }, [authStatus]);
+
+  useEffect(() => {
+    setActiveReportDrafts((currentDrafts) => {
+      const nextDrafts: Record<string, BonusType | undefined> = {};
+      for (const report of activeUserReports) {
+        nextDrafts[report.zoneName] = currentDrafts[report.zoneName]
+          ?? report.bonus;
+      }
+      return nextDrafts;
+    });
+  }, [activeUserReports]);
 
   const visibleZones = useMemo<ZoneWithStatus[]>(() => {
     return reportedZones.map((zone) => ({
@@ -561,8 +694,14 @@ export function BonusTrackerClient() {
   const visibleUnreportedZones = useMemo(() => {
     return visibleZones
       .filter((zone) => zone.totalReports === 0)
-      .sort((a, b) => a.zoneName.localeCompare(b.zoneName));
+      .sort((a, b) =>
+        getExpansionSortValue(a.expansion) - getExpansionSortValue(b.expansion)
+        || a.zoneName.localeCompare(b.zoneName)
+      );
   }, [visibleZones]);
+
+  const reportedZoneGroups = useMemo(() => groupReportedZonesByBonus(visibleReportedZones), [visibleReportedZones]);
+  const unreportedZoneGroups = useMemo(() => groupUnreportedZonesByExpansion(visibleUnreportedZones), [visibleUnreportedZones]);
 
   const activeFilters = [
     normalizedQuery ? `search ${query.trim()}` : null,
@@ -576,18 +715,11 @@ export function BonusTrackerClient() {
     ? `No zones match the active filters: ${activeFilters.join(", ")}.`
     : "No zones are available yet.";
 
-  function openReportPanel(zoneName: string) {
-    setReportMessage("");
-    setOpenReportZone((currentZone) => currentZone === zoneName ? null : zoneName);
-    setDraftReports((currentReports) => ({
-      ...currentReports,
-      [zoneName]: currentReports[zoneName] ?? userReports[zoneName] ?? "Experience",
-    }));
-  }
-
-  async function submitReport(zoneName: string) {
-    const draftReport = draftReports[zoneName];
-    if (!draftReport) return;
+  async function saveReport(zoneName: string, bonus: BonusType, successMessage: string) {
+    if (!zoneName || !bonus) {
+      setReportMessage("Choose a zone and bonus before submitting.");
+      return;
+    }
 
     setIsSubmittingReport(true);
     setReportMessage("");
@@ -596,7 +728,7 @@ export function BonusTrackerClient() {
       const response = await fetch("/api/bonus/reports", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ zoneName, bonus: draftReport }),
+        body: JSON.stringify({ zoneName, bonus }),
       });
       const payload = await response.json().catch(() => ({})) as {
         reports?: ServerBonusReport[];
@@ -611,8 +743,7 @@ export function BonusTrackerClient() {
         setServerReports(Array.isArray(payload.reports) ? payload.reports : []);
         setUserReports(payload.currentUserReports ?? {});
         setIsAdmin(Boolean(payload.isAdmin));
-        setOpenReportZone(null);
-        setReportMessage("Report saved.");
+        setReportMessage(successMessage);
         return;
       }
 
@@ -628,6 +759,61 @@ export function BonusTrackerClient() {
         setReportMessage(payload.message ?? "Report storage is temporarily unavailable.");
       } else {
         setReportMessage("Could not save that report. Please try again.");
+      }
+    } finally {
+      setIsSubmittingReport(false);
+    }
+  }
+
+  async function submitReport() {
+    await saveReport(submitZoneName, submitBonus, `Report saved for ${submitZoneName}.`);
+  }
+
+  async function changeUserReport(zoneName: string) {
+    const nextBonus = activeReportDrafts[zoneName] ?? userReports[zoneName];
+    if (!nextBonus) {
+      setReportMessage("Choose a replacement bonus before saving.");
+      return;
+    }
+    await saveReport(zoneName, nextBonus, `Report updated for ${zoneName}.`);
+  }
+
+  async function removeUserReport(zoneName: string) {
+    setIsSubmittingReport(true);
+    setReportMessage("");
+
+    try {
+      const response = await fetch("/api/bonus/reports", {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ zoneName }),
+      });
+      const payload = await response.json().catch(() => ({})) as {
+        reports?: ServerBonusReport[];
+        currentUserReports?: Record<string, BonusType | undefined>;
+        isAdmin?: boolean;
+        error?: string;
+        message?: string;
+      };
+
+      if (response.ok) {
+        setServerReports(Array.isArray(payload.reports) ? payload.reports : []);
+        setUserReports(payload.currentUserReports ?? {});
+        setIsAdmin(Boolean(payload.isAdmin));
+        setReportMessage(`Report removed for ${zoneName}.`);
+        return;
+      }
+
+      if (response.status === 401) {
+        setReportMessage("Sign in with Discord to remove reports.");
+      } else if (payload.error === "REPORT_NOT_FOUND") {
+        setReportMessage("That report was already removed.");
+      } else if (payload.error === "STORAGE_NOT_CONFIGURED") {
+        setReportMessage(payload.message ?? "Report storage is not configured for production yet.");
+      } else if (payload.error === "DATABASE_ERROR") {
+        setReportMessage(payload.message ?? "Report storage is temporarily unavailable.");
+      } else {
+        setReportMessage("Could not remove that report. Please try again.");
       }
     } finally {
       setIsSubmittingReport(false);
@@ -822,86 +1008,92 @@ export function BonusTrackerClient() {
           </div>
         ) : null}
 
-        {isLoggedIn || userReport ? (
+        {userReport ? (
           <div className="bonus-zone-actions">
-            {userReport ? <span className="bonus-your-report">Your report: {formatBonusLabel(userReport)}</span> : null}
-            {isLoggedIn ? (
-            <button
-              className="bonus-report-action"
-              onClick={() => openReportPanel(zone.zoneName)}
-              type="button"
-            >
-              {userReport ? "Change Report" : "Submit Report"}
-            </button>
-            ) : null}
-          </div>
-        ) : null}
-
-        {isLoggedIn && openReportZone === zone.zoneName ? (
-          <div className="bonus-report-panel">
-            <div className="bonus-report-panel-heading">
-              <h3>{userReport ? "Change your report" : "Submit your report"}</h3>
-              <button onClick={() => setOpenReportZone(null)} type="button">Cancel</button>
-            </div>
-            <div className="bonus-report-options" aria-label={`Select bonus for ${zone.zoneName}`}>
-              {filterBonusTypes.map((bonus) => {
-                const isSelected = draftReports[zone.zoneName] === bonus;
-                return (
-                  <button
-                    aria-pressed={isSelected}
-                    className={[
-                      "filter-button",
-                      "bonus-type-button",
-                      getBonusToneClass(bonus),
-                      isSelected ? "is-active" : null,
-                    ].filter(Boolean).join(" ")}
-                    key={bonus}
-                    onClick={() => setDraftReports((currentReports) => ({
-                      ...currentReports,
-                      [zone.zoneName]: bonus,
-                    }))}
-                    type="button"
-                  >
-                    {formatBonusLabel(bonus)}
-                  </button>
-                );
-              })}
-            </div>
-            <div className="bonus-report-footer">
-              <button
-                className="bonus-report-submit"
-                disabled={isSubmittingReport}
-                onClick={() => submitReport(zone.zoneName)}
-                type="button"
-              >
-                {isSubmittingReport ? "Saving..." : "Save Report"}
-              </button>
-              {(["None"] as const).map((bonus) => {
-                const isSelected = draftReports[zone.zoneName] === bonus;
-                return (
-                  <button
-                    aria-pressed={isSelected}
-                    className={[
-                      "filter-button",
-                      "bonus-type-button",
-                      getBonusToneClass(bonus),
-                      isSelected ? "is-active" : null,
-                    ].filter(Boolean).join(" ")}
-                    key={bonus}
-                    onClick={() => setDraftReports((currentReports) => ({
-                      ...currentReports,
-                      [zone.zoneName]: bonus,
-                    }))}
-                    type="button"
-                  >
-                    {formatBonusLabel(bonus)}
-                  </button>
-                );
-              })}
-            </div>
+            <span className="bonus-your-report">Your report: {formatBonusLabel(userReport)}</span>
           </div>
         ) : null}
       </article>
+    );
+  }
+
+  function renderZoneGroups(groups: ZoneGroup[], mode: "reported" | "unreported") {
+    return (
+      <div className="bonus-zone-group-stack">
+        {groups.map((group) => (
+          <section className="bonus-zone-group" key={`${mode}-${group.key}`} aria-label={`${group.label} zones`}>
+            <div className="bonus-zone-group-heading">
+              <h3>{group.label} <span>({group.zones.length})</span></h3>
+            </div>
+            <div className={mode === "reported" ? "bonus-zone-grid is-reported" : "bonus-zone-grid is-unreported"}>
+              {group.zones.map((zone) => renderZoneCard(zone, mode))}
+            </div>
+          </section>
+        ))}
+      </div>
+    );
+  }
+
+  function renderActiveReports() {
+    if (!isLoggedIn || activeUserReports.length === 0) return null;
+
+    return (
+      <section className="bonus-active-reports" aria-label="Your active bonus reports">
+        <div className="bonus-active-reports-heading">
+          <h2>Your Active Reports <span>({activeUserReports.length})</span></h2>
+        </div>
+        <div className="bonus-active-report-list">
+          <div className="bonus-active-report-row is-header" aria-hidden="true">
+            <span>Zone</span>
+            <span>Current Bonus</span>
+            <span>Actions</span>
+          </div>
+          {activeUserReports.map((report) => (
+            <div className="bonus-active-report-row" key={report.zoneName}>
+              <div className="bonus-active-report-zone">
+                <strong>{report.zoneName}</strong>
+                <span className={`bonus-expansion-label ${getExpansionToneClass(report.expansion)}`}>
+                  {report.expansion}
+                </span>
+              </div>
+              <label className="bonus-active-report-select">
+                <span>Current Bonus</span>
+                <select
+                  onChange={(event) => setActiveReportDrafts((currentDrafts) => ({
+                    ...currentDrafts,
+                    [report.zoneName]: event.target.value as BonusType,
+                  }))}
+                  value={activeReportDrafts[report.zoneName] ?? report.bonus}
+                >
+                  {managementBonusTypes.map((bonus) => (
+                    <option key={bonus} value={bonus}>
+                      {formatBonusLabel(bonus)}
+                    </option>
+                  ))}
+                </select>
+              </label>
+              <div className="bonus-active-report-actions">
+                <button
+                  className="bonus-active-report-change"
+                  disabled={isSubmittingReport}
+                  onClick={() => changeUserReport(report.zoneName)}
+                  type="button"
+                >
+                  Change
+                </button>
+                <button
+                  className="bonus-active-report-remove"
+                  disabled={isSubmittingReport}
+                  onClick={() => removeUserReport(report.zoneName)}
+                  type="button"
+                >
+                  Remove
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
     );
   }
 
@@ -967,22 +1159,65 @@ export function BonusTrackerClient() {
           })}
         </div>
 
-        <div className="bonus-filter-group" aria-label="Status filters">
-          <span className="bonus-filter-label">Status</span>
-          {statusFilters.map((status) => {
-            const isActive = selectedStatus === status;
-            return (
-              <button
-                aria-pressed={isActive}
-                className={isActive ? "filter-button is-active" : "filter-button"}
-                key={status}
-                onClick={() => selectStatusFilter(status)}
-                type="button"
+        <div className="bonus-status-submit-row">
+          <div className="bonus-filter-group bonus-status-filter-group" aria-label="Status filters">
+            <span className="bonus-filter-label">Status</span>
+            {statusFilters.map((status) => {
+              const isActive = selectedStatus === status;
+              return (
+                <button
+                  aria-pressed={isActive}
+                  className={isActive ? "filter-button is-active" : "filter-button"}
+                  key={status}
+                  onClick={() => selectStatusFilter(status)}
+                  type="button"
+                >
+                  {status}
+                </button>
+              );
+            })}
+          </div>
+
+          <div className="bonus-submit-panel" aria-label="Submit a daily bonus report">
+            <label>
+              <span>Zone</span>
+              <select
+                onChange={(event) => setSubmitZoneName(event.target.value)}
+                value={submitZoneName}
               >
-                {status}
-              </button>
-            );
-          })}
+                {submissionZoneGroups.map((group) => (
+                  <optgroup key={group.expansion} label={group.expansion}>
+                    {group.zones.map((zone) => (
+                      <option key={zone.zoneName} value={zone.zoneName}>
+                        {zone.zoneName}
+                      </option>
+                    ))}
+                  </optgroup>
+                ))}
+              </select>
+            </label>
+            <label>
+              <span>Bonus</span>
+              <select
+                onChange={(event) => setSubmitBonus(event.target.value as FilterBonusType)}
+                value={submitBonus}
+              >
+                {submissionBonusTypes.map((bonus) => (
+                  <option key={bonus} value={bonus}>
+                    {formatBonusLabel(bonus)}
+                  </option>
+                ))}
+              </select>
+            </label>
+            <button
+              className="bonus-submit-primary"
+              disabled={isSubmittingReport || !isLoggedIn}
+              onClick={submitReport}
+              type="button"
+            >
+              {isSubmittingReport ? "Submitting..." : "Submit Bonus"}
+            </button>
+          </div>
         </div>
       </div>
 
@@ -1017,31 +1252,40 @@ export function BonusTrackerClient() {
         )}
       </div>
 
+      {renderActiveReports()}
+
       {reportMessage ? <p className="bonus-report-message">{reportMessage}</p> : null}
 
-      {visibleZones.length > 0 && selectedStatus !== "All" ? (
-        <div className="bonus-zone-grid">
-          {visibleZones
-            .slice()
-            .sort((a, b) => {
-              if (selectedStatus === "Reported") {
-                return getReportedSortValue(a.status) - getReportedSortValue(b.status)
-                  || a.zoneName.localeCompare(b.zoneName);
-              }
-              return a.zoneName.localeCompare(b.zoneName);
-            })
-            .map((zone) => renderZoneCard(zone, zone.totalReports > 0 ? "reported" : "unreported"))}
-        </div>
+      {visibleZones.length > 0 && selectedStatus === "Reported" ? (
+        <section className="bonus-zone-section is-reported" aria-label="Reported bonuses">
+          <div className="bonus-section-heading">
+            <h2>Reported Bonuses ({visibleReportedZones.length})</h2>
+          </div>
+          {reportedZoneGroups.length > 0 ? (
+            renderZoneGroups(reportedZoneGroups, "reported")
+          ) : (
+            <p className="empty bonus-empty">No reported zones match the active filters.</p>
+          )}
+        </section>
+      ) : visibleZones.length > 0 && selectedStatus === "Unreported" ? (
+        <section className="bonus-zone-section is-unreported" aria-label="Unreported zones">
+          <div className="bonus-section-heading">
+            <h2>Unreported Zones ({visibleUnreportedZones.length})</h2>
+          </div>
+          {unreportedZoneGroups.length > 0 ? (
+            renderZoneGroups(unreportedZoneGroups, "unreported")
+          ) : (
+            <p className="empty bonus-empty">No unreported zones match the active filters.</p>
+          )}
+        </section>
       ) : visibleZones.length > 0 ? (
         <div className="bonus-section-stack">
           <section className="bonus-zone-section is-reported" aria-label="Reported bonuses">
             <div className="bonus-section-heading">
               <h2>Reported Bonuses ({visibleReportedZones.length})</h2>
             </div>
-            {visibleReportedZones.length > 0 ? (
-              <div className="bonus-zone-grid is-reported">
-                {visibleReportedZones.map((zone) => renderZoneCard(zone, "reported"))}
-              </div>
+            {reportedZoneGroups.length > 0 ? (
+              renderZoneGroups(reportedZoneGroups, "reported")
             ) : (
               <p className="empty bonus-empty">No reported zones match the active filters.</p>
             )}
@@ -1060,9 +1304,7 @@ export function BonusTrackerClient() {
                 </button>
               </div>
               {showUnreportedZones ? (
-                <div className="bonus-zone-grid is-unreported">
-                  {visibleUnreportedZones.map((zone) => renderZoneCard(zone, "unreported"))}
-                </div>
+                renderZoneGroups(unreportedZoneGroups, "unreported")
               ) : (
                 <p className="bonus-unreported-summary">
                   {visibleUnreportedZones.length} quiet zones are hidden so reported bonuses stay easy to scan.
