@@ -22,6 +22,7 @@ const frostreaverLinks = [
   { href: "/epics", label: "Epics" },
   { href: "/crafting", label: "Crafting" },
   { href: "/factions", label: "Factions" },
+  { href: "/picks", label: "Picks" },
   { href: "/characters", label: "My Characters" },
 ];
 

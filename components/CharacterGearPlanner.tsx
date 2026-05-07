@@ -47,6 +47,17 @@ type GearCandidate = {
   details: ItemDetails;
   expansions: string[];
   zones: string[];
+  sources: GearSourceInfo[];
+};
+
+type GearSourceInfo = {
+  expansion: string;
+  zones: string[];
+  sourceName: string;
+  sourceType: "group" | "raid" | "quest" | "item";
+  npcNames?: string[];
+  bucket?: number;
+  levelRange?: string;
 };
 
 type BisCandidate = {
@@ -70,6 +81,19 @@ type GearBuild = {
   race?: string;
   server?: string;
   equippedItems: Record<string, string | null>;
+  plannerItems?: GearPlannerManualItem[];
+  createdAt?: string;
+  updatedAt?: string;
+};
+
+type GearPlannerManualItem = {
+  id: string;
+  itemName: string;
+  slotId?: string | null;
+  category?: string;
+  tags?: string[];
+  notes?: string;
+  utilityBagSlot?: number | null;
   createdAt?: string;
   updatedAt?: string;
 };
@@ -80,6 +104,36 @@ type GearRoster = {
   characters: GearBuild[];
   activeCharacterId?: string;
   updatedAt?: string;
+};
+
+type GearShoppingNeed = {
+  characterId: string;
+  characterName: string;
+  class: string;
+  slotId: string;
+  slotLabel: string;
+  manualItemId?: string;
+  category?: string;
+  tags?: string[];
+  notes?: string;
+  utilityBagSlot?: number | null;
+};
+
+type GearShoppingItem = {
+  itemName: string;
+  details: ItemDetails;
+  needs: GearShoppingNeed[];
+  expansions: string[];
+  zones: string[];
+  sources: GearSourceInfo[];
+  itemType: string;
+};
+
+type GearShoppingDisplayItem = GearShoppingItem & {
+  completedNeeds: GearShoppingNeed[];
+  obtainedCount: number;
+  remainingNeeds: GearShoppingNeed[];
+  totalCount: number;
 };
 
 const gearSlots: GearSlot[] = [
@@ -121,9 +175,15 @@ const legacyGearSlotIdMap: Record<string, string> = {
   waist: "belt",
   range: "ranged",
 };
+const utilityBagBaseSize = 20;
+const utilityBagExpansionSize = 10;
 const recommendationLimit = 30;
 const bisCandidateLimit = 10;
 const rosterAutosaveKey = "loot-goblin-my-characters-roster-v1";
+const gearPlannerStateStorageKey = "loot-goblin-gear-planner-state-v1";
+const gearShoppingObtainedStorageKey = "loot-goblin-gear-shopping-obtained-v1";
+const gearShoppingHideObtainedStorageKey = "loot-goblin-gear-shopping-hide-obtained-v1";
+const plannerNoteMaxLength = 200;
 const cloudRosterPreferenceKey = "myCharacters";
 const anySpellFocus = "Any spell focus";
 const anyBardMod = "Any bard mod";
@@ -134,10 +194,44 @@ const focusCategoryLabels: Record<FocusEffectCategory, string> = {
   pet: "Pet Focus",
 };
 const classicPlanarGearSource = "Classic Planar Gear";
+const expansionOrder = ["Classic", "Kunark", "Velious", "Luclin", "Planes of Power", "Legacy of Ykesha"] as const;
 const raceTokenAliases: Record<string, RaceCode | string> = {
   ELF: "WEF",
   HFL: "HAF",
 };
+
+function getExpansionSortValue(expansion: string) {
+  const index = expansionOrder.indexOf(expansion as (typeof expansionOrder)[number]);
+  return index === -1 ? expansionOrder.length : index;
+}
+
+function sortExpansions(values: Iterable<string>) {
+  return Array.from(values).sort((a, b) => getExpansionSortValue(a) - getExpansionSortValue(b) || a.localeCompare(b));
+}
+
+function expansionTone(expansion: string) {
+  return `expansion-tone-${expansion.toLowerCase()}`;
+}
+
+function gearShoppingNeedKey(itemName: string, need: GearShoppingNeed) {
+  return `${itemName}::${need.characterId}::${need.manualItemId ?? need.slotId}`;
+}
+
+function plannerItemNeedSlotId(item: GearPlannerManualItem) {
+  return item.utilityBagSlot !== null && item.utilityBagSlot !== undefined
+    ? `utility-${item.id}`
+    : `manual-${item.slotId ?? item.category ?? item.id}`;
+}
+
+function getUtilityBagCapacity(items: GearPlannerManualItem[]) {
+  const highestSlot = items.reduce((max, item) => {
+    const slot = item.utilityBagSlot;
+    return typeof slot === "number" && Number.isInteger(slot) && slot >= 0 ? Math.max(max, slot) : max;
+  }, -1);
+  const usedSlots = highestSlot + 1;
+  if (usedSlots <= utilityBagBaseSize) return utilityBagBaseSize;
+  return Math.ceil(usedSlots / utilityBagExpansionSize) * utilityBagExpansionSize;
+}
 
 function isClassicPlanarQuestArmor(details: ItemDetails) {
   return details.expansion === "Classic"
@@ -146,19 +240,29 @@ function isClassicPlanarQuestArmor(details: ItemDetails) {
 }
 
 function buildGearCandidates(): GearCandidate[] {
-  const sourceMap = new Map<string, { expansions: Set<string>; zones: Set<string> }>();
+  const sourceMap = new Map<string, { expansions: Set<string>; zones: Set<string>; sources: GearSourceInfo[] }>();
 
-  function touchItem(itemName: string, expansion: string, zones: string[]) {
-    const entry = sourceMap.get(itemName) ?? { expansions: new Set<string>(), zones: new Set<string>() };
+  function touchItem(itemName: string, expansion: string, zones: string[], sourceInfo: GearSourceInfo) {
+    const entry = sourceMap.get(itemName) ?? { expansions: new Set<string>(), zones: new Set<string>(), sources: [] };
     entry.expansions.add(expansion);
     zones.forEach((zone) => entry.zones.add(zone));
+    entry.sources.push(sourceInfo);
     sourceMap.set(itemName, entry);
   }
 
   for (const dataset of groupDatasets) {
     for (const bucket of dataset.buckets) {
+      const sourceInfo: GearSourceInfo = {
+        expansion: bucket.expansion,
+        zones: bucket.zones,
+        sourceName: `Bucket ${bucket.bucket} group mobs`,
+        sourceType: "group",
+        npcNames: bucket.mobs.map((mob) => mob.name),
+        bucket: bucket.bucket,
+        levelRange: bucket.level_range,
+      };
       for (const itemName of bucket.loot_pool) {
-        touchItem(itemName, bucket.expansion, bucket.zones);
+        touchItem(itemName, bucket.expansion, bucket.zones, sourceInfo);
       }
     }
   }
@@ -167,7 +271,13 @@ function buildGearCandidates(): GearCandidate[] {
     for (const tier of dataset.tiers) {
       for (const boss of tier.bosses) {
         for (const itemName of boss.loot_pool ?? []) {
-          touchItem(itemName, dataset.expansion, [boss.zone]);
+          touchItem(itemName, dataset.expansion, [boss.zone], {
+            expansion: dataset.expansion,
+            zones: [boss.zone],
+            sourceName: boss.name,
+            sourceType: "raid",
+            npcNames: [boss.name],
+          });
         }
       }
     }
@@ -179,13 +289,25 @@ function buildGearCandidates(): GearCandidate[] {
       mapping.rewardItemName,
       itemDetails[mapping.rewardItemName]?.expansion ?? "Velious",
       [`${questSourceLabel} quest`],
+      {
+        expansion: itemDetails[mapping.rewardItemName]?.expansion ?? "Velious",
+        zones: [`${questSourceLabel} quest`],
+        sourceName: questSourceLabel,
+        sourceType: "quest",
+        npcNames: mapping.sourceNpcName ? [mapping.sourceNpcName] : undefined,
+      },
     );
   }
 
   for (const [itemName, details] of Object.entries(itemDetails)) {
     if (isClassicPlanarQuestArmor(details)) {
       if (parseRawSlot(details.slot).size > 0) {
-        touchItem(itemName, "Classic", [classicPlanarGearSource]);
+        touchItem(itemName, "Classic", [classicPlanarGearSource], {
+          expansion: "Classic",
+          zones: [classicPlanarGearSource],
+          sourceName: classicPlanarGearSource,
+          sourceType: "quest",
+        });
       }
       continue;
     }
@@ -200,7 +322,13 @@ function buildGearCandidates(): GearCandidate[] {
       ? (questSourceLabel.toLowerCase().includes("quest") ? questSourceLabel : `${questSourceLabel} quest`)
       : questSourceLabel;
 
-    touchItem(itemName, details.expansion ?? "Velious", [sourceLabel]);
+    touchItem(itemName, details.expansion ?? "Velious", [sourceLabel], {
+      expansion: details.expansion ?? "Velious",
+      zones: [sourceLabel],
+      sourceName: questSourceLabel,
+      sourceType: details.acquisitionType === "quest" ? "quest" : "item",
+      npcNames: details.sourceNpcName ? [details.sourceNpcName] : undefined,
+    });
   }
 
   return Array.from(sourceMap.entries())
@@ -210,14 +338,68 @@ function buildGearCandidates(): GearCandidate[] {
       return {
         itemName,
         details,
-        expansions: Array.from(source.expansions).sort(),
+        expansions: sortExpansions(source.expansions),
         zones: Array.from(source.zones).sort(),
+        sources: source.sources,
       };
     })
     .filter((candidate): candidate is GearCandidate => Boolean(candidate));
 }
 
 const gearCandidates = buildGearCandidates();
+const gearCandidateByName = new Map(gearCandidates.map((candidate) => [candidate.itemName, candidate]));
+const plannerExpansionOptions = sortExpansions(new Set(gearCandidates.flatMap((candidate) => candidate.expansions)));
+
+function getGearSlotLabel(slotId: string) {
+  return gearSlots.find((slot) => slot.id === slotId)?.label ?? slotId;
+}
+
+function getItemTypeLabel(details: ItemDetails) {
+  return details.itemType ?? details.item_type ?? details.weaponType ?? (details.acquisitionType === "quest" ? "Quest reward" : "Gear");
+}
+
+function getCandidateForItem(itemName: string) {
+  const candidate = gearCandidateByName.get(itemName);
+  if (candidate) return candidate;
+  const details = itemDetails[itemName];
+  if (!details) return null;
+  const fallbackSourceName = details.sourceNpcName
+    ?? details.questName
+    ?? details.source
+    ?? details.sources?.[0]?.name
+    ?? "Item source";
+  const fallbackZone = details.sourceNpcName
+    ? `${details.sourceNpcName} quest`
+    : details.source ?? details.questName ?? details.sources?.[0]?.url ?? "";
+
+  return {
+    itemName,
+    details,
+    expansions: details.expansion ? [details.expansion] : [],
+    zones: fallbackZone ? [fallbackZone] : [],
+    sources: [{
+      expansion: details.expansion,
+      zones: fallbackZone ? [fallbackZone] : [],
+      sourceName: fallbackSourceName,
+      sourceType: details.sourceNpcName || details.questName ? "quest" as const : "item" as const,
+      npcNames: details.sourceNpcName ? [details.sourceNpcName] : undefined,
+    }],
+  };
+}
+
+function sourceMatchesQuery(source: GearSourceInfo, query: string) {
+  if (!query) return true;
+  return source.sourceName.toLowerCase().includes(query)
+    || source.zones.some((zone) => zone.toLowerCase().includes(query))
+    || (source.npcNames ?? []).some((npcName) => npcName.toLowerCase().includes(query));
+}
+
+function formatSourceSummary(source: GearSourceInfo) {
+  const zoneLabel = source.zones.slice(0, 2).join(", ");
+  const npcLabel = source.npcNames?.slice(0, 2).join(", ");
+  const bucketLabel = source.bucket ? `Bucket ${source.bucket}${source.levelRange ? `, levels ${source.levelRange}` : ""}` : null;
+  return [source.sourceName, zoneLabel, npcLabel, bucketLabel].filter(Boolean).join(" / ");
+}
 
 function itemMatchesSlot(details: ItemDetails, slotKey: SlotKey) {
   return parseRawSlot(details.slot).has(slotKey);
@@ -630,6 +812,45 @@ function equippedSlotCountFromItems(equippedItems: Record<string, string | null>
   return gearSlots.filter((slot) => Boolean(equippedItems[slot.id])).length;
 }
 
+function normalizePlannerItems(values: unknown): GearPlannerManualItem[] {
+  if (!Array.isArray(values)) return [];
+  const seen = new Set<string>();
+
+  return values.flatMap((value) => {
+    if (!value || typeof value !== "object") return [];
+    const candidate = value as Partial<GearPlannerManualItem>;
+    const itemName = typeof candidate.itemName === "string" && itemDetails[candidate.itemName]
+      ? candidate.itemName
+      : null;
+    if (!itemName) return [];
+
+    const id = typeof candidate.id === "string" && candidate.id.trim() ? candidate.id : createBuildId();
+    if (seen.has(id)) return [];
+    seen.add(id);
+
+    const normalizedSlot = typeof candidate.slotId === "string" ? normalizeGearSlotId(candidate.slotId) : null;
+    const rawUtilityBagSlot = candidate.utilityBagSlot;
+    const utilityBagSlot = typeof rawUtilityBagSlot === "number" && Number.isInteger(rawUtilityBagSlot) && rawUtilityBagSlot >= 0
+      ? rawUtilityBagSlot
+      : null;
+    const tags = Array.isArray(candidate.tags)
+      ? candidate.tags.filter((tag): tag is string => typeof tag === "string" && tag.trim().length > 0).map((tag) => tag.trim()).slice(0, 6)
+      : [];
+
+    return [{
+      id,
+      itemName,
+      slotId: normalizedSlot,
+      category: typeof candidate.category === "string" && candidate.category.trim() ? candidate.category.trim() : undefined,
+      tags: tags.length > 0 ? tags : undefined,
+      notes: typeof candidate.notes === "string" && candidate.notes.trim() ? candidate.notes.trim().slice(0, plannerNoteMaxLength) : undefined,
+      utilityBagSlot,
+      createdAt: typeof candidate.createdAt === "string" ? candidate.createdAt : undefined,
+      updatedAt: typeof candidate.updatedAt === "string" ? candidate.updatedAt : undefined,
+    }];
+  });
+}
+
 function formatAutosaveTime(value: string) {
   const date = new Date(value);
   if (Number.isNaN(date.getTime())) return null;
@@ -725,6 +946,7 @@ function savedBuildToGearBuild(build: SavedBuild): GearBuild {
     class: build.class,
     race: normalizeRaceCode(build.race) || undefined,
     equippedItems: gearRecordToEquippedItems(build.equippedGear),
+    plannerItems: [],
     createdAt: now,
     updatedAt: now,
   };
@@ -750,6 +972,7 @@ function validateGearBuild(raw: unknown): GearBuild {
     race: raceCode || undefined,
     server: typeof candidate.server === "string" && candidate.server.trim() ? candidate.server : undefined,
     equippedItems: gearRecordToEquippedItems(equippedGear),
+    plannerItems: normalizePlannerItems(candidate.plannerItems),
     createdAt: typeof candidate.createdAt === "string" ? candidate.createdAt : now,
     updatedAt: typeof candidate.updatedAt === "string" ? candidate.updatedAt : now,
   };
@@ -802,13 +1025,33 @@ export function CharacterGearPlanner() {
   const [selectedBardMod, setSelectedBardMod] = useState(anyBardMod);
   const [selectedPetFocus, setSelectedPetFocus] = useState(anyPetFocus);
   const [autosaveStatus, setAutosaveStatus] = useState<string | null>(null);
+  const [plannerSaveStatus, setPlannerSaveStatus] = useState<string | null>(null);
   const [autosaveReady, setAutosaveReady] = useState(false);
   const [cloudReady, setCloudReady] = useState(false);
   const [cloudImportPrompt, setCloudImportPrompt] = useState<{ merged: GearRoster; localCount: number } | null>(null);
+  const [viewMode, setViewMode] = useState<"roster" | "shopping">("roster");
+  const [plannerSelectedCharacterIds, setPlannerSelectedCharacterIds] = useState<Set<string>>(() => new Set());
+  const [plannerSelectedExpansions, setPlannerSelectedExpansions] = useState<Set<string>>(() => new Set(plannerExpansionOptions));
+  const [plannerItemQuery, setPlannerItemQuery] = useState("");
+  const [plannerSourceQuery, setPlannerSourceQuery] = useState("");
+  const [gearShoppingObtainedNeedKeys, setGearShoppingObtainedNeedKeys] = useState<Set<string>>(() => new Set());
+  const [gearShoppingObtainedReady, setGearShoppingObtainedReady] = useState(false);
+  const [hideObtainedGear, setHideObtainedGear] = useState(false);
+  const [addPlannerItemOpen, setAddPlannerItemOpen] = useState(false);
+  const [addPlannerItemQuery, setAddPlannerItemQuery] = useState("");
+  const [selectedAddPlannerItemName, setSelectedAddPlannerItemName] = useState("");
+  const [addPlannerItemMessage, setAddPlannerItemMessage] = useState<string | null>(null);
+  const [addPlannerItemCharacterId, setAddPlannerItemCharacterId] = useState("");
+  const [addPlannerItemPlacement, setAddPlannerItemPlacement] = useState("utility");
+  const [addPlannerItemNotes, setAddPlannerItemNotes] = useState("");
+  const [addPlannerUtilitySlot, setAddPlannerUtilitySlot] = useState<number | null>(null);
+  const [expandedUtilityBags, setExpandedUtilityBags] = useState<Set<string>>(() => new Set());
+  const [selectedUtilityItem, setSelectedUtilityItem] = useState<{ characterId: string; itemId: string } | null>(null);
   const fileInputRef = useRef<HTMLInputElement | null>(null);
   const draftBuildIdRef = useRef<string | null>(null);
   const lastAutosavePayloadRef = useRef<string | null>(null);
   const lastCloudRosterPayloadRef = useRef<string | null>(null);
+  const pendingPlannerSelectedCharacterIdsRef = useRef<string[] | null>(null);
   const { hidePreview } = useItemPreview();
   const { server } = useServer();
   const { status: authStatus, data: session } = useSession();
@@ -823,10 +1066,260 @@ export function CharacterGearPlanner() {
   const activeRosterMember = activeCharacterId
     ? roster.find((character) => character.id === activeCharacterId)
     : null;
+  const plannerRoster = useMemo(() => {
+    let nextRoster = saveActiveToRoster(roster);
+    if (!activeCharacterId && currentHasContent()) {
+      const draftBuild = buildFromCurrent(draftBuildIdRef.current ?? "draft-current-character");
+      nextRoster = upsertBuild(nextRoster, draftBuild);
+    }
+    return nextRoster;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeCharacterId, characterName, equippedGear, roster, selectedClass, selectedRace, server]);
+  const plannerSelectedExpansionSet = useMemo(() => plannerSelectedExpansions, [plannerSelectedExpansions]);
+  const allPlannerExpansionsSelected = plannerSelectedExpansionSet.size === plannerExpansionOptions.length;
+  const plannerSelectedCharacters = useMemo(
+    () => plannerRoster.filter((character) => plannerSelectedCharacterIds.has(character.id)),
+    [plannerRoster, plannerSelectedCharacterIds],
+  );
+  const addPlannerItemMatches = useMemo(() => {
+    const query = addPlannerItemQuery.trim().toLowerCase();
+    if (query.length < 2) return [];
+    const tokens = query.split(/\s+/).filter(Boolean);
+
+    return Object.entries(itemDetails)
+      .map(([itemName, details]) => {
+        const haystack = [
+          itemName,
+          details.expansion,
+          details.sourceNpcName,
+          details.questName,
+          details.item_type,
+          details.itemType,
+          ...(details.tags ?? []),
+          ...(details.categories ?? []),
+          ...(details.aliases ?? []),
+          ...(details.searchKeywords ?? []),
+          ...(details.click_effects ?? []),
+          ...(details.worn_effects ?? []),
+          ...(details.focus_effects ?? []),
+        ].filter(Boolean).join(" ").toLowerCase();
+        const tokenMatches = tokens.filter((token) => haystack.includes(token)).length;
+        if (tokenMatches === 0 && !itemName.toLowerCase().includes(query)) return null;
+        const startsWithBonus = itemName.toLowerCase().startsWith(query) ? 4 : 0;
+        const exactBonus = itemName.toLowerCase() === query ? 10 : 0;
+        return { itemName, details, score: exactBonus + startsWithBonus + tokenMatches };
+      })
+      .filter((match): match is { itemName: string; details: ItemDetails; score: number } => Boolean(match))
+      .sort((a, b) => b.score - a.score || a.itemName.localeCompare(b.itemName))
+      .slice(0, 12);
+  }, [addPlannerItemQuery]);
+  const gearShoppingItems = useMemo<GearShoppingItem[]>(() => {
+    const itemMap = new Map<string, GearShoppingItem>();
+
+    for (const character of plannerSelectedCharacters) {
+      for (const [slotId, itemName] of Object.entries(character.equippedItems)) {
+        if (!itemName) continue;
+        const candidate = getCandidateForItem(itemName);
+        if (!candidate) continue;
+
+        const current = itemMap.get(itemName) ?? {
+          itemName,
+          details: candidate.details,
+          needs: [],
+          expansions: candidate.expansions,
+          zones: candidate.zones,
+          sources: candidate.sources,
+          itemType: getItemTypeLabel(candidate.details),
+        };
+        current.needs.push({
+          characterId: character.id,
+          characterName: character.name,
+          class: character.class,
+          slotId,
+          slotLabel: getGearSlotLabel(slotId),
+        });
+        itemMap.set(itemName, current);
+      }
+
+      for (const plannerItem of character.plannerItems ?? []) {
+        const candidate = getCandidateForItem(plannerItem.itemName);
+        if (!candidate) continue;
+        const itemName = plannerItem.itemName;
+        const current = itemMap.get(itemName) ?? {
+          itemName,
+          details: candidate.details,
+          needs: [],
+          expansions: candidate.expansions,
+          zones: candidate.zones,
+          sources: candidate.sources,
+          itemType: getItemTypeLabel(candidate.details),
+        };
+        const slotLabel = plannerItem.utilityBagSlot !== null && plannerItem.utilityBagSlot !== undefined
+          ? "Utility Bag"
+          : plannerItem.slotId
+            ? getGearSlotLabel(plannerItem.slotId)
+            : "Custom Goal";
+        current.needs.push({
+          characterId: character.id,
+          characterName: character.name,
+          class: character.class,
+          slotId: plannerItemNeedSlotId(plannerItem),
+          slotLabel,
+          manualItemId: plannerItem.id,
+          category: plannerItem.category,
+          tags: plannerItem.tags,
+          notes: plannerItem.notes,
+          utilityBagSlot: plannerItem.utilityBagSlot,
+        });
+        itemMap.set(itemName, current);
+      }
+    }
+
+    return Array.from(itemMap.values())
+      .sort((a, b) => a.itemName.localeCompare(b.itemName));
+  }, [plannerSelectedCharacters]);
+  const filteredGearShoppingItems = useMemo<GearShoppingDisplayItem[]>(() => {
+    const itemQuery = plannerItemQuery.trim().toLowerCase();
+    const sourceQuery = plannerSourceQuery.trim().toLowerCase();
+
+    return gearShoppingItems
+      .map((item) => {
+        const completedNeeds = item.needs.filter((need) => gearShoppingObtainedNeedKeys.has(gearShoppingNeedKey(item.itemName, need)));
+        const remainingNeeds = item.needs.filter((need) => !gearShoppingObtainedNeedKeys.has(gearShoppingNeedKey(item.itemName, need)));
+        return {
+          ...item,
+          completedNeeds,
+          obtainedCount: completedNeeds.length,
+          remainingNeeds,
+          totalCount: item.needs.length,
+        };
+      })
+      .filter((item) => {
+        if (hideObtainedGear && item.remainingNeeds.length === 0) return false;
+        const expansionMatches = item.expansions.length === 0
+          || item.expansions.some((expansion) => plannerSelectedExpansionSet.has(expansion));
+        const itemMatches = !itemQuery || item.itemName.toLowerCase().includes(itemQuery);
+        const sourceMatches = !sourceQuery
+          || item.zones.some((zone) => zone.toLowerCase().includes(sourceQuery))
+          || item.sources.some((source) => sourceMatchesQuery(source, sourceQuery));
+        return expansionMatches && itemMatches && sourceMatches;
+      })
+      .sort((a, b) => {
+        const aComplete = a.remainingNeeds.length === 0 ? 1 : 0;
+        const bComplete = b.remainingNeeds.length === 0 ? 1 : 0;
+        return aComplete - bComplete || a.itemName.localeCompare(b.itemName);
+      });
+  }, [gearShoppingItems, gearShoppingObtainedNeedKeys, hideObtainedGear, plannerItemQuery, plannerSelectedExpansionSet, plannerSourceQuery]);
+  const gearShoppingProgress = useMemo(() => {
+    const total = gearShoppingItems.reduce((sum, item) => sum + item.needs.length, 0);
+    const obtained = gearShoppingItems.reduce(
+      (sum, item) => sum + item.needs.filter((need) => gearShoppingObtainedNeedKeys.has(gearShoppingNeedKey(item.itemName, need))).length,
+      0,
+    );
+
+    return { obtained, remaining: total - obtained, total };
+  }, [gearShoppingItems, gearShoppingObtainedNeedKeys]);
+  const plannerAssignedGearCount = useMemo(
+    () => plannerRoster.reduce((sum, character) => sum + equippedSlotCountFromItems(character.equippedItems), 0),
+    [plannerRoster],
+  );
+  const plannerActiveFilters = [
+    plannerSelectedCharacterIds.size !== plannerRoster.length ? "characters" : null,
+    !allPlannerExpansionsSelected ? "expansions" : null,
+    plannerItemQuery.trim() ? "item search" : null,
+    plannerSourceQuery.trim() ? "source search" : null,
+    hideObtainedGear ? "hide obtained" : null,
+  ].filter(Boolean);
 
   useEffect(() => {
     hidePreview();
   }, [hidePreview]);
+
+  useEffect(() => {
+    try {
+      const rawPlannerState = window.localStorage.getItem(gearPlannerStateStorageKey);
+      if (rawPlannerState) {
+        const parsed = JSON.parse(rawPlannerState) as {
+          obtainedNeedKeys?: unknown;
+          hideObtainedGear?: unknown;
+          selectedCharacterIds?: unknown;
+          savedAt?: unknown;
+        };
+        if (Array.isArray(parsed.obtainedNeedKeys)) {
+          setGearShoppingObtainedNeedKeys(new Set(parsed.obtainedNeedKeys.filter((key): key is string => typeof key === "string")));
+        }
+        if (typeof parsed.hideObtainedGear === "boolean") {
+          setHideObtainedGear(parsed.hideObtainedGear);
+        }
+        if (Array.isArray(parsed.selectedCharacterIds)) {
+          pendingPlannerSelectedCharacterIdsRef.current = parsed.selectedCharacterIds.filter((id): id is string => typeof id === "string");
+        }
+        if (typeof parsed.savedAt === "string") {
+          const savedTime = formatAutosaveTime(parsed.savedAt);
+          setPlannerSaveStatus(savedTime ? `Last saved locally: ${savedTime}` : "Planner saved locally");
+        }
+      } else {
+        const rawKeys = window.localStorage.getItem(gearShoppingObtainedStorageKey);
+        if (rawKeys) {
+          const parsed = JSON.parse(rawKeys);
+          if (Array.isArray(parsed)) {
+            setGearShoppingObtainedNeedKeys(new Set(parsed.filter((key): key is string => typeof key === "string")));
+          }
+        }
+
+        setHideObtainedGear(window.localStorage.getItem(gearShoppingHideObtainedStorageKey) === "1");
+      }
+    } catch {
+      window.localStorage.removeItem(gearPlannerStateStorageKey);
+      window.localStorage.removeItem(gearShoppingObtainedStorageKey);
+      window.localStorage.removeItem(gearShoppingHideObtainedStorageKey);
+    } finally {
+      setGearShoppingObtainedReady(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!gearShoppingObtainedReady) return;
+    const savedAt = new Date().toISOString();
+    window.localStorage.setItem(
+      gearShoppingObtainedStorageKey,
+      JSON.stringify(Array.from(gearShoppingObtainedNeedKeys).sort()),
+    );
+    window.localStorage.setItem(gearShoppingHideObtainedStorageKey, hideObtainedGear ? "1" : "0");
+    window.localStorage.setItem(gearPlannerStateStorageKey, JSON.stringify({
+      version: 1,
+      obtainedNeedKeys: Array.from(gearShoppingObtainedNeedKeys).sort(),
+      hideObtainedGear,
+      selectedCharacterIds: Array.from(plannerSelectedCharacterIds).sort(),
+      savedAt,
+    }));
+    const savedTime = formatAutosaveTime(savedAt);
+    setPlannerSaveStatus(savedTime ? `Autosaved locally: ${savedTime}` : "Planner autosaved locally");
+  }, [gearShoppingObtainedNeedKeys, gearShoppingObtainedReady, hideObtainedGear, plannerSelectedCharacterIds]);
+
+  useEffect(() => {
+    setPlannerSelectedCharacterIds((current) => {
+      const validIds = new Set(plannerRoster.map((character) => character.id));
+      const pendingIds = pendingPlannerSelectedCharacterIdsRef.current;
+      if (pendingIds) {
+        pendingPlannerSelectedCharacterIdsRef.current = null;
+        const restored = new Set(pendingIds.filter((id) => validIds.has(id)));
+        if (restored.size > 0) return restored;
+      }
+      const next = new Set(Array.from(current).filter((id) => validIds.has(id)));
+      for (const id of validIds) {
+        if (current.size === 0 || current.has(id)) next.add(id);
+      }
+      return next;
+    });
+  }, [plannerRoster]);
+
+  useEffect(() => {
+    setAddPlannerItemCharacterId((current) => {
+      if (plannerRoster.some((character) => character.id === current)) return current;
+      return plannerRoster[0]?.id ?? "";
+    });
+  }, [plannerRoster]);
 
   useEffect(() => {
     try {
@@ -1109,6 +1602,7 @@ export function CharacterGearPlanner() {
       race: selectedRace || undefined,
       server,
       equippedItems: gearRecordToEquippedItems(equippedGear),
+      plannerItems: existing?.plannerItems ?? [],
       createdAt: existing?.createdAt ?? now,
       updatedAt: now,
     };
@@ -1396,6 +1890,213 @@ export function CharacterGearPlanner() {
     setFocusOnly(false);
   }
 
+  function openGearShoppingList() {
+    setRoster((current) => saveActiveToRoster(current));
+    setViewMode("shopping");
+    setLoadError(null);
+    setLoadMessage(null);
+  }
+
+  function togglePlannerCharacter(characterId: string) {
+    setPlannerSelectedCharacterIds((current) => {
+      const next = new Set(current);
+      if (next.has(characterId)) {
+        next.delete(characterId);
+      } else {
+        next.add(characterId);
+      }
+      return next;
+    });
+  }
+
+  function selectAllPlannerCharacters() {
+    setPlannerSelectedCharacterIds(new Set(plannerRoster.map((character) => character.id)));
+  }
+
+  function togglePlannerExpansion(expansion: string) {
+    setPlannerSelectedExpansions((current) => {
+      const next = new Set(current);
+      if (next.has(expansion)) {
+        next.delete(expansion);
+      } else {
+        next.add(expansion);
+      }
+      if (next.size === 0) return current;
+      return new Set(plannerExpansionOptions.filter((option) => next.has(option)));
+    });
+  }
+
+  function selectAllPlannerExpansions() {
+    setPlannerSelectedExpansions(new Set(plannerExpansionOptions));
+  }
+
+  function clearPlannerFilters() {
+    selectAllPlannerCharacters();
+    selectAllPlannerExpansions();
+    setPlannerItemQuery("");
+    setPlannerSourceQuery("");
+    setHideObtainedGear(false);
+  }
+
+  function savePlannerState(message = "Planner saved locally") {
+    const savedAt = new Date().toISOString();
+    const snapshot = buildAutosaveRosterSnapshot();
+    if (snapshot) {
+      const payload = JSON.stringify(snapshot);
+      window.localStorage.setItem(rosterAutosaveKey, payload);
+      lastAutosavePayloadRef.current = payload;
+      const savedTime = formatAutosaveTime(savedAt);
+      setAutosaveStatus(savedTime ? `Last autosaved locally: ${savedTime}` : "Autosaved locally");
+    }
+
+    window.localStorage.setItem(
+      gearShoppingObtainedStorageKey,
+      JSON.stringify(Array.from(gearShoppingObtainedNeedKeys).sort()),
+    );
+    window.localStorage.setItem(gearShoppingHideObtainedStorageKey, hideObtainedGear ? "1" : "0");
+    window.localStorage.setItem(gearPlannerStateStorageKey, JSON.stringify({
+      version: 1,
+      obtainedNeedKeys: Array.from(gearShoppingObtainedNeedKeys).sort(),
+      hideObtainedGear,
+      selectedCharacterIds: Array.from(plannerSelectedCharacterIds).sort(),
+      savedAt,
+    }));
+
+    const savedTime = formatAutosaveTime(savedAt);
+    setPlannerSaveStatus(savedTime ? `${message}: ${savedTime}` : message);
+  }
+
+  function openAddPlannerItem(characterId?: string, placement = "utility", utilitySlot: number | null = null) {
+    setAddPlannerItemCharacterId(characterId ?? plannerSelectedCharacters[0]?.id ?? plannerRoster[0]?.id ?? "");
+    setAddPlannerItemPlacement(placement);
+    setAddPlannerUtilitySlot(utilitySlot);
+    setAddPlannerItemMessage(null);
+    setAddPlannerItemOpen(true);
+  }
+
+  function stageManualPlannerItem(itemName: string) {
+    setSelectedAddPlannerItemName(itemName);
+    setAddPlannerItemQuery(itemName);
+    setAddPlannerItemMessage(null);
+  }
+
+  function addSelectedManualPlannerItem() {
+    const itemName = selectedAddPlannerItemName;
+    const characterId = addPlannerItemCharacterId || plannerRoster[0]?.id;
+    if (!itemName || !itemDetails[itemName]) {
+      setAddPlannerItemMessage("Select an item before adding it.");
+      return;
+    }
+    if (!characterId) {
+      setAddPlannerItemMessage("Choose a character before adding the item.");
+      return;
+    }
+    const now = new Date().toISOString();
+
+    setRoster((current) => current.map((character) => {
+      if (character.id !== characterId) return character;
+      const existingPlannerItems = character.plannerItems ?? [];
+      const utilityCapacity = getUtilityBagCapacity(existingPlannerItems);
+      const usedUtilitySlots = new Set(
+        existingPlannerItems
+          .map((item) => item.utilityBagSlot)
+          .filter((slot): slot is number => typeof slot === "number"),
+      );
+      const nextUtilitySlot = addPlannerUtilitySlot !== null && !usedUtilitySlots.has(addPlannerUtilitySlot)
+        ? addPlannerUtilitySlot
+        : Array.from({ length: utilityCapacity }, (_, index) => index)
+          .find((index) => !usedUtilitySlots.has(index)) ?? utilityCapacity;
+      const isUtility = addPlannerItemPlacement === "utility";
+      const slotId = addPlannerItemPlacement.startsWith("slot:")
+        ? addPlannerItemPlacement.replace("slot:", "")
+        : null;
+      const plannerItem: GearPlannerManualItem = {
+        id: createBuildId(),
+        itemName,
+        slotId: slotId && normalizeGearSlotId(slotId) ? slotId : null,
+        notes: addPlannerItemNotes.trim() || undefined,
+        utilityBagSlot: isUtility ? nextUtilitySlot ?? null : null,
+        createdAt: now,
+        updatedAt: now,
+      };
+
+      return {
+        ...character,
+        plannerItems: [...existingPlannerItems, plannerItem],
+        updatedAt: now,
+      };
+    }));
+
+    setAddPlannerItemQuery("");
+    setSelectedAddPlannerItemName("");
+    setAddPlannerItemNotes("");
+    setAddPlannerUtilitySlot(null);
+    setAddPlannerItemMessage(`${itemName} added.`);
+    setLoadError(null);
+    setLoadMessage(`${itemName} added to the Gear Planner.`);
+  }
+
+  function toggleUtilityBag(characterId: string) {
+    setExpandedUtilityBags((current) => {
+      const next = new Set(current);
+      if (next.has(characterId)) {
+        next.delete(characterId);
+      } else {
+        next.add(characterId);
+      }
+      return next;
+    });
+  }
+
+  function removeManualPlannerItem(characterId: string, itemId: string) {
+    setRoster((current) => current.map((character) => {
+      if (character.id !== characterId) return character;
+      return {
+        ...character,
+        plannerItems: (character.plannerItems ?? []).filter((item) => item.id !== itemId),
+        updatedAt: new Date().toISOString(),
+      };
+    }));
+    setSelectedUtilityItem(null);
+  }
+
+  function toggleGearShoppingNeedObtained(itemName: string, need: GearShoppingNeed) {
+    const key = gearShoppingNeedKey(itemName, need);
+    setGearShoppingObtainedNeedKeys((current) => {
+      const next = new Set(current);
+      if (next.has(key)) {
+        next.delete(key);
+      } else {
+        next.add(key);
+      }
+      return next;
+    });
+  }
+
+  function markVisibleGearObtained() {
+    setGearShoppingObtainedNeedKeys((current) => {
+      const next = new Set(current);
+      for (const item of filteredGearShoppingItems) {
+        for (const need of item.remainingNeeds) {
+          next.add(gearShoppingNeedKey(item.itemName, need));
+        }
+      }
+      return next;
+    });
+  }
+
+  function resetVisibleGearObtained() {
+    setGearShoppingObtainedNeedKeys((current) => {
+      const next = new Set(current);
+      for (const item of filteredGearShoppingItems) {
+        for (const need of item.needs) {
+          next.delete(gearShoppingNeedKey(item.itemName, need));
+        }
+      }
+      return next;
+    });
+  }
+
   function requestEquipBis() {
     if (!selectedClass) {
       setLoadMessage(null);
@@ -1497,9 +2198,19 @@ export function CharacterGearPlanner() {
       <div className="character-gear-controls">
         <div>
           <p className="eyebrow">Gear Planner</p>
-          <h2>Equipment Slots</h2>
+          <h2>{viewMode === "shopping" ? "Gear Shopping List" : "Equipment Slots"}</h2>
         </div>
 
+        {viewMode === "shopping" ? (
+          <div className="character-build-actions">
+            <button className="character-action-button is-secondary" onClick={() => setViewMode("roster")} type="button">
+              Back to Characters
+            </button>
+            <button className="character-action-button" onClick={() => fileInputRef.current?.click()} type="button">
+              Load My Characters JSON
+            </button>
+          </div>
+        ) : (
         <div className="character-build-controls">
           <label className="character-name-filter">
             <span>Character Name</span>
@@ -1594,15 +2305,19 @@ export function CharacterGearPlanner() {
             <button className="character-action-button is-danger" disabled={!activeRosterMember} onClick={requestDeleteCharacter} type="button">Delete Character</button>
             <button className="character-action-button is-danger" disabled={roster.length === 0 && !currentHasContent()} onClick={requestDeleteGroup} type="button">Delete Group</button>
             <button className="character-action-button is-bis" onClick={requestEquipBis} type="button">Equip BIS</button>
-            <input
-              accept="application/json,.json"
-              className="visually-hidden"
-              onChange={(event) => void loadGroup(event.target.files?.[0])}
-              ref={fileInputRef}
-              type="file"
-            />
+            <button className="character-action-button is-progression" onClick={openGearShoppingList} type="button">
+              Gear Shopping List <span aria-hidden="true">-&gt;</span>
+            </button>
           </div>
         </div>
+        )}
+        <input
+          accept="application/json,.json"
+          className="visually-hidden"
+          onChange={(event) => void loadGroup(event.target.files?.[0])}
+          ref={fileInputRef}
+          type="file"
+        />
       </div>
 
       {loadMessage ? <p className="gear-load-feedback">{loadMessage}</p> : null}
@@ -1619,6 +2334,459 @@ export function CharacterGearPlanner() {
           <button onClick={dismissCloudImportPrompt} type="button">Skip</button>
         </div>
       ) : null}
+      {viewMode === "shopping" ? (
+        <section className="gear-shopping-view" aria-label="Gear shopping list">
+          <div className="spell-shopping-summary gear-shopping-summary">
+            <strong>{filteredGearShoppingItems.length} needed items</strong>
+            <span>{plannerSelectedCharacters.length} selected characters</span>
+            <span>{gearShoppingProgress.total} total copies</span>
+            <span>{gearShoppingProgress.obtained} obtained</span>
+            <span>{gearShoppingProgress.remaining} remaining</span>
+            <span>{plannerSaveStatus ?? "Planner autosaves locally"}</span>
+          </div>
+
+          <section className="toolbar gear-shopping-toolbar" aria-label="Gear shopping filters">
+            <div className="gear-shopping-character-filter" aria-label="Character filters">
+              <span>Characters</span>
+              <div className="expansion-toggle-group">
+                <button
+                  aria-pressed={plannerSelectedCharacterIds.size === plannerRoster.length && plannerRoster.length > 0}
+                  className={plannerSelectedCharacterIds.size === plannerRoster.length && plannerRoster.length > 0 ? "filter-button is-active" : "filter-button"}
+                  disabled={plannerRoster.length === 0}
+                  onClick={selectAllPlannerCharacters}
+                  type="button"
+                >
+                  All
+                </button>
+                {plannerRoster.map((character) => {
+                  const active = plannerSelectedCharacterIds.has(character.id);
+                  return (
+                    <button
+                      aria-pressed={active}
+                      className={active ? "filter-button is-active" : "filter-button"}
+                      key={character.id}
+                      onClick={() => togglePlannerCharacter(character.id)}
+                      type="button"
+                    >
+                      {character.name}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+            <div className="expansion-filter" aria-label="Expansion filters">
+              <span>Expansion</span>
+              <div className="expansion-toggle-group">
+                <button
+                  aria-pressed={allPlannerExpansionsSelected}
+                  className={allPlannerExpansionsSelected ? "filter-button is-active" : "filter-button"}
+                  onClick={selectAllPlannerExpansions}
+                  type="button"
+                >
+                  All
+                </button>
+                {plannerExpansionOptions.map((expansion) => {
+                  const active = plannerSelectedExpansionSet.has(expansion);
+                  return (
+                    <button
+                      aria-pressed={active}
+                      className={[
+                        "filter-button",
+                        "expansion-filter-button",
+                        expansionTone(expansion),
+                        active ? "is-active" : null,
+                      ].filter(Boolean).join(" ")}
+                      key={expansion}
+                      onClick={() => togglePlannerExpansion(expansion)}
+                      type="button"
+                    >
+                      {expansion}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+            <label className="character-name-filter gear-shopping-search">
+              <span>Item Search</span>
+              <input
+                onChange={(event) => setPlannerItemQuery(event.target.value)}
+                placeholder="Search item name"
+                type="search"
+                value={plannerItemQuery}
+              />
+            </label>
+
+            <label className="character-name-filter gear-shopping-search">
+              <span>Zone / Source</span>
+              <input
+                onChange={(event) => setPlannerSourceQuery(event.target.value)}
+                placeholder="Search zone, NPC, bucket"
+                type="search"
+                value={plannerSourceQuery}
+              />
+            </label>
+
+            <label className="gear-shopping-toggle">
+              <input
+                checked={hideObtainedGear}
+                onChange={(event) => setHideObtainedGear(event.target.checked)}
+                type="checkbox"
+              />
+              <span>Hide Obtained Gear</span>
+            </label>
+
+            <button className="character-action-button is-progression gear-shopping-clear" onClick={() => openAddPlannerItem()} type="button">
+              Add Item
+            </button>
+
+            <button className="character-action-button is-save gear-shopping-clear" onClick={() => savePlannerState("Saved")} type="button">
+              Save Planner
+            </button>
+
+            <button
+              className="character-action-button is-complete gear-shopping-clear"
+              disabled={filteredGearShoppingItems.every((item) => item.remainingNeeds.length === 0)}
+              onClick={markVisibleGearObtained}
+              type="button"
+            >
+              Mark all obtained
+            </button>
+
+            <button
+              className="character-action-button is-danger gear-shopping-clear"
+              disabled={filteredGearShoppingItems.every((item) => item.obtainedCount === 0)}
+              onClick={resetVisibleGearObtained}
+              type="button"
+            >
+              Reset Obtained Status
+            </button>
+
+            <button className="character-action-button is-secondary gear-shopping-clear" onClick={clearPlannerFilters} type="button">
+              Clear Filters
+            </button>
+          </section>
+
+          {addPlannerItemOpen ? (
+            <section className="gear-planner-add-item" aria-label="Add item to Gear Planner">
+              <div className="gear-planner-add-controls">
+                <label className="character-name-filter gear-shopping-search">
+                  <span>Search Any Item</span>
+                  <input
+                    autoFocus
+                    onChange={(event) => {
+                      setAddPlannerItemQuery(event.target.value);
+                      setSelectedAddPlannerItemName("");
+                      setAddPlannerItemMessage(null);
+                    }}
+                    placeholder="Search item name"
+                    type="search"
+                    value={addPlannerItemQuery}
+                  />
+                </label>
+                <label className="class-filter character-class-filter">
+                  <span>Character</span>
+                  <select value={addPlannerItemCharacterId} onChange={(event) => setAddPlannerItemCharacterId(event.target.value)}>
+                    {plannerRoster.map((character) => (
+                      <option key={character.id} value={character.id}>{character.name}</option>
+                    ))}
+                  </select>
+                </label>
+                <label className="class-filter character-class-filter">
+                  <span>Attach To</span>
+                  <select value={addPlannerItemPlacement} onChange={(event) => setAddPlannerItemPlacement(event.target.value)}>
+                    <option value="utility">Utility Bag</option>
+                    <option value="custom">Custom Goal</option>
+                    {gearSlotSelectOptions.map((slot) => (
+                      <option key={slot.id} value={`slot:${slot.id}`}>{slot.label}</option>
+                    ))}
+                  </select>
+                </label>
+                <label className="character-name-filter gear-shopping-search">
+                  <span>Notes</span>
+                  <input
+                    maxLength={plannerNoteMaxLength}
+                    onChange={(event) => setAddPlannerItemNotes(event.target.value)}
+                    placeholder="Optional farming note"
+                    type="text"
+                    value={addPlannerItemNotes}
+                  />
+                  <small className="planner-note-counter">{addPlannerItemNotes.length} / {plannerNoteMaxLength}</small>
+                </label>
+                <button className="character-action-button is-secondary gear-shopping-clear" onClick={() => setAddPlannerItemOpen(false)} type="button">
+                  Close
+                </button>
+                <button
+                  className="character-action-button is-progression gear-shopping-clear"
+                  disabled={!selectedAddPlannerItemName}
+                  onClick={addSelectedManualPlannerItem}
+                  type="button"
+                >
+                  Add
+                </button>
+              </div>
+              {selectedAddPlannerItemName ? (
+                <div className="gear-planner-selected-item">
+                  <ItemIcon details={itemDetails[selectedAddPlannerItemName]} />
+                  <span>
+                    <strong>{selectedAddPlannerItemName}</strong>
+                    <em>Ready to add. Choose character, attach target, and notes before confirming.</em>
+                  </span>
+                </div>
+              ) : null}
+              {addPlannerItemMessage ? <p className="gear-planner-add-hint">{addPlannerItemMessage}</p> : null}
+              {addPlannerItemQuery.trim().length < 2 ? (
+                <p className="gear-planner-add-hint">Type at least 2 characters to search the full item database.</p>
+              ) : addPlannerItemMatches.length === 0 ? (
+                <p className="gear-planner-add-hint">No items matched that search.</p>
+              ) : (
+                <div className="gear-planner-search-results">
+                  {addPlannerItemMatches.map((match) => {
+                    const candidate = getCandidateForItem(match.itemName);
+                    return (
+                      <button
+                        aria-pressed={selectedAddPlannerItemName === match.itemName}
+                        className={selectedAddPlannerItemName === match.itemName ? "is-selected" : undefined}
+                        key={match.itemName}
+                        onClick={() => stageManualPlannerItem(match.itemName)}
+                        type="button"
+                      >
+                        <ItemIcon details={match.details} />
+                        <span>
+                          <strong>{match.itemName}</strong>
+                          <em>{[match.details.expansion, candidate?.zones.slice(0, 2).join(", ")].filter(Boolean).join(" / ") || "Source unknown"}</em>
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
+            </section>
+          ) : null}
+
+          {plannerSelectedCharacters.length > 0 ? (
+            <section className="utility-bag-board" aria-label="Character utility bags">
+              {plannerSelectedCharacters.map((character) => {
+                const utilityItems = (character.plannerItems ?? []).filter((item) => item.utilityBagSlot !== null && item.utilityBagSlot !== undefined);
+                const utilityBySlot = new Map(utilityItems.map((item) => [item.utilityBagSlot ?? -1, item]));
+                const utilityCapacity = getUtilityBagCapacity(utilityItems);
+                const expanded = expandedUtilityBags.has(character.id);
+                const selectedItem = selectedUtilityItem?.characterId === character.id
+                  ? utilityItems.find((item) => item.id === selectedUtilityItem.itemId)
+                  : null;
+                const selectedCandidate = selectedItem ? getCandidateForItem(selectedItem.itemName) : null;
+                const selectedNeed: GearShoppingNeed | null = selectedItem ? {
+                  characterId: character.id,
+                  characterName: character.name,
+                  class: character.class,
+                  slotId: plannerItemNeedSlotId(selectedItem),
+                  slotLabel: "Utility Bag",
+                  manualItemId: selectedItem.id,
+                  category: selectedItem.category,
+                  tags: selectedItem.tags,
+                  notes: selectedItem.notes,
+                  utilityBagSlot: selectedItem.utilityBagSlot,
+                } : null;
+                const selectedObtained = selectedItem && selectedNeed
+                  ? gearShoppingObtainedNeedKeys.has(gearShoppingNeedKey(selectedItem.itemName, selectedNeed))
+                  : false;
+
+                return (
+                  <section className="utility-bag-card" key={character.id}>
+                    <button
+                      aria-expanded={expanded}
+                      className="utility-bag-header"
+                      onClick={() => toggleUtilityBag(character.id)}
+                      type="button"
+                    >
+                      <span>
+                        <strong>{character.name}</strong>
+                        <em>
+                          {utilityItems.length} / {utilityCapacity} utility slots
+                          {utilityCapacity > utilityBagBaseSize ? " - expanded" : ""}
+                        </em>
+                      </span>
+                      <b>{expanded ? "Collapse" : "Open Utility Bag"}</b>
+                    </button>
+                    {expanded ? (
+                      <>
+                        <div className="utility-bag-grid">
+                          {Array.from({ length: utilityCapacity }, (_, slotIndex) => {
+                            const plannerItem = utilityBySlot.get(slotIndex);
+                            const details = plannerItem ? itemDetails[plannerItem.itemName] : undefined;
+                            const need: GearShoppingNeed | null = plannerItem ? {
+                              characterId: character.id,
+                              characterName: character.name,
+                              class: character.class,
+                              slotId: plannerItemNeedSlotId(plannerItem),
+                              slotLabel: "Utility Bag",
+                              manualItemId: plannerItem.id,
+                              category: plannerItem.category,
+                              tags: plannerItem.tags,
+                              notes: plannerItem.notes,
+                              utilityBagSlot: plannerItem.utilityBagSlot,
+                            } : null;
+                            const obtained = plannerItem && need
+                              ? gearShoppingObtainedNeedKeys.has(gearShoppingNeedKey(plannerItem.itemName, need))
+                              : false;
+
+                            return (
+                              <button
+                                aria-label={plannerItem ? `${plannerItem.itemName} utility slot` : `Add utility item to slot ${slotIndex + 1}`}
+                                className={[
+                                  "utility-bag-slot",
+                                  plannerItem ? "is-filled" : "is-empty",
+                                  obtained ? "is-obtained" : null,
+                                ].filter(Boolean).join(" ")}
+                                key={slotIndex}
+                                onClick={() => {
+                                  if (plannerItem) {
+                                    setSelectedUtilityItem({ characterId: character.id, itemId: plannerItem.id });
+                                  } else {
+                                    openAddPlannerItem(character.id, "utility", slotIndex);
+                                  }
+                                }}
+                                type="button"
+                              >
+                                {plannerItem ? <ItemIcon details={details} /> : null}
+                                {obtained ? <span className="utility-bag-check">Done</span> : null}
+                              </button>
+                            );
+                          })}
+                        </div>
+                        {selectedItem && selectedCandidate && selectedNeed ? (
+                          <div className="utility-bag-detail">
+                            <div>
+                              <strong>{selectedItem.itemName}</strong>
+                              <span>{selectedCandidate.expansions.join(", ") || "Expansion unknown"}</span>
+                              {selectedCandidate.sources.slice(0, 3).map((source, index) => (
+                                <em key={`${selectedItem.id}-${source.sourceName}-${index}`}>{formatSourceSummary(source)}</em>
+                              ))}
+                              {selectedItem.notes ? <p>{selectedItem.notes}</p> : null}
+                            </div>
+                            <div className="utility-bag-detail-actions">
+                              <button
+                                className={selectedObtained ? "character-action-button is-complete" : "character-action-button is-progression"}
+                                onClick={() => toggleGearShoppingNeedObtained(selectedItem.itemName, selectedNeed)}
+                                type="button"
+                              >
+                                {selectedObtained ? "Obtained" : "Mark obtained"}
+                              </button>
+                              <button className="character-action-button is-secondary" onClick={() => removeManualPlannerItem(character.id, selectedItem.id)} type="button">
+                                Remove
+                              </button>
+                            </div>
+                          </div>
+                        ) : null}
+                      </>
+                    ) : null}
+                  </section>
+                );
+              })}
+            </section>
+          ) : null}
+
+          {plannerRoster.length === 0 ? (
+            <p className="empty">No characters created yet. Go back to Characters and add a character to start a gear plan.</p>
+          ) : plannerAssignedGearCount === 0 ? (
+            <p className="empty">No gear assigned yet. Equip desired items on your characters, then return to the shopping list.</p>
+          ) : plannerSelectedCharacters.length === 0 ? (
+            <p className="empty">Select at least one character to build a gear list.</p>
+          ) : filteredGearShoppingItems.length === 0 ? (
+            <p className="empty">
+              {plannerActiveFilters.length > 0 ? "No needed items match the active filters." : "No needed gear found for the selected characters."}
+            </p>
+          ) : (
+            <div className="gear-shopping-list">
+              {filteredGearShoppingItems.map((item) => (
+                <article
+                  className={item.remainingNeeds.length === 0 ? "gear-shopping-card is-obtained" : "gear-shopping-card"}
+                  key={item.itemName}
+                >
+                  <div className="gear-shopping-card-main">
+                    <ItemIcon details={item.details} />
+                    <div>
+                      <h3>{item.itemName}</h3>
+                      <div className="gear-shopping-meta">
+                        {item.expansions.map((expansion) => (
+                          <span className={`expansion-pill is-compact ${expansionTone(expansion)}`} key={expansion}>
+                            {expansion}
+                          </span>
+                        ))}
+                        <span>{item.itemType}</span>
+                        <span>{item.obtainedCount} / {item.totalCount} obtained</span>
+                        <span>{item.remainingNeeds.length} remaining</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="gear-shopping-needs" aria-label={`${item.itemName} needed by`}>
+                    {item.remainingNeeds.length > 0 ? (
+                      <div className="gear-shopping-need-group">
+                        <span className="gear-shopping-need-heading">Still needed by</span>
+                        <div>
+                          {item.remainingNeeds.map((need) => (
+                            <label className="gear-shopping-need-chip" key={`${need.characterId}-${need.slotId}`}>
+                              <input
+                                checked={false}
+                                onChange={() => toggleGearShoppingNeedObtained(item.itemName, need)}
+                                type="checkbox"
+                              />
+                              <span>
+                                <strong>{need.characterName}</strong>
+                                <em>{need.slotLabel} / {need.class}</em>
+                              </span>
+                            </label>
+                          ))}
+                        </div>
+                      </div>
+                    ) : null}
+
+                    {!hideObtainedGear && item.completedNeeds.length > 0 ? (
+                      <div className="gear-shopping-need-group is-completed">
+                        <span className="gear-shopping-need-heading">Completed for</span>
+                        <div>
+                          {item.completedNeeds.map((need) => (
+                            <label className="gear-shopping-need-chip is-obtained" key={`${need.characterId}-${need.slotId}`}>
+                              <input
+                                checked
+                                onChange={() => toggleGearShoppingNeedObtained(item.itemName, need)}
+                                type="checkbox"
+                              />
+                              <span>
+                                <strong>{need.characterName}</strong>
+                                <em>{need.slotLabel} / {need.class}</em>
+                              </span>
+                            </label>
+                          ))}
+                        </div>
+                      </div>
+                    ) : null}
+                  </div>
+
+                  <div className="gear-shopping-sources">
+                    <h4>Sources</h4>
+                    {item.sources.length > 0 ? (
+                      <ul>
+                        {item.sources.slice(0, 4).map((source, index) => (
+                          <li key={`${item.itemName}-${source.sourceName}-${index}`}>
+                            <strong>{source.expansion}</strong>
+                            <span>{formatSourceSummary(source)}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p>No source metadata available.</p>
+                    )}
+                  </div>
+                </article>
+              ))}
+            </div>
+          )}
+        </section>
+      ) : (
+      <>
       <div className="gear-autosave-row">
         <p>{autosaveStatus ?? (isSignedIn ? "Autosaves to Discord after loading" : "Autosaves locally in this browser")}</p>
         <button className="character-action-button is-secondary" onClick={clearLocalAutosave} type="button">
@@ -1866,6 +3034,8 @@ export function CharacterGearPlanner() {
           </div>
         </div>
       </div>
+      </>
+      )}
 
       {showBisConfirm ? (
         <div className="modal-backdrop" onClick={() => setShowBisConfirm(false)} role="presentation">

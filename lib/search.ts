@@ -108,6 +108,13 @@ export type ItemDetails = {
   relatedQuestId?: string | number;
   source?: string;
   sourceCategory?: string;
+  categories?: string[];
+  tags?: string[];
+  aliases?: string[];
+  searchKeywords?: string[];
+  iconId?: string | number | null;
+  utility?: boolean | null;
+  isUtility?: boolean | null;
   armorSet?: "Thurgadin" | "Kael" | "Skyshrine" | string;
   sourceNpcName?: string;
   sourceNpcId?: string;

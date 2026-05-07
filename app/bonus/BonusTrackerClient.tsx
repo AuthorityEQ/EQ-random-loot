@@ -483,7 +483,6 @@ function applyServerReports(zone: Zone, reports: ServerBonusReport[]): Zone {
 export function BonusTrackerClient() {
   const { data: session, status: authStatus } = useSession();
   const [query, setQuery] = useState("");
-  const [selectedExpansion, setSelectedExpansion] = useState("All");
   const [selectedBonus, setSelectedBonus] = useState<BonusFilter>("All");
   const [selectedStatus, setSelectedStatus] = useState<StatusFilter>("All");
   const [openReportZone, setOpenReportZone] = useState<string | null>(null);
@@ -495,14 +494,17 @@ export function BonusTrackerClient() {
   const [reportMessage, setReportMessage] = useState("");
   const [isSubmittingReport, setIsSubmittingReport] = useState(false);
   const [isModeratingReport, setIsModeratingReport] = useState(false);
-  const [showUnreportedZones, setShowUnreportedZones] = useState(false);
+  const [showUnreportedZones, setShowUnreportedZones] = useState(true);
   const isLoggedIn = authStatus === "authenticated" && Boolean(session?.user?.discordUserId);
 
   const expansionOptions = useMemo(() => {
-    return ["All", ...Array.from(new Set(zones.map((zone) => zone.expansion))).sort((a, b) => {
+    return Array.from(new Set(zones.map((zone) => zone.expansion))).sort((a, b) => {
       return getExpansionSortValue(a) - getExpansionSortValue(b) || a.localeCompare(b);
-    })];
+    });
   }, []);
+  const [selectedExpansions, setSelectedExpansions] = useState<Set<string>>(() => new Set(expansionOptions));
+  const selectedExpansionSet = useMemo(() => selectedExpansions, [selectedExpansions]);
+  const allExpansionsSelected = selectedExpansionSet.size === expansionOptions.length;
 
   const normalizedQuery = query.trim().toLowerCase();
   const reportedZones = useMemo(() => {
@@ -539,13 +541,13 @@ export function BonusTrackerClient() {
       totalReports: getTotalReports(zone),
     })).filter((zone) => {
       const searchMatches = zone.zoneName.toLowerCase().includes(normalizedQuery);
-      const expansionMatches = selectedExpansion === "All" || zone.expansion === selectedExpansion;
+      const expansionMatches = selectedExpansionSet.has(zone.expansion);
       const statusMatches = selectedStatus === "All"
         || (selectedStatus === "Reported" && zone.totalReports > 0)
         || (selectedStatus === "Unreported" && zone.totalReports === 0);
       return searchMatches && expansionMatches && statusMatches && reportMatchesFilter(zone, selectedBonus);
     });
-  }, [normalizedQuery, reportedZones, selectedBonus, selectedExpansion, selectedStatus]);
+  }, [normalizedQuery, reportedZones, selectedBonus, selectedExpansionSet, selectedStatus]);
 
   const visibleReportedZones = useMemo(() => {
     return visibleZones
@@ -564,7 +566,9 @@ export function BonusTrackerClient() {
 
   const activeFilters = [
     normalizedQuery ? `search ${query.trim()}` : null,
-    selectedExpansion !== "All" ? `expansion ${selectedExpansion}` : null,
+    !allExpansionsSelected
+      ? `expansion ${expansionOptions.filter((expansion) => selectedExpansionSet.has(expansion)).join(", ")}`
+      : null,
     selectedBonus !== "All" ? `bonus ${formatBonusLabel(selectedBonus)}` : null,
     selectedStatus !== "All" ? `reporting ${selectedStatus}` : null,
   ].filter(Boolean);
@@ -690,6 +694,23 @@ export function BonusTrackerClient() {
     if (status === "Unreported") {
       setSelectedBonus("All");
     }
+  }
+
+  function selectAllExpansions() {
+    setSelectedExpansions(new Set(expansionOptions));
+  }
+
+  function toggleExpansion(expansion: string) {
+    setSelectedExpansions((current) => {
+      const next = new Set(current);
+      if (next.has(expansion)) {
+        next.delete(expansion);
+      } else {
+        next.add(expansion);
+      }
+      if (next.size === 0) return current;
+      return new Set(expansionOptions.filter((option) => next.has(option)));
+    });
   }
 
   function renderZoneCard(zone: ZoneWithStatus, mode: "reported" | "unreported") {
@@ -899,19 +920,27 @@ export function BonusTrackerClient() {
 
         <div className="bonus-filter-group" aria-label="Expansion filters">
           <span className="bonus-filter-label">Expansion</span>
+          <button
+            aria-pressed={allExpansionsSelected}
+            className={allExpansionsSelected ? "filter-button is-active" : "filter-button"}
+            onClick={selectAllExpansions}
+            type="button"
+          >
+            All
+          </button>
           {expansionOptions.map((expansion) => {
-            const isActive = selectedExpansion === expansion;
+            const isActive = selectedExpansionSet.has(expansion);
             return (
               <button
                 aria-pressed={isActive}
                 className={[
                   "filter-button",
-                  expansion === "All" ? null : "expansion-filter-button",
-                  expansion === "All" ? null : getExpansionToneClass(expansion),
+                  "expansion-filter-button",
+                  getExpansionToneClass(expansion),
                   isActive ? "is-active" : null,
                 ].filter(Boolean).join(" ")}
                 key={expansion}
-                onClick={() => setSelectedExpansion(expansion)}
+                onClick={() => toggleExpansion(expansion)}
                 type="button"
               >
                 {expansion}
@@ -964,7 +993,7 @@ export function BonusTrackerClient() {
             type="button"
             onClick={() => {
               setQuery("");
-              setSelectedExpansion("All");
+              selectAllExpansions();
               setSelectedBonus("All");
               setSelectedStatus("All");
             }}

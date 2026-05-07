@@ -45,7 +45,8 @@
     "generate:icons": "node scripts/generate-icons.mjs",
     "enrich:dropped-spells": "node --experimental-strip-types scripts/enrich-dropped-spells.ts",
     "enrich:dropped-spells:test": "node --experimental-strip-types scripts/enrich-dropped-spells.ts --max=5 --dry",
-    "import:alchemy:sheet": "node --experimental-strip-types scripts/import-alchemy-from-sheet.ts"
+    "import:alchemy:sheet": "node --experimental-strip-types scripts/import-alchemy-from-sheet.ts",
+    "generate:picks": "node scripts/generate-pick-zones.mjs"
   },
   "dependencies": {
     "@types/pg": "^8.20.0",
