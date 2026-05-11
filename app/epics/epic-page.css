@@ -369,6 +369,7 @@
   border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
   border-radius: 999px;
   color: color-mix(in srgb, var(--accent) 84%, var(--text));
+  cursor: pointer;
   display: inline-flex;
   font-size: 0.74rem;
   font-weight: 900;
@@ -377,11 +378,21 @@
   text-decoration: none;
 }
 
+.epic-bucket-chip.is-static {
+  cursor: default;
+  opacity: 0.72;
+}
+
 .epic-bucket-chip:hover,
 .epic-bucket-chip:focus {
   background: color-mix(in srgb, var(--accent) 12%, transparent);
   outline: none;
   text-decoration: none;
+}
+
+.epic-bucket-chip.is-static:hover,
+.epic-bucket-chip.is-static:focus {
+  background: transparent;
 }
 
 .epic-bucket-chip.is-raid {

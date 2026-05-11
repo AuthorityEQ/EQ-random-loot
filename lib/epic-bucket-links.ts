@@ -16,11 +16,63 @@ export type EpicBucketLink = {
 };
 
 type BucketLinkEntry = EpicBucketLink & {
-  mobName: string;
+  sourceName: string;
 };
 
 const groupDatasets = [classicGroupData, kunarkGroupData, veliousGroupData] as LootDataset[];
 const raidDatasets = [classicRaidData, kunarkRaidData, veliousRaidData] as RaidDataset[];
+
+function makeGroupBucketLink({
+  expansion,
+  bucket,
+  label,
+  title,
+  level,
+}: {
+  expansion: string;
+  bucket: number;
+  label?: string;
+  title?: string;
+  level?: number;
+}): EpicBucketLink {
+  const params = new URLSearchParams({
+    exp: expansion.toLowerCase(),
+    bucket: String(bucket),
+  });
+  if (level) params.set("level", String(level));
+
+  return {
+    label: label ?? `${expansion} Group Bucket ${bucket}`,
+    href: `/loot?${params.toString()}`,
+    title: title ?? `View ${expansion} group bucket ${bucket}`,
+    kind: "group",
+  };
+}
+
+function makeRaidBucketLink({
+  expansion,
+  tier,
+  label,
+  title,
+}: {
+  expansion: string;
+  tier: string | number;
+  label?: string;
+  title?: string;
+}): EpicBucketLink {
+  const tierLabel = typeof tier === "number" ? `T${tier}` : String(tier);
+  const params = new URLSearchParams({
+    expansion,
+    tier: String(tier),
+  });
+
+  return {
+    label: label ?? `${expansion} ${tierLabel} Raid Bucket`,
+    href: `/raids?${params.toString()}`,
+    title: title ?? `View ${expansion} ${tierLabel} raid targets`,
+    kind: "raid",
+  };
+}
 
 // Manual EQ progression overrides for bucketed epic mobs that are not present
 // in the current bucket datasets yet, or for old notes that refer to a chain
@@ -29,72 +81,75 @@ const manualEpicBucketLinks = new Map<string, EpicBucketLink[]>([
   [
     "Cleric|15",
     [
-      {
+      makeRaidBucketLink({
         label: "Kunark T2 Raid Bucket",
-        href: "/raids?expansion=Kunark&tier=2",
+        expansion: "Kunark",
+        tier: 2,
         title: "View Kunark Tier 2 raid targets",
-        kind: "raid",
-      },
+      }),
     ],
   ],
   [
     "Cleric|16",
     [
-      {
+      makeRaidBucketLink({
         label: "Kunark T2 Raid Bucket",
-        href: "/raids?expansion=Kunark&tier=2",
+        expansion: "Kunark",
+        tier: 2,
         title: "View Kunark Tier 2 raid targets",
-        kind: "raid",
-      },
+      }),
     ],
   ],
   [
     "Cleric|23",
     [
-      {
+      makeRaidBucketLink({
         label: "Kunark T2 Raid Bucket",
-        href: "/raids?expansion=Kunark&tier=2",
+        expansion: "Kunark",
+        tier: 2,
         title: "View Kunark Tier 2 raid targets",
-        kind: "raid",
-      },
+      }),
     ],
   ],
   [
     "Cleric|24",
     [
-      {
+      makeRaidBucketLink({
         label: "Kunark T2 Raid Bucket",
-        href: "/raids?expansion=Kunark&tier=2",
+        expansion: "Kunark",
+        tier: 2,
         title: "View Kunark Tier 2 raid targets",
-        kind: "raid",
-      },
+      }),
     ],
   ],
   [
     "Monk|7",
     [
-      {
+      makeGroupBucketLink({
         label: "Kunark T2 Group Bucket",
-        href: "/loot?exp=kunark&bucket=11&level=60",
+        expansion: "Kunark",
+        bucket: 11,
+        level: 60,
         title: "View the Kunark random group-loot bucket for this drop",
-        kind: "group",
-      },
+      }),
     ],
   ],
   [
     "Monk|8",
     [
-      {
+      makeGroupBucketLink({
         label: "Kunark T2 Group Bucket",
-        href: "/loot?exp=kunark&bucket=11&level=60",
+        expansion: "Kunark",
+        bucket: 11,
+        level: 60,
         title: "View the Kunark random group-loot bucket for this drop",
-        kind: "group",
-      },
+      }),
     ],
   ],
 ]);
 
 const bucketLinksByMobName = buildBucketLinksByMobName();
+const bucketLinksByItemName = buildBucketLinksByItemName();
 
 function buildBucketLinksByMobName() {
   const links = new Map<string, BucketLinkEntry[]>();
@@ -102,15 +157,15 @@ function buildBucketLinksByMobName() {
   for (const dataset of groupDatasets) {
     const expansion = dataset.metadata.expansion;
     for (const bucket of dataset.buckets) {
-      const link: EpicBucketLink = {
+      const link = makeGroupBucketLink({
+        bucket: bucket.bucket,
+        expansion,
         label: `${expansion} ${bucket.level_range} Group Bucket`,
-        href: `/loot?exp=${encodeURIComponent(expansion.toLowerCase())}&bucket=${bucket.bucket}`,
         title: `View ${expansion} group bucket ${bucket.bucket}`,
-        kind: "group",
-      };
+      });
 
       for (const mob of bucket.mobs) {
-        addBucketLink(links, mob.name, { ...link, mobName: mob.name });
+        addBucketLink(links, normalizeNpcOrMobName(mob.name), { ...link, sourceName: mob.name });
       }
     }
   }
@@ -119,15 +174,15 @@ function buildBucketLinksByMobName() {
     for (const tier of dataset.tiers) {
       if (String(tier.tier).toLowerCase().includes("non-random")) continue;
       const tierLabel = typeof tier.tier === "number" ? `T${tier.tier}` : String(tier.tier);
-      const link: EpicBucketLink = {
+      const link = makeRaidBucketLink({
+        expansion: dataset.expansion,
+        tier: tier.tier,
         label: `${dataset.expansion} ${tierLabel} Raid Bucket`,
-        href: `/raids?expansion=${encodeURIComponent(dataset.expansion)}&tier=${encodeURIComponent(String(tier.tier))}`,
         title: `View ${dataset.expansion} ${tierLabel} raid targets`,
-        kind: "raid",
-      };
+      });
 
       for (const boss of tier.bosses) {
-        addBucketLink(links, boss.name, { ...link, mobName: boss.name });
+        addBucketLink(links, normalizeNpcOrMobName(boss.name), { ...link, sourceName: boss.name });
       }
     }
   }
@@ -135,8 +190,48 @@ function buildBucketLinksByMobName() {
   return links;
 }
 
-function addBucketLink(map: Map<string, BucketLinkEntry[]>, mobName: string, link: BucketLinkEntry) {
-  const key = normalizeMobName(mobName);
+function buildBucketLinksByItemName() {
+  const links = new Map<string, BucketLinkEntry[]>();
+
+  for (const dataset of groupDatasets) {
+    const expansion = dataset.metadata.expansion;
+    for (const bucket of dataset.buckets) {
+      const link = makeGroupBucketLink({
+        bucket: bucket.bucket,
+        expansion,
+        label: `${expansion} ${bucket.level_range} Group Bucket`,
+        title: `View ${expansion} group bucket ${bucket.bucket}`,
+      });
+
+      for (const itemName of bucket.loot_pool) {
+        addBucketLink(links, normalizeItemName(itemName), { ...link, sourceName: itemName });
+      }
+    }
+  }
+
+  for (const dataset of raidDatasets) {
+    for (const tier of dataset.tiers) {
+      if (String(tier.tier).toLowerCase().includes("non-random")) continue;
+      const tierLabel = typeof tier.tier === "number" ? `T${tier.tier}` : String(tier.tier);
+      const link = makeRaidBucketLink({
+        expansion: dataset.expansion,
+        tier: tier.tier,
+        label: `${dataset.expansion} ${tierLabel} Raid Bucket`,
+        title: `View ${dataset.expansion} ${tierLabel} raid targets`,
+      });
+
+      for (const boss of tier.bosses) {
+        for (const itemName of boss.loot_pool ?? []) {
+          addBucketLink(links, normalizeItemName(itemName), { ...link, sourceName: itemName });
+        }
+      }
+    }
+  }
+
+  return links;
+}
+
+function addBucketLink(map: Map<string, BucketLinkEntry[]>, key: string, link: BucketLinkEntry) {
   const current = map.get(key) ?? [];
   if (!current.some((existing) => existing.href === link.href && existing.kind === link.kind)) {
     current.push(link);
@@ -149,6 +244,19 @@ function normalizeMobName(value: string) {
     .toLowerCase()
     .replace(/[’`]/g, "'")
     .replace(/\band\b/g, " ")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim()
+    .replace(/\s+/g, " ");
+}
+
+function normalizeNpcOrMobName(value: string) {
+  return normalizeMobName(value);
+}
+
+function normalizeItemName(value: string) {
+  return value
+    .toLowerCase()
+    .replace(/[â€™`]/g, "'")
     .replace(/[^a-z0-9]+/g, " ")
     .trim()
     .replace(/\s+/g, " ");
@@ -180,6 +288,47 @@ function getStepNpcCandidates(step: NormalizedStep) {
   return [...candidates].filter(Boolean);
 }
 
+function stepLooksLikeDropAcquisition(step: NormalizedStep) {
+  const text = [
+    step.action,
+    step.items,
+    step.notes,
+    step.phase,
+  ].filter(Boolean).join(" ");
+
+  return /\b(?:kill|loot|drops?|drop item|obtain|forage|ground spawn|retrieve|pickpocket|collect|dropped by)\b/i.test(text);
+}
+
+function splitItemCandidates(value: string) {
+  return value
+    .replace(/\([^)]*\)/g, " ")
+    .replace(/^(?:loot|drops?|reward|receive|obtain|obtained|pickpocket|forage|ground spawn|collect|buy|purchase):\s*/i, "")
+    .split(/\s*(?:,|;|\+|\band\b)\s*/i)
+    .map((part) => part.trim())
+    .filter(Boolean);
+}
+
+function getStepItemCandidates(step: NormalizedStep) {
+  const candidates = new Set<string>();
+
+  for (const item of step.dropItems) {
+    candidates.add(item.name);
+  }
+
+  if (stepLooksLikeDropAcquisition(step)) {
+    for (const item of step.rewardItems) {
+      candidates.add(item.name);
+    }
+    if (step.items) {
+      for (const part of splitItemCandidates(step.items)) {
+        candidates.add(part);
+      }
+    }
+  }
+
+  return [...candidates].filter(Boolean);
+}
+
 function dedupeLinks(links: EpicBucketLink[]) {
   const seen = new Set<string>();
   const deduped: EpicBucketLink[] = [];
@@ -198,7 +347,10 @@ function dedupeLinks(links: EpicBucketLink[]) {
 export function getEpicBucketLinks(className: EpicClassName, step: NormalizedStep) {
   const links = [...(manualEpicBucketLinks.get(`${className}|${step.stepRaw}`) ?? [])];
   for (const candidate of getStepNpcCandidates(step)) {
-    links.push(...(bucketLinksByMobName.get(normalizeMobName(candidate)) ?? []));
+    links.push(...(bucketLinksByMobName.get(normalizeNpcOrMobName(candidate)) ?? []));
+  }
+  for (const candidate of getStepItemCandidates(step)) {
+    links.push(...(bucketLinksByItemName.get(normalizeItemName(candidate)) ?? []));
   }
   return dedupeLinks(links);
 }

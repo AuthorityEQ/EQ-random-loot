@@ -32,7 +32,7 @@ import veliousRaidData from "@/data/velious-raid.json";
 import { mobToSlug } from "@/lib/mob-slug";
 import { zoneToSlug } from "@/lib/zone-slug";
 import { buildMobIndex } from "@/lib/mob-slug";
-import { getEpicBucketLinks } from "@/lib/epic-bucket-links";
+import { getEpicBucketLinks, type EpicBucketLink } from "@/lib/epic-bucket-links";
 import type { ItemDetailsMap, LootDataset } from "@/lib/search";
 import type { RaidDataset } from "@/lib/raidTiers";
 import itemDetailsData from "@/data/item-details.json";
@@ -251,6 +251,29 @@ function EpicItemLinks({
   );
 }
 
+function EpicBucketChip({ bucketLink }: { bucketLink: EpicBucketLink }) {
+  const chipClassName = `epic-bucket-chip is-${bucketLink.kind}`;
+  if (!bucketLink.href) {
+    return (
+      <span className={`${chipClassName} is-static`} title={bucketLink.title}>
+        {bucketLink.label}
+      </span>
+    );
+  }
+
+  return (
+    <Link
+      className={chipClassName}
+      href={bucketLink.href}
+      onClick={(event) => event.stopPropagation()}
+      onKeyDown={(event) => event.stopPropagation()}
+      title={bucketLink.title}
+    >
+      {bucketLink.label}
+    </Link>
+  );
+}
+
 // ---------------------------------------------------------------------------
 // Step card — mirrors BucketCard visual pattern
 // ---------------------------------------------------------------------------
@@ -441,14 +464,7 @@ function EpicStepCard({
                 <ul className="epic-bucket-chip-list">
                   {bucketLinks.map((bucketLink) => (
                     <li key={bucketLink.href}>
-                      <Link
-                        className={`epic-bucket-chip is-${bucketLink.kind}`}
-                        href={bucketLink.href}
-                        onClick={(event) => event.stopPropagation()}
-                        title={bucketLink.title}
-                      >
-                        {bucketLink.label}
-                      </Link>
+                      <EpicBucketChip bucketLink={bucketLink} />
                     </li>
                   ))}
                 </ul>
