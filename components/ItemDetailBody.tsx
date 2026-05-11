@@ -4,10 +4,7 @@ import { useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import { EqItemInspect } from "@/components/EqItemInspect";
 import { useFavorites } from "@/components/FavoritesProvider";
-import { ConfidenceBadge } from "@/components/ConfidenceBadge";
 import { ShareToDiscordButton } from "@/components/ShareToDiscordButton";
-import confidenceData from "@/data/loot-confidence.json";
-import { DEFAULT_CONFIDENCE, type ConfidenceMetadata } from "@/lib/confidence";
 import { bestZonesForBucket } from "@/lib/buckets";
 import { itemToSlug } from "@/lib/item-slug";
 import type { Bucket, ItemDetails } from "@/lib/search";
@@ -130,10 +127,6 @@ export function ItemDetailBody({
                   {source.name}
                 </a>
               ))}
-              {(() => {
-                const meta = (confidenceData as unknown as Record<string, ConfidenceMetadata>)[itemName] ?? DEFAULT_CONFIDENCE;
-                return <ConfidenceBadge meta={meta} />;
-              })()}
             </div>
           ) : null}
         </>

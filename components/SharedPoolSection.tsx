@@ -1,11 +1,8 @@
 "use client";
 
-import { ConfidenceBadge } from "@/components/ConfidenceBadge";
 import { FavoriteIndicator } from "@/components/FavoriteIndicator";
 import { ItemIcon } from "@/components/ItemIcon";
 import { useItemPreview } from "@/components/ItemPreviewProvider";
-import confidenceData from "@/data/loot-confidence.json";
-import { DEFAULT_CONFIDENCE, type ConfidenceMetadata } from "@/lib/confidence";
 import { itemHasFocusEffect } from "@/lib/item-effects";
 import type { Bucket, ItemDetails } from "@/lib/search";
 
@@ -50,8 +47,6 @@ export function SharedPoolSection({
       <ul className="shared-pool-list">
         {items.map((itemName) => {
           const details = getItemDetails(itemName);
-          const meta =
-            (confidenceData as unknown as Record<string, ConfidenceMetadata>)[itemName] ?? DEFAULT_CONFIDENCE;
           const droppedBy = getDroppedBy?.(itemName) ?? [];
           return (
             <li key={itemName}>
@@ -72,9 +67,6 @@ export function SharedPoolSection({
                       ×{droppedBy.length}
                     </span>
                   ) : null}
-                  {(meta.tier === "verified" || meta.tier === "high") && (
-                    <ConfidenceBadge compact meta={meta} />
-                  )}
                   <FavoriteIndicator details={details} itemName={itemName} />
                 </span>
               </button>

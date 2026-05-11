@@ -2,16 +2,13 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
-import { ConfidenceBadge } from "@/components/ConfidenceBadge";
 import { FavoriteIndicator } from "@/components/FavoriteIndicator";
 import { ItemDrawer } from "@/components/ItemDrawer";
 import "@/components/item-drawer.css";
 import { ItemIcon } from "@/components/ItemIcon";
 import { useItemPreview } from "@/components/ItemPreviewProvider";
 import { useSharedLoot } from "@/components/SharedLootToggle";
-import confidenceData from "@/data/loot-confidence.json";
 import itemDetailsData from "@/data/item-details.json";
-import { DEFAULT_CONFIDENCE, type ConfidenceMetadata } from "@/lib/confidence";
 import { itemToSlug } from "@/lib/item-slug";
 import { zoneToSlug } from "@/lib/zone-slug";
 import type { Bucket, ItemDetailsMap } from "@/lib/search";
@@ -68,9 +65,6 @@ export function ZoneLootList({ items, bucket, itemBucketMap }: ZoneLootListProps
       <ul className="zone-loot-list">
         {displayItems.map((itemName) => {
           const details = itemDetailsMap[itemName];
-          const meta =
-            (confidenceData as unknown as Record<string, ConfidenceMetadata>)[itemName] ??
-            DEFAULT_CONFIDENCE;
           return (
             <li key={itemName}>
               <button
@@ -84,9 +78,6 @@ export function ZoneLootList({ items, bucket, itemBucketMap }: ZoneLootListProps
                   <span>{itemName}</span>
                 </span>
                 <span className="loot-item-actions">
-                  {(meta.tier === "verified" || meta.tier === "high") && (
-                    <ConfidenceBadge compact meta={meta} />
-                  )}
                   <FavoriteIndicator details={details} itemName={itemName} />
                 </span>
               </button>

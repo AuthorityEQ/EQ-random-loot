@@ -42,7 +42,7 @@ export default async function NormalLootPage() {
       <header className="normal-loot-header">
         <p className="eyebrow">EverQuest / Normal Loot</p>
         <h1>Normal Loot</h1>
-        <p className="normal-loot-note">Normal Loot data is imported separately and may include incomplete or unverified entries.</p>
+        <p className="normal-loot-note">Normal Loot data is imported separately and may include incomplete entries.</p>
         <p className="normal-loot-status">Work in progress — this will take awhile.</p>
       </header>
 

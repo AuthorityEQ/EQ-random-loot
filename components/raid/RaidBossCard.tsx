@@ -1,13 +1,10 @@
 "use client";
 
 import type { Ref } from "react";
-import { ConfidenceBadge } from "@/components/ConfidenceBadge";
 import { FavoriteIndicator } from "@/components/FavoriteIndicator";
 import { ItemIcon } from "@/components/ItemIcon";
 import { useItemPreview } from "@/components/ItemPreviewProvider";
 import { useServer } from "@/components/ServerProvider";
-import confidenceData from "@/data/loot-confidence.json";
-import { DEFAULT_CONFIDENCE, type ConfidenceMetadata } from "@/lib/confidence";
 import { isRandomLootServer } from "@/lib/server";
 import type { Bucket, ItemDetails } from "@/lib/search";
 import type { RaidBoss } from "@/lib/raidTiers";
@@ -85,9 +82,6 @@ export function RaidBossDetails({
         <ul className="raid-loot-pool" aria-label={`${boss.name} random loot pool`}>
           {boss.loot_pool!.map((itemName) => {
             const details = getItemDetails(itemName);
-            const meta =
-              (confidenceData as unknown as Record<string, ConfidenceMetadata>)[itemName] ??
-              DEFAULT_CONFIDENCE;
             return (
               <li key={itemName}>
                 <button
@@ -100,9 +94,6 @@ export function RaidBossDetails({
                     <ItemIcon details={details} />
                     <span>{itemName}</span>
                   </span>
-                  {(meta.tier === "verified" || meta.tier === "high") && (
-                    <ConfidenceBadge compact meta={meta} />
-                  )}
                   <FavoriteIndicator details={details} itemName={itemName} />
                 </button>
               </li>
