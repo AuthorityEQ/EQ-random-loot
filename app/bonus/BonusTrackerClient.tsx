@@ -28,6 +28,7 @@ type BonusStatus = "Unreported" | "Single Report" | "Likely" | "Confirmed" | "Di
 type FilterBonusType = Exclude<BonusType, "None">;
 type BonusFilter = "All" | FilterBonusType;
 type StatusFilter = "All" | "Reported" | "Disputed" | "Unreported";
+type BonusPreviewMode = "none" | "logged-in" | "logged-out";
 type ZoneWithStatus = Zone & { status: BonusStatus; totalReports: number };
 type ZoneGroup = {
   key: string;
@@ -103,6 +104,36 @@ const activeReportsPreviewReports: Record<string, BonusType> = {
   "Plane of Fire": "Loot",
   "Velketor's Labyrinth": "AA",
 };
+
+function createPreviewReport(
+  id: string,
+  zoneName: string,
+  bonus: BonusType,
+  discordUsername: string,
+  createdAt = "2026-05-11T12:00:00.000Z",
+): ServerBonusReport {
+  return {
+    id,
+    zoneName,
+    bonus,
+    discordUserId: `preview-${discordUsername.toLowerCase().replace(/\s+/g, "-")}`,
+    discordUsername,
+    createdAt,
+    updatedAt: createdAt,
+  };
+}
+
+const bonusReportsPreviewReports: ServerBonusReport[] = [
+  createPreviewReport("preview-burning-woods-1", "Burning Woods", "Coin", "Preview Ranger"),
+  createPreviewReport("preview-burning-woods-2", "Burning Woods", "Coin", "VeliousCleric"),
+  createPreviewReport("preview-burning-woods-3", "Burning Woods", "Coin", "KunarkPuller"),
+  createPreviewReport("preview-cobalt-scar-1", "Cobalt Scar", "Experience", "Preview Ranger"),
+  createPreviewReport("preview-cobalt-scar-2", "Cobalt Scar", "Experience", "CharmPetEnjoyer"),
+  createPreviewReport("preview-lower-guk-1", "Lower Guk", "Rare", "FrenzyCamper"),
+  createPreviewReport("preview-plane-fire-1", "Plane of Fire", "Loot", "RaidNight"),
+  createPreviewReport("preview-plane-fire-2", "Plane of Fire", "Loot", "LateCrew"),
+  createPreviewReport("preview-velks-1", "Velketor's Labyrinth", "AA", "IceCrawler"),
+];
 
 const statusFilters: StatusFilter[] = [
   "All",
@@ -637,7 +668,11 @@ export function BonusTrackerClient() {
   const [showUnreportedZones, setShowUnreportedZones] = useState(true);
   const [showActiveReports, setShowActiveReports] = useState(false);
   const [showActiveReportsPreview, setShowActiveReportsPreview] = useState(false);
-  const isLoggedIn = authStatus === "authenticated" && Boolean(session?.user?.discordUserId);
+  const [bonusPreviewMode, setBonusPreviewMode] = useState<BonusPreviewMode>("none");
+  const isPreviewingBonusReports = bonusPreviewMode !== "none";
+  const isAuthenticated = authStatus === "authenticated" && Boolean(session?.user?.discordUserId);
+  const isLoggedIn = isAuthenticated || bonusPreviewMode === "logged-in";
+  const canManageReports = isAdmin && !isPreviewingBonusReports;
   const shouldShowActiveReports = isLoggedIn || showActiveReportsPreview;
 
   const expansionOptions = useMemo(() => {
@@ -651,10 +686,13 @@ export function BonusTrackerClient() {
   const allExpansionsSelected = selectedExpansionSet.size === expansionOptions.length;
 
   const normalizedQuery = query.trim().toLowerCase();
+  const displayedServerReports = isPreviewingBonusReports ? bonusReportsPreviewReports : serverReports;
   const reportedZones = useMemo(() => {
-    return zones.map((zone) => applyServerReports(zone, serverReports));
-  }, [serverReports]);
-  const displayedUserReports = showActiveReportsPreview ? activeReportsPreviewReports : userReports;
+    return zones.map((zone) => applyServerReports(zone, displayedServerReports));
+  }, [displayedServerReports]);
+  const displayedUserReports = showActiveReportsPreview || bonusPreviewMode === "logged-in"
+    ? activeReportsPreviewReports
+    : userReports;
   const activeUserReports = useMemo<ActiveUserReport[]>(() => {
     const zoneByName = new Map(zones.map((zone) => [zone.zoneName, zone]));
     return Object.entries(displayedUserReports)
@@ -701,6 +739,14 @@ export function BonusTrackerClient() {
     if (process.env.NODE_ENV !== "development") return;
     const params = new URLSearchParams(window.location.search);
     setShowActiveReportsPreview(params.get("previewActiveReports") === "1");
+    const previewMode = params.get("previewBonusReports");
+    setBonusPreviewMode(
+      previewMode === "logged-in" || previewMode === "loggedIn"
+        ? "logged-in"
+        : previewMode === "logged-out" || previewMode === "loggedOut"
+          ? "logged-out"
+          : "none",
+    );
   }, []);
 
   useEffect(() => {
@@ -824,10 +870,18 @@ export function BonusTrackerClient() {
   }
 
   async function submitReport() {
+    if (isPreviewingBonusReports) {
+      setReportMessage("Preview mode only. Sign in normally to submit a real report.");
+      return;
+    }
     await saveReport(submitZoneName, submitBonus, `Report saved for ${submitZoneName}.`);
   }
 
   async function changeUserReport(zoneName: string) {
+    if (isPreviewingBonusReports) {
+      setReportMessage("Preview mode only. Active report changes are not saved.");
+      return;
+    }
     const nextBonus = activeReportDrafts[zoneName] ?? userReports[zoneName];
     if (!nextBonus) {
       setReportMessage("Choose a replacement bonus before saving.");
@@ -837,6 +891,10 @@ export function BonusTrackerClient() {
   }
 
   async function removeUserReport(zoneName: string) {
+    if (isPreviewingBonusReports) {
+      setReportMessage("Preview mode only. Active report removals are not saved.");
+      return;
+    }
     setIsSubmittingReport(true);
     setReportMessage("");
 
@@ -879,7 +937,7 @@ export function BonusTrackerClient() {
   }
 
   async function deleteReport(reportId: string) {
-    if (!isAdmin) return;
+    if (!canManageReports) return;
     setIsModeratingReport(true);
     setReportMessage("");
 
@@ -911,7 +969,7 @@ export function BonusTrackerClient() {
   }
 
   async function banUser(discordUserId: string) {
-    if (!isAdmin) return;
+    if (!canManageReports) return;
     setIsModeratingReport(true);
     setReportMessage("");
 
@@ -962,7 +1020,7 @@ export function BonusTrackerClient() {
     const isReported = mode === "reported";
     const isDisputed = mode === "disputed";
     const tiedReports = isDisputed ? getTiedLeadingReports(zone) : [];
-    const userReport = userReports[zone.zoneName];
+    const userReport = displayedUserReports[zone.zoneName];
     const isDetailsOpen = openReportDetailsZone === zone.zoneName;
     const reportSubmissions = zone.reports.flatMap((report) => report.submissions);
 
@@ -1031,23 +1089,21 @@ export function BonusTrackerClient() {
           </div>
         ) : null}
 
-        {isReported ? (
+        {isReported && canManageReports ? (
           <div className="bonus-report-ownership-summary">
-            {isAdmin ? (
-              <button
-                aria-expanded={isDetailsOpen}
-                onClick={() => setOpenReportDetailsZone((currentZone) => (
-                  currentZone === zone.zoneName ? null : zone.zoneName
-                ))}
-                type="button"
-              >
-                {isDetailsOpen ? "Hide report details" : "View report details"}
-              </button>
-            ) : null}
+            <button
+              aria-expanded={isDetailsOpen}
+              onClick={() => setOpenReportDetailsZone((currentZone) => (
+                currentZone === zone.zoneName ? null : zone.zoneName
+              ))}
+              type="button"
+            >
+              {isDetailsOpen ? "Hide report details" : "View report details"}
+            </button>
           </div>
         ) : null}
 
-        {isAdmin && isReported && isDetailsOpen ? (
+        {canManageReports && isReported && isDetailsOpen ? (
           <div className="bonus-admin-details">
             {reportSubmissions.map((submission) => {
               const createdAt = formatReportTimestamp(submission.createdAt);
@@ -1327,8 +1383,25 @@ export function BonusTrackerClient() {
       <div className="bonus-auth-panel">
         {isLoggedIn ? (
           <>
-            <span>Signed in as {session?.user?.discordUsername ?? session?.user?.name ?? "Discord user"}</span>
-            <button onClick={() => signOut()} type="button">Sign out</button>
+            <span>
+              Signed in as {
+                bonusPreviewMode === "logged-in"
+                  ? "Preview Ranger"
+                  : session?.user?.discordUsername ?? session?.user?.name ?? "Discord user"
+              }
+            </span>
+            <button
+              onClick={() => {
+                if (bonusPreviewMode === "logged-in") {
+                  setBonusPreviewMode("none");
+                  return;
+                }
+                signOut();
+              }}
+              type="button"
+            >
+              {bonusPreviewMode === "logged-in" ? "Exit preview" : "Sign out"}
+            </button>
           </>
         ) : (
           <>

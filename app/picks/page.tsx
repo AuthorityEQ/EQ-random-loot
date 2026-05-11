@@ -119,7 +119,19 @@ export default function PicksPage() {
         <div>
           <p className="eyebrow">EverQuest / TLP</p>
           <h1>Picks</h1>
-          <p className="subhead">This page shows pick thresholds for zones in early TLP expansions.</p>
+          <p className="subhead">
+            This page shows EverQuest TLP pick thresholds for early expansions. Pick Min is the number of
+            players required in each active copy of a zone before a new pick can spawn. Pick Max is the
+            player cap for a single copy of that zone.
+          </p>
+          <p className="picks-helper-text">
+            Example: if a zone has Pick Min 20 and currently has two active picks, both existing copies of
+            the zone must stay at or above 20 players before a third will spawn after a few minutes.
+          </p>
+          <p className="picks-helper-text">
+            If two copies of a zone both drop below 10 players, the lowest-population pick will become
+            locked and eventually close.
+          </p>
         </div>
       </header>
 

@@ -588,7 +588,8 @@
 }
 
 .bonus-zone-card.is-reported {
-  gap: 11px;
+  gap: 8px;
+  padding: 11px 12px;
 }
 
 .bonus-zone-card.is-disputed {
@@ -630,7 +631,7 @@
 .bonus-zone-card-main {
   align-items: start;
   display: grid;
-  gap: 12px;
+  gap: 10px;
   grid-template-columns: minmax(0, 1fr) auto;
 }
 
@@ -641,11 +642,16 @@
   margin: 0;
 }
 
+.bonus-zone-card.is-reported h2,
+.bonus-zone-card.is-disputed h2 {
+  font-size: 1.03rem;
+}
+
 .bonus-zone-title-row {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 7px;
+  gap: 6px;
 }
 
 .bonus-expansion-label {
@@ -656,7 +662,7 @@
   font-size: 0.68rem;
   font-weight: 900;
   letter-spacing: 0.04em;
-  padding: 4px 7px;
+  padding: 3px 7px;
   text-transform: uppercase;
   box-shadow: 0 0 0 1px color-mix(in srgb, var(--exp-primary, var(--line)) 18%, transparent);
 }
@@ -671,13 +677,13 @@
   color: var(--muted);
   font-size: 0.9rem;
   line-height: 1.35;
-  margin: 6px 0 0;
+  margin: 4px 0 0;
 }
 
 .bonus-leading-report {
   display: grid;
   gap: 2px;
-  margin-top: 8px;
+  margin-top: 5px;
 }
 
 .bonus-leading-report > span {
@@ -692,7 +698,7 @@
   align-items: center;
   color: var(--page-title-gold);
   display: block;
-  font-size: 1.28rem;
+  font-size: 1.16rem;
   line-height: 1.1;
 }
 
@@ -704,24 +710,24 @@
   border: 1px solid color-mix(in srgb, var(--page-title-gold) 22%, transparent);
   border-radius: 999px;
   box-shadow:
-    0 0 24px color-mix(in srgb, var(--page-title-gold) 16%, transparent),
-    inset 0 0 18px color-mix(in srgb, var(--page-title-gold) 10%, transparent);
+    0 0 18px color-mix(in srgb, var(--page-title-gold) 14%, transparent),
+    inset 0 0 14px color-mix(in srgb, var(--page-title-gold) 9%, transparent);
   color: var(--page-title-gold);
   display: inline-flex;
-  font-size: clamp(2rem, 7vw, 3.4rem);
+  font-size: clamp(1.75rem, 5.6vw, 2.8rem);
   font-weight: 900;
-  height: clamp(62px, 9vw, 86px);
+  height: clamp(52px, 7.4vw, 70px);
   justify-content: center;
   line-height: 1;
-  min-width: clamp(62px, 9vw, 86px);
+  min-width: clamp(52px, 7.4vw, 70px);
   opacity: 0.72;
-  padding: 0 12px;
+  padding: 0 10px;
   pointer-events: none;
   text-shadow: 0 0 18px color-mix(in srgb, var(--page-title-gold) 28%, transparent);
 }
 
 .bonus-large-icon.is-text-mark {
-  font-size: clamp(1.7rem, 5.8vw, 2.7rem);
+  font-size: clamp(1.45rem, 4.8vw, 2.25rem);
   letter-spacing: 0.02em;
 }
 
@@ -733,7 +739,7 @@
     0 0 22px rgba(248, 113, 113, 0.12),
     inset 0 0 18px rgba(248, 113, 113, 0.08);
   color: #d98b8b;
-  font-size: clamp(1.05rem, 3.8vw, 1.45rem);
+  font-size: clamp(0.95rem, 3.1vw, 1.28rem);
 }
 
 .bonus-large-icon.is-coin-mark {
@@ -744,8 +750,8 @@
   box-shadow:
     0 0 24px rgba(180, 200, 255, 0.2),
     inset 0 0 18px rgba(230, 240, 255, 0.08);
-  min-width: clamp(68px, 9.5vw, 92px);
-  padding: 0 10px;
+  min-width: clamp(56px, 7.8vw, 76px);
+  padding: 0 8px;
 }
 
 .bonus-large-icon.is-skill-mark {
@@ -756,8 +762,8 @@
   box-shadow:
     0 0 24px rgba(220, 255, 112, 0.12),
     inset 0 0 18px rgba(232, 201, 113, 0.08);
-  height: clamp(92px, 12vw, 132px);
-  min-width: clamp(82px, 11vw, 112px);
+  height: clamp(70px, 9.2vw, 94px);
+  min-width: clamp(64px, 8.4vw, 84px);
   opacity: 0.94;
   padding: 6px;
   text-shadow: none;
@@ -771,8 +777,8 @@
   box-shadow:
     0 0 24px rgba(232, 201, 113, 0.14),
     inset 0 0 18px rgba(232, 201, 113, 0.08);
-  height: clamp(82px, 11vw, 118px);
-  min-width: clamp(82px, 11vw, 118px);
+  height: clamp(66px, 8.8vw, 88px);
+  min-width: clamp(66px, 8.8vw, 88px);
   opacity: 0.94;
   padding: 5px;
   text-shadow: none;
@@ -809,8 +815,8 @@
 .bonus-report-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 7px;
-  margin-top: -1px;
+  gap: 5px;
+  margin-top: -2px;
 }
 
 .bonus-report-pill {
@@ -821,11 +827,11 @@
   color: var(--muted);
   display: inline-flex;
   flex-wrap: wrap;
-  font-size: 0.78rem;
+  font-size: 0.74rem;
   font-weight: 800;
-  gap: 5px;
+  gap: 4px;
   line-height: 1.15;
-  padding: 6px 9px;
+  padding: 4px 8px;
 }
 
 .bonus-leading-report strong.is-none-bonus {
@@ -864,8 +870,8 @@
   border-radius: 8px;
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  padding: 9px 10px;
+  gap: 6px;
+  padding: 7px 9px;
 }
 
 .bonus-disputed-list > span {
@@ -884,7 +890,7 @@
   color: #ffe2aa;
   font-size: 0.82rem;
   font-weight: 900;
-  padding: 4px 8px;
+  padding: 3px 7px;
 }
 
 .bonus-report-pill.is-none-bonus,
@@ -982,8 +988,8 @@
 }
 
 .bonus-coin-image {
-  height: 3.75rem;
-  width: 3.75rem;
+  height: 3.05rem;
+  width: 3.05rem;
 }
 
 .bonus-coin-pill-image {
@@ -1018,7 +1024,7 @@
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 6px;
   justify-content: flex-start;
   margin-top: -2px;
 }
@@ -1032,7 +1038,7 @@
   cursor: pointer;
   font-size: 0.68rem;
   font-weight: 900;
-  min-height: 26px;
+  min-height: 24px;
   padding: 0 8px;
 }
 
@@ -1104,9 +1110,9 @@
   border-top: 1px solid var(--line);
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 7px;
   justify-content: space-between;
-  padding-top: 12px;
+  padding-top: 8px;
 }
 
 .bonus-zone-actions span {
@@ -1120,7 +1126,7 @@
   border: 1px solid color-mix(in srgb, var(--accent) 34%, var(--line));
   border-radius: 999px;
   color: var(--accent);
-  padding: 5px 9px;
+  padding: 4px 8px;
 }
 
 .bonus-zone-card.is-unreported .bonus-zone-actions {
@@ -1304,32 +1310,32 @@
   }
 
   .bonus-large-icon {
-    height: 52px;
-    min-width: 52px;
-    padding: 0 9px;
+    height: 46px;
+    min-width: 46px;
+    padding: 0 8px;
   }
 
   .bonus-large-icon.is-coin-mark {
-    height: 58px;
-    min-width: 58px;
+    height: 50px;
+    min-width: 50px;
     padding: 0 6px;
   }
 
   .bonus-large-icon.is-skill-mark {
-    height: 82px;
-    min-width: 72px;
-    padding: 5px;
+    height: 64px;
+    min-width: 58px;
+    padding: 4px;
   }
 
   .bonus-large-icon.is-loot-mark {
-    height: 78px;
-    min-width: 78px;
-    padding: 5px;
+    height: 62px;
+    min-width: 62px;
+    padding: 4px;
   }
 
   .bonus-coin-image {
-    height: 3.25rem;
-    width: 3.25rem;
+    height: 2.65rem;
+    width: 2.65rem;
   }
 
   .bonus-report-action,

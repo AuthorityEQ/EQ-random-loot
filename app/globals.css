@@ -79,6 +79,9 @@
   --muted: var(--text-muted);
   --line: var(--border);
   --page-title-gold: #b9903d;
+  --app-nav-sticky-height: 60px;
+  --app-sub-nav-sticky-height: 58px;
+  --app-header-sticky-height: calc(var(--app-nav-sticky-height) + var(--app-sub-nav-sticky-height));
 
 }
 :root[data-theme="dark"] {
@@ -163,6 +166,8 @@
   --line: var(--border);
   --page-title-gold: #e8c971;
   --app-nav-sticky-height: 60px;
+  --app-sub-nav-sticky-height: 58px;
+  --app-header-sticky-height: calc(var(--app-nav-sticky-height) + var(--app-sub-nav-sticky-height));
 
 }
 * {
@@ -2585,6 +2590,14 @@ select option {
   align-items: end;
 }
 
+.picks-helper-text {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.45;
+  margin: 6px 0 0;
+  max-width: 760px;
+}
+
 .picks-search {
   min-width: min(320px, 100%);
 }
@@ -2694,6 +2707,7 @@ select option {
 @media (max-width: 720px) {
   :root {
     --app-nav-sticky-height: 146px;
+    --app-sub-nav-sticky-height: 92px;
   }
 
   .app-nav {
@@ -5758,6 +5772,26 @@ select option {
 .gear-shopping-toggle input,
 .gear-shopping-need-chip input {
   accent-color: var(--accent);
+}
+
+.gear-shopping-special-toggle {
+  max-width: min(420px, 100%);
+}
+
+.gear-shopping-special-toggle > span {
+  display: grid;
+  gap: 2px;
+  line-height: 1.25;
+}
+
+.gear-shopping-special-toggle small {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 750;
+}
+
+.gear-shopping-score-filter {
+  min-width: 150px;
 }
 
 .gear-planner-add-item,

@@ -137,6 +137,7 @@ type GearShoppingItem = {
 
 type GearShoppingDisplayItem = GearShoppingItem & {
   completedNeeds: GearShoppingNeed[];
+  gearScore: number;
   obtainedCount: number;
   remainingNeeds: GearShoppingNeed[];
   totalCount: number;
@@ -383,6 +384,115 @@ function getItemTypeLabel(details: ItemDetails) {
   return details.itemType ?? details.item_type ?? details.weaponType ?? (details.acquisitionType === "quest" ? "Quest reward" : "Gear");
 }
 
+function normalizeProgressionOverrideName(value: string) {
+  return value.trim().toLowerCase();
+}
+
+// Manual EQ progression classification overrides. These are intentionally
+// conservative and only affect the optional "Hide endgame / special" planner filter.
+const HIGH_END_QUEST_ITEM_NAMES = new Set([
+  "belt of dwarf slaying",
+  "black flower of functionality",
+  "blue flower of functionality",
+  "green flower of functionality",
+  "red flower of functionality",
+  "white flower of functionality",
+].map(normalizeProgressionOverrideName));
+
+const RAID_OR_HIGH_END_ITEM_NAMES = new Set([
+  "buckler of insight",
+  "white dragonscale boots",
+  "white dragonscale helm",
+].map(normalizeProgressionOverrideName));
+
+const HIGH_END_SOURCE_KEYWORDS = [
+  "dozekar",
+];
+
+function textIncludes(value: string | undefined | null, needle: string) {
+  return Boolean(value?.toLowerCase().includes(needle));
+}
+
+function metadataIncludes(details: ItemDetails, needle: string) {
+  return [
+    details.source,
+    details.sourceCategory,
+    details.questName,
+    details.sourceNpcName,
+    details.acquisitionType,
+    details.armorSet,
+    ...(details.tags ?? []),
+    ...(details.categories ?? []),
+    ...(details.searchKeywords ?? []),
+    ...(details.match_notes ?? []),
+  ].some((value) => textIncludes(String(value ?? ""), needle));
+}
+
+function sourceIncludes(source: GearSourceInfo, needle: string) {
+  return [
+    source.sourceName,
+    source.tierName,
+    ...(source.zones ?? []),
+    ...(source.npcNames ?? []),
+    ...(source.sourceItemNames ?? []),
+    ...(source.sourceMobs ?? []).flatMap((mob) => [mob.name, mob.zone]),
+  ].some((value) => textIncludes(String(value ?? ""), needle));
+}
+
+function hasHighEndProgressionOverride(itemName: string, details: ItemDetails, sources: GearSourceInfo[]) {
+  const normalizedName = normalizeProgressionOverrideName(itemName);
+  return HIGH_END_QUEST_ITEM_NAMES.has(normalizedName)
+    || RAID_OR_HIGH_END_ITEM_NAMES.has(normalizedName)
+    || normalizedName.includes("flower of functionality")
+    || HIGH_END_SOURCE_KEYWORDS.some((keyword) => metadataIncludes(details, keyword) || sources.some((source) => sourceIncludes(source, keyword)));
+}
+
+function isRaidItem(details: ItemDetails, sources: GearSourceInfo[]) {
+  return sources.some((source) => source.sourceType === "raid")
+    || Boolean(details.raidBucket)
+    || metadataIncludes(details, "raid");
+}
+
+function isEpicItem(details: ItemDetails, sources: GearSourceInfo[]) {
+  return metadataIncludes(details, "epic")
+    || sources.some((source) => metadataIncludes(details, "epic") || textIncludes(source.sourceName, "epic") || source.zones.some((zone) => textIncludes(zone, "epic")));
+}
+
+function isVeliousQuestArmor(details: ItemDetails, sources: GearSourceInfo[]) {
+  const velious = details.expansion === "Velious" || sources.some((source) => source.expansion === "Velious");
+  if (!velious) return false;
+  return Boolean(details.armorSet)
+    || metadataIncludes(details, "thurgadin")
+    || metadataIncludes(details, "skyshrine")
+    || metadataIncludes(details, "kael")
+    || sources.some((source) => source.sourceType === "quest" && (
+      textIncludes(source.sourceName, "thurgadin")
+      || textIncludes(source.sourceName, "skyshrine")
+      || textIncludes(source.sourceName, "kael")
+      || source.zones.some((zone) => textIncludes(zone, "thurgadin") || textIncludes(zone, "skyshrine") || textIncludes(zone, "kael"))
+    ));
+}
+
+function isEndgameOrSpecialItem(itemName: string, details: ItemDetails, sources: GearSourceInfo[]) {
+  return hasHighEndProgressionOverride(itemName, details, sources)
+    || isRaidItem(details, sources)
+    || isEpicItem(details, sources)
+    || isVeliousQuestArmor(details, sources)
+    || metadataIncludes(details, "endgame")
+    || metadataIncludes(details, "special acquisition");
+}
+
+function getShoppingItemScore(item: GearShoppingItem) {
+  return Math.max(
+    0,
+    ...item.needs.map((need) => {
+      const classCode = String(need.class ?? "").toUpperCase();
+      if (!(classCode in CLASS_STAT_WEIGHTS)) return 0;
+      return explainItemScore(item.details, classCode).score;
+    }),
+  );
+}
+
 function getCandidateForItem(itemName: string) {
   const candidate = gearCandidateByName.get(itemName);
   if (candidate) return candidate;
@@ -447,12 +557,105 @@ function sourceIdentity(source: GearSourceInfo) {
   ].join("::");
 }
 
+function normalizeSourceKeyPart(value: string | number | null | undefined) {
+  return String(value ?? "")
+    .toLowerCase()
+    .trim()
+    .replace(/https?:\/\/\S+/g, (url) => url.replace(/\/+$/, ""))
+    .replace(/[’']/g, "")
+    .replace(/[\/\\|]+/g, " ")
+    .replace(/[.,:;()[\]{}"!?]+/g, " ")
+    .replace(/\bquests\b/g, "quest")
+    .replace(/\bquest\s+quest\b/g, "quest")
+    .replace(/\s+quest$/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function removeAdjacentDuplicateWords(value: string) {
+  const words = value.split(" ").filter(Boolean);
+  return words.filter((word, index) => index === 0 || word !== words[index - 1]).join(" ");
+}
+
+function normalizeSourcePhrase(value: string | number | null | undefined) {
+  return removeAdjacentDuplicateWords(normalizeSourceKeyPart(value));
+}
+
+function normalizeSourceKeyList(values: Array<string | number | null | undefined>) {
+  return values
+    .map(normalizeSourcePhrase)
+    .filter(Boolean)
+    .sort((a, b) => a.localeCompare(b))
+    .join("|");
+}
+
+function removeRepeatedSourceTitle(sourceTitle: string, value: string | number | null | undefined) {
+  const normalizedTitle = normalizeSourcePhrase(sourceTitle);
+  let normalizedValue = normalizeSourcePhrase(value);
+  if (!normalizedValue || !normalizedTitle) return normalizedValue;
+  if (normalizedValue === normalizedTitle) return "";
+  if (normalizedValue.startsWith(`${normalizedTitle} `)) {
+    normalizedValue = normalizedValue.slice(normalizedTitle.length).trim();
+  }
+  if (normalizedValue.endsWith(` ${normalizedTitle}`)) {
+    normalizedValue = normalizedValue.slice(0, -normalizedTitle.length).trim();
+  }
+  return normalizedValue === normalizedTitle ? "" : normalizedValue;
+}
+
+function sourceCompletenessScore(source: GearSourceInfo) {
+  return [
+    source.sourceName,
+    source.tierName,
+    source.levelRange,
+    source.bossLevel,
+    source.bucket,
+    source.mobCount,
+    source.lootCount,
+    ...(source.zones ?? []),
+    ...(source.npcNames ?? []),
+    ...(source.sourceItemNames ?? []),
+    ...(source.sourceMobs ?? []).flatMap((mob) => [mob.name, mob.zone, mob.level]),
+  ].filter((value) => value !== undefined && value !== null && String(value).trim()).length;
+}
+
+function normalizeSourceKey(source: GearSourceInfo) {
+  const sourceName = source.sourceType === "raid" && source.tierName ? source.tierName : source.sourceName;
+  const rawSourceLocation = source.sourceType === "raid" && source.sourceMobs?.length
+    ? source.sourceMobs.flatMap((mob) => [mob.name, mob.zone])
+    : [...(source.zones ?? []), ...(source.npcNames ?? [])];
+  const sourceLocation = rawSourceLocation
+    .map((value) => source.sourceType === "quest" ? removeRepeatedSourceTitle(sourceName, value) : normalizeSourcePhrase(value))
+    .filter(Boolean);
+
+  return [
+    normalizeSourcePhrase(source.expansion),
+    String(source.sourceType).toLowerCase(),
+    normalizeSourcePhrase(sourceName),
+    normalizeSourceKeyList(sourceLocation),
+  ].filter(Boolean).join("::");
+}
+
+// Raw imports can repeat the same quest/source in slightly different shapes.
+// Deduplicate only for planner display, keeping the richer version of a source card.
+function dedupeItemSources(sources: GearSourceInfo[]) {
+  const deduped = new Map<string, GearSourceInfo>();
+  for (const source of sources) {
+    const key = normalizeSourceKey(source);
+    const existing = deduped.get(key);
+    if (!existing || sourceCompletenessScore(source) > sourceCompletenessScore(existing)) {
+      deduped.set(key, source);
+    }
+  }
+  return Array.from(deduped.values());
+}
+
 function mergeGearSources(primarySources: GearSourceInfo[] | undefined, fallbackSources: GearSourceInfo[] | undefined) {
   const merged = new Map<string, GearSourceInfo>();
   for (const source of [...(primarySources ?? []), ...(fallbackSources ?? [])]) {
     merged.set(sourceIdentity(source), source);
   }
-  return Array.from(merged.values());
+  return dedupeItemSources(Array.from(merged.values()));
 }
 
 function getFullGearSources(itemName: string, fallbackSources: GearSourceInfo[] = []) {
@@ -1146,6 +1349,8 @@ export function CharacterGearPlanner() {
   const [gearShoppingObtainedNeedKeys, setGearShoppingObtainedNeedKeys] = useState<Set<string>>(() => new Set());
   const [gearShoppingObtainedReady, setGearShoppingObtainedReady] = useState(false);
   const [hideObtainedGear, setHideObtainedGear] = useState(false);
+  const [hideEndgameGear, setHideEndgameGear] = useState(false);
+  const [maxGearScore, setMaxGearScore] = useState("");
   const [addPlannerItemOpen, setAddPlannerItemOpen] = useState(false);
   const [addPlannerItemQuery, setAddPlannerItemQuery] = useState("");
   const [selectedAddPlannerItemName, setSelectedAddPlannerItemName] = useState("");
@@ -1291,6 +1496,8 @@ export function CharacterGearPlanner() {
   const filteredGearShoppingItems = useMemo<GearShoppingDisplayItem[]>(() => {
     const itemQuery = plannerItemQuery.trim().toLowerCase();
     const sourceQuery = plannerSourceQuery.trim().toLowerCase();
+    const parsedMaxGearScore = maxGearScore.trim() ? Number(maxGearScore) : Number.POSITIVE_INFINITY;
+    const hasMaxGearScore = Number.isFinite(parsedMaxGearScore);
 
     return gearShoppingItems
       .map((item) => {
@@ -1299,6 +1506,7 @@ export function CharacterGearPlanner() {
         return {
           ...item,
           completedNeeds,
+          gearScore: getShoppingItemScore(item),
           obtainedCount: completedNeeds.length,
           remainingNeeds,
           totalCount: item.needs.length,
@@ -1306,6 +1514,8 @@ export function CharacterGearPlanner() {
       })
       .filter((item) => {
         if (hideObtainedGear && item.remainingNeeds.length === 0) return false;
+        if (hideEndgameGear && isEndgameOrSpecialItem(item.itemName, item.details, item.sources)) return false;
+        if (hasMaxGearScore && item.gearScore > parsedMaxGearScore) return false;
         const expansionMatches = item.expansions.length === 0
           || item.expansions.some((expansion) => plannerSelectedExpansionSet.has(expansion));
         const itemMatches = !itemQuery || item.itemName.toLowerCase().includes(itemQuery);
@@ -1319,7 +1529,7 @@ export function CharacterGearPlanner() {
         const bComplete = b.remainingNeeds.length === 0 ? 1 : 0;
         return aComplete - bComplete || a.itemName.localeCompare(b.itemName);
       });
-  }, [gearShoppingItems, gearShoppingObtainedNeedKeys, hideObtainedGear, plannerItemQuery, plannerSelectedExpansionSet, plannerSourceQuery]);
+  }, [gearShoppingItems, gearShoppingObtainedNeedKeys, hideEndgameGear, hideObtainedGear, maxGearScore, plannerItemQuery, plannerSelectedExpansionSet, plannerSourceQuery]);
   const gearShoppingProgress = useMemo(() => {
     const total = gearShoppingItems.reduce((sum, item) => sum + item.needs.length, 0);
     const obtained = gearShoppingItems.reduce(
@@ -1351,6 +1561,8 @@ export function CharacterGearPlanner() {
     plannerItemQuery.trim() ? "item search" : null,
     plannerSourceQuery.trim() ? "source search" : null,
     hideObtainedGear ? "hide obtained" : null,
+    hideEndgameGear ? "hide endgame" : null,
+    maxGearScore.trim() ? "max gear score" : null,
   ].filter(Boolean);
 
   useEffect(() => {
@@ -2058,6 +2270,8 @@ export function CharacterGearPlanner() {
     setPlannerItemQuery("");
     setPlannerSourceQuery("");
     setHideObtainedGear(false);
+    setHideEndgameGear(false);
+    setMaxGearScore("");
   }
 
   function savePlannerState(message = "Planner saved locally") {
@@ -2471,7 +2685,7 @@ export function CharacterGearPlanner() {
       {viewMode === "shopping" ? (
         <section className="gear-shopping-view" aria-label="Gear shopping list">
           <div className="spell-shopping-summary gear-shopping-summary">
-            <strong>{filteredGearShoppingItems.length} needed items</strong>
+            <strong>Showing {filteredGearShoppingItems.length} of {gearShoppingItems.length} items</strong>
             <span>{plannerSelectedCharacters.length} selected characters</span>
             <span>{gearShoppingProgress.total} total copies</span>
             <span>{gearShoppingProgress.obtained} obtained</span>
@@ -2569,6 +2783,30 @@ export function CharacterGearPlanner() {
                 type="checkbox"
               />
               <span>Hide Obtained Gear</span>
+            </label>
+
+            <label className="gear-shopping-toggle gear-shopping-special-toggle">
+              <input
+                checked={hideEndgameGear}
+                onChange={(event) => setHideEndgameGear(event.target.checked)}
+                type="checkbox"
+              />
+              <span>
+                Hide endgame / special acquisition items
+                <small>Hide raid, epic, and Velious quest armor targets while focusing on leveling upgrades.</small>
+              </span>
+            </label>
+
+            <label className="character-name-filter gear-shopping-search gear-shopping-score-filter">
+              <span>Max gear score</span>
+              <input
+                min={0}
+                onChange={(event) => setMaxGearScore(event.target.value)}
+                placeholder="No cap"
+                step={1}
+                type="number"
+                value={maxGearScore}
+              />
             </label>
 
             <button className="character-action-button is-progression gear-shopping-clear" onClick={() => openAddPlannerItem()} type="button">
@@ -2829,7 +3067,7 @@ export function CharacterGearPlanner() {
             <p className="empty">Select at least one character to build a gear list.</p>
           ) : filteredGearShoppingItems.length === 0 ? (
             <p className="empty">
-              {plannerActiveFilters.length > 0 ? "No needed items match the active filters." : "No needed gear found for the selected characters."}
+              {plannerActiveFilters.length > 0 ? "No needed items match the active filters. Try clearing filters if raid, epic, Velious quest armor, or high-score targets may be hidden." : "No needed gear found for the selected characters."}
             </p>
           ) : (
             <div className="gear-shopping-list">
@@ -2851,6 +3089,7 @@ export function CharacterGearPlanner() {
                           </span>
                         ))}
                         <span>{item.itemType}</span>
+                        {item.gearScore > 0 ? <span>Score {Math.round(item.gearScore)}</span> : null}
                         <span>{item.obtainedCount} / {item.totalCount} obtained</span>
                         <span>{item.remainingNeeds.length} remaining</span>
                       </div>
