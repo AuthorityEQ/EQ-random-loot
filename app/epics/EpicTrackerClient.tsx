@@ -274,6 +274,42 @@ function EpicBucketChip({ bucketLink }: { bucketLink: EpicBucketLink }) {
   );
 }
 
+const ALRIK_FACTION_NOTE = "Locate Alrik Farsight near the Timorous Deep chessboard area. Say \"I will take the artifact\" to receive the Crushed Pot. You need at least Amiable faction with Keepers of the Art for him to respond. If Alrik will not respond to you, complete the Bat Wings faction quest for Niola Impholder in the Erudin Magician Guild.";
+
+function EpicNoteText({ note }: { note: string }) {
+  if (note === ALRIK_FACTION_NOTE) {
+    return (
+      <>
+        Locate Alrik Farsight near the Timorous Deep chessboard area. Say{" "}
+        <strong>&quot;I will take the artifact&quot;</strong> to receive the Crushed Pot. You need at least Amiable faction with Keepers of the Art for him to respond.{" "}
+        If Alrik will not respond to you, complete the{" "}
+        <a
+          className="epic-link"
+          href="https://everquest.allakhazam.com/db/quest.html?quest=89"
+          onClick={(event) => event.stopPropagation()}
+          rel="noreferrer"
+          target="_blank"
+        >
+          Bat Wings
+        </a>{" "}
+        faction quest for{" "}
+        <a
+          className="epic-link"
+          href="https://everquest.allakhazam.com/db/npc.html?id=856"
+          onClick={(event) => event.stopPropagation()}
+          rel="noreferrer"
+          target="_blank"
+        >
+          Niola Impholder
+        </a>{" "}
+        in the Erudin Magician Guild.
+      </>
+    );
+  }
+
+  return <>{note}</>;
+}
+
 // ---------------------------------------------------------------------------
 // Step card — mirrors BucketCard visual pattern
 // ---------------------------------------------------------------------------
@@ -454,7 +490,7 @@ function EpicStepCard({
           {step.notes && (
             <div className="epic-step-meta-pair epic-step-notes-pair">
               <dt>Notes</dt>
-              <dd>{step.notes}</dd>
+              <dd><EpicNoteText note={step.notes} /></dd>
             </div>
           )}
           {bucketLinks.length > 0 && (

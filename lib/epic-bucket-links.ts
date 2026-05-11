@@ -329,6 +329,13 @@ function getStepItemCandidates(step: NormalizedStep) {
   return [...candidates].filter(Boolean);
 }
 
+function isEpicOnlyTriggeredVenrilStep(className: EpicClassName, step: NormalizedStep) {
+  if (className !== "Druid" && className !== "Ranger") return false;
+  if (normalizeNpcOrMobName(step.npcMob ?? "") !== "venril sathir") return false;
+  const stepText = [step.action, step.notes].filter(Boolean).join(" ");
+  return /\btrigger(?:ed)?\b/i.test(stepText) || /\bnot the normal raid boss\b/i.test(stepText);
+}
+
 function dedupeLinks(links: EpicBucketLink[]) {
   const seen = new Set<string>();
   const deduped: EpicBucketLink[] = [];
@@ -346,6 +353,9 @@ function dedupeLinks(links: EpicBucketLink[]) {
 
 export function getEpicBucketLinks(className: EpicClassName, step: NormalizedStep) {
   const links = [...(manualEpicBucketLinks.get(`${className}|${step.stepRaw}`) ?? [])];
+  if (isEpicOnlyTriggeredVenrilStep(className, step)) {
+    return dedupeLinks(links);
+  }
   for (const candidate of getStepNpcCandidates(step)) {
     links.push(...(bucketLinksByMobName.get(normalizeNpcOrMobName(candidate)) ?? []));
   }

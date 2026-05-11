@@ -887,11 +887,11 @@
           "_source_row": 56,
           "step": "3",
           "phase": "",
-          "action": "Kill Lord Bergurgle",
+          "action": "Obtain Lord Bergurgle's Crown from goblins in Lake Rathe",
           "npc_mob": "Lord Bergurgle",
           "zone": "Lake Rathetear",
           "items": "",
-          "notes": "You can camp Lord Bergurgle, but the crown can also drop from random goblins in Lake Rathe.",
+          "notes": "You can still camp Lord Bergurgle, but Lord Bergurgle's Crown may also drop from random goblins in Lake Rathe.",
           "tags": [
             "solo",
             "rare"
@@ -1771,11 +1771,11 @@
           "_source_row": 107,
           "step": "12",
           "phase": "",
-          "action": "Get Crushed Pot from Alrik Farsight",
+          "action": "Get Crushed Pot from Alrik Farsight (requires faction)",
           "npc_mob": "Alrik Farsight",
           "zone": "Timorous Deep",
           "items": "",
-          "notes": "",
+          "notes": "Locate Alrik Farsight near the Timorous Deep chessboard area. Say \"I will take the artifact\" to receive the Crushed Pot. You need at least Amiable faction with Keepers of the Art for him to respond. If Alrik will not respond to you, complete the Bat Wings faction quest for Niola Impholder in the Erudin Magician Guild.",
           "tags": [
             "solo"
           ],
@@ -1968,22 +1968,33 @@
           "_source_row": 116,
           "step": "21",
           "phase": "",
-          "action": "Kill Black Reaver in City of Mist, then give Jade Reaver to Kinlo Strongarm",
-          "npc_mob": "Black Reaver / Kinlo Strongarm",
+          "action": "Kill Black Reaver and obtain Jade Reaver",
+          "npc_mob": "Black Reaver",
           "zone": "City of Mist",
           "items": "",
-          "notes": "Jade Reaver drops from Black Reavers in City of Mist and is turned in to Kinlo Strongarm for Enchanted Clay.",
+          "notes": "Black Reavers can drop Jade Reaver.",
           "tags": [
-            "group",
-            "raid",
-            "rare"
+            "group"
           ],
-          "required_items": [
+          "reward_items": [
             {
               "name": "Jade Reaver"
             }
+          ]
+        },
+        {
+          "_source_row": 116.1,
+          "step": "22",
+          "phase": "",
+          "action": "Give Jade Reaver to Kinlo Strongarm",
+          "npc_mob": "Kinlo Strongarm",
+          "zone": "Kaladim",
+          "items": "",
+          "notes": "",
+          "tags": [
+            "solo"
           ],
-          "drop_items": [
+          "required_items": [
             {
               "name": "Jade Reaver"
             }
@@ -1996,7 +2007,7 @@
         },
         {
           "_source_row": 117,
-          "step": "22",
+          "step": "23",
           "phase": "",
           "action": "Combine Ancient Pattern, Platinum Speckled Powder, and Enchanted Clay on a pottery wheel",
           "npc_mob": "",
@@ -2025,7 +2036,7 @@
         },
         {
           "_source_row": 118,
-          "step": "23",
+          "step": "24",
           "phase": "",
           "action": "Give Runecrested Bowl and Hardened Mixture to Ella Foodcrafter",
           "npc_mob": "Ella Foodcrafter",
@@ -2051,13 +2062,13 @@
         },
         {
           "_source_row": 119,
-          "step": "24",
+          "step": "25",
           "phase": "",
-          "action": "Kill Venril Sathir",
+          "action": "Trigger and kill Venril Sathir",
           "npc_mob": "Venril Sathir",
           "zone": "Karnor's Castle",
           "items": "",
-          "notes": "",
+          "notes": "Preparation: bring Summoned: Firefly Globe and Spell: Resurrection, the level 47 Cleric spell scroll. Summoned: Firefly Globe is created from the Druid/Ranger spell Dance of the Fireflies and can only be summoned at night; the item is temporary. The required Venril Sathir is not the normal raid boss. After the regular Venril Sathir dies, Venril Sathir's remains will eventually spawn. Give Summoned: Firefly Globe to Venril Sathir's remains to spawn Spirit of Venril Sathir. Give Spell: Resurrection to Spirit of Venril Sathir to spawn the epic version of Venril Sathir. Kill the triggered Venril Sathir and loot Pulsing Green Stone. Venril drops two Pulsing Green Stones, but they are lore. Bring another Druid/Ranger if possible. Venril Sathir's remains may already be up on freshly spawned picks, so checking new picks can save significant waiting time.",
           "tags": [
             "group",
             "raid"
@@ -2070,7 +2081,7 @@
         },
         {
           "_source_row": 120,
-          "step": "25",
+          "step": "26",
           "phase": "",
           "action": "Give Softly Glowing Stone and Pulsing Green Stone to Foloal Stormforest",
           "npc_mob": "Foloal Stormforest",
@@ -2096,7 +2107,7 @@
         },
         {
           "_source_row": 121,
-          "step": "26",
+          "step": "27",
           "phase": "",
           "action": "Give Warmly Glowing Stone to Ealla",
           "npc_mob": "Ealla",
@@ -2119,7 +2130,7 @@
         },
         {
           "_source_row": 122,
-          "step": "27",
+          "step": "28",
           "phase": "",
           "action": "Kill Corrupted Shaman",
           "npc_mob": "Corrupted Shaman",
@@ -2137,7 +2148,7 @@
         },
         {
           "_source_row": 123,
-          "step": "28",
+          "step": "29",
           "phase": "",
           "action": "Kill Corrupted Wooly Mammoth",
           "npc_mob": "Corrupted Mammoth",
@@ -2155,7 +2166,7 @@
         },
         {
           "_source_row": 124,
-          "step": "29",
+          "step": "30",
           "phase": "",
           "action": "Kill Corrupted Hill Giant",
           "npc_mob": "Corrupted Hill Giant",
@@ -2173,7 +2184,7 @@
         },
         {
           "_source_row": 125,
-          "step": "30",
+          "step": "31",
           "phase": "",
           "action": "Give Clean Lakewater, Chunk of Tundra, and Ancient Rock to Xanuusus",
           "npc_mob": "Xanuusus",
@@ -2202,7 +2213,7 @@
         },
         {
           "_source_row": 126,
-          "step": "31",
+          "step": "32",
           "phase": "",
           "action": "Give Warm Pulsing Treant Heart to Yeka Ias",
           "npc_mob": "Yeka Ias",
@@ -2225,7 +2236,7 @@
         },
         {
           "_source_row": 127,
-          "step": "32",
+          "step": "33",
           "phase": "",
           "action": "Kill Corrupted Seahorse",
           "npc_mob": "Corrupted Seahorse",
@@ -2244,7 +2255,7 @@
         },
         {
           "_source_row": 128,
-          "step": "33",
+          "step": "34",
           "phase": "",
           "action": "Kill Corrupted Seafury Cyclops",
           "npc_mob": "Corrupted Seafury Cyclops",
@@ -2263,7 +2274,7 @@
         },
         {
           "_source_row": 129,
-          "step": "34",
+          "step": "35",
           "phase": "",
           "action": "Kill Corrupted Brownie",
           "npc_mob": "Corrupted Brownie",
@@ -2282,7 +2293,7 @@
         },
         {
           "_source_row": 130,
-          "step": "35",
+          "step": "36",
           "phase": "",
           "action": "Give Kedge Cave Crystals, Ocean of Tears Seavine, and Green Heartwood Branch to Pained Unicorn",
           "npc_mob": "Pained Unicorn",
@@ -2311,7 +2322,7 @@
         },
         {
           "_source_row": 131,
-          "step": "36",
+          "step": "37",
           "phase": "",
           "action": "Give Gleaming Unicorn Horn to Silox Azrix",
           "npc_mob": "Silox Azrix",
@@ -2334,7 +2345,7 @@
         },
         {
           "_source_row": 132,
-          "step": "37",
+          "step": "38",
           "phase": "",
           "action": "Kill Corrupted Gorilla",
           "npc_mob": "Corrupted Gorilla",
@@ -2352,7 +2363,7 @@
         },
         {
           "_source_row": 133,
-          "step": "38",
+          "step": "39",
           "phase": "",
           "action": "Kill Corrupted Barracuda",
           "npc_mob": "Corrupted Barracuda",
@@ -2370,7 +2381,7 @@
         },
         {
           "_source_row": 134,
-          "step": "39",
+          "step": "40",
           "phase": "",
           "action": "Kill Ulump Pujik",
           "npc_mob": "Ulump Pujik",
@@ -2389,7 +2400,7 @@
         },
         {
           "_source_row": 135,
-          "step": "40",
+          "step": "41",
           "phase": "",
           "action": "Give Froglok Essence to Dolgin Codslayer",
           "npc_mob": "Dolgin Codslayer",
@@ -2410,7 +2421,7 @@
         },
         {
           "_source_row": 136,
-          "step": "41",
+          "step": "42",
           "phase": "",
           "action": "Kill Faydedar",
           "npc_mob": "Faydedar",
@@ -2429,7 +2440,7 @@
         },
         {
           "_source_row": 137,
-          "step": "42",
+          "step": "43",
           "phase": "",
           "action": "Give Froglok Essence, Green Tree Bark, Pure Lakewater, and Pod of Seawater to Nekexin Virulence",
           "npc_mob": "Nekexin Virulence",
@@ -2461,7 +2472,7 @@
         },
         {
           "_source_row": 139,
-          "step": "43",
+          "step": "44",
           "phase": "FINAL TURN-IN",
           "action": "Give Cleansed Spirit of Antonica, Cleansed Spirit of Faydwer, Cleansed Spirit of Kunark, and Elaborate Scimitar to Xanuusus",
           "npc_mob": "Xanuusus",
@@ -4312,14 +4323,13 @@
           "_source_row": 253,
           "step": "6",
           "phase": "",
-          "action": "Craft Robe of the Lost Circle",
+          "action": "Craft or loot Robe of the Lost Circle",
           "npc_mob": "",
           "zone": "",
           "items": "",
-          "notes": "Skip this whole robe-crafting branch if you loot Robe of the Lost Circle from Brother Qwinn or Brother Zephyl.",
+          "notes": "You can skip this crafting branch entirely if Robe of the Lost Circle drops from Brother Qwinn or Brother Zephyl.",
           "tags": [
-            "solo",
-            "skippable"
+            "solo"
           ],
           "required_items": [
             {
@@ -6469,11 +6479,11 @@
           "_source_row": 394,
           "step": "12",
           "phase": "",
-          "action": "Get Crushed Pot from Alrik Farsight",
+          "action": "Get Crushed Pot from Alrik Farsight (requires faction)",
           "npc_mob": "Alrik Farsight",
           "zone": "Timorous Deep",
           "items": "Receive: Crushed Pot",
-          "notes": "",
+          "notes": "Locate Alrik Farsight near the Timorous Deep chessboard area. Say \"I will take the artifact\" to receive the Crushed Pot. You need at least Amiable faction with Keepers of the Art for him to respond. If Alrik will not respond to you, complete the Bat Wings faction quest for Niola Impholder in the Erudin Magician Guild.",
           "tags": [
             "solo"
           ]
@@ -6482,31 +6492,97 @@
           "_source_row": 395,
           "step": "13",
           "phase": "",
-          "action": "Pot -> Farios -> Grocery List -> Nora -> Provisions -> Farios -> Receipt",
-          "npc_mob": "Various NPCs",
+          "action": "Give Crushed Pot to Farios Elianos",
+          "npc_mob": "Farios Elianos",
           "zone": "Firiona Vie",
-          "items": "Receive: Receipt",
+          "items": "",
           "notes": "",
           "tags": [
             "solo"
+          ],
+          "required_items": [
+            {
+              "name": "Crushed Pot"
+            }
+          ],
+          "reward_items": [
+            {
+              "name": "Grocery List"
+            }
+          ]
+        },
+        {
+          "_source_row": 395.1,
+          "step": "14",
+          "phase": "",
+          "action": "Give Grocery List to Merchant Nora",
+          "npc_mob": "Merchant Nora",
+          "zone": "Firiona Vie",
+          "items": "",
+          "notes": "",
+          "tags": [
+            "solo"
+          ],
+          "required_items": [
+            {
+              "name": "Grocery List"
+            }
+          ],
+          "reward_items": [
+            {
+              "name": "Bag of Provisions"
+            }
+          ]
+        },
+        {
+          "_source_row": 395.2,
+          "step": "15",
+          "phase": "",
+          "action": "Give Bag of Provisions to Farios Elianos",
+          "npc_mob": "Farios Elianos",
+          "zone": "Firiona Vie",
+          "items": "",
+          "notes": "",
+          "tags": [
+            "solo"
+          ],
+          "required_items": [
+            {
+              "name": "Bag of Provisions"
+            }
+          ],
+          "reward_items": [
+            {
+              "name": "Receipt"
+            }
           ]
         },
         {
           "_source_row": 396,
-          "step": "14",
+          "step": "16",
           "phase": "",
-          "action": "Receipt to Alrik",
+          "action": "Give Receipt to Alrik Farsight",
           "npc_mob": "Alrik Farsight",
           "zone": "Timorous Deep",
-          "items": "Receive: Ancient Pattern",
+          "items": "",
           "notes": "",
           "tags": [
             "solo"
+          ],
+          "required_items": [
+            {
+              "name": "Receipt"
+            }
+          ],
+          "reward_items": [
+            {
+              "name": "Ancient Pattern"
+            }
           ]
         },
         {
           "_source_row": 397,
-          "step": "15",
+          "step": "17",
           "phase": "",
           "action": "Forage Rose of Firiona",
           "npc_mob": "(forage)",
@@ -6519,15 +6595,66 @@
         },
         {
           "_source_row": 398,
-          "step": "16",
+          "step": "18",
           "phase": "",
-          "action": "Rose -> Merdan -> Painting -> skeleton -> locket -> Niera Farbreeze -> Powder",
-          "npc_mob": "Merdan/skeleton",
-          "zone": "Surefall/Frontier",
+          "action": "Give Rose of Firiona to Merdan",
+          "npc_mob": "Merdan",
+          "zone": "Surefall Glade",
           "items": "",
           "notes": "",
           "tags": [
             "solo"
+          ],
+          "required_items": [
+            {
+              "name": "Rose of Firiona"
+            }
+          ],
+          "reward_items": [
+            {
+              "name": "Wood Painting"
+            }
+          ]
+        },
+        {
+          "_source_row": 398.1,
+          "step": "19",
+          "phase": "",
+          "action": "Give Wood Painting to a human skeleton",
+          "npc_mob": "human skeleton",
+          "zone": "Frontier Mountains",
+          "items": "",
+          "notes": "",
+          "tags": [
+            "solo"
+          ],
+          "required_items": [
+            {
+              "name": "Wood Painting"
+            }
+          ],
+          "reward_items": [
+            {
+              "name": "Silver Chained Locket"
+            }
+          ]
+        },
+        {
+          "_source_row": 398.2,
+          "step": "20",
+          "phase": "",
+          "action": "Give Silver Chained Locket to Niera Farbreeze",
+          "npc_mob": "Niera Farbreeze",
+          "zone": "Surefall Glade",
+          "items": "",
+          "notes": "",
+          "tags": [
+            "solo"
+          ],
+          "required_items": [
+            {
+              "name": "Silver Chained Locket"
+            }
           ],
           "reward_items": [
             {
@@ -6537,7 +6664,7 @@
         },
         {
           "_source_row": 399,
-          "step": "17",
+          "step": "21",
           "phase": "",
           "action": "Kill Black Reaver and obtain Jade Reaver",
           "npc_mob": "Black Reaver",
@@ -6555,7 +6682,7 @@
         },
         {
           "_source_row": 399.1,
-          "step": "18",
+          "step": "22",
           "phase": "",
           "action": "Give Jade Reaver to Kinlo Strongarm",
           "npc_mob": "Kinlo Strongarm",
@@ -6578,7 +6705,7 @@
         },
         {
           "_source_row": 400,
-          "step": "19",
+          "step": "23",
           "phase": "",
           "action": "Combine Pattern + Powder + Clay on pottery wheel (pottery wheel)",
           "npc_mob": "Any",
@@ -6591,7 +6718,7 @@
         },
         {
           "_source_row": 401,
-          "step": "20",
+          "step": "24",
           "phase": "",
           "action": "Give Runecrested Bowl + Hardened Mixture to Ella Ella Foodcrafter",
           "npc_mob": "Misty Thicket",
@@ -6604,21 +6731,26 @@
         },
         {
           "_source_row": 402,
-          "step": "21",
+          "step": "25",
           "phase": "",
-          "action": "Kill Venril Sathir (live version)",
+          "action": "Trigger and kill Venril Sathir",
           "npc_mob": "Venril Sathir",
           "zone": "Karnor's Castle",
-          "items": "Loot: Pulsing Green Stone",
-          "notes": "",
+          "items": "",
+          "notes": "Preparation: bring Summoned: Firefly Globe and Spell: Resurrection, the level 47 Cleric spell scroll. Summoned: Firefly Globe is created from the Druid/Ranger spell Dance of the Fireflies and can only be summoned at night; the item is temporary. The required Venril Sathir is not the normal raid boss. After the regular Venril Sathir dies, Venril Sathir's remains will eventually spawn. Give Summoned: Firefly Globe to Venril Sathir's remains to spawn Spirit of Venril Sathir. Give Spell: Resurrection to Spirit of Venril Sathir to spawn the epic version of Venril Sathir. Kill the triggered Venril Sathir and loot Pulsing Green Stone. Venril drops two Pulsing Green Stones, but they are lore. Bring another Druid/Ranger if possible. Venril Sathir's remains may already be up on freshly spawned picks, so checking new picks can save significant waiting time.",
           "tags": [
             "group",
             "raid"
+          ],
+          "drop_items": [
+            {
+              "name": "Pulsing Green Stone"
+            }
           ]
         },
         {
           "_source_row": 403,
-          "step": "22",
+          "step": "26",
           "phase": "",
           "action": "Give both stones to Foloal Stormforest",
           "npc_mob": "Foloal Stormforest",
@@ -6631,7 +6763,7 @@
         },
         {
           "_source_row": 404,
-          "step": "23",
+          "step": "27",
           "phase": "",
           "action": "Give Warmly Glowing Stone to Telin Darkforest",
           "npc_mob": "Telin Darkforest",
@@ -6644,7 +6776,7 @@
         },
         {
           "_source_row": 405,
-          "step": "24",
+          "step": "28",
           "phase": "",
           "action": "Give Shiny Tin Bowl to Jaeil the Wretched",
           "npc_mob": "Jaeil the Wretched",
@@ -6660,7 +6792,7 @@
         },
         {
           "_source_row": 406,
-          "step": "25",
+          "step": "29",
           "phase": "",
           "action": "Kill Jaeil the Insane",
           "npc_mob": "Jaeil the Insane",
@@ -6674,7 +6806,7 @@
         },
         {
           "_source_row": 407,
-          "step": "26",
+          "step": "30",
           "phase": "",
           "action": "Give hammer to Kinlo Strongarm",
           "npc_mob": "Kinlo Strongarm",
@@ -6687,7 +6819,7 @@
         },
         {
           "_source_row": 408,
-          "step": "27",
+          "step": "31",
           "phase": "",
           "action": "Give Soulbound Hammer to Mairee Silentone",
           "npc_mob": "Mairee Silentone",
@@ -6700,7 +6832,7 @@
         },
         {
           "_source_row": 409,
-          "step": "28",
+          "step": "32",
           "phase": "",
           "action": "Kill Essence Tamer",
           "npc_mob": "Essence Tamer",
@@ -6714,7 +6846,7 @@
         },
         {
           "_source_row": 410,
-          "step": "29",
+          "step": "33",
           "phase": "",
           "action": "Give Hammer + Sphere to Mairee",
           "npc_mob": "Mairee Silentone",
@@ -6727,7 +6859,7 @@
         },
         {
           "_source_row": 411,
-          "step": "30",
+          "step": "34",
           "phase": "",
           "action": "Give Hammer of Ancients to Kinlo",
           "npc_mob": "Kinlo Strongarm",
@@ -6753,7 +6885,7 @@
         },
         {
           "_source_row": 412,
-          "step": "31",
+          "step": "35",
           "phase": "",
           "action": "Give Ancient Longsword to Usbak the Old",
           "npc_mob": "Usbak the Old",
@@ -6766,7 +6898,7 @@
         },
         {
           "_source_row": 413,
-          "step": "32",
+          "step": "36",
           "phase": "",
           "action": "Give mithril ore to Kinlo",
           "npc_mob": "Kinlo Strongarm",
@@ -6779,7 +6911,7 @@
         },
         {
           "_source_row": 415,
-          "step": "33",
+          "step": "37",
           "phase": "SWIFTWIND",
           "action": "Give Refined Ancient Sword to Telin Darkforest",
           "npc_mob": "Telin Darkforest",
@@ -6792,7 +6924,7 @@
         },
         {
           "_source_row": 416,
-          "step": "34",
+          "step": "38",
           "phase": "SWIFTWIND",
           "action": "Give Refined Ancient Sword to Faelin",
           "npc_mob": "Faelin Bloodbriar",
@@ -6805,7 +6937,7 @@
         },
         {
           "_source_row": 418,
-          "step": "35",
+          "step": "39",
           "phase": "EARTHCALLER",
           "action": "Obtain Shattered Emerald of Corruption",
           "npc_mob": "(various sources)",
@@ -6819,7 +6951,7 @@
         },
         {
           "_source_row": 419,
-          "step": "36",
+          "step": "40",
           "phase": "EARTHCALLER",
           "action": "Give Emerald + Refined Mithril Blade to Xanuusus (loc +1340, +500)",
           "npc_mob": "Xanuusus",
