@@ -392,14 +392,29 @@ function normalizeProgressionOverrideName(value: string) {
 // conservative and only affect the optional "Hide endgame / special" planner filter.
 const HIGH_END_QUEST_ITEM_NAMES = new Set([
   "belt of dwarf slaying",
+  "bladesoul's spiritual armguards",
+  "bladesoul's spiritual diadem",
   "black flower of functionality",
   "blue flower of functionality",
   "green flower of functionality",
   "red flower of functionality",
+  "ring of dain frostreaver iv",
   "white flower of functionality",
 ].map(normalizeProgressionOverrideName));
 
 const RAID_OR_HIGH_END_ITEM_NAMES = new Set([
+  "ancient prismatic axe",
+  "ancient prismatic battlehammer",
+  "ancient prismatic bow",
+  "ancient prismatic brawl stick",
+  "ancient prismatic claymore",
+  "ancient prismatic fist wraps",
+  "ancient prismatic lance",
+  "ancient prismatic mace",
+  "ancient prismatic spear",
+  "ancient prismatic staff",
+  "ancient prismatic stiletto",
+  "ancient prismatic warsword",
   "buckler of insight",
   "white dragonscale boots",
   "white dragonscale helm",

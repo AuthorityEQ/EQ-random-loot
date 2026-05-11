@@ -19,6 +19,15 @@ type BonusReportRecord = {
   updatedAt: string;
 };
 
+type BannedUserRecord = {
+  discordUserId: string;
+  discordUsername: string | null;
+  reason: string | null;
+  bannedByDiscordUserId: string | null;
+  bannedByDiscordUsername: string | null;
+  createdAt: string;
+};
+
 type BonusReportRow = {
   id: string;
   zonename: string;
@@ -29,6 +38,15 @@ type BonusReportRow = {
   updatedat: Date;
 };
 
+type BannedUserRow = {
+  discorduserid: string;
+  discordusername: string | null;
+  reason: string | null;
+  bannedbydiscorduserid: string | null;
+  bannedbydiscordusername: string | null;
+  createdat: Date;
+};
+
 type BonusPostBody =
   | {
       action?: undefined;
@@ -37,6 +55,10 @@ type BonusPostBody =
     }
   | {
       action: "banUser";
+      discordUserId?: unknown;
+    }
+  | {
+      action: "unbanUser";
       discordUserId?: unknown;
     };
 
@@ -74,6 +96,17 @@ function mapReport(row: BonusReportRow): BonusReportRecord {
   };
 }
 
+function mapBannedUser(row: BannedUserRow): BannedUserRecord {
+  return {
+    discordUserId: row.discorduserid,
+    discordUsername: row.discordusername,
+    reason: row.reason,
+    bannedByDiscordUserId: row.bannedbydiscorduserid,
+    bannedByDiscordUsername: row.bannedbydiscordusername,
+    createdAt: row.createdat.toISOString(),
+  };
+}
+
 async function getAllReports() {
   const result = await getPool().query<BonusReportRow>(
     `select
@@ -90,6 +123,31 @@ async function getAllReports() {
   return result.rows.map(mapReport);
 }
 
+async function getBannedUsers() {
+  const result = await getPool().query<BannedUserRow>(
+    `select
+       banned_users."discordUserId" as discorduserid,
+       coalesce(
+         banned_users."discordUsername",
+         latest_reports."discordUsername"
+       ) as discordusername,
+       banned_users.reason,
+       banned_users."bannedByDiscordUserId" as bannedbydiscorduserid,
+       banned_users."bannedByDiscordUsername" as bannedbydiscordusername,
+       banned_users."createdAt" as createdat
+     from banned_users
+     left join lateral (
+       select "discordUsername"
+       from bonus_reports
+       where bonus_reports."discordUserId" = banned_users."discordUserId"
+       order by "updatedAt" desc
+       limit 1
+     ) latest_reports on true
+     order by banned_users."createdAt" desc`,
+  );
+  return result.rows.map(mapBannedUser);
+}
+
 async function ensureModerationTables(client: Pool | PoolClient = getPool()) {
   await client.query(
     `create table if not exists banned_users (
@@ -97,6 +155,10 @@ async function ensureModerationTables(client: Pool | PoolClient = getPool()) {
        "createdAt" timestamptz not null default now()
      )`,
   );
+  await client.query(`alter table banned_users add column if not exists "discordUsername" text`);
+  await client.query(`alter table banned_users add column if not exists reason text`);
+  await client.query(`alter table banned_users add column if not exists "bannedByDiscordUserId" text`);
+  await client.query(`alter table banned_users add column if not exists "bannedByDiscordUsername" text`);
 }
 
 async function isBannedUser(client: Pool | PoolClient, discordUserId: string) {
@@ -152,13 +214,18 @@ function databaseErrorResponse(error: unknown, context: Record<string, unknown>)
 
 export async function GET() {
   const currentUser = await getDiscordSessionUser();
+  const isAdmin = isAdminSessionUserId(currentUser?.sessionUserId);
 
   try {
+    if (isAdmin) {
+      await ensureModerationTables();
+    }
     const reports = await getAllReports();
     return Response.json({
       reports,
       currentUserReports: getCurrentUserReports(reports, currentUser?.discordUserId),
-      isAdmin: isAdminSessionUserId(currentUser?.sessionUserId),
+      isAdmin,
+      bannedUsers: isAdmin ? await getBannedUsers() : [],
     });
   } catch (error) {
     return databaseErrorResponse(error, { action: "list-reports" });
@@ -182,23 +249,80 @@ export async function POST(request: Request) {
     if (!bannedDiscordUserId) {
       return Response.json({ error: "INVALID_BAN" }, { status: 400 });
     }
+    if (bannedDiscordUserId === currentUser.discordUserId || bannedDiscordUserId === currentUser.sessionUserId) {
+      return Response.json({ error: "CANNOT_BAN_SELF" }, { status: 400 });
+    }
 
     try {
       const pool = getPool();
       await ensureModerationTables(pool);
-      await pool.query(
-        `insert into banned_users ("discordUserId")
-         values ($1)
-         on conflict ("discordUserId") do nothing`,
+      const latestUserReport = await pool.query<{ discordusername: string | null }>(
+        `select "discordUsername" as discordusername
+         from bonus_reports
+         where "discordUserId" = $1
+         order by "updatedAt" desc
+         limit 1`,
         [bannedDiscordUserId],
       );
+      await pool.query(
+        `insert into banned_users (
+           "discordUserId",
+           "discordUsername",
+           "bannedByDiscordUserId",
+           "bannedByDiscordUsername"
+         )
+         values ($1, $2, $3, $4)
+         on conflict ("discordUserId")
+         do update set
+           "discordUsername" = coalesce(banned_users."discordUsername", excluded."discordUsername"),
+           "bannedByDiscordUserId" = coalesce(banned_users."bannedByDiscordUserId", excluded."bannedByDiscordUserId"),
+           "bannedByDiscordUsername" = coalesce(banned_users."bannedByDiscordUsername", excluded."bannedByDiscordUsername")`,
+        [
+          bannedDiscordUserId,
+          latestUserReport.rows[0]?.discordusername ?? null,
+          currentUser.discordUserId,
+          currentUser.username,
+        ],
+      );
 
-      return Response.json({ success: true, isAdmin: true });
+      return Response.json({ success: true, isAdmin: true, bannedUsers: await getBannedUsers() });
     } catch (error) {
       return databaseErrorResponse(error, {
         action: "ban-user",
         discordUserId: currentUser.discordUserId,
         bannedDiscordUserId,
+      });
+    }
+  }
+
+  if (body?.action === "unbanUser") {
+    if (!isAdminSessionUserId(currentUser.sessionUserId)) {
+      return Response.json({ error: "ADMIN_REQUIRED" }, { status: 403 });
+    }
+
+    const unbannedDiscordUserId = typeof body.discordUserId === "string" ? body.discordUserId.trim() : "";
+    if (!unbannedDiscordUserId) {
+      return Response.json({ error: "INVALID_UNBAN" }, { status: 400 });
+    }
+    if (unbannedDiscordUserId === currentUser.discordUserId || unbannedDiscordUserId === currentUser.sessionUserId) {
+      return Response.json({ error: "CANNOT_UNBAN_SELF" }, { status: 400 });
+    }
+
+    try {
+      const pool = getPool();
+      await ensureModerationTables(pool);
+      await pool.query(
+        `delete from banned_users
+         where "discordUserId" = $1`,
+        [unbannedDiscordUserId],
+      );
+
+      return Response.json({ success: true, isAdmin: true, bannedUsers: await getBannedUsers() });
+    } catch (error) {
+      return databaseErrorResponse(error, {
+        action: "unban-user",
+        discordUserId: currentUser.discordUserId,
+        unbannedDiscordUserId,
       });
     }
   }
@@ -292,6 +416,7 @@ export async function POST(request: Request) {
       reports,
       currentUserReports: getCurrentUserReports(reports, currentUser.discordUserId),
       isAdmin: isAdminSessionUserId(currentUser.sessionUserId),
+      bannedUsers: isAdminSessionUserId(currentUser.sessionUserId) ? await getBannedUsers() : [],
     });
   } catch (error) {
     await client?.query("rollback").catch(() => {});
@@ -323,6 +448,9 @@ export async function DELETE(request: Request) {
 
   try {
     const pool = getPool();
+    if (isAdmin) {
+      await ensureModerationTables(pool);
+    }
     const deletedReport = reportId
       ? await pool.query<{ id: string }>(
           `delete from bonus_reports
@@ -349,6 +477,7 @@ export async function DELETE(request: Request) {
       reports,
       currentUserReports: getCurrentUserReports(reports, currentUser.discordUserId),
       isAdmin,
+      bannedUsers: isAdmin ? await getBannedUsers() : [],
     });
   } catch (error) {
     return databaseErrorResponse(error, {

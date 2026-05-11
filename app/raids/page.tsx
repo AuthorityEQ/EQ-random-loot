@@ -32,6 +32,10 @@ function getRaidBossDomId(bossName: string) {
   return `raid-boss-${bossName.replace(/[^a-z0-9]+/gi, "-").toLowerCase()}`;
 }
 
+function getRaidTierDomId(expansion: string, tier: string | number) {
+  return `raid-tier-${expansion.replace(/[^a-z0-9]+/gi, "-").toLowerCase()}-${String(tier).replace(/[^a-z0-9]+/gi, "-").toLowerCase()}`;
+}
+
 function getItemDetails(name: string) {
   return itemDetailsMap[name];
 }
@@ -73,6 +77,24 @@ export default function RaidsPage() {
 
   const [drawerItem, setDrawerItem] = useState<{ item: string; bucket: Bucket } | null>(null);
   const [bossOpenRequest, setBossOpenRequest] = useState<{ domId: string; requestId: number } | null>(null);
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const requestedExpansion = params.get("expansion");
+    if (requestedExpansion && expansionOptions.includes(requestedExpansion)) {
+      setActiveExpansion(requestedExpansion);
+    }
+  }, []);
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const requestedTier = params.get("tier");
+    if (!requestedTier) return;
+    const domId = getRaidTierDomId(activeExpansion, requestedTier);
+    requestAnimationFrame(() => {
+      document.getElementById(domId)?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }, [activeExpansion]);
 
   // Cmd/Ctrl+click tracking — modifier held during mousedown opens item page instead of drawer
   const modifierHeldRef = useRef(false);
@@ -276,6 +298,7 @@ export default function RaidsPage() {
           ? dataset.tiers.map((tier) => (
               <RaidTierCard
                 bossBucketMap={bossBucketMap}
+                domId={getRaidTierDomId(dataset.expansion, tier.tier)}
                 expansion={dataset.expansion}
                 getItemDetails={getItemDetails}
                 key={tier.tier}

@@ -84,6 +84,31 @@
   --app-header-sticky-height: calc(var(--app-nav-sticky-height) + var(--app-sub-nav-sticky-height));
 
 }
+
+.filter-summary {
+  align-items: center;
+  background: color-mix(in srgb, var(--panel, var(--surface)) 86%, transparent);
+  border: 1px solid var(--line, var(--border));
+  border-radius: 8px;
+  color: var(--text-muted);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  gap: 10px;
+  margin: 0 0 14px;
+  padding: 9px 12px;
+}
+
+.filter-summary a {
+  color: var(--accent);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.filter-summary a:hover,
+.filter-summary a:focus {
+  text-decoration: underline;
+}
 :root[data-theme="dark"] {
   color-scheme: dark;
   --bg: #0d1411;
@@ -2499,6 +2524,18 @@ select option {
 .raid-boss-grid {
   display: grid;
   gap: 10px;
+  grid-template-columns: 1fr;
+}
+
+.raid-boss-row {
+  display: grid;
+  gap: 10px;
+}
+
+.raid-boss-row-cards {
+  align-items: start;
+  display: grid;
+  gap: 10px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
 
 }
@@ -2507,7 +2544,8 @@ select option {
   border: 1px solid var(--line);
   border-radius: 8px;
   overflow: hidden;
-  transition: border-color 140ms ease, box-shadow 140ms ease;
+  position: relative;
+  transition: background-color 180ms ease-out, border-color 180ms ease-out, box-shadow 180ms ease-out;
 
 }
 .raid-boss-card:hover,
@@ -2516,6 +2554,20 @@ select option {
   box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent) 16%, transparent), 0 8px 20px rgba(0, 0, 0, 0.08);
 
 }
+.raid-boss-card.is-open {
+  background: color-mix(in srgb, var(--accent) 8%, var(--card));
+  border-color: color-mix(in srgb, var(--accent) 68%, var(--line));
+  box-shadow:
+    inset 3px 0 0 color-mix(in srgb, var(--accent) 82%, #f0b36b),
+    inset 0 1px 0 rgba(255, 255, 255, 0.045),
+    0 0 0 1px color-mix(in srgb, var(--accent) 20%, transparent),
+    0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.raid-boss-card.is-open .raid-boss-trigger {
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+}
+
 .raid-boss-trigger {
   align-items: center;
   background: transparent;
@@ -2548,11 +2600,30 @@ select option {
 
 }
 .raid-boss-details {
-  border-top: 1px solid var(--line);
+  animation: raid-details-reveal 180ms ease-out;
+  background: color-mix(in srgb, var(--accent) 5%, var(--card));
+  border: 1px solid color-mix(in srgb, var(--accent) 46%, var(--line));
+  border-radius: 8px;
+  box-shadow:
+    inset 3px 0 0 color-mix(in srgb, var(--accent) 72%, #f0b36b),
+    inset 0 1px 0 rgba(255, 255, 255, 0.035),
+    0 8px 22px rgba(0, 0, 0, 0.1);
   display: grid;
   gap: 12px;
   padding: 12px;
 
+}
+
+@keyframes raid-details-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .raid-notes {
   color: var(--muted);
@@ -2817,7 +2888,7 @@ select option {
     flex-direction: column;
   }
 
-  .raid-boss-grid {
+  .raid-boss-row-cards {
     grid-template-columns: 1fr;
   }
 

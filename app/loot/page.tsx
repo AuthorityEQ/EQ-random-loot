@@ -150,6 +150,12 @@ function Home() {
 
   // ── Derived / memoised values ─────────────────────────────────────────────
   const selectedExpansionSet = useMemo(() => new Set(selectedExpansions), [selectedExpansions]);
+  const selectedBucketNumber = useMemo(() => {
+    const raw = searchParams.get("bucket");
+    if (!raw) return null;
+    const parsed = Number.parseInt(raw, 10);
+    return Number.isFinite(parsed) ? parsed : null;
+  }, [searchParams]);
   const expansionBuckets = useMemo(
     () => buckets.filter((bucket) => selectedExpansionSet.has(bucket.expansion as ExpansionFilter)),
     [selectedExpansionSet],
@@ -246,8 +252,11 @@ function Home() {
 
   // filteredBuckets: level filter + class/race/slot/stat + slot-chip filter
   const filteredBuckets = useMemo(() => {
+    if (selectedBucketNumber !== null) {
+      return useFilteredBuckets.filter(({ bucket }) => bucket.bucket === selectedBucketNumber);
+    }
     return useFilteredBuckets.filter(({ bucket }) => levelVisibleBuckets.has(bucket));
-  }, [levelVisibleBuckets, useFilteredBuckets]);
+  }, [levelVisibleBuckets, selectedBucketNumber, useFilteredBuckets]);
 
   const hasItemsOnlyFilter = query.trim().length >= 2
     || selectedZone !== ""
@@ -655,22 +664,30 @@ function Home() {
           onSelectZone={(zone) => setUrlState({ zone })}
         />
       ) : filteredBuckets.length > 0 ? (
-        <div className="bucket-grid">
-          {filteredBuckets.map(({ bucket, visibleLoot }) => (
-            <BucketCard
-              bucket={bucket}
-              getItemDetails={getItemDetails}
-              getItemStatDisplay={getItemStatDisplay}
-              key={`${bucket.expansion}-${bucket.bucket}`}
-              onSelectLoot={handleSelectLoot}
-              onSelectZone={(zone) => setUrlState({ zone })}
-              query=""
-              sharedLoot={sharedLoot}
-              showAllLoot={false}
-              visibleLoot={visibleLoot}
-            />
-          ))}
-        </div>
+        <>
+          {selectedBucketNumber !== null ? (
+            <div className="filter-summary">
+              Showing bucket {selectedBucketNumber}
+              <Link href="/loot">Clear bucket</Link>
+            </div>
+          ) : null}
+          <div className="bucket-grid">
+            {filteredBuckets.map(({ bucket, visibleLoot }) => (
+              <BucketCard
+                bucket={bucket}
+                getItemDetails={getItemDetails}
+                getItemStatDisplay={getItemStatDisplay}
+                key={`${bucket.expansion}-${bucket.bucket}`}
+                onSelectLoot={handleSelectLoot}
+                onSelectZone={(zone) => setUrlState({ zone })}
+                query=""
+                sharedLoot={sharedLoot}
+                showAllLoot={selectedBucketNumber !== null}
+                visibleLoot={visibleLoot}
+              />
+            ))}
+          </div>
+        </>
       ) : !bucketed ? (
         <div className="shared-pool-stack">
           {filteredBuckets.slice(0, sharedPoolLimit).map(({ bucket, visibleLoot }) => {

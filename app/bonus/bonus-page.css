@@ -450,6 +450,138 @@
   opacity: 0.62;
 }
 
+.bonus-admin-panel {
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--panel) 90%, rgba(127, 29, 29, 0.18)), var(--panel));
+  border: 1px solid color-mix(in srgb, var(--line) 78%, rgba(248, 113, 113, 0.45));
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 9px;
+  padding: 10px 12px;
+}
+
+.bonus-admin-panel-heading {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+.bonus-admin-panel-heading h2 {
+  color: #f0c0c0;
+  font-size: 1rem;
+  font-weight: 950;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.bonus-admin-panel-heading h2 span {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.bonus-admin-panel-heading p {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+  line-height: 1.35;
+  margin: 3px 0 0;
+}
+
+.bonus-banned-user-list {
+  max-height: 360px;
+  overflow: auto;
+  padding-right: 2px;
+}
+
+.bonus-banned-user-row {
+  align-items: center;
+  background: color-mix(in srgb, var(--panel-soft) 58%, transparent);
+  border: 1px solid color-mix(in srgb, var(--line) 72%, rgba(248, 113, 113, 0.14));
+  border-radius: 8px;
+  color: var(--muted);
+  display: grid;
+  gap: 10px;
+  grid-template-columns: minmax(180px, 1.1fr) minmax(120px, 0.8fr) minmax(150px, 0.9fr) minmax(140px, 0.8fr) auto;
+  margin-top: 7px;
+  min-height: 48px;
+  padding: 8px 10px;
+}
+
+.bonus-banned-user-row.is-header {
+  background: transparent;
+  border: 0;
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 950;
+  letter-spacing: 0.06em;
+  margin-top: 0;
+  min-height: 0;
+  padding: 0 10px;
+  text-transform: uppercase;
+}
+
+.bonus-banned-user-identity {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.bonus-banned-user-identity strong {
+  color: var(--text);
+  font-size: 0.88rem;
+  line-height: 1.2;
+}
+
+.bonus-banned-user-identity span,
+.bonus-banned-user-row > span {
+  font-size: 0.76rem;
+  font-weight: 800;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.bonus-banned-user-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bonus-banned-user-actions button {
+  background: color-mix(in srgb, var(--panel) 74%, transparent);
+  border: 1px solid rgba(248, 113, 113, 0.38);
+  border-radius: 999px;
+  color: #f0c0c0;
+  cursor: pointer;
+  font-size: 0.76rem;
+  font-weight: 900;
+  min-height: 28px;
+  padding: 0 10px;
+}
+
+.bonus-banned-user-actions button:hover,
+.bonus-banned-user-actions button:focus-visible {
+  background: color-mix(in srgb, #7f1d1d 34%, var(--panel));
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+.bonus-banned-user-actions button:disabled {
+  cursor: wait;
+  opacity: 0.62;
+}
+
+.bonus-banned-user-empty {
+  background: color-mix(in srgb, var(--panel-soft) 48%, transparent);
+  border: 1px dashed color-mix(in srgb, var(--line) 80%, rgba(248, 113, 113, 0.22));
+  border-radius: 8px;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 800;
+  margin: 7px 0 0;
+  padding: 10px;
+}
+
 .bonus-report-message {
   background: var(--warning-bg);
   border: 1px solid var(--warning-border);
@@ -1289,6 +1421,38 @@
 
   .bonus-active-report-actions button {
     flex: 1;
+  }
+
+  .bonus-admin-panel-heading {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .bonus-banned-user-row,
+  .bonus-banned-user-row.is-header {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    grid-template-columns: 1fr;
+    min-height: 0;
+    padding: 10px;
+  }
+
+  .bonus-banned-user-list {
+    max-height: 320px;
+  }
+
+  .bonus-banned-user-row.is-header {
+    display: none;
+  }
+
+  .bonus-banned-user-actions {
+    justify-content: stretch;
+  }
+
+  .bonus-banned-user-actions button {
+    width: 100%;
   }
 
   .bonus-section-heading {

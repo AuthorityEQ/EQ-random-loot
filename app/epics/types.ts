@@ -63,7 +63,10 @@ export type NormalizedStep = {
   items: string | null;
   requiredItems: EpicQuestLink[];
   dropItems: EpicQuestLink[];
+  rewardItems: EpicQuestLink[];
+  createItems: EpicQuestLink[];
   npcLinks: EpicQuestLink[];
+  spawnNotes: string[];
   notes: string | null;
   tags: EpicStepTag[];
   sourceRow: number;
@@ -115,7 +118,10 @@ export type RawEpicStep = {
   items: string;
   required_items?: EpicQuestLink[];
   drop_items?: EpicQuestLink[];
+  reward_items?: EpicQuestLink[];
+  create_items?: EpicQuestLink[];
   npc_links?: EpicQuestLink[];
+  spawn_notes?: string[];
   notes: string;
   tags?: EpicStepTag[];
 };

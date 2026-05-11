@@ -19,14 +19,52 @@ import Link from "next/link";
 import { useEpicProgress } from "@/components/EpicProgressProvider";
 import { EpicTrackerCheckbox } from "@/components/EpicTrackerCheckbox";
 import { ItemIcon } from "@/components/ItemIcon";
+import { ItemDrawer } from "@/components/ItemDrawer";
+import "@/components/item-drawer.css";
 import { useItemPreview } from "@/components/ItemPreviewProvider";
 import { EPIC_CLASSES, type EpicClassName, type EpicQuestLink, type EpicStepTag, type NormalizedClassEpic, type NormalizedStep } from "./types";
+import classicGroupData from "@/data/classic-group-named.json";
+import kunarkGroupData from "@/data/kunark-group-named.json";
+import veliousGroupData from "@/data/velious-group-named.json";
+import classicRaidData from "@/data/classic-raid.json";
+import kunarkRaidData from "@/data/kunark-raid.json";
+import veliousRaidData from "@/data/velious-raid.json";
 import { mobToSlug } from "@/lib/mob-slug";
 import { zoneToSlug } from "@/lib/zone-slug";
-import type { ItemDetailsMap } from "@/lib/search";
+import { buildMobIndex } from "@/lib/mob-slug";
+import { getEpicBucketLinks } from "@/lib/epic-bucket-links";
+import type { ItemDetailsMap, LootDataset } from "@/lib/search";
+import type { RaidDataset } from "@/lib/raidTiers";
 import itemDetailsData from "@/data/item-details.json";
 
 const itemDetailsMap = itemDetailsData as unknown as ItemDetailsMap;
+const groupDatasets = [classicGroupData, kunarkGroupData, veliousGroupData] as LootDataset[];
+const raidDatasets = [classicRaidData, kunarkRaidData, veliousRaidData] as RaidDataset[];
+const internalMobSlugs = new Set(buildMobIndex(groupDatasets.flatMap((dataset) => dataset.buckets), raidDatasets).keys());
+
+function normalizeItemLookupName(value: string) {
+  return value
+    .toLowerCase()
+    .replace(/[’`]/g, "'")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim()
+    .replace(/\s+/g, " ");
+}
+
+const itemDetailsByDisplayName = new Map(
+  Object.values(itemDetailsMap).map((details) => [details.name.toLowerCase(), details]),
+);
+const itemDetailsByNormalizedName = new Map<string, ItemDetailsMap[string]>();
+for (const [key, details] of Object.entries(itemDetailsMap)) {
+  itemDetailsByNormalizedName.set(normalizeItemLookupName(key), details);
+  itemDetailsByNormalizedName.set(normalizeItemLookupName(details.name), details);
+}
+
+function getEpicItemDetails(itemName: string) {
+  return itemDetailsMap[itemName]
+    ?? itemDetailsByDisplayName.get(itemName.toLowerCase())
+    ?? itemDetailsByNormalizedName.get(normalizeItemLookupName(itemName));
+}
 
 const tagLabels: Record<EpicStepTag, string> = {
   solo: "Solo",
@@ -114,11 +152,13 @@ function EpicExternalOrInternalLink({
   className = "epic-link",
   href,
   internalHref,
+  hasInternalTarget,
   children,
 }: {
   className?: string;
   href?: string;
   internalHref: string;
+  hasInternalTarget?: boolean;
   children: ReactNode;
 }) {
   if (href) {
@@ -126,6 +166,21 @@ function EpicExternalOrInternalLink({
       <a
         className={className}
         href={href}
+        onClick={(event) => event.stopPropagation()}
+        rel="noreferrer"
+        target="_blank"
+      >
+        {children}
+      </a>
+    );
+  }
+
+  if (!hasInternalTarget) {
+    const label = typeof children === "string" ? children : internalHref.split("/").pop() ?? "";
+    return (
+      <a
+        className={className}
+        href={`https://everquest.allakhazam.com/search.html?q=${encodeURIComponent(label)}`}
         onClick={(event) => event.stopPropagation()}
         rel="noreferrer"
         target="_blank"
@@ -145,41 +200,50 @@ function EpicExternalOrInternalLink({
 function EpicItemLinks({
   className,
   items,
+  onOpenItem,
 }: {
   className: string;
   items: EpicQuestLink[];
+  onOpenItem: (itemName: string) => void;
 }) {
   const { previewProps } = useItemPreview();
 
   return (
     <ul className="epic-items-list">
       {items.map((item) => {
-        const details = itemDetailsMap[item.name];
+        const details = getEpicItemDetails(item.name);
         const detailsAllakhazamUrl = details?.sources?.find((source) => source.name === "Allakhazam")?.url;
         const externalUrl = item.url ?? detailsAllakhazamUrl;
         return (
           <li key={`${item.name}-${item.url ?? "local"}`}>
-            {externalUrl ? (
-              <a
+            <span className="epic-item-action-row">
+              <button
                 className={className}
-                href={externalUrl}
-                onClick={(event) => event.stopPropagation()}
-                rel="noreferrer"
-                target="_blank"
+                onClick={(event) => {
+                  event.preventDefault();
+                  event.stopPropagation();
+                  onOpenItem(item.name);
+                }}
+                type="button"
                 {...previewProps(item.name, details)}
               >
                 <ItemIcon details={details} />
                 <span>{item.name}</span>
-              </a>
-            ) : (
-              <span
-                className={className}
-                {...previewProps(item.name, details)}
-              >
-                <ItemIcon details={details} />
-                <span>{item.name}</span>
-              </span>
-            )}
+              </button>
+              {externalUrl ? (
+                <a
+                  aria-label={`View ${item.name} on Allakhazam`}
+                  className="epic-item-external-link"
+                  href={externalUrl}
+                  onClick={(event) => event.stopPropagation()}
+                  rel="noreferrer"
+                  target="_blank"
+                  title="View on Allakhazam"
+                >
+                  Alla
+                </a>
+              ) : null}
+            </span>
           </li>
         );
       })}
@@ -196,11 +260,17 @@ function EpicStepCard({
   step,
   stepIndex,
   globalIndex,
+  isExpanded,
+  onOpenItem,
+  onToggleExpanded,
 }: {
   epicClassName: EpicClassName;
   step: NormalizedStep;
   stepIndex: number;
   globalIndex: number;
+  isExpanded: boolean;
+  onOpenItem: (itemName: string) => void;
+  onToggleExpanded: (stepIndex: number) => void;
 }) {
   const { getProgress } = useEpicProgress();
   const progress = getProgress(epicClassName);
@@ -212,7 +282,8 @@ function EpicStepCard({
       ? step.requiredItems
       : parseStepItems(step.items ?? "").map((name) => ({ name }));
   const dropItems = step.dropItems;
-  const [isExpanded, setIsExpanded] = useState(false);
+  const rewardItems = step.rewardItems;
+  const createItems = step.createItems;
   const npcMobLabel = showMobAsNpc ? step.npcMob : dropSource;
   const npcLinks =
     step.npcLinks.length > 0
@@ -222,9 +293,10 @@ function EpicStepCard({
         : [];
   const isSkippable = step.tags.includes("skippable");
   const visibleTags = step.tags.filter((tag) => tag !== "skippable");
+  const bucketLinks = getEpicBucketLinks(epicClassName, step);
 
   function toggleExpanded() {
-    setIsExpanded((current) => !current);
+    onToggleExpanded(stepIndex);
   }
 
   function handleKeyDown(event: KeyboardEvent<HTMLLIElement>) {
@@ -283,7 +355,11 @@ function EpicStepCard({
                 <ul className="epic-inline-link-list">
                   {npcLinks.map((npc) => (
                     <li key={`${npc.name}-${npc.url ?? "local"}`}>
-                      <EpicExternalOrInternalLink href={npc.url} internalHref={`/mob/${mobToSlug(npc.name)}`}>
+                      <EpicExternalOrInternalLink
+                        hasInternalTarget={internalMobSlugs.has(mobToSlug(npc.name))}
+                        href={npc.url}
+                        internalHref={`/mob/${mobToSlug(npc.name)}`}
+                      >
                         {npc.name}
                       </EpicExternalOrInternalLink>
                     </li>
@@ -299,6 +375,7 @@ function EpicStepCard({
                 <EpicItemLinks
                   className="epic-item-link"
                   items={requiredItems}
+                  onOpenItem={onOpenItem}
                 />
               </dd>
             </div>
@@ -310,7 +387,44 @@ function EpicStepCard({
                 <EpicItemLinks
                   className="epic-item-link epic-drop-link"
                   items={dropItems}
+                  onOpenItem={onOpenItem}
                 />
+              </dd>
+            </div>
+          )}
+          {rewardItems.length > 0 && (
+            <div className="epic-step-meta-pair epic-step-rewards-pair">
+              <dt>Reward</dt>
+              <dd>
+                <EpicItemLinks
+                  className="epic-item-link epic-reward-link"
+                  items={rewardItems}
+                  onOpenItem={onOpenItem}
+                />
+              </dd>
+            </div>
+          )}
+          {createItems.length > 0 && (
+            <div className="epic-step-meta-pair epic-step-creates-pair">
+              <dt>Creates</dt>
+              <dd>
+                <EpicItemLinks
+                  className="epic-item-link epic-create-link"
+                  items={createItems}
+                  onOpenItem={onOpenItem}
+                />
+              </dd>
+            </div>
+          )}
+          {step.spawnNotes.length > 0 && (
+            <div className="epic-step-meta-pair epic-step-spawns-pair">
+              <dt>Spawns</dt>
+              <dd>
+                <ul className="epic-inline-link-list">
+                  {step.spawnNotes.map((spawnNote) => (
+                    <li key={spawnNote}>{spawnNote}</li>
+                  ))}
+                </ul>
               </dd>
             </div>
           )}
@@ -318,6 +432,27 @@ function EpicStepCard({
             <div className="epic-step-meta-pair epic-step-notes-pair">
               <dt>Notes</dt>
               <dd>{step.notes}</dd>
+            </div>
+          )}
+          {bucketLinks.length > 0 && (
+            <div className="epic-step-meta-pair epic-step-buckets-pair">
+              <dt>Random loot</dt>
+              <dd>
+                <ul className="epic-bucket-chip-list">
+                  {bucketLinks.map((bucketLink) => (
+                    <li key={bucketLink.href}>
+                      <Link
+                        className={`epic-bucket-chip is-${bucketLink.kind}`}
+                        href={bucketLink.href}
+                        onClick={(event) => event.stopPropagation()}
+                        title={bucketLink.title}
+                      >
+                        {bucketLink.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </dd>
             </div>
           )}
         </dl>
@@ -333,10 +468,32 @@ function EpicStepCard({
 function ClassSection({ classEpic }: { classEpic: NormalizedClassEpic }) {
   const { getProgress, clearProgress } = useEpicProgress();
   const { className, weaponName, steps } = classEpic;
+  const [expandedSteps, setExpandedSteps] = useState<Set<number>>(() => new Set());
+  const [drawerItemName, setDrawerItemName] = useState<string | null>(null);
   const progress = getProgress(className);
   const completedCount = progress.completed.length;
   const totalSteps = steps.length;
   const pct = totalSteps > 0 ? Math.round((completedCount / totalSteps) * 100) : 0;
+
+  function toggleExpandedStep(stepIndex: number) {
+    setExpandedSteps((current) => {
+      const next = new Set(current);
+      if (next.has(stepIndex)) {
+        next.delete(stepIndex);
+      } else {
+        next.add(stepIndex);
+      }
+      return next;
+    });
+  }
+
+  function expandAllSteps() {
+    setExpandedSteps(new Set(steps.map((_, index) => index)));
+  }
+
+  function collapseAllSteps() {
+    setExpandedSteps(new Set());
+  }
 
   return (
     <>
@@ -372,18 +529,39 @@ function ClassSection({ classEpic }: { classEpic: NormalizedClassEpic }) {
         )}
       </div>
 
+      <div className="epic-review-toolbar" aria-label={`${className} quest step review controls`}>
+        <span>{totalSteps} steps</span>
+        <button className="epic-review-button" onClick={expandAllSteps} type="button">
+          Expand all
+        </button>
+        <button className="epic-review-button" onClick={collapseAllSteps} type="button">
+          Collapse all
+        </button>
+      </div>
+
       {/* Step list */}
       <ol className="epic-steps-list" aria-label={`${className} epic quest steps`}>
         {steps.map((step, idx) => (
           <EpicStepCard
             key={`${className}-row${step.sourceRow}`}
             epicClassName={className}
+            isExpanded={expandedSteps.has(idx)}
+            onOpenItem={setDrawerItemName}
+            onToggleExpanded={toggleExpandedStep}
             step={step}
             stepIndex={idx}
             globalIndex={idx}
           />
         ))}
       </ol>
+      {drawerItemName !== null ? (
+        <ItemDrawer
+          contentType="Epic Quest"
+          details={getEpicItemDetails(drawerItemName)}
+          itemName={drawerItemName}
+          onClose={() => setDrawerItemName(null)}
+        />
+      ) : null}
     </>
   );
 }

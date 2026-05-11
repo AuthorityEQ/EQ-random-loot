@@ -55,6 +55,15 @@ type ServerBonusReport = {
   updatedAt: string;
 };
 
+type BannedUser = {
+  discordUserId: string;
+  discordUsername: string | null;
+  reason: string | null;
+  bannedByDiscordUserId: string | null;
+  bannedByDiscordUsername: string | null;
+  createdAt: string;
+};
+
 type ReportSubmission = Pick<
   ServerBonusReport,
   "id" | "bonus" | "discordUserId" | "discordUsername" | "createdAt" | "updatedAt"
@@ -661,6 +670,7 @@ export function BonusTrackerClient() {
   const [activeReportDrafts, setActiveReportDrafts] = useState<Record<string, BonusType | undefined>>({});
   const [serverReports, setServerReports] = useState<ServerBonusReport[]>([]);
   const [userReports, setUserReports] = useState<Record<string, BonusType | undefined>>({});
+  const [bannedUsers, setBannedUsers] = useState<BannedUser[]>([]);
   const [isAdmin, setIsAdmin] = useState(false);
   const [reportMessage, setReportMessage] = useState("");
   const [isSubmittingReport, setIsSubmittingReport] = useState(false);
@@ -721,11 +731,13 @@ export function BonusTrackerClient() {
       const payload = await response.json() as {
         reports?: ServerBonusReport[];
         currentUserReports?: Record<string, BonusType | undefined>;
+        bannedUsers?: BannedUser[];
         isAdmin?: boolean;
       };
       if (isCancelled) return;
       setServerReports(Array.isArray(payload.reports) ? payload.reports : []);
       setUserReports(payload.currentUserReports ?? {});
+      setBannedUsers(Array.isArray(payload.bannedUsers) ? payload.bannedUsers : []);
       setIsAdmin(Boolean(payload.isAdmin));
     }
 
@@ -837,6 +849,7 @@ export function BonusTrackerClient() {
       const payload = await response.json().catch(() => ({})) as {
         reports?: ServerBonusReport[];
         currentUserReports?: Record<string, BonusType | undefined>;
+        bannedUsers?: BannedUser[];
         isAdmin?: boolean;
         error?: string;
         message?: string;
@@ -846,6 +859,7 @@ export function BonusTrackerClient() {
       if (response.ok) {
         setServerReports(Array.isArray(payload.reports) ? payload.reports : []);
         setUserReports(payload.currentUserReports ?? {});
+        setBannedUsers(Array.isArray(payload.bannedUsers) ? payload.bannedUsers : []);
         setIsAdmin(Boolean(payload.isAdmin));
         setReportMessage(successMessage);
         return;
@@ -907,6 +921,7 @@ export function BonusTrackerClient() {
       const payload = await response.json().catch(() => ({})) as {
         reports?: ServerBonusReport[];
         currentUserReports?: Record<string, BonusType | undefined>;
+        bannedUsers?: BannedUser[];
         isAdmin?: boolean;
         error?: string;
         message?: string;
@@ -915,6 +930,7 @@ export function BonusTrackerClient() {
       if (response.ok) {
         setServerReports(Array.isArray(payload.reports) ? payload.reports : []);
         setUserReports(payload.currentUserReports ?? {});
+        setBannedUsers(Array.isArray(payload.bannedUsers) ? payload.bannedUsers : []);
         setIsAdmin(Boolean(payload.isAdmin));
         setReportMessage(`Report removed for ${zoneName}.`);
         return;
@@ -948,6 +964,7 @@ export function BonusTrackerClient() {
       const payload = await response.json().catch(() => ({})) as {
         reports?: ServerBonusReport[];
         currentUserReports?: Record<string, BonusType | undefined>;
+        bannedUsers?: BannedUser[];
         isAdmin?: boolean;
         error?: string;
       };
@@ -955,6 +972,7 @@ export function BonusTrackerClient() {
       if (response.ok) {
         setServerReports(Array.isArray(payload.reports) ? payload.reports : []);
         setUserReports(payload.currentUserReports ?? {});
+        setBannedUsers(Array.isArray(payload.bannedUsers) ? payload.bannedUsers : []);
         setIsAdmin(Boolean(payload.isAdmin));
         setReportMessage("Report deleted.");
         return;
@@ -979,13 +997,56 @@ export function BonusTrackerClient() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ action: "banUser", discordUserId }),
       });
-      const payload = await response.json().catch(() => ({})) as { error?: string };
+      const payload = await response.json().catch(() => ({})) as {
+        bannedUsers?: BannedUser[];
+        error?: string;
+      };
+
+      if (response.ok) {
+        setBannedUsers(Array.isArray(payload.bannedUsers) ? payload.bannedUsers : []);
+      }
 
       setReportMessage(response.ok
         ? "User banned from future reports."
         : payload.error === "ADMIN_REQUIRED"
           ? "Only the configured admin can ban users."
+          : payload.error === "CANNOT_BAN_SELF"
+            ? "Admins cannot ban themselves."
           : "Could not ban that user.");
+    } finally {
+      setIsModeratingReport(false);
+    }
+  }
+
+  async function unbanUser(discordUserId: string) {
+    if (!canManageReports) return;
+    if (!window.confirm("Unban this user? They will be able to vote/report again.")) return;
+
+    setIsModeratingReport(true);
+    setReportMessage("");
+
+    try {
+      const response = await fetch("/api/bonus/reports", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ action: "unbanUser", discordUserId }),
+      });
+      const payload = await response.json().catch(() => ({})) as {
+        bannedUsers?: BannedUser[];
+        error?: string;
+      };
+
+      if (response.ok) {
+        setBannedUsers(Array.isArray(payload.bannedUsers) ? payload.bannedUsers : []);
+        setReportMessage("User unbanned.");
+        return;
+      }
+
+      setReportMessage(payload.error === "ADMIN_REQUIRED"
+        ? "Only the configured admin can unban users."
+        : payload.error === "CANNOT_UNBAN_SELF"
+          ? "Admins cannot unban themselves."
+          : "Could not unban that user.");
     } finally {
       setIsModeratingReport(false);
     }
@@ -1163,6 +1224,56 @@ export function BonusTrackerClient() {
           </section>
         ))}
       </div>
+    );
+  }
+
+  function renderBannedUsers() {
+    if (!canManageReports) return null;
+
+    return (
+      <section className="bonus-admin-panel" aria-label="Banned users">
+        <div className="bonus-admin-panel-heading">
+          <div>
+            <h2>Banned Users <span>({bannedUsers.length})</span></h2>
+            <p>Unbanning restores access to Daily Bonus voting/reporting.</p>
+          </div>
+        </div>
+        <div className="bonus-banned-user-list">
+          <div className="bonus-banned-user-row is-header" aria-hidden="true">
+            <span>User</span>
+            <span>Reason</span>
+            <span>Banned</span>
+            <span>Banned By</span>
+            <span>Actions</span>
+          </div>
+          {bannedUsers.length > 0 ? (
+            bannedUsers.map((user) => (
+              <div className="bonus-banned-user-row" key={user.discordUserId}>
+                <div className="bonus-banned-user-identity">
+                  <strong>{user.discordUsername ?? "Unknown Discord user"}</strong>
+                  <span>{user.discordUserId}</span>
+                </div>
+                <span>{user.reason ?? "No reason stored"}</span>
+                <span>{formatReportTimestamp(user.createdAt) ?? "Unknown date"}</span>
+                <span>
+                  {user.bannedByDiscordUsername ?? user.bannedByDiscordUserId ?? "Unknown admin"}
+                </span>
+                <div className="bonus-banned-user-actions">
+                  <button
+                    disabled={isModeratingReport}
+                    onClick={() => unbanUser(user.discordUserId)}
+                    type="button"
+                  >
+                    Unban
+                  </button>
+                </div>
+              </div>
+            ))
+          ) : (
+            <p className="bonus-banned-user-empty">No banned users.</p>
+          )}
+        </div>
+      </section>
     );
   }
 
@@ -1412,6 +1523,8 @@ export function BonusTrackerClient() {
       </div>
 
       {renderActiveReports()}
+
+      {renderBannedUsers()}
 
       {reportMessage ? <p className="bonus-report-message">{reportMessage}</p> : null}
 

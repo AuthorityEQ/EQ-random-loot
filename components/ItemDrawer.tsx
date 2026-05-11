@@ -7,12 +7,12 @@ import type { Bucket, ItemDetails } from "@/lib/search";
 type ItemDrawerProps = {
   itemName: string;
   details?: ItemDetails;
-  bucket: Bucket;
+  bucket?: Bucket;
   itemBuckets?: Bucket[];
-  expansion: string;
+  expansion?: string;
   contentType: string;
   onClose: () => void;
-  onSelectZone: (zone: string) => void;
+  onSelectZone?: (zone: string) => void;
 };
 
 export function ItemDrawer({
@@ -24,7 +24,7 @@ export function ItemDrawer({
   onClose,
   onSelectZone,
 }: ItemDrawerProps) {
-  const allBuckets = itemBuckets?.length ? itemBuckets : [bucket];
+  const allBuckets = itemBuckets?.length ? itemBuckets : bucket ? [bucket] : [];
   const closeButtonRef = useRef<HTMLButtonElement>(null);
 
   // Close on Escape

@@ -55,8 +55,9 @@ export async function GET(request: Request) {
   }
 
   let entries = Object.entries(itemDetails)
-    // Only surface items that appear in at least one bucket's loot_pool
-    .filter(([name]) => allLootPoolNames.has(name));
+    // Default browsing stays bucket-backed, but explicit item search should
+    // include quest/custom records from the full item database.
+    .filter(([name]) => Boolean(q) || allLootPoolNames.has(name));
 
   // Filter by name substring
   if (q) {

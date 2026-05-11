@@ -61,6 +61,8 @@ type EpicStep = {
   items: string;
   required_items?: EpicLinkedItem[];
   drop_items?: EpicLinkedItem[];
+  reward_items?: EpicLinkedItem[];
+  create_items?: EpicLinkedItem[];
 };
 
 type EpicClass = {
@@ -263,13 +265,11 @@ function getEpicItemNames(dataset: EpicDataset) {
   const names = new Set<string>();
   for (const cls of dataset.classes) {
     for (const step of cls.steps) {
-      for (const item of step.required_items ?? []) {
-        const trimmed = item.name?.trim();
-        if (trimmed) names.add(trimmed);
-      }
-      for (const item of step.drop_items ?? []) {
-        const trimmed = item.name?.trim();
-        if (trimmed) names.add(trimmed);
+      for (const field of ["required_items", "drop_items", "reward_items", "create_items"] as const) {
+        for (const item of step[field] ?? []) {
+          const trimmed = item.name?.trim();
+          if (trimmed) names.add(trimmed);
+        }
       }
 
       const raw = (step.items ?? "").trim();

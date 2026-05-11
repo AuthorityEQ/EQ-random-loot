@@ -69,6 +69,43 @@
   outline: none;
 }
 
+.epic-review-toolbar {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-end;
+  margin: -8px 0 14px;
+}
+
+.epic-review-toolbar span {
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  font-weight: 850;
+  margin-right: 2px;
+}
+
+.epic-review-button {
+  background: color-mix(in srgb, var(--card) 88%, var(--accent));
+  border: 1px solid color-mix(in srgb, var(--accent) 32%, var(--border));
+  border-radius: 999px;
+  color: var(--text);
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-weight: 850;
+  min-height: 30px;
+  padding: 0 11px;
+  transition: background 140ms ease, border-color 140ms ease, color 140ms ease, box-shadow 140ms ease;
+}
+
+.epic-review-button:hover,
+.epic-review-button:focus {
+  background: color-mix(in srgb, var(--card) 74%, var(--accent));
+  border-color: color-mix(in srgb, var(--accent) 56%, var(--border));
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent) 16%, transparent);
+  outline: none;
+}
+
 /* ------------------------------------------------------------------
    Steps list
    ------------------------------------------------------------------ */
@@ -288,6 +325,9 @@
 
 .epic-step-items-pair,
 .epic-step-drops-pair,
+.epic-step-rewards-pair,
+.epic-step-creates-pair,
+.epic-step-spawns-pair,
 .epic-step-notes-pair {
   grid-column: 1 / -1;
 }
@@ -306,7 +346,8 @@
 }
 
 .epic-inline-link-list,
-.epic-items-list {
+.epic-items-list,
+.epic-bucket-chip-list {
   display: grid;
   gap: 6px;
   list-style: none;
@@ -316,6 +357,42 @@
 
 .epic-inline-link-list {
   gap: 3px;
+}
+
+.epic-bucket-chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.epic-bucket-chip {
+  border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+  border-radius: 999px;
+  color: color-mix(in srgb, var(--accent) 84%, var(--text));
+  display: inline-flex;
+  font-size: 0.74rem;
+  font-weight: 900;
+  line-height: 1;
+  padding: 6px 9px;
+  text-decoration: none;
+}
+
+.epic-bucket-chip:hover,
+.epic-bucket-chip:focus {
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  outline: none;
+  text-decoration: none;
+}
+
+.epic-bucket-chip.is-raid {
+  border-color: color-mix(in srgb, #f0b36b 42%, transparent);
+  color: color-mix(in srgb, #f0b36b 84%, var(--text));
+}
+
+.epic-item-action-row {
+  align-items: center;
+  display: inline-flex;
+  gap: 6px;
 }
 
 .epic-step-header .epic-checkbox {
@@ -344,12 +421,50 @@
   text-decoration: underline;
 }
 
+.epic-step-card .epic-item-external-link {
+  border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+  border-radius: 999px;
+  color: color-mix(in srgb, var(--accent) 82%, var(--text));
+  font-size: 0.68rem;
+  font-weight: 800;
+  line-height: 1;
+  padding: 3px 6px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.epic-step-card .epic-item-external-link:hover,
+.epic-step-card .epic-item-external-link:focus {
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  outline: none;
+}
+
 .epic-step-card .epic-drop-link {
   color: color-mix(in srgb, #f0b36b 82%, var(--text));
 }
 
+.epic-step-card .epic-reward-link {
+  color: color-mix(in srgb, #8fe2b0 82%, var(--text));
+}
+
+.epic-step-card .epic-create-link {
+  color: color-mix(in srgb, #8fc8f4 82%, var(--text));
+}
+
 .epic-step-drops-pair dt {
   color: color-mix(in srgb, #f0b36b 72%, var(--text-muted));
+}
+
+.epic-step-rewards-pair dt {
+  color: color-mix(in srgb, #8fe2b0 72%, var(--text-muted));
+}
+
+.epic-step-creates-pair dt {
+  color: color-mix(in srgb, #8fc8f4 72%, var(--text-muted));
+}
+
+.epic-step-spawns-pair dt {
+  color: color-mix(in srgb, #d6b4ff 72%, var(--text-muted));
 }
 
 /* ------------------------------------------------------------------
