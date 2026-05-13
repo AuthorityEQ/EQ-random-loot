@@ -4750,12 +4750,22 @@ select option {
   min-width: 190px;
 }
 
+.character-score-filter,
+.character-recommendation-sort-filter {
+  min-width: 150px;
+}
+
 .character-build-controls {
   align-items: end;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   justify-content: flex-end;
+}
+
+.character-slot-filter-stack {
+  display: grid;
+  gap: 8px;
 }
 
 .character-name-filter,
@@ -6532,6 +6542,10 @@ select option {
     width: 100%;
   }
 
+  .character-slot-filter-stack {
+    width: 100%;
+  }
+
   .character-action-button,
   .character-name-filter,
   .gear-shopping-character-filter,
@@ -6539,6 +6553,7 @@ select option {
   .character-focus-family-filter,
   .character-focus-filter,
   .character-class-filter,
+  .character-recommendation-sort-filter,
   .character-slot-filter {
     flex: 1 1 100%;
   }

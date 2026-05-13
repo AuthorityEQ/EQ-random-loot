@@ -72,6 +72,9 @@ type BisCandidate = {
   score: number;
 };
 
+type RecommendationSort = "score" | "ratio";
+type WeaponFilter = "Any" | "Piercing" | "Slashing" | "Blunt" | "2H Slashing" | "2H Blunt" | "Hand to Hand" | "Bow";
+
 type SavedBuild = {
   version: number;
   characterName: string;
@@ -185,6 +188,7 @@ const legacyGearSlotIdMap: Record<string, string> = {
 const utilityBagBaseSize = 20;
 const utilityBagExpansionSize = 10;
 const recommendationLimit = 30;
+const weaponFilterOrder: WeaponFilter[] = ["Any", "Piercing", "Slashing", "Blunt", "2H Slashing", "2H Blunt", "Hand to Hand", "Bow"];
 const bisCandidateLimit = 10;
 const rosterAutosaveKey = "loot-goblin-my-characters-roster-v1";
 const gearPlannerStateStorageKey = "loot-goblin-gear-planner-state-v1";
@@ -218,6 +222,56 @@ function sortExpansions(values: Iterable<string>) {
 
 function expansionTone(expansion: string) {
   return `expansion-tone-${expansion.toLowerCase()}`;
+}
+
+function numericItemValue(value: string | number | null | undefined) {
+  if (typeof value === "number") return Number.isFinite(value) ? value : null;
+  if (typeof value !== "string") return null;
+  const parsed = Number(value.replace(/[^\d.-]/g, ""));
+  return Number.isFinite(parsed) ? parsed : null;
+}
+
+function getWeaponRatio(details: ItemDetails) {
+  const damage = numericItemValue(details.damage);
+  const delay = numericItemValue(details.delay);
+  if (damage === null || delay === null || delay <= 0) return null;
+  return damage / delay;
+}
+
+function getWeaponFilterValue(details: ItemDetails): WeaponFilter | null {
+  const skill = String(details.skill ?? "").trim();
+  const itemType = String(details.itemType ?? details.item_type ?? "").trim();
+  const combined = `${skill} ${itemType}`.replace(/\s+/g, " ");
+
+  if (/\barchery\b|\bbow\b/i.test(combined) || details.weaponType === "ranged") return "Bow";
+  if (/\bhand\s*to\s*hand\b/i.test(combined)) return "Hand to Hand";
+  if (/\b2\s*h(?:and)?\s*slashing\b|\b2HS\b/i.test(combined)) return "2H Slashing";
+  if (/\b2\s*h(?:and)?\s*blunt\b|\b2HB\b/i.test(combined)) return "2H Blunt";
+  if (/\bpiercing\b|\b1HP\b|\b2HP\b/i.test(combined)) return "Piercing";
+  if (/\bslashing\b|\b1HS\b/i.test(combined)) return "Slashing";
+  if (/\bblunt\b|\b1HB\b/i.test(combined)) return "Blunt";
+  return null;
+}
+
+function itemMatchesWeaponFilter(details: ItemDetails, weaponFilter: WeaponFilter) {
+  return weaponFilter === "Any" || getWeaponFilterValue(details) === weaponFilter;
+}
+
+function itemScoreLookupKeys(itemName: string, details: ItemDetails) {
+  return [details.itemId ? String(details.itemId) : null, itemName].filter((key): key is string => Boolean(key));
+}
+
+function getGlobalItemScore(
+  itemName: string,
+  details: ItemDetails,
+  globalScoreByItemId: Map<string, number>,
+  fallbackScore: number,
+) {
+  for (const key of itemScoreLookupKeys(itemName, details)) {
+    const score = globalScoreByItemId.get(key);
+    if (score !== undefined) return score;
+  }
+  return fallbackScore;
 }
 
 function gearShoppingNeedKey(itemName: string, need: GearShoppingNeed) {
@@ -1351,6 +1405,9 @@ export function CharacterGearPlanner() {
   const [selectedSpellFocus, setSelectedSpellFocus] = useState(anySpellFocus);
   const [selectedBardMod, setSelectedBardMod] = useState(anyBardMod);
   const [selectedPetFocus, setSelectedPetFocus] = useState(anyPetFocus);
+  const [recommendationMaxGearScore, setRecommendationMaxGearScore] = useState("");
+  const [selectedWeaponFilter, setSelectedWeaponFilter] = useState<WeaponFilter>("Any");
+  const [recommendationSort, setRecommendationSort] = useState<RecommendationSort>("score");
   const [autosaveStatus, setAutosaveStatus] = useState<string | null>(null);
   const [plannerSaveStatus, setPlannerSaveStatus] = useState<string | null>(null);
   const [autosaveReady, setAutosaveReady] = useState(false);
@@ -1788,8 +1845,34 @@ export function CharacterGearPlanner() {
     };
   }, []);
 
+  const globalScoreByItemId = useMemo(() => {
+    const scoreMap = new Map<string, number>();
+    for (const candidate of gearCandidates) {
+      const globalScore = Math.max(
+        0,
+        ...classCodes.map((classCode) => explainItemScore(candidate.details, classCode).score),
+      );
+
+      for (const key of itemScoreLookupKeys(candidate.itemName, candidate.details)) {
+        scoreMap.set(key, Math.max(scoreMap.get(key) ?? 0, globalScore));
+      }
+    }
+    return scoreMap;
+  }, []);
+
+  const weaponFilterOptions = useMemo<WeaponFilter[]>(() => {
+    const values = new Set<WeaponFilter>();
+    for (const candidate of gearCandidates) {
+      const weaponValue = getWeaponFilterValue(candidate.details);
+      if (weaponValue) values.add(weaponValue);
+    }
+    return weaponFilterOrder.filter((option) => option === "Any" || values.has(option));
+  }, []);
+
   const recommendations = useMemo(() => {
     if (secondaryBlockedByTwoHander) return [];
+    const parsedMaxGearScore = recommendationMaxGearScore.trim() ? Number(recommendationMaxGearScore) : Number.POSITIVE_INFINITY;
+    const hasMaxGearScore = Number.isFinite(parsedMaxGearScore);
 
     const activeFocusFilters: FocusEffectFamily[] = [
       selectedSpellFocus !== anySpellFocus ? { category: "spell", family: selectedSpellFocus } : null,
@@ -1804,6 +1887,7 @@ export function CharacterGearPlanner() {
       .filter((candidate) => itemMatchesSlot(candidate.details, selectedGearSlot.slotKey))
       .filter((candidate) => itemMatchesUseFilters(candidate.details, selectedClass, "Any"))
       .filter((candidate) => itemMatchesRace(candidate.details, selectedRace))
+      .filter((candidate) => itemMatchesWeaponFilter(candidate.details, selectedWeaponFilter))
       .filter((candidate) => !isLoreDuplicate(candidate.itemName, equippedGear, selectedGearSlot.id))
       .filter((candidate) => {
         if (!focusOnly) return true;
@@ -1820,19 +1904,28 @@ export function CharacterGearPlanner() {
           ...candidate,
           hasFocus: itemHasFocusEffect(candidate.details),
           matchesFocusFamily,
+          ratio: getWeaponRatio(candidate.details),
           score: explanation.score,
           contributionSummary: formatContributionSummary(explanation.contributions),
         };
+      })
+      .filter((candidate) => {
+        if (!hasMaxGearScore) return true;
+        return getGlobalItemScore(candidate.itemName, candidate.details, globalScoreByItemId, candidate.score) <= parsedMaxGearScore;
       })
       .sort((a, b) => {
         if (hasSpecificFocusFamily && a.matchesFocusFamily !== b.matchesFocusFamily) {
           return Number(b.matchesFocusFamily) - Number(a.matchesFocusFamily);
         }
 
+        if (recommendationSort === "ratio") {
+          return (b.ratio ?? -1) - (a.ratio ?? -1) || b.score - a.score || a.itemName.localeCompare(b.itemName);
+        }
+
         return b.score - a.score || a.itemName.localeCompare(b.itemName);
       })
       .slice(0, recommendationLimit);
-  }, [equippedGear, focusOnly, secondaryBlockedByTwoHander, selectedBardMod, selectedClass, selectedPetFocus, selectedRace, selectedSpellFocus, selectedGearSlot.id, selectedGearSlot.slotKey]);
+  }, [equippedGear, focusOnly, globalScoreByItemId, recommendationMaxGearScore, recommendationSort, secondaryBlockedByTwoHander, selectedBardMod, selectedClass, selectedPetFocus, selectedRace, selectedSpellFocus, selectedGearSlot.id, selectedGearSlot.slotKey, selectedWeaponFilter]);
 
   const equippedFocusSummary = useMemo(() => {
     const summary: Record<FocusEffectCategory, Array<{ slot: string; effect: string }>> = {
@@ -2236,6 +2329,9 @@ export function CharacterGearPlanner() {
     setSelectedSpellFocus(anySpellFocus);
     setSelectedBardMod(anyBardMod);
     setSelectedPetFocus(anyPetFocus);
+    setRecommendationMaxGearScore("");
+    setSelectedWeaponFilter("Any");
+    setRecommendationSort("score");
     setFocusOnly(false);
   }
 
@@ -2605,16 +2701,28 @@ export function CharacterGearPlanner() {
               ))}
             </select>
           </label>
-          <label className="slot-filter character-slot-filter">
-            <span>Slot</span>
-            <select value={selectedSlotId} onChange={(event) => setSelectedSlotId(event.target.value)}>
-              {gearSlotSelectOptions.map((slot) => (
-                <option key={slot.id} value={slot.id}>
-                  {slot.label}
-                </option>
-              ))}
-            </select>
-          </label>
+          <div className="character-slot-filter-stack">
+            <label className="slot-filter character-slot-filter">
+              <span>Weapon Type</span>
+              <select value={selectedWeaponFilter} onChange={(event) => setSelectedWeaponFilter(event.target.value as WeaponFilter)}>
+                {weaponFilterOptions.map((option) => (
+                  <option key={option} value={option}>
+                    {option}
+                  </option>
+                ))}
+              </select>
+            </label>
+            <label className="slot-filter character-slot-filter">
+              <span>Slot</span>
+              <select value={selectedSlotId} onChange={(event) => setSelectedSlotId(event.target.value)}>
+                {gearSlotSelectOptions.map((slot) => (
+                  <option key={slot.id} value={slot.id}>
+                    {slot.label}
+                  </option>
+                ))}
+              </select>
+            </label>
+          </div>
           <label className="class-filter character-focus-family-filter">
             <span>Spell Focus</span>
             <select value={selectedSpellFocus} onChange={(event) => setSelectedSpellFocus(event.target.value)}>
@@ -2633,6 +2741,24 @@ export function CharacterGearPlanner() {
                   {option}
                 </option>
               ))}
+            </select>
+          </label>
+          <label className="character-name-filter character-score-filter">
+            <span>Max Gear Score</span>
+            <input
+              min={0}
+              onChange={(event) => setRecommendationMaxGearScore(event.target.value)}
+              placeholder="No cap"
+              step={1}
+              type="number"
+              value={recommendationMaxGearScore}
+            />
+          </label>
+          <label className="class-filter character-recommendation-sort-filter">
+            <span>Sort</span>
+            <select value={recommendationSort} onChange={(event) => setRecommendationSort(event.target.value as RecommendationSort)}>
+              <option value="score">Score High to Low</option>
+              <option value="ratio">Ratio High to Low</option>
             </select>
           </label>
           <button
@@ -3481,6 +3607,7 @@ export function CharacterGearPlanner() {
                     </span>
                     <span className="gear-recommendation-meta">
                       <b>{Math.round(row.score)}</b>
+                      {row.ratio !== null ? <small>Ratio {row.ratio.toFixed(2)}</small> : null}
                       {row.contributionSummary ? <small>{row.contributionSummary}</small> : null}
                       <FavoriteIndicator details={row.details} itemName={row.itemName} />
                       {row.hasFocus ? <span className="gear-focus-badge">Focus</span> : null}
