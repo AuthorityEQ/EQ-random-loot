@@ -5231,8 +5231,8 @@ select option {
     "info arms preview preview back"
     "info belt preview preview shoulders"
     "info wrist1 preview preview wrist2"
-    "info hands preview preview feet"
-    "info . finger1 finger2 ."
+    "info hands preview preview legs"
+    "info . finger1 finger2 feet"
     "info primary secondary ranged ammo";
   grid-template-columns: minmax(132px, 1.36fr) repeat(4, minmax(64px, 1fr));
   grid-template-rows: repeat(8, minmax(58px, 72px));
@@ -5442,6 +5442,7 @@ select option {
 }
 
 .gear-placeholder-hands::before,
+.gear-placeholder-legs::before,
 .gear-placeholder-feet::before {
   background: rgba(152, 158, 159, 0.55);
   border-radius: 10px 10px 4px 4px;
@@ -5450,6 +5451,12 @@ select option {
   left: 4px;
   top: 6px;
   width: 13px;
+}
+
+.gear-placeholder-legs::before {
+  border-radius: 5px 5px 10px 10px;
+  height: 29px;
+  top: 3px;
 }
 
 .gear-placeholder-primary::before,
@@ -5538,6 +5545,7 @@ select option {
 .gear-slot-wrist1 { grid-area: wrist1; }
 .gear-slot-wrist2 { grid-area: wrist2; }
 .gear-slot-hands { grid-area: hands; }
+.gear-slot-legs { grid-area: legs; }
 .gear-slot-feet { grid-area: feet; }
 .gear-slot-finger1 { grid-area: finger1; }
 .gear-slot-finger2 { grid-area: finger2; }

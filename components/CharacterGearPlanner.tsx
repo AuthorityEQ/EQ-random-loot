@@ -160,6 +160,7 @@ const gearSlots: GearSlot[] = [
   { id: "wrist1", slotKey: "wrist", label: "Wrist I", shortLabel: "W1", area: "wrist1", placeholder: "wrist" },
   { id: "wrist2", slotKey: "wrist", label: "Wrist II", shortLabel: "W2", area: "wrist2", placeholder: "wrist" },
   { id: "hands", slotKey: "hands", label: "Hands", shortLabel: "Ha", area: "hands", placeholder: "hands" },
+  { id: "legs", slotKey: "legs", label: "Legs", shortLabel: "Lg", area: "legs", placeholder: "legs" },
   { id: "feet", slotKey: "feet", label: "Feet", shortLabel: "Ft", area: "feet", placeholder: "feet" },
   { id: "finger1", slotKey: "finger", label: "Finger I", shortLabel: "F1", area: "finger1", placeholder: "ring" },
   { id: "finger2", slotKey: "finger", label: "Finger II", shortLabel: "F2", area: "finger2", placeholder: "ring" },
@@ -183,6 +184,9 @@ const legacyGearSlotIdMap: Record<string, string> = {
   "finger-left": "finger1",
   "finger-right": "finger2",
   waist: "belt",
+  leg: "legs",
+  pants: "legs",
+  pant: "legs",
   range: "ranged",
 };
 const utilityBagBaseSize = 20;
@@ -1153,8 +1157,9 @@ function normalizeClassCode(value: unknown): ClassCode {
 }
 
 function normalizeGearSlotId(slotId: string) {
-  if (gearSlotIds.has(slotId)) return slotId;
-  const migratedSlotId = legacyGearSlotIdMap[slotId];
+  const normalizedSlotId = slotId.trim().toLowerCase();
+  if (gearSlotIds.has(normalizedSlotId)) return normalizedSlotId;
+  const migratedSlotId = legacyGearSlotIdMap[normalizedSlotId];
   return migratedSlotId && gearSlotIds.has(migratedSlotId) ? migratedSlotId : null;
 }
 
