@@ -15,7 +15,6 @@ const links = [
 const showNormalTlpNavigation = false;
 
 const frostreaverLinks = [
-  { href: "/bonus", label: "Daily Bonuses" },
   { href: "/loot", label: "Group" },
   { href: "/raids", label: "Raid" },
   { href: "/spells", label: "Spells" },

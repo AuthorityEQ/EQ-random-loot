@@ -131,6 +131,413 @@
 }
 
 /* --------------------------------------------------------------------------
+   Recipe catalog controls
+   -------------------------------------------------------------------------- */
+
+.crafting-controls {
+  align-items: end;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: minmax(220px, 2fr) repeat(3, minmax(130px, 1fr));
+}
+
+.crafting-filter {
+  display: grid;
+  gap: 6px;
+}
+
+.crafting-filter span {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.crafting-filter input,
+.crafting-filter select {
+  background: var(--input-bg);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--text);
+  font: inherit;
+  min-height: 42px;
+  padding: 0 12px;
+  width: 100%;
+}
+
+.crafting-filter input:focus,
+.crafting-filter select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 18%, transparent);
+  outline: none;
+}
+
+/* --------------------------------------------------------------------------
+   Recipe family list
+   -------------------------------------------------------------------------- */
+
+.recipe-family-list {
+  display: grid;
+  gap: 12px;
+}
+
+.recipe-family-card {
+  background:
+    linear-gradient(
+      90deg,
+      color-mix(in srgb, var(--skill-primary, var(--accent)) 10%, transparent),
+      transparent 48%
+    ),
+    var(--panel);
+  border: 1px solid color-mix(in srgb, var(--skill-border, var(--line)) 56%, var(--line));
+  border-left: 5px solid var(--skill-primary, var(--accent));
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.recipe-family-card.skill-tone-tailoring,
+.recipe-card.skill-tone-tailoring {
+  --skill-primary: var(--skill-tailoring-bg);
+  --skill-border: var(--skill-tailoring-border);
+}
+
+.recipe-family-card.skill-tone-fletching,
+.recipe-card.skill-tone-fletching {
+  --skill-primary: var(--skill-fletching-bg);
+  --skill-border: var(--skill-fletching-border);
+}
+
+.recipe-family-card.skill-tone-blacksmithing,
+.recipe-card.skill-tone-blacksmithing {
+  --skill-primary: var(--skill-blacksmithing-bg);
+  --skill-border: var(--skill-blacksmithing-border);
+}
+
+.recipe-family-card.skill-tone-jewelcraft,
+.recipe-card.skill-tone-jewelcraft {
+  --skill-primary: var(--skill-jewelcraft-bg);
+  --skill-border: var(--skill-jewelcraft-border);
+}
+
+.recipe-family-card.skill-tone-spell-research,
+.recipe-card.skill-tone-spell-research {
+  --skill-primary: var(--skill-spell-research-bg);
+  --skill-border: var(--skill-spell-research-border);
+}
+
+.recipe-family-summary {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  display: grid;
+  gap: 14px;
+  grid-template-columns: minmax(0, 1.15fr) minmax(220px, 0.85fr);
+  padding: 16px;
+  text-align: left;
+  width: 100%;
+}
+
+.recipe-family-summary:hover,
+.recipe-family-summary:focus {
+  background: color-mix(in srgb, var(--skill-primary, var(--accent)) 7%, transparent);
+  outline: none;
+}
+
+.recipe-family-summary:focus-visible {
+  box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--skill-primary, var(--accent)) 42%, transparent);
+}
+
+.recipe-family-main {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  min-width: 0;
+}
+
+.recipe-family-toggle {
+  align-items: center;
+  background: var(--panel-soft);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--text);
+  display: inline-flex;
+  flex: 0 0 28px;
+  font-size: 1rem;
+  font-weight: 900;
+  height: 28px;
+  justify-content: center;
+  line-height: 1;
+  width: 28px;
+}
+
+.recipe-family-main strong {
+  color: var(--text);
+  display: block;
+  font-size: 1.06rem;
+  line-height: 1.25;
+}
+
+.recipe-family-main small,
+.recipe-family-meta span {
+  color: var(--muted);
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.recipe-family-meta {
+  display: grid;
+  gap: 4px;
+  text-align: right;
+}
+
+.recipe-family-details {
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 10px;
+  padding: 12px 16px 16px;
+}
+
+.recipe-detail-row {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: grid;
+  gap: 10px;
+  padding: 12px;
+}
+
+.recipe-detail-row.is-dimmed {
+  opacity: 0.48;
+}
+
+.recipe-detail-heading {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+.recipe-detail-heading > span {
+  color: var(--page-title-gold);
+  flex: 0 0 auto;
+  font-size: 0.86rem;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+/* --------------------------------------------------------------------------
+   Spell Research catalog
+   -------------------------------------------------------------------------- */
+
+.research-catalog {
+  display: grid;
+  gap: 14px;
+}
+
+.research-mode-toggle {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.research-controls {
+  align-items: end;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: minmax(220px, 1.4fr) minmax(170px, 0.8fr);
+}
+
+.research-chip-group {
+  display: grid;
+  gap: 6px;
+}
+
+.research-chip-group > span {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.research-chip-group > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.research-chip {
+  background: var(--panel-soft);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--text);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 800;
+  min-height: 34px;
+  padding: 0 12px;
+}
+
+.research-chip:hover,
+.research-chip:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.research-chip.is-active {
+  background: var(--skill-spell-research-bg);
+  border-color: var(--skill-spell-research-border);
+  color: var(--skill-spell-research-text);
+}
+
+.research-toggle {
+  align-items: center;
+  color: var(--muted);
+  display: inline-flex;
+  font-size: 0.86rem;
+  font-weight: 800;
+  gap: 8px;
+  min-height: 42px;
+}
+
+.research-toggle input {
+  accent-color: var(--accent);
+}
+
+.research-results {
+  column-count: 2;
+  column-gap: 8px;
+}
+
+.research-spell-card {
+  background: var(--panel);
+  border: 1px solid color-mix(in srgb, var(--skill-spell-research-border) 45%, var(--line));
+  border-left: 4px solid var(--skill-spell-research-bg);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  display: grid;
+  margin: 0 0 8px;
+  overflow: hidden;
+}
+
+.research-spell-summary {
+  align-items: flex-start;
+  background: transparent;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  padding: 12px;
+  text-align: left;
+  width: 100%;
+}
+
+.research-spell-summary:hover,
+.research-spell-summary:focus {
+  background: color-mix(in srgb, var(--skill-spell-research-bg) 7%, transparent);
+  outline: none;
+}
+
+.research-spell-summary:focus-visible {
+  box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--skill-spell-research-border) 42%, transparent);
+}
+
+.research-spell-summary-body {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+  width: 100%;
+}
+
+.research-spell-titleline {
+  align-items: baseline;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.research-spell-titleline strong {
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+.research-spell-titleline span {
+  color: var(--page-title-gold);
+  flex: 0 0 auto;
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.research-spell-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.research-spell-meta span {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 4px 7px;
+}
+
+.research-recipe-details {
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 10px;
+  padding: 0 12px 12px;
+}
+
+.research-missing-components {
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-style: italic;
+  margin: 0;
+}
+
+.research-external-link {
+  color: var(--accent);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.research-external-link:hover,
+.research-external-link:focus {
+  outline: none;
+  text-decoration: underline;
+}
+
+.research-skillup-list {
+  display: grid;
+  gap: 12px;
+}
+
+.research-skillup-band {
+  background:
+    linear-gradient(
+      90deg,
+      color-mix(in srgb, var(--skill-spell-research-bg) 10%, transparent),
+      transparent 48%
+    ),
+    var(--panel);
+  border: 1px solid color-mix(in srgb, var(--skill-spell-research-border) 56%, var(--line));
+  border-left: 5px solid var(--skill-spell-research-bg);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+/* --------------------------------------------------------------------------
    Tier section
    -------------------------------------------------------------------------- */
 
@@ -254,7 +661,16 @@
 }
 
 .recipe-output-link {
+  align-items: center;
+  background: transparent;
+  border: 0;
   color: var(--text);
+  cursor: pointer;
+  display: inline-flex;
+  font: inherit;
+  font-weight: 800;
+  gap: 8px;
+  padding: 0;
   text-decoration: none;
 }
 
@@ -340,6 +756,10 @@
   padding: 4px 8px;
 }
 
+.research-component-item {
+  align-items: center;
+}
+
 .recipe-component-count {
   color: var(--muted);
   font-size: 0.82rem;
@@ -347,8 +767,15 @@
 }
 
 .recipe-component-link {
+  align-items: center;
+  background: transparent;
+  border: 0;
   color: var(--accent);
+  cursor: pointer;
+  display: inline-flex;
   font-size: 0.88rem;
+  gap: 5px;
+  padding: 0;
   text-decoration: none;
 }
 
@@ -356,6 +783,22 @@
 .recipe-component-link:focus {
   outline: none;
   text-decoration: underline;
+}
+
+.recipe-component-source-tags {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
+.recipe-component-source-tags span {
+  background: var(--panel-soft);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 850;
+  padding: 1px 6px;
 }
 
 /* Notes */
@@ -374,7 +817,40 @@
    Responsive
    -------------------------------------------------------------------------- */
 
+@media (max-width: 900px) {
+  .crafting-controls {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .research-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .research-results {
+    column-count: 1;
+  }
+
+  .recipe-family-summary {
+    align-items: start;
+    grid-template-columns: 1fr;
+  }
+
+  .recipe-family-meta {
+    padding-left: 38px;
+    text-align: left;
+  }
+}
+
 @media (max-width: 620px) {
+  .crafting-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .recipe-detail-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
   .recipe-card {
     padding: 14px;
   }

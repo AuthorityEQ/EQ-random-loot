@@ -1,0 +1,1034 @@
+
+	
+    
+
+	
+    
+
+
+
+
+
+
+
+	
+	
+	
+
+	
+
+	
+
+			
+	
+		
+		
+		
+		
+
+		
+		
+		
+			
+		
+
+		
+			
+			
+		
+		
+        
+			
+			
+	    
+		
+
+		
+        
+		
+	   
+
+		
+		
+		
+        
+
+		
+	
+        
+		
+
+        
+
+		
+		        
+        
+
+       
+	   			
+			<!-- Version 2.0 // Latest Changes are Temp Styles Removed and Playwire Old Script Removed -->
+<!doctype html>
+
+<html lang="en-US">
+
+
+
+ <!-- Version 2.1 -->
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+
+	<meta name=Generator content="Microsoft Word 11 (filtered)">
+  
+
+
+<title>Progression Server Brewing Guide</title>
+
+
+    <meta name="description" content="Progression Server Brewing Guide">
+
+
+
+    <meta name="keywords" content="Everquest,EQ,Kunark,Velious,Classic,Alchemy,professions,tradeskills,raising,leveling,trophy,trophies,baking,blacksmithing,misty thicket picnics,jumjum cake,shaman,gnomes,brewing,fletching,jewelcrafting,pottery,progression,tailoring,spell research,tinkering,enchanter,materials,pie tin,high quality,planes of power">
+
+
+
+<script>
+(function() {
+  const title = document.title;
+  const description = document.querySelector('meta[name="description"]')?.content || '';
+
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": title,
+    "description": description,
+    "author": {
+      "@type": "Organization",
+      "name": "Almar's Guides"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Almar's Guides"
+    }
+  };
+
+  const s = document.createElement('script');
+  s.type = "application/ld+json";
+  s.textContent = JSON.stringify(schema);
+  document.head.appendChild(s);
+})();
+</script>
+
+
+
+  <link rel="icon" type="image/png" href="/AlmarsImages/Website/mainfavicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/AlmarsImages/Website/mainfavicon.png">
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/AlmarsImages/Website/mainfavicon.png">
+	
+	<meta name="keywords" content="Almar's Guides.com">
+	<meta name="author" content="AlmarsGuides">
+
+
+
+ 
+
+
+<!-- remove query string if present -->
+
+
+<!-- remove trailing slash after .cfm files -->
+
+
+<!-- remove index.cfm at end -->
+
+
+    
+    
+        
+    
+
+
+<!-- ensure trailing slash for folders (not .cfm files) -->
+
+    
+
+
+<!-- canonical with HTTPS + non-www -->
+
+<link rel="canonical" href="https://almarsguides.com/eq/Tradeskills/Brewing/Classic/" />
+
+
+
+
+<meta name="viewport" content="width=device-width,initial-scale=1" id="viewport-meta">
+
+	<!--load all styles -->
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+
+<link rel="stylesheet" href="/template/fontawesome-free-5.15.2-web/css/fontawesome.min.css">
+<link rel="stylesheet" href="/template/fontawesome-free-5.15.2-web/css/regular.min.css">
+<link rel="stylesheet" href="/template/fontawesome-free-5.15.2-web/css/solid.min.css">
+
+
+<link href="/style.css?v=2.316" rel="stylesheet" type="text/css">
+	 
+	
+	 <!--load all styles end -->
+	
+<script src="/template/jquery-3.6.4/jquery-3.6.4.min.js"></script>
+
+
+
+ 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JBM17J2SRZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JBM17J2SRZ');
+</script>
+
+
+
+
+<!-- Raptive Head Tag Manual -->
+<script data-no-optimize="1" data-cfasync="false">
+(function(w, d) {
+	w.adthrive = w.adthrive || {};
+	w.adthrive.cmd = w.
+	adthrive.cmd || [];
+	w.adthrive.plugin = 'adthrive-ads-manual';
+	w.adthrive.host = 'ads.adthrive.com';var s = d.createElement('script');
+	s.async = true;
+	s.referrerpolicy='no-referrer-when-downgrade';
+	s.src = 'https://' + w.adthrive.host + '/sites/5ecfa3325693ec10d7c7234b/ads.min.js?referrer=' + w.encodeURIComponent(w.location.href) + '&cb=' + (Math.floor(Math.random() * 100) + 1);
+	var n = d.getElementsByTagName('script')[0];
+	n.parentNode.insertBefore(s, n);
+})(window, document);
+</script>
+<!-- End of Raptive Head Tag -->
+
+
+
+
+
+
+<!-- START email detection/removal script -->
+   <script>
+   !function(){"use strict";function e(e){const t=e.match(/((?=([a-z0-9._!#$%+^&*()[\]<>-]+))\2@[a-z0-9._-]+\.[a-z0-9._-]+)/gi);return t?t[0]:""}function t(t){return e(a(t.toLowerCase()))}function a(e){return e.replace(/\s/g,"")}async function n(e){const t={sha256Hash:"",sha1Hash:""};if(!("msCrypto"in window)&&"https:"===location.protocol&&"crypto"in window&&"TextEncoder"in window){const a=(new TextEncoder).encode(e),[n,c]=await Promise.all([s("SHA-256",a),s("SHA-1",a)]);t.sha256Hash=n,t.sha1Hash=c}return t}async function s(e,t){const a=await crypto.subtle.digest(e,t);return Array.from(new Uint8Array(a)).map(e=>("00"+e.toString(16)).slice(-2)).join("")}function c(e){let t=!0;return Object.keys(e).forEach(a=>{0===e[a].length&&(t=!1)}),t}function i(e,t,a){e.splice(t,1);const n="?"+e.join("&")+a.hash;history.replaceState(null,"",n)}var o={checkEmail:e,validateEmail:t,trimInput:a,hashEmail:n,hasHashes:c,removeEmailAndReplaceHistory:i,detectEmails:async function(){const e=new URL(window.location.href),a=Array.from(e.searchParams.entries()).map(e=>`${e[0]}=${e[1]}`);let s,o;const r=["adt_eih","sh_kit"];if(a.forEach((e,t)=>{const a=decodeURIComponent(e),[n,c]=a.split("=");if("adt_ei"===n&&(s={value:c,index:t,emsrc:"url"}),r.includes(n)){o={value:c,index:t,emsrc:"sh_kit"===n?"urlhck":"urlh"}}}),s)t(s.value)&&n(s.value).then(e=>{if(c(e)){const t={value:e,created:Date.now()};localStorage.setItem("adt_ei",JSON.stringify(t)),localStorage.setItem("adt_emsrc",s.emsrc)}});else if(o){const e={value:{sha256Hash:o.value,sha1Hash:""},created:Date.now()};localStorage.setItem("adt_ei",JSON.stringify(e)),localStorage.setItem("adt_emsrc",o.emsrc)}s&&i(a,s.index,e),o&&i(a,o.index,e)},cb:"adthrive"};const{detectEmails:r,cb:l}=o;r()}();
+   </script>
+   <!-- END email detection/removal script -->
+
+
+
+
+<script data-cfasync="false">
+    window._pwGA4PageviewId = ''.concat(Date.now());
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function () {
+      dataLayer.push(arguments);
+    };
+    gtag('js', new Date());
+    gtag('config', 'G-PNYFJVFTK2', { 'send_page_view': false });
+    gtag(
+      'event',
+      'ramp_js',
+      {
+        'send_to': 'G-PNYFJVFTK2',
+        'pageview_id': window._pwGA4PageviewId
+      }
+    );
+</script>
+
+
+<script>
+/** PUSH FOOTER IS PAGE MAIN CONTENT IS SMALL - START **/
+
+document.addEventListener("DOMContentLoaded", function() {
+    var mainContainer = document.getElementById("main__container");
+    
+    function adjustMargin() {
+        var containerHeight = mainContainer.offsetHeight;
+        
+        if (containerHeight < 600) {
+            mainContainer.style.marginBottom = "350px";
+        } else {
+            mainContainer.style.marginBottom = "0"; // Reset margin if height is greater than or equal to 600px
+        }
+    }
+    
+    // Call the adjustMargin function initially
+    adjustMargin();
+    
+    // Re-adjust the margin if the window is resized
+    window.addEventListener("resize", adjustMargin);
+});
+
+/** PUSH FOOTER IS PAGE MAIN CONTENT IS SMALL - START **/
+
+
+/** ADJUST NAVIGATION ON THE RIGHT **/
+
+document.addEventListener('DOMContentLoaded', function () {
+  const menuIcon = document.querySelector('#navIcon');
+  const navigation = document.querySelector('.nav');
+
+    // Set initial left position to '0px'
+    navigation.style.right = '-100vw';
+
+  // Adjust navigation width on window resize
+window.addEventListener('resize', function () {
+  if (window.innerWidth <= 768) {
+      navigation.style.width = '100%';
+  } else {
+      navigation.style.width = '250px';
+  }
+});
+
+  menuIcon.addEventListener('click', function () {
+    navigation.style.right = (navigation.style.right === '0px' || navigation.style.right === '') ? '-100vw' : '0';
+});
+});
+
+/** ADJUST NAVIGATION ON THE RIGHT END **/
+
+
+/** CHANGE LIGHT/DARK THEME **/
+document.addEventListener('DOMContentLoaded', function () {
+  // Check the stored theme preference
+  var isLightTheme = localStorage.getItem('theme') === 'light';
+
+  var body = document.body;
+  var themeSwitcher = document.getElementById('theme_switcher');
+  var themeSwitcherIcon = themeSwitcher.querySelector('i');
+  var logoElement = document.querySelector('.websiteLogo');
+  var headerImageElement = document.querySelector('.header img');
+  var pl5Elements = document.querySelectorAll('.pl-5');
+  var eyeIcons = document.querySelectorAll('.toggle-password');
+
+  // Set initial theme
+  if (isLightTheme) {
+    body.classList.add('light');
+    if (themeSwitcherIcon) {
+      themeSwitcherIcon.classList.remove('fas', 'fa-sun');
+      themeSwitcherIcon.classList.add('far', 'fa-moon');
+    }
+  } else {
+    pl5Elements.forEach(el => el.style.color = '#fff');
+  }
+
+  updateLogo(isLightTheme);
+
+  // Click event handler for the theme switcher
+  if (themeSwitcher) {
+    themeSwitcher.addEventListener('click', function () {
+      body.classList.toggle('light');
+
+      // Toggle icons
+      if (themeSwitcherIcon) {
+        themeSwitcherIcon.classList.toggle('fas');
+        themeSwitcherIcon.classList.toggle('fa-sun');
+        themeSwitcherIcon.classList.toggle('far');
+        themeSwitcherIcon.classList.toggle('fa-moon');
+      }
+
+      // Update logo and text
+      var nowLight = body.classList.contains('light');
+      updateLogo(nowLight);
+
+      // Store theme preference
+      localStorage.setItem('theme', nowLight ? 'light' : 'default');
+    });
+  }
+
+  // Function to update logo and text color
+  function updateLogo(isLightTheme) {
+    if (isLightTheme) {
+      logoElement.src = '/AlmarsImages/Website/lightlogo.png';
+      pl5Elements.forEach(el => el.style.color = '');
+      eyeIcons.forEach(el => el.style.color = '#000');
+    } else {
+      logoElement.src = '/AlmarsImages/Website/darklogo.png';
+      pl5Elements.forEach(el => el.style.color = '#fff');
+      eyeIcons.forEach(el => el.style.color = '#fff');
+    }
+
+    // Adjust logo for small screens
+    if (window.innerWidth <= 410) {
+      logoElement.src = isLightTheme
+        ? '/AlmarsImages/Website/smalllightlogo.png'
+        : '/AlmarsImages/Website/smalldarklogo.png';
+      headerImageElement.width = 135;
+    }
+  }
+
+  // Listen for window resize
+  window.addEventListener('resize', function () {
+    updateLogo(body.classList.contains('light'));
+  });
+});
+/** CHANGE LIGHT/DARK THEME END**/
+
+</script>
+
+
+
+
+</head>
+
+
+<body class="">
+
+
+ <div class="header">
+ 
+        <div class="header__right">
+         <span id="theme_switcher" class="lightbulb-icon"><i class="fas fa-sun"></i></span>        
+        <span id="navIcon">&#8801;</span>       
+        </div>
+
+        <a href="/"><img src="/AlmarsImages/Website/darklogo.png" alt="Logo" class="websiteLogo"></a>       
+      </div>
+
+      <div class="nav">
+         <ul>             
+            <li><a href="/EQ/">Everquest</a></li>
+            <li><a href="/retro/">Consoles</a></li>
+            <li><a href="/computer/games/">Computer</a></li>
+            <li><a href="/Contact/">Contact</a></li>
+            <li><a class="active" href="https://www.patreon.com/almarsguides">Donate</a></li> 
+        
+            <!-- User is not logged in, display Register and Login -->
+            <li><a href="/register">Register</a></li>
+            <li><a href="/register/login">Login</a></li>
+        
+         </ul>
+      </div>
+
+
+ <!-- Website body starts here -->
+
+  <div id="adBlockerMessage">
+    <p>Please disable your ad blocker to support our website.</p>
+  </div>
+
+<div class="page-layout">
+
+<div id="main__container" class="clearfix">
+
+   	     
+<div class="video-container"></div>
+
+   
+		         
+       
+		
+		
+			
+
+
+<style type="text/css">
+<!--
+.style1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+.style2 {font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: bold; }
+-->
+</style>
+<p align="center" class="style2">Progression Server Brewing Guide (Classic)</p>
+<p class="style1">Brewing is a fairly easy tradeskill to raise in EQ, at first at least. You can take the skill almost all the way up to 200 just by vendor purchased items. Also for all those worrying, Brewing isn't only for making alcohol, you can also make other goodies used in different Tradeskills as well as drink which has stats on it, such as Qeynos Afternoon Tea. Also before going any further, as with every other tradeskill, make sure to visit your trainer and put train the first 21 points using your available practices'.</p>
+<p class="style1">&nbsp;</p>
+<p class="style2">Brewing 1 - 21</p>
+<p class="style1">Train the at your trainer.</p>
+<p class="style1">&nbsp;</p>
+<p class="style2">(Direct Route) 
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Fetid%20Essence.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Fetid%20Essence.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Fetid%20Essence.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Fetid%20Essence.jpg" type="image/jpg" />
+	<img height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Fetid Essence.jpg" alt="Fetid Essence" width="38"/>
+</picture>Fetid Essence 21 - 122</p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/FishingGrubs.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Fishing%20Grubs.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Fishing%20Grubs.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Fishing%20Grubs.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Fishing%20Grubs.jpg" type="image/jpg" />
+	<img height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Fishing Grubs.jpg" alt="Fishing Grubs" width="38"/>
+</picture>Fishing Grubs</a></p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/BrewingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Smithing/Water%20Flask.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Smithing/Water%20Flask.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Smithing/Water%20Flask.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Smithing/Water%20Flask.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Smithing/Water Flask.jpg" alt="Water Flask" width="38"/>
+</picture>Water Flask</a></p>
+<p class="style1">&nbsp;</p>
+<p class="style2">(Alternative) 21 - 31 
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Short%20Beer.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Short%20Beer.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Short%20Beer.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Short%20Beer.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Short Beer.jpg" alt="Short Beer" width="38"/>
+</picture>Short Beer</p>
+<p class="style1">If you plan to do Skull Ale in the future save all of the Short Beers you make. If not, just vendor them. </p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/BrewingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/EQ/Tradeskills/001Images/Barley.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/EQ/Tradeskills/001Images/Barley.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/EQ/Tradeskills/001Images/Barley.png" type="image/png" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/EQ/Tradeskills/001Images/Barley.png" type="image/png" />
+	<img loading="lazy" height="38" src="/AlmarsImages/EQ/Tradeskills/001Images/Barley.png" alt="Barley" width="38"/>
+</picture>Barley</a></p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/BrewingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cask.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cask.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cask.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cask.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cask.jpg" alt="Cask" width="38"/>
+</picture>Cask</a></p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/BrewingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.jpg" alt="Barley" width="38"/>
+</picture>Hops</a></p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/BrewingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Malt.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Malt.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Malt.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Malt.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Malt.jpg" alt="Malt" width="38"/>
+</picture>Malt</a></p>
+<p class="style1">&nbsp;</p>
+<p class="style2">(Alternative) 
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Mead.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Mead.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Mead.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Mead.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Mead.jpg" alt="Mead" width="38"/>
+</picture>Mead 21 - 41</p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/BrewingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cask.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cask.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cask.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cask.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cask.jpg" alt="Cask" width="38"/>
+</picture>Cask</a></p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/BrewingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.jpg" alt="Barley" width="38"/>
+</picture>Hops</a></p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/BrewingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Malt.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Malt.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Malt.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Malt.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Malt.jpg" alt="Malt" width="38"/>
+</picture>Malt</a></p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/BrewingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.jpg" alt="Barley" width="38"/>
+</picture>Yeast</a></p>
+<p class="style1">&nbsp;</p>
+<p class="style2">(Alternative) 
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Heady%20Kiola.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Heady%20Kiola.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Heady%20Kiola.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Heady%20Kiola.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Heady Kiola.jpg" alt="Brewing/Heady Kiola" width="38"/>
+</picture>Heady Kiola 21 - 46</p>
+<p class="style1">If you don't use the Heady Kiola yourself then you could make some extra money by selling it to Tailors that can use it. It is used mainly and most notably in making Wu's Fighting Armor. </p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/BrewingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Bottle.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Bottle.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Bottle.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Bottle.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Bottle.jpg" alt="Bottle" width="38"/>
+</picture>Bottle</a></p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/PacketofKiolaSap.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Packet%20of%20Kiola%20Sap.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Packet%20of%20Kiola%20Sap.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Packet%20of%20Kiola%20Sap.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Packet%20of%20Kiola%20Sap.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Packet of Kiola Sap.jpg" alt="Packet of Kiola Sap" width="38"/>
+</picture>Packet of Kiola Sap x2</a></p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/BrewingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Water%20Flask.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Water%20Flask.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Water%20Flask.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Water%20Flask.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Water Flask.jpg" alt="Water Flask" width="38"/>
+</picture>Water Flask</a></p>
+<p class="style1">&nbsp;</p>
+<p class="style2">(Alternative) 
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Fish%20Wine.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Fish%20Wine.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Fish%20Wine.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Fish%20Wine.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Fish Wine.jpg" alt="Fish Wine" width="38"/>
+</picture>Fish Wine 21 - 62</p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/BrewingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Bottle.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Bottle.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Bottle.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Bottle.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Bottle.jpg" alt="Bottle" width="38"/>
+</picture>Bottle</a></p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/Freshfish.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Fresh%20Fish.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Fresh%20Fish.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Fresh%20Fish.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Fresh%20Fish.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Fresh Fish.jpg" alt="Fresh Fish" width="38"/>
+</picture>Fresh Fish</a></p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/BrewingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Grapes.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Grapes.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Grapes.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Grapes.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Grapes.jpg" alt="Grapes" width="38"/>
+</picture>Grapes</a></p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/BrewingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Water%20Flask.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Water%20Flask.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Water%20Flask.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Water%20Flask.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Water Flask.jpg" alt="Water Flask" width="38"/>
+</picture>Water Flask</a></p>
+<p class="style1">&nbsp;</p>
+<p class="style2">(Alternative) 
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Ale.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Ale.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Ale.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Ale.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Ale.jpg" alt="Ale" width="38"/>
+</picture>Ale 21 - 68</p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/BrewingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/EQ/Tradeskills/001Images/Barley.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/EQ/Tradeskills/001Images/Barley.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/EQ/Tradeskills/001Images/Barley.png" type="image/png" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/EQ/Tradeskills/001Images/Barley.png" type="image/png" />
+	<img loading="lazy" height="38" src="/AlmarsImages/EQ/Tradeskills/001Images/Barley.png" alt="Barley" width="38"/>
+</picture>Barley</a></p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/BrewingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cask.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cask.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cask.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cask.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cask.jpg" alt="Cask" width="38"/>
+</picture>Cask</a></p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/BrewingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Malt.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Malt.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Malt.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Malt.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Malt.jpg" alt="Malt" width="38"/>
+</picture>Malt</a></p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/BrewingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Water%20Flask.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Water%20Flask.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Water%20Flask.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Water%20Flask.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Water Flask.jpg" alt="Water Flask" width="38"/>
+</picture>Water Flask</a></p>
+<p class="style1">&nbsp;</p>
+<p class="style2">(Alternative) 
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Red%20Wine.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Red%20Wine.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Red%20Wine.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Red%20Wine.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Red Wine.jpg" alt="Red Wine" width="38"/>
+</picture>Red Wine 62 - 95</p>
+<p class="style1">Ask to buy the berries from any foragers that you group or even guildies. That is the only difficult part of this recipe.</p>
+<p class="style1"><a href="/eq/Tradeskills/Baking/Classic/Farming/ForagedItems.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Grapes.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Grapes.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Grapes.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Grapes.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Grapes.jpg" alt="Grapes" width="38"/>
+</picture>Berries</a> (Foraged up in pretty much any zone)</p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/BrewingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Bottle.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Bottle.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Bottle.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Bottle.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Bottle.jpg" alt="Bottle" width="38"/>
+</picture>Bottle</a></p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/BrewingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Grapes.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Grapes.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Grapes.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Grapes.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Grapes.jpg" alt="Grapes" width="38"/>
+</picture>Grapes</a></p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/BrewingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.jpg" alt="Barley" width="38"/>
+</picture>Wine Yeast</a></p>
+<p class="style1">&nbsp;</p>
+<p class="style2">(Alternative) 
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cyclops%20Skull.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cyclops%20Skull.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cyclops%20Skull.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cyclops%20Skull.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cyclops Skull.jpg" alt="Cyclops Skull" width="38"/>
+</picture>Skull Ale 45 - 151</p>
+<p class="style1">You can get the Cyclops Skull off of an Undead Cyclops that spawns in South Karana.</p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Farming/CyclopsSkull.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cyclops%20Skull.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cyclops%20Skull.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cyclops%20Skull.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cyclops%20Skull.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cyclops Skull.jpg" alt="Cyclops Skull" width="38"/>
+</picture>Cyclops Skull</a></p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/BrewingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Short%20Beer.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Short%20Beer.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Short%20Beer.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Short%20Beer.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Short Beer.jpg" alt="Short Beer" width="38"/>
+</picture>Short Beer</a></p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/BrewingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Spices.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Spices.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Spices.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Spices.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Spices.jpg" alt="Spices" width="38"/>
+</picture>Spices</a></p>
+<p class="style1"><a href="/eq/Tradeskills/Baking/Classic/Vendors/BakingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Vinegar.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Vinegar.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Vinegar.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Vinegar.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Vinegar.jpg" alt="Vinegar" width="38"/>
+</picture>Vinegar</a></p>
+<p class="style1">&nbsp;</p>
+<p class="style2">(Direct Route) 
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Jumjum%20Spiced%20Beer.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Jumjum%20Spiced%20Beer.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Jumjum%20Spiced%20Beer.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Jumjum%20Spiced%20Beer.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Jumjum Spiced Beer.jpg" alt="Jumjum Spiced Beer" width="38"/>
+</picture>Jumjum Spiced Beer 95 - 162 </p>
+<p class="style1">Save the Jumjum Spiced Beer if you are also going to level Baking for Misty Thicket Picnics. If not, sell it to anyone that is working on making the picnics for some extra cash. </p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/BrewingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/EQ/Tradeskills/001Images/Barley.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/EQ/Tradeskills/001Images/Barley.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/EQ/Tradeskills/001Images/Barley.png" type="image/png" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/EQ/Tradeskills/001Images/Barley.png" type="image/png" />
+	<img loading="lazy" height="38" src="/AlmarsImages/EQ/Tradeskills/001Images/Barley.png" alt="Barley" width="38"/>
+</picture>Barley</a></p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/BrewingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Bottle.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Bottle.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Bottle.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Bottle.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Bottle.jpg" alt="Bottle" width="38"/>
+</picture>Bottle</a></p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/BrewingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.jpg" alt="Barley" width="38"/>
+</picture>Hops</a></p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/JumjumStalk.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Jumjum%20Stalk.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Jumjum%20Stalk.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Jumjum%20Stalk.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Jumjum%20Stalk.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Jumjum Stalk.jpg" alt="Jumjum Stalk" width="38"/>
+</picture>Jumjum Stalk</a></p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/BrewingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Spices.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Spices.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Spices.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Spices.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Spices.jpg" alt="Spices" width="38"/>
+</picture>Spices</a></p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/BrewingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Water%20Flask.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Water%20Flask.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Water%20Flask.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Water%20Flask.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Water Flask.jpg" alt="Water Flask" width="38"/>
+</picture>Water Flask</a></p>
+<p class="style1">&nbsp;</p>
+<p class="style2">(Alternative) 
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cask.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cask.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cask.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cask.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cask.jpg" alt="Cask" width="38"/>
+</picture>Ol'Tujim's Fierce Brew 95 - 135 </p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/BrewingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/EQ/Tradeskills/001Images/Barley.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/EQ/Tradeskills/001Images/Barley.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/EQ/Tradeskills/001Images/Barley.png" type="image/png" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/EQ/Tradeskills/001Images/Barley.png" type="image/png" />
+	<img loading="lazy" height="38" src="/AlmarsImages/EQ/Tradeskills/001Images/Barley.png" alt="Barley" width="38"/>
+</picture>Barley</a></p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/BrewingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.jpg" alt="Barley" width="38"/>
+</picture>Hops</a></p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/BrewingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cask.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cask.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cask.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cask.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cask.jpg" alt="Cask" width="38"/>
+</picture>Cask</a></p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/BrewingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Malt.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Malt.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Malt.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Malt.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Malt.jpg" alt="Malt" width="38"/>
+</picture>Malt</a></p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/BrewingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.jpg" alt="Barley" width="38"/>
+</picture>Yeast</a></p>
+<p class="style1">Finish 135 - 162 with 
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Jumjum%20Spiced%20Beer.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Jumjum%20Spiced%20Beer.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Jumjum%20Spiced%20Beer.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Jumjum%20Spiced%20Beer.jpg" type="image/jpg" />
+	<img loading="lazy" height="20" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Jumjum Spiced Beer.jpg" alt="Jumjum Spiced Beer" width="20"/>
+</picture>Jumjum Spiced Beer or the next recipe on the list.</p>
+<p class="style1">&nbsp;</p>
+<p class="style2">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Water%20Flask.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Water%20Flask.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Water%20Flask.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Water%20Flask.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Water Flask.jpg" alt="Water Flask" width="38"/>
+</picture>Qeynos Afternoon Tea 162 - 226</p>
+<p class="style1">Qeynos Afternoon Teas are a great choice to make if you're looking to level up your Brewing. The main reason for this is it is currently the highest stat drink in the game and it will be in high demand by many players looking to maximize their characters potential. Each stack of Qeynos Afternoon Tea that you make can be sold for anywhere between 45 and 100pp.</p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Recipes/BaylesDelight.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Bayles%20Delight.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Bayles%20Delight.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Bayles%20Delight.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Bayles%20Delight.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Bayles Delight.jpg" alt="Bayles Delight" width="38"/>
+</picture>Bayle's Delight</a></p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Recipes/CelestialEssence.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Celestial%20Essence.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Celestial%20Essence.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Celestial%20Essence.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Celestial%20Essence.jpg" type="image/jpg" />
+	<img loading="lazy" alt="Celestial Essence" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Celestial Essence.jpg" width="38"/>
+</picture>Celestial Essence</a></p>
+<p class="style1"><a href="/eq/Tradeskills/Baking/Classic/Recipes/Cream.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cream.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cream.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cream.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cream.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cream.jpg" alt="Cream" width="38"/>
+</picture>Cream</a></p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/EucalyptusLeaf.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Eucalyptus%20Leaf.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Eucalyptus%20Leaf.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Eucalyptus%20Leaf.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Eucalyptus%20Leaf.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Eucalyptus Leaf.jpg" alt="Eucalyptus Leaf" width="38"/>
+</picture>Eucalyptus Leaf</a></p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Farming/TeaLeaves.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Tea%20Leaves.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Tea%20Leaves.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Tea%20Leaves.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Tea%20Leaves.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Tea Leaves.jpg" alt="Tea Leaves" width="38"/>
+</picture>Tea Leaves</a></p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/BrewingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Water%20Flask.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Water%20Flask.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Water%20Flask.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Water%20Flask.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Water Flask.jpg" alt="Water Flask" width="38"/>
+</picture>Water Flask</a></p>
+<p class="style1">&nbsp;</p>
+<p class="style2">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cask.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cask.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cask.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cask.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cask.jpg" alt="Cask" width="38"/>
+</picture>Minotaur Hero's Brew 226 - 248</p>
+<p class="style1">This route is all vendor purchased and is one of primary brewing combines that I do to reach 250 on all of my characters. It's so cheap and so easy, if you're lazy like me and would rather spend a bit more plat but save a whole lot of time, just start with making Minotaur Hero Brews and let it carry you all the way to the highest trivial it can.</p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/BrewingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cask.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cask.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cask.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cask.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Cask.jpg" alt="Cask" width="38"/>
+</picture>Cask</a></p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/BrewingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Malt.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Malt.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Malt.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Malt.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Malt.jpg" alt="Malt" width="38"/>
+</picture>Malt x3</a></p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/BrewingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Short%20Beer.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Short%20Beer.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Short%20Beer.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Short%20Beer.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Short Beer.jpg" alt="Short Beer" width="38"/>
+</picture>Short Beer x2</a></p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/BrewingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Water%20Flask.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Water%20Flask.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Water%20Flask.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Water%20Flask.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Water Flask.jpg" alt="Water Flask" width="38"/>
+</picture>Water Flask x2</a></p>
+<p class="style1"><a href="/eq/Tradeskills/Brewing/Classic/Vendors/BrewingSupplies.cfm">
+<picture>
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.webp" type="image/webp" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.webp" type="image/webp" />
+	<source media="(max-width: 767px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.jpg" type="image/jpg" />
+	<source media="(min-width: 768px)" srcset="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.jpg" type="image/jpg" />
+	<img loading="lazy" height="38" src="/AlmarsImages/Computer/Games/EQ/Tradeskills/Brewing/Barley.jpg" alt="Barley" width="38"/>
+</picture>Yeast</a></p>
+<p class="style1">&nbsp;</p>
+
+		
+	
+		
+					<!-- Version 2.1 -->
+
+ 
+</div>
+ <div class="at-sticky-sidebar-ad sidebar-inner"></div>
+</div>
+</div>
+
+      <footer>
+      
+         <div>
+           <a href="/">Home</a>
+           <a href="/About/">About</a>
+           <a href="/Contact/">Contact</a>
+           <a href="/register/terms/">Terms</a>
+ </div>         
+         <div class="footer__social">           
+           <a href="https://discord.com/invite/Bua2AVB6G6" target="_blank" rel="noopener noreferrer"><img src="/AlmarsImages/Website/Footer/discord.svg" alt="Discord" title="Discord"></a>
+           <a href="https://www.youtube.com/user/AlmarWinfield" target="_blank" rel="noopener noreferrer"><img src="/AlmarsImages/Website/Footer/youtube.svg" alt="Youtube" title="Youtube"></a>
+           <a href="https://rumble.com/user/AlmarsGuides" target="_blank" rel="noopener noreferrer"><img src="/AlmarsImages/Website/Footer/rumble.svg" alt="Rumble" title="Rumble"></a>
+           
+         </div>
+         <div>
+         <p>  &copy; Copyright 2008-2026 Almar's Guides. All rights reserved.</p>
+         <p><a href="/PrivacyPolicy.cfm" data-google-interstitial="false">Privacy Policy</a> - <a href="https://www.patreon.com/almarsguides">Patreon</a></p>
+                  
+                  
+                  
+                  
+
+<script> !(function (e) { const t = '__adblocker'; if (-1 === e.cookie.indexOf(t)) { const n = new XMLHttpRequest(); (n.open('GET', 'https://ads.adthrive.com/abd/abd.js', !0), (n.onreadystatechange = function () { if (XMLHttpRequest.DONE === n.readyState) if (200 === n.status) { const t = e.createElement('script'); ((t.innerHTML = n.responseText), e.getElementsByTagName('head')[0].appendChild(t)); } else { const n = new Date(); (n.setTime(n.getTime() + 3e5), (e.cookie = t + '=true; expires=' + n.toUTCString() + '; path=/')); } }), n.send()); } })(document); </script> 
+ <script> !function(){function e(){var e=document.cookie.match("(^|[^;]+)\s*__adblocker\s*=\s*([^;]+)");return e&&e.pop()}function t(){var e=document.createElement("script");e.async=!0,e.id="Tqgkgu",e.setAttribute("data-sdk","l/1.1.15"),e.setAttribute("data-cfasync","false"),e.src="https://html-load.com/loader.min.js",e.charset="UTF-8",e.setAttribute("data","kfpvgbrkab9r4a5rkrqrkwagrw6rzrv8rxag0asrka5abaoagrxa5srxrxabasrkrvabaoaxrx0asrkabrxfaba1raa5a5asrkr9wa1agrw6rzr9rkaia8"),e.setAttribute("onload","(async()=>{let e='html-load.com';const t=window,a=document,r=e=>new Promise((t=>{const a=.1*e,r=e+Math.floor(2*Math.random()*a)-a;setTimeout(t,r)})),o=t.addEventListener.bind(t),n=t.postMessage.bind(t),s=btoa,i='message',l=location,c=Math.random;try{const t=()=>new Promise(((e,t)=>{let a=c().toString(),r=c().toString();o(i,(e=>e.data===a&&n(r,'*'))),o(i,(t=>t.data===r&&e())),n(a,'*'),setTimeout((()=>{t(Error('Timeout'))}),1231)})),a=async()=>{try{let e=!1;const a=c().toString();if(o(i,(t=>{t.data===a+'_as_res'&&(e=!0)})),n(a+'_as_req','*'),await t(),await r(500),e)return!0}catch(e){}return!1},s=[100,500,1e3];for(let o=0;o<=s.length&&!await a();o++){if(o===s.length-1)throw'Failed to load website properly since '+e+' is tainted. Please allow '+e;await r(s[o])}}catch(d){try{const e=a.querySelector('script#Tqgkgu').getAttribute('onerror');t[s(l.hostname+'_show_bfa')]=d,await new Promise(((t,r)=>{o('message',(e=>{'as_modal_loaded'===e.data&&t()})),setTimeout((()=>r(d)),3e3);const n=a.createElement('script');n.innerText=e,a.head.appendChild(n),n.remove()}))}catch(m){(t=>{const a='https://report.error-report.com/modal';try{confirm('There was a problem loading the page. Please click OK to learn more.')?l.href=a+'?url='+s(l.href)+'&error='+s(t)+'&domain='+e:l.reload()}catch(d){location.href=a+'?eventId=&error=Vml0YWwgQVBJIGJsb2NrZWQ%3D&domain='+e}})(d)}}})();"),e.setAttribute("onerror","(async()=>{const e=window,t=document;let r=JSON.parse(atob('WyJodG1sLWxvYWQuY29tIiwiZmIuaHRtbC1sb2FkLmNvbSIsImQzN2o4cGZ4dTJpb2dpLmNsb3VkZnJvbnQubmV0IiwiY29udGVudC1sb2FkZXIuY29tIiwiZmIuY29udGVudC1sb2FkZXIuY29tIl0=')),o=r[0];const a='addEventListener',n='setAttribute',s='getAttribute',i=location,l=clearInterval,c='as_retry',d=i.hostname,h=e.addEventListener.bind(e),m=btoa,u='https://report.error-report.com/modal',b=e=>{try{confirm('There was a problem loading the page. Please click OK to learn more.')?i.href=u+'?url='+m(i.href)+'&error='+m(e)+'&domain='+o:i.reload()}catch(t){location.href=u+'?eventId=&error=Vml0YWwgQVBJIGJsb2NrZWQ%3D&domain='+o}},p=async e=>{try{localStorage.setItem(i.host+'_fa_'+m('last_bfa_at'),Date.now().toString())}catch(p){}setInterval((()=>t.querySelectorAll('link,style').forEach((e=>e.remove()))),100);const r=await fetch('https://error-report.com/report?type=loader_light&url='+m(i.href)+'&error='+m(e),{method:'POST'}).then((e=>e.text())),a=new Promise((e=>{h('message',(t=>{'as_modal_loaded'===t.data&&e()}))}));let s=t.createElement('iframe');s.src=u+'?url='+m(i.href)+'&eventId='+r+'&error='+m(e)+'&domain='+o,s[n]('style','width:100vw;height:100vh;z-index:2147483647;position:fixed;left:0;top:0;');const c=e=>{'close-error-report'===e.data&&(s.remove(),removeEventListener('message',c))};h('message',c),t.body.appendChild(s);const d=setInterval((()=>{if(!t.contains(s))return l(d);(()=>{const e=s.getBoundingClientRect();return'none'!==getComputedStyle(s).display&&0!==e.width&&0!==e.height})()||(l(d),b(e))}),1e3);await new Promise(((t,r)=>{a.then(t),setTimeout((()=>r(e)),3e3)}))},f=m(d+'_show_bfa');if(e[f])p(e[f]);else try{if(void 0===e[c]&&(e[c]=0),e[c]>=r.length)throw'Failed to load website properly since '+o+' is blocked. Please allow '+o;if((()=>{const t=e=>{let t=0;for(let r=0,o=e.length;o>r;r++)t=(t<<5)-t+e.charCodeAt(r),t|=0;return t},r=Date.now(),o=r-r%864e5,a=o-864e5,n=o+864e5,s='loader-check',i='as_'+t(s+'_'+o),l='as_'+t(s+'_'+a),c='as_'+t(s+'_'+n);return i!==l&&i!==c&&l!==c&&!!(e[i]||e[l]||e[c])})())return;const i=t.querySelector('#Tqgkgu'),l=t.createElement('script');for(let e=0;e<i.attributes.length;e++)l[n](i.attributes[e].name,i.attributes[e].value);const h=m(d+'_onload');e[h]&&l[a]('load',e[h]);const u=m(d+'_onerror');e[u]&&l[a]('error',e[u]);const b=new e.URL(i[s]('src'));b.host=r[e[c]++],l[n]('src',b.href),i[n]('id',i[s]('id')+'_'),i.parentNode.insertBefore(l,i),i.remove()}catch(w){try{await p(w)}catch(w){b(w)}}})();"),document.head.appendChild(e);var t=document.createElement("script");t.setAttribute("data-cfasync","false"),t.setAttribute("nowprocket",""),t.textContent="(async()=>{function t(t) { const e = t.length; let o = ''; for (let r = 0; e > r; r++) { o += t[2939 * (r + 20) % e] } return o }const e=window,o=t('Elementcreate'),r=t('pielnddaCph'),n=t('erdeLtedvtsnaEni'),c=t('tAtesetubirt'),a=document,i=a.head,s=a[o].bind(a),d=i[r].bind(i),l=location,m=l.hostname,h=btoa;e[n].bind(e);let u=t('oad.comhtml-l');(async()=>{try{const n=a.querySelector(t('#Tqgkguscript'));if(!n)throw t('onnaC dnif t')+u+t('i.cp rts');const i=n.getAttribute(t('nororre')),f=n.getAttribute(t('aolnod')),p=await new Promise((o=>{const r=t('x')+Math.floor(1e6*Math.random());e[r]=()=>o(!0);const n=s(t('pircst'));n.src=t(':atad;'),n[c](t('nororre'),t('iw.wodn')+r+t('()')),d(n),setTimeout((()=>{o(!1), n.remove()}),251)}));if(p)return;function o(){const e=s(t('pircst'));e.innerText=i,d(e),e.remove()}const b=h(m+t('o_daoln')),w=h(m+t('rrnr_eoo'));e[b]=function(){const e=s(t('pircst'));e.innerText=f,d(e),e.remove()},e[w]=o,o()}catch(r){(e => { const o = t('ro/treeol/t-.dsoormterpmh/.rca:rrtopp'); try { const r = t('cleopr   eges.eke aremtc. m Ta apdo ool t ahrOsaibwr iPhl enKegnlael'); confirm(r) ? l.href = o + t('?=lru') + h(l.href) + t('e&=rorr') + h(e) + t('a=oi&mnd') + u : l.reload() } catch (r) { location.href = o + t('J%ndVVNdvrYGQiI=Q2&ee0IWatrgbD?&lJZmnows3==mBroerW') + u } })(r)}})()})();",document.head.appendChild(t)}!function(){var r=e();if("true"===r)t();else var o=0,a=setInterval(function(){if(100!==o&&"false"!==r){if("true"===r)return t(),void clearInterval(a);r=e(),o++}else clearInterval(a)},50)}()}(); </script>
+		
+         </div>
+
+
+       </footer>
+	
+
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"202d49c3ff25413f98d76cb86c924861","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+				
+	

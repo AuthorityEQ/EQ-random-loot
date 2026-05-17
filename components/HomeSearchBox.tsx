@@ -12,7 +12,7 @@ import veliousRaid from "@/data/velious-raid.json";
 import itemDetailsData from "@/data/item-details.json";
 import spellsData from "@/data/spells.json";
 import droppedSpellsData from "@/data/dropped-spells.json";
-import craftingData from "@/data/excel-imports/crafting-normalized.json";
+import { craftingRecipes } from "@/data/crafting-recipes";
 import factionsData from "@/data/excel-imports/factions-normalized.json";
 import { itemToSlug } from "@/lib/item-slug";
 import { mobToSlug } from "@/lib/mob-slug";
@@ -90,7 +90,7 @@ function buildIndex(): SearchEntry[] {
 
   // --- Recipes ---
   const seenRecipes = new Set<string>();
-  for (const recipe of craftingData.recipes) {
+  for (const recipe of craftingRecipes) {
     if (!seenRecipes.has(recipe.name)) {
       seenRecipes.add(recipe.name);
       entries.push({ type: "recipe", name: recipe.name, href: "/crafting" });

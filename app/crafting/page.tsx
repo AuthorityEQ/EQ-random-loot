@@ -2,10 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CraftingTabs, type SkillData } from "@/components/CraftingTabs";
 import {
-  isLiveData,
   CRAFTING_SKILLS,
-  getRecipesBySkillGrouped,
 } from "@/lib/crafting";
+import { craftingRecipes, isCraftingLiveData } from "@/data/crafting-recipes";
 import "./crafting-page.css";
 
 export const metadata: Metadata = {
@@ -23,7 +22,9 @@ export default function CraftingPage() {
   // tab-state switching (RSC-compatible: no function props cross the boundary).
   const skillData: SkillData[] = CRAFTING_SKILLS.map((skill) => ({
     skill,
-    groups: getRecipesBySkillGrouped(skill),
+    recipes: craftingRecipes
+      .filter((recipe) => recipe.skill === skill)
+      .sort((a, b) => (a.trivial ?? 999) - (b.trivial ?? 999)),
   }));
 
   return (
@@ -36,10 +37,10 @@ export default function CraftingPage() {
           <p className="eyebrow">Tradeskills / Recipes</p>
           <h1>Crafting Recipes</h1>
           <p className="subhead">
-            Browse tradeskill recipes grouped by skill level tier. Component names link to item
-            detail pages where available.
+            Browse tradeskill recipe families by skill, trivial range, and component.
+            Component names link to item detail pages where available.
           </p>
-          {!isLiveData ? (
+          {!isCraftingLiveData ? (
             <p className="crafting-tier2-notice">
               Crafting data unlocking post-launch — Tier 2 feature.
               Displaying sample stub recipes until the Excel ingest pipeline runs.

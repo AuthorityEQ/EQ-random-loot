@@ -1,0 +1,1586 @@
+[
+  {
+    "entryName": "SubRecipe 12397.bin",
+    "tableName": "SubRecipe 12397",
+    "columns": [
+      {
+        "name": "RecipeID",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "ItemID",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Item",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Needed",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Runs",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Trivial",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Container",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "DefSource",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "DefZone",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "DefNPC",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Unit Price",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Tool",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "No Drop",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "ZoneID",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "MobID",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "FarmNoteID",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Location",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Notes",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Tradeskill",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "PriceNum",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Yield",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Excess",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "SubRecipeID",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "TradeskillFK",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Processed",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "IsDefault",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "IsContainer",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "DefType",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "ExpNum",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "RowNum",
+        "typeName": "System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "SortOrder",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      }
+    ],
+    "rows": [
+      {
+        "RecipeID": 12397,
+        "ItemID": 97800,
+        "Item": "Cleaned Fine Supple Runic Hide",
+        "Needed": 1,
+        "Runs": 0,
+        "Trivial": 102,
+        "Container": "Spell Research Table",
+        "DefSource": "Crafted",
+        "DefZone": "",
+        "DefNPC": "",
+        "Unit Price": "6p 2s ",
+        "Tool": "",
+        "No Drop": "",
+        "ZoneID": 0,
+        "MobID": 0,
+        "FarmNoteID": 0,
+        "Location": "",
+        "Notes": "",
+        "Tradeskill": "Research",
+        "PriceNum": 6020,
+        "Yield": 1,
+        "Excess": 0,
+        "SubRecipeID": 36137,
+        "TradeskillFK": 10,
+        "Processed": 0,
+        "IsDefault": 1,
+        "IsContainer": 0,
+        "DefType": 2,
+        "ExpNum": null,
+        "RowNum": 1,
+        "SortOrder": 29282
+      },
+      {
+        "RecipeID": 12397,
+        "ItemID": 93555,
+        "Item": "Debilitating Thickener",
+        "Needed": 1,
+        "Runs": 0,
+        "Trivial": 0,
+        "Container": "",
+        "DefSource": "Shopped",
+        "DefZone": "PoK",
+        "DefNPC": "Maree Rasumus",
+        "Unit Price": "4p 2g ",
+        "Tool": "",
+        "No Drop": "",
+        "ZoneID": 407,
+        "MobID": 14130,
+        "FarmNoteID": 0,
+        "Location": "",
+        "Notes": "",
+        "Tradeskill": "",
+        "PriceNum": 4200,
+        "Yield": 0,
+        "Excess": 0,
+        "SubRecipeID": 0,
+        "TradeskillFK": 0,
+        "Processed": 0,
+        "IsDefault": 1,
+        "IsContainer": 0,
+        "DefType": 2,
+        "ExpNum": 19,
+        "RowNum": 1,
+        "SortOrder": null
+      },
+      {
+        "RecipeID": 12397,
+        "ItemID": 93581,
+        "Item": "Ink of Ayonae Ro",
+        "Needed": 1,
+        "Runs": 0,
+        "Trivial": 0,
+        "Container": "",
+        "DefSource": "Shopped",
+        "DefZone": "PoK",
+        "DefNPC": "Maree Rasumus",
+        "Unit Price": "6p 9g 3s ",
+        "Tool": "",
+        "No Drop": "",
+        "ZoneID": 407,
+        "MobID": 14130,
+        "FarmNoteID": 0,
+        "Location": "",
+        "Notes": "",
+        "Tradeskill": "",
+        "PriceNum": 6930,
+        "Yield": 0,
+        "Excess": 0,
+        "SubRecipeID": 0,
+        "TradeskillFK": 0,
+        "Processed": 0,
+        "IsDefault": 1,
+        "IsContainer": 0,
+        "DefType": 2,
+        "ExpNum": 19,
+        "RowNum": 1,
+        "SortOrder": null
+      },
+      {
+        "RecipeID": 12397,
+        "ItemID": 93539,
+        "Item": "Luclin's Ink Additive",
+        "Needed": 1,
+        "Runs": 0,
+        "Trivial": 0,
+        "Container": "",
+        "DefSource": "Shopped",
+        "DefZone": "PoK",
+        "DefNPC": "Eric Rasumus",
+        "Unit Price": "5g 2s 5c",
+        "Tool": "",
+        "No Drop": "",
+        "ZoneID": 407,
+        "MobID": 14090,
+        "FarmNoteID": 0,
+        "Location": "",
+        "Notes": "",
+        "Tradeskill": "",
+        "PriceNum": 525,
+        "Yield": 0,
+        "Excess": 0,
+        "SubRecipeID": 0,
+        "TradeskillFK": 0,
+        "Processed": 0,
+        "IsDefault": 1,
+        "IsContainer": 0,
+        "DefType": 2,
+        "ExpNum": 19,
+        "RowNum": 1,
+        "SortOrder": null
+      },
+      {
+        "RecipeID": 12397,
+        "ItemID": 93514,
+        "Item": "Quill of the Coercer",
+        "Needed": 1,
+        "Runs": 0,
+        "Trivial": 0,
+        "Container": "",
+        "DefSource": "Shopped",
+        "DefZone": "PoK",
+        "DefNPC": "Maree Rasumus",
+        "Unit Price": "2p 6g 2s 5c",
+        "Tool": "",
+        "No Drop": "",
+        "ZoneID": 407,
+        "MobID": 14130,
+        "FarmNoteID": 0,
+        "Location": "",
+        "Notes": "",
+        "Tradeskill": "",
+        "PriceNum": 2625,
+        "Yield": 0,
+        "Excess": 0,
+        "SubRecipeID": 0,
+        "TradeskillFK": 0,
+        "Processed": 0,
+        "IsDefault": 1,
+        "IsContainer": 0,
+        "DefType": 2,
+        "ExpNum": 19,
+        "RowNum": 1,
+        "SortOrder": null
+      }
+    ]
+  },
+  {
+    "entryName": "SubRecipe 12519.bin",
+    "tableName": "SubRecipe 12519",
+    "columns": [
+      {
+        "name": "RecipeID",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "ItemID",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Item",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Needed",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Runs",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Trivial",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Container",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "DefSource",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "DefZone",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "DefNPC",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Unit Price",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Tool",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "No Drop",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "ZoneID",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "MobID",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "FarmNoteID",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Location",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Notes",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Tradeskill",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "PriceNum",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Yield",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Excess",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "SubRecipeID",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "TradeskillFK",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Processed",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "IsDefault",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "IsContainer",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "DefType",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "ExpNum",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "RowNum",
+        "typeName": "System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "SortOrder",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      }
+    ],
+    "rows": [
+      {
+        "RecipeID": 12519,
+        "ItemID": 97814,
+        "Item": "Fine Runic Papyrus",
+        "Needed": 1,
+        "Runs": 0,
+        "Trivial": 120,
+        "Container": "Spell Research Table",
+        "DefSource": "Crafted",
+        "DefZone": "",
+        "DefNPC": "",
+        "Unit Price": "79p 2g 1s 3c",
+        "Tool": "",
+        "No Drop": "",
+        "ZoneID": 0,
+        "MobID": 0,
+        "FarmNoteID": 0,
+        "Location": "",
+        "Notes": "",
+        "Tradeskill": "Research",
+        "PriceNum": 79213,
+        "Yield": 1,
+        "Excess": 0,
+        "SubRecipeID": 36151,
+        "TradeskillFK": 10,
+        "Processed": 0,
+        "IsDefault": 1,
+        "IsContainer": 0,
+        "DefType": 2,
+        "ExpNum": null,
+        "RowNum": 1,
+        "SortOrder": 30216
+      },
+      {
+        "RecipeID": 12519,
+        "ItemID": 93542,
+        "Item": "Ink Additive of the Nameless",
+        "Needed": 1,
+        "Runs": 0,
+        "Trivial": 0,
+        "Container": "",
+        "DefSource": "Shopped",
+        "DefZone": "PoK",
+        "DefNPC": "Eric Rasumus",
+        "Unit Price": "5g 2s 5c",
+        "Tool": "",
+        "No Drop": "",
+        "ZoneID": 407,
+        "MobID": 14090,
+        "FarmNoteID": 0,
+        "Location": "",
+        "Notes": "",
+        "Tradeskill": "",
+        "PriceNum": 525,
+        "Yield": 0,
+        "Excess": 0,
+        "SubRecipeID": 0,
+        "TradeskillFK": 0,
+        "Processed": 0,
+        "IsDefault": 1,
+        "IsContainer": 0,
+        "DefType": 2,
+        "ExpNum": 19,
+        "RowNum": 1,
+        "SortOrder": null
+      },
+      {
+        "RecipeID": 12519,
+        "ItemID": 93574,
+        "Item": "Ink of Prexus",
+        "Needed": 2,
+        "Runs": 0,
+        "Trivial": 0,
+        "Container": "",
+        "DefSource": "Shopped",
+        "DefZone": "PoK",
+        "DefNPC": "Maree Rasumus",
+        "Unit Price": "9p 5g 5s 5c",
+        "Tool": "",
+        "No Drop": "",
+        "ZoneID": 407,
+        "MobID": 14130,
+        "FarmNoteID": 0,
+        "Location": "",
+        "Notes": "",
+        "Tradeskill": "",
+        "PriceNum": 9555,
+        "Yield": 0,
+        "Excess": 0,
+        "SubRecipeID": 0,
+        "TradeskillFK": 0,
+        "Processed": 0,
+        "IsDefault": 1,
+        "IsContainer": 0,
+        "DefType": 2,
+        "ExpNum": 19,
+        "RowNum": 1,
+        "SortOrder": null
+      },
+      {
+        "RecipeID": 12519,
+        "ItemID": 93569,
+        "Item": "Ink of the Dal",
+        "Needed": 1,
+        "Runs": 0,
+        "Trivial": 0,
+        "Container": "",
+        "DefSource": "Shopped",
+        "DefZone": "PoK",
+        "DefNPC": "Maree Rasumus",
+        "Unit Price": "6p 9g 3s ",
+        "Tool": "",
+        "No Drop": "",
+        "ZoneID": 407,
+        "MobID": 14130,
+        "FarmNoteID": 0,
+        "Location": "",
+        "Notes": "",
+        "Tradeskill": "",
+        "PriceNum": 6930,
+        "Yield": 0,
+        "Excess": 0,
+        "SubRecipeID": 0,
+        "TradeskillFK": 0,
+        "Processed": 0,
+        "IsDefault": 1,
+        "IsContainer": 0,
+        "DefType": 2,
+        "ExpNum": 19,
+        "RowNum": 1,
+        "SortOrder": null
+      },
+      {
+        "RecipeID": 12519,
+        "ItemID": 93570,
+        "Item": "Ink of the Erudite",
+        "Needed": 1,
+        "Runs": 0,
+        "Trivial": 0,
+        "Container": "",
+        "DefSource": "Shopped",
+        "DefZone": "PoK",
+        "DefNPC": "Maree Rasumus",
+        "Unit Price": "4p 3g 5c",
+        "Tool": "",
+        "No Drop": "",
+        "ZoneID": 407,
+        "MobID": 14130,
+        "FarmNoteID": 0,
+        "Location": "",
+        "Notes": "",
+        "Tradeskill": "",
+        "PriceNum": 4305,
+        "Yield": 0,
+        "Excess": 0,
+        "SubRecipeID": 0,
+        "TradeskillFK": 0,
+        "Processed": 0,
+        "IsDefault": 1,
+        "IsContainer": 0,
+        "DefType": 2,
+        "ExpNum": 19,
+        "RowNum": 1,
+        "SortOrder": null
+      },
+      {
+        "RecipeID": 12519,
+        "ItemID": 93514,
+        "Item": "Quill of the Coercer",
+        "Needed": 1,
+        "Runs": 0,
+        "Trivial": 0,
+        "Container": "",
+        "DefSource": "Shopped",
+        "DefZone": "PoK",
+        "DefNPC": "Maree Rasumus",
+        "Unit Price": "2p 6g 2s 5c",
+        "Tool": "",
+        "No Drop": "",
+        "ZoneID": 407,
+        "MobID": 14130,
+        "FarmNoteID": 0,
+        "Location": "",
+        "Notes": "",
+        "Tradeskill": "",
+        "PriceNum": 2625,
+        "Yield": 0,
+        "Excess": 0,
+        "SubRecipeID": 0,
+        "TradeskillFK": 0,
+        "Processed": 0,
+        "IsDefault": 1,
+        "IsContainer": 0,
+        "DefType": 2,
+        "ExpNum": 19,
+        "RowNum": 1,
+        "SortOrder": null
+      },
+      {
+        "RecipeID": 12519,
+        "ItemID": 93554,
+        "Item": "Talisman Thickener",
+        "Needed": 1,
+        "Runs": 0,
+        "Trivial": 0,
+        "Container": "",
+        "DefSource": "Shopped",
+        "DefZone": "PoK",
+        "DefNPC": "Maree Rasumus",
+        "Unit Price": "4p 2g ",
+        "Tool": "",
+        "No Drop": "",
+        "ZoneID": 407,
+        "MobID": 14130,
+        "FarmNoteID": 0,
+        "Location": "",
+        "Notes": "",
+        "Tradeskill": "",
+        "PriceNum": 4200,
+        "Yield": 0,
+        "Excess": 0,
+        "SubRecipeID": 0,
+        "TradeskillFK": 0,
+        "Processed": 0,
+        "IsDefault": 1,
+        "IsContainer": 0,
+        "DefType": 2,
+        "ExpNum": 19,
+        "RowNum": 1,
+        "SortOrder": null
+      }
+    ]
+  },
+  {
+    "entryName": "SubRecipe 33155.bin",
+    "tableName": "SubRecipe 33155",
+    "columns": [
+      {
+        "name": "RecipeID",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "ItemID",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Item",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Needed",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Runs",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Trivial",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Container",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "DefSource",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "DefZone",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "DefNPC",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Unit Price",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Tool",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "No Drop",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "ZoneID",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "MobID",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "FarmNoteID",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Location",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Notes",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Tradeskill",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "PriceNum",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Yield",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Excess",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "SubRecipeID",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "TradeskillFK",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Processed",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "IsDefault",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "IsContainer",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "DefType",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "ExpNum",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "RowNum",
+        "typeName": "System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "SortOrder",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      }
+    ],
+    "rows": [
+      {
+        "RecipeID": 33155,
+        "ItemID": 10062,
+        "Item": "Empty Vial",
+        "Needed": 5,
+        "Runs": 0,
+        "Trivial": 0,
+        "Container": "",
+        "DefSource": "Shopped",
+        "DefZone": "PoK",
+        "DefNPC": "Blacksmith Gerta",
+        "Unit Price": "2g 1s ",
+        "Tool": "Yes",
+        "No Drop": "",
+        "ZoneID": 407,
+        "MobID": 4809,
+        "FarmNoteID": 16,
+        "Location": "",
+        "Notes": "Located in SE corner of the Small Bank area.",
+        "Tradeskill": "",
+        "PriceNum": 210,
+        "Yield": 0,
+        "Excess": 0,
+        "SubRecipeID": 0,
+        "TradeskillFK": 0,
+        "Processed": 0,
+        "IsDefault": 1,
+        "IsContainer": 0,
+        "DefType": 2,
+        "ExpNum": 19,
+        "RowNum": 1,
+        "SortOrder": null
+      },
+      {
+        "RecipeID": 33155,
+        "ItemID": 63244,
+        "Item": "Gnomish Heat Source",
+        "Needed": 1,
+        "Runs": 0,
+        "Trivial": 0,
+        "Container": "",
+        "DefSource": "Shopped",
+        "DefZone": "PoK",
+        "DefNPC": "Culturist Devari",
+        "Unit Price": "1p 5s ",
+        "Tool": "",
+        "No Drop": "",
+        "ZoneID": 407,
+        "MobID": 14079,
+        "FarmNoteID": 302,
+        "Location": "/way -314, 954, -75",
+        "Notes": "",
+        "Tradeskill": "",
+        "PriceNum": 1050,
+        "Yield": 0,
+        "Excess": 0,
+        "SubRecipeID": 0,
+        "TradeskillFK": 0,
+        "Processed": 0,
+        "IsDefault": 1,
+        "IsContainer": 0,
+        "DefType": 2,
+        "ExpNum": 9,
+        "RowNum": 1,
+        "SortOrder": null
+      },
+      {
+        "RecipeID": 33155,
+        "ItemID": 13006,
+        "Item": "Water Flask",
+        "Needed": 4,
+        "Runs": 0,
+        "Trivial": 0,
+        "Container": "",
+        "DefSource": "Shopped",
+        "DefZone": "PoK",
+        "DefNPC": "Amile Pitt",
+        "Unit Price": "1s 1c",
+        "Tool": "",
+        "No Drop": "",
+        "ZoneID": 407,
+        "MobID": 4806,
+        "FarmNoteID": 287,
+        "Location": "/way -295, 801, -92",
+        "Notes": "",
+        "Tradeskill": "",
+        "PriceNum": 11,
+        "Yield": 0,
+        "Excess": 0,
+        "SubRecipeID": 0,
+        "TradeskillFK": 0,
+        "Processed": 0,
+        "IsDefault": 1,
+        "IsContainer": 0,
+        "DefType": 2,
+        "ExpNum": 19,
+        "RowNum": 1,
+        "SortOrder": null
+      }
+    ]
+  },
+  {
+    "entryName": "SubRecipe 33157.bin",
+    "tableName": "SubRecipe 33157",
+    "columns": [
+      {
+        "name": "RecipeID",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "ItemID",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Item",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Needed",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Runs",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Trivial",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Container",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "DefSource",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "DefZone",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "DefNPC",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Unit Price",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Tool",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "No Drop",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "ZoneID",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "MobID",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "FarmNoteID",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Location",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Notes",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Tradeskill",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "PriceNum",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Yield",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Excess",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "SubRecipeID",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "TradeskillFK",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Processed",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "IsDefault",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "IsContainer",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "DefType",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "ExpNum",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "RowNum",
+        "typeName": "System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "SortOrder",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      }
+    ],
+    "rows": [
+      {
+        "RecipeID": 33157,
+        "ItemID": 9731,
+        "Item": "Celestial Solvent",
+        "Needed": 1,
+        "Runs": 0,
+        "Trivial": 0,
+        "Container": "",
+        "DefSource": "Shopped",
+        "DefZone": "PoK",
+        "DefNPC": "Merchant Tarrin",
+        "Unit Price": "1g 2s 6c",
+        "Tool": "",
+        "No Drop": "",
+        "ZoneID": 407,
+        "MobID": 14141,
+        "FarmNoteID": 0,
+        "Location": "",
+        "Notes": "",
+        "Tradeskill": "",
+        "PriceNum": 126,
+        "Yield": 0,
+        "Excess": 0,
+        "SubRecipeID": 0,
+        "TradeskillFK": 0,
+        "Processed": 0,
+        "IsDefault": 1,
+        "IsContainer": 0,
+        "DefType": 2,
+        "ExpNum": 19,
+        "RowNum": 1,
+        "SortOrder": null
+      },
+      {
+        "RecipeID": 33157,
+        "ItemID": 10062,
+        "Item": "Empty Vial",
+        "Needed": 1,
+        "Runs": 0,
+        "Trivial": 0,
+        "Container": "",
+        "DefSource": "Shopped",
+        "DefZone": "PoK",
+        "DefNPC": "Blacksmith Gerta",
+        "Unit Price": "2g 1s ",
+        "Tool": "Yes",
+        "No Drop": "",
+        "ZoneID": 407,
+        "MobID": 4809,
+        "FarmNoteID": 16,
+        "Location": "",
+        "Notes": "Located in SE corner of the Small Bank area.",
+        "Tradeskill": "",
+        "PriceNum": 210,
+        "Yield": 0,
+        "Excess": 0,
+        "SubRecipeID": 0,
+        "TradeskillFK": 0,
+        "Processed": 0,
+        "IsDefault": 1,
+        "IsContainer": 0,
+        "DefType": 2,
+        "ExpNum": 19,
+        "RowNum": 1,
+        "SortOrder": null
+      },
+      {
+        "RecipeID": 33157,
+        "ItemID": 93510,
+        "Item": "Vial of Pure Water",
+        "Needed": 3,
+        "Runs": 0,
+        "Trivial": 54,
+        "Container": "Spell Research Table",
+        "DefSource": "Crafted",
+        "DefZone": "",
+        "DefNPC": "",
+        "Unit Price": "3g 3s 6c",
+        "Tool": "",
+        "No Drop": "",
+        "ZoneID": 0,
+        "MobID": 0,
+        "FarmNoteID": 0,
+        "Location": "",
+        "Notes": "",
+        "Tradeskill": "Research",
+        "PriceNum": 336,
+        "Yield": 5,
+        "Excess": 0,
+        "SubRecipeID": 33155,
+        "TradeskillFK": 10,
+        "Processed": 0,
+        "IsDefault": 1,
+        "IsContainer": 0,
+        "DefType": 2,
+        "ExpNum": null,
+        "RowNum": 1,
+        "SortOrder": 29575
+      }
+    ]
+  },
+  {
+    "entryName": "SubRecipe 36137.bin",
+    "tableName": "SubRecipe 36137",
+    "columns": [
+      {
+        "name": "RecipeID",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "ItemID",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Item",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Needed",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Runs",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Trivial",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Container",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "DefSource",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "DefZone",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "DefNPC",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Unit Price",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Tool",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "No Drop",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "ZoneID",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "MobID",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "FarmNoteID",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Location",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Notes",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Tradeskill",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "PriceNum",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Yield",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Excess",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "SubRecipeID",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "TradeskillFK",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Processed",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "IsDefault",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "IsContainer",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "DefType",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "ExpNum",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "RowNum",
+        "typeName": "System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "SortOrder",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      }
+    ],
+    "rows": [
+      {
+        "RecipeID": 36137,
+        "ItemID": 9731,
+        "Item": "Celestial Solvent",
+        "Needed": 1,
+        "Runs": 0,
+        "Trivial": 0,
+        "Container": "",
+        "DefSource": "Shopped",
+        "DefZone": "PoK",
+        "DefNPC": "Merchant Tarrin",
+        "Unit Price": "1g 2s 6c",
+        "Tool": "",
+        "No Drop": "",
+        "ZoneID": 407,
+        "MobID": 14141,
+        "FarmNoteID": 0,
+        "Location": "",
+        "Notes": "",
+        "Tradeskill": "",
+        "PriceNum": 126,
+        "Yield": 0,
+        "Excess": 0,
+        "SubRecipeID": 0,
+        "TradeskillFK": 0,
+        "Processed": 0,
+        "IsDefault": 1,
+        "IsContainer": 0,
+        "DefType": 2,
+        "ExpNum": 19,
+        "RowNum": 1,
+        "SortOrder": null
+      },
+      {
+        "RecipeID": 36137,
+        "ItemID": 97835,
+        "Item": "Fine Supple Runic Hide Solution",
+        "Needed": 1,
+        "Runs": 0,
+        "Trivial": 0,
+        "Container": "",
+        "DefSource": "Shopped",
+        "DefZone": "PoK",
+        "DefNPC": "Eric Rasumus",
+        "Unit Price": "5p 8g 6s 7c",
+        "Tool": "",
+        "No Drop": "",
+        "ZoneID": 407,
+        "MobID": 14090,
+        "FarmNoteID": 0,
+        "Location": "",
+        "Notes": "",
+        "Tradeskill": "",
+        "PriceNum": 5867,
+        "Yield": 0,
+        "Excess": 0,
+        "SubRecipeID": 0,
+        "TradeskillFK": 0,
+        "Processed": 0,
+        "IsDefault": 1,
+        "IsContainer": 0,
+        "DefType": 2,
+        "ExpNum": 19,
+        "RowNum": 1,
+        "SortOrder": null
+      },
+      {
+        "RecipeID": 36137,
+        "ItemID": 97866,
+        "Item": "Raw Fine Supple Runic Hide",
+        "Needed": 1,
+        "Runs": 0,
+        "Trivial": 0,
+        "Container": "",
+        "DefSource": "Dropped",
+        "DefZone": "Goru`kar Mesa",
+        "DefNPC": "a centaur mundunugu",
+        "Unit Price": "2s 6c",
+        "Tool": "",
+        "No Drop": "",
+        "ZoneID": 116,
+        "MobID": 4194,
+        "FarmNoteID": 0,
+        "Location": "",
+        "Notes": "",
+        "Tradeskill": "",
+        "PriceNum": 26,
+        "Yield": 0,
+        "Excess": 0,
+        "SubRecipeID": 0,
+        "TradeskillFK": 0,
+        "Processed": 0,
+        "IsDefault": 1,
+        "IsContainer": 0,
+        "DefType": 2,
+        "ExpNum": 12,
+        "RowNum": 1,
+        "SortOrder": null
+      }
+    ]
+  },
+  {
+    "entryName": "SubRecipe 36151.bin",
+    "tableName": "SubRecipe 36151",
+    "columns": [
+      {
+        "name": "RecipeID",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "ItemID",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Item",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Needed",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Runs",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Trivial",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Container",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "DefSource",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "DefZone",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "DefNPC",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Unit Price",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Tool",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "No Drop",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "ZoneID",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "MobID",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "FarmNoteID",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Location",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Notes",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Tradeskill",
+        "typeName": "System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "PriceNum",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Yield",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Excess",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "SubRecipeID",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "TradeskillFK",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "Processed",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "IsDefault",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "IsContainer",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "DefType",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "ExpNum",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "RowNum",
+        "typeName": "System.Int64, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      },
+      {
+        "name": "SortOrder",
+        "typeName": "System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      }
+    ],
+    "rows": [
+      {
+        "RecipeID": 36151,
+        "ItemID": 93617,
+        "Item": "Celestial Cleanser",
+        "Needed": 1,
+        "Runs": 0,
+        "Trivial": 54,
+        "Container": "Spell Research Table",
+        "DefSource": "Crafted",
+        "DefZone": "",
+        "DefNPC": "",
+        "Unit Price": "2g 6s 3c",
+        "Tool": "",
+        "No Drop": "",
+        "ZoneID": 0,
+        "MobID": 0,
+        "FarmNoteID": 0,
+        "Location": "",
+        "Notes": "",
+        "Tradeskill": "Research",
+        "PriceNum": 263,
+        "Yield": 4,
+        "Excess": 0,
+        "SubRecipeID": 33157,
+        "TradeskillFK": 10,
+        "Processed": 0,
+        "IsDefault": 1,
+        "IsContainer": 0,
+        "DefType": 2,
+        "ExpNum": null,
+        "RowNum": 1,
+        "SortOrder": 29965
+      },
+      {
+        "RecipeID": 36151,
+        "ItemID": 97846,
+        "Item": "Fine Runic Papyrus Solution",
+        "Needed": 1,
+        "Runs": 0,
+        "Trivial": 0,
+        "Container": "",
+        "DefSource": "Shopped",
+        "DefZone": "PoK",
+        "DefNPC": "Nursa Rasumus",
+        "Unit Price": "236p 5g 3s 7c",
+        "Tool": "",
+        "No Drop": "",
+        "ZoneID": 407,
+        "MobID": 14150,
+        "FarmNoteID": 0,
+        "Location": "",
+        "Notes": "",
+        "Tradeskill": "",
+        "PriceNum": 236537,
+        "Yield": 0,
+        "Excess": 0,
+        "SubRecipeID": 0,
+        "TradeskillFK": 0,
+        "Processed": 0,
+        "IsDefault": 1,
+        "IsContainer": 0,
+        "DefType": 2,
+        "ExpNum": 19,
+        "RowNum": 1,
+        "SortOrder": null
+      },
+      {
+        "RecipeID": 36151,
+        "ItemID": 97877,
+        "Item": "Sooty Fine Runic Papyrus",
+        "Needed": 1,
+        "Runs": 0,
+        "Trivial": 0,
+        "Container": "",
+        "DefSource": "Dropped",
+        "DefZone": "Sewers of Nihilia",
+        "DefNPC": "a shaded priest",
+        "Unit Price": "1g 5c",
+        "Tool": "",
+        "No Drop": "",
+        "ZoneID": 272,
+        "MobID": 3738,
+        "FarmNoteID": 0,
+        "Location": "",
+        "Notes": "",
+        "Tradeskill": "",
+        "PriceNum": 105,
+        "Yield": 0,
+        "Excess": 0,
+        "SubRecipeID": 0,
+        "TradeskillFK": 0,
+        "Processed": 0,
+        "IsDefault": 1,
+        "IsContainer": 0,
+        "DefType": 2,
+        "ExpNum": 7,
+        "RowNum": 1,
+        "SortOrder": null
+      }
+    ]
+  }
+]

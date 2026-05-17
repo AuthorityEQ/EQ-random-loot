@@ -1,0 +1,2464 @@
+{
+  "generatedAt": "2026-05-17T01:08:38.272Z",
+  "sources": [
+    "data/spells.json",
+    "data/dropped-spells.json",
+    "https://lucy.alkabor.com/index_Bard.html",
+    "https://lucy.alkabor.com/index_Beastlord.html",
+    "https://lucy.alkabor.com/index_Cleric.html",
+    "https://lucy.alkabor.com/index_Druid.html",
+    "https://lucy.alkabor.com/index_Enchanter.html",
+    "https://lucy.alkabor.com/index_Magician.html",
+    "https://lucy.alkabor.com/index_Necromancer.html",
+    "https://lucy.alkabor.com/index_Paladin.html",
+    "https://lucy.alkabor.com/index_Ranger.html",
+    "https://lucy.alkabor.com/index_ShadowKnight.html",
+    "https://lucy.alkabor.com/index_Shaman.html",
+    "https://lucy.alkabor.com/index_Wizard.html"
+  ],
+  "summary": {
+    "updated": 95,
+    "alreadyKnown": 223,
+    "missing": 7,
+    "ambiguous": 0
+  },
+  "updated": [
+    {
+      "id": 3282,
+      "name": "Spell: Banshee Aura",
+      "className": "Necromancer",
+      "expansion": "Original",
+      "trivial": 50,
+      "level": 15,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 3285,
+      "name": "Spell: Voice Graft",
+      "className": "Necromancer",
+      "expansion": "Original",
+      "trivial": 50,
+      "level": 15,
+      "sources": [
+        "data/dropped-spells.json"
+      ]
+    },
+    {
+      "id": 3288,
+      "name": "Spell: Shadow Vortex",
+      "className": "Necromancer",
+      "expansion": "Original",
+      "trivial": 59,
+      "level": 19,
+      "sources": [
+        "data/dropped-spells.json"
+      ]
+    },
+    {
+      "id": 3388,
+      "name": "Spell: Theft of Thought",
+      "className": "Enchanter",
+      "expansion": "Ruins of Kunark",
+      "trivial": 120,
+      "level": 50,
+      "sources": [
+        "data/dropped-spells.json"
+      ]
+    },
+    {
+      "id": 3788,
+      "name": "Spell: Renew Bones",
+      "className": "Necromancer",
+      "expansion": "Original",
+      "trivial": 76,
+      "level": 26,
+      "sources": [
+        "data/dropped-spells.json"
+      ]
+    },
+    {
+      "id": 3954,
+      "name": "Spell: Strip Enchantment",
+      "className": "Enchanter",
+      "expansion": "Original",
+      "trivial": 64,
+      "level": 22,
+      "sources": [
+        "data/dropped-spells.json"
+      ]
+    },
+    {
+      "id": 4054,
+      "name": "Spell: Color Skew",
+      "className": "Enchanter",
+      "expansion": "Original",
+      "trivial": 106,
+      "level": 43,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 4056,
+      "name": "Spell: Pillage Enchantment",
+      "className": "Enchanter",
+      "expansion": "Original",
+      "trivial": 104,
+      "level": 42,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 4058,
+      "name": "Spell: Allure",
+      "className": "Enchanter",
+      "expansion": "Original",
+      "trivial": 112,
+      "level": 46,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 4059,
+      "name": "Spell: Blanket of Forgetfulness",
+      "className": "Enchanter",
+      "expansion": "Original",
+      "trivial": 112,
+      "level": 46,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 4060,
+      "name": "Spell: Reoccurring Amnesia",
+      "className": "Enchanter",
+      "expansion": "Original",
+      "trivial": 110,
+      "level": 45,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 4219,
+      "name": "Spell: Pillar of Fire",
+      "className": "Wizard",
+      "expansion": "Original",
+      "trivial": 50,
+      "level": 15,
+      "sources": [
+        "data/dropped-spells.json"
+      ]
+    },
+    {
+      "id": 4232,
+      "name": "Spell: Talisman of Jasinth",
+      "className": "Shaman",
+      "expansion": "Ruins of Kunark",
+      "trivial": 122,
+      "level": 50,
+      "sources": [
+        "data/dropped-spells.json"
+      ]
+    },
+    {
+      "id": 4247,
+      "name": "Spell: Thunderclap",
+      "className": "Wizard",
+      "expansion": "Original",
+      "trivial": 82,
+      "level": 30,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 4261,
+      "name": "Spell: Greater Summoning: Fire",
+      "className": "Magician",
+      "expansion": "Original",
+      "trivial": 75,
+      "level": 27,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 4263,
+      "name": "Spell: Lesser Summoning: Fire",
+      "className": "Magician",
+      "expansion": "Original",
+      "trivial": 59,
+      "level": 19,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 4264,
+      "name": "Spell: Minor Summoning: Fire",
+      "className": "Magician",
+      "expansion": "Original",
+      "trivial": 51,
+      "level": 15,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 4265,
+      "name": "Spell: Minor Conjuration: Fire",
+      "className": "Magician",
+      "expansion": "Original",
+      "trivial": 86,
+      "level": 32,
+      "sources": [
+        "data/dropped-spells.json"
+      ]
+    },
+    {
+      "id": 4316,
+      "name": "Spell: Frost",
+      "className": "Druid",
+      "expansion": "Ruins of Kunark",
+      "trivial": 171,
+      "level": 55,
+      "sources": [
+        "data/dropped-spells.json"
+      ]
+    },
+    {
+      "id": 4318,
+      "name": "Spell: Improved Superior Camouflage",
+      "className": "Druid",
+      "expansion": "Scars of Velious",
+      "trivial": 118,
+      "level": 48,
+      "sources": [
+        "data/dropped-spells.json"
+      ]
+    },
+    {
+      "id": 4363,
+      "name": "Spell: Radiant Visage",
+      "className": "Enchanter",
+      "expansion": "Original",
+      "trivial": 82,
+      "level": 31,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 4543,
+      "name": "Spell: Supernova",
+      "className": "Wizard",
+      "expansion": "Original",
+      "trivial": 110,
+      "level": 45,
+      "sources": [
+        "data/dropped-spells.json"
+      ]
+    },
+    {
+      "id": 4545,
+      "name": "Spell: Call of Bones",
+      "className": "Necromancer",
+      "expansion": "Original",
+      "trivial": 84,
+      "level": 31,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 4581,
+      "name": "Spell: Invoke Fear",
+      "className": "Necromancer",
+      "expansion": "Original",
+      "trivial": 80,
+      "level": 30,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 4582,
+      "name": "Spell: Dead Man Floating",
+      "className": "Necromancer",
+      "expansion": "Original",
+      "trivial": 106,
+      "level": 41,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 4585,
+      "name": "Spell: Intensify Death",
+      "className": "Necromancer",
+      "expansion": "Original",
+      "trivial": 70,
+      "level": 23,
+      "sources": [
+        "data/dropped-spells.json"
+      ]
+    },
+    {
+      "id": 4597,
+      "name": "Spell: Endure Magic",
+      "className": "Cleric",
+      "expansion": "Original",
+      "trivial": 53,
+      "level": 16,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 4615,
+      "name": "Spell: Breath of the Dead",
+      "className": "Necromancer",
+      "expansion": "Original",
+      "trivial": 62,
+      "level": 21,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 4616,
+      "name": "Spell: Word of Souls",
+      "className": "Necromancer",
+      "expansion": "Original",
+      "trivial": 92,
+      "level": 36,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 4617,
+      "name": "Spell: Invoke Shadow",
+      "className": "Necromancer",
+      "expansion": "Original",
+      "trivial": 87,
+      "level": 33,
+      "sources": [
+        "data/dropped-spells.json"
+      ]
+    },
+    {
+      "id": 4622,
+      "name": "Spell: Greater Conjuration: Fire",
+      "className": "Magician",
+      "expansion": "Original",
+      "trivial": 115,
+      "level": 47,
+      "sources": [
+        "data/dropped-spells.json"
+      ]
+    },
+    {
+      "id": 4623,
+      "name": "Spell: Greater Conjuration: Air",
+      "className": "Magician",
+      "expansion": "Original",
+      "trivial": 114,
+      "level": 48,
+      "sources": [
+        "data/dropped-spells.json"
+      ]
+    },
+    {
+      "id": 4624,
+      "name": "Spell: Conjuration: Air",
+      "className": "Magician",
+      "expansion": "Original",
+      "trivial": 107,
+      "level": 43,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 4625,
+      "name": "Spell: Minor Conjuration: Air",
+      "className": "Magician",
+      "expansion": "Original",
+      "trivial": 87,
+      "level": 33,
+      "sources": [
+        "data/dropped-spells.json"
+      ]
+    },
+    {
+      "id": 4626,
+      "name": "Spell: Greater Summoning: Air",
+      "className": "Magician",
+      "expansion": "Original",
+      "trivial": 74,
+      "level": 28,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 4661,
+      "name": "Spell: Tox Portal",
+      "className": "Wizard",
+      "expansion": "Original",
+      "trivial": 76,
+      "level": 28,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 4699,
+      "name": "Spell: Mind Wipe",
+      "className": "Enchanter",
+      "expansion": "Original",
+      "trivial": 92,
+      "level": 36,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 4700,
+      "name": "Spell: Mana Sieve",
+      "className": "Enchanter",
+      "expansion": "Original",
+      "trivial": 80,
+      "level": 30,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 4701,
+      "name": "Spell: Feedback",
+      "className": "Enchanter",
+      "expansion": "Original",
+      "trivial": 70,
+      "level": 25,
+      "sources": [
+        "data/dropped-spells.json"
+      ]
+    },
+    {
+      "id": 4704,
+      "name": "Spell: Berserker Strength",
+      "className": "Enchanter",
+      "expansion": "Original",
+      "trivial": 60,
+      "level": 19,
+      "sources": [
+        "data/dropped-spells.json"
+      ]
+    },
+    {
+      "id": 4709,
+      "name": "Spell: Circle of Force",
+      "className": "Wizard",
+      "expansion": "Original",
+      "trivial": 82,
+      "level": 31,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 4710,
+      "name": "Spell: Lava Storm",
+      "className": "Wizard",
+      "expansion": "Original",
+      "trivial": 84,
+      "level": 32,
+      "sources": [
+        "data/dropped-spells.json"
+      ]
+    },
+    {
+      "id": 4744,
+      "name": "Spell: Common Portal",
+      "className": "Wizard",
+      "expansion": "Original",
+      "trivial": 90,
+      "level": 35,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 4746,
+      "name": "Spell: Conjuration: Water",
+      "className": "Magician",
+      "expansion": "Original",
+      "trivial": 103,
+      "level": 41,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 4747,
+      "name": "Spell: Cornucopia",
+      "className": "Magician",
+      "expansion": "Original",
+      "trivial": 63,
+      "level": 21,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 4748,
+      "name": "Spell: Dagger of Symbols",
+      "className": "Magician",
+      "expansion": "Original",
+      "trivial": 90,
+      "level": 35,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 4749,
+      "name": "Spell: Disempower",
+      "className": "Shaman",
+      "expansion": "Original",
+      "trivial": 47,
+      "level": 12,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 4754,
+      "name": "Spell: Invoke Death",
+      "className": "Necromancer",
+      "expansion": "Original",
+      "trivial": 118,
+      "level": 48,
+      "sources": [
+        "data/dropped-spells.json"
+      ]
+    },
+    {
+      "id": 4756,
+      "name": "Spell: Lesser Conjuration: Water",
+      "className": "Magician",
+      "expansion": "Original",
+      "trivial": 94,
+      "level": 36,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 4757,
+      "name": "Spell: Lesser Summoning: Earth",
+      "className": "Magician",
+      "expansion": "Original",
+      "trivial": 62,
+      "level": 21,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 4758,
+      "name": "Spell: Lesser Summoning: Water",
+      "className": "Magician",
+      "expansion": "Original",
+      "trivial": 63,
+      "level": 18,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 4759,
+      "name": "Spell: Lich",
+      "className": "Necromancer",
+      "expansion": "Original",
+      "trivial": 119,
+      "level": 48,
+      "sources": [
+        "data/dropped-spells.json"
+      ]
+    },
+    {
+      "id": 4760,
+      "name": "Spell: Minor Summoning: Earth",
+      "className": "Magician",
+      "expansion": "Original",
+      "trivial": 55,
+      "level": 17,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 4761,
+      "name": "Spell: Minor Summoning: Water",
+      "className": "Magician",
+      "expansion": "Original",
+      "trivial": 49,
+      "level": 14,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 4762,
+      "name": "Spell: Resist Magic",
+      "className": "Enchanter",
+      "expansion": "Original",
+      "trivial": 94,
+      "level": 37,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 4763,
+      "name": "Spell: Shadow Sight",
+      "className": "Necromancer",
+      "expansion": "Original",
+      "trivial": 64,
+      "level": 22,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 4765,
+      "name": "Spell: Summon Ring of Flight",
+      "className": "Magician",
+      "expansion": "Original",
+      "trivial": 94,
+      "level": 37,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 4767,
+      "name": "Spell: Surge of Enfeeblement",
+      "className": "Necromancer",
+      "expansion": "Original",
+      "trivial": 84,
+      "level": 32,
+      "sources": [
+        "data/dropped-spells.json"
+      ]
+    },
+    {
+      "id": 4768,
+      "name": "Spell: Ultravision",
+      "className": "Shaman",
+      "expansion": "Original",
+      "trivial": 74,
+      "level": 26,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 6838,
+      "name": "Spell: Project Lightning",
+      "className": "Wizard",
+      "expansion": "Original",
+      "trivial": 48,
+      "level": 14,
+      "sources": [
+        "data/dropped-spells.json"
+      ]
+    },
+    {
+      "id": 7874,
+      "name": "Spell: Paralyzing Earth",
+      "className": "Enchanter",
+      "expansion": "Original",
+      "trivial": 110,
+      "level": 45,
+      "sources": [
+        "data/dropped-spells.json"
+      ]
+    },
+    {
+      "id": 11432,
+      "name": "Spell: Levitate",
+      "className": "Shaman",
+      "expansion": "Original",
+      "trivial": 41,
+      "level": 10,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 11449,
+      "name": "Spell: Tepid Deeds",
+      "className": "Enchanter",
+      "expansion": "Original",
+      "trivial": 67,
+      "level": 23,
+      "sources": [
+        "data/dropped-spells.json"
+      ]
+    },
+    {
+      "id": 11455,
+      "name": "Spell: Summoning: Water",
+      "className": "Magician",
+      "expansion": "Original",
+      "trivial": 66,
+      "level": 22,
+      "sources": [
+        "data/dropped-spells.json"
+      ]
+    },
+    {
+      "id": 11456,
+      "name": "Spell: Summoning: Fire",
+      "className": "Magician",
+      "expansion": "Original",
+      "trivial": 67,
+      "level": 23,
+      "sources": [
+        "data/dropped-spells.json"
+      ]
+    },
+    {
+      "id": 11459,
+      "name": "Spell: Greater Summoning: Water",
+      "className": "Magician",
+      "expansion": "Original",
+      "trivial": 79,
+      "level": 26,
+      "sources": [
+        "data/dropped-spells.json"
+      ]
+    },
+    {
+      "id": 11553,
+      "name": "Spell: Shock Spiral of Al'Kabor",
+      "className": "Wizard",
+      "expansion": "Original",
+      "trivial": 76,
+      "level": 28,
+      "sources": [
+        "data/dropped-spells.json"
+      ]
+    },
+    {
+      "id": 11569,
+      "name": "Spell: Everfount",
+      "className": "Magician",
+      "expansion": "Original",
+      "trivial": 66,
+      "level": 22,
+      "sources": [
+        "data/dropped-spells.json"
+      ]
+    },
+    {
+      "id": 11724,
+      "name": "Spell: Wrath of Al'Kabor",
+      "className": "Wizard",
+      "expansion": "Original",
+      "trivial": 118,
+      "level": 48,
+      "sources": [
+        "data/dropped-spells.json"
+      ]
+    },
+    {
+      "id": 12223,
+      "name": "Spell: Force Spiral of Al'Kabor",
+      "className": "Wizard",
+      "expansion": "Original",
+      "trivial": 91,
+      "level": 35,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 12707,
+      "name": "Spell: Fire Spiral of Al'Kabor",
+      "className": "Wizard",
+      "expansion": "Original",
+      "trivial": 56,
+      "level": 18,
+      "sources": [
+        "data/dropped-spells.json"
+      ]
+    },
+    {
+      "id": 12708,
+      "name": "Spell: Gravity Flux",
+      "className": "Enchanter",
+      "expansion": "Original",
+      "trivial": 94,
+      "level": 36,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 12879,
+      "name": "Spell: Instill",
+      "className": "Wizard",
+      "expansion": "Original",
+      "trivial": 54,
+      "level": 17,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 12889,
+      "name": "Spell: Identify",
+      "className": "Magician",
+      "expansion": "Original",
+      "trivial": 46,
+      "level": 13,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 12890,
+      "name": "Spell: Nullify Magic",
+      "className": "Enchanter",
+      "expansion": "Original",
+      "trivial": 76,
+      "level": 28,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 13149,
+      "name": "Spell: Gift of Pure Thought",
+      "className": "Enchanter",
+      "expansion": "Ruins of Kunark",
+      "trivial": 180,
+      "level": 56,
+      "sources": [
+        "data/dropped-spells.json"
+      ]
+    },
+    {
+      "id": 16209,
+      "name": "Spell: Shiftless Deeds",
+      "className": "Enchanter",
+      "expansion": "Original",
+      "trivial": 103,
+      "level": 41,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 19528,
+      "name": "Spell: Energy Storm",
+      "className": "Wizard",
+      "expansion": "Original",
+      "trivial": 72,
+      "level": 26,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 54698,
+      "name": "Spell: Cancel Magic",
+      "className": "Enchanter",
+      "expansion": "Original",
+      "trivial": 34,
+      "level": 7,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 56892,
+      "name": "Spell: Elemental: Water",
+      "className": "Magician",
+      "expansion": "Original",
+      "trivial": 41,
+      "level": 10,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 56893,
+      "name": "Spell: Elementaling: Earth",
+      "className": "Magician",
+      "expansion": "Original",
+      "trivial": 39,
+      "level": 9,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 56895,
+      "name": "Spell: Elemental: Fire",
+      "className": "Magician",
+      "expansion": "Original",
+      "trivial": 43,
+      "level": 11,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 56897,
+      "name": "Spell: Elemental: Earth",
+      "className": "Magician",
+      "expansion": "Original",
+      "trivial": 43,
+      "level": 13,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 56900,
+      "name": "Spell: Gather Shadows",
+      "className": "Necromancer",
+      "expansion": "Original",
+      "trivial": 34,
+      "level": 7,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 56901,
+      "name": "Spell: Elementaling: Water",
+      "className": "Magician",
+      "expansion": "Original",
+      "trivial": 33,
+      "level": 6,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 56902,
+      "name": "Spell: Dimensional Pocket",
+      "className": "Magician",
+      "expansion": "Original",
+      "trivial": 32,
+      "level": 6,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 56903,
+      "name": "Spell: Elementalkin: Water",
+      "className": "Magician",
+      "expansion": "Original",
+      "trivial": 25,
+      "level": 2,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 56904,
+      "name": "Spell: Sense Summoned",
+      "className": "Magician",
+      "expansion": "Original",
+      "trivial": 26,
+      "level": 3,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 56907,
+      "name": "Spell: Halo of Light",
+      "className": "Wizard",
+      "expansion": "Original",
+      "trivial": 38,
+      "level": 9,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 56909,
+      "name": "Spell: Shadow Step",
+      "className": "Necromancer",
+      "expansion": "Original",
+      "trivial": 30,
+      "level": 5,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 56910,
+      "name": "Spell: Root",
+      "className": "Wizard",
+      "expansion": "Original",
+      "trivial": 26,
+      "level": 3,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 56911,
+      "name": "Spell: Icestrike",
+      "className": "Wizard",
+      "expansion": "Original",
+      "trivial": 32,
+      "level": 6,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 57536,
+      "name": "Spell: Summon Bandages",
+      "className": "Magician",
+      "expansion": "Original",
+      "trivial": 24,
+      "level": 2,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 61740,
+      "name": "Spell: Eye of Zomm",
+      "className": "Magician",
+      "expansion": "Original",
+      "trivial": 33,
+      "level": 6,
+      "sources": [
+        "data/spells.json"
+      ]
+    },
+    {
+      "id": 62440,
+      "name": "Spell: Summon Wisp",
+      "className": "Magician",
+      "expansion": "Original",
+      "trivial": 26,
+      "level": 3,
+      "sources": [
+        "data/spells.json"
+      ]
+    }
+  ],
+  "alreadyKnown": [
+    {
+      "id": 3283,
+      "name": "Spell: Hungry Earth",
+      "className": "Necromancer",
+      "level": 16
+    },
+    {
+      "id": 3286,
+      "name": "Spell: Animate Dead",
+      "className": "Necromancer",
+      "level": 20
+    },
+    {
+      "id": 3287,
+      "name": "Spell: Harmshield",
+      "className": "Necromancer",
+      "level": 20
+    },
+    {
+      "id": 3289,
+      "name": "Spell: Word of Shadow",
+      "className": "Cleric",
+      "level": 19
+    },
+    {
+      "id": 3361,
+      "name": "Spell: Koadic's Endless Intellect",
+      "className": "Enchanter",
+      "level": 60
+    },
+    {
+      "id": 3362,
+      "name": "Spell: Speed of the Brood",
+      "className": "Enchanter",
+      "level": 60
+    },
+    {
+      "id": 3363,
+      "name": "Spell: Visions of Grandeur",
+      "className": "Enchanter",
+      "level": 60
+    },
+    {
+      "id": 3364,
+      "name": "Spell: Wind of Tashanian",
+      "className": "Enchanter",
+      "level": 60
+    },
+    {
+      "id": 3365,
+      "name": "Spell: Gift of Brilliance",
+      "className": "Enchanter",
+      "level": 60
+    },
+    {
+      "id": 3366,
+      "name": "Spell: Dictate",
+      "className": "Enchanter",
+      "level": 60
+    },
+    {
+      "id": 3367,
+      "name": "Spell: Asphyxiate",
+      "className": "Enchanter",
+      "level": 59
+    },
+    {
+      "id": 3369,
+      "name": "Spell: Everlasting Breath",
+      "className": "Druid",
+      "level": 51
+    },
+    {
+      "id": 3370,
+      "name": "Spell: Bedlam",
+      "className": "Enchanter",
+      "level": 58
+    },
+    {
+      "id": 3373,
+      "name": "Spell: Forlorn Deeds",
+      "className": "Enchanter",
+      "level": 57
+    },
+    {
+      "id": 3374,
+      "name": "Spell: Enlightenment",
+      "className": "Enchanter",
+      "level": 57
+    },
+    {
+      "id": 3376,
+      "name": "Spell: Torment of Argli",
+      "className": "Enchanter",
+      "level": 56
+    },
+    {
+      "id": 3377,
+      "name": "Spell: Augment",
+      "className": "Enchanter",
+      "level": 56
+    },
+    {
+      "id": 3378,
+      "name": "Spell: Wind of Tashani",
+      "className": "Enchanter",
+      "level": 55
+    },
+    {
+      "id": 3379,
+      "name": "Spell: Zumaik`s Animation",
+      "className": "Enchanter",
+      "level": 55
+    },
+    {
+      "id": 3380,
+      "name": "Spell: Largarn`s Lamentation",
+      "className": "Enchanter",
+      "level": 55
+    },
+    {
+      "id": 3381,
+      "name": "Spell: Gift of Insight",
+      "className": "Enchanter",
+      "level": 55
+    },
+    {
+      "id": 3382,
+      "name": "Spell: Dementia",
+      "className": "Enchanter",
+      "level": 54
+    },
+    {
+      "id": 3383,
+      "name": "Spell: Illusion: Vah Shir",
+      "className": "Enchanter",
+      "level": 54
+    },
+    {
+      "id": 3384,
+      "name": "Spell: Cripple",
+      "className": "Enchanter",
+      "level": 53
+    },
+    {
+      "id": 3385,
+      "name": "Spell: Color Slant",
+      "className": "Enchanter",
+      "level": 52
+    },
+    {
+      "id": 3386,
+      "name": "Spell: Dementing Visions",
+      "className": "Enchanter",
+      "level": 58
+    },
+    {
+      "id": 3389,
+      "name": "Spell: Improved Invisibility",
+      "className": "Enchanter",
+      "level": 50
+    },
+    {
+      "id": 3392,
+      "name": "Spell: Mala",
+      "className": "Magician",
+      "level": 60
+    },
+    {
+      "id": 3394,
+      "name": "Spell: Aegis of Ro",
+      "className": "Magician",
+      "level": 60
+    },
+    {
+      "id": 3395,
+      "name": "Spell: Shock of Fiery Blades",
+      "className": "Magician",
+      "level": 60
+    },
+    {
+      "id": 3396,
+      "name": "Spell: Maelstrom of Electricity",
+      "className": "Magician",
+      "level": 60
+    },
+    {
+      "id": 3399,
+      "name": "Spell: Monster Summoning III",
+      "className": "Magician",
+      "level": 60
+    },
+    {
+      "id": 3400,
+      "name": "Spell: Manastorm",
+      "className": "Magician",
+      "level": 59
+    },
+    {
+      "id": 3401,
+      "name": "Spell: Greater Vocaration: Air",
+      "className": "Magician",
+      "level": 59
+    },
+    {
+      "id": 3402,
+      "name": "Spell: Transon's Phantasmal Protection",
+      "className": "Magician",
+      "level": 58
+    },
+    {
+      "id": 3403,
+      "name": "Spell: Velocity",
+      "className": "Magician",
+      "level": 58
+    },
+    {
+      "id": 3406,
+      "name": "Spell: Dyzil`s Deafening Decoy",
+      "className": "Magician",
+      "level": 56
+    },
+    {
+      "id": 3408,
+      "name": "Spell: Wrath of the Elements",
+      "className": "Magician",
+      "level": 55
+    },
+    {
+      "id": 3409,
+      "name": "Spell: Rage of Zomm",
+      "className": "Magician",
+      "level": 55
+    },
+    {
+      "id": 3410,
+      "name": "Spell: Call of the Hero",
+      "className": "Magician",
+      "level": 55
+    },
+    {
+      "id": 3411,
+      "name": "Spell: Pouch of Quellious",
+      "className": "Magician",
+      "level": 55
+    },
+    {
+      "id": 3412,
+      "name": "Spell: Burnout IV",
+      "className": "Magician",
+      "level": 55
+    },
+    {
+      "id": 3413,
+      "name": "Spell: Vocarate: Water",
+      "className": "Magician",
+      "level": 54
+    },
+    {
+      "id": 3414,
+      "name": "Spell: Scars of Sigil",
+      "className": "Magician",
+      "level": 54
+    },
+    {
+      "id": 3415,
+      "name": "Spell: Bandoleer of Luclin",
+      "className": "Magician",
+      "level": 54
+    },
+    {
+      "id": 3416,
+      "name": "Spell: Quiver of Marr",
+      "className": "Magician",
+      "level": 53
+    },
+    {
+      "id": 3417,
+      "name": "Spell: Bristlebane`s Bundle",
+      "className": "Magician",
+      "level": 52
+    },
+    {
+      "id": 3418,
+      "name": "Spell: Gift of Xev",
+      "className": "Magician",
+      "level": 51
+    },
+    {
+      "id": 3441,
+      "name": "Spell: Disintegrate",
+      "className": "Wizard",
+      "level": 60
+    },
+    {
+      "id": 3447,
+      "name": "Spell: Lure of Ice",
+      "className": "Wizard",
+      "level": 60
+    },
+    {
+      "id": 3448,
+      "name": "Spell: Sunstrike",
+      "className": "Wizard",
+      "level": 60
+    },
+    {
+      "id": 3449,
+      "name": "Spell: Winds of Gelid",
+      "className": "Wizard",
+      "level": 60
+    },
+    {
+      "id": 3450,
+      "name": "Spell: Vengeance of Al`Kabor",
+      "className": "Wizard",
+      "level": 59
+    },
+    {
+      "id": 3451,
+      "name": "Spell: Invert Gravity",
+      "className": "Wizard",
+      "level": 59
+    },
+    {
+      "id": 3452,
+      "name": "Spell: Flaming Sword of Xuzl",
+      "className": "Wizard",
+      "level": 59
+    },
+    {
+      "id": 3453,
+      "name": "Spell: Tears of Prexus",
+      "className": "Wizard",
+      "level": 58
+    },
+    {
+      "id": 3455,
+      "name": "Spell: Manasink",
+      "className": "Wizard",
+      "level": 58
+    },
+    {
+      "id": 3456,
+      "name": "Spell: Pillar of Flame",
+      "className": "Wizard",
+      "level": 57
+    },
+    {
+      "id": 3458,
+      "name": "Spell: Evacuate",
+      "className": "Wizard",
+      "level": 57
+    },
+    {
+      "id": 3459,
+      "name": "Spell: Retribution of Al`Kabor",
+      "className": "Wizard",
+      "level": 56
+    },
+    {
+      "id": 3460,
+      "name": "Spell: Markar`s Discord",
+      "className": "Wizard",
+      "level": 56
+    },
+    {
+      "id": 3461,
+      "name": "Spell: Decession",
+      "className": "Wizard",
+      "level": 56
+    },
+    {
+      "id": 3462,
+      "name": "Spell: Draught of Jiva",
+      "className": "Wizard",
+      "level": 55
+    },
+    {
+      "id": 3463,
+      "name": "Spell: Plainsight",
+      "className": "Wizard",
+      "level": 55
+    },
+    {
+      "id": 3465,
+      "name": "Spell: Pillar of Lightning",
+      "className": "Wizard",
+      "level": 54
+    },
+    {
+      "id": 3466,
+      "name": "Spell: Inferno of Al`Kabor",
+      "className": "Wizard",
+      "level": 53
+    },
+    {
+      "id": 3467,
+      "name": "Spell: Tears of Druzzil",
+      "className": "Wizard",
+      "level": 52
+    },
+    {
+      "id": 3468,
+      "name": "Spell: Translocate: Group",
+      "className": "Wizard",
+      "level": 52
+    },
+    {
+      "id": 3469,
+      "name": "Spell: Tishan`s Discord",
+      "className": "Wizard",
+      "level": 51
+    },
+    {
+      "id": 3470,
+      "name": "Spell: Pillar of Frost",
+      "className": "Wizard",
+      "level": 51
+    },
+    {
+      "id": 3471,
+      "name": "Spell: Levitation",
+      "className": "Wizard",
+      "level": 51
+    },
+    {
+      "id": 3472,
+      "name": "Spell: Atol's Spectral Shackles",
+      "className": "Wizard",
+      "level": 51
+    },
+    {
+      "id": 3499,
+      "name": "Spell: Zevfeer's Theft of Vitae",
+      "className": "Necromancer",
+      "level": 60
+    },
+    {
+      "id": 3503,
+      "name": "Spell: Enslave Death",
+      "className": "Necromancer",
+      "level": 60
+    },
+    {
+      "id": 3505,
+      "name": "Spell: Banishment of Shadows",
+      "className": "Necromancer",
+      "level": 60
+    },
+    {
+      "id": 3506,
+      "name": "Spell: Arch Lich",
+      "className": "Necromancer",
+      "level": 60
+    },
+    {
+      "id": 3507,
+      "name": "Spell: Emissary of Thule",
+      "className": "Necromancer",
+      "level": 59
+    },
+    {
+      "id": 3508,
+      "name": "Spell: Devouring Darkness",
+      "className": "Necromancer",
+      "level": 59
+    },
+    {
+      "id": 3509,
+      "name": "Spell: Quivering Veil of Xarn",
+      "className": "Necromancer",
+      "level": 58
+    },
+    {
+      "id": 3510,
+      "name": "Spell: Mind Wrack",
+      "className": "Necromancer",
+      "level": 58
+    },
+    {
+      "id": 3512,
+      "name": "Spell: Servant of Bones",
+      "className": "Necromancer",
+      "level": 56
+    },
+    {
+      "id": 3513,
+      "name": "Spell: Sedulous Subversion",
+      "className": "Necromancer",
+      "level": 56
+    },
+    {
+      "id": 3514,
+      "name": "Spell: Demi Lich",
+      "className": "Necromancer",
+      "level": 56
+    },
+    {
+      "id": 3515,
+      "name": "Spell: Crippling Claudication",
+      "className": "Necromancer",
+      "level": 56
+    },
+    {
+      "id": 3516,
+      "name": "Spell: Levant",
+      "className": "Necromancer",
+      "level": 55
+    },
+    {
+      "id": 3517,
+      "name": "Spell: Infusion",
+      "className": "Necromancer",
+      "level": 55
+    },
+    {
+      "id": 3520,
+      "name": "Spell: Shadowbond",
+      "className": "Necromancer",
+      "level": 54
+    },
+    {
+      "id": 3521,
+      "name": "Spell: Thrall of Bones",
+      "className": "Necromancer",
+      "level": 54
+    },
+    {
+      "id": 3522,
+      "name": "Spell: Minion of Shadows",
+      "className": "Necromancer",
+      "level": 53
+    },
+    {
+      "id": 3523,
+      "name": "Spell: Convergence",
+      "className": "Necromancer",
+      "level": 53
+    },
+    {
+      "id": 3524,
+      "name": "Spell: Scent of Terris",
+      "className": "Necromancer",
+      "level": 52
+    },
+    {
+      "id": 3525,
+      "name": "Spell: Defoliation",
+      "className": "Necromancer",
+      "level": 52
+    },
+    {
+      "id": 3526,
+      "name": "Spell: Sacrifice",
+      "className": "Necromancer",
+      "level": 51
+    },
+    {
+      "id": 3620,
+      "name": "Spell: Word of Redemption",
+      "className": "Cleric",
+      "level": 60
+    },
+    {
+      "id": 3621,
+      "name": "Spell: Marzin's Mark",
+      "className": "Cleric",
+      "level": 60
+    },
+    {
+      "id": 3624,
+      "name": "Spell: Divine Intervention",
+      "className": "Cleric",
+      "level": 60
+    },
+    {
+      "id": 3625,
+      "name": "Spell: Blessing of Aegolism",
+      "className": "Cleric",
+      "level": 60
+    },
+    {
+      "id": 3626,
+      "name": "Spell: Aegolism",
+      "className": "Cleric",
+      "level": 60
+    },
+    {
+      "id": 3627,
+      "name": "Spell: The Unspoken Word",
+      "className": "Cleric",
+      "level": 59
+    },
+    {
+      "id": 3630,
+      "name": "Spell: Hammer of Divinity",
+      "className": "Cleric",
+      "level": 58
+    },
+    {
+      "id": 3631,
+      "name": "Spell: Ethereal Light",
+      "className": "Cleric",
+      "level": 58
+    },
+    {
+      "id": 3632,
+      "name": "Spell: Enforced Reverence",
+      "className": "Cleric",
+      "level": 58
+    },
+    {
+      "id": 3633,
+      "name": "Spell: Blessed Armor of the Risen",
+      "className": "Cleric",
+      "level": 58
+    },
+    {
+      "id": 3634,
+      "name": "Spell: Antidote",
+      "className": "Cleric",
+      "level": 58
+    },
+    {
+      "id": 3635,
+      "name": "Spell: Word of Restoration",
+      "className": "Cleric",
+      "level": 57
+    },
+    {
+      "id": 3637,
+      "name": "Spell: Yaulp V",
+      "className": "Cleric",
+      "level": 56
+    },
+    {
+      "id": 3638,
+      "name": "Spell: Mark of Karn",
+      "className": "Cleric",
+      "level": 56
+    },
+    {
+      "id": 3641,
+      "name": "Spell: Stun Command",
+      "className": "Cleric",
+      "level": 55
+    },
+    {
+      "id": 3642,
+      "name": "Spell: Fortitude",
+      "className": "Cleric",
+      "level": 55
+    },
+    {
+      "id": 3644,
+      "name": "Spell: Reckoning",
+      "className": "Cleric",
+      "level": 54
+    },
+    {
+      "id": 3646,
+      "name": "Spell: Word of Vigor",
+      "className": "Cleric",
+      "level": 52
+    },
+    {
+      "id": 3648,
+      "name": "Spell: Heroic Bond",
+      "className": "Cleric",
+      "level": 52
+    },
+    {
+      "id": 3649,
+      "name": "Spell: Sunskin",
+      "className": "Cleric",
+      "level": 51
+    },
+    {
+      "id": 3650,
+      "name": "Spell: Death Pact",
+      "className": "Cleric",
+      "level": 51
+    },
+    {
+      "id": 3738,
+      "name": "Spell: Lightning Storm",
+      "className": "Wizard",
+      "level": 24
+    },
+    {
+      "id": 3740,
+      "name": "Spell: Moonfire",
+      "className": "Druid",
+      "level": 60
+    },
+    {
+      "id": 4094,
+      "name": "Spell: Mesmerization",
+      "className": "Enchanter",
+      "level": 16
+    },
+    {
+      "id": 4223,
+      "name": "Spell: Bond of Death",
+      "className": "Necromancer",
+      "level": 49
+    },
+    {
+      "id": 4228,
+      "name": "Spell: Protection of the Glades",
+      "className": "Druid",
+      "level": 60
+    },
+    {
+      "id": 4229,
+      "name": "Spell: Cannibalize IV",
+      "className": "Shaman",
+      "level": 58
+    },
+    {
+      "id": 4231,
+      "name": "Spell: Nature Walker's Behest",
+      "className": "Druid",
+      "level": 55
+    },
+    {
+      "id": 4233,
+      "name": "Spell: Pox of Bertoxxulous",
+      "className": "Shaman",
+      "level": 59
+    },
+    {
+      "id": 4234,
+      "name": "Spell: Torpor",
+      "className": "Shaman",
+      "level": 60
+    },
+    {
+      "id": 4235,
+      "name": "Spell: Talisman of the Serpent",
+      "className": "Shaman",
+      "level": 58
+    },
+    {
+      "id": 4236,
+      "name": "Spell: Breath of Karana",
+      "className": "Druid",
+      "level": 56
+    },
+    {
+      "id": 4237,
+      "name": "Spell: Circle of Seasons",
+      "className": "Druid",
+      "level": 58
+    },
+    {
+      "id": 4238,
+      "name": "Spell: Khura's Focusing",
+      "className": "Shaman",
+      "level": 60
+    },
+    {
+      "id": 4239,
+      "name": "Spell: Spirit Quickening",
+      "className": "Shaman",
+      "level": 50
+    },
+    {
+      "id": 4240,
+      "name": "Spell: Tunare`s Request",
+      "className": "Druid",
+      "level": 55
+    },
+    {
+      "id": 4243,
+      "name": "Spell: Legacy of Thorn",
+      "className": "Druid",
+      "level": 59
+    },
+    {
+      "id": 4244,
+      "name": "Spell: Bane of Nife",
+      "className": "Shaman",
+      "level": 56
+    },
+    {
+      "id": 4245,
+      "name": "Spell: Haunting Corpse",
+      "className": "Necromancer",
+      "level": 24
+    },
+    {
+      "id": 4266,
+      "name": "Spell: Mask of the Hunter",
+      "className": "Druid",
+      "level": 60
+    },
+    {
+      "id": 4267,
+      "name": "Spell: Mask of the Stalker",
+      "className": "Ranger",
+      "level": 65
+    },
+    {
+      "id": 4307,
+      "name": "Spell: Blizzard",
+      "className": "Druid",
+      "level": 54
+    },
+    {
+      "id": 4308,
+      "name": "Spell: Bonds of Tunare",
+      "className": "Druid",
+      "level": 57
+    },
+    {
+      "id": 4309,
+      "name": "Spell: Call of Karana",
+      "className": "Druid",
+      "level": 52
+    },
+    {
+      "id": 4310,
+      "name": "Spell: Circle of Summer",
+      "className": "Druid",
+      "level": 52
+    },
+    {
+      "id": 4311,
+      "name": "Spell: Circle of Winter",
+      "className": "Druid",
+      "level": 51
+    },
+    {
+      "id": 4312,
+      "name": "Spell: Entrapping Roots",
+      "className": "Druid",
+      "level": 60
+    },
+    {
+      "id": 4313,
+      "name": "Spell: Fist of Karana",
+      "className": "Druid",
+      "level": 58
+    },
+    {
+      "id": 4314,
+      "name": "Spell: Form of the Howler",
+      "className": "Druid",
+      "level": 54
+    },
+    {
+      "id": 4315,
+      "name": "Spell: Form of the Hunter",
+      "className": "Druid",
+      "level": 60
+    },
+    {
+      "id": 4319,
+      "name": "Spell: Nature's Recovery",
+      "className": "Druid",
+      "level": 60
+    },
+    {
+      "id": 4320,
+      "name": "Spell: Regrowth of the Grove",
+      "className": "Druid",
+      "level": 58
+    },
+    {
+      "id": 4322,
+      "name": "Spell: Spirit of Oak",
+      "className": "Druid",
+      "level": 59
+    },
+    {
+      "id": 4323,
+      "name": "Spell: Spirit of Scale",
+      "className": "Shaman",
+      "level": 52
+    },
+    {
+      "id": 4324,
+      "name": "Spell: Succor",
+      "className": "Druid",
+      "level": 57
+    },
+    {
+      "id": 4325,
+      "name": "Spell: Wake of Karana",
+      "className": "Druid",
+      "level": 56
+    },
+    {
+      "id": 4330,
+      "name": "Spell: Acumen",
+      "className": "Shaman",
+      "level": 56
+    },
+    {
+      "id": 4332,
+      "name": "Spell: Acumen of Dar Khura",
+      "className": "Shaman",
+      "level": 58
+    },
+    {
+      "id": 4333,
+      "name": "Spell: Avatar",
+      "className": "Shaman",
+      "level": 60
+    },
+    {
+      "id": 4334,
+      "name": "Spell: Form of the Great Bear",
+      "className": "Shaman",
+      "level": 55
+    },
+    {
+      "id": 4336,
+      "name": "Spell: Insidious Decay",
+      "className": "Shaman",
+      "level": 52
+    },
+    {
+      "id": 4340,
+      "name": "Spell: Malo",
+      "className": "Shaman",
+      "level": 60
+    },
+    {
+      "id": 4341,
+      "name": "Spell: Malosini",
+      "className": "Shaman",
+      "level": 57
+    },
+    {
+      "id": 4348,
+      "name": "Spell: Shroud of the Spirits",
+      "className": "Shaman",
+      "level": 54
+    },
+    {
+      "id": 4349,
+      "name": "Spell: Spirit of the Howler",
+      "className": "Shaman",
+      "level": 55
+    },
+    {
+      "id": 4352,
+      "name": "Spell: Talisman of Epuration",
+      "className": "Shaman",
+      "level": 58
+    },
+    {
+      "id": 4353,
+      "name": "Spell: Talisman of Shadoo",
+      "className": "Shaman",
+      "level": 53
+    },
+    {
+      "id": 4354,
+      "name": "Spell: Talisman of the Brute",
+      "className": "Shaman",
+      "level": 57
+    },
+    {
+      "id": 4355,
+      "name": "Spell: Talisman of the Cat",
+      "className": "Shaman",
+      "level": 57
+    },
+    {
+      "id": 4356,
+      "name": "Spell: Talisman of the Raptor",
+      "className": "Shaman",
+      "level": 59
+    },
+    {
+      "id": 4357,
+      "name": "Spell: Talisman of the Rhino",
+      "className": "Shaman",
+      "level": 58
+    },
+    {
+      "id": 4358,
+      "name": "Spell: Tigir`s Insects",
+      "className": "Shaman",
+      "level": 58
+    },
+    {
+      "id": 4359,
+      "name": "Spell: Torrent of Poison",
+      "className": "Shaman",
+      "level": 55
+    },
+    {
+      "id": 4360,
+      "name": "Spell: Voice of the Berserker",
+      "className": "Shaman",
+      "level": 59
+    },
+    {
+      "id": 4372,
+      "name": "Spell: Column of Lightning",
+      "className": "Wizard",
+      "level": 24
+    },
+    {
+      "id": 4546,
+      "name": "Spell: Focus of Spirit",
+      "className": "Shaman",
+      "level": 60
+    },
+    {
+      "id": 4547,
+      "name": "Spell: Vampiric Curse",
+      "className": "Necromancer",
+      "level": 29
+    },
+    {
+      "id": 4554,
+      "name": "Spell: Conglaciation of Bone",
+      "className": "Necromancer",
+      "level": 55
+    },
+    {
+      "id": 4601,
+      "name": "Spell: Malignant Dead",
+      "className": "Necromancer",
+      "level": 39
+    },
+    {
+      "id": 4610,
+      "name": "Spell: Insipid Weakness",
+      "className": "Enchanter",
+      "level": 34
+    },
+    {
+      "id": 4614,
+      "name": "Spell: Summon Coldstone",
+      "className": "Magician",
+      "level": 29
+    },
+    {
+      "id": 4628,
+      "name": "Spell: Lesser Summoning: Air",
+      "className": "Magician",
+      "level": 20
+    },
+    {
+      "id": 4629,
+      "name": "Spell: Minor Summoning: Air",
+      "className": "Magician",
+      "level": 16
+    },
+    {
+      "id": 4703,
+      "name": "Spell: Color Shift",
+      "className": "Enchanter",
+      "level": 20
+    },
+    {
+      "id": 4742,
+      "name": "Spell: Cackling Bones",
+      "className": "Necromancer",
+      "level": 44
+    },
+    {
+      "id": 4745,
+      "name": "Spell: Conjuration: Earth",
+      "className": "Magician",
+      "level": 44
+    },
+    {
+      "id": 4751,
+      "name": "Spell: Greater Conjuration: Water",
+      "className": "Magician",
+      "level": 49
+    },
+    {
+      "id": 4755,
+      "name": "Spell: Lesser Conjuration: Earth",
+      "className": "Magician",
+      "level": 39
+    },
+    {
+      "id": 4764,
+      "name": "Spell: Summon Dead",
+      "className": "Necromancer",
+      "level": 29
+    },
+    {
+      "id": 5777,
+      "name": "Spell: Invigor",
+      "className": "Cleric",
+      "level": 9
+    },
+    {
+      "id": 11356,
+      "name": "Spell: Funeral Pyre of Kelador",
+      "className": "Necromancer",
+      "level": 60
+    },
+    {
+      "id": 11399,
+      "name": "Spell: Death Peace",
+      "className": "Necromancer",
+      "level": 60
+    },
+    {
+      "id": 11429,
+      "name": "Spell: Conjure Corpse",
+      "className": "Necromancer",
+      "level": 57
+    },
+    {
+      "id": 11448,
+      "name": "Spell: Augmentation of Death",
+      "className": "Necromancer",
+      "level": 55
+    },
+    {
+      "id": 11451,
+      "name": "Spell: Transon's Elemental Renewal",
+      "className": "Magician",
+      "level": 60
+    },
+    {
+      "id": 11453,
+      "name": "Spell: Trucidation",
+      "className": "Necromancer",
+      "level": 60
+    },
+    {
+      "id": 11454,
+      "name": "Spell: Gangrenous Touch of Zum`uul",
+      "className": "Necromancer",
+      "level": 60
+    },
+    {
+      "id": 11457,
+      "name": "Spell: Summoning: Air",
+      "className": "Magician",
+      "level": 24
+    },
+    {
+      "id": 11458,
+      "name": "Spell: Greater Summoning: Earth",
+      "className": "Magician",
+      "level": 29
+    },
+    {
+      "id": 11467,
+      "name": "Spell: Translocate",
+      "className": "Wizard",
+      "level": 50
+    },
+    {
+      "id": 11469,
+      "name": "Spell: Primal Essence",
+      "className": "Shaman",
+      "level": 52
+    },
+    {
+      "id": 11863,
+      "name": "Spell: Greater Mass Enchant Silver",
+      "className": "Enchanter",
+      "level": 11
+    },
+    {
+      "id": 11865,
+      "name": "Spell: Greater Mass Enchant Electrum",
+      "className": "Enchanter",
+      "level": 19
+    },
+    {
+      "id": 11866,
+      "name": "Spell: Greater Mass Enchant Gold",
+      "className": "Enchanter",
+      "level": 28
+    },
+    {
+      "id": 11867,
+      "name": "Spell: Greater Mass Enchant Platinum",
+      "className": "Enchanter",
+      "level": 38
+    },
+    {
+      "id": 12162,
+      "name": "Spell: Greater Mass Enchant Velium",
+      "className": "Enchanter",
+      "level": 44
+    },
+    {
+      "id": 12360,
+      "name": "Spell: Naltron's Mark",
+      "className": "Cleric",
+      "level": 58
+    },
+    {
+      "id": 12503,
+      "name": "Spell: Ice Spear of Solist",
+      "className": "Wizard",
+      "level": 60
+    },
+    {
+      "id": 12558,
+      "name": "Spell: Cast Force",
+      "className": "Wizard",
+      "level": 24
+    },
+    {
+      "id": 12575,
+      "name": "Spell: Aegis",
+      "className": "Cleric",
+      "level": 57
+    },
+    {
+      "id": 12578,
+      "name": "Spell: Greater Vocaration: Fire",
+      "className": "Magician",
+      "level": 58
+    },
+    {
+      "id": 12579,
+      "name": "Spell: Restless Bones",
+      "className": "Necromancer",
+      "level": 16
+    },
+    {
+      "id": 12718,
+      "name": "Spell: Girdle of Karana",
+      "className": "Druid",
+      "level": 55
+    },
+    {
+      "id": 12876,
+      "name": "Spell: Umbra",
+      "className": "Enchanter",
+      "level": 57
+    },
+    {
+      "id": 12878,
+      "name": "Spell: Banishment",
+      "className": "Magician",
+      "level": 60
+    },
+    {
+      "id": 12894,
+      "name": "Spell: Hammer of Souls",
+      "className": "Cleric",
+      "level": 60
+    },
+    {
+      "id": 12895,
+      "name": "Spell: Chill Bones",
+      "className": "Necromancer",
+      "level": 55
+    },
+    {
+      "id": 13032,
+      "name": "Spell: Splurt",
+      "className": "Necromancer",
+      "level": 51
+    },
+    {
+      "id": 13036,
+      "name": "Spell: Greater Vocaration: Water",
+      "className": "Magician",
+      "level": 60
+    },
+    {
+      "id": 13150,
+      "name": "Spell: Glamorous Visage",
+      "className": "Enchanter",
+      "level": 58
+    },
+    {
+      "id": 13151,
+      "name": "Spell: Glamour of Tunare",
+      "className": "Druid",
+      "level": 53
+    },
+    {
+      "id": 15778,
+      "name": "Spell: Ice Comet",
+      "className": "Wizard",
+      "level": 49
+    },
+    {
+      "id": 56896,
+      "name": "Spell: Elemental: Air",
+      "className": "Magician",
+      "level": 12
+    },
+    {
+      "id": 56898,
+      "name": "Spell: Cavorting Bones",
+      "className": "Necromancer",
+      "level": 1
+    },
+    {
+      "id": 56899,
+      "name": "Spell: Leering Corpse",
+      "className": "Necromancer",
+      "level": 4
+    },
+    {
+      "id": 56906,
+      "name": "Spell: Summon Food",
+      "className": "Magician",
+      "level": 1
+    },
+    {
+      "id": 56913,
+      "name": "Spell: Sphere of Light",
+      "className": "Wizard",
+      "level": 1
+    },
+    {
+      "id": 57205,
+      "name": "Spell: Summon Drink",
+      "className": "Magician",
+      "level": 1
+    },
+    {
+      "id": 58611,
+      "name": "Spell: Firestorm",
+      "className": "Wizard",
+      "level": 12
+    },
+    {
+      "id": 63521,
+      "name": "Spell: Column of Frost",
+      "className": "Wizard",
+      "level": 8
+    }
+  ],
+  "missing": [
+    {
+      "id": 3407,
+      "name": "Spell: Summon: Muzzle of Mardu",
+      "className": "Magician",
+      "expansion": "Ruins of Kunark",
+      "trivial": 180
+    },
+    {
+      "id": 3442,
+      "name": "Spell: Elnerick's Rending",
+      "className": "Wizard",
+      "expansion": "Shadows of Luclin",
+      "trivial": 222
+    },
+    {
+      "id": 3444,
+      "name": "Spell: Garrison's Superior Sunder",
+      "className": "Wizard",
+      "expansion": "Shadows of Luclin",
+      "trivial": 222
+    },
+    {
+      "id": 3454,
+      "name": "Spell: Spell Shield",
+      "className": "Wizard",
+      "expansion": "Shadows of Luclin",
+      "trivial": 202
+    },
+    {
+      "id": 3640,
+      "name": "Spell: Hammer of Judgment",
+      "className": "Cleric",
+      "expansion": "Shadows of Luclin",
+      "trivial": 182
+    },
+    {
+      "id": 3651,
+      "name": "Spell: Improved Invis vs Undead",
+      "className": "Cleric",
+      "expansion": "Scars of Velious",
+      "trivial": 119
+    },
+    {
+      "id": 11563,
+      "name": "Spell: Familiar Enhancement",
+      "className": "Wizard",
+      "expansion": "Shadows of Luclin",
+      "trivial": 224
+    }
+  ],
+  "ambiguous": []
+}

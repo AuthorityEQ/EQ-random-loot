@@ -3,10 +3,8 @@
  *
  * Types and data-access helpers for the crafting / recipes page (Feature G).
  *
- * Data source priority:
- *  1. data/excel-imports/crafting.json  — produced by the Excel ingest pipeline (Feature F).
- *  2. data/crafting-fallback.json       — stub with representative sample recipes used until
- *                                         the live dataset is ingested.
+ * Data source:
+ *  1. data/crafting-recipes.json — the dedicated replaceable recipe dataset.
  *
  * Schema expectations for the Excel ingest agent are documented at the bottom
  * of this file.
@@ -17,25 +15,47 @@
 // ---------------------------------------------------------------------------
 
 export type CraftingSkill =
-  | "tailoring"
+  | "alchemy"
+  | "baking"
+  | "brewing"
   | "fletching"
-  | "blacksmithing"
   | "jewelcraft"
+  | "pottery"
+  | "smithing"
   | "spell-research"
-  | "alchemy";
+  | "tailoring"
+  | "tinkering"
+  | "poison-making";
 
 export interface CraftingComponent {
   name: string;
   count: number;
+  sourceNotes?: string | null;
+  zones?: string[];
+  mobs?: string[];
+  vendors?: string[];
+  acquisitionType?: "dropped" | "vendor" | "crafted" | "foraged" | "ground spawn" | "quest" | "unknown";
+  eraHint?: string | null;
+  expansionHint?: string | null;
+  imageUrl?: string | null;
 }
 
 export interface CraftingOutput {
   name: string;
   count: number;
+  imageUrl?: string | null;
 }
 
 /** A single tradeskill recipe. */
 export interface CraftingRecipe {
+  /** Source recipe or item identifier when supplied by the data source. */
+  id?: number | string;
+  /** Expansion tag from the source dataset, preserved for progression filtering. */
+  expansion?: string | null;
+  /** Tradeskill label from the source dataset, when distinct from the normalized skill key. */
+  tradeskill?: string | null;
+  /** Source item id when supplied by the data source. */
+  sourceItemId?: number | string | null;
   /** Identifies which tradeskill this recipe belongs to. */
   skill: CraftingSkill;
   /** Display name of the recipe (typically the output item name). */
@@ -50,6 +70,18 @@ export interface CraftingRecipe {
   output: CraftingOutput;
   /** Optional free-text notes (class restrictions, tips, etc.). */
   notes?: string | null;
+  /** Original factual recipe source URL. */
+  sourceUrl?: string | null;
+  /** Dataset-specific output quantity when supplied separately from output.count. */
+  sourceOutputCount?: number | null;
+  /** Dataset-specific success flag, if present. */
+  sourceSuccess?: boolean | null;
+  /** Dataset-specific failure flag, if present. */
+  sourceFailure?: boolean | null;
+  /** Dataset-specific success/failure numeric value, if present. */
+  sourceSuccessValue?: number | null;
+  /** Raw source columns kept for later schema reconciliation. */
+  sourceMetadata?: Record<string, string | number | boolean | null>;
 }
 
 // ---------------------------------------------------------------------------
@@ -79,21 +111,31 @@ export function tierForTrivial(trivial: number | null): string {
 // ---------------------------------------------------------------------------
 
 export const SKILL_LABELS: Record<CraftingSkill, string> = {
-  tailoring:        "Tailoring",
-  fletching:        "Fletching",
-  blacksmithing:    "Blacksmithing",
-  jewelcraft:       "Jewelcraft",
-  "spell-research": "Spell Research",
   alchemy:          "Alchemy",
+  baking:           "Baking",
+  brewing:          "Brewing",
+  fletching:        "Fletching",
+  jewelcraft:       "Jewelcraft",
+  pottery:          "Pottery",
+  smithing:         "Smithing",
+  "spell-research": "Spell Research",
+  tailoring:        "Tailoring",
+  tinkering:        "Tinkering",
+  "poison-making":  "Poison Making",
 };
 
 export const CRAFTING_SKILLS: CraftingSkill[] = [
-  "tailoring",
-  "fletching",
-  "blacksmithing",
-  "jewelcraft",
-  "spell-research",
   "alchemy",
+  "baking",
+  "brewing",
+  "fletching",
+  "jewelcraft",
+  "pottery",
+  "smithing",
+  "spell-research",
+  "tailoring",
+  "tinkering",
+  "poison-making",
 ];
 
 // ---------------------------------------------------------------------------
@@ -111,83 +153,16 @@ import { itemToSlug } from "@/lib/item-slug";
 export const itemSlug = itemToSlug;
 
 // ---------------------------------------------------------------------------
-// Raw JSON shape (as emitted by Feature F / fallback)
-// ---------------------------------------------------------------------------
-
-interface RawRecipe {
-  skill: string;
-  name: string;
-  trivial: number | null;
-  components: Array<{ name: string; count: number }>;
-  container: string;
-  output: { name: string; count: number };
-  notes?: string | null;
-}
-
-// ---------------------------------------------------------------------------
 // Data loading
 // ---------------------------------------------------------------------------
 
-import fallbackData from "@/data/crafting-fallback.json";
+import { craftingRecipes, isCraftingLiveData } from "@/data/crafting-recipes";
 
-function isValidSkill(value: string): value is CraftingSkill {
-  return (CRAFTING_SKILLS as string[]).includes(value);
-}
+/** All recipes from the dedicated crafting dataset. */
+export const allRecipes: CraftingRecipe[] = craftingRecipes;
 
-function normaliseRecipe(raw: RawRecipe): CraftingRecipe | null {
-  if (!isValidSkill(raw.skill)) return null;
-  return {
-    skill: raw.skill,
-    name: raw.name,
-    trivial: raw.trivial,
-    components: raw.components.map((c) => ({ name: c.name, count: c.count })),
-    container: raw.container,
-    output: { name: raw.output.name, count: raw.output.count },
-    notes: raw.notes ?? null,
-  };
-}
-
-function loadLiveRecipes(): CraftingRecipe[] {
-  // Priority 1: normalized output produced by scripts/normalize-crafting-data.ts
-  try {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const normalized = require("@/data/excel-imports/crafting-normalized.json") as { recipes: RawRecipe[] };
-    if (Array.isArray(normalized?.recipes) && normalized.recipes.length > 0) {
-      return normalized.recipes
-        .map(normaliseRecipe)
-        .filter((r): r is CraftingRecipe => r !== null);
-    }
-  } catch {
-    // Normalized file not present — try raw ingest output next.
-  }
-
-  // Priority 2: raw Excel ingest output (crafting.json already in { recipes } shape)
-  try {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const live = require("@/data/excel-imports/crafting.json") as { recipes: RawRecipe[] };
-    if (Array.isArray(live?.recipes) && live.recipes.length > 0) {
-      return live.recipes
-        .map(normaliseRecipe)
-        .filter((r): r is CraftingRecipe => r !== null);
-    }
-  } catch {
-    // File not yet present — fall through to stub.
-  }
-  return [];
-}
-
-const liveRecipes = loadLiveRecipes();
-
-/** All recipes from the best available source. */
-export const allRecipes: CraftingRecipe[] =
-  liveRecipes.length > 0
-    ? liveRecipes
-    : (fallbackData as unknown as { recipes: RawRecipe[] }).recipes
-        .map(normaliseRecipe)
-        .filter((r): r is CraftingRecipe => r !== null);
-
-/** True when real data is loaded; false when the fallback stub is active. */
-export const isLiveData: boolean = liveRecipes.length > 0;
+/** True while the dedicated crafting dataset is active. */
+export const isLiveData: boolean = isCraftingLiveData;
 
 // ---------------------------------------------------------------------------
 // Query helpers
@@ -252,22 +227,37 @@ export function getRecipesUsingComponent(componentName: string): CraftingRecipe[
   SCHEMA EXPECTATIONS FOR THE EXCEL INGEST AGENT (Feature F)
   ===========================================================================
 
-  The file data/excel-imports/crafting.json must have the top-level shape:
+  The file data/crafting-recipes.json must have the top-level shape:
 
   {
     "recipes": [
       {
-        "skill":      "tailoring" | "fletching" | "blacksmithing"
-                       | "jewelcraft" | "spell-research",
+        "skill":      "alchemy" | "baking" | "brewing" | "fletching"
+                       | "jewelcraft" | "pottery" | "smithing"
+                       | "spell-research" | "tailoring" | "tinkering"
+                       | "poison-making",
         "name":       string,         // recipe / output item display name
         "trivial":    number | null,  // skill level where failures stop
         "components": [
-          { "name": string, "count": number }
+          {
+            "name": string,
+            "count": number,
+            "sourceNotes"?: string | null,
+            "zones"?: string[],
+            "mobs"?: string[],
+            "vendors"?: string[],
+            "acquisitionType"?: "dropped" | "vendor" | "crafted" | "foraged"
+                              | "ground spawn" | "quest" | "unknown",
+            "eraHint"?: string | null,
+            "expansionHint"?: string | null,
+            "imageUrl"?: string | null
+          }
         ],
         "container":  string,         // e.g. "Loom", "Forge", "Fletcher's Kit",
                                       //       "Jeweler's Kit", "Spell Research Kit"
-        "output":     { "name": string, "count": number },
-        "notes":      string | null   // optional class/tip notes
+        "output":     { "name": string, "count": number, "imageUrl"?: string | null },
+        "notes":      string | null,  // optional class/tip notes
+        "sourceUrl":  string | null
       }
     ]
   }

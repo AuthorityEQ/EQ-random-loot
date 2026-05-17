@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BonusTrackerClient } from "./BonusTrackerClient";
 import "./bonus-page.css";
 
 export const metadata: Metadata = {
-  title: "Daily Bonuses | Frostreaver Loot",
-  description:
-    "Browse community-submitted EverQuest daily zone bonus reports for Frostreaver.",
+  title: "Daily Bonuses Disabled | Frostreaver Loot",
+  description: "Daily Bonuses are currently disabled on Frostreaver Loot.",
 };
 
 export default function BonusPage() {
@@ -25,16 +23,24 @@ export default function BonusPage() {
       <header className="header bonus-hero">
         <div>
           <p className="eyebrow">Community Tracker</p>
-          <h1>Daily Bonuses</h1>
+          <h1>Daily Bonuses Disabled</h1>
           <p className="subhead">
-            Zones may receive a daily bonus at midnight. Reports here are
-            community-submitted, so conflicting claims are preserved until the
-            zone settles into a likely or confirmed result.
+            Daily Bonuses are currently disabled and hidden from site navigation.
+            The tracker implementation is preserved in the codebase for possible
+            future restoration.
           </p>
         </div>
       </header>
 
-      <BonusTrackerClient />
+      <section className="bonus-disabled-panel" aria-label="Daily Bonuses disabled">
+        <h2>Daily Bonuses are currently disabled.</h2>
+        <p>
+          This page no longer shows bonus reports because the data is not being
+          maintained. Discord login is still available in the top bar for saved
+          characters, epics, favorites, and other account-backed features.
+        </p>
+        <Link href="/">Return home</Link>
+      </section>
     </main>
   );
 }

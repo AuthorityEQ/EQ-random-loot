@@ -3,6 +3,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { AppNavLinks, AppSubNavLinks } from "@/components/AppNavLinks";
 import { AuthSessionProvider } from "@/components/AuthSessionProvider";
 import { BucketDisplayProvider } from "@/components/BucketDisplayProvider";
+import { DiscordAuthControl } from "@/components/DiscordAuthControl";
 import { EpicProgressProvider } from "@/components/EpicProgressProvider";
 import { FavoritesProvider } from "@/components/FavoritesProvider";
 import { InstallPromptBanner } from "@/components/InstallPromptBanner";
@@ -87,6 +88,7 @@ export default function RootLayout({
                       </a>
                       <AppNavLinks />
                       <div className="app-nav-controls">
+                        <DiscordAuthControl />
                         <ItemPreviewToggle />
                         <ThemeToggle />
                       </div>

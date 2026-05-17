@@ -282,6 +282,36 @@
   outline-offset: 2px;
 }
 
+.bonus-disabled-panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 10px;
+  margin-top: 18px;
+  max-width: 760px;
+  padding: 20px;
+}
+
+.bonus-disabled-panel h2 {
+  color: var(--page-title-gold);
+  font-size: 1.28rem;
+  margin: 0;
+}
+
+.bonus-disabled-panel p {
+  color: var(--muted);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.bonus-disabled-panel a {
+  color: var(--accent);
+  font-weight: 900;
+  width: max-content;
+}
+
 .bonus-active-reports {
   background:
     linear-gradient(180deg, color-mix(in srgb, var(--panel) 92%, var(--accent-soft)), var(--panel));

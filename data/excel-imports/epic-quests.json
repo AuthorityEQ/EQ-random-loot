@@ -4486,47 +4486,8 @@
           ]
         },
         {
-          "_source_row": 260,
-          "step": "13",
-          "phase": "",
-          "action": "Give Book of Celestial Fists to crazy Kaiaren",
-          "npc_mob": "Kaiaren (crazy)",
-          "zone": "Trakanon's Teeth",
-          "items": "",
-          "notes": "",
-          "tags": [
-            "solo"
-          ],
-          "required_items": [
-            {
-              "name": "Book of Celestial Fists"
-            }
-          ],
-          "reward_items": [
-            {
-              "name": "Book of Celestial Fists"
-            }
-          ],
-          "spawn_notes": [
-            "Kaiaren returns the book and attacks."
-          ]
-        },
-        {
-          "_source_row": 261,
-          "step": "14",
-          "phase": "",
-          "action": "Have an enchanter cast Blanket of Forgetfulness on Kaiaren, then hail sane Kaiaren",
-          "npc_mob": "Kaiaren (sane)",
-          "zone": "Trakanon's Teeth",
-          "items": "",
-          "notes": "Kaiaren gives you the Eejag task after the memory wipe.",
-          "tags": [
-            "solo"
-          ]
-        },
-        {
           "_source_row": 263,
-          "step": "15",
+          "step": "13",
           "phase": "Fist of Fire",
           "action": "Find the fire sprite and say \"I challenge you, Eejag\"",
           "npc_mob": "fire sprite",
@@ -4542,7 +4503,7 @@
         },
         {
           "_source_row": 264,
-          "step": "16",
+          "step": "14",
           "phase": "Fist of Fire",
           "action": "Kill Eejag in the lava pit near the Solusek entrances",
           "npc_mob": "Eejag",
@@ -4560,15 +4521,16 @@
         },
         {
           "_source_row": 265,
-          "step": "17",
+          "step": "15",
           "phase": "Fist of Fire",
-          "action": "Return to sane Kaiaren with Charred Scale",
+          "action": "Optional: return to sane Kaiaren with Charred Scale",
           "npc_mob": "Kaiaren (sane)",
           "zone": "Trakanon's Teeth",
           "items": "",
-          "notes": "Kaiaren gives the scale back and sends you to the next fight.",
+          "notes": "Optional/skippable hand-in. Kaiaren gives the scale back and points you toward the next fight; experienced players may already know the next turn-in path.",
           "tags": [
-            "solo"
+            "solo",
+            "skippable"
           ],
           "required_items": [
             {
@@ -4583,7 +4545,7 @@
         },
         {
           "_source_row": 267,
-          "step": "18",
+          "step": "16",
           "phase": "Fist of Air",
           "action": "Give Charred Scale to a presence on Djorn's Island",
           "npc_mob": "a presence",
@@ -4604,7 +4566,7 @@
         },
         {
           "_source_row": 268,
-          "step": "19",
+          "step": "17",
           "phase": "Fist of Air",
           "action": "Kill Gwan",
           "npc_mob": "Gwan",
@@ -4622,7 +4584,7 @@
         },
         {
           "_source_row": 270,
-          "step": "20",
+          "step": "18",
           "phase": "Fist of Earth",
           "action": "Give Breath of Gwan to a sleeping ogre",
           "npc_mob": "a sleeping ogre",
@@ -4643,7 +4605,7 @@
         },
         {
           "_source_row": 271,
-          "step": "21",
+          "step": "19",
           "phase": "Fist of Earth",
           "action": "Kill Trunt",
           "npc_mob": "Trunt",
@@ -4661,7 +4623,7 @@
         },
         {
           "_source_row": 274,
-          "step": "22",
+          "step": "20",
           "phase": "Fist of Water",
           "action": "Give Trunt's Head to Astral Projection",
           "npc_mob": "Astral Projection",
@@ -4684,7 +4646,7 @@
         },
         {
           "_source_row": 275,
-          "step": "23",
+          "step": "21",
           "phase": "Fist of Water",
           "action": "Give Eye of Kaiaren to Astral Projection on the Lake of Ill Omen platform",
           "npc_mob": "Astral Projection",
@@ -4706,7 +4668,7 @@
         },
         {
           "_source_row": 276,
-          "step": "24",
+          "step": "22",
           "phase": "Fist of Water",
           "action": "Kill Vorash and Deep",
           "npc_mob": "Vorash and Deep",
@@ -4723,7 +4685,7 @@
         },
         {
           "_source_row": 277,
-          "step": "25",
+          "step": "23",
           "phase": "Fist of Water",
           "action": "Kill Xenovorash",
           "npc_mob": "Xenovorash",
@@ -4741,14 +4703,37 @@
           ]
         },
         {
-          "_source_row": 279,
-          "step": "26",
+          "_source_row": 260,
+          "step": "24",
           "phase": "FINAL TURN-IN",
-          "action": "Give Book of Celestial Fists and Demon Fangs to Kaiaren",
+          "action": "Return to Trakanon's Teeth and give the original Book of Celestial Fists to Kaiaren",
           "npc_mob": "Kaiaren",
           "zone": "Trakanon's Teeth",
           "items": "",
-          "notes": "",
+          "notes": "Find Kaiaren near Old Sebilis. Turning in the original Book of Celestial Fists causes him to return the book and attack. Feign Death or otherwise clear aggro, then continue with sane Kaiaren near the lake. Optional recovery: an enchanter can cast Blanket of Forgetfulness if sane Kaiaren needs to be restored.",
+          "tags": [
+            "solo"
+          ],
+          "required_items": [
+            {
+              "name": "Book of Celestial Fists"
+            }
+          ],
+          "reward_items": [
+            {
+              "name": "Book of Celestial Fists"
+            }
+          ]
+        },
+        {
+          "_source_row": 279,
+          "step": "25",
+          "phase": "FINAL TURN-IN",
+          "action": "Give Book of Celestial Fists and Demon Fangs to sane Kaiaren near the lake",
+          "npc_mob": "Kaiaren (sane)",
+          "zone": "Trakanon's Teeth",
+          "items": "",
+          "notes": "Kaiaren may swap the Book of Celestial Fists to a different version during this process. If he returns the book instead of completing the quest, you may need to turn it in again. Consult an expert before multiquesting this section.",
           "tags": [
             "solo"
           ],
