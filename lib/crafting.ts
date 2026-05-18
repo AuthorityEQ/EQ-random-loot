@@ -30,7 +30,27 @@ export type CraftingSkill =
 export interface CraftingComponent {
   name: string;
   count: number;
+  sizeVariants?: string[];
+  sizeVariantDetails?: Record<string, {
+    name: string;
+    sourceUrl?: string | null;
+    allakhazamUrl?: string | null;
+    imageUrl?: string | null;
+  }>;
+  componentType?: "finalItem" | "ingredient" | "template" | "intermediate" | "mold" | "sketch" | "firingComponent" | "processComponent" | "unknown";
   sourceNotes?: string | null;
+  sourceUrl?: string | null;
+  sourceName?: string | null;
+  subcombineRecipe?: {
+    name: string;
+    components: Array<{ name: string; count: number }>;
+    container?: string | null;
+    trivial?: number | null;
+    sourceUrl?: string | null;
+  } | null;
+  placeholderDescription?: string | null;
+  templateOptions?: string[];
+  dataQualityNote?: string | null;
   zones?: string[];
   mobs?: string[];
   vendors?: string[];
@@ -64,10 +84,41 @@ export interface CraftingRecipe {
   trivial: number | null;
   /** Ingredients required. */
   components: CraftingComponent[];
+  /** Structured arrow-table metadata from P99 Fletching rows. */
+  arrowMetadata?: {
+    damage?: number | null;
+    range?: number | null;
+    cost?: string | null;
+    point?: string | null;
+    shaft?: string | null;
+    fletch?: string | null;
+    nockSize?: string | null;
+    rangeOptions?: number[];
+    unresolvedNockComponent?: boolean;
+  };
   /** The tradeskill container required (e.g. "Loom", "Forge", "Fletcher's Kit"). */
   container: string;
   /** The item produced. */
   output: CraftingOutput;
+  /** Structured size variants from source shorthand such as P99 Smithing (S | M | L). */
+  sizeVariants?: string[];
+  /** Real item/component records for each selected size variant. */
+  sizeVariantDetails?: Record<string, {
+    output: {
+      name: string;
+      sourceUrl?: string | null;
+      allakhazamUrl?: string | null;
+      imageUrl?: string | null;
+      ac?: number | null;
+      weight?: number | null;
+    };
+    components?: Record<string, {
+      name: string;
+      sourceUrl?: string | null;
+      allakhazamUrl?: string | null;
+      imageUrl?: string | null;
+    }>;
+  }>;
   /** Optional free-text notes (class restrictions, tips, etc.). */
   notes?: string | null;
   /** Original factual recipe source URL. */

@@ -1,0 +1,3395 @@
+{
+  "checkedBySkill": {
+    "tinkering": 4,
+    "baking": 10,
+    "smithing": 34,
+    "brewing": 5,
+    "fletching": 112,
+    "pottery": 5,
+    "tailoring": 4
+  },
+  "resolvedBySkill": {
+    "baking": 1
+  },
+  "resolved": [
+    {
+      "skill": "baking",
+      "name": "Dragon Steak",
+      "matchedText": "Dragon Steaks",
+      "url": "https://everquest.allakhazam.com/db/item.html?item=15100",
+      "variantUsed": "Dragon Steak",
+      "matchReason": "singular/plural normalized match",
+      "score": 0.98,
+      "addedIcon": false
+    }
+  ],
+  "ambiguous": [
+    {
+      "skill": "tinkering",
+      "name": "Gnomish Firework",
+      "variantsTried": [
+        "Gnomish Firework",
+        "a Gnomish Firework",
+        "an Gnomish Firework",
+        "the Gnomish Firework",
+        "gnomish firework"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=27360",
+          "text": "Gnomish Firework [Angry Bee]",
+          "variant": "Gnomish Firework",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=27359",
+          "text": "Gnomish Firework [Blazing Comet]",
+          "variant": "Gnomish Firework",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=27361",
+          "text": "Gnomish Firework [Ground Bloom Flower]",
+          "variant": "Gnomish Firework",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=3643",
+          "text": "Gnomish Firework [Happy Panda]",
+          "variant": "Gnomish Firework",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "tinkering",
+      "name": "Spyglass",
+      "variantsTried": [
+        "Spyglass",
+        "a Spyglass",
+        "an Spyglass",
+        "the Spyglass",
+        "spyglas"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=97775",
+          "text": "Spyglass",
+          "variant": "Spyglass",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=6166",
+          "text": "Spyglass",
+          "variant": "Spyglass",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "tinkering",
+      "name": "Compass",
+      "variantsTried": [
+        "Compass",
+        "a Compass",
+        "an Compass",
+        "the Compass",
+        "compas"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=148200",
+          "text": "Compass",
+          "variant": "Compass",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=2344",
+          "text": "Compass",
+          "variant": "Compass",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "baking",
+      "name": "Birthday Cake",
+      "variantsTried": [
+        "Birthday Cake",
+        "a Birthday Cake",
+        "an Birthday Cake",
+        "the Birthday Cake",
+        "birthday cake"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=89402",
+          "text": "Birthday Cake",
+          "variant": "Birthday Cake",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=15022",
+          "text": "Birthday Cake [ID 16562]",
+          "variant": "Birthday Cake",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=49545",
+          "text": "Birthday Cake [ID 31871]",
+          "variant": "Birthday Cake",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "baking",
+      "name": "Loaf of Bread",
+      "variantsTried": [
+        "Loaf of Bread",
+        "a Loaf of Bread",
+        "an Loaf of Bread",
+        "the Loaf of Bread",
+        "loaf of bread"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=7881",
+          "text": "Loaf of Bread",
+          "variant": "Loaf of Bread",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=115045",
+          "text": "Loaf of Bread",
+          "variant": "Loaf of Bread",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "baking",
+      "name": "Muffin",
+      "variantsTried": [
+        "Muffin",
+        "a Muffin",
+        "an Muffin",
+        "the Muffin",
+        "muffin"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=3448",
+          "text": "Muffin",
+          "variant": "Muffin",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=49763",
+          "text": "Muffin [crafted]",
+          "variant": "Muffin",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "baking",
+      "name": "Mammoth Sandwich",
+      "variantsTried": [
+        "Mammoth Sandwich",
+        "a Mammoth Sandwich",
+        "an Mammoth Sandwich",
+        "the Mammoth Sandwich",
+        "mammoth sandwich"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=60374",
+          "text": "Mammoth Sandwich",
+          "variant": "Mammoth Sandwich",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=15054",
+          "text": "Mammoth Sandwich",
+          "variant": "Mammoth Sandwich",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "baking",
+      "name": "Rabbit Stew",
+      "variantsTried": [
+        "Rabbit Stew",
+        "a Rabbit Stew",
+        "an Rabbit Stew",
+        "the Rabbit Stew",
+        "rabbit stew"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=15065",
+          "text": "Rabbit Stew",
+          "variant": "Rabbit Stew",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=49560",
+          "text": "Rabbit Stew [ID 11350]",
+          "variant": "Rabbit Stew",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "baking",
+      "name": "Wedding Cake",
+      "variantsTried": [
+        "Wedding Cake",
+        "a Wedding Cake",
+        "an Wedding Cake",
+        "the Wedding Cake",
+        "wedding cake"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=116075",
+          "text": "Wedding Cake",
+          "variant": "Wedding Cake",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=15081",
+          "text": "Wedding Cake",
+          "variant": "Wedding Cake",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=49281",
+          "text": "Wedding Cake [GM item]",
+          "variant": "Wedding Cake",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "baking",
+      "name": "White Chocolate Cookies",
+      "variantsTried": [
+        "White Chocolate Cookies",
+        "a White Chocolate Cookies",
+        "an White Chocolate Cookies",
+        "the White Chocolate Cookies",
+        "white chocolate cooky"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=15084",
+          "text": "White Chocolate Cookies",
+          "variant": "White Chocolate Cookies",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=31818",
+          "text": "White Chocolate Cookies [Now brownie free!]",
+          "variant": "White Chocolate Cookies",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "smithing",
+      "name": "Buckler",
+      "variantsTried": [
+        "Buckler",
+        "a Buckler",
+        "an Buckler",
+        "the Buckler",
+        "buckler"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=1077",
+          "text": "Buckler [crafted]",
+          "variant": "Buckler",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=1076",
+          "text": "Buckler [dropped]",
+          "variant": "Buckler",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "smithing",
+      "name": "Kite Shield",
+      "variantsTried": [
+        "Kite Shield",
+        "a Kite Shield",
+        "an Kite Shield",
+        "the Kite Shield",
+        "kite shield"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=1089",
+          "text": "Kite Shield",
+          "variant": "Kite Shield",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=49648",
+          "text": "Kite Shield [crafted]",
+          "variant": "Kite Shield",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "smithing",
+      "name": "Round Shield",
+      "variantsTried": [
+        "Round Shield",
+        "a Round Shield",
+        "an Round Shield",
+        "the Round Shield",
+        "round shield"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=1079",
+          "text": "Round Shield",
+          "variant": "Round Shield",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=1085",
+          "text": "Round Shield [crafted]",
+          "variant": "Round Shield",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "smithing",
+      "name": "Targ Shield",
+      "variantsTried": [
+        "Targ Shield",
+        "a Targ Shield",
+        "an Targ Shield",
+        "the Targ Shield",
+        "targ shield"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=1081",
+          "text": "Targ Shield",
+          "variant": "Targ Shield",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=1086",
+          "text": "Targ Shield [crafted]",
+          "variant": "Targ Shield",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "smithing",
+      "name": "Sheet Metal",
+      "variantsTried": [
+        "Sheet Metal",
+        "a Sheet Metal",
+        "an Sheet Metal",
+        "the Sheet Metal",
+        "sheet metal"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=14303",
+          "text": "Sheet Metal",
+          "variant": "Sheet Metal",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=107521",
+          "text": "Sheet Metal",
+          "variant": "Sheet Metal",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "smithing",
+      "name": "Tarnished Axe",
+      "variantsTried": [
+        "Tarnished Axe",
+        "a Tarnished Axe",
+        "an Tarnished Axe",
+        "the Tarnished Axe",
+        "tarnished axe"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=177",
+          "text": "Tarnished Axe",
+          "variant": "Tarnished Axe",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=60016",
+          "text": "Tarnished Axe",
+          "variant": "Tarnished Axe",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "smithing",
+      "name": "Skirt",
+      "variantsTried": [
+        "Skirt",
+        "a Skirt",
+        "an Skirt",
+        "the Skirt",
+        "skirt"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=71051",
+          "text": "Skirt",
+          "variant": "Skirt",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=82784",
+          "text": "Skirt",
+          "variant": "Skirt",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "smithing",
+      "name": "Tower Shield",
+      "variantsTried": [
+        "Tower Shield",
+        "a Tower Shield",
+        "an Tower Shield",
+        "the Tower Shield",
+        "tower shield"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=1097",
+          "text": "Tower Shield",
+          "variant": "Tower Shield",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=49151",
+          "text": "Tower Shield [crafted]",
+          "variant": "Tower Shield",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "smithing",
+      "name": "Tarnished Long Sword",
+      "variantsTried": [
+        "Tarnished Long Sword",
+        "a Tarnished Long Sword",
+        "an Tarnished Long Sword",
+        "the Tarnished Long Sword",
+        "tarnished long sword"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=142607",
+          "text": "Tarnished Long Sword",
+          "variant": "Tarnished Long Sword",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=183",
+          "text": "Tarnished Long Sword",
+          "variant": "Tarnished Long Sword",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "smithing",
+      "name": "Tarnished Dagger",
+      "variantsTried": [
+        "Tarnished Dagger",
+        "a Tarnished Dagger",
+        "an Tarnished Dagger",
+        "the Tarnished Dagger",
+        "tarnished dagger"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=600",
+          "text": "Tarnished Dagger",
+          "variant": "Tarnished Dagger",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=62231",
+          "text": "Tarnished Dagger",
+          "variant": "Tarnished Dagger",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "brewing",
+      "name": "Water Flask",
+      "variantsTried": [
+        "Water Flask",
+        "a Water Flask",
+        "an Water Flask",
+        "the Water Flask",
+        "water flask"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=59571",
+          "text": "Water Flask",
+          "variant": "Water Flask",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=7773",
+          "text": "Water Flask",
+          "variant": "Water Flask",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "fletching",
+      "name": "CLASS 1 Bone Point Arrow",
+      "variantsTried": [
+        "CLASS 1 Bone Point Arrow",
+        "a CLASS 1 Bone Point Arrow",
+        "an CLASS 1 Bone Point Arrow",
+        "the CLASS 1 Bone Point Arrow",
+        "clas 1 bone point arrow"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=23036",
+          "text": "CLASS 1 Bone Point Arrow [Range 100]",
+          "variant": "CLASS 1 Bone Point Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=23034",
+          "text": "CLASS 1 Bone Point Arrow [Range 50]",
+          "variant": "CLASS 1 Bone Point Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=23035",
+          "text": "CLASS 1 Bone Point Arrow [Range 75]",
+          "variant": "CLASS 1 Bone Point Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "fletching",
+      "name": "CLASS 1 Wood Point Arrow",
+      "variantsTried": [
+        "CLASS 1 Wood Point Arrow",
+        "a CLASS 1 Wood Point Arrow",
+        "an CLASS 1 Wood Point Arrow",
+        "the CLASS 1 Wood Point Arrow",
+        "clas 1 wood point arrow"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=23082",
+          "text": "CLASS 1 Wood Point Arrow [Range 100]",
+          "variant": "CLASS 1 Wood Point Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=23080",
+          "text": "CLASS 1 Wood Point Arrow [Range 50]",
+          "variant": "CLASS 1 Wood Point Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=23081",
+          "text": "CLASS 1 Wood Point Arrow [Range 75]",
+          "variant": "CLASS 1 Wood Point Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "fletching",
+      "name": "CLASS 1 Bone Hooked Arrow",
+      "variantsTried": [
+        "CLASS 1 Bone Hooked Arrow",
+        "a CLASS 1 Bone Hooked Arrow",
+        "an CLASS 1 Bone Hooked Arrow",
+        "the CLASS 1 Bone Hooked Arrow",
+        "clas 1 bone hooked arrow"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=29473",
+          "text": "CLASS 1 Bone Hooked Arrow [large nock]",
+          "variant": "CLASS 1 Bone Hooked Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=29475",
+          "text": "CLASS 1 Bone Hooked Arrow [medium nock]",
+          "variant": "CLASS 1 Bone Hooked Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=29474",
+          "text": "CLASS 1 Bone Hooked Arrow [small nock]",
+          "variant": "CLASS 1 Bone Hooked Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "fletching",
+      "name": "CLASS 2 Bone Hooked Arrow",
+      "variantsTried": [
+        "CLASS 2 Bone Hooked Arrow",
+        "a CLASS 2 Bone Hooked Arrow",
+        "an CLASS 2 Bone Hooked Arrow",
+        "the CLASS 2 Bone Hooked Arrow",
+        "clas 2 bone hooked arrow"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=29756",
+          "text": "CLASS 2 Bone Hooked Arrow [large nock]",
+          "variant": "CLASS 2 Bone Hooked Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=29900",
+          "text": "CLASS 2 Bone Hooked Arrow [medium nock]",
+          "variant": "CLASS 2 Bone Hooked Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=29899",
+          "text": "CLASS 2 Bone Hooked Arrow [small nock]",
+          "variant": "CLASS 2 Bone Hooked Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "fletching",
+      "name": "CLASS 2 Bone Point Arrow",
+      "variantsTried": [
+        "CLASS 2 Bone Point Arrow",
+        "a CLASS 2 Bone Point Arrow",
+        "an CLASS 2 Bone Point Arrow",
+        "the CLASS 2 Bone Point Arrow",
+        "clas 2 bone point arrow"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=25641",
+          "text": "CLASS 2 Bone Point Arrow [Range 100]",
+          "variant": "CLASS 2 Bone Point Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=25640",
+          "text": "CLASS 2 Bone Point Arrow [Range 125]",
+          "variant": "CLASS 2 Bone Point Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=25642",
+          "text": "CLASS 2 Bone Point Arrow [Range 150]",
+          "variant": "CLASS 2 Bone Point Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "fletching",
+      "name": "CLASS 2 Ceramic Silver Tip Arrow",
+      "variantsTried": [
+        "CLASS 2 Ceramic Silver Tip Arrow",
+        "a CLASS 2 Ceramic Silver Tip Arrow",
+        "an CLASS 2 Ceramic Silver Tip Arrow",
+        "the CLASS 2 Ceramic Silver Tip Arrow",
+        "clas 2 ceramic silver tip arrow"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=17018",
+          "text": "CLASS 2 Ceramic Silver Tip Arrow [Large Nock]",
+          "variant": "CLASS 2 Ceramic Silver Tip Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=30032",
+          "text": "CLASS 2 Ceramic Silver Tip Arrow [Medium Nock]",
+          "variant": "CLASS 2 Ceramic Silver Tip Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=30033",
+          "text": "CLASS 2 Ceramic Silver Tip Arrow [Small Nock]",
+          "variant": "CLASS 2 Ceramic Silver Tip Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "fletching",
+      "name": "CLASS 2 Ceramic Hooked Arrow",
+      "variantsTried": [
+        "CLASS 2 Ceramic Hooked Arrow",
+        "a CLASS 2 Ceramic Hooked Arrow",
+        "an CLASS 2 Ceramic Hooked Arrow",
+        "the CLASS 2 Ceramic Hooked Arrow",
+        "clas 2 ceramic hooked arrow"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=30027",
+          "text": "CLASS 2 Ceramic Hooked Arrow [large nock]",
+          "variant": "CLASS 2 Ceramic Hooked Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=30028",
+          "text": "CLASS 2 Ceramic Hooked Arrow [Range 125]",
+          "variant": "CLASS 2 Ceramic Hooked Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=11437",
+          "text": "CLASS 2 Ceramic Hooked Arrow [Range 150]",
+          "variant": "CLASS 2 Ceramic Hooked Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "fletching",
+      "name": "CLASS 2 Wood Point Arrow",
+      "variantsTried": [
+        "CLASS 2 Wood Point Arrow",
+        "a CLASS 2 Wood Point Arrow",
+        "an CLASS 2 Wood Point Arrow",
+        "the CLASS 2 Wood Point Arrow",
+        "clas 2 wood point arrow"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=25715",
+          "text": "CLASS 2 Wood Point Arrow [Range 100]",
+          "variant": "CLASS 2 Wood Point Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=25645",
+          "text": "CLASS 2 Wood Point Arrow [Range 125]",
+          "variant": "CLASS 2 Wood Point Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=25714",
+          "text": "CLASS 2 Wood Point Arrow [Range 150]",
+          "variant": "CLASS 2 Wood Point Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "fletching",
+      "name": "CLASS 2 Steel Silver Tip Arrow",
+      "variantsTried": [
+        "CLASS 2 Steel Silver Tip Arrow",
+        "a CLASS 2 Steel Silver Tip Arrow",
+        "an CLASS 2 Steel Silver Tip Arrow",
+        "the CLASS 2 Steel Silver Tip Arrow",
+        "clas 2 steel silver tip arrow"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=26807",
+          "text": "CLASS 2 Steel Silver Tip Arrow [Range 100]",
+          "variant": "CLASS 2 Steel Silver Tip Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=27464",
+          "text": "CLASS 2 Steel Silver Tip Arrow [Range 125]",
+          "variant": "CLASS 2 Steel Silver Tip Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=27463",
+          "text": "CLASS 2 Steel Silver Tip Arrow [Range 150]",
+          "variant": "CLASS 2 Steel Silver Tip Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "fletching",
+      "name": "CLASS 3 Bone Hooked Arrow",
+      "variantsTried": [
+        "CLASS 3 Bone Hooked Arrow",
+        "a CLASS 3 Bone Hooked Arrow",
+        "an CLASS 3 Bone Hooked Arrow",
+        "the CLASS 3 Bone Hooked Arrow",
+        "clas 3 bone hooked arrow"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=24074",
+          "text": "CLASS 3 Bone Hooked Arrow [Range 25]",
+          "variant": "CLASS 3 Bone Hooked Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=24073",
+          "text": "CLASS 3 Bone Hooked Arrow [Range 5]",
+          "variant": "CLASS 3 Bone Hooked Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=24072",
+          "text": "CLASS 3 Bone Hooked Arrow [Range 50]",
+          "variant": "CLASS 3 Bone Hooked Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "fletching",
+      "name": "CLASS 3 Ceramic Hooked Arrow",
+      "variantsTried": [
+        "CLASS 3 Ceramic Hooked Arrow",
+        "a CLASS 3 Ceramic Hooked Arrow",
+        "an CLASS 3 Ceramic Hooked Arrow",
+        "the CLASS 3 Ceramic Hooked Arrow",
+        "clas 3 ceramic hooked arrow"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=30182",
+          "text": "CLASS 3 Ceramic Hooked Arrow [large nock]",
+          "variant": "CLASS 3 Ceramic Hooked Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=30183",
+          "text": "CLASS 3 Ceramic Hooked Arrow [medium nock]",
+          "variant": "CLASS 3 Ceramic Hooked Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=30184",
+          "text": "CLASS 3 Ceramic Hooked Arrow [small nock]",
+          "variant": "CLASS 3 Ceramic Hooked Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "fletching",
+      "name": "CLASS 3 Bone Point Arrow",
+      "variantsTried": [
+        "CLASS 3 Bone Point Arrow",
+        "a CLASS 3 Bone Point Arrow",
+        "an CLASS 3 Bone Point Arrow",
+        "the CLASS 3 Bone Point Arrow",
+        "clas 3 bone point arrow"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=30135",
+          "text": "CLASS 3 Bone Point Arrow [medium nock]",
+          "variant": "CLASS 3 Bone Point Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=25646",
+          "text": "CLASS 3 Bone Point Arrow [Range 5]",
+          "variant": "CLASS 3 Bone Point Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=30136",
+          "text": "CLASS 3 Bone Point Arrow [small nock]",
+          "variant": "CLASS 3 Bone Point Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "fletching",
+      "name": "CLASS 4 Bone Hooked Arrow",
+      "variantsTried": [
+        "CLASS 4 Bone Hooked Arrow",
+        "a CLASS 4 Bone Hooked Arrow",
+        "an CLASS 4 Bone Hooked Arrow",
+        "the CLASS 4 Bone Hooked Arrow",
+        "clas 4 bone hooked arrow"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=30356",
+          "text": "CLASS 4 Bone Hooked Arrow [large nock]",
+          "variant": "CLASS 4 Bone Hooked Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=30357",
+          "text": "CLASS 4 Bone Hooked Arrow [medium nock]",
+          "variant": "CLASS 4 Bone Hooked Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=30358",
+          "text": "CLASS 4 Bone Hooked Arrow [small nock]",
+          "variant": "CLASS 4 Bone Hooked Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "fletching",
+      "name": "CLASS 4 Ceramic Hooked Arrow",
+      "variantsTried": [
+        "CLASS 4 Ceramic Hooked Arrow",
+        "a CLASS 4 Ceramic Hooked Arrow",
+        "an CLASS 4 Ceramic Hooked Arrow",
+        "the CLASS 4 Ceramic Hooked Arrow",
+        "clas 4 ceramic hooked arrow"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=30382",
+          "text": "CLASS 4 Ceramic Hooked Arrow [large nock]",
+          "variant": "CLASS 4 Ceramic Hooked Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=30571",
+          "text": "CLASS 4 Ceramic Hooked Arrow [medium nock]",
+          "variant": "CLASS 4 Ceramic Hooked Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=30572",
+          "text": "CLASS 4 Ceramic Hooked Arrow [small nock]",
+          "variant": "CLASS 4 Ceramic Hooked Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "fletching",
+      "name": "CLASS 3 Steel Silver Tip Arrow",
+      "variantsTried": [
+        "CLASS 3 Steel Silver Tip Arrow",
+        "a CLASS 3 Steel Silver Tip Arrow",
+        "an CLASS 3 Steel Silver Tip Arrow",
+        "the CLASS 3 Steel Silver Tip Arrow",
+        "clas 3 steel silver tip arrow"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=30283",
+          "text": "CLASS 3 Steel Silver Tip Arrow [Range 25]",
+          "variant": "CLASS 3 Steel Silver Tip Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=30282",
+          "text": "CLASS 3 Steel Silver Tip Arrow [Range 5]",
+          "variant": "CLASS 3 Steel Silver Tip Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=30284",
+          "text": "CLASS 3 Steel Silver Tip Arrow [Range 50]",
+          "variant": "CLASS 3 Steel Silver Tip Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "fletching",
+      "name": "CLASS 3 Ceramic Silver Tip Arrow",
+      "variantsTried": [
+        "CLASS 3 Ceramic Silver Tip Arrow",
+        "a CLASS 3 Ceramic Silver Tip Arrow",
+        "an CLASS 3 Ceramic Silver Tip Arrow",
+        "the CLASS 3 Ceramic Silver Tip Arrow",
+        "clas 3 ceramic silver tip arrow"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=30191",
+          "text": "CLASS 3 Ceramic Silver Tip Arrow [large nock]",
+          "variant": "CLASS 3 Ceramic Silver Tip Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=30192",
+          "text": "CLASS 3 Ceramic Silver Tip Arrow [medium nock]",
+          "variant": "CLASS 3 Ceramic Silver Tip Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=30193",
+          "text": "CLASS 3 Ceramic Silver Tip Arrow [small nock]",
+          "variant": "CLASS 3 Ceramic Silver Tip Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "fletching",
+      "name": "CLASS 4 Steel Silver Tip Arrow",
+      "variantsTried": [
+        "CLASS 4 Steel Silver Tip Arrow",
+        "a CLASS 4 Steel Silver Tip Arrow",
+        "an CLASS 4 Steel Silver Tip Arrow",
+        "the CLASS 4 Steel Silver Tip Arrow",
+        "clas 4 steel silver tip arrow"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=30945",
+          "text": "CLASS 4 Steel Silver Tip Arrow [large nock]",
+          "variant": "CLASS 4 Steel Silver Tip Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=30948",
+          "text": "CLASS 4 Steel Silver Tip Arrow [medium nock]",
+          "variant": "CLASS 4 Steel Silver Tip Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=30952",
+          "text": "CLASS 4 Steel Silver Tip Arrow [small nock]",
+          "variant": "CLASS 4 Steel Silver Tip Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "fletching",
+      "name": "CLASS 5 Ceramic Silver Tip Arrow",
+      "variantsTried": [
+        "CLASS 5 Ceramic Silver Tip Arrow",
+        "a CLASS 5 Ceramic Silver Tip Arrow",
+        "an CLASS 5 Ceramic Silver Tip Arrow",
+        "the CLASS 5 Ceramic Silver Tip Arrow",
+        "clas 5 ceramic silver tip arrow"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=31147",
+          "text": "CLASS 5 Ceramic Silver Tip Arrow [large nock]",
+          "variant": "CLASS 5 Ceramic Silver Tip Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=31150",
+          "text": "CLASS 5 Ceramic Silver Tip Arrow [medium nock]",
+          "variant": "CLASS 5 Ceramic Silver Tip Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=31153",
+          "text": "CLASS 5 Ceramic Silver Tip Arrow [small nock]",
+          "variant": "CLASS 5 Ceramic Silver Tip Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "fletching",
+      "name": "CLASS 4 Ceramic Silver Tip Arrow",
+      "variantsTried": [
+        "CLASS 4 Ceramic Silver Tip Arrow",
+        "a CLASS 4 Ceramic Silver Tip Arrow",
+        "an CLASS 4 Ceramic Silver Tip Arrow",
+        "the CLASS 4 Ceramic Silver Tip Arrow",
+        "clas 4 ceramic silver tip arrow"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=30576",
+          "text": "CLASS 4 Ceramic Silver Tip Arrow [large nock]",
+          "variant": "CLASS 4 Ceramic Silver Tip Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=30577",
+          "text": "CLASS 4 Ceramic Silver Tip Arrow [medium nock]",
+          "variant": "CLASS 4 Ceramic Silver Tip Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=30578",
+          "text": "CLASS 4 Ceramic Silver Tip Arrow [small nock]",
+          "variant": "CLASS 4 Ceramic Silver Tip Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "fletching",
+      "name": "CLASS 5 Steel Silver Tip Arrow",
+      "variantsTried": [
+        "CLASS 5 Steel Silver Tip Arrow",
+        "a CLASS 5 Steel Silver Tip Arrow",
+        "an CLASS 5 Steel Silver Tip Arrow",
+        "the CLASS 5 Steel Silver Tip Arrow",
+        "clas 5 steel silver tip arrow"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=31163",
+          "text": "CLASS 5 Steel Silver Tip Arrow [large nock]",
+          "variant": "CLASS 5 Steel Silver Tip Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=31164",
+          "text": "CLASS 5 Steel Silver Tip Arrow [medium nock]",
+          "variant": "CLASS 5 Steel Silver Tip Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=31165",
+          "text": "CLASS 5 Steel Silver Tip Arrow [small nock]",
+          "variant": "CLASS 5 Steel Silver Tip Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "fletching",
+      "name": "CLASS 6 Ceramic Silver Tip Arrow",
+      "variantsTried": [
+        "CLASS 6 Ceramic Silver Tip Arrow",
+        "a CLASS 6 Ceramic Silver Tip Arrow",
+        "an CLASS 6 Ceramic Silver Tip Arrow",
+        "the CLASS 6 Ceramic Silver Tip Arrow",
+        "clas 6 ceramic silver tip arrow"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=31558",
+          "text": "CLASS 6 Ceramic Silver Tip Arrow [large nock]",
+          "variant": "CLASS 6 Ceramic Silver Tip Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=31559",
+          "text": "CLASS 6 Ceramic Silver Tip Arrow [medium nock]",
+          "variant": "CLASS 6 Ceramic Silver Tip Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=31560",
+          "text": "CLASS 6 Ceramic Silver Tip Arrow [small nock]",
+          "variant": "CLASS 6 Ceramic Silver Tip Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "fletching",
+      "name": "CLASS 6 Steel Silver Tip Arrow",
+      "variantsTried": [
+        "CLASS 6 Steel Silver Tip Arrow",
+        "a CLASS 6 Steel Silver Tip Arrow",
+        "an CLASS 6 Steel Silver Tip Arrow",
+        "the CLASS 6 Steel Silver Tip Arrow",
+        "clas 6 steel silver tip arrow"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=31571",
+          "text": "CLASS 6 Steel Silver Tip Arrow [large nock]",
+          "variant": "CLASS 6 Steel Silver Tip Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=31572",
+          "text": "CLASS 6 Steel Silver Tip Arrow [medium nock]",
+          "variant": "CLASS 6 Steel Silver Tip Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=31573",
+          "text": "CLASS 6 Steel Silver Tip Arrow [Range 100]",
+          "variant": "CLASS 6 Steel Silver Tip Arrow",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "pottery",
+      "name": "Mixing Bowl",
+      "variantsTried": [
+        "Mixing Bowl",
+        "a Mixing Bowl",
+        "an Mixing Bowl",
+        "the Mixing Bowl",
+        "mixing bowl"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=12292",
+          "text": "Mixing Bowl",
+          "variant": "Mixing Bowl",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=123564",
+          "text": "Mixing Bowl [Early Prog Servers]",
+          "variant": "Mixing Bowl",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=94820",
+          "text": "Mixing Bowl [placeable]",
+          "variant": "Mixing Bowl",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "pottery",
+      "name": "Unfired Idol",
+      "variantsTried": [
+        "Unfired Idol",
+        "a Unfired Idol",
+        "an Unfired Idol",
+        "the Unfired Idol",
+        "unfired idol"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=76394",
+          "text": "Unfired Idol [Idol of Bertoxxulous]",
+          "variant": "Unfired Idol",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=28548",
+          "text": "Unfired Idol [Idol Of Brell Serilis]",
+          "variant": "Unfired Idol",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=28551",
+          "text": "Unfired Idol [Idol of Bristlebane]",
+          "variant": "Unfired Idol",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=28549",
+          "text": "Unfired Idol [Idol of Cazic Thule]",
+          "variant": "Unfired Idol",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=28550",
+          "text": "Unfired Idol [Idol of Erollisi Marr]",
+          "variant": "Unfired Idol",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=28552",
+          "text": "Unfired Idol [Idol Of Innoruuk]",
+          "variant": "Unfired Idol",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=28553",
+          "text": "Unfired Idol [Idol Of Karana]",
+          "variant": "Unfired Idol",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=28555",
+          "text": "Unfired Idol [Idol of Mithaniel Marr]",
+          "variant": "Unfired Idol",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=80150",
+          "text": "Unfired Idol [Idol of Prexus]",
+          "variant": "Unfired Idol",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=28556",
+          "text": "Unfired Idol [Idol of Quellious]",
+          "variant": "Unfired Idol",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=28557",
+          "text": "Unfired Idol [Idol Of Rallos Zek]",
+          "variant": "Unfired Idol",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=28558",
+          "text": "Unfired Idol [Idol Of Rodcet Nife]",
+          "variant": "Unfired Idol",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    },
+    {
+      "skill": "tailoring",
+      "name": "Crystalline Silk Mask",
+      "variantsTried": [
+        "Crystalline Silk Mask",
+        "a Crystalline Silk Mask",
+        "an Crystalline Silk Mask",
+        "the Crystalline Silk Mask",
+        "crystalline silk mask"
+      ],
+      "candidates": [
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=5162",
+          "text": "Crystalline Silk Mask",
+          "variant": "Crystalline Silk Mask",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        },
+        {
+          "url": "https://everquest.allakhazam.com/db/item.html?item=4121",
+          "text": "Crystalline Silk Mask [dropped]",
+          "variant": "Crystalline Silk Mask",
+          "score": 1,
+          "matchReason": "normalized exact match"
+        }
+      ],
+      "reason": "Multiple strong fuzzy matches."
+    }
+  ],
+  "unresolved": [
+    {
+      "skill": "tinkering",
+      "name": "Gnomish Vanishing Device",
+      "variantsTried": [
+        "Gnomish Vanishing Device",
+        "a Gnomish Vanishing Device",
+        "an Gnomish Vanishing Device",
+        "the Gnomish Vanishing Device",
+        "gnomish vanishing device"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "baking",
+      "name": "Fillets",
+      "variantsTried": [
+        "Fillets",
+        "a Fillets",
+        "an Fillets",
+        "the Fillets",
+        "fillet"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "baking",
+      "name": "Snow Bunny Stew",
+      "variantsTried": [
+        "Snow Bunny Stew",
+        "a Snow Bunny Stew",
+        "an Snow Bunny Stew",
+        "the Snow Bunny Stew",
+        "snow bunny stew"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "smithing",
+      "name": "Bracer",
+      "variantsTried": [
+        "Bracer",
+        "a Bracer",
+        "an Bracer",
+        "the Bracer",
+        "bracer"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "smithing",
+      "name": "Breastplate",
+      "variantsTried": [
+        "Breastplate",
+        "a Breastplate",
+        "an Breastplate",
+        "the Breastplate",
+        "breastplate"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "smithing",
+      "name": "Bracelet",
+      "variantsTried": [
+        "Bracelet",
+        "a Bracelet",
+        "an Bracelet",
+        "the Bracelet",
+        "bracelet"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "smithing",
+      "name": "Boots",
+      "variantsTried": [
+        "Boots",
+        "a Boots",
+        "an Boots",
+        "the Boots",
+        "boot"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "smithing",
+      "name": "Coif",
+      "variantsTried": [
+        "Coif",
+        "a Coif",
+        "an Coif",
+        "the Coif",
+        "coif"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "smithing",
+      "name": "Cloak",
+      "variantsTried": [
+        "Cloak",
+        "a Cloak",
+        "an Cloak",
+        "the Cloak",
+        "cloak"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "smithing",
+      "name": "Gauntlets",
+      "variantsTried": [
+        "Gauntlets",
+        "a Gauntlets",
+        "an Gauntlets",
+        "the Gauntlets",
+        "gauntlet"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "smithing",
+      "name": "Girdle",
+      "variantsTried": [
+        "Girdle",
+        "a Girdle",
+        "an Girdle",
+        "the Girdle",
+        "girdle"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "smithing",
+      "name": "Collar",
+      "variantsTried": [
+        "Collar",
+        "a Collar",
+        "an Collar",
+        "the Collar",
+        "collar"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "smithing",
+      "name": "Gorget",
+      "variantsTried": [
+        "Gorget",
+        "a Gorget",
+        "an Gorget",
+        "the Gorget",
+        "gorget"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "smithing",
+      "name": "Helm",
+      "variantsTried": [
+        "Helm",
+        "a Helm",
+        "an Helm",
+        "the Helm",
+        "helm"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "smithing",
+      "name": "Greaves",
+      "variantsTried": [
+        "Greaves",
+        "a Greaves",
+        "an Greaves",
+        "the Greaves",
+        "greav"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "smithing",
+      "name": "Leggings",
+      "variantsTried": [
+        "Leggings",
+        "a Leggings",
+        "an Leggings",
+        "the Leggings",
+        "legging"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "smithing",
+      "name": "Gloves",
+      "variantsTried": [
+        "Gloves",
+        "a Gloves",
+        "an Gloves",
+        "the Gloves",
+        "glov"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "smithing",
+      "name": "Sewing Kit",
+      "variantsTried": [
+        "Sewing Kit",
+        "a Sewing Kit",
+        "an Sewing Kit",
+        "the Sewing Kit",
+        "sewing kit"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "smithing",
+      "name": "Pauldron",
+      "variantsTried": [
+        "Pauldron",
+        "a Pauldron",
+        "an Pauldron",
+        "the Pauldron",
+        "pauldron"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "smithing",
+      "name": "Mantle",
+      "variantsTried": [
+        "Mantle",
+        "a Mantle",
+        "an Mantle",
+        "the Mantle",
+        "mantle"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "smithing",
+      "name": "Mask",
+      "variantsTried": [
+        "Mask",
+        "a Mask",
+        "an Mask",
+        "the Mask",
+        "mask"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "smithing",
+      "name": "Mail",
+      "variantsTried": [
+        "Mail",
+        "a Mail",
+        "an Mail",
+        "the Mail",
+        "mail"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "smithing",
+      "name": "Shaped Cookie Cutters",
+      "variantsTried": [
+        "Shaped Cookie Cutters",
+        "a Shaped Cookie Cutters",
+        "an Shaped Cookie Cutters",
+        "the Shaped Cookie Cutters",
+        "shaped cookie cutter"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "smithing",
+      "name": "Sleeves",
+      "variantsTried": [
+        "Sleeves",
+        "a Sleeves",
+        "an Sleeves",
+        "the Sleeves",
+        "sleev"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "smithing",
+      "name": "Vambraces",
+      "variantsTried": [
+        "Vambraces",
+        "a Vambraces",
+        "an Vambraces",
+        "the Vambraces",
+        "vambrac"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "smithing",
+      "name": "Visor",
+      "variantsTried": [
+        "Visor",
+        "a Visor",
+        "an Visor",
+        "the Visor",
+        "visor"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "smithing",
+      "name": "Veil",
+      "variantsTried": [
+        "Veil",
+        "a Veil",
+        "an Veil",
+        "the Veil",
+        "veil"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "1-Cam Carved Darkwood, Hemp",
+      "variantsTried": [
+        "1-Cam Carved Darkwood, Hemp",
+        "a 1-Cam Carved Darkwood, Hemp",
+        "an 1-Cam Carved Darkwood, Hemp",
+        "the 1-Cam Carved Darkwood, Hemp",
+        "1 Cam Carved Darkwood Hemp",
+        "1 cam carved darkwood hemp"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "brewing",
+      "name": "Ol",
+      "variantsTried": [
+        "Ol",
+        "a Ol",
+        "an Ol",
+        "the Ol",
+        "ol"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "brewing",
+      "name": "Lothran",
+      "variantsTried": [
+        "Lothran",
+        "a Lothran",
+        "an Lothran",
+        "the Lothran",
+        "lothran"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "brewing",
+      "name": "Minotaur Hero",
+      "variantsTried": [
+        "Minotaur Hero",
+        "a Minotaur Hero",
+        "an Minotaur Hero",
+        "the Minotaur Hero",
+        "minotaur hero"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "brewing",
+      "name": "Thubr",
+      "variantsTried": [
+        "Thubr",
+        "a Thubr",
+        "an Thubr",
+        "the Thubr",
+        "thubr"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "1-Cam Carved Darkwood, Linen",
+      "variantsTried": [
+        "1-Cam Carved Darkwood, Linen",
+        "a 1-Cam Carved Darkwood, Linen",
+        "an 1-Cam Carved Darkwood, Linen",
+        "the 1-Cam Carved Darkwood, Linen",
+        "1 Cam Carved Darkwood Linen",
+        "1 cam carved darkwood linen"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "1-Cam Carved Darkwood, Silk",
+      "variantsTried": [
+        "1-Cam Carved Darkwood, Silk",
+        "a 1-Cam Carved Darkwood, Silk",
+        "an 1-Cam Carved Darkwood, Silk",
+        "the 1-Cam Carved Darkwood, Silk",
+        "1 Cam Carved Darkwood Silk",
+        "1 cam carved darkwood silk"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "1-Cam Carved Oak, Linen",
+      "variantsTried": [
+        "1-Cam Carved Oak, Linen",
+        "a 1-Cam Carved Oak, Linen",
+        "an 1-Cam Carved Oak, Linen",
+        "the 1-Cam Carved Oak, Linen",
+        "1 Cam Carved Oak Linen",
+        "1 cam carved oak linen"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "1-Cam Carved Oak, Hemp",
+      "variantsTried": [
+        "1-Cam Carved Oak, Hemp",
+        "a 1-Cam Carved Oak, Hemp",
+        "an 1-Cam Carved Oak, Hemp",
+        "the 1-Cam Carved Oak, Hemp",
+        "1 Cam Carved Oak Hemp",
+        "1 cam carved oak hemp"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "1-Cam Carved Oak, Silk",
+      "variantsTried": [
+        "1-Cam Carved Oak, Silk",
+        "a 1-Cam Carved Oak, Silk",
+        "an 1-Cam Carved Oak, Silk",
+        "the 1-Cam Carved Oak, Silk",
+        "1 Cam Carved Oak Silk",
+        "1 cam carved oak silk"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "1-Cam Carved Shadewood, Hemp",
+      "variantsTried": [
+        "1-Cam Carved Shadewood, Hemp",
+        "a 1-Cam Carved Shadewood, Hemp",
+        "an 1-Cam Carved Shadewood, Hemp",
+        "the 1-Cam Carved Shadewood, Hemp",
+        "1 Cam Carved Shadewood Hemp",
+        "1 cam carved shadewood hemp"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "1-Cam Darkwood, Linen",
+      "variantsTried": [
+        "1-Cam Darkwood, Linen",
+        "a 1-Cam Darkwood, Linen",
+        "an 1-Cam Darkwood, Linen",
+        "the 1-Cam Darkwood, Linen",
+        "1 Cam Darkwood Linen",
+        "1 cam darkwood linen"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "1-Cam Carved Shadewood, Linen",
+      "variantsTried": [
+        "1-Cam Carved Shadewood, Linen",
+        "a 1-Cam Carved Shadewood, Linen",
+        "an 1-Cam Carved Shadewood, Linen",
+        "the 1-Cam Carved Shadewood, Linen",
+        "1 Cam Carved Shadewood Linen",
+        "1 cam carved shadewood linen"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "1-Cam Carved Shadewood, Silk",
+      "variantsTried": [
+        "1-Cam Carved Shadewood, Silk",
+        "a 1-Cam Carved Shadewood, Silk",
+        "an 1-Cam Carved Shadewood, Silk",
+        "the 1-Cam Carved Shadewood, Silk",
+        "1 Cam Carved Shadewood Silk",
+        "1 cam carved shadewood silk"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "1-Cam Darkwood, Hemp",
+      "variantsTried": [
+        "1-Cam Darkwood, Hemp",
+        "a 1-Cam Darkwood, Hemp",
+        "an 1-Cam Darkwood, Hemp",
+        "the 1-Cam Darkwood, Hemp",
+        "1 Cam Darkwood Hemp",
+        "1 cam darkwood hemp"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "1-Cam Oak, Hemp",
+      "variantsTried": [
+        "1-Cam Oak, Hemp",
+        "a 1-Cam Oak, Hemp",
+        "an 1-Cam Oak, Hemp",
+        "the 1-Cam Oak, Hemp",
+        "1 Cam Oak Hemp",
+        "1 cam oak hemp"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "1-Cam Darkwood, Silk",
+      "variantsTried": [
+        "1-Cam Darkwood, Silk",
+        "a 1-Cam Darkwood, Silk",
+        "an 1-Cam Darkwood, Silk",
+        "the 1-Cam Darkwood, Silk",
+        "1 Cam Darkwood Silk",
+        "1 cam darkwood silk"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "1-Cam Oak, Silk",
+      "variantsTried": [
+        "1-Cam Oak, Silk",
+        "a 1-Cam Oak, Silk",
+        "an 1-Cam Oak, Silk",
+        "the 1-Cam Oak, Silk",
+        "1 Cam Oak Silk",
+        "1 cam oak silk"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "1-Cam Oak, Linen",
+      "variantsTried": [
+        "1-Cam Oak, Linen",
+        "a 1-Cam Oak, Linen",
+        "an 1-Cam Oak, Linen",
+        "the 1-Cam Oak, Linen",
+        "1 Cam Oak Linen",
+        "1 cam oak linen"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "1-Cam Shadewood, Hemp",
+      "variantsTried": [
+        "1-Cam Shadewood, Hemp",
+        "a 1-Cam Shadewood, Hemp",
+        "an 1-Cam Shadewood, Hemp",
+        "the 1-Cam Shadewood, Hemp",
+        "1 Cam Shadewood Hemp",
+        "1 cam shadewood hemp"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "1-Cam Shadewood, Linen",
+      "variantsTried": [
+        "1-Cam Shadewood, Linen",
+        "a 1-Cam Shadewood, Linen",
+        "an 1-Cam Shadewood, Linen",
+        "the 1-Cam Shadewood, Linen",
+        "1 Cam Shadewood Linen",
+        "1 cam shadewood linen"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "1-Cam Shadewood, Silk",
+      "variantsTried": [
+        "1-Cam Shadewood, Silk",
+        "a 1-Cam Shadewood, Silk",
+        "an 1-Cam Shadewood, Silk",
+        "the 1-Cam Shadewood, Silk",
+        "1 Cam Shadewood Silk",
+        "1 cam shadewood silk"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "1-Cam Shaped Darkwood, Hemp",
+      "variantsTried": [
+        "1-Cam Shaped Darkwood, Hemp",
+        "a 1-Cam Shaped Darkwood, Hemp",
+        "an 1-Cam Shaped Darkwood, Hemp",
+        "the 1-Cam Shaped Darkwood, Hemp",
+        "1 Cam Shaped Darkwood Hemp",
+        "1 cam shaped darkwood hemp"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "1-Cam Shaped Darkwood, Silk",
+      "variantsTried": [
+        "1-Cam Shaped Darkwood, Silk",
+        "a 1-Cam Shaped Darkwood, Silk",
+        "an 1-Cam Shaped Darkwood, Silk",
+        "the 1-Cam Shaped Darkwood, Silk",
+        "1 Cam Shaped Darkwood Silk",
+        "1 cam shaped darkwood silk"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "1-Cam Shaped Shadewood, Hemp",
+      "variantsTried": [
+        "1-Cam Shaped Shadewood, Hemp",
+        "a 1-Cam Shaped Shadewood, Hemp",
+        "an 1-Cam Shaped Shadewood, Hemp",
+        "the 1-Cam Shaped Shadewood, Hemp",
+        "1 Cam Shaped Shadewood Hemp",
+        "1 cam shaped shadewood hemp"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "1-Cam Shaped Darkwood, Linen",
+      "variantsTried": [
+        "1-Cam Shaped Darkwood, Linen",
+        "a 1-Cam Shaped Darkwood, Linen",
+        "an 1-Cam Shaped Darkwood, Linen",
+        "the 1-Cam Shaped Darkwood, Linen",
+        "1 Cam Shaped Darkwood Linen",
+        "1 cam shaped darkwood linen"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "1-Cam Shaped Oak, Hemp",
+      "variantsTried": [
+        "1-Cam Shaped Oak, Hemp",
+        "a 1-Cam Shaped Oak, Hemp",
+        "an 1-Cam Shaped Oak, Hemp",
+        "the 1-Cam Shaped Oak, Hemp",
+        "1 Cam Shaped Oak Hemp",
+        "1 cam shaped oak hemp"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "1-Cam Shaped Oak, Linen",
+      "variantsTried": [
+        "1-Cam Shaped Oak, Linen",
+        "a 1-Cam Shaped Oak, Linen",
+        "an 1-Cam Shaped Oak, Linen",
+        "the 1-Cam Shaped Oak, Linen",
+        "1 Cam Shaped Oak Linen",
+        "1 cam shaped oak linen"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "1-Cam Shaped Oak, Silk",
+      "variantsTried": [
+        "1-Cam Shaped Oak, Silk",
+        "a 1-Cam Shaped Oak, Silk",
+        "an 1-Cam Shaped Oak, Silk",
+        "the 1-Cam Shaped Oak, Silk",
+        "1 Cam Shaped Oak Silk",
+        "1 cam shaped oak silk"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Ash, Silk",
+      "variantsTried": [
+        "Ash, Silk",
+        "a Ash, Silk",
+        "an Ash, Silk",
+        "the Ash, Silk",
+        "Ash Silk",
+        "ash silk"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "1-Cam Shaped Shadewood, Silk",
+      "variantsTried": [
+        "1-Cam Shaped Shadewood, Silk",
+        "a 1-Cam Shaped Shadewood, Silk",
+        "an 1-Cam Shaped Shadewood, Silk",
+        "the 1-Cam Shaped Shadewood, Silk",
+        "1 Cam Shaped Shadewood Silk",
+        "1 cam shaped shadewood silk"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "1-Cam Shaped Shadewood, Linen",
+      "variantsTried": [
+        "1-Cam Shaped Shadewood, Linen",
+        "a 1-Cam Shaped Shadewood, Linen",
+        "an 1-Cam Shaped Shadewood, Linen",
+        "the 1-Cam Shaped Shadewood, Linen",
+        "1 Cam Shaped Shadewood Linen",
+        "1 cam shaped shadewood linen"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Ash, Hemp",
+      "variantsTried": [
+        "Ash, Hemp",
+        "a Ash, Hemp",
+        "an Ash, Hemp",
+        "the Ash, Hemp",
+        "Ash Hemp",
+        "ash hemp"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Carved Ash, Hemp",
+      "variantsTried": [
+        "Carved Ash, Hemp",
+        "a Carved Ash, Hemp",
+        "an Carved Ash, Hemp",
+        "the Carved Ash, Hemp",
+        "Carved Ash Hemp",
+        "carved ash hemp"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Ash, Linen",
+      "variantsTried": [
+        "Ash, Linen",
+        "a Ash, Linen",
+        "an Ash, Linen",
+        "the Ash, Linen",
+        "Ash Linen",
+        "ash linen"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Carved Ash, Linen",
+      "variantsTried": [
+        "Carved Ash, Linen",
+        "a Carved Ash, Linen",
+        "an Carved Ash, Linen",
+        "the Carved Ash, Linen",
+        "Carved Ash Linen",
+        "carved ash linen"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Carved Darkwood, Hemp",
+      "variantsTried": [
+        "Carved Darkwood, Hemp",
+        "a Carved Darkwood, Hemp",
+        "an Carved Darkwood, Hemp",
+        "the Carved Darkwood, Hemp",
+        "Carved Darkwood Hemp",
+        "carved darkwood hemp"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Carved Elm, Hemp",
+      "variantsTried": [
+        "Carved Elm, Hemp",
+        "a Carved Elm, Hemp",
+        "an Carved Elm, Hemp",
+        "the Carved Elm, Hemp",
+        "Carved Elm Hemp",
+        "carved elm hemp"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Carved Darkwood, Linen",
+      "variantsTried": [
+        "Carved Darkwood, Linen",
+        "a Carved Darkwood, Linen",
+        "an Carved Darkwood, Linen",
+        "the Carved Darkwood, Linen",
+        "Carved Darkwood Linen",
+        "carved darkwood linen"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Carved Ash, Silk",
+      "variantsTried": [
+        "Carved Ash, Silk",
+        "a Carved Ash, Silk",
+        "an Carved Ash, Silk",
+        "the Carved Ash, Silk",
+        "Carved Ash Silk",
+        "carved ash silk"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Carved Darkwood, Silk",
+      "variantsTried": [
+        "Carved Darkwood, Silk",
+        "a Carved Darkwood, Silk",
+        "an Carved Darkwood, Silk",
+        "the Carved Darkwood, Silk",
+        "Carved Darkwood Silk",
+        "carved darkwood silk"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Carved Elm, Linen",
+      "variantsTried": [
+        "Carved Elm, Linen",
+        "a Carved Elm, Linen",
+        "an Carved Elm, Linen",
+        "the Carved Elm, Linen",
+        "Carved Elm Linen",
+        "carved elm linen"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Carved Oak, Hemp",
+      "variantsTried": [
+        "Carved Oak, Hemp",
+        "a Carved Oak, Hemp",
+        "an Carved Oak, Hemp",
+        "the Carved Oak, Hemp",
+        "Carved Oak Hemp",
+        "carved oak hemp"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Carved Oak, Linen",
+      "variantsTried": [
+        "Carved Oak, Linen",
+        "a Carved Oak, Linen",
+        "an Carved Oak, Linen",
+        "the Carved Oak, Linen",
+        "Carved Oak Linen",
+        "carved oak linen"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Carved Elm, Silk",
+      "variantsTried": [
+        "Carved Elm, Silk",
+        "a Carved Elm, Silk",
+        "an Carved Elm, Silk",
+        "the Carved Elm, Silk",
+        "Carved Elm Silk",
+        "carved elm silk"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Carved Oak, Silk",
+      "variantsTried": [
+        "Carved Oak, Silk",
+        "a Carved Oak, Silk",
+        "an Carved Oak, Silk",
+        "the Carved Oak, Silk",
+        "Carved Oak Silk",
+        "carved oak silk"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Carved Shadewood, Hemp",
+      "variantsTried": [
+        "Carved Shadewood, Hemp",
+        "a Carved Shadewood, Hemp",
+        "an Carved Shadewood, Hemp",
+        "the Carved Shadewood, Hemp",
+        "Carved Shadewood Hemp",
+        "carved shadewood hemp"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Carved Shadewood, Linen",
+      "variantsTried": [
+        "Carved Shadewood, Linen",
+        "a Carved Shadewood, Linen",
+        "an Carved Shadewood, Linen",
+        "the Carved Shadewood, Linen",
+        "Carved Shadewood Linen",
+        "carved shadewood linen"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Carved Shadewood, Silk",
+      "variantsTried": [
+        "Carved Shadewood, Silk",
+        "a Carved Shadewood, Silk",
+        "an Carved Shadewood, Silk",
+        "the Carved Shadewood, Silk",
+        "Carved Shadewood Silk",
+        "carved shadewood silk"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Compound Carved Darkwood, Linen",
+      "variantsTried": [
+        "Compound Carved Darkwood, Linen",
+        "a Compound Carved Darkwood, Linen",
+        "an Compound Carved Darkwood, Linen",
+        "the Compound Carved Darkwood, Linen",
+        "Compound Carved Darkwood Linen",
+        "compound carved darkwood linen"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Compound Carved Darkwood, Hemp",
+      "variantsTried": [
+        "Compound Carved Darkwood, Hemp",
+        "a Compound Carved Darkwood, Hemp",
+        "an Compound Carved Darkwood, Hemp",
+        "the Compound Carved Darkwood, Hemp",
+        "Compound Carved Darkwood Hemp",
+        "compound carved darkwood hemp"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Compound Carved Shadewood, Linen",
+      "variantsTried": [
+        "Compound Carved Shadewood, Linen",
+        "a Compound Carved Shadewood, Linen",
+        "an Compound Carved Shadewood, Linen",
+        "the Compound Carved Shadewood, Linen",
+        "Compound Carved Shadewood Linen",
+        "compound carved shadewood linen"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Compound Carved Shadewood, Silk",
+      "variantsTried": [
+        "Compound Carved Shadewood, Silk",
+        "a Compound Carved Shadewood, Silk",
+        "an Compound Carved Shadewood, Silk",
+        "the Compound Carved Shadewood, Silk",
+        "Compound Carved Shadewood Silk",
+        "compound carved shadewood silk"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Compound Carved Darkwood, Silk",
+      "variantsTried": [
+        "Compound Carved Darkwood, Silk",
+        "a Compound Carved Darkwood, Silk",
+        "an Compound Carved Darkwood, Silk",
+        "the Compound Carved Darkwood, Silk",
+        "Compound Carved Darkwood Silk",
+        "compound carved darkwood silk"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Compound Carved Shadewood, Hemp",
+      "variantsTried": [
+        "Compound Carved Shadewood, Hemp",
+        "a Compound Carved Shadewood, Hemp",
+        "an Compound Carved Shadewood, Hemp",
+        "the Compound Carved Shadewood, Hemp",
+        "Compound Carved Shadewood Hemp",
+        "compound carved shadewood hemp"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Compound Darkwood, Hemp",
+      "variantsTried": [
+        "Compound Darkwood, Hemp",
+        "a Compound Darkwood, Hemp",
+        "an Compound Darkwood, Hemp",
+        "the Compound Darkwood, Hemp",
+        "Compound Darkwood Hemp",
+        "compound darkwood hemp"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Compound Darkwood, Silk",
+      "variantsTried": [
+        "Compound Darkwood, Silk",
+        "a Compound Darkwood, Silk",
+        "an Compound Darkwood, Silk",
+        "the Compound Darkwood, Silk",
+        "Compound Darkwood Silk",
+        "compound darkwood silk"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Compound Shadewood, Silk",
+      "variantsTried": [
+        "Compound Shadewood, Silk",
+        "a Compound Shadewood, Silk",
+        "an Compound Shadewood, Silk",
+        "the Compound Shadewood, Silk",
+        "Compound Shadewood Silk",
+        "compound shadewood silk"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Compound Darkwood, Linen",
+      "variantsTried": [
+        "Compound Darkwood, Linen",
+        "a Compound Darkwood, Linen",
+        "an Compound Darkwood, Linen",
+        "the Compound Darkwood, Linen",
+        "Compound Darkwood Linen",
+        "compound darkwood linen"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Compound Shadewood, Hemp",
+      "variantsTried": [
+        "Compound Shadewood, Hemp",
+        "a Compound Shadewood, Hemp",
+        "an Compound Shadewood, Hemp",
+        "the Compound Shadewood, Hemp",
+        "Compound Shadewood Hemp",
+        "compound shadewood hemp"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Compound Shadewood, Linen",
+      "variantsTried": [
+        "Compound Shadewood, Linen",
+        "a Compound Shadewood, Linen",
+        "an Compound Shadewood, Linen",
+        "the Compound Shadewood, Linen",
+        "Compound Shadewood Linen",
+        "compound shadewood linen"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Compound Shaped Darkwood, Hemp",
+      "variantsTried": [
+        "Compound Shaped Darkwood, Hemp",
+        "a Compound Shaped Darkwood, Hemp",
+        "an Compound Shaped Darkwood, Hemp",
+        "the Compound Shaped Darkwood, Hemp",
+        "Compound Shaped Darkwood Hemp",
+        "compound shaped darkwood hemp"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Compound Shaped Darkwood, Linen",
+      "variantsTried": [
+        "Compound Shaped Darkwood, Linen",
+        "a Compound Shaped Darkwood, Linen",
+        "an Compound Shaped Darkwood, Linen",
+        "the Compound Shaped Darkwood, Linen",
+        "Compound Shaped Darkwood Linen",
+        "compound shaped darkwood linen"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Compound Shaped Darkwood, Silk",
+      "variantsTried": [
+        "Compound Shaped Darkwood, Silk",
+        "a Compound Shaped Darkwood, Silk",
+        "an Compound Shaped Darkwood, Silk",
+        "the Compound Shaped Darkwood, Silk",
+        "Compound Shaped Darkwood Silk",
+        "compound shaped darkwood silk"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Compound Shaped Shadewood, Linen",
+      "variantsTried": [
+        "Compound Shaped Shadewood, Linen",
+        "a Compound Shaped Shadewood, Linen",
+        "an Compound Shaped Shadewood, Linen",
+        "the Compound Shaped Shadewood, Linen",
+        "Compound Shaped Shadewood Linen",
+        "compound shaped shadewood linen"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Compound Shaped Shadewood, Silk",
+      "variantsTried": [
+        "Compound Shaped Shadewood, Silk",
+        "a Compound Shaped Shadewood, Silk",
+        "an Compound Shaped Shadewood, Silk",
+        "the Compound Shaped Shadewood, Silk",
+        "Compound Shaped Shadewood Silk",
+        "compound shaped shadewood silk"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Compound Shaped Shadewood, Hemp",
+      "variantsTried": [
+        "Compound Shaped Shadewood, Hemp",
+        "a Compound Shaped Shadewood, Hemp",
+        "an Compound Shaped Shadewood, Hemp",
+        "the Compound Shaped Shadewood, Hemp",
+        "Compound Shaped Shadewood Hemp",
+        "compound shaped shadewood hemp"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Darkwood, Hemp",
+      "variantsTried": [
+        "Darkwood, Hemp",
+        "a Darkwood, Hemp",
+        "an Darkwood, Hemp",
+        "the Darkwood, Hemp",
+        "Darkwood Hemp",
+        "darkwood hemp"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Darkwood, Linen",
+      "variantsTried": [
+        "Darkwood, Linen",
+        "a Darkwood, Linen",
+        "an Darkwood, Linen",
+        "the Darkwood, Linen",
+        "Darkwood Linen",
+        "darkwood linen"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Elm, Linen",
+      "variantsTried": [
+        "Elm, Linen",
+        "a Elm, Linen",
+        "an Elm, Linen",
+        "the Elm, Linen",
+        "Elm Linen",
+        "elm linen"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Darkwood, Silk",
+      "variantsTried": [
+        "Darkwood, Silk",
+        "a Darkwood, Silk",
+        "an Darkwood, Silk",
+        "the Darkwood, Silk",
+        "Darkwood Silk",
+        "darkwood silk"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Elm, Hemp",
+      "variantsTried": [
+        "Elm, Hemp",
+        "a Elm, Hemp",
+        "an Elm, Hemp",
+        "the Elm, Hemp",
+        "Elm Hemp",
+        "elm hemp"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Elm, Silk",
+      "variantsTried": [
+        "Elm, Silk",
+        "a Elm, Silk",
+        "an Elm, Silk",
+        "the Elm, Silk",
+        "Elm Silk",
+        "elm silk"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Hickory, Hemp",
+      "variantsTried": [
+        "Hickory, Hemp",
+        "a Hickory, Hemp",
+        "an Hickory, Hemp",
+        "the Hickory, Hemp",
+        "Hickory Hemp",
+        "hickory hemp"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Hickory, Linen",
+      "variantsTried": [
+        "Hickory, Linen",
+        "a Hickory, Linen",
+        "an Hickory, Linen",
+        "the Hickory, Linen",
+        "Hickory Linen",
+        "hickory linen"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Hickory, Silk",
+      "variantsTried": [
+        "Hickory, Silk",
+        "a Hickory, Silk",
+        "an Hickory, Silk",
+        "the Hickory, Silk",
+        "Hickory Silk",
+        "hickory silk"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Oak, Linen",
+      "variantsTried": [
+        "Oak, Linen",
+        "a Oak, Linen",
+        "an Oak, Linen",
+        "the Oak, Linen",
+        "Oak Linen",
+        "oak linen"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Oak, Silk",
+      "variantsTried": [
+        "Oak, Silk",
+        "a Oak, Silk",
+        "an Oak, Silk",
+        "the Oak, Silk",
+        "Oak Silk",
+        "oak silk"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Oak, Hemp",
+      "variantsTried": [
+        "Oak, Hemp",
+        "a Oak, Hemp",
+        "an Oak, Hemp",
+        "the Oak, Hemp",
+        "Oak Hemp",
+        "oak hemp"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Shadewood, Silk",
+      "variantsTried": [
+        "Shadewood, Silk",
+        "a Shadewood, Silk",
+        "an Shadewood, Silk",
+        "the Shadewood, Silk",
+        "Shadewood Silk",
+        "shadewood silk"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Shadewood,Linen",
+      "variantsTried": [
+        "Shadewood,Linen",
+        "a Shadewood,Linen",
+        "an Shadewood,Linen",
+        "the Shadewood,Linen",
+        "Shadewood Linen",
+        "shadewood linen"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Shadewood,Hemp",
+      "variantsTried": [
+        "Shadewood,Hemp",
+        "a Shadewood,Hemp",
+        "an Shadewood,Hemp",
+        "the Shadewood,Hemp",
+        "Shadewood Hemp",
+        "shadewood hemp"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Shaped Ash, Hemp",
+      "variantsTried": [
+        "Shaped Ash, Hemp",
+        "a Shaped Ash, Hemp",
+        "an Shaped Ash, Hemp",
+        "the Shaped Ash, Hemp",
+        "Shaped Ash Hemp",
+        "shaped ash hemp"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Shaped Ash, Silk",
+      "variantsTried": [
+        "Shaped Ash, Silk",
+        "a Shaped Ash, Silk",
+        "an Shaped Ash, Silk",
+        "the Shaped Ash, Silk",
+        "Shaped Ash Silk",
+        "shaped ash silk"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Shaped Ash, Linen",
+      "variantsTried": [
+        "Shaped Ash, Linen",
+        "a Shaped Ash, Linen",
+        "an Shaped Ash, Linen",
+        "the Shaped Ash, Linen",
+        "Shaped Ash Linen",
+        "shaped ash linen"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Shaped Darkwood, Linen",
+      "variantsTried": [
+        "Shaped Darkwood, Linen",
+        "a Shaped Darkwood, Linen",
+        "an Shaped Darkwood, Linen",
+        "the Shaped Darkwood, Linen",
+        "Shaped Darkwood Linen",
+        "shaped darkwood linen"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Shaped Darkwood, Silk",
+      "variantsTried": [
+        "Shaped Darkwood, Silk",
+        "a Shaped Darkwood, Silk",
+        "an Shaped Darkwood, Silk",
+        "the Shaped Darkwood, Silk",
+        "Shaped Darkwood Silk",
+        "shaped darkwood silk"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Shaped Darkwood, Hemp",
+      "variantsTried": [
+        "Shaped Darkwood, Hemp",
+        "a Shaped Darkwood, Hemp",
+        "an Shaped Darkwood, Hemp",
+        "the Shaped Darkwood, Hemp",
+        "Shaped Darkwood Hemp",
+        "shaped darkwood hemp"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Shaped Oak, Linen",
+      "variantsTried": [
+        "Shaped Oak, Linen",
+        "a Shaped Oak, Linen",
+        "an Shaped Oak, Linen",
+        "the Shaped Oak, Linen",
+        "Shaped Oak Linen",
+        "shaped oak linen"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Shaped Oak, Hemp",
+      "variantsTried": [
+        "Shaped Oak, Hemp",
+        "a Shaped Oak, Hemp",
+        "an Shaped Oak, Hemp",
+        "the Shaped Oak, Hemp",
+        "Shaped Oak Hemp",
+        "shaped oak hemp"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Shaped Oak, Silk",
+      "variantsTried": [
+        "Shaped Oak, Silk",
+        "a Shaped Oak, Silk",
+        "an Shaped Oak, Silk",
+        "the Shaped Oak, Silk",
+        "Shaped Oak Silk",
+        "shaped oak silk"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "pottery",
+      "name": "Fired Idol",
+      "variantsTried": [
+        "Fired Idol",
+        "a Fired Idol",
+        "an Fired Idol",
+        "the Fired Idol",
+        "fired idol"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "pottery",
+      "name": "Imbued Gem",
+      "variantsTried": [
+        "Imbued Gem",
+        "a Imbued Gem",
+        "an Imbued Gem",
+        "the Imbued Gem",
+        "imbued gem"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Shaped Shadewood, Silk",
+      "variantsTried": [
+        "Shaped Shadewood, Silk",
+        "a Shaped Shadewood, Silk",
+        "an Shaped Shadewood, Silk",
+        "the Shaped Shadewood, Silk",
+        "Shaped Shadewood Silk",
+        "shaped shadewood silk"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Shaped Shadewood, Linen",
+      "variantsTried": [
+        "Shaped Shadewood, Linen",
+        "a Shaped Shadewood, Linen",
+        "an Shaped Shadewood, Linen",
+        "the Shaped Shadewood, Linen",
+        "Shaped Shadewood Linen",
+        "shaped shadewood linen"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "fletching",
+      "name": "Shaped Shadewood, Hemp",
+      "variantsTried": [
+        "Shaped Shadewood, Hemp",
+        "a Shaped Shadewood, Hemp",
+        "an Shaped Shadewood, Hemp",
+        "the Shaped Shadewood, Hemp",
+        "Shaped Shadewood Hemp",
+        "shaped shadewood hemp"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "pottery",
+      "name": "Sketch",
+      "variantsTried": [
+        "Sketch",
+        "a Sketch",
+        "an Sketch",
+        "the Sketch",
+        "sketch"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "tailoring",
+      "name": "Crystalline Silk Armor Set",
+      "variantsTried": [
+        "Crystalline Silk Armor Set",
+        "a Crystalline Silk Armor Set",
+        "an Crystalline Silk Armor Set",
+        "the Crystalline Silk Armor Set",
+        "crystalline silk armor set"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "tailoring",
+      "name": "Reinforced Armor",
+      "variantsTried": [
+        "Reinforced Armor",
+        "a Reinforced Armor",
+        "an Reinforced Armor",
+        "the Reinforced Armor",
+        "reinforced armor"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    },
+    {
+      "skill": "tailoring",
+      "name": "Ice Silk Armor Set",
+      "variantsTried": [
+        "Ice Silk Armor Set",
+        "a Ice Silk Armor Set",
+        "an Ice Silk Armor Set",
+        "the Ice Silk Armor Set",
+        "ice silk armor set"
+      ],
+      "reason": "No fuzzy Allakhazam item match found.",
+      "candidates": []
+    }
+  ],
+  "skipped": [
+    {
+      "skill": "pottery",
+      "name": "Idol of Bertoxxulous",
+      "reason": "Pottery idol stats are era-sensitive and sourced from P99."
+    },
+    {
+      "skill": "pottery",
+      "name": "Idol of Brell Serilis",
+      "reason": "Pottery idol stats are era-sensitive and sourced from P99."
+    },
+    {
+      "skill": "pottery",
+      "name": "Idol of Cazic Thule",
+      "reason": "Pottery idol stats are era-sensitive and sourced from P99."
+    },
+    {
+      "skill": "pottery",
+      "name": "Idol of Erollisi Marr",
+      "reason": "Pottery idol stats are era-sensitive and sourced from P99."
+    },
+    {
+      "skill": "pottery",
+      "name": "Idol of Fizzlethorpe Bristlebane",
+      "reason": "Pottery idol stats are era-sensitive and sourced from P99."
+    },
+    {
+      "skill": "pottery",
+      "name": "Idol of Innoruuk",
+      "reason": "Pottery idol stats are era-sensitive and sourced from P99."
+    },
+    {
+      "skill": "pottery",
+      "name": "Idol of Karana",
+      "reason": "Pottery idol stats are era-sensitive and sourced from P99."
+    },
+    {
+      "skill": "pottery",
+      "name": "Idol of Mithaniel Marr",
+      "reason": "Pottery idol stats are era-sensitive and sourced from P99."
+    },
+    {
+      "skill": "pottery",
+      "name": "Idol of Prexus",
+      "reason": "Pottery idol stats are era-sensitive and sourced from P99."
+    },
+    {
+      "skill": "pottery",
+      "name": "Idol of Quellious",
+      "reason": "Pottery idol stats are era-sensitive and sourced from P99."
+    },
+    {
+      "skill": "pottery",
+      "name": "Idol of Rallos Zek",
+      "reason": "Pottery idol stats are era-sensitive and sourced from P99."
+    },
+    {
+      "skill": "pottery",
+      "name": "Idol of Rodcet Nife",
+      "reason": "Pottery idol stats are era-sensitive and sourced from P99."
+    },
+    {
+      "skill": "pottery",
+      "name": "Idol of Solusek Ro",
+      "reason": "Pottery idol stats are era-sensitive and sourced from P99."
+    },
+    {
+      "skill": "pottery",
+      "name": "Idol of the Tribunal",
+      "reason": "Pottery idol stats are era-sensitive and sourced from P99."
+    },
+    {
+      "skill": "pottery",
+      "name": "Idol of Tunare",
+      "reason": "Pottery idol stats are era-sensitive and sourced from P99."
+    }
+  ]
+}

@@ -141,6 +141,18 @@
   grid-template-columns: minmax(220px, 2fr) repeat(3, minmax(130px, 1fr));
 }
 
+.crafting-controls.is-jewelcraft {
+  grid-template-columns: minmax(220px, 1.6fr) repeat(4, minmax(120px, 1fr));
+}
+
+.crafting-inline-note {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 750;
+  line-height: 1.35;
+  margin: 0;
+}
+
 .crafting-filter {
   display: grid;
   gap: 6px;
@@ -279,8 +291,50 @@
   line-height: 1.25;
 }
 
-.recipe-family-main small,
-.recipe-family-meta span {
+.recipe-family-titleline {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.recipe-family-subline {
+  align-items: center;
+  color: var(--muted);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.76rem;
+  font-weight: 700;
+  gap: 7px;
+  line-height: 1.35;
+  margin-top: 5px;
+}
+
+.recipe-family-count {
+  color: color-mix(in srgb, var(--muted) 86%, var(--text));
+}
+
+.recipe-size-badge {
+  align-items: center;
+  background: color-mix(in srgb, var(--panel-soft) 84%, transparent);
+  border: 1px solid color-mix(in srgb, var(--line) 82%, transparent);
+  border-radius: 999px;
+  color: color-mix(in srgb, var(--muted) 92%, var(--text));
+  display: inline-flex;
+  font-size: 0.7rem;
+  font-weight: 900;
+  line-height: 1;
+  padding: 4px 7px;
+  white-space: nowrap;
+}
+
+.recipe-family-common {
+  color: color-mix(in srgb, var(--muted) 82%, transparent);
+  font-size: 0.74rem;
+  font-weight: 650;
+}
+
+.recipe-family-meta span:not(.trivial-badge):not(.recipe-container-pill) {
   color: var(--muted);
   display: block;
   font-size: 0.8rem;
@@ -289,9 +343,100 @@
 }
 
 .recipe-family-meta {
-  display: grid;
-  gap: 4px;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: flex-end;
   text-align: right;
+}
+
+.trivial-badge {
+  align-items: center;
+  background: var(--panel-soft);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--text);
+  display: inline-flex;
+  flex: 0 0 auto;
+  font-size: 0.74rem;
+  font-weight: 950;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  padding: 6px 9px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.trivial-badge.is-compact {
+  font-size: 0.7rem;
+  padding: 5px 8px;
+}
+
+.trivial-badge.is-trivial-green {
+  background: color-mix(in srgb, #143a25 72%, var(--panel));
+  border-color: color-mix(in srgb, #63d992 58%, var(--line));
+  color: #9af0b9;
+}
+
+.trivial-badge.is-trivial-blue {
+  background: color-mix(in srgb, #132d45 72%, var(--panel));
+  border-color: color-mix(in srgb, #70b8f3 58%, var(--line));
+  color: #a8d8ff;
+}
+
+.trivial-badge.is-trivial-gold {
+  background: color-mix(in srgb, #40350f 70%, var(--panel));
+  border-color: color-mix(in srgb, #d8b94d 62%, var(--line));
+  color: #f4d778;
+}
+
+.trivial-badge.is-trivial-orange {
+  background: color-mix(in srgb, #472812 70%, var(--panel));
+  border-color: color-mix(in srgb, #e08a3c 62%, var(--line));
+  color: #ffbd78;
+}
+
+.trivial-badge.is-trivial-red {
+  background: color-mix(in srgb, #3b1731 70%, var(--panel));
+  border-color: color-mix(in srgb, #d96aa7 62%, var(--line));
+  color: #f2a2d4;
+}
+
+.trivial-badge.is-trivial-unknown {
+  background: var(--card);
+  border-color: var(--line);
+  color: var(--muted);
+}
+
+.recipe-container-pill {
+  background: color-mix(in srgb, var(--panel-soft) 86%, transparent);
+  border: 1px solid color-mix(in srgb, var(--line) 80%, transparent);
+  border-radius: 999px;
+  color: color-mix(in srgb, var(--muted) 88%, var(--text));
+  display: inline-flex;
+  font-size: 0.72rem;
+  font-weight: 800;
+  justify-self: end;
+  line-height: 1;
+  padding: 5px 8px;
+  white-space: nowrap;
+}
+
+.recipe-era-warning {
+  align-items: center;
+  background: color-mix(in srgb, #5a2240 70%, var(--panel));
+  border: 1px solid color-mix(in srgb, #ef7eb8 58%, var(--line));
+  border-radius: 999px;
+  color: #f5afd2;
+  display: inline-flex;
+  flex: 0 0 auto;
+  font-size: 0.68rem;
+  font-weight: 950;
+  line-height: 1;
+  padding: 5px 8px;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .recipe-family-details {
@@ -321,12 +466,122 @@
   justify-content: space-between;
 }
 
-.recipe-detail-heading > span {
+.recipe-detail-heading > span:not(.trivial-badge) {
   color: var(--page-title-gold);
   flex: 0 0 auto;
   font-size: 0.86rem;
   font-weight: 900;
   white-space: nowrap;
+}
+
+.recipe-size-selector-row {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.recipe-size-selector-row > span {
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.recipe-size-selector {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.recipe-size-selector button {
+  background: var(--panel-soft);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--text);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.76rem;
+  font-weight: 850;
+  min-height: 28px;
+  padding: 0 9px;
+}
+
+.recipe-size-selector button:hover,
+.recipe-size-selector button:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.recipe-size-selector button.is-active {
+  background: color-mix(in srgb, var(--accent) 20%, var(--panel-soft));
+  border-color: color-mix(in srgb, var(--accent) 72%, var(--line));
+  color: var(--accent);
+}
+
+.recipe-size-note {
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 750;
+  margin: -2px 0 0;
+}
+
+.recipe-detail-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.recipe-detail-meta span,
+.recipe-detail-meta a {
+  background: var(--panel-soft);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.74rem;
+  font-weight: 800;
+  line-height: 1;
+  padding: 5px 8px;
+  text-decoration: none;
+}
+
+.recipe-detail-meta a {
+  color: var(--accent);
+}
+
+.recipe-detail-meta a:hover,
+.recipe-detail-meta a:focus {
+  outline: none;
+  text-decoration: underline;
+}
+
+.pottery-stage-list {
+  display: grid;
+  gap: 10px;
+}
+
+.pottery-stage {
+  background: color-mix(in srgb, var(--panel-soft) 72%, transparent);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: grid;
+  gap: 8px;
+  padding: 10px;
+}
+
+.pottery-stage-heading {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.pottery-stage-heading strong {
+  color: var(--text);
+  font-size: 0.84rem;
+  font-weight: 900;
 }
 
 /* --------------------------------------------------------------------------
@@ -481,7 +736,7 @@
   gap: 6px;
 }
 
-.research-spell-meta span {
+.research-spell-meta span:not(.trivial-badge) {
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: 6px;
@@ -779,10 +1034,53 @@
   text-decoration: none;
 }
 
+.recipe-component-size-note {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
 .recipe-component-link:hover,
 .recipe-component-link:focus {
   outline: none;
   text-decoration: underline;
+}
+
+.recipe-component-item.is-process-component {
+  background: color-mix(in srgb, var(--panel-soft) 78%, transparent);
+  border-style: dashed;
+  color: var(--muted);
+}
+
+.recipe-component-item.is-template-component {
+  align-items: flex-start;
+  flex-direction: column;
+  max-width: min(100%, 280px);
+}
+
+.recipe-process-component-label {
+  align-items: center;
+  color: var(--muted);
+  display: inline-flex;
+  font-size: 0.86rem;
+  font-weight: 750;
+  gap: 5px;
+}
+
+.recipe-template-detail {
+  color: color-mix(in srgb, var(--muted) 82%, transparent);
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.recipe-process-component-icon {
+  background: currentColor;
+  border-radius: 2px;
+  display: inline-block;
+  height: 9px;
+  opacity: 0.72;
+  width: 9px;
 }
 
 .recipe-component-source-tags {
@@ -822,6 +1120,10 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .crafting-controls.is-jewelcraft {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .research-controls {
     grid-template-columns: 1fr;
   }
@@ -843,6 +1145,10 @@
 
 @media (max-width: 620px) {
   .crafting-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .crafting-controls.is-jewelcraft {
     grid-template-columns: 1fr;
   }
 

@@ -1,0 +1,121 @@
+{
+  "generatedAt": "2026-05-17T18:24:49.955Z",
+  "recipeCounts": {
+    "alchemy": 6,
+    "spell-research": 7,
+    "poison-making": 4,
+    "baking": 118,
+    "smithing": 163,
+    "fletching": 138,
+    "pottery": 54,
+    "tailoring": 138,
+    "tinkering": 16,
+    "brewing": 95,
+    "jewelcraft": 200
+  },
+  "p99Import": {
+    "importedBySkill": {
+      "baking": 118,
+      "smithing": 163,
+      "brewing": 95,
+      "fletching": 138,
+      "pottery": 54,
+      "tailoring": 84,
+      "tinkering": 16
+    },
+    "skippedRows": 46,
+    "missingExactTrivial": 50,
+    "postLuclinVisible": 20
+  },
+  "brewing": {
+    "previousBrewingCount": 95,
+    "importedRecipeListCount": 78,
+    "preservedSupplementalBrewingCount": 17,
+    "newBrewingCount": 95,
+    "skippedRows": 0,
+    "ambiguousRows": 0
+  },
+  "tailoringVelious": {
+    "importedCount": 70,
+    "repairedBySet": {
+      "Velious Fur Armor": 10,
+      "Cobalt Drake": 12,
+      "Black Pantherskin": 12,
+      "Tigeraptor": 12,
+      "Haze Panther": 12,
+      "Arctic Wyvern": 12
+    },
+    "skippedRows": 8,
+    "missingTrivial": 60
+  },
+  "smithingSizeVariants": {
+    "resolvedRecipes": 36,
+    "resolvedOutputVariants": 108,
+    "unresolvedSizeVariantRecords": 0
+  },
+  "fletchingArrowComponents": {
+    "updatedComponents": 13,
+    "unresolvedArrowComponents": 0
+  },
+  "jewelcraft": {
+    "fixedMisses": 6,
+    "remainingUnresolved": 0,
+    "imbuedWithDeity": 60
+  },
+  "enrichment": {
+    "p99ZamUnresolved": 128,
+    "p99ZamAmbiguous": 46,
+    "fuzzyResolved": 1,
+    "fuzzyAmbiguous": 46,
+    "fuzzyUnresolved": 127,
+    "eqtradersChecked": 188,
+    "eqtradersResolved": 12,
+    "eqtradersContextOnly": 17,
+    "eqtradersStillAmbiguous": 93,
+    "eqtradersStillUnresolved": 61,
+    "aggressiveChecked": 176,
+    "aggressiveMedium": 99,
+    "aggressiveLow": 29,
+    "aggressiveStillUnresolved": 48,
+    "exactishApplied": 24,
+    "exactishSkipped": 23,
+    "eqtradersLikelyPlaceholderOrSubcombine": 5
+  },
+  "componentClassification": {
+    "counts": {
+      "finalItem": 0,
+      "ingredient": 2365,
+      "template": 4,
+      "intermediate": 1,
+      "mold": 121,
+      "sketch": 21,
+      "firingComponent": 27,
+      "processComponent": 24,
+      "unknown": 0
+    },
+    "reclassified": 81
+  },
+  "potteryIdolComponents": {
+    "missingBeforeRepair": [
+      "Amber",
+      "Black Pearl",
+      "Emerald",
+      "Fire Opal",
+      "High Quality Firing Sheet",
+      "Idol Sketch",
+      "Ivory",
+      "Jade",
+      "Plains Pebble",
+      "Rose Quartz",
+      "Sculpting Tools"
+    ],
+    "incompleteBeforeRepair": [
+      "Imbued Gem"
+    ],
+    "repairedCount": 12,
+    "unresolvedCount": 0,
+    "missingAfterRepair": [],
+    "incompleteAfterRepair": [],
+    "reportPath": "data/crafting-pottery-idol-component-repair-report.json"
+  }
+}
