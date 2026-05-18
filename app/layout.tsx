@@ -8,6 +8,7 @@ import { EpicProgressProvider } from "@/components/EpicProgressProvider";
 import { FavoritesProvider } from "@/components/FavoritesProvider";
 import { InstallPromptBanner } from "@/components/InstallPromptBanner";
 import { ItemPreviewProvider } from "@/components/ItemPreviewProvider";
+import { SavedCraftingRecipesProvider } from "@/components/SavedCraftingRecipesProvider";
 import { ItemPreviewToggle } from "@/components/ItemPreviewToggle";
 import { ServerProvider } from "@/components/ServerProvider";
 import { ServiceWorkerRegistration } from "@/components/ServiceWorkerRegistration";
@@ -75,27 +76,29 @@ export default function RootLayout({
             <FavoritesProvider>
               <BucketDisplayProvider>
                 <EpicProgressProvider>
-                  <ItemPreviewProvider>
-                    <nav className="app-nav" aria-label="Primary navigation">
-                      <a
-                        className="app-donate-link"
-                        href="https://www.paypal.com/donate/?hosted_button_id=GRK8K9JWNVALW"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <span className="app-donate-mark" aria-hidden="true">P</span>
-                        Donate
-                      </a>
-                      <AppNavLinks />
-                      <div className="app-nav-controls">
-                        <DiscordAuthControl />
-                        <ItemPreviewToggle />
-                        <ThemeToggle />
-                      </div>
-                    </nav>
-                    <AppSubNavLinks />
-                    {children}
-                  </ItemPreviewProvider>
+                  <SavedCraftingRecipesProvider>
+                    <ItemPreviewProvider>
+                      <nav className="app-nav" aria-label="Primary navigation">
+                        <a
+                          className="app-donate-link"
+                          href="https://www.paypal.com/donate/?hosted_button_id=GRK8K9JWNVALW"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <span className="app-donate-mark" aria-hidden="true">P</span>
+                          Donate
+                        </a>
+                        <AppNavLinks />
+                        <div className="app-nav-controls">
+                          <DiscordAuthControl />
+                          <ItemPreviewToggle />
+                          <ThemeToggle />
+                        </div>
+                      </nav>
+                      <AppSubNavLinks />
+                      {children}
+                    </ItemPreviewProvider>
+                  </SavedCraftingRecipesProvider>
                 </EpicProgressProvider>
               </BucketDisplayProvider>
             </FavoritesProvider>

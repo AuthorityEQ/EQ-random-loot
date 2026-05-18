@@ -48,22 +48,24 @@ function isPending(): boolean {
 // Alignment display config
 const ALIGNMENT_CONFIG: Record<
   FactionEntry["alignment"],
-  { label: string; description: string }
+  { label: string }
 > = {
   good: {
     label: "Good",
-    description: "Factions aligned with light, order, and protection.",
   },
   neutral: {
     label: "Neutral",
-    description:
-      "Factions that trade with most races; alignment depends on your deeds.",
   },
   evil: {
     label: "Evil",
-    description:
-      "Factions hostile to good-aligned races; required for evil class quests.",
   },
+};
+
+const hiddenFactionNames = new Set(["Katta Castellum", "Sanctus Seru"]);
+const factionMobOverrides: Record<string, string[]> = {
+  "Coldain (Dwarves)": ["Dain Frostreaver IV", "Garadain Glacierbane"],
+  "Claws of Veeshan (Dragons)": ["Lord Yelinak"],
+  "Kromzek/Kromrif (Giants)": ["King Tormax", "The Avatar of War"],
 };
 
 // ---- Sub-components (plain functions — server component file) ----
@@ -119,22 +121,6 @@ function FactionQuestChips({ quests }: { quests: string[] }) {
         {quests.map((quest) => (
           <span className="faction-plain-chip" key={quest}>
             {quest}
-          </span>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-function FactionItemChips({ items }: { items: string[] }) {
-  if (items.length === 0) return null;
-  return (
-    <div className="faction-section">
-      <span className="faction-chip-label">Common Turn-In Items</span>
-      <div className="faction-chip-row">
-        {items.map((item) => (
-          <span className="faction-plain-chip" key={item}>
-            {item}
           </span>
         ))}
       </div>
@@ -250,6 +236,7 @@ function FactionTips({ tips }: { tips: string[] }) {
 
 function FactionCard({ faction }: { faction: FactionEntry }) {
   const slug = factionSlug(faction.name);
+  const relatedMobs = factionMobOverrides[faction.name] ?? faction.related_mobs;
   return (
     <article
       className={`faction-card faction-tone-${faction.alignment}`}
@@ -265,9 +252,8 @@ function FactionCard({ faction }: { faction: FactionEntry }) {
       {faction.notes && <p className="faction-notes">{faction.notes}</p>}
 
       <FactionZoneChips zones={faction.zones} />
-      <FactionMobChips mobs={faction.related_mobs} />
+      <FactionMobChips mobs={relatedMobs} />
       <FactionQuestChips quests={faction.quests} />
-      <FactionItemChips items={faction.required_items} />
       <FactionAlliedKos allied={faction.allied_races} kos={faction.kos_races} />
       <FactionRaceTable values={faction.starting_value_by_race} />
       <FactionTips tips={faction.tips} />
@@ -280,7 +266,8 @@ function FactionCard({ faction }: { faction: FactionEntry }) {
 export default function FactionsPage() {
   const factions = resolveFactions();
   const pending = isPending();
-  const groups = groupFactionsByAlignment(factions);
+  const visibleFactions = factions.filter((faction) => !hiddenFactionNames.has(faction.name));
+  const groups = groupFactionsByAlignment(visibleFactions);
 
   return (
     <main className="factions-page">
@@ -290,12 +277,6 @@ export default function FactionsPage() {
       <header className="factions-hero">
         <p className="eyebrow">Reference / Faction Guide</p>
         <h1>Faction Guide</h1>
-        <p className="subhead">
-          EverQuest factions control how NPCs react to your character. Your standing with a
-          faction determines whether guards ignore you, merchants trade with you, or mobs
-          attack on sight. Browse factions by alignment, find which mobs to kill for
-          reputation gains, and see related quests and starting values by race.
-        </p>
         <Link className="faction-feature-link" href="/velious-class-armor">
           ⚔ Velious Class Armor
         </Link>
@@ -308,7 +289,7 @@ export default function FactionsPage() {
         </div>
       )}
 
-      {factions.length === 0 ? (
+      {visibleFactions.length === 0 ? (
         <div className="faction-empty" role="status">
           Faction data is being prepared for launch.
         </div>
@@ -320,9 +301,6 @@ export default function FactionsPage() {
           >
             <div className="faction-alignment-heading">
               <h2>{label} Factions</h2>
-              <span className="faction-alignment-badge">
-                {ALIGNMENT_CONFIG[alignment]?.description}
-              </span>
             </div>
             <div className="faction-card-grid">
               {groupFactions.map((faction) => (

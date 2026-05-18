@@ -10,6 +10,7 @@ export type PickZone = {
   expansionEnd: number;
   expansionIds: readonly number[];
   expansionName: string;
+  section: "early-tlp" | "all-other";
   sourceLine: number;
 };
 
@@ -34,6 +35,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 32
   },
   {
@@ -47,6 +49,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 15
   },
   {
@@ -60,6 +63,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 61
   },
   {
@@ -73,6 +77,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 51
   },
   {
@@ -86,6 +91,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 63
   },
   {
@@ -99,6 +105,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 90
   },
   {
@@ -112,6 +119,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 27
   },
   {
@@ -125,6 +133,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 326
   },
   {
@@ -138,6 +147,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 5
   },
   {
@@ -151,6 +161,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 349
   },
   {
@@ -164,6 +175,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 352
   },
   {
@@ -177,6 +189,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 148
   },
   {
@@ -190,6 +203,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 57
   },
   {
@@ -203,6 +217,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 18
   },
   {
@@ -216,6 +231,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 45
   },
   {
@@ -229,6 +245,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 354
   },
   {
@@ -242,6 +259,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 29
   },
   {
@@ -255,6 +273,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 39
   },
   {
@@ -268,6 +287,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 23
   },
   {
@@ -281,6 +301,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 334
   },
   {
@@ -294,6 +315,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 2
   },
   {
@@ -307,6 +329,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 67
   },
   {
@@ -320,6 +343,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 66
   },
   {
@@ -333,6 +357,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 4
   },
   {
@@ -346,6 +371,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 28
   },
   {
@@ -359,6 +385,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 335
   },
   {
@@ -372,6 +399,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 3
   },
   {
@@ -385,6 +413,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 42
   },
   {
@@ -398,6 +427,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 52
   },
   {
@@ -411,6 +441,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 58
   },
   {
@@ -424,6 +455,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 350
   },
   {
@@ -437,6 +469,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 13
   },
   {
@@ -450,6 +483,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 56
   },
   {
@@ -463,6 +497,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 41
   },
   {
@@ -476,6 +511,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 658
   },
   {
@@ -489,6 +525,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 14
   },
   {
@@ -502,6 +539,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 48
   },
   {
@@ -515,6 +553,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 16
   },
   {
@@ -528,6 +567,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 25
   },
   {
@@ -541,6 +581,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 50
   },
   {
@@ -554,6 +595,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 9
   },
   {
@@ -567,6 +609,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 11
   },
   {
@@ -580,6 +623,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 351
   },
   {
@@ -593,6 +637,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 65
   },
   {
@@ -606,6 +651,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 150
   },
   {
@@ -619,6 +665,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 40
   },
   {
@@ -632,6 +679,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 44
   },
   {
@@ -645,6 +693,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 59
   },
   {
@@ -658,6 +707,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 34
   },
   {
@@ -671,6 +721,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 12
   },
   {
@@ -684,6 +735,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 387
   },
   {
@@ -697,6 +749,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 91
   },
   {
@@ -710,6 +763,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 92
   },
   {
@@ -723,6 +777,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 10
   },
   {
@@ -736,6 +791,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 641
   },
   {
@@ -749,6 +805,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 353
   },
   {
@@ -762,6 +819,7 @@ export const pickZones = [
       1
     ],
     "expansionName": "Classic",
+    "section": "early-tlp",
     "sourceLine": 325
   },
   {
@@ -775,6 +833,7 @@ export const pickZones = [
       2
     ],
     "expansionName": "Kunark",
+    "section": "early-tlp",
     "sourceLine": 94
   },
   {
@@ -788,6 +847,7 @@ export const pickZones = [
       2
     ],
     "expansionName": "Kunark",
+    "section": "early-tlp",
     "sourceLine": 229
   },
   {
@@ -801,6 +861,7 @@ export const pickZones = [
       2
     ],
     "expansionName": "Kunark",
+    "section": "early-tlp",
     "sourceLine": 76
   },
   {
@@ -814,6 +875,7 @@ export const pickZones = [
       2
     ],
     "expansionName": "Kunark",
+    "section": "early-tlp",
     "sourceLine": 84
   },
   {
@@ -827,6 +889,7 @@ export const pickZones = [
       2
     ],
     "expansionName": "Kunark",
+    "section": "early-tlp",
     "sourceLine": 96
   },
   {
@@ -840,6 +903,7 @@ export const pickZones = [
       2
     ],
     "expansionName": "Kunark",
+    "section": "early-tlp",
     "sourceLine": 80
   },
   {
@@ -853,6 +917,7 @@ export const pickZones = [
       2
     ],
     "expansionName": "Kunark",
+    "section": "early-tlp",
     "sourceLine": 93
   },
   {
@@ -866,6 +931,7 @@ export const pickZones = [
       2
     ],
     "expansionName": "Kunark",
+    "section": "early-tlp",
     "sourceLine": 89
   },
   {
@@ -879,6 +945,7 @@ export const pickZones = [
       2
     ],
     "expansionName": "Kunark",
+    "section": "early-tlp",
     "sourceLine": 77
   },
   {
@@ -892,6 +959,7 @@ export const pickZones = [
       2
     ],
     "expansionName": "Kunark",
+    "section": "early-tlp",
     "sourceLine": 79
   },
   {
@@ -905,6 +973,7 @@ export const pickZones = [
       2
     ],
     "expansionName": "Kunark",
+    "section": "early-tlp",
     "sourceLine": 82
   },
   {
@@ -918,6 +987,7 @@ export const pickZones = [
       2
     ],
     "expansionName": "Kunark",
+    "section": "early-tlp",
     "sourceLine": 95
   },
   {
@@ -931,6 +1001,7 @@ export const pickZones = [
       2
     ],
     "expansionName": "Kunark",
+    "section": "early-tlp",
     "sourceLine": 78
   },
   {
@@ -944,6 +1015,7 @@ export const pickZones = [
       2
     ],
     "expansionName": "Kunark",
+    "section": "early-tlp",
     "sourceLine": 86
   },
   {
@@ -957,6 +1029,7 @@ export const pickZones = [
       2
     ],
     "expansionName": "Kunark",
+    "section": "early-tlp",
     "sourceLine": 70
   },
   {
@@ -970,6 +1043,7 @@ export const pickZones = [
       2
     ],
     "expansionName": "Kunark",
+    "section": "early-tlp",
     "sourceLine": 98
   },
   {
@@ -983,6 +1057,7 @@ export const pickZones = [
       2
     ],
     "expansionName": "Kunark",
+    "section": "early-tlp",
     "sourceLine": 85
   },
   {
@@ -996,6 +1071,7 @@ export const pickZones = [
       2
     ],
     "expansionName": "Kunark",
+    "section": "early-tlp",
     "sourceLine": 81
   },
   {
@@ -1009,6 +1085,7 @@ export const pickZones = [
       2
     ],
     "expansionName": "Kunark",
+    "section": "early-tlp",
     "sourceLine": 83
   },
   {
@@ -1022,6 +1099,7 @@ export const pickZones = [
       2
     ],
     "expansionName": "Kunark",
+    "section": "early-tlp",
     "sourceLine": 75
   },
   {
@@ -1035,6 +1113,7 @@ export const pickZones = [
       2
     ],
     "expansionName": "Kunark",
+    "section": "early-tlp",
     "sourceLine": 73
   },
   {
@@ -1048,6 +1127,7 @@ export const pickZones = [
       2
     ],
     "expansionName": "Kunark",
+    "section": "early-tlp",
     "sourceLine": 71
   },
   {
@@ -1061,6 +1141,7 @@ export const pickZones = [
       2
     ],
     "expansionName": "Kunark",
+    "section": "early-tlp",
     "sourceLine": 88
   },
   {
@@ -1074,6 +1155,7 @@ export const pickZones = [
       2
     ],
     "expansionName": "Kunark",
+    "section": "early-tlp",
     "sourceLine": 87
   },
   {
@@ -1087,6 +1169,7 @@ export const pickZones = [
       2
     ],
     "expansionName": "Kunark",
+    "section": "early-tlp",
     "sourceLine": 100
   },
   {
@@ -1100,6 +1183,7 @@ export const pickZones = [
       3
     ],
     "expansionName": "Velious",
+    "section": "early-tlp",
     "sourceLine": 108
   },
   {
@@ -1113,6 +1197,7 @@ export const pickZones = [
       3
     ],
     "expansionName": "Velious",
+    "section": "early-tlp",
     "sourceLine": 112
   },
   {
@@ -1126,6 +1211,7 @@ export const pickZones = [
       3
     ],
     "expansionName": "Velious",
+    "section": "early-tlp",
     "sourceLine": 113
   },
   {
@@ -1139,6 +1225,7 @@ export const pickZones = [
       3
     ],
     "expansionName": "Velious",
+    "section": "early-tlp",
     "sourceLine": 107
   },
   {
@@ -1152,6 +1239,7 @@ export const pickZones = [
       3
     ],
     "expansionName": "Velious",
+    "section": "early-tlp",
     "sourceLine": 119
   },
   {
@@ -1165,6 +1253,7 @@ export const pickZones = [
       3
     ],
     "expansionName": "Velious",
+    "section": "early-tlp",
     "sourceLine": 104
   },
   {
@@ -1178,6 +1267,7 @@ export const pickZones = [
       3
     ],
     "expansionName": "Velious",
+    "section": "early-tlp",
     "sourceLine": 115
   },
   {
@@ -1191,6 +1281,7 @@ export const pickZones = [
       3
     ],
     "expansionName": "Velious",
+    "section": "early-tlp",
     "sourceLine": 105
   },
   {
@@ -1204,6 +1295,7 @@ export const pickZones = [
       3
     ],
     "expansionName": "Velious",
+    "section": "early-tlp",
     "sourceLine": 106
   },
   {
@@ -1217,6 +1309,7 @@ export const pickZones = [
       3
     ],
     "expansionName": "Velious",
+    "section": "early-tlp",
     "sourceLine": 109
   },
   {
@@ -1230,6 +1323,7 @@ export const pickZones = [
       3
     ],
     "expansionName": "Velious",
+    "section": "early-tlp",
     "sourceLine": 101
   },
   {
@@ -1243,6 +1337,7 @@ export const pickZones = [
       3
     ],
     "expansionName": "Velious",
+    "section": "early-tlp",
     "sourceLine": 114
   },
   {
@@ -1256,6 +1351,7 @@ export const pickZones = [
       3
     ],
     "expansionName": "Velious",
+    "section": "early-tlp",
     "sourceLine": 102
   },
   {
@@ -1269,6 +1365,7 @@ export const pickZones = [
       3
     ],
     "expansionName": "Velious",
+    "section": "early-tlp",
     "sourceLine": 110
   },
   {
@@ -1282,6 +1379,7 @@ export const pickZones = [
       3
     ],
     "expansionName": "Velious",
+    "section": "early-tlp",
     "sourceLine": 111
   },
   {
@@ -1295,6 +1393,7 @@ export const pickZones = [
       3
     ],
     "expansionName": "Velious",
+    "section": "early-tlp",
     "sourceLine": 103
   },
   {
@@ -1308,6 +1407,7 @@ export const pickZones = [
       4
     ],
     "expansionName": "Luclin",
+    "section": "early-tlp",
     "sourceLine": 124
   },
   {
@@ -1321,6 +1421,7 @@ export const pickZones = [
       4
     ],
     "expansionName": "Luclin",
+    "section": "early-tlp",
     "sourceLine": 144
   },
   {
@@ -1334,6 +1435,7 @@ export const pickZones = [
       4
     ],
     "expansionName": "Luclin",
+    "section": "early-tlp",
     "sourceLine": 123
   },
   {
@@ -1347,6 +1449,7 @@ export const pickZones = [
       4
     ],
     "expansionName": "Luclin",
+    "section": "early-tlp",
     "sourceLine": 133
   },
   {
@@ -1360,6 +1463,7 @@ export const pickZones = [
       4
     ],
     "expansionName": "Luclin",
+    "section": "early-tlp",
     "sourceLine": 137
   },
   {
@@ -1373,6 +1477,7 @@ export const pickZones = [
       4
     ],
     "expansionName": "Luclin",
+    "section": "early-tlp",
     "sourceLine": 136
   },
   {
@@ -1386,6 +1491,7 @@ export const pickZones = [
       4
     ],
     "expansionName": "Luclin",
+    "section": "early-tlp",
     "sourceLine": 130
   },
   {
@@ -1399,6 +1505,7 @@ export const pickZones = [
       4
     ],
     "expansionName": "Luclin",
+    "section": "early-tlp",
     "sourceLine": 138
   },
   {
@@ -1412,6 +1519,7 @@ export const pickZones = [
       4
     ],
     "expansionName": "Luclin",
+    "section": "early-tlp",
     "sourceLine": 139
   },
   {
@@ -1425,6 +1533,7 @@ export const pickZones = [
       4
     ],
     "expansionName": "Luclin",
+    "section": "early-tlp",
     "sourceLine": 131
   },
   {
@@ -1438,6 +1547,7 @@ export const pickZones = [
       4
     ],
     "expansionName": "Luclin",
+    "section": "early-tlp",
     "sourceLine": 126
   },
   {
@@ -1451,6 +1561,7 @@ export const pickZones = [
       4
     ],
     "expansionName": "Luclin",
+    "section": "early-tlp",
     "sourceLine": 129
   },
   {
@@ -1464,6 +1575,7 @@ export const pickZones = [
       4
     ],
     "expansionName": "Luclin",
+    "section": "early-tlp",
     "sourceLine": 135
   },
   {
@@ -1477,6 +1589,7 @@ export const pickZones = [
       4
     ],
     "expansionName": "Luclin",
+    "section": "early-tlp",
     "sourceLine": 132
   },
   {
@@ -1490,6 +1603,7 @@ export const pickZones = [
       4
     ],
     "expansionName": "Luclin",
+    "section": "early-tlp",
     "sourceLine": 147
   },
   {
@@ -1503,6 +1617,7 @@ export const pickZones = [
       4
     ],
     "expansionName": "Luclin",
+    "section": "early-tlp",
     "sourceLine": 134
   },
   {
@@ -1516,6 +1631,7 @@ export const pickZones = [
       4
     ],
     "expansionName": "Luclin",
+    "section": "early-tlp",
     "sourceLine": 127
   },
   {
@@ -1529,6 +1645,7 @@ export const pickZones = [
       4
     ],
     "expansionName": "Luclin",
+    "section": "early-tlp",
     "sourceLine": 141
   },
   {
@@ -1542,6 +1659,7 @@ export const pickZones = [
       4
     ],
     "expansionName": "Luclin",
+    "section": "early-tlp",
     "sourceLine": 143
   },
   {
@@ -1555,6 +1673,7 @@ export const pickZones = [
       4
     ],
     "expansionName": "Luclin",
+    "section": "early-tlp",
     "sourceLine": 145
   },
   {
@@ -1568,6 +1687,7 @@ export const pickZones = [
       4
     ],
     "expansionName": "Luclin",
+    "section": "early-tlp",
     "sourceLine": 142
   },
   {
@@ -1581,6 +1701,7 @@ export const pickZones = [
       4
     ],
     "expansionName": "Luclin",
+    "section": "early-tlp",
     "sourceLine": 140
   },
   {
@@ -1594,6 +1715,7 @@ export const pickZones = [
       4
     ],
     "expansionName": "Luclin",
+    "section": "early-tlp",
     "sourceLine": 146
   },
   {
@@ -1607,6 +1729,7 @@ export const pickZones = [
       5
     ],
     "expansionName": "Planes of Power",
+    "section": "early-tlp",
     "sourceLine": 169
   },
   {
@@ -1620,6 +1743,7 @@ export const pickZones = [
       5
     ],
     "expansionName": "Planes of Power",
+    "section": "early-tlp",
     "sourceLine": 166
   },
   {
@@ -1633,6 +1757,7 @@ export const pickZones = [
       5
     ],
     "expansionName": "Planes of Power",
+    "section": "early-tlp",
     "sourceLine": 167
   },
   {
@@ -1646,6 +1771,7 @@ export const pickZones = [
       5
     ],
     "expansionName": "Planes of Power",
+    "section": "early-tlp",
     "sourceLine": 152
   },
   {
@@ -1659,6 +1785,7 @@ export const pickZones = [
       5
     ],
     "expansionName": "Planes of Power",
+    "section": "early-tlp",
     "sourceLine": 163
   },
   {
@@ -1672,6 +1799,7 @@ export const pickZones = [
       5
     ],
     "expansionName": "Planes of Power",
+    "section": "early-tlp",
     "sourceLine": 157
   },
   {
@@ -1685,6 +1813,7 @@ export const pickZones = [
       5
     ],
     "expansionName": "Planes of Power",
+    "section": "early-tlp",
     "sourceLine": 158
   },
   {
@@ -1698,6 +1827,7 @@ export const pickZones = [
       5
     ],
     "expansionName": "Planes of Power",
+    "section": "early-tlp",
     "sourceLine": 162
   },
   {
@@ -1711,6 +1841,7 @@ export const pickZones = [
       5
     ],
     "expansionName": "Planes of Power",
+    "section": "early-tlp",
     "sourceLine": 155
   },
   {
@@ -1724,6 +1855,7 @@ export const pickZones = [
       5
     ],
     "expansionName": "Planes of Power",
+    "section": "early-tlp",
     "sourceLine": 160
   },
   {
@@ -1737,6 +1869,7 @@ export const pickZones = [
       5
     ],
     "expansionName": "Planes of Power",
+    "section": "early-tlp",
     "sourceLine": 168
   },
   {
@@ -1750,6 +1883,7 @@ export const pickZones = [
       5
     ],
     "expansionName": "Planes of Power",
+    "section": "early-tlp",
     "sourceLine": 164
   },
   {
@@ -1763,6 +1897,7 @@ export const pickZones = [
       5
     ],
     "expansionName": "Planes of Power",
+    "section": "early-tlp",
     "sourceLine": 161
   },
   {
@@ -1776,6 +1911,7 @@ export const pickZones = [
       5
     ],
     "expansionName": "Planes of Power",
+    "section": "early-tlp",
     "sourceLine": 159
   },
   {
@@ -1789,6 +1925,7 @@ export const pickZones = [
       5
     ],
     "expansionName": "Planes of Power",
+    "section": "early-tlp",
     "sourceLine": 170
   },
   {
@@ -1802,6 +1939,7 @@ export const pickZones = [
       6
     ],
     "expansionName": "Legacy of Ykesha",
+    "section": "early-tlp",
     "sourceLine": 177
   },
   {
@@ -1815,6 +1953,7 @@ export const pickZones = [
       6
     ],
     "expansionName": "Legacy of Ykesha",
+    "section": "early-tlp",
     "sourceLine": 180
   },
   {
@@ -1828,6 +1967,7 @@ export const pickZones = [
       6
     ],
     "expansionName": "Legacy of Ykesha",
+    "section": "early-tlp",
     "sourceLine": 230
   },
   {
@@ -1841,6 +1981,7 @@ export const pickZones = [
       6
     ],
     "expansionName": "Legacy of Ykesha",
+    "section": "early-tlp",
     "sourceLine": 179
   },
   {
@@ -1854,6 +1995,7 @@ export const pickZones = [
       6
     ],
     "expansionName": "Legacy of Ykesha",
+    "section": "early-tlp",
     "sourceLine": 176
   },
   {
@@ -1867,14 +2009,2549 @@ export const pickZones = [
       6
     ],
     "expansionName": "Legacy of Ykesha",
+    "section": "early-tlp",
     "sourceLine": 178
+  },
+  {
+    "zoneId": 283,
+    "zoneName": "Barindu, Hanging Gardens",
+    "pickMin": 20,
+    "pickMax": 0,
+    "expansionStart": 8,
+    "expansionEnd": 8,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 235
+  },
+  {
+    "zoneId": 284,
+    "zoneName": "Ferubi, Forgotten Temple of Taelosia",
+    "pickMin": 20,
+    "pickMax": 0,
+    "expansionStart": 8,
+    "expansionEnd": 8,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 236
+  },
+  {
+    "zoneId": 293,
+    "zoneName": "Kod'Taz, Broken Trial Grounds",
+    "pickMin": 45,
+    "pickMax": 0,
+    "expansionStart": 8,
+    "expansionEnd": 8,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 245
+  },
+  {
+    "zoneId": 280,
+    "zoneName": "Natimbi, the Broken Shores",
+    "pickMin": 20,
+    "pickMax": 0,
+    "expansionStart": 8,
+    "expansionEnd": 8,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 232
+  },
+  {
+    "zoneId": 281,
+    "zoneName": "Qinimi, Court of Nihilia",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 8,
+    "expansionEnd": 8,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 233
+  },
+  {
+    "zoneId": 295,
+    "zoneName": "Qvic, Prayer Grounds of Calling",
+    "pickMin": 20,
+    "pickMax": 0,
+    "expansionStart": 8,
+    "expansionEnd": 8,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 247
+  },
+  {
+    "zoneId": 282,
+    "zoneName": "Riwwi, Coliseum of Games",
+    "pickMin": 20,
+    "pickMax": 0,
+    "expansionStart": 8,
+    "expansionEnd": 8,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 234
+  },
+  {
+    "zoneId": 297,
+    "zoneName": "Txevu, Lair of the Elite",
+    "pickMin": 20,
+    "pickMax": 0,
+    "expansionStart": 8,
+    "expansionEnd": 8,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 249
+  },
+  {
+    "zoneId": 291,
+    "zoneName": "Yxtta, Pulpit of Exiles",
+    "pickMin": 30,
+    "pickMax": 0,
+    "expansionStart": 8,
+    "expansionEnd": 8,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 243
+  },
+  {
+    "zoneId": 302,
+    "zoneName": "Dranik's Scar",
+    "pickMin": 30,
+    "pickMax": 0,
+    "expansionStart": 9,
+    "expansionEnd": 9,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 253
+  },
+  {
+    "zoneId": 335,
+    "zoneName": "Harbinger's Spire",
+    "pickMin": 20,
+    "pickMax": 0,
+    "expansionStart": 9,
+    "expansionEnd": 9,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 280
+  },
+  {
+    "zoneId": 316,
+    "zoneName": "Muramite Proving Grounds",
+    "pickMin": 25,
+    "pickMax": 0,
+    "expansionStart": 9,
+    "expansionEnd": 9,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 261
+  },
+  {
+    "zoneId": 303,
+    "zoneName": "Nobles' Causeway",
+    "pickMin": 30,
+    "pickMax": 0,
+    "expansionStart": 9,
+    "expansionEnd": 9,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 254
+  },
+  {
+    "zoneId": 334,
+    "zoneName": "Riftseekers' Sanctum",
+    "pickMin": 20,
+    "pickMax": 0,
+    "expansionStart": 9,
+    "expansionEnd": 9,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 279
+  },
+  {
+    "zoneId": 301,
+    "zoneName": "The Bloodfields",
+    "pickMin": 20,
+    "pickMax": 0,
+    "expansionStart": 9,
+    "expansionEnd": 9,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 252
+  },
+  {
+    "zoneId": 336,
+    "zoneName": "The Ruined City of Dranik",
+    "pickMin": 35,
+    "pickMax": 0,
+    "expansionStart": 9,
+    "expansionEnd": 9,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 281
+  },
+  {
+    "zoneId": 300,
+    "zoneName": "Wall of Slaughter",
+    "pickMin": 25,
+    "pickMax": 0,
+    "expansionStart": 9,
+    "expansionEnd": 9,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 251
+  },
+  {
+    "zoneId": 341,
+    "zoneName": "Lavaspinner's Lair",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 10,
+    "expansionEnd": 10,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 286
+  },
+  {
+    "zoneId": 338,
+    "zoneName": "Stillmoon Temple",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 10,
+    "expansionEnd": 10,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 283
+  },
+  {
+    "zoneId": 343,
+    "zoneName": "The Accursed Nest",
+    "pickMin": 40,
+    "pickMax": 120,
+    "expansionStart": 10,
+    "expansionEnd": 10,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 288
+  },
+  {
+    "zoneId": 339,
+    "zoneName": "The Ascent",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 10,
+    "expansionEnd": 10,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 284
+  },
+  {
+    "zoneId": 337,
+    "zoneName": "The Broodlands",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 10,
+    "expansionEnd": 10,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 282
+  },
+  {
+    "zoneId": 340,
+    "zoneName": "Thundercrest Isles",
+    "pickMin": 50,
+    "pickMax": 150,
+    "expansionStart": 10,
+    "expansionEnd": 10,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 285
+  },
+  {
+    "zoneId": 342,
+    "zoneName": "Tirranun's Delve",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 10,
+    "expansionEnd": 10,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 287
+  },
+  {
+    "zoneId": 365,
+    "zoneName": "Corathus Creep",
+    "pickMin": 25,
+    "pickMax": 75,
+    "expansionStart": 11,
+    "expansionEnd": 11,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 307
+  },
+  {
+    "zoneId": 351,
+    "zoneName": "Dreadspire Keep",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 11,
+    "expansionEnd": 11,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 295
+  },
+  {
+    "zoneId": 347,
+    "zoneName": "Ruins of Illsalin",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 11,
+    "expansionEnd": 11,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 291
+  },
+  {
+    "zoneId": 358,
+    "zoneName": "Stoneroot Falls",
+    "pickMin": 55,
+    "pickMax": 165,
+    "expansionStart": 11,
+    "expansionEnd": 11,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 300
+  },
+  {
+    "zoneId": 354,
+    "zoneName": "The Hive",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 11,
+    "expansionEnd": 11,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 296
+  },
+  {
+    "zoneId": 362,
+    "zoneName": "The Undershore",
+    "pickMin": 40,
+    "pickMax": 120,
+    "expansionStart": 11,
+    "expansionEnd": 11,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 304
+  },
+  {
+    "zoneId": 369,
+    "zoneName": "Arcstone, Isle of Spirits",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 12,
+    "expansionEnd": 12,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 311
+  },
+  {
+    "zoneId": 370,
+    "zoneName": "Relic, the Artifact City",
+    "pickMin": 20,
+    "pickMax": 0,
+    "expansionStart": 12,
+    "expansionEnd": 12,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 312
+  },
+  {
+    "zoneId": 376,
+    "zoneName": "Ruins of Takish-Hiz",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 12,
+    "expansionEnd": 12,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 318
+  },
+  {
+    "zoneId": 378,
+    "zoneName": "The Elddar Forest",
+    "pickMin": 35,
+    "pickMax": 105,
+    "expansionStart": 12,
+    "expansionEnd": 12,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 320
+  },
+  {
+    "zoneId": 406,
+    "zoneName": "Ashengate, Reliquary of the Scale",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 13,
+    "expansionEnd": 13,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 348
+  },
+  {
+    "zoneId": 398,
+    "zoneName": "Blackfeather Roost",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 13,
+    "expansionEnd": 13,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 340
+  },
+  {
+    "zoneId": 395,
+    "zoneName": "Blightfire Moors",
+    "pickMin": 55,
+    "pickMax": 165,
+    "expansionStart": 13,
+    "expansionEnd": 13,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 337
+  },
+  {
+    "zoneId": 394,
+    "zoneName": "Crescent Reach",
+    "pickMin": 40,
+    "pickMax": 120,
+    "expansionStart": 13,
+    "expansionEnd": 13,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 336
+  },
+  {
+    "zoneId": 405,
+    "zoneName": "Direwind Cliffs",
+    "pickMin": 40,
+    "pickMax": 120,
+    "expansionStart": 13,
+    "expansionEnd": 13,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 347
+  },
+  {
+    "zoneId": 402,
+    "zoneName": "Frostcrypt, Throne of the Shade King",
+    "pickMin": 30,
+    "pickMax": 90,
+    "expansionStart": 13,
+    "expansionEnd": 13,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 344
+  },
+  {
+    "zoneId": 397,
+    "zoneName": "Goru`kar Mesa",
+    "pickMin": 55,
+    "pickMax": 165,
+    "expansionStart": 13,
+    "expansionEnd": 13,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 339
+  },
+  {
+    "zoneId": 400,
+    "zoneName": "Icefall Glacier",
+    "pickMin": 50,
+    "pickMax": 150,
+    "expansionStart": 13,
+    "expansionEnd": 13,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 342
+  },
+  {
+    "zoneId": 396,
+    "zoneName": "Stone Hive",
+    "pickMin": 30,
+    "pickMax": 90,
+    "expansionStart": 13,
+    "expansionEnd": 13,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 338
+  },
+  {
+    "zoneId": 403,
+    "zoneName": "Sunderock Springs",
+    "pickMin": 45,
+    "pickMax": 135,
+    "expansionStart": 13,
+    "expansionEnd": 13,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 345
+  },
+  {
+    "zoneId": 399,
+    "zoneName": "The Steppes",
+    "pickMin": 35,
+    "pickMax": 105,
+    "expansionStart": 13,
+    "expansionEnd": 13,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 341
+  },
+  {
+    "zoneId": 401,
+    "zoneName": "Valdeholm",
+    "pickMin": 60,
+    "pickMax": 180,
+    "expansionStart": 13,
+    "expansionEnd": 13,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 343
+  },
+  {
+    "zoneId": 404,
+    "zoneName": "Vergalid Mines",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 13,
+    "expansionEnd": 13,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 346
+  },
+  {
+    "zoneId": 422,
+    "zoneName": "Barren Coast",
+    "pickMin": 40,
+    "pickMax": 120,
+    "expansionStart": 14,
+    "expansionEnd": 14,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 361
+  },
+  {
+    "zoneId": 418,
+    "zoneName": "Jewel of Atiiki",
+    "pickMin": 35,
+    "pickMax": 105,
+    "expansionStart": 14,
+    "expansionEnd": 14,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 357
+  },
+  {
+    "zoneId": 416,
+    "zoneName": "Katta Castrum",
+    "pickMin": 60,
+    "pickMax": 180,
+    "expansionStart": 14,
+    "expansionEnd": 14,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 355
+  },
+  {
+    "zoneId": 420,
+    "zoneName": "Silyssar, New Chelsith",
+    "pickMin": 35,
+    "pickMax": 105,
+    "expansionStart": 14,
+    "expansionEnd": 14,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 359
+  },
+  {
+    "zoneId": 417,
+    "zoneName": "Thalassius, the Coral Keep",
+    "pickMin": 25,
+    "pickMax": 75,
+    "expansionStart": 14,
+    "expansionEnd": 14,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 356
+  },
+  {
+    "zoneId": 423,
+    "zoneName": "The Buried Sea",
+    "pickMin": 60,
+    "pickMax": 180,
+    "expansionStart": 14,
+    "expansionEnd": 14,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 362
+  },
+  {
+    "zoneId": 419,
+    "zoneName": "Zhisza, the Shissar Sanctuary",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 14,
+    "expansionEnd": 14,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 358
+  },
+  {
+    "zoneId": 445,
+    "zoneName": "Bloodmoon Keep",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 15,
+    "expansionEnd": 15,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 384
+  },
+  {
+    "zoneId": 446,
+    "zoneName": "Crystallos, Lair of the Awakened",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 15,
+    "expansionEnd": 15,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 385
+  },
+  {
+    "zoneId": 442,
+    "zoneName": "Dragonscale Hills",
+    "pickMin": 60,
+    "pickMax": 180,
+    "expansionStart": 15,
+    "expansionEnd": 15,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 381
+  },
+  {
+    "zoneId": 436,
+    "zoneName": "Fortress Mechanotus",
+    "pickMin": 60,
+    "pickMax": 180,
+    "expansionStart": 15,
+    "expansionEnd": 15,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 375
+  },
+  {
+    "zoneId": 440,
+    "zoneName": "Gyrospire Beza",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 15,
+    "expansionEnd": 15,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 379
+  },
+  {
+    "zoneId": 441,
+    "zoneName": "Gyrospire Zeka",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 15,
+    "expansionEnd": 15,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 380
+  },
+  {
+    "zoneId": 444,
+    "zoneName": "Hills of Shade",
+    "pickMin": 50,
+    "pickMax": 150,
+    "expansionStart": 15,
+    "expansionEnd": 15,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 383
+  },
+  {
+    "zoneId": 443,
+    "zoneName": "Loping Plains",
+    "pickMin": 50,
+    "pickMax": 150,
+    "expansionStart": 15,
+    "expansionEnd": 15,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 382
+  },
+  {
+    "zoneId": 437,
+    "zoneName": "Meldrath's Majestic Mansion",
+    "pickMin": 25,
+    "pickMax": 75,
+    "expansionStart": 15,
+    "expansionEnd": 15,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 376
+  },
+  {
+    "zoneId": 439,
+    "zoneName": "S.H.I.P. Workshop",
+    "pickMin": 40,
+    "pickMax": 120,
+    "expansionStart": 15,
+    "expansionEnd": 15,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 378
+  },
+  {
+    "zoneId": 438,
+    "zoneName": "The Steam Factory",
+    "pickMin": 55,
+    "pickMax": 165,
+    "expansionStart": 15,
+    "expansionEnd": 15,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 377
+  },
+  {
+    "zoneId": 468,
+    "zoneName": "Blackburrow",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 16,
+    "expansionEnd": 16,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 406
+  },
+  {
+    "zoneId": 456,
+    "zoneName": "Bloody Kithicor",
+    "pickMin": 45,
+    "pickMax": 135,
+    "expansionStart": 16,
+    "expansionEnd": 16,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 395
+  },
+  {
+    "zoneId": 474,
+    "zoneName": "City of Dranik",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 16,
+    "expansionEnd": 16,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 412
+  },
+  {
+    "zoneId": 452,
+    "zoneName": "Field of Scale",
+    "pickMin": 55,
+    "pickMax": 165,
+    "expansionStart": 16,
+    "expansionEnd": 16,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 391
+  },
+  {
+    "zoneId": 454,
+    "zoneName": "Kaesora Hatchery",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 16,
+    "expansionEnd": 16,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 393
+  },
+  {
+    "zoneId": 453,
+    "zoneName": "Kaesora Library",
+    "pickMin": 25,
+    "pickMax": 75,
+    "expansionStart": 16,
+    "expansionEnd": 16,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 392
+  },
+  {
+    "zoneId": 470,
+    "zoneName": "Korafax, Home of the Riders",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 16,
+    "expansionEnd": 16,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 408
+  },
+  {
+    "zoneId": 476,
+    "zoneName": "Korascian Warrens",
+    "pickMin": 25,
+    "pickMax": 75,
+    "expansionStart": 16,
+    "expansionEnd": 16,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 414
+  },
+  {
+    "zoneId": 455,
+    "zoneName": "Kurn's Tower",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 16,
+    "expansionEnd": 16,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 394
+  },
+  {
+    "zoneId": 466,
+    "zoneName": "Oceangreen Hills",
+    "pickMin": 30,
+    "pickMax": 90,
+    "expansionStart": 16,
+    "expansionEnd": 16,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 404
+  },
+  {
+    "zoneId": 467,
+    "zoneName": "Oceangreen Village",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 16,
+    "expansionEnd": 16,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 405
+  },
+  {
+    "zoneId": 472,
+    "zoneName": "Old Bloodfields",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 16,
+    "expansionEnd": 16,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 410
+  },
+  {
+    "zoneId": 457,
+    "zoneName": "Old Commonlands",
+    "pickMin": 45,
+    "pickMax": 135,
+    "expansionStart": 16,
+    "expansionEnd": 16,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 396
+  },
+  {
+    "zoneId": 477,
+    "zoneName": "Rathe Council Chamber",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 16,
+    "expansionEnd": 16,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 415
+  },
+  {
+    "zoneId": 469,
+    "zoneName": "Temple of Bertoxxulous",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 16,
+    "expansionEnd": 16,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 407
+  },
+  {
+    "zoneId": 475,
+    "zoneName": "Toskirakk",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 16,
+    "expansionEnd": 16,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 413
+  },
+  {
+    "zoneId": 485,
+    "zoneName": "Arthicrex",
+    "pickMin": 35,
+    "pickMax": 105,
+    "expansionStart": 17,
+    "expansionEnd": 17,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 422
+  },
+  {
+    "zoneId": 480,
+    "zoneName": "Brell's Rest",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 17,
+    "expansionEnd": 17,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 417
+  },
+  {
+    "zoneId": 490,
+    "zoneName": "Brell's Temple",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 17,
+    "expansionEnd": 17,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 427
+  },
+  {
+    "zoneId": 481,
+    "zoneName": "Fungal Forest",
+    "pickMin": 45,
+    "pickMax": 135,
+    "expansionStart": 17,
+    "expansionEnd": 17,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 418
+  },
+  {
+    "zoneId": 484,
+    "zoneName": "Kernagir, the Shining City",
+    "pickMin": 55,
+    "pickMax": 165,
+    "expansionStart": 17,
+    "expansionEnd": 17,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 421
+  },
+  {
+    "zoneId": 487,
+    "zoneName": "Lichen Creep",
+    "pickMin": 35,
+    "pickMax": 105,
+    "expansionStart": 17,
+    "expansionEnd": 17,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 424
+  },
+  {
+    "zoneId": 488,
+    "zoneName": "Pellucid Grotto",
+    "pickMin": 35,
+    "pickMax": 105,
+    "expansionStart": 17,
+    "expansionEnd": 17,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 425
+  },
+  {
+    "zoneId": 491,
+    "zoneName": "The Convorteum",
+    "pickMin": 50,
+    "pickMax": 150,
+    "expansionStart": 17,
+    "expansionEnd": 17,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 428
+  },
+  {
+    "zoneId": 483,
+    "zoneName": "The Cooling Chamber",
+    "pickMin": 45,
+    "pickMax": 135,
+    "expansionStart": 17,
+    "expansionEnd": 17,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 420
+  },
+  {
+    "zoneId": 486,
+    "zoneName": "The Foundation",
+    "pickMin": 35,
+    "pickMax": 105,
+    "expansionStart": 17,
+    "expansionEnd": 17,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 423
+  },
+  {
+    "zoneId": 482,
+    "zoneName": "The Underquarry",
+    "pickMin": 45,
+    "pickMax": 135,
+    "expansionStart": 17,
+    "expansionEnd": 17,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 419
+  },
+  {
+    "zoneId": 489,
+    "zoneName": "Volska's Husk",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 17,
+    "expansionEnd": 17,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 426
+  },
+  {
+    "zoneId": 709,
+    "zoneName": "Al'Kabor's Nightmare",
+    "pickMin": 25,
+    "pickMax": 75,
+    "expansionStart": 18,
+    "expansionEnd": 18,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 484
+  },
+  {
+    "zoneId": 706,
+    "zoneName": "Erudin Burning",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 18,
+    "expansionEnd": 18,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 481
+  },
+  {
+    "zoneId": 711,
+    "zoneName": "Fear Itself",
+    "pickMin": 35,
+    "pickMax": 105,
+    "expansionStart": 18,
+    "expansionEnd": 18,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 486
+  },
+  {
+    "zoneId": 701,
+    "zoneName": "House of Thule",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 18,
+    "expansionEnd": 18,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 476
+  },
+  {
+    "zoneId": 702,
+    "zoneName": "House of Thule, Upper Floors",
+    "pickMin": 25,
+    "pickMax": 75,
+    "expansionStart": 18,
+    "expansionEnd": 18,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 477
+  },
+  {
+    "zoneId": 710,
+    "zoneName": "Miragul's Nightmare",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 18,
+    "expansionEnd": 18,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 485
+  },
+  {
+    "zoneId": 707,
+    "zoneName": "Morell's Castle",
+    "pickMin": 30,
+    "pickMax": 90,
+    "expansionStart": 18,
+    "expansionEnd": 18,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 482
+  },
+  {
+    "zoneId": 708,
+    "zoneName": "Sanctum Somnium",
+    "pickMin": 25,
+    "pickMax": 75,
+    "expansionStart": 18,
+    "expansionEnd": 18,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 483
+  },
+  {
+    "zoneId": 700,
+    "zoneName": "The Feerrott",
+    "pickMin": 50,
+    "pickMax": 150,
+    "expansionStart": 18,
+    "expansionEnd": 18,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 475
+  },
+  {
+    "zoneId": 703,
+    "zoneName": "The Grounds",
+    "pickMin": 30,
+    "pickMax": 90,
+    "expansionStart": 18,
+    "expansionEnd": 18,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 478
+  },
+  {
+    "zoneId": 704,
+    "zoneName": "The Library",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 18,
+    "expansionEnd": 18,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 479
+  },
+  {
+    "zoneId": 705,
+    "zoneName": "The Well",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 18,
+    "expansionEnd": 18,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 480
+  },
+  {
+    "zoneId": 724,
+    "zoneName": "Argath, Bastion of Illdaera",
+    "pickMin": 45,
+    "pickMax": 135,
+    "expansionStart": 19,
+    "expansionEnd": 19,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 499
+  },
+  {
+    "zoneId": 728,
+    "zoneName": "Beasts' Domain",
+    "pickMin": 40,
+    "pickMax": 120,
+    "expansionStart": 19,
+    "expansionEnd": 19,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 503
+  },
+  {
+    "zoneId": 732,
+    "zoneName": "Erillion, City of Bronze",
+    "pickMin": 60,
+    "pickMax": 180,
+    "expansionStart": 19,
+    "expansionEnd": 19,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 507
+  },
+  {
+    "zoneId": 730,
+    "zoneName": "Pillars of Alra",
+    "pickMin": 60,
+    "pickMax": 180,
+    "expansionStart": 19,
+    "expansionEnd": 19,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 505
+  },
+  {
+    "zoneId": 727,
+    "zoneName": "Rubak Oseka, Temple of the Sea",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 19,
+    "expansionEnd": 19,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 502
+  },
+  {
+    "zoneId": 726,
+    "zoneName": "Sarith, City of Tides",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 19,
+    "expansionEnd": 19,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 501
+  },
+  {
+    "zoneId": 734,
+    "zoneName": "Sepulcher East",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 19,
+    "expansionEnd": 19,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 509
+  },
+  {
+    "zoneId": 733,
+    "zoneName": "Sepulcher of Order",
+    "pickMin": 40,
+    "pickMax": 120,
+    "expansionStart": 19,
+    "expansionEnd": 19,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 508
+  },
+  {
+    "zoneId": 735,
+    "zoneName": "Sepulcher West",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 19,
+    "expansionEnd": 19,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 510
+  },
+  {
+    "zoneId": 729,
+    "zoneName": "The Resplendent Temple",
+    "pickMin": 45,
+    "pickMax": 135,
+    "expansionStart": 19,
+    "expansionEnd": 19,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 504
+  },
+  {
+    "zoneId": 725,
+    "zoneName": "Valley of Lunanyn",
+    "pickMin": 60,
+    "pickMax": 180,
+    "expansionStart": 19,
+    "expansionEnd": 19,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 500
+  },
+  {
+    "zoneId": 731,
+    "zoneName": "Windsong Sanctuary",
+    "pickMin": 40,
+    "pickMax": 120,
+    "expansionStart": 19,
+    "expansionEnd": 19,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 506
+  },
+  {
+    "zoneId": 760,
+    "zoneName": "Chapterhouse of the Fallen",
+    "pickMin": 30,
+    "pickMax": 90,
+    "expansionStart": 20,
+    "expansionEnd": 20,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 535
+  },
+  {
+    "zoneId": 763,
+    "zoneName": "Chelsith Reborn",
+    "pickMin": 60,
+    "pickMax": 180,
+    "expansionStart": 20,
+    "expansionEnd": 20,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 536
+  },
+  {
+    "zoneId": 755,
+    "zoneName": "East Wastes: Zeixshi-Kar's Awakening",
+    "pickMin": 50,
+    "pickMax": 150,
+    "expansionStart": 20,
+    "expansionEnd": 20,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 530
+  },
+  {
+    "zoneId": 758,
+    "zoneName": "Evantil, the Vile Oak",
+    "pickMin": 40,
+    "pickMax": 120,
+    "expansionStart": 20,
+    "expansionEnd": 20,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 533
+  },
+  {
+    "zoneId": 759,
+    "zoneName": "Grelleth's Palace, the Chateau of Filth",
+    "pickMin": 30,
+    "pickMax": 90,
+    "expansionStart": 20,
+    "expansionEnd": 20,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 534
+  },
+  {
+    "zoneId": 769,
+    "zoneName": "Heart of Fear: The Epicenter",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 20,
+    "expansionEnd": 20,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 541
+  },
+  {
+    "zoneId": 768,
+    "zoneName": "Heart of Fear: The Rebirth",
+    "pickMin": 30,
+    "pickMax": 90,
+    "expansionStart": 20,
+    "expansionEnd": 20,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 540
+  },
+  {
+    "zoneId": 765,
+    "zoneName": "Heart of Fear: The Threshold",
+    "pickMin": 40,
+    "pickMax": 120,
+    "expansionStart": 20,
+    "expansionEnd": 20,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 538
+  },
+  {
+    "zoneId": 754,
+    "zoneName": "Kael Drakkel: The King's Madness",
+    "pickMin": 25,
+    "pickMax": 75,
+    "expansionStart": 20,
+    "expansionEnd": 20,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 529
+  },
+  {
+    "zoneId": 764,
+    "zoneName": "Plane of Shadow",
+    "pickMin": 60,
+    "pickMax": 180,
+    "expansionStart": 20,
+    "expansionEnd": 20,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 537
+  },
+  {
+    "zoneId": 752,
+    "zoneName": "Shard's Landing",
+    "pickMin": 60,
+    "pickMax": 180,
+    "expansionStart": 20,
+    "expansionEnd": 20,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 527
+  },
+  {
+    "zoneId": 757,
+    "zoneName": "The Breeding Grounds",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 20,
+    "expansionEnd": 20,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 532
+  },
+  {
+    "zoneId": 756,
+    "zoneName": "The Crystal Caverns: Fragment of Fear",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 20,
+    "expansionEnd": 20,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 531
+  },
+  {
+    "zoneId": 753,
+    "zoneName": "Valley of King Xorbb",
+    "pickMin": 55,
+    "pickMax": 165,
+    "expansionStart": 20,
+    "expansionEnd": 20,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 528
+  },
+  {
+    "zoneId": 776,
+    "zoneName": "Argin-Hiz",
+    "pickMin": 55,
+    "pickMax": 165,
+    "expansionStart": 21,
+    "expansionEnd": 21,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 548
+  },
+  {
+    "zoneId": 770,
+    "zoneName": "Bixie Warfront",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 21,
+    "expansionEnd": 21,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 542
+  },
+  {
+    "zoneId": 772,
+    "zoneName": "Ethernere Tainted West Karana",
+    "pickMin": 50,
+    "pickMax": 150,
+    "expansionStart": 21,
+    "expansionEnd": 21,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 544
+  },
+  {
+    "zoneId": 43,
+    "zoneName": "Neriak - Fourth Gate",
+    "pickMin": 35,
+    "pickMax": 105,
+    "expansionStart": 21,
+    "expansionEnd": 21,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 38
+  },
+  {
+    "zoneId": 771,
+    "zoneName": "The Dead Hills",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 21,
+    "expansionEnd": 21,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 543
+  },
+  {
+    "zoneId": 775,
+    "zoneName": "Tower of Rot",
+    "pickMin": 25,
+    "pickMax": 75,
+    "expansionStart": 21,
+    "expansionEnd": 21,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 547
+  },
+  {
+    "zoneId": 778,
+    "zoneName": "Arx Mentis",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 22,
+    "expansionEnd": 22,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 550
+  },
+  {
+    "zoneId": 782,
+    "zoneName": "Caverns of Endless Song",
+    "pickMin": 25,
+    "pickMax": 75,
+    "expansionStart": 22,
+    "expansionEnd": 22,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 554
+  },
+  {
+    "zoneId": 781,
+    "zoneName": "Combine Dredge",
+    "pickMin": 60,
+    "pickMax": 180,
+    "expansionStart": 22,
+    "expansionEnd": 22,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 553
+  },
+  {
+    "zoneId": 784,
+    "zoneName": "Degmar, the Lost Castle",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 22,
+    "expansionEnd": 22,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 556
+  },
+  {
+    "zoneId": 780,
+    "zoneName": "Katta Castrum: Deluge",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 22,
+    "expansionEnd": 22,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 552
+  },
+  {
+    "zoneId": 795,
+    "zoneName": "Crypt of Sul",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 23,
+    "expansionEnd": 23,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 567
+  },
+  {
+    "zoneId": 796,
+    "zoneName": "Ruins of Lxanvom",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 23,
+    "expansionEnd": 23,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 568
+  },
+  {
+    "zoneId": 798,
+    "zoneName": "The Plane of Health",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 23,
+    "expansionEnd": 23,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 570
+  },
+  {
+    "zoneId": 800,
+    "zoneName": "Chardok",
+    "pickMin": 30,
+    "pickMax": 90,
+    "expansionStart": 24,
+    "expansionEnd": 24,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 572
+  },
+  {
+    "zoneId": 791,
+    "zoneName": "Frontier Mountains",
+    "pickMin": 60,
+    "pickMax": 180,
+    "expansionStart": 24,
+    "expansionEnd": 24,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 563
+  },
+  {
+    "zoneId": 793,
+    "zoneName": "Gates of Kor-Sha",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 24,
+    "expansionEnd": 24,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 565
+  },
+  {
+    "zoneId": 799,
+    "zoneName": "Kor-Sha Laboratory",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 24,
+    "expansionEnd": 24,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 571
+  },
+  {
+    "zoneId": 794,
+    "zoneName": "Lceanium",
+    "pickMin": 35,
+    "pickMax": 105,
+    "expansionStart": 24,
+    "expansionEnd": 24,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 566
+  },
+  {
+    "zoneId": 790,
+    "zoneName": "The Scorched Woods",
+    "pickMin": 55,
+    "pickMax": 165,
+    "expansionStart": 24,
+    "expansionEnd": 24,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 562
+  },
+  {
+    "zoneId": 788,
+    "zoneName": "The Temple of Droga",
+    "pickMin": 35,
+    "pickMax": 105,
+    "expansionStart": 24,
+    "expansionEnd": 24,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 560
+  },
+  {
+    "zoneId": 792,
+    "zoneName": "Gorowyn",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 25,
+    "expansionEnd": 25,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 564
+  },
+  {
+    "zoneId": 813,
+    "zoneName": "Howling Stones",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 25,
+    "expansionEnd": 25,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 585
+  },
+  {
+    "zoneId": 789,
+    "zoneName": "Sathir's Tomb",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 25,
+    "expansionEnd": 25,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 561
+  },
+  {
+    "zoneId": 815,
+    "zoneName": "The Overthere",
+    "pickMin": 60,
+    "pickMax": 180,
+    "expansionStart": 25,
+    "expansionEnd": 25,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 587
+  },
+  {
+    "zoneId": 814,
+    "zoneName": "The Skyfire Mountains",
+    "pickMin": 35,
+    "pickMax": 105,
+    "expansionStart": 25,
+    "expansionEnd": 25,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 586
+  },
+  {
+    "zoneId": 816,
+    "zoneName": "Veeshan's Peak",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 25,
+    "expansionEnd": 25,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 588
+  },
+  {
+    "zoneId": 819,
+    "zoneName": "Aalishai: Palace of Embers",
+    "pickMin": 30,
+    "pickMax": 90,
+    "expansionStart": 26,
+    "expansionEnd": 26,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 591
+  },
+  {
+    "zoneId": 820,
+    "zoneName": "Empyr: Realms of Ash",
+    "pickMin": 40,
+    "pickMax": 120,
+    "expansionStart": 26,
+    "expansionEnd": 26,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 592
+  },
+  {
+    "zoneId": 821,
+    "zoneName": "Esianti: Palace of the Winds",
+    "pickMin": 25,
+    "pickMax": 75,
+    "expansionStart": 26,
+    "expansionEnd": 26,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 593
+  },
+  {
+    "zoneId": 787,
+    "zoneName": "Gnome Memorial Mountain",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 26,
+    "expansionEnd": 26,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 559
+  },
+  {
+    "zoneId": 822,
+    "zoneName": "Mearatas: The Stone Demesne",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 26,
+    "expansionEnd": 26,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 594
+  },
+  {
+    "zoneId": 817,
+    "zoneName": "Plane of Smoke",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 26,
+    "expansionEnd": 26,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 589
+  },
+  {
+    "zoneId": 818,
+    "zoneName": "Stratos: Zephyr's Flight",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 26,
+    "expansionEnd": 26,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 590
+  },
+  {
+    "zoneId": 830,
+    "zoneName": "Crystal Caverns",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 27,
+    "expansionEnd": 27,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 602
+  },
+  {
+    "zoneId": 829,
+    "zoneName": "Kael Drakkel",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 27,
+    "expansionEnd": 27,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 601
+  },
+  {
+    "zoneId": 824,
+    "zoneName": "The Eastern Wastes",
+    "pickMin": 25,
+    "pickMax": 75,
+    "expansionStart": 27,
+    "expansionEnd": 27,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 596
+  },
+  {
+    "zoneId": 827,
+    "zoneName": "The Great Divide",
+    "pickMin": 60,
+    "pickMax": 180,
+    "expansionStart": 27,
+    "expansionEnd": 27,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 599
+  },
+  {
+    "zoneId": 826,
+    "zoneName": "The Ry`Gorr Mines",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 27,
+    "expansionEnd": 27,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 598
+  },
+  {
+    "zoneId": 825,
+    "zoneName": "The Tower of Frozen Shadow",
+    "pickMin": 25,
+    "pickMax": 75,
+    "expansionStart": 27,
+    "expansionEnd": 27,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 597
+  },
+  {
+    "zoneId": 828,
+    "zoneName": "Velketor's Labyrinth",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 27,
+    "expansionEnd": 27,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 600
+  },
+  {
+    "zoneId": 833,
+    "zoneName": "Cobalt Scar",
+    "pickMin": 40,
+    "pickMax": 120,
+    "expansionStart": 28,
+    "expansionEnd": 28,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 605
+  },
+  {
+    "zoneId": 832,
+    "zoneName": "Dragon Necropolis",
+    "pickMin": 30,
+    "pickMax": 90,
+    "expansionStart": 28,
+    "expansionEnd": 28,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 604
+  },
+  {
+    "zoneId": 835,
+    "zoneName": "Skyshrine",
+    "pickMin": 25,
+    "pickMax": 75,
+    "expansionStart": 28,
+    "expansionEnd": 28,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 607
+  },
+  {
+    "zoneId": 831,
+    "zoneName": "The Sleeper's Tomb",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 28,
+    "expansionEnd": 28,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 603
+  },
+  {
+    "zoneId": 836,
+    "zoneName": "The Temple of Veeshan",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 28,
+    "expansionEnd": 28,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 608
+  },
+  {
+    "zoneId": 834,
+    "zoneName": "The Western Wastes",
+    "pickMin": 45,
+    "pickMax": 135,
+    "expansionStart": 28,
+    "expansionEnd": 28,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 606
+  },
+  {
+    "zoneId": 848,
+    "zoneName": "Basilica of Adumbration",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 29,
+    "expansionEnd": 29,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 620
+  },
+  {
+    "zoneId": 849,
+    "zoneName": "Bloodfalls",
+    "pickMin": 25,
+    "pickMax": 75,
+    "expansionStart": 29,
+    "expansionEnd": 29,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 621
+  },
+  {
+    "zoneId": 845,
+    "zoneName": "Ka Vethan",
+    "pickMin": 25,
+    "pickMax": 75,
+    "expansionStart": 29,
+    "expansionEnd": 29,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 617
+  },
+  {
+    "zoneId": 843,
+    "zoneName": "Maiden's Eye",
+    "pickMin": 30,
+    "pickMax": 90,
+    "expansionStart": 29,
+    "expansionEnd": 29,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 615
+  },
+  {
+    "zoneId": 847,
+    "zoneName": "Shadow Valley",
+    "pickMin": 35,
+    "pickMax": 105,
+    "expansionStart": 29,
+    "expansionEnd": 29,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 619
+  },
+  {
+    "zoneId": 844,
+    "zoneName": "Umbral Plains",
+    "pickMin": 30,
+    "pickMax": 90,
+    "expansionStart": 29,
+    "expansionEnd": 29,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 616
+  },
+  {
+    "zoneId": 846,
+    "zoneName": "Vex Thal",
+    "pickMin": 30,
+    "pickMax": 90,
+    "expansionStart": 29,
+    "expansionEnd": 29,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 618
+  },
+  {
+    "zoneId": 855,
+    "zoneName": "Darklight Caverns",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 30,
+    "expansionEnd": 30,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 627
+  },
+  {
+    "zoneId": 856,
+    "zoneName": "Deepshade",
+    "pickMin": 25,
+    "pickMax": 75,
+    "expansionStart": 30,
+    "expansionEnd": 30,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 628
+  },
+  {
+    "zoneId": 857,
+    "zoneName": "Firefall Pass",
+    "pickMin": 25,
+    "pickMax": 75,
+    "expansionStart": 30,
+    "expansionEnd": 30,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 629
+  },
+  {
+    "zoneId": 853,
+    "zoneName": "Paludal Depths",
+    "pickMin": 40,
+    "pickMax": 120,
+    "expansionStart": 30,
+    "expansionEnd": 30,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 625
+  },
+  {
+    "zoneId": 851,
+    "zoneName": "Ruins of Shadow Haven",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 30,
+    "expansionEnd": 30,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 623
+  },
+  {
+    "zoneId": 854,
+    "zoneName": "Shadeweaver's Tangle",
+    "pickMin": 45,
+    "pickMax": 135,
+    "expansionStart": 30,
+    "expansionEnd": 30,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 626
+  },
+  {
+    "zoneId": 852,
+    "zoneName": "Shar Vahl, Divided",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 30,
+    "expansionEnd": 30,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 624
+  },
+  {
+    "zoneId": 860,
+    "zoneName": "Ankexfen Keep",
+    "pickMin": 50,
+    "pickMax": 150,
+    "expansionStart": 31,
+    "expansionEnd": 31,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 632
+  },
+  {
+    "zoneId": 859,
+    "zoneName": "Laurion Inn",
+    "pickMin": 20,
+    "pickMax": 120,
+    "expansionStart": 31,
+    "expansionEnd": 31,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 631
+  },
+  {
+    "zoneId": 863,
+    "zoneName": "Moors of Nokk",
+    "pickMin": 35,
+    "pickMax": 105,
+    "expansionStart": 31,
+    "expansionEnd": 31,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 635
+  },
+  {
+    "zoneId": 861,
+    "zoneName": "Pal'Lomen",
+    "pickMin": 35,
+    "pickMax": 105,
+    "expansionStart": 31,
+    "expansionEnd": 31,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 633
+  },
+  {
+    "zoneId": 862,
+    "zoneName": "The Hero's Forge",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 31,
+    "expansionEnd": 31,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 634
+  },
+  {
+    "zoneId": 865,
+    "zoneName": "Timorous Falls",
+    "pickMin": 40,
+    "pickMax": 120,
+    "expansionStart": 31,
+    "expansionEnd": 31,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 637
+  },
+  {
+    "zoneId": 864,
+    "zoneName": "Unkempt Woods",
+    "pickMin": 50,
+    "pickMax": 150,
+    "expansionStart": 31,
+    "expansionEnd": 31,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 636
+  },
+  {
+    "zoneId": 872,
+    "zoneName": "Aureate Covert",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 32,
+    "expansionEnd": 32,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 644
+  },
+  {
+    "zoneId": 870,
+    "zoneName": "Hodstock Hills",
+    "pickMin": 50,
+    "pickMax": 150,
+    "expansionStart": 32,
+    "expansionEnd": 32,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 642
+  },
+  {
+    "zoneId": 874,
+    "zoneName": "The Chambers of Puissance",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 32,
+    "expansionEnd": 32,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 646
+  },
+  {
+    "zoneId": 875,
+    "zoneName": "The Gilded Spire",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 32,
+    "expansionEnd": 32,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 647
+  },
+  {
+    "zoneId": 873,
+    "zoneName": "The Harbinger's Cradle",
+    "pickMin": 20,
+    "pickMax": 60,
+    "expansionStart": 32,
+    "expansionEnd": 32,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 645
+  },
+  {
+    "zoneId": 871,
+    "zoneName": "The Theater of Eternity",
+    "pickMin": 25,
+    "pickMax": 75,
+    "expansionStart": 32,
+    "expansionEnd": 32,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 643
+  },
+  {
+    "zoneId": 881,
+    "zoneName": "Arcstone, Shattered Isles",
+    "pickMin": 50,
+    "pickMax": 150,
+    "expansionStart": 33,
+    "expansionEnd": 33,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 653
+  },
+  {
+    "zoneId": 879,
+    "zoneName": "Candlemaker's Workshop",
+    "pickMin": 35,
+    "pickMax": 105,
+    "expansionStart": 33,
+    "expansionEnd": 33,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 651
+  },
+  {
+    "zoneId": 884,
+    "zoneName": "Labyrinth of Spite",
+    "pickMin": 50,
+    "pickMax": 150,
+    "expansionStart": 33,
+    "expansionEnd": 33,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 656
+  },
+  {
+    "zoneId": 882,
+    "zoneName": "Ruined Relic",
+    "pickMin": 45,
+    "pickMax": 135,
+    "expansionStart": 33,
+    "expansionEnd": 33,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 654
+  },
+  {
+    "zoneId": 880,
+    "zoneName": "Scarred Grove",
+    "pickMin": 30,
+    "pickMax": 90,
+    "expansionStart": 33,
+    "expansionEnd": 33,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 652
+  },
+  {
+    "zoneId": 883,
+    "zoneName": "The Vortex",
+    "pickMin": 55,
+    "pickMax": 165,
+    "expansionStart": 33,
+    "expansionEnd": 33,
+    "expansionIds": [],
+    "expansionName": "All Other Zones",
+    "section": "all-other",
+    "sourceLine": 655
   }
 ] as const satisfies PickZone[];
 
 export const pickZoneGenerationStats = {
   "source": "data/ZoneNames.txt",
-  "included": 142,
+  "included": 353,
+  "includedEarly": 142,
+  "includedAllOther": 211,
   "skippedMalformed": 12,
   "skippedNoPickMin": 298,
-  "skippedExpansion": 211
+  "skippedInvalidExpansionRange": 0
 } as const;

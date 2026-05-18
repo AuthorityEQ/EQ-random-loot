@@ -2757,6 +2757,55 @@ select option {
   overflow-x: auto;
 }
 
+.picks-other-section {
+  display: grid;
+  gap: 10px;
+}
+
+.picks-section-toggle {
+  align-items: center;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-left: 5px solid color-mix(in srgb, var(--accent) 70%, var(--line));
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  color: var(--text);
+  cursor: pointer;
+  display: flex;
+  font: inherit;
+  font-weight: 950;
+  justify-content: space-between;
+  min-height: 48px;
+  padding: 10px 14px;
+  text-align: left;
+  width: 100%;
+}
+
+.picks-section-toggle:hover,
+.picks-section-toggle:focus {
+  background: color-mix(in srgb, var(--accent-soft) 28%, var(--panel));
+  outline: none;
+}
+
+.picks-count-badge {
+  background: var(--panel-soft);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 900;
+  padding: 5px 8px;
+  white-space: nowrap;
+}
+
+.picks-collapsed-note {
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 800;
+  margin: 0;
+  padding: 0 4px;
+}
+
 .picks-table {
   border-collapse: collapse;
   min-width: 760px;

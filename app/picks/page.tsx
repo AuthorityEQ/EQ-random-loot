@@ -5,11 +5,14 @@ import { pickExpansionNames, pickZones, type PickZone } from "@/data/pick-zones"
 
 type SortKey = "zone" | "expansion" | "pickMin" | "pickMax";
 type SortDirection = "asc" | "desc";
+type PickFilterMode = "default" | "all" | number;
+const allOtherExpansionId = 0;
 
-const expansionOptions = Object.entries(pickExpansionNames).map(([id, name]) => ({
+const earlyExpansionOptions = Object.entries(pickExpansionNames).map(([id, name]) => ({
   id: Number(id),
   name,
 }));
+const expansionOptions = [...earlyExpansionOptions, { id: allOtherExpansionId, name: "All Other Zones" }];
 
 function expansionTone(expansion: string) {
   const toneByExpansion: Record<string, string> = {
@@ -24,6 +27,7 @@ function expansionTone(expansion: string) {
 }
 
 function expansionToneForZone(zone: PickZone) {
+  if (zone.section === "all-other") return "expansion-tone-pop";
   const expansionName = pickExpansionNames[String(zone.expansionStart) as keyof typeof pickExpansionNames];
   return expansionTone(expansionName);
 }
@@ -56,44 +60,98 @@ function compareZones(a: PickZone, b: PickZone, sortKey: SortKey, direction: Sor
   );
 }
 
+function zoneMatchesFilterMode(zone: PickZone, filterMode: PickFilterMode) {
+  if (filterMode === "all") return true;
+  if (filterMode === "default") return zone.section !== "all-other";
+  if (filterMode === allOtherExpansionId) return zone.section === "all-other";
+  return zone.section !== "all-other" && zone.expansionIds.includes(filterMode);
+}
+
+function PickZonesTable({
+  zones,
+  sortLabel,
+  changeSort,
+}: {
+  zones: readonly PickZone[];
+  sortLabel: (key: SortKey) => string;
+  changeSort: (nextKey: SortKey) => void;
+}) {
+  return (
+    <section className="picks-table-shell" aria-label="Pick threshold results">
+      <table className="picks-table">
+        <thead>
+          <tr>
+            <th>
+              <button onClick={() => changeSort("zone")} type="button">
+                Zone{sortLabel("zone")}
+              </button>
+            </th>
+            <th>
+              <button onClick={() => changeSort("expansion")} type="button">
+                Expansion{sortLabel("expansion")}
+              </button>
+            </th>
+            <th>
+              <button onClick={() => changeSort("pickMin")} type="button">
+                Pick Min{sortLabel("pickMin")}
+              </button>
+            </th>
+            <th>
+              <button onClick={() => changeSort("pickMax")} type="button">
+                Pick Max{sortLabel("pickMax")}
+              </button>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {zones.map((zone) => (
+            <tr key={zone.zoneId}>
+              <td>
+                <strong>{zone.zoneName}</strong>
+                <span>Zone ID {zone.zoneId}</span>
+              </td>
+              <td>
+                <span className={`expansion-pill is-compact ${expansionToneForZone(zone)}`}>
+                  {zone.expansionName}
+                </span>
+              </td>
+              <td>{zone.pickMin}</td>
+              <td className={zone.pickMax === 0 ? "is-uncapped" : undefined}>{formatPickMax(zone)}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </section>
+  );
+}
+
 export default function PicksPage() {
   const [query, setQuery] = useState("");
-  const [selectedExpansionIds, setSelectedExpansionIds] = useState<Set<number>>(
-    () => new Set(expansionOptions.map((option) => option.id)),
-  );
+  const [filterMode, setFilterMode] = useState<PickFilterMode>("default");
   const [sortKey, setSortKey] = useState<SortKey>("expansion");
   const [sortDirection, setSortDirection] = useState<SortDirection>("asc");
 
-  const allExpansionsSelected = selectedExpansionIds.size === expansionOptions.length;
   const normalizedQuery = query.trim().toLowerCase();
 
   const visibleZones = useMemo(() => {
     return pickZones
       .filter((zone) => zone.zoneName.toLowerCase().includes(normalizedQuery))
-      .filter((zone) => zone.expansionIds.some((expansionId) => selectedExpansionIds.has(expansionId)))
+      .filter((zone) => zoneMatchesFilterMode(zone, filterMode))
       .slice()
       .sort((a, b) => compareZones(a, b, sortKey, sortDirection));
-  }, [normalizedQuery, selectedExpansionIds, sortDirection, sortKey]);
+  }, [filterMode, normalizedQuery, sortDirection, sortKey]);
 
-  function toggleExpansion(expansionId: number) {
-    setSelectedExpansionIds((current) => {
-      const next = new Set(current);
-      if (next.has(expansionId)) {
-        next.delete(expansionId);
-      } else {
-        next.add(expansionId);
-      }
-      return next.size > 0 ? next : current;
-    });
+  function selectExpansion(expansionId: number) {
+    setFilterMode(expansionId);
   }
 
-  function selectAllExpansions() {
-    setSelectedExpansionIds(new Set(expansionOptions.map((option) => option.id)));
+  function selectAllZones() {
+    setFilterMode("all");
   }
 
   function clearFilters() {
     setQuery("");
-    selectAllExpansions();
+    setFilterMode("default");
     setSortKey("expansion");
     setSortDirection("asc");
   }
@@ -137,7 +195,7 @@ export default function PicksPage() {
 
       <section className="summary picks-summary" aria-label="Pick threshold summary">
         <div className="summary-item">
-          <span className="summary-value">{pickZones.length}</span>
+          <span className="summary-value">{visibleZones.length}</span>
           <span className="summary-label">Pick-enabled zones</span>
         </div>
         <div className="summary-item">
@@ -145,7 +203,7 @@ export default function PicksPage() {
           <span className="summary-label">Visible zones</span>
         </div>
         <div className="summary-item">
-          <span className="summary-value">1-6</span>
+          <span className="summary-value">1-6+</span>
           <span className="summary-label">Expansion range</span>
         </div>
       </section>
@@ -165,26 +223,26 @@ export default function PicksPage() {
           <span>Expansion</span>
           <div className="expansion-toggle-group">
             <button
-              aria-pressed={allExpansionsSelected}
-              className={allExpansionsSelected ? "filter-button is-active" : "filter-button"}
-              onClick={selectAllExpansions}
+              aria-pressed={filterMode === "all"}
+              className={filterMode === "all" ? "filter-button is-active" : "filter-button"}
+              onClick={selectAllZones}
               type="button"
             >
               All
             </button>
             {expansionOptions.map((expansion) => {
-              const active = selectedExpansionIds.has(expansion.id);
+              const active = filterMode === expansion.id;
               return (
                 <button
                   aria-pressed={active}
                   className={[
                     "filter-button",
                     "expansion-filter-button",
-                    expansionTone(expansion.name),
+                    expansion.id === allOtherExpansionId ? "expansion-tone-pop" : expansionTone(expansion.name),
                     active ? "is-active" : null,
                   ].filter(Boolean).join(" ")}
                   key={expansion.id}
-                  onClick={() => toggleExpansion(expansion.id)}
+                  onClick={() => selectExpansion(expansion.id)}
                   type="button"
                 >
                   {expansion.name}
@@ -200,51 +258,7 @@ export default function PicksPage() {
       </section>
 
       {visibleZones.length > 0 ? (
-        <section className="picks-table-shell" aria-label="Pick threshold results">
-          <table className="picks-table">
-            <thead>
-              <tr>
-                <th>
-                  <button onClick={() => changeSort("zone")} type="button">
-                    Zone{sortLabel("zone")}
-                  </button>
-                </th>
-                <th>
-                  <button onClick={() => changeSort("expansion")} type="button">
-                    Expansion{sortLabel("expansion")}
-                  </button>
-                </th>
-                <th>
-                  <button onClick={() => changeSort("pickMin")} type="button">
-                    Pick Min{sortLabel("pickMin")}
-                  </button>
-                </th>
-                <th>
-                  <button onClick={() => changeSort("pickMax")} type="button">
-                    Pick Max{sortLabel("pickMax")}
-                  </button>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {visibleZones.map((zone) => (
-                <tr key={zone.zoneId}>
-                  <td>
-                    <strong>{zone.zoneName}</strong>
-                    <span>Zone ID {zone.zoneId}</span>
-                  </td>
-                  <td>
-                    <span className={`expansion-pill is-compact ${expansionToneForZone(zone)}`}>
-                      {zone.expansionName}
-                    </span>
-                  </td>
-                  <td>{zone.pickMin}</td>
-                  <td className={zone.pickMax === 0 ? "is-uncapped" : undefined}>{formatPickMax(zone)}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </section>
+        <PickZonesTable zones={visibleZones} sortLabel={sortLabel} changeSort={changeSort} />
       ) : (
         <p className="empty">No pick zones match the active filters.</p>
       )}

@@ -9,7 +9,7 @@ export type FeatureCardId =
   | "factions"
   | "epics"
   | "normal-loot"
-  | "favorites";
+  | "picks";
 
 type FeatureCard = {
   id: FeatureCardId;
@@ -23,50 +23,45 @@ const tools: FeatureCard[] = [
     id: "characters",
     href: "/characters",
     title: "My Characters",
-    description:
-      "Build and save gear sets for your characters. Plan BIS, compare items, and manage your group.",
+    description: "Build and save gear sets for your characters.",
   },
   {
     id: "group-named",
     href: "/loot",
     title: "Group Named Loot",
     description:
-      "Random-loot buckets across Classic, Kunark, and Velious group-named mobs. Filter by class, slot, stat, and zone.",
+      "Random loot buckets across Classic, Kunark, and Velious group-named mobs.",
   },
   {
     id: "raids",
     href: "/raids",
     title: "Raid Bosses",
-    description:
-      "Raid encounters and their loot pools. Per-server icon-driven loot lists with hover preview.",
+    description: "Raid encounters and their loot pools.",
   },
   {
     id: "spells",
     href: "/spells",
     title: "Spells",
-    description:
-      "Browse 1,728 spells, build a shopping list, plan a vendor route. Includes BST + drop sources.",
+    description: "Browse spells, build shopping lists, and plan vendor routes.",
   },
   {
     id: "crafting",
     href: "/crafting",
     title: "Crafting",
-    description:
-      "209 recipes across Tailoring, Fletching, Blacksmithing, Jewelcraft, Spell Research, and Alchemy.",
+    description: "Browse recipes, components, sources, and tradeskill paths.",
   },
   {
     id: "factions",
     href: "/factions",
     title: "Factions",
-    description:
-      "Faction reputation flows by tone (good / neutral / evil) with the mobs and turn-ins that move each one.",
+    description: "Velious Armor Sets.",
   },
   {
     id: "epics",
     href: "/epics",
     title: "Epic Quests",
     description:
-      "Epic 1.0 walkthroughs for all 14 classes with step-by-step progress tracking.",
+      "Class epic walkthroughs with step-by-step progress tracking.",
   },
   {
     id: "normal-loot",
@@ -76,11 +71,11 @@ const tools: FeatureCard[] = [
       "Static (non-random) loot for Odus continent zones \u2014 Erudin, Paineel, Kerra Isle, Toxxulia.",
   },
   {
-    id: "favorites",
-    href: "/favorites",
-    title: "Favorites",
+    id: "picks",
+    href: "/picks",
+    title: "Picks",
     description:
-      "Your saved loot items and progress, kept across sessions in localStorage.",
+      "Find out how many people it takes to spawn a pick of a zone.",
   },
 ];
 
@@ -91,7 +86,7 @@ export const frostreaverFeatureCards: FeatureCardId[] = [
   "crafting",
   "factions",
   "epics",
-  "favorites",
+  "picks",
   "characters",
 ];
 

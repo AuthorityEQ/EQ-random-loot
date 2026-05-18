@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
   CRAFTING_SKILLS,
@@ -7,11 +8,13 @@ import {
   type CraftingRecipe,
   type CraftingSkill,
 } from "@/lib/crafting";
+import { getCraftingRecipeId } from "@/lib/crafting-recipe-ids";
 import { itemToSlug } from "@/lib/item-slug";
 import { ItemDrawer } from "@/components/ItemDrawer";
 import "@/components/item-drawer.css";
 import { ItemIcon } from "@/components/ItemIcon";
 import { useItemPreview } from "@/components/ItemPreviewProvider";
+import { useSavedCraftingRecipes } from "@/components/SavedCraftingRecipesProvider";
 import {
   RESEARCH_CLASSES,
   RESEARCH_SPELL_METADATA,
@@ -486,6 +489,15 @@ function recipeFamilyName(recipe: CraftingRecipe) {
   return outputName;
 }
 
+function recipeFamilyDisplayName(familyRecipes: CraftingRecipe[]) {
+  const firstRecipe = familyRecipes[0];
+  const familyName = recipeFamilyName(firstRecipe);
+  if (familyRecipes.length === 1 && /\b(?:Armor Set|Set)$/i.test(familyName)) {
+    return firstRecipe.output.name || firstRecipe.name;
+  }
+  return familyName;
+}
+
 function buildRecipeFamilies(recipes: CraftingRecipe[]) {
   const groups = new Map<string, CraftingRecipe[]>();
   for (const recipe of recipes) {
@@ -518,7 +530,7 @@ function buildRecipeFamilies(recipes: CraftingRecipe[]) {
 
     return {
       id,
-      name: recipeFamilyName(sortedRecipes[0]),
+      name: recipeFamilyDisplayName(sortedRecipes),
       recipes: sortedRecipes,
       minTrivial: trivialValues.length ? Math.min(...trivialValues) : null,
       maxTrivial: trivialValues.length ? Math.max(...trivialValues) : null,
@@ -831,11 +843,15 @@ function componentContextTitle(component: CraftingRecipe["components"][number]) 
 function RecipeDetailRow({
   recipe,
   dimmed,
+  saved,
   onSelectLoot,
+  onToggleSaved,
 }: {
   recipe: CraftingRecipe;
   dimmed: boolean;
+  saved: boolean;
   onSelectLoot: (itemName: string, bucket: Bucket) => void;
+  onToggleSaved: (recipe: CraftingRecipe) => void;
 }) {
   const { previewProps } = useItemPreview();
   const outputDetails = itemDetailsMap[recipe.output.name];
@@ -867,7 +883,16 @@ function RecipeDetailRow({
           <ItemIcon details={selectedOutputDetails} />
           <span>{selectedOutputName}</span>
         </button>
-        <TrivialBadge compact value={recipe.trivial} />
+        <span className="recipe-detail-actions">
+          <TrivialBadge compact value={recipe.trivial} />
+          <button
+            className={saved ? "recipe-save-button is-saved" : "recipe-save-button"}
+            onClick={() => onToggleSaved(recipe)}
+            type="button"
+          >
+            {saved ? "Saved" : "Save recipe"}
+          </button>
+        </span>
       </div>
       {sizeVariantMeta ? (
         <div className="recipe-size-selector-row">
@@ -1045,14 +1070,18 @@ function RecipeFamilyCard({
   family,
   matchingRecipeIds,
   expanded,
+  savedRecipeIds,
   onToggle,
   onSelectLoot,
+  onToggleSaved,
 }: {
   family: RecipeFamily;
   matchingRecipeIds: Set<string>;
   expanded: boolean;
+  savedRecipeIds: Set<string>;
   onToggle: () => void;
   onSelectLoot: (itemName: string, bucket: Bucket) => void;
+  onToggleSaved: (recipe: CraftingRecipe) => void;
 }) {
   const containers = family.containers.length === 1 ? family.containers[0] : "Mixed";
   const commonComponents = family.commonComponents.length ? `Common: ${family.commonComponents.join(", ")}` : "Components vary";
@@ -1101,13 +1130,15 @@ function RecipeFamilyCard({
       {expanded ? (
         <div className="recipe-family-details">
           {family.recipes.map((recipe) => {
-            const recipeKey = `${recipe.skill}:${recipe.name}:${recipe.trivial ?? "unknown"}`;
+            const recipeKey = getCraftingRecipeId(recipe);
             return (
               <RecipeDetailRow
                 dimmed={matchingRecipeIds.size > 0 && !matchingRecipeIds.has(recipeKey)}
                 key={recipeKey}
+                saved={savedRecipeIds.has(recipeKey)}
                 recipe={recipe}
                 onSelectLoot={onSelectLoot}
+                onToggleSaved={onToggleSaved}
               />
             );
           })}
@@ -1130,6 +1161,8 @@ function SkillPanel({
   onToggleFamily,
   onFilteredFamilyIdsChange,
   onSelectLoot,
+  savedRecipeIds,
+  onToggleSaved,
 }: SkillData & {
   searchQuery: string;
   minTrivial: string;
@@ -1141,6 +1174,8 @@ function SkillPanel({
   onToggleFamily: (familyId: string) => void;
   onFilteredFamilyIdsChange: (familyIds: string[], shouldAutoExpand: boolean) => void;
   onSelectLoot: (itemName: string, bucket: Bucket) => void;
+  savedRecipeIds: Set<string>;
+  onToggleSaved: (recipe: CraftingRecipe) => void;
 }) {
   const normalizedQuery = searchQuery.trim().toLowerCase();
   const parsedMin = parseTrivialFilter(minTrivial);
@@ -1157,7 +1192,7 @@ function SkillPanel({
         if (recipeMatchesFilters(recipe, family.name, normalizedQuery, parsedMin, parsedMax)) {
           if (!recipeMatchesJewelcraftFilters(recipe, jewelcraftFilters ?? null)) continue;
           if (!recipeMatchesTradeskillFilters(recipe, tradeskillFilters ?? null)) continue;
-          matchingRecipeIds.add(`${recipe.skill}:${recipe.name}:${recipe.trivial ?? "unknown"}`);
+          matchingRecipeIds.add(getCraftingRecipeId(recipe));
         }
       }
       return { family, matchingRecipeIds };
@@ -1191,7 +1226,9 @@ function SkillPanel({
             key={family.id}
             matchingRecipeIds={matchingRecipeIds}
             onSelectLoot={onSelectLoot}
+            onToggleSaved={onToggleSaved}
             onToggle={() => onToggleFamily(family.id)}
+            savedRecipeIds={savedRecipeIds}
           />
         ))}
       </div>
@@ -1285,11 +1322,15 @@ function ResearchRecipeDetails({
 function ResearchSpellCard({
   row,
   expanded,
+  saved,
   onToggle,
+  onToggleSaved,
 }: {
   row: ResearchSpellRow;
   expanded: boolean;
+  saved: boolean;
   onToggle: () => void;
+  onToggleSaved: (recipe: CraftingRecipe) => void;
 }) {
   const trivial = row.expectedTrivial ?? row.recipe.trivial;
   const sourceTrivial = row.recipe.trivial;
@@ -1317,6 +1358,15 @@ function ResearchSpellCard({
           </span>
         </span>
       </button>
+      <div className="research-save-row">
+        <button
+          className={saved ? "recipe-save-button is-saved" : "recipe-save-button"}
+          onClick={() => onToggleSaved(row.recipe)}
+          type="button"
+        >
+          {saved ? "Saved" : "Save recipe"}
+        </button>
+      </div>
       {expanded ? <ResearchRecipeDetails recipe={row.recipe} /> : null}
     </article>
   );
@@ -1325,11 +1375,15 @@ function ResearchSpellCard({
 function ResearchSkillUpView({
   recipes,
   expandedBands,
+  savedRecipeIds,
   onToggleBand,
+  onToggleSaved,
 }: {
   recipes: CraftingRecipe[];
   expandedBands: Set<string>;
+  savedRecipeIds: Set<string>;
   onToggleBand: (bandId: string) => void;
+  onToggleSaved: (recipe: CraftingRecipe) => void;
 }) {
   const bands = useMemo(() => buildResearchSkillBands(recipes), [recipes]);
   return (
@@ -1366,7 +1420,16 @@ function ResearchSkillUpView({
                   <article className="recipe-detail-row" key={`${recipe.id ?? recipe.name}:${recipe.trivial ?? "unknown"}`}>
                     <div className="recipe-detail-heading">
                       <span>{recipe.name}</span>
-                      <TrivialBadge compact value={recipe.trivial} />
+                      <span className="recipe-detail-actions">
+                        <TrivialBadge compact value={recipe.trivial} />
+                        <button
+                          className={savedRecipeIds.has(getCraftingRecipeId(recipe)) ? "recipe-save-button is-saved" : "recipe-save-button"}
+                          onClick={() => onToggleSaved(recipe)}
+                          type="button"
+                        >
+                          {savedRecipeIds.has(getCraftingRecipeId(recipe)) ? "Saved" : "Save recipe"}
+                        </button>
+                      </span>
                     </div>
                     <ResearchRecipeDetails recipe={recipe} />
                   </article>
@@ -1390,6 +1453,7 @@ function ResearchPanel({
   researchSort,
   expandedResearchBands,
   expandedResearchSpells,
+  savedRecipeIds,
   onResearchViewModeChange,
   onResearchSearchChange,
   onToggleResearchClass,
@@ -1398,6 +1462,7 @@ function ResearchPanel({
   onResearchSortChange,
   onToggleResearchBand,
   onToggleResearchSpell,
+  onToggleSaved,
 }: {
   recipes: CraftingRecipe[];
   researchViewMode: ResearchViewMode;
@@ -1408,6 +1473,7 @@ function ResearchPanel({
   researchSort: ResearchSort;
   expandedResearchBands: Set<string>;
   expandedResearchSpells: Set<string>;
+  savedRecipeIds: Set<string>;
   onResearchViewModeChange: (value: ResearchViewMode) => void;
   onResearchSearchChange: (value: string) => void;
   onToggleResearchClass: (value: ResearchClassName) => void;
@@ -1416,6 +1482,7 @@ function ResearchPanel({
   onResearchSortChange: (value: ResearchSort) => void;
   onToggleResearchBand: (bandId: string) => void;
   onToggleResearchSpell: (spellId: string) => void;
+  onToggleSaved: (recipe: CraftingRecipe) => void;
 }) {
   const activeExpansionCodes = selectedResearchExpansions.size > 0
     ? selectedResearchExpansions
@@ -1467,7 +1534,9 @@ function ResearchPanel({
         <ResearchSkillUpView
           expandedBands={expandedResearchBands}
           onToggleBand={onToggleResearchBand}
+          onToggleSaved={onToggleSaved}
           recipes={recipes}
+          savedRecipeIds={savedRecipeIds}
         />
       ) : (
         <>
@@ -1531,6 +1600,11 @@ function ResearchPanel({
               />
               <span>Show unmapped research records</span>
             </label>
+            <div className="crafting-favorites-action">
+              <Link className="favorite-recipes-link" href="/crafting/saved">
+                Favorite Recipes{savedRecipeIds.size > 0 ? ` (${savedRecipeIds.size})` : ""}
+              </Link>
+            </div>
           </section>
 
           {!hasActiveFilter ? (
@@ -1546,7 +1620,9 @@ function ResearchPanel({
                     expanded={expandedResearchSpells.has(spellKey)}
                     key={spellKey}
                     onToggle={() => onToggleResearchSpell(spellKey)}
+                    onToggleSaved={onToggleSaved}
                     row={row}
+                    saved={savedRecipeIds.has(getCraftingRecipeId(row.recipe))}
                   />
                 );
               })}
@@ -1559,6 +1635,7 @@ function ResearchPanel({
 }
 
 export function CraftingTabs({ skillData }: CraftingTabsProps) {
+  const { savedRecipeIds, saveRecipe, removeRecipe, isSaved } = useSavedCraftingRecipes();
   const [activeSkill, setActiveSkill] = useState<CraftingSkill>(skillData[0]?.skill ?? "tailoring");
   const [searchQuery, setSearchQuery] = useState("");
   const [minTrivial, setMinTrivial] = useState("");
@@ -1592,6 +1669,7 @@ export function CraftingTabs({ skillData }: CraftingTabsProps) {
   const [researchViewMode, setResearchViewMode] = useState<ResearchViewMode>("skill-up");
   const [expandedResearchBands, setExpandedResearchBands] = useState<Set<string>>(() => new Set());
   const [expandedResearchSpells, setExpandedResearchSpells] = useState<Set<string>>(() => new Set());
+  const [saveToast, setSaveToast] = useState<{ message: string; undoLabel: string; onUndo: () => void } | null>(null);
   const active = skillData.find((s) => s.skill === activeSkill) ?? skillData[0];
   const jewelcraftOptions = useMemo(() => {
     const recipes = activeSkill === "jewelcraft" ? active?.recipes ?? [] : [];
@@ -1632,6 +1710,12 @@ export function CraftingTabs({ skillData }: CraftingTabsProps) {
   const modifierHeldRef = useRef(false);
 
   useEffect(() => {
+    if (!saveToast) return;
+    const timeout = window.setTimeout(() => setSaveToast(null), 4500);
+    return () => window.clearTimeout(timeout);
+  }, [saveToast]);
+
+  useEffect(() => {
     function handleMouseDown(event: MouseEvent) {
       modifierHeldRef.current = event.metaKey || event.ctrlKey;
     }
@@ -1650,6 +1734,25 @@ export function CraftingTabs({ skillData }: CraftingTabsProps) {
       return;
     }
     setDrawerItem({ item: itemName, bucket });
+  }
+
+  function handleToggleSavedRecipe(recipe: CraftingRecipe) {
+    const recipeId = getCraftingRecipeId(recipe);
+    if (isSaved(recipeId)) {
+      removeRecipe(recipeId);
+      setSaveToast({
+        message: "Recipe removed",
+        undoLabel: "Undo",
+        onUndo: () => saveRecipe(recipeId),
+      });
+    } else {
+      saveRecipe(recipeId);
+      setSaveToast({
+        message: "Recipe saved",
+        undoLabel: "Undo",
+        onUndo: () => removeRecipe(recipeId),
+      });
+    }
   }
 
   function toggleFamily(familyId: string) {
@@ -1899,6 +2002,11 @@ export function CraftingTabs({ skillData }: CraftingTabsProps) {
               ) : null}
             </>
           ) : null}
+          <div className="crafting-favorites-action">
+            <Link className="favorite-recipes-link" href="/crafting/saved">
+              Favorite Recipes{savedRecipeIds.size > 0 ? ` (${savedRecipeIds.size})` : ""}
+            </Link>
+          </div>
         </section>
       ) : null}
 
@@ -1917,12 +2025,14 @@ export function CraftingTabs({ skillData }: CraftingTabsProps) {
             onToggleResearchBand={toggleResearchBand}
             onToggleResearchClass={toggleResearchClass}
             onToggleResearchExpansion={toggleResearchExpansion}
+            onToggleSaved={handleToggleSavedRecipe}
             onToggleResearchSpell={toggleResearchSpell}
             onToggleShowUnmappedResearch={() => setShowUnmappedResearch((current) => !current)}
             recipes={active.recipes}
             researchSearch={researchSearch}
             researchSort={researchSort}
             researchViewMode={researchViewMode}
+            savedRecipeIds={savedRecipeIds}
             selectedResearchClasses={selectedResearchClasses}
             selectedResearchExpansions={selectedResearchExpansions}
             showUnmappedResearch={showUnmappedResearch}
@@ -1935,8 +2045,10 @@ export function CraftingTabs({ skillData }: CraftingTabsProps) {
             onSelectLoot={handleSelectLoot}
             onFilteredFamilyIdsChange={handleFilteredFamilyIdsChange}
             onToggleFamily={toggleFamily}
+            onToggleSaved={handleToggleSavedRecipe}
             recipes={active.recipes}
             searchQuery={searchQuery}
+            savedRecipeIds={savedRecipeIds}
             jewelcraftFilters={active.skill === "jewelcraft" ? jewelcraftFilters : null}
             tradeskillFilters={active.skill !== "jewelcraft" ? tradeskillFilters : null}
             skill={active.skill}
@@ -1955,6 +2067,21 @@ export function CraftingTabs({ skillData }: CraftingTabsProps) {
           onClose={() => setDrawerItem(null)}
           onSelectZone={() => {}}
         />
+      ) : null}
+
+      {saveToast ? (
+        <div className="crafting-save-toast" role="status">
+          <span>{saveToast.message}</span>
+          <button
+            onClick={() => {
+              saveToast.onUndo();
+              setSaveToast(null);
+            }}
+            type="button"
+          >
+            {saveToast.undoLabel}
+          </button>
+        </div>
       ) : null}
     </div>
   );

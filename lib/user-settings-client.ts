@@ -4,6 +4,7 @@ export type UserPreferences = {
   bucketed?: boolean;
   itemPreview?: boolean;
   myCharacters?: unknown;
+  savedCraftingRecipeIds?: string[];
 };
 
 export type UserSettingsPayload = {

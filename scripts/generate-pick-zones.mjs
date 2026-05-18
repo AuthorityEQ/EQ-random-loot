@@ -17,7 +17,9 @@ const raw = readFileSync(inputPath, "utf8");
 const zones = [];
 let skippedMalformed = 0;
 let skippedNoPickMin = 0;
-let skippedExpansion = 0;
+let skippedInvalidExpansionRange = 0;
+let includedEarly = 0;
+let includedAllOther = 0;
 
 for (const [lineIndex, line] of raw.split(/\r?\n/).entries()) {
   const trimmed = line.trim();
@@ -54,24 +56,25 @@ for (const [lineIndex, line] of raw.split(/\r?\n/).entries()) {
     continue;
   }
 
-  if (
-    expansionStart < 1
-    || expansionStart > 6
-    || expansionEnd < 1
-    || expansionEnd > 6
-    || expansionEnd < expansionStart
-  ) {
-    skippedExpansion += 1;
+  if (expansionStart < 1 || expansionEnd < 1 || expansionEnd < expansionStart) {
+    skippedInvalidExpansionRange += 1;
     continue;
   }
 
-  const expansionIds = Array.from(
-    { length: expansionEnd - expansionStart + 1 },
-    (_, index) => expansionStart + index,
-  );
-  const expansionName = expansionStart === expansionEnd
-    ? expansionNames[expansionStart]
-    : `${expansionNames[expansionStart]} - ${expansionNames[expansionEnd]}`;
+  const isEarlyTlpZone = expansionStart <= 6 && expansionEnd <= 6;
+  const expansionIds = isEarlyTlpZone
+    ? Array.from(
+      { length: expansionEnd - expansionStart + 1 },
+      (_, index) => expansionStart + index,
+    )
+    : [];
+  const expansionName = isEarlyTlpZone
+    ? expansionStart === expansionEnd
+      ? expansionNames[expansionStart]
+      : `${expansionNames[expansionStart]} - ${expansionNames[expansionEnd]}`
+    : "All Other Zones";
+  if (isEarlyTlpZone) includedEarly += 1;
+  else includedAllOther += 1;
 
   zones.push({
     zoneId,
@@ -82,12 +85,14 @@ for (const [lineIndex, line] of raw.split(/\r?\n/).entries()) {
     expansionEnd,
     expansionIds,
     expansionName,
+    section: isEarlyTlpZone ? "early-tlp" : "all-other",
     sourceLine: lineIndex + 1,
   });
 }
 
 zones.sort((a, b) =>
-  a.expansionStart - b.expansionStart
+  (a.section === b.section ? 0 : a.section === "early-tlp" ? -1 : 1)
+  || a.expansionStart - b.expansionStart
   || a.expansionEnd - b.expansionEnd
   || a.zoneName.localeCompare(b.zoneName)
   || a.zoneId - b.zoneId,
@@ -105,6 +110,7 @@ export type PickZone = {
   expansionEnd: number;
   expansionIds: readonly number[];
   expansionName: string;
+  section: "early-tlp" | "all-other";
   sourceLine: number;
 };
 
@@ -115,9 +121,11 @@ export const pickZones = ${JSON.stringify(zones, null, 2)} as const satisfies Pi
 export const pickZoneGenerationStats = ${JSON.stringify({
   source: "data/ZoneNames.txt",
   included: zones.length,
+  includedEarly,
+  includedAllOther,
   skippedMalformed,
   skippedNoPickMin,
-  skippedExpansion,
+  skippedInvalidExpansionRange,
 }, null, 2)} as const;
 `;
 
