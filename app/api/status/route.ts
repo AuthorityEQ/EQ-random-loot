@@ -4,14 +4,14 @@
  * Returns server/plugin status: server name, version, launch date,
  * expansion timeline, and dataset stats.
  *
- * This endpoint is intentionally NOT cached (revalidate = 0) so that
- * clients always get a fresh timestamp and current launch status.
+ * This endpoint uses a short cache window so public status checks do not
+ * become a launch-day Function Invocation hot spot.
  *
  * Response shape:
  *   { data: StatusPayload, meta: {...} }
  */
 
-export const revalidate = 0;
+export const revalidate = 60;
 
 import classicData from "@/data/classic-group-named.json";
 import kunarkData from "@/data/kunark-group-named.json";

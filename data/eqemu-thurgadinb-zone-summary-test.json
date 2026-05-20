@@ -1,0 +1,4835 @@
+{
+  "summary": {
+    "zoneSlug": "icewell-keep",
+    "zoneName": "Icewell Keep",
+    "requestedZoneShortName": "thurgadinb",
+    "zoneShortName": "thurgadinb",
+    "sourceFile": "local-eqemu-database",
+    "matched": true,
+    "expansion": "Velious",
+    "eqemuExpansionId": 2,
+    "expansionSource": "eqemu-zone-table",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobCount": 94,
+    "unknownLevelCount": 0,
+    "minLevel": 1,
+    "maxLevel": 99,
+    "averageLevel": 51.2,
+    "medianLevel": 52,
+    "levelCounts": {
+      "1": 2,
+      "30": 3,
+      "32": 1,
+      "44": 1,
+      "45": 5,
+      "46": 6,
+      "47": 3,
+      "48": 5,
+      "49": 7,
+      "50": 3,
+      "51": 6,
+      "52": 7,
+      "53": 8,
+      "54": 14,
+      "55": 3,
+      "56": 1,
+      "57": 11,
+      "60": 4,
+      "65": 1,
+      "70": 1,
+      "99": 2
+    },
+    "levelBuckets": {
+      "1-10": 2,
+      "11-20": 0,
+      "21-30": 3,
+      "31-40": 1,
+      "41-50": 30,
+      "51-60": 54,
+      "61+": 4
+    },
+    "levelProfileLabel": "Wide level spread",
+    "mobGroupNameCounts": {
+      "An Icewell Sentinel": 14,
+      "An Icewell Sentry": 9,
+      "Frosticube": 8,
+      "A Coldain Skeleton": 7,
+      "A Frost Spike": 5,
+      "An Avalanche Golem": 3,
+      "Coldain Outcast": 3,
+      "Glucose": 2,
+      "Bouncy": 1,
+      "Chamberlain Krystorf": 1,
+      "Councilor Amberfeld": 1,
+      "Councilor Coldember": 1,
+      "Councilor Darakor": 1,
+      "Councilor Darkfrost": 1,
+      "Councilor Deynekn": 1,
+      "Councilor Dirkins": 1,
+      "Councilor Glacierbane": 1,
+      "Councilor Icelok": 1,
+      "Councilor Icepike": 1,
+      "Councilor Juliah Lockheart": 1,
+      "Councilor Thubins": 1,
+      "Councilor Wintershade": 1,
+      "Dain Frostreaver Iv": 1,
+      "Daytrigger": 1,
+      "Frosty Mug": 1,
+      "Ghost": 1,
+      "Grand Huntsman Darral": 1,
+      "Grizznot": 1,
+      "Loremaster Solstrin": 1,
+      "Nighttrigger": 1,
+      "Onethree": 1,
+      "Royal Armorer Slade": 1,
+      "Royal Guardsman Braxis": 1,
+      "Royal Guardsman Hauten": 1,
+      "Royal Guardsman Horix": 1,
+      "Royal Guardsman Nial": 1,
+      "Royal Guardsman Raxine": 1,
+      "Royal Guardsman Rhion": 1,
+      "Royal Scribe Kaavin": 1,
+      "Seneschal Aldikar": 1,
+      "Sentinel Anderin": 1,
+      "Sentinel Fridmar": 1,
+      "Sentinel Paxin": 1,
+      "Sentinel Saedis": 1,
+      "Sentinel Sheila": 1,
+      "Sentry Ellison": 1,
+      "Servant Girl": 1,
+      "Staff Sergeant Bayard": 1,
+      "Watcher Devin": 1,
+      "Watcher Scots": 1,
+      "Watcher Sprin": 1
+    },
+    "classCounts": {
+      "Warrior": 87,
+      "Banker": 3,
+      "Cleric": 2,
+      "Paladin": 1,
+      "Rogue": 1
+    },
+    "raceCounts": {
+      "Coldain": 62,
+      "Gelatinous Cube": 10,
+      "Skeleton": 7,
+      "Teleport Man": 6,
+      "Tentacle Terror": 5,
+      "Golem": 3,
+      "Ulthork": 1
+    },
+    "normalizedRaceCounts": {
+      "Coldain": 62,
+      "Gelatinous Cube": 10,
+      "Skeleton": 7,
+      "Teleport Man": 6,
+      "Tentacle Terror": 5,
+      "Golem": 3,
+      "Ulthork": 1
+    },
+    "normalizedRaceLevelCounts": {
+      "Coldain": {
+        "30": 3,
+        "32": 1,
+        "44": 1,
+        "45": 5,
+        "46": 6,
+        "47": 3,
+        "48": 4,
+        "49": 6,
+        "50": 1,
+        "51": 2,
+        "52": 4,
+        "53": 4,
+        "54": 9,
+        "56": 1,
+        "57": 9,
+        "60": 1,
+        "65": 1,
+        "70": 1
+      },
+      "Gelatinous Cube": {
+        "52": 2,
+        "53": 1,
+        "54": 3,
+        "55": 2,
+        "57": 2
+      },
+      "Golem": {
+        "51": 1,
+        "53": 2
+      },
+      "Skeleton": {
+        "48": 1,
+        "49": 1,
+        "50": 2,
+        "51": 2,
+        "52": 1
+      },
+      "Teleport Man": {
+        "1": 2,
+        "60": 2,
+        "99": 2
+      },
+      "Tentacle Terror": {
+        "51": 1,
+        "53": 1,
+        "54": 2,
+        "55": 1
+      },
+      "Ulthork": {
+        "60": 1
+      }
+    },
+    "raceAliases": {
+      "Coldain": [
+        "Coldain"
+      ],
+      "Gelatinous Cube": [
+        "Gelatinous Cube"
+      ],
+      "Golem": [
+        "Golem"
+      ],
+      "Skeleton": [
+        "Skeleton"
+      ],
+      "Teleport Man": [
+        "Teleport Man"
+      ],
+      "Tentacle Terror": [
+        "Tentacle Terror"
+      ],
+      "Ulthork": [
+        "Ulthork"
+      ]
+    },
+    "typeCounts": {
+      "Spawn Slot": 94
+    },
+    "notes": [
+      "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+      "Read-only test export; not wired into production /zones data."
+    ],
+    "spawnMapPrototype": {
+      "sourceKind": "Local EQEmu/PEQ database export",
+      "coordinateNote": "Original EQEmu spawn2 x/y/z coordinates are preserved for map prototyping.",
+      "points": [
+        {
+          "spawn2Id": 25704,
+          "spawngroupId": 15891,
+          "name": "Seneschal_Aldikar",
+          "displayName": "Seneschal Aldikar",
+          "level": 65,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 4.875,
+          "y": 780,
+          "z": 37.5,
+          "heading": 260,
+          "chance": 100,
+          "respawnTime": 1800,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 25705,
+          "spawngroupId": 15892,
+          "name": "Sentry_Ellison",
+          "displayName": "Sentry Ellison",
+          "level": 48,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 59,
+          "y": 865,
+          "z": 12.5,
+          "heading": 384,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 25706,
+          "spawngroupId": 15893,
+          "name": "Grizznot",
+          "displayName": "Grizznot",
+          "level": 60,
+          "race": "Ulthork",
+          "rawRace": "Ulthork",
+          "className": "Warrior",
+          "x": 352,
+          "y": 474,
+          "z": -107.379997,
+          "heading": 364,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 25707,
+          "spawngroupId": 15894,
+          "name": "#Dain_Frostreaver_IV",
+          "displayName": "Dain Frostreaver Iv",
+          "level": 70,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 4,
+          "y": 690,
+          "z": 68.379997,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 432000,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 25708,
+          "spawngroupId": 15895,
+          "name": "Royal_Armorer_Slade",
+          "displayName": "Royal Armorer Slade",
+          "level": 49,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 76,
+          "y": 694,
+          "z": 62.380001,
+          "heading": 185,
+          "chance": 100,
+          "respawnTime": 21000,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 25709,
+          "spawngroupId": 15896,
+          "name": "Coldain_Outcast",
+          "displayName": "Coldain Outcast",
+          "level": 30,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Banker",
+          "x": 897,
+          "y": 6,
+          "z": -22.379999,
+          "heading": 5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 25710,
+          "spawngroupId": 15896,
+          "name": "Coldain_Outcast",
+          "displayName": "Coldain Outcast",
+          "level": 30,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Banker",
+          "x": 905,
+          "y": 60,
+          "z": -22.379999,
+          "heading": 230,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 25711,
+          "spawngroupId": 15897,
+          "name": "Coldain_Outcast",
+          "displayName": "Coldain Outcast",
+          "level": 30,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Banker",
+          "x": 928,
+          "y": 52,
+          "z": -22.379999,
+          "heading": 358,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 25712,
+          "spawngroupId": 15898,
+          "name": "Glucose",
+          "displayName": "Glucose",
+          "level": 57,
+          "race": "Gelatinous Cube",
+          "rawRace": "Gelatinous Cube",
+          "className": "Warrior",
+          "x": 591,
+          "y": -3,
+          "z": -128.880005,
+          "heading": 118,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 25713,
+          "spawngroupId": 15898,
+          "name": "Glucose",
+          "displayName": "Glucose",
+          "level": 57,
+          "race": "Gelatinous Cube",
+          "rawRace": "Gelatinous Cube",
+          "className": "Warrior",
+          "x": -198.75,
+          "y": -448.25,
+          "z": -126.129997,
+          "heading": 0,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 25714,
+          "spawngroupId": 15899,
+          "name": "an_avalanche_golem",
+          "displayName": "An Avalanche Golem",
+          "level": 51,
+          "race": "Golem",
+          "rawRace": "Golem",
+          "className": "Warrior",
+          "x": 636.25,
+          "y": 62.380001,
+          "z": -109.379997,
+          "heading": 20,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 25715,
+          "spawngroupId": 15900,
+          "name": "a_Coldain_skeleton",
+          "displayName": "A Coldain Skeleton",
+          "level": 52,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": -69,
+          "y": -560,
+          "z": -122.379997,
+          "heading": 136.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 25716,
+          "spawngroupId": 15901,
+          "name": "a_frost_spike",
+          "displayName": "A Frost Spike",
+          "level": 54,
+          "race": "Tentacle Terror",
+          "rawRace": "Tentacle Terror",
+          "className": "Warrior",
+          "x": -278,
+          "y": -149,
+          "z": -111.879997,
+          "heading": 105,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25717,
+          "spawngroupId": 15902,
+          "name": "an_avalanche_golem",
+          "displayName": "An Avalanche Golem",
+          "level": 53,
+          "race": "Golem",
+          "rawRace": "Golem",
+          "className": "Warrior",
+          "x": -131,
+          "y": -138,
+          "z": -107.379997,
+          "heading": 273,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25718,
+          "spawngroupId": 15903,
+          "name": "a_frost_spike",
+          "displayName": "A Frost Spike",
+          "level": 54,
+          "race": "Tentacle Terror",
+          "rawRace": "Tentacle Terror",
+          "className": "Warrior",
+          "x": -171.880005,
+          "y": -123,
+          "z": -109.879997,
+          "heading": 244,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25719,
+          "spawngroupId": 15904,
+          "name": "Frosticube",
+          "displayName": "Frosticube",
+          "level": 54,
+          "race": "Gelatinous Cube",
+          "rawRace": "Gelatinous Cube",
+          "className": "Warrior",
+          "x": 215.880005,
+          "y": -89.879997,
+          "z": -111.129997,
+          "heading": 469,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25720,
+          "spawngroupId": 15905,
+          "name": "Frosticube",
+          "displayName": "Frosticube",
+          "level": 53,
+          "race": "Gelatinous Cube",
+          "rawRace": "Gelatinous Cube",
+          "className": "Warrior",
+          "x": 176.880005,
+          "y": -93.879997,
+          "z": -111.129997,
+          "heading": 24,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25721,
+          "spawngroupId": 15906,
+          "name": "a_frost_spike",
+          "displayName": "A Frost Spike",
+          "level": 55,
+          "race": "Tentacle Terror",
+          "rawRace": "Tentacle Terror",
+          "className": "Warrior",
+          "x": 176.880005,
+          "y": -42,
+          "z": -106.129997,
+          "heading": 214,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25722,
+          "spawngroupId": 15907,
+          "name": "a_frost_spike",
+          "displayName": "A Frost Spike",
+          "level": 51,
+          "race": "Tentacle Terror",
+          "rawRace": "Tentacle Terror",
+          "className": "Warrior",
+          "x": 258.75,
+          "y": 267.630005,
+          "z": -111.879997,
+          "heading": 507.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 25723,
+          "spawngroupId": 15908,
+          "name": "Frosticube",
+          "displayName": "Frosticube",
+          "level": 54,
+          "race": "Gelatinous Cube",
+          "rawRace": "Gelatinous Cube",
+          "className": "Warrior",
+          "x": 386.25,
+          "y": 49.630001,
+          "z": -113.129997,
+          "heading": 417.75,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25724,
+          "spawngroupId": 15909,
+          "name": "Frosticube",
+          "displayName": "Frosticube",
+          "level": 55,
+          "race": "Gelatinous Cube",
+          "rawRace": "Gelatinous Cube",
+          "className": "Warrior",
+          "x": 438.880005,
+          "y": -34.880001,
+          "z": -111.129997,
+          "heading": 20,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25725,
+          "spawngroupId": 15910,
+          "name": "a_Coldain_skeleton",
+          "displayName": "A Coldain Skeleton",
+          "level": 51,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 273.75,
+          "y": 145.130005,
+          "z": -114.379997,
+          "heading": 487.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 25726,
+          "spawngroupId": 15911,
+          "name": "a_coldain_skeleton",
+          "displayName": "A Coldain Skeleton",
+          "level": 49,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 339.880005,
+          "y": 433.880005,
+          "z": -112.379997,
+          "heading": 420,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25727,
+          "spawngroupId": 15912,
+          "name": "a_coldain_skeleton",
+          "displayName": "A Coldain Skeleton",
+          "level": 50,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 343.880005,
+          "y": 500,
+          "z": -112.379997,
+          "heading": 334,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 25728,
+          "spawngroupId": 15912,
+          "name": "a_coldain_skeleton",
+          "displayName": "A Coldain Skeleton",
+          "level": 50,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 91,
+          "y": 469.880005,
+          "z": -122.379997,
+          "heading": 303,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 25729,
+          "spawngroupId": 15913,
+          "name": "a_coldain_skeleton",
+          "displayName": "A Coldain Skeleton",
+          "level": 51,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 286,
+          "y": 510.880005,
+          "z": -117.379997,
+          "heading": 448,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25730,
+          "spawngroupId": 15914,
+          "name": "Frosticube",
+          "displayName": "Frosticube",
+          "level": 52,
+          "race": "Gelatinous Cube",
+          "rawRace": "Gelatinous Cube",
+          "className": "Warrior",
+          "x": 14,
+          "y": 476.880005,
+          "z": -116.129997,
+          "heading": 253,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25731,
+          "spawngroupId": 15915,
+          "name": "Frosticube",
+          "displayName": "Frosticube",
+          "level": 52,
+          "race": "Gelatinous Cube",
+          "rawRace": "Gelatinous Cube",
+          "className": "Warrior",
+          "x": 133.880005,
+          "y": 429.880005,
+          "z": -121.129997,
+          "heading": 481.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 25732,
+          "spawngroupId": 15916,
+          "name": "Frosticube",
+          "displayName": "Frosticube",
+          "level": 55,
+          "race": "Gelatinous Cube",
+          "rawRace": "Gelatinous Cube",
+          "className": "Warrior",
+          "x": -26.879999,
+          "y": 420.880005,
+          "z": -121.129997,
+          "heading": 389.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 25733,
+          "spawngroupId": 15917,
+          "name": "an_avalanche_golem",
+          "displayName": "An Avalanche Golem",
+          "level": 53,
+          "race": "Golem",
+          "rawRace": "Golem",
+          "className": "Warrior",
+          "x": 5.88,
+          "y": 658.880005,
+          "z": -87.379997,
+          "heading": 265,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25734,
+          "spawngroupId": 15918,
+          "name": "a_frost_spike",
+          "displayName": "A Frost Spike",
+          "level": 53,
+          "race": "Tentacle Terror",
+          "rawRace": "Tentacle Terror",
+          "className": "Warrior",
+          "x": 41.880001,
+          "y": 565.880005,
+          "z": -79.879997,
+          "heading": 421,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25735,
+          "spawngroupId": 15919,
+          "name": "Frosticube",
+          "displayName": "Frosticube",
+          "level": 54,
+          "race": "Gelatinous Cube",
+          "rawRace": "Gelatinous Cube",
+          "className": "Warrior",
+          "x": 12.88,
+          "y": 597.880005,
+          "z": -122.25,
+          "heading": 0,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25736,
+          "spawngroupId": 15920,
+          "name": "Royal_Scribe_Kaavin",
+          "displayName": "Royal Scribe Kaavin",
+          "level": 49,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Cleric",
+          "x": -88,
+          "y": 681,
+          "z": 62.380001,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 21000,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 25737,
+          "spawngroupId": 15921,
+          "name": "Grand_Huntsman_Darral",
+          "displayName": "Grand Huntsman Darral",
+          "level": 49,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 111,
+          "y": 660,
+          "z": 62.380001,
+          "heading": 456,
+          "chance": 100,
+          "respawnTime": 21000,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 25738,
+          "spawngroupId": 15922,
+          "name": "Servant_Girl",
+          "displayName": "Servant Girl",
+          "level": 32,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 20,
+          "y": 780,
+          "z": 62.380001,
+          "heading": 324,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 25739,
+          "spawngroupId": 15923,
+          "name": "Royal_Guardsman_Hauten",
+          "displayName": "Royal Guardsman Hauten",
+          "level": 57,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 14,
+          "y": 747,
+          "z": 62.380001,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 25740,
+          "spawngroupId": 15924,
+          "name": "Royal_Guardsman_Horix",
+          "displayName": "Royal Guardsman Horix",
+          "level": 57,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": -4,
+          "y": 747,
+          "z": 62.380001,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 25741,
+          "spawngroupId": 15925,
+          "name": "Royal_Guardsman_Braxis",
+          "displayName": "Royal Guardsman Braxis",
+          "level": 57,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 13,
+          "y": 708,
+          "z": 68.379997,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 25742,
+          "spawngroupId": 15926,
+          "name": "Royal_Guardsman_Raxine",
+          "displayName": "Royal Guardsman Raxine",
+          "level": 57,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": -3,
+          "y": 708,
+          "z": 68.379997,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 25743,
+          "spawngroupId": 15927,
+          "name": "Chamberlain_Krystorf",
+          "displayName": "Chamberlain Krystorf",
+          "level": 60,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Paladin",
+          "x": 12,
+          "y": 693,
+          "z": 68.375,
+          "heading": 252,
+          "chance": 100,
+          "respawnTime": 86400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 25744,
+          "spawngroupId": 15928,
+          "name": "Royal_Guardsman_Nial",
+          "displayName": "Royal Guardsman Nial",
+          "level": 57,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": -6,
+          "y": 685,
+          "z": 62.380001,
+          "heading": 251,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 25745,
+          "spawngroupId": 15929,
+          "name": "Royal_Guardsman_Rhion",
+          "displayName": "Royal Guardsman Rhion",
+          "level": 57,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 15,
+          "y": 685,
+          "z": 62.380001,
+          "heading": 251,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 25746,
+          "spawngroupId": 15930,
+          "name": "an_Icewell_Sentinel",
+          "displayName": "An Icewell Sentinel",
+          "level": 54,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": -42,
+          "y": 652,
+          "z": 62.380001,
+          "heading": 200,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25747,
+          "spawngroupId": 15930,
+          "name": "an_Icewell_Sentinel",
+          "displayName": "An Icewell Sentinel",
+          "level": 54,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": -73,
+          "y": 731,
+          "z": 37.5,
+          "heading": 384,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25748,
+          "spawngroupId": 15930,
+          "name": "an_Icewell_Sentinel",
+          "displayName": "An Icewell Sentinel",
+          "level": 54,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 5,
+          "y": 644,
+          "z": 38.5,
+          "heading": 256,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25749,
+          "spawngroupId": 15931,
+          "name": "an_Icewell_Sentinel",
+          "displayName": "An Icewell Sentinel",
+          "level": 53,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 53,
+          "y": 651,
+          "z": 62.380001,
+          "heading": 311,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 25750,
+          "spawngroupId": 15931,
+          "name": "an_Icewell_Sentinel",
+          "displayName": "An Icewell Sentinel",
+          "level": 53,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": -72,
+          "y": 760,
+          "z": 37.5,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 25751,
+          "spawngroupId": 15932,
+          "name": "an_Icewell_Sentinel",
+          "displayName": "An Icewell Sentinel",
+          "level": 54,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 51,
+          "y": 558,
+          "z": 62.380001,
+          "heading": 446,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25752,
+          "spawngroupId": 15932,
+          "name": "an_Icewell_Sentinel",
+          "displayName": "An Icewell Sentinel",
+          "level": 54,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": -27,
+          "y": 732,
+          "z": 37.5,
+          "heading": 0,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25753,
+          "spawngroupId": 15932,
+          "name": "an_Icewell_Sentinel",
+          "displayName": "An Icewell Sentinel",
+          "level": 54,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 5,
+          "y": 566,
+          "z": 38.5,
+          "heading": 0,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25754,
+          "spawngroupId": 15933,
+          "name": "an_Icewell_Sentinel",
+          "displayName": "An Icewell Sentinel",
+          "level": 54,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": -43,
+          "y": 557,
+          "z": 62.380001,
+          "heading": 71,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25755,
+          "spawngroupId": 15934,
+          "name": "Councilor_Icepike",
+          "displayName": "Councilor Icepike",
+          "level": 46,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 116.875,
+          "y": 701,
+          "z": 37.5,
+          "heading": 256,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25756,
+          "spawngroupId": 15935,
+          "name": "Councilor_Amberfeld",
+          "displayName": "Councilor Amberfeld",
+          "level": 46,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 108,
+          "y": 664.875,
+          "z": 37.5,
+          "heading": 126,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25757,
+          "spawngroupId": 15936,
+          "name": "Councilor_Deynekn",
+          "displayName": "Councilor Deynekn",
+          "level": 46,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 91.875,
+          "y": 703.875,
+          "z": 37.5,
+          "heading": 262,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25758,
+          "spawngroupId": 15937,
+          "name": "Councilor_Coldember",
+          "displayName": "Councilor Coldember",
+          "level": 45,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 92.875,
+          "y": 655,
+          "z": 37.5,
+          "heading": 488,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25759,
+          "spawngroupId": 15938,
+          "name": "Councilor_Icelok",
+          "displayName": "Councilor Icelok",
+          "level": 45,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 67.875,
+          "y": 703,
+          "z": 37.5,
+          "heading": 269,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 25760,
+          "spawngroupId": 15939,
+          "name": "Councilor_Glacierbane",
+          "displayName": "Councilor Glacierbane",
+          "level": 45,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 66.875,
+          "y": 654,
+          "z": 37.5,
+          "heading": 509,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25761,
+          "spawngroupId": 15940,
+          "name": "Councilor_Dirkins",
+          "displayName": "Councilor Dirkins",
+          "level": 46,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": -103,
+          "y": 702.875,
+          "z": 37.5,
+          "heading": 264,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25762,
+          "spawngroupId": 15941,
+          "name": "Councilor_Darkfrost",
+          "displayName": "Councilor Darkfrost",
+          "level": 45,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Rogue",
+          "x": -4,
+          "y": 886.875,
+          "z": -2.375,
+          "heading": 81,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25763,
+          "spawngroupId": 15942,
+          "name": "Councilor_Juliah_Lockheart",
+          "displayName": "Councilor Juliah Lockheart",
+          "level": 44,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 13.875,
+          "y": 883,
+          "z": -2.375,
+          "heading": 464,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 25764,
+          "spawngroupId": 15943,
+          "name": "Councilor_Darakor",
+          "displayName": "Councilor Darakor",
+          "level": 47,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": -79,
+          "y": 655.875,
+          "z": 37.5,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 25765,
+          "spawngroupId": 15944,
+          "name": "Councilor_Thubins",
+          "displayName": "Councilor Thubins",
+          "level": 47,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": -53,
+          "y": 703,
+          "z": 37.5,
+          "heading": 258,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25766,
+          "spawngroupId": 15945,
+          "name": "an_Icewell_Sentinel",
+          "displayName": "An Icewell Sentinel",
+          "level": 53,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": -42,
+          "y": 758,
+          "z": 37.5,
+          "heading": 256,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25767,
+          "spawngroupId": 15946,
+          "name": "Staff_Sergeant_Bayard",
+          "displayName": "Staff Sergeant Bayard",
+          "level": 57,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 16,
+          "y": 744,
+          "z": 37.5,
+          "heading": 384,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25768,
+          "spawngroupId": 15947,
+          "name": "Sentinel_Saedis",
+          "displayName": "Sentinel Saedis",
+          "level": 54,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 38,
+          "y": 687,
+          "z": 37.5,
+          "heading": 384,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25769,
+          "spawngroupId": 15948,
+          "name": "Sentinel_Fridmar",
+          "displayName": "Sentinel Fridmar",
+          "level": 52,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 38,
+          "y": 672,
+          "z": 37.5,
+          "heading": 393,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25770,
+          "spawngroupId": 15949,
+          "name": "Watcher_Sprin",
+          "displayName": "Watcher Sprin",
+          "level": 56,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": -104,
+          "y": 679.880005,
+          "z": 37.5,
+          "heading": 260,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25771,
+          "spawngroupId": 15950,
+          "name": "Sentinel_Sheila",
+          "displayName": "Sentinel Sheila",
+          "level": 52,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": -28,
+          "y": 671,
+          "z": 37.5,
+          "heading": 125,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25772,
+          "spawngroupId": 15951,
+          "name": "Sentinel_Anderin",
+          "displayName": "Sentinel Anderin",
+          "level": 53,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": -28,
+          "y": 688,
+          "z": 37.5,
+          "heading": 142,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25773,
+          "spawngroupId": 15952,
+          "name": "an_Icewell_Sentinel",
+          "displayName": "An Icewell Sentinel",
+          "level": 52,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": -22.629999,
+          "y": 627.25,
+          "z": 37.5,
+          "heading": 17,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 25774,
+          "spawngroupId": 15953,
+          "name": "Loremaster_Solstrin",
+          "displayName": "Loremaster Solstrin",
+          "level": 50,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Cleric",
+          "x": 209,
+          "y": 730,
+          "z": -42.380001,
+          "heading": 384,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 25775,
+          "spawngroupId": 15954,
+          "name": "Watcher_Scots",
+          "displayName": "Watcher Scots",
+          "level": 57,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 31,
+          "y": 760,
+          "z": 7.5,
+          "heading": 384,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25776,
+          "spawngroupId": 15955,
+          "name": "Watcher_Devin",
+          "displayName": "Watcher Devin",
+          "level": 57,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 31,
+          "y": 740,
+          "z": 7.5,
+          "heading": 384,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25777,
+          "spawngroupId": 15956,
+          "name": "Sentinel_Paxin",
+          "displayName": "Sentinel Paxin",
+          "level": 54,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": -32,
+          "y": 749,
+          "z": 7.5,
+          "heading": 124,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25778,
+          "spawngroupId": 15957,
+          "name": "an_Icewell_Sentinel",
+          "displayName": "An Icewell Sentinel",
+          "level": 51,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 64.879997,
+          "y": 559,
+          "z": 7.5,
+          "heading": 449,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 25779,
+          "spawngroupId": 15957,
+          "name": "an_Icewell_Sentinel",
+          "displayName": "An Icewell Sentinel",
+          "level": 51,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 5,
+          "y": 649.630005,
+          "z": 7.5,
+          "heading": 386.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 25780,
+          "spawngroupId": 15958,
+          "name": "an_Icewell_Sentry",
+          "displayName": "An Icewell Sentry",
+          "level": 49,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": -8,
+          "y": 566,
+          "z": 7.5,
+          "heading": 258,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25781,
+          "spawngroupId": 15959,
+          "name": "an_Icewell_Sentry",
+          "displayName": "An Icewell Sentry",
+          "level": 46,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 17,
+          "y": 566,
+          "z": 7.5,
+          "heading": 258,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25782,
+          "spawngroupId": 15960,
+          "name": "an_Icewell_Sentinel",
+          "displayName": "An Icewell Sentinel",
+          "level": 52,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 255.380005,
+          "y": 337.25,
+          "z": 17.5,
+          "heading": 258.5,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25783,
+          "spawngroupId": 15961,
+          "name": "an_Icewell_Sentry",
+          "displayName": "An Icewell Sentry",
+          "level": 48,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": -254.75,
+          "y": 402.880005,
+          "z": 17.5,
+          "heading": 0.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 25784,
+          "spawngroupId": 15962,
+          "name": "an_Icewell_Sentry",
+          "displayName": "An Icewell Sentry",
+          "level": 48,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": -65,
+          "y": 298,
+          "z": 17.5,
+          "heading": 260,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25785,
+          "spawngroupId": 15963,
+          "name": "an_Icewell_Sentry",
+          "displayName": "An Icewell Sentry",
+          "level": 49,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 75,
+          "y": 298,
+          "z": 17.5,
+          "heading": 252,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25786,
+          "spawngroupId": 15964,
+          "name": "an_Icewell_Sentry",
+          "displayName": "An Icewell Sentry",
+          "level": 49,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": -36,
+          "y": 489,
+          "z": 2.5,
+          "heading": 255,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 25787,
+          "spawngroupId": 15965,
+          "name": "an_Icewell_Sentry",
+          "displayName": "An Icewell Sentry",
+          "level": 45,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 43,
+          "y": 486,
+          "z": 2.5,
+          "heading": 260,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 25788,
+          "spawngroupId": 15966,
+          "name": "an_Icewell_Sentry",
+          "displayName": "An Icewell Sentry",
+          "level": 48,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 23,
+          "y": 287,
+          "z": 2.5,
+          "heading": 250,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25789,
+          "spawngroupId": 15967,
+          "name": "an_Icewell_Sentry",
+          "displayName": "An Icewell Sentry",
+          "level": 46,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": -12,
+          "y": 285,
+          "z": 2.5,
+          "heading": 250,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 25790,
+          "spawngroupId": 15968,
+          "name": "Councilor_Wintershade",
+          "displayName": "Councilor Wintershade",
+          "level": 47,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 5.875,
+          "y": 895,
+          "z": -2.375,
+          "heading": 256,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 25791,
+          "spawngroupId": 15969,
+          "name": "a_Coldain_skeleton",
+          "displayName": "A Coldain Skeleton",
+          "level": 48,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": -55.5,
+          "y": -799.25,
+          "z": -97.379997,
+          "heading": 196.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 26871,
+          "spawngroupId": 16765,
+          "name": "frosty_mug",
+          "displayName": "Frosty Mug",
+          "level": 60,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": 22,
+          "y": 770,
+          "z": 70.099998,
+          "heading": 16,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 26872,
+          "spawngroupId": 16766,
+          "name": "Ghost",
+          "displayName": "Ghost",
+          "level": 1,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": 5,
+          "y": 920,
+          "z": 8.7,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 26873,
+          "spawngroupId": 16767,
+          "name": "OneThree",
+          "displayName": "Onethree",
+          "level": 60,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": 5,
+          "y": 533,
+          "z": 67.699997,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 26874,
+          "spawngroupId": 16768,
+          "name": "Bouncy",
+          "displayName": "Bouncy",
+          "level": 1,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": -5,
+          "y": 612,
+          "z": 71.699997,
+          "heading": 248,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 149615,
+          "spawngroupId": 111127,
+          "name": "#nighttrigger",
+          "displayName": "Nighttrigger",
+          "level": 99,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": 0,
+          "y": 606,
+          "z": -160,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 157398,
+          "spawngroupId": 117700,
+          "name": "#daytrigger",
+          "displayName": "Daytrigger",
+          "level": 99,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        }
+      ]
+    }
+  },
+  "details": {
+    "zoneSlug": "icewell-keep",
+    "routeSlug": "thurgadinb",
+    "zoneName": "Icewell Keep",
+    "sourceFile": "local-eqemu-database",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobGroups": [
+      {
+        "displayName": "Bouncy",
+        "rawNames": [
+          "Bouncy"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Teleport Man": 1
+        },
+        "rawRaceCounts": {
+          "Teleport Man": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Ghost",
+        "rawNames": [
+          "Ghost"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Teleport Man": 1
+        },
+        "rawRaceCounts": {
+          "Teleport Man": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Coldain Outcast",
+        "rawNames": [
+          "Coldain_Outcast"
+        ],
+        "count": 3,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Coldain": 3
+        },
+        "rawRaceCounts": {
+          "Coldain": 3
+        },
+        "classCounts": {
+          "Banker": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "Servant Girl",
+        "rawNames": [
+          "Servant_Girl"
+        ],
+        "count": 1,
+        "levelMin": 32,
+        "levelMax": 32,
+        "levels": [
+          32
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Councilor Juliah Lockheart",
+        "rawNames": [
+          "Councilor_Juliah_Lockheart"
+        ],
+        "count": 1,
+        "levelMin": 44,
+        "levelMax": 44,
+        "levels": [
+          44
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "An Icewell Sentry",
+        "rawNames": [
+          "an_Icewell_Sentry"
+        ],
+        "count": 3,
+        "levelMin": 45,
+        "levelMax": 46,
+        "levels": [
+          45,
+          46
+        ],
+        "raceCounts": {
+          "Coldain": 3
+        },
+        "rawRaceCounts": {
+          "Coldain": 3
+        },
+        "classCounts": {
+          "Warrior": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "Councilor Coldember",
+        "rawNames": [
+          "Councilor_Coldember"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Councilor Darkfrost",
+        "rawNames": [
+          "Councilor_Darkfrost"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Rogue": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Councilor Glacierbane",
+        "rawNames": [
+          "Councilor_Glacierbane"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Councilor Icelok",
+        "rawNames": [
+          "Councilor_Icelok"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Councilor Amberfeld",
+        "rawNames": [
+          "Councilor_Amberfeld"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Councilor Deynekn",
+        "rawNames": [
+          "Councilor_Deynekn"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Councilor Dirkins",
+        "rawNames": [
+          "Councilor_Dirkins"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Councilor Icepike",
+        "rawNames": [
+          "Councilor_Icepike"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Councilor Darakor",
+        "rawNames": [
+          "Councilor_Darakor"
+        ],
+        "count": 1,
+        "levelMin": 47,
+        "levelMax": 47,
+        "levels": [
+          47
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Councilor Thubins",
+        "rawNames": [
+          "Councilor_Thubins"
+        ],
+        "count": 1,
+        "levelMin": 47,
+        "levelMax": 47,
+        "levels": [
+          47
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Councilor Wintershade",
+        "rawNames": [
+          "Councilor_Wintershade"
+        ],
+        "count": 1,
+        "levelMin": 47,
+        "levelMax": 47,
+        "levels": [
+          47
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Coldain Skeleton",
+        "rawNames": [
+          "a_coldain_skeleton",
+          "a_Coldain_skeleton"
+        ],
+        "count": 7,
+        "levelMin": 48,
+        "levelMax": 52,
+        "levels": [
+          48,
+          49,
+          50,
+          51,
+          52
+        ],
+        "raceCounts": {
+          "Skeleton": 7
+        },
+        "rawRaceCounts": {
+          "Skeleton": 7
+        },
+        "classCounts": {
+          "Warrior": 7
+        },
+        "typeCounts": {
+          "Spawn Slot": 7
+        }
+      },
+      {
+        "displayName": "An Icewell Sentry",
+        "rawNames": [
+          "an_Icewell_Sentry"
+        ],
+        "count": 6,
+        "levelMin": 48,
+        "levelMax": 49,
+        "levels": [
+          48,
+          49
+        ],
+        "raceCounts": {
+          "Coldain": 6
+        },
+        "rawRaceCounts": {
+          "Coldain": 6
+        },
+        "classCounts": {
+          "Warrior": 6
+        },
+        "typeCounts": {
+          "Spawn Slot": 6
+        }
+      },
+      {
+        "displayName": "Sentry Ellison",
+        "rawNames": [
+          "Sentry_Ellison"
+        ],
+        "count": 1,
+        "levelMin": 48,
+        "levelMax": 48,
+        "levels": [
+          48
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Grand Huntsman Darral",
+        "rawNames": [
+          "Grand_Huntsman_Darral"
+        ],
+        "count": 1,
+        "levelMin": 49,
+        "levelMax": 49,
+        "levels": [
+          49
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Royal Armorer Slade",
+        "rawNames": [
+          "Royal_Armorer_Slade"
+        ],
+        "count": 1,
+        "levelMin": 49,
+        "levelMax": 49,
+        "levels": [
+          49
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Royal Scribe Kaavin",
+        "rawNames": [
+          "Royal_Scribe_Kaavin"
+        ],
+        "count": 1,
+        "levelMin": 49,
+        "levelMax": 49,
+        "levels": [
+          49
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Cleric": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Loremaster Solstrin",
+        "rawNames": [
+          "Loremaster_Solstrin"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Cleric": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "An Icewell Sentinel",
+        "rawNames": [
+          "an_Icewell_Sentinel"
+        ],
+        "count": 14,
+        "levelMin": 51,
+        "levelMax": 54,
+        "levels": [
+          51,
+          52,
+          53,
+          54
+        ],
+        "raceCounts": {
+          "Coldain": 14
+        },
+        "rawRaceCounts": {
+          "Coldain": 14
+        },
+        "classCounts": {
+          "Warrior": 14
+        },
+        "typeCounts": {
+          "Spawn Slot": 14
+        }
+      },
+      {
+        "displayName": "A Frost Spike",
+        "rawNames": [
+          "a_frost_spike"
+        ],
+        "count": 1,
+        "levelMin": 51,
+        "levelMax": 51,
+        "levels": [
+          51
+        ],
+        "raceCounts": {
+          "Tentacle Terror": 1
+        },
+        "rawRaceCounts": {
+          "Tentacle Terror": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "An Avalanche Golem",
+        "rawNames": [
+          "an_avalanche_golem"
+        ],
+        "count": 1,
+        "levelMin": 51,
+        "levelMax": 51,
+        "levels": [
+          51
+        ],
+        "raceCounts": {
+          "Golem": 1
+        },
+        "rawRaceCounts": {
+          "Golem": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Frosticube",
+        "rawNames": [
+          "Frosticube"
+        ],
+        "count": 8,
+        "levelMin": 52,
+        "levelMax": 55,
+        "levels": [
+          52,
+          53,
+          54,
+          55
+        ],
+        "raceCounts": {
+          "Gelatinous Cube": 8
+        },
+        "rawRaceCounts": {
+          "Gelatinous Cube": 8
+        },
+        "classCounts": {
+          "Warrior": 8
+        },
+        "typeCounts": {
+          "Spawn Slot": 8
+        }
+      },
+      {
+        "displayName": "Sentinel Fridmar",
+        "rawNames": [
+          "Sentinel_Fridmar"
+        ],
+        "count": 1,
+        "levelMin": 52,
+        "levelMax": 52,
+        "levels": [
+          52
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Sentinel Sheila",
+        "rawNames": [
+          "Sentinel_Sheila"
+        ],
+        "count": 1,
+        "levelMin": 52,
+        "levelMax": 52,
+        "levels": [
+          52
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Frost Spike",
+        "rawNames": [
+          "a_frost_spike"
+        ],
+        "count": 4,
+        "levelMin": 53,
+        "levelMax": 55,
+        "levels": [
+          53,
+          54,
+          55
+        ],
+        "raceCounts": {
+          "Tentacle Terror": 4
+        },
+        "rawRaceCounts": {
+          "Tentacle Terror": 4
+        },
+        "classCounts": {
+          "Warrior": 4
+        },
+        "typeCounts": {
+          "Spawn Slot": 4
+        }
+      },
+      {
+        "displayName": "An Avalanche Golem",
+        "rawNames": [
+          "an_avalanche_golem"
+        ],
+        "count": 2,
+        "levelMin": 53,
+        "levelMax": 53,
+        "levels": [
+          53
+        ],
+        "raceCounts": {
+          "Golem": 2
+        },
+        "rawRaceCounts": {
+          "Golem": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "Sentinel Anderin",
+        "rawNames": [
+          "Sentinel_Anderin"
+        ],
+        "count": 1,
+        "levelMin": 53,
+        "levelMax": 53,
+        "levels": [
+          53
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Sentinel Paxin",
+        "rawNames": [
+          "Sentinel_Paxin"
+        ],
+        "count": 1,
+        "levelMin": 54,
+        "levelMax": 54,
+        "levels": [
+          54
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Sentinel Saedis",
+        "rawNames": [
+          "Sentinel_Saedis"
+        ],
+        "count": 1,
+        "levelMin": 54,
+        "levelMax": 54,
+        "levels": [
+          54
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Watcher Sprin",
+        "rawNames": [
+          "Watcher_Sprin"
+        ],
+        "count": 1,
+        "levelMin": 56,
+        "levelMax": 56,
+        "levels": [
+          56
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Glucose",
+        "rawNames": [
+          "Glucose"
+        ],
+        "count": 2,
+        "levelMin": 57,
+        "levelMax": 57,
+        "levels": [
+          57
+        ],
+        "raceCounts": {
+          "Gelatinous Cube": 2
+        },
+        "rawRaceCounts": {
+          "Gelatinous Cube": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "Royal Guardsman Braxis",
+        "rawNames": [
+          "Royal_Guardsman_Braxis"
+        ],
+        "count": 1,
+        "levelMin": 57,
+        "levelMax": 57,
+        "levels": [
+          57
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Royal Guardsman Hauten",
+        "rawNames": [
+          "Royal_Guardsman_Hauten"
+        ],
+        "count": 1,
+        "levelMin": 57,
+        "levelMax": 57,
+        "levels": [
+          57
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Royal Guardsman Horix",
+        "rawNames": [
+          "Royal_Guardsman_Horix"
+        ],
+        "count": 1,
+        "levelMin": 57,
+        "levelMax": 57,
+        "levels": [
+          57
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Royal Guardsman Nial",
+        "rawNames": [
+          "Royal_Guardsman_Nial"
+        ],
+        "count": 1,
+        "levelMin": 57,
+        "levelMax": 57,
+        "levels": [
+          57
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Royal Guardsman Raxine",
+        "rawNames": [
+          "Royal_Guardsman_Raxine"
+        ],
+        "count": 1,
+        "levelMin": 57,
+        "levelMax": 57,
+        "levels": [
+          57
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Royal Guardsman Rhion",
+        "rawNames": [
+          "Royal_Guardsman_Rhion"
+        ],
+        "count": 1,
+        "levelMin": 57,
+        "levelMax": 57,
+        "levels": [
+          57
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Staff Sergeant Bayard",
+        "rawNames": [
+          "Staff_Sergeant_Bayard"
+        ],
+        "count": 1,
+        "levelMin": 57,
+        "levelMax": 57,
+        "levels": [
+          57
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Watcher Devin",
+        "rawNames": [
+          "Watcher_Devin"
+        ],
+        "count": 1,
+        "levelMin": 57,
+        "levelMax": 57,
+        "levels": [
+          57
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Watcher Scots",
+        "rawNames": [
+          "Watcher_Scots"
+        ],
+        "count": 1,
+        "levelMin": 57,
+        "levelMax": 57,
+        "levels": [
+          57
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Chamberlain Krystorf",
+        "rawNames": [
+          "Chamberlain_Krystorf"
+        ],
+        "count": 1,
+        "levelMin": 60,
+        "levelMax": 60,
+        "levels": [
+          60
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Frosty Mug",
+        "rawNames": [
+          "frosty_mug"
+        ],
+        "count": 1,
+        "levelMin": 60,
+        "levelMax": 60,
+        "levels": [
+          60
+        ],
+        "raceCounts": {
+          "Teleport Man": 1
+        },
+        "rawRaceCounts": {
+          "Teleport Man": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Grizznot",
+        "rawNames": [
+          "Grizznot"
+        ],
+        "count": 1,
+        "levelMin": 60,
+        "levelMax": 60,
+        "levels": [
+          60
+        ],
+        "raceCounts": {
+          "Ulthork": 1
+        },
+        "rawRaceCounts": {
+          "Ulthork": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Onethree",
+        "rawNames": [
+          "OneThree"
+        ],
+        "count": 1,
+        "levelMin": 60,
+        "levelMax": 60,
+        "levels": [
+          60
+        ],
+        "raceCounts": {
+          "Teleport Man": 1
+        },
+        "rawRaceCounts": {
+          "Teleport Man": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Seneschal Aldikar",
+        "rawNames": [
+          "Seneschal_Aldikar"
+        ],
+        "count": 1,
+        "levelMin": 65,
+        "levelMax": 65,
+        "levels": [
+          65
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Dain Frostreaver Iv",
+        "rawNames": [
+          "#Dain_Frostreaver_IV"
+        ],
+        "count": 1,
+        "levelMin": 70,
+        "levelMax": 70,
+        "levels": [
+          70
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Daytrigger",
+        "rawNames": [
+          "#daytrigger"
+        ],
+        "count": 1,
+        "levelMin": 99,
+        "levelMax": 99,
+        "levels": [
+          99
+        ],
+        "raceCounts": {
+          "Teleport Man": 1
+        },
+        "rawRaceCounts": {
+          "Teleport Man": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Nighttrigger",
+        "rawNames": [
+          "#nighttrigger"
+        ],
+        "count": 1,
+        "levelMin": 99,
+        "levelMax": 99,
+        "levels": [
+          99
+        ],
+        "raceCounts": {
+          "Teleport Man": 1
+        },
+        "rawRaceCounts": {
+          "Teleport Man": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      }
+    ],
+    "rows": [
+      {
+        "displayName": "Bouncy",
+        "rawName": "Bouncy",
+        "level": 1,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -5,
+        "y": 612,
+        "z": 71.699997,
+        "heading": 248,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 26874,
+        "spawngroupId": 16768,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Ghost",
+        "rawName": "Ghost",
+        "level": 1,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 5,
+        "y": 920,
+        "z": 8.7,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 26872,
+        "spawngroupId": 16766,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Coldain Outcast",
+        "rawName": "Coldain_Outcast",
+        "level": 30,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 897,
+        "y": 6,
+        "z": -22.379999,
+        "heading": 5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 25709,
+        "spawngroupId": 15896,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Coldain Outcast",
+        "rawName": "Coldain_Outcast",
+        "level": 30,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 905,
+        "y": 60,
+        "z": -22.379999,
+        "heading": 230,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 25710,
+        "spawngroupId": 15896,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Coldain Outcast",
+        "rawName": "Coldain_Outcast",
+        "level": 30,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 928,
+        "y": 52,
+        "z": -22.379999,
+        "heading": 358,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 25711,
+        "spawngroupId": 15897,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Servant Girl",
+        "rawName": "Servant_Girl",
+        "level": 32,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 20,
+        "y": 780,
+        "z": 62.380001,
+        "heading": 324,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 25738,
+        "spawngroupId": 15922,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Councilor Juliah Lockheart",
+        "rawName": "Councilor_Juliah_Lockheart",
+        "level": 44,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 13.875,
+        "y": 883,
+        "z": -2.375,
+        "heading": 464,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 25763,
+        "spawngroupId": 15942,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Icewell Sentry",
+        "rawName": "an_Icewell_Sentry",
+        "level": 45,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 43,
+        "y": 486,
+        "z": 2.5,
+        "heading": 260,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 25787,
+        "spawngroupId": 15965,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Councilor Coldember",
+        "rawName": "Councilor_Coldember",
+        "level": 45,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 92.875,
+        "y": 655,
+        "z": 37.5,
+        "heading": 488,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25758,
+        "spawngroupId": 15937,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Councilor Darkfrost",
+        "rawName": "Councilor_Darkfrost",
+        "level": 45,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -4,
+        "y": 886.875,
+        "z": -2.375,
+        "heading": 81,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25762,
+        "spawngroupId": 15941,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Councilor Glacierbane",
+        "rawName": "Councilor_Glacierbane",
+        "level": 45,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 66.875,
+        "y": 654,
+        "z": 37.5,
+        "heading": 509,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25760,
+        "spawngroupId": 15939,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Councilor Icelok",
+        "rawName": "Councilor_Icelok",
+        "level": 45,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 67.875,
+        "y": 703,
+        "z": 37.5,
+        "heading": 269,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 25759,
+        "spawngroupId": 15938,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Icewell Sentry",
+        "rawName": "an_Icewell_Sentry",
+        "level": 46,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 17,
+        "y": 566,
+        "z": 7.5,
+        "heading": 258,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25781,
+        "spawngroupId": 15959,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "An Icewell Sentry",
+        "rawName": "an_Icewell_Sentry",
+        "level": 46,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -12,
+        "y": 285,
+        "z": 2.5,
+        "heading": 250,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 25789,
+        "spawngroupId": 15967,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Councilor Amberfeld",
+        "rawName": "Councilor_Amberfeld",
+        "level": 46,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 108,
+        "y": 664.875,
+        "z": 37.5,
+        "heading": 126,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25756,
+        "spawngroupId": 15935,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Councilor Deynekn",
+        "rawName": "Councilor_Deynekn",
+        "level": 46,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 91.875,
+        "y": 703.875,
+        "z": 37.5,
+        "heading": 262,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25757,
+        "spawngroupId": 15936,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Councilor Dirkins",
+        "rawName": "Councilor_Dirkins",
+        "level": 46,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -103,
+        "y": 702.875,
+        "z": 37.5,
+        "heading": 264,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25761,
+        "spawngroupId": 15940,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Councilor Icepike",
+        "rawName": "Councilor_Icepike",
+        "level": 46,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 116.875,
+        "y": 701,
+        "z": 37.5,
+        "heading": 256,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25755,
+        "spawngroupId": 15934,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Councilor Darakor",
+        "rawName": "Councilor_Darakor",
+        "level": 47,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -79,
+        "y": 655.875,
+        "z": 37.5,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 25764,
+        "spawngroupId": 15943,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Councilor Thubins",
+        "rawName": "Councilor_Thubins",
+        "level": 47,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -53,
+        "y": 703,
+        "z": 37.5,
+        "heading": 258,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25765,
+        "spawngroupId": 15944,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Councilor Wintershade",
+        "rawName": "Councilor_Wintershade",
+        "level": 47,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 5.875,
+        "y": 895,
+        "z": -2.375,
+        "heading": 256,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25790,
+        "spawngroupId": 15968,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Coldain Skeleton",
+        "rawName": "a_Coldain_skeleton",
+        "level": 48,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -55.5,
+        "y": -799.25,
+        "z": -97.379997,
+        "heading": 196.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 25791,
+        "spawngroupId": 15969,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Icewell Sentry",
+        "rawName": "an_Icewell_Sentry",
+        "level": 48,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -254.75,
+        "y": 402.880005,
+        "z": 17.5,
+        "heading": 0.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 25783,
+        "spawngroupId": 15961,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Icewell Sentry",
+        "rawName": "an_Icewell_Sentry",
+        "level": 48,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -65,
+        "y": 298,
+        "z": 17.5,
+        "heading": 260,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25784,
+        "spawngroupId": 15962,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "An Icewell Sentry",
+        "rawName": "an_Icewell_Sentry",
+        "level": 48,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 23,
+        "y": 287,
+        "z": 2.5,
+        "heading": 250,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25788,
+        "spawngroupId": 15966,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Sentry Ellison",
+        "rawName": "Sentry_Ellison",
+        "level": 48,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 59,
+        "y": 865,
+        "z": 12.5,
+        "heading": 384,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 25705,
+        "spawngroupId": 15892,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Coldain Skeleton",
+        "rawName": "a_coldain_skeleton",
+        "level": 49,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 339.880005,
+        "y": 433.880005,
+        "z": -112.379997,
+        "heading": 420,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25726,
+        "spawngroupId": 15911,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "An Icewell Sentry",
+        "rawName": "an_Icewell_Sentry",
+        "level": 49,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -8,
+        "y": 566,
+        "z": 7.5,
+        "heading": 258,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25780,
+        "spawngroupId": 15958,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "An Icewell Sentry",
+        "rawName": "an_Icewell_Sentry",
+        "level": 49,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 75,
+        "y": 298,
+        "z": 17.5,
+        "heading": 252,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25785,
+        "spawngroupId": 15963,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "An Icewell Sentry",
+        "rawName": "an_Icewell_Sentry",
+        "level": 49,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -36,
+        "y": 489,
+        "z": 2.5,
+        "heading": 255,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 25786,
+        "spawngroupId": 15964,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Grand Huntsman Darral",
+        "rawName": "Grand_Huntsman_Darral",
+        "level": 49,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 111,
+        "y": 660,
+        "z": 62.380001,
+        "heading": 456,
+        "chance": 100,
+        "respawnTime": 21000,
+        "spawn2Id": 25737,
+        "spawngroupId": 15921,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Royal Armorer Slade",
+        "rawName": "Royal_Armorer_Slade",
+        "level": 49,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 76,
+        "y": 694,
+        "z": 62.380001,
+        "heading": 185,
+        "chance": 100,
+        "respawnTime": 21000,
+        "spawn2Id": 25708,
+        "spawngroupId": 15895,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Royal Scribe Kaavin",
+        "rawName": "Royal_Scribe_Kaavin",
+        "level": 49,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": -88,
+        "y": 681,
+        "z": 62.380001,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 21000,
+        "spawn2Id": 25736,
+        "spawngroupId": 15920,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Coldain Skeleton",
+        "rawName": "a_coldain_skeleton",
+        "level": 50,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 343.880005,
+        "y": 500,
+        "z": -112.379997,
+        "heading": 334,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 25727,
+        "spawngroupId": 15912,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Coldain Skeleton",
+        "rawName": "a_coldain_skeleton",
+        "level": 50,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 91,
+        "y": 469.880005,
+        "z": -122.379997,
+        "heading": 303,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 25728,
+        "spawngroupId": 15912,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Loremaster Solstrin",
+        "rawName": "Loremaster_Solstrin",
+        "level": 50,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": 209,
+        "y": 730,
+        "z": -42.380001,
+        "heading": 384,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 25774,
+        "spawngroupId": 15953,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Coldain Skeleton",
+        "rawName": "a_Coldain_skeleton",
+        "level": 51,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 273.75,
+        "y": 145.130005,
+        "z": -114.379997,
+        "heading": 487.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 25725,
+        "spawngroupId": 15910,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Coldain Skeleton",
+        "rawName": "a_coldain_skeleton",
+        "level": 51,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 286,
+        "y": 510.880005,
+        "z": -117.379997,
+        "heading": 448,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25729,
+        "spawngroupId": 15913,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Frost Spike",
+        "rawName": "a_frost_spike",
+        "level": 51,
+        "race": "Tentacle Terror",
+        "rawRace": "Tentacle Terror",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 258.75,
+        "y": 267.630005,
+        "z": -111.879997,
+        "heading": 507.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 25722,
+        "spawngroupId": 15907,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Avalanche Golem",
+        "rawName": "an_avalanche_golem",
+        "level": 51,
+        "race": "Golem",
+        "rawRace": "Golem",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 636.25,
+        "y": 62.380001,
+        "z": -109.379997,
+        "heading": 20,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 25714,
+        "spawngroupId": 15899,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Icewell Sentinel",
+        "rawName": "an_Icewell_Sentinel",
+        "level": 51,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 64.879997,
+        "y": 559,
+        "z": 7.5,
+        "heading": 449,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 25778,
+        "spawngroupId": 15957,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Icewell Sentinel",
+        "rawName": "an_Icewell_Sentinel",
+        "level": 51,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 5,
+        "y": 649.630005,
+        "z": 7.5,
+        "heading": 386.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 25779,
+        "spawngroupId": 15957,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Coldain Skeleton",
+        "rawName": "a_Coldain_skeleton",
+        "level": 52,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -69,
+        "y": -560,
+        "z": -122.379997,
+        "heading": 136.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 25715,
+        "spawngroupId": 15900,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Icewell Sentinel",
+        "rawName": "an_Icewell_Sentinel",
+        "level": 52,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -22.629999,
+        "y": 627.25,
+        "z": 37.5,
+        "heading": 17,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 25773,
+        "spawngroupId": 15952,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Icewell Sentinel",
+        "rawName": "an_Icewell_Sentinel",
+        "level": 52,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 255.380005,
+        "y": 337.25,
+        "z": 17.5,
+        "heading": 258.5,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25782,
+        "spawngroupId": 15960,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Frosticube",
+        "rawName": "Frosticube",
+        "level": 52,
+        "race": "Gelatinous Cube",
+        "rawRace": "Gelatinous Cube",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 14,
+        "y": 476.880005,
+        "z": -116.129997,
+        "heading": 253,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25730,
+        "spawngroupId": 15914,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Frosticube",
+        "rawName": "Frosticube",
+        "level": 52,
+        "race": "Gelatinous Cube",
+        "rawRace": "Gelatinous Cube",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 133.880005,
+        "y": 429.880005,
+        "z": -121.129997,
+        "heading": 481.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 25731,
+        "spawngroupId": 15915,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Sentinel Fridmar",
+        "rawName": "Sentinel_Fridmar",
+        "level": 52,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 38,
+        "y": 672,
+        "z": 37.5,
+        "heading": 393,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25769,
+        "spawngroupId": 15948,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Sentinel Sheila",
+        "rawName": "Sentinel_Sheila",
+        "level": 52,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -28,
+        "y": 671,
+        "z": 37.5,
+        "heading": 125,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25771,
+        "spawngroupId": 15950,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Frost Spike",
+        "rawName": "a_frost_spike",
+        "level": 53,
+        "race": "Tentacle Terror",
+        "rawRace": "Tentacle Terror",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 41.880001,
+        "y": 565.880005,
+        "z": -79.879997,
+        "heading": 421,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25734,
+        "spawngroupId": 15918,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "An Avalanche Golem",
+        "rawName": "an_avalanche_golem",
+        "level": 53,
+        "race": "Golem",
+        "rawRace": "Golem",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -131,
+        "y": -138,
+        "z": -107.379997,
+        "heading": 273,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25717,
+        "spawngroupId": 15902,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "An Avalanche Golem",
+        "rawName": "an_avalanche_golem",
+        "level": 53,
+        "race": "Golem",
+        "rawRace": "Golem",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 5.88,
+        "y": 658.880005,
+        "z": -87.379997,
+        "heading": 265,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25733,
+        "spawngroupId": 15917,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "An Icewell Sentinel",
+        "rawName": "an_Icewell_Sentinel",
+        "level": 53,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 53,
+        "y": 651,
+        "z": 62.380001,
+        "heading": 311,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 25749,
+        "spawngroupId": 15931,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Icewell Sentinel",
+        "rawName": "an_Icewell_Sentinel",
+        "level": 53,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -72,
+        "y": 760,
+        "z": 37.5,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 25750,
+        "spawngroupId": 15931,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Icewell Sentinel",
+        "rawName": "an_Icewell_Sentinel",
+        "level": 53,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -42,
+        "y": 758,
+        "z": 37.5,
+        "heading": 256,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25766,
+        "spawngroupId": 15945,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Frosticube",
+        "rawName": "Frosticube",
+        "level": 53,
+        "race": "Gelatinous Cube",
+        "rawRace": "Gelatinous Cube",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 176.880005,
+        "y": -93.879997,
+        "z": -111.129997,
+        "heading": 24,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25720,
+        "spawngroupId": 15905,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Sentinel Anderin",
+        "rawName": "Sentinel_Anderin",
+        "level": 53,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -28,
+        "y": 688,
+        "z": 37.5,
+        "heading": 142,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25772,
+        "spawngroupId": 15951,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Frost Spike",
+        "rawName": "a_frost_spike",
+        "level": 54,
+        "race": "Tentacle Terror",
+        "rawRace": "Tentacle Terror",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -278,
+        "y": -149,
+        "z": -111.879997,
+        "heading": 105,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25716,
+        "spawngroupId": 15901,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Frost Spike",
+        "rawName": "a_frost_spike",
+        "level": 54,
+        "race": "Tentacle Terror",
+        "rawRace": "Tentacle Terror",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -171.880005,
+        "y": -123,
+        "z": -109.879997,
+        "heading": 244,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25718,
+        "spawngroupId": 15903,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "An Icewell Sentinel",
+        "rawName": "an_Icewell_Sentinel",
+        "level": 54,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -42,
+        "y": 652,
+        "z": 62.380001,
+        "heading": 200,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25746,
+        "spawngroupId": 15930,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "An Icewell Sentinel",
+        "rawName": "an_Icewell_Sentinel",
+        "level": 54,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -73,
+        "y": 731,
+        "z": 37.5,
+        "heading": 384,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25747,
+        "spawngroupId": 15930,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "An Icewell Sentinel",
+        "rawName": "an_Icewell_Sentinel",
+        "level": 54,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 5,
+        "y": 644,
+        "z": 38.5,
+        "heading": 256,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25748,
+        "spawngroupId": 15930,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "An Icewell Sentinel",
+        "rawName": "an_Icewell_Sentinel",
+        "level": 54,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 51,
+        "y": 558,
+        "z": 62.380001,
+        "heading": 446,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25751,
+        "spawngroupId": 15932,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "An Icewell Sentinel",
+        "rawName": "an_Icewell_Sentinel",
+        "level": 54,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -27,
+        "y": 732,
+        "z": 37.5,
+        "heading": 0,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25752,
+        "spawngroupId": 15932,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "An Icewell Sentinel",
+        "rawName": "an_Icewell_Sentinel",
+        "level": 54,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 5,
+        "y": 566,
+        "z": 38.5,
+        "heading": 0,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25753,
+        "spawngroupId": 15932,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "An Icewell Sentinel",
+        "rawName": "an_Icewell_Sentinel",
+        "level": 54,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -43,
+        "y": 557,
+        "z": 62.380001,
+        "heading": 71,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25754,
+        "spawngroupId": 15933,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Frosticube",
+        "rawName": "Frosticube",
+        "level": 54,
+        "race": "Gelatinous Cube",
+        "rawRace": "Gelatinous Cube",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 215.880005,
+        "y": -89.879997,
+        "z": -111.129997,
+        "heading": 469,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25719,
+        "spawngroupId": 15904,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Frosticube",
+        "rawName": "Frosticube",
+        "level": 54,
+        "race": "Gelatinous Cube",
+        "rawRace": "Gelatinous Cube",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 386.25,
+        "y": 49.630001,
+        "z": -113.129997,
+        "heading": 417.75,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25723,
+        "spawngroupId": 15908,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Frosticube",
+        "rawName": "Frosticube",
+        "level": 54,
+        "race": "Gelatinous Cube",
+        "rawRace": "Gelatinous Cube",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 12.88,
+        "y": 597.880005,
+        "z": -122.25,
+        "heading": 0,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25735,
+        "spawngroupId": 15919,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Sentinel Paxin",
+        "rawName": "Sentinel_Paxin",
+        "level": 54,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -32,
+        "y": 749,
+        "z": 7.5,
+        "heading": 124,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25777,
+        "spawngroupId": 15956,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Sentinel Saedis",
+        "rawName": "Sentinel_Saedis",
+        "level": 54,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 38,
+        "y": 687,
+        "z": 37.5,
+        "heading": 384,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25768,
+        "spawngroupId": 15947,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Frost Spike",
+        "rawName": "a_frost_spike",
+        "level": 55,
+        "race": "Tentacle Terror",
+        "rawRace": "Tentacle Terror",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 176.880005,
+        "y": -42,
+        "z": -106.129997,
+        "heading": 214,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25721,
+        "spawngroupId": 15906,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Frosticube",
+        "rawName": "Frosticube",
+        "level": 55,
+        "race": "Gelatinous Cube",
+        "rawRace": "Gelatinous Cube",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 438.880005,
+        "y": -34.880001,
+        "z": -111.129997,
+        "heading": 20,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25724,
+        "spawngroupId": 15909,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Frosticube",
+        "rawName": "Frosticube",
+        "level": 55,
+        "race": "Gelatinous Cube",
+        "rawRace": "Gelatinous Cube",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -26.879999,
+        "y": 420.880005,
+        "z": -121.129997,
+        "heading": 389.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 25732,
+        "spawngroupId": 15916,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Watcher Sprin",
+        "rawName": "Watcher_Sprin",
+        "level": 56,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -104,
+        "y": 679.880005,
+        "z": 37.5,
+        "heading": 260,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25770,
+        "spawngroupId": 15949,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Glucose",
+        "rawName": "Glucose",
+        "level": 57,
+        "race": "Gelatinous Cube",
+        "rawRace": "Gelatinous Cube",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 591,
+        "y": -3,
+        "z": -128.880005,
+        "heading": 118,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 25712,
+        "spawngroupId": 15898,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Glucose",
+        "rawName": "Glucose",
+        "level": 57,
+        "race": "Gelatinous Cube",
+        "rawRace": "Gelatinous Cube",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -198.75,
+        "y": -448.25,
+        "z": -126.129997,
+        "heading": 0,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 25713,
+        "spawngroupId": 15898,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Royal Guardsman Braxis",
+        "rawName": "Royal_Guardsman_Braxis",
+        "level": 57,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 13,
+        "y": 708,
+        "z": 68.379997,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 25741,
+        "spawngroupId": 15925,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Royal Guardsman Hauten",
+        "rawName": "Royal_Guardsman_Hauten",
+        "level": 57,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 14,
+        "y": 747,
+        "z": 62.380001,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 25739,
+        "spawngroupId": 15923,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Royal Guardsman Horix",
+        "rawName": "Royal_Guardsman_Horix",
+        "level": 57,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -4,
+        "y": 747,
+        "z": 62.380001,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 25740,
+        "spawngroupId": 15924,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Royal Guardsman Nial",
+        "rawName": "Royal_Guardsman_Nial",
+        "level": 57,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -6,
+        "y": 685,
+        "z": 62.380001,
+        "heading": 251,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 25744,
+        "spawngroupId": 15928,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Royal Guardsman Raxine",
+        "rawName": "Royal_Guardsman_Raxine",
+        "level": 57,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -3,
+        "y": 708,
+        "z": 68.379997,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 25742,
+        "spawngroupId": 15926,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Royal Guardsman Rhion",
+        "rawName": "Royal_Guardsman_Rhion",
+        "level": 57,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 15,
+        "y": 685,
+        "z": 62.380001,
+        "heading": 251,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 25745,
+        "spawngroupId": 15929,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Staff Sergeant Bayard",
+        "rawName": "Staff_Sergeant_Bayard",
+        "level": 57,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 16,
+        "y": 744,
+        "z": 37.5,
+        "heading": 384,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25767,
+        "spawngroupId": 15946,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Watcher Devin",
+        "rawName": "Watcher_Devin",
+        "level": 57,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 31,
+        "y": 740,
+        "z": 7.5,
+        "heading": 384,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25776,
+        "spawngroupId": 15955,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Watcher Scots",
+        "rawName": "Watcher_Scots",
+        "level": 57,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 31,
+        "y": 760,
+        "z": 7.5,
+        "heading": 384,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 25775,
+        "spawngroupId": 15954,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Chamberlain Krystorf",
+        "rawName": "Chamberlain_Krystorf",
+        "level": 60,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": 12,
+        "y": 693,
+        "z": 68.375,
+        "heading": 252,
+        "chance": 100,
+        "respawnTime": 86400,
+        "spawn2Id": 25743,
+        "spawngroupId": 15927,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Frosty Mug",
+        "rawName": "frosty_mug",
+        "level": 60,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 22,
+        "y": 770,
+        "z": 70.099998,
+        "heading": 16,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 26871,
+        "spawngroupId": 16765,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Grizznot",
+        "rawName": "Grizznot",
+        "level": 60,
+        "race": "Ulthork",
+        "rawRace": "Ulthork",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 352,
+        "y": 474,
+        "z": -107.379997,
+        "heading": 364,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 25706,
+        "spawngroupId": 15893,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Onethree",
+        "rawName": "OneThree",
+        "level": 60,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 5,
+        "y": 533,
+        "z": 67.699997,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 26873,
+        "spawngroupId": 16767,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Seneschal Aldikar",
+        "rawName": "Seneschal_Aldikar",
+        "level": 65,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 4.875,
+        "y": 780,
+        "z": 37.5,
+        "heading": 260,
+        "chance": 100,
+        "respawnTime": 1800,
+        "spawn2Id": 25704,
+        "spawngroupId": 15891,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Dain Frostreaver Iv",
+        "rawName": "#Dain_Frostreaver_IV",
+        "level": 70,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 4,
+        "y": 690,
+        "z": 68.379997,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 432000,
+        "spawn2Id": 25707,
+        "spawngroupId": 15894,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Daytrigger",
+        "rawName": "#daytrigger",
+        "level": 99,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 157398,
+        "spawngroupId": 117700,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Nighttrigger",
+        "rawName": "#nighttrigger",
+        "level": 99,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 0,
+        "y": 606,
+        "z": -160,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 149615,
+        "spawngroupId": 111127,
+        "candidateCount": 1
+      }
+    ]
+  }
+}

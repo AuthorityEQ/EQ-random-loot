@@ -1,0 +1,724 @@
+{
+  "summary": {
+    "zoneSlug": "shadowrest",
+    "zoneName": "Shadowrest",
+    "requestedZoneShortName": "shadowrest",
+    "zoneShortName": "shadowrest",
+    "sourceFile": "local-eqemu-database",
+    "matched": true,
+    "expansion": "Classic",
+    "eqemuExpansionId": 0,
+    "expansionSource": "eqemu-zone-table",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobCount": 15,
+    "unknownLevelCount": 0,
+    "minLevel": 20,
+    "maxLevel": 99,
+    "averageLevel": 27.3,
+    "medianLevel": 20,
+    "levelCounts": {
+      "20": 13,
+      "50": 1,
+      "99": 1
+    },
+    "levelBuckets": {
+      "1-10": 0,
+      "11-20": 13,
+      "21-30": 0,
+      "31-40": 0,
+      "41-50": 1,
+      "51-60": 0,
+      "61+": 1
+    },
+    "levelProfileLabel": "Wide level spread",
+    "mobGroupNameCounts": {
+      "Corpse Caller": 12,
+      "A Corpse Harvester": 1,
+      "Keeper Of Lost Things": 1,
+      "Unknown": 1
+    },
+    "classCounts": {
+      "Warrior": 15
+    },
+    "raceCounts": {
+      "Skeleton": 12,
+      "Shade": 2,
+      "Spectre": 1
+    },
+    "normalizedRaceCounts": {
+      "Skeleton": 12,
+      "Shade": 2,
+      "Spectre": 1
+    },
+    "normalizedRaceLevelCounts": {
+      "Shade": {
+        "20": 1,
+        "99": 1
+      },
+      "Skeleton": {
+        "20": 12
+      },
+      "Spectre": {
+        "50": 1
+      }
+    },
+    "raceAliases": {
+      "Shade": [
+        "Shade"
+      ],
+      "Skeleton": [
+        "Skeleton"
+      ],
+      "Spectre": [
+        "Spectre"
+      ]
+    },
+    "typeCounts": {
+      "Spawn Slot": 15
+    },
+    "notes": [
+      "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+      "Read-only test export; not wired into production /zones data."
+    ],
+    "spawnMapPrototype": {
+      "sourceKind": "Local EQEmu/PEQ database export",
+      "coordinateNote": "Original EQEmu spawn2 x/y/z coordinates are preserved for map prototyping.",
+      "points": [
+        {
+          "spawn2Id": 39958,
+          "spawngroupId": 30575,
+          "name": "Corpse_Caller",
+          "displayName": "Corpse Caller",
+          "level": 20,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": -21,
+          "y": 103,
+          "z": 24.629999,
+          "heading": 446,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 39959,
+          "spawngroupId": 30576,
+          "name": "Corpse_Caller",
+          "displayName": "Corpse Caller",
+          "level": 20,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": -21,
+          "y": 146,
+          "z": 24.629999,
+          "heading": 321,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 39960,
+          "spawngroupId": 30577,
+          "name": "Corpse_Caller",
+          "displayName": "Corpse Caller",
+          "level": 20,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": -63,
+          "y": 146,
+          "z": 24.629999,
+          "heading": 187,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 39961,
+          "spawngroupId": 30578,
+          "name": "Corpse_Caller",
+          "displayName": "Corpse Caller",
+          "level": 20,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": -64,
+          "y": 103,
+          "z": 24.629999,
+          "heading": 60,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 39962,
+          "spawngroupId": 30579,
+          "name": "_",
+          "displayName": "Unknown",
+          "level": 20,
+          "race": "Shade",
+          "rawRace": "Shade",
+          "className": "Warrior",
+          "x": 24.75,
+          "y": 142.25,
+          "z": -28,
+          "heading": 131.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 39963,
+          "spawngroupId": 30580,
+          "name": "Keeper_of_Lost_Things",
+          "displayName": "Keeper Of Lost Things",
+          "level": 99,
+          "race": "Shade",
+          "rawRace": "Shade",
+          "className": "Warrior",
+          "x": -42,
+          "y": -42.130001,
+          "z": -17.879999,
+          "heading": 4,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 149641,
+          "spawngroupId": 111149,
+          "name": "A_Corpse_Harvester",
+          "displayName": "A Corpse Harvester",
+          "level": 50,
+          "race": "Spectre",
+          "rawRace": "Spectre",
+          "className": "Warrior",
+          "x": -165.850418,
+          "y": -168.587448,
+          "z": -6.900304,
+          "heading": 44.75,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 151563,
+          "spawngroupId": 30575,
+          "name": "Corpse_Caller",
+          "displayName": "Corpse Caller",
+          "level": 20,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": -50,
+          "y": 94,
+          "z": 24.625,
+          "heading": 17,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 151564,
+          "spawngroupId": 30575,
+          "name": "Corpse_Caller",
+          "displayName": "Corpse Caller",
+          "level": 20,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": -72,
+          "y": 117,
+          "z": 24.625,
+          "heading": 95,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 151565,
+          "spawngroupId": 30575,
+          "name": "Corpse_Caller",
+          "displayName": "Corpse Caller",
+          "level": 20,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": -34,
+          "y": 155,
+          "z": 24.625,
+          "heading": 274,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 151566,
+          "spawngroupId": 30575,
+          "name": "Corpse_Caller",
+          "displayName": "Corpse Caller",
+          "level": 20,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": -11,
+          "y": 131,
+          "z": 24.625,
+          "heading": 364,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 151567,
+          "spawngroupId": 30576,
+          "name": "Corpse_Caller",
+          "displayName": "Corpse Caller",
+          "level": 20,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": -36,
+          "y": 94,
+          "z": 24.625,
+          "heading": 486,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 151568,
+          "spawngroupId": 30576,
+          "name": "Corpse_Caller",
+          "displayName": "Corpse Caller",
+          "level": 20,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": -72,
+          "y": 134,
+          "z": 24.625,
+          "heading": 137,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 151569,
+          "spawngroupId": 30576,
+          "name": "Corpse_Caller",
+          "displayName": "Corpse Caller",
+          "level": 20,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": -49,
+          "y": 155,
+          "z": 24.625,
+          "heading": 235,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 151570,
+          "spawngroupId": 30576,
+          "name": "Corpse_Caller",
+          "displayName": "Corpse Caller",
+          "level": 20,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": -12,
+          "y": 116,
+          "z": 24.625,
+          "heading": 409,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        }
+      ]
+    }
+  },
+  "details": {
+    "zoneSlug": "shadowrest",
+    "routeSlug": "shadowrest",
+    "zoneName": "Shadowrest",
+    "sourceFile": "local-eqemu-database",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobGroups": [
+      {
+        "displayName": "Corpse Caller",
+        "rawNames": [
+          "Corpse_Caller"
+        ],
+        "count": 12,
+        "levelMin": 20,
+        "levelMax": 20,
+        "levels": [
+          20
+        ],
+        "raceCounts": {
+          "Skeleton": 12
+        },
+        "rawRaceCounts": {
+          "Skeleton": 12
+        },
+        "classCounts": {
+          "Warrior": 12
+        },
+        "typeCounts": {
+          "Spawn Slot": 12
+        }
+      },
+      {
+        "displayName": "Unknown",
+        "rawNames": [
+          "_"
+        ],
+        "count": 1,
+        "levelMin": 20,
+        "levelMax": 20,
+        "levels": [
+          20
+        ],
+        "raceCounts": {
+          "Shade": 1
+        },
+        "rawRaceCounts": {
+          "Shade": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Corpse Harvester",
+        "rawNames": [
+          "A_Corpse_Harvester"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Spectre": 1
+        },
+        "rawRaceCounts": {
+          "Spectre": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Keeper Of Lost Things",
+        "rawNames": [
+          "Keeper_of_Lost_Things"
+        ],
+        "count": 1,
+        "levelMin": 99,
+        "levelMax": 99,
+        "levels": [
+          99
+        ],
+        "raceCounts": {
+          "Shade": 1
+        },
+        "rawRaceCounts": {
+          "Shade": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      }
+    ],
+    "rows": [
+      {
+        "displayName": "Corpse Caller",
+        "rawName": "Corpse_Caller",
+        "level": 20,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -21,
+        "y": 103,
+        "z": 24.629999,
+        "heading": 446,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 39958,
+        "spawngroupId": 30575,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Corpse Caller",
+        "rawName": "Corpse_Caller",
+        "level": 20,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -21,
+        "y": 146,
+        "z": 24.629999,
+        "heading": 321,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 39959,
+        "spawngroupId": 30576,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Corpse Caller",
+        "rawName": "Corpse_Caller",
+        "level": 20,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -63,
+        "y": 146,
+        "z": 24.629999,
+        "heading": 187,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 39960,
+        "spawngroupId": 30577,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Corpse Caller",
+        "rawName": "Corpse_Caller",
+        "level": 20,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -64,
+        "y": 103,
+        "z": 24.629999,
+        "heading": 60,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 39961,
+        "spawngroupId": 30578,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Corpse Caller",
+        "rawName": "Corpse_Caller",
+        "level": 20,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -50,
+        "y": 94,
+        "z": 24.625,
+        "heading": 17,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 151563,
+        "spawngroupId": 30575,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Corpse Caller",
+        "rawName": "Corpse_Caller",
+        "level": 20,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -72,
+        "y": 117,
+        "z": 24.625,
+        "heading": 95,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 151564,
+        "spawngroupId": 30575,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Corpse Caller",
+        "rawName": "Corpse_Caller",
+        "level": 20,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -34,
+        "y": 155,
+        "z": 24.625,
+        "heading": 274,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 151565,
+        "spawngroupId": 30575,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Corpse Caller",
+        "rawName": "Corpse_Caller",
+        "level": 20,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -11,
+        "y": 131,
+        "z": 24.625,
+        "heading": 364,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 151566,
+        "spawngroupId": 30575,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Corpse Caller",
+        "rawName": "Corpse_Caller",
+        "level": 20,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -36,
+        "y": 94,
+        "z": 24.625,
+        "heading": 486,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 151567,
+        "spawngroupId": 30576,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Corpse Caller",
+        "rawName": "Corpse_Caller",
+        "level": 20,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -72,
+        "y": 134,
+        "z": 24.625,
+        "heading": 137,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 151568,
+        "spawngroupId": 30576,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Corpse Caller",
+        "rawName": "Corpse_Caller",
+        "level": 20,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -49,
+        "y": 155,
+        "z": 24.625,
+        "heading": 235,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 151569,
+        "spawngroupId": 30576,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Corpse Caller",
+        "rawName": "Corpse_Caller",
+        "level": 20,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -12,
+        "y": 116,
+        "z": 24.625,
+        "heading": 409,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 151570,
+        "spawngroupId": 30576,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Unknown",
+        "rawName": "_",
+        "level": 20,
+        "race": "Shade",
+        "rawRace": "Shade",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 24.75,
+        "y": 142.25,
+        "z": -28,
+        "heading": 131.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 39962,
+        "spawngroupId": 30579,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Corpse Harvester",
+        "rawName": "A_Corpse_Harvester",
+        "level": 50,
+        "race": "Spectre",
+        "rawRace": "Spectre",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -165.850418,
+        "y": -168.587448,
+        "z": -6.900304,
+        "heading": 44.75,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 149641,
+        "spawngroupId": 111149,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Keeper Of Lost Things",
+        "rawName": "Keeper_of_Lost_Things",
+        "level": 99,
+        "race": "Shade",
+        "rawRace": "Shade",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -42,
+        "y": -42.130001,
+        "z": -17.879999,
+        "heading": 4,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 39963,
+        "spawngroupId": 30580,
+        "candidateCount": 1
+      }
+    ]
+  }
+}

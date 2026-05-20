@@ -1,0 +1,7005 @@
+{
+  "summary": {
+    "zoneSlug": "the-liberated-citadel-of-runnyeye",
+    "zoneName": "The Liberated Citadel of Runnyeye",
+    "requestedZoneShortName": "runnyeye",
+    "zoneShortName": "runnyeye",
+    "sourceFile": "local-eqemu-database",
+    "matched": true,
+    "expansion": "Classic",
+    "eqemuExpansionId": 0,
+    "expansionSource": "eqemu-zone-table",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobCount": 151,
+    "unknownLevelCount": 0,
+    "minLevel": 1,
+    "maxLevel": 60,
+    "averageLevel": 20.2,
+    "medianLevel": 19,
+    "levelCounts": {
+      "1": 15,
+      "5": 2,
+      "6": 2,
+      "8": 7,
+      "9": 1,
+      "10": 4,
+      "11": 2,
+      "12": 1,
+      "14": 6,
+      "15": 1,
+      "16": 6,
+      "17": 13,
+      "18": 9,
+      "19": 7,
+      "20": 8,
+      "21": 14,
+      "22": 10,
+      "23": 12,
+      "24": 10,
+      "25": 4,
+      "28": 1,
+      "30": 3,
+      "31": 1,
+      "60": 12
+    },
+    "levelBuckets": {
+      "1-10": 31,
+      "11-20": 53,
+      "21-30": 54,
+      "31-40": 1,
+      "41-50": 0,
+      "51-60": 12,
+      "61+": 0
+    },
+    "levelProfileLabel": "Wide level spread",
+    "mobGroupNameCounts": {
+      "A Pickclaw Foeseeker": 20,
+      "A Pickclaw Arroweater": 11,
+      "A Sporelit": 9,
+      "A Pickclaw Ambushbaiter": 6,
+      "A Pickclaw Foechopper": 6,
+      "A Sporali Defender": 6,
+      "A Sporali Scavenger": 5,
+      "A Goblin Peon": 4,
+      "A Pickclaw Slayspell": 4,
+      "A Runnyeye Conscript": 4,
+      "A Sludge Guppy": 4,
+      "A Sporali Miner": 4,
+      "An Ooze Crawler": 4,
+      "Thoughts": 4,
+      "A Goblin Runt": 3,
+      "A Layer": 3,
+      "A Pickclaw Destroyer": 3,
+      "A Pickclaw Foeslicer": 3,
+      "A Pickclaw Zekspeaker": 3,
+      "A Runnyeye Trustee": 3,
+      "A Slime Mold": 3,
+      "A Sporali Worker": 3,
+      "A Goblin Merchant": 2,
+      "A Goblin Scavenger": 2,
+      "A Goblin Trainee": 2,
+      "A Pickclaw Bonemender": 2,
+      "A Pickclaw Crusader": 2,
+      "A Pickclaw Mindripper": 2,
+      "A Sharp Rock": 2,
+      "A Sporali Gatherer": 2,
+      "An Evil Eye Prisoner": 2,
+      "Battlewizard Unak": 2,
+      "If The": 2,
+      "Perhaps": 2,
+      "A Goblin Banker": 1,
+      "A Goblin Bartender": 1,
+      "A Goblin Neophyte": 1,
+      "A Mimic": 1,
+      "A Pickclaw Bladestopper": 1,
+      "A Pickclaw Fleshburner": 1,
+      "A Slime Elemental": 1,
+      "Battlelord Paluk": 1,
+      "Goblin Janitor": 1,
+      "Progressing": 1,
+      "Sludge Dankmire": 1,
+      "The Sporali Moldmaster": 1
+    },
+    "classCounts": {
+      "Warrior": 91,
+      "Rogue": 38,
+      "Wizard": 10,
+      "Cleric": 5,
+      "Banker": 3,
+      "Enchanter": 2,
+      "Class 40": 1,
+      "Druid": 1
+    },
+    "raceCounts": {
+      "Goblin": 92,
+      "Fungusman": 21,
+      "Invisible Man": 14,
+      "Teleport Man": 12,
+      "Fish": 4,
+      "Snake": 4,
+      "Evil Eye": 2,
+      "Gelatinous Cube": 1,
+      "Mimic": 1
+    },
+    "normalizedRaceCounts": {
+      "Goblin": 92,
+      "Fungusman": 21,
+      "Invisible Man": 14,
+      "Teleport Man": 12,
+      "Fish": 4,
+      "Snake": 4,
+      "Evil Eye": 2,
+      "Gelatinous Cube": 1,
+      "Mimic": 1
+    },
+    "normalizedRaceLevelCounts": {
+      "Evil Eye": {
+        "30": 1,
+        "31": 1
+      },
+      "Fish": {
+        "14": 1,
+        "16": 2,
+        "17": 1
+      },
+      "Fungusman": {
+        "17": 1,
+        "18": 2,
+        "19": 5,
+        "20": 5,
+        "21": 6,
+        "23": 1,
+        "25": 1
+      },
+      "Gelatinous Cube": {
+        "24": 1
+      },
+      "Goblin": {
+        "5": 2,
+        "6": 2,
+        "8": 7,
+        "9": 1,
+        "10": 4,
+        "11": 2,
+        "12": 1,
+        "14": 5,
+        "15": 1,
+        "16": 4,
+        "17": 11,
+        "18": 7,
+        "19": 2,
+        "20": 3,
+        "21": 8,
+        "22": 9,
+        "23": 10,
+        "24": 7,
+        "25": 3,
+        "28": 1,
+        "30": 2
+      },
+      "Invisible Man": {
+        "1": 14
+      },
+      "Mimic": {
+        "1": 1
+      },
+      "Snake": {
+        "22": 1,
+        "23": 1,
+        "24": 2
+      },
+      "Teleport Man": {
+        "60": 12
+      }
+    },
+    "raceAliases": {
+      "Evil Eye": [
+        "Evil Eye"
+      ],
+      "Fish": [
+        "Fish"
+      ],
+      "Fungusman": [
+        "Fungusman"
+      ],
+      "Gelatinous Cube": [
+        "Gelatinous Cube"
+      ],
+      "Goblin": [
+        "Goblin"
+      ],
+      "Invisible Man": [
+        "Invisible Man"
+      ],
+      "Mimic": [
+        "Mimic"
+      ],
+      "Snake": [
+        "Snake"
+      ],
+      "Teleport Man": [
+        "Teleport Man"
+      ]
+    },
+    "typeCounts": {
+      "Spawn Slot": 151
+    },
+    "notes": [
+      "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+      "Read-only test export; not wired into production /zones data."
+    ],
+    "spawnMapPrototype": {
+      "sourceKind": "Local EQEmu/PEQ database export",
+      "coordinateNote": "Original EQEmu spawn2 x/y/z coordinates are preserved for map prototyping.",
+      "points": [
+        {
+          "spawn2Id": 6228,
+          "spawngroupId": 4390,
+          "name": "a_goblin_scavenger",
+          "displayName": "A Goblin Scavenger",
+          "level": 6,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -59.630001,
+          "y": 2.13,
+          "z": 2.5,
+          "heading": 334,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 6229,
+          "spawngroupId": 4391,
+          "name": "a_Runnyeye_Conscript",
+          "displayName": "A Runnyeye Conscript",
+          "level": 5,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -21.879999,
+          "y": -106.879997,
+          "z": 3.8,
+          "heading": 36,
+          "chance": 10,
+          "respawnTime": 640,
+          "candidateCount": 10
+        },
+        {
+          "spawn2Id": 6230,
+          "spawngroupId": 4391,
+          "name": "a_Runnyeye_Conscript",
+          "displayName": "A Runnyeye Conscript",
+          "level": 5,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": 148,
+          "y": 179.5,
+          "z": -83.129997,
+          "heading": 489.75,
+          "chance": 10,
+          "respawnTime": 640,
+          "candidateCount": 10
+        },
+        {
+          "spawn2Id": 6231,
+          "spawngroupId": 4392,
+          "name": "a_goblin_neophyte",
+          "displayName": "A Goblin Neophyte",
+          "level": 14,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Wizard",
+          "x": 177,
+          "y": 54,
+          "z": 2.5,
+          "heading": 114,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6232,
+          "spawngroupId": 4393,
+          "name": "a_Pickclaw_Destroyer",
+          "displayName": "A Pickclaw Destroyer",
+          "level": 19,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -2,
+          "y": 29,
+          "z": -127.5,
+          "heading": 253,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 6233,
+          "spawngroupId": 4394,
+          "name": "a_Pickclaw_Foeseeker",
+          "displayName": "A Pickclaw Foeseeker",
+          "level": 22,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Rogue",
+          "x": -132,
+          "y": -130,
+          "z": -129.130005,
+          "heading": 273,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6234,
+          "spawngroupId": 4395,
+          "name": "#Battlewizard_Unak",
+          "displayName": "Battlewizard Unak",
+          "level": 30,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Wizard",
+          "x": 26,
+          "y": -24,
+          "z": -127.5,
+          "heading": 310,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6235,
+          "spawngroupId": 4398,
+          "name": "#The_Sporali_Moldmaster",
+          "displayName": "The Sporali Moldmaster",
+          "level": 25,
+          "race": "Fungusman",
+          "rawRace": "Fungusman",
+          "className": "Druid",
+          "x": 106,
+          "y": 156,
+          "z": -78.5,
+          "heading": 140,
+          "chance": 20,
+          "respawnTime": 640,
+          "candidateCount": 5
+        },
+        {
+          "spawn2Id": 6236,
+          "spawngroupId": 4471,
+          "name": "a_Pickclaw_Foechopper",
+          "displayName": "A Pickclaw Foechopper",
+          "level": 22,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -207,
+          "y": -22,
+          "z": -114.25,
+          "heading": 281,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6237,
+          "spawngroupId": 4470,
+          "name": "a_Pickclaw_Slayspell",
+          "displayName": "A Pickclaw Slayspell",
+          "level": 23,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Wizard",
+          "x": -101,
+          "y": -94,
+          "z": -128.130005,
+          "heading": 184,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6238,
+          "spawngroupId": 4469,
+          "name": "a_Pickclaw_Foeseeker",
+          "displayName": "A Pickclaw Foeseeker",
+          "level": 23,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Rogue",
+          "x": -115,
+          "y": -231,
+          "z": -128.130005,
+          "heading": 258,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6239,
+          "spawngroupId": 4468,
+          "name": "a_Pickclaw_Foeseeker",
+          "displayName": "A Pickclaw Foeseeker",
+          "level": 23,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Rogue",
+          "x": -171,
+          "y": 2,
+          "z": -128.75,
+          "heading": 2,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6240,
+          "spawngroupId": 4467,
+          "name": "a_Pickclaw_Foeseeker",
+          "displayName": "A Pickclaw Foeseeker",
+          "level": 21,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Rogue",
+          "x": -150,
+          "y": -127,
+          "z": -129.130005,
+          "heading": 253,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 6241,
+          "spawngroupId": 4466,
+          "name": "a_Pickclaw_Foeseeker",
+          "displayName": "A Pickclaw Foeseeker",
+          "level": 23,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Rogue",
+          "x": -170,
+          "y": -136,
+          "z": -128.130005,
+          "heading": 21,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6242,
+          "spawngroupId": 4465,
+          "name": "a_Pickclaw_Foeseeker",
+          "displayName": "A Pickclaw Foeseeker",
+          "level": 24,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Rogue",
+          "x": -168,
+          "y": -146,
+          "z": -128.75,
+          "heading": 508,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6243,
+          "spawngroupId": 4464,
+          "name": "a_slime_mold",
+          "displayName": "A Slime Mold",
+          "level": 60,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": -52,
+          "y": -99,
+          "z": -128.75,
+          "heading": 341,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 6244,
+          "spawngroupId": 4463,
+          "name": "a_Pickclaw_Foeseeker",
+          "displayName": "A Pickclaw Foeseeker",
+          "level": 24,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Rogue",
+          "x": -27,
+          "y": -8,
+          "z": -128.75,
+          "heading": 446,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6245,
+          "spawngroupId": 4462,
+          "name": "a_Pickclaw_Foeseeker",
+          "displayName": "A Pickclaw Foeseeker",
+          "level": 24,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Rogue",
+          "x": -244.5,
+          "y": -131.880005,
+          "z": -47.799999,
+          "heading": 255.5,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 6246,
+          "spawngroupId": 4461,
+          "name": "a_Pickclaw_Foechopper",
+          "displayName": "A Pickclaw Foechopper",
+          "level": 21,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -157,
+          "y": -33,
+          "z": -114.129997,
+          "heading": 445,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 6247,
+          "spawngroupId": 4460,
+          "name": "a_Pickclaw_Foeseeker",
+          "displayName": "A Pickclaw Foeseeker",
+          "level": 24,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Rogue",
+          "x": -35.880001,
+          "y": -101.25,
+          "z": -128.75,
+          "heading": 385.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 6248,
+          "spawngroupId": 4459,
+          "name": "a_Pickclaw_Foeslicer",
+          "displayName": "A Pickclaw Foeslicer",
+          "level": 21,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -133.5,
+          "y": 100.75,
+          "z": -128.130005,
+          "heading": 384,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 6249,
+          "spawngroupId": 4458,
+          "name": "a_Pickclaw_Foeseeker",
+          "displayName": "A Pickclaw Foeseeker",
+          "level": 22,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Rogue",
+          "x": -124,
+          "y": -174,
+          "z": -128.130005,
+          "heading": 156,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 6250,
+          "spawngroupId": 4457,
+          "name": "a_Pickclaw_Foechopper",
+          "displayName": "A Pickclaw Foechopper",
+          "level": 22,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -77.629997,
+          "y": 188.5,
+          "z": -129.130005,
+          "heading": 454.75,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6251,
+          "spawngroupId": 4456,
+          "name": "a_Pickclaw_Foechopper",
+          "displayName": "A Pickclaw Foechopper",
+          "level": 21,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -105,
+          "y": 109,
+          "z": -128.130005,
+          "heading": 448,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6252,
+          "spawngroupId": 4455,
+          "name": "a_Pickclaw_Foeseeker",
+          "displayName": "A Pickclaw Foeseeker",
+          "level": 24,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Rogue",
+          "x": -209,
+          "y": -49,
+          "z": -115.25,
+          "heading": 384,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6253,
+          "spawngroupId": 4454,
+          "name": "a_Pickclaw_Foeseeker",
+          "displayName": "A Pickclaw Foeseeker",
+          "level": 23,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Rogue",
+          "x": -84,
+          "y": -178,
+          "z": -128.75,
+          "heading": 341,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6254,
+          "spawngroupId": 4453,
+          "name": "#Battlelord_Paluk",
+          "displayName": "Battlelord Paluk",
+          "level": 28,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -201,
+          "y": -35,
+          "z": -113.5,
+          "heading": 382,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6255,
+          "spawngroupId": 4452,
+          "name": "a_Sporali_Defender",
+          "displayName": "A Sporali Defender",
+          "level": 21,
+          "race": "Fungusman",
+          "rawRace": "Fungusman",
+          "className": "Warrior",
+          "x": 127.75,
+          "y": 106,
+          "z": -82.5,
+          "heading": 262.5,
+          "chance": 70,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 6256,
+          "spawngroupId": 4451,
+          "name": "a_Pickclaw_Foeseeker",
+          "displayName": "A Pickclaw Foeseeker",
+          "level": 22,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Rogue",
+          "x": 75,
+          "y": -90,
+          "z": -126.879997,
+          "heading": 120,
+          "chance": 80,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 6257,
+          "spawngroupId": 4450,
+          "name": "a_Sporali_Defender",
+          "displayName": "A Sporali Defender",
+          "level": 23,
+          "race": "Fungusman",
+          "rawRace": "Fungusman",
+          "className": "Warrior",
+          "x": -74,
+          "y": 290,
+          "z": -81.5,
+          "heading": 4,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 6258,
+          "spawngroupId": 4449,
+          "name": "a_Pickclaw_Slayspell",
+          "displayName": "A Pickclaw Slayspell",
+          "level": 23,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Wizard",
+          "x": -97,
+          "y": -60,
+          "z": -128.130005,
+          "heading": 434,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6259,
+          "spawngroupId": 4448,
+          "name": "a_Sporali_Defender",
+          "displayName": "A Sporali Defender",
+          "level": 21,
+          "race": "Fungusman",
+          "rawRace": "Fungusman",
+          "className": "Warrior",
+          "x": -69.5,
+          "y": -35.630001,
+          "z": -80.900002,
+          "heading": 509.5,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 6260,
+          "spawngroupId": 4447,
+          "name": "a_Pickclaw_Foeseeker",
+          "displayName": "A Pickclaw Foeseeker",
+          "level": 24,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Rogue",
+          "x": 11,
+          "y": 37,
+          "z": -128.130005,
+          "heading": 261,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6261,
+          "spawngroupId": 4446,
+          "name": "a_Sporali_Scavenger",
+          "displayName": "A Sporali Scavenger",
+          "level": 21,
+          "race": "Fungusman",
+          "rawRace": "Fungusman",
+          "className": "Rogue",
+          "x": 38,
+          "y": 176,
+          "z": -81.879997,
+          "heading": 501,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6262,
+          "spawngroupId": 4445,
+          "name": "a_Pickclaw_Destroyer",
+          "displayName": "A Pickclaw Destroyer",
+          "level": 21,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -118,
+          "y": 177,
+          "z": -128.5,
+          "heading": 133,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 6263,
+          "spawngroupId": 4444,
+          "name": "an_Evil_Eye_prisoner",
+          "displayName": "An Evil Eye Prisoner",
+          "level": 30,
+          "race": "Evil Eye",
+          "rawRace": "Evil Eye",
+          "className": "Wizard",
+          "x": -95,
+          "y": 79,
+          "z": -63.25,
+          "heading": 2,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 6264,
+          "spawngroupId": 4443,
+          "name": "an_Evil_Eye_prisoner",
+          "displayName": "An Evil Eye Prisoner",
+          "level": 31,
+          "race": "Evil Eye",
+          "rawRace": "Evil Eye",
+          "className": "Wizard",
+          "x": -93,
+          "y": 102,
+          "z": -63.25,
+          "heading": 249,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6265,
+          "spawngroupId": 4442,
+          "name": "a_Pickclaw_Destroyer",
+          "displayName": "A Pickclaw Destroyer",
+          "level": 21,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": 169,
+          "y": -96,
+          "z": -127.5,
+          "heading": 377,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 6266,
+          "spawngroupId": 4441,
+          "name": "a_Pickclaw_Arroweater",
+          "displayName": "A Pickclaw Arroweater",
+          "level": 14,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": 1,
+          "y": 46,
+          "z": -59.75,
+          "heading": 4,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 6267,
+          "spawngroupId": 4440,
+          "name": "a_Sporali_Miner",
+          "displayName": "A Sporali Miner",
+          "level": 21,
+          "race": "Fungusman",
+          "rawRace": "Fungusman",
+          "className": "Rogue",
+          "x": 29.5,
+          "y": 196.130005,
+          "z": -81.900002,
+          "heading": 357,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6268,
+          "spawngroupId": 4439,
+          "name": "a_Runnyeye_Conscript",
+          "displayName": "A Runnyeye Conscript",
+          "level": 8,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -21,
+          "y": -20,
+          "z": -43.130001,
+          "heading": 79,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 6269,
+          "spawngroupId": 4438,
+          "name": "a_Sporali_Miner",
+          "displayName": "A Sporali Miner",
+          "level": 20,
+          "race": "Fungusman",
+          "rawRace": "Fungusman",
+          "className": "Rogue",
+          "x": -145.630005,
+          "y": -138.25,
+          "z": -44.130001,
+          "heading": 431,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6270,
+          "spawngroupId": 4437,
+          "name": "a_Pickclaw_Fleshburner",
+          "displayName": "A Pickclaw Fleshburner",
+          "level": 18,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Wizard",
+          "x": -76,
+          "y": 104,
+          "z": -58.75,
+          "heading": 317,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6271,
+          "spawngroupId": 4436,
+          "name": "a_slime_elemental",
+          "displayName": "A Slime Elemental",
+          "level": 24,
+          "race": "Gelatinous Cube",
+          "rawRace": "Gelatinous Cube",
+          "className": "Warrior",
+          "x": -69.379997,
+          "y": 196,
+          "z": -43.099998,
+          "heading": 11,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 6272,
+          "spawngroupId": 4435,
+          "name": "a_Sporali_Miner",
+          "displayName": "A Sporali Miner",
+          "level": 20,
+          "race": "Fungusman",
+          "rawRace": "Fungusman",
+          "className": "Rogue",
+          "x": -126,
+          "y": 109,
+          "z": -81.879997,
+          "heading": 311,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6273,
+          "spawngroupId": 4434,
+          "name": "a_Sporali_worker",
+          "displayName": "A Sporali Worker",
+          "level": 19,
+          "race": "Fungusman",
+          "rawRace": "Fungusman",
+          "className": "Rogue",
+          "x": -53.880001,
+          "y": -177,
+          "z": -82.129997,
+          "heading": 507,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6274,
+          "spawngroupId": 4433,
+          "name": "a_Sporali_Defender",
+          "displayName": "A Sporali Defender",
+          "level": 19,
+          "race": "Fungusman",
+          "rawRace": "Fungusman",
+          "className": "Warrior",
+          "x": -221,
+          "y": -198,
+          "z": -82.5,
+          "heading": 122,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 6275,
+          "spawngroupId": 4433,
+          "name": "a_Sporali_Defender",
+          "displayName": "A Sporali Defender",
+          "level": 19,
+          "race": "Fungusman",
+          "rawRace": "Fungusman",
+          "className": "Warrior",
+          "x": 191,
+          "y": -225,
+          "z": -81.5,
+          "heading": 380,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 6276,
+          "spawngroupId": 4432,
+          "name": "a_goblin_runt",
+          "displayName": "A Goblin Runt",
+          "level": 12,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -32,
+          "y": 297,
+          "z": 4.13,
+          "heading": 125,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6277,
+          "spawngroupId": 4431,
+          "name": "a_Pickclaw_Bladestopper",
+          "displayName": "A Pickclaw Bladestopper",
+          "level": 14,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -59,
+          "y": 136,
+          "z": -59.5,
+          "heading": 121,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 6278,
+          "spawngroupId": 4430,
+          "name": "a_Runnyeye_Trustee",
+          "displayName": "A Runnyeye Trustee",
+          "level": 10,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -9,
+          "y": 62,
+          "z": -58,
+          "heading": 116,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6279,
+          "spawngroupId": 4430,
+          "name": "a_Runnyeye_Trustee",
+          "displayName": "A Runnyeye Trustee",
+          "level": 10,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": 123,
+          "y": -118,
+          "z": -44.130001,
+          "heading": 112,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6280,
+          "spawngroupId": 4429,
+          "name": "#a_Pickclaw_Crusader",
+          "displayName": "A Pickclaw Crusader",
+          "level": 25,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -90,
+          "y": 113,
+          "z": -58.130001,
+          "heading": 256,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6281,
+          "spawngroupId": 4428,
+          "name": "a_Pickclaw_Arroweater",
+          "displayName": "A Pickclaw Arroweater",
+          "level": 17,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": 64,
+          "y": 116,
+          "z": -44.75,
+          "heading": 22,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6282,
+          "spawngroupId": 4427,
+          "name": "a_goblin_runt",
+          "displayName": "A Goblin Runt",
+          "level": 11,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": 62,
+          "y": 2,
+          "z": 2.5,
+          "heading": 477,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6283,
+          "spawngroupId": 4426,
+          "name": "a_goblin_trainee",
+          "displayName": "A Goblin Trainee",
+          "level": 10,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -120,
+          "y": -114,
+          "z": 3.13,
+          "heading": 70,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 6284,
+          "spawngroupId": 4425,
+          "name": "a_goblin_peon",
+          "displayName": "A Goblin Peon",
+          "level": 9,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": 79.379997,
+          "y": 206.5,
+          "z": 2.5,
+          "heading": 202,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 6285,
+          "spawngroupId": 4424,
+          "name": "a_goblin_scavenger",
+          "displayName": "A Goblin Scavenger",
+          "level": 8,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": 54.130001,
+          "y": 66.5,
+          "z": 2.5,
+          "heading": 53,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 6286,
+          "spawngroupId": 4423,
+          "name": "a_goblin_runt",
+          "displayName": "A Goblin Runt",
+          "level": 11,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": 126.25,
+          "y": 99.879997,
+          "z": 2.5,
+          "heading": 130.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 6287,
+          "spawngroupId": 4422,
+          "name": "a_Pickclaw_bonemender",
+          "displayName": "A Pickclaw Bonemender",
+          "level": 16,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Cleric",
+          "x": 36,
+          "y": 146,
+          "z": -44.630001,
+          "heading": 504,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6288,
+          "spawngroupId": 4421,
+          "name": "goblin_janitor",
+          "displayName": "Goblin Janitor",
+          "level": 6,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": 118.879997,
+          "y": -224.25,
+          "z": -43.099998,
+          "heading": 269,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 6289,
+          "spawngroupId": 4420,
+          "name": "a_goblin_peon",
+          "displayName": "A Goblin Peon",
+          "level": 8,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": 4.13,
+          "y": 28.5,
+          "z": 2.5,
+          "heading": 244,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 6290,
+          "spawngroupId": 4419,
+          "name": "a_goblin_trainee",
+          "displayName": "A Goblin Trainee",
+          "level": 8,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": 180.380005,
+          "y": 55.380001,
+          "z": 2.5,
+          "heading": 252.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 6291,
+          "spawngroupId": 4418,
+          "name": "a_Pickclaw_Foeseeker",
+          "displayName": "A Pickclaw Foeseeker",
+          "level": 23,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Rogue",
+          "x": 57,
+          "y": 121,
+          "z": -128.75,
+          "heading": 340,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6292,
+          "spawngroupId": 4417,
+          "name": "a_Pickclaw_Slayspell",
+          "displayName": "A Pickclaw Slayspell",
+          "level": 21,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Wizard",
+          "x": 114.879997,
+          "y": -6.5,
+          "z": -128.100006,
+          "heading": 115.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 6293,
+          "spawngroupId": 4416,
+          "name": "a_Pickclaw_Arroweater",
+          "displayName": "A Pickclaw Arroweater",
+          "level": 15,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -115.879997,
+          "y": 125.879997,
+          "z": -58.799999,
+          "heading": 212,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 6294,
+          "spawngroupId": 4415,
+          "name": "a_Pickclaw_Arroweater",
+          "displayName": "A Pickclaw Arroweater",
+          "level": 18,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -109,
+          "y": 87,
+          "z": -58.75,
+          "heading": 145,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6295,
+          "spawngroupId": 4414,
+          "name": "a_Pickclaw_Foeseeker",
+          "displayName": "A Pickclaw Foeseeker",
+          "level": 24,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Rogue",
+          "x": -169,
+          "y": -36,
+          "z": -128.130005,
+          "heading": 97,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6296,
+          "spawngroupId": 4413,
+          "name": "a_Pickclaw_Ambushbaiter",
+          "displayName": "A Pickclaw Ambushbaiter",
+          "level": 17,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Rogue",
+          "x": -266.380005,
+          "y": -121.5,
+          "z": -50.900002,
+          "heading": 491,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 6297,
+          "spawngroupId": 4412,
+          "name": "a_Pickclaw_Foechopper",
+          "displayName": "A Pickclaw Foechopper",
+          "level": 22,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": 18,
+          "y": 107,
+          "z": -128.130005,
+          "heading": 383,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6298,
+          "spawngroupId": 4411,
+          "name": "a_Pickclaw_Slayspell",
+          "displayName": "A Pickclaw Slayspell",
+          "level": 23,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Wizard",
+          "x": -105,
+          "y": 184,
+          "z": -129.130005,
+          "heading": 194,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6299,
+          "spawngroupId": 4410,
+          "name": "a_Pickclaw_Foeseeker",
+          "displayName": "A Pickclaw Foeseeker",
+          "level": 22,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Rogue",
+          "x": 127,
+          "y": 67,
+          "z": -128.75,
+          "heading": 145,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6300,
+          "spawngroupId": 4409,
+          "name": "a_Pickclaw_Foechopper",
+          "displayName": "A Pickclaw Foechopper",
+          "level": 22,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": 171,
+          "y": -72,
+          "z": -128.75,
+          "heading": 105,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6301,
+          "spawngroupId": 4408,
+          "name": "a_Pickclaw_Foeseeker",
+          "displayName": "A Pickclaw Foeseeker",
+          "level": 23,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Rogue",
+          "x": -99.629997,
+          "y": -253.630005,
+          "z": -128.75,
+          "heading": 393,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 6302,
+          "spawngroupId": 4407,
+          "name": "a_Pickclaw_Foeslicer",
+          "displayName": "A Pickclaw Foeslicer",
+          "level": 19,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -81.75,
+          "y": 150.75,
+          "z": -129.130005,
+          "heading": 310.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 6303,
+          "spawngroupId": 4406,
+          "name": "a_Pickclaw_Foeseeker",
+          "displayName": "A Pickclaw Foeseeker",
+          "level": 20,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Rogue",
+          "x": -94,
+          "y": 186,
+          "z": -129.75,
+          "heading": 241,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 6304,
+          "spawngroupId": 4405,
+          "name": "a_Pickclaw_Zekspeaker",
+          "displayName": "A Pickclaw Zekspeaker",
+          "level": 23,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Cleric",
+          "x": 81,
+          "y": 111,
+          "z": -128.130005,
+          "heading": 104,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6305,
+          "spawngroupId": 4404,
+          "name": "an_ooze_crawler",
+          "displayName": "An Ooze Crawler",
+          "level": 24,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": 77.879997,
+          "y": 245.380005,
+          "z": -152.25,
+          "heading": 394.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 6306,
+          "spawngroupId": 4404,
+          "name": "an_ooze_crawler",
+          "displayName": "An Ooze Crawler",
+          "level": 24,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": -46.380001,
+          "y": 309.75,
+          "z": -105.25,
+          "heading": 156,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 6307,
+          "spawngroupId": 4403,
+          "name": "a_Pickclaw_Arroweater",
+          "displayName": "A Pickclaw Arroweater",
+          "level": 16,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": 49.5,
+          "y": -251.380005,
+          "z": -43.799999,
+          "heading": 296,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 6308,
+          "spawngroupId": 4402,
+          "name": "a_Pickclaw_Zekspeaker",
+          "displayName": "A Pickclaw Zekspeaker",
+          "level": 22,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Cleric",
+          "x": 55.130001,
+          "y": -131.630005,
+          "z": -128.130005,
+          "heading": 183.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 6309,
+          "spawngroupId": 4401,
+          "name": "a_Pickclaw_Foeseeker",
+          "displayName": "A Pickclaw Foeseeker",
+          "level": 21,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Rogue",
+          "x": 116,
+          "y": -88,
+          "z": -128.130005,
+          "heading": 211,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 6310,
+          "spawngroupId": 4400,
+          "name": "a_Sporali_Scavenger",
+          "displayName": "A Sporali Scavenger",
+          "level": 18,
+          "race": "Fungusman",
+          "rawRace": "Fungusman",
+          "className": "Rogue",
+          "x": -27.129999,
+          "y": 22.129999,
+          "z": -101.129997,
+          "heading": 235,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 6311,
+          "spawngroupId": 4399,
+          "name": "a_Pickclaw_Arroweater",
+          "displayName": "A Pickclaw Arroweater",
+          "level": 17,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": 135.880005,
+          "y": -39,
+          "z": -44.099998,
+          "heading": 60,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 6312,
+          "spawngroupId": 4397,
+          "name": "a_Pickclaw_Arroweater",
+          "displayName": "A Pickclaw Arroweater",
+          "level": 18,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -114,
+          "y": -92,
+          "z": -45.75,
+          "heading": 338,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6313,
+          "spawngroupId": 4396,
+          "name": "a_Pickclaw_mindripper",
+          "displayName": "A Pickclaw Mindripper",
+          "level": 18,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Enchanter",
+          "x": -53,
+          "y": -31,
+          "z": -44.75,
+          "heading": 510,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6314,
+          "spawngroupId": 6627,
+          "name": "a_Sporali_Scavenger",
+          "displayName": "A Sporali Scavenger",
+          "level": 19,
+          "race": "Fungusman",
+          "rawRace": "Fungusman",
+          "className": "Rogue",
+          "x": 166.630005,
+          "y": -225.25,
+          "z": -73.5,
+          "heading": 254.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 6315,
+          "spawngroupId": 6628,
+          "name": "a_Sporali_worker",
+          "displayName": "A Sporali Worker",
+          "level": 20,
+          "race": "Fungusman",
+          "rawRace": "Fungusman",
+          "className": "Rogue",
+          "x": 163.75,
+          "y": -7.38,
+          "z": -81.900002,
+          "heading": 85.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 6316,
+          "spawngroupId": 6629,
+          "name": "a_Pickclaw_bonemender",
+          "displayName": "A Pickclaw Bonemender",
+          "level": 17,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Cleric",
+          "x": -170,
+          "y": -128.130005,
+          "z": -45.799999,
+          "heading": 167.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 6317,
+          "spawngroupId": 6630,
+          "name": "a_goblin_peon",
+          "displayName": "A Goblin Peon",
+          "level": 8,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": 130,
+          "y": 192,
+          "z": 2.5,
+          "heading": 254,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 6318,
+          "spawngroupId": 6631,
+          "name": "a_sporelit",
+          "displayName": "A Sporelit",
+          "level": 60,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": -30.629999,
+          "y": 297.880005,
+          "z": -82.129997,
+          "heading": 448,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 6319,
+          "spawngroupId": 6632,
+          "name": "a_Sporali_Scavenger",
+          "displayName": "A Sporali Scavenger",
+          "level": 21,
+          "race": "Fungusman",
+          "rawRace": "Fungusman",
+          "className": "Rogue",
+          "x": 118,
+          "y": -138,
+          "z": -83.5,
+          "heading": 178,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6320,
+          "spawngroupId": 6633,
+          "name": "a_Runnyeye_Conscript",
+          "displayName": "A Runnyeye Conscript",
+          "level": 8,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": 127.879997,
+          "y": 92.25,
+          "z": -83.129997,
+          "heading": 454.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 6321,
+          "spawngroupId": 6634,
+          "name": "a_Pickclaw_Ambushbaiter",
+          "displayName": "A Pickclaw Ambushbaiter",
+          "level": 18,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Rogue",
+          "x": -118,
+          "y": -136,
+          "z": -44.75,
+          "heading": 120,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6322,
+          "spawngroupId": 6635,
+          "name": "a_goblin_peon",
+          "displayName": "A Goblin Peon",
+          "level": 10,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -82,
+          "y": 4,
+          "z": 2.5,
+          "heading": 267,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6323,
+          "spawngroupId": 6636,
+          "name": "a_Sporali_gatherer",
+          "displayName": "A Sporali Gatherer",
+          "level": 19,
+          "race": "Fungusman",
+          "rawRace": "Fungusman",
+          "className": "Warrior",
+          "x": -30,
+          "y": 140,
+          "z": -82.129997,
+          "heading": 347,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 6324,
+          "spawngroupId": 6637,
+          "name": "a_Sporali_Scavenger",
+          "displayName": "A Sporali Scavenger",
+          "level": 20,
+          "race": "Fungusman",
+          "rawRace": "Fungusman",
+          "className": "Rogue",
+          "x": -54,
+          "y": 132,
+          "z": -82.75,
+          "heading": 114,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6325,
+          "spawngroupId": 6638,
+          "name": "Sludge_Dankmire",
+          "displayName": "Sludge Dankmire",
+          "level": 25,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -1,
+          "y": 9,
+          "z": -161,
+          "heading": 27,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 6326,
+          "spawngroupId": 6639,
+          "name": "a_Pickclaw_Ambushbaiter",
+          "displayName": "A Pickclaw Ambushbaiter",
+          "level": 17,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Rogue",
+          "x": 68,
+          "y": 184,
+          "z": -44.75,
+          "heading": 6,
+          "chance": 20,
+          "respawnTime": 640,
+          "candidateCount": 5
+        },
+        {
+          "spawn2Id": 6327,
+          "spawngroupId": 6640,
+          "name": "a_Pickclaw_Ambushbaiter",
+          "displayName": "A Pickclaw Ambushbaiter",
+          "level": 20,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Rogue",
+          "x": -24,
+          "y": -237,
+          "z": -44.130001,
+          "heading": 430,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6328,
+          "spawngroupId": 6641,
+          "name": "a_Pickclaw_Arroweater",
+          "displayName": "A Pickclaw Arroweater",
+          "level": 17,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": 71,
+          "y": -196,
+          "z": -43.75,
+          "heading": 433,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6329,
+          "spawngroupId": 6642,
+          "name": "a_Pickclaw_Ambushbaiter",
+          "displayName": "A Pickclaw Ambushbaiter",
+          "level": 17,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Rogue",
+          "x": 75.5,
+          "y": 73.25,
+          "z": -44.599998,
+          "heading": 211,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 6330,
+          "spawngroupId": 6643,
+          "name": "a_Pickclaw_Ambushbaiter",
+          "displayName": "A Pickclaw Ambushbaiter",
+          "level": 17,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Rogue",
+          "x": 60,
+          "y": -221,
+          "z": -43.75,
+          "heading": 509,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6331,
+          "spawngroupId": 6644,
+          "name": "a_Runnyeye_Trustee",
+          "displayName": "A Runnyeye Trustee",
+          "level": 8,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": 61,
+          "y": -193,
+          "z": -43.130001,
+          "heading": 310,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 6332,
+          "spawngroupId": 6645,
+          "name": "a_goblin_merchant",
+          "displayName": "A Goblin Merchant",
+          "level": 18,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Banker",
+          "x": 130,
+          "y": 8,
+          "z": -128.130005,
+          "heading": 2,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6333,
+          "spawngroupId": 6646,
+          "name": "a_goblin_bartender",
+          "displayName": "A Goblin Bartender",
+          "level": 16,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Banker",
+          "x": 93,
+          "y": 76,
+          "z": -128.130005,
+          "heading": 511,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 6334,
+          "spawngroupId": 6647,
+          "name": "a_mimic",
+          "displayName": "A Mimic",
+          "level": 1,
+          "race": "Mimic",
+          "rawRace": "Mimic",
+          "className": "Warrior",
+          "x": 55,
+          "y": 20,
+          "z": -130,
+          "heading": 309,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 6335,
+          "spawngroupId": 6648,
+          "name": "a_sludge_guppy",
+          "displayName": "A Sludge Guppy",
+          "level": 17,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": 25.25,
+          "y": 249.75,
+          "z": -144.5,
+          "heading": 389.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 6336,
+          "spawngroupId": 6649,
+          "name": "a_sludge_guppy",
+          "displayName": "A Sludge Guppy",
+          "level": 16,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -72.879997,
+          "y": -184.75,
+          "z": -125.25,
+          "heading": 153.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 6337,
+          "spawngroupId": 6649,
+          "name": "a_sludge_guppy",
+          "displayName": "A Sludge Guppy",
+          "level": 16,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": 114.879997,
+          "y": 188.25,
+          "z": -106.5,
+          "heading": 143,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 6338,
+          "spawngroupId": 6650,
+          "name": "a_sludge_guppy",
+          "displayName": "A Sludge Guppy",
+          "level": 14,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -10.13,
+          "y": -130.380005,
+          "z": -144.5,
+          "heading": 382.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 6339,
+          "spawngroupId": 6651,
+          "name": "a_goblin_merchant",
+          "displayName": "A Goblin Merchant",
+          "level": 17,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Banker",
+          "x": 139,
+          "y": 60,
+          "z": -128.130005,
+          "heading": 387,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 6340,
+          "spawngroupId": 6652,
+          "name": "a_Pickclaw_Arroweater",
+          "displayName": "A Pickclaw Arroweater",
+          "level": 17,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": 167,
+          "y": -41,
+          "z": -44.75,
+          "heading": 366,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6341,
+          "spawngroupId": 6653,
+          "name": "#a_Pickclaw_Crusader",
+          "displayName": "A Pickclaw Crusader",
+          "level": 25,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": 157,
+          "y": 176,
+          "z": -43.75,
+          "heading": 175,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6342,
+          "spawngroupId": 6654,
+          "name": "a_Pickclaw_Arroweater",
+          "displayName": "A Pickclaw Arroweater",
+          "level": 14,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": 113,
+          "y": -110,
+          "z": -44.75,
+          "heading": 140,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6343,
+          "spawngroupId": 6655,
+          "name": "a_Pickclaw_mindripper",
+          "displayName": "A Pickclaw Mindripper",
+          "level": 14,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Enchanter",
+          "x": 111,
+          "y": -103,
+          "z": -44.75,
+          "heading": 198,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 6344,
+          "spawngroupId": 6656,
+          "name": "a_Pickclaw_Arroweater",
+          "displayName": "A Pickclaw Arroweater",
+          "level": 17,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -120,
+          "y": -145,
+          "z": -44.75,
+          "heading": 414,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 6345,
+          "spawngroupId": 6657,
+          "name": "a_Sporali_Miner",
+          "displayName": "A Sporali Miner",
+          "level": 18,
+          "race": "Fungusman",
+          "rawRace": "Fungusman",
+          "className": "Rogue",
+          "x": -112.879997,
+          "y": -251.880005,
+          "z": -44.130001,
+          "heading": 307,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 6346,
+          "spawngroupId": 6658,
+          "name": "a_Sporali_gatherer",
+          "displayName": "A Sporali Gatherer",
+          "level": 17,
+          "race": "Fungusman",
+          "rawRace": "Fungusman",
+          "className": "Warrior",
+          "x": -205.25,
+          "y": -242.130005,
+          "z": -82.800003,
+          "heading": 277.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 6347,
+          "spawngroupId": 6659,
+          "name": "a_goblin_banker",
+          "displayName": "A Goblin Banker",
+          "level": 16,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Class 40",
+          "x": 83.879997,
+          "y": 13.88,
+          "z": -128.130005,
+          "heading": 255,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 6348,
+          "spawngroupId": 6660,
+          "name": "an_ooze_crawler",
+          "displayName": "An Ooze Crawler",
+          "level": 23,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": -95.5,
+          "y": 303.630005,
+          "z": -105.25,
+          "heading": 291,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 6349,
+          "spawngroupId": 6661,
+          "name": "an_ooze_crawler",
+          "displayName": "An Ooze Crawler",
+          "level": 22,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": -20.129999,
+          "y": 285,
+          "z": -105.25,
+          "heading": 208.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 6350,
+          "spawngroupId": 6662,
+          "name": "a_Sporali_Defender",
+          "displayName": "A Sporali Defender",
+          "level": 20,
+          "race": "Fungusman",
+          "rawRace": "Fungusman",
+          "className": "Warrior",
+          "x": -120.5,
+          "y": 114,
+          "z": -104.129997,
+          "heading": 63,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 6351,
+          "spawngroupId": 6663,
+          "name": "a_Pickclaw_Foeslicer",
+          "displayName": "A Pickclaw Foeslicer",
+          "level": 18,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -33,
+          "y": -109,
+          "z": -128,
+          "heading": 5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 6352,
+          "spawngroupId": 6664,
+          "name": "#Battlewizard_Unak",
+          "displayName": "Battlewizard Unak",
+          "level": 30,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Wizard",
+          "x": -71,
+          "y": -107,
+          "z": -128,
+          "heading": 130,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 6353,
+          "spawngroupId": 6665,
+          "name": "a_Pickclaw_Zekspeaker",
+          "displayName": "A Pickclaw Zekspeaker",
+          "level": 20,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Cleric",
+          "x": 144.380005,
+          "y": -100.629997,
+          "z": -128.130005,
+          "heading": 255.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 6354,
+          "spawngroupId": 6666,
+          "name": "a_Sporali_worker",
+          "displayName": "A Sporali Worker",
+          "level": 21,
+          "race": "Fungusman",
+          "rawRace": "Fungusman",
+          "className": "Rogue",
+          "x": 23,
+          "y": 197,
+          "z": -81,
+          "heading": 79,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 21381,
+          "spawngroupId": 13045,
+          "name": "Thoughts",
+          "displayName": "Thoughts",
+          "level": 1,
+          "race": "Invisible Man",
+          "rawRace": "Invisible Man",
+          "className": "Warrior",
+          "x": -90,
+          "y": -223,
+          "z": -81,
+          "heading": 56,
+          "chance": 20,
+          "respawnTime": 640,
+          "candidateCount": 6
+        },
+        {
+          "spawn2Id": 21382,
+          "spawngroupId": 13046,
+          "name": "Thoughts",
+          "displayName": "Thoughts",
+          "level": 1,
+          "race": "Invisible Man",
+          "rawRace": "Invisible Man",
+          "className": "Warrior",
+          "x": -172,
+          "y": -160,
+          "z": -53.130001,
+          "heading": 6,
+          "chance": 20,
+          "respawnTime": 640,
+          "candidateCount": 6
+        },
+        {
+          "spawn2Id": 21383,
+          "spawngroupId": 13047,
+          "name": "Perhaps",
+          "displayName": "Perhaps",
+          "level": 1,
+          "race": "Invisible Man",
+          "rawRace": "Invisible Man",
+          "className": "Warrior",
+          "x": 83,
+          "y": -103,
+          "z": -128.130005,
+          "heading": 282,
+          "chance": 20,
+          "respawnTime": 640,
+          "candidateCount": 5
+        },
+        {
+          "spawn2Id": 21384,
+          "spawngroupId": 13048,
+          "name": "A_layer",
+          "displayName": "A Layer",
+          "level": 1,
+          "race": "Invisible Man",
+          "rawRace": "Invisible Man",
+          "className": "Warrior",
+          "x": -135,
+          "y": -102,
+          "z": -128,
+          "heading": 12,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 21385,
+          "spawngroupId": 13049,
+          "name": "A_layer",
+          "displayName": "A Layer",
+          "level": 1,
+          "race": "Invisible Man",
+          "rawRace": "Invisible Man",
+          "className": "Warrior",
+          "x": -86,
+          "y": -39,
+          "z": -44,
+          "heading": 488,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 21386,
+          "spawngroupId": 13050,
+          "name": "If_the",
+          "displayName": "If The",
+          "level": 1,
+          "race": "Invisible Man",
+          "rawRace": "Invisible Man",
+          "className": "Warrior",
+          "x": -163,
+          "y": 90,
+          "z": -128,
+          "heading": 16,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 21387,
+          "spawngroupId": 13051,
+          "name": "Perhaps",
+          "displayName": "Perhaps",
+          "level": 1,
+          "race": "Invisible Man",
+          "rawRace": "Invisible Man",
+          "className": "Warrior",
+          "x": -120,
+          "y": 244,
+          "z": 2,
+          "heading": 114,
+          "chance": 20,
+          "respawnTime": 640,
+          "candidateCount": 5
+        },
+        {
+          "spawn2Id": 21388,
+          "spawngroupId": 13052,
+          "name": "a_slime_mold",
+          "displayName": "A Slime Mold",
+          "level": 60,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": -104,
+          "y": -203,
+          "z": -128,
+          "heading": 464,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 21389,
+          "spawngroupId": 13053,
+          "name": "a_slime_mold",
+          "displayName": "A Slime Mold",
+          "level": 60,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": -42,
+          "y": -36,
+          "z": -128,
+          "heading": 240,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 21390,
+          "spawngroupId": 13054,
+          "name": "Progressing",
+          "displayName": "Progressing",
+          "level": 1,
+          "race": "Invisible Man",
+          "rawRace": "Invisible Man",
+          "className": "Warrior",
+          "x": -180,
+          "y": -17,
+          "z": -1.2,
+          "heading": 492,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 21391,
+          "spawngroupId": 13055,
+          "name": "A_sharp_rock",
+          "displayName": "A Sharp Rock",
+          "level": 1,
+          "race": "Invisible Man",
+          "rawRace": "Invisible Man",
+          "className": "Warrior",
+          "x": -23,
+          "y": 90,
+          "z": -59,
+          "heading": 220,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 21392,
+          "spawngroupId": 13056,
+          "name": "A_layer",
+          "displayName": "A Layer",
+          "level": 1,
+          "race": "Invisible Man",
+          "rawRace": "Invisible Man",
+          "className": "Warrior",
+          "x": -207,
+          "y": 176,
+          "z": -128,
+          "heading": 120,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 21393,
+          "spawngroupId": 13057,
+          "name": "If_the",
+          "displayName": "If The",
+          "level": 1,
+          "race": "Invisible Man",
+          "rawRace": "Invisible Man",
+          "className": "Warrior",
+          "x": 182,
+          "y": 179,
+          "z": 4.7,
+          "heading": 468,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 21394,
+          "spawngroupId": 13058,
+          "name": "Thoughts",
+          "displayName": "Thoughts",
+          "level": 1,
+          "race": "Invisible Man",
+          "rawRace": "Invisible Man",
+          "className": "Warrior",
+          "x": 27,
+          "y": 251,
+          "z": -43,
+          "heading": 144,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 21395,
+          "spawngroupId": 13059,
+          "name": "a_sporelit",
+          "displayName": "A Sporelit",
+          "level": 60,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": 98,
+          "y": -230,
+          "z": -44.130001,
+          "heading": 510,
+          "chance": 90,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 21396,
+          "spawngroupId": 13060,
+          "name": "a_sporelit",
+          "displayName": "A Sporelit",
+          "level": 60,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": 162,
+          "y": -217,
+          "z": -69,
+          "heading": 236,
+          "chance": 90,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 21397,
+          "spawngroupId": 13061,
+          "name": "a_sporelit",
+          "displayName": "A Sporelit",
+          "level": 60,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": -89,
+          "y": -197,
+          "z": -85,
+          "heading": 476,
+          "chance": 90,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 21398,
+          "spawngroupId": 13062,
+          "name": "a_sporelit",
+          "displayName": "A Sporelit",
+          "level": 60,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": 29,
+          "y": -189,
+          "z": -82.879997,
+          "heading": 280,
+          "chance": 90,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 21399,
+          "spawngroupId": 13063,
+          "name": "a_sporelit",
+          "displayName": "A Sporelit",
+          "level": 60,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": -22,
+          "y": -62,
+          "z": -82.129997,
+          "heading": 262,
+          "chance": 90,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 21400,
+          "spawngroupId": 13064,
+          "name": "a_sporelit",
+          "displayName": "A Sporelit",
+          "level": 60,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": -133,
+          "y": 100,
+          "z": -83,
+          "heading": 506,
+          "chance": 90,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 21401,
+          "spawngroupId": 13065,
+          "name": "a_sporelit",
+          "displayName": "A Sporelit",
+          "level": 60,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": -40,
+          "y": 136,
+          "z": -83,
+          "heading": 220,
+          "chance": 90,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 21402,
+          "spawngroupId": 13066,
+          "name": "a_sporelit",
+          "displayName": "A Sporelit",
+          "level": 60,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": -115,
+          "y": 211,
+          "z": -80.5,
+          "heading": 76,
+          "chance": 90,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 21403,
+          "spawngroupId": 13067,
+          "name": "Thoughts",
+          "displayName": "Thoughts",
+          "level": 1,
+          "race": "Invisible Man",
+          "rawRace": "Invisible Man",
+          "className": "Warrior",
+          "x": -111,
+          "y": -218,
+          "z": -44,
+          "heading": 36,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 21404,
+          "spawngroupId": 13068,
+          "name": "A_sharp_rock",
+          "displayName": "A Sharp Rock",
+          "level": 1,
+          "race": "Invisible Man",
+          "rawRace": "Invisible Man",
+          "className": "Warrior",
+          "x": 61,
+          "y": -209,
+          "z": -43.200001,
+          "heading": 124,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        }
+      ]
+    }
+  },
+  "details": {
+    "zoneSlug": "the-liberated-citadel-of-runnyeye",
+    "routeSlug": "runnyeye",
+    "zoneName": "The Liberated Citadel of Runnyeye",
+    "sourceFile": "local-eqemu-database",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobGroups": [
+      {
+        "displayName": "Thoughts",
+        "rawNames": [
+          "Thoughts"
+        ],
+        "count": 4,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Invisible Man": 4
+        },
+        "rawRaceCounts": {
+          "Invisible Man": 4
+        },
+        "classCounts": {
+          "Warrior": 4
+        },
+        "typeCounts": {
+          "Spawn Slot": 4
+        }
+      },
+      {
+        "displayName": "A Layer",
+        "rawNames": [
+          "A_layer"
+        ],
+        "count": 3,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Invisible Man": 3
+        },
+        "rawRaceCounts": {
+          "Invisible Man": 3
+        },
+        "classCounts": {
+          "Warrior": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "A Sharp Rock",
+        "rawNames": [
+          "A_sharp_rock"
+        ],
+        "count": 2,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Invisible Man": 2
+        },
+        "rawRaceCounts": {
+          "Invisible Man": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "If The",
+        "rawNames": [
+          "If_the"
+        ],
+        "count": 2,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Invisible Man": 2
+        },
+        "rawRaceCounts": {
+          "Invisible Man": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "Perhaps",
+        "rawNames": [
+          "Perhaps"
+        ],
+        "count": 2,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Invisible Man": 2
+        },
+        "rawRaceCounts": {
+          "Invisible Man": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Mimic",
+        "rawNames": [
+          "a_mimic"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Mimic": 1
+        },
+        "rawRaceCounts": {
+          "Mimic": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Progressing",
+        "rawNames": [
+          "Progressing"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Invisible Man": 1
+        },
+        "rawRaceCounts": {
+          "Invisible Man": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Runnyeye Conscript",
+        "rawNames": [
+          "a_Runnyeye_Conscript"
+        ],
+        "count": 2,
+        "levelMin": 5,
+        "levelMax": 5,
+        "levels": [
+          5
+        ],
+        "raceCounts": {
+          "Goblin": 2
+        },
+        "rawRaceCounts": {
+          "Goblin": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Goblin Scavenger",
+        "rawNames": [
+          "a_goblin_scavenger"
+        ],
+        "count": 1,
+        "levelMin": 6,
+        "levelMax": 6,
+        "levels": [
+          6
+        ],
+        "raceCounts": {
+          "Goblin": 1
+        },
+        "rawRaceCounts": {
+          "Goblin": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Goblin Janitor",
+        "rawNames": [
+          "goblin_janitor"
+        ],
+        "count": 1,
+        "levelMin": 6,
+        "levelMax": 6,
+        "levels": [
+          6
+        ],
+        "raceCounts": {
+          "Goblin": 1
+        },
+        "rawRaceCounts": {
+          "Goblin": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Goblin Peon",
+        "rawNames": [
+          "a_goblin_peon"
+        ],
+        "count": 4,
+        "levelMin": 8,
+        "levelMax": 10,
+        "levels": [
+          8,
+          9,
+          10
+        ],
+        "raceCounts": {
+          "Goblin": 4
+        },
+        "rawRaceCounts": {
+          "Goblin": 4
+        },
+        "classCounts": {
+          "Warrior": 4
+        },
+        "typeCounts": {
+          "Spawn Slot": 4
+        }
+      },
+      {
+        "displayName": "A Runnyeye Conscript",
+        "rawNames": [
+          "a_Runnyeye_Conscript"
+        ],
+        "count": 2,
+        "levelMin": 8,
+        "levelMax": 8,
+        "levels": [
+          8
+        ],
+        "raceCounts": {
+          "Goblin": 2
+        },
+        "rawRaceCounts": {
+          "Goblin": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Goblin Scavenger",
+        "rawNames": [
+          "a_goblin_scavenger"
+        ],
+        "count": 1,
+        "levelMin": 8,
+        "levelMax": 8,
+        "levels": [
+          8
+        ],
+        "raceCounts": {
+          "Goblin": 1
+        },
+        "rawRaceCounts": {
+          "Goblin": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Goblin Trainee",
+        "rawNames": [
+          "a_goblin_trainee"
+        ],
+        "count": 1,
+        "levelMin": 8,
+        "levelMax": 8,
+        "levels": [
+          8
+        ],
+        "raceCounts": {
+          "Goblin": 1
+        },
+        "rawRaceCounts": {
+          "Goblin": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Runnyeye Trustee",
+        "rawNames": [
+          "a_Runnyeye_Trustee"
+        ],
+        "count": 1,
+        "levelMin": 8,
+        "levelMax": 8,
+        "levels": [
+          8
+        ],
+        "raceCounts": {
+          "Goblin": 1
+        },
+        "rawRaceCounts": {
+          "Goblin": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Runnyeye Trustee",
+        "rawNames": [
+          "a_Runnyeye_Trustee"
+        ],
+        "count": 2,
+        "levelMin": 10,
+        "levelMax": 10,
+        "levels": [
+          10
+        ],
+        "raceCounts": {
+          "Goblin": 2
+        },
+        "rawRaceCounts": {
+          "Goblin": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Goblin Trainee",
+        "rawNames": [
+          "a_goblin_trainee"
+        ],
+        "count": 1,
+        "levelMin": 10,
+        "levelMax": 10,
+        "levels": [
+          10
+        ],
+        "raceCounts": {
+          "Goblin": 1
+        },
+        "rawRaceCounts": {
+          "Goblin": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Goblin Runt",
+        "rawNames": [
+          "a_goblin_runt"
+        ],
+        "count": 3,
+        "levelMin": 11,
+        "levelMax": 12,
+        "levels": [
+          11,
+          12
+        ],
+        "raceCounts": {
+          "Goblin": 3
+        },
+        "rawRaceCounts": {
+          "Goblin": 3
+        },
+        "classCounts": {
+          "Warrior": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "A Pickclaw Arroweater",
+        "rawNames": [
+          "a_Pickclaw_Arroweater"
+        ],
+        "count": 11,
+        "levelMin": 14,
+        "levelMax": 18,
+        "levels": [
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "raceCounts": {
+          "Goblin": 11
+        },
+        "rawRaceCounts": {
+          "Goblin": 11
+        },
+        "classCounts": {
+          "Warrior": 11
+        },
+        "typeCounts": {
+          "Spawn Slot": 11
+        }
+      },
+      {
+        "displayName": "A Goblin Neophyte",
+        "rawNames": [
+          "a_goblin_neophyte"
+        ],
+        "count": 1,
+        "levelMin": 14,
+        "levelMax": 14,
+        "levels": [
+          14
+        ],
+        "raceCounts": {
+          "Goblin": 1
+        },
+        "rawRaceCounts": {
+          "Goblin": 1
+        },
+        "classCounts": {
+          "Wizard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Pickclaw Bladestopper",
+        "rawNames": [
+          "a_Pickclaw_Bladestopper"
+        ],
+        "count": 1,
+        "levelMin": 14,
+        "levelMax": 14,
+        "levels": [
+          14
+        ],
+        "raceCounts": {
+          "Goblin": 1
+        },
+        "rawRaceCounts": {
+          "Goblin": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Pickclaw Mindripper",
+        "rawNames": [
+          "a_Pickclaw_mindripper"
+        ],
+        "count": 1,
+        "levelMin": 14,
+        "levelMax": 14,
+        "levels": [
+          14
+        ],
+        "raceCounts": {
+          "Goblin": 1
+        },
+        "rawRaceCounts": {
+          "Goblin": 1
+        },
+        "classCounts": {
+          "Enchanter": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Sludge Guppy",
+        "rawNames": [
+          "a_sludge_guppy"
+        ],
+        "count": 1,
+        "levelMin": 14,
+        "levelMax": 14,
+        "levels": [
+          14
+        ],
+        "raceCounts": {
+          "Fish": 1
+        },
+        "rawRaceCounts": {
+          "Fish": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Sludge Guppy",
+        "rawNames": [
+          "a_sludge_guppy"
+        ],
+        "count": 3,
+        "levelMin": 16,
+        "levelMax": 17,
+        "levels": [
+          16,
+          17
+        ],
+        "raceCounts": {
+          "Fish": 3
+        },
+        "rawRaceCounts": {
+          "Fish": 3
+        },
+        "classCounts": {
+          "Warrior": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "A Pickclaw Bonemender",
+        "rawNames": [
+          "a_Pickclaw_bonemender"
+        ],
+        "count": 2,
+        "levelMin": 16,
+        "levelMax": 17,
+        "levels": [
+          16,
+          17
+        ],
+        "raceCounts": {
+          "Goblin": 2
+        },
+        "rawRaceCounts": {
+          "Goblin": 2
+        },
+        "classCounts": {
+          "Cleric": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Goblin Banker",
+        "rawNames": [
+          "a_goblin_banker"
+        ],
+        "count": 1,
+        "levelMin": 16,
+        "levelMax": 16,
+        "levels": [
+          16
+        ],
+        "raceCounts": {
+          "Goblin": 1
+        },
+        "rawRaceCounts": {
+          "Goblin": 1
+        },
+        "classCounts": {
+          "Class 40": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Goblin Bartender",
+        "rawNames": [
+          "a_goblin_bartender"
+        ],
+        "count": 1,
+        "levelMin": 16,
+        "levelMax": 16,
+        "levels": [
+          16
+        ],
+        "raceCounts": {
+          "Goblin": 1
+        },
+        "rawRaceCounts": {
+          "Goblin": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Pickclaw Ambushbaiter",
+        "rawNames": [
+          "a_Pickclaw_Ambushbaiter"
+        ],
+        "count": 5,
+        "levelMin": 17,
+        "levelMax": 18,
+        "levels": [
+          17,
+          18
+        ],
+        "raceCounts": {
+          "Goblin": 5
+        },
+        "rawRaceCounts": {
+          "Goblin": 5
+        },
+        "classCounts": {
+          "Rogue": 5
+        },
+        "typeCounts": {
+          "Spawn Slot": 5
+        }
+      },
+      {
+        "displayName": "A Goblin Merchant",
+        "rawNames": [
+          "a_goblin_merchant"
+        ],
+        "count": 2,
+        "levelMin": 17,
+        "levelMax": 18,
+        "levels": [
+          17,
+          18
+        ],
+        "raceCounts": {
+          "Goblin": 2
+        },
+        "rawRaceCounts": {
+          "Goblin": 2
+        },
+        "classCounts": {
+          "Banker": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Sporali Gatherer",
+        "rawNames": [
+          "a_Sporali_gatherer"
+        ],
+        "count": 1,
+        "levelMin": 17,
+        "levelMax": 17,
+        "levels": [
+          17
+        ],
+        "raceCounts": {
+          "Fungusman": 1
+        },
+        "rawRaceCounts": {
+          "Fungusman": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Sporali Scavenger",
+        "rawNames": [
+          "a_Sporali_Scavenger"
+        ],
+        "count": 5,
+        "levelMin": 18,
+        "levelMax": 21,
+        "levels": [
+          18,
+          19,
+          20,
+          21
+        ],
+        "raceCounts": {
+          "Fungusman": 5
+        },
+        "rawRaceCounts": {
+          "Fungusman": 5
+        },
+        "classCounts": {
+          "Rogue": 5
+        },
+        "typeCounts": {
+          "Spawn Slot": 5
+        }
+      },
+      {
+        "displayName": "A Pickclaw Foeslicer",
+        "rawNames": [
+          "a_Pickclaw_Foeslicer"
+        ],
+        "count": 2,
+        "levelMin": 18,
+        "levelMax": 19,
+        "levels": [
+          18,
+          19
+        ],
+        "raceCounts": {
+          "Goblin": 2
+        },
+        "rawRaceCounts": {
+          "Goblin": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Pickclaw Fleshburner",
+        "rawNames": [
+          "a_Pickclaw_Fleshburner"
+        ],
+        "count": 1,
+        "levelMin": 18,
+        "levelMax": 18,
+        "levels": [
+          18
+        ],
+        "raceCounts": {
+          "Goblin": 1
+        },
+        "rawRaceCounts": {
+          "Goblin": 1
+        },
+        "classCounts": {
+          "Wizard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Pickclaw Mindripper",
+        "rawNames": [
+          "a_Pickclaw_mindripper"
+        ],
+        "count": 1,
+        "levelMin": 18,
+        "levelMax": 18,
+        "levels": [
+          18
+        ],
+        "raceCounts": {
+          "Goblin": 1
+        },
+        "rawRaceCounts": {
+          "Goblin": 1
+        },
+        "classCounts": {
+          "Enchanter": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Sporali Miner",
+        "rawNames": [
+          "a_Sporali_Miner"
+        ],
+        "count": 1,
+        "levelMin": 18,
+        "levelMax": 18,
+        "levels": [
+          18
+        ],
+        "raceCounts": {
+          "Fungusman": 1
+        },
+        "rawRaceCounts": {
+          "Fungusman": 1
+        },
+        "classCounts": {
+          "Rogue": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Sporali Defender",
+        "rawNames": [
+          "a_Sporali_Defender"
+        ],
+        "count": 5,
+        "levelMin": 19,
+        "levelMax": 21,
+        "levels": [
+          19,
+          20,
+          21
+        ],
+        "raceCounts": {
+          "Fungusman": 5
+        },
+        "rawRaceCounts": {
+          "Fungusman": 5
+        },
+        "classCounts": {
+          "Warrior": 5
+        },
+        "typeCounts": {
+          "Spawn Slot": 5
+        }
+      },
+      {
+        "displayName": "A Sporali Worker",
+        "rawNames": [
+          "a_Sporali_worker"
+        ],
+        "count": 3,
+        "levelMin": 19,
+        "levelMax": 21,
+        "levels": [
+          19,
+          20,
+          21
+        ],
+        "raceCounts": {
+          "Fungusman": 3
+        },
+        "rawRaceCounts": {
+          "Fungusman": 3
+        },
+        "classCounts": {
+          "Rogue": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "A Pickclaw Destroyer",
+        "rawNames": [
+          "a_Pickclaw_Destroyer"
+        ],
+        "count": 1,
+        "levelMin": 19,
+        "levelMax": 19,
+        "levels": [
+          19
+        ],
+        "raceCounts": {
+          "Goblin": 1
+        },
+        "rawRaceCounts": {
+          "Goblin": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Sporali Gatherer",
+        "rawNames": [
+          "a_Sporali_gatherer"
+        ],
+        "count": 1,
+        "levelMin": 19,
+        "levelMax": 19,
+        "levels": [
+          19
+        ],
+        "raceCounts": {
+          "Fungusman": 1
+        },
+        "rawRaceCounts": {
+          "Fungusman": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Pickclaw Foeseeker",
+        "rawNames": [
+          "a_Pickclaw_Foeseeker"
+        ],
+        "count": 20,
+        "levelMin": 20,
+        "levelMax": 24,
+        "levels": [
+          20,
+          21,
+          22,
+          23,
+          24
+        ],
+        "raceCounts": {
+          "Goblin": 20
+        },
+        "rawRaceCounts": {
+          "Goblin": 20
+        },
+        "classCounts": {
+          "Rogue": 20
+        },
+        "typeCounts": {
+          "Spawn Slot": 20
+        }
+      },
+      {
+        "displayName": "A Sporali Miner",
+        "rawNames": [
+          "a_Sporali_Miner"
+        ],
+        "count": 3,
+        "levelMin": 20,
+        "levelMax": 21,
+        "levels": [
+          20,
+          21
+        ],
+        "raceCounts": {
+          "Fungusman": 3
+        },
+        "rawRaceCounts": {
+          "Fungusman": 3
+        },
+        "classCounts": {
+          "Rogue": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "A Pickclaw Ambushbaiter",
+        "rawNames": [
+          "a_Pickclaw_Ambushbaiter"
+        ],
+        "count": 1,
+        "levelMin": 20,
+        "levelMax": 20,
+        "levels": [
+          20
+        ],
+        "raceCounts": {
+          "Goblin": 1
+        },
+        "rawRaceCounts": {
+          "Goblin": 1
+        },
+        "classCounts": {
+          "Rogue": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Pickclaw Zekspeaker",
+        "rawNames": [
+          "a_Pickclaw_Zekspeaker"
+        ],
+        "count": 1,
+        "levelMin": 20,
+        "levelMax": 20,
+        "levels": [
+          20
+        ],
+        "raceCounts": {
+          "Goblin": 1
+        },
+        "rawRaceCounts": {
+          "Goblin": 1
+        },
+        "classCounts": {
+          "Cleric": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Pickclaw Foechopper",
+        "rawNames": [
+          "a_Pickclaw_Foechopper"
+        ],
+        "count": 6,
+        "levelMin": 21,
+        "levelMax": 22,
+        "levels": [
+          21,
+          22
+        ],
+        "raceCounts": {
+          "Goblin": 6
+        },
+        "rawRaceCounts": {
+          "Goblin": 6
+        },
+        "classCounts": {
+          "Warrior": 6
+        },
+        "typeCounts": {
+          "Spawn Slot": 6
+        }
+      },
+      {
+        "displayName": "A Pickclaw Destroyer",
+        "rawNames": [
+          "a_Pickclaw_Destroyer"
+        ],
+        "count": 2,
+        "levelMin": 21,
+        "levelMax": 21,
+        "levels": [
+          21
+        ],
+        "raceCounts": {
+          "Goblin": 2
+        },
+        "rawRaceCounts": {
+          "Goblin": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Pickclaw Foeslicer",
+        "rawNames": [
+          "a_Pickclaw_Foeslicer"
+        ],
+        "count": 1,
+        "levelMin": 21,
+        "levelMax": 21,
+        "levels": [
+          21
+        ],
+        "raceCounts": {
+          "Goblin": 1
+        },
+        "rawRaceCounts": {
+          "Goblin": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Pickclaw Slayspell",
+        "rawNames": [
+          "a_Pickclaw_Slayspell"
+        ],
+        "count": 1,
+        "levelMin": 21,
+        "levelMax": 21,
+        "levels": [
+          21
+        ],
+        "raceCounts": {
+          "Goblin": 1
+        },
+        "rawRaceCounts": {
+          "Goblin": 1
+        },
+        "classCounts": {
+          "Wizard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "An Ooze Crawler",
+        "rawNames": [
+          "an_ooze_crawler"
+        ],
+        "count": 4,
+        "levelMin": 22,
+        "levelMax": 24,
+        "levels": [
+          22,
+          23,
+          24
+        ],
+        "raceCounts": {
+          "Snake": 4
+        },
+        "rawRaceCounts": {
+          "Snake": 4
+        },
+        "classCounts": {
+          "Warrior": 4
+        },
+        "typeCounts": {
+          "Spawn Slot": 4
+        }
+      },
+      {
+        "displayName": "A Pickclaw Zekspeaker",
+        "rawNames": [
+          "a_Pickclaw_Zekspeaker"
+        ],
+        "count": 2,
+        "levelMin": 22,
+        "levelMax": 23,
+        "levels": [
+          22,
+          23
+        ],
+        "raceCounts": {
+          "Goblin": 2
+        },
+        "rawRaceCounts": {
+          "Goblin": 2
+        },
+        "classCounts": {
+          "Cleric": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Pickclaw Slayspell",
+        "rawNames": [
+          "a_Pickclaw_Slayspell"
+        ],
+        "count": 3,
+        "levelMin": 23,
+        "levelMax": 23,
+        "levels": [
+          23
+        ],
+        "raceCounts": {
+          "Goblin": 3
+        },
+        "rawRaceCounts": {
+          "Goblin": 3
+        },
+        "classCounts": {
+          "Wizard": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "A Sporali Defender",
+        "rawNames": [
+          "a_Sporali_Defender"
+        ],
+        "count": 1,
+        "levelMin": 23,
+        "levelMax": 23,
+        "levels": [
+          23
+        ],
+        "raceCounts": {
+          "Fungusman": 1
+        },
+        "rawRaceCounts": {
+          "Fungusman": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Slime Elemental",
+        "rawNames": [
+          "a_slime_elemental"
+        ],
+        "count": 1,
+        "levelMin": 24,
+        "levelMax": 24,
+        "levels": [
+          24
+        ],
+        "raceCounts": {
+          "Gelatinous Cube": 1
+        },
+        "rawRaceCounts": {
+          "Gelatinous Cube": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Pickclaw Crusader",
+        "rawNames": [
+          "#a_Pickclaw_Crusader"
+        ],
+        "count": 2,
+        "levelMin": 25,
+        "levelMax": 25,
+        "levels": [
+          25
+        ],
+        "raceCounts": {
+          "Goblin": 2
+        },
+        "rawRaceCounts": {
+          "Goblin": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "Sludge Dankmire",
+        "rawNames": [
+          "Sludge_Dankmire"
+        ],
+        "count": 1,
+        "levelMin": 25,
+        "levelMax": 25,
+        "levels": [
+          25
+        ],
+        "raceCounts": {
+          "Goblin": 1
+        },
+        "rawRaceCounts": {
+          "Goblin": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "The Sporali Moldmaster",
+        "rawNames": [
+          "#The_Sporali_Moldmaster"
+        ],
+        "count": 1,
+        "levelMin": 25,
+        "levelMax": 25,
+        "levels": [
+          25
+        ],
+        "raceCounts": {
+          "Fungusman": 1
+        },
+        "rawRaceCounts": {
+          "Fungusman": 1
+        },
+        "classCounts": {
+          "Druid": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Battlelord Paluk",
+        "rawNames": [
+          "#Battlelord_Paluk"
+        ],
+        "count": 1,
+        "levelMin": 28,
+        "levelMax": 28,
+        "levels": [
+          28
+        ],
+        "raceCounts": {
+          "Goblin": 1
+        },
+        "rawRaceCounts": {
+          "Goblin": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "An Evil Eye Prisoner",
+        "rawNames": [
+          "an_Evil_Eye_prisoner"
+        ],
+        "count": 2,
+        "levelMin": 30,
+        "levelMax": 31,
+        "levels": [
+          30,
+          31
+        ],
+        "raceCounts": {
+          "Evil Eye": 2
+        },
+        "rawRaceCounts": {
+          "Evil Eye": 2
+        },
+        "classCounts": {
+          "Wizard": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "Battlewizard Unak",
+        "rawNames": [
+          "#Battlewizard_Unak"
+        ],
+        "count": 2,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Goblin": 2
+        },
+        "rawRaceCounts": {
+          "Goblin": 2
+        },
+        "classCounts": {
+          "Wizard": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Sporelit",
+        "rawNames": [
+          "a_sporelit"
+        ],
+        "count": 9,
+        "levelMin": 60,
+        "levelMax": 60,
+        "levels": [
+          60
+        ],
+        "raceCounts": {
+          "Teleport Man": 9
+        },
+        "rawRaceCounts": {
+          "Teleport Man": 9
+        },
+        "classCounts": {
+          "Warrior": 9
+        },
+        "typeCounts": {
+          "Spawn Slot": 9
+        }
+      },
+      {
+        "displayName": "A Slime Mold",
+        "rawNames": [
+          "a_slime_mold"
+        ],
+        "count": 3,
+        "levelMin": 60,
+        "levelMax": 60,
+        "levels": [
+          60
+        ],
+        "raceCounts": {
+          "Teleport Man": 3
+        },
+        "rawRaceCounts": {
+          "Teleport Man": 3
+        },
+        "classCounts": {
+          "Warrior": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      }
+    ],
+    "rows": [
+      {
+        "displayName": "A Layer",
+        "rawName": "A_layer",
+        "level": 1,
+        "race": "Invisible Man",
+        "rawRace": "Invisible Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -135,
+        "y": -102,
+        "z": -128,
+        "heading": 12,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 21384,
+        "spawngroupId": 13048,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Layer",
+        "rawName": "A_layer",
+        "level": 1,
+        "race": "Invisible Man",
+        "rawRace": "Invisible Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -86,
+        "y": -39,
+        "z": -44,
+        "heading": 488,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 21385,
+        "spawngroupId": 13049,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Layer",
+        "rawName": "A_layer",
+        "level": 1,
+        "race": "Invisible Man",
+        "rawRace": "Invisible Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -207,
+        "y": 176,
+        "z": -128,
+        "heading": 120,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 21392,
+        "spawngroupId": 13056,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Mimic",
+        "rawName": "a_mimic",
+        "level": 1,
+        "race": "Mimic",
+        "rawRace": "Mimic",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 55,
+        "y": 20,
+        "z": -130,
+        "heading": 309,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 6334,
+        "spawngroupId": 6647,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Sharp Rock",
+        "rawName": "A_sharp_rock",
+        "level": 1,
+        "race": "Invisible Man",
+        "rawRace": "Invisible Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -23,
+        "y": 90,
+        "z": -59,
+        "heading": 220,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 21391,
+        "spawngroupId": 13055,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Sharp Rock",
+        "rawName": "A_sharp_rock",
+        "level": 1,
+        "race": "Invisible Man",
+        "rawRace": "Invisible Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 61,
+        "y": -209,
+        "z": -43.200001,
+        "heading": 124,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 21404,
+        "spawngroupId": 13068,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "If The",
+        "rawName": "If_the",
+        "level": 1,
+        "race": "Invisible Man",
+        "rawRace": "Invisible Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -163,
+        "y": 90,
+        "z": -128,
+        "heading": 16,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 21386,
+        "spawngroupId": 13050,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "If The",
+        "rawName": "If_the",
+        "level": 1,
+        "race": "Invisible Man",
+        "rawRace": "Invisible Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 182,
+        "y": 179,
+        "z": 4.7,
+        "heading": 468,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 21393,
+        "spawngroupId": 13057,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "Perhaps",
+        "rawName": "Perhaps",
+        "level": 1,
+        "race": "Invisible Man",
+        "rawRace": "Invisible Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 83,
+        "y": -103,
+        "z": -128.130005,
+        "heading": 282,
+        "chance": 20,
+        "respawnTime": 640,
+        "spawn2Id": 21383,
+        "spawngroupId": 13047,
+        "candidateCount": 5
+      },
+      {
+        "displayName": "Perhaps",
+        "rawName": "Perhaps",
+        "level": 1,
+        "race": "Invisible Man",
+        "rawRace": "Invisible Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -120,
+        "y": 244,
+        "z": 2,
+        "heading": 114,
+        "chance": 20,
+        "respawnTime": 640,
+        "spawn2Id": 21387,
+        "spawngroupId": 13051,
+        "candidateCount": 5
+      },
+      {
+        "displayName": "Progressing",
+        "rawName": "Progressing",
+        "level": 1,
+        "race": "Invisible Man",
+        "rawRace": "Invisible Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -180,
+        "y": -17,
+        "z": -1.2,
+        "heading": 492,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 21390,
+        "spawngroupId": 13054,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Thoughts",
+        "rawName": "Thoughts",
+        "level": 1,
+        "race": "Invisible Man",
+        "rawRace": "Invisible Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -90,
+        "y": -223,
+        "z": -81,
+        "heading": 56,
+        "chance": 20,
+        "respawnTime": 640,
+        "spawn2Id": 21381,
+        "spawngroupId": 13045,
+        "candidateCount": 6
+      },
+      {
+        "displayName": "Thoughts",
+        "rawName": "Thoughts",
+        "level": 1,
+        "race": "Invisible Man",
+        "rawRace": "Invisible Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -172,
+        "y": -160,
+        "z": -53.130001,
+        "heading": 6,
+        "chance": 20,
+        "respawnTime": 640,
+        "spawn2Id": 21382,
+        "spawngroupId": 13046,
+        "candidateCount": 6
+      },
+      {
+        "displayName": "Thoughts",
+        "rawName": "Thoughts",
+        "level": 1,
+        "race": "Invisible Man",
+        "rawRace": "Invisible Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 27,
+        "y": 251,
+        "z": -43,
+        "heading": 144,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 21394,
+        "spawngroupId": 13058,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Thoughts",
+        "rawName": "Thoughts",
+        "level": 1,
+        "race": "Invisible Man",
+        "rawRace": "Invisible Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -111,
+        "y": -218,
+        "z": -44,
+        "heading": 36,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 21403,
+        "spawngroupId": 13067,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Runnyeye Conscript",
+        "rawName": "a_Runnyeye_Conscript",
+        "level": 5,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -21.879999,
+        "y": -106.879997,
+        "z": 3.8,
+        "heading": 36,
+        "chance": 10,
+        "respawnTime": 640,
+        "spawn2Id": 6229,
+        "spawngroupId": 4391,
+        "candidateCount": 10
+      },
+      {
+        "displayName": "A Runnyeye Conscript",
+        "rawName": "a_Runnyeye_Conscript",
+        "level": 5,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 148,
+        "y": 179.5,
+        "z": -83.129997,
+        "heading": 489.75,
+        "chance": 10,
+        "respawnTime": 640,
+        "spawn2Id": 6230,
+        "spawngroupId": 4391,
+        "candidateCount": 10
+      },
+      {
+        "displayName": "A Goblin Scavenger",
+        "rawName": "a_goblin_scavenger",
+        "level": 6,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -59.630001,
+        "y": 2.13,
+        "z": 2.5,
+        "heading": 334,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 6228,
+        "spawngroupId": 4390,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Goblin Janitor",
+        "rawName": "goblin_janitor",
+        "level": 6,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 118.879997,
+        "y": -224.25,
+        "z": -43.099998,
+        "heading": 269,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 6288,
+        "spawngroupId": 4421,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Goblin Peon",
+        "rawName": "a_goblin_peon",
+        "level": 8,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 4.13,
+        "y": 28.5,
+        "z": 2.5,
+        "heading": 244,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 6289,
+        "spawngroupId": 4420,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Goblin Peon",
+        "rawName": "a_goblin_peon",
+        "level": 8,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 130,
+        "y": 192,
+        "z": 2.5,
+        "heading": 254,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 6317,
+        "spawngroupId": 6630,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Goblin Scavenger",
+        "rawName": "a_goblin_scavenger",
+        "level": 8,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 54.130001,
+        "y": 66.5,
+        "z": 2.5,
+        "heading": 53,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 6285,
+        "spawngroupId": 4424,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Goblin Trainee",
+        "rawName": "a_goblin_trainee",
+        "level": 8,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 180.380005,
+        "y": 55.380001,
+        "z": 2.5,
+        "heading": 252.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 6290,
+        "spawngroupId": 4419,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Runnyeye Conscript",
+        "rawName": "a_Runnyeye_Conscript",
+        "level": 8,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -21,
+        "y": -20,
+        "z": -43.130001,
+        "heading": 79,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 6268,
+        "spawngroupId": 4439,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Runnyeye Conscript",
+        "rawName": "a_Runnyeye_Conscript",
+        "level": 8,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 127.879997,
+        "y": 92.25,
+        "z": -83.129997,
+        "heading": 454.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 6320,
+        "spawngroupId": 6633,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Runnyeye Trustee",
+        "rawName": "a_Runnyeye_Trustee",
+        "level": 8,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 61,
+        "y": -193,
+        "z": -43.130001,
+        "heading": 310,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 6331,
+        "spawngroupId": 6644,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Goblin Peon",
+        "rawName": "a_goblin_peon",
+        "level": 9,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 79.379997,
+        "y": 206.5,
+        "z": 2.5,
+        "heading": 202,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 6284,
+        "spawngroupId": 4425,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Goblin Peon",
+        "rawName": "a_goblin_peon",
+        "level": 10,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -82,
+        "y": 4,
+        "z": 2.5,
+        "heading": 267,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6322,
+        "spawngroupId": 6635,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Goblin Trainee",
+        "rawName": "a_goblin_trainee",
+        "level": 10,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -120,
+        "y": -114,
+        "z": 3.13,
+        "heading": 70,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 6283,
+        "spawngroupId": 4426,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Runnyeye Trustee",
+        "rawName": "a_Runnyeye_Trustee",
+        "level": 10,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -9,
+        "y": 62,
+        "z": -58,
+        "heading": 116,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6278,
+        "spawngroupId": 4430,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Runnyeye Trustee",
+        "rawName": "a_Runnyeye_Trustee",
+        "level": 10,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 123,
+        "y": -118,
+        "z": -44.130001,
+        "heading": 112,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6279,
+        "spawngroupId": 4430,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Goblin Runt",
+        "rawName": "a_goblin_runt",
+        "level": 11,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 62,
+        "y": 2,
+        "z": 2.5,
+        "heading": 477,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6282,
+        "spawngroupId": 4427,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Goblin Runt",
+        "rawName": "a_goblin_runt",
+        "level": 11,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 126.25,
+        "y": 99.879997,
+        "z": 2.5,
+        "heading": 130.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 6286,
+        "spawngroupId": 4423,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Goblin Runt",
+        "rawName": "a_goblin_runt",
+        "level": 12,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -32,
+        "y": 297,
+        "z": 4.13,
+        "heading": 125,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6276,
+        "spawngroupId": 4432,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Goblin Neophyte",
+        "rawName": "a_goblin_neophyte",
+        "level": 14,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": 177,
+        "y": 54,
+        "z": 2.5,
+        "heading": 114,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6231,
+        "spawngroupId": 4392,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Pickclaw Arroweater",
+        "rawName": "a_Pickclaw_Arroweater",
+        "level": 14,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1,
+        "y": 46,
+        "z": -59.75,
+        "heading": 4,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 6266,
+        "spawngroupId": 4441,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Pickclaw Arroweater",
+        "rawName": "a_Pickclaw_Arroweater",
+        "level": 14,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 113,
+        "y": -110,
+        "z": -44.75,
+        "heading": 140,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6342,
+        "spawngroupId": 6654,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Pickclaw Bladestopper",
+        "rawName": "a_Pickclaw_Bladestopper",
+        "level": 14,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -59,
+        "y": 136,
+        "z": -59.5,
+        "heading": 121,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 6277,
+        "spawngroupId": 4431,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Pickclaw Mindripper",
+        "rawName": "a_Pickclaw_mindripper",
+        "level": 14,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Enchanter",
+        "type": "Spawn Slot",
+        "x": 111,
+        "y": -103,
+        "z": -44.75,
+        "heading": 198,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 6343,
+        "spawngroupId": 6655,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Sludge Guppy",
+        "rawName": "a_sludge_guppy",
+        "level": 14,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -10.13,
+        "y": -130.380005,
+        "z": -144.5,
+        "heading": 382.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 6338,
+        "spawngroupId": 6650,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Pickclaw Arroweater",
+        "rawName": "a_Pickclaw_Arroweater",
+        "level": 15,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -115.879997,
+        "y": 125.879997,
+        "z": -58.799999,
+        "heading": 212,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 6293,
+        "spawngroupId": 4416,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Goblin Banker",
+        "rawName": "a_goblin_banker",
+        "level": 16,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Class 40",
+        "type": "Spawn Slot",
+        "x": 83.879997,
+        "y": 13.88,
+        "z": -128.130005,
+        "heading": 255,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 6347,
+        "spawngroupId": 6659,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Goblin Bartender",
+        "rawName": "a_goblin_bartender",
+        "level": 16,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 93,
+        "y": 76,
+        "z": -128.130005,
+        "heading": 511,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 6333,
+        "spawngroupId": 6646,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Pickclaw Arroweater",
+        "rawName": "a_Pickclaw_Arroweater",
+        "level": 16,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 49.5,
+        "y": -251.380005,
+        "z": -43.799999,
+        "heading": 296,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 6307,
+        "spawngroupId": 4403,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Pickclaw Bonemender",
+        "rawName": "a_Pickclaw_bonemender",
+        "level": 16,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": 36,
+        "y": 146,
+        "z": -44.630001,
+        "heading": 504,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6287,
+        "spawngroupId": 4422,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Sludge Guppy",
+        "rawName": "a_sludge_guppy",
+        "level": 16,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -72.879997,
+        "y": -184.75,
+        "z": -125.25,
+        "heading": 153.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 6336,
+        "spawngroupId": 6649,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Sludge Guppy",
+        "rawName": "a_sludge_guppy",
+        "level": 16,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 114.879997,
+        "y": 188.25,
+        "z": -106.5,
+        "heading": 143,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 6337,
+        "spawngroupId": 6649,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Goblin Merchant",
+        "rawName": "a_goblin_merchant",
+        "level": 17,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 139,
+        "y": 60,
+        "z": -128.130005,
+        "heading": 387,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 6339,
+        "spawngroupId": 6651,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Pickclaw Ambushbaiter",
+        "rawName": "a_Pickclaw_Ambushbaiter",
+        "level": 17,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -266.380005,
+        "y": -121.5,
+        "z": -50.900002,
+        "heading": 491,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 6296,
+        "spawngroupId": 4413,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Pickclaw Ambushbaiter",
+        "rawName": "a_Pickclaw_Ambushbaiter",
+        "level": 17,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 68,
+        "y": 184,
+        "z": -44.75,
+        "heading": 6,
+        "chance": 20,
+        "respawnTime": 640,
+        "spawn2Id": 6326,
+        "spawngroupId": 6639,
+        "candidateCount": 5
+      },
+      {
+        "displayName": "A Pickclaw Ambushbaiter",
+        "rawName": "a_Pickclaw_Ambushbaiter",
+        "level": 17,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 75.5,
+        "y": 73.25,
+        "z": -44.599998,
+        "heading": 211,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 6329,
+        "spawngroupId": 6642,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Pickclaw Ambushbaiter",
+        "rawName": "a_Pickclaw_Ambushbaiter",
+        "level": 17,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 60,
+        "y": -221,
+        "z": -43.75,
+        "heading": 509,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6330,
+        "spawngroupId": 6643,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Pickclaw Arroweater",
+        "rawName": "a_Pickclaw_Arroweater",
+        "level": 17,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 64,
+        "y": 116,
+        "z": -44.75,
+        "heading": 22,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6281,
+        "spawngroupId": 4428,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Pickclaw Arroweater",
+        "rawName": "a_Pickclaw_Arroweater",
+        "level": 17,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 135.880005,
+        "y": -39,
+        "z": -44.099998,
+        "heading": 60,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 6311,
+        "spawngroupId": 4399,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Pickclaw Arroweater",
+        "rawName": "a_Pickclaw_Arroweater",
+        "level": 17,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 71,
+        "y": -196,
+        "z": -43.75,
+        "heading": 433,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6328,
+        "spawngroupId": 6641,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Pickclaw Arroweater",
+        "rawName": "a_Pickclaw_Arroweater",
+        "level": 17,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 167,
+        "y": -41,
+        "z": -44.75,
+        "heading": 366,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6340,
+        "spawngroupId": 6652,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Pickclaw Arroweater",
+        "rawName": "a_Pickclaw_Arroweater",
+        "level": 17,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -120,
+        "y": -145,
+        "z": -44.75,
+        "heading": 414,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6344,
+        "spawngroupId": 6656,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Pickclaw Bonemender",
+        "rawName": "a_Pickclaw_bonemender",
+        "level": 17,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": -170,
+        "y": -128.130005,
+        "z": -45.799999,
+        "heading": 167.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 6316,
+        "spawngroupId": 6629,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Sludge Guppy",
+        "rawName": "a_sludge_guppy",
+        "level": 17,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 25.25,
+        "y": 249.75,
+        "z": -144.5,
+        "heading": 389.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 6335,
+        "spawngroupId": 6648,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Sporali Gatherer",
+        "rawName": "a_Sporali_gatherer",
+        "level": 17,
+        "race": "Fungusman",
+        "rawRace": "Fungusman",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -205.25,
+        "y": -242.130005,
+        "z": -82.800003,
+        "heading": 277.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 6346,
+        "spawngroupId": 6658,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Goblin Merchant",
+        "rawName": "a_goblin_merchant",
+        "level": 18,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 130,
+        "y": 8,
+        "z": -128.130005,
+        "heading": 2,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6332,
+        "spawngroupId": 6645,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Pickclaw Ambushbaiter",
+        "rawName": "a_Pickclaw_Ambushbaiter",
+        "level": 18,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -118,
+        "y": -136,
+        "z": -44.75,
+        "heading": 120,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6321,
+        "spawngroupId": 6634,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Pickclaw Arroweater",
+        "rawName": "a_Pickclaw_Arroweater",
+        "level": 18,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -109,
+        "y": 87,
+        "z": -58.75,
+        "heading": 145,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6294,
+        "spawngroupId": 4415,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Pickclaw Arroweater",
+        "rawName": "a_Pickclaw_Arroweater",
+        "level": 18,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -114,
+        "y": -92,
+        "z": -45.75,
+        "heading": 338,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6312,
+        "spawngroupId": 4397,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Pickclaw Fleshburner",
+        "rawName": "a_Pickclaw_Fleshburner",
+        "level": 18,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -76,
+        "y": 104,
+        "z": -58.75,
+        "heading": 317,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6270,
+        "spawngroupId": 4437,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Pickclaw Foeslicer",
+        "rawName": "a_Pickclaw_Foeslicer",
+        "level": 18,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -33,
+        "y": -109,
+        "z": -128,
+        "heading": 5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 6351,
+        "spawngroupId": 6663,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Pickclaw Mindripper",
+        "rawName": "a_Pickclaw_mindripper",
+        "level": 18,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Enchanter",
+        "type": "Spawn Slot",
+        "x": -53,
+        "y": -31,
+        "z": -44.75,
+        "heading": 510,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6313,
+        "spawngroupId": 4396,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Sporali Miner",
+        "rawName": "a_Sporali_Miner",
+        "level": 18,
+        "race": "Fungusman",
+        "rawRace": "Fungusman",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -112.879997,
+        "y": -251.880005,
+        "z": -44.130001,
+        "heading": 307,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 6345,
+        "spawngroupId": 6657,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Sporali Scavenger",
+        "rawName": "a_Sporali_Scavenger",
+        "level": 18,
+        "race": "Fungusman",
+        "rawRace": "Fungusman",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -27.129999,
+        "y": 22.129999,
+        "z": -101.129997,
+        "heading": 235,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 6310,
+        "spawngroupId": 4400,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Pickclaw Destroyer",
+        "rawName": "a_Pickclaw_Destroyer",
+        "level": 19,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -2,
+        "y": 29,
+        "z": -127.5,
+        "heading": 253,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 6232,
+        "spawngroupId": 4393,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Pickclaw Foeslicer",
+        "rawName": "a_Pickclaw_Foeslicer",
+        "level": 19,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -81.75,
+        "y": 150.75,
+        "z": -129.130005,
+        "heading": 310.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 6302,
+        "spawngroupId": 4407,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Sporali Defender",
+        "rawName": "a_Sporali_Defender",
+        "level": 19,
+        "race": "Fungusman",
+        "rawRace": "Fungusman",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -221,
+        "y": -198,
+        "z": -82.5,
+        "heading": 122,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 6274,
+        "spawngroupId": 4433,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Sporali Defender",
+        "rawName": "a_Sporali_Defender",
+        "level": 19,
+        "race": "Fungusman",
+        "rawRace": "Fungusman",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 191,
+        "y": -225,
+        "z": -81.5,
+        "heading": 380,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 6275,
+        "spawngroupId": 4433,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Sporali Gatherer",
+        "rawName": "a_Sporali_gatherer",
+        "level": 19,
+        "race": "Fungusman",
+        "rawRace": "Fungusman",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -30,
+        "y": 140,
+        "z": -82.129997,
+        "heading": 347,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 6323,
+        "spawngroupId": 6636,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Sporali Scavenger",
+        "rawName": "a_Sporali_Scavenger",
+        "level": 19,
+        "race": "Fungusman",
+        "rawRace": "Fungusman",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 166.630005,
+        "y": -225.25,
+        "z": -73.5,
+        "heading": 254.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 6314,
+        "spawngroupId": 6627,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Sporali Worker",
+        "rawName": "a_Sporali_worker",
+        "level": 19,
+        "race": "Fungusman",
+        "rawRace": "Fungusman",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -53.880001,
+        "y": -177,
+        "z": -82.129997,
+        "heading": 507,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6273,
+        "spawngroupId": 4434,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Pickclaw Ambushbaiter",
+        "rawName": "a_Pickclaw_Ambushbaiter",
+        "level": 20,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -24,
+        "y": -237,
+        "z": -44.130001,
+        "heading": 430,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6327,
+        "spawngroupId": 6640,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Pickclaw Foeseeker",
+        "rawName": "a_Pickclaw_Foeseeker",
+        "level": 20,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -94,
+        "y": 186,
+        "z": -129.75,
+        "heading": 241,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 6303,
+        "spawngroupId": 4406,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Pickclaw Zekspeaker",
+        "rawName": "a_Pickclaw_Zekspeaker",
+        "level": 20,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": 144.380005,
+        "y": -100.629997,
+        "z": -128.130005,
+        "heading": 255.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 6353,
+        "spawngroupId": 6665,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Sporali Defender",
+        "rawName": "a_Sporali_Defender",
+        "level": 20,
+        "race": "Fungusman",
+        "rawRace": "Fungusman",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -120.5,
+        "y": 114,
+        "z": -104.129997,
+        "heading": 63,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 6350,
+        "spawngroupId": 6662,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Sporali Miner",
+        "rawName": "a_Sporali_Miner",
+        "level": 20,
+        "race": "Fungusman",
+        "rawRace": "Fungusman",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -145.630005,
+        "y": -138.25,
+        "z": -44.130001,
+        "heading": 431,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6269,
+        "spawngroupId": 4438,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Sporali Miner",
+        "rawName": "a_Sporali_Miner",
+        "level": 20,
+        "race": "Fungusman",
+        "rawRace": "Fungusman",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -126,
+        "y": 109,
+        "z": -81.879997,
+        "heading": 311,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6272,
+        "spawngroupId": 4435,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Sporali Scavenger",
+        "rawName": "a_Sporali_Scavenger",
+        "level": 20,
+        "race": "Fungusman",
+        "rawRace": "Fungusman",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -54,
+        "y": 132,
+        "z": -82.75,
+        "heading": 114,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6324,
+        "spawngroupId": 6637,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Sporali Worker",
+        "rawName": "a_Sporali_worker",
+        "level": 20,
+        "race": "Fungusman",
+        "rawRace": "Fungusman",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 163.75,
+        "y": -7.38,
+        "z": -81.900002,
+        "heading": 85.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 6315,
+        "spawngroupId": 6628,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Pickclaw Destroyer",
+        "rawName": "a_Pickclaw_Destroyer",
+        "level": 21,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -118,
+        "y": 177,
+        "z": -128.5,
+        "heading": 133,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 6262,
+        "spawngroupId": 4445,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Pickclaw Destroyer",
+        "rawName": "a_Pickclaw_Destroyer",
+        "level": 21,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 169,
+        "y": -96,
+        "z": -127.5,
+        "heading": 377,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 6265,
+        "spawngroupId": 4442,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Pickclaw Foechopper",
+        "rawName": "a_Pickclaw_Foechopper",
+        "level": 21,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -157,
+        "y": -33,
+        "z": -114.129997,
+        "heading": 445,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 6246,
+        "spawngroupId": 4461,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Pickclaw Foechopper",
+        "rawName": "a_Pickclaw_Foechopper",
+        "level": 21,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -105,
+        "y": 109,
+        "z": -128.130005,
+        "heading": 448,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6251,
+        "spawngroupId": 4456,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Pickclaw Foeseeker",
+        "rawName": "a_Pickclaw_Foeseeker",
+        "level": 21,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -150,
+        "y": -127,
+        "z": -129.130005,
+        "heading": 253,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 6240,
+        "spawngroupId": 4467,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Pickclaw Foeseeker",
+        "rawName": "a_Pickclaw_Foeseeker",
+        "level": 21,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 116,
+        "y": -88,
+        "z": -128.130005,
+        "heading": 211,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 6309,
+        "spawngroupId": 4401,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Pickclaw Foeslicer",
+        "rawName": "a_Pickclaw_Foeslicer",
+        "level": 21,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -133.5,
+        "y": 100.75,
+        "z": -128.130005,
+        "heading": 384,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 6248,
+        "spawngroupId": 4459,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Pickclaw Slayspell",
+        "rawName": "a_Pickclaw_Slayspell",
+        "level": 21,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": 114.879997,
+        "y": -6.5,
+        "z": -128.100006,
+        "heading": 115.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 6292,
+        "spawngroupId": 4417,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Sporali Defender",
+        "rawName": "a_Sporali_Defender",
+        "level": 21,
+        "race": "Fungusman",
+        "rawRace": "Fungusman",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 127.75,
+        "y": 106,
+        "z": -82.5,
+        "heading": 262.5,
+        "chance": 70,
+        "respawnTime": 640,
+        "spawn2Id": 6255,
+        "spawngroupId": 4452,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Sporali Defender",
+        "rawName": "a_Sporali_Defender",
+        "level": 21,
+        "race": "Fungusman",
+        "rawRace": "Fungusman",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -69.5,
+        "y": -35.630001,
+        "z": -80.900002,
+        "heading": 509.5,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 6259,
+        "spawngroupId": 4448,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Sporali Miner",
+        "rawName": "a_Sporali_Miner",
+        "level": 21,
+        "race": "Fungusman",
+        "rawRace": "Fungusman",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 29.5,
+        "y": 196.130005,
+        "z": -81.900002,
+        "heading": 357,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6267,
+        "spawngroupId": 4440,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Sporali Scavenger",
+        "rawName": "a_Sporali_Scavenger",
+        "level": 21,
+        "race": "Fungusman",
+        "rawRace": "Fungusman",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 38,
+        "y": 176,
+        "z": -81.879997,
+        "heading": 501,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6261,
+        "spawngroupId": 4446,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Sporali Scavenger",
+        "rawName": "a_Sporali_Scavenger",
+        "level": 21,
+        "race": "Fungusman",
+        "rawRace": "Fungusman",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 118,
+        "y": -138,
+        "z": -83.5,
+        "heading": 178,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6319,
+        "spawngroupId": 6632,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Sporali Worker",
+        "rawName": "a_Sporali_worker",
+        "level": 21,
+        "race": "Fungusman",
+        "rawRace": "Fungusman",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 23,
+        "y": 197,
+        "z": -81,
+        "heading": 79,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 6354,
+        "spawngroupId": 6666,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Pickclaw Foechopper",
+        "rawName": "a_Pickclaw_Foechopper",
+        "level": 22,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -207,
+        "y": -22,
+        "z": -114.25,
+        "heading": 281,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6236,
+        "spawngroupId": 4471,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Pickclaw Foechopper",
+        "rawName": "a_Pickclaw_Foechopper",
+        "level": 22,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -77.629997,
+        "y": 188.5,
+        "z": -129.130005,
+        "heading": 454.75,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6250,
+        "spawngroupId": 4457,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Pickclaw Foechopper",
+        "rawName": "a_Pickclaw_Foechopper",
+        "level": 22,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 18,
+        "y": 107,
+        "z": -128.130005,
+        "heading": 383,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6297,
+        "spawngroupId": 4412,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Pickclaw Foechopper",
+        "rawName": "a_Pickclaw_Foechopper",
+        "level": 22,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 171,
+        "y": -72,
+        "z": -128.75,
+        "heading": 105,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6300,
+        "spawngroupId": 4409,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Pickclaw Foeseeker",
+        "rawName": "a_Pickclaw_Foeseeker",
+        "level": 22,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -132,
+        "y": -130,
+        "z": -129.130005,
+        "heading": 273,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6233,
+        "spawngroupId": 4394,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Pickclaw Foeseeker",
+        "rawName": "a_Pickclaw_Foeseeker",
+        "level": 22,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -124,
+        "y": -174,
+        "z": -128.130005,
+        "heading": 156,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 6249,
+        "spawngroupId": 4458,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Pickclaw Foeseeker",
+        "rawName": "a_Pickclaw_Foeseeker",
+        "level": 22,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 75,
+        "y": -90,
+        "z": -126.879997,
+        "heading": 120,
+        "chance": 80,
+        "respawnTime": 640,
+        "spawn2Id": 6256,
+        "spawngroupId": 4451,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Pickclaw Foeseeker",
+        "rawName": "a_Pickclaw_Foeseeker",
+        "level": 22,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 127,
+        "y": 67,
+        "z": -128.75,
+        "heading": 145,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6299,
+        "spawngroupId": 4410,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Pickclaw Zekspeaker",
+        "rawName": "a_Pickclaw_Zekspeaker",
+        "level": 22,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": 55.130001,
+        "y": -131.630005,
+        "z": -128.130005,
+        "heading": 183.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 6308,
+        "spawngroupId": 4402,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Ooze Crawler",
+        "rawName": "an_ooze_crawler",
+        "level": 22,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -20.129999,
+        "y": 285,
+        "z": -105.25,
+        "heading": 208.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 6349,
+        "spawngroupId": 6661,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Pickclaw Foeseeker",
+        "rawName": "a_Pickclaw_Foeseeker",
+        "level": 23,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -115,
+        "y": -231,
+        "z": -128.130005,
+        "heading": 258,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6238,
+        "spawngroupId": 4469,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Pickclaw Foeseeker",
+        "rawName": "a_Pickclaw_Foeseeker",
+        "level": 23,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -171,
+        "y": 2,
+        "z": -128.75,
+        "heading": 2,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6239,
+        "spawngroupId": 4468,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Pickclaw Foeseeker",
+        "rawName": "a_Pickclaw_Foeseeker",
+        "level": 23,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -170,
+        "y": -136,
+        "z": -128.130005,
+        "heading": 21,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6241,
+        "spawngroupId": 4466,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Pickclaw Foeseeker",
+        "rawName": "a_Pickclaw_Foeseeker",
+        "level": 23,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -84,
+        "y": -178,
+        "z": -128.75,
+        "heading": 341,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6253,
+        "spawngroupId": 4454,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Pickclaw Foeseeker",
+        "rawName": "a_Pickclaw_Foeseeker",
+        "level": 23,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 57,
+        "y": 121,
+        "z": -128.75,
+        "heading": 340,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6291,
+        "spawngroupId": 4418,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Pickclaw Foeseeker",
+        "rawName": "a_Pickclaw_Foeseeker",
+        "level": 23,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -99.629997,
+        "y": -253.630005,
+        "z": -128.75,
+        "heading": 393,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 6301,
+        "spawngroupId": 4408,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Pickclaw Slayspell",
+        "rawName": "a_Pickclaw_Slayspell",
+        "level": 23,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -101,
+        "y": -94,
+        "z": -128.130005,
+        "heading": 184,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6237,
+        "spawngroupId": 4470,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Pickclaw Slayspell",
+        "rawName": "a_Pickclaw_Slayspell",
+        "level": 23,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -97,
+        "y": -60,
+        "z": -128.130005,
+        "heading": 434,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6258,
+        "spawngroupId": 4449,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Pickclaw Slayspell",
+        "rawName": "a_Pickclaw_Slayspell",
+        "level": 23,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -105,
+        "y": 184,
+        "z": -129.130005,
+        "heading": 194,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6298,
+        "spawngroupId": 4411,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Pickclaw Zekspeaker",
+        "rawName": "a_Pickclaw_Zekspeaker",
+        "level": 23,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": 81,
+        "y": 111,
+        "z": -128.130005,
+        "heading": 104,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6304,
+        "spawngroupId": 4405,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Sporali Defender",
+        "rawName": "a_Sporali_Defender",
+        "level": 23,
+        "race": "Fungusman",
+        "rawRace": "Fungusman",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -74,
+        "y": 290,
+        "z": -81.5,
+        "heading": 4,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 6257,
+        "spawngroupId": 4450,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "An Ooze Crawler",
+        "rawName": "an_ooze_crawler",
+        "level": 23,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -95.5,
+        "y": 303.630005,
+        "z": -105.25,
+        "heading": 291,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 6348,
+        "spawngroupId": 6660,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Pickclaw Foeseeker",
+        "rawName": "a_Pickclaw_Foeseeker",
+        "level": 24,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -168,
+        "y": -146,
+        "z": -128.75,
+        "heading": 508,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6242,
+        "spawngroupId": 4465,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Pickclaw Foeseeker",
+        "rawName": "a_Pickclaw_Foeseeker",
+        "level": 24,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -27,
+        "y": -8,
+        "z": -128.75,
+        "heading": 446,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6244,
+        "spawngroupId": 4463,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Pickclaw Foeseeker",
+        "rawName": "a_Pickclaw_Foeseeker",
+        "level": 24,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -244.5,
+        "y": -131.880005,
+        "z": -47.799999,
+        "heading": 255.5,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 6245,
+        "spawngroupId": 4462,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Pickclaw Foeseeker",
+        "rawName": "a_Pickclaw_Foeseeker",
+        "level": 24,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -35.880001,
+        "y": -101.25,
+        "z": -128.75,
+        "heading": 385.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 6247,
+        "spawngroupId": 4460,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Pickclaw Foeseeker",
+        "rawName": "a_Pickclaw_Foeseeker",
+        "level": 24,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -209,
+        "y": -49,
+        "z": -115.25,
+        "heading": 384,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6252,
+        "spawngroupId": 4455,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Pickclaw Foeseeker",
+        "rawName": "a_Pickclaw_Foeseeker",
+        "level": 24,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 11,
+        "y": 37,
+        "z": -128.130005,
+        "heading": 261,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6260,
+        "spawngroupId": 4447,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Pickclaw Foeseeker",
+        "rawName": "a_Pickclaw_Foeseeker",
+        "level": 24,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -169,
+        "y": -36,
+        "z": -128.130005,
+        "heading": 97,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6295,
+        "spawngroupId": 4414,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Slime Elemental",
+        "rawName": "a_slime_elemental",
+        "level": 24,
+        "race": "Gelatinous Cube",
+        "rawRace": "Gelatinous Cube",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -69.379997,
+        "y": 196,
+        "z": -43.099998,
+        "heading": 11,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 6271,
+        "spawngroupId": 4436,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Ooze Crawler",
+        "rawName": "an_ooze_crawler",
+        "level": 24,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 77.879997,
+        "y": 245.380005,
+        "z": -152.25,
+        "heading": 394.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 6305,
+        "spawngroupId": 4404,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Ooze Crawler",
+        "rawName": "an_ooze_crawler",
+        "level": 24,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -46.380001,
+        "y": 309.75,
+        "z": -105.25,
+        "heading": 156,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 6306,
+        "spawngroupId": 4404,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Pickclaw Crusader",
+        "rawName": "#a_Pickclaw_Crusader",
+        "level": 25,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -90,
+        "y": 113,
+        "z": -58.130001,
+        "heading": 256,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6280,
+        "spawngroupId": 4429,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Pickclaw Crusader",
+        "rawName": "#a_Pickclaw_Crusader",
+        "level": 25,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 157,
+        "y": 176,
+        "z": -43.75,
+        "heading": 175,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6341,
+        "spawngroupId": 6653,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "Sludge Dankmire",
+        "rawName": "Sludge_Dankmire",
+        "level": 25,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1,
+        "y": 9,
+        "z": -161,
+        "heading": 27,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 6325,
+        "spawngroupId": 6638,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "The Sporali Moldmaster",
+        "rawName": "#The_Sporali_Moldmaster",
+        "level": 25,
+        "race": "Fungusman",
+        "rawRace": "Fungusman",
+        "className": "Druid",
+        "type": "Spawn Slot",
+        "x": 106,
+        "y": 156,
+        "z": -78.5,
+        "heading": 140,
+        "chance": 20,
+        "respawnTime": 640,
+        "spawn2Id": 6235,
+        "spawngroupId": 4398,
+        "candidateCount": 5
+      },
+      {
+        "displayName": "Battlelord Paluk",
+        "rawName": "#Battlelord_Paluk",
+        "level": 28,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -201,
+        "y": -35,
+        "z": -113.5,
+        "heading": 382,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6254,
+        "spawngroupId": 4453,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "An Evil Eye Prisoner",
+        "rawName": "an_Evil_Eye_prisoner",
+        "level": 30,
+        "race": "Evil Eye",
+        "rawRace": "Evil Eye",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -95,
+        "y": 79,
+        "z": -63.25,
+        "heading": 2,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 6263,
+        "spawngroupId": 4444,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Battlewizard Unak",
+        "rawName": "#Battlewizard_Unak",
+        "level": 30,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": 26,
+        "y": -24,
+        "z": -127.5,
+        "heading": 310,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6234,
+        "spawngroupId": 4395,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "Battlewizard Unak",
+        "rawName": "#Battlewizard_Unak",
+        "level": 30,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -71,
+        "y": -107,
+        "z": -128,
+        "heading": 130,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 6352,
+        "spawngroupId": 6664,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "An Evil Eye Prisoner",
+        "rawName": "an_Evil_Eye_prisoner",
+        "level": 31,
+        "race": "Evil Eye",
+        "rawRace": "Evil Eye",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -93,
+        "y": 102,
+        "z": -63.25,
+        "heading": 249,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 6264,
+        "spawngroupId": 4443,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Slime Mold",
+        "rawName": "a_slime_mold",
+        "level": 60,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -52,
+        "y": -99,
+        "z": -128.75,
+        "heading": 341,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 6243,
+        "spawngroupId": 4464,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Slime Mold",
+        "rawName": "a_slime_mold",
+        "level": 60,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -104,
+        "y": -203,
+        "z": -128,
+        "heading": 464,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 21388,
+        "spawngroupId": 13052,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Slime Mold",
+        "rawName": "a_slime_mold",
+        "level": 60,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -42,
+        "y": -36,
+        "z": -128,
+        "heading": 240,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 21389,
+        "spawngroupId": 13053,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Sporelit",
+        "rawName": "a_sporelit",
+        "level": 60,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -30.629999,
+        "y": 297.880005,
+        "z": -82.129997,
+        "heading": 448,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 6318,
+        "spawngroupId": 6631,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Sporelit",
+        "rawName": "a_sporelit",
+        "level": 60,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 98,
+        "y": -230,
+        "z": -44.130001,
+        "heading": 510,
+        "chance": 90,
+        "respawnTime": 640,
+        "spawn2Id": 21395,
+        "spawngroupId": 13059,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Sporelit",
+        "rawName": "a_sporelit",
+        "level": 60,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 162,
+        "y": -217,
+        "z": -69,
+        "heading": 236,
+        "chance": 90,
+        "respawnTime": 640,
+        "spawn2Id": 21396,
+        "spawngroupId": 13060,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Sporelit",
+        "rawName": "a_sporelit",
+        "level": 60,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -89,
+        "y": -197,
+        "z": -85,
+        "heading": 476,
+        "chance": 90,
+        "respawnTime": 640,
+        "spawn2Id": 21397,
+        "spawngroupId": 13061,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Sporelit",
+        "rawName": "a_sporelit",
+        "level": 60,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 29,
+        "y": -189,
+        "z": -82.879997,
+        "heading": 280,
+        "chance": 90,
+        "respawnTime": 640,
+        "spawn2Id": 21398,
+        "spawngroupId": 13062,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Sporelit",
+        "rawName": "a_sporelit",
+        "level": 60,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -22,
+        "y": -62,
+        "z": -82.129997,
+        "heading": 262,
+        "chance": 90,
+        "respawnTime": 640,
+        "spawn2Id": 21399,
+        "spawngroupId": 13063,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Sporelit",
+        "rawName": "a_sporelit",
+        "level": 60,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -133,
+        "y": 100,
+        "z": -83,
+        "heading": 506,
+        "chance": 90,
+        "respawnTime": 640,
+        "spawn2Id": 21400,
+        "spawngroupId": 13064,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Sporelit",
+        "rawName": "a_sporelit",
+        "level": 60,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -40,
+        "y": 136,
+        "z": -83,
+        "heading": 220,
+        "chance": 90,
+        "respawnTime": 640,
+        "spawn2Id": 21401,
+        "spawngroupId": 13065,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Sporelit",
+        "rawName": "a_sporelit",
+        "level": 60,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -115,
+        "y": 211,
+        "z": -80.5,
+        "heading": 76,
+        "chance": 90,
+        "respawnTime": 640,
+        "spawn2Id": 21402,
+        "spawngroupId": 13066,
+        "candidateCount": 2
+      }
+    ]
+  }
+}

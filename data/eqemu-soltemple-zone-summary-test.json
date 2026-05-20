@@ -1,0 +1,2551 @@
+{
+  "summary": {
+    "zoneSlug": "the-temple-of-solusek-ro",
+    "zoneName": "The Temple of Solusek Ro",
+    "requestedZoneShortName": "soltemple",
+    "zoneShortName": "soltemple",
+    "sourceFile": "local-eqemu-database",
+    "matched": true,
+    "expansion": "Kunark",
+    "eqemuExpansionId": 1,
+    "expansionSource": "eqemu-zone-table",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobCount": 48,
+    "unknownLevelCount": 0,
+    "minLevel": 1,
+    "maxLevel": 45,
+    "averageLevel": 35,
+    "medianLevel": 35,
+    "levelCounts": {
+      "1": 1,
+      "34": 21,
+      "35": 11,
+      "36": 8,
+      "40": 4,
+      "44": 1,
+      "45": 2
+    },
+    "levelBuckets": {
+      "1-10": 1,
+      "11-20": 0,
+      "21-30": 0,
+      "31-40": 44,
+      "41-50": 3,
+      "51-60": 0,
+      "61+": 0
+    },
+    "levelProfileLabel": "Wide level spread",
+    "mobGroupNameCounts": {
+      "A Keeper": 11,
+      "A Seeker": 7,
+      "A Ward Of Ro": 6,
+      "An Undead Knight": 2,
+      "Blaize The Radiant": 1,
+      "Cryssia Stardreamer": 1,
+      "Gardern": 1,
+      "Gavel The Temperant": 1,
+      "Genni": 1,
+      "Joyce": 1,
+      "Lon The Redeemed": 1,
+      "Lord Lyfyx Of Burwood": 1,
+      "Lord Searfire": 1,
+      "Moltak": 1,
+      "Ostorm": 1,
+      "Romar Sunto": 1,
+      "Solomen": 1,
+      "Sultin": 1,
+      "Syllina": 1,
+      "Tazgar": 1,
+      "Terblyn Zelbus": 1,
+      "Torzan Searfire": 1,
+      "Vilissia": 1,
+      "Vira": 1,
+      "Vurgo": 1,
+      "Walthin Fireweaver": 1
+    },
+    "classCounts": {
+      "Wizard": 23,
+      "Cleric": 9,
+      "Warrior": 9,
+      "Bard": 2,
+      "Paladin": 2,
+      "Banker": 1,
+      "Necromancer": 1,
+      "Rogue": 1
+    },
+    "raceCounts": {
+      "Human": 12,
+      "Erudite": 7,
+      "High Elf": 7,
+      "Gnome": 6,
+      "Imp": 6,
+      "Dark Elf": 3,
+      "Dwarf": 2,
+      "Skeleton": 2,
+      "Efreeti": 1,
+      "Half Elf": 1,
+      "Wood Elf": 1
+    },
+    "normalizedRaceCounts": {
+      "Human": 12,
+      "Erudite": 7,
+      "High Elf": 7,
+      "Gnome": 6,
+      "Imp": 6,
+      "Dark Elf": 3,
+      "Dwarf": 2,
+      "Skeleton": 2,
+      "Efreeti": 1,
+      "Half Elf": 1,
+      "Wood Elf": 1
+    },
+    "normalizedRaceLevelCounts": {
+      "Dark Elf": {
+        "34": 1,
+        "36": 1,
+        "45": 1
+      },
+      "Dwarf": {
+        "40": 2
+      },
+      "Efreeti": {
+        "44": 1
+      },
+      "Erudite": {
+        "1": 1,
+        "34": 5,
+        "35": 1
+      },
+      "Gnome": {
+        "34": 2,
+        "35": 2,
+        "36": 2
+      },
+      "Half Elf": {
+        "36": 1
+      },
+      "High Elf": {
+        "34": 1,
+        "35": 4,
+        "40": 1,
+        "45": 1
+      },
+      "Human": {
+        "34": 9,
+        "35": 2,
+        "36": 1
+      },
+      "Imp": {
+        "34": 3,
+        "35": 1,
+        "36": 2
+      },
+      "Skeleton": {
+        "35": 1,
+        "40": 1
+      },
+      "Wood Elf": {
+        "36": 1
+      }
+    },
+    "raceAliases": {
+      "Dark Elf": [
+        "Dark Elf"
+      ],
+      "Dwarf": [
+        "Dwarf"
+      ],
+      "Efreeti": [
+        "Efreeti"
+      ],
+      "Erudite": [
+        "Erudite"
+      ],
+      "Gnome": [
+        "Gnome"
+      ],
+      "Half Elf": [
+        "Half Elf"
+      ],
+      "High Elf": [
+        "High Elf"
+      ],
+      "Human": [
+        "Human"
+      ],
+      "Imp": [
+        "Imp"
+      ],
+      "Skeleton": [
+        "Skeleton"
+      ],
+      "Wood Elf": [
+        "Wood Elf"
+      ]
+    },
+    "typeCounts": {
+      "Spawn Slot": 48
+    },
+    "notes": [
+      "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+      "Read-only test export; not wired into production /zones data."
+    ],
+    "spawnMapPrototype": {
+      "sourceKind": "Local EQEmu/PEQ database export",
+      "coordinateNote": "Original EQEmu spawn2 x/y/z coordinates are preserved for map prototyping.",
+      "points": [
+        {
+          "spawn2Id": 3789,
+          "spawngroupId": 6039,
+          "name": "an_undead_knight",
+          "displayName": "An Undead Knight",
+          "level": 35,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 81,
+          "y": 406,
+          "z": 31.75,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3790,
+          "spawngroupId": 6038,
+          "name": "an_undead_knight_",
+          "displayName": "An Undead Knight",
+          "level": 40,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 78,
+          "y": 442,
+          "z": 31.75,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3791,
+          "spawngroupId": 6037,
+          "name": "a_seeker",
+          "displayName": "A Seeker",
+          "level": 34,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Cleric",
+          "x": 39,
+          "y": 328,
+          "z": 28.75,
+          "heading": 43,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3792,
+          "spawngroupId": 6036,
+          "name": "Lord_Searfire",
+          "displayName": "Lord Searfire",
+          "level": 40,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Paladin",
+          "x": 88,
+          "y": 482,
+          "z": 30.5,
+          "heading": 2.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3793,
+          "spawngroupId": 6035,
+          "name": "a_seeker",
+          "displayName": "A Seeker",
+          "level": 34,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Cleric",
+          "x": -33,
+          "y": 317,
+          "z": 31.75,
+          "heading": 166,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3794,
+          "spawngroupId": 6035,
+          "name": "a_seeker",
+          "displayName": "A Seeker",
+          "level": 34,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Cleric",
+          "x": 35,
+          "y": 574,
+          "z": -49.130001,
+          "heading": 258,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3795,
+          "spawngroupId": 6034,
+          "name": "a_keeper",
+          "displayName": "A Keeper",
+          "level": 36,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Wizard",
+          "x": 3,
+          "y": 329.880005,
+          "z": 3.75,
+          "heading": 265,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3796,
+          "spawngroupId": 6033,
+          "name": "Lon_the_Redeemed",
+          "displayName": "Lon The Redeemed",
+          "level": 45,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Rogue",
+          "x": -17,
+          "y": 553,
+          "z": 19.129999,
+          "heading": 187,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3797,
+          "spawngroupId": 6032,
+          "name": "a_keeper",
+          "displayName": "A Keeper",
+          "level": 36,
+          "race": "Gnome",
+          "rawRace": "Gnome",
+          "className": "Wizard",
+          "x": 11.88,
+          "y": 329.880005,
+          "z": 1.88,
+          "heading": 265,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3798,
+          "spawngroupId": 6031,
+          "name": "a_ward_of_ro",
+          "displayName": "A Ward Of Ro",
+          "level": 36,
+          "race": "Imp",
+          "rawRace": "Imp",
+          "className": "Warrior",
+          "x": 38,
+          "y": 369.75,
+          "z": 1.9,
+          "heading": 11.5,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 3799,
+          "spawngroupId": 6030,
+          "name": "a_ward_of_ro",
+          "displayName": "A Ward Of Ro",
+          "level": 34,
+          "race": "Imp",
+          "rawRace": "Imp",
+          "className": "Warrior",
+          "x": -24.629999,
+          "y": 370.630005,
+          "z": 1.88,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3800,
+          "spawngroupId": 6030,
+          "name": "a_ward_of_ro",
+          "displayName": "A Ward Of Ro",
+          "level": 34,
+          "race": "Imp",
+          "rawRace": "Imp",
+          "className": "Warrior",
+          "x": 89.75,
+          "y": 533.75,
+          "z": 29.879999,
+          "heading": 0.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3801,
+          "spawngroupId": 6030,
+          "name": "a_ward_of_ro",
+          "displayName": "A Ward Of Ro",
+          "level": 34,
+          "race": "Imp",
+          "rawRace": "Imp",
+          "className": "Warrior",
+          "x": 38,
+          "y": 357,
+          "z": 1.9,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3802,
+          "spawngroupId": 6029,
+          "name": "Torzan_Searfire",
+          "displayName": "Torzan Searfire",
+          "level": 34,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Wizard",
+          "x": -75,
+          "y": 483,
+          "z": 31.75,
+          "heading": 129,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3803,
+          "spawngroupId": 6028,
+          "name": "Walthin_Fireweaver",
+          "displayName": "Walthin Fireweaver",
+          "level": 36,
+          "race": "Half Elf",
+          "rawRace": "Half Elf",
+          "className": "Bard",
+          "x": -53.880001,
+          "y": 430,
+          "z": 3.38,
+          "heading": 90,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3804,
+          "spawngroupId": 6027,
+          "name": "Cryssia_Stardreamer",
+          "displayName": "Cryssia Stardreamer",
+          "level": 36,
+          "race": "Wood Elf",
+          "rawRace": "Wood Elf",
+          "className": "Bard",
+          "x": -44,
+          "y": 417,
+          "z": 3.13,
+          "heading": 51,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3805,
+          "spawngroupId": 6026,
+          "name": "Ostorm",
+          "displayName": "Ostorm",
+          "level": 34,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Wizard",
+          "x": -79,
+          "y": 437,
+          "z": 31.75,
+          "heading": 181,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3806,
+          "spawngroupId": 6016,
+          "name": "Vilissia",
+          "displayName": "Vilissia",
+          "level": 35,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Wizard",
+          "x": -80,
+          "y": 434,
+          "z": 17.75,
+          "heading": 144,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3807,
+          "spawngroupId": 6017,
+          "name": "Vira",
+          "displayName": "Vira",
+          "level": 36,
+          "race": "Gnome",
+          "rawRace": "Gnome",
+          "className": "Wizard",
+          "x": 91,
+          "y": 411,
+          "z": 15.88,
+          "heading": 487,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3808,
+          "spawngroupId": 6015,
+          "name": "Vurgo",
+          "displayName": "Vurgo",
+          "level": 34,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Wizard",
+          "x": 91,
+          "y": 356,
+          "z": 17.75,
+          "heading": 384,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3809,
+          "spawngroupId": 6018,
+          "name": "Syllina",
+          "displayName": "Syllina",
+          "level": 36,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Wizard",
+          "x": 79,
+          "y": 319,
+          "z": 17.129999,
+          "heading": 133,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3810,
+          "spawngroupId": 6019,
+          "name": "a_keeper",
+          "displayName": "A Keeper",
+          "level": 34,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Wizard",
+          "x": 27,
+          "y": 569,
+          "z": -49.130001,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3811,
+          "spawngroupId": 6020,
+          "name": "a_keeper",
+          "displayName": "A Keeper",
+          "level": 35,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Wizard",
+          "x": 43,
+          "y": 569,
+          "z": -49.130001,
+          "heading": 384,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3812,
+          "spawngroupId": 6020,
+          "name": "a_keeper",
+          "displayName": "A Keeper",
+          "level": 35,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Wizard",
+          "x": 67,
+          "y": 328,
+          "z": 28.75,
+          "heading": 479,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3813,
+          "spawngroupId": 6021,
+          "name": "a_keeper",
+          "displayName": "A Keeper",
+          "level": 34,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Wizard",
+          "x": 24,
+          "y": 499,
+          "z": -36.130001,
+          "heading": 325,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3814,
+          "spawngroupId": 6022,
+          "name": "Tazgar",
+          "displayName": "Tazgar",
+          "level": 44,
+          "race": "Efreeti",
+          "rawRace": "Efreeti",
+          "className": "Warrior",
+          "x": 6.88,
+          "y": 500,
+          "z": -34.75,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 10800,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3815,
+          "spawngroupId": 6023,
+          "name": "a_ward_of_ro",
+          "displayName": "A Ward Of Ro",
+          "level": 35,
+          "race": "Imp",
+          "rawRace": "Imp",
+          "className": "Warrior",
+          "x": 6.5,
+          "y": 559.75,
+          "z": 16.879999,
+          "heading": 258.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3816,
+          "spawngroupId": 6024,
+          "name": "Solomen",
+          "displayName": "Solomen",
+          "level": 35,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Wizard",
+          "x": 80,
+          "y": 426,
+          "z": 31.75,
+          "heading": 447,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3817,
+          "spawngroupId": 6025,
+          "name": "Genni",
+          "displayName": "Genni",
+          "level": 34,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Wizard",
+          "x": -65,
+          "y": 434,
+          "z": 31.75,
+          "heading": 158,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3818,
+          "spawngroupId": 6128,
+          "name": "Sultin",
+          "displayName": "Sultin",
+          "level": 34,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Wizard",
+          "x": 77,
+          "y": 385,
+          "z": 17.129999,
+          "heading": 503,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3819,
+          "spawngroupId": 6129,
+          "name": "Romar_Sunto",
+          "displayName": "Romar Sunto",
+          "level": 34,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Wizard",
+          "x": 90,
+          "y": 393,
+          "z": 17.75,
+          "heading": 145,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3820,
+          "spawngroupId": 6130,
+          "name": "Moltak",
+          "displayName": "Moltak",
+          "level": 1,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Necromancer",
+          "x": -52,
+          "y": 335,
+          "z": 31.75,
+          "heading": 361,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3821,
+          "spawngroupId": 6131,
+          "name": "a_seeker",
+          "displayName": "A Seeker",
+          "level": 34,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Cleric",
+          "x": -61,
+          "y": 322,
+          "z": 31.75,
+          "heading": 364,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3822,
+          "spawngroupId": 6132,
+          "name": "a_keeper",
+          "displayName": "A Keeper",
+          "level": 34,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Wizard",
+          "x": 53,
+          "y": 322,
+          "z": 31.75,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3823,
+          "spawngroupId": 6133,
+          "name": "Blaize_the_Radiant",
+          "displayName": "Blaize The Radiant",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Cleric",
+          "x": -22.879999,
+          "y": 417,
+          "z": 3.75,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3824,
+          "spawngroupId": 6134,
+          "name": "Gavel_the_Temperant",
+          "displayName": "Gavel The Temperant",
+          "level": 40,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Cleric",
+          "x": 36,
+          "y": 417,
+          "z": 2.5,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3825,
+          "spawngroupId": 6135,
+          "name": "a_seeker",
+          "displayName": "A Seeker",
+          "level": 34,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Cleric",
+          "x": -3,
+          "y": 499,
+          "z": 17.75,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3826,
+          "spawngroupId": 6135,
+          "name": "a_seeker",
+          "displayName": "A Seeker",
+          "level": 34,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Cleric",
+          "x": -11,
+          "y": 499,
+          "z": -36.130001,
+          "heading": 178,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3827,
+          "spawngroupId": 6135,
+          "name": "a_seeker",
+          "displayName": "A Seeker",
+          "level": 34,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Cleric",
+          "x": 17,
+          "y": 499,
+          "z": 17.75,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3828,
+          "spawngroupId": 6136,
+          "name": "a_keeper",
+          "displayName": "A Keeper",
+          "level": 34,
+          "race": "Gnome",
+          "rawRace": "Gnome",
+          "className": "Wizard",
+          "x": 2,
+          "y": 371,
+          "z": 1.88,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3829,
+          "spawngroupId": 6137,
+          "name": "a_keeper",
+          "displayName": "A Keeper",
+          "level": 35,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Wizard",
+          "x": 12,
+          "y": 371,
+          "z": 3.75,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3830,
+          "spawngroupId": 6138,
+          "name": "Gardern",
+          "displayName": "Gardern",
+          "level": 35,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Wizard",
+          "x": -61,
+          "y": 433,
+          "z": 17.75,
+          "heading": 382,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3831,
+          "spawngroupId": 6139,
+          "name": "Joyce",
+          "displayName": "Joyce",
+          "level": 35,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Wizard",
+          "x": 77,
+          "y": 433,
+          "z": 17.75,
+          "heading": 382,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3832,
+          "spawngroupId": 6140,
+          "name": "a_keeper",
+          "displayName": "A Keeper",
+          "level": 35,
+          "race": "Gnome",
+          "rawRace": "Gnome",
+          "className": "Wizard",
+          "x": 29.879999,
+          "y": 370,
+          "z": 1.88,
+          "heading": 190,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3833,
+          "spawngroupId": 6140,
+          "name": "a_keeper",
+          "displayName": "A Keeper",
+          "level": 35,
+          "race": "Gnome",
+          "rawRace": "Gnome",
+          "className": "Wizard",
+          "x": -16,
+          "y": 370,
+          "z": 1.88,
+          "heading": 316,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3834,
+          "spawngroupId": 6141,
+          "name": "a_ward_of_ro",
+          "displayName": "A Ward Of Ro",
+          "level": 36,
+          "race": "Imp",
+          "rawRace": "Imp",
+          "className": "Warrior",
+          "x": -64.5,
+          "y": 340.630005,
+          "z": 1.88,
+          "heading": 3,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3835,
+          "spawngroupId": 6142,
+          "name": "Lord_Lyfyx_of_Burwood",
+          "displayName": "Lord Lyfyx Of Burwood",
+          "level": 45,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Paladin",
+          "x": 88.879997,
+          "y": 437,
+          "z": 17.75,
+          "heading": 270,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3836,
+          "spawngroupId": 6143,
+          "name": "Terblyn_Zelbus",
+          "displayName": "Terblyn Zelbus",
+          "level": 34,
+          "race": "Gnome",
+          "rawRace": "Gnome",
+          "className": "Banker",
+          "x": -73,
+          "y": 444,
+          "z": 15.88,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        }
+      ]
+    }
+  },
+  "details": {
+    "zoneSlug": "the-temple-of-solusek-ro",
+    "routeSlug": "soltemple",
+    "zoneName": "The Temple of Solusek Ro",
+    "sourceFile": "local-eqemu-database",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobGroups": [
+      {
+        "displayName": "Moltak",
+        "rawNames": [
+          "Moltak"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Necromancer": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Keeper",
+        "rawNames": [
+          "a_keeper"
+        ],
+        "count": 11,
+        "levelMin": 34,
+        "levelMax": 36,
+        "levels": [
+          34,
+          35,
+          36
+        ],
+        "raceCounts": {
+          "Gnome": 4,
+          "High Elf": 3,
+          "Erudite": 2,
+          "Human": 2
+        },
+        "rawRaceCounts": {
+          "Gnome": 4,
+          "High Elf": 3,
+          "Erudite": 2,
+          "Human": 2
+        },
+        "classCounts": {
+          "Wizard": 11
+        },
+        "typeCounts": {
+          "Spawn Slot": 11
+        }
+      },
+      {
+        "displayName": "A Seeker",
+        "rawNames": [
+          "a_seeker"
+        ],
+        "count": 7,
+        "levelMin": 34,
+        "levelMax": 34,
+        "levels": [
+          34
+        ],
+        "raceCounts": {
+          "Human": 7
+        },
+        "rawRaceCounts": {
+          "Human": 7
+        },
+        "classCounts": {
+          "Cleric": 7
+        },
+        "typeCounts": {
+          "Spawn Slot": 7
+        }
+      },
+      {
+        "displayName": "A Ward Of Ro",
+        "rawNames": [
+          "a_ward_of_ro"
+        ],
+        "count": 6,
+        "levelMin": 34,
+        "levelMax": 36,
+        "levels": [
+          34,
+          35,
+          36
+        ],
+        "raceCounts": {
+          "Imp": 6
+        },
+        "rawRaceCounts": {
+          "Imp": 6
+        },
+        "classCounts": {
+          "Warrior": 6
+        },
+        "typeCounts": {
+          "Spawn Slot": 6
+        }
+      },
+      {
+        "displayName": "Genni",
+        "rawNames": [
+          "Genni"
+        ],
+        "count": 1,
+        "levelMin": 34,
+        "levelMax": 34,
+        "levels": [
+          34
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Wizard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Ostorm",
+        "rawNames": [
+          "Ostorm"
+        ],
+        "count": 1,
+        "levelMin": 34,
+        "levelMax": 34,
+        "levels": [
+          34
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Wizard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Romar Sunto",
+        "rawNames": [
+          "Romar_Sunto"
+        ],
+        "count": 1,
+        "levelMin": 34,
+        "levelMax": 34,
+        "levels": [
+          34
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Wizard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Sultin",
+        "rawNames": [
+          "Sultin"
+        ],
+        "count": 1,
+        "levelMin": 34,
+        "levelMax": 34,
+        "levels": [
+          34
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Wizard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Terblyn Zelbus",
+        "rawNames": [
+          "Terblyn_Zelbus"
+        ],
+        "count": 1,
+        "levelMin": 34,
+        "levelMax": 34,
+        "levels": [
+          34
+        ],
+        "raceCounts": {
+          "Gnome": 1
+        },
+        "rawRaceCounts": {
+          "Gnome": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Torzan Searfire",
+        "rawNames": [
+          "Torzan_Searfire"
+        ],
+        "count": 1,
+        "levelMin": 34,
+        "levelMax": 34,
+        "levels": [
+          34
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Wizard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Vurgo",
+        "rawNames": [
+          "Vurgo"
+        ],
+        "count": 1,
+        "levelMin": 34,
+        "levelMax": 34,
+        "levels": [
+          34
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Wizard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "An Undead Knight",
+        "rawNames": [
+          "an_undead_knight"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Skeleton": 1
+        },
+        "rawRaceCounts": {
+          "Skeleton": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Gardern",
+        "rawNames": [
+          "Gardern"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Wizard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Joyce",
+        "rawNames": [
+          "Joyce"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Wizard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Solomen",
+        "rawNames": [
+          "Solomen"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Wizard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Vilissia",
+        "rawNames": [
+          "Vilissia"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Wizard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Cryssia Stardreamer",
+        "rawNames": [
+          "Cryssia_Stardreamer"
+        ],
+        "count": 1,
+        "levelMin": 36,
+        "levelMax": 36,
+        "levels": [
+          36
+        ],
+        "raceCounts": {
+          "Wood Elf": 1
+        },
+        "rawRaceCounts": {
+          "Wood Elf": 1
+        },
+        "classCounts": {
+          "Bard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Syllina",
+        "rawNames": [
+          "Syllina"
+        ],
+        "count": 1,
+        "levelMin": 36,
+        "levelMax": 36,
+        "levels": [
+          36
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Wizard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Vira",
+        "rawNames": [
+          "Vira"
+        ],
+        "count": 1,
+        "levelMin": 36,
+        "levelMax": 36,
+        "levels": [
+          36
+        ],
+        "raceCounts": {
+          "Gnome": 1
+        },
+        "rawRaceCounts": {
+          "Gnome": 1
+        },
+        "classCounts": {
+          "Wizard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Walthin Fireweaver",
+        "rawNames": [
+          "Walthin_Fireweaver"
+        ],
+        "count": 1,
+        "levelMin": 36,
+        "levelMax": 36,
+        "levels": [
+          36
+        ],
+        "raceCounts": {
+          "Half Elf": 1
+        },
+        "rawRaceCounts": {
+          "Half Elf": 1
+        },
+        "classCounts": {
+          "Bard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "An Undead Knight",
+        "rawNames": [
+          "an_undead_knight_"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Skeleton": 1
+        },
+        "rawRaceCounts": {
+          "Skeleton": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Blaize The Radiant",
+        "rawNames": [
+          "Blaize_the_Radiant"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Cleric": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Gavel The Temperant",
+        "rawNames": [
+          "Gavel_the_Temperant"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Cleric": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Lord Searfire",
+        "rawNames": [
+          "Lord_Searfire"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Tazgar",
+        "rawNames": [
+          "Tazgar"
+        ],
+        "count": 1,
+        "levelMin": 44,
+        "levelMax": 44,
+        "levels": [
+          44
+        ],
+        "raceCounts": {
+          "Efreeti": 1
+        },
+        "rawRaceCounts": {
+          "Efreeti": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Lon The Redeemed",
+        "rawNames": [
+          "Lon_the_Redeemed"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Rogue": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Lord Lyfyx Of Burwood",
+        "rawNames": [
+          "Lord_Lyfyx_of_Burwood"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      }
+    ],
+    "rows": [
+      {
+        "displayName": "Moltak",
+        "rawName": "Moltak",
+        "level": 1,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Necromancer",
+        "type": "Spawn Slot",
+        "x": -52,
+        "y": 335,
+        "z": 31.75,
+        "heading": 361,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3820,
+        "spawngroupId": 6130,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Keeper",
+        "rawName": "a_keeper",
+        "level": 34,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": 27,
+        "y": 569,
+        "z": -49.130001,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3810,
+        "spawngroupId": 6019,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Keeper",
+        "rawName": "a_keeper",
+        "level": 34,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": 24,
+        "y": 499,
+        "z": -36.130001,
+        "heading": 325,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3813,
+        "spawngroupId": 6021,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Keeper",
+        "rawName": "a_keeper",
+        "level": 34,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": 53,
+        "y": 322,
+        "z": 31.75,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3822,
+        "spawngroupId": 6132,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Keeper",
+        "rawName": "a_keeper",
+        "level": 34,
+        "race": "Gnome",
+        "rawRace": "Gnome",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": 2,
+        "y": 371,
+        "z": 1.88,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3828,
+        "spawngroupId": 6136,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Seeker",
+        "rawName": "a_seeker",
+        "level": 34,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": 39,
+        "y": 328,
+        "z": 28.75,
+        "heading": 43,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3791,
+        "spawngroupId": 6037,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Seeker",
+        "rawName": "a_seeker",
+        "level": 34,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": -33,
+        "y": 317,
+        "z": 31.75,
+        "heading": 166,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3793,
+        "spawngroupId": 6035,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Seeker",
+        "rawName": "a_seeker",
+        "level": 34,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": 35,
+        "y": 574,
+        "z": -49.130001,
+        "heading": 258,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3794,
+        "spawngroupId": 6035,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Seeker",
+        "rawName": "a_seeker",
+        "level": 34,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": -61,
+        "y": 322,
+        "z": 31.75,
+        "heading": 364,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3821,
+        "spawngroupId": 6131,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Seeker",
+        "rawName": "a_seeker",
+        "level": 34,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": -3,
+        "y": 499,
+        "z": 17.75,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3825,
+        "spawngroupId": 6135,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Seeker",
+        "rawName": "a_seeker",
+        "level": 34,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": -11,
+        "y": 499,
+        "z": -36.130001,
+        "heading": 178,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3826,
+        "spawngroupId": 6135,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Seeker",
+        "rawName": "a_seeker",
+        "level": 34,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": 17,
+        "y": 499,
+        "z": 17.75,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3827,
+        "spawngroupId": 6135,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Ward Of Ro",
+        "rawName": "a_ward_of_ro",
+        "level": 34,
+        "race": "Imp",
+        "rawRace": "Imp",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -24.629999,
+        "y": 370.630005,
+        "z": 1.88,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3799,
+        "spawngroupId": 6030,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Ward Of Ro",
+        "rawName": "a_ward_of_ro",
+        "level": 34,
+        "race": "Imp",
+        "rawRace": "Imp",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 89.75,
+        "y": 533.75,
+        "z": 29.879999,
+        "heading": 0.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3800,
+        "spawngroupId": 6030,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Ward Of Ro",
+        "rawName": "a_ward_of_ro",
+        "level": 34,
+        "race": "Imp",
+        "rawRace": "Imp",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 38,
+        "y": 357,
+        "z": 1.9,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3801,
+        "spawngroupId": 6030,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Genni",
+        "rawName": "Genni",
+        "level": 34,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -65,
+        "y": 434,
+        "z": 31.75,
+        "heading": 158,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3817,
+        "spawngroupId": 6025,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Ostorm",
+        "rawName": "Ostorm",
+        "level": 34,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -79,
+        "y": 437,
+        "z": 31.75,
+        "heading": 181,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3805,
+        "spawngroupId": 6026,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Romar Sunto",
+        "rawName": "Romar_Sunto",
+        "level": 34,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": 90,
+        "y": 393,
+        "z": 17.75,
+        "heading": 145,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3819,
+        "spawngroupId": 6129,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Sultin",
+        "rawName": "Sultin",
+        "level": 34,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": 77,
+        "y": 385,
+        "z": 17.129999,
+        "heading": 503,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3818,
+        "spawngroupId": 6128,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Terblyn Zelbus",
+        "rawName": "Terblyn_Zelbus",
+        "level": 34,
+        "race": "Gnome",
+        "rawRace": "Gnome",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -73,
+        "y": 444,
+        "z": 15.88,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3836,
+        "spawngroupId": 6143,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Torzan Searfire",
+        "rawName": "Torzan_Searfire",
+        "level": 34,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -75,
+        "y": 483,
+        "z": 31.75,
+        "heading": 129,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3802,
+        "spawngroupId": 6029,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Vurgo",
+        "rawName": "Vurgo",
+        "level": 34,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": 91,
+        "y": 356,
+        "z": 17.75,
+        "heading": 384,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3808,
+        "spawngroupId": 6015,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Keeper",
+        "rawName": "a_keeper",
+        "level": 35,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": 43,
+        "y": 569,
+        "z": -49.130001,
+        "heading": 384,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3811,
+        "spawngroupId": 6020,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Keeper",
+        "rawName": "a_keeper",
+        "level": 35,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": 67,
+        "y": 328,
+        "z": 28.75,
+        "heading": 479,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3812,
+        "spawngroupId": 6020,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Keeper",
+        "rawName": "a_keeper",
+        "level": 35,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": 12,
+        "y": 371,
+        "z": 3.75,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3829,
+        "spawngroupId": 6137,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Keeper",
+        "rawName": "a_keeper",
+        "level": 35,
+        "race": "Gnome",
+        "rawRace": "Gnome",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": 29.879999,
+        "y": 370,
+        "z": 1.88,
+        "heading": 190,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3832,
+        "spawngroupId": 6140,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Keeper",
+        "rawName": "a_keeper",
+        "level": 35,
+        "race": "Gnome",
+        "rawRace": "Gnome",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -16,
+        "y": 370,
+        "z": 1.88,
+        "heading": 316,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3833,
+        "spawngroupId": 6140,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Ward Of Ro",
+        "rawName": "a_ward_of_ro",
+        "level": 35,
+        "race": "Imp",
+        "rawRace": "Imp",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 6.5,
+        "y": 559.75,
+        "z": 16.879999,
+        "heading": 258.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3815,
+        "spawngroupId": 6023,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Undead Knight",
+        "rawName": "an_undead_knight",
+        "level": 35,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 81,
+        "y": 406,
+        "z": 31.75,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3789,
+        "spawngroupId": 6039,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Gardern",
+        "rawName": "Gardern",
+        "level": 35,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -61,
+        "y": 433,
+        "z": 17.75,
+        "heading": 382,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3830,
+        "spawngroupId": 6138,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Joyce",
+        "rawName": "Joyce",
+        "level": 35,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": 77,
+        "y": 433,
+        "z": 17.75,
+        "heading": 382,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3831,
+        "spawngroupId": 6139,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Solomen",
+        "rawName": "Solomen",
+        "level": 35,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": 80,
+        "y": 426,
+        "z": 31.75,
+        "heading": 447,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3816,
+        "spawngroupId": 6024,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Vilissia",
+        "rawName": "Vilissia",
+        "level": 35,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -80,
+        "y": 434,
+        "z": 17.75,
+        "heading": 144,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3806,
+        "spawngroupId": 6016,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Keeper",
+        "rawName": "a_keeper",
+        "level": 36,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": 3,
+        "y": 329.880005,
+        "z": 3.75,
+        "heading": 265,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3795,
+        "spawngroupId": 6034,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Keeper",
+        "rawName": "a_keeper",
+        "level": 36,
+        "race": "Gnome",
+        "rawRace": "Gnome",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": 11.88,
+        "y": 329.880005,
+        "z": 1.88,
+        "heading": 265,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3797,
+        "spawngroupId": 6032,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Ward Of Ro",
+        "rawName": "a_ward_of_ro",
+        "level": 36,
+        "race": "Imp",
+        "rawRace": "Imp",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 38,
+        "y": 369.75,
+        "z": 1.9,
+        "heading": 11.5,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 3798,
+        "spawngroupId": 6031,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Ward Of Ro",
+        "rawName": "a_ward_of_ro",
+        "level": 36,
+        "race": "Imp",
+        "rawRace": "Imp",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -64.5,
+        "y": 340.630005,
+        "z": 1.88,
+        "heading": 3,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3834,
+        "spawngroupId": 6141,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Cryssia Stardreamer",
+        "rawName": "Cryssia_Stardreamer",
+        "level": 36,
+        "race": "Wood Elf",
+        "rawRace": "Wood Elf",
+        "className": "Bard",
+        "type": "Spawn Slot",
+        "x": -44,
+        "y": 417,
+        "z": 3.13,
+        "heading": 51,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3804,
+        "spawngroupId": 6027,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Syllina",
+        "rawName": "Syllina",
+        "level": 36,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": 79,
+        "y": 319,
+        "z": 17.129999,
+        "heading": 133,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3809,
+        "spawngroupId": 6018,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Vira",
+        "rawName": "Vira",
+        "level": 36,
+        "race": "Gnome",
+        "rawRace": "Gnome",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": 91,
+        "y": 411,
+        "z": 15.88,
+        "heading": 487,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3807,
+        "spawngroupId": 6017,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Walthin Fireweaver",
+        "rawName": "Walthin_Fireweaver",
+        "level": 36,
+        "race": "Half Elf",
+        "rawRace": "Half Elf",
+        "className": "Bard",
+        "type": "Spawn Slot",
+        "x": -53.880001,
+        "y": 430,
+        "z": 3.38,
+        "heading": 90,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3803,
+        "spawngroupId": 6028,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Undead Knight",
+        "rawName": "an_undead_knight_",
+        "level": 40,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 78,
+        "y": 442,
+        "z": 31.75,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3790,
+        "spawngroupId": 6038,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Blaize The Radiant",
+        "rawName": "Blaize_the_Radiant",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": -22.879999,
+        "y": 417,
+        "z": 3.75,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3823,
+        "spawngroupId": 6133,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Gavel The Temperant",
+        "rawName": "Gavel_the_Temperant",
+        "level": 40,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": 36,
+        "y": 417,
+        "z": 2.5,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3824,
+        "spawngroupId": 6134,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Lord Searfire",
+        "rawName": "Lord_Searfire",
+        "level": 40,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": 88,
+        "y": 482,
+        "z": 30.5,
+        "heading": 2.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3792,
+        "spawngroupId": 6036,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Tazgar",
+        "rawName": "Tazgar",
+        "level": 44,
+        "race": "Efreeti",
+        "rawRace": "Efreeti",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 6.88,
+        "y": 500,
+        "z": -34.75,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 10800,
+        "spawn2Id": 3814,
+        "spawngroupId": 6022,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Lon The Redeemed",
+        "rawName": "Lon_the_Redeemed",
+        "level": 45,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -17,
+        "y": 553,
+        "z": 19.129999,
+        "heading": 187,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3796,
+        "spawngroupId": 6033,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Lord Lyfyx Of Burwood",
+        "rawName": "Lord_Lyfyx_of_Burwood",
+        "level": 45,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": 88.879997,
+        "y": 437,
+        "z": 17.75,
+        "heading": 270,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 3835,
+        "spawngroupId": 6142,
+        "candidateCount": 1
+      }
+    ]
+  }
+}

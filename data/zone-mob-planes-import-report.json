@@ -1,0 +1,78 @@
+{
+  "sourceDirectory": "C:\\frostreaver stuff\\data\\zone-mob-csv-source\\planes",
+  "processedFiles": [
+    "airplane.csv",
+    "fearplane.csv",
+    "growthplane.csv",
+    "hateplaneb.csv",
+    "mischiefplane.csv"
+  ],
+  "skippedFiles": [],
+  "rowsProcessed": 1294,
+  "rowsWithInvalidOrMissingLevels": 0,
+  "matchedZones": [
+    {
+      "zoneSlug": "plane-of-sky",
+      "zoneName": "Plane of Sky",
+      "sourceFile": "airplane.csv"
+    },
+    {
+      "zoneSlug": "plane-of-fear",
+      "zoneName": "Plane of Fear",
+      "sourceFile": "fearplane.csv"
+    },
+    {
+      "zoneSlug": "plane-of-growth",
+      "zoneName": "Plane of Growth",
+      "sourceFile": "growthplane.csv"
+    },
+    {
+      "zoneSlug": "plane-of-hate",
+      "zoneName": "Plane of Hate",
+      "sourceFile": "hateplaneb.csv"
+    },
+    {
+      "zoneSlug": "plane-of-mischief",
+      "zoneName": "Plane of Mischief",
+      "sourceFile": "mischiefplane.csv"
+    }
+  ],
+  "unmatchedZones": [],
+  "aliasesUsed": [
+    {
+      "sourceFile": "airplane.csv",
+      "alias": "airplane",
+      "zoneName": "Plane of Sky",
+      "expansion": "Classic"
+    },
+    {
+      "sourceFile": "fearplane.csv",
+      "alias": "fearplane",
+      "zoneName": "Plane of Fear",
+      "expansion": "Classic"
+    },
+    {
+      "sourceFile": "growthplane.csv",
+      "alias": "growthplane",
+      "zoneName": "Plane of Growth",
+      "expansion": "Velious"
+    },
+    {
+      "sourceFile": "hateplaneb.csv",
+      "alias": "hateplaneb",
+      "zoneName": "Plane of Hate",
+      "expansion": "Classic"
+    },
+    {
+      "sourceFile": "mischiefplane.csv",
+      "alias": "mischiefplane",
+      "zoneName": "Plane of Mischief",
+      "expansion": "Velious"
+    }
+  ],
+  "countsByExpansion": {
+    "Classic": 3,
+    "Velious": 2
+  },
+  "note": "Imported into Zone Snapshot generated JSON only. Real Spawn Data exports are separate and were not modified."
+}

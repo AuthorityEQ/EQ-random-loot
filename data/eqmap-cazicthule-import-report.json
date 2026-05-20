@@ -1,0 +1,53 @@
+{
+  "shortnameAttempts": [
+    {
+      "shortName": "cazicthule",
+      "sourceUrl": "https://eqmap.vercel.app/zones/cazicthule.json",
+      "ok": true,
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "textLength": 152805
+    },
+    {
+      "shortName": "cthule",
+      "sourceUrl": "https://eqmap.vercel.app/zones/cthule.json",
+      "ok": false,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "textLength": 636
+    },
+    {
+      "shortName": "cazicthule1",
+      "sourceUrl": "https://eqmap.vercel.app/zones/cazicthule1.json",
+      "ok": false,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "textLength": 636
+    },
+    {
+      "shortName": "cazicthule2",
+      "sourceUrl": "https://eqmap.vercel.app/zones/cazicthule2.json",
+      "ok": false,
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "textLength": 636
+    }
+  ],
+  "selectedShortname": "cazicthule",
+  "sourceUrl": "https://eqmap.vercel.app/zones/cazicthule.json",
+  "spawnGroupsImported": 176,
+  "candidatesImported": 757,
+  "primaryRepresentativeCount": 176,
+  "oldCsvCazicThuleHidden": true,
+  "missingFields": {
+    "primaryWithoutLevel": 0,
+    "primaryWithoutRace": 0,
+    "primaryWithoutClass": 1,
+    "primaryWithoutCoordinates": 0
+  },
+  "uncertainties": [
+    "EQMap data appears PEQ/EQEmu-derived and should be treated as likely 1.0/classic approximation, not authoritative classic proof.",
+    "Highest-chance candidates are representative rows; lower-chance named or alternate candidates remain nested in the test output for debugging.",
+    "Reuse/license terms are unclear from the static app assets."
+  ]
+}

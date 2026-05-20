@@ -1,0 +1,351 @@
+{
+  "generatedAt": "2026-05-19",
+  "scope": [
+    "/zones",
+    "/zones/[slug]",
+    "Real Spawn Data",
+    "spawn maps",
+    "item inspect previews",
+    "crafting",
+    "picks",
+    "raid and item pages",
+    "Vercel-sensitive API routes"
+  ],
+  "summary": {
+    "overallReadiness": "Mostly launch-ready for static browsing, with specific high-risk areas around Real Spawn Data payloads, dynamic API endpoints, and large static assets.",
+    "staticClientSideStatus": "Most heavy filtering/search behavior is client-side after initial page/data load. /zones is static. /picks and crafting filtering are client-side. Spawn-map interaction is client-side and should not trigger server calls.",
+    "primaryRisk": "Real Spawn Data detail pages can currently read and serialize very large per-zone loot/detail JSON through the dynamic /zones/[slug] route when source=spawns is active.",
+    "recommendedLaunchPosture": "Keep the current UI stable, avoid broad rewrites before launch, and prioritize payload splitting/caching for the few systems that can create large Vercel Function or data-transfer spikes."
+  },
+  "measuredPayloads": {
+    "largestRuntimeDataFiles": [
+      {
+        "path": "data/item-details.json",
+        "bytes": 6265673,
+        "risk": "Large client import risk when pulled into interactive components."
+      },
+      {
+        "path": "data/crafting-spell-research-recipes.json",
+        "bytes": 5394219,
+        "risk": "Adds significant payload to crafting route if bundled or serialized eagerly."
+      },
+      {
+        "path": "data/spells.json",
+        "bytes": 3752467,
+        "risk": "Moderate route payload for spell browsing."
+      },
+      {
+        "path": "data/crafting-recipes.json",
+        "bytes": 1670509,
+        "risk": "Acceptable but should remain route-scoped."
+      },
+      {
+        "path": "data/eqemu-real-spawn-zone-summaries.json",
+        "bytes": 1228941,
+        "risk": "Loaded by /zones Real Spawn mode; acceptable for now but worth watching."
+      },
+      {
+        "path": "data/zone-mob-summaries.json",
+        "bytes": 858623,
+        "risk": "Acceptable snapshot summary payload."
+      },
+      {
+        "path": "data/zone-mob-details.json",
+        "bytes": 15169254,
+        "risk": "Large detail source; should stay server-side or split by zone."
+      }
+    ],
+    "largestReportOrDebugFiles": [
+      {
+        "path": "data/eqemu-item-reconciliation-report.json",
+        "bytes": 48842390,
+        "risk": "Very large report/debug artifact. Keep out of client bundles and runtime imports."
+      },
+      {
+        "path": "data/eqemu-grimling-loot-test.json",
+        "bytes": 41183005,
+        "risk": "Large per-zone loot/debug file; dangerous if serialized into route payloads."
+      },
+      {
+        "path": "data/eqemu-dulak-loot-test.json",
+        "bytes": 39162749,
+        "risk": "Large per-zone loot/debug file; dangerous if serialized into route payloads."
+      },
+      {
+        "path": "data/eqemu-charasis-loot-test.json",
+        "bytes": 29234395,
+        "risk": "Large per-zone loot/debug file; dangerous if serialized into route payloads."
+      },
+      {
+        "path": "data/eqemu-sebilis-loot-test.json",
+        "bytes": 24181915,
+        "risk": "Large per-zone loot/debug file; dangerous if serialized into route payloads."
+      }
+    ],
+    "zoneMapAssets": {
+      "manifest": "data/zone-map-assets.json",
+      "manifestBytes": 89851,
+      "publicAssetDirectory": "public/zone-map-assets",
+      "assetCount": 185,
+      "totalBytesApprox": 55150000,
+      "largestAssets": [
+        {
+          "path": "public/zone-map-assets/sseru.json",
+          "bytes": 1053873
+        },
+        {
+          "path": "public/zone-map-assets/butcher.json",
+          "bytes": 1018312
+        },
+        {
+          "path": "public/zone-map-assets/lakeofillomen.json",
+          "bytes": 803907
+        },
+        {
+          "path": "public/zone-map-assets/poknowledge.json",
+          "bytes": 780343
+        },
+        {
+          "path": "public/zone-map-assets/trakanon.json",
+          "bytes": 773180
+        }
+      ],
+      "risk": "Good route splitting because map geometry is fetched per zone, but it adds one static asset request and bandwidth per map view."
+    },
+    "largePublicImages": [
+      {
+        "path": "public/loot-goblin-banner4.png",
+        "bytes": 2558125
+      },
+      {
+        "path": "public/new loot goblin background.png",
+        "bytes": 2458365
+      },
+      {
+        "path": "public/powerup.png",
+        "bytes": 2375567
+      },
+      {
+        "path": "public/loot gob3.png",
+        "bytes": 2371441
+      }
+    ]
+  },
+  "pageAudits": [
+    {
+      "page": "/zones",
+      "rendering": "Static route",
+      "dataLoading": "Imports snapshot summaries and Real Spawn summaries into the client-side explorer.",
+      "filtering": "Client-side search, expansion, level, race, and sort filtering.",
+      "risk": "Moderate client bundle/data size from Real Spawn summaries, but it should not create repeated server requests."
+    },
+    {
+      "page": "/zones/[slug]",
+      "rendering": "Dynamic route",
+      "dataLoading": "Zone Snapshot uses imported summary/detail data. Real Spawn mode reads per-zone summary/spawn/loot JSON from disk and passes data into the client component.",
+      "filtering": "Client-side after initial route load.",
+      "risk": "Critical for Real Spawn pages if large loot/debug files are serialized into the response."
+    },
+    {
+      "page": "Spawn maps",
+      "rendering": "Client-side SVG map interaction with lazy per-zone static JSON fetch.",
+      "dataLoading": "Map asset manifest is small; full map geometry fetches from public/zone-map-assets only when a map is shown.",
+      "filtering": "Client-side. Zoom, pan, hover, selection, and Z fading should not call the server.",
+      "risk": "Bandwidth and DOM/render cost for large maps. Edge request count increases by one static asset per map view."
+    },
+    {
+      "page": "Item inspect previews",
+      "rendering": "Client-side hover/click previews.",
+      "dataLoading": "No per-hover item fetch observed. Authenticated users may load/save preview settings through /api/user/settings.",
+      "filtering": "Not applicable.",
+      "risk": "Mousemove state updates can cause unnecessary rerenders; large item detail imports can increase route payload."
+    },
+    {
+      "page": "/crafting",
+      "rendering": "Static page with client-side CraftingTabs.",
+      "dataLoading": "Large recipe datasets and item details are available to the interactive client UI.",
+      "filtering": "Client-side tradeskill/category/search/trivial filters.",
+      "risk": "Large first-load payload, but low repeated server-request risk."
+    },
+    {
+      "page": "/picks",
+      "rendering": "Client-side page.",
+      "dataLoading": "Pick zone data and compact zone snapshots are loaded locally.",
+      "filtering": "Client-side filter/search behavior.",
+      "risk": "Low server load risk; watch page weight if more summaries are added."
+    },
+    {
+      "page": "Raid/item pages",
+      "rendering": "Mostly static/generated pages and client item previews.",
+      "dataLoading": "Raid/group data is relatively small compared with crafting/zones.",
+      "filtering": "Mostly client-side browsing and hover previews.",
+      "risk": "Low to moderate. Main risk is shared item preview data weight."
+    }
+  ],
+  "vercelSensitiveAreas": {
+    "edgeRequests": [
+      "Every static map JSON fetch under public/zone-map-assets adds an Edge Request.",
+      "Large PNG hero/background assets can add substantial data transfer under a traffic spike.",
+      "Item preview settings, user settings, and auth-related calls can add API requests for signed-in users."
+    ],
+    "functionInvocations": [
+      "/zones/[slug] is dynamic and can invoke server logic per request.",
+      "/api/status has revalidate=0 behavior and can become expensive if polled frequently.",
+      "/api/bonus/reports uses no-store DB-backed behavior and should not be auto-polled under load.",
+      "/api/user/settings is useful but can fan out across providers/components for authenticated users."
+    ],
+    "isrReads": [
+      "Static API routes with revalidate=86400 are safer than no-store endpoints but still create cache activity when requested.",
+      "Mostly static pages should scale well if large dynamic routes are kept under control."
+    ],
+    "dataTransfer": [
+      "Real Spawn Data per-zone loot serialization is the largest data-transfer risk.",
+      "Map assets total roughly 55 MB across all zones, but are split per route.",
+      "Large public PNGs should be compressed before expected traffic increases."
+    ]
+  },
+  "findings": {
+    "criticalBeforeLaunch": [
+      {
+        "id": "CRIT-001",
+        "system": "Real Spawn Data zone detail pages",
+        "evidence": "app/zones/[slug]/page.tsx reads per-zone summary, spawn, and loot JSON when source=spawns. Several loot/debug files are tens of MB.",
+        "impact": "High Function response size, high data transfer, slower TTFB/hydration, and possible memory pressure during traffic spikes.",
+        "recommendation": "Do not serialize full per-zone loot/debug data by default. Split Real Spawn details into small per-zone summaries plus deferred per-mob/drop chunks, or a cached static JSON endpoint loaded only after expansion. Keep giant debug/report files out of route payloads."
+      },
+      {
+        "id": "CRIT-002",
+        "system": "/api/status",
+        "evidence": "The status endpoint is configured as no-store/revalidate=0.",
+        "impact": "If the UI or external monitors poll this frequently, Function Invocations can spike quickly.",
+        "recommendation": "Add short TTL caching, avoid client polling, or move frequent health checks to a lightweight static/edge-safe response."
+      },
+      {
+        "id": "CRIT-003",
+        "system": "/api/bonus/reports",
+        "evidence": "Bonus reports are DB-backed and fetched with cache: no-store.",
+        "impact": "Admin/report views can produce repeated Function Invocations and database load during launch traffic.",
+        "recommendation": "Avoid auto-refresh, paginate/cap report queries, add short server-side caching where safe, and keep the route gated."
+      },
+      {
+        "id": "CRIT-004",
+        "system": "Large public images",
+        "evidence": "Several public PNG assets are 2.3-2.6 MB.",
+        "impact": "High bandwidth and slower first page loads if these are widely requested.",
+        "recommendation": "Convert large PNGs to WebP/AVIF, use responsive image sizes, and avoid loading non-critical art above the fold."
+      }
+    ],
+    "recommendedSoon": [
+      {
+        "id": "REC-001",
+        "system": "Spawn map geometry",
+        "evidence": "185 per-zone map JSON assets total about 55 MB; 26 are over 500 KB and one exceeds 1 MB.",
+        "impact": "Good route splitting, but map-heavy traffic increases static asset requests and bandwidth.",
+        "recommendation": "Keep map loading deferred to Real Spawn mode, simplify/quantize geometry where possible, load only the active layer first, and consider canvas rendering for very large maps."
+      },
+      {
+        "id": "REC-002",
+        "system": "ZoneDetailExplorer client bundle",
+        "evidence": "ZoneDetailExplorer imports large supporting datasets including item details and map/debug metadata.",
+        "impact": "Large hydration payload and slower client startup on zone detail pages.",
+        "recommendation": "Move item detail lookup and native map debug data behind dynamic imports or per-zone/per-item lazy chunks."
+      },
+      {
+        "id": "REC-003",
+        "system": "Item preview hover behavior",
+        "evidence": "Hover previews are client-side, but mousemove can update preview state frequently.",
+        "impact": "CPU churn on pages with many item rows, especially while users move the mouse across dense drop lists.",
+        "recommendation": "Throttle position updates or update only when cursor movement exceeds a small threshold."
+      },
+      {
+        "id": "REC-004",
+        "system": "Crafting route payload",
+        "evidence": "Crafting recipe data plus spell research recipes exceed 7 MB before item details.",
+        "impact": "Large initial route payload for crafting users.",
+        "recommendation": "Split crafting data by tradeskill or load inactive tradeskills lazily after first render."
+      },
+      {
+        "id": "REC-005",
+        "system": "Zone Snapshot details",
+        "evidence": "zone-mob-details.json is about 15 MB.",
+        "impact": "Safe if server-only, risky if accidentally imported into client components.",
+        "recommendation": "Keep detail rows route-scoped or split by zone to reduce accidental client bundling and server memory overhead."
+      },
+      {
+        "id": "REC-006",
+        "system": "Real Spawn map SVG rendering",
+        "evidence": "Some maps render thousands of line elements plus spawn dots.",
+        "impact": "Large DOM trees can lag on lower-end devices even without server load.",
+        "recommendation": "Memoize geometry, avoid rerendering static map lines on hover, and evaluate canvas for dense maps."
+      }
+    ],
+    "niceToHaveLater": [
+      {
+        "id": "NICE-001",
+        "system": "Performance budgets",
+        "recommendation": "Add bundle/data size budgets for major routes and static JSON assets."
+      },
+      {
+        "id": "NICE-002",
+        "system": "Runtime observability",
+        "recommendation": "Add lightweight web-vitals and route timing logs around /zones and Real Spawn pages during launch."
+      },
+      {
+        "id": "NICE-003",
+        "system": "Static JSON compression",
+        "recommendation": "Verify Brotli/gzip is active for public JSON files and consider pre-optimized map geometry formats."
+      },
+      {
+        "id": "NICE-004",
+        "system": "Report/data hygiene",
+        "recommendation": "Move very large investigation reports out of runtime-adjacent data folders or clearly prevent imports from app code."
+      },
+      {
+        "id": "NICE-005",
+        "system": "Service worker or persistent client cache",
+        "recommendation": "Cache map JSON and large lookup chunks client-side for repeat zone browsing sessions."
+      }
+    ]
+  },
+  "quickWins": [
+    "Compress or replace the largest PNG assets before the traffic spike.",
+    "Ensure Real Spawn map geometry only loads when Real Spawn mode is active.",
+    "Avoid polling /api/status and /api/bonus/reports from public pages.",
+    "Keep map/debug/report files out of client imports.",
+    "Throttle item preview mousemove updates.",
+    "Add a cap or lazy-load boundary before rendering deep spawn/drop details."
+  ],
+  "safeOptimizationPlan": [
+    {
+      "phase": "Before launch",
+      "actions": [
+        "Split or defer Real Spawn loot payloads on /zones/[slug]?source=spawns.",
+        "Compress large public images.",
+        "Audit no-store API routes for accidental public polling.",
+        "Confirm map assets are fetched only on Real Spawn map views."
+      ]
+    },
+    {
+      "phase": "Soon after launch",
+      "actions": [
+        "Shard item details and crafting data by route/use case.",
+        "Move large debug indexes behind lazy imports or remove them from client components.",
+        "Add telemetry for route payload size, map load time, and client render time."
+      ]
+    },
+    {
+      "phase": "Later",
+      "actions": [
+        "Evaluate canvas rendering for dense maps.",
+        "Add service-worker caching for static zone-map assets.",
+        "Introduce formal data-size budgets in CI."
+      ]
+    }
+  ],
+  "behaviorChangeStatus": {
+    "majorRefactorsMade": false,
+    "uiBehaviorChanged": false,
+    "dataFilesMutatedBeyondReport": false,
+    "notes": "This audit intentionally records risks and recommendations without changing application behavior."
+  }
+}

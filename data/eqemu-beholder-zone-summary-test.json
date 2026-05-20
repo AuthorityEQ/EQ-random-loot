@@ -1,0 +1,2040 @@
+{
+  "summary": {
+    "zoneSlug": "gorge-of-king-xorbb",
+    "zoneName": "Gorge of King Xorbb",
+    "requestedZoneShortName": "beholder",
+    "zoneShortName": "beholder",
+    "sourceFile": "local-eqemu-database",
+    "matched": true,
+    "expansion": "Classic",
+    "eqemuExpansionId": 0,
+    "expansionSource": "eqemu-zone-table",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobCount": 45,
+    "unknownLevelCount": 0,
+    "minLevel": 8,
+    "maxLevel": 61,
+    "averageLevel": 14.6,
+    "medianLevel": 12,
+    "levelCounts": {
+      "8": 4,
+      "9": 1,
+      "10": 6,
+      "11": 7,
+      "12": 5,
+      "14": 6,
+      "16": 10,
+      "19": 1,
+      "20": 1,
+      "21": 1,
+      "22": 1,
+      "30": 1,
+      "61": 1
+    },
+    "levelBuckets": {
+      "1-10": 11,
+      "11-20": 30,
+      "21-30": 3,
+      "31-40": 0,
+      "41-50": 0,
+      "51-60": 0,
+      "61+": 1
+    },
+    "levelProfileLabel": "Wide level spread",
+    "mobGroupNameCounts": {
+      "A Muddite Minor": 15,
+      "A Muddite Elder": 9,
+      "A Gorge Minotaur": 7,
+      "A Goblin Sentry": 4,
+      "A Goblin Lookout": 3,
+      "A Chasm Minotaur": 2,
+      "A Muddite Recordkeeper": 1,
+      "Diggs Duggun": 1,
+      "Lord Soptyvr": 1,
+      "Lord Sviir": 1,
+      "Lord Syrkl": 1
+    },
+    "classCounts": {
+      "Warrior": 41,
+      "Enchanter": 3,
+      "Rogue": 1
+    },
+    "raceCounts": {
+      "Golem": 25,
+      "Minotaur": 9,
+      "Goblin": 7,
+      "Evil Eye": 3,
+      "Dwarf": 1
+    },
+    "normalizedRaceCounts": {
+      "Golem": 25,
+      "Minotaur": 9,
+      "Goblin": 7,
+      "Evil Eye": 3,
+      "Dwarf": 1
+    },
+    "normalizedRaceLevelCounts": {
+      "Dwarf": {
+        "61": 1
+      },
+      "Evil Eye": {
+        "21": 1,
+        "22": 1,
+        "30": 1
+      },
+      "Goblin": {
+        "8": 4,
+        "9": 1,
+        "10": 2
+      },
+      "Golem": {
+        "10": 4,
+        "11": 7,
+        "12": 5,
+        "14": 3,
+        "16": 6
+      },
+      "Minotaur": {
+        "14": 3,
+        "16": 4,
+        "19": 1,
+        "20": 1
+      }
+    },
+    "raceAliases": {
+      "Dwarf": [
+        "Dwarf"
+      ],
+      "Evil Eye": [
+        "Evil Eye"
+      ],
+      "Goblin": [
+        "Goblin"
+      ],
+      "Golem": [
+        "Golem"
+      ],
+      "Minotaur": [
+        "Minotaur"
+      ]
+    },
+    "typeCounts": {
+      "Spawn Slot": 45
+    },
+    "notes": [
+      "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+      "Read-only test export; not wired into production /zones data."
+    ],
+    "spawnMapPrototype": {
+      "sourceKind": "Local EQEmu/PEQ database export",
+      "coordinateNote": "Original EQEmu spawn2 x/y/z coordinates are preserved for map prototyping.",
+      "points": [
+        {
+          "spawn2Id": 7919,
+          "spawngroupId": 134,
+          "name": "a_gorge_minotaur",
+          "displayName": "A Gorge Minotaur",
+          "level": 16,
+          "race": "Minotaur",
+          "rawRace": "Minotaur",
+          "className": "Warrior",
+          "x": -564.5,
+          "y": -3.88,
+          "z": 15.9,
+          "heading": 135,
+          "chance": 100,
+          "respawnTime": 300,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 7920,
+          "spawngroupId": 134,
+          "name": "a_gorge_minotaur",
+          "displayName": "A Gorge Minotaur",
+          "level": 16,
+          "race": "Minotaur",
+          "rawRace": "Minotaur",
+          "className": "Warrior",
+          "x": -1187.130005,
+          "y": 1123,
+          "z": 7.25,
+          "heading": 36.25,
+          "chance": 100,
+          "respawnTime": 300,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 7921,
+          "spawngroupId": 134,
+          "name": "a_gorge_minotaur",
+          "displayName": "A Gorge Minotaur",
+          "level": 16,
+          "race": "Minotaur",
+          "rawRace": "Minotaur",
+          "className": "Warrior",
+          "x": -616.630005,
+          "y": 853.130005,
+          "z": 5.8,
+          "heading": 286.5,
+          "chance": 100,
+          "respawnTime": 300,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 7922,
+          "spawngroupId": 133,
+          "name": "a_goblin_lookout",
+          "displayName": "A Goblin Lookout",
+          "level": 8,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -1416,
+          "y": 718,
+          "z": 9.63,
+          "heading": 134,
+          "chance": 50,
+          "respawnTime": 300,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 7923,
+          "spawngroupId": 132,
+          "name": "a_muddite_minor",
+          "displayName": "A Muddite Minor",
+          "level": 10,
+          "race": "Golem",
+          "rawRace": "Golem",
+          "className": "Warrior",
+          "x": -761.75,
+          "y": 588.880005,
+          "z": -97.75,
+          "heading": 490,
+          "chance": 100,
+          "respawnTime": 300,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 7924,
+          "spawngroupId": 132,
+          "name": "a_muddite_minor",
+          "displayName": "A Muddite Minor",
+          "level": 10,
+          "race": "Golem",
+          "rawRace": "Golem",
+          "className": "Warrior",
+          "x": -428.630005,
+          "y": 629.380005,
+          "z": -97.75,
+          "heading": 456.5,
+          "chance": 100,
+          "respawnTime": 300,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 7925,
+          "spawngroupId": 132,
+          "name": "a_muddite_minor",
+          "displayName": "A Muddite Minor",
+          "level": 10,
+          "race": "Golem",
+          "rawRace": "Golem",
+          "className": "Warrior",
+          "x": -119.75,
+          "y": 358.380005,
+          "z": 6.88,
+          "heading": 511,
+          "chance": 100,
+          "respawnTime": 300,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 7926,
+          "spawngroupId": 132,
+          "name": "a_muddite_minor",
+          "displayName": "A Muddite Minor",
+          "level": 10,
+          "race": "Golem",
+          "rawRace": "Golem",
+          "className": "Warrior",
+          "x": -106.25,
+          "y": 296.880005,
+          "z": 3.38,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 300,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 7927,
+          "spawngroupId": 124,
+          "name": "a_muddite_elder",
+          "displayName": "A Muddite Elder",
+          "level": 16,
+          "race": "Golem",
+          "rawRace": "Golem",
+          "className": "Warrior",
+          "x": -1228.5,
+          "y": 910.75,
+          "z": 4.9,
+          "heading": 42.5,
+          "chance": 100,
+          "respawnTime": 300,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 7928,
+          "spawngroupId": 124,
+          "name": "a_muddite_elder",
+          "displayName": "A Muddite Elder",
+          "level": 16,
+          "race": "Golem",
+          "rawRace": "Golem",
+          "className": "Warrior",
+          "x": -520.630005,
+          "y": 439.75,
+          "z": -94.129997,
+          "heading": 511,
+          "chance": 100,
+          "respawnTime": 300,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 7929,
+          "spawngroupId": 124,
+          "name": "a_muddite_elder",
+          "displayName": "A Muddite Elder",
+          "level": 16,
+          "race": "Golem",
+          "rawRace": "Golem",
+          "className": "Warrior",
+          "x": 546.75,
+          "y": 842.130005,
+          "z": 7.38,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 300,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 7930,
+          "spawngroupId": 124,
+          "name": "a_muddite_elder",
+          "displayName": "A Muddite Elder",
+          "level": 16,
+          "race": "Golem",
+          "rawRace": "Golem",
+          "className": "Warrior",
+          "x": -717.380005,
+          "y": 1162.5,
+          "z": 0.75,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 300,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 7931,
+          "spawngroupId": 130,
+          "name": "a_muddite_minor",
+          "displayName": "A Muddite Minor",
+          "level": 12,
+          "race": "Golem",
+          "rawRace": "Golem",
+          "className": "Warrior",
+          "x": -750.380005,
+          "y": 876.880005,
+          "z": 2,
+          "heading": 238,
+          "chance": 95,
+          "respawnTime": 300,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 7932,
+          "spawngroupId": 130,
+          "name": "a_muddite_minor",
+          "displayName": "A Muddite Minor",
+          "level": 12,
+          "race": "Golem",
+          "rawRace": "Golem",
+          "className": "Warrior",
+          "x": -165.5,
+          "y": 619.75,
+          "z": 7.5,
+          "heading": 0,
+          "chance": 95,
+          "respawnTime": 300,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 7933,
+          "spawngroupId": 130,
+          "name": "a_muddite_minor",
+          "displayName": "A Muddite Minor",
+          "level": 12,
+          "race": "Golem",
+          "rawRace": "Golem",
+          "className": "Warrior",
+          "x": -680.75,
+          "y": 1209.25,
+          "z": 5.13,
+          "heading": 511,
+          "chance": 95,
+          "respawnTime": 300,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 7934,
+          "spawngroupId": 130,
+          "name": "a_muddite_minor",
+          "displayName": "A Muddite Minor",
+          "level": 12,
+          "race": "Golem",
+          "rawRace": "Golem",
+          "className": "Warrior",
+          "x": -381.380005,
+          "y": 842.880005,
+          "z": 7.75,
+          "heading": 0,
+          "chance": 95,
+          "respawnTime": 300,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 7935,
+          "spawngroupId": 130,
+          "name": "a_muddite_minor",
+          "displayName": "A Muddite Minor",
+          "level": 12,
+          "race": "Golem",
+          "rawRace": "Golem",
+          "className": "Warrior",
+          "x": -97.75,
+          "y": 548.880005,
+          "z": 1.63,
+          "heading": 511,
+          "chance": 95,
+          "respawnTime": 300,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 7936,
+          "spawngroupId": 129,
+          "name": "a_muddite_elder",
+          "displayName": "A Muddite Elder",
+          "level": 14,
+          "race": "Golem",
+          "rawRace": "Golem",
+          "className": "Warrior",
+          "x": 642.880005,
+          "y": 941.75,
+          "z": 8.8,
+          "heading": 471,
+          "chance": 90,
+          "respawnTime": 7200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 7937,
+          "spawngroupId": 129,
+          "name": "a_muddite_elder",
+          "displayName": "A Muddite Elder",
+          "level": 14,
+          "race": "Golem",
+          "rawRace": "Golem",
+          "className": "Warrior",
+          "x": -107.75,
+          "y": 389,
+          "z": 8,
+          "heading": 0,
+          "chance": 90,
+          "respawnTime": 7200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 7938,
+          "spawngroupId": 129,
+          "name": "a_muddite_elder",
+          "displayName": "A Muddite Elder",
+          "level": 14,
+          "race": "Golem",
+          "rawRace": "Golem",
+          "className": "Warrior",
+          "x": -371.880005,
+          "y": 75.25,
+          "z": 12.75,
+          "heading": 0,
+          "chance": 90,
+          "respawnTime": 7200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 7939,
+          "spawngroupId": 128,
+          "name": "a_goblin_sentry",
+          "displayName": "A Goblin Sentry",
+          "level": 8,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -1906,
+          "y": 738,
+          "z": 41.299999,
+          "heading": 414,
+          "chance": 100,
+          "respawnTime": 300,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 7940,
+          "spawngroupId": 127,
+          "name": "a_goblin_lookout",
+          "displayName": "A Goblin Lookout",
+          "level": 8,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -1914,
+          "y": 691,
+          "z": -32767.880859,
+          "heading": 54,
+          "chance": 100,
+          "respawnTime": 300,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 7941,
+          "spawngroupId": 127,
+          "name": "a_goblin_lookout",
+          "displayName": "A Goblin Lookout",
+          "level": 8,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -335.380005,
+          "y": 941.380005,
+          "z": 2.75,
+          "heading": 511,
+          "chance": 100,
+          "respawnTime": 300,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 7942,
+          "spawngroupId": 126,
+          "name": "Diggs_Duggun",
+          "displayName": "Diggs Duggun",
+          "level": 61,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Rogue",
+          "x": -545,
+          "y": 1262,
+          "z": 5.13,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 300,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 7943,
+          "spawngroupId": 125,
+          "name": "a_goblin_sentry",
+          "displayName": "A Goblin Sentry",
+          "level": 10,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -1793.699951,
+          "y": 757.700012,
+          "z": 9.7,
+          "heading": 266.200012,
+          "chance": 22,
+          "respawnTime": 540,
+          "candidateCount": 5
+        },
+        {
+          "spawn2Id": 7944,
+          "spawngroupId": 124,
+          "name": "a_muddite_elder",
+          "displayName": "A Muddite Elder",
+          "level": 16,
+          "race": "Golem",
+          "rawRace": "Golem",
+          "className": "Warrior",
+          "x": -280.630005,
+          "y": 1154.380005,
+          "z": 16.879999,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 300,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 7945,
+          "spawngroupId": 123,
+          "name": "a_muddite_recordkeeper",
+          "displayName": "A Muddite Recordkeeper",
+          "level": 11,
+          "race": "Golem",
+          "rawRace": "Golem",
+          "className": "Warrior",
+          "x": -1829,
+          "y": 677,
+          "z": 6,
+          "heading": 97,
+          "chance": 34,
+          "respawnTime": 300,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 7946,
+          "spawngroupId": 122,
+          "name": "Lord_Sviir",
+          "displayName": "Lord Sviir",
+          "level": 22,
+          "race": "Evil Eye",
+          "rawRace": "Evil Eye",
+          "className": "Enchanter",
+          "x": -638,
+          "y": 538,
+          "z": -93,
+          "heading": 3,
+          "chance": 25,
+          "respawnTime": 300,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 7947,
+          "spawngroupId": 121,
+          "name": "Lord_Syrkl",
+          "displayName": "Lord Syrkl",
+          "level": 21,
+          "race": "Evil Eye",
+          "rawRace": "Evil Eye",
+          "className": "Enchanter",
+          "x": -562,
+          "y": 469,
+          "z": -93,
+          "heading": 111,
+          "chance": 20,
+          "respawnTime": 300,
+          "candidateCount": 6
+        },
+        {
+          "spawn2Id": 7948,
+          "spawngroupId": 120,
+          "name": "a_goblin_sentry",
+          "displayName": "A Goblin Sentry",
+          "level": 9,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -1895,
+          "y": 717,
+          "z": 3,
+          "heading": 123,
+          "chance": 20,
+          "respawnTime": 300,
+          "candidateCount": 6
+        },
+        {
+          "spawn2Id": 7949,
+          "spawngroupId": 119,
+          "name": "a_gorge_minotaur",
+          "displayName": "A Gorge Minotaur",
+          "level": 14,
+          "race": "Minotaur",
+          "rawRace": "Minotaur",
+          "className": "Warrior",
+          "x": -648,
+          "y": 376,
+          "z": -93,
+          "heading": 386,
+          "chance": 34,
+          "respawnTime": 300,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 7950,
+          "spawngroupId": 119,
+          "name": "a_gorge_minotaur",
+          "displayName": "A Gorge Minotaur",
+          "level": 14,
+          "race": "Minotaur",
+          "rawRace": "Minotaur",
+          "className": "Warrior",
+          "x": -725,
+          "y": 431,
+          "z": -93,
+          "heading": 224,
+          "chance": 34,
+          "respawnTime": 300,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 7951,
+          "spawngroupId": 118,
+          "name": "a_gorge_minotaur",
+          "displayName": "A Gorge Minotaur",
+          "level": 16,
+          "race": "Minotaur",
+          "rawRace": "Minotaur",
+          "className": "Warrior",
+          "x": -361.380005,
+          "y": 913.130005,
+          "z": -1.88,
+          "heading": 511,
+          "chance": 50,
+          "respawnTime": 300,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 7952,
+          "spawngroupId": 117,
+          "name": "a_goblin_sentry",
+          "displayName": "A Goblin Sentry",
+          "level": 10,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -1643,
+          "y": 385,
+          "z": 6,
+          "heading": 154,
+          "chance": 34,
+          "respawnTime": 300,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 7953,
+          "spawngroupId": 116,
+          "name": "a_chasm_minotaur",
+          "displayName": "A Chasm Minotaur",
+          "level": 19,
+          "race": "Minotaur",
+          "rawRace": "Minotaur",
+          "className": "Warrior",
+          "x": -885.880005,
+          "y": 66,
+          "z": -2.63,
+          "heading": 511,
+          "chance": 50,
+          "respawnTime": 300,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 7954,
+          "spawngroupId": 115,
+          "name": "a_muddite_minor",
+          "displayName": "A Muddite Minor",
+          "level": 11,
+          "race": "Golem",
+          "rawRace": "Golem",
+          "className": "Warrior",
+          "x": -224.25,
+          "y": 702.130005,
+          "z": 10.5,
+          "heading": 0,
+          "chance": 90,
+          "respawnTime": 300,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 7955,
+          "spawngroupId": 115,
+          "name": "a_muddite_minor",
+          "displayName": "A Muddite Minor",
+          "level": 11,
+          "race": "Golem",
+          "rawRace": "Golem",
+          "className": "Warrior",
+          "x": -535.130005,
+          "y": 400.75,
+          "z": -97.800003,
+          "heading": 351,
+          "chance": 90,
+          "respawnTime": 300,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 7956,
+          "spawngroupId": 115,
+          "name": "a_muddite_minor",
+          "displayName": "A Muddite Minor",
+          "level": 11,
+          "race": "Golem",
+          "rawRace": "Golem",
+          "className": "Warrior",
+          "x": -507.880005,
+          "y": 367.130005,
+          "z": -97.75,
+          "heading": 144,
+          "chance": 90,
+          "respawnTime": 300,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 7957,
+          "spawngroupId": 115,
+          "name": "a_muddite_minor",
+          "displayName": "A Muddite Minor",
+          "level": 11,
+          "race": "Golem",
+          "rawRace": "Golem",
+          "className": "Warrior",
+          "x": -1731.5,
+          "y": 442.130005,
+          "z": 25.379999,
+          "heading": 0,
+          "chance": 90,
+          "respawnTime": 300,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 7958,
+          "spawngroupId": 115,
+          "name": "a_muddite_minor",
+          "displayName": "A Muddite Minor",
+          "level": 11,
+          "race": "Golem",
+          "rawRace": "Golem",
+          "className": "Warrior",
+          "x": 252.5,
+          "y": 511.880005,
+          "z": 8.63,
+          "heading": 0,
+          "chance": 90,
+          "respawnTime": 300,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 7959,
+          "spawngroupId": 115,
+          "name": "a_muddite_minor",
+          "displayName": "A Muddite Minor",
+          "level": 11,
+          "race": "Golem",
+          "rawRace": "Golem",
+          "className": "Warrior",
+          "x": -1305.25,
+          "y": 679.380005,
+          "z": 18.629999,
+          "heading": 511,
+          "chance": 90,
+          "respawnTime": 300,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 7960,
+          "spawngroupId": 114,
+          "name": "a_muddite_elder",
+          "displayName": "A Muddite Elder",
+          "level": 16,
+          "race": "Golem",
+          "rawRace": "Golem",
+          "className": "Warrior",
+          "x": -864.75,
+          "y": 1068.380005,
+          "z": 16.629999,
+          "heading": 0,
+          "chance": 45,
+          "respawnTime": 7200,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 7961,
+          "spawngroupId": 113,
+          "name": "a_gorge_minotaur",
+          "displayName": "A Gorge Minotaur",
+          "level": 14,
+          "race": "Minotaur",
+          "rawRace": "Minotaur",
+          "className": "Warrior",
+          "x": -95.379997,
+          "y": 418.880005,
+          "z": 4.13,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 300,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 7962,
+          "spawngroupId": 5009,
+          "name": "a_chasm_minotaur",
+          "displayName": "A Chasm Minotaur",
+          "level": 20,
+          "race": "Minotaur",
+          "rawRace": "Minotaur",
+          "className": "Warrior",
+          "x": -207.25,
+          "y": 673.25,
+          "z": 5.5,
+          "heading": 511,
+          "chance": 50,
+          "respawnTime": 300,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 21935,
+          "spawngroupId": 13606,
+          "name": "Lord_Soptyvr",
+          "displayName": "Lord Soptyvr",
+          "level": 30,
+          "race": "Evil Eye",
+          "rawRace": "Evil Eye",
+          "className": "Enchanter",
+          "x": -603.750549,
+          "y": 492.810364,
+          "z": -68.772987,
+          "heading": 55.25,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        }
+      ]
+    }
+  },
+  "details": {
+    "zoneSlug": "gorge-of-king-xorbb",
+    "routeSlug": "beholder",
+    "zoneName": "Gorge of King Xorbb",
+    "sourceFile": "local-eqemu-database",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobGroups": [
+      {
+        "displayName": "A Goblin Sentry",
+        "rawNames": [
+          "a_goblin_sentry"
+        ],
+        "count": 4,
+        "levelMin": 8,
+        "levelMax": 10,
+        "levels": [
+          8,
+          9,
+          10
+        ],
+        "raceCounts": {
+          "Goblin": 4
+        },
+        "rawRaceCounts": {
+          "Goblin": 4
+        },
+        "classCounts": {
+          "Warrior": 4
+        },
+        "typeCounts": {
+          "Spawn Slot": 4
+        }
+      },
+      {
+        "displayName": "A Goblin Lookout",
+        "rawNames": [
+          "a_goblin_lookout"
+        ],
+        "count": 3,
+        "levelMin": 8,
+        "levelMax": 8,
+        "levels": [
+          8
+        ],
+        "raceCounts": {
+          "Goblin": 3
+        },
+        "rawRaceCounts": {
+          "Goblin": 3
+        },
+        "classCounts": {
+          "Warrior": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "A Muddite Minor",
+        "rawNames": [
+          "a_muddite_minor"
+        ],
+        "count": 15,
+        "levelMin": 10,
+        "levelMax": 12,
+        "levels": [
+          10,
+          11,
+          12
+        ],
+        "raceCounts": {
+          "Golem": 15
+        },
+        "rawRaceCounts": {
+          "Golem": 15
+        },
+        "classCounts": {
+          "Warrior": 15
+        },
+        "typeCounts": {
+          "Spawn Slot": 15
+        }
+      },
+      {
+        "displayName": "A Muddite Recordkeeper",
+        "rawNames": [
+          "a_muddite_recordkeeper"
+        ],
+        "count": 1,
+        "levelMin": 11,
+        "levelMax": 11,
+        "levels": [
+          11
+        ],
+        "raceCounts": {
+          "Golem": 1
+        },
+        "rawRaceCounts": {
+          "Golem": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Gorge Minotaur",
+        "rawNames": [
+          "a_gorge_minotaur"
+        ],
+        "count": 3,
+        "levelMin": 14,
+        "levelMax": 14,
+        "levels": [
+          14
+        ],
+        "raceCounts": {
+          "Minotaur": 3
+        },
+        "rawRaceCounts": {
+          "Minotaur": 3
+        },
+        "classCounts": {
+          "Warrior": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "A Muddite Elder",
+        "rawNames": [
+          "a_muddite_elder"
+        ],
+        "count": 3,
+        "levelMin": 14,
+        "levelMax": 14,
+        "levels": [
+          14
+        ],
+        "raceCounts": {
+          "Golem": 3
+        },
+        "rawRaceCounts": {
+          "Golem": 3
+        },
+        "classCounts": {
+          "Warrior": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "A Muddite Elder",
+        "rawNames": [
+          "a_muddite_elder"
+        ],
+        "count": 6,
+        "levelMin": 16,
+        "levelMax": 16,
+        "levels": [
+          16
+        ],
+        "raceCounts": {
+          "Golem": 6
+        },
+        "rawRaceCounts": {
+          "Golem": 6
+        },
+        "classCounts": {
+          "Warrior": 6
+        },
+        "typeCounts": {
+          "Spawn Slot": 6
+        }
+      },
+      {
+        "displayName": "A Gorge Minotaur",
+        "rawNames": [
+          "a_gorge_minotaur"
+        ],
+        "count": 4,
+        "levelMin": 16,
+        "levelMax": 16,
+        "levels": [
+          16
+        ],
+        "raceCounts": {
+          "Minotaur": 4
+        },
+        "rawRaceCounts": {
+          "Minotaur": 4
+        },
+        "classCounts": {
+          "Warrior": 4
+        },
+        "typeCounts": {
+          "Spawn Slot": 4
+        }
+      },
+      {
+        "displayName": "A Chasm Minotaur",
+        "rawNames": [
+          "a_chasm_minotaur"
+        ],
+        "count": 2,
+        "levelMin": 19,
+        "levelMax": 20,
+        "levels": [
+          19,
+          20
+        ],
+        "raceCounts": {
+          "Minotaur": 2
+        },
+        "rawRaceCounts": {
+          "Minotaur": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "Lord Syrkl",
+        "rawNames": [
+          "Lord_Syrkl"
+        ],
+        "count": 1,
+        "levelMin": 21,
+        "levelMax": 21,
+        "levels": [
+          21
+        ],
+        "raceCounts": {
+          "Evil Eye": 1
+        },
+        "rawRaceCounts": {
+          "Evil Eye": 1
+        },
+        "classCounts": {
+          "Enchanter": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Lord Sviir",
+        "rawNames": [
+          "Lord_Sviir"
+        ],
+        "count": 1,
+        "levelMin": 22,
+        "levelMax": 22,
+        "levels": [
+          22
+        ],
+        "raceCounts": {
+          "Evil Eye": 1
+        },
+        "rawRaceCounts": {
+          "Evil Eye": 1
+        },
+        "classCounts": {
+          "Enchanter": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Lord Soptyvr",
+        "rawNames": [
+          "Lord_Soptyvr"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Evil Eye": 1
+        },
+        "rawRaceCounts": {
+          "Evil Eye": 1
+        },
+        "classCounts": {
+          "Enchanter": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Diggs Duggun",
+        "rawNames": [
+          "Diggs_Duggun"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Rogue": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      }
+    ],
+    "rows": [
+      {
+        "displayName": "A Goblin Lookout",
+        "rawName": "a_goblin_lookout",
+        "level": 8,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1416,
+        "y": 718,
+        "z": 9.63,
+        "heading": 134,
+        "chance": 50,
+        "respawnTime": 300,
+        "spawn2Id": 7922,
+        "spawngroupId": 133,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Goblin Lookout",
+        "rawName": "a_goblin_lookout",
+        "level": 8,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1914,
+        "y": 691,
+        "z": -32767.880859,
+        "heading": 54,
+        "chance": 100,
+        "respawnTime": 300,
+        "spawn2Id": 7940,
+        "spawngroupId": 127,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Goblin Lookout",
+        "rawName": "a_goblin_lookout",
+        "level": 8,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -335.380005,
+        "y": 941.380005,
+        "z": 2.75,
+        "heading": 511,
+        "chance": 100,
+        "respawnTime": 300,
+        "spawn2Id": 7941,
+        "spawngroupId": 127,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Goblin Sentry",
+        "rawName": "a_goblin_sentry",
+        "level": 8,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1906,
+        "y": 738,
+        "z": 41.299999,
+        "heading": 414,
+        "chance": 100,
+        "respawnTime": 300,
+        "spawn2Id": 7939,
+        "spawngroupId": 128,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Goblin Sentry",
+        "rawName": "a_goblin_sentry",
+        "level": 9,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1895,
+        "y": 717,
+        "z": 3,
+        "heading": 123,
+        "chance": 20,
+        "respawnTime": 300,
+        "spawn2Id": 7948,
+        "spawngroupId": 120,
+        "candidateCount": 6
+      },
+      {
+        "displayName": "A Goblin Sentry",
+        "rawName": "a_goblin_sentry",
+        "level": 10,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1793.699951,
+        "y": 757.700012,
+        "z": 9.7,
+        "heading": 266.200012,
+        "chance": 22,
+        "respawnTime": 540,
+        "spawn2Id": 7943,
+        "spawngroupId": 125,
+        "candidateCount": 5
+      },
+      {
+        "displayName": "A Goblin Sentry",
+        "rawName": "a_goblin_sentry",
+        "level": 10,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1643,
+        "y": 385,
+        "z": 6,
+        "heading": 154,
+        "chance": 34,
+        "respawnTime": 300,
+        "spawn2Id": 7952,
+        "spawngroupId": 117,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Muddite Minor",
+        "rawName": "a_muddite_minor",
+        "level": 10,
+        "race": "Golem",
+        "rawRace": "Golem",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -761.75,
+        "y": 588.880005,
+        "z": -97.75,
+        "heading": 490,
+        "chance": 100,
+        "respawnTime": 300,
+        "spawn2Id": 7923,
+        "spawngroupId": 132,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Muddite Minor",
+        "rawName": "a_muddite_minor",
+        "level": 10,
+        "race": "Golem",
+        "rawRace": "Golem",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -428.630005,
+        "y": 629.380005,
+        "z": -97.75,
+        "heading": 456.5,
+        "chance": 100,
+        "respawnTime": 300,
+        "spawn2Id": 7924,
+        "spawngroupId": 132,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Muddite Minor",
+        "rawName": "a_muddite_minor",
+        "level": 10,
+        "race": "Golem",
+        "rawRace": "Golem",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -119.75,
+        "y": 358.380005,
+        "z": 6.88,
+        "heading": 511,
+        "chance": 100,
+        "respawnTime": 300,
+        "spawn2Id": 7925,
+        "spawngroupId": 132,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Muddite Minor",
+        "rawName": "a_muddite_minor",
+        "level": 10,
+        "race": "Golem",
+        "rawRace": "Golem",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -106.25,
+        "y": 296.880005,
+        "z": 3.38,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 300,
+        "spawn2Id": 7926,
+        "spawngroupId": 132,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Muddite Minor",
+        "rawName": "a_muddite_minor",
+        "level": 11,
+        "race": "Golem",
+        "rawRace": "Golem",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -224.25,
+        "y": 702.130005,
+        "z": 10.5,
+        "heading": 0,
+        "chance": 90,
+        "respawnTime": 300,
+        "spawn2Id": 7954,
+        "spawngroupId": 115,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Muddite Minor",
+        "rawName": "a_muddite_minor",
+        "level": 11,
+        "race": "Golem",
+        "rawRace": "Golem",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -535.130005,
+        "y": 400.75,
+        "z": -97.800003,
+        "heading": 351,
+        "chance": 90,
+        "respawnTime": 300,
+        "spawn2Id": 7955,
+        "spawngroupId": 115,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Muddite Minor",
+        "rawName": "a_muddite_minor",
+        "level": 11,
+        "race": "Golem",
+        "rawRace": "Golem",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -507.880005,
+        "y": 367.130005,
+        "z": -97.75,
+        "heading": 144,
+        "chance": 90,
+        "respawnTime": 300,
+        "spawn2Id": 7956,
+        "spawngroupId": 115,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Muddite Minor",
+        "rawName": "a_muddite_minor",
+        "level": 11,
+        "race": "Golem",
+        "rawRace": "Golem",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1731.5,
+        "y": 442.130005,
+        "z": 25.379999,
+        "heading": 0,
+        "chance": 90,
+        "respawnTime": 300,
+        "spawn2Id": 7957,
+        "spawngroupId": 115,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Muddite Minor",
+        "rawName": "a_muddite_minor",
+        "level": 11,
+        "race": "Golem",
+        "rawRace": "Golem",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 252.5,
+        "y": 511.880005,
+        "z": 8.63,
+        "heading": 0,
+        "chance": 90,
+        "respawnTime": 300,
+        "spawn2Id": 7958,
+        "spawngroupId": 115,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Muddite Minor",
+        "rawName": "a_muddite_minor",
+        "level": 11,
+        "race": "Golem",
+        "rawRace": "Golem",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1305.25,
+        "y": 679.380005,
+        "z": 18.629999,
+        "heading": 511,
+        "chance": 90,
+        "respawnTime": 300,
+        "spawn2Id": 7959,
+        "spawngroupId": 115,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Muddite Recordkeeper",
+        "rawName": "a_muddite_recordkeeper",
+        "level": 11,
+        "race": "Golem",
+        "rawRace": "Golem",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1829,
+        "y": 677,
+        "z": 6,
+        "heading": 97,
+        "chance": 34,
+        "respawnTime": 300,
+        "spawn2Id": 7945,
+        "spawngroupId": 123,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Muddite Minor",
+        "rawName": "a_muddite_minor",
+        "level": 12,
+        "race": "Golem",
+        "rawRace": "Golem",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -750.380005,
+        "y": 876.880005,
+        "z": 2,
+        "heading": 238,
+        "chance": 95,
+        "respawnTime": 300,
+        "spawn2Id": 7931,
+        "spawngroupId": 130,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Muddite Minor",
+        "rawName": "a_muddite_minor",
+        "level": 12,
+        "race": "Golem",
+        "rawRace": "Golem",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -165.5,
+        "y": 619.75,
+        "z": 7.5,
+        "heading": 0,
+        "chance": 95,
+        "respawnTime": 300,
+        "spawn2Id": 7932,
+        "spawngroupId": 130,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Muddite Minor",
+        "rawName": "a_muddite_minor",
+        "level": 12,
+        "race": "Golem",
+        "rawRace": "Golem",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -680.75,
+        "y": 1209.25,
+        "z": 5.13,
+        "heading": 511,
+        "chance": 95,
+        "respawnTime": 300,
+        "spawn2Id": 7933,
+        "spawngroupId": 130,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Muddite Minor",
+        "rawName": "a_muddite_minor",
+        "level": 12,
+        "race": "Golem",
+        "rawRace": "Golem",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -381.380005,
+        "y": 842.880005,
+        "z": 7.75,
+        "heading": 0,
+        "chance": 95,
+        "respawnTime": 300,
+        "spawn2Id": 7934,
+        "spawngroupId": 130,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Muddite Minor",
+        "rawName": "a_muddite_minor",
+        "level": 12,
+        "race": "Golem",
+        "rawRace": "Golem",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -97.75,
+        "y": 548.880005,
+        "z": 1.63,
+        "heading": 511,
+        "chance": 95,
+        "respawnTime": 300,
+        "spawn2Id": 7935,
+        "spawngroupId": 130,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Gorge Minotaur",
+        "rawName": "a_gorge_minotaur",
+        "level": 14,
+        "race": "Minotaur",
+        "rawRace": "Minotaur",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -648,
+        "y": 376,
+        "z": -93,
+        "heading": 386,
+        "chance": 34,
+        "respawnTime": 300,
+        "spawn2Id": 7949,
+        "spawngroupId": 119,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Gorge Minotaur",
+        "rawName": "a_gorge_minotaur",
+        "level": 14,
+        "race": "Minotaur",
+        "rawRace": "Minotaur",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -725,
+        "y": 431,
+        "z": -93,
+        "heading": 224,
+        "chance": 34,
+        "respawnTime": 300,
+        "spawn2Id": 7950,
+        "spawngroupId": 119,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Gorge Minotaur",
+        "rawName": "a_gorge_minotaur",
+        "level": 14,
+        "race": "Minotaur",
+        "rawRace": "Minotaur",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -95.379997,
+        "y": 418.880005,
+        "z": 4.13,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 300,
+        "spawn2Id": 7961,
+        "spawngroupId": 113,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Muddite Elder",
+        "rawName": "a_muddite_elder",
+        "level": 14,
+        "race": "Golem",
+        "rawRace": "Golem",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 642.880005,
+        "y": 941.75,
+        "z": 8.8,
+        "heading": 471,
+        "chance": 90,
+        "respawnTime": 7200,
+        "spawn2Id": 7936,
+        "spawngroupId": 129,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Muddite Elder",
+        "rawName": "a_muddite_elder",
+        "level": 14,
+        "race": "Golem",
+        "rawRace": "Golem",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -107.75,
+        "y": 389,
+        "z": 8,
+        "heading": 0,
+        "chance": 90,
+        "respawnTime": 7200,
+        "spawn2Id": 7937,
+        "spawngroupId": 129,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Muddite Elder",
+        "rawName": "a_muddite_elder",
+        "level": 14,
+        "race": "Golem",
+        "rawRace": "Golem",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -371.880005,
+        "y": 75.25,
+        "z": 12.75,
+        "heading": 0,
+        "chance": 90,
+        "respawnTime": 7200,
+        "spawn2Id": 7938,
+        "spawngroupId": 129,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Gorge Minotaur",
+        "rawName": "a_gorge_minotaur",
+        "level": 16,
+        "race": "Minotaur",
+        "rawRace": "Minotaur",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -564.5,
+        "y": -3.88,
+        "z": 15.9,
+        "heading": 135,
+        "chance": 100,
+        "respawnTime": 300,
+        "spawn2Id": 7919,
+        "spawngroupId": 134,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Gorge Minotaur",
+        "rawName": "a_gorge_minotaur",
+        "level": 16,
+        "race": "Minotaur",
+        "rawRace": "Minotaur",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1187.130005,
+        "y": 1123,
+        "z": 7.25,
+        "heading": 36.25,
+        "chance": 100,
+        "respawnTime": 300,
+        "spawn2Id": 7920,
+        "spawngroupId": 134,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Gorge Minotaur",
+        "rawName": "a_gorge_minotaur",
+        "level": 16,
+        "race": "Minotaur",
+        "rawRace": "Minotaur",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -616.630005,
+        "y": 853.130005,
+        "z": 5.8,
+        "heading": 286.5,
+        "chance": 100,
+        "respawnTime": 300,
+        "spawn2Id": 7921,
+        "spawngroupId": 134,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Gorge Minotaur",
+        "rawName": "a_gorge_minotaur",
+        "level": 16,
+        "race": "Minotaur",
+        "rawRace": "Minotaur",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -361.380005,
+        "y": 913.130005,
+        "z": -1.88,
+        "heading": 511,
+        "chance": 50,
+        "respawnTime": 300,
+        "spawn2Id": 7951,
+        "spawngroupId": 118,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Muddite Elder",
+        "rawName": "a_muddite_elder",
+        "level": 16,
+        "race": "Golem",
+        "rawRace": "Golem",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1228.5,
+        "y": 910.75,
+        "z": 4.9,
+        "heading": 42.5,
+        "chance": 100,
+        "respawnTime": 300,
+        "spawn2Id": 7927,
+        "spawngroupId": 124,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Muddite Elder",
+        "rawName": "a_muddite_elder",
+        "level": 16,
+        "race": "Golem",
+        "rawRace": "Golem",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -520.630005,
+        "y": 439.75,
+        "z": -94.129997,
+        "heading": 511,
+        "chance": 100,
+        "respawnTime": 300,
+        "spawn2Id": 7928,
+        "spawngroupId": 124,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Muddite Elder",
+        "rawName": "a_muddite_elder",
+        "level": 16,
+        "race": "Golem",
+        "rawRace": "Golem",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 546.75,
+        "y": 842.130005,
+        "z": 7.38,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 300,
+        "spawn2Id": 7929,
+        "spawngroupId": 124,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Muddite Elder",
+        "rawName": "a_muddite_elder",
+        "level": 16,
+        "race": "Golem",
+        "rawRace": "Golem",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -717.380005,
+        "y": 1162.5,
+        "z": 0.75,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 300,
+        "spawn2Id": 7930,
+        "spawngroupId": 124,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Muddite Elder",
+        "rawName": "a_muddite_elder",
+        "level": 16,
+        "race": "Golem",
+        "rawRace": "Golem",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -280.630005,
+        "y": 1154.380005,
+        "z": 16.879999,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 300,
+        "spawn2Id": 7944,
+        "spawngroupId": 124,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Muddite Elder",
+        "rawName": "a_muddite_elder",
+        "level": 16,
+        "race": "Golem",
+        "rawRace": "Golem",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -864.75,
+        "y": 1068.380005,
+        "z": 16.629999,
+        "heading": 0,
+        "chance": 45,
+        "respawnTime": 7200,
+        "spawn2Id": 7960,
+        "spawngroupId": 114,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Chasm Minotaur",
+        "rawName": "a_chasm_minotaur",
+        "level": 19,
+        "race": "Minotaur",
+        "rawRace": "Minotaur",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -885.880005,
+        "y": 66,
+        "z": -2.63,
+        "heading": 511,
+        "chance": 50,
+        "respawnTime": 300,
+        "spawn2Id": 7953,
+        "spawngroupId": 116,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Chasm Minotaur",
+        "rawName": "a_chasm_minotaur",
+        "level": 20,
+        "race": "Minotaur",
+        "rawRace": "Minotaur",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -207.25,
+        "y": 673.25,
+        "z": 5.5,
+        "heading": 511,
+        "chance": 50,
+        "respawnTime": 300,
+        "spawn2Id": 7962,
+        "spawngroupId": 5009,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Lord Syrkl",
+        "rawName": "Lord_Syrkl",
+        "level": 21,
+        "race": "Evil Eye",
+        "rawRace": "Evil Eye",
+        "className": "Enchanter",
+        "type": "Spawn Slot",
+        "x": -562,
+        "y": 469,
+        "z": -93,
+        "heading": 111,
+        "chance": 20,
+        "respawnTime": 300,
+        "spawn2Id": 7947,
+        "spawngroupId": 121,
+        "candidateCount": 6
+      },
+      {
+        "displayName": "Lord Sviir",
+        "rawName": "Lord_Sviir",
+        "level": 22,
+        "race": "Evil Eye",
+        "rawRace": "Evil Eye",
+        "className": "Enchanter",
+        "type": "Spawn Slot",
+        "x": -638,
+        "y": 538,
+        "z": -93,
+        "heading": 3,
+        "chance": 25,
+        "respawnTime": 300,
+        "spawn2Id": 7946,
+        "spawngroupId": 122,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "Lord Soptyvr",
+        "rawName": "Lord_Soptyvr",
+        "level": 30,
+        "race": "Evil Eye",
+        "rawRace": "Evil Eye",
+        "className": "Enchanter",
+        "type": "Spawn Slot",
+        "x": -603.750549,
+        "y": 492.810364,
+        "z": -68.772987,
+        "heading": 55.25,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 21935,
+        "spawngroupId": 13606,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Diggs Duggun",
+        "rawName": "Diggs_Duggun",
+        "level": 61,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -545,
+        "y": 1262,
+        "z": 5.13,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 300,
+        "spawn2Id": 7942,
+        "spawngroupId": 126,
+        "candidateCount": 1
+      }
+    ]
+  }
+}

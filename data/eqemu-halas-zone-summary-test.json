@@ -1,0 +1,5824 @@
+{
+  "summary": {
+    "zoneSlug": "halas",
+    "zoneName": "Halas",
+    "requestedZoneShortName": "halas",
+    "zoneShortName": "halas",
+    "sourceFile": "local-eqemu-database",
+    "matched": true,
+    "expansion": "Classic",
+    "eqemuExpansionId": 0,
+    "expansionSource": "eqemu-zone-table",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobCount": 94,
+    "unknownLevelCount": 1,
+    "minLevel": 1,
+    "maxLevel": 80,
+    "averageLevel": 44.5,
+    "medianLevel": 45,
+    "levelCounts": {
+      "1": 5,
+      "3": 1,
+      "5": 2,
+      "25": 2,
+      "30": 1,
+      "35": 6,
+      "40": 10,
+      "45": 39,
+      "50": 2,
+      "61": 19,
+      "65": 3,
+      "70": 2,
+      "80": 1
+    },
+    "levelBuckets": {
+      "1-10": 8,
+      "11-20": 0,
+      "21-30": 3,
+      "31-40": 16,
+      "41-50": 41,
+      "51-60": 0,
+      "61+": 25
+    },
+    "levelProfileLabel": "Wide level spread",
+    "mobGroupNameCounts": {
+      "A Sled Dog": 2,
+      "A Frostfell Goblin": 1,
+      "Adon Mcmarrin": 1,
+      "Alec Mcmarrin": 1,
+      "Ambril Mcrohrer": 1,
+      "Andres Mcmarrin": 1,
+      "April": 1,
+      "Balgros Mcmichael": 1,
+      "Becka Mcguzzlin": 1,
+      "Betabstgmspawner": 1,
+      "Bind Trap": 1,
+      "Bolace": 1,
+      "Boraskor": 1,
+      "Boster Machadden": 1,
+      "Brandyn Mcdonald": 1,
+      "Brin Mcquaid": 1,
+      "Cappi Mctarnigal": 1,
+      "Cet Hydorn": 1,
+      "Cian Mcmarrin": 1,
+      "Cindl": 1,
+      "Clovan Mcmarrin": 1,
+      "Conladan Kevellian": 1,
+      "Conner O`cooper": 1,
+      "Corak": 1,
+      "Dargon": 1,
+      "Dargon Mcpherson": 1,
+      "Dok": 1,
+      "Donald Mcquaid": 1,
+      "Dun Mcdowell": 1,
+      "Elgar Donbrand": 1,
+      "Elona Mcmahon": 1,
+      "Elyn Connoy": 1,
+      "Field Priest Keven": 1,
+      "Fireworks Engineer Fabdabus": 1,
+      "Gorth Bearsoul": 1,
+      "Greta O`reilly": 1,
+      "Greta Terrilon": 1,
+      "Grots": 1,
+      "Guthan Shawnasy": 1,
+      "Haladorf Wuirgon": 1,
+      "Hargar The Velium Chef": 1,
+      "Hetie Mcdonald": 1,
+      "Holana Oleary": 1,
+      "Hoyce Mactaegan": 1,
+      "Jac Macgrove": 1,
+      "Jenkis O`malley": 1,
+      "Jil Mcdaniel": 1,
+      "Jinkus Felligan": 1,
+      "Jowra Mcgynnall": 1,
+      "Kar O`dansin": 1,
+      "Kevan Mcpherson": 1,
+      "Kevon Mctarnigal": 1,
+      "Kylan O`danos": 1,
+      "Lakgara The Righteous": 1,
+      "Leopok Terrilon": 1,
+      "Lynda Mcdobbs": 1,
+      "Lysbith Mcnaff": 1,
+      "Mac": 1,
+      "Maggie Shawnasy": 1,
+      "Margyn Mccann": 1,
+      "Marton Stringsinger": 1,
+      "Merin": 1,
+      "Mils Mcmarrin": 1,
+      "Murtog Macyee": 1,
+      "Nal Mcmarrin": 1,
+      "Oli Mcmarrin": 1,
+      "Priest Of Discord": 1,
+      "Quillion O`zinn": 1,
+      "Rain": 1,
+      "Raven": 1,
+      "Renth Mclanis": 1,
+      "Rollian Galothar": 1,
+      "Rose Mcdowell": 1,
+      "Rosin Macgrove": 1,
+      "Santug Claugg": 1,
+      "Scon Mcdaniel": 1,
+      "Shamus Felligan": 1,
+      "Shanis Macdarren": 1,
+      "Shenigan Mc`macky": 1,
+      "Sissia": 1,
+      "Skoni": 1,
+      "Soulbinder Jarle": 1,
+      "Spirita": 1,
+      "Telvina": 1,
+      "Teria O`danos": 1,
+      "Thadres Thyme": 1,
+      "The Gwenavyne": 1,
+      "Toralia": 1,
+      "Tukanta": 1,
+      "Unknown": 1,
+      "Waltor Felligan": 1,
+      "Wrait Chimera": 1,
+      "Ysanna Macgibbon": 1
+    },
+    "classCounts": {
+      "Banker": 44,
+      "Warrior": 23,
+      "Rogue": 4,
+      "Rogue GM": 4,
+      "Shaman GM": 4,
+      "Warrior GM": 4,
+      "Shaman": 3,
+      "Bard": 1,
+      "Beastlord": 1,
+      "Class 34": 1,
+      "Class 35": 1,
+      "Class 40": 1,
+      "Cleric": 1,
+      "Tribute Master": 1,
+      "Unknown": 1
+    },
+    "raceCounts": {
+      "Barbarian": 81,
+      "Human": 3,
+      "Teleport Man": 2,
+      "Wolf": 2,
+      "Dwarf": 1,
+      "Gnome": 1,
+      "Goblin": 1,
+      "Launch": 1,
+      "Ogre": 1,
+      "Unknown": 1
+    },
+    "normalizedRaceCounts": {
+      "Barbarian": 81,
+      "Human": 3,
+      "Teleport Man": 2,
+      "Wolf": 2,
+      "Dwarf": 1,
+      "Gnome": 1,
+      "Goblin": 1,
+      "Launch": 1,
+      "Ogre": 1,
+      "Unknown": 1
+    },
+    "normalizedRaceLevelCounts": {
+      "Barbarian": {
+        "25": 1,
+        "30": 1,
+        "35": 6,
+        "40": 10,
+        "45": 39,
+        "50": 1,
+        "61": 19,
+        "65": 3,
+        "70": 1
+      },
+      "Dwarf": {
+        "1": 1
+      },
+      "Gnome": {
+        "1": 1
+      },
+      "Goblin": {
+        "1": 1
+      },
+      "Human": {
+        "5": 1,
+        "25": 1,
+        "50": 1
+      },
+      "Launch": {
+        "1": 1
+      },
+      "Ogre": {
+        "70": 1
+      },
+      "Teleport Man": {
+        "1": 1,
+        "80": 1
+      },
+      "Wolf": {
+        "3": 1,
+        "5": 1
+      }
+    },
+    "raceAliases": {
+      "Barbarian": [
+        "Barbarian"
+      ],
+      "Dwarf": [
+        "Dwarf"
+      ],
+      "Gnome": [
+        "Gnome"
+      ],
+      "Goblin": [
+        "Goblin"
+      ],
+      "Human": [
+        "Human"
+      ],
+      "Launch": [
+        "Launch"
+      ],
+      "Ogre": [
+        "Ogre"
+      ],
+      "Teleport Man": [
+        "Teleport Man"
+      ],
+      "Unknown": [
+        "Unknown"
+      ],
+      "Wolf": [
+        "Wolf"
+      ]
+    },
+    "typeCounts": {
+      "Spawn Slot": 94
+    },
+    "notes": [
+      "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+      "Read-only test export; not wired into production /zones data."
+    ],
+    "spawnMapPrototype": {
+      "sourceKind": "Local EQEmu/PEQ database export",
+      "coordinateNote": "Original EQEmu spawn2 x/y/z coordinates are preserved for map prototyping.",
+      "points": [
+        {
+          "spawn2Id": 10019,
+          "spawngroupId": 5673,
+          "name": "Dargon",
+          "displayName": "Dargon",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": 356,
+          "y": 354,
+          "z": 4.38,
+          "heading": 304,
+          "chance": 100,
+          "respawnTime": 660,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10020,
+          "spawngroupId": 5672,
+          "name": "Toralia",
+          "displayName": "Toralia",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": 480,
+          "y": 340,
+          "z": -19.5,
+          "heading": 319,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10021,
+          "spawngroupId": 1771,
+          "name": "Bolace",
+          "displayName": "Bolace",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": 482,
+          "y": 326,
+          "z": -19.5,
+          "heading": 408,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10022,
+          "spawngroupId": 5671,
+          "name": "Telvina",
+          "displayName": "Telvina",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": 453,
+          "y": 313,
+          "z": -19.5,
+          "heading": 400,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10023,
+          "spawngroupId": 5670,
+          "name": "Boraskor",
+          "displayName": "Boraskor",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": 449,
+          "y": 356,
+          "z": -19.5,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10024,
+          "spawngroupId": 1770,
+          "name": "Tukanta",
+          "displayName": "Tukanta",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": 423,
+          "y": 356,
+          "z": -19.5,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10025,
+          "spawngroupId": 1769,
+          "name": "Corak",
+          "displayName": "Corak",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": 424,
+          "y": 309,
+          "z": -19.5,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10026,
+          "spawngroupId": 1768,
+          "name": "Wrait_Chimera",
+          "displayName": "Wrait Chimera",
+          "level": 65,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Tribute Master",
+          "x": 261,
+          "y": 320,
+          "z": 4.38,
+          "heading": 64,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10027,
+          "spawngroupId": 1838,
+          "name": "Grots",
+          "displayName": "Grots",
+          "level": 25,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": 232,
+          "y": 179,
+          "z": 4.38,
+          "heading": 321,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10028,
+          "spawngroupId": 1837,
+          "name": "Lakgara_the_Righteous",
+          "displayName": "Lakgara The Righteous",
+          "level": 61,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Shaman",
+          "x": -286,
+          "y": 369,
+          "z": 4.38,
+          "heading": 272,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10029,
+          "spawngroupId": 1836,
+          "name": "Haladorf_Wuirgon",
+          "displayName": "Haladorf Wuirgon",
+          "level": 61,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Rogue",
+          "x": 305,
+          "y": 565,
+          "z": 4.38,
+          "heading": 182,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10030,
+          "spawngroupId": 1835,
+          "name": "Hoyce_MacTaegan",
+          "displayName": "Hoyce Mactaegan",
+          "level": 50,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Beastlord",
+          "x": 333,
+          "y": 540,
+          "z": 4.38,
+          "heading": 417,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10031,
+          "spawngroupId": 1834,
+          "name": "Gorth_Bearsoul",
+          "displayName": "Gorth Bearsoul",
+          "level": 40,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Shaman",
+          "x": 390,
+          "y": 128,
+          "z": 4.38,
+          "heading": 116,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10032,
+          "spawngroupId": 1833,
+          "name": "Thadres_Thyme",
+          "displayName": "Thadres Thyme",
+          "level": 5,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": -202,
+          "y": 105,
+          "z": 3.75,
+          "heading": 260,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10033,
+          "spawngroupId": 1832,
+          "name": "Greta_O`Reilly",
+          "displayName": "Greta O`reilly",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": -245,
+          "y": 78,
+          "z": 4.38,
+          "heading": 263,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10034,
+          "spawngroupId": 1831,
+          "name": "Becka_McGuzzlin",
+          "displayName": "Becka Mcguzzlin",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": -144,
+          "y": 198,
+          "z": 4.38,
+          "heading": 392,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10035,
+          "spawngroupId": 1830,
+          "name": "#Field_Priest_Keven",
+          "displayName": "Field Priest Keven",
+          "level": 61,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Class 34",
+          "x": 184,
+          "y": 596,
+          "z": 4.38,
+          "heading": 145,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10036,
+          "spawngroupId": 1829,
+          "name": "Spirita",
+          "displayName": "Spirita",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": 343,
+          "y": 348,
+          "z": 4.38,
+          "heading": 223,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10037,
+          "spawngroupId": 1828,
+          "name": "Lynda_McDobbs",
+          "displayName": "Lynda Mcdobbs",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": -295,
+          "y": 364,
+          "z": 25.379999,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10038,
+          "spawngroupId": 1827,
+          "name": "Ambril_McRohrer",
+          "displayName": "Ambril Mcrohrer",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": -307,
+          "y": 316,
+          "z": 25.379999,
+          "heading": 1,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10039,
+          "spawngroupId": 1826,
+          "name": "April",
+          "displayName": "April",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": -306,
+          "y": 173,
+          "z": 4.38,
+          "heading": 37,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10040,
+          "spawngroupId": 1825,
+          "name": "Sissia",
+          "displayName": "Sissia",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": -329,
+          "y": 368,
+          "z": 25.379999,
+          "heading": 250,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10041,
+          "spawngroupId": 1824,
+          "name": "Skoni",
+          "displayName": "Skoni",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": -42,
+          "y": 6,
+          "z": 4.38,
+          "heading": 164,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10042,
+          "spawngroupId": 1823,
+          "name": "Jinkus_Felligan",
+          "displayName": "Jinkus Felligan",
+          "level": 61,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Shaman GM",
+          "x": 444,
+          "y": 312,
+          "z": -19.5,
+          "heading": 88,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10043,
+          "spawngroupId": 1822,
+          "name": "Renth_McLanis",
+          "displayName": "Renth Mclanis",
+          "level": 61,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Warrior GM",
+          "x": -278,
+          "y": 367,
+          "z": 4.38,
+          "heading": 325,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10044,
+          "spawngroupId": 1821,
+          "name": "a_Sled_Dog",
+          "displayName": "A Sled Dog",
+          "level": 5,
+          "race": "Wolf",
+          "rawRace": "Wolf",
+          "className": "Warrior",
+          "x": 314,
+          "y": 617,
+          "z": 1.88,
+          "heading": 382,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10045,
+          "spawngroupId": 1820,
+          "name": "a_Sled_Dog",
+          "displayName": "A Sled Dog",
+          "level": 3,
+          "race": "Wolf",
+          "rawRace": "Wolf",
+          "className": "Warrior",
+          "x": 295,
+          "y": 628,
+          "z": 1.88,
+          "heading": 258,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10046,
+          "spawngroupId": 1819,
+          "name": "Holana_Oleary",
+          "displayName": "Holana Oleary",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": -337,
+          "y": 137,
+          "z": 4.38,
+          "heading": 111,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10047,
+          "spawngroupId": 1818,
+          "name": "The_Gwenavyne",
+          "displayName": "The Gwenavyne",
+          "level": 1,
+          "race": "Launch",
+          "rawRace": "Launch",
+          "className": "Warrior",
+          "x": 12,
+          "y": -441,
+          "z": -4,
+          "heading": 257.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10048,
+          "spawngroupId": 1817,
+          "name": "Merin",
+          "displayName": "Merin",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": 273,
+          "y": 260,
+          "z": 4.38,
+          "heading": 244,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10049,
+          "spawngroupId": 1816,
+          "name": "Dok",
+          "displayName": "Dok",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": 275,
+          "y": 212,
+          "z": 4.38,
+          "heading": 471,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10050,
+          "spawngroupId": 1815,
+          "name": "Alec_McMarrin",
+          "displayName": "Alec Mcmarrin",
+          "level": 40,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Warrior",
+          "x": 222.923981,
+          "y": 482.08139,
+          "z": 3.126998,
+          "heading": 278.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10051,
+          "spawngroupId": 1814,
+          "name": "Andres_McMarrin",
+          "displayName": "Andres Mcmarrin",
+          "level": 40,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Warrior",
+          "x": 58.880001,
+          "y": 548.880005,
+          "z": 4.4,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10052,
+          "spawngroupId": 1813,
+          "name": "Cian_McMarrin",
+          "displayName": "Cian Mcmarrin",
+          "level": 40,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Warrior",
+          "x": 230.880005,
+          "y": 487.880005,
+          "z": 4.4,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10053,
+          "spawngroupId": 1812,
+          "name": "Adon_McMarrin",
+          "displayName": "Adon Mcmarrin",
+          "level": 40,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Warrior",
+          "x": -460,
+          "y": 640.880005,
+          "z": 4.4,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10054,
+          "spawngroupId": 1811,
+          "name": "Teria_O`Danos",
+          "displayName": "Teria O`danos",
+          "level": 30,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": -33,
+          "y": -6,
+          "z": 4.38,
+          "heading": 142,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10055,
+          "spawngroupId": 1810,
+          "name": "Greta_Terrilon",
+          "displayName": "Greta Terrilon",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": -327,
+          "y": 280,
+          "z": 4.38,
+          "heading": 158,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10056,
+          "spawngroupId": 1809,
+          "name": "Rose_McDowell",
+          "displayName": "Rose Mcdowell",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": 165,
+          "y": 397,
+          "z": 4.38,
+          "heading": 417,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10057,
+          "spawngroupId": 1808,
+          "name": "Hetie_McDonald",
+          "displayName": "Hetie Mcdonald",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": -154,
+          "y": 240,
+          "z": 4.38,
+          "heading": 284,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10058,
+          "spawngroupId": 1807,
+          "name": "Brandyn_McDonald",
+          "displayName": "Brandyn Mcdonald",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": -157,
+          "y": 182,
+          "z": 4.38,
+          "heading": 511,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10059,
+          "spawngroupId": 1806,
+          "name": "Conner_O`Cooper",
+          "displayName": "Conner O`cooper",
+          "level": 35,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Warrior",
+          "x": -263,
+          "y": 87,
+          "z": 4.38,
+          "heading": 98,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10060,
+          "spawngroupId": 1805,
+          "name": "Brin_McQuaid",
+          "displayName": "Brin Mcquaid",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": -216,
+          "y": 93,
+          "z": 4.38,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10061,
+          "spawngroupId": 1804,
+          "name": "Donald_McQuaid",
+          "displayName": "Donald Mcquaid",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": -206,
+          "y": 93,
+          "z": 4.38,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10062,
+          "spawngroupId": 1803,
+          "name": "Murtog_MacYee",
+          "displayName": "Murtog Macyee",
+          "level": 35,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": -364,
+          "y": 124,
+          "z": 4.38,
+          "heading": 126,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10063,
+          "spawngroupId": 1802,
+          "name": "Rain",
+          "displayName": "Rain",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": -296,
+          "y": 175,
+          "z": 4.38,
+          "heading": 43,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10064,
+          "spawngroupId": 1801,
+          "name": "Maggie_Shawnasy",
+          "displayName": "Maggie Shawnasy",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": -299,
+          "y": 222,
+          "z": 4.38,
+          "heading": 180,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10065,
+          "spawngroupId": 1800,
+          "name": "Guthan_Shawnasy",
+          "displayName": "Guthan Shawnasy",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": -324,
+          "y": 196,
+          "z": 4.38,
+          "heading": 144,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10066,
+          "spawngroupId": 1799,
+          "name": "Kevan_McPherson",
+          "displayName": "Kevan Mcpherson",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": -324,
+          "y": 210,
+          "z": 4.38,
+          "heading": 132,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10067,
+          "spawngroupId": 1798,
+          "name": "Raven",
+          "displayName": "Raven",
+          "level": 35,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Warrior",
+          "x": -251,
+          "y": 361,
+          "z": 20.379999,
+          "heading": 281,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10068,
+          "spawngroupId": 1797,
+          "name": "Jil_McDaniel",
+          "displayName": "Jil Mcdaniel",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": -289,
+          "y": 325,
+          "z": 25.379999,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10069,
+          "spawngroupId": 1796,
+          "name": "Cet_Hydorn",
+          "displayName": "Cet Hydorn",
+          "level": 35,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Warrior",
+          "x": -333,
+          "y": 366,
+          "z": 4.38,
+          "heading": 204,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10070,
+          "spawngroupId": 1795,
+          "name": "Scon_McDaniel",
+          "displayName": "Scon Mcdaniel",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": -347,
+          "y": 345,
+          "z": 4.38,
+          "heading": 132,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10071,
+          "spawngroupId": 1794,
+          "name": "Cindl",
+          "displayName": "Cindl",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": -171,
+          "y": 270,
+          "z": 4.38,
+          "heading": 392,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10072,
+          "spawngroupId": 1793,
+          "name": "Mac",
+          "displayName": "Mac",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": -179,
+          "y": 308,
+          "z": 4.38,
+          "heading": 263,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10073,
+          "spawngroupId": 1792,
+          "name": "Kar_O`Dansin",
+          "displayName": "Kar O`dansin",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": -505,
+          "y": 510,
+          "z": 4.38,
+          "heading": 258,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10074,
+          "spawngroupId": 1791,
+          "name": "Dargon_McPherson",
+          "displayName": "Dargon Mcpherson",
+          "level": 61,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Warrior GM",
+          "x": -450,
+          "y": 471,
+          "z": 4.38,
+          "heading": 509,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10075,
+          "spawngroupId": 1790,
+          "name": "Lysbith_McNaff",
+          "displayName": "Lysbith Mcnaff",
+          "level": 61,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Warrior GM",
+          "x": -411,
+          "y": 567,
+          "z": -17.5,
+          "heading": 377,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10076,
+          "spawngroupId": 1789,
+          "name": "Kylan_O`Danos",
+          "displayName": "Kylan O`danos",
+          "level": 61,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Warrior GM",
+          "x": -493,
+          "y": 561,
+          "z": -17.5,
+          "heading": 139,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10077,
+          "spawngroupId": 1788,
+          "name": "Waltor_Felligan",
+          "displayName": "Waltor Felligan",
+          "level": 61,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Shaman GM",
+          "x": 374,
+          "y": 288,
+          "z": 4.38,
+          "heading": 462,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10078,
+          "spawngroupId": 1787,
+          "name": "Margyn_McCann",
+          "displayName": "Margyn Mccann",
+          "level": 61,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Shaman GM",
+          "x": 485,
+          "y": 334,
+          "z": -19.5,
+          "heading": 370,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10079,
+          "spawngroupId": 1786,
+          "name": "Shamus_Felligan",
+          "displayName": "Shamus Felligan",
+          "level": 61,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Shaman GM",
+          "x": 358,
+          "y": 333,
+          "z": 4.38,
+          "heading": 125,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10080,
+          "spawngroupId": 1785,
+          "name": "Rosin_MacGrove",
+          "displayName": "Rosin Macgrove",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": 406,
+          "y": 164,
+          "z": 4.38,
+          "heading": 385,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10081,
+          "spawngroupId": 1784,
+          "name": "Jac_MacGrove",
+          "displayName": "Jac Macgrove",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": 407,
+          "y": 198,
+          "z": 4.38,
+          "heading": 343,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10082,
+          "spawngroupId": 1783,
+          "name": "Leopok_Terrilon",
+          "displayName": "Leopok Terrilon",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": 151,
+          "y": 205,
+          "z": 6.38,
+          "heading": 380,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10083,
+          "spawngroupId": 1782,
+          "name": "Clovan_McMarrin",
+          "displayName": "Clovan Mcmarrin",
+          "level": 40,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Warrior",
+          "x": 110,
+          "y": 214,
+          "z": 6.38,
+          "heading": 166,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10084,
+          "spawngroupId": 1781,
+          "name": "Nal_McMarrin",
+          "displayName": "Nal Mcmarrin",
+          "level": 40,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Warrior",
+          "x": 109,
+          "y": 193,
+          "z": 6.38,
+          "heading": 135,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10085,
+          "spawngroupId": 1780,
+          "name": "Kevon_McTarnigal",
+          "displayName": "Kevon Mctarnigal",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Class 40",
+          "x": 112,
+          "y": 199,
+          "z": 6.38,
+          "heading": 148,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10086,
+          "spawngroupId": 1779,
+          "name": "Elona_McMahon",
+          "displayName": "Elona Mcmahon",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": 184,
+          "y": 212,
+          "z": 30.379999,
+          "heading": 275,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10087,
+          "spawngroupId": 1778,
+          "name": "Elyn_Connoy",
+          "displayName": "Elyn Connoy",
+          "level": 70,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Rogue GM",
+          "x": 181,
+          "y": 276,
+          "z": 9.38,
+          "heading": 383,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10088,
+          "spawngroupId": 1777,
+          "name": "Dun_McDowell",
+          "displayName": "Dun Mcdowell",
+          "level": 61,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Rogue GM",
+          "x": 165,
+          "y": 277,
+          "z": 9.38,
+          "heading": 127,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10089,
+          "spawngroupId": 1776,
+          "name": "Ysanna_MacGibbon",
+          "displayName": "Ysanna Macgibbon",
+          "level": 61,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Rogue GM",
+          "x": 155,
+          "y": 183,
+          "z": 30.379999,
+          "heading": 122,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10090,
+          "spawngroupId": 1775,
+          "name": "Cappi_McTarnigal",
+          "displayName": "Cappi Mctarnigal",
+          "level": 61,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Rogue GM",
+          "x": 172,
+          "y": 205,
+          "z": 30.379999,
+          "heading": 228,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10091,
+          "spawngroupId": 1774,
+          "name": "Oli_McMarrin",
+          "displayName": "Oli Mcmarrin",
+          "level": 40,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Warrior",
+          "x": -17,
+          "y": 13,
+          "z": 4.38,
+          "heading": 254,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10092,
+          "spawngroupId": 1773,
+          "name": "Mils_McMarrin",
+          "displayName": "Mils Mcmarrin",
+          "level": 40,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Warrior",
+          "x": 17,
+          "y": 13,
+          "z": 4.38,
+          "heading": 254,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10093,
+          "spawngroupId": 1772,
+          "name": "Quillion_O`Zinn",
+          "displayName": "Quillion O`zinn",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": 66,
+          "y": -15,
+          "z": 4.38,
+          "heading": 375,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10094,
+          "spawngroupId": 1767,
+          "name": "Jenkis_O`Malley",
+          "displayName": "Jenkis O`malley",
+          "level": 35,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": 325,
+          "y": 340,
+          "z": 4.38,
+          "heading": 225,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10095,
+          "spawngroupId": 5669,
+          "name": "Soulbinder_Jarle",
+          "displayName": "Soulbinder Jarle",
+          "level": 65,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Warrior",
+          "x": 340,
+          "y": 295,
+          "z": 4.38,
+          "heading": 480,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10096,
+          "spawngroupId": 7427,
+          "name": "Marton_Stringsinger",
+          "displayName": "Marton Stringsinger",
+          "level": 25,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Bard",
+          "x": 166,
+          "y": 212,
+          "z": 7.75,
+          "heading": 253,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10097,
+          "spawngroupId": 7428,
+          "name": "Rollian_Galothar",
+          "displayName": "Rollian Galothar",
+          "level": 61,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Warrior",
+          "x": -417,
+          "y": 526,
+          "z": -17.5,
+          "heading": 481,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10098,
+          "spawngroupId": 7429,
+          "name": "Balgros_McMichael",
+          "displayName": "Balgros Mcmichael",
+          "level": 61,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Shaman",
+          "x": 343,
+          "y": 323,
+          "z": 4.38,
+          "heading": 474,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10099,
+          "spawngroupId": 7430,
+          "name": "Conladan_Kevellian",
+          "displayName": "Conladan Kevellian",
+          "level": 61,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Rogue",
+          "x": 177,
+          "y": 253,
+          "z": 9.38,
+          "heading": 1,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10100,
+          "spawngroupId": 7431,
+          "name": "Elgar_Donbrand",
+          "displayName": "Elgar Donbrand",
+          "level": 61,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Warrior",
+          "x": 191,
+          "y": 571,
+          "z": 4.38,
+          "heading": 3,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10101,
+          "spawngroupId": 7432,
+          "name": "Shenigan_Mc`Macky",
+          "displayName": "Shenigan Mc`macky",
+          "level": 35,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": 232,
+          "y": 654,
+          "z": 4.38,
+          "heading": 201,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10102,
+          "spawngroupId": 7433,
+          "name": "Jowra_McGynnall",
+          "displayName": "Jowra Mcgynnall",
+          "level": 65,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Rogue",
+          "x": -332,
+          "y": 344,
+          "z": 4.38,
+          "heading": 389,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10103,
+          "spawngroupId": 7434,
+          "name": "Boster_MacHadden",
+          "displayName": "Boster Machadden",
+          "level": 40,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": 305,
+          "y": 539,
+          "z": 4.38,
+          "heading": 72,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10104,
+          "spawngroupId": 7435,
+          "name": "Priest_of_Discord",
+          "displayName": "Priest Of Discord",
+          "level": 50,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Cleric",
+          "x": 75,
+          "y": 113,
+          "z": 3.75,
+          "heading": 7,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 21420,
+          "spawngroupId": 13096,
+          "name": "betabstgmspawner",
+          "displayName": "Betabstgmspawner",
+          "level": 1,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": 259,
+          "y": 458,
+          "z": 40.700001,
+          "heading": 400,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 57791,
+          "spawngroupId": 47298,
+          "name": "Shanis_MacDarren",
+          "displayName": "Shanis Macdarren",
+          "level": 61,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Class 35",
+          "x": 329.615326,
+          "y": 576.527832,
+          "z": 4.476999,
+          "heading": 300,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 58373,
+          "spawngroupId": 12520,
+          "name": "Unknown",
+          "displayName": "Unknown",
+          "level": null,
+          "race": "Unknown",
+          "rawRace": "Unknown",
+          "className": "Unknown",
+          "x": 34.451412,
+          "y": 137.391403,
+          "z": 3.226999,
+          "heading": 168.25,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 58618,
+          "spawngroupId": 48192,
+          "name": "bind_trap",
+          "displayName": "Bind Trap",
+          "level": 80,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": 0.165324,
+          "y": -2.231465,
+          "z": 2.289498,
+          "heading": 250.25,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 148698,
+          "spawngroupId": 110214,
+          "name": "Santug_Claugg",
+          "displayName": "Santug Claugg",
+          "level": 70,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Warrior",
+          "x": 0,
+          "y": 61,
+          "z": 6,
+          "heading": 250,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 148715,
+          "spawngroupId": 110231,
+          "name": "a_Frostfell_Goblin",
+          "displayName": "A Frostfell Goblin",
+          "level": 1,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -15,
+          "y": -33,
+          "z": 2,
+          "heading": 25.25,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 148732,
+          "spawngroupId": 110248,
+          "name": "Hargar_the_Velium_Chef",
+          "displayName": "Hargar The Velium Chef",
+          "level": 1,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior",
+          "x": -34.875,
+          "y": 38,
+          "z": 2.5,
+          "heading": 90,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 148749,
+          "spawngroupId": 110265,
+          "name": "Fireworks_Engineer_Fabdabus",
+          "displayName": "Fireworks Engineer Fabdabus",
+          "level": 1,
+          "race": "Gnome",
+          "rawRace": "Gnome",
+          "className": "Warrior",
+          "x": 39,
+          "y": 39,
+          "z": 1.875,
+          "heading": 406,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        }
+      ]
+    }
+  },
+  "details": {
+    "zoneSlug": "halas",
+    "routeSlug": "halas",
+    "zoneName": "Halas",
+    "sourceFile": "local-eqemu-database",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobGroups": [
+      {
+        "displayName": "A Frostfell Goblin",
+        "rawNames": [
+          "a_Frostfell_Goblin"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Goblin": 1
+        },
+        "rawRaceCounts": {
+          "Goblin": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Betabstgmspawner",
+        "rawNames": [
+          "betabstgmspawner"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Teleport Man": 1
+        },
+        "rawRaceCounts": {
+          "Teleport Man": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Fireworks Engineer Fabdabus",
+        "rawNames": [
+          "Fireworks_Engineer_Fabdabus"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Gnome": 1
+        },
+        "rawRaceCounts": {
+          "Gnome": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Hargar The Velium Chef",
+        "rawNames": [
+          "Hargar_the_Velium_Chef"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "The Gwenavyne",
+        "rawNames": [
+          "The_Gwenavyne"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Launch": 1
+        },
+        "rawRaceCounts": {
+          "Launch": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Sled Dog",
+        "rawNames": [
+          "a_Sled_Dog"
+        ],
+        "count": 1,
+        "levelMin": 3,
+        "levelMax": 3,
+        "levels": [
+          3
+        ],
+        "raceCounts": {
+          "Wolf": 1
+        },
+        "rawRaceCounts": {
+          "Wolf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Sled Dog",
+        "rawNames": [
+          "a_Sled_Dog"
+        ],
+        "count": 1,
+        "levelMin": 5,
+        "levelMax": 5,
+        "levels": [
+          5
+        ],
+        "raceCounts": {
+          "Wolf": 1
+        },
+        "rawRaceCounts": {
+          "Wolf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Thadres Thyme",
+        "rawNames": [
+          "Thadres_Thyme"
+        ],
+        "count": 1,
+        "levelMin": 5,
+        "levelMax": 5,
+        "levels": [
+          5
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Rogue": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Grots",
+        "rawNames": [
+          "Grots"
+        ],
+        "count": 1,
+        "levelMin": 25,
+        "levelMax": 25,
+        "levels": [
+          25
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Marton Stringsinger",
+        "rawNames": [
+          "Marton_Stringsinger"
+        ],
+        "count": 1,
+        "levelMin": 25,
+        "levelMax": 25,
+        "levels": [
+          25
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Bard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Teria O`danos",
+        "rawNames": [
+          "Teria_O`Danos"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Cet Hydorn",
+        "rawNames": [
+          "Cet_Hydorn"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Conner O`cooper",
+        "rawNames": [
+          "Conner_O`Cooper"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Jenkis O`malley",
+        "rawNames": [
+          "Jenkis_O`Malley"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Murtog Macyee",
+        "rawNames": [
+          "Murtog_MacYee"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Raven",
+        "rawNames": [
+          "Raven"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Shenigan Mc`macky",
+        "rawNames": [
+          "Shenigan_Mc`Macky"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Adon Mcmarrin",
+        "rawNames": [
+          "Adon_McMarrin"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Alec Mcmarrin",
+        "rawNames": [
+          "Alec_McMarrin"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Andres Mcmarrin",
+        "rawNames": [
+          "Andres_McMarrin"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Boster Machadden",
+        "rawNames": [
+          "Boster_MacHadden"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Cian Mcmarrin",
+        "rawNames": [
+          "Cian_McMarrin"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Clovan Mcmarrin",
+        "rawNames": [
+          "Clovan_McMarrin"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Gorth Bearsoul",
+        "rawNames": [
+          "Gorth_Bearsoul"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Shaman": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Mils Mcmarrin",
+        "rawNames": [
+          "Mils_McMarrin"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Nal Mcmarrin",
+        "rawNames": [
+          "Nal_McMarrin"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Oli Mcmarrin",
+        "rawNames": [
+          "Oli_McMarrin"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Ambril Mcrohrer",
+        "rawNames": [
+          "Ambril_McRohrer"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "April",
+        "rawNames": [
+          "April"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Becka Mcguzzlin",
+        "rawNames": [
+          "Becka_McGuzzlin"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Bolace",
+        "rawNames": [
+          "Bolace"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Boraskor",
+        "rawNames": [
+          "Boraskor"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Brandyn Mcdonald",
+        "rawNames": [
+          "Brandyn_McDonald"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Brin Mcquaid",
+        "rawNames": [
+          "Brin_McQuaid"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Cindl",
+        "rawNames": [
+          "Cindl"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Corak",
+        "rawNames": [
+          "Corak"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Dargon",
+        "rawNames": [
+          "Dargon"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Dok",
+        "rawNames": [
+          "Dok"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Donald Mcquaid",
+        "rawNames": [
+          "Donald_McQuaid"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Elona Mcmahon",
+        "rawNames": [
+          "Elona_McMahon"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Greta O`reilly",
+        "rawNames": [
+          "Greta_O`Reilly"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Greta Terrilon",
+        "rawNames": [
+          "Greta_Terrilon"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guthan Shawnasy",
+        "rawNames": [
+          "Guthan_Shawnasy"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Hetie Mcdonald",
+        "rawNames": [
+          "Hetie_McDonald"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Holana Oleary",
+        "rawNames": [
+          "Holana_Oleary"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Jac Macgrove",
+        "rawNames": [
+          "Jac_MacGrove"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Jil Mcdaniel",
+        "rawNames": [
+          "Jil_McDaniel"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Kar O`dansin",
+        "rawNames": [
+          "Kar_O`Dansin"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Kevan Mcpherson",
+        "rawNames": [
+          "Kevan_McPherson"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Kevon Mctarnigal",
+        "rawNames": [
+          "Kevon_McTarnigal"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Class 40": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Leopok Terrilon",
+        "rawNames": [
+          "Leopok_Terrilon"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Lynda Mcdobbs",
+        "rawNames": [
+          "Lynda_McDobbs"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Mac",
+        "rawNames": [
+          "Mac"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Maggie Shawnasy",
+        "rawNames": [
+          "Maggie_Shawnasy"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Merin",
+        "rawNames": [
+          "Merin"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Quillion O`zinn",
+        "rawNames": [
+          "Quillion_O`Zinn"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Rain",
+        "rawNames": [
+          "Rain"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Rose Mcdowell",
+        "rawNames": [
+          "Rose_McDowell"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Rosin Macgrove",
+        "rawNames": [
+          "Rosin_MacGrove"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Scon Mcdaniel",
+        "rawNames": [
+          "Scon_McDaniel"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Sissia",
+        "rawNames": [
+          "Sissia"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Skoni",
+        "rawNames": [
+          "Skoni"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Spirita",
+        "rawNames": [
+          "Spirita"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Telvina",
+        "rawNames": [
+          "Telvina"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Toralia",
+        "rawNames": [
+          "Toralia"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Tukanta",
+        "rawNames": [
+          "Tukanta"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Hoyce Mactaegan",
+        "rawNames": [
+          "Hoyce_MacTaegan"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Beastlord": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Priest Of Discord",
+        "rawNames": [
+          "Priest_of_Discord"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Cleric": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Balgros Mcmichael",
+        "rawNames": [
+          "Balgros_McMichael"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Shaman": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Cappi Mctarnigal",
+        "rawNames": [
+          "Cappi_McTarnigal"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Rogue GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Conladan Kevellian",
+        "rawNames": [
+          "Conladan_Kevellian"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Rogue": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Dargon Mcpherson",
+        "rawNames": [
+          "Dargon_McPherson"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Warrior GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Dun Mcdowell",
+        "rawNames": [
+          "Dun_McDowell"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Rogue GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Elgar Donbrand",
+        "rawNames": [
+          "Elgar_Donbrand"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Field Priest Keven",
+        "rawNames": [
+          "#Field_Priest_Keven"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Class 34": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Haladorf Wuirgon",
+        "rawNames": [
+          "Haladorf_Wuirgon"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Rogue": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Jinkus Felligan",
+        "rawNames": [
+          "Jinkus_Felligan"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Shaman GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Kylan O`danos",
+        "rawNames": [
+          "Kylan_O`Danos"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Warrior GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Lakgara The Righteous",
+        "rawNames": [
+          "Lakgara_the_Righteous"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Shaman": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Lysbith Mcnaff",
+        "rawNames": [
+          "Lysbith_McNaff"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Warrior GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Margyn Mccann",
+        "rawNames": [
+          "Margyn_McCann"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Shaman GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Renth Mclanis",
+        "rawNames": [
+          "Renth_McLanis"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Warrior GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Rollian Galothar",
+        "rawNames": [
+          "Rollian_Galothar"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Shamus Felligan",
+        "rawNames": [
+          "Shamus_Felligan"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Shaman GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Shanis Macdarren",
+        "rawNames": [
+          "Shanis_MacDarren"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Class 35": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Waltor Felligan",
+        "rawNames": [
+          "Waltor_Felligan"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Shaman GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Ysanna Macgibbon",
+        "rawNames": [
+          "Ysanna_MacGibbon"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Rogue GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Jowra Mcgynnall",
+        "rawNames": [
+          "Jowra_McGynnall"
+        ],
+        "count": 1,
+        "levelMin": 65,
+        "levelMax": 65,
+        "levels": [
+          65
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Rogue": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Soulbinder Jarle",
+        "rawNames": [
+          "Soulbinder_Jarle"
+        ],
+        "count": 1,
+        "levelMin": 65,
+        "levelMax": 65,
+        "levels": [
+          65
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Wrait Chimera",
+        "rawNames": [
+          "Wrait_Chimera"
+        ],
+        "count": 1,
+        "levelMin": 65,
+        "levelMax": 65,
+        "levels": [
+          65
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Tribute Master": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Elyn Connoy",
+        "rawNames": [
+          "Elyn_Connoy"
+        ],
+        "count": 1,
+        "levelMin": 70,
+        "levelMax": 70,
+        "levels": [
+          70
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Rogue GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Santug Claugg",
+        "rawNames": [
+          "Santug_Claugg"
+        ],
+        "count": 1,
+        "levelMin": 70,
+        "levelMax": 70,
+        "levels": [
+          70
+        ],
+        "raceCounts": {
+          "Ogre": 1
+        },
+        "rawRaceCounts": {
+          "Ogre": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Bind Trap",
+        "rawNames": [
+          "bind_trap"
+        ],
+        "count": 1,
+        "levelMin": 80,
+        "levelMax": 80,
+        "levels": [
+          80
+        ],
+        "raceCounts": {
+          "Teleport Man": 1
+        },
+        "rawRaceCounts": {
+          "Teleport Man": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Unknown",
+        "rawNames": [
+          "Unknown"
+        ],
+        "count": 1,
+        "levelMin": null,
+        "levelMax": null,
+        "levels": [],
+        "raceCounts": {
+          "Unknown": 1
+        },
+        "rawRaceCounts": {
+          "Unknown": 1
+        },
+        "classCounts": {
+          "Unknown": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      }
+    ],
+    "rows": [
+      {
+        "displayName": "A Frostfell Goblin",
+        "rawName": "a_Frostfell_Goblin",
+        "level": 1,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -15,
+        "y": -33,
+        "z": 2,
+        "heading": 25.25,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 148715,
+        "spawngroupId": 110231,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Betabstgmspawner",
+        "rawName": "betabstgmspawner",
+        "level": 1,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 259,
+        "y": 458,
+        "z": 40.700001,
+        "heading": 400,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 21420,
+        "spawngroupId": 13096,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Fireworks Engineer Fabdabus",
+        "rawName": "Fireworks_Engineer_Fabdabus",
+        "level": 1,
+        "race": "Gnome",
+        "rawRace": "Gnome",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 39,
+        "y": 39,
+        "z": 1.875,
+        "heading": 406,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 148749,
+        "spawngroupId": 110265,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Hargar The Velium Chef",
+        "rawName": "Hargar_the_Velium_Chef",
+        "level": 1,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -34.875,
+        "y": 38,
+        "z": 2.5,
+        "heading": 90,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 148732,
+        "spawngroupId": 110248,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "The Gwenavyne",
+        "rawName": "The_Gwenavyne",
+        "level": 1,
+        "race": "Launch",
+        "rawRace": "Launch",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 12,
+        "y": -441,
+        "z": -4,
+        "heading": 257.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10047,
+        "spawngroupId": 1818,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Sled Dog",
+        "rawName": "a_Sled_Dog",
+        "level": 3,
+        "race": "Wolf",
+        "rawRace": "Wolf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 295,
+        "y": 628,
+        "z": 1.88,
+        "heading": 258,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10045,
+        "spawngroupId": 1820,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Sled Dog",
+        "rawName": "a_Sled_Dog",
+        "level": 5,
+        "race": "Wolf",
+        "rawRace": "Wolf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 314,
+        "y": 617,
+        "z": 1.88,
+        "heading": 382,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10044,
+        "spawngroupId": 1821,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Thadres Thyme",
+        "rawName": "Thadres_Thyme",
+        "level": 5,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -202,
+        "y": 105,
+        "z": 3.75,
+        "heading": 260,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10032,
+        "spawngroupId": 1833,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Grots",
+        "rawName": "Grots",
+        "level": 25,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 232,
+        "y": 179,
+        "z": 4.38,
+        "heading": 321,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10027,
+        "spawngroupId": 1838,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Marton Stringsinger",
+        "rawName": "Marton_Stringsinger",
+        "level": 25,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Bard",
+        "type": "Spawn Slot",
+        "x": 166,
+        "y": 212,
+        "z": 7.75,
+        "heading": 253,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10096,
+        "spawngroupId": 7427,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Teria O`danos",
+        "rawName": "Teria_O`Danos",
+        "level": 30,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -33,
+        "y": -6,
+        "z": 4.38,
+        "heading": 142,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10054,
+        "spawngroupId": 1811,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Cet Hydorn",
+        "rawName": "Cet_Hydorn",
+        "level": 35,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -333,
+        "y": 366,
+        "z": 4.38,
+        "heading": 204,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10069,
+        "spawngroupId": 1796,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Conner O`cooper",
+        "rawName": "Conner_O`Cooper",
+        "level": 35,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -263,
+        "y": 87,
+        "z": 4.38,
+        "heading": 98,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10059,
+        "spawngroupId": 1806,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Jenkis O`malley",
+        "rawName": "Jenkis_O`Malley",
+        "level": 35,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 325,
+        "y": 340,
+        "z": 4.38,
+        "heading": 225,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10094,
+        "spawngroupId": 1767,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Murtog Macyee",
+        "rawName": "Murtog_MacYee",
+        "level": 35,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -364,
+        "y": 124,
+        "z": 4.38,
+        "heading": 126,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10062,
+        "spawngroupId": 1803,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Raven",
+        "rawName": "Raven",
+        "level": 35,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -251,
+        "y": 361,
+        "z": 20.379999,
+        "heading": 281,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10067,
+        "spawngroupId": 1798,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Shenigan Mc`macky",
+        "rawName": "Shenigan_Mc`Macky",
+        "level": 35,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 232,
+        "y": 654,
+        "z": 4.38,
+        "heading": 201,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10101,
+        "spawngroupId": 7432,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Adon Mcmarrin",
+        "rawName": "Adon_McMarrin",
+        "level": 40,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -460,
+        "y": 640.880005,
+        "z": 4.4,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10053,
+        "spawngroupId": 1812,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Alec Mcmarrin",
+        "rawName": "Alec_McMarrin",
+        "level": 40,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 222.923981,
+        "y": 482.08139,
+        "z": 3.126998,
+        "heading": 278.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10050,
+        "spawngroupId": 1815,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Andres Mcmarrin",
+        "rawName": "Andres_McMarrin",
+        "level": 40,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 58.880001,
+        "y": 548.880005,
+        "z": 4.4,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10051,
+        "spawngroupId": 1814,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Boster Machadden",
+        "rawName": "Boster_MacHadden",
+        "level": 40,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 305,
+        "y": 539,
+        "z": 4.38,
+        "heading": 72,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10103,
+        "spawngroupId": 7434,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Cian Mcmarrin",
+        "rawName": "Cian_McMarrin",
+        "level": 40,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 230.880005,
+        "y": 487.880005,
+        "z": 4.4,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10052,
+        "spawngroupId": 1813,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Clovan Mcmarrin",
+        "rawName": "Clovan_McMarrin",
+        "level": 40,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 110,
+        "y": 214,
+        "z": 6.38,
+        "heading": 166,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10083,
+        "spawngroupId": 1782,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Gorth Bearsoul",
+        "rawName": "Gorth_Bearsoul",
+        "level": 40,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 390,
+        "y": 128,
+        "z": 4.38,
+        "heading": 116,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10031,
+        "spawngroupId": 1834,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Mils Mcmarrin",
+        "rawName": "Mils_McMarrin",
+        "level": 40,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 17,
+        "y": 13,
+        "z": 4.38,
+        "heading": 254,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10092,
+        "spawngroupId": 1773,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Nal Mcmarrin",
+        "rawName": "Nal_McMarrin",
+        "level": 40,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 109,
+        "y": 193,
+        "z": 6.38,
+        "heading": 135,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10084,
+        "spawngroupId": 1781,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Oli Mcmarrin",
+        "rawName": "Oli_McMarrin",
+        "level": 40,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -17,
+        "y": 13,
+        "z": 4.38,
+        "heading": 254,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10091,
+        "spawngroupId": 1774,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Ambril Mcrohrer",
+        "rawName": "Ambril_McRohrer",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -307,
+        "y": 316,
+        "z": 25.379999,
+        "heading": 1,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10038,
+        "spawngroupId": 1827,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "April",
+        "rawName": "April",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -306,
+        "y": 173,
+        "z": 4.38,
+        "heading": 37,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10039,
+        "spawngroupId": 1826,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Becka Mcguzzlin",
+        "rawName": "Becka_McGuzzlin",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -144,
+        "y": 198,
+        "z": 4.38,
+        "heading": 392,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10034,
+        "spawngroupId": 1831,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Bolace",
+        "rawName": "Bolace",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 482,
+        "y": 326,
+        "z": -19.5,
+        "heading": 408,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10021,
+        "spawngroupId": 1771,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Boraskor",
+        "rawName": "Boraskor",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 449,
+        "y": 356,
+        "z": -19.5,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10023,
+        "spawngroupId": 5670,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Brandyn Mcdonald",
+        "rawName": "Brandyn_McDonald",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -157,
+        "y": 182,
+        "z": 4.38,
+        "heading": 511,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10058,
+        "spawngroupId": 1807,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Brin Mcquaid",
+        "rawName": "Brin_McQuaid",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -216,
+        "y": 93,
+        "z": 4.38,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10060,
+        "spawngroupId": 1805,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Cindl",
+        "rawName": "Cindl",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -171,
+        "y": 270,
+        "z": 4.38,
+        "heading": 392,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10071,
+        "spawngroupId": 1794,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Corak",
+        "rawName": "Corak",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 424,
+        "y": 309,
+        "z": -19.5,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10025,
+        "spawngroupId": 1769,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Dargon",
+        "rawName": "Dargon",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 356,
+        "y": 354,
+        "z": 4.38,
+        "heading": 304,
+        "chance": 100,
+        "respawnTime": 660,
+        "spawn2Id": 10019,
+        "spawngroupId": 5673,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Dok",
+        "rawName": "Dok",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 275,
+        "y": 212,
+        "z": 4.38,
+        "heading": 471,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10049,
+        "spawngroupId": 1816,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Donald Mcquaid",
+        "rawName": "Donald_McQuaid",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -206,
+        "y": 93,
+        "z": 4.38,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10061,
+        "spawngroupId": 1804,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Elona Mcmahon",
+        "rawName": "Elona_McMahon",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 184,
+        "y": 212,
+        "z": 30.379999,
+        "heading": 275,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10086,
+        "spawngroupId": 1779,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Greta O`reilly",
+        "rawName": "Greta_O`Reilly",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -245,
+        "y": 78,
+        "z": 4.38,
+        "heading": 263,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10033,
+        "spawngroupId": 1832,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Greta Terrilon",
+        "rawName": "Greta_Terrilon",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -327,
+        "y": 280,
+        "z": 4.38,
+        "heading": 158,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10055,
+        "spawngroupId": 1810,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guthan Shawnasy",
+        "rawName": "Guthan_Shawnasy",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -324,
+        "y": 196,
+        "z": 4.38,
+        "heading": 144,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10065,
+        "spawngroupId": 1800,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Hetie Mcdonald",
+        "rawName": "Hetie_McDonald",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -154,
+        "y": 240,
+        "z": 4.38,
+        "heading": 284,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10057,
+        "spawngroupId": 1808,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Holana Oleary",
+        "rawName": "Holana_Oleary",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -337,
+        "y": 137,
+        "z": 4.38,
+        "heading": 111,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10046,
+        "spawngroupId": 1819,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Jac Macgrove",
+        "rawName": "Jac_MacGrove",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 407,
+        "y": 198,
+        "z": 4.38,
+        "heading": 343,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10081,
+        "spawngroupId": 1784,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Jil Mcdaniel",
+        "rawName": "Jil_McDaniel",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -289,
+        "y": 325,
+        "z": 25.379999,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10068,
+        "spawngroupId": 1797,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Kar O`dansin",
+        "rawName": "Kar_O`Dansin",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -505,
+        "y": 510,
+        "z": 4.38,
+        "heading": 258,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10073,
+        "spawngroupId": 1792,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Kevan Mcpherson",
+        "rawName": "Kevan_McPherson",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -324,
+        "y": 210,
+        "z": 4.38,
+        "heading": 132,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10066,
+        "spawngroupId": 1799,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Kevon Mctarnigal",
+        "rawName": "Kevon_McTarnigal",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Class 40",
+        "type": "Spawn Slot",
+        "x": 112,
+        "y": 199,
+        "z": 6.38,
+        "heading": 148,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10085,
+        "spawngroupId": 1780,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Leopok Terrilon",
+        "rawName": "Leopok_Terrilon",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 151,
+        "y": 205,
+        "z": 6.38,
+        "heading": 380,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10082,
+        "spawngroupId": 1783,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Lynda Mcdobbs",
+        "rawName": "Lynda_McDobbs",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -295,
+        "y": 364,
+        "z": 25.379999,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10037,
+        "spawngroupId": 1828,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Mac",
+        "rawName": "Mac",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -179,
+        "y": 308,
+        "z": 4.38,
+        "heading": 263,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10072,
+        "spawngroupId": 1793,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Maggie Shawnasy",
+        "rawName": "Maggie_Shawnasy",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -299,
+        "y": 222,
+        "z": 4.38,
+        "heading": 180,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10064,
+        "spawngroupId": 1801,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Merin",
+        "rawName": "Merin",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 273,
+        "y": 260,
+        "z": 4.38,
+        "heading": 244,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10048,
+        "spawngroupId": 1817,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Quillion O`zinn",
+        "rawName": "Quillion_O`Zinn",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 66,
+        "y": -15,
+        "z": 4.38,
+        "heading": 375,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10093,
+        "spawngroupId": 1772,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Rain",
+        "rawName": "Rain",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -296,
+        "y": 175,
+        "z": 4.38,
+        "heading": 43,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10063,
+        "spawngroupId": 1802,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Rose Mcdowell",
+        "rawName": "Rose_McDowell",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 165,
+        "y": 397,
+        "z": 4.38,
+        "heading": 417,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10056,
+        "spawngroupId": 1809,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Rosin Macgrove",
+        "rawName": "Rosin_MacGrove",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 406,
+        "y": 164,
+        "z": 4.38,
+        "heading": 385,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10080,
+        "spawngroupId": 1785,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Scon Mcdaniel",
+        "rawName": "Scon_McDaniel",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -347,
+        "y": 345,
+        "z": 4.38,
+        "heading": 132,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10070,
+        "spawngroupId": 1795,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Sissia",
+        "rawName": "Sissia",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -329,
+        "y": 368,
+        "z": 25.379999,
+        "heading": 250,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10040,
+        "spawngroupId": 1825,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Skoni",
+        "rawName": "Skoni",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -42,
+        "y": 6,
+        "z": 4.38,
+        "heading": 164,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10041,
+        "spawngroupId": 1824,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Spirita",
+        "rawName": "Spirita",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 343,
+        "y": 348,
+        "z": 4.38,
+        "heading": 223,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10036,
+        "spawngroupId": 1829,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Telvina",
+        "rawName": "Telvina",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 453,
+        "y": 313,
+        "z": -19.5,
+        "heading": 400,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10022,
+        "spawngroupId": 5671,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Toralia",
+        "rawName": "Toralia",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 480,
+        "y": 340,
+        "z": -19.5,
+        "heading": 319,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10020,
+        "spawngroupId": 5672,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Tukanta",
+        "rawName": "Tukanta",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 423,
+        "y": 356,
+        "z": -19.5,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10024,
+        "spawngroupId": 1770,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Hoyce Mactaegan",
+        "rawName": "Hoyce_MacTaegan",
+        "level": 50,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Beastlord",
+        "type": "Spawn Slot",
+        "x": 333,
+        "y": 540,
+        "z": 4.38,
+        "heading": 417,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10030,
+        "spawngroupId": 1835,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Priest Of Discord",
+        "rawName": "Priest_of_Discord",
+        "level": 50,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": 75,
+        "y": 113,
+        "z": 3.75,
+        "heading": 7,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10104,
+        "spawngroupId": 7435,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Balgros Mcmichael",
+        "rawName": "Balgros_McMichael",
+        "level": 61,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 343,
+        "y": 323,
+        "z": 4.38,
+        "heading": 474,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10098,
+        "spawngroupId": 7429,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Cappi Mctarnigal",
+        "rawName": "Cappi_McTarnigal",
+        "level": 61,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Rogue GM",
+        "type": "Spawn Slot",
+        "x": 172,
+        "y": 205,
+        "z": 30.379999,
+        "heading": 228,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10090,
+        "spawngroupId": 1775,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Conladan Kevellian",
+        "rawName": "Conladan_Kevellian",
+        "level": 61,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 177,
+        "y": 253,
+        "z": 9.38,
+        "heading": 1,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10099,
+        "spawngroupId": 7430,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Dargon Mcpherson",
+        "rawName": "Dargon_McPherson",
+        "level": 61,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Warrior GM",
+        "type": "Spawn Slot",
+        "x": -450,
+        "y": 471,
+        "z": 4.38,
+        "heading": 509,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10074,
+        "spawngroupId": 1791,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Dun Mcdowell",
+        "rawName": "Dun_McDowell",
+        "level": 61,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Rogue GM",
+        "type": "Spawn Slot",
+        "x": 165,
+        "y": 277,
+        "z": 9.38,
+        "heading": 127,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10088,
+        "spawngroupId": 1777,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Elgar Donbrand",
+        "rawName": "Elgar_Donbrand",
+        "level": 61,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 191,
+        "y": 571,
+        "z": 4.38,
+        "heading": 3,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10100,
+        "spawngroupId": 7431,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Field Priest Keven",
+        "rawName": "#Field_Priest_Keven",
+        "level": 61,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Class 34",
+        "type": "Spawn Slot",
+        "x": 184,
+        "y": 596,
+        "z": 4.38,
+        "heading": 145,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10035,
+        "spawngroupId": 1830,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Haladorf Wuirgon",
+        "rawName": "Haladorf_Wuirgon",
+        "level": 61,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 305,
+        "y": 565,
+        "z": 4.38,
+        "heading": 182,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10029,
+        "spawngroupId": 1836,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Jinkus Felligan",
+        "rawName": "Jinkus_Felligan",
+        "level": 61,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Shaman GM",
+        "type": "Spawn Slot",
+        "x": 444,
+        "y": 312,
+        "z": -19.5,
+        "heading": 88,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10042,
+        "spawngroupId": 1823,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Kylan O`danos",
+        "rawName": "Kylan_O`Danos",
+        "level": 61,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Warrior GM",
+        "type": "Spawn Slot",
+        "x": -493,
+        "y": 561,
+        "z": -17.5,
+        "heading": 139,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10076,
+        "spawngroupId": 1789,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Lakgara The Righteous",
+        "rawName": "Lakgara_the_Righteous",
+        "level": 61,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": -286,
+        "y": 369,
+        "z": 4.38,
+        "heading": 272,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10028,
+        "spawngroupId": 1837,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Lysbith Mcnaff",
+        "rawName": "Lysbith_McNaff",
+        "level": 61,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Warrior GM",
+        "type": "Spawn Slot",
+        "x": -411,
+        "y": 567,
+        "z": -17.5,
+        "heading": 377,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10075,
+        "spawngroupId": 1790,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Margyn Mccann",
+        "rawName": "Margyn_McCann",
+        "level": 61,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Shaman GM",
+        "type": "Spawn Slot",
+        "x": 485,
+        "y": 334,
+        "z": -19.5,
+        "heading": 370,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10078,
+        "spawngroupId": 1787,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Renth Mclanis",
+        "rawName": "Renth_McLanis",
+        "level": 61,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Warrior GM",
+        "type": "Spawn Slot",
+        "x": -278,
+        "y": 367,
+        "z": 4.38,
+        "heading": 325,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10043,
+        "spawngroupId": 1822,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Rollian Galothar",
+        "rawName": "Rollian_Galothar",
+        "level": 61,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -417,
+        "y": 526,
+        "z": -17.5,
+        "heading": 481,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10097,
+        "spawngroupId": 7428,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Shamus Felligan",
+        "rawName": "Shamus_Felligan",
+        "level": 61,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Shaman GM",
+        "type": "Spawn Slot",
+        "x": 358,
+        "y": 333,
+        "z": 4.38,
+        "heading": 125,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10079,
+        "spawngroupId": 1786,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Shanis Macdarren",
+        "rawName": "Shanis_MacDarren",
+        "level": 61,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Class 35",
+        "type": "Spawn Slot",
+        "x": 329.615326,
+        "y": 576.527832,
+        "z": 4.476999,
+        "heading": 300,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 57791,
+        "spawngroupId": 47298,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Waltor Felligan",
+        "rawName": "Waltor_Felligan",
+        "level": 61,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Shaman GM",
+        "type": "Spawn Slot",
+        "x": 374,
+        "y": 288,
+        "z": 4.38,
+        "heading": 462,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10077,
+        "spawngroupId": 1788,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Ysanna Macgibbon",
+        "rawName": "Ysanna_MacGibbon",
+        "level": 61,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Rogue GM",
+        "type": "Spawn Slot",
+        "x": 155,
+        "y": 183,
+        "z": 30.379999,
+        "heading": 122,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10089,
+        "spawngroupId": 1776,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Jowra Mcgynnall",
+        "rawName": "Jowra_McGynnall",
+        "level": 65,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -332,
+        "y": 344,
+        "z": 4.38,
+        "heading": 389,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10102,
+        "spawngroupId": 7433,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Soulbinder Jarle",
+        "rawName": "Soulbinder_Jarle",
+        "level": 65,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 340,
+        "y": 295,
+        "z": 4.38,
+        "heading": 480,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10095,
+        "spawngroupId": 5669,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Wrait Chimera",
+        "rawName": "Wrait_Chimera",
+        "level": 65,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Tribute Master",
+        "type": "Spawn Slot",
+        "x": 261,
+        "y": 320,
+        "z": 4.38,
+        "heading": 64,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10026,
+        "spawngroupId": 1768,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Elyn Connoy",
+        "rawName": "Elyn_Connoy",
+        "level": 70,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Rogue GM",
+        "type": "Spawn Slot",
+        "x": 181,
+        "y": 276,
+        "z": 9.38,
+        "heading": 383,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10087,
+        "spawngroupId": 1778,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Santug Claugg",
+        "rawName": "Santug_Claugg",
+        "level": 70,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 0,
+        "y": 61,
+        "z": 6,
+        "heading": 250,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 148698,
+        "spawngroupId": 110214,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Bind Trap",
+        "rawName": "bind_trap",
+        "level": 80,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 0.165324,
+        "y": -2.231465,
+        "z": 2.289498,
+        "heading": 250.25,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 58618,
+        "spawngroupId": 48192,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Unknown",
+        "rawName": "Unknown",
+        "level": null,
+        "race": "Unknown",
+        "rawRace": "Unknown",
+        "className": "Unknown",
+        "type": "Spawn Slot",
+        "x": 34.451412,
+        "y": 137.391403,
+        "z": 3.226999,
+        "heading": 168.25,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 58373,
+        "spawngroupId": 12520,
+        "candidateCount": 1
+      }
+    ]
+  }
+}

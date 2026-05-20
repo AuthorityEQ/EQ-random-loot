@@ -1,0 +1,87 @@
+{
+  "zoneShortName": "cazicthule",
+  "zoneName": "Accursed Temple of CazicThule",
+  "files": {
+    "map": {
+      "path": "C:/eqserver/eqemu server/maps/cazicthule.map",
+      "exists": true,
+      "bytes": 202057,
+      "magic": "....=....U..x^l.",
+      "useful": true,
+      "sourceKind": "EQEmu .map collision geometry",
+      "rawBytes": 202057,
+      "inflatedBytes": 677252,
+      "compressedOffset": 12,
+      "likelyTriangleCount": 13459,
+      "sampledTriangleStride": 3,
+      "renderedLineCount": 13461,
+      "rejectedTriangles": 0,
+      "note": "The parser treats the inflated payload after the first 40 bytes as triangle vertices. This is suitable for visual debugging, not a full .map spec implementation."
+    },
+    "nav": {
+      "path": "C:/eqserver/eqemu server/maps/peqmaps-main/nav/cazicthule.nav",
+      "exists": true,
+      "bytes": 286116,
+      "magic": "EQNAVMESH.....]."
+    },
+    "water": {
+      "path": "C:/eqserver/eqemu server/maps/peqmaps-main/water/cazicthule.wtr",
+      "exists": true,
+      "bytes": 512154,
+      "magic": "EQEMUWATER.....7"
+    }
+  },
+  "tables": {
+    "spawn2": {
+      "useful": true,
+      "rows": 289,
+      "contains": "Spawn slots and x/y/z coordinates."
+    },
+    "grid": {
+      "useful": true,
+      "rows": 90,
+      "contains": "Path grid definitions keyed by zone id."
+    },
+    "grid_entries": {
+      "useful": true,
+      "rows": 11275,
+      "contains": "Path waypoints in native x/y/z coordinates."
+    },
+    "doors": {
+      "useful": true,
+      "rows": 32,
+      "contains": "Door/object marker coordinates and destination metadata."
+    },
+    "zone_points": {
+      "useful": true,
+      "rows": 1,
+      "contains": "Zone connection markers and target coordinates."
+    },
+    "object": {
+      "useful": true,
+      "rows": 0,
+      "contains": "Placed world objects with native coordinates."
+    },
+    "ground_spawns": {
+      "useful": true,
+      "rows": 1,
+      "contains": "Ground spawn regions; center point is derived for debug rendering."
+    },
+    "traps": {
+      "useful": true,
+      "rows": 0,
+      "contains": "Trap marker coordinates/radius/effect metadata."
+    }
+  },
+  "conclusion": [
+    "The local EQEmu .map file is the best local geometry source because it uses the same native coordinate family as spawn2.",
+    "Database grid/door/zone_point/object/ground_spawn/trap tables provide useful overlays and validation markers, not full visual map geometry.",
+    "The .nav file is likely pathing/navmesh data and is useful long-term, but was not parsed beyond file identification in this prototype.",
+    "This is better than PNG alignment because it avoids screenshot scaling/cropping/orientation problems."
+  ],
+  "caveats": [
+    "The .map triangle parser is a conservative visual-debug parser, not a complete EQEmu map format implementation.",
+    "Cazic-Thule data appears to be the local PEQ/revamped-era zone content.",
+    "Z-level/floor separation still needs a later layer/filter pass."
+  ]
+}

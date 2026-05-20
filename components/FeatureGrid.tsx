@@ -9,7 +9,8 @@ export type FeatureCardId =
   | "factions"
   | "epics"
   | "normal-loot"
-  | "picks";
+  | "picks"
+  | "zones";
 
 type FeatureCard = {
   id: FeatureCardId;
@@ -77,6 +78,12 @@ const tools: FeatureCard[] = [
     description:
       "Find out how many people it takes to spawn a pick of a zone.",
   },
+  {
+    id: "zones",
+    href: "/zones",
+    title: "Zones",
+    description: "Browse zone mob snapshots, level ranges, and data sample summaries.",
+  },
 ];
 
 export const frostreaverFeatureCards: FeatureCardId[] = [
@@ -87,6 +94,7 @@ export const frostreaverFeatureCards: FeatureCardId[] = [
   "factions",
   "epics",
   "picks",
+  "zones",
   "characters",
 ];
 

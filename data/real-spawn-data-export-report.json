@@ -1,0 +1,3355 @@
+{
+  "source": "Real Spawn Data export status through Legacy of Ykesha",
+  "generatedAt": "2026-05-19T19:54:49.138Z",
+  "scope": [
+    "Classic",
+    "Kunark",
+    "Velious",
+    "Luclin",
+    "Planes of Power",
+    "Legacy of Ykesha"
+  ],
+  "dataSeparation": "Zone Snapshot data is preserved separately. This report covers Real Spawn Data only.",
+  "batch": {
+    "zonesConsidered": 190,
+    "zonesAlreadyExported": 190,
+    "zonesExportedThisRun": 0,
+    "zonesSkipped": 0,
+    "zonesFailed": 0,
+    "expansionScope": {
+      "0": "Classic",
+      "1": "Kunark",
+      "2": "Velious",
+      "3": "Luclin",
+      "4": "Planes of Power",
+      "5": "Legacy of Ykesha"
+    }
+  },
+  "totals": {
+    "zonesExported": 185,
+    "spawnSlots": 52478,
+    "spawnCandidates": 106257,
+    "possibleMobs": 26549,
+    "mobsWithResolvedDrops": 19648,
+    "resolvedDropItems": 466346,
+    "acceptedItemMatches": 4458,
+    "rejectedItemMatches": 8489,
+    "unmatchedItems": 10146,
+    "fuzzyMatchesUsed": 0
+  },
+  "expansionCoverage": {
+    "Classic": 80,
+    "Kunark": 27,
+    "Legacy of Ykesha": 7,
+    "Luclin": 27,
+    "Planes of Power": 23,
+    "Velious": 21
+  },
+  "exportedZones": [
+    {
+      "shortName": "acrylia",
+      "zoneName": "The Acrylia Caverns",
+      "expansion": "Luclin",
+      "spawnSlots": 248,
+      "spawnCandidates": 729,
+      "possibleMobs": 124,
+      "mobsWithResolvedDrops": 97,
+      "resolvedDropItems": 5759,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "airplane",
+      "zoneName": "The Plane of Sky",
+      "expansion": "Classic",
+      "spawnSlots": 116,
+      "spawnCandidates": 127,
+      "possibleMobs": 62,
+      "mobsWithResolvedDrops": 46,
+      "resolvedDropItems": 1340,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "akanon",
+      "zoneName": "Ak'Anon",
+      "expansion": "Classic",
+      "spawnSlots": 255,
+      "spawnCandidates": 328,
+      "possibleMobs": 253,
+      "mobsWithResolvedDrops": 126,
+      "resolvedDropItems": 543,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "akheva",
+      "zoneName": "The Akheva Ruins",
+      "expansion": "Luclin",
+      "spawnSlots": 345,
+      "spawnCandidates": 1230,
+      "possibleMobs": 160,
+      "mobsWithResolvedDrops": 138,
+      "resolvedDropItems": 2518,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "arena",
+      "zoneName": "The Arena",
+      "expansion": "Classic",
+      "spawnSlots": 6,
+      "spawnCandidates": 6,
+      "possibleMobs": 6,
+      "mobsWithResolvedDrops": 0,
+      "resolvedDropItems": 0,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "befallen",
+      "zoneName": "Befallen",
+      "expansion": "Classic",
+      "spawnSlots": 133,
+      "spawnCandidates": 351,
+      "possibleMobs": 98,
+      "mobsWithResolvedDrops": 94,
+      "resolvedDropItems": 3016,
+      "mapStatus": "Good alignment",
+      "mapFiles": []
+    },
+    {
+      "shortName": "beholder",
+      "zoneName": "Gorge of King Xorbb",
+      "expansion": "Classic",
+      "spawnSlots": 45,
+      "spawnCandidates": 100,
+      "possibleMobs": 35,
+      "mobsWithResolvedDrops": 34,
+      "resolvedDropItems": 1010,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "blackburrow",
+      "zoneName": "Blackburrow",
+      "expansion": "Classic",
+      "spawnSlots": 120,
+      "spawnCandidates": 296,
+      "possibleMobs": 46,
+      "mobsWithResolvedDrops": 45,
+      "resolvedDropItems": 2379,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "bothunder",
+      "zoneName": "Bastion of Thunder",
+      "expansion": "Planes of Power",
+      "spawnSlots": 425,
+      "spawnCandidates": 833,
+      "possibleMobs": 99,
+      "mobsWithResolvedDrops": 94,
+      "resolvedDropItems": 1797,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "burningwood",
+      "zoneName": "The Burning Wood",
+      "expansion": "Kunark",
+      "spawnSlots": 249,
+      "spawnCandidates": 474,
+      "possibleMobs": 137,
+      "mobsWithResolvedDrops": 131,
+      "resolvedDropItems": 5832,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "butcher",
+      "zoneName": "Butcherblock Mountains",
+      "expansion": "Classic",
+      "spawnSlots": 420,
+      "spawnCandidates": 586,
+      "possibleMobs": 212,
+      "mobsWithResolvedDrops": 157,
+      "resolvedDropItems": 1636,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "cabeast",
+      "zoneName": "Cabilis East",
+      "expansion": "Kunark",
+      "spawnSlots": 183,
+      "spawnCandidates": 205,
+      "possibleMobs": 133,
+      "mobsWithResolvedDrops": 42,
+      "resolvedDropItems": 66,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "cabwest",
+      "zoneName": "Cabilis West",
+      "expansion": "Kunark",
+      "spawnSlots": 68,
+      "spawnCandidates": 68,
+      "possibleMobs": 50,
+      "mobsWithResolvedDrops": 20,
+      "resolvedDropItems": 30,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "cauldron",
+      "zoneName": "Dagnor's Cauldron",
+      "expansion": "Classic",
+      "spawnSlots": 74,
+      "spawnCandidates": 121,
+      "possibleMobs": 50,
+      "mobsWithResolvedDrops": 37,
+      "resolvedDropItems": 306,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "cazicthule",
+      "zoneName": "Cazic-Thule",
+      "expansion": "Classic",
+      "spawnSlots": 289,
+      "spawnCandidates": 787,
+      "possibleMobs": 190,
+      "mobsWithResolvedDrops": 149,
+      "resolvedDropItems": 3589,
+      "mapStatus": "Good alignment",
+      "mapFiles": []
+    },
+    {
+      "shortName": "charasis",
+      "zoneName": "The Howling Stones",
+      "expansion": "Kunark",
+      "spawnSlots": 227,
+      "spawnCandidates": 662,
+      "possibleMobs": 172,
+      "mobsWithResolvedDrops": 167,
+      "resolvedDropItems": 13231,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "chardok",
+      "zoneName": "Chardok",
+      "expansion": "Kunark",
+      "spawnSlots": 370,
+      "spawnCandidates": 757,
+      "possibleMobs": 221,
+      "mobsWithResolvedDrops": 197,
+      "resolvedDropItems": 5994,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "chardokb",
+      "zoneName": "Chardok: The Halls of Betrayal",
+      "expansion": "Legacy of Ykesha",
+      "spawnSlots": 172,
+      "spawnCandidates": 526,
+      "possibleMobs": 134,
+      "mobsWithResolvedDrops": 121,
+      "resolvedDropItems": 4585,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "citymist",
+      "zoneName": "The City of Mist",
+      "expansion": "Kunark",
+      "spawnSlots": 335,
+      "spawnCandidates": 975,
+      "possibleMobs": 164,
+      "mobsWithResolvedDrops": 162,
+      "resolvedDropItems": 6822,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "cobaltscar",
+      "zoneName": "Cobaltscar",
+      "expansion": "Velious",
+      "spawnSlots": 123,
+      "spawnCandidates": 310,
+      "possibleMobs": 68,
+      "mobsWithResolvedDrops": 62,
+      "resolvedDropItems": 3255,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "codecay",
+      "zoneName": "The Crypt of Decay",
+      "expansion": "Planes of Power",
+      "spawnSlots": 221,
+      "spawnCandidates": 1063,
+      "possibleMobs": 55,
+      "mobsWithResolvedDrops": 39,
+      "resolvedDropItems": 866,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "commons",
+      "zoneName": "West Commonlands",
+      "expansion": "Classic",
+      "spawnSlots": 148,
+      "spawnCandidates": 206,
+      "possibleMobs": 115,
+      "mobsWithResolvedDrops": 84,
+      "resolvedDropItems": 1741,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "crushbone",
+      "zoneName": "Crushbone",
+      "expansion": "Classic",
+      "spawnSlots": 105,
+      "spawnCandidates": 236,
+      "possibleMobs": 60,
+      "mobsWithResolvedDrops": 60,
+      "resolvedDropItems": 1735,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "crystal",
+      "zoneName": "The Crystal Caverns",
+      "expansion": "Velious",
+      "spawnSlots": 121,
+      "spawnCandidates": 261,
+      "possibleMobs": 91,
+      "mobsWithResolvedDrops": 71,
+      "resolvedDropItems": 3644,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "cshome",
+      "zoneName": "Sunset Home",
+      "expansion": "Classic",
+      "spawnSlots": 30,
+      "spawnCandidates": 42,
+      "possibleMobs": 41,
+      "mobsWithResolvedDrops": 1,
+      "resolvedDropItems": 3,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "dalnir",
+      "zoneName": "The Crypt of Dalnir",
+      "expansion": "Kunark",
+      "spawnSlots": 153,
+      "spawnCandidates": 228,
+      "possibleMobs": 80,
+      "mobsWithResolvedDrops": 76,
+      "resolvedDropItems": 1090,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "dawnshroud",
+      "zoneName": "The Dawnshroud Peaks",
+      "expansion": "Luclin",
+      "spawnSlots": 548,
+      "spawnCandidates": 975,
+      "possibleMobs": 246,
+      "mobsWithResolvedDrops": 178,
+      "resolvedDropItems": 4033,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "dreadlands",
+      "zoneName": "The Dreadlands",
+      "expansion": "Kunark",
+      "spawnSlots": 281,
+      "spawnCandidates": 484,
+      "possibleMobs": 133,
+      "mobsWithResolvedDrops": 125,
+      "resolvedDropItems": 4036,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "droga",
+      "zoneName": "The Temple of Droga",
+      "expansion": "Kunark",
+      "spawnSlots": 1043,
+      "spawnCandidates": 4696,
+      "possibleMobs": 194,
+      "mobsWithResolvedDrops": 186,
+      "resolvedDropItems": 4648,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "dulak",
+      "zoneName": "Dulak's Harbor",
+      "expansion": "Legacy of Ykesha",
+      "spawnSlots": 416,
+      "spawnCandidates": 765,
+      "possibleMobs": 317,
+      "mobsWithResolvedDrops": 313,
+      "resolvedDropItems": 17703,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "eastkarana",
+      "zoneName": "Eastern Plains of Karana",
+      "expansion": "Classic",
+      "spawnSlots": 225,
+      "spawnCandidates": 350,
+      "possibleMobs": 157,
+      "mobsWithResolvedDrops": 105,
+      "resolvedDropItems": 1397,
+      "mapStatus": "Partial alignment",
+      "mapFiles": []
+    },
+    {
+      "shortName": "eastwastes",
+      "zoneName": "Eastern Wastes",
+      "expansion": "Velious",
+      "spawnSlots": 398,
+      "spawnCandidates": 678,
+      "possibleMobs": 208,
+      "mobsWithResolvedDrops": 195,
+      "resolvedDropItems": 5643,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "echo",
+      "zoneName": "The Echo Caverns",
+      "expansion": "Luclin",
+      "spawnSlots": 173,
+      "spawnCandidates": 279,
+      "possibleMobs": 144,
+      "mobsWithResolvedDrops": 80,
+      "resolvedDropItems": 437,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "ecommons",
+      "zoneName": "East Commonlands",
+      "expansion": "Classic",
+      "spawnSlots": 238,
+      "spawnCandidates": 333,
+      "possibleMobs": 170,
+      "mobsWithResolvedDrops": 115,
+      "resolvedDropItems": 1063,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "emeraldjungle",
+      "zoneName": "The Emerald Jungle",
+      "expansion": "Kunark",
+      "spawnSlots": 264,
+      "spawnCandidates": 333,
+      "possibleMobs": 104,
+      "mobsWithResolvedDrops": 95,
+      "resolvedDropItems": 1325,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "erudnext",
+      "zoneName": "Erudin",
+      "expansion": "Classic",
+      "spawnSlots": 115,
+      "spawnCandidates": 124,
+      "possibleMobs": 115,
+      "mobsWithResolvedDrops": 34,
+      "resolvedDropItems": 233,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "erudnint",
+      "zoneName": "The Erudin Palace",
+      "expansion": "Classic",
+      "spawnSlots": 78,
+      "spawnCandidates": 79,
+      "possibleMobs": 79,
+      "mobsWithResolvedDrops": 29,
+      "resolvedDropItems": 68,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "erudsxing",
+      "zoneName": "Erud's Crossing",
+      "expansion": "Classic",
+      "spawnSlots": 96,
+      "spawnCandidates": 99,
+      "possibleMobs": 48,
+      "mobsWithResolvedDrops": 36,
+      "resolvedDropItems": 274,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "everfrost",
+      "zoneName": "Everfrost Peaks",
+      "expansion": "Classic",
+      "spawnSlots": 282,
+      "spawnCandidates": 436,
+      "possibleMobs": 105,
+      "mobsWithResolvedDrops": 87,
+      "resolvedDropItems": 1181,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "fearplane",
+      "zoneName": "The Plane of Fear",
+      "expansion": "Classic",
+      "spawnSlots": 190,
+      "spawnCandidates": 248,
+      "possibleMobs": 97,
+      "mobsWithResolvedDrops": 96,
+      "resolvedDropItems": 4426,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "feerrott",
+      "zoneName": "The Feerrott",
+      "expansion": "Classic",
+      "spawnSlots": 474,
+      "spawnCandidates": 635,
+      "possibleMobs": 174,
+      "mobsWithResolvedDrops": 157,
+      "resolvedDropItems": 3903,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "felwithea",
+      "zoneName": "Northern Felwithe",
+      "expansion": "Classic",
+      "spawnSlots": 87,
+      "spawnCandidates": 97,
+      "possibleMobs": 87,
+      "mobsWithResolvedDrops": 32,
+      "resolvedDropItems": 281,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "felwitheb",
+      "zoneName": "Southern Felwithe",
+      "expansion": "Classic",
+      "spawnSlots": 38,
+      "spawnCandidates": 38,
+      "possibleMobs": 38,
+      "mobsWithResolvedDrops": 12,
+      "resolvedDropItems": 83,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "fieldofbone",
+      "zoneName": "The Field of Bone",
+      "expansion": "Kunark",
+      "spawnSlots": 386,
+      "spawnCandidates": 627,
+      "possibleMobs": 150,
+      "mobsWithResolvedDrops": 133,
+      "resolvedDropItems": 1416,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "firiona",
+      "zoneName": "Firiona Vie",
+      "expansion": "Kunark",
+      "spawnSlots": 494,
+      "spawnCandidates": 573,
+      "possibleMobs": 267,
+      "mobsWithResolvedDrops": 196,
+      "resolvedDropItems": 3268,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "freporte",
+      "zoneName": "East Freeport",
+      "expansion": "Classic",
+      "spawnSlots": 204,
+      "spawnCandidates": 247,
+      "possibleMobs": 187,
+      "mobsWithResolvedDrops": 71,
+      "resolvedDropItems": 647,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "freportn",
+      "zoneName": "North Freeport",
+      "expansion": "Classic",
+      "spawnSlots": 116,
+      "spawnCandidates": 119,
+      "possibleMobs": 116,
+      "mobsWithResolvedDrops": 38,
+      "resolvedDropItems": 106,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "freportw",
+      "zoneName": "West Freeport",
+      "expansion": "Classic",
+      "spawnSlots": 213,
+      "spawnCandidates": 222,
+      "possibleMobs": 142,
+      "mobsWithResolvedDrops": 57,
+      "resolvedDropItems": 573,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "frontiermtns",
+      "zoneName": "Frontier Mountains",
+      "expansion": "Kunark",
+      "spawnSlots": 333,
+      "spawnCandidates": 489,
+      "possibleMobs": 167,
+      "mobsWithResolvedDrops": 160,
+      "resolvedDropItems": 4735,
+      "mapStatus": "Partial alignment",
+      "mapFiles": []
+    },
+    {
+      "shortName": "frozenshadow",
+      "zoneName": "The Tower of Frozen Shadow",
+      "expansion": "Velious",
+      "spawnSlots": 237,
+      "spawnCandidates": 433,
+      "possibleMobs": 158,
+      "mobsWithResolvedDrops": 150,
+      "resolvedDropItems": 4332,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "fungusgrove",
+      "zoneName": "The Fungus Grove",
+      "expansion": "Luclin",
+      "spawnSlots": 545,
+      "spawnCandidates": 1147,
+      "possibleMobs": 106,
+      "mobsWithResolvedDrops": 59,
+      "resolvedDropItems": 829,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "gfaydark",
+      "zoneName": "The Greater Faydark",
+      "expansion": "Classic",
+      "spawnSlots": 416,
+      "spawnCandidates": 635,
+      "possibleMobs": 251,
+      "mobsWithResolvedDrops": 150,
+      "resolvedDropItems": 1556,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "greatdivide",
+      "zoneName": "The Great Divide",
+      "expansion": "Velious",
+      "spawnSlots": 557,
+      "spawnCandidates": 992,
+      "possibleMobs": 141,
+      "mobsWithResolvedDrops": 115,
+      "resolvedDropItems": 3106,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "griegsend",
+      "zoneName": "Grieg's End",
+      "expansion": "Luclin",
+      "spawnSlots": 939,
+      "spawnCandidates": 1555,
+      "possibleMobs": 160,
+      "mobsWithResolvedDrops": 91,
+      "resolvedDropItems": 3233,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "grimling",
+      "zoneName": "Grimling Forest",
+      "expansion": "Luclin",
+      "spawnSlots": 406,
+      "spawnCandidates": 1273,
+      "possibleMobs": 639,
+      "mobsWithResolvedDrops": 406,
+      "resolvedDropItems": 18624,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "grobb",
+      "zoneName": "Grobb",
+      "expansion": "Classic",
+      "spawnSlots": 123,
+      "spawnCandidates": 123,
+      "possibleMobs": 104,
+      "mobsWithResolvedDrops": 33,
+      "resolvedDropItems": 92,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "growthplane",
+      "zoneName": "The Plane of Growth",
+      "expansion": "Velious",
+      "spawnSlots": 339,
+      "spawnCandidates": 350,
+      "possibleMobs": 103,
+      "mobsWithResolvedDrops": 98,
+      "resolvedDropItems": 2664,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "gukbottom",
+      "zoneName": "Lower Guk",
+      "expansion": "Classic",
+      "spawnSlots": 228,
+      "spawnCandidates": 465,
+      "possibleMobs": 170,
+      "mobsWithResolvedDrops": 169,
+      "resolvedDropItems": 8661,
+      "mapStatus": "Good alignment",
+      "mapFiles": []
+    },
+    {
+      "shortName": "guktop",
+      "zoneName": "The City of Guk",
+      "expansion": "Classic",
+      "spawnSlots": 240,
+      "spawnCandidates": 580,
+      "possibleMobs": 143,
+      "mobsWithResolvedDrops": 142,
+      "resolvedDropItems": 4720,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "gunthak",
+      "zoneName": "The Gulf of Gunthak",
+      "expansion": "Legacy of Ykesha",
+      "spawnSlots": 445,
+      "spawnCandidates": 852,
+      "possibleMobs": 292,
+      "mobsWithResolvedDrops": 247,
+      "resolvedDropItems": 6962,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "halas",
+      "zoneName": "Halas",
+      "expansion": "Classic",
+      "spawnSlots": 94,
+      "spawnCandidates": 94,
+      "possibleMobs": 93,
+      "mobsWithResolvedDrops": 12,
+      "resolvedDropItems": 16,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "hateplane",
+      "zoneName": "Plane of Hate",
+      "expansion": "Classic",
+      "spawnSlots": 213,
+      "spawnCandidates": 301,
+      "possibleMobs": 61,
+      "mobsWithResolvedDrops": 32,
+      "resolvedDropItems": 403,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "hateplaneb",
+      "zoneName": "The Plane of Hate",
+      "expansion": "Classic",
+      "spawnSlots": 491,
+      "spawnCandidates": 731,
+      "possibleMobs": 189,
+      "mobsWithResolvedDrops": 186,
+      "resolvedDropItems": 9452,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "hatesfury",
+      "zoneName": "Hate's Fury",
+      "expansion": "Legacy of Ykesha",
+      "spawnSlots": 151,
+      "spawnCandidates": 373,
+      "possibleMobs": 114,
+      "mobsWithResolvedDrops": 106,
+      "resolvedDropItems": 1517,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "highkeep",
+      "zoneName": "High Keep",
+      "expansion": "Classic",
+      "spawnSlots": 110,
+      "spawnCandidates": 220,
+      "possibleMobs": 179,
+      "mobsWithResolvedDrops": 156,
+      "resolvedDropItems": 1700,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "highpass",
+      "zoneName": "Highpass Hold",
+      "expansion": "Classic",
+      "spawnSlots": 110,
+      "spawnCandidates": 193,
+      "possibleMobs": 134,
+      "mobsWithResolvedDrops": 91,
+      "resolvedDropItems": 895,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "hohonora",
+      "zoneName": "The Halls of Honor",
+      "expansion": "Planes of Power",
+      "spawnSlots": 305,
+      "spawnCandidates": 504,
+      "possibleMobs": 69,
+      "mobsWithResolvedDrops": 62,
+      "resolvedDropItems": 1170,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "hohonorb",
+      "zoneName": "The Temple of Marr",
+      "expansion": "Planes of Power",
+      "spawnSlots": 55,
+      "spawnCandidates": 59,
+      "possibleMobs": 15,
+      "mobsWithResolvedDrops": 12,
+      "resolvedDropItems": 138,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "hole",
+      "zoneName": "The Hole",
+      "expansion": "Classic",
+      "spawnSlots": 526,
+      "spawnCandidates": 1197,
+      "possibleMobs": 163,
+      "mobsWithResolvedDrops": 145,
+      "resolvedDropItems": 5089,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "hollowshade",
+      "zoneName": "Hollowshade Moor",
+      "expansion": "Luclin",
+      "spawnSlots": 820,
+      "spawnCandidates": 2080,
+      "possibleMobs": 236,
+      "mobsWithResolvedDrops": 219,
+      "resolvedDropItems": 4570,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "iceclad",
+      "zoneName": "The Iceclad Ocean",
+      "expansion": "Velious",
+      "spawnSlots": 219,
+      "spawnCandidates": 314,
+      "possibleMobs": 94,
+      "mobsWithResolvedDrops": 53,
+      "resolvedDropItems": 1805,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "innothule",
+      "zoneName": "Innothule Swamp",
+      "expansion": "Classic",
+      "spawnSlots": 197,
+      "spawnCandidates": 262,
+      "possibleMobs": 78,
+      "mobsWithResolvedDrops": 53,
+      "resolvedDropItems": 444,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "jaggedpine",
+      "zoneName": "The Jaggedpine Forest",
+      "expansion": "Classic",
+      "spawnSlots": 474,
+      "spawnCandidates": 663,
+      "possibleMobs": 179,
+      "mobsWithResolvedDrops": 127,
+      "resolvedDropItems": 2967,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "kael",
+      "zoneName": "Kael Drakkel",
+      "expansion": "Velious",
+      "spawnSlots": 243,
+      "spawnCandidates": 966,
+      "possibleMobs": 512,
+      "mobsWithResolvedDrops": 494,
+      "resolvedDropItems": 4850,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "kaesora",
+      "zoneName": "Kaesora",
+      "expansion": "Kunark",
+      "spawnSlots": 114,
+      "spawnCandidates": 297,
+      "possibleMobs": 86,
+      "mobsWithResolvedDrops": 86,
+      "resolvedDropItems": 3376,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "kaladima",
+      "zoneName": "South Kaladim",
+      "expansion": "Classic",
+      "spawnSlots": 54,
+      "spawnCandidates": 68,
+      "possibleMobs": 68,
+      "mobsWithResolvedDrops": 33,
+      "resolvedDropItems": 197,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "kaladimb",
+      "zoneName": "North Kaladim",
+      "expansion": "Classic",
+      "spawnSlots": 71,
+      "spawnCandidates": 81,
+      "possibleMobs": 72,
+      "mobsWithResolvedDrops": 21,
+      "resolvedDropItems": 80,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "karnor",
+      "zoneName": "Karnor's Castle",
+      "expansion": "Kunark",
+      "spawnSlots": 136,
+      "spawnCandidates": 564,
+      "possibleMobs": 127,
+      "mobsWithResolvedDrops": 127,
+      "resolvedDropItems": 5660,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "katta",
+      "zoneName": "Katta Castellum",
+      "expansion": "Luclin",
+      "spawnSlots": 311,
+      "spawnCandidates": 536,
+      "possibleMobs": 448,
+      "mobsWithResolvedDrops": 279,
+      "resolvedDropItems": 1215,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "kedge",
+      "zoneName": "Kedge Keep",
+      "expansion": "Classic",
+      "spawnSlots": 113,
+      "spawnCandidates": 261,
+      "possibleMobs": 93,
+      "mobsWithResolvedDrops": 92,
+      "resolvedDropItems": 2811,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "kerraridge",
+      "zoneName": "Kerra Isle",
+      "expansion": "Classic",
+      "spawnSlots": 155,
+      "spawnCandidates": 248,
+      "possibleMobs": 118,
+      "mobsWithResolvedDrops": 69,
+      "resolvedDropItems": 105,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "kithicor",
+      "zoneName": "Kithicor Forest",
+      "expansion": "Classic",
+      "spawnSlots": 377,
+      "spawnCandidates": 1729,
+      "possibleMobs": 190,
+      "mobsWithResolvedDrops": 141,
+      "resolvedDropItems": 2173,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "kurn",
+      "zoneName": "Kurn's Tower",
+      "expansion": "Kunark",
+      "spawnSlots": 251,
+      "spawnCandidates": 628,
+      "possibleMobs": 76,
+      "mobsWithResolvedDrops": 76,
+      "resolvedDropItems": 4188,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "lakeofillomen",
+      "zoneName": "Lake of Ill Omen",
+      "expansion": "Kunark",
+      "spawnSlots": 409,
+      "spawnCandidates": 647,
+      "possibleMobs": 193,
+      "mobsWithResolvedDrops": 175,
+      "resolvedDropItems": 4024,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "lakerathe",
+      "zoneName": "Lake Rathetear",
+      "expansion": "Classic",
+      "spawnSlots": 151,
+      "spawnCandidates": 301,
+      "possibleMobs": 143,
+      "mobsWithResolvedDrops": 98,
+      "resolvedDropItems": 1996,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "lavastorm",
+      "zoneName": "The Lavastorm Mountains",
+      "expansion": "Classic",
+      "spawnSlots": 274,
+      "spawnCandidates": 424,
+      "possibleMobs": 158,
+      "mobsWithResolvedDrops": 106,
+      "resolvedDropItems": 2340,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "letalis",
+      "zoneName": "Mons Letalis",
+      "expansion": "Luclin",
+      "spawnSlots": 280,
+      "spawnCandidates": 446,
+      "possibleMobs": 99,
+      "mobsWithResolvedDrops": 84,
+      "resolvedDropItems": 1460,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "lfaydark",
+      "zoneName": "The Lesser Faydark",
+      "expansion": "Classic",
+      "spawnSlots": 225,
+      "spawnCandidates": 308,
+      "possibleMobs": 126,
+      "mobsWithResolvedDrops": 113,
+      "resolvedDropItems": 1585,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "maiden",
+      "zoneName": "The Maiden's Eye",
+      "expansion": "Luclin",
+      "spawnSlots": 429,
+      "spawnCandidates": 781,
+      "possibleMobs": 141,
+      "mobsWithResolvedDrops": 139,
+      "resolvedDropItems": 5285,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "mischiefplane",
+      "zoneName": "The Plane of Mischief",
+      "expansion": "Velious",
+      "spawnSlots": 662,
+      "spawnCandidates": 1073,
+      "possibleMobs": 336,
+      "mobsWithResolvedDrops": 304,
+      "resolvedDropItems": 3137,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "mistmoore",
+      "zoneName": "Castle Mistmoore",
+      "expansion": "Classic",
+      "spawnSlots": 175,
+      "spawnCandidates": 369,
+      "possibleMobs": 153,
+      "mobsWithResolvedDrops": 152,
+      "resolvedDropItems": 7069,
+      "mapStatus": "Good alignment",
+      "mapFiles": []
+    },
+    {
+      "shortName": "misty",
+      "zoneName": "Misty Thicket",
+      "expansion": "Classic",
+      "spawnSlots": 258,
+      "spawnCandidates": 482,
+      "possibleMobs": 134,
+      "mobsWithResolvedDrops": 97,
+      "resolvedDropItems": 1008,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "mseru",
+      "zoneName": "Marus Seru",
+      "expansion": "Luclin",
+      "spawnSlots": 243,
+      "spawnCandidates": 462,
+      "possibleMobs": 91,
+      "mobsWithResolvedDrops": 87,
+      "resolvedDropItems": 2434,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "nadox",
+      "zoneName": "The Crypt of Nadox",
+      "expansion": "Legacy of Ykesha",
+      "spawnSlots": 359,
+      "spawnCandidates": 668,
+      "possibleMobs": 130,
+      "mobsWithResolvedDrops": 123,
+      "resolvedDropItems": 4709,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "najena",
+      "zoneName": "Najena",
+      "expansion": "Classic",
+      "spawnSlots": 109,
+      "spawnCandidates": 256,
+      "possibleMobs": 101,
+      "mobsWithResolvedDrops": 101,
+      "resolvedDropItems": 5371,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "necropolis",
+      "zoneName": "Dragon Necropolis",
+      "expansion": "Velious",
+      "spawnSlots": 361,
+      "spawnCandidates": 1044,
+      "possibleMobs": 149,
+      "mobsWithResolvedDrops": 122,
+      "resolvedDropItems": 4048,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "nedaria",
+      "zoneName": "Nedaria's Landing",
+      "expansion": "Classic",
+      "spawnSlots": 297,
+      "spawnCandidates": 431,
+      "possibleMobs": 135,
+      "mobsWithResolvedDrops": 72,
+      "resolvedDropItems": 382,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "nektulos",
+      "zoneName": "The Nektulos Forest",
+      "expansion": "Classic",
+      "spawnSlots": 852,
+      "spawnCandidates": 3338,
+      "possibleMobs": 147,
+      "mobsWithResolvedDrops": 124,
+      "resolvedDropItems": 1219,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "neriaka",
+      "zoneName": "Neriak - Foreign Quarter",
+      "expansion": "Classic",
+      "spawnSlots": 80,
+      "spawnCandidates": 87,
+      "possibleMobs": 71,
+      "mobsWithResolvedDrops": 27,
+      "resolvedDropItems": 70,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "neriakb",
+      "zoneName": "Neriak - Commons",
+      "expansion": "Classic",
+      "spawnSlots": 115,
+      "spawnCandidates": 153,
+      "possibleMobs": 104,
+      "mobsWithResolvedDrops": 29,
+      "resolvedDropItems": 177,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "neriakc",
+      "zoneName": "Neriak - 3rd Gate",
+      "expansion": "Classic",
+      "spawnSlots": 110,
+      "spawnCandidates": 128,
+      "possibleMobs": 108,
+      "mobsWithResolvedDrops": 48,
+      "resolvedDropItems": 303,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "netherbian",
+      "zoneName": "Netherbian Lair",
+      "expansion": "Luclin",
+      "spawnSlots": 161,
+      "spawnCandidates": 509,
+      "possibleMobs": 64,
+      "mobsWithResolvedDrops": 60,
+      "resolvedDropItems": 1840,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "nexus",
+      "zoneName": "Nexus",
+      "expansion": "Luclin",
+      "spawnSlots": 38,
+      "spawnCandidates": 38,
+      "possibleMobs": 26,
+      "mobsWithResolvedDrops": 4,
+      "resolvedDropItems": 8,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "nightmareb",
+      "zoneName": "The Lair of Terris Thule",
+      "expansion": "Planes of Power",
+      "spawnSlots": 33,
+      "spawnCandidates": 37,
+      "possibleMobs": 7,
+      "mobsWithResolvedDrops": 7,
+      "resolvedDropItems": 53,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "northkarana",
+      "zoneName": "The Northern Plains of Karana",
+      "expansion": "Classic",
+      "spawnSlots": 165,
+      "spawnCandidates": 235,
+      "possibleMobs": 108,
+      "mobsWithResolvedDrops": 87,
+      "resolvedDropItems": 1324,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "nro",
+      "zoneName": "Northern Desert of Ro",
+      "expansion": "Classic",
+      "spawnSlots": 165,
+      "spawnCandidates": 238,
+      "possibleMobs": 106,
+      "mobsWithResolvedDrops": 75,
+      "resolvedDropItems": 1683,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "nurga",
+      "zoneName": "The Mines of Nurga",
+      "expansion": "Kunark",
+      "spawnSlots": 335,
+      "spawnCandidates": 1244,
+      "possibleMobs": 159,
+      "mobsWithResolvedDrops": 150,
+      "resolvedDropItems": 2013,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "oasis",
+      "zoneName": "Oasis of Marr",
+      "expansion": "Classic",
+      "spawnSlots": 157,
+      "spawnCandidates": 291,
+      "possibleMobs": 117,
+      "mobsWithResolvedDrops": 94,
+      "resolvedDropItems": 2246,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "oggok",
+      "zoneName": "Oggok",
+      "expansion": "Classic",
+      "spawnSlots": 110,
+      "spawnCandidates": 135,
+      "possibleMobs": 122,
+      "mobsWithResolvedDrops": 44,
+      "resolvedDropItems": 281,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "oot",
+      "zoneName": "Ocean of Tears",
+      "expansion": "Classic",
+      "spawnSlots": 190,
+      "spawnCandidates": 323,
+      "possibleMobs": 136,
+      "mobsWithResolvedDrops": 80,
+      "resolvedDropItems": 666,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "overthere",
+      "zoneName": "The Overthere",
+      "expansion": "Kunark",
+      "spawnSlots": 437,
+      "spawnCandidates": 547,
+      "possibleMobs": 186,
+      "mobsWithResolvedDrops": 147,
+      "resolvedDropItems": 3535,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "paineel",
+      "zoneName": "Paineel",
+      "expansion": "Classic",
+      "spawnSlots": 134,
+      "spawnCandidates": 180,
+      "possibleMobs": 160,
+      "mobsWithResolvedDrops": 85,
+      "resolvedDropItems": 225,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "paludal",
+      "zoneName": "The Paludal Caverns",
+      "expansion": "Luclin",
+      "spawnSlots": 433,
+      "spawnCandidates": 2866,
+      "possibleMobs": 117,
+      "mobsWithResolvedDrops": 115,
+      "resolvedDropItems": 4397,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "paw",
+      "zoneName": "The Lair of the Splitpaw",
+      "expansion": "Classic",
+      "spawnSlots": 391,
+      "spawnCandidates": 1305,
+      "possibleMobs": 66,
+      "mobsWithResolvedDrops": 59,
+      "resolvedDropItems": 2121,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "permafrost",
+      "zoneName": "The Permafrost Caverns",
+      "expansion": "Classic",
+      "spawnSlots": 234,
+      "spawnCandidates": 455,
+      "possibleMobs": 103,
+      "mobsWithResolvedDrops": 102,
+      "resolvedDropItems": 8307,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "poair",
+      "zoneName": "The Plane of Air",
+      "expansion": "Planes of Power",
+      "spawnSlots": 461,
+      "spawnCandidates": 608,
+      "possibleMobs": 71,
+      "mobsWithResolvedDrops": 47,
+      "resolvedDropItems": 743,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "podisease",
+      "zoneName": "The Plane of Disease",
+      "expansion": "Planes of Power",
+      "spawnSlots": 424,
+      "spawnCandidates": 698,
+      "possibleMobs": 156,
+      "mobsWithResolvedDrops": 154,
+      "resolvedDropItems": 1839,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "poeartha",
+      "zoneName": "The Plane of Earth",
+      "expansion": "Planes of Power",
+      "spawnSlots": 505,
+      "spawnCandidates": 518,
+      "possibleMobs": 51,
+      "mobsWithResolvedDrops": 31,
+      "resolvedDropItems": 493,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "poearthb",
+      "zoneName": "The Plane of Earth",
+      "expansion": "Planes of Power",
+      "spawnSlots": 97,
+      "spawnCandidates": 97,
+      "possibleMobs": 15,
+      "mobsWithResolvedDrops": 10,
+      "resolvedDropItems": 119,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "pofire",
+      "zoneName": "The Plane of Fire",
+      "expansion": "Planes of Power",
+      "spawnSlots": 565,
+      "spawnCandidates": 1050,
+      "possibleMobs": 91,
+      "mobsWithResolvedDrops": 84,
+      "resolvedDropItems": 1918,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "poinnovation",
+      "zoneName": "The Plane of Innovation",
+      "expansion": "Planes of Power",
+      "spawnSlots": 237,
+      "spawnCandidates": 564,
+      "possibleMobs": 61,
+      "mobsWithResolvedDrops": 55,
+      "resolvedDropItems": 1374,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "pojustice",
+      "zoneName": "The Plane of Justice",
+      "expansion": "Planes of Power",
+      "spawnSlots": 307,
+      "spawnCandidates": 812,
+      "possibleMobs": 397,
+      "mobsWithResolvedDrops": 333,
+      "resolvedDropItems": 1460,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "poknowledge",
+      "zoneName": "The Plane of Knowledge",
+      "expansion": "Planes of Power",
+      "spawnSlots": 535,
+      "spawnCandidates": 535,
+      "possibleMobs": 528,
+      "mobsWithResolvedDrops": 9,
+      "resolvedDropItems": 11,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "ponightmare",
+      "zoneName": "The Plane of Nightmares",
+      "expansion": "Planes of Power",
+      "spawnSlots": 544,
+      "spawnCandidates": 655,
+      "possibleMobs": 58,
+      "mobsWithResolvedDrops": 49,
+      "resolvedDropItems": 659,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "postorms",
+      "zoneName": "The Plane of Storms",
+      "expansion": "Planes of Power",
+      "spawnSlots": 618,
+      "spawnCandidates": 1204,
+      "possibleMobs": 234,
+      "mobsWithResolvedDrops": 162,
+      "resolvedDropItems": 2196,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "potactics",
+      "zoneName": "Drunder, the Fortress of Zek",
+      "expansion": "Planes of Power",
+      "spawnSlots": 268,
+      "spawnCandidates": 774,
+      "possibleMobs": 100,
+      "mobsWithResolvedDrops": 83,
+      "resolvedDropItems": 1726,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "potimea",
+      "zoneName": "The Plane of Time",
+      "expansion": "Planes of Power",
+      "spawnSlots": 216,
+      "spawnCandidates": 252,
+      "possibleMobs": 56,
+      "mobsWithResolvedDrops": 50,
+      "resolvedDropItems": 317,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "potimeb",
+      "zoneName": "The Plane of Time",
+      "expansion": "Planes of Power",
+      "spawnSlots": 165,
+      "spawnCandidates": 559,
+      "possibleMobs": 61,
+      "mobsWithResolvedDrops": 0,
+      "resolvedDropItems": 0,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "potorment",
+      "zoneName": "Torment, the Plane of Pain",
+      "expansion": "Planes of Power",
+      "spawnSlots": 258,
+      "spawnCandidates": 425,
+      "possibleMobs": 68,
+      "mobsWithResolvedDrops": 61,
+      "resolvedDropItems": 757,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "potranquility",
+      "zoneName": "The Plane of Tranquility",
+      "expansion": "Planes of Power",
+      "spawnSlots": 78,
+      "spawnCandidates": 78,
+      "possibleMobs": 74,
+      "mobsWithResolvedDrops": 0,
+      "resolvedDropItems": 0,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "povalor",
+      "zoneName": "The Plane of Valor",
+      "expansion": "Planes of Power",
+      "spawnSlots": 259,
+      "spawnCandidates": 377,
+      "possibleMobs": 95,
+      "mobsWithResolvedDrops": 90,
+      "resolvedDropItems": 1146,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "powater",
+      "zoneName": "The Plane of Water",
+      "expansion": "Planes of Power",
+      "spawnSlots": 206,
+      "spawnCandidates": 405,
+      "possibleMobs": 67,
+      "mobsWithResolvedDrops": 60,
+      "resolvedDropItems": 950,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "qcat",
+      "zoneName": "The Qeynos Aqueduct System",
+      "expansion": "Classic",
+      "spawnSlots": 160,
+      "spawnCandidates": 202,
+      "possibleMobs": 120,
+      "mobsWithResolvedDrops": 82,
+      "resolvedDropItems": 524,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "qey2hh1",
+      "zoneName": "The Western Plains of Karana",
+      "expansion": "Classic",
+      "spawnSlots": 303,
+      "spawnCandidates": 396,
+      "possibleMobs": 172,
+      "mobsWithResolvedDrops": 133,
+      "resolvedDropItems": 1852,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "qeynos",
+      "zoneName": "South Qeynos",
+      "expansion": "Classic",
+      "spawnSlots": 200,
+      "spawnCandidates": 222,
+      "possibleMobs": 197,
+      "mobsWithResolvedDrops": 48,
+      "resolvedDropItems": 92,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "qeynos2",
+      "zoneName": "North Qeynos",
+      "expansion": "Classic",
+      "spawnSlots": 190,
+      "spawnCandidates": 226,
+      "possibleMobs": 149,
+      "mobsWithResolvedDrops": 79,
+      "resolvedDropItems": 344,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "qeytoqrg",
+      "zoneName": "The Qeynos Hills",
+      "expansion": "Classic",
+      "spawnSlots": 194,
+      "spawnCandidates": 392,
+      "possibleMobs": 135,
+      "mobsWithResolvedDrops": 102,
+      "resolvedDropItems": 852,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "qrg",
+      "zoneName": "The Surefall Glade",
+      "expansion": "Classic",
+      "spawnSlots": 68,
+      "spawnCandidates": 75,
+      "possibleMobs": 58,
+      "mobsWithResolvedDrops": 21,
+      "resolvedDropItems": 82,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "rathemtn",
+      "zoneName": "The Rathe Mountains",
+      "expansion": "Classic",
+      "spawnSlots": 404,
+      "spawnCandidates": 537,
+      "possibleMobs": 328,
+      "mobsWithResolvedDrops": 192,
+      "resolvedDropItems": 2710,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "rivervale",
+      "zoneName": "Rivervale",
+      "expansion": "Classic",
+      "spawnSlots": 148,
+      "spawnCandidates": 185,
+      "possibleMobs": 154,
+      "mobsWithResolvedDrops": 54,
+      "resolvedDropItems": 213,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "runnyeye",
+      "zoneName": "The Liberated Citadel of Runnyeye",
+      "expansion": "Classic",
+      "spawnSlots": 151,
+      "spawnCandidates": 440,
+      "possibleMobs": 145,
+      "mobsWithResolvedDrops": 109,
+      "resolvedDropItems": 2313,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "scarlet",
+      "zoneName": "The Scarlet Desert",
+      "expansion": "Luclin",
+      "spawnSlots": 775,
+      "spawnCandidates": 1350,
+      "possibleMobs": 275,
+      "mobsWithResolvedDrops": 251,
+      "resolvedDropItems": 7323,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "sebilis",
+      "zoneName": "Old Sebilis",
+      "expansion": "Kunark",
+      "spawnSlots": 248,
+      "spawnCandidates": 1098,
+      "possibleMobs": 184,
+      "mobsWithResolvedDrops": 184,
+      "resolvedDropItems": 10932,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "shadeweaver",
+      "zoneName": "Shadeweaver's Thicket",
+      "expansion": "Luclin",
+      "spawnSlots": 696,
+      "spawnCandidates": 1337,
+      "possibleMobs": 297,
+      "mobsWithResolvedDrops": 238,
+      "resolvedDropItems": 4273,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "shadowhaven",
+      "zoneName": "Shadow Haven",
+      "expansion": "Luclin",
+      "spawnSlots": 321,
+      "spawnCandidates": 321,
+      "possibleMobs": 318,
+      "mobsWithResolvedDrops": 64,
+      "resolvedDropItems": 130,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "shadowrest",
+      "zoneName": "Shadowrest",
+      "expansion": "Classic",
+      "spawnSlots": 15,
+      "spawnCandidates": 15,
+      "possibleMobs": 5,
+      "mobsWithResolvedDrops": 0,
+      "resolvedDropItems": 0,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "sharvahl",
+      "zoneName": "The City of Shar Vahl",
+      "expansion": "Luclin",
+      "spawnSlots": 628,
+      "spawnCandidates": 686,
+      "possibleMobs": 339,
+      "mobsWithResolvedDrops": 65,
+      "resolvedDropItems": 513,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "sirens",
+      "zoneName": "Siren's Grotto",
+      "expansion": "Velious",
+      "spawnSlots": 381,
+      "spawnCandidates": 1002,
+      "possibleMobs": 95,
+      "mobsWithResolvedDrops": 89,
+      "resolvedDropItems": 3975,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "skyfire",
+      "zoneName": "The Skyfire Mountains",
+      "expansion": "Kunark",
+      "spawnSlots": 238,
+      "spawnCandidates": 313,
+      "possibleMobs": 84,
+      "mobsWithResolvedDrops": 81,
+      "resolvedDropItems": 5699,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "skyshrine",
+      "zoneName": "Skyshrine",
+      "expansion": "Velious",
+      "spawnSlots": 698,
+      "spawnCandidates": 1015,
+      "possibleMobs": 617,
+      "mobsWithResolvedDrops": 453,
+      "resolvedDropItems": 6002,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "sleeper",
+      "zoneName": "The Sleeper's Tomb",
+      "expansion": "Velious",
+      "spawnSlots": 259,
+      "spawnCandidates": 344,
+      "possibleMobs": 95,
+      "mobsWithResolvedDrops": 52,
+      "resolvedDropItems": 1115,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "soldunga",
+      "zoneName": "Solusek's Eye",
+      "expansion": "Classic",
+      "spawnSlots": 184,
+      "spawnCandidates": 477,
+      "possibleMobs": 139,
+      "mobsWithResolvedDrops": 136,
+      "resolvedDropItems": 6879,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "soldungb",
+      "zoneName": "Nagafen's Lair / Sol B",
+      "expansion": "Classic",
+      "spawnSlots": 116,
+      "spawnCandidates": 271,
+      "possibleMobs": 69,
+      "mobsWithResolvedDrops": 67,
+      "resolvedDropItems": 2989,
+      "mapStatus": "Good alignment",
+      "mapFiles": []
+    },
+    {
+      "shortName": "soldungc",
+      "zoneName": "The Caverns of Exile",
+      "expansion": "Legacy of Ykesha",
+      "spawnSlots": 232,
+      "spawnCandidates": 286,
+      "possibleMobs": 114,
+      "mobsWithResolvedDrops": 97,
+      "resolvedDropItems": 418,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "solrotower",
+      "zoneName": "The Tower of Solusek Ro",
+      "expansion": "Planes of Power",
+      "spawnSlots": 406,
+      "spawnCandidates": 570,
+      "possibleMobs": 65,
+      "mobsWithResolvedDrops": 61,
+      "resolvedDropItems": 1151,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "soltemple",
+      "zoneName": "The Temple of Solusek Ro",
+      "expansion": "Kunark",
+      "spawnSlots": 48,
+      "spawnCandidates": 49,
+      "possibleMobs": 40,
+      "mobsWithResolvedDrops": 36,
+      "resolvedDropItems": 81,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "southkarana",
+      "zoneName": "The Southern Plains of Karana",
+      "expansion": "Classic",
+      "spawnSlots": 246,
+      "spawnCandidates": 1253,
+      "possibleMobs": 113,
+      "mobsWithResolvedDrops": 90,
+      "resolvedDropItems": 1709,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "sro",
+      "zoneName": "Southern Desert of Ro",
+      "expansion": "Classic",
+      "spawnSlots": 252,
+      "spawnCandidates": 371,
+      "possibleMobs": 128,
+      "mobsWithResolvedDrops": 104,
+      "resolvedDropItems": 2084,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "sseru",
+      "zoneName": "Sanctus Seru",
+      "expansion": "Luclin",
+      "spawnSlots": 750,
+      "spawnCandidates": 1495,
+      "possibleMobs": 689,
+      "mobsWithResolvedDrops": 579,
+      "resolvedDropItems": 8940,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "ssratemple",
+      "zoneName": "Ssraeshza Temple",
+      "expansion": "Luclin",
+      "spawnSlots": 466,
+      "spawnCandidates": 1751,
+      "possibleMobs": 213,
+      "mobsWithResolvedDrops": 188,
+      "resolvedDropItems": 5353,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "steamfont",
+      "zoneName": "Steamfont Mountains",
+      "expansion": "Classic",
+      "spawnSlots": 324,
+      "spawnCandidates": 370,
+      "possibleMobs": 157,
+      "mobsWithResolvedDrops": 119,
+      "resolvedDropItems": 1172,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "stonebrunt",
+      "zoneName": "The Stonebrunt Mountains",
+      "expansion": "Velious",
+      "spawnSlots": 449,
+      "spawnCandidates": 620,
+      "possibleMobs": 190,
+      "mobsWithResolvedDrops": 164,
+      "resolvedDropItems": 3935,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "swampofnohope",
+      "zoneName": "The Swamp of No Hope",
+      "expansion": "Kunark",
+      "spawnSlots": 457,
+      "spawnCandidates": 760,
+      "possibleMobs": 205,
+      "mobsWithResolvedDrops": 178,
+      "resolvedDropItems": 2427,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "templeveeshan",
+      "zoneName": "The Temple of Veeshan",
+      "expansion": "Velious",
+      "spawnSlots": 261,
+      "spawnCandidates": 437,
+      "possibleMobs": 123,
+      "mobsWithResolvedDrops": 110,
+      "resolvedDropItems": 1643,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "tenebrous",
+      "zoneName": "The Tenebrous Mountains",
+      "expansion": "Luclin",
+      "spawnSlots": 314,
+      "spawnCandidates": 508,
+      "possibleMobs": 122,
+      "mobsWithResolvedDrops": 102,
+      "resolvedDropItems": 1792,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "thedeep",
+      "zoneName": "The Deep",
+      "expansion": "Luclin",
+      "spawnSlots": 407,
+      "spawnCandidates": 793,
+      "possibleMobs": 100,
+      "mobsWithResolvedDrops": 94,
+      "resolvedDropItems": 4392,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "thegrey",
+      "zoneName": "The Grey",
+      "expansion": "Luclin",
+      "spawnSlots": 749,
+      "spawnCandidates": 1422,
+      "possibleMobs": 64,
+      "mobsWithResolvedDrops": 55,
+      "resolvedDropItems": 226,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "thurgadina",
+      "zoneName": "The City of Thurgadin",
+      "expansion": "Velious",
+      "spawnSlots": 203,
+      "spawnCandidates": 242,
+      "possibleMobs": 232,
+      "mobsWithResolvedDrops": 57,
+      "resolvedDropItems": 116,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "thurgadinb",
+      "zoneName": "Icewell Keep",
+      "expansion": "Velious",
+      "spawnSlots": 94,
+      "spawnCandidates": 146,
+      "possibleMobs": 97,
+      "mobsWithResolvedDrops": 87,
+      "resolvedDropItems": 1859,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "timorous",
+      "zoneName": "Timorous Deep",
+      "expansion": "Kunark",
+      "spawnSlots": 301,
+      "spawnCandidates": 359,
+      "possibleMobs": 105,
+      "mobsWithResolvedDrops": 73,
+      "resolvedDropItems": 1023,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "torgiran",
+      "zoneName": "The Torgiran Mines",
+      "expansion": "Legacy of Ykesha",
+      "spawnSlots": 229,
+      "spawnCandidates": 497,
+      "possibleMobs": 113,
+      "mobsWithResolvedDrops": 107,
+      "resolvedDropItems": 2072,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "tox",
+      "zoneName": "Toxxulia Forest",
+      "expansion": "Classic",
+      "spawnSlots": 445,
+      "spawnCandidates": 511,
+      "possibleMobs": 117,
+      "mobsWithResolvedDrops": 85,
+      "resolvedDropItems": 585,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "trakanon",
+      "zoneName": "Trakanon's Teeth",
+      "expansion": "Kunark",
+      "spawnSlots": 273,
+      "spawnCandidates": 553,
+      "possibleMobs": 157,
+      "mobsWithResolvedDrops": 154,
+      "resolvedDropItems": 3865,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "tutoriala",
+      "zoneName": "The Mines of Gloomingdeep",
+      "expansion": "Classic",
+      "spawnSlots": 1,
+      "spawnCandidates": 1,
+      "possibleMobs": 1,
+      "mobsWithResolvedDrops": 0,
+      "resolvedDropItems": 0,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "tutorialb",
+      "zoneName": "The Mines of Gloomingdeep",
+      "expansion": "Classic",
+      "spawnSlots": 245,
+      "spawnCandidates": 372,
+      "possibleMobs": 100,
+      "mobsWithResolvedDrops": 54,
+      "resolvedDropItems": 778,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "twilight",
+      "zoneName": "The Twilight Sea",
+      "expansion": "Luclin",
+      "spawnSlots": 513,
+      "spawnCandidates": 1514,
+      "possibleMobs": 231,
+      "mobsWithResolvedDrops": 195,
+      "resolvedDropItems": 6028,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "umbral",
+      "zoneName": "The Umbral Plains",
+      "expansion": "Luclin",
+      "spawnSlots": 360,
+      "spawnCandidates": 860,
+      "possibleMobs": 105,
+      "mobsWithResolvedDrops": 88,
+      "resolvedDropItems": 2032,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "unrest",
+      "zoneName": "The Estate of Unrest",
+      "expansion": "Classic",
+      "spawnSlots": 123,
+      "spawnCandidates": 306,
+      "possibleMobs": 76,
+      "mobsWithResolvedDrops": 73,
+      "resolvedDropItems": 3922,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "veeshan",
+      "zoneName": "Veeshan's Peak",
+      "expansion": "Kunark",
+      "spawnSlots": 225,
+      "spawnCandidates": 714,
+      "possibleMobs": 71,
+      "mobsWithResolvedDrops": 66,
+      "resolvedDropItems": 1505,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "velketor",
+      "zoneName": "Velketor's Labyrinth",
+      "expansion": "Velious",
+      "spawnSlots": 262,
+      "spawnCandidates": 820,
+      "possibleMobs": 100,
+      "mobsWithResolvedDrops": 75,
+      "resolvedDropItems": 2351,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "vexthal",
+      "zoneName": "Vex Thal",
+      "expansion": "Luclin",
+      "spawnSlots": 451,
+      "spawnCandidates": 1089,
+      "possibleMobs": 92,
+      "mobsWithResolvedDrops": 82,
+      "resolvedDropItems": 925,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "wakening",
+      "zoneName": "The Wakening Land",
+      "expansion": "Velious",
+      "spawnSlots": 283,
+      "spawnCandidates": 620,
+      "possibleMobs": 145,
+      "mobsWithResolvedDrops": 138,
+      "resolvedDropItems": 3180,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "warrens",
+      "zoneName": "The Warrens",
+      "expansion": "Velious",
+      "spawnSlots": 278,
+      "spawnCandidates": 588,
+      "possibleMobs": 134,
+      "mobsWithResolvedDrops": 130,
+      "resolvedDropItems": 3767,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "warslikswood",
+      "zoneName": "The Warsliks Woods",
+      "expansion": "Kunark",
+      "spawnSlots": 382,
+      "spawnCandidates": 437,
+      "possibleMobs": 128,
+      "mobsWithResolvedDrops": 112,
+      "resolvedDropItems": 1548,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    },
+    {
+      "shortName": "westwastes",
+      "zoneName": "The Western Wastes",
+      "expansion": "Velious",
+      "spawnSlots": 219,
+      "spawnCandidates": 420,
+      "possibleMobs": 106,
+      "mobsWithResolvedDrops": 95,
+      "resolvedDropItems": 1765,
+      "mapStatus": "Map not enabled",
+      "mapFiles": []
+    }
+  ],
+  "skippedZones": [
+    {
+      "shortName": "bazaar",
+      "reason": "Expansion id 9 is beyond configured max 5.",
+      "expansion": "Dragons of Norrath"
+    }
+  ],
+  "failedZones": [],
+  "missingMapFiles": [
+    {
+      "shortName": "acrylia",
+      "zoneName": "The Acrylia Caverns",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "airplane",
+      "zoneName": "The Plane of Sky",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "akanon",
+      "zoneName": "Ak'Anon",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "akheva",
+      "zoneName": "The Akheva Ruins",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "arena",
+      "zoneName": "The Arena",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "beholder",
+      "zoneName": "Gorge of King Xorbb",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "blackburrow",
+      "zoneName": "Blackburrow",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "bothunder",
+      "zoneName": "Bastion of Thunder",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "burningwood",
+      "zoneName": "The Burning Wood",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "butcher",
+      "zoneName": "Butcherblock Mountains",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "cabeast",
+      "zoneName": "Cabilis East",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "cabwest",
+      "zoneName": "Cabilis West",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "cauldron",
+      "zoneName": "Dagnor's Cauldron",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "charasis",
+      "zoneName": "The Howling Stones",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "chardok",
+      "zoneName": "Chardok",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "chardokb",
+      "zoneName": "Chardok: The Halls of Betrayal",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "citymist",
+      "zoneName": "The City of Mist",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "cobaltscar",
+      "zoneName": "Cobaltscar",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "codecay",
+      "zoneName": "The Crypt of Decay",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "commons",
+      "zoneName": "West Commonlands",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "crushbone",
+      "zoneName": "Crushbone",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "crystal",
+      "zoneName": "The Crystal Caverns",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "cshome",
+      "zoneName": "Sunset Home",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "dalnir",
+      "zoneName": "The Crypt of Dalnir",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "dawnshroud",
+      "zoneName": "The Dawnshroud Peaks",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "dreadlands",
+      "zoneName": "The Dreadlands",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "droga",
+      "zoneName": "The Temple of Droga",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "dulak",
+      "zoneName": "Dulak's Harbor",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "eastwastes",
+      "zoneName": "Eastern Wastes",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "echo",
+      "zoneName": "The Echo Caverns",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "ecommons",
+      "zoneName": "East Commonlands",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "emeraldjungle",
+      "zoneName": "The Emerald Jungle",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "erudnext",
+      "zoneName": "Erudin",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "erudnint",
+      "zoneName": "The Erudin Palace",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "erudsxing",
+      "zoneName": "Erud's Crossing",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "everfrost",
+      "zoneName": "Everfrost Peaks",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "fearplane",
+      "zoneName": "The Plane of Fear",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "feerrott",
+      "zoneName": "The Feerrott",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "felwithea",
+      "zoneName": "Northern Felwithe",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "felwitheb",
+      "zoneName": "Southern Felwithe",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "fieldofbone",
+      "zoneName": "The Field of Bone",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "firiona",
+      "zoneName": "Firiona Vie",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "freporte",
+      "zoneName": "East Freeport",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "freportn",
+      "zoneName": "North Freeport",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "freportw",
+      "zoneName": "West Freeport",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "frozenshadow",
+      "zoneName": "The Tower of Frozen Shadow",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "fungusgrove",
+      "zoneName": "The Fungus Grove",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "gfaydark",
+      "zoneName": "The Greater Faydark",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "greatdivide",
+      "zoneName": "The Great Divide",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "griegsend",
+      "zoneName": "Grieg's End",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "grimling",
+      "zoneName": "Grimling Forest",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "grobb",
+      "zoneName": "Grobb",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "growthplane",
+      "zoneName": "The Plane of Growth",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "guktop",
+      "zoneName": "The City of Guk",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "gunthak",
+      "zoneName": "The Gulf of Gunthak",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "halas",
+      "zoneName": "Halas",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "hateplane",
+      "zoneName": "Plane of Hate",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "hateplaneb",
+      "zoneName": "The Plane of Hate",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "hatesfury",
+      "zoneName": "Hate's Fury",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "highkeep",
+      "zoneName": "High Keep",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "highpass",
+      "zoneName": "Highpass Hold",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "hohonora",
+      "zoneName": "The Halls of Honor",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "hohonorb",
+      "zoneName": "The Temple of Marr",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "hole",
+      "zoneName": "The Hole",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "hollowshade",
+      "zoneName": "Hollowshade Moor",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "iceclad",
+      "zoneName": "The Iceclad Ocean",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "innothule",
+      "zoneName": "Innothule Swamp",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "jaggedpine",
+      "zoneName": "The Jaggedpine Forest",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "kael",
+      "zoneName": "Kael Drakkel",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "kaesora",
+      "zoneName": "Kaesora",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "kaladima",
+      "zoneName": "South Kaladim",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "kaladimb",
+      "zoneName": "North Kaladim",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "karnor",
+      "zoneName": "Karnor's Castle",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "katta",
+      "zoneName": "Katta Castellum",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "kedge",
+      "zoneName": "Kedge Keep",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "kerraridge",
+      "zoneName": "Kerra Isle",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "kithicor",
+      "zoneName": "Kithicor Forest",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "kurn",
+      "zoneName": "Kurn's Tower",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "lakeofillomen",
+      "zoneName": "Lake of Ill Omen",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "lakerathe",
+      "zoneName": "Lake Rathetear",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "lavastorm",
+      "zoneName": "The Lavastorm Mountains",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "letalis",
+      "zoneName": "Mons Letalis",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "lfaydark",
+      "zoneName": "The Lesser Faydark",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "maiden",
+      "zoneName": "The Maiden's Eye",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "mischiefplane",
+      "zoneName": "The Plane of Mischief",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "misty",
+      "zoneName": "Misty Thicket",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "mseru",
+      "zoneName": "Marus Seru",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "nadox",
+      "zoneName": "The Crypt of Nadox",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "najena",
+      "zoneName": "Najena",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "necropolis",
+      "zoneName": "Dragon Necropolis",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "nedaria",
+      "zoneName": "Nedaria's Landing",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "nektulos",
+      "zoneName": "The Nektulos Forest",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "neriaka",
+      "zoneName": "Neriak - Foreign Quarter",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "neriakb",
+      "zoneName": "Neriak - Commons",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "neriakc",
+      "zoneName": "Neriak - 3rd Gate",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "netherbian",
+      "zoneName": "Netherbian Lair",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "nexus",
+      "zoneName": "Nexus",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "nightmareb",
+      "zoneName": "The Lair of Terris Thule",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "northkarana",
+      "zoneName": "The Northern Plains of Karana",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "nro",
+      "zoneName": "Northern Desert of Ro",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "nurga",
+      "zoneName": "The Mines of Nurga",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "oasis",
+      "zoneName": "Oasis of Marr",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "oggok",
+      "zoneName": "Oggok",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "oot",
+      "zoneName": "Ocean of Tears",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "overthere",
+      "zoneName": "The Overthere",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "paineel",
+      "zoneName": "Paineel",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "paludal",
+      "zoneName": "The Paludal Caverns",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "paw",
+      "zoneName": "The Lair of the Splitpaw",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "permafrost",
+      "zoneName": "The Permafrost Caverns",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "poair",
+      "zoneName": "The Plane of Air",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "podisease",
+      "zoneName": "The Plane of Disease",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "poeartha",
+      "zoneName": "The Plane of Earth",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "poearthb",
+      "zoneName": "The Plane of Earth",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "pofire",
+      "zoneName": "The Plane of Fire",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "poinnovation",
+      "zoneName": "The Plane of Innovation",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "pojustice",
+      "zoneName": "The Plane of Justice",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "poknowledge",
+      "zoneName": "The Plane of Knowledge",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "ponightmare",
+      "zoneName": "The Plane of Nightmares",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "postorms",
+      "zoneName": "The Plane of Storms",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "potactics",
+      "zoneName": "Drunder, the Fortress of Zek",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "potimea",
+      "zoneName": "The Plane of Time",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "potimeb",
+      "zoneName": "The Plane of Time",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "potorment",
+      "zoneName": "Torment, the Plane of Pain",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "potranquility",
+      "zoneName": "The Plane of Tranquility",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "povalor",
+      "zoneName": "The Plane of Valor",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "powater",
+      "zoneName": "The Plane of Water",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "qcat",
+      "zoneName": "The Qeynos Aqueduct System",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "qey2hh1",
+      "zoneName": "The Western Plains of Karana",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "qeynos",
+      "zoneName": "South Qeynos",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "qeynos2",
+      "zoneName": "North Qeynos",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "qeytoqrg",
+      "zoneName": "The Qeynos Hills",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "qrg",
+      "zoneName": "The Surefall Glade",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "rathemtn",
+      "zoneName": "The Rathe Mountains",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "rivervale",
+      "zoneName": "Rivervale",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "runnyeye",
+      "zoneName": "The Liberated Citadel of Runnyeye",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "scarlet",
+      "zoneName": "The Scarlet Desert",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "sebilis",
+      "zoneName": "Old Sebilis",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "shadeweaver",
+      "zoneName": "Shadeweaver's Thicket",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "shadowhaven",
+      "zoneName": "Shadow Haven",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "shadowrest",
+      "zoneName": "Shadowrest",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "sharvahl",
+      "zoneName": "The City of Shar Vahl",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "sirens",
+      "zoneName": "Siren's Grotto",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "skyfire",
+      "zoneName": "The Skyfire Mountains",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "skyshrine",
+      "zoneName": "Skyshrine",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "sleeper",
+      "zoneName": "The Sleeper's Tomb",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "soldunga",
+      "zoneName": "Solusek's Eye",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "soldungc",
+      "zoneName": "The Caverns of Exile",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "solrotower",
+      "zoneName": "The Tower of Solusek Ro",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "soltemple",
+      "zoneName": "The Temple of Solusek Ro",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "southkarana",
+      "zoneName": "The Southern Plains of Karana",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "sro",
+      "zoneName": "Southern Desert of Ro",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "sseru",
+      "zoneName": "Sanctus Seru",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "ssratemple",
+      "zoneName": "Ssraeshza Temple",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "steamfont",
+      "zoneName": "Steamfont Mountains",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "stonebrunt",
+      "zoneName": "The Stonebrunt Mountains",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "swampofnohope",
+      "zoneName": "The Swamp of No Hope",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "templeveeshan",
+      "zoneName": "The Temple of Veeshan",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "tenebrous",
+      "zoneName": "The Tenebrous Mountains",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "thedeep",
+      "zoneName": "The Deep",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "thegrey",
+      "zoneName": "The Grey",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "thurgadina",
+      "zoneName": "The City of Thurgadin",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "thurgadinb",
+      "zoneName": "Icewell Keep",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "timorous",
+      "zoneName": "Timorous Deep",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "torgiran",
+      "zoneName": "The Torgiran Mines",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "tox",
+      "zoneName": "Toxxulia Forest",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "trakanon",
+      "zoneName": "Trakanon's Teeth",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "tutoriala",
+      "zoneName": "The Mines of Gloomingdeep",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "tutorialb",
+      "zoneName": "The Mines of Gloomingdeep",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "twilight",
+      "zoneName": "The Twilight Sea",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "umbral",
+      "zoneName": "The Umbral Plains",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "unrest",
+      "zoneName": "The Estate of Unrest",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "veeshan",
+      "zoneName": "Veeshan's Peak",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "velketor",
+      "zoneName": "Velketor's Labyrinth",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "vexthal",
+      "zoneName": "Vex Thal",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "wakening",
+      "zoneName": "The Wakening Land",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "warrens",
+      "zoneName": "The Warrens",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "warslikswood",
+      "zoneName": "The Warsliks Woods",
+      "mapStatus": "Map not enabled"
+    },
+    {
+      "shortName": "westwastes",
+      "zoneName": "The Western Wastes",
+      "mapStatus": "Map not enabled"
+    }
+  ],
+  "itemReconciliation": {
+    "reportPath": "C:\\frostreaver stuff\\data\\eqemu-item-reconciliation-report.json",
+    "acceptedMatchCount": 4458,
+    "rejectedMatchCount": 8489,
+    "lowConfidenceMatchCount": 0,
+    "fuzzyMatchCount": 0,
+    "unmatchedItemCount": 10146,
+    "rustShortSwordExamples": [
+      {
+        "zoneShortName": "akanon",
+        "eqemuItemId": 5013,
+        "eqemuItemName": "Rusty Short Sword",
+        "eqemu": {
+          "itemId": 5013,
+          "slotBitmask": 24576,
+          "itemtype": 0,
+          "icon": 580,
+          "classesBitmask": 413,
+          "racesBitmask": 65535,
+          "magic": 0,
+          "nodrop": 1,
+          "lore": "Rusty Short Sword"
+        },
+        "rejected": {
+          "existingItemName": "Dazzling Trousers",
+          "existingItemId": "5013",
+          "reason": "Item ID matched, but names are incompatible. Existing imported IDs and EQEmu IDs are not assumed to share a namespace."
+        }
+      },
+      {
+        "zoneShortName": "akanon",
+        "eqemuItemId": 5013,
+        "eqemuItemName": "Rusty Short Sword",
+        "eqemu": {
+          "itemId": 5013,
+          "slotBitmask": 24576,
+          "itemtype": 0,
+          "icon": 580,
+          "classesBitmask": 413,
+          "racesBitmask": 65535,
+          "magic": 0,
+          "nodrop": 1,
+          "lore": "Rusty Short Sword"
+        },
+        "rejected": {
+          "existingItemName": "Dazzling Trousers",
+          "existingItemId": "5013",
+          "reason": "Item ID matched, but names are incompatible. Existing imported IDs and EQEmu IDs are not assumed to share a namespace."
+        }
+      },
+      {
+        "zoneShortName": "akanon",
+        "eqemuItemId": 5013,
+        "eqemuItemName": "Rusty Short Sword",
+        "eqemu": {
+          "itemId": 5013,
+          "slotBitmask": 24576,
+          "itemtype": 0,
+          "icon": 580,
+          "classesBitmask": 413,
+          "racesBitmask": 65535,
+          "magic": 0,
+          "nodrop": 1,
+          "lore": "Rusty Short Sword"
+        },
+        "rejected": {
+          "existingItemName": "Dazzling Trousers",
+          "existingItemId": "5013",
+          "reason": "Item ID matched, but names are incompatible. Existing imported IDs and EQEmu IDs are not assumed to share a namespace."
+        }
+      },
+      {
+        "zoneShortName": "akanon",
+        "eqemuItemId": 5013,
+        "eqemuItemName": "Rusty Short Sword",
+        "eqemu": {
+          "itemId": 5013,
+          "slotBitmask": 24576,
+          "itemtype": 0,
+          "icon": 580,
+          "classesBitmask": 413,
+          "racesBitmask": 65535,
+          "magic": 0,
+          "nodrop": 1,
+          "lore": "Rusty Short Sword"
+        },
+        "rejected": {
+          "existingItemName": "Dazzling Trousers",
+          "existingItemId": "5013",
+          "reason": "Item ID matched, but names are incompatible. Existing imported IDs and EQEmu IDs are not assumed to share a namespace."
+        }
+      },
+      {
+        "zoneShortName": "befallen",
+        "eqemuItemId": 5013,
+        "eqemuItemName": "Rusty Short Sword",
+        "eqemu": {
+          "itemId": 5013,
+          "slotBitmask": 24576,
+          "itemtype": 0,
+          "icon": 580,
+          "classesBitmask": 413,
+          "racesBitmask": 65535,
+          "magic": 0,
+          "nodrop": 1,
+          "lore": "Rusty Short Sword"
+        },
+        "rejected": {
+          "existingItemName": "Dazzling Trousers",
+          "existingItemId": "5013",
+          "reason": "Item ID matched, but names are incompatible. Existing imported IDs and EQEmu IDs are not assumed to share a namespace."
+        }
+      },
+      {
+        "zoneShortName": "befallen",
+        "eqemuItemId": 5013,
+        "eqemuItemName": "Rusty Short Sword",
+        "eqemu": {
+          "itemId": 5013,
+          "slotBitmask": 24576,
+          "itemtype": 0,
+          "icon": 580,
+          "classesBitmask": 413,
+          "racesBitmask": 65535,
+          "magic": 0,
+          "nodrop": 1,
+          "lore": "Rusty Short Sword"
+        },
+        "rejected": {
+          "existingItemName": "Dazzling Trousers",
+          "existingItemId": "5013",
+          "reason": "Item ID matched, but names are incompatible. Existing imported IDs and EQEmu IDs are not assumed to share a namespace."
+        }
+      },
+      {
+        "zoneShortName": "befallen",
+        "eqemuItemId": 5013,
+        "eqemuItemName": "Rusty Short Sword",
+        "eqemu": {
+          "itemId": 5013,
+          "slotBitmask": 24576,
+          "itemtype": 0,
+          "icon": 580,
+          "classesBitmask": 413,
+          "racesBitmask": 65535,
+          "magic": 0,
+          "nodrop": 1,
+          "lore": "Rusty Short Sword"
+        },
+        "rejected": {
+          "existingItemName": "Dazzling Trousers",
+          "existingItemId": "5013",
+          "reason": "Item ID matched, but names are incompatible. Existing imported IDs and EQEmu IDs are not assumed to share a namespace."
+        }
+      },
+      {
+        "zoneShortName": "befallen",
+        "eqemuItemId": 5013,
+        "eqemuItemName": "Rusty Short Sword",
+        "eqemu": {
+          "itemId": 5013,
+          "slotBitmask": 24576,
+          "itemtype": 0,
+          "icon": 580,
+          "classesBitmask": 413,
+          "racesBitmask": 65535,
+          "magic": 0,
+          "nodrop": 1,
+          "lore": "Rusty Short Sword"
+        },
+        "rejected": {
+          "existingItemName": "Dazzling Trousers",
+          "existingItemId": "5013",
+          "reason": "Item ID matched, but names are incompatible. Existing imported IDs and EQEmu IDs are not assumed to share a namespace."
+        }
+      }
+    ]
+  },
+  "notes": [
+    "One spawn2 row is treated as one spawn slot.",
+    "Highest-chance candidates remain the summary-primary representative; map/player-facing representatives use separate named/loot priority logic.",
+    "Existing item data is used only when the existing item name is compatible with the EQEmu drop item name.",
+    "Unsafe itemId-only collisions fall back to Local EQEmu DB item details.",
+    "Long coordinate lists remain internal for map/debug work and are not exposed by default."
+  ]
+}

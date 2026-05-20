@@ -1,0 +1,2020 @@
+{
+  "summary": {
+    "zoneSlug": "sunset-home",
+    "zoneName": "Sunset Home",
+    "requestedZoneShortName": "cshome",
+    "zoneShortName": "cshome",
+    "sourceFile": "local-eqemu-database",
+    "matched": true,
+    "expansion": "Classic",
+    "eqemuExpansionId": 0,
+    "expansionSource": "eqemu-zone-table",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobCount": 30,
+    "unknownLevelCount": 1,
+    "minLevel": 1,
+    "maxLevel": 65,
+    "averageLevel": 37,
+    "medianLevel": 50,
+    "levelCounts": {
+      "1": 2,
+      "4": 2,
+      "8": 2,
+      "13": 2,
+      "17": 2,
+      "35": 2,
+      "50": 11,
+      "60": 3,
+      "61": 2,
+      "65": 1
+    },
+    "levelBuckets": {
+      "1-10": 6,
+      "11-20": 4,
+      "21-30": 0,
+      "31-40": 2,
+      "41-50": 11,
+      "51-60": 3,
+      "61+": 3
+    },
+    "levelProfileLabel": "Wide level spread",
+    "mobGroupNameCounts": {
+      "Akass Zatora": 1,
+      "Al`eik K`vorr": 1,
+      "Ariala Tozzlethorp": 1,
+      "Asherah The Torch Bearer": 1,
+      "Banker Yalon": 1,
+      "Berlinda Straladorn": 1,
+      "Brakis Stonebrunt": 1,
+      "Brendar The Merciless": 1,
+      "Demetria Havenswar": 1,
+      "Dorala Kerlian": 1,
+      "Emeleo Leafwalker": 1,
+      "Fibrus Aglthorp": 1,
+      "Gailen Sterrelar": 1,
+      "Gebrarar The Misplaced": 1,
+      "Go Marker": 1,
+      "Grugg Nowdead": 1,
+      "Kerlen Havenswar": 1,
+      "Konnus Mcniel": 1,
+      "Krakskull": 1,
+      "Llara The Mysterious": 1,
+      "Meadaw Firlen": 1,
+      "One Hundred Fifty": 1,
+      "Patchious": 1,
+      "Quartermaster": 1,
+      "Quigas Mcmillan": 1,
+      "Salorin Gladerunner": 1,
+      "Sulus Quintana": 1,
+      "Ugloc Drinkbringa": 1,
+      "Unknown": 1,
+      "Veraltus D`karr": 1
+    },
+    "classCounts": {
+      "Banker": 24,
+      "Warrior": 3,
+      "Class 40": 1,
+      "Discord Merchant": 1,
+      "Unknown": 1
+    },
+    "raceCounts": {
+      "Erudite": 5,
+      "Barbarian": 4,
+      "Dark Elf": 3,
+      "Human": 3,
+      "Gnome": 2,
+      "Half Elf": 2,
+      "Wood Elf": 2,
+      "Dwarf": 1,
+      "Elemental": 1,
+      "Halfling": 1,
+      "High Elf": 1,
+      "Ogre": 1,
+      "Skeleton": 1,
+      "Teleport Man": 1,
+      "Troll": 1,
+      "Unknown": 1
+    },
+    "normalizedRaceCounts": {
+      "Erudite": 5,
+      "Barbarian": 4,
+      "Dark Elf": 3,
+      "Human": 3,
+      "Gnome": 2,
+      "Half Elf": 2,
+      "Wood Elf": 2,
+      "Dwarf": 1,
+      "Elemental": 1,
+      "Halfling": 1,
+      "High Elf": 1,
+      "Ogre": 1,
+      "Skeleton": 1,
+      "Teleport Man": 1,
+      "Troll": 1,
+      "Unknown": 1
+    },
+    "normalizedRaceLevelCounts": {
+      "Barbarian": {
+        "4": 1,
+        "50": 1,
+        "60": 1,
+        "65": 1
+      },
+      "Dark Elf": {
+        "35": 1,
+        "50": 1,
+        "60": 1
+      },
+      "Dwarf": {
+        "17": 1
+      },
+      "Elemental": {
+        "1": 1
+      },
+      "Erudite": {
+        "4": 1,
+        "35": 1,
+        "50": 3
+      },
+      "Gnome": {
+        "8": 1,
+        "13": 1
+      },
+      "Half Elf": {
+        "13": 1,
+        "60": 1
+      },
+      "Halfling": {
+        "50": 1
+      },
+      "High Elf": {
+        "17": 1
+      },
+      "Human": {
+        "8": 1,
+        "50": 1,
+        "61": 1
+      },
+      "Ogre": {
+        "50": 1
+      },
+      "Skeleton": {
+        "1": 1
+      },
+      "Teleport Man": {
+        "50": 1
+      },
+      "Troll": {
+        "50": 1
+      },
+      "Wood Elf": {
+        "50": 1,
+        "61": 1
+      }
+    },
+    "raceAliases": {
+      "Barbarian": [
+        "Barbarian"
+      ],
+      "Dark Elf": [
+        "Dark Elf"
+      ],
+      "Dwarf": [
+        "Dwarf"
+      ],
+      "Elemental": [
+        "Elemental"
+      ],
+      "Erudite": [
+        "Erudite"
+      ],
+      "Gnome": [
+        "Gnome"
+      ],
+      "Half Elf": [
+        "Half Elf"
+      ],
+      "Halfling": [
+        "Halfling"
+      ],
+      "High Elf": [
+        "High Elf"
+      ],
+      "Human": [
+        "Human"
+      ],
+      "Ogre": [
+        "Ogre"
+      ],
+      "Skeleton": [
+        "Skeleton"
+      ],
+      "Teleport Man": [
+        "Teleport Man"
+      ],
+      "Troll": [
+        "Troll"
+      ],
+      "Unknown": [
+        "Unknown"
+      ],
+      "Wood Elf": [
+        "Wood Elf"
+      ]
+    },
+    "typeCounts": {
+      "Spawn Slot": 30
+    },
+    "notes": [
+      "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+      "Read-only test export; not wired into production /zones data."
+    ],
+    "spawnMapPrototype": {
+      "sourceKind": "Local EQEmu/PEQ database export",
+      "coordinateNote": "Original EQEmu spawn2 x/y/z coordinates are preserved for map prototyping.",
+      "points": [
+        {
+          "spawn2Id": 1154,
+          "spawngroupId": 5089,
+          "name": "Go_Marker",
+          "displayName": "Go Marker",
+          "level": 50,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": -3,
+          "y": 360,
+          "z": -50.200001,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 10,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 1155,
+          "spawngroupId": 5090,
+          "name": "Grugg_Nowdead",
+          "displayName": "Grugg Nowdead",
+          "level": 50,
+          "race": "Troll",
+          "rawRace": "Troll",
+          "className": "Banker",
+          "x": -19,
+          "y": 525,
+          "z": -9.7,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 10,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 1156,
+          "spawngroupId": 5091,
+          "name": "Akass_Zatora",
+          "displayName": "Akass Zatora",
+          "level": 35,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -19,
+          "y": 515,
+          "z": -11,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 10,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 1157,
+          "spawngroupId": 5092,
+          "name": "Brakis_Stonebrunt",
+          "displayName": "Brakis Stonebrunt",
+          "level": 17,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Banker",
+          "x": -19,
+          "y": 505,
+          "z": -12.2,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 10,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 1158,
+          "spawngroupId": 5093,
+          "name": "Emeleo_Leafwalker",
+          "displayName": "Emeleo Leafwalker",
+          "level": 13,
+          "race": "Half Elf",
+          "rawRace": "Half Elf",
+          "className": "Banker",
+          "x": -19,
+          "y": 495,
+          "z": -11.3,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 10,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 1159,
+          "spawngroupId": 5094,
+          "name": "Fibrus_Aglthorp",
+          "displayName": "Fibrus Aglthorp",
+          "level": 8,
+          "race": "Gnome",
+          "rawRace": "Gnome",
+          "className": "Banker",
+          "x": -19,
+          "y": 455,
+          "z": -12.8,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 10,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 1160,
+          "spawngroupId": 5095,
+          "name": "Konnus_McNiel",
+          "displayName": "Konnus Mcniel",
+          "level": 4,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": -19,
+          "y": 445,
+          "z": -10.4,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 10,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 1161,
+          "spawngroupId": 5096,
+          "name": "Krakskull",
+          "displayName": "Krakskull",
+          "level": 1,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Banker",
+          "x": -19,
+          "y": 435,
+          "z": -9.1,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 10,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 1162,
+          "spawngroupId": 5097,
+          "name": "Demetria_Havenswar",
+          "displayName": "Demetria Havenswar",
+          "level": 50,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -19,
+          "y": 425,
+          "z": -11,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 10,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 1163,
+          "spawngroupId": 5098,
+          "name": "Veraltus_D`karr",
+          "displayName": "Veraltus D`karr",
+          "level": 35,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Banker",
+          "x": -19,
+          "y": 415,
+          "z": -11.6,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 10,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 1164,
+          "spawngroupId": 5099,
+          "name": "Meadaw_Firlen",
+          "displayName": "Meadaw Firlen",
+          "level": 17,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -19,
+          "y": 405,
+          "z": -11,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 10,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 1165,
+          "spawngroupId": 5100,
+          "name": "Ariala_Tozzlethorp",
+          "displayName": "Ariala Tozzlethorp",
+          "level": 13,
+          "race": "Gnome",
+          "rawRace": "Gnome",
+          "className": "Banker",
+          "x": -19,
+          "y": 395,
+          "z": -12.8,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 10,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 1166,
+          "spawngroupId": 5101,
+          "name": "Berlinda_Straladorn",
+          "displayName": "Berlinda Straladorn",
+          "level": 8,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -19,
+          "y": 385,
+          "z": -11,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 10,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 1167,
+          "spawngroupId": 5102,
+          "name": "Kerlen_Havenswar",
+          "displayName": "Kerlen Havenswar",
+          "level": 4,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -19,
+          "y": 375,
+          "z": -11,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 10,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 1168,
+          "spawngroupId": 5103,
+          "name": "Gebrarar_the_Misplaced",
+          "displayName": "Gebrarar The Misplaced",
+          "level": 1,
+          "race": "Elemental",
+          "rawRace": "Elemental",
+          "className": "Discord Merchant",
+          "x": -19,
+          "y": 360,
+          "z": -11,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 10,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 1169,
+          "spawngroupId": 5104,
+          "name": "Salorin_Gladerunner",
+          "displayName": "Salorin Gladerunner",
+          "level": 50,
+          "race": "Wood Elf",
+          "rawRace": "Wood Elf",
+          "className": "Banker",
+          "x": -52,
+          "y": 312,
+          "z": -11,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 10,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 1170,
+          "spawngroupId": 5105,
+          "name": "Al`eik_K`vorr",
+          "displayName": "Al`eik K`vorr",
+          "level": 50,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Banker",
+          "x": -52,
+          "y": 322,
+          "z": -11,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 10,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 1171,
+          "spawngroupId": 5106,
+          "name": "Gailen_Sterrelar",
+          "displayName": "Gailen Sterrelar",
+          "level": 50,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -52,
+          "y": 332,
+          "z": -10.4,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 10,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 1172,
+          "spawngroupId": 5107,
+          "name": "Quartermaster",
+          "displayName": "Quartermaster",
+          "level": 50,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -52,
+          "y": 342,
+          "z": -10.4,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 10,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 1173,
+          "spawngroupId": 5108,
+          "name": "Ugloc_Drinkbringa",
+          "displayName": "Ugloc Drinkbringa",
+          "level": 50,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Banker",
+          "x": -2,
+          "y": 342,
+          "z": -9.1,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 10,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 1174,
+          "spawngroupId": 5109,
+          "name": "Banker_Yalon",
+          "displayName": "Banker Yalon",
+          "level": 50,
+          "race": "Halfling",
+          "rawRace": "Halfling",
+          "className": "Class 40",
+          "x": -11,
+          "y": 338,
+          "z": -12.5,
+          "heading": 254,
+          "chance": 100,
+          "respawnTime": 10,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 1175,
+          "spawngroupId": 5110,
+          "name": "Dorala_Kerlian",
+          "displayName": "Dorala Kerlian",
+          "level": 50,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": 42,
+          "y": 317,
+          "z": -11,
+          "heading": 510,
+          "chance": 100,
+          "respawnTime": 10,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 1176,
+          "spawngroupId": 5111,
+          "name": "Patchious",
+          "displayName": "Patchious",
+          "level": 61,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": 340,
+          "y": 377,
+          "z": -15.9,
+          "heading": 350,
+          "chance": 100,
+          "respawnTime": 10,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 1177,
+          "spawngroupId": 5112,
+          "name": "Brendar_the_Merciless",
+          "displayName": "Brendar The Merciless",
+          "level": 60,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Banker",
+          "x": 28,
+          "y": 319,
+          "z": -11.6,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 10,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 1178,
+          "spawngroupId": 5113,
+          "name": "Quigas_McMillan",
+          "displayName": "Quigas Mcmillan",
+          "level": 60,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": 15,
+          "y": 319,
+          "z": -10.4,
+          "heading": 0,
+          "chance": 50,
+          "respawnTime": 10,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 1179,
+          "spawngroupId": 5114,
+          "name": "Sulus_Quintana",
+          "displayName": "Sulus Quintana",
+          "level": 60,
+          "race": "Half Elf",
+          "rawRace": "Half Elf",
+          "className": "Banker",
+          "x": 45,
+          "y": 342,
+          "z": -11.3,
+          "heading": 388,
+          "chance": 100,
+          "respawnTime": 10,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 1180,
+          "spawngroupId": 5115,
+          "name": "Llara_the_Mysterious",
+          "displayName": "Llara The Mysterious",
+          "level": 61,
+          "race": "Wood Elf",
+          "rawRace": "Wood Elf",
+          "className": "Banker",
+          "x": 123,
+          "y": 643,
+          "z": -26.299999,
+          "heading": 492,
+          "chance": 100,
+          "respawnTime": 10,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 57892,
+          "spawngroupId": 32162,
+          "name": "One_Hundred_Fifty",
+          "displayName": "One Hundred Fifty",
+          "level": 65,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Warrior",
+          "x": 102.726929,
+          "y": -36.319462,
+          "z": -7.710496,
+          "heading": 508,
+          "chance": 9,
+          "respawnTime": 1200,
+          "candidateCount": 12
+        },
+        {
+          "spawn2Id": 59368,
+          "spawngroupId": 48642,
+          "name": "Asherah_the_Torch_Bearer",
+          "displayName": "Asherah The Torch Bearer",
+          "level": 50,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Warrior",
+          "x": 28.444639,
+          "y": 678.313171,
+          "z": -25.309496,
+          "heading": 132,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 157409,
+          "spawngroupId": 117711,
+          "name": "Unknown",
+          "displayName": "Unknown",
+          "level": null,
+          "race": "Unknown",
+          "rawRace": "Unknown",
+          "className": "Unknown",
+          "x": 0,
+          "y": 100,
+          "z": -7.709497,
+          "heading": 1.53125,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        }
+      ]
+    }
+  },
+  "details": {
+    "zoneSlug": "sunset-home",
+    "routeSlug": "cshome",
+    "zoneName": "Sunset Home",
+    "sourceFile": "local-eqemu-database",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobGroups": [
+      {
+        "displayName": "Gebrarar The Misplaced",
+        "rawNames": [
+          "Gebrarar_the_Misplaced"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Elemental": 1
+        },
+        "rawRaceCounts": {
+          "Elemental": 1
+        },
+        "classCounts": {
+          "Discord Merchant": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Krakskull",
+        "rawNames": [
+          "Krakskull"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Skeleton": 1
+        },
+        "rawRaceCounts": {
+          "Skeleton": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Kerlen Havenswar",
+        "rawNames": [
+          "Kerlen_Havenswar"
+        ],
+        "count": 1,
+        "levelMin": 4,
+        "levelMax": 4,
+        "levels": [
+          4
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Konnus Mcniel",
+        "rawNames": [
+          "Konnus_McNiel"
+        ],
+        "count": 1,
+        "levelMin": 4,
+        "levelMax": 4,
+        "levels": [
+          4
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Berlinda Straladorn",
+        "rawNames": [
+          "Berlinda_Straladorn"
+        ],
+        "count": 1,
+        "levelMin": 8,
+        "levelMax": 8,
+        "levels": [
+          8
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Fibrus Aglthorp",
+        "rawNames": [
+          "Fibrus_Aglthorp"
+        ],
+        "count": 1,
+        "levelMin": 8,
+        "levelMax": 8,
+        "levels": [
+          8
+        ],
+        "raceCounts": {
+          "Gnome": 1
+        },
+        "rawRaceCounts": {
+          "Gnome": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Ariala Tozzlethorp",
+        "rawNames": [
+          "Ariala_Tozzlethorp"
+        ],
+        "count": 1,
+        "levelMin": 13,
+        "levelMax": 13,
+        "levels": [
+          13
+        ],
+        "raceCounts": {
+          "Gnome": 1
+        },
+        "rawRaceCounts": {
+          "Gnome": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Emeleo Leafwalker",
+        "rawNames": [
+          "Emeleo_Leafwalker"
+        ],
+        "count": 1,
+        "levelMin": 13,
+        "levelMax": 13,
+        "levels": [
+          13
+        ],
+        "raceCounts": {
+          "Half Elf": 1
+        },
+        "rawRaceCounts": {
+          "Half Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Brakis Stonebrunt",
+        "rawNames": [
+          "Brakis_Stonebrunt"
+        ],
+        "count": 1,
+        "levelMin": 17,
+        "levelMax": 17,
+        "levels": [
+          17
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Meadaw Firlen",
+        "rawNames": [
+          "Meadaw_Firlen"
+        ],
+        "count": 1,
+        "levelMin": 17,
+        "levelMax": 17,
+        "levels": [
+          17
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Akass Zatora",
+        "rawNames": [
+          "Akass_Zatora"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Veraltus D`karr",
+        "rawNames": [
+          "Veraltus_D`karr"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Al`eik K`vorr",
+        "rawNames": [
+          "Al`eik_K`vorr"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Asherah The Torch Bearer",
+        "rawNames": [
+          "Asherah_the_Torch_Bearer"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Banker Yalon",
+        "rawNames": [
+          "Banker_Yalon"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Halfling": 1
+        },
+        "rawRaceCounts": {
+          "Halfling": 1
+        },
+        "classCounts": {
+          "Class 40": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Demetria Havenswar",
+        "rawNames": [
+          "Demetria_Havenswar"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Dorala Kerlian",
+        "rawNames": [
+          "Dorala_Kerlian"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Gailen Sterrelar",
+        "rawNames": [
+          "Gailen_Sterrelar"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Go Marker",
+        "rawNames": [
+          "Go_Marker"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Teleport Man": 1
+        },
+        "rawRaceCounts": {
+          "Teleport Man": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Grugg Nowdead",
+        "rawNames": [
+          "Grugg_Nowdead"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Troll": 1
+        },
+        "rawRaceCounts": {
+          "Troll": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Quartermaster",
+        "rawNames": [
+          "Quartermaster"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Salorin Gladerunner",
+        "rawNames": [
+          "Salorin_Gladerunner"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Wood Elf": 1
+        },
+        "rawRaceCounts": {
+          "Wood Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Ugloc Drinkbringa",
+        "rawNames": [
+          "Ugloc_Drinkbringa"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Ogre": 1
+        },
+        "rawRaceCounts": {
+          "Ogre": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Brendar The Merciless",
+        "rawNames": [
+          "Brendar_the_Merciless"
+        ],
+        "count": 1,
+        "levelMin": 60,
+        "levelMax": 60,
+        "levels": [
+          60
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Quigas Mcmillan",
+        "rawNames": [
+          "Quigas_McMillan"
+        ],
+        "count": 1,
+        "levelMin": 60,
+        "levelMax": 60,
+        "levels": [
+          60
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Sulus Quintana",
+        "rawNames": [
+          "Sulus_Quintana"
+        ],
+        "count": 1,
+        "levelMin": 60,
+        "levelMax": 60,
+        "levels": [
+          60
+        ],
+        "raceCounts": {
+          "Half Elf": 1
+        },
+        "rawRaceCounts": {
+          "Half Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Llara The Mysterious",
+        "rawNames": [
+          "Llara_the_Mysterious"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Wood Elf": 1
+        },
+        "rawRaceCounts": {
+          "Wood Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Patchious",
+        "rawNames": [
+          "Patchious"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "One Hundred Fifty",
+        "rawNames": [
+          "One_Hundred_Fifty"
+        ],
+        "count": 1,
+        "levelMin": 65,
+        "levelMax": 65,
+        "levels": [
+          65
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Unknown",
+        "rawNames": [
+          "Unknown"
+        ],
+        "count": 1,
+        "levelMin": null,
+        "levelMax": null,
+        "levels": [],
+        "raceCounts": {
+          "Unknown": 1
+        },
+        "rawRaceCounts": {
+          "Unknown": 1
+        },
+        "classCounts": {
+          "Unknown": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      }
+    ],
+    "rows": [
+      {
+        "displayName": "Gebrarar The Misplaced",
+        "rawName": "Gebrarar_the_Misplaced",
+        "level": 1,
+        "race": "Elemental",
+        "rawRace": "Elemental",
+        "className": "Discord Merchant",
+        "type": "Spawn Slot",
+        "x": -19,
+        "y": 360,
+        "z": -11,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 10,
+        "spawn2Id": 1168,
+        "spawngroupId": 5103,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Krakskull",
+        "rawName": "Krakskull",
+        "level": 1,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -19,
+        "y": 435,
+        "z": -9.1,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 10,
+        "spawn2Id": 1161,
+        "spawngroupId": 5096,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Kerlen Havenswar",
+        "rawName": "Kerlen_Havenswar",
+        "level": 4,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -19,
+        "y": 375,
+        "z": -11,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 10,
+        "spawn2Id": 1167,
+        "spawngroupId": 5102,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Konnus Mcniel",
+        "rawName": "Konnus_McNiel",
+        "level": 4,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -19,
+        "y": 445,
+        "z": -10.4,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 10,
+        "spawn2Id": 1160,
+        "spawngroupId": 5095,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Berlinda Straladorn",
+        "rawName": "Berlinda_Straladorn",
+        "level": 8,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -19,
+        "y": 385,
+        "z": -11,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 10,
+        "spawn2Id": 1166,
+        "spawngroupId": 5101,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Fibrus Aglthorp",
+        "rawName": "Fibrus_Aglthorp",
+        "level": 8,
+        "race": "Gnome",
+        "rawRace": "Gnome",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -19,
+        "y": 455,
+        "z": -12.8,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 10,
+        "spawn2Id": 1159,
+        "spawngroupId": 5094,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Ariala Tozzlethorp",
+        "rawName": "Ariala_Tozzlethorp",
+        "level": 13,
+        "race": "Gnome",
+        "rawRace": "Gnome",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -19,
+        "y": 395,
+        "z": -12.8,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 10,
+        "spawn2Id": 1165,
+        "spawngroupId": 5100,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Emeleo Leafwalker",
+        "rawName": "Emeleo_Leafwalker",
+        "level": 13,
+        "race": "Half Elf",
+        "rawRace": "Half Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -19,
+        "y": 495,
+        "z": -11.3,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 10,
+        "spawn2Id": 1158,
+        "spawngroupId": 5093,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Brakis Stonebrunt",
+        "rawName": "Brakis_Stonebrunt",
+        "level": 17,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -19,
+        "y": 505,
+        "z": -12.2,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 10,
+        "spawn2Id": 1157,
+        "spawngroupId": 5092,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Meadaw Firlen",
+        "rawName": "Meadaw_Firlen",
+        "level": 17,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -19,
+        "y": 405,
+        "z": -11,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 10,
+        "spawn2Id": 1164,
+        "spawngroupId": 5099,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Akass Zatora",
+        "rawName": "Akass_Zatora",
+        "level": 35,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -19,
+        "y": 515,
+        "z": -11,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 10,
+        "spawn2Id": 1156,
+        "spawngroupId": 5091,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Veraltus D`karr",
+        "rawName": "Veraltus_D`karr",
+        "level": 35,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -19,
+        "y": 415,
+        "z": -11.6,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 10,
+        "spawn2Id": 1163,
+        "spawngroupId": 5098,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Al`eik K`vorr",
+        "rawName": "Al`eik_K`vorr",
+        "level": 50,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -52,
+        "y": 322,
+        "z": -11,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 10,
+        "spawn2Id": 1170,
+        "spawngroupId": 5105,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Asherah The Torch Bearer",
+        "rawName": "Asherah_the_Torch_Bearer",
+        "level": 50,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 28.444639,
+        "y": 678.313171,
+        "z": -25.309496,
+        "heading": 132,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 59368,
+        "spawngroupId": 48642,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Banker Yalon",
+        "rawName": "Banker_Yalon",
+        "level": 50,
+        "race": "Halfling",
+        "rawRace": "Halfling",
+        "className": "Class 40",
+        "type": "Spawn Slot",
+        "x": -11,
+        "y": 338,
+        "z": -12.5,
+        "heading": 254,
+        "chance": 100,
+        "respawnTime": 10,
+        "spawn2Id": 1174,
+        "spawngroupId": 5109,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Demetria Havenswar",
+        "rawName": "Demetria_Havenswar",
+        "level": 50,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -19,
+        "y": 425,
+        "z": -11,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 10,
+        "spawn2Id": 1162,
+        "spawngroupId": 5097,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Dorala Kerlian",
+        "rawName": "Dorala_Kerlian",
+        "level": 50,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 42,
+        "y": 317,
+        "z": -11,
+        "heading": 510,
+        "chance": 100,
+        "respawnTime": 10,
+        "spawn2Id": 1175,
+        "spawngroupId": 5110,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Gailen Sterrelar",
+        "rawName": "Gailen_Sterrelar",
+        "level": 50,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -52,
+        "y": 332,
+        "z": -10.4,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 10,
+        "spawn2Id": 1171,
+        "spawngroupId": 5106,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Go Marker",
+        "rawName": "Go_Marker",
+        "level": 50,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -3,
+        "y": 360,
+        "z": -50.200001,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 10,
+        "spawn2Id": 1154,
+        "spawngroupId": 5089,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Grugg Nowdead",
+        "rawName": "Grugg_Nowdead",
+        "level": 50,
+        "race": "Troll",
+        "rawRace": "Troll",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -19,
+        "y": 525,
+        "z": -9.7,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 10,
+        "spawn2Id": 1155,
+        "spawngroupId": 5090,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Quartermaster",
+        "rawName": "Quartermaster",
+        "level": 50,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -52,
+        "y": 342,
+        "z": -10.4,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 10,
+        "spawn2Id": 1172,
+        "spawngroupId": 5107,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Salorin Gladerunner",
+        "rawName": "Salorin_Gladerunner",
+        "level": 50,
+        "race": "Wood Elf",
+        "rawRace": "Wood Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -52,
+        "y": 312,
+        "z": -11,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 10,
+        "spawn2Id": 1169,
+        "spawngroupId": 5104,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Ugloc Drinkbringa",
+        "rawName": "Ugloc_Drinkbringa",
+        "level": 50,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -2,
+        "y": 342,
+        "z": -9.1,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 10,
+        "spawn2Id": 1173,
+        "spawngroupId": 5108,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Brendar The Merciless",
+        "rawName": "Brendar_the_Merciless",
+        "level": 60,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 28,
+        "y": 319,
+        "z": -11.6,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 10,
+        "spawn2Id": 1177,
+        "spawngroupId": 5112,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Quigas Mcmillan",
+        "rawName": "Quigas_McMillan",
+        "level": 60,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 15,
+        "y": 319,
+        "z": -10.4,
+        "heading": 0,
+        "chance": 50,
+        "respawnTime": 10,
+        "spawn2Id": 1178,
+        "spawngroupId": 5113,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Sulus Quintana",
+        "rawName": "Sulus_Quintana",
+        "level": 60,
+        "race": "Half Elf",
+        "rawRace": "Half Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 45,
+        "y": 342,
+        "z": -11.3,
+        "heading": 388,
+        "chance": 100,
+        "respawnTime": 10,
+        "spawn2Id": 1179,
+        "spawngroupId": 5114,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Llara The Mysterious",
+        "rawName": "Llara_the_Mysterious",
+        "level": 61,
+        "race": "Wood Elf",
+        "rawRace": "Wood Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 123,
+        "y": 643,
+        "z": -26.299999,
+        "heading": 492,
+        "chance": 100,
+        "respawnTime": 10,
+        "spawn2Id": 1180,
+        "spawngroupId": 5115,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Patchious",
+        "rawName": "Patchious",
+        "level": 61,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 340,
+        "y": 377,
+        "z": -15.9,
+        "heading": 350,
+        "chance": 100,
+        "respawnTime": 10,
+        "spawn2Id": 1176,
+        "spawngroupId": 5111,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "One Hundred Fifty",
+        "rawName": "One_Hundred_Fifty",
+        "level": 65,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 102.726929,
+        "y": -36.319462,
+        "z": -7.710496,
+        "heading": 508,
+        "chance": 9,
+        "respawnTime": 1200,
+        "spawn2Id": 57892,
+        "spawngroupId": 32162,
+        "candidateCount": 12
+      },
+      {
+        "displayName": "Unknown",
+        "rawName": "Unknown",
+        "level": null,
+        "race": "Unknown",
+        "rawRace": "Unknown",
+        "className": "Unknown",
+        "type": "Spawn Slot",
+        "x": 0,
+        "y": 100,
+        "z": -7.709497,
+        "heading": 1.53125,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 157409,
+        "spawngroupId": 117711,
+        "candidateCount": 1
+      }
+    ]
+  }
+}

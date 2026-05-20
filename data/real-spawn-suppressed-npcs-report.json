@@ -1,0 +1,47 @@
+{
+  "generatedAt": "2026-05-19T22:20:43.063Z",
+  "configFile": "data/real-spawn-npc-suppressions.json",
+  "suppressedNpcNames": [
+    "Showeq Users Are Lame"
+  ],
+  "zonesAffected": 1,
+  "countsRemoved": {
+    "candidates": 13,
+    "lootMobs": 2,
+    "mapPoints": 1,
+    "mobGroups": 1,
+    "rows": 1,
+    "spawnSlots": 1
+  },
+  "filesChanged": [
+    "data/eqemu-hateplane-loot-test.json",
+    "data/eqemu-hateplane-spawns-test.json",
+    "data/eqemu-hateplane-zone-summary-test.json",
+    "data/eqemu-real-spawn-zone-summaries.json",
+    "public/real-spawn-loot-assets/hateplane.json"
+  ],
+  "zones": [
+    {
+      "zoneShortName": "hateplane",
+      "countsRemoved": {
+        "candidates": 13,
+        "lootMobs": 2,
+        "mapPoints": 1,
+        "mobGroups": 1,
+        "rows": 1,
+        "spawnSlots": 1
+      },
+      "suppressedNames": {
+        "Showeq Users Are Lame": 15
+      }
+    }
+  ],
+  "notes": [
+    "Suppression is exact-name targeted after EQ-style display-name normalization.",
+    "Legitimate invisible/utility/controller NPCs are preserved unless explicitly listed in the suppression config.",
+    "Counts reflect the cleanup applied to the generated Hateplane Real Spawn payloads; a follow-up idempotency pass also removed leftover ShowEQ-derived spawngroup labels.",
+    "Latest run found no additional suppressed NPC candidates; previous removal counts were preserved."
+  ],
+  "idempotencyCheckedAt": "2026-05-19T22:20:43.063Z",
+  "filesChangedOnLatestRun": []
+}

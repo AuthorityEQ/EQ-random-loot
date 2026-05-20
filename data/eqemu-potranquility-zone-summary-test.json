@@ -1,0 +1,4808 @@
+{
+  "summary": {
+    "zoneSlug": "the-plane-of-tranquility",
+    "zoneName": "The Plane of Tranquility",
+    "requestedZoneShortName": "potranquility",
+    "zoneShortName": "potranquility",
+    "sourceFile": "local-eqemu-database",
+    "matched": true,
+    "expansion": "Planes of Power",
+    "eqemuExpansionId": 4,
+    "expansionSource": "eqemu-zone-table",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobCount": 78,
+    "unknownLevelCount": 0,
+    "minLevel": 1,
+    "maxLevel": 80,
+    "averageLevel": 49.5,
+    "medianLevel": 46,
+    "levelCounts": {
+      "1": 1,
+      "46": 51,
+      "47": 2,
+      "51": 1,
+      "55": 11,
+      "60": 8,
+      "65": 1,
+      "70": 2,
+      "80": 1
+    },
+    "levelBuckets": {
+      "1-10": 1,
+      "11-20": 0,
+      "21-30": 0,
+      "31-40": 0,
+      "41-50": 53,
+      "51-60": 20,
+      "61+": 4
+    },
+    "levelProfileLabel": "Wide level spread",
+    "mobGroupNameCounts": {
+      "A Fire Elemental Focus": 2,
+      "A Water Elemental Focus": 2,
+      "An Air Elemental Focus": 2,
+      "An Earth Elemental Focus": 2,
+      "A Dense": 1,
+      "Adler Fuirstel": 1,
+      "Adrania Fireyese": 1,
+      "Adroha Jezith": 1,
+      "Aelisian Taliz": 1,
+      "Aliia Tal Almad": 1,
+      "Apprentice Daultier": 1,
+      "Apprentice Fih`ylia": 1,
+      "Aywelin Creekrunner": 1,
+      "Bind Trap": 1,
+      "Bor Wharhammer": 1,
+      "Cayrin Smirten": 1,
+      "Domri Gemstriker": 1,
+      "Drogguk Gearlifter": 1,
+      "Dubbel Strohbarrel": 1,
+      "Elder Aytael": 1,
+      "Elder Clinka": 1,
+      "Elder Fuirstel": 1,
+      "Elder Gelok": 1,
+      "Elder Harrik": 1,
+      "Elder Humfort": 1,
+      "Elder Jal`amra": 1,
+      "Elder Poxbourne": 1,
+      "Elder Tal Almad": 1,
+      "Elder Zsa`tal": 1,
+      "Fahlia Shadyglade": 1,
+      "Fellan Shireshore": 1,
+      "Gregory Maligus": 1,
+      "Hannis Silvertip": 1,
+      "Hrelic Reista": 1,
+      "Illian Rellasp": 1,
+      "Iramai Sacredsoul": 1,
+      "Jasila Maqul": 1,
+      "Jasir Amisan": 1,
+      "Jasmine Shireshore": 1,
+      "Jimlok Keylifter": 1,
+      "Jimmik Greenstone": 1,
+      "Jurmak The Undertow": 1,
+      "Kalin Reddin": 1,
+      "Kalym Rasalan": 1,
+      "Malakar Ay`ayat": 1,
+      "Miak The Searedsoul": 1,
+      "Muzzrap Dirtdigger": 1,
+      "Palin Firefly": 1,
+      "Parija Kalamir": 1,
+      "Paurnil Goldenleaves": 1,
+      "Phanti Sacredsoul": 1,
+      "Rataga Stoneskipper": 1,
+      "Relm M`loch": 1,
+      "Ronar Flametip": 1,
+      "Rugresch Tragguk": 1,
+      "Rugurt Grubdigger": 1,
+      "Saluk Tramuj": 1,
+      "Samusk Hariij": 1,
+      "Sarhya The Dawnbreeze": 1,
+      "Sariliz Grizka": 1,
+      "Soulbinder Derith": 1,
+      "Taisika Cloudfire": 1,
+      "Taq`aal Emeraldshard": 1,
+      "Tinan Aliis": 1,
+      "Trila Cabbageroll": 1,
+      "Tya Silvercloud": 1,
+      "Tylis Newleaf": 1,
+      "Urgla Fishbrains": 1,
+      "Veriok Dreik": 1,
+      "Vortix": 1,
+      "Weavereader Aewen": 1,
+      "Weavereader Dox`atyr": 1,
+      "Weavereader Ralmajir": 1,
+      "Zurmsa Grulm": 1
+    },
+    "classCounts": {
+      "Warrior": 64,
+      "Banker": 9,
+      "Class 40": 3,
+      "Cleric": 1,
+      "Wizard": 1
+    },
+    "raceCounts": {
+      "Human": 13,
+      "Erudite": 11,
+      "Elemental": 8,
+      "High Elf": 7,
+      "Drake": 5,
+      "Gnome": 4,
+      "Half Elf": 4,
+      "Halfling": 4,
+      "Vah Shir": 4,
+      "Wood Elf": 4,
+      "Dark Elf": 3,
+      "Dwarf": 3,
+      "Troll": 3,
+      "Ogre": 2,
+      "Teleport Man": 2,
+      "Iksar": 1
+    },
+    "normalizedRaceCounts": {
+      "Human": 13,
+      "Erudite": 11,
+      "Elemental": 8,
+      "High Elf": 7,
+      "Drake": 5,
+      "Gnome": 4,
+      "Half Elf": 4,
+      "Halfling": 4,
+      "Vah Shir": 4,
+      "Wood Elf": 4,
+      "Dark Elf": 3,
+      "Dwarf": 3,
+      "Troll": 3,
+      "Ogre": 2,
+      "Teleport Man": 2,
+      "Iksar": 1
+    },
+    "normalizedRaceLevelCounts": {
+      "Dark Elf": {
+        "46": 1,
+        "55": 2
+      },
+      "Drake": {
+        "60": 5
+      },
+      "Dwarf": {
+        "46": 3
+      },
+      "Elemental": {
+        "46": 8
+      },
+      "Erudite": {
+        "46": 8,
+        "55": 1,
+        "60": 2
+      },
+      "Gnome": {
+        "46": 2,
+        "55": 1,
+        "70": 1
+      },
+      "Half Elf": {
+        "46": 3,
+        "55": 1
+      },
+      "Halfling": {
+        "46": 3,
+        "70": 1
+      },
+      "High Elf": {
+        "46": 3,
+        "47": 1,
+        "55": 3
+      },
+      "Human": {
+        "1": 1,
+        "46": 8,
+        "51": 1,
+        "55": 2,
+        "65": 1
+      },
+      "Iksar": {
+        "46": 1
+      },
+      "Ogre": {
+        "46": 1,
+        "47": 1
+      },
+      "Teleport Man": {
+        "60": 1,
+        "80": 1
+      },
+      "Troll": {
+        "46": 3
+      },
+      "Vah Shir": {
+        "46": 4
+      },
+      "Wood Elf": {
+        "46": 3,
+        "55": 1
+      }
+    },
+    "raceAliases": {
+      "Dark Elf": [
+        "Dark Elf"
+      ],
+      "Drake": [
+        "Drake"
+      ],
+      "Dwarf": [
+        "Dwarf"
+      ],
+      "Elemental": [
+        "Elemental"
+      ],
+      "Erudite": [
+        "Erudite"
+      ],
+      "Gnome": [
+        "Gnome"
+      ],
+      "Half Elf": [
+        "Half Elf"
+      ],
+      "Halfling": [
+        "Halfling"
+      ],
+      "High Elf": [
+        "High Elf"
+      ],
+      "Human": [
+        "Human"
+      ],
+      "Iksar": [
+        "Iksar"
+      ],
+      "Ogre": [
+        "Ogre"
+      ],
+      "Teleport Man": [
+        "Teleport Man"
+      ],
+      "Troll": [
+        "Troll"
+      ],
+      "Vah Shir": [
+        "Vah Shir"
+      ],
+      "Wood Elf": [
+        "Wood Elf"
+      ]
+    },
+    "typeCounts": {
+      "Spawn Slot": 78
+    },
+    "notes": [
+      "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+      "Read-only test export; not wired into production /zones data."
+    ],
+    "spawnMapPrototype": {
+      "sourceKind": "Local EQEmu/PEQ database export",
+      "coordinateNote": "Original EQEmu spawn2 x/y/z coordinates are preserved for map prototyping.",
+      "points": [
+        {
+          "spawn2Id": 40908,
+          "spawngroupId": 36942,
+          "name": "Muzzrap_Dirtdigger",
+          "displayName": "Muzzrap Dirtdigger",
+          "level": 70,
+          "race": "Gnome",
+          "rawRace": "Gnome",
+          "className": "Warrior",
+          "x": 2226,
+          "y": -1362,
+          "z": -715.75,
+          "heading": 370,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40909,
+          "spawngroupId": 36941,
+          "name": "Soulbinder_Derith",
+          "displayName": "Soulbinder Derith",
+          "level": 1,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -1631,
+          "y": 768,
+          "z": -890.625,
+          "heading": 456,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40910,
+          "spawngroupId": 36940,
+          "name": "Hrelic_Reista",
+          "displayName": "Hrelic Reista",
+          "level": 60,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Warrior",
+          "x": -1596,
+          "y": 690,
+          "z": -876.125,
+          "heading": 388,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40911,
+          "spawngroupId": 36939,
+          "name": "Illian_Rellasp",
+          "displayName": "Illian Rellasp",
+          "level": 60,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Warrior",
+          "x": -1675,
+          "y": -54,
+          "z": -934,
+          "heading": 331,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40912,
+          "spawngroupId": 36938,
+          "name": "Elder_Poxbourne",
+          "displayName": "Elder Poxbourne",
+          "level": 55,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Warrior",
+          "x": -1427,
+          "y": -252,
+          "z": -905.75,
+          "heading": 176,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40913,
+          "spawngroupId": 36937,
+          "name": "Relm_M`Loch",
+          "displayName": "Relm M`loch",
+          "level": 55,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Wizard",
+          "x": -1557,
+          "y": 715,
+          "z": -876.75,
+          "heading": 254,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40914,
+          "spawngroupId": 36936,
+          "name": "Weavereader_Ralmajir",
+          "displayName": "Weavereader Ralmajir",
+          "level": 46,
+          "race": "Vah Shir",
+          "rawRace": "Vah Shir",
+          "className": "Warrior",
+          "x": -1076,
+          "y": -221,
+          "z": -869.5,
+          "heading": 386,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40915,
+          "spawngroupId": 36935,
+          "name": "Weavereader_Dox`Atyr",
+          "displayName": "Weavereader Dox`atyr",
+          "level": 46,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Warrior",
+          "x": -1074,
+          "y": -296,
+          "z": -870.75,
+          "heading": 375,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40916,
+          "spawngroupId": 36934,
+          "name": "Weavereader_Aewen",
+          "displayName": "Weavereader Aewen",
+          "level": 46,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Warrior",
+          "x": -1093,
+          "y": -161,
+          "z": -870.125,
+          "heading": 249,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40917,
+          "spawngroupId": 36933,
+          "name": "Fahlia_Shadyglade",
+          "displayName": "Fahlia Shadyglade",
+          "level": 55,
+          "race": "Half Elf",
+          "rawRace": "Half Elf",
+          "className": "Warrior",
+          "x": -1366,
+          "y": -302,
+          "z": -905.25,
+          "heading": 24,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40918,
+          "spawngroupId": 36932,
+          "name": "Elder_Fuirstel",
+          "displayName": "Elder Fuirstel",
+          "level": 55,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -1418,
+          "y": -292,
+          "z": -905.875,
+          "heading": 357,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40919,
+          "spawngroupId": 36931,
+          "name": "an_earth_elemental_focus",
+          "displayName": "An Earth Elemental Focus",
+          "level": 46,
+          "race": "Elemental",
+          "rawRace": "Elemental",
+          "className": "Warrior",
+          "x": 2113,
+          "y": -1372,
+          "z": -711.375,
+          "heading": 487,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40920,
+          "spawngroupId": 36930,
+          "name": "an_earth_elemental_focus",
+          "displayName": "An Earth Elemental Focus",
+          "level": 46,
+          "race": "Elemental",
+          "rawRace": "Elemental",
+          "className": "Warrior",
+          "x": 2134,
+          "y": -1301,
+          "z": -711.375,
+          "heading": 283,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40921,
+          "spawngroupId": 36929,
+          "name": "Taq`aal_Emeraldshard",
+          "displayName": "Taq`aal Emeraldshard",
+          "level": 60,
+          "race": "Drake",
+          "rawRace": "Drake",
+          "className": "Warrior",
+          "x": 2103,
+          "y": -1331,
+          "z": -708.25,
+          "heading": 144,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40922,
+          "spawngroupId": 36928,
+          "name": "a_water_elemental_focus",
+          "displayName": "A Water Elemental Focus",
+          "level": 46,
+          "race": "Elemental",
+          "rawRace": "Elemental",
+          "className": "Warrior",
+          "x": 1007,
+          "y": -1129,
+          "z": -774.625,
+          "heading": 233,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40923,
+          "spawngroupId": 36927,
+          "name": "a_water_elemental_focus",
+          "displayName": "A Water Elemental Focus",
+          "level": 46,
+          "race": "Elemental",
+          "rawRace": "Elemental",
+          "className": "Warrior",
+          "x": 962,
+          "y": -1190,
+          "z": -777.625,
+          "heading": 126,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40924,
+          "spawngroupId": 36926,
+          "name": "Jurmak_the_Undertow",
+          "displayName": "Jurmak The Undertow",
+          "level": 60,
+          "race": "Drake",
+          "rawRace": "Drake",
+          "className": "Warrior",
+          "x": 973,
+          "y": -1159,
+          "z": -765.25,
+          "heading": 183,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40925,
+          "spawngroupId": 36925,
+          "name": "a_fire_elemental_focus",
+          "displayName": "A Fire Elemental Focus",
+          "level": 46,
+          "race": "Elemental",
+          "rawRace": "Elemental",
+          "className": "Warrior",
+          "x": -2240,
+          "y": 306,
+          "z": -921.125,
+          "heading": 191,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40926,
+          "spawngroupId": 36924,
+          "name": "a_fire_elemental_focus",
+          "displayName": "A Fire Elemental Focus",
+          "level": 46,
+          "race": "Elemental",
+          "rawRace": "Elemental",
+          "className": "Warrior",
+          "x": -2242,
+          "y": 202,
+          "z": -921.125,
+          "heading": 59,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40927,
+          "spawngroupId": 36923,
+          "name": "Miak_the_Searedsoul",
+          "displayName": "Miak The Searedsoul",
+          "level": 60,
+          "race": "Drake",
+          "rawRace": "Drake",
+          "className": "Warrior",
+          "x": -2256,
+          "y": 255,
+          "z": -921.125,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40928,
+          "spawngroupId": 36922,
+          "name": "an_air_elemental_focus",
+          "displayName": "An Air Elemental Focus",
+          "level": 46,
+          "race": "Elemental",
+          "rawRace": "Elemental",
+          "className": "Warrior",
+          "x": -715,
+          "y": 849,
+          "z": -605.75,
+          "heading": 124,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40929,
+          "spawngroupId": 36921,
+          "name": "an_air_elemental_focus",
+          "displayName": "An Air Elemental Focus",
+          "level": 46,
+          "race": "Elemental",
+          "rawRace": "Elemental",
+          "className": "Warrior",
+          "x": -661,
+          "y": 851,
+          "z": -605.75,
+          "heading": 381,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40930,
+          "spawngroupId": 36920,
+          "name": "Sarhya_the_Dawnbreeze",
+          "displayName": "Sarhya The Dawnbreeze",
+          "level": 60,
+          "race": "Drake",
+          "rawRace": "Drake",
+          "className": "Warrior",
+          "x": -687,
+          "y": 885,
+          "z": -608.875,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40931,
+          "spawngroupId": 36919,
+          "name": "Elder_Harrik",
+          "displayName": "Elder Harrik",
+          "level": 46,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -1354,
+          "y": -206,
+          "z": -906.125,
+          "heading": 376,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40932,
+          "spawngroupId": 36918,
+          "name": "Jimlok_Keylifter",
+          "displayName": "Jimlok Keylifter",
+          "level": 46,
+          "race": "Gnome",
+          "rawRace": "Gnome",
+          "className": "Warrior",
+          "x": -1389,
+          "y": -541,
+          "z": -908.75,
+          "heading": 283,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40933,
+          "spawngroupId": 36917,
+          "name": "Rataga_Stoneskipper",
+          "displayName": "Rataga Stoneskipper",
+          "level": 46,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -1406,
+          "y": -489,
+          "z": -906.125,
+          "heading": 132,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40934,
+          "spawngroupId": 36916,
+          "name": "Saluk_Tramuj",
+          "displayName": "Saluk Tramuj",
+          "level": 46,
+          "race": "Vah Shir",
+          "rawRace": "Vah Shir",
+          "className": "Warrior",
+          "x": -1287,
+          "y": -59,
+          "z": -876.25,
+          "heading": 258,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40935,
+          "spawngroupId": 36915,
+          "name": "Aywelin_Creekrunner",
+          "displayName": "Aywelin Creekrunner",
+          "level": 46,
+          "race": "Wood Elf",
+          "rawRace": "Wood Elf",
+          "className": "Warrior",
+          "x": -1295,
+          "y": -78,
+          "z": -877.5,
+          "heading": 7,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40936,
+          "spawngroupId": 36914,
+          "name": "Zurmsa_Grulm",
+          "displayName": "Zurmsa Grulm",
+          "level": 46,
+          "race": "Troll",
+          "rawRace": "Troll",
+          "className": "Warrior",
+          "x": -1225,
+          "y": -114,
+          "z": -877.875,
+          "heading": 73,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40937,
+          "spawngroupId": 36913,
+          "name": "Kalin_Reddin",
+          "displayName": "Kalin Reddin",
+          "level": 46,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -1256,
+          "y": 11,
+          "z": -877,
+          "heading": 305,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40938,
+          "spawngroupId": 36912,
+          "name": "Cayrin_Smirten",
+          "displayName": "Cayrin Smirten",
+          "level": 46,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -647,
+          "y": -1148,
+          "z": -937,
+          "heading": 320,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40939,
+          "spawngroupId": 36911,
+          "name": "Rugurt_Grubdigger",
+          "displayName": "Rugurt Grubdigger",
+          "level": 46,
+          "race": "Troll",
+          "rawRace": "Troll",
+          "className": "Warrior",
+          "x": -1075,
+          "y": -807,
+          "z": -936.125,
+          "heading": 365,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40940,
+          "spawngroupId": 36910,
+          "name": "Palin_Firefly",
+          "displayName": "Palin Firefly",
+          "level": 46,
+          "race": "Half Elf",
+          "rawRace": "Half Elf",
+          "className": "Warrior",
+          "x": -954,
+          "y": -922,
+          "z": -938.25,
+          "heading": 329,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40941,
+          "spawngroupId": 36909,
+          "name": "Adler_Fuirstel",
+          "displayName": "Adler Fuirstel",
+          "level": 46,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -1468,
+          "y": 1786,
+          "z": -770.5,
+          "heading": 428,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40942,
+          "spawngroupId": 36908,
+          "name": "Fellan_Shireshore",
+          "displayName": "Fellan Shireshore",
+          "level": 46,
+          "race": "Halfling",
+          "rawRace": "Halfling",
+          "className": "Warrior",
+          "x": 1927,
+          "y": -1435,
+          "z": -711.75,
+          "heading": 393,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40943,
+          "spawngroupId": 36907,
+          "name": "Jasmine_Shireshore",
+          "displayName": "Jasmine Shireshore",
+          "level": 46,
+          "race": "Halfling",
+          "rawRace": "Halfling",
+          "className": "Warrior",
+          "x": 2037,
+          "y": -1324,
+          "z": -712,
+          "heading": 3,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40944,
+          "spawngroupId": 36906,
+          "name": "Tya_Silvercloud",
+          "displayName": "Tya Silvercloud",
+          "level": 46,
+          "race": "Wood Elf",
+          "rawRace": "Wood Elf",
+          "className": "Warrior",
+          "x": 2143,
+          "y": -1433,
+          "z": -711,
+          "heading": 144,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40945,
+          "spawngroupId": 36905,
+          "name": "Drogguk_Gearlifter",
+          "displayName": "Drogguk Gearlifter",
+          "level": 46,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Warrior",
+          "x": 43,
+          "y": -1592,
+          "z": -918,
+          "heading": 345,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40946,
+          "spawngroupId": 36904,
+          "name": "Elder_Gelok",
+          "displayName": "Elder Gelok",
+          "level": 46,
+          "race": "Gnome",
+          "rawRace": "Gnome",
+          "className": "Warrior",
+          "x": -20,
+          "y": -1547,
+          "z": -921.75,
+          "heading": 136,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40947,
+          "spawngroupId": 36903,
+          "name": "Urgla_Fishbrains",
+          "displayName": "Urgla Fishbrains",
+          "level": 47,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Warrior",
+          "x": -1424,
+          "y": -387,
+          "z": -904.25,
+          "heading": 376,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40948,
+          "spawngroupId": 36902,
+          "name": "Elder_Jal`Amra",
+          "displayName": "Elder Jal`amra",
+          "level": 46,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Warrior",
+          "x": -1223,
+          "y": -500,
+          "z": -905.125,
+          "heading": 316,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40949,
+          "spawngroupId": 36901,
+          "name": "Apprentice_Daultier",
+          "displayName": "Apprentice Daultier",
+          "level": 46,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -1231,
+          "y": -377,
+          "z": -905.125,
+          "heading": 259,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40950,
+          "spawngroupId": 36900,
+          "name": "Elder_Aytael",
+          "displayName": "Elder Aytael",
+          "level": 55,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Warrior",
+          "x": -1209,
+          "y": -430,
+          "z": -902.75,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40951,
+          "spawngroupId": 36899,
+          "name": "Elder_Humfort",
+          "displayName": "Elder Humfort",
+          "level": 55,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -1267,
+          "y": -430,
+          "z": -903,
+          "heading": 261,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40952,
+          "spawngroupId": 36898,
+          "name": "Elder_Clinka",
+          "displayName": "Elder Clinka",
+          "level": 55,
+          "race": "Gnome",
+          "rawRace": "Gnome",
+          "className": "Warrior",
+          "x": -1272,
+          "y": -385,
+          "z": -904.625,
+          "heading": 2,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40953,
+          "spawngroupId": 36897,
+          "name": "Elder_Zsa`Tal",
+          "displayName": "Elder Zsa`tal",
+          "level": 55,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Warrior",
+          "x": -1178,
+          "y": -384,
+          "z": -903.375,
+          "heading": 13,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40954,
+          "spawngroupId": 36896,
+          "name": "Rugresch_Tragguk",
+          "displayName": "Rugresch Tragguk",
+          "level": 46,
+          "race": "Troll",
+          "rawRace": "Troll",
+          "className": "Warrior",
+          "x": -1183,
+          "y": -161,
+          "z": -868.875,
+          "heading": 20,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40955,
+          "spawngroupId": 36895,
+          "name": "Kalym_Rasalan",
+          "displayName": "Kalym Rasalan",
+          "level": 46,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Warrior",
+          "x": -1151,
+          "y": -306,
+          "z": -867.625,
+          "heading": 258,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40956,
+          "spawngroupId": 36894,
+          "name": "Tinan_Aliis",
+          "displayName": "Tinan Aliis",
+          "level": 46,
+          "race": "Wood Elf",
+          "rawRace": "Wood Elf",
+          "className": "Warrior",
+          "x": -1178,
+          "y": -306,
+          "z": -868.625,
+          "heading": 258,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40957,
+          "spawngroupId": 36893,
+          "name": "Sariliz_Grizka",
+          "displayName": "Sariliz Grizka",
+          "level": 46,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Warrior",
+          "x": -1223,
+          "y": 10,
+          "z": -876.875,
+          "heading": 261,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40958,
+          "spawngroupId": 36892,
+          "name": "Trila_Cabbageroll",
+          "displayName": "Trila Cabbageroll",
+          "level": 46,
+          "race": "Halfling",
+          "rawRace": "Halfling",
+          "className": "Warrior",
+          "x": -1272,
+          "y": -135,
+          "z": -880.75,
+          "heading": 202,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40959,
+          "spawngroupId": 36891,
+          "name": "Hannis_Silvertip",
+          "displayName": "Hannis Silvertip",
+          "level": 46,
+          "race": "Half Elf",
+          "rawRace": "Half Elf",
+          "className": "Warrior",
+          "x": -1294,
+          "y": -108,
+          "z": -879.5,
+          "heading": 26,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40960,
+          "spawngroupId": 36890,
+          "name": "Paurnil_Goldenleaves",
+          "displayName": "Paurnil Goldenleaves",
+          "level": 46,
+          "race": "Half Elf",
+          "rawRace": "Half Elf",
+          "className": "Class 40",
+          "x": -1543,
+          "y": 878,
+          "z": -892.359253,
+          "heading": 259,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40961,
+          "spawngroupId": 36889,
+          "name": "Domri_Gemstriker",
+          "displayName": "Domri Gemstriker",
+          "level": 46,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Class 40",
+          "x": -1558,
+          "y": 878,
+          "z": -892.359253,
+          "heading": 259,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40962,
+          "spawngroupId": 36888,
+          "name": "Taisika_Cloudfire",
+          "displayName": "Taisika Cloudfire",
+          "level": 46,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Class 40",
+          "x": -1573,
+          "y": 878,
+          "z": -892.359253,
+          "heading": 259.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40963,
+          "spawngroupId": 36887,
+          "name": "Jasila_Maqul",
+          "displayName": "Jasila Maqul",
+          "level": 46,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Warrior",
+          "x": -1634,
+          "y": 1008,
+          "z": -890.75,
+          "heading": 483,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40964,
+          "spawngroupId": 36886,
+          "name": "Aelisian_Taliz",
+          "displayName": "Aelisian Taliz",
+          "level": 47,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -1752,
+          "y": 886,
+          "z": -890.625,
+          "heading": 146,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40965,
+          "spawngroupId": 36885,
+          "name": "Elder_Tal_Almad",
+          "displayName": "Elder Tal Almad",
+          "level": 46,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Warrior",
+          "x": -1469,
+          "y": 709,
+          "z": -876,
+          "heading": 418,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40966,
+          "spawngroupId": 36884,
+          "name": "Adrania_Fireyese",
+          "displayName": "Adrania Fireyese",
+          "level": 46,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -1889,
+          "y": 734,
+          "z": -907.875,
+          "heading": 112,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40967,
+          "spawngroupId": 36883,
+          "name": "Parija_Kalamir",
+          "displayName": "Parija Kalamir",
+          "level": 46,
+          "race": "Vah Shir",
+          "rawRace": "Vah Shir",
+          "className": "Banker",
+          "x": -1896,
+          "y": 672,
+          "z": -907.25,
+          "heading": 17,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40968,
+          "spawngroupId": 36882,
+          "name": "Gregory_Maligus",
+          "displayName": "Gregory Maligus",
+          "level": 46,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -1847,
+          "y": 627,
+          "z": -907.875,
+          "heading": 7,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40969,
+          "spawngroupId": 36881,
+          "name": "Malakar_Ay`Ayat",
+          "displayName": "Malakar Ay`ayat",
+          "level": 46,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Warrior",
+          "x": -1552,
+          "y": 504,
+          "z": -911,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40970,
+          "spawngroupId": 36880,
+          "name": "Samusk_Hariij",
+          "displayName": "Samusk Hariij",
+          "level": 46,
+          "race": "Vah Shir",
+          "rawRace": "Vah Shir",
+          "className": "Banker",
+          "x": -1719,
+          "y": 512,
+          "z": -910.375,
+          "heading": 88,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40971,
+          "spawngroupId": 36879,
+          "name": "Aliia_Tal_Almad",
+          "displayName": "Aliia Tal Almad",
+          "level": 46,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -1716,
+          "y": 479,
+          "z": -911,
+          "heading": 342,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40972,
+          "spawngroupId": 36878,
+          "name": "Dubbel_Strohbarrel",
+          "displayName": "Dubbel Strohbarrel",
+          "level": 46,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior",
+          "x": -1750,
+          "y": 499,
+          "z": -912.25,
+          "heading": 152,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40973,
+          "spawngroupId": 36877,
+          "name": "Jasir_Amisan",
+          "displayName": "Jasir Amisan",
+          "level": 46,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -1621,
+          "y": 583,
+          "z": -911,
+          "heading": 259,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40974,
+          "spawngroupId": 36876,
+          "name": "Jimmik_Greenstone",
+          "displayName": "Jimmik Greenstone",
+          "level": 51,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -1637,
+          "y": 583,
+          "z": -911,
+          "heading": 259,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40975,
+          "spawngroupId": 36875,
+          "name": "#Veriok_Dreik",
+          "displayName": "Veriok Dreik",
+          "level": 70,
+          "race": "Halfling",
+          "rawRace": "Halfling",
+          "className": "Cleric",
+          "x": -1396,
+          "y": -305,
+          "z": -907.375,
+          "heading": 16,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40976,
+          "spawngroupId": 36874,
+          "name": "Ronar_Flametip",
+          "displayName": "Ronar Flametip",
+          "level": 60,
+          "race": "Drake",
+          "rawRace": "Drake",
+          "className": "Warrior",
+          "x": -2115.5,
+          "y": 254.25,
+          "z": -921.125,
+          "heading": 383,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40977,
+          "spawngroupId": 36873,
+          "name": "Bor_Wharhammer",
+          "displayName": "Bor Wharhammer",
+          "level": 46,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior",
+          "x": -1734,
+          "y": 703,
+          "z": -909.125,
+          "heading": 393,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40978,
+          "spawngroupId": 36872,
+          "name": "Iramai_Sacredsoul",
+          "displayName": "Iramai Sacredsoul",
+          "level": 55,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Warrior",
+          "x": -1355,
+          "y": -252,
+          "z": -904.875,
+          "heading": 305,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40979,
+          "spawngroupId": 36871,
+          "name": "Vortix",
+          "displayName": "Vortix",
+          "level": 65,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -741,
+          "y": 1844,
+          "z": -657.25,
+          "heading": 172,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40980,
+          "spawngroupId": 36870,
+          "name": "Apprentice_Fih`Ylia",
+          "displayName": "Apprentice Fih`ylia",
+          "level": 46,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Warrior",
+          "x": -1488.875,
+          "y": 580,
+          "z": -876.125,
+          "heading": 253,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 58281,
+          "spawngroupId": 47505,
+          "name": "Tylis_Newleaf",
+          "displayName": "Tylis Newleaf",
+          "level": 55,
+          "race": "Wood Elf",
+          "rawRace": "Wood Elf",
+          "className": "Warrior",
+          "x": -1372,
+          "y": -295,
+          "z": -906.75,
+          "heading": 138,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 58282,
+          "spawngroupId": 47506,
+          "name": "Adroha_Jezith",
+          "displayName": "Adroha Jezith",
+          "level": 46,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Warrior",
+          "x": -1429,
+          "y": -259,
+          "z": -904,
+          "heading": 8,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 58617,
+          "spawngroupId": 48191,
+          "name": "bind_trap",
+          "displayName": "Bind Trap",
+          "level": 80,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": -1458.299072,
+          "y": 771.697144,
+          "z": -877.621765,
+          "heading": 111,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 76192,
+          "spawngroupId": 54768,
+          "name": "Phanti_Sacredsoul",
+          "displayName": "Phanti Sacredsoul",
+          "level": 55,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Warrior",
+          "x": -1356,
+          "y": -258,
+          "z": -906.125,
+          "heading": 75,
+          "chance": 100,
+          "respawnTime": 120,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 258453,
+          "spawngroupId": 282486,
+          "name": "A_dense",
+          "displayName": "A Dense",
+          "level": 60,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": -1232,
+          "y": -483,
+          "z": -904,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 600,
+          "candidateCount": 1
+        }
+      ]
+    }
+  },
+  "details": {
+    "zoneSlug": "the-plane-of-tranquility",
+    "routeSlug": "potranquility",
+    "zoneName": "The Plane of Tranquility",
+    "sourceFile": "local-eqemu-database",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobGroups": [
+      {
+        "displayName": "Soulbinder Derith",
+        "rawNames": [
+          "Soulbinder_Derith"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Fire Elemental Focus",
+        "rawNames": [
+          "a_fire_elemental_focus"
+        ],
+        "count": 2,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Elemental": 2
+        },
+        "rawRaceCounts": {
+          "Elemental": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Water Elemental Focus",
+        "rawNames": [
+          "a_water_elemental_focus"
+        ],
+        "count": 2,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Elemental": 2
+        },
+        "rawRaceCounts": {
+          "Elemental": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "An Air Elemental Focus",
+        "rawNames": [
+          "an_air_elemental_focus"
+        ],
+        "count": 2,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Elemental": 2
+        },
+        "rawRaceCounts": {
+          "Elemental": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "An Earth Elemental Focus",
+        "rawNames": [
+          "an_earth_elemental_focus"
+        ],
+        "count": 2,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Elemental": 2
+        },
+        "rawRaceCounts": {
+          "Elemental": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "Adler Fuirstel",
+        "rawNames": [
+          "Adler_Fuirstel"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Adrania Fireyese",
+        "rawNames": [
+          "Adrania_Fireyese"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Adroha Jezith",
+        "rawNames": [
+          "Adroha_Jezith"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Aliia Tal Almad",
+        "rawNames": [
+          "Aliia_Tal_Almad"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Apprentice Daultier",
+        "rawNames": [
+          "Apprentice_Daultier"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Apprentice Fih`ylia",
+        "rawNames": [
+          "Apprentice_Fih`Ylia"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Aywelin Creekrunner",
+        "rawNames": [
+          "Aywelin_Creekrunner"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Wood Elf": 1
+        },
+        "rawRaceCounts": {
+          "Wood Elf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Bor Wharhammer",
+        "rawNames": [
+          "Bor_Wharhammer"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Cayrin Smirten",
+        "rawNames": [
+          "Cayrin_Smirten"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Domri Gemstriker",
+        "rawNames": [
+          "Domri_Gemstriker"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Class 40": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Drogguk Gearlifter",
+        "rawNames": [
+          "Drogguk_Gearlifter"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Ogre": 1
+        },
+        "rawRaceCounts": {
+          "Ogre": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Dubbel Strohbarrel",
+        "rawNames": [
+          "Dubbel_Strohbarrel"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Elder Gelok",
+        "rawNames": [
+          "Elder_Gelok"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Gnome": 1
+        },
+        "rawRaceCounts": {
+          "Gnome": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Elder Harrik",
+        "rawNames": [
+          "Elder_Harrik"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Elder Jal`amra",
+        "rawNames": [
+          "Elder_Jal`Amra"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Elder Tal Almad",
+        "rawNames": [
+          "Elder_Tal_Almad"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Fellan Shireshore",
+        "rawNames": [
+          "Fellan_Shireshore"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Halfling": 1
+        },
+        "rawRaceCounts": {
+          "Halfling": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Gregory Maligus",
+        "rawNames": [
+          "Gregory_Maligus"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Hannis Silvertip",
+        "rawNames": [
+          "Hannis_Silvertip"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Half Elf": 1
+        },
+        "rawRaceCounts": {
+          "Half Elf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Jasila Maqul",
+        "rawNames": [
+          "Jasila_Maqul"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Jasir Amisan",
+        "rawNames": [
+          "Jasir_Amisan"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Jasmine Shireshore",
+        "rawNames": [
+          "Jasmine_Shireshore"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Halfling": 1
+        },
+        "rawRaceCounts": {
+          "Halfling": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Jimlok Keylifter",
+        "rawNames": [
+          "Jimlok_Keylifter"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Gnome": 1
+        },
+        "rawRaceCounts": {
+          "Gnome": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Kalin Reddin",
+        "rawNames": [
+          "Kalin_Reddin"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Kalym Rasalan",
+        "rawNames": [
+          "Kalym_Rasalan"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Malakar Ay`ayat",
+        "rawNames": [
+          "Malakar_Ay`Ayat"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Palin Firefly",
+        "rawNames": [
+          "Palin_Firefly"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Half Elf": 1
+        },
+        "rawRaceCounts": {
+          "Half Elf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Parija Kalamir",
+        "rawNames": [
+          "Parija_Kalamir"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Vah Shir": 1
+        },
+        "rawRaceCounts": {
+          "Vah Shir": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Paurnil Goldenleaves",
+        "rawNames": [
+          "Paurnil_Goldenleaves"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Half Elf": 1
+        },
+        "rawRaceCounts": {
+          "Half Elf": 1
+        },
+        "classCounts": {
+          "Class 40": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Rataga Stoneskipper",
+        "rawNames": [
+          "Rataga_Stoneskipper"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Rugresch Tragguk",
+        "rawNames": [
+          "Rugresch_Tragguk"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Troll": 1
+        },
+        "rawRaceCounts": {
+          "Troll": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Rugurt Grubdigger",
+        "rawNames": [
+          "Rugurt_Grubdigger"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Troll": 1
+        },
+        "rawRaceCounts": {
+          "Troll": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Saluk Tramuj",
+        "rawNames": [
+          "Saluk_Tramuj"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Vah Shir": 1
+        },
+        "rawRaceCounts": {
+          "Vah Shir": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Samusk Hariij",
+        "rawNames": [
+          "Samusk_Hariij"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Vah Shir": 1
+        },
+        "rawRaceCounts": {
+          "Vah Shir": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Sariliz Grizka",
+        "rawNames": [
+          "Sariliz_Grizka"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Taisika Cloudfire",
+        "rawNames": [
+          "Taisika_Cloudfire"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Class 40": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Tinan Aliis",
+        "rawNames": [
+          "Tinan_Aliis"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Wood Elf": 1
+        },
+        "rawRaceCounts": {
+          "Wood Elf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Trila Cabbageroll",
+        "rawNames": [
+          "Trila_Cabbageroll"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Halfling": 1
+        },
+        "rawRaceCounts": {
+          "Halfling": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Tya Silvercloud",
+        "rawNames": [
+          "Tya_Silvercloud"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Wood Elf": 1
+        },
+        "rawRaceCounts": {
+          "Wood Elf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Weavereader Aewen",
+        "rawNames": [
+          "Weavereader_Aewen"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Weavereader Dox`atyr",
+        "rawNames": [
+          "Weavereader_Dox`Atyr"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Weavereader Ralmajir",
+        "rawNames": [
+          "Weavereader_Ralmajir"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Vah Shir": 1
+        },
+        "rawRaceCounts": {
+          "Vah Shir": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Zurmsa Grulm",
+        "rawNames": [
+          "Zurmsa_Grulm"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Troll": 1
+        },
+        "rawRaceCounts": {
+          "Troll": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Aelisian Taliz",
+        "rawNames": [
+          "Aelisian_Taliz"
+        ],
+        "count": 1,
+        "levelMin": 47,
+        "levelMax": 47,
+        "levels": [
+          47
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Urgla Fishbrains",
+        "rawNames": [
+          "Urgla_Fishbrains"
+        ],
+        "count": 1,
+        "levelMin": 47,
+        "levelMax": 47,
+        "levels": [
+          47
+        ],
+        "raceCounts": {
+          "Ogre": 1
+        },
+        "rawRaceCounts": {
+          "Ogre": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Jimmik Greenstone",
+        "rawNames": [
+          "Jimmik_Greenstone"
+        ],
+        "count": 1,
+        "levelMin": 51,
+        "levelMax": 51,
+        "levels": [
+          51
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Elder Aytael",
+        "rawNames": [
+          "Elder_Aytael"
+        ],
+        "count": 1,
+        "levelMin": 55,
+        "levelMax": 55,
+        "levels": [
+          55
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Elder Clinka",
+        "rawNames": [
+          "Elder_Clinka"
+        ],
+        "count": 1,
+        "levelMin": 55,
+        "levelMax": 55,
+        "levels": [
+          55
+        ],
+        "raceCounts": {
+          "Gnome": 1
+        },
+        "rawRaceCounts": {
+          "Gnome": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Elder Fuirstel",
+        "rawNames": [
+          "Elder_Fuirstel"
+        ],
+        "count": 1,
+        "levelMin": 55,
+        "levelMax": 55,
+        "levels": [
+          55
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Elder Humfort",
+        "rawNames": [
+          "Elder_Humfort"
+        ],
+        "count": 1,
+        "levelMin": 55,
+        "levelMax": 55,
+        "levels": [
+          55
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Elder Poxbourne",
+        "rawNames": [
+          "Elder_Poxbourne"
+        ],
+        "count": 1,
+        "levelMin": 55,
+        "levelMax": 55,
+        "levels": [
+          55
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Elder Zsa`tal",
+        "rawNames": [
+          "Elder_Zsa`Tal"
+        ],
+        "count": 1,
+        "levelMin": 55,
+        "levelMax": 55,
+        "levels": [
+          55
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Fahlia Shadyglade",
+        "rawNames": [
+          "Fahlia_Shadyglade"
+        ],
+        "count": 1,
+        "levelMin": 55,
+        "levelMax": 55,
+        "levels": [
+          55
+        ],
+        "raceCounts": {
+          "Half Elf": 1
+        },
+        "rawRaceCounts": {
+          "Half Elf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Iramai Sacredsoul",
+        "rawNames": [
+          "Iramai_Sacredsoul"
+        ],
+        "count": 1,
+        "levelMin": 55,
+        "levelMax": 55,
+        "levels": [
+          55
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Phanti Sacredsoul",
+        "rawNames": [
+          "Phanti_Sacredsoul"
+        ],
+        "count": 1,
+        "levelMin": 55,
+        "levelMax": 55,
+        "levels": [
+          55
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Relm M`loch",
+        "rawNames": [
+          "Relm_M`Loch"
+        ],
+        "count": 1,
+        "levelMin": 55,
+        "levelMax": 55,
+        "levels": [
+          55
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Wizard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Tylis Newleaf",
+        "rawNames": [
+          "Tylis_Newleaf"
+        ],
+        "count": 1,
+        "levelMin": 55,
+        "levelMax": 55,
+        "levels": [
+          55
+        ],
+        "raceCounts": {
+          "Wood Elf": 1
+        },
+        "rawRaceCounts": {
+          "Wood Elf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Dense",
+        "rawNames": [
+          "A_dense"
+        ],
+        "count": 1,
+        "levelMin": 60,
+        "levelMax": 60,
+        "levels": [
+          60
+        ],
+        "raceCounts": {
+          "Teleport Man": 1
+        },
+        "rawRaceCounts": {
+          "Teleport Man": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Hrelic Reista",
+        "rawNames": [
+          "Hrelic_Reista"
+        ],
+        "count": 1,
+        "levelMin": 60,
+        "levelMax": 60,
+        "levels": [
+          60
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Illian Rellasp",
+        "rawNames": [
+          "Illian_Rellasp"
+        ],
+        "count": 1,
+        "levelMin": 60,
+        "levelMax": 60,
+        "levels": [
+          60
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Jurmak The Undertow",
+        "rawNames": [
+          "Jurmak_the_Undertow"
+        ],
+        "count": 1,
+        "levelMin": 60,
+        "levelMax": 60,
+        "levels": [
+          60
+        ],
+        "raceCounts": {
+          "Drake": 1
+        },
+        "rawRaceCounts": {
+          "Drake": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Miak The Searedsoul",
+        "rawNames": [
+          "Miak_the_Searedsoul"
+        ],
+        "count": 1,
+        "levelMin": 60,
+        "levelMax": 60,
+        "levels": [
+          60
+        ],
+        "raceCounts": {
+          "Drake": 1
+        },
+        "rawRaceCounts": {
+          "Drake": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Ronar Flametip",
+        "rawNames": [
+          "Ronar_Flametip"
+        ],
+        "count": 1,
+        "levelMin": 60,
+        "levelMax": 60,
+        "levels": [
+          60
+        ],
+        "raceCounts": {
+          "Drake": 1
+        },
+        "rawRaceCounts": {
+          "Drake": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Sarhya The Dawnbreeze",
+        "rawNames": [
+          "Sarhya_the_Dawnbreeze"
+        ],
+        "count": 1,
+        "levelMin": 60,
+        "levelMax": 60,
+        "levels": [
+          60
+        ],
+        "raceCounts": {
+          "Drake": 1
+        },
+        "rawRaceCounts": {
+          "Drake": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Taq`aal Emeraldshard",
+        "rawNames": [
+          "Taq`aal_Emeraldshard"
+        ],
+        "count": 1,
+        "levelMin": 60,
+        "levelMax": 60,
+        "levels": [
+          60
+        ],
+        "raceCounts": {
+          "Drake": 1
+        },
+        "rawRaceCounts": {
+          "Drake": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Vortix",
+        "rawNames": [
+          "Vortix"
+        ],
+        "count": 1,
+        "levelMin": 65,
+        "levelMax": 65,
+        "levels": [
+          65
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Muzzrap Dirtdigger",
+        "rawNames": [
+          "Muzzrap_Dirtdigger"
+        ],
+        "count": 1,
+        "levelMin": 70,
+        "levelMax": 70,
+        "levels": [
+          70
+        ],
+        "raceCounts": {
+          "Gnome": 1
+        },
+        "rawRaceCounts": {
+          "Gnome": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Veriok Dreik",
+        "rawNames": [
+          "#Veriok_Dreik"
+        ],
+        "count": 1,
+        "levelMin": 70,
+        "levelMax": 70,
+        "levels": [
+          70
+        ],
+        "raceCounts": {
+          "Halfling": 1
+        },
+        "rawRaceCounts": {
+          "Halfling": 1
+        },
+        "classCounts": {
+          "Cleric": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Bind Trap",
+        "rawNames": [
+          "bind_trap"
+        ],
+        "count": 1,
+        "levelMin": 80,
+        "levelMax": 80,
+        "levels": [
+          80
+        ],
+        "raceCounts": {
+          "Teleport Man": 1
+        },
+        "rawRaceCounts": {
+          "Teleport Man": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      }
+    ],
+    "rows": [
+      {
+        "displayName": "Soulbinder Derith",
+        "rawName": "Soulbinder_Derith",
+        "level": 1,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1631,
+        "y": 768,
+        "z": -890.625,
+        "heading": 456,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40909,
+        "spawngroupId": 36941,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Fire Elemental Focus",
+        "rawName": "a_fire_elemental_focus",
+        "level": 46,
+        "race": "Elemental",
+        "rawRace": "Elemental",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -2240,
+        "y": 306,
+        "z": -921.125,
+        "heading": 191,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40925,
+        "spawngroupId": 36925,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Fire Elemental Focus",
+        "rawName": "a_fire_elemental_focus",
+        "level": 46,
+        "race": "Elemental",
+        "rawRace": "Elemental",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -2242,
+        "y": 202,
+        "z": -921.125,
+        "heading": 59,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40926,
+        "spawngroupId": 36924,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Water Elemental Focus",
+        "rawName": "a_water_elemental_focus",
+        "level": 46,
+        "race": "Elemental",
+        "rawRace": "Elemental",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1007,
+        "y": -1129,
+        "z": -774.625,
+        "heading": 233,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40922,
+        "spawngroupId": 36928,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Water Elemental Focus",
+        "rawName": "a_water_elemental_focus",
+        "level": 46,
+        "race": "Elemental",
+        "rawRace": "Elemental",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 962,
+        "y": -1190,
+        "z": -777.625,
+        "heading": 126,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40923,
+        "spawngroupId": 36927,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Adler Fuirstel",
+        "rawName": "Adler_Fuirstel",
+        "level": 46,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1468,
+        "y": 1786,
+        "z": -770.5,
+        "heading": 428,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40941,
+        "spawngroupId": 36909,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Adrania Fireyese",
+        "rawName": "Adrania_Fireyese",
+        "level": 46,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -1889,
+        "y": 734,
+        "z": -907.875,
+        "heading": 112,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40966,
+        "spawngroupId": 36884,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Adroha Jezith",
+        "rawName": "Adroha_Jezith",
+        "level": 46,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1429,
+        "y": -259,
+        "z": -904,
+        "heading": 8,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 58282,
+        "spawngroupId": 47506,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Aliia Tal Almad",
+        "rawName": "Aliia_Tal_Almad",
+        "level": 46,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -1716,
+        "y": 479,
+        "z": -911,
+        "heading": 342,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40971,
+        "spawngroupId": 36879,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Air Elemental Focus",
+        "rawName": "an_air_elemental_focus",
+        "level": 46,
+        "race": "Elemental",
+        "rawRace": "Elemental",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -715,
+        "y": 849,
+        "z": -605.75,
+        "heading": 124,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40928,
+        "spawngroupId": 36922,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Air Elemental Focus",
+        "rawName": "an_air_elemental_focus",
+        "level": 46,
+        "race": "Elemental",
+        "rawRace": "Elemental",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -661,
+        "y": 851,
+        "z": -605.75,
+        "heading": 381,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40929,
+        "spawngroupId": 36921,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Earth Elemental Focus",
+        "rawName": "an_earth_elemental_focus",
+        "level": 46,
+        "race": "Elemental",
+        "rawRace": "Elemental",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2113,
+        "y": -1372,
+        "z": -711.375,
+        "heading": 487,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40919,
+        "spawngroupId": 36931,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Earth Elemental Focus",
+        "rawName": "an_earth_elemental_focus",
+        "level": 46,
+        "race": "Elemental",
+        "rawRace": "Elemental",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2134,
+        "y": -1301,
+        "z": -711.375,
+        "heading": 283,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40920,
+        "spawngroupId": 36930,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Apprentice Daultier",
+        "rawName": "Apprentice_Daultier",
+        "level": 46,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1231,
+        "y": -377,
+        "z": -905.125,
+        "heading": 259,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40949,
+        "spawngroupId": 36901,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Apprentice Fih`ylia",
+        "rawName": "Apprentice_Fih`Ylia",
+        "level": 46,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1488.875,
+        "y": 580,
+        "z": -876.125,
+        "heading": 253,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40980,
+        "spawngroupId": 36870,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Aywelin Creekrunner",
+        "rawName": "Aywelin_Creekrunner",
+        "level": 46,
+        "race": "Wood Elf",
+        "rawRace": "Wood Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1295,
+        "y": -78,
+        "z": -877.5,
+        "heading": 7,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40935,
+        "spawngroupId": 36915,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Bor Wharhammer",
+        "rawName": "Bor_Wharhammer",
+        "level": 46,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1734,
+        "y": 703,
+        "z": -909.125,
+        "heading": 393,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40977,
+        "spawngroupId": 36873,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Cayrin Smirten",
+        "rawName": "Cayrin_Smirten",
+        "level": 46,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -647,
+        "y": -1148,
+        "z": -937,
+        "heading": 320,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40938,
+        "spawngroupId": 36912,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Domri Gemstriker",
+        "rawName": "Domri_Gemstriker",
+        "level": 46,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Class 40",
+        "type": "Spawn Slot",
+        "x": -1558,
+        "y": 878,
+        "z": -892.359253,
+        "heading": 259,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40961,
+        "spawngroupId": 36889,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Drogguk Gearlifter",
+        "rawName": "Drogguk_Gearlifter",
+        "level": 46,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 43,
+        "y": -1592,
+        "z": -918,
+        "heading": 345,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40945,
+        "spawngroupId": 36905,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Dubbel Strohbarrel",
+        "rawName": "Dubbel_Strohbarrel",
+        "level": 46,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1750,
+        "y": 499,
+        "z": -912.25,
+        "heading": 152,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40972,
+        "spawngroupId": 36878,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Elder Gelok",
+        "rawName": "Elder_Gelok",
+        "level": 46,
+        "race": "Gnome",
+        "rawRace": "Gnome",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -20,
+        "y": -1547,
+        "z": -921.75,
+        "heading": 136,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40946,
+        "spawngroupId": 36904,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Elder Harrik",
+        "rawName": "Elder_Harrik",
+        "level": 46,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1354,
+        "y": -206,
+        "z": -906.125,
+        "heading": 376,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40931,
+        "spawngroupId": 36919,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Elder Jal`amra",
+        "rawName": "Elder_Jal`Amra",
+        "level": 46,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1223,
+        "y": -500,
+        "z": -905.125,
+        "heading": 316,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40948,
+        "spawngroupId": 36902,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Elder Tal Almad",
+        "rawName": "Elder_Tal_Almad",
+        "level": 46,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1469,
+        "y": 709,
+        "z": -876,
+        "heading": 418,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40965,
+        "spawngroupId": 36885,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Fellan Shireshore",
+        "rawName": "Fellan_Shireshore",
+        "level": 46,
+        "race": "Halfling",
+        "rawRace": "Halfling",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1927,
+        "y": -1435,
+        "z": -711.75,
+        "heading": 393,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40942,
+        "spawngroupId": 36908,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Gregory Maligus",
+        "rawName": "Gregory_Maligus",
+        "level": 46,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -1847,
+        "y": 627,
+        "z": -907.875,
+        "heading": 7,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40968,
+        "spawngroupId": 36882,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Hannis Silvertip",
+        "rawName": "Hannis_Silvertip",
+        "level": 46,
+        "race": "Half Elf",
+        "rawRace": "Half Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1294,
+        "y": -108,
+        "z": -879.5,
+        "heading": 26,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40959,
+        "spawngroupId": 36891,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Jasila Maqul",
+        "rawName": "Jasila_Maqul",
+        "level": 46,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1634,
+        "y": 1008,
+        "z": -890.75,
+        "heading": 483,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40963,
+        "spawngroupId": 36887,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Jasir Amisan",
+        "rawName": "Jasir_Amisan",
+        "level": 46,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -1621,
+        "y": 583,
+        "z": -911,
+        "heading": 259,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40973,
+        "spawngroupId": 36877,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Jasmine Shireshore",
+        "rawName": "Jasmine_Shireshore",
+        "level": 46,
+        "race": "Halfling",
+        "rawRace": "Halfling",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2037,
+        "y": -1324,
+        "z": -712,
+        "heading": 3,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40943,
+        "spawngroupId": 36907,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Jimlok Keylifter",
+        "rawName": "Jimlok_Keylifter",
+        "level": 46,
+        "race": "Gnome",
+        "rawRace": "Gnome",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1389,
+        "y": -541,
+        "z": -908.75,
+        "heading": 283,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40932,
+        "spawngroupId": 36918,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Kalin Reddin",
+        "rawName": "Kalin_Reddin",
+        "level": 46,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1256,
+        "y": 11,
+        "z": -877,
+        "heading": 305,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40937,
+        "spawngroupId": 36913,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Kalym Rasalan",
+        "rawName": "Kalym_Rasalan",
+        "level": 46,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1151,
+        "y": -306,
+        "z": -867.625,
+        "heading": 258,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40955,
+        "spawngroupId": 36895,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Malakar Ay`ayat",
+        "rawName": "Malakar_Ay`Ayat",
+        "level": 46,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1552,
+        "y": 504,
+        "z": -911,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40969,
+        "spawngroupId": 36881,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Palin Firefly",
+        "rawName": "Palin_Firefly",
+        "level": 46,
+        "race": "Half Elf",
+        "rawRace": "Half Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -954,
+        "y": -922,
+        "z": -938.25,
+        "heading": 329,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40940,
+        "spawngroupId": 36910,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Parija Kalamir",
+        "rawName": "Parija_Kalamir",
+        "level": 46,
+        "race": "Vah Shir",
+        "rawRace": "Vah Shir",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -1896,
+        "y": 672,
+        "z": -907.25,
+        "heading": 17,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40967,
+        "spawngroupId": 36883,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Paurnil Goldenleaves",
+        "rawName": "Paurnil_Goldenleaves",
+        "level": 46,
+        "race": "Half Elf",
+        "rawRace": "Half Elf",
+        "className": "Class 40",
+        "type": "Spawn Slot",
+        "x": -1543,
+        "y": 878,
+        "z": -892.359253,
+        "heading": 259,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40960,
+        "spawngroupId": 36890,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Rataga Stoneskipper",
+        "rawName": "Rataga_Stoneskipper",
+        "level": 46,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -1406,
+        "y": -489,
+        "z": -906.125,
+        "heading": 132,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40933,
+        "spawngroupId": 36917,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Rugresch Tragguk",
+        "rawName": "Rugresch_Tragguk",
+        "level": 46,
+        "race": "Troll",
+        "rawRace": "Troll",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1183,
+        "y": -161,
+        "z": -868.875,
+        "heading": 20,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40954,
+        "spawngroupId": 36896,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Rugurt Grubdigger",
+        "rawName": "Rugurt_Grubdigger",
+        "level": 46,
+        "race": "Troll",
+        "rawRace": "Troll",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1075,
+        "y": -807,
+        "z": -936.125,
+        "heading": 365,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40939,
+        "spawngroupId": 36911,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Saluk Tramuj",
+        "rawName": "Saluk_Tramuj",
+        "level": 46,
+        "race": "Vah Shir",
+        "rawRace": "Vah Shir",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1287,
+        "y": -59,
+        "z": -876.25,
+        "heading": 258,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40934,
+        "spawngroupId": 36916,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Samusk Hariij",
+        "rawName": "Samusk_Hariij",
+        "level": 46,
+        "race": "Vah Shir",
+        "rawRace": "Vah Shir",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -1719,
+        "y": 512,
+        "z": -910.375,
+        "heading": 88,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40970,
+        "spawngroupId": 36880,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Sariliz Grizka",
+        "rawName": "Sariliz_Grizka",
+        "level": 46,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1223,
+        "y": 10,
+        "z": -876.875,
+        "heading": 261,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40957,
+        "spawngroupId": 36893,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Taisika Cloudfire",
+        "rawName": "Taisika_Cloudfire",
+        "level": 46,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Class 40",
+        "type": "Spawn Slot",
+        "x": -1573,
+        "y": 878,
+        "z": -892.359253,
+        "heading": 259.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40962,
+        "spawngroupId": 36888,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Tinan Aliis",
+        "rawName": "Tinan_Aliis",
+        "level": 46,
+        "race": "Wood Elf",
+        "rawRace": "Wood Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1178,
+        "y": -306,
+        "z": -868.625,
+        "heading": 258,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40956,
+        "spawngroupId": 36894,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Trila Cabbageroll",
+        "rawName": "Trila_Cabbageroll",
+        "level": 46,
+        "race": "Halfling",
+        "rawRace": "Halfling",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1272,
+        "y": -135,
+        "z": -880.75,
+        "heading": 202,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40958,
+        "spawngroupId": 36892,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Tya Silvercloud",
+        "rawName": "Tya_Silvercloud",
+        "level": 46,
+        "race": "Wood Elf",
+        "rawRace": "Wood Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2143,
+        "y": -1433,
+        "z": -711,
+        "heading": 144,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40944,
+        "spawngroupId": 36906,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Weavereader Aewen",
+        "rawName": "Weavereader_Aewen",
+        "level": 46,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1093,
+        "y": -161,
+        "z": -870.125,
+        "heading": 249,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40916,
+        "spawngroupId": 36934,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Weavereader Dox`atyr",
+        "rawName": "Weavereader_Dox`Atyr",
+        "level": 46,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1074,
+        "y": -296,
+        "z": -870.75,
+        "heading": 375,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40915,
+        "spawngroupId": 36935,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Weavereader Ralmajir",
+        "rawName": "Weavereader_Ralmajir",
+        "level": 46,
+        "race": "Vah Shir",
+        "rawRace": "Vah Shir",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1076,
+        "y": -221,
+        "z": -869.5,
+        "heading": 386,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40914,
+        "spawngroupId": 36936,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Zurmsa Grulm",
+        "rawName": "Zurmsa_Grulm",
+        "level": 46,
+        "race": "Troll",
+        "rawRace": "Troll",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1225,
+        "y": -114,
+        "z": -877.875,
+        "heading": 73,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40936,
+        "spawngroupId": 36914,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Aelisian Taliz",
+        "rawName": "Aelisian_Taliz",
+        "level": 47,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -1752,
+        "y": 886,
+        "z": -890.625,
+        "heading": 146,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40964,
+        "spawngroupId": 36886,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Urgla Fishbrains",
+        "rawName": "Urgla_Fishbrains",
+        "level": 47,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1424,
+        "y": -387,
+        "z": -904.25,
+        "heading": 376,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40947,
+        "spawngroupId": 36903,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Jimmik Greenstone",
+        "rawName": "Jimmik_Greenstone",
+        "level": 51,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -1637,
+        "y": 583,
+        "z": -911,
+        "heading": 259,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40974,
+        "spawngroupId": 36876,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Elder Aytael",
+        "rawName": "Elder_Aytael",
+        "level": 55,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1209,
+        "y": -430,
+        "z": -902.75,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40950,
+        "spawngroupId": 36900,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Elder Clinka",
+        "rawName": "Elder_Clinka",
+        "level": 55,
+        "race": "Gnome",
+        "rawRace": "Gnome",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1272,
+        "y": -385,
+        "z": -904.625,
+        "heading": 2,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40952,
+        "spawngroupId": 36898,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Elder Fuirstel",
+        "rawName": "Elder_Fuirstel",
+        "level": 55,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1418,
+        "y": -292,
+        "z": -905.875,
+        "heading": 357,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40918,
+        "spawngroupId": 36932,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Elder Humfort",
+        "rawName": "Elder_Humfort",
+        "level": 55,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1267,
+        "y": -430,
+        "z": -903,
+        "heading": 261,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40951,
+        "spawngroupId": 36899,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Elder Poxbourne",
+        "rawName": "Elder_Poxbourne",
+        "level": 55,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1427,
+        "y": -252,
+        "z": -905.75,
+        "heading": 176,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40912,
+        "spawngroupId": 36938,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Elder Zsa`tal",
+        "rawName": "Elder_Zsa`Tal",
+        "level": 55,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1178,
+        "y": -384,
+        "z": -903.375,
+        "heading": 13,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40953,
+        "spawngroupId": 36897,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Fahlia Shadyglade",
+        "rawName": "Fahlia_Shadyglade",
+        "level": 55,
+        "race": "Half Elf",
+        "rawRace": "Half Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1366,
+        "y": -302,
+        "z": -905.25,
+        "heading": 24,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40917,
+        "spawngroupId": 36933,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Iramai Sacredsoul",
+        "rawName": "Iramai_Sacredsoul",
+        "level": 55,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1355,
+        "y": -252,
+        "z": -904.875,
+        "heading": 305,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40978,
+        "spawngroupId": 36872,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Phanti Sacredsoul",
+        "rawName": "Phanti_Sacredsoul",
+        "level": 55,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1356,
+        "y": -258,
+        "z": -906.125,
+        "heading": 75,
+        "chance": 100,
+        "respawnTime": 120,
+        "spawn2Id": 76192,
+        "spawngroupId": 54768,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Relm M`loch",
+        "rawName": "Relm_M`Loch",
+        "level": 55,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -1557,
+        "y": 715,
+        "z": -876.75,
+        "heading": 254,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40913,
+        "spawngroupId": 36937,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Tylis Newleaf",
+        "rawName": "Tylis_Newleaf",
+        "level": 55,
+        "race": "Wood Elf",
+        "rawRace": "Wood Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1372,
+        "y": -295,
+        "z": -906.75,
+        "heading": 138,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 58281,
+        "spawngroupId": 47505,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Dense",
+        "rawName": "A_dense",
+        "level": 60,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1232,
+        "y": -483,
+        "z": -904,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 600,
+        "spawn2Id": 258453,
+        "spawngroupId": 282486,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Hrelic Reista",
+        "rawName": "Hrelic_Reista",
+        "level": 60,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1596,
+        "y": 690,
+        "z": -876.125,
+        "heading": 388,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40910,
+        "spawngroupId": 36940,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Illian Rellasp",
+        "rawName": "Illian_Rellasp",
+        "level": 60,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1675,
+        "y": -54,
+        "z": -934,
+        "heading": 331,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40911,
+        "spawngroupId": 36939,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Jurmak The Undertow",
+        "rawName": "Jurmak_the_Undertow",
+        "level": 60,
+        "race": "Drake",
+        "rawRace": "Drake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 973,
+        "y": -1159,
+        "z": -765.25,
+        "heading": 183,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40924,
+        "spawngroupId": 36926,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Miak The Searedsoul",
+        "rawName": "Miak_the_Searedsoul",
+        "level": 60,
+        "race": "Drake",
+        "rawRace": "Drake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -2256,
+        "y": 255,
+        "z": -921.125,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40927,
+        "spawngroupId": 36923,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Ronar Flametip",
+        "rawName": "Ronar_Flametip",
+        "level": 60,
+        "race": "Drake",
+        "rawRace": "Drake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -2115.5,
+        "y": 254.25,
+        "z": -921.125,
+        "heading": 383,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40976,
+        "spawngroupId": 36874,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Sarhya The Dawnbreeze",
+        "rawName": "Sarhya_the_Dawnbreeze",
+        "level": 60,
+        "race": "Drake",
+        "rawRace": "Drake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -687,
+        "y": 885,
+        "z": -608.875,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40930,
+        "spawngroupId": 36920,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Taq`aal Emeraldshard",
+        "rawName": "Taq`aal_Emeraldshard",
+        "level": 60,
+        "race": "Drake",
+        "rawRace": "Drake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2103,
+        "y": -1331,
+        "z": -708.25,
+        "heading": 144,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40921,
+        "spawngroupId": 36929,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Vortix",
+        "rawName": "Vortix",
+        "level": 65,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -741,
+        "y": 1844,
+        "z": -657.25,
+        "heading": 172,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40979,
+        "spawngroupId": 36871,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Muzzrap Dirtdigger",
+        "rawName": "Muzzrap_Dirtdigger",
+        "level": 70,
+        "race": "Gnome",
+        "rawRace": "Gnome",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2226,
+        "y": -1362,
+        "z": -715.75,
+        "heading": 370,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40908,
+        "spawngroupId": 36942,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Veriok Dreik",
+        "rawName": "#Veriok_Dreik",
+        "level": 70,
+        "race": "Halfling",
+        "rawRace": "Halfling",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": -1396,
+        "y": -305,
+        "z": -907.375,
+        "heading": 16,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40975,
+        "spawngroupId": 36875,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Bind Trap",
+        "rawName": "bind_trap",
+        "level": 80,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1458.299072,
+        "y": 771.697144,
+        "z": -877.621765,
+        "heading": 111,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 58617,
+        "spawngroupId": 48191,
+        "candidateCount": 1
+      }
+    ]
+  }
+}

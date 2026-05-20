@@ -1,0 +1,5747 @@
+{
+  "summary": {
+    "zoneSlug": "highpass-hold",
+    "zoneName": "Highpass Hold",
+    "requestedZoneShortName": "highpass",
+    "zoneShortName": "highpass",
+    "sourceFile": "local-eqemu-database",
+    "matched": true,
+    "expansion": "Classic",
+    "eqemuExpansionId": 0,
+    "expansionSource": "eqemu-zone-table",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobCount": 110,
+    "unknownLevelCount": 0,
+    "minLevel": 4,
+    "maxLevel": 65,
+    "averageLevel": 26.4,
+    "medianLevel": 22,
+    "levelCounts": {
+      "4": 1,
+      "5": 1,
+      "11": 1,
+      "12": 2,
+      "13": 1,
+      "14": 9,
+      "15": 5,
+      "16": 8,
+      "17": 5,
+      "18": 6,
+      "19": 9,
+      "20": 3,
+      "21": 3,
+      "22": 2,
+      "23": 4,
+      "24": 6,
+      "25": 5,
+      "27": 3,
+      "29": 1,
+      "31": 1,
+      "34": 1,
+      "35": 2,
+      "36": 2,
+      "37": 5,
+      "38": 1,
+      "40": 2,
+      "45": 17,
+      "50": 1,
+      "61": 2,
+      "65": 1
+    },
+    "levelBuckets": {
+      "1-10": 2,
+      "11-20": 49,
+      "21-30": 24,
+      "31-40": 14,
+      "41-50": 18,
+      "51-60": 0,
+      "61+": 3
+    },
+    "levelProfileLabel": "Wide level spread",
+    "mobGroupNameCounts": {
+      "A Highpass Citizen": 26,
+      "A Smuggler": 10,
+      "A Gnoll Soothsayer": 6,
+      "A Guard": 4,
+      "A Gnoll Brawler": 3,
+      "Commander Tehafer": 3,
+      "A Dealer": 2,
+      "An Orc Acolyte": 2,
+      "Bartender": 2,
+      "Burgek": 2,
+      "Guard Ranlem": 2,
+      "A Gnoll Champion": 1,
+      "A Gnoll Flamepaw": 1,
+      "A Shady Highpass Citizen": 1,
+      "Alhareen The Just": 1,
+      "An Orc Conscript": 1,
+      "An Orc Fanatic": 1,
+      "An Orc Scout": 1,
+      "An Orc Soldier": 1,
+      "An Orc Warrior": 1,
+      "Barn Bloodstone": 1,
+      "Bartholemew": 1,
+      "Brenon": 1,
+      "Bryan Mcgee": 1,
+      "Captain Ashlan": 1,
+      "Captain Orben": 1,
+      "Crenn Salbet": 1,
+      "Cyrla Shadowstepper": 1,
+      "Cytodl Krish": 1,
+      "Dalishea": 1,
+      "Dovik Greenbane": 1,
+      "Dyllin Starsine": 1,
+      "Dyn Tarburner": 1,
+      "Dyona Rossook": 1,
+      "Falyn Farreach": 1,
+      "Gornolin": 1,
+      "Greth Truksorn": 1,
+      "Guard Becker": 1,
+      "Guard Stald": 1,
+      "Gublink Furnhorn": 1,
+      "Jovan": 1,
+      "Kaden Gron": 1,
+      "Lyla Whistlewood": 1,
+      "Lylea": 1,
+      "Lyn Tarburner": 1,
+      "Maigin Greyeagle": 1,
+      "Malik Zaren": 1,
+      "Mardon Smith": 1,
+      "Min Greyeagle": 1,
+      "Paulina": 1,
+      "Prak": 1,
+      "Sernn Rossook": 1,
+      "Shumpi Wimahnn": 1,
+      "Volunteer Delharn": 1,
+      "Volunteer Renlor": 1,
+      "Vopuk Shralok": 1,
+      "Vranol Blackguard": 1,
+      "Winn Greenbane": 1,
+      "Wres Corber": 1
+    },
+    "classCounts": {
+      "Warrior": 53,
+      "Rogue": 22,
+      "Banker": 18,
+      "Shaman": 12,
+      "Cleric": 2,
+      "Necromancer": 1,
+      "Rogue GM": 1,
+      "Wizard": 1
+    },
+    "raceCounts": {
+      "Human": 67,
+      "Half Elf": 14,
+      "Gnoll": 11,
+      "Orc": 8,
+      "Barbarian": 2,
+      "Dwarf": 2,
+      "Troll": 2,
+      "Dark Elf": 1,
+      "Erudite": 1,
+      "Halfling": 1,
+      "Wood Elf": 1
+    },
+    "normalizedRaceCounts": {
+      "Human": 67,
+      "Half Elf": 14,
+      "Gnoll": 11,
+      "Orc": 8,
+      "Barbarian": 2,
+      "Dwarf": 2,
+      "Troll": 2,
+      "Dark Elf": 1,
+      "Erudite": 1,
+      "Halfling": 1,
+      "Wood Elf": 1
+    },
+    "normalizedRaceLevelCounts": {
+      "Barbarian": {
+        "31": 1,
+        "61": 1
+      },
+      "Dark Elf": {
+        "25": 1
+      },
+      "Dwarf": {
+        "15": 1,
+        "35": 1
+      },
+      "Erudite": {
+        "16": 1
+      },
+      "Gnoll": {
+        "13": 1,
+        "14": 2,
+        "15": 3,
+        "16": 4,
+        "17": 1
+      },
+      "Half Elf": {
+        "15": 1,
+        "18": 1,
+        "19": 4,
+        "20": 1,
+        "21": 2,
+        "23": 1,
+        "24": 3,
+        "25": 1
+      },
+      "Halfling": {
+        "65": 1
+      },
+      "Human": {
+        "4": 1,
+        "5": 1,
+        "11": 1,
+        "14": 4,
+        "16": 2,
+        "17": 2,
+        "18": 4,
+        "19": 5,
+        "20": 2,
+        "22": 1,
+        "23": 3,
+        "24": 3,
+        "25": 3,
+        "27": 3,
+        "29": 1,
+        "34": 1,
+        "35": 1,
+        "36": 2,
+        "37": 5,
+        "38": 1,
+        "40": 2,
+        "45": 17,
+        "50": 1,
+        "61": 1
+      },
+      "Orc": {
+        "12": 2,
+        "14": 3,
+        "17": 1,
+        "21": 1,
+        "22": 1
+      },
+      "Troll": {
+        "16": 1,
+        "18": 1
+      },
+      "Wood Elf": {
+        "17": 1
+      }
+    },
+    "raceAliases": {
+      "Barbarian": [
+        "Barbarian"
+      ],
+      "Dark Elf": [
+        "Dark Elf"
+      ],
+      "Dwarf": [
+        "Dwarf"
+      ],
+      "Erudite": [
+        "Erudite"
+      ],
+      "Gnoll": [
+        "Gnoll"
+      ],
+      "Half Elf": [
+        "Half Elf"
+      ],
+      "Halfling": [
+        "Halfling"
+      ],
+      "Human": [
+        "Human"
+      ],
+      "Orc": [
+        "Orc"
+      ],
+      "Troll": [
+        "Troll"
+      ],
+      "Wood Elf": [
+        "Wood Elf"
+      ]
+    },
+    "typeCounts": {
+      "Spawn Slot": 110
+    },
+    "notes": [
+      "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+      "Read-only test export; not wired into production /zones data."
+    ],
+    "spawnMapPrototype": {
+      "sourceKind": "Local EQEmu/PEQ database export",
+      "coordinateNote": "Original EQEmu spawn2 x/y/z coordinates are preserved for map prototyping.",
+      "points": [
+        {
+          "spawn2Id": 2226,
+          "spawngroupId": 5393,
+          "name": "Guard_Ranlem",
+          "displayName": "Guard Ranlem",
+          "level": 37,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 396,
+          "y": -27,
+          "z": 3.75,
+          "heading": 278,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2227,
+          "spawngroupId": 5392,
+          "name": "Cytodl_Krish",
+          "displayName": "Cytodl Krish",
+          "level": 25,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Warrior",
+          "x": -259,
+          "y": 389,
+          "z": 17.129999,
+          "heading": 92,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2228,
+          "spawngroupId": 5395,
+          "name": "Gornolin",
+          "displayName": "Gornolin",
+          "level": 20,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -231,
+          "y": 396,
+          "z": 17.75,
+          "heading": 430,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 2229,
+          "spawngroupId": 5396,
+          "name": "Jovan",
+          "displayName": "Jovan",
+          "level": 35,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Cleric",
+          "x": 24,
+          "y": -199,
+          "z": 1.88,
+          "heading": 370,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 2230,
+          "spawngroupId": 5394,
+          "name": "Burgek",
+          "displayName": "Burgek",
+          "level": 18,
+          "race": "Troll",
+          "rawRace": "Troll",
+          "className": "Warrior",
+          "x": 513,
+          "y": 200.630005,
+          "z": 33,
+          "heading": 370,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2231,
+          "spawngroupId": 5390,
+          "name": "Dalishea",
+          "displayName": "Dalishea",
+          "level": 17,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": 182,
+          "y": -38,
+          "z": 9.5,
+          "heading": 22,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2232,
+          "spawngroupId": 5389,
+          "name": "Greth_Truksorn",
+          "displayName": "Greth Truksorn",
+          "level": 15,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Rogue",
+          "x": 187,
+          "y": 2,
+          "z": 3.5,
+          "heading": 286,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2233,
+          "spawngroupId": 5388,
+          "name": "a_Highpass_citizen",
+          "displayName": "A Highpass Citizen",
+          "level": 22,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 409,
+          "y": -88,
+          "z": 9.38,
+          "heading": 343,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2234,
+          "spawngroupId": 5387,
+          "name": "Captain_Ashlan",
+          "displayName": "Captain Ashlan",
+          "level": 27,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 225.880005,
+          "y": -567.880005,
+          "z": 31.75,
+          "heading": 261,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2235,
+          "spawngroupId": 5386,
+          "name": "a_Highpass_citizen",
+          "displayName": "A Highpass Citizen",
+          "level": 18,
+          "race": "Half Elf",
+          "rawRace": "Half Elf",
+          "className": "Warrior",
+          "x": 175,
+          "y": -239.130005,
+          "z": 3.75,
+          "heading": 256,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 2236,
+          "spawngroupId": 5385,
+          "name": "Dyllin_Starsine",
+          "displayName": "Dyllin Starsine",
+          "level": 16,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 126,
+          "y": 39,
+          "z": 35.75,
+          "heading": 58,
+          "chance": 100,
+          "respawnTime": 25200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2237,
+          "spawngroupId": 5384,
+          "name": "a_Highpass_citizen",
+          "displayName": "A Highpass Citizen",
+          "level": 21,
+          "race": "Half Elf",
+          "rawRace": "Half Elf",
+          "className": "Warrior",
+          "x": 393.25,
+          "y": -70.25,
+          "z": 9.38,
+          "heading": 285,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2238,
+          "spawngroupId": 5391,
+          "name": "a_smuggler",
+          "displayName": "A Smuggler",
+          "level": 14,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": 283.880005,
+          "y": 59,
+          "z": 42.630001,
+          "heading": 405,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 2239,
+          "spawngroupId": 1997,
+          "name": "a_smuggler",
+          "displayName": "A Smuggler",
+          "level": 14,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": 103.379997,
+          "y": 53,
+          "z": 57.630001,
+          "heading": 260.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2240,
+          "spawngroupId": 1996,
+          "name": "a_Highpass_citizen",
+          "displayName": "A Highpass Citizen",
+          "level": 18,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -120,
+          "y": -342.380005,
+          "z": 17.75,
+          "heading": 10,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2241,
+          "spawngroupId": 1995,
+          "name": "a_guard",
+          "displayName": "A Guard",
+          "level": 36,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 328.880005,
+          "y": -173,
+          "z": 32.799999,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2242,
+          "spawngroupId": 1995,
+          "name": "a_guard",
+          "displayName": "A Guard",
+          "level": 36,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -48,
+          "y": -52.880001,
+          "z": 17.75,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2243,
+          "spawngroupId": 1994,
+          "name": "a_Highpass_citizen",
+          "displayName": "A Highpass Citizen",
+          "level": 19,
+          "race": "Half Elf",
+          "rawRace": "Half Elf",
+          "className": "Warrior",
+          "x": 479,
+          "y": 159.880005,
+          "z": 31.379999,
+          "heading": 303,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2244,
+          "spawngroupId": 1993,
+          "name": "a_guard",
+          "displayName": "A Guard",
+          "level": 27,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -45,
+          "y": -23.25,
+          "z": 3.75,
+          "heading": 128,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2245,
+          "spawngroupId": 1992,
+          "name": "Commander_Tehafer",
+          "displayName": "Commander Tehafer",
+          "level": 37,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -45,
+          "y": -5,
+          "z": 3.8,
+          "heading": 128,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 2246,
+          "spawngroupId": 1991,
+          "name": "Commander_Tehafer",
+          "displayName": "Commander Tehafer",
+          "level": 37,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -3,
+          "y": -12,
+          "z": 3.75,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2247,
+          "spawngroupId": 1990,
+          "name": "Falyn_Farreach",
+          "displayName": "Falyn Farreach",
+          "level": 25,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 421,
+          "y": 178,
+          "z": 31.75,
+          "heading": 132,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2248,
+          "spawngroupId": 1989,
+          "name": "a_Highpass_citizen",
+          "displayName": "A Highpass Citizen",
+          "level": 18,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 466,
+          "y": 150,
+          "z": 31.75,
+          "heading": 174,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2249,
+          "spawngroupId": 1988,
+          "name": "Barn_Bloodstone",
+          "displayName": "Barn Bloodstone",
+          "level": 20,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": -60,
+          "y": 422,
+          "z": 3.75,
+          "heading": 283,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2250,
+          "spawngroupId": 1987,
+          "name": "a_Highpass_citizen",
+          "displayName": "A Highpass Citizen",
+          "level": 24,
+          "race": "Half Elf",
+          "rawRace": "Half Elf",
+          "className": "Warrior",
+          "x": -121,
+          "y": 184,
+          "z": 3.38,
+          "heading": 56,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2251,
+          "spawngroupId": 1986,
+          "name": "a_Highpass_citizen",
+          "displayName": "A Highpass Citizen",
+          "level": 23,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -112,
+          "y": 201,
+          "z": 3.75,
+          "heading": 266,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2252,
+          "spawngroupId": 1986,
+          "name": "a_Highpass_citizen",
+          "displayName": "A Highpass Citizen",
+          "level": 23,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 16.879999,
+          "y": -261,
+          "z": 3.75,
+          "heading": 168,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2253,
+          "spawngroupId": 1985,
+          "name": "a_Highpass_citizen",
+          "displayName": "A Highpass Citizen",
+          "level": 15,
+          "race": "Half Elf",
+          "rawRace": "Half Elf",
+          "className": "Warrior",
+          "x": -242.25,
+          "y": 373.25,
+          "z": 17.379999,
+          "heading": 69,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2254,
+          "spawngroupId": 1984,
+          "name": "a_guard",
+          "displayName": "A Guard",
+          "level": 24,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -34,
+          "y": -52.880001,
+          "z": 17.75,
+          "heading": 119,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2255,
+          "spawngroupId": 1983,
+          "name": "Commander_Tehafer",
+          "displayName": "Commander Tehafer",
+          "level": 37,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -36,
+          "y": 26,
+          "z": 17.75,
+          "heading": 140,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 2256,
+          "spawngroupId": 1982,
+          "name": "a_Highpass_citizen",
+          "displayName": "A Highpass Citizen",
+          "level": 19,
+          "race": "Half Elf",
+          "rawRace": "Half Elf",
+          "className": "Warrior",
+          "x": 304.880005,
+          "y": 160,
+          "z": -18.5,
+          "heading": 444,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2257,
+          "spawngroupId": 1981,
+          "name": "a_Highpass_citizen",
+          "displayName": "A Highpass Citizen",
+          "level": 19,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 302.880005,
+          "y": 135,
+          "z": -18.129999,
+          "heading": 453,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2258,
+          "spawngroupId": 1980,
+          "name": "a_Highpass_citizen",
+          "displayName": "A Highpass Citizen",
+          "level": 25,
+          "race": "Half Elf",
+          "rawRace": "Half Elf",
+          "className": "Warrior",
+          "x": 16.879999,
+          "y": -308.880005,
+          "z": 3.38,
+          "heading": 412,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 2259,
+          "spawngroupId": 1979,
+          "name": "a_Highpass_citizen",
+          "displayName": "A Highpass Citizen",
+          "level": 24,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -161.75,
+          "y": 309.25,
+          "z": 3.75,
+          "heading": 41,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2260,
+          "spawngroupId": 1978,
+          "name": "a_Highpass_citizen",
+          "displayName": "A Highpass Citizen",
+          "level": 21,
+          "race": "Half Elf",
+          "rawRace": "Half Elf",
+          "className": "Warrior",
+          "x": -144,
+          "y": 309.880005,
+          "z": 3.38,
+          "heading": 328,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2261,
+          "spawngroupId": 1977,
+          "name": "a_Highpass_citizen",
+          "displayName": "A Highpass Citizen",
+          "level": 24,
+          "race": "Half Elf",
+          "rawRace": "Half Elf",
+          "className": "Warrior",
+          "x": -243.630005,
+          "y": 390.130005,
+          "z": 3.38,
+          "heading": 43,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2262,
+          "spawngroupId": 1976,
+          "name": "a_Highpass_citizen",
+          "displayName": "A Highpass Citizen",
+          "level": 24,
+          "race": "Half Elf",
+          "rawRace": "Half Elf",
+          "className": "Warrior",
+          "x": -6.5,
+          "y": -224.630005,
+          "z": 17.379999,
+          "heading": 290,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2263,
+          "spawngroupId": 1975,
+          "name": "Paulina",
+          "displayName": "Paulina",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": 9.88,
+          "y": -233.130005,
+          "z": 17.379999,
+          "heading": 89,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2264,
+          "spawngroupId": 1974,
+          "name": "Captain_Orben",
+          "displayName": "Captain Orben",
+          "level": 29,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 119,
+          "y": 554.880005,
+          "z": 36.75,
+          "heading": 416,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2265,
+          "spawngroupId": 1973,
+          "name": "a_smuggler",
+          "displayName": "A Smuggler",
+          "level": 16,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": 325,
+          "y": 5,
+          "z": 45.630001,
+          "heading": 28,
+          "chance": 38,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 2266,
+          "spawngroupId": 1972,
+          "name": "Cyrla_Shadowstepper",
+          "displayName": "Cyrla Shadowstepper",
+          "level": 61,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue GM",
+          "x": 325,
+          "y": 84,
+          "z": 45.630001,
+          "heading": 283,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 2267,
+          "spawngroupId": 1971,
+          "name": "Vranol_Blackguard",
+          "displayName": "Vranol Blackguard",
+          "level": 50,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Necromancer",
+          "x": -230,
+          "y": 384,
+          "z": 17.75,
+          "heading": 508,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2268,
+          "spawngroupId": 1970,
+          "name": "Alhareen_the_Just",
+          "displayName": "Alhareen The Just",
+          "level": 61,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Shaman",
+          "x": 434,
+          "y": -60,
+          "z": 10.38,
+          "heading": 260,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2269,
+          "spawngroupId": 1969,
+          "name": "a_smuggler",
+          "displayName": "A Smuggler",
+          "level": 19,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": 339,
+          "y": 91,
+          "z": 45.630001,
+          "heading": 302,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2270,
+          "spawngroupId": 1968,
+          "name": "a_smuggler",
+          "displayName": "A Smuggler",
+          "level": 19,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": 82,
+          "y": 33,
+          "z": 58.630001,
+          "heading": 77,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2271,
+          "spawngroupId": 1967,
+          "name": "a_smuggler",
+          "displayName": "A Smuggler",
+          "level": 17,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": 287.880005,
+          "y": -24,
+          "z": 33.75,
+          "heading": 449,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2272,
+          "spawngroupId": 1966,
+          "name": "a_smuggler",
+          "displayName": "A Smuggler",
+          "level": 18,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": 215,
+          "y": -95,
+          "z": 31.75,
+          "heading": 97,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2273,
+          "spawngroupId": 1966,
+          "name": "a_smuggler",
+          "displayName": "A Smuggler",
+          "level": 18,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": 173,
+          "y": -55,
+          "z": 66.629997,
+          "heading": 60,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2274,
+          "spawngroupId": 1965,
+          "name": "a_smuggler",
+          "displayName": "A Smuggler",
+          "level": 19,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": 79,
+          "y": 62,
+          "z": 59.630001,
+          "heading": 353,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2275,
+          "spawngroupId": 1964,
+          "name": "Malik_Zaren",
+          "displayName": "Malik Zaren",
+          "level": 16,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Wizard",
+          "x": -265,
+          "y": 336,
+          "z": 17.75,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2276,
+          "spawngroupId": 1963,
+          "name": "a_Highpass_citizen",
+          "displayName": "A Highpass Citizen",
+          "level": 24,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -165,
+          "y": -314,
+          "z": 3.38,
+          "heading": 49,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2277,
+          "spawngroupId": 1962,
+          "name": "a_Highpass_citizen",
+          "displayName": "A Highpass Citizen",
+          "level": 23,
+          "race": "Half Elf",
+          "rawRace": "Half Elf",
+          "className": "Warrior",
+          "x": -193,
+          "y": -343,
+          "z": 3.38,
+          "heading": 477,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2278,
+          "spawngroupId": 1961,
+          "name": "a_Highpass_citizen",
+          "displayName": "A Highpass Citizen",
+          "level": 25,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -195,
+          "y": -328,
+          "z": 3.75,
+          "heading": 253,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2279,
+          "spawngroupId": 1960,
+          "name": "a_Highpass_citizen",
+          "displayName": "A Highpass Citizen",
+          "level": 25,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 28.879999,
+          "y": -262,
+          "z": 3.75,
+          "heading": 400,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2280,
+          "spawngroupId": 1959,
+          "name": "a_Highpass_citizen",
+          "displayName": "A Highpass Citizen",
+          "level": 14,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 287.630005,
+          "y": -146.630005,
+          "z": -6.13,
+          "heading": 335,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2281,
+          "spawngroupId": 1958,
+          "name": "a_Highpass_citizen",
+          "displayName": "A Highpass Citizen",
+          "level": 19,
+          "race": "Half Elf",
+          "rawRace": "Half Elf",
+          "className": "Warrior",
+          "x": 483.5,
+          "y": -75.629997,
+          "z": 23.379999,
+          "heading": 188,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2282,
+          "spawngroupId": 1957,
+          "name": "a_Highpass_citizen",
+          "displayName": "A Highpass Citizen",
+          "level": 19,
+          "race": "Half Elf",
+          "rawRace": "Half Elf",
+          "className": "Warrior",
+          "x": 116.879997,
+          "y": -328.880005,
+          "z": 8.38,
+          "heading": 383,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2283,
+          "spawngroupId": 1956,
+          "name": "a_Highpass_citizen",
+          "displayName": "A Highpass Citizen",
+          "level": 20,
+          "race": "Half Elf",
+          "rawRace": "Half Elf",
+          "className": "Warrior",
+          "x": 428,
+          "y": -117,
+          "z": 9.38,
+          "heading": 53,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2284,
+          "spawngroupId": 1955,
+          "name": "a_Highpass_citizen",
+          "displayName": "A Highpass Citizen",
+          "level": 19,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 429,
+          "y": 203,
+          "z": 31.379999,
+          "heading": 200,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2285,
+          "spawngroupId": 1954,
+          "name": "Gublink_Furnhorn",
+          "displayName": "Gublink Furnhorn",
+          "level": 35,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior",
+          "x": 4.88,
+          "y": -191.25,
+          "z": 17.75,
+          "heading": 422.5,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2286,
+          "spawngroupId": 1953,
+          "name": "Kaden_Gron",
+          "displayName": "Kaden Gron",
+          "level": 31,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Rogue",
+          "x": -257.880005,
+          "y": 353,
+          "z": 4.38,
+          "heading": 319,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2287,
+          "spawngroupId": 1952,
+          "name": "a_dealer",
+          "displayName": "A Dealer",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -259.880005,
+          "y": 426.880005,
+          "z": 3.75,
+          "heading": 85,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2288,
+          "spawngroupId": 1951,
+          "name": "Wres_Corber",
+          "displayName": "Wres Corber",
+          "level": 34,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": -205,
+          "y": 426.880005,
+          "z": 3.75,
+          "heading": 271,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2289,
+          "spawngroupId": 1950,
+          "name": "Crenn_Salbet",
+          "displayName": "Crenn Salbet",
+          "level": 38,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": -199,
+          "y": 328,
+          "z": 3.75,
+          "heading": 500,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2290,
+          "spawngroupId": 1949,
+          "name": "Prak",
+          "displayName": "Prak",
+          "level": 27,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": -203,
+          "y": 396,
+          "z": 3.75,
+          "heading": 133,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2291,
+          "spawngroupId": 1948,
+          "name": "Bryan_McGee",
+          "displayName": "Bryan Mcgee",
+          "level": 40,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": 91,
+          "y": -231,
+          "z": 21.629999,
+          "heading": 385,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2292,
+          "spawngroupId": 1947,
+          "name": "Min_Greyeagle",
+          "displayName": "Min Greyeagle",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": 461,
+          "y": 197,
+          "z": 31.75,
+          "heading": 123,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2293,
+          "spawngroupId": 1946,
+          "name": "Maigin_Greyeagle",
+          "displayName": "Maigin Greyeagle",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": 483,
+          "y": 179,
+          "z": 31.75,
+          "heading": 5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2294,
+          "spawngroupId": 1945,
+          "name": "Winn_Greenbane",
+          "displayName": "Winn Greenbane",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -124,
+          "y": -364,
+          "z": 17.75,
+          "heading": 25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2295,
+          "spawngroupId": 1944,
+          "name": "Mardon_Smith",
+          "displayName": "Mardon Smith",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -112,
+          "y": -378,
+          "z": 3.75,
+          "heading": 470,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2296,
+          "spawngroupId": 1943,
+          "name": "Dovik_Greenbane",
+          "displayName": "Dovik Greenbane",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -113,
+          "y": -318,
+          "z": 3.75,
+          "heading": 200,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2297,
+          "spawngroupId": 1942,
+          "name": "a_dealer",
+          "displayName": "A Dealer",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -244,
+          "y": 340,
+          "z": 3.75,
+          "heading": 452,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2298,
+          "spawngroupId": 1941,
+          "name": "Lyla_Whistlewood",
+          "displayName": "Lyla Whistlewood",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -169,
+          "y": 388,
+          "z": 17.75,
+          "heading": 159,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2299,
+          "spawngroupId": 1940,
+          "name": "Bartender",
+          "displayName": "Bartender",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -184,
+          "y": 395,
+          "z": 17.75,
+          "heading": 3,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2300,
+          "spawngroupId": 1939,
+          "name": "Dyona_Rossook",
+          "displayName": "Dyona Rossook",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": 135,
+          "y": -248,
+          "z": 3.75,
+          "heading": 482,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2301,
+          "spawngroupId": 1938,
+          "name": "Sernn_Rossook",
+          "displayName": "Sernn Rossook",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": 154,
+          "y": -218,
+          "z": 3.75,
+          "heading": 265,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2302,
+          "spawngroupId": 1937,
+          "name": "Lyn_Tarburner",
+          "displayName": "Lyn Tarburner",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": 493,
+          "y": -146,
+          "z": 3.75,
+          "heading": 8,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2303,
+          "spawngroupId": 1936,
+          "name": "Dyn_Tarburner",
+          "displayName": "Dyn Tarburner",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": 477,
+          "y": -61,
+          "z": 23.75,
+          "heading": 224,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2304,
+          "spawngroupId": 1935,
+          "name": "a_smuggler",
+          "displayName": "A Smuggler",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": 200.880005,
+          "y": 47,
+          "z": 31.75,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2305,
+          "spawngroupId": 1934,
+          "name": "Bartender",
+          "displayName": "Bartender",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -165,
+          "y": 403,
+          "z": 3.75,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2306,
+          "spawngroupId": 1933,
+          "name": "Bartholemew",
+          "displayName": "Bartholemew",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": 11,
+          "y": -212,
+          "z": 3.75,
+          "heading": 122,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2307,
+          "spawngroupId": 1932,
+          "name": "Shumpi_Wimahnn",
+          "displayName": "Shumpi Wimahnn",
+          "level": 65,
+          "race": "Halfling",
+          "rawRace": "Halfling",
+          "className": "Cleric",
+          "x": -22,
+          "y": 183,
+          "z": 2.13,
+          "heading": 106,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2308,
+          "spawngroupId": 1931,
+          "name": "Volunteer_Delharn",
+          "displayName": "Volunteer Delharn",
+          "level": 4,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 193,
+          "y": -532,
+          "z": 6,
+          "heading": 184,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2309,
+          "spawngroupId": 1930,
+          "name": "a_gnoll_soothsayer",
+          "displayName": "A Gnoll Soothsayer",
+          "level": 16,
+          "race": "Gnoll",
+          "rawRace": "Gnoll",
+          "className": "Shaman",
+          "x": 88.129997,
+          "y": 626.130005,
+          "z": 46.380001,
+          "heading": 511,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2310,
+          "spawngroupId": 1930,
+          "name": "a_gnoll_soothsayer",
+          "displayName": "A Gnoll Soothsayer",
+          "level": 16,
+          "race": "Gnoll",
+          "rawRace": "Gnoll",
+          "className": "Shaman",
+          "x": 166.5,
+          "y": 594.130005,
+          "z": 9.5,
+          "heading": 511,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2311,
+          "spawngroupId": 1929,
+          "name": "a_gnoll_brawler",
+          "displayName": "A Gnoll Brawler",
+          "level": 15,
+          "race": "Gnoll",
+          "rawRace": "Gnoll",
+          "className": "Warrior",
+          "x": 174.380005,
+          "y": 802.130005,
+          "z": 6.75,
+          "heading": 511,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2312,
+          "spawngroupId": 1928,
+          "name": "an_orc_conscript",
+          "displayName": "An Orc Conscript",
+          "level": 12,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Rogue",
+          "x": 244.380005,
+          "y": -825.630005,
+          "z": 19.5,
+          "heading": 511,
+          "chance": 15,
+          "respawnTime": 640,
+          "candidateCount": 7
+        },
+        {
+          "spawn2Id": 2313,
+          "spawngroupId": 1927,
+          "name": "an_orc_scout",
+          "displayName": "An Orc Scout",
+          "level": 17,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Rogue",
+          "x": 241,
+          "y": -856.880005,
+          "z": 10,
+          "heading": 511,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 2314,
+          "spawngroupId": 1926,
+          "name": "a_gnoll_brawler",
+          "displayName": "A Gnoll Brawler",
+          "level": 13,
+          "race": "Gnoll",
+          "rawRace": "Gnoll",
+          "className": "Warrior",
+          "x": 146.630005,
+          "y": 757.880005,
+          "z": 6.75,
+          "heading": 511,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 2315,
+          "spawngroupId": 1925,
+          "name": "Vopuk_Shralok",
+          "displayName": "Vopuk Shralok",
+          "level": 22,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Shaman",
+          "x": 213.25,
+          "y": -873.880005,
+          "z": 42,
+          "heading": 511,
+          "chance": 10,
+          "respawnTime": 640,
+          "candidateCount": 10
+        },
+        {
+          "spawn2Id": 2316,
+          "spawngroupId": 1924,
+          "name": "a_gnoll_soothsayer",
+          "displayName": "A Gnoll Soothsayer",
+          "level": 14,
+          "race": "Gnoll",
+          "rawRace": "Gnoll",
+          "className": "Shaman",
+          "x": 71.75,
+          "y": 641.75,
+          "z": 48.880001,
+          "heading": 511,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2317,
+          "spawngroupId": 1924,
+          "name": "a_gnoll_soothsayer",
+          "displayName": "A Gnoll Soothsayer",
+          "level": 14,
+          "race": "Gnoll",
+          "rawRace": "Gnoll",
+          "className": "Shaman",
+          "x": 117,
+          "y": 446.130005,
+          "z": 38,
+          "heading": 511,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2318,
+          "spawngroupId": 1923,
+          "name": "a_gnoll_soothsayer",
+          "displayName": "A Gnoll Soothsayer",
+          "level": 16,
+          "race": "Gnoll",
+          "rawRace": "Gnoll",
+          "className": "Shaman",
+          "x": 78.75,
+          "y": 552.380005,
+          "z": 46.630001,
+          "heading": 511,
+          "chance": 45,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 2319,
+          "spawngroupId": 1922,
+          "name": "Volunteer_Renlor",
+          "displayName": "Volunteer Renlor",
+          "level": 5,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 118,
+          "y": 479,
+          "z": 6,
+          "heading": 92,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2320,
+          "spawngroupId": 1921,
+          "name": "an_orc_acolyte",
+          "displayName": "An Orc Acolyte",
+          "level": 14,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Shaman",
+          "x": 265.880005,
+          "y": -806.880005,
+          "z": 6.75,
+          "heading": 511,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2321,
+          "spawngroupId": 1920,
+          "name": "an_orc_fanatic",
+          "displayName": "An Orc Fanatic",
+          "level": 21,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Shaman",
+          "x": 245.130005,
+          "y": -843.880005,
+          "z": 12.63,
+          "heading": 511,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2322,
+          "spawngroupId": 1919,
+          "name": "a_gnoll_brawler",
+          "displayName": "A Gnoll Brawler",
+          "level": 15,
+          "race": "Gnoll",
+          "rawRace": "Gnoll",
+          "className": "Warrior",
+          "x": 156.380005,
+          "y": 542.25,
+          "z": 6.75,
+          "heading": 511,
+          "chance": 20,
+          "respawnTime": 640,
+          "candidateCount": 5
+        },
+        {
+          "spawn2Id": 2323,
+          "spawngroupId": 1918,
+          "name": "Lylea",
+          "displayName": "Lylea",
+          "level": 17,
+          "race": "Wood Elf",
+          "rawRace": "Wood Elf",
+          "className": "Rogue",
+          "x": 30.75,
+          "y": -215.380005,
+          "z": 3.13,
+          "heading": 370,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2324,
+          "spawngroupId": 5397,
+          "name": "Guard_Ranlem",
+          "displayName": "Guard Ranlem",
+          "level": 37,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 366,
+          "y": -55.380001,
+          "z": 3.38,
+          "heading": 406.75,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2325,
+          "spawngroupId": 5398,
+          "name": "an_orc_soldier",
+          "displayName": "An Orc Soldier",
+          "level": 12,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 231.75,
+          "y": -896.880005,
+          "z": 6.75,
+          "heading": 511,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2326,
+          "spawngroupId": 5399,
+          "name": "an_orc_warrior",
+          "displayName": "An Orc Warrior",
+          "level": 14,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 258.25,
+          "y": -863,
+          "z": 6.75,
+          "heading": 511,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2327,
+          "spawngroupId": 5400,
+          "name": "a_gnoll_soothsayer",
+          "displayName": "A Gnoll Soothsayer",
+          "level": 15,
+          "race": "Gnoll",
+          "rawRace": "Gnoll",
+          "className": "Shaman",
+          "x": 147.880005,
+          "y": 658.380005,
+          "z": 11.75,
+          "heading": 511,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2328,
+          "spawngroupId": 5401,
+          "name": "a_gnoll_flamepaw",
+          "displayName": "A Gnoll Flamepaw",
+          "level": 17,
+          "race": "Gnoll",
+          "rawRace": "Gnoll",
+          "className": "Shaman",
+          "x": 80.129997,
+          "y": 537.5,
+          "z": 37,
+          "heading": 255.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2329,
+          "spawngroupId": 5402,
+          "name": "Burgek",
+          "displayName": "Burgek",
+          "level": 16,
+          "race": "Troll",
+          "rawRace": "Troll",
+          "className": "Warrior",
+          "x": 258,
+          "y": -228.75,
+          "z": 5,
+          "heading": 370,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2330,
+          "spawngroupId": 5403,
+          "name": "Guard_Stald",
+          "displayName": "Guard Stald",
+          "level": 14,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 464,
+          "y": 127,
+          "z": 31.75,
+          "heading": 94,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2331,
+          "spawngroupId": 5404,
+          "name": "a_gnoll_champion",
+          "displayName": "A Gnoll Champion",
+          "level": 16,
+          "race": "Gnoll",
+          "rawRace": "Gnoll",
+          "className": "Warrior",
+          "x": 156,
+          "y": 571,
+          "z": 7.63,
+          "heading": 511,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 21367,
+          "spawngroupId": 13031,
+          "name": "Guard_Becker",
+          "displayName": "Guard Becker",
+          "level": 23,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 464,
+          "y": 137,
+          "z": 31.700001,
+          "heading": 188,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 21368,
+          "spawngroupId": 13032,
+          "name": "an_orc_acolyte",
+          "displayName": "An Orc Acolyte",
+          "level": 14,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Shaman",
+          "x": 243.25,
+          "y": -835.25,
+          "z": 21.379999,
+          "heading": 510,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 59021,
+          "spawngroupId": 48339,
+          "name": "Brenon",
+          "displayName": "Brenon",
+          "level": 11,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": 158.065277,
+          "y": 1.660211,
+          "z": 3.289498,
+          "heading": 194,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 108780,
+          "spawngroupId": 70565,
+          "name": "a_shady_Highpass_citizen",
+          "displayName": "A Shady Highpass Citizen",
+          "level": 40,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": 616,
+          "y": -108,
+          "z": -15,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 215,
+          "candidateCount": 1
+        }
+      ]
+    }
+  },
+  "details": {
+    "zoneSlug": "highpass-hold",
+    "routeSlug": "highpass",
+    "zoneName": "Highpass Hold",
+    "sourceFile": "local-eqemu-database",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobGroups": [
+      {
+        "displayName": "Volunteer Delharn",
+        "rawNames": [
+          "Volunteer_Delharn"
+        ],
+        "count": 1,
+        "levelMin": 4,
+        "levelMax": 4,
+        "levels": [
+          4
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Volunteer Renlor",
+        "rawNames": [
+          "Volunteer_Renlor"
+        ],
+        "count": 1,
+        "levelMin": 5,
+        "levelMax": 5,
+        "levels": [
+          5
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Brenon",
+        "rawNames": [
+          "Brenon"
+        ],
+        "count": 1,
+        "levelMin": 11,
+        "levelMax": 11,
+        "levels": [
+          11
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Rogue": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "An Orc Conscript",
+        "rawNames": [
+          "an_orc_conscript"
+        ],
+        "count": 1,
+        "levelMin": 12,
+        "levelMax": 12,
+        "levels": [
+          12
+        ],
+        "raceCounts": {
+          "Orc": 1
+        },
+        "rawRaceCounts": {
+          "Orc": 1
+        },
+        "classCounts": {
+          "Rogue": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "An Orc Soldier",
+        "rawNames": [
+          "an_orc_soldier"
+        ],
+        "count": 1,
+        "levelMin": 12,
+        "levelMax": 12,
+        "levels": [
+          12
+        ],
+        "raceCounts": {
+          "Orc": 1
+        },
+        "rawRaceCounts": {
+          "Orc": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Gnoll Brawler",
+        "rawNames": [
+          "a_gnoll_brawler"
+        ],
+        "count": 1,
+        "levelMin": 13,
+        "levelMax": 13,
+        "levels": [
+          13
+        ],
+        "raceCounts": {
+          "Gnoll": 1
+        },
+        "rawRaceCounts": {
+          "Gnoll": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Gnoll Soothsayer",
+        "rawNames": [
+          "a_gnoll_soothsayer"
+        ],
+        "count": 6,
+        "levelMin": 14,
+        "levelMax": 16,
+        "levels": [
+          14,
+          15,
+          16
+        ],
+        "raceCounts": {
+          "Gnoll": 6
+        },
+        "rawRaceCounts": {
+          "Gnoll": 6
+        },
+        "classCounts": {
+          "Shaman": 6
+        },
+        "typeCounts": {
+          "Spawn Slot": 6
+        }
+      },
+      {
+        "displayName": "A Highpass Citizen",
+        "rawNames": [
+          "a_Highpass_citizen"
+        ],
+        "count": 2,
+        "levelMin": 14,
+        "levelMax": 15,
+        "levels": [
+          14,
+          15
+        ],
+        "raceCounts": {
+          "Half Elf": 1,
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Half Elf": 1,
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Smuggler",
+        "rawNames": [
+          "a_smuggler"
+        ],
+        "count": 2,
+        "levelMin": 14,
+        "levelMax": 14,
+        "levels": [
+          14
+        ],
+        "raceCounts": {
+          "Human": 2
+        },
+        "rawRaceCounts": {
+          "Human": 2
+        },
+        "classCounts": {
+          "Rogue": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "An Orc Acolyte",
+        "rawNames": [
+          "an_orc_acolyte"
+        ],
+        "count": 2,
+        "levelMin": 14,
+        "levelMax": 14,
+        "levels": [
+          14
+        ],
+        "raceCounts": {
+          "Orc": 2
+        },
+        "rawRaceCounts": {
+          "Orc": 2
+        },
+        "classCounts": {
+          "Shaman": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "An Orc Warrior",
+        "rawNames": [
+          "an_orc_warrior"
+        ],
+        "count": 1,
+        "levelMin": 14,
+        "levelMax": 14,
+        "levels": [
+          14
+        ],
+        "raceCounts": {
+          "Orc": 1
+        },
+        "rawRaceCounts": {
+          "Orc": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Stald",
+        "rawNames": [
+          "Guard_Stald"
+        ],
+        "count": 1,
+        "levelMin": 14,
+        "levelMax": 14,
+        "levels": [
+          14
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Gnoll Brawler",
+        "rawNames": [
+          "a_gnoll_brawler"
+        ],
+        "count": 2,
+        "levelMin": 15,
+        "levelMax": 15,
+        "levels": [
+          15
+        ],
+        "raceCounts": {
+          "Gnoll": 2
+        },
+        "rawRaceCounts": {
+          "Gnoll": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "Greth Truksorn",
+        "rawNames": [
+          "Greth_Truksorn"
+        ],
+        "count": 1,
+        "levelMin": 15,
+        "levelMax": 15,
+        "levels": [
+          15
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Rogue": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Smuggler",
+        "rawNames": [
+          "a_smuggler"
+        ],
+        "count": 7,
+        "levelMin": 16,
+        "levelMax": 19,
+        "levels": [
+          16,
+          17,
+          18,
+          19
+        ],
+        "raceCounts": {
+          "Human": 7
+        },
+        "rawRaceCounts": {
+          "Human": 7
+        },
+        "classCounts": {
+          "Rogue": 7
+        },
+        "typeCounts": {
+          "Spawn Slot": 7
+        }
+      },
+      {
+        "displayName": "A Gnoll Champion",
+        "rawNames": [
+          "a_gnoll_champion"
+        ],
+        "count": 1,
+        "levelMin": 16,
+        "levelMax": 16,
+        "levels": [
+          16
+        ],
+        "raceCounts": {
+          "Gnoll": 1
+        },
+        "rawRaceCounts": {
+          "Gnoll": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Burgek",
+        "rawNames": [
+          "Burgek"
+        ],
+        "count": 1,
+        "levelMin": 16,
+        "levelMax": 16,
+        "levels": [
+          16
+        ],
+        "raceCounts": {
+          "Troll": 1
+        },
+        "rawRaceCounts": {
+          "Troll": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Dyllin Starsine",
+        "rawNames": [
+          "Dyllin_Starsine"
+        ],
+        "count": 1,
+        "levelMin": 16,
+        "levelMax": 16,
+        "levels": [
+          16
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Malik Zaren",
+        "rawNames": [
+          "Malik_Zaren"
+        ],
+        "count": 1,
+        "levelMin": 16,
+        "levelMax": 16,
+        "levels": [
+          16
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Wizard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Gnoll Flamepaw",
+        "rawNames": [
+          "a_gnoll_flamepaw"
+        ],
+        "count": 1,
+        "levelMin": 17,
+        "levelMax": 17,
+        "levels": [
+          17
+        ],
+        "raceCounts": {
+          "Gnoll": 1
+        },
+        "rawRaceCounts": {
+          "Gnoll": 1
+        },
+        "classCounts": {
+          "Shaman": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "An Orc Scout",
+        "rawNames": [
+          "an_orc_scout"
+        ],
+        "count": 1,
+        "levelMin": 17,
+        "levelMax": 17,
+        "levels": [
+          17
+        ],
+        "raceCounts": {
+          "Orc": 1
+        },
+        "rawRaceCounts": {
+          "Orc": 1
+        },
+        "classCounts": {
+          "Rogue": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Dalishea",
+        "rawNames": [
+          "Dalishea"
+        ],
+        "count": 1,
+        "levelMin": 17,
+        "levelMax": 17,
+        "levels": [
+          17
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Rogue": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Lylea",
+        "rawNames": [
+          "Lylea"
+        ],
+        "count": 1,
+        "levelMin": 17,
+        "levelMax": 17,
+        "levels": [
+          17
+        ],
+        "raceCounts": {
+          "Wood Elf": 1
+        },
+        "rawRaceCounts": {
+          "Wood Elf": 1
+        },
+        "classCounts": {
+          "Rogue": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Highpass Citizen",
+        "rawNames": [
+          "a_Highpass_citizen"
+        ],
+        "count": 24,
+        "levelMin": 18,
+        "levelMax": 25,
+        "levels": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ],
+        "raceCounts": {
+          "Half Elf": 13,
+          "Human": 11
+        },
+        "rawRaceCounts": {
+          "Half Elf": 13,
+          "Human": 11
+        },
+        "classCounts": {
+          "Warrior": 24
+        },
+        "typeCounts": {
+          "Spawn Slot": 24
+        }
+      },
+      {
+        "displayName": "Burgek",
+        "rawNames": [
+          "Burgek"
+        ],
+        "count": 1,
+        "levelMin": 18,
+        "levelMax": 18,
+        "levels": [
+          18
+        ],
+        "raceCounts": {
+          "Troll": 1
+        },
+        "rawRaceCounts": {
+          "Troll": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Barn Bloodstone",
+        "rawNames": [
+          "Barn_Bloodstone"
+        ],
+        "count": 1,
+        "levelMin": 20,
+        "levelMax": 20,
+        "levels": [
+          20
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Rogue": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Gornolin",
+        "rawNames": [
+          "Gornolin"
+        ],
+        "count": 1,
+        "levelMin": 20,
+        "levelMax": 20,
+        "levels": [
+          20
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "An Orc Fanatic",
+        "rawNames": [
+          "an_orc_fanatic"
+        ],
+        "count": 1,
+        "levelMin": 21,
+        "levelMax": 21,
+        "levels": [
+          21
+        ],
+        "raceCounts": {
+          "Orc": 1
+        },
+        "rawRaceCounts": {
+          "Orc": 1
+        },
+        "classCounts": {
+          "Shaman": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Vopuk Shralok",
+        "rawNames": [
+          "Vopuk_Shralok"
+        ],
+        "count": 1,
+        "levelMin": 22,
+        "levelMax": 22,
+        "levels": [
+          22
+        ],
+        "raceCounts": {
+          "Orc": 1
+        },
+        "rawRaceCounts": {
+          "Orc": 1
+        },
+        "classCounts": {
+          "Shaman": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Becker",
+        "rawNames": [
+          "Guard_Becker"
+        ],
+        "count": 1,
+        "levelMin": 23,
+        "levelMax": 23,
+        "levels": [
+          23
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Guard",
+        "rawNames": [
+          "a_guard"
+        ],
+        "count": 1,
+        "levelMin": 24,
+        "levelMax": 24,
+        "levels": [
+          24
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Cytodl Krish",
+        "rawNames": [
+          "Cytodl_Krish"
+        ],
+        "count": 1,
+        "levelMin": 25,
+        "levelMax": 25,
+        "levels": [
+          25
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Falyn Farreach",
+        "rawNames": [
+          "Falyn_Farreach"
+        ],
+        "count": 1,
+        "levelMin": 25,
+        "levelMax": 25,
+        "levels": [
+          25
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Guard",
+        "rawNames": [
+          "a_guard"
+        ],
+        "count": 1,
+        "levelMin": 27,
+        "levelMax": 27,
+        "levels": [
+          27
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Captain Ashlan",
+        "rawNames": [
+          "Captain_Ashlan"
+        ],
+        "count": 1,
+        "levelMin": 27,
+        "levelMax": 27,
+        "levels": [
+          27
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Prak",
+        "rawNames": [
+          "Prak"
+        ],
+        "count": 1,
+        "levelMin": 27,
+        "levelMax": 27,
+        "levels": [
+          27
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Rogue": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Captain Orben",
+        "rawNames": [
+          "Captain_Orben"
+        ],
+        "count": 1,
+        "levelMin": 29,
+        "levelMax": 29,
+        "levels": [
+          29
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Kaden Gron",
+        "rawNames": [
+          "Kaden_Gron"
+        ],
+        "count": 1,
+        "levelMin": 31,
+        "levelMax": 31,
+        "levels": [
+          31
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Rogue": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Wres Corber",
+        "rawNames": [
+          "Wres_Corber"
+        ],
+        "count": 1,
+        "levelMin": 34,
+        "levelMax": 34,
+        "levels": [
+          34
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Rogue": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Gublink Furnhorn",
+        "rawNames": [
+          "Gublink_Furnhorn"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Jovan",
+        "rawNames": [
+          "Jovan"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Cleric": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Guard",
+        "rawNames": [
+          "a_guard"
+        ],
+        "count": 2,
+        "levelMin": 36,
+        "levelMax": 36,
+        "levels": [
+          36
+        ],
+        "raceCounts": {
+          "Human": 2
+        },
+        "rawRaceCounts": {
+          "Human": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "Commander Tehafer",
+        "rawNames": [
+          "Commander_Tehafer"
+        ],
+        "count": 3,
+        "levelMin": 37,
+        "levelMax": 37,
+        "levels": [
+          37
+        ],
+        "raceCounts": {
+          "Human": 3
+        },
+        "rawRaceCounts": {
+          "Human": 3
+        },
+        "classCounts": {
+          "Warrior": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "Guard Ranlem",
+        "rawNames": [
+          "Guard_Ranlem"
+        ],
+        "count": 2,
+        "levelMin": 37,
+        "levelMax": 37,
+        "levels": [
+          37
+        ],
+        "raceCounts": {
+          "Human": 2
+        },
+        "rawRaceCounts": {
+          "Human": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "Crenn Salbet",
+        "rawNames": [
+          "Crenn_Salbet"
+        ],
+        "count": 1,
+        "levelMin": 38,
+        "levelMax": 38,
+        "levels": [
+          38
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Rogue": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Shady Highpass Citizen",
+        "rawNames": [
+          "a_shady_Highpass_citizen"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Bryan Mcgee",
+        "rawNames": [
+          "Bryan_McGee"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Rogue": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Dealer",
+        "rawNames": [
+          "a_dealer"
+        ],
+        "count": 2,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 2
+        },
+        "rawRaceCounts": {
+          "Human": 2
+        },
+        "classCounts": {
+          "Banker": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "Bartender",
+        "rawNames": [
+          "Bartender"
+        ],
+        "count": 2,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 2
+        },
+        "rawRaceCounts": {
+          "Human": 2
+        },
+        "classCounts": {
+          "Banker": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Smuggler",
+        "rawNames": [
+          "a_smuggler"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Rogue": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Bartholemew",
+        "rawNames": [
+          "Bartholemew"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Dovik Greenbane",
+        "rawNames": [
+          "Dovik_Greenbane"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Dyn Tarburner",
+        "rawNames": [
+          "Dyn_Tarburner"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Dyona Rossook",
+        "rawNames": [
+          "Dyona_Rossook"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Lyla Whistlewood",
+        "rawNames": [
+          "Lyla_Whistlewood"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Lyn Tarburner",
+        "rawNames": [
+          "Lyn_Tarburner"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Maigin Greyeagle",
+        "rawNames": [
+          "Maigin_Greyeagle"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Mardon Smith",
+        "rawNames": [
+          "Mardon_Smith"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Min Greyeagle",
+        "rawNames": [
+          "Min_Greyeagle"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Paulina",
+        "rawNames": [
+          "Paulina"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Sernn Rossook",
+        "rawNames": [
+          "Sernn_Rossook"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Winn Greenbane",
+        "rawNames": [
+          "Winn_Greenbane"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Vranol Blackguard",
+        "rawNames": [
+          "Vranol_Blackguard"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Necromancer": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Alhareen The Just",
+        "rawNames": [
+          "Alhareen_the_Just"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Shaman": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Cyrla Shadowstepper",
+        "rawNames": [
+          "Cyrla_Shadowstepper"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Rogue GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Shumpi Wimahnn",
+        "rawNames": [
+          "Shumpi_Wimahnn"
+        ],
+        "count": 1,
+        "levelMin": 65,
+        "levelMax": 65,
+        "levels": [
+          65
+        ],
+        "raceCounts": {
+          "Halfling": 1
+        },
+        "rawRaceCounts": {
+          "Halfling": 1
+        },
+        "classCounts": {
+          "Cleric": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      }
+    ],
+    "rows": [
+      {
+        "displayName": "Volunteer Delharn",
+        "rawName": "Volunteer_Delharn",
+        "level": 4,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 193,
+        "y": -532,
+        "z": 6,
+        "heading": 184,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2308,
+        "spawngroupId": 1931,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Volunteer Renlor",
+        "rawName": "Volunteer_Renlor",
+        "level": 5,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 118,
+        "y": 479,
+        "z": 6,
+        "heading": 92,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2319,
+        "spawngroupId": 1922,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Brenon",
+        "rawName": "Brenon",
+        "level": 11,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 158.065277,
+        "y": 1.660211,
+        "z": 3.289498,
+        "heading": 194,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 59021,
+        "spawngroupId": 48339,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Orc Conscript",
+        "rawName": "an_orc_conscript",
+        "level": 12,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 244.380005,
+        "y": -825.630005,
+        "z": 19.5,
+        "heading": 511,
+        "chance": 15,
+        "respawnTime": 640,
+        "spawn2Id": 2312,
+        "spawngroupId": 1928,
+        "candidateCount": 7
+      },
+      {
+        "displayName": "An Orc Soldier",
+        "rawName": "an_orc_soldier",
+        "level": 12,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 231.75,
+        "y": -896.880005,
+        "z": 6.75,
+        "heading": 511,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 2325,
+        "spawngroupId": 5398,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Gnoll Brawler",
+        "rawName": "a_gnoll_brawler",
+        "level": 13,
+        "race": "Gnoll",
+        "rawRace": "Gnoll",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 146.630005,
+        "y": 757.880005,
+        "z": 6.75,
+        "heading": 511,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 2314,
+        "spawngroupId": 1926,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Gnoll Soothsayer",
+        "rawName": "a_gnoll_soothsayer",
+        "level": 14,
+        "race": "Gnoll",
+        "rawRace": "Gnoll",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 71.75,
+        "y": 641.75,
+        "z": 48.880001,
+        "heading": 511,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2316,
+        "spawngroupId": 1924,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Gnoll Soothsayer",
+        "rawName": "a_gnoll_soothsayer",
+        "level": 14,
+        "race": "Gnoll",
+        "rawRace": "Gnoll",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 117,
+        "y": 446.130005,
+        "z": 38,
+        "heading": 511,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2317,
+        "spawngroupId": 1924,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Highpass Citizen",
+        "rawName": "a_Highpass_citizen",
+        "level": 14,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 287.630005,
+        "y": -146.630005,
+        "z": -6.13,
+        "heading": 335,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2280,
+        "spawngroupId": 1959,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Smuggler",
+        "rawName": "a_smuggler",
+        "level": 14,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 283.880005,
+        "y": 59,
+        "z": 42.630001,
+        "heading": 405,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 2238,
+        "spawngroupId": 5391,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Smuggler",
+        "rawName": "a_smuggler",
+        "level": 14,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 103.379997,
+        "y": 53,
+        "z": 57.630001,
+        "heading": 260.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2239,
+        "spawngroupId": 1997,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Orc Acolyte",
+        "rawName": "an_orc_acolyte",
+        "level": 14,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 265.880005,
+        "y": -806.880005,
+        "z": 6.75,
+        "heading": 511,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 2320,
+        "spawngroupId": 1921,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "An Orc Acolyte",
+        "rawName": "an_orc_acolyte",
+        "level": 14,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 243.25,
+        "y": -835.25,
+        "z": 21.379999,
+        "heading": 510,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 21368,
+        "spawngroupId": 13032,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Orc Warrior",
+        "rawName": "an_orc_warrior",
+        "level": 14,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 258.25,
+        "y": -863,
+        "z": 6.75,
+        "heading": 511,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2326,
+        "spawngroupId": 5399,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard Stald",
+        "rawName": "Guard_Stald",
+        "level": 14,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 464,
+        "y": 127,
+        "z": 31.75,
+        "heading": 94,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2330,
+        "spawngroupId": 5403,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Gnoll Brawler",
+        "rawName": "a_gnoll_brawler",
+        "level": 15,
+        "race": "Gnoll",
+        "rawRace": "Gnoll",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 174.380005,
+        "y": 802.130005,
+        "z": 6.75,
+        "heading": 511,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 2311,
+        "spawngroupId": 1929,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Gnoll Brawler",
+        "rawName": "a_gnoll_brawler",
+        "level": 15,
+        "race": "Gnoll",
+        "rawRace": "Gnoll",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 156.380005,
+        "y": 542.25,
+        "z": 6.75,
+        "heading": 511,
+        "chance": 20,
+        "respawnTime": 640,
+        "spawn2Id": 2322,
+        "spawngroupId": 1919,
+        "candidateCount": 5
+      },
+      {
+        "displayName": "A Gnoll Soothsayer",
+        "rawName": "a_gnoll_soothsayer",
+        "level": 15,
+        "race": "Gnoll",
+        "rawRace": "Gnoll",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 147.880005,
+        "y": 658.380005,
+        "z": 11.75,
+        "heading": 511,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2327,
+        "spawngroupId": 5400,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Highpass Citizen",
+        "rawName": "a_Highpass_citizen",
+        "level": 15,
+        "race": "Half Elf",
+        "rawRace": "Half Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -242.25,
+        "y": 373.25,
+        "z": 17.379999,
+        "heading": 69,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2253,
+        "spawngroupId": 1985,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Greth Truksorn",
+        "rawName": "Greth_Truksorn",
+        "level": 15,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 187,
+        "y": 2,
+        "z": 3.5,
+        "heading": 286,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2232,
+        "spawngroupId": 5389,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Gnoll Champion",
+        "rawName": "a_gnoll_champion",
+        "level": 16,
+        "race": "Gnoll",
+        "rawRace": "Gnoll",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 156,
+        "y": 571,
+        "z": 7.63,
+        "heading": 511,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2331,
+        "spawngroupId": 5404,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Gnoll Soothsayer",
+        "rawName": "a_gnoll_soothsayer",
+        "level": 16,
+        "race": "Gnoll",
+        "rawRace": "Gnoll",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 88.129997,
+        "y": 626.130005,
+        "z": 46.380001,
+        "heading": 511,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2309,
+        "spawngroupId": 1930,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Gnoll Soothsayer",
+        "rawName": "a_gnoll_soothsayer",
+        "level": 16,
+        "race": "Gnoll",
+        "rawRace": "Gnoll",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 166.5,
+        "y": 594.130005,
+        "z": 9.5,
+        "heading": 511,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2310,
+        "spawngroupId": 1930,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Gnoll Soothsayer",
+        "rawName": "a_gnoll_soothsayer",
+        "level": 16,
+        "race": "Gnoll",
+        "rawRace": "Gnoll",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 78.75,
+        "y": 552.380005,
+        "z": 46.630001,
+        "heading": 511,
+        "chance": 45,
+        "respawnTime": 640,
+        "spawn2Id": 2318,
+        "spawngroupId": 1923,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Smuggler",
+        "rawName": "a_smuggler",
+        "level": 16,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 325,
+        "y": 5,
+        "z": 45.630001,
+        "heading": 28,
+        "chance": 38,
+        "respawnTime": 640,
+        "spawn2Id": 2265,
+        "spawngroupId": 1973,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Burgek",
+        "rawName": "Burgek",
+        "level": 16,
+        "race": "Troll",
+        "rawRace": "Troll",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 258,
+        "y": -228.75,
+        "z": 5,
+        "heading": 370,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2329,
+        "spawngroupId": 5402,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Dyllin Starsine",
+        "rawName": "Dyllin_Starsine",
+        "level": 16,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 126,
+        "y": 39,
+        "z": 35.75,
+        "heading": 58,
+        "chance": 100,
+        "respawnTime": 25200,
+        "spawn2Id": 2236,
+        "spawngroupId": 5385,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Malik Zaren",
+        "rawName": "Malik_Zaren",
+        "level": 16,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -265,
+        "y": 336,
+        "z": 17.75,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2275,
+        "spawngroupId": 1964,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Gnoll Flamepaw",
+        "rawName": "a_gnoll_flamepaw",
+        "level": 17,
+        "race": "Gnoll",
+        "rawRace": "Gnoll",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 80.129997,
+        "y": 537.5,
+        "z": 37,
+        "heading": 255.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2328,
+        "spawngroupId": 5401,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Smuggler",
+        "rawName": "a_smuggler",
+        "level": 17,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 287.880005,
+        "y": -24,
+        "z": 33.75,
+        "heading": 449,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 2271,
+        "spawngroupId": 1967,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "An Orc Scout",
+        "rawName": "an_orc_scout",
+        "level": 17,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 241,
+        "y": -856.880005,
+        "z": 10,
+        "heading": 511,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 2313,
+        "spawngroupId": 1927,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "Dalishea",
+        "rawName": "Dalishea",
+        "level": 17,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 182,
+        "y": -38,
+        "z": 9.5,
+        "heading": 22,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2231,
+        "spawngroupId": 5390,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Lylea",
+        "rawName": "Lylea",
+        "level": 17,
+        "race": "Wood Elf",
+        "rawRace": "Wood Elf",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 30.75,
+        "y": -215.380005,
+        "z": 3.13,
+        "heading": 370,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2323,
+        "spawngroupId": 1918,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Highpass Citizen",
+        "rawName": "a_Highpass_citizen",
+        "level": 18,
+        "race": "Half Elf",
+        "rawRace": "Half Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 175,
+        "y": -239.130005,
+        "z": 3.75,
+        "heading": 256,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 2235,
+        "spawngroupId": 5386,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Highpass Citizen",
+        "rawName": "a_Highpass_citizen",
+        "level": 18,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -120,
+        "y": -342.380005,
+        "z": 17.75,
+        "heading": 10,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2240,
+        "spawngroupId": 1996,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Highpass Citizen",
+        "rawName": "a_Highpass_citizen",
+        "level": 18,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 466,
+        "y": 150,
+        "z": 31.75,
+        "heading": 174,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 2248,
+        "spawngroupId": 1989,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Smuggler",
+        "rawName": "a_smuggler",
+        "level": 18,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 215,
+        "y": -95,
+        "z": 31.75,
+        "heading": 97,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 2272,
+        "spawngroupId": 1966,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Smuggler",
+        "rawName": "a_smuggler",
+        "level": 18,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 173,
+        "y": -55,
+        "z": 66.629997,
+        "heading": 60,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 2273,
+        "spawngroupId": 1966,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Burgek",
+        "rawName": "Burgek",
+        "level": 18,
+        "race": "Troll",
+        "rawRace": "Troll",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 513,
+        "y": 200.630005,
+        "z": 33,
+        "heading": 370,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 2230,
+        "spawngroupId": 5394,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Highpass Citizen",
+        "rawName": "a_Highpass_citizen",
+        "level": 19,
+        "race": "Half Elf",
+        "rawRace": "Half Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 479,
+        "y": 159.880005,
+        "z": 31.379999,
+        "heading": 303,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 2243,
+        "spawngroupId": 1994,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Highpass Citizen",
+        "rawName": "a_Highpass_citizen",
+        "level": 19,
+        "race": "Half Elf",
+        "rawRace": "Half Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 304.880005,
+        "y": 160,
+        "z": -18.5,
+        "heading": 444,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 2256,
+        "spawngroupId": 1982,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Highpass Citizen",
+        "rawName": "a_Highpass_citizen",
+        "level": 19,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 302.880005,
+        "y": 135,
+        "z": -18.129999,
+        "heading": 453,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 2257,
+        "spawngroupId": 1981,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Highpass Citizen",
+        "rawName": "a_Highpass_citizen",
+        "level": 19,
+        "race": "Half Elf",
+        "rawRace": "Half Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 483.5,
+        "y": -75.629997,
+        "z": 23.379999,
+        "heading": 188,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2281,
+        "spawngroupId": 1958,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Highpass Citizen",
+        "rawName": "a_Highpass_citizen",
+        "level": 19,
+        "race": "Half Elf",
+        "rawRace": "Half Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 116.879997,
+        "y": -328.880005,
+        "z": 8.38,
+        "heading": 383,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 2282,
+        "spawngroupId": 1957,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Highpass Citizen",
+        "rawName": "a_Highpass_citizen",
+        "level": 19,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 429,
+        "y": 203,
+        "z": 31.379999,
+        "heading": 200,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 2284,
+        "spawngroupId": 1955,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Smuggler",
+        "rawName": "a_smuggler",
+        "level": 19,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 339,
+        "y": 91,
+        "z": 45.630001,
+        "heading": 302,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2269,
+        "spawngroupId": 1969,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Smuggler",
+        "rawName": "a_smuggler",
+        "level": 19,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 82,
+        "y": 33,
+        "z": 58.630001,
+        "heading": 77,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 2270,
+        "spawngroupId": 1968,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Smuggler",
+        "rawName": "a_smuggler",
+        "level": 19,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 79,
+        "y": 62,
+        "z": 59.630001,
+        "heading": 353,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 2274,
+        "spawngroupId": 1965,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Highpass Citizen",
+        "rawName": "a_Highpass_citizen",
+        "level": 20,
+        "race": "Half Elf",
+        "rawRace": "Half Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 428,
+        "y": -117,
+        "z": 9.38,
+        "heading": 53,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2283,
+        "spawngroupId": 1956,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Barn Bloodstone",
+        "rawName": "Barn_Bloodstone",
+        "level": 20,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -60,
+        "y": 422,
+        "z": 3.75,
+        "heading": 283,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 2249,
+        "spawngroupId": 1988,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Gornolin",
+        "rawName": "Gornolin",
+        "level": 20,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -231,
+        "y": 396,
+        "z": 17.75,
+        "heading": 430,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 2228,
+        "spawngroupId": 5395,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Highpass Citizen",
+        "rawName": "a_Highpass_citizen",
+        "level": 21,
+        "race": "Half Elf",
+        "rawRace": "Half Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 393.25,
+        "y": -70.25,
+        "z": 9.38,
+        "heading": 285,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 2237,
+        "spawngroupId": 5384,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Highpass Citizen",
+        "rawName": "a_Highpass_citizen",
+        "level": 21,
+        "race": "Half Elf",
+        "rawRace": "Half Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -144,
+        "y": 309.880005,
+        "z": 3.38,
+        "heading": 328,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 2260,
+        "spawngroupId": 1978,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "An Orc Fanatic",
+        "rawName": "an_orc_fanatic",
+        "level": 21,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 245.130005,
+        "y": -843.880005,
+        "z": 12.63,
+        "heading": 511,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 2321,
+        "spawngroupId": 1920,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Highpass Citizen",
+        "rawName": "a_Highpass_citizen",
+        "level": 22,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 409,
+        "y": -88,
+        "z": 9.38,
+        "heading": 343,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 2233,
+        "spawngroupId": 5388,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Vopuk Shralok",
+        "rawName": "Vopuk_Shralok",
+        "level": 22,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 213.25,
+        "y": -873.880005,
+        "z": 42,
+        "heading": 511,
+        "chance": 10,
+        "respawnTime": 640,
+        "spawn2Id": 2315,
+        "spawngroupId": 1925,
+        "candidateCount": 10
+      },
+      {
+        "displayName": "A Highpass Citizen",
+        "rawName": "a_Highpass_citizen",
+        "level": 23,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -112,
+        "y": 201,
+        "z": 3.75,
+        "heading": 266,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2251,
+        "spawngroupId": 1986,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Highpass Citizen",
+        "rawName": "a_Highpass_citizen",
+        "level": 23,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 16.879999,
+        "y": -261,
+        "z": 3.75,
+        "heading": 168,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2252,
+        "spawngroupId": 1986,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Highpass Citizen",
+        "rawName": "a_Highpass_citizen",
+        "level": 23,
+        "race": "Half Elf",
+        "rawRace": "Half Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -193,
+        "y": -343,
+        "z": 3.38,
+        "heading": 477,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 2277,
+        "spawngroupId": 1962,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Guard Becker",
+        "rawName": "Guard_Becker",
+        "level": 23,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 464,
+        "y": 137,
+        "z": 31.700001,
+        "heading": 188,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 21367,
+        "spawngroupId": 13031,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Guard",
+        "rawName": "a_guard",
+        "level": 24,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -34,
+        "y": -52.880001,
+        "z": 17.75,
+        "heading": 119,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 2254,
+        "spawngroupId": 1984,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Highpass Citizen",
+        "rawName": "a_Highpass_citizen",
+        "level": 24,
+        "race": "Half Elf",
+        "rawRace": "Half Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -121,
+        "y": 184,
+        "z": 3.38,
+        "heading": 56,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 2250,
+        "spawngroupId": 1987,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Highpass Citizen",
+        "rawName": "a_Highpass_citizen",
+        "level": 24,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -161.75,
+        "y": 309.25,
+        "z": 3.75,
+        "heading": 41,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 2259,
+        "spawngroupId": 1979,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Highpass Citizen",
+        "rawName": "a_Highpass_citizen",
+        "level": 24,
+        "race": "Half Elf",
+        "rawRace": "Half Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -243.630005,
+        "y": 390.130005,
+        "z": 3.38,
+        "heading": 43,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2261,
+        "spawngroupId": 1977,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Highpass Citizen",
+        "rawName": "a_Highpass_citizen",
+        "level": 24,
+        "race": "Half Elf",
+        "rawRace": "Half Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -6.5,
+        "y": -224.630005,
+        "z": 17.379999,
+        "heading": 290,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2262,
+        "spawngroupId": 1976,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Highpass Citizen",
+        "rawName": "a_Highpass_citizen",
+        "level": 24,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -165,
+        "y": -314,
+        "z": 3.38,
+        "heading": 49,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 2276,
+        "spawngroupId": 1963,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Highpass Citizen",
+        "rawName": "a_Highpass_citizen",
+        "level": 25,
+        "race": "Half Elf",
+        "rawRace": "Half Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 16.879999,
+        "y": -308.880005,
+        "z": 3.38,
+        "heading": 412,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 2258,
+        "spawngroupId": 1980,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Highpass Citizen",
+        "rawName": "a_Highpass_citizen",
+        "level": 25,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -195,
+        "y": -328,
+        "z": 3.75,
+        "heading": 253,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 2278,
+        "spawngroupId": 1961,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Highpass Citizen",
+        "rawName": "a_Highpass_citizen",
+        "level": 25,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 28.879999,
+        "y": -262,
+        "z": 3.75,
+        "heading": 400,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 2279,
+        "spawngroupId": 1960,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Cytodl Krish",
+        "rawName": "Cytodl_Krish",
+        "level": 25,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -259,
+        "y": 389,
+        "z": 17.129999,
+        "heading": 92,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2227,
+        "spawngroupId": 5392,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Falyn Farreach",
+        "rawName": "Falyn_Farreach",
+        "level": 25,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 421,
+        "y": 178,
+        "z": 31.75,
+        "heading": 132,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2247,
+        "spawngroupId": 1990,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Guard",
+        "rawName": "a_guard",
+        "level": 27,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -45,
+        "y": -23.25,
+        "z": 3.75,
+        "heading": 128,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 2244,
+        "spawngroupId": 1993,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Captain Ashlan",
+        "rawName": "Captain_Ashlan",
+        "level": 27,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 225.880005,
+        "y": -567.880005,
+        "z": 31.75,
+        "heading": 261,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2234,
+        "spawngroupId": 5387,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Prak",
+        "rawName": "Prak",
+        "level": 27,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -203,
+        "y": 396,
+        "z": 3.75,
+        "heading": 133,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2290,
+        "spawngroupId": 1949,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Captain Orben",
+        "rawName": "Captain_Orben",
+        "level": 29,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 119,
+        "y": 554.880005,
+        "z": 36.75,
+        "heading": 416,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2264,
+        "spawngroupId": 1974,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Kaden Gron",
+        "rawName": "Kaden_Gron",
+        "level": 31,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -257.880005,
+        "y": 353,
+        "z": 4.38,
+        "heading": 319,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2286,
+        "spawngroupId": 1953,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Wres Corber",
+        "rawName": "Wres_Corber",
+        "level": 34,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -205,
+        "y": 426.880005,
+        "z": 3.75,
+        "heading": 271,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2288,
+        "spawngroupId": 1951,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Gublink Furnhorn",
+        "rawName": "Gublink_Furnhorn",
+        "level": 35,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 4.88,
+        "y": -191.25,
+        "z": 17.75,
+        "heading": 422.5,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 2285,
+        "spawngroupId": 1954,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Jovan",
+        "rawName": "Jovan",
+        "level": 35,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": 24,
+        "y": -199,
+        "z": 1.88,
+        "heading": 370,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 2229,
+        "spawngroupId": 5396,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Guard",
+        "rawName": "a_guard",
+        "level": 36,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 328.880005,
+        "y": -173,
+        "z": 32.799999,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2241,
+        "spawngroupId": 1995,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Guard",
+        "rawName": "a_guard",
+        "level": 36,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -48,
+        "y": -52.880001,
+        "z": 17.75,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2242,
+        "spawngroupId": 1995,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Commander Tehafer",
+        "rawName": "Commander_Tehafer",
+        "level": 37,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -45,
+        "y": -5,
+        "z": 3.8,
+        "heading": 128,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 2245,
+        "spawngroupId": 1992,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "Commander Tehafer",
+        "rawName": "Commander_Tehafer",
+        "level": 37,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -3,
+        "y": -12,
+        "z": 3.75,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2246,
+        "spawngroupId": 1991,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Commander Tehafer",
+        "rawName": "Commander_Tehafer",
+        "level": 37,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -36,
+        "y": 26,
+        "z": 17.75,
+        "heading": 140,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 2255,
+        "spawngroupId": 1983,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "Guard Ranlem",
+        "rawName": "Guard_Ranlem",
+        "level": 37,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 396,
+        "y": -27,
+        "z": 3.75,
+        "heading": 278,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 2226,
+        "spawngroupId": 5393,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Guard Ranlem",
+        "rawName": "Guard_Ranlem",
+        "level": 37,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 366,
+        "y": -55.380001,
+        "z": 3.38,
+        "heading": 406.75,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 2324,
+        "spawngroupId": 5397,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Crenn Salbet",
+        "rawName": "Crenn_Salbet",
+        "level": 38,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -199,
+        "y": 328,
+        "z": 3.75,
+        "heading": 500,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2289,
+        "spawngroupId": 1950,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shady Highpass Citizen",
+        "rawName": "a_shady_Highpass_citizen",
+        "level": 40,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 616,
+        "y": -108,
+        "z": -15,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 215,
+        "spawn2Id": 108780,
+        "spawngroupId": 70565,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Bryan Mcgee",
+        "rawName": "Bryan_McGee",
+        "level": 40,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 91,
+        "y": -231,
+        "z": 21.629999,
+        "heading": 385,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2291,
+        "spawngroupId": 1948,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Dealer",
+        "rawName": "a_dealer",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -259.880005,
+        "y": 426.880005,
+        "z": 3.75,
+        "heading": 85,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 2287,
+        "spawngroupId": 1952,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Dealer",
+        "rawName": "a_dealer",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -244,
+        "y": 340,
+        "z": 3.75,
+        "heading": 452,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2297,
+        "spawngroupId": 1942,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Smuggler",
+        "rawName": "a_smuggler",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 200.880005,
+        "y": 47,
+        "z": 31.75,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2304,
+        "spawngroupId": 1935,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Bartender",
+        "rawName": "Bartender",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -184,
+        "y": 395,
+        "z": 17.75,
+        "heading": 3,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 2299,
+        "spawngroupId": 1940,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Bartender",
+        "rawName": "Bartender",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -165,
+        "y": 403,
+        "z": 3.75,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2305,
+        "spawngroupId": 1934,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Bartholemew",
+        "rawName": "Bartholemew",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 11,
+        "y": -212,
+        "z": 3.75,
+        "heading": 122,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 2306,
+        "spawngroupId": 1933,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Dovik Greenbane",
+        "rawName": "Dovik_Greenbane",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -113,
+        "y": -318,
+        "z": 3.75,
+        "heading": 200,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2296,
+        "spawngroupId": 1943,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Dyn Tarburner",
+        "rawName": "Dyn_Tarburner",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 477,
+        "y": -61,
+        "z": 23.75,
+        "heading": 224,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2303,
+        "spawngroupId": 1936,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Dyona Rossook",
+        "rawName": "Dyona_Rossook",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 135,
+        "y": -248,
+        "z": 3.75,
+        "heading": 482,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2300,
+        "spawngroupId": 1939,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Lyla Whistlewood",
+        "rawName": "Lyla_Whistlewood",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -169,
+        "y": 388,
+        "z": 17.75,
+        "heading": 159,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2298,
+        "spawngroupId": 1941,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Lyn Tarburner",
+        "rawName": "Lyn_Tarburner",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 493,
+        "y": -146,
+        "z": 3.75,
+        "heading": 8,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2302,
+        "spawngroupId": 1937,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Maigin Greyeagle",
+        "rawName": "Maigin_Greyeagle",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 483,
+        "y": 179,
+        "z": 31.75,
+        "heading": 5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2293,
+        "spawngroupId": 1946,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Mardon Smith",
+        "rawName": "Mardon_Smith",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -112,
+        "y": -378,
+        "z": 3.75,
+        "heading": 470,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2295,
+        "spawngroupId": 1944,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Min Greyeagle",
+        "rawName": "Min_Greyeagle",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 461,
+        "y": 197,
+        "z": 31.75,
+        "heading": 123,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2292,
+        "spawngroupId": 1947,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Paulina",
+        "rawName": "Paulina",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 9.88,
+        "y": -233.130005,
+        "z": 17.379999,
+        "heading": 89,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 2263,
+        "spawngroupId": 1975,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Sernn Rossook",
+        "rawName": "Sernn_Rossook",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 154,
+        "y": -218,
+        "z": 3.75,
+        "heading": 265,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2301,
+        "spawngroupId": 1938,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Winn Greenbane",
+        "rawName": "Winn_Greenbane",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -124,
+        "y": -364,
+        "z": 17.75,
+        "heading": 25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2294,
+        "spawngroupId": 1945,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Vranol Blackguard",
+        "rawName": "Vranol_Blackguard",
+        "level": 50,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Necromancer",
+        "type": "Spawn Slot",
+        "x": -230,
+        "y": 384,
+        "z": 17.75,
+        "heading": 508,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2267,
+        "spawngroupId": 1971,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Alhareen The Just",
+        "rawName": "Alhareen_the_Just",
+        "level": 61,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 434,
+        "y": -60,
+        "z": 10.38,
+        "heading": 260,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2268,
+        "spawngroupId": 1970,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Cyrla Shadowstepper",
+        "rawName": "Cyrla_Shadowstepper",
+        "level": 61,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue GM",
+        "type": "Spawn Slot",
+        "x": 325,
+        "y": 84,
+        "z": 45.630001,
+        "heading": 283,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 2266,
+        "spawngroupId": 1972,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Shumpi Wimahnn",
+        "rawName": "Shumpi_Wimahnn",
+        "level": 65,
+        "race": "Halfling",
+        "rawRace": "Halfling",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": -22,
+        "y": 183,
+        "z": 2.13,
+        "heading": 106,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2307,
+        "spawngroupId": 1932,
+        "candidateCount": 1
+      }
+    ]
+  }
+}

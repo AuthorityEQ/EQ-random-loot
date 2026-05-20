@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
 import { AppNavLinks, AppSubNavLinks } from "@/components/AppNavLinks";
 import { AuthSessionProvider } from "@/components/AuthSessionProvider";
@@ -38,9 +39,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(() => {
+        <Script
+          id="frostreaver-theme-init"
+          strategy="beforeInteractive"
+        >
+          {`(() => {
   try {
     const saved = localStorage.getItem("frostreaver-theme");
     const theme = saved === "light" || saved === "dark"
@@ -50,12 +53,13 @@ export default function RootLayout({
   } catch {
     document.documentElement.dataset.theme = "light";
   }
-})();`,
-          }}
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(() => {
+})();`}
+        </Script>
+        <Script
+          id="frostreaver-server-init"
+          strategy="beforeInteractive"
+        >
+          {`(() => {
   try {
     const url = new URL(location.href);
     const param = url.searchParams.get("server");
@@ -64,9 +68,8 @@ export default function RootLayout({
     const server = valid.includes(param) ? param : (valid.includes(saved) ? saved : "frostreaver");
     document.documentElement.dataset.server = server;
   } catch { document.documentElement.dataset.server = "frostreaver"; }
-})();`,
-          }}
-        />
+})();`}
+        </Script>
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#2d6a4f" />
       </head>

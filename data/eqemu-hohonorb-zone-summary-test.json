@@ -1,0 +1,2424 @@
+{
+  "summary": {
+    "zoneSlug": "the-temple-of-marr",
+    "zoneName": "The Temple of Marr",
+    "requestedZoneShortName": "hohonorb",
+    "zoneShortName": "hohonorb",
+    "sourceFile": "local-eqemu-database",
+    "matched": true,
+    "expansion": "Planes of Power",
+    "eqemuExpansionId": 4,
+    "expansionSource": "eqemu-zone-table",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobCount": 55,
+    "unknownLevelCount": 0,
+    "minLevel": 60,
+    "maxLevel": 75,
+    "averageLevel": 65.4,
+    "medianLevel": 67,
+    "levelCounts": {
+      "60": 1,
+      "61": 14,
+      "64": 8,
+      "67": 25,
+      "68": 2,
+      "69": 2,
+      "73": 1,
+      "75": 2
+    },
+    "levelBuckets": {
+      "1-10": 0,
+      "11-20": 0,
+      "21-30": 0,
+      "31-40": 0,
+      "41-50": 0,
+      "51-60": 1,
+      "61+": 54
+    },
+    "levelProfileLabel": "High-level zone",
+    "mobGroupNameCounts": {
+      "A Temple Guardian": 13,
+      "A Wrulon Guard": 11,
+      "A Guardian Wrulon": 10,
+      "An Honorable Protector": 8,
+      "A Wrulon Protector": 3,
+      "An Honorable Protector Of Marr": 2,
+      "Bromal Rythat": 1,
+      "Dogan Merlok": 1,
+      "Druhar Gandoc": 1,
+      "Edium, Guardian Of Marr": 1,
+      "Halon Of Marr": 1,
+      "Lmm Trigger": 1,
+      "Ralthazor, Champion Of Marr": 1,
+      "Rhodoc Sorenby": 1
+    },
+    "classCounts": {
+      "Warrior": 53,
+      "Paladin": 2
+    },
+    "raceCounts": {
+      "Wrulon": 34,
+      "Human": 17,
+      "Valorian": 2,
+      "Froglok": 1,
+      "Invisible Man": 1
+    },
+    "normalizedRaceCounts": {
+      "Wrulon": 34,
+      "Human": 17,
+      "Valorian": 2,
+      "Froglok": 1,
+      "Invisible Man": 1
+    },
+    "normalizedRaceLevelCounts": {
+      "Froglok": {
+        "75": 1
+      },
+      "Human": {
+        "67": 13,
+        "68": 2,
+        "73": 1,
+        "75": 1
+      },
+      "Invisible Man": {
+        "60": 1
+      },
+      "Valorian": {
+        "69": 2
+      },
+      "Wrulon": {
+        "61": 14,
+        "64": 8,
+        "67": 12
+      }
+    },
+    "raceAliases": {
+      "Froglok": [
+        "Froglok"
+      ],
+      "Human": [
+        "Human"
+      ],
+      "Invisible Man": [
+        "Invisible Man"
+      ],
+      "Valorian": [
+        "Valorian"
+      ],
+      "Wrulon": [
+        "Wrulon"
+      ]
+    },
+    "typeCounts": {
+      "Spawn Slot": 55
+    },
+    "notes": [
+      "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+      "Read-only test export; not wired into production /zones data."
+    ],
+    "spawnMapPrototype": {
+      "sourceKind": "Local EQEmu/PEQ database export",
+      "coordinateNote": "Original EQEmu spawn2 x/y/z coordinates are preserved for map prototyping.",
+      "points": [
+        {
+          "spawn2Id": 46727,
+          "spawngroupId": 31654,
+          "name": "A_Temple_Guardian",
+          "displayName": "A Temple Guardian",
+          "level": 67,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 1052,
+          "y": 94,
+          "z": 400.5,
+          "heading": 264,
+          "chance": 50,
+          "respawnTime": 4800,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 46728,
+          "spawngroupId": 31654,
+          "name": "A_Temple_Guardian",
+          "displayName": "A Temple Guardian",
+          "level": 67,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 1051,
+          "y": 93,
+          "z": 384,
+          "heading": 256,
+          "chance": 50,
+          "respawnTime": 4800,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 46729,
+          "spawngroupId": 31655,
+          "name": "A_Wrulon_Guard",
+          "displayName": "A Wrulon Guard",
+          "level": 61,
+          "race": "Wrulon",
+          "rawRace": "Wrulon",
+          "className": "Warrior",
+          "x": 1114,
+          "y": 63,
+          "z": 405.5,
+          "heading": 384,
+          "chance": 100,
+          "respawnTime": 4800,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46730,
+          "spawngroupId": 31656,
+          "name": "A_Temple_Guardian",
+          "displayName": "A Temple Guardian",
+          "level": 67,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 1052,
+          "y": -97,
+          "z": 400.5,
+          "heading": 10,
+          "chance": 50,
+          "respawnTime": 4800,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 46731,
+          "spawngroupId": 31656,
+          "name": "A_Temple_Guardian",
+          "displayName": "A Temple Guardian",
+          "level": 67,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 1051,
+          "y": -93,
+          "z": 384,
+          "heading": 0,
+          "chance": 50,
+          "respawnTime": 4800,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 46732,
+          "spawngroupId": 31657,
+          "name": "A_Wrulon_Guard",
+          "displayName": "A Wrulon Guard",
+          "level": 61,
+          "race": "Wrulon",
+          "rawRace": "Wrulon",
+          "className": "Warrior",
+          "x": 1114,
+          "y": -63,
+          "z": 405.5,
+          "heading": 384,
+          "chance": 100,
+          "respawnTime": 4800,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46733,
+          "spawngroupId": 31658,
+          "name": "A_Guardian_Wrulon",
+          "displayName": "A Guardian Wrulon",
+          "level": 67,
+          "race": "Wrulon",
+          "rawRace": "Wrulon",
+          "className": "Warrior",
+          "x": 1045,
+          "y": -1,
+          "z": 405.630005,
+          "heading": 384,
+          "chance": 100,
+          "respawnTime": 4800,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46734,
+          "spawngroupId": 31659,
+          "name": "A_Wrulon_Guard",
+          "displayName": "A Wrulon Guard",
+          "level": 61,
+          "race": "Wrulon",
+          "rawRace": "Wrulon",
+          "className": "Warrior",
+          "x": 2099.629883,
+          "y": -25.5,
+          "z": 453.5,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 4800,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46735,
+          "spawngroupId": 31660,
+          "name": "A_Wrulon_Guard",
+          "displayName": "A Wrulon Guard",
+          "level": 61,
+          "race": "Wrulon",
+          "rawRace": "Wrulon",
+          "className": "Warrior",
+          "x": 2105,
+          "y": 31,
+          "z": 453.5,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 4800,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46736,
+          "spawngroupId": 31661,
+          "name": "An_Honorable_Protector",
+          "displayName": "An Honorable Protector",
+          "level": 67,
+          "race": "Wrulon",
+          "rawRace": "Wrulon",
+          "className": "Warrior",
+          "x": 2565,
+          "y": 32,
+          "z": 480.5,
+          "heading": 384,
+          "chance": 100,
+          "respawnTime": 720,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46737,
+          "spawngroupId": 31662,
+          "name": "A_Guardian_Wrulon",
+          "displayName": "A Guardian Wrulon",
+          "level": 67,
+          "race": "Wrulon",
+          "rawRace": "Wrulon",
+          "className": "Warrior",
+          "x": 2075,
+          "y": -221,
+          "z": 453.5,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 4800,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46738,
+          "spawngroupId": 31663,
+          "name": "An_Honorable_Protector",
+          "displayName": "An Honorable Protector",
+          "level": 67,
+          "race": "Wrulon",
+          "rawRace": "Wrulon",
+          "className": "Warrior",
+          "x": 2565,
+          "y": -32,
+          "z": 480.5,
+          "heading": 384,
+          "chance": 100,
+          "respawnTime": 720,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46739,
+          "spawngroupId": 31664,
+          "name": "A_Guardian_Wrulon",
+          "displayName": "A Guardian Wrulon",
+          "level": 67,
+          "race": "Wrulon",
+          "rawRace": "Wrulon",
+          "className": "Warrior",
+          "x": 2135,
+          "y": -221,
+          "z": 453.5,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 4800,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46740,
+          "spawngroupId": 31665,
+          "name": "An_Honorable_Protector",
+          "displayName": "An Honorable Protector",
+          "level": 64,
+          "race": "Wrulon",
+          "rawRace": "Wrulon",
+          "className": "Warrior",
+          "x": 2483,
+          "y": 14,
+          "z": 454.75,
+          "heading": 384,
+          "chance": 100,
+          "respawnTime": 720,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46741,
+          "spawngroupId": 31666,
+          "name": "A_Wrulon_Protector",
+          "displayName": "A Wrulon Protector",
+          "level": 61,
+          "race": "Wrulon",
+          "rawRace": "Wrulon",
+          "className": "Warrior",
+          "x": 2007,
+          "y": 31,
+          "z": 453.5,
+          "heading": 384,
+          "chance": 100,
+          "respawnTime": 4800,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46742,
+          "spawngroupId": 31667,
+          "name": "An_Honorable_Protector",
+          "displayName": "An Honorable Protector",
+          "level": 64,
+          "race": "Wrulon",
+          "rawRace": "Wrulon",
+          "className": "Warrior",
+          "x": 2349,
+          "y": 139,
+          "z": 454.75,
+          "heading": 384,
+          "chance": 100,
+          "respawnTime": 720,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46743,
+          "spawngroupId": 31668,
+          "name": "A_Wrulon_Guard",
+          "displayName": "A Wrulon Guard",
+          "level": 61,
+          "race": "Wrulon",
+          "rawRace": "Wrulon",
+          "className": "Warrior",
+          "x": 2007,
+          "y": -31,
+          "z": 453.5,
+          "heading": 384,
+          "chance": 100,
+          "respawnTime": 4800,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46744,
+          "spawngroupId": 31669,
+          "name": "An_Honorable_Protector",
+          "displayName": "An Honorable Protector",
+          "level": 64,
+          "race": "Wrulon",
+          "rawRace": "Wrulon",
+          "className": "Warrior",
+          "x": 2350,
+          "y": -165,
+          "z": 454.75,
+          "heading": 384,
+          "chance": 100,
+          "respawnTime": 720,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46745,
+          "spawngroupId": 31670,
+          "name": "A_Guardian_Wrulon",
+          "displayName": "A Guardian Wrulon",
+          "level": 67,
+          "race": "Wrulon",
+          "rawRace": "Wrulon",
+          "className": "Warrior",
+          "x": 2013,
+          "y": -105,
+          "z": 453.5,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 4800,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46746,
+          "spawngroupId": 31671,
+          "name": "A_Guardian_Wrulon",
+          "displayName": "A Guardian Wrulon",
+          "level": 67,
+          "race": "Wrulon",
+          "rawRace": "Wrulon",
+          "className": "Warrior",
+          "x": 1953,
+          "y": -105,
+          "z": 453.5,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 4800,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46747,
+          "spawngroupId": 31672,
+          "name": "A_Guardian_Wrulon",
+          "displayName": "A Guardian Wrulon",
+          "level": 67,
+          "race": "Wrulon",
+          "rawRace": "Wrulon",
+          "className": "Warrior",
+          "x": 2060,
+          "y": -372,
+          "z": 453.5,
+          "heading": 384,
+          "chance": 100,
+          "respawnTime": 4800,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46748,
+          "spawngroupId": 31673,
+          "name": "A_Guardian_Wrulon",
+          "displayName": "A Guardian Wrulon",
+          "level": 67,
+          "race": "Wrulon",
+          "rawRace": "Wrulon",
+          "className": "Warrior",
+          "x": 2060,
+          "y": -428,
+          "z": 453.5,
+          "heading": 384,
+          "chance": 100,
+          "respawnTime": 4800,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46749,
+          "spawngroupId": 31674,
+          "name": "A_Guardian_Wrulon",
+          "displayName": "A Guardian Wrulon",
+          "level": 67,
+          "race": "Wrulon",
+          "rawRace": "Wrulon",
+          "className": "Warrior",
+          "x": 1784,
+          "y": -194,
+          "z": 453.5,
+          "heading": 384,
+          "chance": 100,
+          "respawnTime": 4800,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46750,
+          "spawngroupId": 31675,
+          "name": "A_Guardian_Wrulon",
+          "displayName": "A Guardian Wrulon",
+          "level": 67,
+          "race": "Wrulon",
+          "rawRace": "Wrulon",
+          "className": "Warrior",
+          "x": 1784,
+          "y": -249,
+          "z": 453.5,
+          "heading": 384,
+          "chance": 100,
+          "respawnTime": 4800,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46751,
+          "spawngroupId": 31676,
+          "name": "A_Wrulon_Guard",
+          "displayName": "A Wrulon Guard",
+          "level": 61,
+          "race": "Wrulon",
+          "rawRace": "Wrulon",
+          "className": "Warrior",
+          "x": 1739,
+          "y": -244,
+          "z": 453.5,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 4800,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46752,
+          "spawngroupId": 31677,
+          "name": "A_Wrulon_Guard",
+          "displayName": "A Wrulon Guard",
+          "level": 61,
+          "race": "Wrulon",
+          "rawRace": "Wrulon",
+          "className": "Warrior",
+          "x": 1677,
+          "y": -244,
+          "z": 453.5,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 4800,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46754,
+          "spawngroupId": 31679,
+          "name": "A_Temple_Guardian",
+          "displayName": "A Temple Guardian",
+          "level": 67,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 1618,
+          "y": -133,
+          "z": 448.5,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 4800,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46755,
+          "spawngroupId": 31680,
+          "name": "A_Temple_Guardian",
+          "displayName": "A Temple Guardian",
+          "level": 67,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 1554,
+          "y": -133,
+          "z": 448.5,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 4800,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46756,
+          "spawngroupId": 31681,
+          "name": "A_Temple_Guardian",
+          "displayName": "A Temple Guardian",
+          "level": 67,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 1312,
+          "y": -34,
+          "z": 448.5,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 4800,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46757,
+          "spawngroupId": 31682,
+          "name": "A_Temple_Guardian",
+          "displayName": "A Temple Guardian",
+          "level": 67,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 1312,
+          "y": 34,
+          "z": 448.5,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 4800,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46758,
+          "spawngroupId": 31683,
+          "name": "A_Guardian_Wrulon",
+          "displayName": "A Guardian Wrulon",
+          "level": 67,
+          "race": "Wrulon",
+          "rawRace": "Wrulon",
+          "className": "Warrior",
+          "x": 1385,
+          "y": 0,
+          "z": 453.5,
+          "heading": 384,
+          "chance": 100,
+          "respawnTime": 4800,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46759,
+          "spawngroupId": 31684,
+          "name": "A_Temple_Guardian",
+          "displayName": "A Temple Guardian",
+          "level": 67,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 1242,
+          "y": -29,
+          "z": 448.5,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 4800,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46760,
+          "spawngroupId": 31685,
+          "name": "A_Temple_Guardian",
+          "displayName": "A Temple Guardian",
+          "level": 67,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 1242,
+          "y": 29,
+          "z": 448.5,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 4800,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46761,
+          "spawngroupId": 31686,
+          "name": "An_Honorable_Protector_of_Marr",
+          "displayName": "An Honorable Protector Of Marr",
+          "level": 64,
+          "race": "Wrulon",
+          "rawRace": "Wrulon",
+          "className": "Warrior",
+          "x": 2699,
+          "y": 32,
+          "z": 486.75,
+          "heading": 384,
+          "chance": 100,
+          "respawnTime": 720,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46762,
+          "spawngroupId": 31687,
+          "name": "An_Honorable_Protector_of_Marr",
+          "displayName": "An Honorable Protector Of Marr",
+          "level": 64,
+          "race": "Wrulon",
+          "rawRace": "Wrulon",
+          "className": "Warrior",
+          "x": 2699,
+          "y": -32,
+          "z": 486.75,
+          "heading": 384,
+          "chance": 100,
+          "respawnTime": 720,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46763,
+          "spawngroupId": 31688,
+          "name": "Druhar_Gandoc",
+          "displayName": "Druhar Gandoc",
+          "level": 69,
+          "race": "Valorian",
+          "rawRace": "Valorian",
+          "className": "Warrior",
+          "x": 1706,
+          "y": -388,
+          "z": 448.5,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46764,
+          "spawngroupId": 31689,
+          "name": "Dogan_Merlok",
+          "displayName": "Dogan Merlok",
+          "level": 68,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 1357,
+          "y": -388,
+          "z": 448.5,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46765,
+          "spawngroupId": 31690,
+          "name": "A_Wrulon_Guard",
+          "displayName": "A Wrulon Guard",
+          "level": 61,
+          "race": "Wrulon",
+          "rawRace": "Wrulon",
+          "className": "Warrior",
+          "x": 1386,
+          "y": -244,
+          "z": 453.5,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 4800,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46766,
+          "spawngroupId": 31691,
+          "name": "A_Wrulon_Protector",
+          "displayName": "A Wrulon Protector",
+          "level": 61,
+          "race": "Wrulon",
+          "rawRace": "Wrulon",
+          "className": "Warrior",
+          "x": 1324,
+          "y": -244,
+          "z": 453.5,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 4800,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46767,
+          "spawngroupId": 31692,
+          "name": "Bromal_Rythat",
+          "displayName": "Bromal Rythat",
+          "level": 69,
+          "race": "Valorian",
+          "rawRace": "Valorian",
+          "className": "Warrior",
+          "x": 1706,
+          "y": 399,
+          "z": 448.5,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46768,
+          "spawngroupId": 31693,
+          "name": "A_Wrulon_Guard",
+          "displayName": "A Wrulon Guard",
+          "level": 61,
+          "race": "Wrulon",
+          "rawRace": "Wrulon",
+          "className": "Warrior",
+          "x": 1678,
+          "y": 243,
+          "z": 453.5,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 4800,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46769,
+          "spawngroupId": 31694,
+          "name": "A_Wrulon_Guard",
+          "displayName": "A Wrulon Guard",
+          "level": 61,
+          "race": "Wrulon",
+          "rawRace": "Wrulon",
+          "className": "Warrior",
+          "x": 1739,
+          "y": 243,
+          "z": 453.5,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 4800,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46770,
+          "spawngroupId": 31695,
+          "name": "Rhodoc_Sorenby",
+          "displayName": "Rhodoc Sorenby",
+          "level": 68,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 1357,
+          "y": 415,
+          "z": 448.5,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46771,
+          "spawngroupId": 31696,
+          "name": "A_Wrulon_Guard",
+          "displayName": "A Wrulon Guard",
+          "level": 61,
+          "race": "Wrulon",
+          "rawRace": "Wrulon",
+          "className": "Warrior",
+          "x": 1324,
+          "y": 243,
+          "z": 453.5,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 4800,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46772,
+          "spawngroupId": 31697,
+          "name": "A_Wrulon_Protector",
+          "displayName": "A Wrulon Protector",
+          "level": 61,
+          "race": "Wrulon",
+          "rawRace": "Wrulon",
+          "className": "Warrior",
+          "x": 1386,
+          "y": 243,
+          "z": 453.5,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 4800,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46773,
+          "spawngroupId": 31698,
+          "name": "A_Temple_Guardian",
+          "displayName": "A Temple Guardian",
+          "level": 67,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 1618,
+          "y": 133,
+          "z": 448.5,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 4800,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46774,
+          "spawngroupId": 31699,
+          "name": "A_Temple_Guardian",
+          "displayName": "A Temple Guardian",
+          "level": 67,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 1554,
+          "y": 133,
+          "z": 448.5,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 4800,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 46775,
+          "spawngroupId": 31700,
+          "name": "A_Temple_Guardian",
+          "displayName": "A Temple Guardian",
+          "level": 67,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 1831,
+          "y": -220,
+          "z": 448.5,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 4800,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 137553,
+          "spawngroupId": 99096,
+          "name": "Ralthazor,_Champion_of_Marr",
+          "displayName": "Ralthazor, Champion Of Marr",
+          "level": 75,
+          "race": "Froglok",
+          "rawRace": "Froglok",
+          "className": "Paladin",
+          "x": 2495.687744,
+          "y": -0.053668,
+          "z": 444.126801,
+          "heading": 384,
+          "chance": 100,
+          "respawnTime": 259200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 250086,
+          "spawngroupId": 275076,
+          "name": "An_Honorable_Protector",
+          "displayName": "An Honorable Protector",
+          "level": 64,
+          "race": "Wrulon",
+          "rawRace": "Wrulon",
+          "className": "Warrior",
+          "x": 2349.330078,
+          "y": 168.289993,
+          "z": 444.230011,
+          "heading": 385,
+          "chance": 100,
+          "respawnTime": 720,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 250087,
+          "spawngroupId": 275077,
+          "name": "An_Honorable_Protector",
+          "displayName": "An Honorable Protector",
+          "level": 64,
+          "race": "Wrulon",
+          "rawRace": "Wrulon",
+          "className": "Warrior",
+          "x": 2350,
+          "y": -139.039993,
+          "z": 444.230011,
+          "heading": 385,
+          "chance": 100,
+          "respawnTime": 720,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 250088,
+          "spawngroupId": 275078,
+          "name": "An_Honorable_Protector",
+          "displayName": "An Honorable Protector",
+          "level": 64,
+          "race": "Wrulon",
+          "rawRace": "Wrulon",
+          "className": "Warrior",
+          "x": 2482.620117,
+          "y": -15.66,
+          "z": 444.230011,
+          "heading": 385,
+          "chance": 100,
+          "respawnTime": 720,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 250089,
+          "spawngroupId": 275079,
+          "name": "Halon_of_Marr",
+          "displayName": "Halon Of Marr",
+          "level": 73,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 2362.786621,
+          "y": 154.171082,
+          "z": 444.126801,
+          "heading": 382.25,
+          "chance": 100,
+          "respawnTime": 86400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 250090,
+          "spawngroupId": 275080,
+          "name": "Edium,_Guardian_of_Marr",
+          "displayName": "Edium, Guardian Of Marr",
+          "level": 75,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Paladin",
+          "x": 2366.363525,
+          "y": -151.669281,
+          "z": 444.127838,
+          "heading": 384.25,
+          "chance": 100,
+          "respawnTime": 86400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 258526,
+          "spawngroupId": 282494,
+          "name": "LMM_trigger",
+          "displayName": "Lmm Trigger",
+          "level": 60,
+          "race": "Invisible Man",
+          "rawRace": "Invisible Man",
+          "className": "Warrior",
+          "x": 1256,
+          "y": 0,
+          "z": 523,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 259200,
+          "candidateCount": 1
+        }
+      ]
+    }
+  },
+  "details": {
+    "zoneSlug": "the-temple-of-marr",
+    "routeSlug": "hohonorb",
+    "zoneName": "The Temple of Marr",
+    "sourceFile": "local-eqemu-database",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobGroups": [
+      {
+        "displayName": "Lmm Trigger",
+        "rawNames": [
+          "LMM_trigger"
+        ],
+        "count": 1,
+        "levelMin": 60,
+        "levelMax": 60,
+        "levels": [
+          60
+        ],
+        "raceCounts": {
+          "Invisible Man": 1
+        },
+        "rawRaceCounts": {
+          "Invisible Man": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Wrulon Guard",
+        "rawNames": [
+          "A_Wrulon_Guard"
+        ],
+        "count": 11,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Wrulon": 11
+        },
+        "rawRaceCounts": {
+          "Wrulon": 11
+        },
+        "classCounts": {
+          "Warrior": 11
+        },
+        "typeCounts": {
+          "Spawn Slot": 11
+        }
+      },
+      {
+        "displayName": "A Wrulon Protector",
+        "rawNames": [
+          "A_Wrulon_Protector"
+        ],
+        "count": 3,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Wrulon": 3
+        },
+        "rawRaceCounts": {
+          "Wrulon": 3
+        },
+        "classCounts": {
+          "Warrior": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "An Honorable Protector",
+        "rawNames": [
+          "An_Honorable_Protector"
+        ],
+        "count": 6,
+        "levelMin": 64,
+        "levelMax": 64,
+        "levels": [
+          64
+        ],
+        "raceCounts": {
+          "Wrulon": 6
+        },
+        "rawRaceCounts": {
+          "Wrulon": 6
+        },
+        "classCounts": {
+          "Warrior": 6
+        },
+        "typeCounts": {
+          "Spawn Slot": 6
+        }
+      },
+      {
+        "displayName": "An Honorable Protector Of Marr",
+        "rawNames": [
+          "An_Honorable_Protector_of_Marr"
+        ],
+        "count": 2,
+        "levelMin": 64,
+        "levelMax": 64,
+        "levels": [
+          64
+        ],
+        "raceCounts": {
+          "Wrulon": 2
+        },
+        "rawRaceCounts": {
+          "Wrulon": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Temple Guardian",
+        "rawNames": [
+          "A_Temple_Guardian"
+        ],
+        "count": 13,
+        "levelMin": 67,
+        "levelMax": 67,
+        "levels": [
+          67
+        ],
+        "raceCounts": {
+          "Human": 13
+        },
+        "rawRaceCounts": {
+          "Human": 13
+        },
+        "classCounts": {
+          "Warrior": 13
+        },
+        "typeCounts": {
+          "Spawn Slot": 13
+        }
+      },
+      {
+        "displayName": "A Guardian Wrulon",
+        "rawNames": [
+          "A_Guardian_Wrulon"
+        ],
+        "count": 10,
+        "levelMin": 67,
+        "levelMax": 67,
+        "levels": [
+          67
+        ],
+        "raceCounts": {
+          "Wrulon": 10
+        },
+        "rawRaceCounts": {
+          "Wrulon": 10
+        },
+        "classCounts": {
+          "Warrior": 10
+        },
+        "typeCounts": {
+          "Spawn Slot": 10
+        }
+      },
+      {
+        "displayName": "An Honorable Protector",
+        "rawNames": [
+          "An_Honorable_Protector"
+        ],
+        "count": 2,
+        "levelMin": 67,
+        "levelMax": 67,
+        "levels": [
+          67
+        ],
+        "raceCounts": {
+          "Wrulon": 2
+        },
+        "rawRaceCounts": {
+          "Wrulon": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "Dogan Merlok",
+        "rawNames": [
+          "Dogan_Merlok"
+        ],
+        "count": 1,
+        "levelMin": 68,
+        "levelMax": 68,
+        "levels": [
+          68
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Rhodoc Sorenby",
+        "rawNames": [
+          "Rhodoc_Sorenby"
+        ],
+        "count": 1,
+        "levelMin": 68,
+        "levelMax": 68,
+        "levels": [
+          68
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Bromal Rythat",
+        "rawNames": [
+          "Bromal_Rythat"
+        ],
+        "count": 1,
+        "levelMin": 69,
+        "levelMax": 69,
+        "levels": [
+          69
+        ],
+        "raceCounts": {
+          "Valorian": 1
+        },
+        "rawRaceCounts": {
+          "Valorian": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Druhar Gandoc",
+        "rawNames": [
+          "Druhar_Gandoc"
+        ],
+        "count": 1,
+        "levelMin": 69,
+        "levelMax": 69,
+        "levels": [
+          69
+        ],
+        "raceCounts": {
+          "Valorian": 1
+        },
+        "rawRaceCounts": {
+          "Valorian": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Halon Of Marr",
+        "rawNames": [
+          "Halon_of_Marr"
+        ],
+        "count": 1,
+        "levelMin": 73,
+        "levelMax": 73,
+        "levels": [
+          73
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Edium, Guardian Of Marr",
+        "rawNames": [
+          "Edium,_Guardian_of_Marr"
+        ],
+        "count": 1,
+        "levelMin": 75,
+        "levelMax": 75,
+        "levels": [
+          75
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Ralthazor, Champion Of Marr",
+        "rawNames": [
+          "Ralthazor,_Champion_of_Marr"
+        ],
+        "count": 1,
+        "levelMin": 75,
+        "levelMax": 75,
+        "levels": [
+          75
+        ],
+        "raceCounts": {
+          "Froglok": 1
+        },
+        "rawRaceCounts": {
+          "Froglok": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      }
+    ],
+    "rows": [
+      {
+        "displayName": "Lmm Trigger",
+        "rawName": "LMM_trigger",
+        "level": 60,
+        "race": "Invisible Man",
+        "rawRace": "Invisible Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1256,
+        "y": 0,
+        "z": 523,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 259200,
+        "spawn2Id": 258526,
+        "spawngroupId": 282494,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Wrulon Guard",
+        "rawName": "A_Wrulon_Guard",
+        "level": 61,
+        "race": "Wrulon",
+        "rawRace": "Wrulon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1114,
+        "y": 63,
+        "z": 405.5,
+        "heading": 384,
+        "chance": 100,
+        "respawnTime": 4800,
+        "spawn2Id": 46729,
+        "spawngroupId": 31655,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Wrulon Guard",
+        "rawName": "A_Wrulon_Guard",
+        "level": 61,
+        "race": "Wrulon",
+        "rawRace": "Wrulon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1114,
+        "y": -63,
+        "z": 405.5,
+        "heading": 384,
+        "chance": 100,
+        "respawnTime": 4800,
+        "spawn2Id": 46732,
+        "spawngroupId": 31657,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Wrulon Guard",
+        "rawName": "A_Wrulon_Guard",
+        "level": 61,
+        "race": "Wrulon",
+        "rawRace": "Wrulon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2099.629883,
+        "y": -25.5,
+        "z": 453.5,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 4800,
+        "spawn2Id": 46734,
+        "spawngroupId": 31659,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Wrulon Guard",
+        "rawName": "A_Wrulon_Guard",
+        "level": 61,
+        "race": "Wrulon",
+        "rawRace": "Wrulon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2105,
+        "y": 31,
+        "z": 453.5,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 4800,
+        "spawn2Id": 46735,
+        "spawngroupId": 31660,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Wrulon Guard",
+        "rawName": "A_Wrulon_Guard",
+        "level": 61,
+        "race": "Wrulon",
+        "rawRace": "Wrulon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2007,
+        "y": -31,
+        "z": 453.5,
+        "heading": 384,
+        "chance": 100,
+        "respawnTime": 4800,
+        "spawn2Id": 46743,
+        "spawngroupId": 31668,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Wrulon Guard",
+        "rawName": "A_Wrulon_Guard",
+        "level": 61,
+        "race": "Wrulon",
+        "rawRace": "Wrulon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1739,
+        "y": -244,
+        "z": 453.5,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 4800,
+        "spawn2Id": 46751,
+        "spawngroupId": 31676,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Wrulon Guard",
+        "rawName": "A_Wrulon_Guard",
+        "level": 61,
+        "race": "Wrulon",
+        "rawRace": "Wrulon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1677,
+        "y": -244,
+        "z": 453.5,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 4800,
+        "spawn2Id": 46752,
+        "spawngroupId": 31677,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Wrulon Guard",
+        "rawName": "A_Wrulon_Guard",
+        "level": 61,
+        "race": "Wrulon",
+        "rawRace": "Wrulon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1386,
+        "y": -244,
+        "z": 453.5,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 4800,
+        "spawn2Id": 46765,
+        "spawngroupId": 31690,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Wrulon Guard",
+        "rawName": "A_Wrulon_Guard",
+        "level": 61,
+        "race": "Wrulon",
+        "rawRace": "Wrulon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1678,
+        "y": 243,
+        "z": 453.5,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 4800,
+        "spawn2Id": 46768,
+        "spawngroupId": 31693,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Wrulon Guard",
+        "rawName": "A_Wrulon_Guard",
+        "level": 61,
+        "race": "Wrulon",
+        "rawRace": "Wrulon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1739,
+        "y": 243,
+        "z": 453.5,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 4800,
+        "spawn2Id": 46769,
+        "spawngroupId": 31694,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Wrulon Guard",
+        "rawName": "A_Wrulon_Guard",
+        "level": 61,
+        "race": "Wrulon",
+        "rawRace": "Wrulon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1324,
+        "y": 243,
+        "z": 453.5,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 4800,
+        "spawn2Id": 46771,
+        "spawngroupId": 31696,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Wrulon Protector",
+        "rawName": "A_Wrulon_Protector",
+        "level": 61,
+        "race": "Wrulon",
+        "rawRace": "Wrulon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2007,
+        "y": 31,
+        "z": 453.5,
+        "heading": 384,
+        "chance": 100,
+        "respawnTime": 4800,
+        "spawn2Id": 46741,
+        "spawngroupId": 31666,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Wrulon Protector",
+        "rawName": "A_Wrulon_Protector",
+        "level": 61,
+        "race": "Wrulon",
+        "rawRace": "Wrulon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1324,
+        "y": -244,
+        "z": 453.5,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 4800,
+        "spawn2Id": 46766,
+        "spawngroupId": 31691,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Wrulon Protector",
+        "rawName": "A_Wrulon_Protector",
+        "level": 61,
+        "race": "Wrulon",
+        "rawRace": "Wrulon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1386,
+        "y": 243,
+        "z": 453.5,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 4800,
+        "spawn2Id": 46772,
+        "spawngroupId": 31697,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Honorable Protector",
+        "rawName": "An_Honorable_Protector",
+        "level": 64,
+        "race": "Wrulon",
+        "rawRace": "Wrulon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2483,
+        "y": 14,
+        "z": 454.75,
+        "heading": 384,
+        "chance": 100,
+        "respawnTime": 720,
+        "spawn2Id": 46740,
+        "spawngroupId": 31665,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Honorable Protector",
+        "rawName": "An_Honorable_Protector",
+        "level": 64,
+        "race": "Wrulon",
+        "rawRace": "Wrulon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2349,
+        "y": 139,
+        "z": 454.75,
+        "heading": 384,
+        "chance": 100,
+        "respawnTime": 720,
+        "spawn2Id": 46742,
+        "spawngroupId": 31667,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Honorable Protector",
+        "rawName": "An_Honorable_Protector",
+        "level": 64,
+        "race": "Wrulon",
+        "rawRace": "Wrulon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2350,
+        "y": -165,
+        "z": 454.75,
+        "heading": 384,
+        "chance": 100,
+        "respawnTime": 720,
+        "spawn2Id": 46744,
+        "spawngroupId": 31669,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Honorable Protector",
+        "rawName": "An_Honorable_Protector",
+        "level": 64,
+        "race": "Wrulon",
+        "rawRace": "Wrulon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2349.330078,
+        "y": 168.289993,
+        "z": 444.230011,
+        "heading": 385,
+        "chance": 100,
+        "respawnTime": 720,
+        "spawn2Id": 250086,
+        "spawngroupId": 275076,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Honorable Protector",
+        "rawName": "An_Honorable_Protector",
+        "level": 64,
+        "race": "Wrulon",
+        "rawRace": "Wrulon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2350,
+        "y": -139.039993,
+        "z": 444.230011,
+        "heading": 385,
+        "chance": 100,
+        "respawnTime": 720,
+        "spawn2Id": 250087,
+        "spawngroupId": 275077,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Honorable Protector",
+        "rawName": "An_Honorable_Protector",
+        "level": 64,
+        "race": "Wrulon",
+        "rawRace": "Wrulon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2482.620117,
+        "y": -15.66,
+        "z": 444.230011,
+        "heading": 385,
+        "chance": 100,
+        "respawnTime": 720,
+        "spawn2Id": 250088,
+        "spawngroupId": 275078,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Honorable Protector Of Marr",
+        "rawName": "An_Honorable_Protector_of_Marr",
+        "level": 64,
+        "race": "Wrulon",
+        "rawRace": "Wrulon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2699,
+        "y": 32,
+        "z": 486.75,
+        "heading": 384,
+        "chance": 100,
+        "respawnTime": 720,
+        "spawn2Id": 46761,
+        "spawngroupId": 31686,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Honorable Protector Of Marr",
+        "rawName": "An_Honorable_Protector_of_Marr",
+        "level": 64,
+        "race": "Wrulon",
+        "rawRace": "Wrulon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2699,
+        "y": -32,
+        "z": 486.75,
+        "heading": 384,
+        "chance": 100,
+        "respawnTime": 720,
+        "spawn2Id": 46762,
+        "spawngroupId": 31687,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Guardian Wrulon",
+        "rawName": "A_Guardian_Wrulon",
+        "level": 67,
+        "race": "Wrulon",
+        "rawRace": "Wrulon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1045,
+        "y": -1,
+        "z": 405.630005,
+        "heading": 384,
+        "chance": 100,
+        "respawnTime": 4800,
+        "spawn2Id": 46733,
+        "spawngroupId": 31658,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Guardian Wrulon",
+        "rawName": "A_Guardian_Wrulon",
+        "level": 67,
+        "race": "Wrulon",
+        "rawRace": "Wrulon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2075,
+        "y": -221,
+        "z": 453.5,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 4800,
+        "spawn2Id": 46737,
+        "spawngroupId": 31662,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Guardian Wrulon",
+        "rawName": "A_Guardian_Wrulon",
+        "level": 67,
+        "race": "Wrulon",
+        "rawRace": "Wrulon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2135,
+        "y": -221,
+        "z": 453.5,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 4800,
+        "spawn2Id": 46739,
+        "spawngroupId": 31664,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Guardian Wrulon",
+        "rawName": "A_Guardian_Wrulon",
+        "level": 67,
+        "race": "Wrulon",
+        "rawRace": "Wrulon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2013,
+        "y": -105,
+        "z": 453.5,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 4800,
+        "spawn2Id": 46745,
+        "spawngroupId": 31670,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Guardian Wrulon",
+        "rawName": "A_Guardian_Wrulon",
+        "level": 67,
+        "race": "Wrulon",
+        "rawRace": "Wrulon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1953,
+        "y": -105,
+        "z": 453.5,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 4800,
+        "spawn2Id": 46746,
+        "spawngroupId": 31671,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Guardian Wrulon",
+        "rawName": "A_Guardian_Wrulon",
+        "level": 67,
+        "race": "Wrulon",
+        "rawRace": "Wrulon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2060,
+        "y": -372,
+        "z": 453.5,
+        "heading": 384,
+        "chance": 100,
+        "respawnTime": 4800,
+        "spawn2Id": 46747,
+        "spawngroupId": 31672,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Guardian Wrulon",
+        "rawName": "A_Guardian_Wrulon",
+        "level": 67,
+        "race": "Wrulon",
+        "rawRace": "Wrulon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2060,
+        "y": -428,
+        "z": 453.5,
+        "heading": 384,
+        "chance": 100,
+        "respawnTime": 4800,
+        "spawn2Id": 46748,
+        "spawngroupId": 31673,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Guardian Wrulon",
+        "rawName": "A_Guardian_Wrulon",
+        "level": 67,
+        "race": "Wrulon",
+        "rawRace": "Wrulon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1784,
+        "y": -194,
+        "z": 453.5,
+        "heading": 384,
+        "chance": 100,
+        "respawnTime": 4800,
+        "spawn2Id": 46749,
+        "spawngroupId": 31674,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Guardian Wrulon",
+        "rawName": "A_Guardian_Wrulon",
+        "level": 67,
+        "race": "Wrulon",
+        "rawRace": "Wrulon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1784,
+        "y": -249,
+        "z": 453.5,
+        "heading": 384,
+        "chance": 100,
+        "respawnTime": 4800,
+        "spawn2Id": 46750,
+        "spawngroupId": 31675,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Guardian Wrulon",
+        "rawName": "A_Guardian_Wrulon",
+        "level": 67,
+        "race": "Wrulon",
+        "rawRace": "Wrulon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1385,
+        "y": 0,
+        "z": 453.5,
+        "heading": 384,
+        "chance": 100,
+        "respawnTime": 4800,
+        "spawn2Id": 46758,
+        "spawngroupId": 31683,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Temple Guardian",
+        "rawName": "A_Temple_Guardian",
+        "level": 67,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1052,
+        "y": 94,
+        "z": 400.5,
+        "heading": 264,
+        "chance": 50,
+        "respawnTime": 4800,
+        "spawn2Id": 46727,
+        "spawngroupId": 31654,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Temple Guardian",
+        "rawName": "A_Temple_Guardian",
+        "level": 67,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1051,
+        "y": 93,
+        "z": 384,
+        "heading": 256,
+        "chance": 50,
+        "respawnTime": 4800,
+        "spawn2Id": 46728,
+        "spawngroupId": 31654,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Temple Guardian",
+        "rawName": "A_Temple_Guardian",
+        "level": 67,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1052,
+        "y": -97,
+        "z": 400.5,
+        "heading": 10,
+        "chance": 50,
+        "respawnTime": 4800,
+        "spawn2Id": 46730,
+        "spawngroupId": 31656,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Temple Guardian",
+        "rawName": "A_Temple_Guardian",
+        "level": 67,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1051,
+        "y": -93,
+        "z": 384,
+        "heading": 0,
+        "chance": 50,
+        "respawnTime": 4800,
+        "spawn2Id": 46731,
+        "spawngroupId": 31656,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Temple Guardian",
+        "rawName": "A_Temple_Guardian",
+        "level": 67,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1618,
+        "y": -133,
+        "z": 448.5,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 4800,
+        "spawn2Id": 46754,
+        "spawngroupId": 31679,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Temple Guardian",
+        "rawName": "A_Temple_Guardian",
+        "level": 67,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1554,
+        "y": -133,
+        "z": 448.5,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 4800,
+        "spawn2Id": 46755,
+        "spawngroupId": 31680,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Temple Guardian",
+        "rawName": "A_Temple_Guardian",
+        "level": 67,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1312,
+        "y": -34,
+        "z": 448.5,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 4800,
+        "spawn2Id": 46756,
+        "spawngroupId": 31681,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Temple Guardian",
+        "rawName": "A_Temple_Guardian",
+        "level": 67,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1312,
+        "y": 34,
+        "z": 448.5,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 4800,
+        "spawn2Id": 46757,
+        "spawngroupId": 31682,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Temple Guardian",
+        "rawName": "A_Temple_Guardian",
+        "level": 67,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1242,
+        "y": -29,
+        "z": 448.5,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 4800,
+        "spawn2Id": 46759,
+        "spawngroupId": 31684,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Temple Guardian",
+        "rawName": "A_Temple_Guardian",
+        "level": 67,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1242,
+        "y": 29,
+        "z": 448.5,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 4800,
+        "spawn2Id": 46760,
+        "spawngroupId": 31685,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Temple Guardian",
+        "rawName": "A_Temple_Guardian",
+        "level": 67,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1618,
+        "y": 133,
+        "z": 448.5,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 4800,
+        "spawn2Id": 46773,
+        "spawngroupId": 31698,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Temple Guardian",
+        "rawName": "A_Temple_Guardian",
+        "level": 67,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1554,
+        "y": 133,
+        "z": 448.5,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 4800,
+        "spawn2Id": 46774,
+        "spawngroupId": 31699,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Temple Guardian",
+        "rawName": "A_Temple_Guardian",
+        "level": 67,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1831,
+        "y": -220,
+        "z": 448.5,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 4800,
+        "spawn2Id": 46775,
+        "spawngroupId": 31700,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Honorable Protector",
+        "rawName": "An_Honorable_Protector",
+        "level": 67,
+        "race": "Wrulon",
+        "rawRace": "Wrulon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2565,
+        "y": 32,
+        "z": 480.5,
+        "heading": 384,
+        "chance": 100,
+        "respawnTime": 720,
+        "spawn2Id": 46736,
+        "spawngroupId": 31661,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Honorable Protector",
+        "rawName": "An_Honorable_Protector",
+        "level": 67,
+        "race": "Wrulon",
+        "rawRace": "Wrulon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2565,
+        "y": -32,
+        "z": 480.5,
+        "heading": 384,
+        "chance": 100,
+        "respawnTime": 720,
+        "spawn2Id": 46738,
+        "spawngroupId": 31663,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Dogan Merlok",
+        "rawName": "Dogan_Merlok",
+        "level": 68,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1357,
+        "y": -388,
+        "z": 448.5,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 46764,
+        "spawngroupId": 31689,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Rhodoc Sorenby",
+        "rawName": "Rhodoc_Sorenby",
+        "level": 68,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1357,
+        "y": 415,
+        "z": 448.5,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 46770,
+        "spawngroupId": 31695,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Bromal Rythat",
+        "rawName": "Bromal_Rythat",
+        "level": 69,
+        "race": "Valorian",
+        "rawRace": "Valorian",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1706,
+        "y": 399,
+        "z": 448.5,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 46767,
+        "spawngroupId": 31692,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Druhar Gandoc",
+        "rawName": "Druhar_Gandoc",
+        "level": 69,
+        "race": "Valorian",
+        "rawRace": "Valorian",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1706,
+        "y": -388,
+        "z": 448.5,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 46763,
+        "spawngroupId": 31688,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Halon Of Marr",
+        "rawName": "Halon_of_Marr",
+        "level": 73,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2362.786621,
+        "y": 154.171082,
+        "z": 444.126801,
+        "heading": 382.25,
+        "chance": 100,
+        "respawnTime": 86400,
+        "spawn2Id": 250089,
+        "spawngroupId": 275079,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Edium, Guardian Of Marr",
+        "rawName": "Edium,_Guardian_of_Marr",
+        "level": 75,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": 2366.363525,
+        "y": -151.669281,
+        "z": 444.127838,
+        "heading": 384.25,
+        "chance": 100,
+        "respawnTime": 86400,
+        "spawn2Id": 250090,
+        "spawngroupId": 275080,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Ralthazor, Champion Of Marr",
+        "rawName": "Ralthazor,_Champion_of_Marr",
+        "level": 75,
+        "race": "Froglok",
+        "rawRace": "Froglok",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": 2495.687744,
+        "y": -0.053668,
+        "z": 444.126801,
+        "heading": 384,
+        "chance": 100,
+        "respawnTime": 259200,
+        "spawn2Id": 137553,
+        "spawngroupId": 99096,
+        "candidateCount": 1
+      }
+    ]
+  }
+}

@@ -14,6 +14,7 @@ import { zoneToSlug, slugToZone } from "@/lib/zone-slug";
 import { ZONE_CONNECTIONS } from "@/lib/zone-connections";
 import { ZoneMobFilter } from "@/components/ZoneMobFilter";
 import type { RaidBossEntry } from "@/components/ZoneMobFilter";
+import { getZoneMobSummary, ZoneMobSnapshot } from "@/components/ZoneMobSnapshot";
 import { Breadcrumb } from "./Breadcrumb";
 import "./zone-page.css";
 
@@ -253,6 +254,7 @@ export default async function ZonePage({
   }
 
   const connections = ZONE_CONNECTIONS[zoneName] ?? [];
+  const mobSummary = getZoneMobSummary(zoneName);
 
   // ---------------------------------------------------------------------------
   // Raid-only zone render path
@@ -298,6 +300,8 @@ export default async function ZonePage({
         </div>
 
         <div className="zone-page-sections">
+          {mobSummary ? <ZoneMobSnapshot summary={mobSummary} variant="panel" /> : null}
+
           <ZoneMobFilter
             zoneName={zoneName}
             groupMobs={[]}
@@ -407,6 +411,8 @@ export default async function ZonePage({
       </div>
 
       <div className="zone-page-sections">
+        {mobSummary ? <ZoneMobSnapshot summary={mobSummary} variant="panel" /> : null}
+
         <ZoneMobFilter
           zoneName={zoneName}
           groupMobs={mobsInZone}

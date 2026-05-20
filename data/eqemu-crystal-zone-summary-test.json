@@ -1,0 +1,5576 @@
+{
+  "summary": {
+    "zoneSlug": "the-crystal-caverns",
+    "zoneName": "The Crystal Caverns",
+    "requestedZoneShortName": "crystal",
+    "zoneShortName": "crystal",
+    "sourceFile": "local-eqemu-database",
+    "matched": true,
+    "expansion": "Velious",
+    "eqemuExpansionId": 2,
+    "expansionSource": "eqemu-zone-table",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobCount": 121,
+    "unknownLevelCount": 0,
+    "minLevel": 12,
+    "maxLevel": 99,
+    "averageLevel": 32.1,
+    "medianLevel": 30,
+    "levelCounts": {
+      "12": 2,
+      "27": 3,
+      "28": 10,
+      "29": 7,
+      "30": 46,
+      "31": 5,
+      "32": 3,
+      "33": 8,
+      "34": 3,
+      "35": 13,
+      "36": 7,
+      "37": 3,
+      "38": 9,
+      "40": 1,
+      "99": 1
+    },
+    "levelBuckets": {
+      "1-10": 0,
+      "11-20": 2,
+      "21-30": 66,
+      "31-40": 52,
+      "41-50": 0,
+      "51-60": 0,
+      "61+": 1
+    },
+    "levelProfileLabel": "Wide level spread",
+    "mobGroupNameCounts": {
+      "A Ry`gorr Inspector": 19,
+      "A Crystal Crawler": 15,
+      "A Life Leech": 9,
+      "A Stalag Terror": 9,
+      "A Geonid": 8,
+      "A Ry`gorr Watchman": 7,
+      "A Velium Crawler": 7,
+      "A Ry`gorr Herbalist": 5,
+      "A Coldain Miner": 3,
+      "A Crystal Spiderling": 2,
+      "A Crystal Webmaster": 2,
+      "A Ry`gorr Miner": 2,
+      "A Ry`gorr Oracle": 2,
+      "A Crystal Lurker": 1,
+      "A Dracnid Retainer": 1,
+      "Captain Dunstan Coldheart": 1,
+      "Cassia Gemshard": 1,
+      "Derron Coldmist": 1,
+      "Flint Velweaver": 1,
+      "Foreman Rixact": 1,
+      "Foreman Smason": 1,
+      "Fuller Velweaver": 1,
+      "Gilliad Coldheart": 1,
+      "Grabble Coldheart": 1,
+      "Guard Evercold": 1,
+      "Guard Grabadin": 1,
+      "Guard Hollander": 1,
+      "Guard Justik": 1,
+      "Guard Kevin": 1,
+      "Guard Kithon": 1,
+      "Guard Kristen": 1,
+      "Guard Slacey": 1,
+      "Guard Solistak": 1,
+      "Hardat Gemshard": 1,
+      "Historian Baenek": 1,
+      "Kramble Gemshard": 1,
+      "Milliace Gemshard": 1,
+      "Nadalia Coldmist": 1,
+      "Praps Gemshard": 1,
+      "Scout Grandan": 1,
+      "Soren Coldheart": 1,
+      "Tacy Mistheart": 1,
+      "Unknown": 1,
+      "Vevina Velweaver": 1
+    },
+    "classCounts": {
+      "Warrior": 107,
+      "Shaman": 7,
+      "Banker": 5,
+      "Class 40": 1,
+      "Cleric": 1
+    },
+    "raceCounts": {
+      "Orc": 37,
+      "Coldain": 29,
+      "Spider": 19,
+      "Tentacle Terror": 18,
+      "Geonid": 8,
+      "Dragon": 7,
+      "Drachnid": 2,
+      "Teleport Man": 1
+    },
+    "normalizedRaceCounts": {
+      "Orc": 37,
+      "Coldain": 29,
+      "Spider": 19,
+      "Tentacle Terror": 18,
+      "Geonid": 8,
+      "Dragon": 7,
+      "Drachnid": 2,
+      "Teleport Man": 1
+    },
+    "normalizedRaceLevelCounts": {
+      "Coldain": {
+        "28": 2,
+        "29": 1,
+        "30": 12,
+        "31": 3,
+        "35": 10,
+        "40": 1
+      },
+      "Drachnid": {
+        "33": 1,
+        "37": 1
+      },
+      "Dragon": {
+        "30": 7
+      },
+      "Geonid": {
+        "33": 2,
+        "35": 2,
+        "36": 2,
+        "37": 2
+      },
+      "Orc": {
+        "27": 3,
+        "28": 7,
+        "29": 1,
+        "30": 24,
+        "33": 1,
+        "34": 1
+      },
+      "Spider": {
+        "12": 2,
+        "28": 1,
+        "29": 5,
+        "30": 2,
+        "31": 1,
+        "32": 2,
+        "33": 4,
+        "34": 2
+      },
+      "Teleport Man": {
+        "99": 1
+      },
+      "Tentacle Terror": {
+        "30": 1,
+        "31": 1,
+        "32": 1,
+        "35": 1,
+        "36": 5,
+        "38": 9
+      }
+    },
+    "raceAliases": {
+      "Coldain": [
+        "Coldain"
+      ],
+      "Drachnid": [
+        "Drachnid"
+      ],
+      "Dragon": [
+        "Dragon"
+      ],
+      "Geonid": [
+        "Geonid"
+      ],
+      "Orc": [
+        "Orc"
+      ],
+      "Spider": [
+        "Spider"
+      ],
+      "Teleport Man": [
+        "Teleport Man"
+      ],
+      "Tentacle Terror": [
+        "Tentacle Terror"
+      ]
+    },
+    "typeCounts": {
+      "Spawn Slot": 121
+    },
+    "notes": [
+      "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+      "Read-only test export; not wired into production /zones data."
+    ],
+    "spawnMapPrototype": {
+      "sourceKind": "Local EQEmu/PEQ database export",
+      "coordinateNote": "Original EQEmu spawn2 x/y/z coordinates are preserved for map prototyping.",
+      "points": [
+        {
+          "spawn2Id": 22035,
+          "spawngroupId": 13687,
+          "name": "a_Ry`Gorr_watchman",
+          "displayName": "A Ry`gorr Watchman",
+          "level": 28,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 547,
+          "y": 444,
+          "z": -236.880005,
+          "heading": 314,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22036,
+          "spawngroupId": 13687,
+          "name": "a_Ry`Gorr_watchman",
+          "displayName": "A Ry`gorr Watchman",
+          "level": 28,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 755,
+          "y": 912,
+          "z": -220.880005,
+          "heading": 249,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22037,
+          "spawngroupId": 13687,
+          "name": "a_Ry`Gorr_watchman",
+          "displayName": "A Ry`gorr Watchman",
+          "level": 28,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 818,
+          "y": 577,
+          "z": -326,
+          "heading": 462,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22038,
+          "spawngroupId": 13687,
+          "name": "a_Ry`Gorr_watchman",
+          "displayName": "A Ry`gorr Watchman",
+          "level": 28,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 503,
+          "y": 416,
+          "z": -169,
+          "heading": 310,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22039,
+          "spawngroupId": 13688,
+          "name": "a_stalag_terror",
+          "displayName": "A Stalag Terror",
+          "level": 36,
+          "race": "Tentacle Terror",
+          "rawRace": "Tentacle Terror",
+          "className": "Warrior",
+          "x": 285,
+          "y": -297,
+          "z": -494,
+          "heading": 179,
+          "chance": 30,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 22040,
+          "spawngroupId": 13688,
+          "name": "a_stalag_terror",
+          "displayName": "A Stalag Terror",
+          "level": 36,
+          "race": "Tentacle Terror",
+          "rawRace": "Tentacle Terror",
+          "className": "Warrior",
+          "x": -298,
+          "y": -202,
+          "z": -554,
+          "heading": 124,
+          "chance": 30,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 22041,
+          "spawngroupId": 13688,
+          "name": "a_stalag_terror",
+          "displayName": "A Stalag Terror",
+          "level": 36,
+          "race": "Tentacle Terror",
+          "rawRace": "Tentacle Terror",
+          "className": "Warrior",
+          "x": -179,
+          "y": -180,
+          "z": -554,
+          "heading": 143,
+          "chance": 30,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 22042,
+          "spawngroupId": 13689,
+          "name": "#a_Ry`Gorr_inspector",
+          "displayName": "A Ry`gorr Inspector",
+          "level": 30,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 505,
+          "y": 449,
+          "z": -314.75,
+          "heading": 452,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22043,
+          "spawngroupId": 13689,
+          "name": "#a_Ry`Gorr_inspector",
+          "displayName": "A Ry`gorr Inspector",
+          "level": 30,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 647,
+          "y": 238,
+          "z": -394.75,
+          "heading": 510,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22044,
+          "spawngroupId": 13689,
+          "name": "#a_Ry`Gorr_inspector",
+          "displayName": "A Ry`gorr Inspector",
+          "level": 30,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 270,
+          "y": 559,
+          "z": -244.880005,
+          "heading": 133,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22045,
+          "spawngroupId": 13689,
+          "name": "#a_Ry`Gorr_inspector",
+          "displayName": "A Ry`gorr Inspector",
+          "level": 30,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 644,
+          "y": 587,
+          "z": -296.75,
+          "heading": 200,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22046,
+          "spawngroupId": 13690,
+          "name": "a_Ry`Gorr_watchman",
+          "displayName": "A Ry`gorr Watchman",
+          "level": 27,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 60,
+          "y": 395,
+          "z": -394.75,
+          "heading": 161,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22047,
+          "spawngroupId": 13690,
+          "name": "a_Ry`Gorr_watchman",
+          "displayName": "A Ry`gorr Watchman",
+          "level": 27,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 523,
+          "y": 424,
+          "z": -370.75,
+          "heading": 101,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22048,
+          "spawngroupId": 13690,
+          "name": "a_Ry`Gorr_watchman",
+          "displayName": "A Ry`gorr Watchman",
+          "level": 27,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 510,
+          "y": 382,
+          "z": -168,
+          "heading": 368,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22049,
+          "spawngroupId": 13691,
+          "name": "a_stalag_terror",
+          "displayName": "A Stalag Terror",
+          "level": 32,
+          "race": "Tentacle Terror",
+          "rawRace": "Tentacle Terror",
+          "className": "Warrior",
+          "x": 781,
+          "y": -191,
+          "z": -538,
+          "heading": 313,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 22050,
+          "spawngroupId": 13692,
+          "name": "a_stalag_terror",
+          "displayName": "A Stalag Terror",
+          "level": 30,
+          "race": "Tentacle Terror",
+          "rawRace": "Tentacle Terror",
+          "className": "Warrior",
+          "x": 280,
+          "y": -394,
+          "z": -494,
+          "heading": 82,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 22051,
+          "spawngroupId": 13693,
+          "name": "#a_Ry`Gorr_inspector",
+          "displayName": "A Ry`gorr Inspector",
+          "level": 30,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 616,
+          "y": 346,
+          "z": -392,
+          "heading": 252,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22052,
+          "spawngroupId": 13693,
+          "name": "#a_Ry`Gorr_inspector",
+          "displayName": "A Ry`gorr Inspector",
+          "level": 30,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 782,
+          "y": 913,
+          "z": -220.880005,
+          "heading": 249,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22053,
+          "spawngroupId": 13693,
+          "name": "#a_Ry`Gorr_inspector",
+          "displayName": "A Ry`gorr Inspector",
+          "level": 30,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 801,
+          "y": 565,
+          "z": -326,
+          "heading": 455,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22054,
+          "spawngroupId": 13694,
+          "name": "#a_life_leech",
+          "displayName": "A Life Leech",
+          "level": 38,
+          "race": "Tentacle Terror",
+          "rawRace": "Tentacle Terror",
+          "className": "Warrior",
+          "x": 629,
+          "y": -363,
+          "z": -538,
+          "heading": 78,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22055,
+          "spawngroupId": 13694,
+          "name": "#a_life_leech",
+          "displayName": "A Life Leech",
+          "level": 38,
+          "race": "Tentacle Terror",
+          "rawRace": "Tentacle Terror",
+          "className": "Warrior",
+          "x": -181,
+          "y": -209,
+          "z": -554,
+          "heading": 109,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22056,
+          "spawngroupId": 13695,
+          "name": "a_Ry`Gorr_oracle",
+          "displayName": "A Ry`gorr Oracle",
+          "level": 28,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Shaman",
+          "x": 614,
+          "y": 237,
+          "z": -394,
+          "heading": 510,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22057,
+          "spawngroupId": 13696,
+          "name": "#a_Ry`Gorr_inspector",
+          "displayName": "A Ry`gorr Inspector",
+          "level": 30,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 503,
+          "y": 414,
+          "z": -238.880005,
+          "heading": 406.25,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22058,
+          "spawngroupId": 13696,
+          "name": "#a_Ry`Gorr_inspector",
+          "displayName": "A Ry`gorr Inspector",
+          "level": 30,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 552,
+          "y": 513,
+          "z": -168.880005,
+          "heading": 158,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22059,
+          "spawngroupId": 13697,
+          "name": "#a_Ry`Gorr_inspector",
+          "displayName": "A Ry`gorr Inspector",
+          "level": 30,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 439,
+          "y": 441,
+          "z": -314.75,
+          "heading": 145,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22060,
+          "spawngroupId": 13698,
+          "name": "a_Ry`Gorr_oracle",
+          "displayName": "A Ry`gorr Oracle",
+          "level": 29,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Shaman",
+          "x": 440,
+          "y": 494,
+          "z": -168.880005,
+          "heading": 158,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22061,
+          "spawngroupId": 13699,
+          "name": "#a_Ry`Gorr_inspector",
+          "displayName": "A Ry`gorr Inspector",
+          "level": 30,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 448.5,
+          "y": 398.25,
+          "z": -238.899994,
+          "heading": 217.5,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22062,
+          "spawngroupId": 13699,
+          "name": "#a_Ry`Gorr_inspector",
+          "displayName": "A Ry`gorr Inspector",
+          "level": 30,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 509.380005,
+          "y": 470,
+          "z": -313,
+          "heading": 0,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22063,
+          "spawngroupId": 13699,
+          "name": "#a_Ry`Gorr_inspector",
+          "displayName": "A Ry`gorr Inspector",
+          "level": 30,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 48.130001,
+          "y": 336.130005,
+          "z": -393,
+          "heading": 0,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22064,
+          "spawngroupId": 13700,
+          "name": "Vevina_Velweaver",
+          "displayName": "Vevina Velweaver",
+          "level": 28,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 248,
+          "y": -228,
+          "z": -383.25,
+          "heading": 377,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 22065,
+          "spawngroupId": 13701,
+          "name": "Guard_Hollander",
+          "displayName": "Guard Hollander",
+          "level": 35,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 204,
+          "y": -129,
+          "z": -363.25,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 22066,
+          "spawngroupId": 13702,
+          "name": "Guard_Grabadin",
+          "displayName": "Guard Grabadin",
+          "level": 35,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 236,
+          "y": -129,
+          "z": -363.25,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 22067,
+          "spawngroupId": 13703,
+          "name": "a_stalag_terror",
+          "displayName": "A Stalag Terror",
+          "level": 35,
+          "race": "Tentacle Terror",
+          "rawRace": "Tentacle Terror",
+          "className": "Warrior",
+          "x": 732,
+          "y": -450,
+          "z": -538,
+          "heading": 491,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 22068,
+          "spawngroupId": 13704,
+          "name": "#a_life_leech",
+          "displayName": "A Life Leech",
+          "level": 38,
+          "race": "Tentacle Terror",
+          "rawRace": "Tentacle Terror",
+          "className": "Warrior",
+          "x": 620,
+          "y": -212,
+          "z": -538,
+          "heading": 167,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22069,
+          "spawngroupId": 13704,
+          "name": "#a_life_leech",
+          "displayName": "A Life Leech",
+          "level": 38,
+          "race": "Tentacle Terror",
+          "rawRace": "Tentacle Terror",
+          "className": "Warrior",
+          "x": -76,
+          "y": -176,
+          "z": -552,
+          "heading": 214,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22070,
+          "spawngroupId": 13705,
+          "name": "a_velium_crawler",
+          "displayName": "A Velium Crawler",
+          "level": 30,
+          "race": "Dragon",
+          "rawRace": "Dragon",
+          "className": "Warrior",
+          "x": -900.75,
+          "y": -631.880005,
+          "z": -552.25,
+          "heading": 377.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 22071,
+          "spawngroupId": 13705,
+          "name": "a_velium_crawler",
+          "displayName": "A Velium Crawler",
+          "level": 30,
+          "race": "Dragon",
+          "rawRace": "Dragon",
+          "className": "Warrior",
+          "x": 173.75,
+          "y": -333.880005,
+          "z": -559,
+          "heading": 217,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 22072,
+          "spawngroupId": 13705,
+          "name": "a_velium_crawler",
+          "displayName": "A Velium Crawler",
+          "level": 30,
+          "race": "Dragon",
+          "rawRace": "Dragon",
+          "className": "Warrior",
+          "x": -901.75,
+          "y": -544.380005,
+          "z": -545.630005,
+          "heading": 492.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 22073,
+          "spawngroupId": 13705,
+          "name": "a_velium_crawler",
+          "displayName": "A Velium Crawler",
+          "level": 30,
+          "race": "Dragon",
+          "rawRace": "Dragon",
+          "className": "Warrior",
+          "x": 331.5,
+          "y": -347.5,
+          "z": -559,
+          "heading": 137,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 22074,
+          "spawngroupId": 13705,
+          "name": "a_velium_crawler",
+          "displayName": "A Velium Crawler",
+          "level": 30,
+          "race": "Dragon",
+          "rawRace": "Dragon",
+          "className": "Warrior",
+          "x": 115.5,
+          "y": 172.630005,
+          "z": -463.75,
+          "heading": 174.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 22075,
+          "spawngroupId": 13705,
+          "name": "a_velium_crawler",
+          "displayName": "A Velium Crawler",
+          "level": 30,
+          "race": "Dragon",
+          "rawRace": "Dragon",
+          "className": "Warrior",
+          "x": 704.25,
+          "y": -61.25,
+          "z": -516.5,
+          "heading": 217.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 22076,
+          "spawngroupId": 13705,
+          "name": "a_velium_crawler",
+          "displayName": "A Velium Crawler",
+          "level": 30,
+          "race": "Dragon",
+          "rawRace": "Dragon",
+          "className": "Warrior",
+          "x": 240,
+          "y": 69.75,
+          "z": -516.5,
+          "heading": 448.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 22077,
+          "spawngroupId": 13706,
+          "name": "#a_life_leech",
+          "displayName": "A Life Leech",
+          "level": 38,
+          "race": "Tentacle Terror",
+          "rawRace": "Tentacle Terror",
+          "className": "Warrior",
+          "x": -217,
+          "y": -225,
+          "z": -554,
+          "heading": 24,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22078,
+          "spawngroupId": 13706,
+          "name": "#a_life_leech",
+          "displayName": "A Life Leech",
+          "level": 38,
+          "race": "Tentacle Terror",
+          "rawRace": "Tentacle Terror",
+          "className": "Warrior",
+          "x": 63,
+          "y": -451,
+          "z": -510,
+          "heading": 103,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22079,
+          "spawngroupId": 13707,
+          "name": "a_stalag_terror",
+          "displayName": "A Stalag Terror",
+          "level": 36,
+          "race": "Tentacle Terror",
+          "rawRace": "Tentacle Terror",
+          "className": "Warrior",
+          "x": -240,
+          "y": -160,
+          "z": -554,
+          "heading": 180,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 22080,
+          "spawngroupId": 13708,
+          "name": "#a_life_leech",
+          "displayName": "A Life Leech",
+          "level": 38,
+          "race": "Tentacle Terror",
+          "rawRace": "Tentacle Terror",
+          "className": "Warrior",
+          "x": -276,
+          "y": -238,
+          "z": -536.380005,
+          "heading": 98,
+          "chance": 45,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22081,
+          "spawngroupId": 13709,
+          "name": "a_stalag_terror",
+          "displayName": "A Stalag Terror",
+          "level": 36,
+          "race": "Tentacle Terror",
+          "rawRace": "Tentacle Terror",
+          "className": "Warrior",
+          "x": 83,
+          "y": -241,
+          "z": -526,
+          "heading": 381,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 22082,
+          "spawngroupId": 13710,
+          "name": "Derron_Coldmist",
+          "displayName": "Derron Coldmist",
+          "level": 31,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 206,
+          "y": -321,
+          "z": -383.25,
+          "heading": 500,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 22083,
+          "spawngroupId": 13711,
+          "name": "Fuller_Velweaver",
+          "displayName": "Fuller Velweaver",
+          "level": 30,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 363,
+          "y": -272,
+          "z": -427.25,
+          "heading": 19,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 22084,
+          "spawngroupId": 13712,
+          "name": "Guard_Evercold",
+          "displayName": "Guard Evercold",
+          "level": 35,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 266,
+          "y": -317,
+          "z": -397.25,
+          "heading": 259,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 22085,
+          "spawngroupId": 13713,
+          "name": "Guard_Slacey",
+          "displayName": "Guard Slacey",
+          "level": 35,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 251,
+          "y": -316,
+          "z": -397.25,
+          "heading": 243,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 22086,
+          "spawngroupId": 13714,
+          "name": "Guard_Kristen",
+          "displayName": "Guard Kristen",
+          "level": 35,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 252,
+          "y": -93,
+          "z": -363.299988,
+          "heading": 262,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 22087,
+          "spawngroupId": 13715,
+          "name": "Guard_Kithon",
+          "displayName": "Guard Kithon",
+          "level": 35,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 802,
+          "y": -257,
+          "z": -539,
+          "heading": 358,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 22088,
+          "spawngroupId": 13716,
+          "name": "#a_life_leech",
+          "displayName": "A Life Leech",
+          "level": 38,
+          "race": "Tentacle Terror",
+          "rawRace": "Tentacle Terror",
+          "className": "Warrior",
+          "x": -117,
+          "y": -206,
+          "z": -554,
+          "heading": 48,
+          "chance": 45,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22089,
+          "spawngroupId": 13717,
+          "name": "#a_life_leech",
+          "displayName": "A Life Leech",
+          "level": 38,
+          "race": "Tentacle Terror",
+          "rawRace": "Tentacle Terror",
+          "className": "Warrior",
+          "x": -26,
+          "y": -166,
+          "z": -538,
+          "heading": 185,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22090,
+          "spawngroupId": 13718,
+          "name": "a_stalag_terror",
+          "displayName": "A Stalag Terror",
+          "level": 31,
+          "race": "Tentacle Terror",
+          "rawRace": "Tentacle Terror",
+          "className": "Warrior",
+          "x": 54,
+          "y": -241,
+          "z": -526,
+          "heading": 125,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 22091,
+          "spawngroupId": 13719,
+          "name": "Praps_Gemshard",
+          "displayName": "Praps Gemshard",
+          "level": 30,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Banker",
+          "x": 373,
+          "y": -256,
+          "z": -427.25,
+          "heading": 382,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 22092,
+          "spawngroupId": 13720,
+          "name": "a_Coldain_miner",
+          "displayName": "A Coldain Miner",
+          "level": 29,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 310,
+          "y": -339,
+          "z": -427.25,
+          "heading": 376,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 22093,
+          "spawngroupId": 13721,
+          "name": "a_Coldain_miner",
+          "displayName": "A Coldain Miner",
+          "level": 30,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 351,
+          "y": -224,
+          "z": -427.25,
+          "heading": 111,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 22094,
+          "spawngroupId": 13722,
+          "name": "Historian_Baenek",
+          "displayName": "Historian Baenek",
+          "level": 40,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Cleric",
+          "x": 229,
+          "y": -322,
+          "z": -399.25,
+          "heading": 106,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 22095,
+          "spawngroupId": 13723,
+          "name": "Kramble_Gemshard",
+          "displayName": "Kramble Gemshard",
+          "level": 30,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Class 40",
+          "x": 299,
+          "y": -193,
+          "z": -383.25,
+          "heading": 388,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 22096,
+          "spawngroupId": 13724,
+          "name": "Milliace_Gemshard",
+          "displayName": "Milliace Gemshard",
+          "level": 30,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Banker",
+          "x": 233,
+          "y": -263,
+          "z": -383.25,
+          "heading": 385,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 22097,
+          "spawngroupId": 13725,
+          "name": "Captain_Dunstan_Coldheart",
+          "displayName": "Captain Dunstan Coldheart",
+          "level": 35,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 229,
+          "y": -255,
+          "z": -399.25,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 22098,
+          "spawngroupId": 13726,
+          "name": "Guard_Kevin",
+          "displayName": "Guard Kevin",
+          "level": 35,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 193,
+          "y": -261,
+          "z": -383.25,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 22099,
+          "spawngroupId": 13727,
+          "name": "Flint_Velweaver",
+          "displayName": "Flint Velweaver",
+          "level": 30,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 322,
+          "y": -363,
+          "z": -427.25,
+          "heading": 1,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 22100,
+          "spawngroupId": 13728,
+          "name": "Guard_Justik",
+          "displayName": "Guard Justik",
+          "level": 35,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 397,
+          "y": -235,
+          "z": -372.25,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 22101,
+          "spawngroupId": 13729,
+          "name": "Guard_Solistak",
+          "displayName": "Guard Solistak",
+          "level": 35,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 410,
+          "y": -232,
+          "z": -372.25,
+          "heading": 258,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 22102,
+          "spawngroupId": 13730,
+          "name": "Hardat_Gemshard",
+          "displayName": "Hardat Gemshard",
+          "level": 30,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Banker",
+          "x": 177,
+          "y": -243,
+          "z": -397.25,
+          "heading": 133,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 22103,
+          "spawngroupId": 13731,
+          "name": "Grabble_Coldheart",
+          "displayName": "Grabble Coldheart",
+          "level": 30,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Banker",
+          "x": 165,
+          "y": -261,
+          "z": -399.25,
+          "heading": 129,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 22104,
+          "spawngroupId": 13732,
+          "name": "Cassia_Gemshard",
+          "displayName": "Cassia Gemshard",
+          "level": 30,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 261,
+          "y": -96,
+          "z": -399.25,
+          "heading": 138,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 22105,
+          "spawngroupId": 13733,
+          "name": "Nadalia_Coldmist",
+          "displayName": "Nadalia Coldmist",
+          "level": 31,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 267,
+          "y": -95,
+          "z": -383.25,
+          "heading": 247,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 22106,
+          "spawngroupId": 13734,
+          "name": "Soren_Coldheart",
+          "displayName": "Soren Coldheart",
+          "level": 28,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 238,
+          "y": -228,
+          "z": -399.25,
+          "heading": 127,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 22107,
+          "spawngroupId": 13735,
+          "name": "a_Coldain_miner",
+          "displayName": "A Coldain Miner",
+          "level": 30,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 463,
+          "y": -267,
+          "z": -397.25,
+          "heading": 86,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 22108,
+          "spawngroupId": 13736,
+          "name": "Tacy_MistHeart",
+          "displayName": "Tacy Mistheart",
+          "level": 31,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 341,
+          "y": -127,
+          "z": -383.25,
+          "heading": 377,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 22109,
+          "spawngroupId": 13737,
+          "name": "Gilliad_Coldheart",
+          "displayName": "Gilliad Coldheart",
+          "level": 30,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Banker",
+          "x": 344,
+          "y": -176,
+          "z": -399.25,
+          "heading": 505,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 22110,
+          "spawngroupId": 13738,
+          "name": "#a_Ry`Gorr_inspector",
+          "displayName": "A Ry`gorr Inspector",
+          "level": 30,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 435.130005,
+          "y": 486.880005,
+          "z": -297,
+          "heading": 0,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 22111,
+          "spawngroupId": 13739,
+          "name": "#a_dracnid_retainer",
+          "displayName": "A Dracnid Retainer",
+          "level": 33,
+          "race": "Drachnid",
+          "rawRace": "Drachnid",
+          "className": "Warrior",
+          "x": -928,
+          "y": -622,
+          "z": -535,
+          "heading": 85,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 22112,
+          "spawngroupId": 13740,
+          "name": "#a_Ry`Gorr_inspector",
+          "displayName": "A Ry`gorr Inspector",
+          "level": 30,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 271.880005,
+          "y": 568.75,
+          "z": -243.130005,
+          "heading": 0,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22113,
+          "spawngroupId": 13741,
+          "name": "a_crystal_crawler",
+          "displayName": "A Crystal Crawler",
+          "level": 33,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": -895,
+          "y": -600,
+          "z": -535,
+          "heading": 109,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 22114,
+          "spawngroupId": 13741,
+          "name": "a_crystal_crawler",
+          "displayName": "A Crystal Crawler",
+          "level": 33,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": -896,
+          "y": -565,
+          "z": -535,
+          "heading": 151,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 22115,
+          "spawngroupId": 13742,
+          "name": "#a_crystal_lurker",
+          "displayName": "A Crystal Lurker",
+          "level": 37,
+          "race": "Drachnid",
+          "rawRace": "Drachnid",
+          "className": "Warrior",
+          "x": -930,
+          "y": -553,
+          "z": -535,
+          "heading": 168,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 22116,
+          "spawngroupId": 13743,
+          "name": "a_Ry`Gorr_miner",
+          "displayName": "A Ry`gorr Miner",
+          "level": 28,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 442.880005,
+          "y": 547.380005,
+          "z": -363,
+          "heading": 0,
+          "chance": 40,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22117,
+          "spawngroupId": 13744,
+          "name": "a_geonid",
+          "displayName": "A Geonid",
+          "level": 35,
+          "race": "Geonid",
+          "rawRace": "Geonid",
+          "className": "Warrior",
+          "x": 35,
+          "y": -381,
+          "z": -483,
+          "heading": 113,
+          "chance": 40,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22118,
+          "spawngroupId": 13744,
+          "name": "a_geonid",
+          "displayName": "A Geonid",
+          "level": 35,
+          "race": "Geonid",
+          "rawRace": "Geonid",
+          "className": "Warrior",
+          "x": -90,
+          "y": -374,
+          "z": -457,
+          "heading": 142,
+          "chance": 40,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22119,
+          "spawngroupId": 13745,
+          "name": "a_crystal_webmaster",
+          "displayName": "A Crystal Webmaster",
+          "level": 34,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": -951,
+          "y": -592,
+          "z": -535,
+          "heading": 124,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22120,
+          "spawngroupId": 13746,
+          "name": "#a_Ry`Gorr_inspector",
+          "displayName": "A Ry`gorr Inspector",
+          "level": 30,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 441,
+          "y": 496,
+          "z": -212,
+          "heading": 199,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22121,
+          "spawngroupId": 13747,
+          "name": "#a_Ry`Gorr_herbalist",
+          "displayName": "A Ry`gorr Herbalist",
+          "level": 30,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Shaman",
+          "x": 451.75,
+          "y": 488,
+          "z": -369,
+          "heading": 0,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 22122,
+          "spawngroupId": 13747,
+          "name": "#a_Ry`Gorr_herbalist",
+          "displayName": "A Ry`gorr Herbalist",
+          "level": 30,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Shaman",
+          "x": 494,
+          "y": 463,
+          "z": -394,
+          "heading": 181,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 22123,
+          "spawngroupId": 13748,
+          "name": "a_geonid",
+          "displayName": "A Geonid",
+          "level": 37,
+          "race": "Geonid",
+          "rawRace": "Geonid",
+          "className": "Warrior",
+          "x": -85,
+          "y": -453,
+          "z": -435,
+          "heading": 8,
+          "chance": 40,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22124,
+          "spawngroupId": 13749,
+          "name": "a_geonid",
+          "displayName": "A Geonid",
+          "level": 37,
+          "race": "Geonid",
+          "rawRace": "Geonid",
+          "className": "Warrior",
+          "x": -261,
+          "y": -546,
+          "z": -329,
+          "heading": 145,
+          "chance": 40,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22125,
+          "spawngroupId": 13750,
+          "name": "a_Ry`Gorr_miner",
+          "displayName": "A Ry`gorr Miner",
+          "level": 28,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 702.880005,
+          "y": 425.130005,
+          "z": -223.130005,
+          "heading": 0,
+          "chance": 40,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22126,
+          "spawngroupId": 13751,
+          "name": "a_geonid",
+          "displayName": "A Geonid",
+          "level": 33,
+          "race": "Geonid",
+          "rawRace": "Geonid",
+          "className": "Warrior",
+          "x": -165,
+          "y": -664,
+          "z": -242,
+          "heading": 396,
+          "chance": 70,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22127,
+          "spawngroupId": 13751,
+          "name": "a_geonid",
+          "displayName": "A Geonid",
+          "level": 33,
+          "race": "Geonid",
+          "rawRace": "Geonid",
+          "className": "Warrior",
+          "x": 40,
+          "y": -663,
+          "z": -163,
+          "heading": 406,
+          "chance": 70,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22128,
+          "spawngroupId": 13752,
+          "name": "a_geonid",
+          "displayName": "A Geonid",
+          "level": 36,
+          "race": "Geonid",
+          "rawRace": "Geonid",
+          "className": "Warrior",
+          "x": -157,
+          "y": -583,
+          "z": -229,
+          "heading": 247,
+          "chance": 70,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22129,
+          "spawngroupId": 13753,
+          "name": "a_geonid",
+          "displayName": "A Geonid",
+          "level": 36,
+          "race": "Geonid",
+          "rawRace": "Geonid",
+          "className": "Warrior",
+          "x": -63,
+          "y": -599,
+          "z": -197,
+          "heading": 12,
+          "chance": 35,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 22130,
+          "spawngroupId": 13754,
+          "name": "a_crystal_crawler",
+          "displayName": "A Crystal Crawler",
+          "level": 30,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": 143,
+          "y": -344,
+          "z": -526,
+          "heading": 389,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 22131,
+          "spawngroupId": 13755,
+          "name": "Foreman_Rixact",
+          "displayName": "Foreman Rixact",
+          "level": 34,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 506,
+          "y": 469,
+          "z": -370,
+          "heading": 391,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 22132,
+          "spawngroupId": 13756,
+          "name": "a_crystal_crawler",
+          "displayName": "A Crystal Crawler",
+          "level": 32,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": 145,
+          "y": -380,
+          "z": -524,
+          "heading": 441,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 22133,
+          "spawngroupId": 13757,
+          "name": "a_crystal_webmaster",
+          "displayName": "A Crystal Webmaster",
+          "level": 34,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": -768,
+          "y": -557.130005,
+          "z": -527,
+          "heading": 511,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 22134,
+          "spawngroupId": 13758,
+          "name": "a_crystal_spiderling",
+          "displayName": "A Crystal Spiderling",
+          "level": 12,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": -93.5,
+          "y": -346.630005,
+          "z": -523,
+          "heading": 511,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 22135,
+          "spawngroupId": 13758,
+          "name": "a_crystal_spiderling",
+          "displayName": "A Crystal Spiderling",
+          "level": 12,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": 69.129997,
+          "y": -362,
+          "z": -523,
+          "heading": 511,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 22136,
+          "spawngroupId": 13759,
+          "name": "a_crystal_crawler",
+          "displayName": "A Crystal Crawler",
+          "level": 29,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": -144,
+          "y": -365,
+          "z": -526,
+          "heading": 109,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 22137,
+          "spawngroupId": 13760,
+          "name": "a_crystal_crawler",
+          "displayName": "A Crystal Crawler",
+          "level": 30,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": -238.880005,
+          "y": -423.630005,
+          "z": -523,
+          "heading": 511,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 22138,
+          "spawngroupId": 13761,
+          "name": "#a_Ry`Gorr_inspector",
+          "displayName": "A Ry`gorr Inspector",
+          "level": 30,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 244,
+          "y": 389,
+          "z": -97,
+          "heading": 0,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 22139,
+          "spawngroupId": 13762,
+          "name": "a_crystal_crawler",
+          "displayName": "A Crystal Crawler",
+          "level": 29,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": -398.25,
+          "y": -552.5,
+          "z": -523,
+          "heading": 511,
+          "chance": 95,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 22140,
+          "spawngroupId": 13762,
+          "name": "a_crystal_crawler",
+          "displayName": "A Crystal Crawler",
+          "level": 29,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": 540.5,
+          "y": 267,
+          "z": -464,
+          "heading": 503,
+          "chance": 95,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 22141,
+          "spawngroupId": 13762,
+          "name": "a_crystal_crawler",
+          "displayName": "A Crystal Crawler",
+          "level": 29,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": -373,
+          "y": -550,
+          "z": -526,
+          "heading": 247,
+          "chance": 95,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 22142,
+          "spawngroupId": 13762,
+          "name": "a_crystal_crawler",
+          "displayName": "A Crystal Crawler",
+          "level": 29,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": -206.130005,
+          "y": -417.880005,
+          "z": -523,
+          "heading": 511,
+          "chance": 95,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 22143,
+          "spawngroupId": 13763,
+          "name": "a_crystal_crawler",
+          "displayName": "A Crystal Crawler",
+          "level": 33,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": -405,
+          "y": -572,
+          "z": -526,
+          "heading": 47,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 22144,
+          "spawngroupId": 13763,
+          "name": "a_crystal_crawler",
+          "displayName": "A Crystal Crawler",
+          "level": 33,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": -562,
+          "y": -560,
+          "z": -526,
+          "heading": 145,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 22145,
+          "spawngroupId": 13764,
+          "name": "#a_Ry`Gorr_herbalist",
+          "displayName": "A Ry`gorr Herbalist",
+          "level": 30,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Shaman",
+          "x": 500,
+          "y": 418,
+          "z": -394,
+          "heading": 56,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22146,
+          "spawngroupId": 13765,
+          "name": "#a_Ry`Gorr_herbalist",
+          "displayName": "A Ry`gorr Herbalist",
+          "level": 30,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Shaman",
+          "x": 454,
+          "y": 458,
+          "z": -394,
+          "heading": 457,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 22147,
+          "spawngroupId": 13765,
+          "name": "#a_Ry`Gorr_herbalist",
+          "displayName": "A Ry`gorr Herbalist",
+          "level": 30,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Shaman",
+          "x": 877,
+          "y": 396,
+          "z": -169,
+          "heading": 454,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 22148,
+          "spawngroupId": 13766,
+          "name": "a_crystal_crawler",
+          "displayName": "A Crystal Crawler",
+          "level": 28,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": 106.879997,
+          "y": -361.130005,
+          "z": -523,
+          "heading": 511,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 22149,
+          "spawngroupId": 13767,
+          "name": "a_crystal_crawler",
+          "displayName": "A Crystal Crawler",
+          "level": 32,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": -731,
+          "y": -533,
+          "z": -534,
+          "heading": 262,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 22150,
+          "spawngroupId": 13768,
+          "name": "#a_Ry`Gorr_inspector",
+          "displayName": "A Ry`gorr Inspector",
+          "level": 30,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 909,
+          "y": 401,
+          "z": -169,
+          "heading": 186,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 22151,
+          "spawngroupId": 13769,
+          "name": "a_crystal_crawler",
+          "displayName": "A Crystal Crawler",
+          "level": 31,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": -732,
+          "y": -581,
+          "z": -534,
+          "heading": 3,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 22152,
+          "spawngroupId": 13770,
+          "name": "#a_Ry`Gorr_inspector",
+          "displayName": "A Ry`gorr Inspector",
+          "level": 30,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 274,
+          "y": 597.880005,
+          "z": -244.880005,
+          "heading": 509.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 22153,
+          "spawngroupId": 13771,
+          "name": "#Foreman_Smason",
+          "displayName": "Foreman Smason",
+          "level": 33,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 457,
+          "y": 395,
+          "z": -238.880005,
+          "heading": 75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 142571,
+          "spawngroupId": 104096,
+          "name": "#____________",
+          "displayName": "Unknown",
+          "level": 99,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 1,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 149636,
+          "spawngroupId": 111144,
+          "name": "Scout_Grandan",
+          "displayName": "Scout Grandan",
+          "level": 30,
+          "race": "Coldain",
+          "rawRace": "Coldain",
+          "className": "Warrior",
+          "x": 222,
+          "y": -201.875,
+          "z": -383.25,
+          "heading": 261,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        }
+      ]
+    }
+  },
+  "details": {
+    "zoneSlug": "the-crystal-caverns",
+    "routeSlug": "crystal",
+    "zoneName": "The Crystal Caverns",
+    "sourceFile": "local-eqemu-database",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobGroups": [
+      {
+        "displayName": "A Crystal Spiderling",
+        "rawNames": [
+          "a_crystal_spiderling"
+        ],
+        "count": 2,
+        "levelMin": 12,
+        "levelMax": 12,
+        "levels": [
+          12
+        ],
+        "raceCounts": {
+          "Spider": 2
+        },
+        "rawRaceCounts": {
+          "Spider": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Ry`gorr Watchman",
+        "rawNames": [
+          "a_Ry`Gorr_watchman"
+        ],
+        "count": 7,
+        "levelMin": 27,
+        "levelMax": 28,
+        "levels": [
+          27,
+          28
+        ],
+        "raceCounts": {
+          "Orc": 7
+        },
+        "rawRaceCounts": {
+          "Orc": 7
+        },
+        "classCounts": {
+          "Warrior": 7
+        },
+        "typeCounts": {
+          "Spawn Slot": 7
+        }
+      },
+      {
+        "displayName": "A Crystal Crawler",
+        "rawNames": [
+          "a_crystal_crawler"
+        ],
+        "count": 15,
+        "levelMin": 28,
+        "levelMax": 33,
+        "levels": [
+          28,
+          29,
+          30,
+          31,
+          32,
+          33
+        ],
+        "raceCounts": {
+          "Spider": 15
+        },
+        "rawRaceCounts": {
+          "Spider": 15
+        },
+        "classCounts": {
+          "Warrior": 15
+        },
+        "typeCounts": {
+          "Spawn Slot": 15
+        }
+      },
+      {
+        "displayName": "A Ry`gorr Miner",
+        "rawNames": [
+          "a_Ry`Gorr_miner"
+        ],
+        "count": 2,
+        "levelMin": 28,
+        "levelMax": 28,
+        "levels": [
+          28
+        ],
+        "raceCounts": {
+          "Orc": 2
+        },
+        "rawRaceCounts": {
+          "Orc": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Ry`gorr Oracle",
+        "rawNames": [
+          "a_Ry`Gorr_oracle"
+        ],
+        "count": 2,
+        "levelMin": 28,
+        "levelMax": 29,
+        "levels": [
+          28,
+          29
+        ],
+        "raceCounts": {
+          "Orc": 2
+        },
+        "rawRaceCounts": {
+          "Orc": 2
+        },
+        "classCounts": {
+          "Shaman": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "Soren Coldheart",
+        "rawNames": [
+          "Soren_Coldheart"
+        ],
+        "count": 1,
+        "levelMin": 28,
+        "levelMax": 28,
+        "levels": [
+          28
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Vevina Velweaver",
+        "rawNames": [
+          "Vevina_Velweaver"
+        ],
+        "count": 1,
+        "levelMin": 28,
+        "levelMax": 28,
+        "levels": [
+          28
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Coldain Miner",
+        "rawNames": [
+          "a_Coldain_miner"
+        ],
+        "count": 3,
+        "levelMin": 29,
+        "levelMax": 30,
+        "levels": [
+          29,
+          30
+        ],
+        "raceCounts": {
+          "Coldain": 3
+        },
+        "rawRaceCounts": {
+          "Coldain": 3
+        },
+        "classCounts": {
+          "Warrior": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "A Ry`gorr Inspector",
+        "rawNames": [
+          "#a_Ry`Gorr_inspector"
+        ],
+        "count": 19,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Orc": 19
+        },
+        "rawRaceCounts": {
+          "Orc": 19
+        },
+        "classCounts": {
+          "Warrior": 19
+        },
+        "typeCounts": {
+          "Spawn Slot": 19
+        }
+      },
+      {
+        "displayName": "A Velium Crawler",
+        "rawNames": [
+          "a_velium_crawler"
+        ],
+        "count": 7,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Dragon": 7
+        },
+        "rawRaceCounts": {
+          "Dragon": 7
+        },
+        "classCounts": {
+          "Warrior": 7
+        },
+        "typeCounts": {
+          "Spawn Slot": 7
+        }
+      },
+      {
+        "displayName": "A Ry`gorr Herbalist",
+        "rawNames": [
+          "#a_Ry`Gorr_herbalist"
+        ],
+        "count": 5,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Orc": 5
+        },
+        "rawRaceCounts": {
+          "Orc": 5
+        },
+        "classCounts": {
+          "Shaman": 5
+        },
+        "typeCounts": {
+          "Spawn Slot": 5
+        }
+      },
+      {
+        "displayName": "A Stalag Terror",
+        "rawNames": [
+          "a_stalag_terror"
+        ],
+        "count": 3,
+        "levelMin": 30,
+        "levelMax": 32,
+        "levels": [
+          30,
+          31,
+          32
+        ],
+        "raceCounts": {
+          "Tentacle Terror": 3
+        },
+        "rawRaceCounts": {
+          "Tentacle Terror": 3
+        },
+        "classCounts": {
+          "Warrior": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "Cassia Gemshard",
+        "rawNames": [
+          "Cassia_Gemshard"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Flint Velweaver",
+        "rawNames": [
+          "Flint_Velweaver"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Fuller Velweaver",
+        "rawNames": [
+          "Fuller_Velweaver"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Gilliad Coldheart",
+        "rawNames": [
+          "Gilliad_Coldheart"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Grabble Coldheart",
+        "rawNames": [
+          "Grabble_Coldheart"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Hardat Gemshard",
+        "rawNames": [
+          "Hardat_Gemshard"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Kramble Gemshard",
+        "rawNames": [
+          "Kramble_Gemshard"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Class 40": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Milliace Gemshard",
+        "rawNames": [
+          "Milliace_Gemshard"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Praps Gemshard",
+        "rawNames": [
+          "Praps_Gemshard"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Scout Grandan",
+        "rawNames": [
+          "Scout_Grandan"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Derron Coldmist",
+        "rawNames": [
+          "Derron_Coldmist"
+        ],
+        "count": 1,
+        "levelMin": 31,
+        "levelMax": 31,
+        "levels": [
+          31
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Nadalia Coldmist",
+        "rawNames": [
+          "Nadalia_Coldmist"
+        ],
+        "count": 1,
+        "levelMin": 31,
+        "levelMax": 31,
+        "levels": [
+          31
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Tacy Mistheart",
+        "rawNames": [
+          "Tacy_MistHeart"
+        ],
+        "count": 1,
+        "levelMin": 31,
+        "levelMax": 31,
+        "levels": [
+          31
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Geonid",
+        "rawNames": [
+          "a_geonid"
+        ],
+        "count": 2,
+        "levelMin": 33,
+        "levelMax": 33,
+        "levels": [
+          33
+        ],
+        "raceCounts": {
+          "Geonid": 2
+        },
+        "rawRaceCounts": {
+          "Geonid": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Dracnid Retainer",
+        "rawNames": [
+          "#a_dracnid_retainer"
+        ],
+        "count": 1,
+        "levelMin": 33,
+        "levelMax": 33,
+        "levels": [
+          33
+        ],
+        "raceCounts": {
+          "Drachnid": 1
+        },
+        "rawRaceCounts": {
+          "Drachnid": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Foreman Smason",
+        "rawNames": [
+          "#Foreman_Smason"
+        ],
+        "count": 1,
+        "levelMin": 33,
+        "levelMax": 33,
+        "levels": [
+          33
+        ],
+        "raceCounts": {
+          "Orc": 1
+        },
+        "rawRaceCounts": {
+          "Orc": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Crystal Webmaster",
+        "rawNames": [
+          "a_crystal_webmaster"
+        ],
+        "count": 2,
+        "levelMin": 34,
+        "levelMax": 34,
+        "levels": [
+          34
+        ],
+        "raceCounts": {
+          "Spider": 2
+        },
+        "rawRaceCounts": {
+          "Spider": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "Foreman Rixact",
+        "rawNames": [
+          "Foreman_Rixact"
+        ],
+        "count": 1,
+        "levelMin": 34,
+        "levelMax": 34,
+        "levels": [
+          34
+        ],
+        "raceCounts": {
+          "Orc": 1
+        },
+        "rawRaceCounts": {
+          "Orc": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Geonid",
+        "rawNames": [
+          "a_geonid"
+        ],
+        "count": 6,
+        "levelMin": 35,
+        "levelMax": 37,
+        "levels": [
+          35,
+          36,
+          37
+        ],
+        "raceCounts": {
+          "Geonid": 6
+        },
+        "rawRaceCounts": {
+          "Geonid": 6
+        },
+        "classCounts": {
+          "Warrior": 6
+        },
+        "typeCounts": {
+          "Spawn Slot": 6
+        }
+      },
+      {
+        "displayName": "A Stalag Terror",
+        "rawNames": [
+          "a_stalag_terror"
+        ],
+        "count": 6,
+        "levelMin": 35,
+        "levelMax": 36,
+        "levels": [
+          35,
+          36
+        ],
+        "raceCounts": {
+          "Tentacle Terror": 6
+        },
+        "rawRaceCounts": {
+          "Tentacle Terror": 6
+        },
+        "classCounts": {
+          "Warrior": 6
+        },
+        "typeCounts": {
+          "Spawn Slot": 6
+        }
+      },
+      {
+        "displayName": "Captain Dunstan Coldheart",
+        "rawNames": [
+          "Captain_Dunstan_Coldheart"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Evercold",
+        "rawNames": [
+          "Guard_Evercold"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Grabadin",
+        "rawNames": [
+          "Guard_Grabadin"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Hollander",
+        "rawNames": [
+          "Guard_Hollander"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Justik",
+        "rawNames": [
+          "Guard_Justik"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Kevin",
+        "rawNames": [
+          "Guard_Kevin"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Kithon",
+        "rawNames": [
+          "Guard_Kithon"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Kristen",
+        "rawNames": [
+          "Guard_Kristen"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Slacey",
+        "rawNames": [
+          "Guard_Slacey"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Solistak",
+        "rawNames": [
+          "Guard_Solistak"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Crystal Lurker",
+        "rawNames": [
+          "#a_crystal_lurker"
+        ],
+        "count": 1,
+        "levelMin": 37,
+        "levelMax": 37,
+        "levels": [
+          37
+        ],
+        "raceCounts": {
+          "Drachnid": 1
+        },
+        "rawRaceCounts": {
+          "Drachnid": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Life Leech",
+        "rawNames": [
+          "#a_life_leech"
+        ],
+        "count": 9,
+        "levelMin": 38,
+        "levelMax": 38,
+        "levels": [
+          38
+        ],
+        "raceCounts": {
+          "Tentacle Terror": 9
+        },
+        "rawRaceCounts": {
+          "Tentacle Terror": 9
+        },
+        "classCounts": {
+          "Warrior": 9
+        },
+        "typeCounts": {
+          "Spawn Slot": 9
+        }
+      },
+      {
+        "displayName": "Historian Baenek",
+        "rawNames": [
+          "Historian_Baenek"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Coldain": 1
+        },
+        "rawRaceCounts": {
+          "Coldain": 1
+        },
+        "classCounts": {
+          "Cleric": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Unknown",
+        "rawNames": [
+          "#____________"
+        ],
+        "count": 1,
+        "levelMin": 99,
+        "levelMax": 99,
+        "levels": [
+          99
+        ],
+        "raceCounts": {
+          "Teleport Man": 1
+        },
+        "rawRaceCounts": {
+          "Teleport Man": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      }
+    ],
+    "rows": [
+      {
+        "displayName": "A Crystal Spiderling",
+        "rawName": "a_crystal_spiderling",
+        "level": 12,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -93.5,
+        "y": -346.630005,
+        "z": -523,
+        "heading": 511,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 22134,
+        "spawngroupId": 13758,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Crystal Spiderling",
+        "rawName": "a_crystal_spiderling",
+        "level": 12,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 69.129997,
+        "y": -362,
+        "z": -523,
+        "heading": 511,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 22135,
+        "spawngroupId": 13758,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Ry`gorr Watchman",
+        "rawName": "a_Ry`Gorr_watchman",
+        "level": 27,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 60,
+        "y": 395,
+        "z": -394.75,
+        "heading": 161,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 22046,
+        "spawngroupId": 13690,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Ry`gorr Watchman",
+        "rawName": "a_Ry`Gorr_watchman",
+        "level": 27,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 523,
+        "y": 424,
+        "z": -370.75,
+        "heading": 101,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 22047,
+        "spawngroupId": 13690,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Ry`gorr Watchman",
+        "rawName": "a_Ry`Gorr_watchman",
+        "level": 27,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 510,
+        "y": 382,
+        "z": -168,
+        "heading": 368,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 22048,
+        "spawngroupId": 13690,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Crystal Crawler",
+        "rawName": "a_crystal_crawler",
+        "level": 28,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 106.879997,
+        "y": -361.130005,
+        "z": -523,
+        "heading": 511,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 22148,
+        "spawngroupId": 13766,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Ry`gorr Miner",
+        "rawName": "a_Ry`Gorr_miner",
+        "level": 28,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 442.880005,
+        "y": 547.380005,
+        "z": -363,
+        "heading": 0,
+        "chance": 40,
+        "respawnTime": 640,
+        "spawn2Id": 22116,
+        "spawngroupId": 13743,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Ry`gorr Miner",
+        "rawName": "a_Ry`Gorr_miner",
+        "level": 28,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 702.880005,
+        "y": 425.130005,
+        "z": -223.130005,
+        "heading": 0,
+        "chance": 40,
+        "respawnTime": 640,
+        "spawn2Id": 22125,
+        "spawngroupId": 13750,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Ry`gorr Oracle",
+        "rawName": "a_Ry`Gorr_oracle",
+        "level": 28,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 614,
+        "y": 237,
+        "z": -394,
+        "heading": 510,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 22056,
+        "spawngroupId": 13695,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Ry`gorr Watchman",
+        "rawName": "a_Ry`Gorr_watchman",
+        "level": 28,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 547,
+        "y": 444,
+        "z": -236.880005,
+        "heading": 314,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 22035,
+        "spawngroupId": 13687,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Ry`gorr Watchman",
+        "rawName": "a_Ry`Gorr_watchman",
+        "level": 28,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 755,
+        "y": 912,
+        "z": -220.880005,
+        "heading": 249,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 22036,
+        "spawngroupId": 13687,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Ry`gorr Watchman",
+        "rawName": "a_Ry`Gorr_watchman",
+        "level": 28,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 818,
+        "y": 577,
+        "z": -326,
+        "heading": 462,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 22037,
+        "spawngroupId": 13687,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Ry`gorr Watchman",
+        "rawName": "a_Ry`Gorr_watchman",
+        "level": 28,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 503,
+        "y": 416,
+        "z": -169,
+        "heading": 310,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 22038,
+        "spawngroupId": 13687,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Soren Coldheart",
+        "rawName": "Soren_Coldheart",
+        "level": 28,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 238,
+        "y": -228,
+        "z": -399.25,
+        "heading": 127,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 22106,
+        "spawngroupId": 13734,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Vevina Velweaver",
+        "rawName": "Vevina_Velweaver",
+        "level": 28,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 248,
+        "y": -228,
+        "z": -383.25,
+        "heading": 377,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 22064,
+        "spawngroupId": 13700,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Coldain Miner",
+        "rawName": "a_Coldain_miner",
+        "level": 29,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 310,
+        "y": -339,
+        "z": -427.25,
+        "heading": 376,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 22092,
+        "spawngroupId": 13720,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Crystal Crawler",
+        "rawName": "a_crystal_crawler",
+        "level": 29,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -144,
+        "y": -365,
+        "z": -526,
+        "heading": 109,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 22136,
+        "spawngroupId": 13759,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Crystal Crawler",
+        "rawName": "a_crystal_crawler",
+        "level": 29,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -398.25,
+        "y": -552.5,
+        "z": -523,
+        "heading": 511,
+        "chance": 95,
+        "respawnTime": 640,
+        "spawn2Id": 22139,
+        "spawngroupId": 13762,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Crystal Crawler",
+        "rawName": "a_crystal_crawler",
+        "level": 29,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 540.5,
+        "y": 267,
+        "z": -464,
+        "heading": 503,
+        "chance": 95,
+        "respawnTime": 640,
+        "spawn2Id": 22140,
+        "spawngroupId": 13762,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Crystal Crawler",
+        "rawName": "a_crystal_crawler",
+        "level": 29,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -373,
+        "y": -550,
+        "z": -526,
+        "heading": 247,
+        "chance": 95,
+        "respawnTime": 640,
+        "spawn2Id": 22141,
+        "spawngroupId": 13762,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Crystal Crawler",
+        "rawName": "a_crystal_crawler",
+        "level": 29,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -206.130005,
+        "y": -417.880005,
+        "z": -523,
+        "heading": 511,
+        "chance": 95,
+        "respawnTime": 640,
+        "spawn2Id": 22142,
+        "spawngroupId": 13762,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Ry`gorr Oracle",
+        "rawName": "a_Ry`Gorr_oracle",
+        "level": 29,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 440,
+        "y": 494,
+        "z": -168.880005,
+        "heading": 158,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 22060,
+        "spawngroupId": 13698,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Coldain Miner",
+        "rawName": "a_Coldain_miner",
+        "level": 30,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 351,
+        "y": -224,
+        "z": -427.25,
+        "heading": 111,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 22093,
+        "spawngroupId": 13721,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Coldain Miner",
+        "rawName": "a_Coldain_miner",
+        "level": 30,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 463,
+        "y": -267,
+        "z": -397.25,
+        "heading": 86,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 22107,
+        "spawngroupId": 13735,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Crystal Crawler",
+        "rawName": "a_crystal_crawler",
+        "level": 30,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 143,
+        "y": -344,
+        "z": -526,
+        "heading": 389,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 22130,
+        "spawngroupId": 13754,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Crystal Crawler",
+        "rawName": "a_crystal_crawler",
+        "level": 30,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -238.880005,
+        "y": -423.630005,
+        "z": -523,
+        "heading": 511,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 22137,
+        "spawngroupId": 13760,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Ry`gorr Herbalist",
+        "rawName": "#a_Ry`Gorr_herbalist",
+        "level": 30,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 451.75,
+        "y": 488,
+        "z": -369,
+        "heading": 0,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 22121,
+        "spawngroupId": 13747,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Ry`gorr Herbalist",
+        "rawName": "#a_Ry`Gorr_herbalist",
+        "level": 30,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 494,
+        "y": 463,
+        "z": -394,
+        "heading": 181,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 22122,
+        "spawngroupId": 13747,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Ry`gorr Herbalist",
+        "rawName": "#a_Ry`Gorr_herbalist",
+        "level": 30,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 500,
+        "y": 418,
+        "z": -394,
+        "heading": 56,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 22145,
+        "spawngroupId": 13764,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Ry`gorr Herbalist",
+        "rawName": "#a_Ry`Gorr_herbalist",
+        "level": 30,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 454,
+        "y": 458,
+        "z": -394,
+        "heading": 457,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 22146,
+        "spawngroupId": 13765,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Ry`gorr Herbalist",
+        "rawName": "#a_Ry`Gorr_herbalist",
+        "level": 30,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 877,
+        "y": 396,
+        "z": -169,
+        "heading": 454,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 22147,
+        "spawngroupId": 13765,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Ry`gorr Inspector",
+        "rawName": "#a_Ry`Gorr_inspector",
+        "level": 30,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 505,
+        "y": 449,
+        "z": -314.75,
+        "heading": 452,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 22042,
+        "spawngroupId": 13689,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Ry`gorr Inspector",
+        "rawName": "#a_Ry`Gorr_inspector",
+        "level": 30,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 647,
+        "y": 238,
+        "z": -394.75,
+        "heading": 510,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 22043,
+        "spawngroupId": 13689,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Ry`gorr Inspector",
+        "rawName": "#a_Ry`Gorr_inspector",
+        "level": 30,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 270,
+        "y": 559,
+        "z": -244.880005,
+        "heading": 133,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 22044,
+        "spawngroupId": 13689,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Ry`gorr Inspector",
+        "rawName": "#a_Ry`Gorr_inspector",
+        "level": 30,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 644,
+        "y": 587,
+        "z": -296.75,
+        "heading": 200,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 22045,
+        "spawngroupId": 13689,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Ry`gorr Inspector",
+        "rawName": "#a_Ry`Gorr_inspector",
+        "level": 30,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 616,
+        "y": 346,
+        "z": -392,
+        "heading": 252,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 22051,
+        "spawngroupId": 13693,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Ry`gorr Inspector",
+        "rawName": "#a_Ry`Gorr_inspector",
+        "level": 30,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 782,
+        "y": 913,
+        "z": -220.880005,
+        "heading": 249,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 22052,
+        "spawngroupId": 13693,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Ry`gorr Inspector",
+        "rawName": "#a_Ry`Gorr_inspector",
+        "level": 30,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 801,
+        "y": 565,
+        "z": -326,
+        "heading": 455,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 22053,
+        "spawngroupId": 13693,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Ry`gorr Inspector",
+        "rawName": "#a_Ry`Gorr_inspector",
+        "level": 30,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 503,
+        "y": 414,
+        "z": -238.880005,
+        "heading": 406.25,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 22057,
+        "spawngroupId": 13696,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Ry`gorr Inspector",
+        "rawName": "#a_Ry`Gorr_inspector",
+        "level": 30,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 552,
+        "y": 513,
+        "z": -168.880005,
+        "heading": 158,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 22058,
+        "spawngroupId": 13696,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Ry`gorr Inspector",
+        "rawName": "#a_Ry`Gorr_inspector",
+        "level": 30,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 439,
+        "y": 441,
+        "z": -314.75,
+        "heading": 145,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 22059,
+        "spawngroupId": 13697,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Ry`gorr Inspector",
+        "rawName": "#a_Ry`Gorr_inspector",
+        "level": 30,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 448.5,
+        "y": 398.25,
+        "z": -238.899994,
+        "heading": 217.5,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 22061,
+        "spawngroupId": 13699,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Ry`gorr Inspector",
+        "rawName": "#a_Ry`Gorr_inspector",
+        "level": 30,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 509.380005,
+        "y": 470,
+        "z": -313,
+        "heading": 0,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 22062,
+        "spawngroupId": 13699,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Ry`gorr Inspector",
+        "rawName": "#a_Ry`Gorr_inspector",
+        "level": 30,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 48.130001,
+        "y": 336.130005,
+        "z": -393,
+        "heading": 0,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 22063,
+        "spawngroupId": 13699,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Ry`gorr Inspector",
+        "rawName": "#a_Ry`Gorr_inspector",
+        "level": 30,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 435.130005,
+        "y": 486.880005,
+        "z": -297,
+        "heading": 0,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 22110,
+        "spawngroupId": 13738,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Ry`gorr Inspector",
+        "rawName": "#a_Ry`Gorr_inspector",
+        "level": 30,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 271.880005,
+        "y": 568.75,
+        "z": -243.130005,
+        "heading": 0,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 22112,
+        "spawngroupId": 13740,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Ry`gorr Inspector",
+        "rawName": "#a_Ry`Gorr_inspector",
+        "level": 30,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 441,
+        "y": 496,
+        "z": -212,
+        "heading": 199,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 22120,
+        "spawngroupId": 13746,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Ry`gorr Inspector",
+        "rawName": "#a_Ry`Gorr_inspector",
+        "level": 30,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 244,
+        "y": 389,
+        "z": -97,
+        "heading": 0,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 22138,
+        "spawngroupId": 13761,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Ry`gorr Inspector",
+        "rawName": "#a_Ry`Gorr_inspector",
+        "level": 30,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 909,
+        "y": 401,
+        "z": -169,
+        "heading": 186,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 22150,
+        "spawngroupId": 13768,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Ry`gorr Inspector",
+        "rawName": "#a_Ry`Gorr_inspector",
+        "level": 30,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 274,
+        "y": 597.880005,
+        "z": -244.880005,
+        "heading": 509.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 22152,
+        "spawngroupId": 13770,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Stalag Terror",
+        "rawName": "a_stalag_terror",
+        "level": 30,
+        "race": "Tentacle Terror",
+        "rawRace": "Tentacle Terror",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 280,
+        "y": -394,
+        "z": -494,
+        "heading": 82,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 22050,
+        "spawngroupId": 13692,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Velium Crawler",
+        "rawName": "a_velium_crawler",
+        "level": 30,
+        "race": "Dragon",
+        "rawRace": "Dragon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -900.75,
+        "y": -631.880005,
+        "z": -552.25,
+        "heading": 377.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 22070,
+        "spawngroupId": 13705,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Velium Crawler",
+        "rawName": "a_velium_crawler",
+        "level": 30,
+        "race": "Dragon",
+        "rawRace": "Dragon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 173.75,
+        "y": -333.880005,
+        "z": -559,
+        "heading": 217,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 22071,
+        "spawngroupId": 13705,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Velium Crawler",
+        "rawName": "a_velium_crawler",
+        "level": 30,
+        "race": "Dragon",
+        "rawRace": "Dragon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -901.75,
+        "y": -544.380005,
+        "z": -545.630005,
+        "heading": 492.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 22072,
+        "spawngroupId": 13705,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Velium Crawler",
+        "rawName": "a_velium_crawler",
+        "level": 30,
+        "race": "Dragon",
+        "rawRace": "Dragon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 331.5,
+        "y": -347.5,
+        "z": -559,
+        "heading": 137,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 22073,
+        "spawngroupId": 13705,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Velium Crawler",
+        "rawName": "a_velium_crawler",
+        "level": 30,
+        "race": "Dragon",
+        "rawRace": "Dragon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 115.5,
+        "y": 172.630005,
+        "z": -463.75,
+        "heading": 174.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 22074,
+        "spawngroupId": 13705,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Velium Crawler",
+        "rawName": "a_velium_crawler",
+        "level": 30,
+        "race": "Dragon",
+        "rawRace": "Dragon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 704.25,
+        "y": -61.25,
+        "z": -516.5,
+        "heading": 217.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 22075,
+        "spawngroupId": 13705,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Velium Crawler",
+        "rawName": "a_velium_crawler",
+        "level": 30,
+        "race": "Dragon",
+        "rawRace": "Dragon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 240,
+        "y": 69.75,
+        "z": -516.5,
+        "heading": 448.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 22076,
+        "spawngroupId": 13705,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Cassia Gemshard",
+        "rawName": "Cassia_Gemshard",
+        "level": 30,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 261,
+        "y": -96,
+        "z": -399.25,
+        "heading": 138,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 22104,
+        "spawngroupId": 13732,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Flint Velweaver",
+        "rawName": "Flint_Velweaver",
+        "level": 30,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 322,
+        "y": -363,
+        "z": -427.25,
+        "heading": 1,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 22099,
+        "spawngroupId": 13727,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Fuller Velweaver",
+        "rawName": "Fuller_Velweaver",
+        "level": 30,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 363,
+        "y": -272,
+        "z": -427.25,
+        "heading": 19,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 22083,
+        "spawngroupId": 13711,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Gilliad Coldheart",
+        "rawName": "Gilliad_Coldheart",
+        "level": 30,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 344,
+        "y": -176,
+        "z": -399.25,
+        "heading": 505,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 22109,
+        "spawngroupId": 13737,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Grabble Coldheart",
+        "rawName": "Grabble_Coldheart",
+        "level": 30,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 165,
+        "y": -261,
+        "z": -399.25,
+        "heading": 129,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 22103,
+        "spawngroupId": 13731,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Hardat Gemshard",
+        "rawName": "Hardat_Gemshard",
+        "level": 30,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 177,
+        "y": -243,
+        "z": -397.25,
+        "heading": 133,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 22102,
+        "spawngroupId": 13730,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Kramble Gemshard",
+        "rawName": "Kramble_Gemshard",
+        "level": 30,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Class 40",
+        "type": "Spawn Slot",
+        "x": 299,
+        "y": -193,
+        "z": -383.25,
+        "heading": 388,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 22095,
+        "spawngroupId": 13723,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Milliace Gemshard",
+        "rawName": "Milliace_Gemshard",
+        "level": 30,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 233,
+        "y": -263,
+        "z": -383.25,
+        "heading": 385,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 22096,
+        "spawngroupId": 13724,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Praps Gemshard",
+        "rawName": "Praps_Gemshard",
+        "level": 30,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 373,
+        "y": -256,
+        "z": -427.25,
+        "heading": 382,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 22091,
+        "spawngroupId": 13719,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Scout Grandan",
+        "rawName": "Scout_Grandan",
+        "level": 30,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 222,
+        "y": -201.875,
+        "z": -383.25,
+        "heading": 261,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 149636,
+        "spawngroupId": 111144,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Crystal Crawler",
+        "rawName": "a_crystal_crawler",
+        "level": 31,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -732,
+        "y": -581,
+        "z": -534,
+        "heading": 3,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 22151,
+        "spawngroupId": 13769,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Stalag Terror",
+        "rawName": "a_stalag_terror",
+        "level": 31,
+        "race": "Tentacle Terror",
+        "rawRace": "Tentacle Terror",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 54,
+        "y": -241,
+        "z": -526,
+        "heading": 125,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 22090,
+        "spawngroupId": 13718,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Derron Coldmist",
+        "rawName": "Derron_Coldmist",
+        "level": 31,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 206,
+        "y": -321,
+        "z": -383.25,
+        "heading": 500,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 22082,
+        "spawngroupId": 13710,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Nadalia Coldmist",
+        "rawName": "Nadalia_Coldmist",
+        "level": 31,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 267,
+        "y": -95,
+        "z": -383.25,
+        "heading": 247,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 22105,
+        "spawngroupId": 13733,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Tacy Mistheart",
+        "rawName": "Tacy_MistHeart",
+        "level": 31,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 341,
+        "y": -127,
+        "z": -383.25,
+        "heading": 377,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 22108,
+        "spawngroupId": 13736,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Crystal Crawler",
+        "rawName": "a_crystal_crawler",
+        "level": 32,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 145,
+        "y": -380,
+        "z": -524,
+        "heading": 441,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 22132,
+        "spawngroupId": 13756,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Crystal Crawler",
+        "rawName": "a_crystal_crawler",
+        "level": 32,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -731,
+        "y": -533,
+        "z": -534,
+        "heading": 262,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 22149,
+        "spawngroupId": 13767,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Stalag Terror",
+        "rawName": "a_stalag_terror",
+        "level": 32,
+        "race": "Tentacle Terror",
+        "rawRace": "Tentacle Terror",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 781,
+        "y": -191,
+        "z": -538,
+        "heading": 313,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 22049,
+        "spawngroupId": 13691,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Crystal Crawler",
+        "rawName": "a_crystal_crawler",
+        "level": 33,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -895,
+        "y": -600,
+        "z": -535,
+        "heading": 109,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 22113,
+        "spawngroupId": 13741,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Crystal Crawler",
+        "rawName": "a_crystal_crawler",
+        "level": 33,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -896,
+        "y": -565,
+        "z": -535,
+        "heading": 151,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 22114,
+        "spawngroupId": 13741,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Crystal Crawler",
+        "rawName": "a_crystal_crawler",
+        "level": 33,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -405,
+        "y": -572,
+        "z": -526,
+        "heading": 47,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 22143,
+        "spawngroupId": 13763,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Crystal Crawler",
+        "rawName": "a_crystal_crawler",
+        "level": 33,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -562,
+        "y": -560,
+        "z": -526,
+        "heading": 145,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 22144,
+        "spawngroupId": 13763,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Dracnid Retainer",
+        "rawName": "#a_dracnid_retainer",
+        "level": 33,
+        "race": "Drachnid",
+        "rawRace": "Drachnid",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -928,
+        "y": -622,
+        "z": -535,
+        "heading": 85,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 22111,
+        "spawngroupId": 13739,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Geonid",
+        "rawName": "a_geonid",
+        "level": 33,
+        "race": "Geonid",
+        "rawRace": "Geonid",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -165,
+        "y": -664,
+        "z": -242,
+        "heading": 396,
+        "chance": 70,
+        "respawnTime": 640,
+        "spawn2Id": 22126,
+        "spawngroupId": 13751,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Geonid",
+        "rawName": "a_geonid",
+        "level": 33,
+        "race": "Geonid",
+        "rawRace": "Geonid",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 40,
+        "y": -663,
+        "z": -163,
+        "heading": 406,
+        "chance": 70,
+        "respawnTime": 640,
+        "spawn2Id": 22127,
+        "spawngroupId": 13751,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Foreman Smason",
+        "rawName": "#Foreman_Smason",
+        "level": 33,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 457,
+        "y": 395,
+        "z": -238.880005,
+        "heading": 75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 22153,
+        "spawngroupId": 13771,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Crystal Webmaster",
+        "rawName": "a_crystal_webmaster",
+        "level": 34,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -951,
+        "y": -592,
+        "z": -535,
+        "heading": 124,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 22119,
+        "spawngroupId": 13745,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Crystal Webmaster",
+        "rawName": "a_crystal_webmaster",
+        "level": 34,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -768,
+        "y": -557.130005,
+        "z": -527,
+        "heading": 511,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 22133,
+        "spawngroupId": 13757,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Foreman Rixact",
+        "rawName": "Foreman_Rixact",
+        "level": 34,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 506,
+        "y": 469,
+        "z": -370,
+        "heading": 391,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 22131,
+        "spawngroupId": 13755,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Geonid",
+        "rawName": "a_geonid",
+        "level": 35,
+        "race": "Geonid",
+        "rawRace": "Geonid",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 35,
+        "y": -381,
+        "z": -483,
+        "heading": 113,
+        "chance": 40,
+        "respawnTime": 640,
+        "spawn2Id": 22117,
+        "spawngroupId": 13744,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Geonid",
+        "rawName": "a_geonid",
+        "level": 35,
+        "race": "Geonid",
+        "rawRace": "Geonid",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -90,
+        "y": -374,
+        "z": -457,
+        "heading": 142,
+        "chance": 40,
+        "respawnTime": 640,
+        "spawn2Id": 22118,
+        "spawngroupId": 13744,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Stalag Terror",
+        "rawName": "a_stalag_terror",
+        "level": 35,
+        "race": "Tentacle Terror",
+        "rawRace": "Tentacle Terror",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 732,
+        "y": -450,
+        "z": -538,
+        "heading": 491,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 22067,
+        "spawngroupId": 13703,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Captain Dunstan Coldheart",
+        "rawName": "Captain_Dunstan_Coldheart",
+        "level": 35,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 229,
+        "y": -255,
+        "z": -399.25,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 22097,
+        "spawngroupId": 13725,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard Evercold",
+        "rawName": "Guard_Evercold",
+        "level": 35,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 266,
+        "y": -317,
+        "z": -397.25,
+        "heading": 259,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 22084,
+        "spawngroupId": 13712,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard Grabadin",
+        "rawName": "Guard_Grabadin",
+        "level": 35,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 236,
+        "y": -129,
+        "z": -363.25,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 22066,
+        "spawngroupId": 13702,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard Hollander",
+        "rawName": "Guard_Hollander",
+        "level": 35,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 204,
+        "y": -129,
+        "z": -363.25,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 22065,
+        "spawngroupId": 13701,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard Justik",
+        "rawName": "Guard_Justik",
+        "level": 35,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 397,
+        "y": -235,
+        "z": -372.25,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 22100,
+        "spawngroupId": 13728,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard Kevin",
+        "rawName": "Guard_Kevin",
+        "level": 35,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 193,
+        "y": -261,
+        "z": -383.25,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 22098,
+        "spawngroupId": 13726,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard Kithon",
+        "rawName": "Guard_Kithon",
+        "level": 35,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 802,
+        "y": -257,
+        "z": -539,
+        "heading": 358,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 22087,
+        "spawngroupId": 13715,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard Kristen",
+        "rawName": "Guard_Kristen",
+        "level": 35,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 252,
+        "y": -93,
+        "z": -363.299988,
+        "heading": 262,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 22086,
+        "spawngroupId": 13714,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard Slacey",
+        "rawName": "Guard_Slacey",
+        "level": 35,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 251,
+        "y": -316,
+        "z": -397.25,
+        "heading": 243,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 22085,
+        "spawngroupId": 13713,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard Solistak",
+        "rawName": "Guard_Solistak",
+        "level": 35,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 410,
+        "y": -232,
+        "z": -372.25,
+        "heading": 258,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 22101,
+        "spawngroupId": 13729,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Geonid",
+        "rawName": "a_geonid",
+        "level": 36,
+        "race": "Geonid",
+        "rawRace": "Geonid",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -157,
+        "y": -583,
+        "z": -229,
+        "heading": 247,
+        "chance": 70,
+        "respawnTime": 640,
+        "spawn2Id": 22128,
+        "spawngroupId": 13752,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Geonid",
+        "rawName": "a_geonid",
+        "level": 36,
+        "race": "Geonid",
+        "rawRace": "Geonid",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -63,
+        "y": -599,
+        "z": -197,
+        "heading": 12,
+        "chance": 35,
+        "respawnTime": 640,
+        "spawn2Id": 22129,
+        "spawngroupId": 13753,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Stalag Terror",
+        "rawName": "a_stalag_terror",
+        "level": 36,
+        "race": "Tentacle Terror",
+        "rawRace": "Tentacle Terror",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 285,
+        "y": -297,
+        "z": -494,
+        "heading": 179,
+        "chance": 30,
+        "respawnTime": 640,
+        "spawn2Id": 22039,
+        "spawngroupId": 13688,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Stalag Terror",
+        "rawName": "a_stalag_terror",
+        "level": 36,
+        "race": "Tentacle Terror",
+        "rawRace": "Tentacle Terror",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -298,
+        "y": -202,
+        "z": -554,
+        "heading": 124,
+        "chance": 30,
+        "respawnTime": 640,
+        "spawn2Id": 22040,
+        "spawngroupId": 13688,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Stalag Terror",
+        "rawName": "a_stalag_terror",
+        "level": 36,
+        "race": "Tentacle Terror",
+        "rawRace": "Tentacle Terror",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -179,
+        "y": -180,
+        "z": -554,
+        "heading": 143,
+        "chance": 30,
+        "respawnTime": 640,
+        "spawn2Id": 22041,
+        "spawngroupId": 13688,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Stalag Terror",
+        "rawName": "a_stalag_terror",
+        "level": 36,
+        "race": "Tentacle Terror",
+        "rawRace": "Tentacle Terror",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -240,
+        "y": -160,
+        "z": -554,
+        "heading": 180,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 22079,
+        "spawngroupId": 13707,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Stalag Terror",
+        "rawName": "a_stalag_terror",
+        "level": 36,
+        "race": "Tentacle Terror",
+        "rawRace": "Tentacle Terror",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 83,
+        "y": -241,
+        "z": -526,
+        "heading": 381,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 22081,
+        "spawngroupId": 13709,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Crystal Lurker",
+        "rawName": "#a_crystal_lurker",
+        "level": 37,
+        "race": "Drachnid",
+        "rawRace": "Drachnid",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -930,
+        "y": -553,
+        "z": -535,
+        "heading": 168,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 22115,
+        "spawngroupId": 13742,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Geonid",
+        "rawName": "a_geonid",
+        "level": 37,
+        "race": "Geonid",
+        "rawRace": "Geonid",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -85,
+        "y": -453,
+        "z": -435,
+        "heading": 8,
+        "chance": 40,
+        "respawnTime": 640,
+        "spawn2Id": 22123,
+        "spawngroupId": 13748,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Geonid",
+        "rawName": "a_geonid",
+        "level": 37,
+        "race": "Geonid",
+        "rawRace": "Geonid",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -261,
+        "y": -546,
+        "z": -329,
+        "heading": 145,
+        "chance": 40,
+        "respawnTime": 640,
+        "spawn2Id": 22124,
+        "spawngroupId": 13749,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Life Leech",
+        "rawName": "#a_life_leech",
+        "level": 38,
+        "race": "Tentacle Terror",
+        "rawRace": "Tentacle Terror",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 629,
+        "y": -363,
+        "z": -538,
+        "heading": 78,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 22054,
+        "spawngroupId": 13694,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Life Leech",
+        "rawName": "#a_life_leech",
+        "level": 38,
+        "race": "Tentacle Terror",
+        "rawRace": "Tentacle Terror",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -181,
+        "y": -209,
+        "z": -554,
+        "heading": 109,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 22055,
+        "spawngroupId": 13694,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Life Leech",
+        "rawName": "#a_life_leech",
+        "level": 38,
+        "race": "Tentacle Terror",
+        "rawRace": "Tentacle Terror",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 620,
+        "y": -212,
+        "z": -538,
+        "heading": 167,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 22068,
+        "spawngroupId": 13704,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Life Leech",
+        "rawName": "#a_life_leech",
+        "level": 38,
+        "race": "Tentacle Terror",
+        "rawRace": "Tentacle Terror",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -76,
+        "y": -176,
+        "z": -552,
+        "heading": 214,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 22069,
+        "spawngroupId": 13704,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Life Leech",
+        "rawName": "#a_life_leech",
+        "level": 38,
+        "race": "Tentacle Terror",
+        "rawRace": "Tentacle Terror",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -217,
+        "y": -225,
+        "z": -554,
+        "heading": 24,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 22077,
+        "spawngroupId": 13706,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Life Leech",
+        "rawName": "#a_life_leech",
+        "level": 38,
+        "race": "Tentacle Terror",
+        "rawRace": "Tentacle Terror",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 63,
+        "y": -451,
+        "z": -510,
+        "heading": 103,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 22078,
+        "spawngroupId": 13706,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Life Leech",
+        "rawName": "#a_life_leech",
+        "level": 38,
+        "race": "Tentacle Terror",
+        "rawRace": "Tentacle Terror",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -276,
+        "y": -238,
+        "z": -536.380005,
+        "heading": 98,
+        "chance": 45,
+        "respawnTime": 640,
+        "spawn2Id": 22080,
+        "spawngroupId": 13708,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Life Leech",
+        "rawName": "#a_life_leech",
+        "level": 38,
+        "race": "Tentacle Terror",
+        "rawRace": "Tentacle Terror",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -117,
+        "y": -206,
+        "z": -554,
+        "heading": 48,
+        "chance": 45,
+        "respawnTime": 640,
+        "spawn2Id": 22088,
+        "spawngroupId": 13716,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Life Leech",
+        "rawName": "#a_life_leech",
+        "level": 38,
+        "race": "Tentacle Terror",
+        "rawRace": "Tentacle Terror",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -26,
+        "y": -166,
+        "z": -538,
+        "heading": 185,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 22089,
+        "spawngroupId": 13717,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Historian Baenek",
+        "rawName": "Historian_Baenek",
+        "level": 40,
+        "race": "Coldain",
+        "rawRace": "Coldain",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": 229,
+        "y": -322,
+        "z": -399.25,
+        "heading": 106,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 22094,
+        "spawngroupId": 13722,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Unknown",
+        "rawName": "#____________",
+        "level": 99,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 1,
+        "spawn2Id": 142571,
+        "spawngroupId": 104096,
+        "candidateCount": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "source": "https://eqmap.vercel.app",
+  "investigatedAt": "2026-05-19",
+  "summary": "EQ Advanced Map exposes public static zone spawn JSON files under /zones/{shortname}.json. The React app discovers its main bundle through /asset-manifest.json, and the main bundle fetches those zone JSON files when a zone viewer loads.",
+  "networkFindings": {
+    "assetManifest": "https://eqmap.vercel.app/asset-manifest.json",
+    "mainBundle": "https://eqmap.vercel.app/static/js/main.632420bf.js",
+    "zoneJsonPattern": "https://eqmap.vercel.app/zones/{zoneShortName}.json",
+    "poiChunk": "https://eqmap.vercel.app/static/js/55.9b265803.chunk.js",
+    "zoneModelBase": "https://mqbrowser.blob.core.windows.net/zones/models",
+    "zoneAssetBase": "https://eqrequiem.blob.core.windows.net/assets/zones"
+  },
+  "bundleReferences": [
+    "The main bundle contains fetch(`/zones/${zoneShortName}.json`) logic for static spawn data.",
+    "The main bundle contains race lookup data as a JSON.parse payload.",
+    "The main bundle contains class lookup data with EQ class names.",
+    "Lazy chunk 55 contains Goodurden-style map point-of-interest data, not spawn rows."
+  ],
+  "testExport": {
+    "zoneShortName": "befallen",
+    "sourceUrl": "https://eqmap.vercel.app/zones/befallen.json",
+    "outputFile": "data/eqmap-befallen-sample.json",
+    "spawnGroups": 127,
+    "spawnRows": 348
+  },
+  "availableFields": [
+    "zoneShortName",
+    "spawnGroupIndex",
+    "spawnIndex",
+    "id",
+    "name",
+    "displayName",
+    "level",
+    "raceId",
+    "race",
+    "classId",
+    "className",
+    "x",
+    "y",
+    "z",
+    "heading",
+    "chance",
+    "spawnGroupCandidateCount",
+    "respawnTime",
+    "hp",
+    "gender",
+    "size",
+    "version",
+    "texture"
+  ],
+  "reuseStatus": {
+    "robotsTxt": "https://eqmap.vercel.app/robots.txt allows all user agents.",
+    "license": "No explicit license or reuse terms were found in the loaded static app assets.",
+    "recommendation": "Treat reuse as unclear until the project owner confirms licensing. Technically suitable for a transform/import pipeline, but do not bulk import into production without permission or a clearly compatible source license."
+  },
+  "fitForZonesFeature": {
+    "canImproveSummaries": true,
+    "why": "The static zone JSON includes explicit spawn rows, levels, race IDs, class IDs, locations, spawn-group candidate counts, and spawn chances.",
+    "caveats": [
+      "The data appears PEQ/EQEmu-like rather than guaranteed P99/classic-era authoritative.",
+      "Spawn groups contain multiple candidate NPCs at the same location; summary counts should account for chance/candidate semantics rather than treating every candidate as simultaneous.",
+      "License/reuse permission is not established."
+    ]
+  }
+}

@@ -1,0 +1,2110 @@
+{
+  "summary": {
+    "zoneSlug": "nexus",
+    "zoneName": "Nexus",
+    "requestedZoneShortName": "nexus",
+    "zoneShortName": "nexus",
+    "sourceFile": "local-eqemu-database",
+    "matched": true,
+    "expansion": "Luclin",
+    "eqemuExpansionId": 3,
+    "expansionSource": "eqemu-zone-table",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobCount": 38,
+    "unknownLevelCount": 0,
+    "minLevel": 1,
+    "maxLevel": 80,
+    "averageLevel": 45.8,
+    "medianLevel": 50,
+    "levelCounts": {
+      "1": 4,
+      "50": 32,
+      "55": 1,
+      "80": 1
+    },
+    "levelBuckets": {
+      "1-10": 4,
+      "11-20": 0,
+      "21-30": 0,
+      "31-40": 0,
+      "41-50": 32,
+      "51-60": 1,
+      "61+": 1
+    },
+    "levelProfileLabel": "Wide level spread",
+    "mobGroupNameCounts": {
+      "Norrath Scion": 10,
+      "A Mystic Voice": 5,
+      "Antonica Scion": 1,
+      "Bind Trap": 1,
+      "Defender Galson": 1,
+      "Defender Howell": 1,
+      "Defender Jena": 1,
+      "Defender Karrik": 1,
+      "Defender Narthem": 1,
+      "Defender Rhazor": 1,
+      "Defender Rinkes": 1,
+      "Fani Dertrimas": 1,
+      "Faydwer Scion": 1,
+      "Jayson Bri`tian": 1,
+      "Kardador Tarsinian": 1,
+      "Kunark Scion": 1,
+      "Larren": 1,
+      "Odus Scion": 1,
+      "Persy Clutches": 1,
+      "Serisn Galaskof": 1,
+      "The Antonica Spire": 1,
+      "The Faydwer Spire": 1,
+      "The Kunark Spire": 1,
+      "The Velodus Spire": 1,
+      "Velious Scion": 1
+    },
+    "classCounts": {
+      "Warrior": 29,
+      "Magician": 3,
+      "Wizard": 3,
+      "Enchanter": 1,
+      "Paladin": 1,
+      "Ranger": 1
+    },
+    "raceCounts": {
+      "Teleport Man": 20,
+      "Human": 11,
+      "Erudite": 3,
+      "High Elf": 2,
+      "Barbarian": 1,
+      "Half Elf": 1
+    },
+    "normalizedRaceCounts": {
+      "Teleport Man": 20,
+      "Human": 11,
+      "Erudite": 3,
+      "High Elf": 2,
+      "Barbarian": 1,
+      "Half Elf": 1
+    },
+    "normalizedRaceLevelCounts": {
+      "Barbarian": {
+        "50": 1
+      },
+      "Erudite": {
+        "50": 3
+      },
+      "Half Elf": {
+        "50": 1
+      },
+      "High Elf": {
+        "50": 2
+      },
+      "Human": {
+        "50": 10,
+        "55": 1
+      },
+      "Teleport Man": {
+        "1": 4,
+        "50": 15,
+        "80": 1
+      }
+    },
+    "raceAliases": {
+      "Barbarian": [
+        "Barbarian"
+      ],
+      "Erudite": [
+        "Erudite"
+      ],
+      "Half Elf": [
+        "Half Elf"
+      ],
+      "High Elf": [
+        "High Elf"
+      ],
+      "Human": [
+        "Human"
+      ],
+      "Teleport Man": [
+        "Teleport Man"
+      ]
+    },
+    "typeCounts": {
+      "Spawn Slot": 38
+    },
+    "notes": [
+      "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+      "Read-only test export; not wired into production /zones data."
+    ],
+    "spawnMapPrototype": {
+      "sourceKind": "Local EQEmu/PEQ database export",
+      "coordinateNote": "Original EQEmu spawn2 x/y/z coordinates are preserved for map prototyping.",
+      "points": [
+        {
+          "spawn2Id": 30084,
+          "spawngroupId": 24045,
+          "name": "Norrath_Scion",
+          "displayName": "Norrath Scion",
+          "level": 50,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": -363,
+          "y": 41,
+          "z": -44.130001,
+          "heading": 511,
+          "chance": 100,
+          "respawnTime": 600,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 30085,
+          "spawngroupId": 24044,
+          "name": "Norrath_Scion",
+          "displayName": "Norrath Scion",
+          "level": 50,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": 369,
+          "y": -38,
+          "z": -44.130001,
+          "heading": 250,
+          "chance": 100,
+          "respawnTime": 600,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 30086,
+          "spawngroupId": 24044,
+          "name": "Norrath_Scion",
+          "displayName": "Norrath Scion",
+          "level": 50,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": 368,
+          "y": -40,
+          "z": -44.130001,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 600,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 30087,
+          "spawngroupId": 24043,
+          "name": "Norrath_Scion",
+          "displayName": "Norrath Scion",
+          "level": 50,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": 29,
+          "y": 349,
+          "z": -44.130001,
+          "heading": 412,
+          "chance": 100,
+          "respawnTime": 600,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 30088,
+          "spawngroupId": 24042,
+          "name": "Norrath_Scion",
+          "displayName": "Norrath Scion",
+          "level": 50,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": 109,
+          "y": -461,
+          "z": -59.130001,
+          "heading": 132,
+          "chance": 100,
+          "respawnTime": 600,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 30089,
+          "spawngroupId": 24041,
+          "name": "Faydwer_Scion",
+          "displayName": "Faydwer Scion",
+          "level": 50,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Paladin",
+          "x": 10,
+          "y": 368,
+          "z": -45.130001,
+          "heading": 340,
+          "chance": 100,
+          "respawnTime": 600,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 30090,
+          "spawngroupId": 24040,
+          "name": "Odus_Scion",
+          "displayName": "Odus Scion",
+          "level": 50,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Magician",
+          "x": 351,
+          "y": -14,
+          "z": -45.130001,
+          "heading": 45,
+          "chance": 100,
+          "respawnTime": 600,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 30091,
+          "spawngroupId": 24039,
+          "name": "Kunark_Scion",
+          "displayName": "Kunark Scion",
+          "level": 50,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 90,
+          "y": -484,
+          "z": -60.130001,
+          "heading": 413,
+          "chance": 100,
+          "respawnTime": 600,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 30092,
+          "spawngroupId": 24038,
+          "name": "Antonica_Scion",
+          "displayName": "Antonica Scion",
+          "level": 50,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Wizard",
+          "x": -377,
+          "y": 17,
+          "z": -45.130001,
+          "heading": 211,
+          "chance": 100,
+          "respawnTime": 600,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 30093,
+          "spawngroupId": 24037,
+          "name": "Defender_Karrik",
+          "displayName": "Defender Karrik",
+          "level": 50,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 234,
+          "y": -14,
+          "z": -55.130001,
+          "heading": 384,
+          "chance": 100,
+          "respawnTime": 600,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 30094,
+          "spawngroupId": 24036,
+          "name": "Defender_Narthem",
+          "displayName": "Defender Narthem",
+          "level": 50,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 234,
+          "y": -57,
+          "z": -55.130001,
+          "heading": 384,
+          "chance": 100,
+          "respawnTime": 600,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 30095,
+          "spawngroupId": 24035,
+          "name": "Defender_Rinkes",
+          "displayName": "Defender Rinkes",
+          "level": 50,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 13,
+          "y": 232,
+          "z": -55.130001,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 600,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 30096,
+          "spawngroupId": 24034,
+          "name": "Defender_Rhazor",
+          "displayName": "Defender Rhazor",
+          "level": 50,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 58,
+          "y": 232,
+          "z": -55.130001,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 600,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 30097,
+          "spawngroupId": 24033,
+          "name": "Defender_Galson",
+          "displayName": "Defender Galson",
+          "level": 50,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Warrior",
+          "x": -13,
+          "y": -234,
+          "z": -54.5,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 600,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 30098,
+          "spawngroupId": 24032,
+          "name": "Larren",
+          "displayName": "Larren",
+          "level": 50,
+          "race": "Half Elf",
+          "rawRace": "Half Elf",
+          "className": "Warrior",
+          "x": -56,
+          "y": -234,
+          "z": -55.5,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 600,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 30099,
+          "spawngroupId": 24031,
+          "name": "Persy_Clutches",
+          "displayName": "Persy Clutches",
+          "level": 50,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Magician",
+          "x": 17,
+          "y": 55,
+          "z": -30.129999,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 600,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 30100,
+          "spawngroupId": 24030,
+          "name": "Fani_Dertrimas",
+          "displayName": "Fani Dertrimas",
+          "level": 50,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Enchanter",
+          "x": -51,
+          "y": 18,
+          "z": -30.129999,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 600,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 30101,
+          "spawngroupId": 24029,
+          "name": "Kardador_Tarsinian",
+          "displayName": "Kardador Tarsinian",
+          "level": 50,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Wizard",
+          "x": -17,
+          "y": -55,
+          "z": -30.129999,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 600,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 30102,
+          "spawngroupId": 24028,
+          "name": "Jayson_Bri`Tian",
+          "displayName": "Jayson Bri`tian",
+          "level": 50,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Magician",
+          "x": 50,
+          "y": -18,
+          "z": -30.129999,
+          "heading": 384,
+          "chance": 100,
+          "respawnTime": 600,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 30103,
+          "spawngroupId": 24027,
+          "name": "Defender_Jena",
+          "displayName": "Defender Jena",
+          "level": 50,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -234,
+          "y": 59,
+          "z": -55.130001,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 600,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 30104,
+          "spawngroupId": 24026,
+          "name": "Defender_Howell",
+          "displayName": "Defender Howell",
+          "level": 50,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -234,
+          "y": 11,
+          "z": -55.130001,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 600,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 30105,
+          "spawngroupId": 24025,
+          "name": "Velious_Scion",
+          "displayName": "Velious Scion",
+          "level": 50,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Wizard",
+          "x": 385,
+          "y": -14,
+          "z": -45.130001,
+          "heading": 383,
+          "chance": 100,
+          "respawnTime": 600,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 30107,
+          "spawngroupId": 24023,
+          "name": "Norrath_Scion",
+          "displayName": "Norrath Scion",
+          "level": 50,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": 41,
+          "y": -363,
+          "z": -44.125,
+          "heading": 504,
+          "chance": 100,
+          "respawnTime": 600,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 30108,
+          "spawngroupId": 24022,
+          "name": "Norrath_Scion",
+          "displayName": "Norrath Scion",
+          "level": 50,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": -38,
+          "y": 369,
+          "z": -44.125,
+          "heading": 464,
+          "chance": 100,
+          "respawnTime": 600,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 30109,
+          "spawngroupId": 24022,
+          "name": "Norrath_Scion",
+          "displayName": "Norrath Scion",
+          "level": 50,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": -40,
+          "y": 368,
+          "z": -44.125,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 600,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 30110,
+          "spawngroupId": 24021,
+          "name": "Norrath_Scion",
+          "displayName": "Norrath Scion",
+          "level": 50,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": 349,
+          "y": 29,
+          "z": -44.125,
+          "heading": 224,
+          "chance": 100,
+          "respawnTime": 600,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 30111,
+          "spawngroupId": 24020,
+          "name": "Norrath_Scion",
+          "displayName": "Norrath Scion",
+          "level": 50,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": -461,
+          "y": 109,
+          "z": -59.125,
+          "heading": 32,
+          "chance": 100,
+          "respawnTime": 600,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 36701,
+          "spawngroupId": 16525,
+          "name": "The_VelOdus_Spire",
+          "displayName": "The Velodus Spire",
+          "level": 50,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": 368,
+          "y": -41,
+          "z": -36,
+          "heading": 500,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 36702,
+          "spawngroupId": 16574,
+          "name": "Serisn_Galaskof",
+          "displayName": "Serisn Galaskof",
+          "level": 55,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Ranger",
+          "x": 465,
+          "y": 43,
+          "z": -27,
+          "heading": 264,
+          "chance": 2,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 36703,
+          "spawngroupId": 16575,
+          "name": "The_Kunark_Spire",
+          "displayName": "The Kunark Spire",
+          "level": 50,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": 109,
+          "y": -461,
+          "z": -50.380001,
+          "heading": 264,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 36704,
+          "spawngroupId": 16576,
+          "name": "The_Faydwer_Spire",
+          "displayName": "The Faydwer Spire",
+          "level": 50,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": 29,
+          "y": 349,
+          "z": -35.400002,
+          "heading": 312,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 36705,
+          "spawngroupId": 16577,
+          "name": "The_Antonica_Spire",
+          "displayName": "The Antonica Spire",
+          "level": 50,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": -363,
+          "y": 41,
+          "z": -35.380001,
+          "heading": 510,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 58516,
+          "spawngroupId": 48068,
+          "name": "A_Mystic_Voice",
+          "displayName": "A Mystic Voice",
+          "level": 50,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 58527,
+          "spawngroupId": 48079,
+          "name": "A_Mystic_Voice1",
+          "displayName": "A Mystic Voice",
+          "level": 1,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": -259.721069,
+          "y": 35.21917,
+          "z": -52.760563,
+          "heading": 136,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 58528,
+          "spawngroupId": 48080,
+          "name": "A_Mystic_Voice1",
+          "displayName": "A Mystic Voice",
+          "level": 1,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": 1.621565,
+          "y": 282.187744,
+          "z": -48.268898,
+          "heading": 450.5,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 58529,
+          "spawngroupId": 48081,
+          "name": "A_Mystic_Voice1",
+          "displayName": "A Mystic Voice",
+          "level": 1,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": 284.773895,
+          "y": -0.054338,
+          "z": -47.751442,
+          "heading": 58.25,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 58530,
+          "spawngroupId": 48082,
+          "name": "A_Mystic_Voice1",
+          "displayName": "A Mystic Voice",
+          "level": 1,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": 16.868902,
+          "y": -303.20517,
+          "z": -46.71048,
+          "heading": 205.25,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 58616,
+          "spawngroupId": 48190,
+          "name": "bind_trap",
+          "displayName": "Bind Trap",
+          "level": 80,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": 0,
+          "y": 0,
+          "z": -31.709486,
+          "heading": 263.25,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        }
+      ]
+    }
+  },
+  "details": {
+    "zoneSlug": "nexus",
+    "routeSlug": "nexus",
+    "zoneName": "Nexus",
+    "sourceFile": "local-eqemu-database",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobGroups": [
+      {
+        "displayName": "A Mystic Voice",
+        "rawNames": [
+          "A_Mystic_Voice1"
+        ],
+        "count": 4,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Teleport Man": 4
+        },
+        "rawRaceCounts": {
+          "Teleport Man": 4
+        },
+        "classCounts": {
+          "Warrior": 4
+        },
+        "typeCounts": {
+          "Spawn Slot": 4
+        }
+      },
+      {
+        "displayName": "Norrath Scion",
+        "rawNames": [
+          "Norrath_Scion"
+        ],
+        "count": 10,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Teleport Man": 10
+        },
+        "rawRaceCounts": {
+          "Teleport Man": 10
+        },
+        "classCounts": {
+          "Warrior": 10
+        },
+        "typeCounts": {
+          "Spawn Slot": 10
+        }
+      },
+      {
+        "displayName": "A Mystic Voice",
+        "rawNames": [
+          "A_Mystic_Voice"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Teleport Man": 1
+        },
+        "rawRaceCounts": {
+          "Teleport Man": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Antonica Scion",
+        "rawNames": [
+          "Antonica_Scion"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Wizard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Defender Galson",
+        "rawNames": [
+          "Defender_Galson"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Defender Howell",
+        "rawNames": [
+          "Defender_Howell"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Defender Jena",
+        "rawNames": [
+          "Defender_Jena"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Defender Karrik",
+        "rawNames": [
+          "Defender_Karrik"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Defender Narthem",
+        "rawNames": [
+          "Defender_Narthem"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Defender Rhazor",
+        "rawNames": [
+          "Defender_Rhazor"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Defender Rinkes",
+        "rawNames": [
+          "Defender_Rinkes"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Fani Dertrimas",
+        "rawNames": [
+          "Fani_Dertrimas"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Enchanter": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Faydwer Scion",
+        "rawNames": [
+          "Faydwer_Scion"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Jayson Bri`tian",
+        "rawNames": [
+          "Jayson_Bri`Tian"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Magician": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Kardador Tarsinian",
+        "rawNames": [
+          "Kardador_Tarsinian"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Wizard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Kunark Scion",
+        "rawNames": [
+          "Kunark_Scion"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Larren",
+        "rawNames": [
+          "Larren"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Half Elf": 1
+        },
+        "rawRaceCounts": {
+          "Half Elf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Odus Scion",
+        "rawNames": [
+          "Odus_Scion"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Magician": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Persy Clutches",
+        "rawNames": [
+          "Persy_Clutches"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Magician": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "The Antonica Spire",
+        "rawNames": [
+          "The_Antonica_Spire"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Teleport Man": 1
+        },
+        "rawRaceCounts": {
+          "Teleport Man": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "The Faydwer Spire",
+        "rawNames": [
+          "The_Faydwer_Spire"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Teleport Man": 1
+        },
+        "rawRaceCounts": {
+          "Teleport Man": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "The Kunark Spire",
+        "rawNames": [
+          "The_Kunark_Spire"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Teleport Man": 1
+        },
+        "rawRaceCounts": {
+          "Teleport Man": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "The Velodus Spire",
+        "rawNames": [
+          "The_VelOdus_Spire"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Teleport Man": 1
+        },
+        "rawRaceCounts": {
+          "Teleport Man": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Velious Scion",
+        "rawNames": [
+          "Velious_Scion"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Wizard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Serisn Galaskof",
+        "rawNames": [
+          "Serisn_Galaskof"
+        ],
+        "count": 1,
+        "levelMin": 55,
+        "levelMax": 55,
+        "levels": [
+          55
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Ranger": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Bind Trap",
+        "rawNames": [
+          "bind_trap"
+        ],
+        "count": 1,
+        "levelMin": 80,
+        "levelMax": 80,
+        "levels": [
+          80
+        ],
+        "raceCounts": {
+          "Teleport Man": 1
+        },
+        "rawRaceCounts": {
+          "Teleport Man": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      }
+    ],
+    "rows": [
+      {
+        "displayName": "A Mystic Voice",
+        "rawName": "A_Mystic_Voice1",
+        "level": 1,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -259.721069,
+        "y": 35.21917,
+        "z": -52.760563,
+        "heading": 136,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 58527,
+        "spawngroupId": 48079,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Mystic Voice",
+        "rawName": "A_Mystic_Voice1",
+        "level": 1,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1.621565,
+        "y": 282.187744,
+        "z": -48.268898,
+        "heading": 450.5,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 58528,
+        "spawngroupId": 48080,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Mystic Voice",
+        "rawName": "A_Mystic_Voice1",
+        "level": 1,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 284.773895,
+        "y": -0.054338,
+        "z": -47.751442,
+        "heading": 58.25,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 58529,
+        "spawngroupId": 48081,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Mystic Voice",
+        "rawName": "A_Mystic_Voice1",
+        "level": 1,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 16.868902,
+        "y": -303.20517,
+        "z": -46.71048,
+        "heading": 205.25,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 58530,
+        "spawngroupId": 48082,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Mystic Voice",
+        "rawName": "A_Mystic_Voice",
+        "level": 50,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 58516,
+        "spawngroupId": 48068,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Antonica Scion",
+        "rawName": "Antonica_Scion",
+        "level": 50,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -377,
+        "y": 17,
+        "z": -45.130001,
+        "heading": 211,
+        "chance": 100,
+        "respawnTime": 600,
+        "spawn2Id": 30092,
+        "spawngroupId": 24038,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Defender Galson",
+        "rawName": "Defender_Galson",
+        "level": 50,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -13,
+        "y": -234,
+        "z": -54.5,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 600,
+        "spawn2Id": 30097,
+        "spawngroupId": 24033,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Defender Howell",
+        "rawName": "Defender_Howell",
+        "level": 50,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -234,
+        "y": 11,
+        "z": -55.130001,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 600,
+        "spawn2Id": 30104,
+        "spawngroupId": 24026,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Defender Jena",
+        "rawName": "Defender_Jena",
+        "level": 50,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -234,
+        "y": 59,
+        "z": -55.130001,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 600,
+        "spawn2Id": 30103,
+        "spawngroupId": 24027,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Defender Karrik",
+        "rawName": "Defender_Karrik",
+        "level": 50,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 234,
+        "y": -14,
+        "z": -55.130001,
+        "heading": 384,
+        "chance": 100,
+        "respawnTime": 600,
+        "spawn2Id": 30093,
+        "spawngroupId": 24037,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Defender Narthem",
+        "rawName": "Defender_Narthem",
+        "level": 50,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 234,
+        "y": -57,
+        "z": -55.130001,
+        "heading": 384,
+        "chance": 100,
+        "respawnTime": 600,
+        "spawn2Id": 30094,
+        "spawngroupId": 24036,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Defender Rhazor",
+        "rawName": "Defender_Rhazor",
+        "level": 50,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 58,
+        "y": 232,
+        "z": -55.130001,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 600,
+        "spawn2Id": 30096,
+        "spawngroupId": 24034,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Defender Rinkes",
+        "rawName": "Defender_Rinkes",
+        "level": 50,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 13,
+        "y": 232,
+        "z": -55.130001,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 600,
+        "spawn2Id": 30095,
+        "spawngroupId": 24035,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Fani Dertrimas",
+        "rawName": "Fani_Dertrimas",
+        "level": 50,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Enchanter",
+        "type": "Spawn Slot",
+        "x": -51,
+        "y": 18,
+        "z": -30.129999,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 600,
+        "spawn2Id": 30100,
+        "spawngroupId": 24030,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Faydwer Scion",
+        "rawName": "Faydwer_Scion",
+        "level": 50,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": 10,
+        "y": 368,
+        "z": -45.130001,
+        "heading": 340,
+        "chance": 100,
+        "respawnTime": 600,
+        "spawn2Id": 30089,
+        "spawngroupId": 24041,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Jayson Bri`tian",
+        "rawName": "Jayson_Bri`Tian",
+        "level": 50,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Magician",
+        "type": "Spawn Slot",
+        "x": 50,
+        "y": -18,
+        "z": -30.129999,
+        "heading": 384,
+        "chance": 100,
+        "respawnTime": 600,
+        "spawn2Id": 30102,
+        "spawngroupId": 24028,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Kardador Tarsinian",
+        "rawName": "Kardador_Tarsinian",
+        "level": 50,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -17,
+        "y": -55,
+        "z": -30.129999,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 600,
+        "spawn2Id": 30101,
+        "spawngroupId": 24029,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Kunark Scion",
+        "rawName": "Kunark_Scion",
+        "level": 50,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 90,
+        "y": -484,
+        "z": -60.130001,
+        "heading": 413,
+        "chance": 100,
+        "respawnTime": 600,
+        "spawn2Id": 30091,
+        "spawngroupId": 24039,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Larren",
+        "rawName": "Larren",
+        "level": 50,
+        "race": "Half Elf",
+        "rawRace": "Half Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -56,
+        "y": -234,
+        "z": -55.5,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 600,
+        "spawn2Id": 30098,
+        "spawngroupId": 24032,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Norrath Scion",
+        "rawName": "Norrath_Scion",
+        "level": 50,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -363,
+        "y": 41,
+        "z": -44.130001,
+        "heading": 511,
+        "chance": 100,
+        "respawnTime": 600,
+        "spawn2Id": 30084,
+        "spawngroupId": 24045,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Norrath Scion",
+        "rawName": "Norrath_Scion",
+        "level": 50,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 369,
+        "y": -38,
+        "z": -44.130001,
+        "heading": 250,
+        "chance": 100,
+        "respawnTime": 600,
+        "spawn2Id": 30085,
+        "spawngroupId": 24044,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Norrath Scion",
+        "rawName": "Norrath_Scion",
+        "level": 50,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 368,
+        "y": -40,
+        "z": -44.130001,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 600,
+        "spawn2Id": 30086,
+        "spawngroupId": 24044,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Norrath Scion",
+        "rawName": "Norrath_Scion",
+        "level": 50,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 29,
+        "y": 349,
+        "z": -44.130001,
+        "heading": 412,
+        "chance": 100,
+        "respawnTime": 600,
+        "spawn2Id": 30087,
+        "spawngroupId": 24043,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Norrath Scion",
+        "rawName": "Norrath_Scion",
+        "level": 50,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 109,
+        "y": -461,
+        "z": -59.130001,
+        "heading": 132,
+        "chance": 100,
+        "respawnTime": 600,
+        "spawn2Id": 30088,
+        "spawngroupId": 24042,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Norrath Scion",
+        "rawName": "Norrath_Scion",
+        "level": 50,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 41,
+        "y": -363,
+        "z": -44.125,
+        "heading": 504,
+        "chance": 100,
+        "respawnTime": 600,
+        "spawn2Id": 30107,
+        "spawngroupId": 24023,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Norrath Scion",
+        "rawName": "Norrath_Scion",
+        "level": 50,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -38,
+        "y": 369,
+        "z": -44.125,
+        "heading": 464,
+        "chance": 100,
+        "respawnTime": 600,
+        "spawn2Id": 30108,
+        "spawngroupId": 24022,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Norrath Scion",
+        "rawName": "Norrath_Scion",
+        "level": 50,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -40,
+        "y": 368,
+        "z": -44.125,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 600,
+        "spawn2Id": 30109,
+        "spawngroupId": 24022,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Norrath Scion",
+        "rawName": "Norrath_Scion",
+        "level": 50,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 349,
+        "y": 29,
+        "z": -44.125,
+        "heading": 224,
+        "chance": 100,
+        "respawnTime": 600,
+        "spawn2Id": 30110,
+        "spawngroupId": 24021,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Norrath Scion",
+        "rawName": "Norrath_Scion",
+        "level": 50,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -461,
+        "y": 109,
+        "z": -59.125,
+        "heading": 32,
+        "chance": 100,
+        "respawnTime": 600,
+        "spawn2Id": 30111,
+        "spawngroupId": 24020,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Odus Scion",
+        "rawName": "Odus_Scion",
+        "level": 50,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Magician",
+        "type": "Spawn Slot",
+        "x": 351,
+        "y": -14,
+        "z": -45.130001,
+        "heading": 45,
+        "chance": 100,
+        "respawnTime": 600,
+        "spawn2Id": 30090,
+        "spawngroupId": 24040,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Persy Clutches",
+        "rawName": "Persy_Clutches",
+        "level": 50,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Magician",
+        "type": "Spawn Slot",
+        "x": 17,
+        "y": 55,
+        "z": -30.129999,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 600,
+        "spawn2Id": 30099,
+        "spawngroupId": 24031,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "The Antonica Spire",
+        "rawName": "The_Antonica_Spire",
+        "level": 50,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -363,
+        "y": 41,
+        "z": -35.380001,
+        "heading": 510,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 36705,
+        "spawngroupId": 16577,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "The Faydwer Spire",
+        "rawName": "The_Faydwer_Spire",
+        "level": 50,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 29,
+        "y": 349,
+        "z": -35.400002,
+        "heading": 312,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 36704,
+        "spawngroupId": 16576,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "The Kunark Spire",
+        "rawName": "The_Kunark_Spire",
+        "level": 50,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 109,
+        "y": -461,
+        "z": -50.380001,
+        "heading": 264,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 36703,
+        "spawngroupId": 16575,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "The Velodus Spire",
+        "rawName": "The_VelOdus_Spire",
+        "level": 50,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 368,
+        "y": -41,
+        "z": -36,
+        "heading": 500,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 36701,
+        "spawngroupId": 16525,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Velious Scion",
+        "rawName": "Velious_Scion",
+        "level": 50,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": 385,
+        "y": -14,
+        "z": -45.130001,
+        "heading": 383,
+        "chance": 100,
+        "respawnTime": 600,
+        "spawn2Id": 30105,
+        "spawngroupId": 24025,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Serisn Galaskof",
+        "rawName": "Serisn_Galaskof",
+        "level": 55,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Ranger",
+        "type": "Spawn Slot",
+        "x": 465,
+        "y": 43,
+        "z": -27,
+        "heading": 264,
+        "chance": 2,
+        "respawnTime": 640,
+        "spawn2Id": 36702,
+        "spawngroupId": 16574,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Bind Trap",
+        "rawName": "bind_trap",
+        "level": 80,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 0,
+        "y": 0,
+        "z": -31.709486,
+        "heading": 263.25,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 58616,
+        "spawngroupId": 48190,
+        "candidateCount": 1
+      }
+    ]
+  }
+}

@@ -193,19 +193,21 @@ function StatMatrix({
 
   return (
     <div className={weapon ? "eq-stat-matrix is-weapon" : "eq-stat-matrix"} aria-hidden={false}>
-      {Array.from({ length: maxRows }).map((_, rowIndex) =>
-        visibleColumns.map((rows, columnIndex) => {
-          const row = rows[rowIndex];
+      {Array.from({ length: maxRows }).map((_, rowIndex) => (
+        <Fragment key={`stat-row-${rowIndex}`}>
+          {visibleColumns.map((rows, columnIndex) => {
+            const row = rows[rowIndex];
 
-          return (
-            <StatPair
-              key={`${columnIndex}-${rowIndex}-${row?.[0] ?? "empty"}`}
-              label={row?.[0]}
-              value={row?.[1] ?? null}
-            />
-          );
-        }),
-      )}
+            return (
+              <StatPair
+                key={`${columnIndex}-${rowIndex}-${row?.[0] ?? "empty"}`}
+                label={row?.[0]}
+                value={row?.[1] ?? null}
+              />
+            );
+          })}
+        </Fragment>
+      ))}
     </div>
   );
 }
@@ -380,8 +382,8 @@ export function EqItemInspect({ itemName, details, compact = false }: EqItemInsp
           )}
           <div className="eq-item-summary">
             <p className={itemNameClass}>{itemName}</p>
-            {topLines.map((line) => (
-              <p key={line}>{line}</p>
+            {topLines.map((line, index) => (
+              <p key={`${index}-${line}`}>{line}</p>
             ))}
           </div>
         </div>

@@ -1,0 +1,140 @@
+{
+  "summary": {
+    "zoneSlug": "the-mines-of-gloomingdeep",
+    "zoneName": "The Mines of Gloomingdeep",
+    "requestedZoneShortName": "tutoriala",
+    "zoneShortName": "tutoriala",
+    "sourceFile": "local-eqemu-database",
+    "matched": true,
+    "expansion": "Classic",
+    "eqemuExpansionId": 0,
+    "expansionSource": "eqemu-zone-table",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobCount": 1,
+    "unknownLevelCount": 0,
+    "minLevel": 5,
+    "maxLevel": 5,
+    "averageLevel": 5,
+    "medianLevel": 5,
+    "levelCounts": {
+      "5": 1
+    },
+    "levelBuckets": {
+      "1-10": 1,
+      "11-20": 0,
+      "21-30": 0,
+      "31-40": 0,
+      "41-50": 0,
+      "51-60": 0,
+      "61+": 0
+    },
+    "levelProfileLabel": "Mostly 1-10",
+    "mobGroupNameCounts": {
+      "Arias": 1
+    },
+    "classCounts": {
+      "Warrior": 1
+    },
+    "raceCounts": {
+      "Barbarian": 1
+    },
+    "normalizedRaceCounts": {
+      "Barbarian": 1
+    },
+    "normalizedRaceLevelCounts": {
+      "Barbarian": {
+        "5": 1
+      }
+    },
+    "raceAliases": {
+      "Barbarian": [
+        "Barbarian"
+      ]
+    },
+    "typeCounts": {
+      "Spawn Slot": 1
+    },
+    "notes": [
+      "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+      "Read-only test export; not wired into production /zones data."
+    ],
+    "spawnMapPrototype": {
+      "sourceKind": "Local EQEmu/PEQ database export",
+      "coordinateNote": "Original EQEmu spawn2 x/y/z coordinates are preserved for map prototyping.",
+      "points": [
+        {
+          "spawn2Id": 39964,
+          "spawngroupId": 30581,
+          "name": "#Arias",
+          "displayName": "Arias",
+          "level": 5,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Warrior",
+          "x": 146,
+          "y": 12,
+          "z": -25.25,
+          "heading": 62.57,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        }
+      ]
+    }
+  },
+  "details": {
+    "zoneSlug": "the-mines-of-gloomingdeep",
+    "routeSlug": "tutoriala",
+    "zoneName": "The Mines of Gloomingdeep",
+    "sourceFile": "local-eqemu-database",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobGroups": [
+      {
+        "displayName": "Arias",
+        "rawNames": [
+          "#Arias"
+        ],
+        "count": 1,
+        "levelMin": 5,
+        "levelMax": 5,
+        "levels": [
+          5
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      }
+    ],
+    "rows": [
+      {
+        "displayName": "Arias",
+        "rawName": "#Arias",
+        "level": 5,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 146,
+        "y": 12,
+        "z": -25.25,
+        "heading": 62.57,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 39964,
+        "spawngroupId": 30581,
+        "candidateCount": 1
+      }
+    ]
+  }
+}

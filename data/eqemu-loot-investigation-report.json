@@ -1,0 +1,3236 @@
+{
+  "source": "Local EQEmu/PEQ database",
+  "zoneShortName": "torgiran",
+  "configPath": "C:\\eqserver\\eqemu server\\eqemu_config.json",
+  "mysqlPath": "C:/Program Files/MariaDB 10.11/bin/mysql.exe",
+  "credentialsCommitted": false,
+  "credentialsHandling": "Credentials were read from local EQEmu config and passed through a temporary mysql defaults file that is deleted after export.",
+  "tablesFound": {
+    "npc_types": {
+      "found": true,
+      "columns": [
+        {
+          "field": "id",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "PRI",
+          "default": null
+        },
+        {
+          "field": "name",
+          "type": "text",
+          "null": "NO",
+          "key": "",
+          "default": null
+        },
+        {
+          "field": "lastname",
+          "type": "varchar(32)",
+          "null": "YES",
+          "key": "",
+          "default": null
+        },
+        {
+          "field": "level",
+          "type": "tinyint(2) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "race",
+          "type": "smallint(5) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "class",
+          "type": "tinyint(2) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "bodytype",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "1"
+        },
+        {
+          "field": "hp",
+          "type": "bigint(20)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "mana",
+          "type": "bigint(20)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "gender",
+          "type": "tinyint(2) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "texture",
+          "type": "tinyint(2) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "helmtexture",
+          "type": "tinyint(2) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "herosforgemodel",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "size",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "hp_regen_rate",
+          "type": "bigint(20)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "hp_regen_per_second",
+          "type": "bigint(20)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "mana_regen_rate",
+          "type": "bigint(20)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "loottable_id",
+          "type": "int(11) unsigned",
+          "null": "NO",
+          "key": "MUL",
+          "default": "0"
+        },
+        {
+          "field": "merchant_id",
+          "type": "int(11) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "greed",
+          "type": "tinyint(8) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "alt_currency_id",
+          "type": "int(11) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "npc_spells_id",
+          "type": "int(11) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "npc_spells_effects_id",
+          "type": "int(11) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "npc_faction_id",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "adventure_template_id",
+          "type": "int(10) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "trap_template",
+          "type": "int(10) unsigned",
+          "null": "YES",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "mindmg",
+          "type": "int(10) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "maxdmg",
+          "type": "int(10) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "attack_count",
+          "type": "smallint(6)",
+          "null": "NO",
+          "key": "",
+          "default": "-1"
+        },
+        {
+          "field": "npcspecialattks",
+          "type": "varchar(36)",
+          "null": "NO",
+          "key": "",
+          "default": ""
+        },
+        {
+          "field": "special_abilities",
+          "type": "text",
+          "null": "YES",
+          "key": "",
+          "default": null
+        },
+        {
+          "field": "aggroradius",
+          "type": "int(10) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "assistradius",
+          "type": "int(10) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "face",
+          "type": "int(10) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "1"
+        },
+        {
+          "field": "luclin_hairstyle",
+          "type": "int(10) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "1"
+        },
+        {
+          "field": "luclin_haircolor",
+          "type": "int(10) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "1"
+        },
+        {
+          "field": "luclin_eyecolor",
+          "type": "int(10) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "1"
+        },
+        {
+          "field": "luclin_eyecolor2",
+          "type": "int(10) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "1"
+        },
+        {
+          "field": "luclin_beardcolor",
+          "type": "int(10) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "1"
+        },
+        {
+          "field": "luclin_beard",
+          "type": "int(10) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "drakkin_heritage",
+          "type": "int(10)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "drakkin_tattoo",
+          "type": "int(10)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "drakkin_details",
+          "type": "int(10)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "armortint_id",
+          "type": "int(10) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "armortint_red",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "armortint_green",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "armortint_blue",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "d_melee_texture1",
+          "type": "int(11) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "d_melee_texture2",
+          "type": "int(11) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "ammo_idfile",
+          "type": "varchar(30)",
+          "null": "NO",
+          "key": "",
+          "default": "IT10"
+        },
+        {
+          "field": "prim_melee_type",
+          "type": "tinyint(4) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "28"
+        },
+        {
+          "field": "sec_melee_type",
+          "type": "tinyint(4) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "28"
+        },
+        {
+          "field": "ranged_type",
+          "type": "tinyint(4) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "7"
+        },
+        {
+          "field": "runspeed",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "MR",
+          "type": "smallint(5)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "CR",
+          "type": "smallint(5)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "DR",
+          "type": "smallint(5)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "FR",
+          "type": "smallint(5)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "PR",
+          "type": "smallint(5)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "Corrup",
+          "type": "smallint(5)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "PhR",
+          "type": "smallint(5) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "see_invis",
+          "type": "smallint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "see_invis_undead",
+          "type": "smallint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "qglobal",
+          "type": "int(2) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "AC",
+          "type": "smallint(5)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "npc_aggro",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "spawn_limit",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "attack_speed",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "attack_delay",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "30"
+        },
+        {
+          "field": "findable",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "STR",
+          "type": "mediumint(8) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "75"
+        },
+        {
+          "field": "STA",
+          "type": "mediumint(8) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "75"
+        },
+        {
+          "field": "DEX",
+          "type": "mediumint(8) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "75"
+        },
+        {
+          "field": "AGI",
+          "type": "mediumint(8) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "75"
+        },
+        {
+          "field": "_INT",
+          "type": "mediumint(8) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "80"
+        },
+        {
+          "field": "WIS",
+          "type": "mediumint(8) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "75"
+        },
+        {
+          "field": "CHA",
+          "type": "mediumint(8) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "75"
+        },
+        {
+          "field": "see_hide",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "see_improved_hide",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "trackable",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "1"
+        },
+        {
+          "field": "isbot",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "exclude",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "1"
+        },
+        {
+          "field": "ATK",
+          "type": "mediumint(9)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "Accuracy",
+          "type": "mediumint(9)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "Avoidance",
+          "type": "mediumint(9) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "slow_mitigation",
+          "type": "smallint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "version",
+          "type": "smallint(5) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "maxlevel",
+          "type": "tinyint(3)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "scalerate",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "100"
+        },
+        {
+          "field": "private_corpse",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "unique_spawn_by_name",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "underwater",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "isquest",
+          "type": "tinyint(3)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "emoteid",
+          "type": "int(10) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "spellscale",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "100"
+        },
+        {
+          "field": "healscale",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "100"
+        },
+        {
+          "field": "no_target_hotkey",
+          "type": "tinyint(1) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "raid_target",
+          "type": "tinyint(1) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "armtexture",
+          "type": "tinyint(2)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "bracertexture",
+          "type": "tinyint(2)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "handtexture",
+          "type": "tinyint(2)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "legtexture",
+          "type": "tinyint(2)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "feettexture",
+          "type": "tinyint(2)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "light",
+          "type": "tinyint(2)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "walkspeed",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "peqid",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "unique_",
+          "type": "tinyint(2)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "fixed",
+          "type": "tinyint(2)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "ignore_despawn",
+          "type": "tinyint(2)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "show_name",
+          "type": "tinyint(2)",
+          "null": "NO",
+          "key": "",
+          "default": "1"
+        },
+        {
+          "field": "untargetable",
+          "type": "tinyint(2)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "charm_ac",
+          "type": "smallint(5)",
+          "null": "YES",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "charm_min_dmg",
+          "type": "int(10)",
+          "null": "YES",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "charm_max_dmg",
+          "type": "int(10)",
+          "null": "YES",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "charm_attack_delay",
+          "type": "tinyint(3)",
+          "null": "YES",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "charm_accuracy_rating",
+          "type": "mediumint(9)",
+          "null": "YES",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "charm_avoidance_rating",
+          "type": "mediumint(9)",
+          "null": "YES",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "charm_atk",
+          "type": "mediumint(9)",
+          "null": "YES",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "skip_global_loot",
+          "type": "tinyint(4)",
+          "null": "YES",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "rare_spawn",
+          "type": "tinyint(4)",
+          "null": "YES",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "stuck_behavior",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "model",
+          "type": "smallint(5)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "flymode",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "-1"
+        },
+        {
+          "field": "always_aggro",
+          "type": "tinyint(1)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "exp_mod",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "100"
+        },
+        {
+          "field": "heroic_strikethrough",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "faction_amount",
+          "type": "int(10)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "keeps_sold_items",
+          "type": "tinyint(1) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "1"
+        },
+        {
+          "field": "is_parcel_merchant",
+          "type": "tinyint(1) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "multiquest_enabled",
+          "type": "tinyint(1) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "npc_tint_id",
+          "type": "smallint(5) unsigned",
+          "null": "YES",
+          "key": "",
+          "default": "0"
+        }
+      ]
+    },
+    "loottable": {
+      "found": true,
+      "columns": [
+        {
+          "field": "id",
+          "type": "int(11) unsigned",
+          "null": "NO",
+          "key": "PRI",
+          "default": null
+        },
+        {
+          "field": "name",
+          "type": "varchar(255)",
+          "null": "NO",
+          "key": "",
+          "default": ""
+        },
+        {
+          "field": "mincash",
+          "type": "int(11) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "maxcash",
+          "type": "int(11) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "avgcoin",
+          "type": "int(10) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "done",
+          "type": "tinyint(3)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "min_expansion",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "-1"
+        },
+        {
+          "field": "max_expansion",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "-1"
+        },
+        {
+          "field": "content_flags",
+          "type": "varchar(100)",
+          "null": "YES",
+          "key": "",
+          "default": null
+        },
+        {
+          "field": "content_flags_disabled",
+          "type": "varchar(100)",
+          "null": "YES",
+          "key": "",
+          "default": null
+        }
+      ]
+    },
+    "loottable_entries": {
+      "found": true,
+      "columns": [
+        {
+          "field": "loottable_id",
+          "type": "int(11) unsigned",
+          "null": "NO",
+          "key": "PRI",
+          "default": "0"
+        },
+        {
+          "field": "lootdrop_id",
+          "type": "int(11) unsigned",
+          "null": "NO",
+          "key": "PRI",
+          "default": "0"
+        },
+        {
+          "field": "multiplier",
+          "type": "tinyint(2) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "1"
+        },
+        {
+          "field": "droplimit",
+          "type": "tinyint(2) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "mindrop",
+          "type": "tinyint(2) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "probability",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "100"
+        }
+      ]
+    },
+    "lootdrop": {
+      "found": true,
+      "columns": [
+        {
+          "field": "id",
+          "type": "int(11) unsigned",
+          "null": "NO",
+          "key": "PRI",
+          "default": null
+        },
+        {
+          "field": "name",
+          "type": "varchar(255)",
+          "null": "NO",
+          "key": "",
+          "default": ""
+        },
+        {
+          "field": "min_expansion",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "-1"
+        },
+        {
+          "field": "max_expansion",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "-1"
+        },
+        {
+          "field": "content_flags",
+          "type": "varchar(100)",
+          "null": "YES",
+          "key": "",
+          "default": null
+        },
+        {
+          "field": "content_flags_disabled",
+          "type": "varchar(100)",
+          "null": "YES",
+          "key": "",
+          "default": null
+        }
+      ]
+    },
+    "lootdrop_entries": {
+      "found": true,
+      "columns": [
+        {
+          "field": "lootdrop_id",
+          "type": "int(11) unsigned",
+          "null": "NO",
+          "key": "PRI",
+          "default": "0"
+        },
+        {
+          "field": "item_id",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "PRI",
+          "default": "0"
+        },
+        {
+          "field": "item_charges",
+          "type": "smallint(2) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "1"
+        },
+        {
+          "field": "equip_item",
+          "type": "tinyint(2) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "chance",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "1"
+        },
+        {
+          "field": "disabled_chance",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "trivial_min_level",
+          "type": "smallint(5) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "trivial_max_level",
+          "type": "smallint(5) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "multiplier",
+          "type": "tinyint(2) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "1"
+        },
+        {
+          "field": "npc_min_level",
+          "type": "smallint(5) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "npc_max_level",
+          "type": "smallint(5) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "min_expansion",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "-1"
+        },
+        {
+          "field": "max_expansion",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "-1"
+        },
+        {
+          "field": "content_flags",
+          "type": "varchar(100)",
+          "null": "YES",
+          "key": "",
+          "default": null
+        },
+        {
+          "field": "content_flags_disabled",
+          "type": "varchar(100)",
+          "null": "YES",
+          "key": "",
+          "default": null
+        }
+      ]
+    },
+    "items": {
+      "found": true,
+      "columns": [
+        {
+          "field": "id",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "PRI",
+          "default": "0"
+        },
+        {
+          "field": "minstatus",
+          "type": "smallint(5)",
+          "null": "NO",
+          "key": "MUL",
+          "default": "0"
+        },
+        {
+          "field": "Name",
+          "type": "varchar(64)",
+          "null": "NO",
+          "key": "MUL",
+          "default": ""
+        },
+        {
+          "field": "aagi",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "ac",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "MUL",
+          "default": "0"
+        },
+        {
+          "field": "accuracy",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "acha",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "adex",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "aint",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "artifactflag",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "asta",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "astr",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "attack",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "augrestrict",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "augslot1type",
+          "type": "tinyint(3)",
+          "null": "NO",
+          "key": "MUL",
+          "default": "0"
+        },
+        {
+          "field": "augslot1visible",
+          "type": "tinyint(3)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "augslot2type",
+          "type": "tinyint(3)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "augslot2visible",
+          "type": "tinyint(3)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "augslot3type",
+          "type": "tinyint(3)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "augslot3visible",
+          "type": "tinyint(3)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "augslot4type",
+          "type": "tinyint(3)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "augslot4visible",
+          "type": "tinyint(3)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "augslot5type",
+          "type": "tinyint(3)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "augslot5visible",
+          "type": "tinyint(3)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "augslot6type",
+          "type": "tinyint(3)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "augslot6visible",
+          "type": "tinyint(3)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "augtype",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "avoidance",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "awis",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "bagsize",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "bagslots",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "bagtype",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "bagwr",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "banedmgamt",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "banedmgraceamt",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "banedmgbody",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "banedmgrace",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "bardtype",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "bardvalue",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "book",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "casttime",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "casttime_",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "charmfile",
+          "type": "varchar(32)",
+          "null": "NO",
+          "key": "",
+          "default": ""
+        },
+        {
+          "field": "charmfileid",
+          "type": "varchar(32)",
+          "null": "NO",
+          "key": "",
+          "default": ""
+        },
+        {
+          "field": "classes",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "color",
+          "type": "int(10) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "combateffects",
+          "type": "varchar(10)",
+          "null": "NO",
+          "key": "",
+          "default": ""
+        },
+        {
+          "field": "extradmgskill",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "extradmgamt",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "price",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "cr",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "damage",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "damageshield",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "deity",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "delay",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "augdistiller",
+          "type": "int(11) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "dotshielding",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "dr",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "clicktype",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "clicklevel2",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "elemdmgtype",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "elemdmgamt",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "endur",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "factionamt1",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "factionamt2",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "factionamt3",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "factionamt4",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "factionmod1",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "factionmod2",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "factionmod3",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "factionmod4",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "filename",
+          "type": "varchar(32)",
+          "null": "NO",
+          "key": "",
+          "default": ""
+        },
+        {
+          "field": "focuseffect",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "fr",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "fvnodrop",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "haste",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "clicklevel",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "hp",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "MUL",
+          "default": "0"
+        },
+        {
+          "field": "regen",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "icon",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "idfile",
+          "type": "varchar(30)",
+          "null": "NO",
+          "key": "",
+          "default": ""
+        },
+        {
+          "field": "itemclass",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "MUL",
+          "default": "0"
+        },
+        {
+          "field": "itemtype",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "MUL",
+          "default": "0"
+        },
+        {
+          "field": "ldonprice",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "ldontheme",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "ldonsold",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "light",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "lore",
+          "type": "varchar(80)",
+          "null": "NO",
+          "key": "MUL",
+          "default": ""
+        },
+        {
+          "field": "loregroup",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "magic",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "mana",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "MUL",
+          "default": "0"
+        },
+        {
+          "field": "manaregen",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "enduranceregen",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "material",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "herosforgemodel",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "maxcharges",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "mr",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "nodrop",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "norent",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "pendingloreflag",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "pr",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "procrate",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "races",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "MUL",
+          "default": "0"
+        },
+        {
+          "field": "range",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "reclevel",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "MUL",
+          "default": "0"
+        },
+        {
+          "field": "recskill",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "reqlevel",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "sellrate",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "shielding",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "size",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "skillmodtype",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "skillmodvalue",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "slots",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "MUL",
+          "default": "0"
+        },
+        {
+          "field": "clickeffect",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "spellshield",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "strikethrough",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "stunresist",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "summonedflag",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "tradeskills",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "favor",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "weight",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "UNK012",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "UNK013",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "benefitflag",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "UNK054",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "UNK059",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "booktype",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "recastdelay",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "recasttype",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "guildfavor",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "UNK123",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "UNK124",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "attuneable",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "nopet",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "updated",
+          "type": "datetime",
+          "null": "YES",
+          "key": "",
+          "default": null
+        },
+        {
+          "field": "comment",
+          "type": "varchar(255)",
+          "null": "NO",
+          "key": "",
+          "default": ""
+        },
+        {
+          "field": "UNK127",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "pointtype",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "potionbelt",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "potionbeltslots",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "stacksize",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "notransfer",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "stackable",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "UNK134",
+          "type": "varchar(255)",
+          "null": "NO",
+          "key": "",
+          "default": ""
+        },
+        {
+          "field": "UNK137",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "proceffect",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "proctype",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "proclevel2",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "proclevel",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "UNK142",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "worneffect",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "worntype",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "wornlevel2",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "wornlevel",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "UNK147",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "focustype",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "focuslevel2",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "focuslevel",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "UNK152",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "scrolleffect",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "scrolltype",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "scrolllevel2",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "scrolllevel",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "UNK157",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "serialized",
+          "type": "datetime",
+          "null": "YES",
+          "key": "",
+          "default": null
+        },
+        {
+          "field": "verified",
+          "type": "datetime",
+          "null": "YES",
+          "key": "",
+          "default": null
+        },
+        {
+          "field": "serialization",
+          "type": "text",
+          "null": "YES",
+          "key": "",
+          "default": null
+        },
+        {
+          "field": "source",
+          "type": "varchar(20)",
+          "null": "NO",
+          "key": "",
+          "default": ""
+        },
+        {
+          "field": "UNK033",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "lorefile",
+          "type": "varchar(32)",
+          "null": "NO",
+          "key": "",
+          "default": ""
+        },
+        {
+          "field": "UNK014",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "svcorruption",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "skillmodmax",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "UNK060",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "augslot1unk2",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "augslot2unk2",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "augslot3unk2",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "augslot4unk2",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "augslot5unk2",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "augslot6unk2",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "UNK120",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "UNK121",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "questitemflag",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "UNK132",
+          "type": "text",
+          "null": "YES",
+          "key": "",
+          "default": null
+        },
+        {
+          "field": "clickunk5",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "clickunk6",
+          "type": "varchar(32)",
+          "null": "NO",
+          "key": "",
+          "default": ""
+        },
+        {
+          "field": "clickunk7",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "procunk1",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "procunk2",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "procunk3",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "procunk4",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "procunk6",
+          "type": "varchar(32)",
+          "null": "NO",
+          "key": "",
+          "default": ""
+        },
+        {
+          "field": "procunk7",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "wornunk1",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "wornunk2",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "wornunk3",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "wornunk4",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "wornunk5",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "wornunk6",
+          "type": "varchar(32)",
+          "null": "NO",
+          "key": "",
+          "default": ""
+        },
+        {
+          "field": "wornunk7",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "focusunk1",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "focusunk2",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "focusunk3",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "focusunk4",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "focusunk5",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "focusunk6",
+          "type": "varchar(32)",
+          "null": "NO",
+          "key": "",
+          "default": ""
+        },
+        {
+          "field": "focusunk7",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "scrollunk1",
+          "type": "int(11) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "scrollunk2",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "scrollunk3",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "scrollunk4",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "scrollunk5",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "scrollunk6",
+          "type": "varchar(32)",
+          "null": "NO",
+          "key": "",
+          "default": ""
+        },
+        {
+          "field": "scrollunk7",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "UNK193",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "purity",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "evoitem",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "evoid",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "evolvinglevel",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "evomax",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "clickname",
+          "type": "varchar(64)",
+          "null": "NO",
+          "key": "",
+          "default": ""
+        },
+        {
+          "field": "procname",
+          "type": "varchar(64)",
+          "null": "NO",
+          "key": "",
+          "default": ""
+        },
+        {
+          "field": "wornname",
+          "type": "varchar(64)",
+          "null": "NO",
+          "key": "",
+          "default": ""
+        },
+        {
+          "field": "focusname",
+          "type": "varchar(64)",
+          "null": "NO",
+          "key": "",
+          "default": ""
+        },
+        {
+          "field": "scrollname",
+          "type": "varchar(64)",
+          "null": "NO",
+          "key": "",
+          "default": ""
+        },
+        {
+          "field": "dsmitigation",
+          "type": "smallint(6)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "heroic_str",
+          "type": "smallint(6)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "heroic_int",
+          "type": "smallint(6)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "heroic_wis",
+          "type": "smallint(6)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "heroic_agi",
+          "type": "smallint(6)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "heroic_dex",
+          "type": "smallint(6)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "heroic_sta",
+          "type": "smallint(6)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "heroic_cha",
+          "type": "smallint(6)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "heroic_pr",
+          "type": "smallint(6)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "heroic_dr",
+          "type": "smallint(6)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "heroic_fr",
+          "type": "smallint(6)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "heroic_cr",
+          "type": "smallint(6)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "heroic_mr",
+          "type": "smallint(6)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "heroic_svcorrup",
+          "type": "smallint(6)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "healamt",
+          "type": "smallint(6)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "spelldmg",
+          "type": "smallint(6)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "clairvoyance",
+          "type": "smallint(6)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "backstabdmg",
+          "type": "smallint(6)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "created",
+          "type": "varchar(64)",
+          "null": "NO",
+          "key": "",
+          "default": ""
+        },
+        {
+          "field": "elitematerial",
+          "type": "smallint(6)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "ldonsellbackrate",
+          "type": "smallint(6)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "scriptfileid",
+          "type": "mediumint(6)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "expendablearrow",
+          "type": "smallint(6)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "powersourcecapacity",
+          "type": "mediumint(7)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "bardeffect",
+          "type": "mediumint(6)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "bardeffecttype",
+          "type": "smallint(6)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "bardlevel2",
+          "type": "smallint(6)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "bardlevel",
+          "type": "smallint(6)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "bardunk1",
+          "type": "smallint(6)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "bardunk2",
+          "type": "smallint(6)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "bardunk3",
+          "type": "smallint(6)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "bardunk4",
+          "type": "smallint(6)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "bardunk5",
+          "type": "smallint(6)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "bardname",
+          "type": "varchar(64)",
+          "null": "NO",
+          "key": "",
+          "default": ""
+        },
+        {
+          "field": "bardunk7",
+          "type": "smallint(6)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "UNK214",
+          "type": "smallint(6)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "subtype",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "UNK220",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "UNK221",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "heirloom",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "UNK223",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "UNK224",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "UNK225",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "UNK226",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "UNK227",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "UNK228",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "UNK229",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "UNK230",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "UNK231",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "UNK232",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "UNK233",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "UNK234",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "placeable",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "UNK236",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "UNK237",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "UNK238",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "UNK239",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "UNK240",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "UNK241",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "epicitem",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        }
+      ]
+    }
+  },
+  "joinsUsed": [
+    "spawn2.zone -> spawnentry.spawngroupID -> npc_types.id",
+    "npc_types.loottable_id -> loottable.id",
+    "loottable.id -> loottable_entries.loottable_id",
+    "loottable_entries.lootdrop_id -> lootdrop.id",
+    "lootdrop.id -> lootdrop_entries.lootdrop_id",
+    "lootdrop_entries.item_id -> items.id"
+  ],
+  "caveats": [
+    "Loot rows are possible drops from EQEmu loot tables, not observed live drops.",
+    "Loot table probability and lootdrop entry chance are preserved separately; exact final drop odds may depend on EQEmu server rules.",
+    "This is a one-zone prototype export and is not merged into Zone Snapshot data."
+  ],
+  "unresolvedLootReferences": [],
+  "totalZoneRows": 2078,
+  "possibleMobCount": 113,
+  "mobsWithLootTables": 107,
+  "mobsWithResolvedDrops": 107,
+  "resolvedItems": 2072,
+  "outputFiles": {
+    "raw": "C:\\frostreaver stuff\\data\\eqemu-torgiran-loot-test.json",
+    "report": "C:\\frostreaver stuff\\data\\eqemu-loot-investigation-report.json",
+    "dropItemReport": "C:\\frostreaver stuff\\data\\eqemu-drop-item-report.json",
+    "itemIconReport": "C:\\frostreaver stuff\\data\\eqemu-item-icon-report.json"
+  }
+}

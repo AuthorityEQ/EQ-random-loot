@@ -1,0 +1,1177 @@
+{
+  "source": "Local EQEmu/PEQ database batch Real Spawn Data export",
+  "generatedAt": "2026-05-19T19:54:07.750Z",
+  "maxExpansion": 5,
+  "expansionScope": {
+    "0": "Classic",
+    "1": "Kunark",
+    "2": "Velious",
+    "3": "Luclin",
+    "4": "Planes of Power",
+    "5": "Legacy of Ykesha"
+  },
+  "configPath": "C:\\eqserver\\eqemu server\\eqemu_config.json",
+  "mysqlPath": "C:/Program Files/MariaDB 10.11/bin/mysql.exe",
+  "credentialsCommitted": false,
+  "credentialsHandling": "Credentials are read from local EQEmu config and passed through temporary mysql defaults files.",
+  "zonesConsidered": 190,
+  "zonesAlreadyExported": [
+    {
+      "shortName": "airplane",
+      "zoneName": "The Plane of Sky",
+      "expansion": "Classic",
+      "spawnCount": 116
+    },
+    {
+      "shortName": "akanon",
+      "zoneName": "Ak'Anon",
+      "expansion": "Classic",
+      "spawnCount": 255
+    },
+    {
+      "shortName": "arena",
+      "zoneName": "The Arena",
+      "expansion": "Classic",
+      "spawnCount": 6
+    },
+    {
+      "shortName": "befallen",
+      "zoneName": "Befallen",
+      "expansion": "Classic",
+      "spawnCount": 133
+    },
+    {
+      "shortName": "beholder",
+      "zoneName": "Gorge of King Xorbb",
+      "expansion": "Classic",
+      "spawnCount": 45
+    },
+    {
+      "shortName": "blackburrow",
+      "zoneName": "Blackburrow",
+      "expansion": "Classic",
+      "spawnCount": 120
+    },
+    {
+      "shortName": "butcher",
+      "zoneName": "Butcherblock Mountains",
+      "expansion": "Classic",
+      "spawnCount": 420
+    },
+    {
+      "shortName": "cauldron",
+      "zoneName": "Dagnor's Cauldron",
+      "expansion": "Classic",
+      "spawnCount": 74
+    },
+    {
+      "shortName": "cazicthule",
+      "zoneName": "Accursed Temple of CazicThule",
+      "expansion": "Classic",
+      "spawnCount": 289
+    },
+    {
+      "shortName": "commons",
+      "zoneName": "West Commonlands",
+      "expansion": "Classic",
+      "spawnCount": 148
+    },
+    {
+      "shortName": "crushbone",
+      "zoneName": "Crushbone",
+      "expansion": "Classic",
+      "spawnCount": 105
+    },
+    {
+      "shortName": "cshome",
+      "zoneName": "Sunset Home",
+      "expansion": "Classic",
+      "spawnCount": 30
+    },
+    {
+      "shortName": "eastkarana",
+      "zoneName": "Eastern Plains of Karana",
+      "expansion": "Classic",
+      "spawnCount": 225
+    },
+    {
+      "shortName": "ecommons",
+      "zoneName": "East Commonlands",
+      "expansion": "Classic",
+      "spawnCount": 238
+    },
+    {
+      "shortName": "erudnext",
+      "zoneName": "Erudin",
+      "expansion": "Classic",
+      "spawnCount": 115
+    },
+    {
+      "shortName": "erudnint",
+      "zoneName": "The Erudin Palace",
+      "expansion": "Classic",
+      "spawnCount": 78
+    },
+    {
+      "shortName": "erudsxing",
+      "zoneName": "Erud's Crossing",
+      "expansion": "Classic",
+      "spawnCount": 96
+    },
+    {
+      "shortName": "everfrost",
+      "zoneName": "Everfrost Peaks",
+      "expansion": "Classic",
+      "spawnCount": 282
+    },
+    {
+      "shortName": "fearplane",
+      "zoneName": "The Plane of Fear",
+      "expansion": "Classic",
+      "spawnCount": 190
+    },
+    {
+      "shortName": "feerrott",
+      "zoneName": "The Feerrott",
+      "expansion": "Classic",
+      "spawnCount": 474
+    },
+    {
+      "shortName": "felwithea",
+      "zoneName": "Northern Felwithe",
+      "expansion": "Classic",
+      "spawnCount": 87
+    },
+    {
+      "shortName": "felwitheb",
+      "zoneName": "Southern Felwithe",
+      "expansion": "Classic",
+      "spawnCount": 38
+    },
+    {
+      "shortName": "freporte",
+      "zoneName": "East Freeport",
+      "expansion": "Classic",
+      "spawnCount": 204
+    },
+    {
+      "shortName": "freportn",
+      "zoneName": "North Freeport",
+      "expansion": "Classic",
+      "spawnCount": 116
+    },
+    {
+      "shortName": "freportw",
+      "zoneName": "West Freeport",
+      "expansion": "Classic",
+      "spawnCount": 213
+    },
+    {
+      "shortName": "gfaydark",
+      "zoneName": "The Greater Faydark",
+      "expansion": "Classic",
+      "spawnCount": 416
+    },
+    {
+      "shortName": "grobb",
+      "zoneName": "Grobb",
+      "expansion": "Classic",
+      "spawnCount": 123
+    },
+    {
+      "shortName": "gukbottom",
+      "zoneName": "The Ruins of Old Guk",
+      "expansion": "Classic",
+      "spawnCount": 228
+    },
+    {
+      "shortName": "guktop",
+      "zoneName": "The City of Guk",
+      "expansion": "Classic",
+      "spawnCount": 240
+    },
+    {
+      "shortName": "halas",
+      "zoneName": "Halas",
+      "expansion": "Classic",
+      "spawnCount": 94
+    },
+    {
+      "shortName": "hateplane",
+      "zoneName": "Plane of Hate",
+      "expansion": "Classic",
+      "spawnCount": 213
+    },
+    {
+      "shortName": "hateplaneb",
+      "zoneName": "The Plane of Hate",
+      "expansion": "Classic",
+      "spawnCount": 491
+    },
+    {
+      "shortName": "highkeep",
+      "zoneName": "High Keep",
+      "expansion": "Classic",
+      "spawnCount": 110
+    },
+    {
+      "shortName": "highpass",
+      "zoneName": "Highpass Hold",
+      "expansion": "Classic",
+      "spawnCount": 110
+    },
+    {
+      "shortName": "hole",
+      "zoneName": "The Hole",
+      "expansion": "Classic",
+      "spawnCount": 526
+    },
+    {
+      "shortName": "innothule",
+      "zoneName": "Innothule Swamp",
+      "expansion": "Classic",
+      "spawnCount": 197
+    },
+    {
+      "shortName": "jaggedpine",
+      "zoneName": "The Jaggedpine Forest",
+      "expansion": "Classic",
+      "spawnCount": 474
+    },
+    {
+      "shortName": "kaladima",
+      "zoneName": "South Kaladim",
+      "expansion": "Classic",
+      "spawnCount": 54
+    },
+    {
+      "shortName": "kaladimb",
+      "zoneName": "North Kaladim",
+      "expansion": "Classic",
+      "spawnCount": 71
+    },
+    {
+      "shortName": "kedge",
+      "zoneName": "Kedge Keep",
+      "expansion": "Classic",
+      "spawnCount": 113
+    },
+    {
+      "shortName": "kerraridge",
+      "zoneName": "Kerra Isle",
+      "expansion": "Classic",
+      "spawnCount": 155
+    },
+    {
+      "shortName": "kithicor",
+      "zoneName": "Kithicor Forest",
+      "expansion": "Classic",
+      "spawnCount": 377
+    },
+    {
+      "shortName": "lakerathe",
+      "zoneName": "Lake Rathetear",
+      "expansion": "Classic",
+      "spawnCount": 151
+    },
+    {
+      "shortName": "lavastorm",
+      "zoneName": "The Lavastorm Mountains",
+      "expansion": "Classic",
+      "spawnCount": 274
+    },
+    {
+      "shortName": "lavastorm",
+      "zoneName": "Lavastorm Mountains",
+      "expansion": "Classic",
+      "spawnCount": 274
+    },
+    {
+      "shortName": "lfaydark",
+      "zoneName": "The Lesser Faydark",
+      "expansion": "Classic",
+      "spawnCount": 225
+    },
+    {
+      "shortName": "mistmoore",
+      "zoneName": "The Castle of Mistmoore",
+      "expansion": "Classic",
+      "spawnCount": 175
+    },
+    {
+      "shortName": "misty",
+      "zoneName": "Misty Thicket",
+      "expansion": "Classic",
+      "spawnCount": 258
+    },
+    {
+      "shortName": "najena",
+      "zoneName": "Najena",
+      "expansion": "Classic",
+      "spawnCount": 109
+    },
+    {
+      "shortName": "nedaria",
+      "zoneName": "Nedaria's Landing",
+      "expansion": "Classic",
+      "spawnCount": 297
+    },
+    {
+      "shortName": "nektulos",
+      "zoneName": "The Nektulos Forest",
+      "expansion": "Classic",
+      "spawnCount": 852
+    },
+    {
+      "shortName": "neriaka",
+      "zoneName": "Neriak - Foreign Quarter",
+      "expansion": "Classic",
+      "spawnCount": 80
+    },
+    {
+      "shortName": "neriakb",
+      "zoneName": "Neriak - Commons",
+      "expansion": "Classic",
+      "spawnCount": 115
+    },
+    {
+      "shortName": "neriakc",
+      "zoneName": "Neriak - 3rd Gate",
+      "expansion": "Classic",
+      "spawnCount": 110
+    },
+    {
+      "shortName": "northkarana",
+      "zoneName": "The Northern Plains of Karana",
+      "expansion": "Classic",
+      "spawnCount": 165
+    },
+    {
+      "shortName": "nro",
+      "zoneName": "Northern Desert of Ro",
+      "expansion": "Classic",
+      "spawnCount": 165
+    },
+    {
+      "shortName": "oasis",
+      "zoneName": "Oasis of Marr",
+      "expansion": "Classic",
+      "spawnCount": 157
+    },
+    {
+      "shortName": "oggok",
+      "zoneName": "Oggok",
+      "expansion": "Classic",
+      "spawnCount": 110
+    },
+    {
+      "shortName": "oot",
+      "zoneName": "Ocean of Tears",
+      "expansion": "Classic",
+      "spawnCount": 190
+    },
+    {
+      "shortName": "paineel",
+      "zoneName": "Paineel",
+      "expansion": "Classic",
+      "spawnCount": 134
+    },
+    {
+      "shortName": "paw",
+      "zoneName": "The Lair of the Splitpaw",
+      "expansion": "Classic",
+      "spawnCount": 391
+    },
+    {
+      "shortName": "paw",
+      "zoneName": "Lair of the Splitpaw",
+      "expansion": "Classic",
+      "spawnCount": 391
+    },
+    {
+      "shortName": "permafrost",
+      "zoneName": "The Permafrost Caverns",
+      "expansion": "Classic",
+      "spawnCount": 234
+    },
+    {
+      "shortName": "qcat",
+      "zoneName": "The Qeynos Aqueduct System",
+      "expansion": "Classic",
+      "spawnCount": 160
+    },
+    {
+      "shortName": "qey2hh1",
+      "zoneName": "The Western Plains of Karana",
+      "expansion": "Classic",
+      "spawnCount": 303
+    },
+    {
+      "shortName": "qeynos",
+      "zoneName": "South Qeynos",
+      "expansion": "Classic",
+      "spawnCount": 200
+    },
+    {
+      "shortName": "qeynos2",
+      "zoneName": "North Qeynos",
+      "expansion": "Classic",
+      "spawnCount": 190
+    },
+    {
+      "shortName": "qeytoqrg",
+      "zoneName": "The Qeynos Hills",
+      "expansion": "Classic",
+      "spawnCount": 194
+    },
+    {
+      "shortName": "qrg",
+      "zoneName": "The Surefall Glade",
+      "expansion": "Classic",
+      "spawnCount": 68
+    },
+    {
+      "shortName": "rathemtn",
+      "zoneName": "The Rathe Mountains",
+      "expansion": "Classic",
+      "spawnCount": 404
+    },
+    {
+      "shortName": "rivervale",
+      "zoneName": "Rivervale",
+      "expansion": "Classic",
+      "spawnCount": 148
+    },
+    {
+      "shortName": "runnyeye",
+      "zoneName": "The Liberated Citadel of Runnyeye",
+      "expansion": "Classic",
+      "spawnCount": 151
+    },
+    {
+      "shortName": "shadowrest",
+      "zoneName": "Shadowrest",
+      "expansion": "Classic",
+      "spawnCount": 15
+    },
+    {
+      "shortName": "soldunga",
+      "zoneName": "Solusek's Eye",
+      "expansion": "Classic",
+      "spawnCount": 184
+    },
+    {
+      "shortName": "soldungb",
+      "zoneName": "Nagafen's Lair",
+      "expansion": "Classic",
+      "spawnCount": 116
+    },
+    {
+      "shortName": "southkarana",
+      "zoneName": "The Southern Plains of Karana",
+      "expansion": "Classic",
+      "spawnCount": 246
+    },
+    {
+      "shortName": "sro",
+      "zoneName": "Southern Desert of Ro",
+      "expansion": "Classic",
+      "spawnCount": 252
+    },
+    {
+      "shortName": "steamfont",
+      "zoneName": "Steamfont Mountains",
+      "expansion": "Classic",
+      "spawnCount": 324
+    },
+    {
+      "shortName": "tox",
+      "zoneName": "Toxxulia Forest",
+      "expansion": "Classic",
+      "spawnCount": 445
+    },
+    {
+      "shortName": "tutoriala",
+      "zoneName": "The Mines of Gloomingdeep",
+      "expansion": "Classic",
+      "spawnCount": 1
+    },
+    {
+      "shortName": "tutorialb",
+      "zoneName": "The Mines of Gloomingdeep",
+      "expansion": "Classic",
+      "spawnCount": 245
+    },
+    {
+      "shortName": "unrest",
+      "zoneName": "The Estate of Unrest",
+      "expansion": "Classic",
+      "spawnCount": 123
+    },
+    {
+      "shortName": "burningwood",
+      "zoneName": "The Burning Wood",
+      "expansion": "Kunark",
+      "spawnCount": 249
+    },
+    {
+      "shortName": "cabeast",
+      "zoneName": "Cabilis East",
+      "expansion": "Kunark",
+      "spawnCount": 183
+    },
+    {
+      "shortName": "cabwest",
+      "zoneName": "Cabilis West",
+      "expansion": "Kunark",
+      "spawnCount": 68
+    },
+    {
+      "shortName": "charasis",
+      "zoneName": "The Howling Stones",
+      "expansion": "Kunark",
+      "spawnCount": 227
+    },
+    {
+      "shortName": "chardok",
+      "zoneName": "Chardok",
+      "expansion": "Kunark",
+      "spawnCount": 370
+    },
+    {
+      "shortName": "citymist",
+      "zoneName": "The City of Mist",
+      "expansion": "Kunark",
+      "spawnCount": 670
+    },
+    {
+      "shortName": "dalnir",
+      "zoneName": "The Crypt of Dalnir",
+      "expansion": "Kunark",
+      "spawnCount": 153
+    },
+    {
+      "shortName": "dreadlands",
+      "zoneName": "The Dreadlands",
+      "expansion": "Kunark",
+      "spawnCount": 281
+    },
+    {
+      "shortName": "droga",
+      "zoneName": "The Temple of Droga",
+      "expansion": "Kunark",
+      "spawnCount": 1043
+    },
+    {
+      "shortName": "droga",
+      "zoneName": "Mines of Droga",
+      "expansion": "Kunark",
+      "spawnCount": 1043
+    },
+    {
+      "shortName": "emeraldjungle",
+      "zoneName": "The Emerald Jungle",
+      "expansion": "Kunark",
+      "spawnCount": 264
+    },
+    {
+      "shortName": "fieldofbone",
+      "zoneName": "The Field of Bone",
+      "expansion": "Kunark",
+      "spawnCount": 386
+    },
+    {
+      "shortName": "firiona",
+      "zoneName": "Firiona Vie",
+      "expansion": "Kunark",
+      "spawnCount": 494
+    },
+    {
+      "shortName": "frontiermtns",
+      "zoneName": "Frontier Mountains",
+      "expansion": "Kunark",
+      "spawnCount": 333
+    },
+    {
+      "shortName": "kaesora",
+      "zoneName": "Kaesora",
+      "expansion": "Kunark",
+      "spawnCount": 114
+    },
+    {
+      "shortName": "karnor",
+      "zoneName": "Karnor's Castle",
+      "expansion": "Kunark",
+      "spawnCount": 136
+    },
+    {
+      "shortName": "kurn",
+      "zoneName": "Kurn's Tower",
+      "expansion": "Kunark",
+      "spawnCount": 251
+    },
+    {
+      "shortName": "lakeofillomen",
+      "zoneName": "Lake of Ill Omen",
+      "expansion": "Kunark",
+      "spawnCount": 409
+    },
+    {
+      "shortName": "nurga",
+      "zoneName": "The Mines of Nurga",
+      "expansion": "Kunark",
+      "spawnCount": 335
+    },
+    {
+      "shortName": "nurga",
+      "zoneName": "Mines of Nurga",
+      "expansion": "Kunark",
+      "spawnCount": 335
+    },
+    {
+      "shortName": "overthere",
+      "zoneName": "The Overthere",
+      "expansion": "Kunark",
+      "spawnCount": 437
+    },
+    {
+      "shortName": "sebilis",
+      "zoneName": "The Ruins of Sebilis",
+      "expansion": "Kunark",
+      "spawnCount": 248
+    },
+    {
+      "shortName": "skyfire",
+      "zoneName": "The Skyfire Mountains",
+      "expansion": "Kunark",
+      "spawnCount": 238
+    },
+    {
+      "shortName": "soltemple",
+      "zoneName": "The Temple of Solusek Ro",
+      "expansion": "Kunark",
+      "spawnCount": 48
+    },
+    {
+      "shortName": "swampofnohope",
+      "zoneName": "The Swamp of No Hope",
+      "expansion": "Kunark",
+      "spawnCount": 457
+    },
+    {
+      "shortName": "timorous",
+      "zoneName": "Timorous Deep",
+      "expansion": "Kunark",
+      "spawnCount": 301
+    },
+    {
+      "shortName": "trakanon",
+      "zoneName": "Trakanon's Teeth",
+      "expansion": "Kunark",
+      "spawnCount": 273
+    },
+    {
+      "shortName": "veeshan",
+      "zoneName": "Veeshan's Peak",
+      "expansion": "Kunark",
+      "spawnCount": 225
+    },
+    {
+      "shortName": "warslikswood",
+      "zoneName": "The Warsliks Woods",
+      "expansion": "Kunark",
+      "spawnCount": 382
+    },
+    {
+      "shortName": "cobaltscar",
+      "zoneName": "Cobaltscar",
+      "expansion": "Velious",
+      "spawnCount": 123
+    },
+    {
+      "shortName": "crystal",
+      "zoneName": "The Crystal Caverns",
+      "expansion": "Velious",
+      "spawnCount": 121
+    },
+    {
+      "shortName": "eastwastes",
+      "zoneName": "Eastern Wastes",
+      "expansion": "Velious",
+      "spawnCount": 398
+    },
+    {
+      "shortName": "frozenshadow",
+      "zoneName": "The Tower of Frozen Shadow",
+      "expansion": "Velious",
+      "spawnCount": 237
+    },
+    {
+      "shortName": "greatdivide",
+      "zoneName": "The Great Divide",
+      "expansion": "Velious",
+      "spawnCount": 557
+    },
+    {
+      "shortName": "growthplane",
+      "zoneName": "The Plane of Growth",
+      "expansion": "Velious",
+      "spawnCount": 339
+    },
+    {
+      "shortName": "iceclad",
+      "zoneName": "The Iceclad Ocean",
+      "expansion": "Velious",
+      "spawnCount": 219
+    },
+    {
+      "shortName": "kael",
+      "zoneName": "Kael Drakkel",
+      "expansion": "Velious",
+      "spawnCount": 243
+    },
+    {
+      "shortName": "mischiefplane",
+      "zoneName": "The Plane of Mischief",
+      "expansion": "Velious",
+      "spawnCount": 662
+    },
+    {
+      "shortName": "necropolis",
+      "zoneName": "Dragon Necropolis",
+      "expansion": "Velious",
+      "spawnCount": 361
+    },
+    {
+      "shortName": "sirens",
+      "zoneName": "Siren's Grotto",
+      "expansion": "Velious",
+      "spawnCount": 762
+    },
+    {
+      "shortName": "skyshrine",
+      "zoneName": "Skyshrine",
+      "expansion": "Velious",
+      "spawnCount": 698
+    },
+    {
+      "shortName": "sleeper",
+      "zoneName": "The Sleeper's Tomb",
+      "expansion": "Velious",
+      "spawnCount": 259
+    },
+    {
+      "shortName": "stonebrunt",
+      "zoneName": "The Stonebrunt Mountains",
+      "expansion": "Velious",
+      "spawnCount": 449
+    },
+    {
+      "shortName": "templeveeshan",
+      "zoneName": "The Temple of Veeshan",
+      "expansion": "Velious",
+      "spawnCount": 261
+    },
+    {
+      "shortName": "thurgadina",
+      "zoneName": "The City of Thurgadin",
+      "expansion": "Velious",
+      "spawnCount": 203
+    },
+    {
+      "shortName": "thurgadinb",
+      "zoneName": "Icewell Keep",
+      "expansion": "Velious",
+      "spawnCount": 94
+    },
+    {
+      "shortName": "velketor",
+      "zoneName": "Velketor's Labyrinth",
+      "expansion": "Velious",
+      "spawnCount": 262
+    },
+    {
+      "shortName": "wakening",
+      "zoneName": "The Wakening Land",
+      "expansion": "Velious",
+      "spawnCount": 283
+    },
+    {
+      "shortName": "warrens",
+      "zoneName": "The Warrens",
+      "expansion": "Velious",
+      "spawnCount": 278
+    },
+    {
+      "shortName": "westwastes",
+      "zoneName": "The Western Wastes",
+      "expansion": "Velious",
+      "spawnCount": 219
+    },
+    {
+      "shortName": "acrylia",
+      "zoneName": "The Acrylia Caverns",
+      "expansion": "Luclin",
+      "spawnCount": 248
+    },
+    {
+      "shortName": "akheva",
+      "zoneName": "The Akheva Ruins",
+      "expansion": "Luclin",
+      "spawnCount": 345
+    },
+    {
+      "shortName": "bazaar",
+      "zoneName": "The Bazaar",
+      "expansion": "Luclin",
+      "spawnCount": 123
+    },
+    {
+      "shortName": "dawnshroud",
+      "zoneName": "The Dawnshroud Peaks",
+      "expansion": "Luclin",
+      "spawnCount": 548
+    },
+    {
+      "shortName": "echo",
+      "zoneName": "The Echo Caverns",
+      "expansion": "Luclin",
+      "spawnCount": 173
+    },
+    {
+      "shortName": "fungusgrove",
+      "zoneName": "The Fungus Grove",
+      "expansion": "Luclin",
+      "spawnCount": 545
+    },
+    {
+      "shortName": "griegsend",
+      "zoneName": "Grieg's End",
+      "expansion": "Luclin",
+      "spawnCount": 1878
+    },
+    {
+      "shortName": "grimling",
+      "zoneName": "Grimling Forest",
+      "expansion": "Luclin",
+      "spawnCount": 406
+    },
+    {
+      "shortName": "hollowshade",
+      "zoneName": "Hollowshade Moor",
+      "expansion": "Luclin",
+      "spawnCount": 820
+    },
+    {
+      "shortName": "katta",
+      "zoneName": "Katta Castellum",
+      "expansion": "Luclin",
+      "spawnCount": 311
+    },
+    {
+      "shortName": "letalis",
+      "zoneName": "Mons Letalis",
+      "expansion": "Luclin",
+      "spawnCount": 280
+    },
+    {
+      "shortName": "maiden",
+      "zoneName": "The Maiden's Eye",
+      "expansion": "Luclin",
+      "spawnCount": 429
+    },
+    {
+      "shortName": "mseru",
+      "zoneName": "Marus Seru",
+      "expansion": "Luclin",
+      "spawnCount": 243
+    },
+    {
+      "shortName": "netherbian",
+      "zoneName": "Netherbian Lair",
+      "expansion": "Luclin",
+      "spawnCount": 161
+    },
+    {
+      "shortName": "nexus",
+      "zoneName": "Nexus",
+      "expansion": "Luclin",
+      "spawnCount": 38
+    },
+    {
+      "shortName": "paludal",
+      "zoneName": "The Paludal Caverns",
+      "expansion": "Luclin",
+      "spawnCount": 433
+    },
+    {
+      "shortName": "scarlet",
+      "zoneName": "The Scarlet Desert",
+      "expansion": "Luclin",
+      "spawnCount": 775
+    },
+    {
+      "shortName": "shadeweaver",
+      "zoneName": "Shadeweaver's Thicket",
+      "expansion": "Luclin",
+      "spawnCount": 696
+    },
+    {
+      "shortName": "shadowhaven",
+      "zoneName": "Shadow Haven",
+      "expansion": "Luclin",
+      "spawnCount": 321
+    },
+    {
+      "shortName": "sharvahl",
+      "zoneName": "The City of Shar Vahl",
+      "expansion": "Luclin",
+      "spawnCount": 628
+    },
+    {
+      "shortName": "sseru",
+      "zoneName": "Sanctus Seru",
+      "expansion": "Luclin",
+      "spawnCount": 750
+    },
+    {
+      "shortName": "ssratemple",
+      "zoneName": "Ssraeshza Temple",
+      "expansion": "Luclin",
+      "spawnCount": 466
+    },
+    {
+      "shortName": "tenebrous",
+      "zoneName": "The Tenebrous Mountains",
+      "expansion": "Luclin",
+      "spawnCount": 314
+    },
+    {
+      "shortName": "thedeep",
+      "zoneName": "The Deep",
+      "expansion": "Luclin",
+      "spawnCount": 407
+    },
+    {
+      "shortName": "thegrey",
+      "zoneName": "The Grey",
+      "expansion": "Luclin",
+      "spawnCount": 749
+    },
+    {
+      "shortName": "twilight",
+      "zoneName": "The Twilight Sea",
+      "expansion": "Luclin",
+      "spawnCount": 513
+    },
+    {
+      "shortName": "umbral",
+      "zoneName": "The Umbral Plains",
+      "expansion": "Luclin",
+      "spawnCount": 360
+    },
+    {
+      "shortName": "vexthal",
+      "zoneName": "Vex Thal",
+      "expansion": "Luclin",
+      "spawnCount": 451
+    },
+    {
+      "shortName": "bothunder",
+      "zoneName": "Bastion of Thunder",
+      "expansion": "Planes of Power",
+      "spawnCount": 425
+    },
+    {
+      "shortName": "codecay",
+      "zoneName": "The Crypt of Decay",
+      "expansion": "Planes of Power",
+      "spawnCount": 221
+    },
+    {
+      "shortName": "hohonora",
+      "zoneName": "The Halls of Honor",
+      "expansion": "Planes of Power",
+      "spawnCount": 305
+    },
+    {
+      "shortName": "hohonorb",
+      "zoneName": "The Temple of Marr",
+      "expansion": "Planes of Power",
+      "spawnCount": 55
+    },
+    {
+      "shortName": "nightmareb",
+      "zoneName": "The Lair of Terris Thule",
+      "expansion": "Planes of Power",
+      "spawnCount": 33
+    },
+    {
+      "shortName": "poair",
+      "zoneName": "The Plane of Air",
+      "expansion": "Planes of Power",
+      "spawnCount": 461
+    },
+    {
+      "shortName": "podisease",
+      "zoneName": "The Plane of Disease",
+      "expansion": "Planes of Power",
+      "spawnCount": 424
+    },
+    {
+      "shortName": "poeartha",
+      "zoneName": "The Plane of Earth",
+      "expansion": "Planes of Power",
+      "spawnCount": 505
+    },
+    {
+      "shortName": "poearthb",
+      "zoneName": "The Plane of Earth",
+      "expansion": "Planes of Power",
+      "spawnCount": 97
+    },
+    {
+      "shortName": "pofire",
+      "zoneName": "The Plane of Fire",
+      "expansion": "Planes of Power",
+      "spawnCount": 565
+    },
+    {
+      "shortName": "poinnovation",
+      "zoneName": "The Plane of Innovation",
+      "expansion": "Planes of Power",
+      "spawnCount": 237
+    },
+    {
+      "shortName": "pojustice",
+      "zoneName": "The Plane of Justice",
+      "expansion": "Planes of Power",
+      "spawnCount": 307
+    },
+    {
+      "shortName": "poknowledge",
+      "zoneName": "The Plane of Knowledge",
+      "expansion": "Planes of Power",
+      "spawnCount": 535
+    },
+    {
+      "shortName": "ponightmare",
+      "zoneName": "The Plane of Nightmares",
+      "expansion": "Planes of Power",
+      "spawnCount": 544
+    },
+    {
+      "shortName": "postorms",
+      "zoneName": "The Plane of Storms",
+      "expansion": "Planes of Power",
+      "spawnCount": 618
+    },
+    {
+      "shortName": "potactics",
+      "zoneName": "Drunder, the Fortress of Zek",
+      "expansion": "Planes of Power",
+      "spawnCount": 268
+    },
+    {
+      "shortName": "potimea",
+      "zoneName": "The Plane of Time",
+      "expansion": "Planes of Power",
+      "spawnCount": 216
+    },
+    {
+      "shortName": "potimeb",
+      "zoneName": "The Plane of Time",
+      "expansion": "Planes of Power",
+      "spawnCount": 165
+    },
+    {
+      "shortName": "potorment",
+      "zoneName": "Torment, the Plane of Pain",
+      "expansion": "Planes of Power",
+      "spawnCount": 258
+    },
+    {
+      "shortName": "potranquility",
+      "zoneName": "The Plane of Tranquility",
+      "expansion": "Planes of Power",
+      "spawnCount": 78
+    },
+    {
+      "shortName": "povalor",
+      "zoneName": "The Plane of Valor",
+      "expansion": "Planes of Power",
+      "spawnCount": 259
+    },
+    {
+      "shortName": "powater",
+      "zoneName": "The Plane of Water",
+      "expansion": "Planes of Power",
+      "spawnCount": 206
+    },
+    {
+      "shortName": "solrotower",
+      "zoneName": "The Tower of Solusek Ro",
+      "expansion": "Planes of Power",
+      "spawnCount": 406
+    },
+    {
+      "shortName": "chardokb",
+      "zoneName": "Chardok: The Halls of Betrayal",
+      "expansion": "Legacy of Ykesha",
+      "spawnCount": 172
+    },
+    {
+      "shortName": "dulak",
+      "zoneName": "Dulak's Harbor",
+      "expansion": "Legacy of Ykesha",
+      "spawnCount": 416
+    },
+    {
+      "shortName": "gunthak",
+      "zoneName": "The Gulf of Gunthak",
+      "expansion": "Legacy of Ykesha",
+      "spawnCount": 445
+    },
+    {
+      "shortName": "hatesfury",
+      "zoneName": "Hate's Fury",
+      "expansion": "Legacy of Ykesha",
+      "spawnCount": 151
+    },
+    {
+      "shortName": "nadox",
+      "zoneName": "The Crypt of Nadox",
+      "expansion": "Legacy of Ykesha",
+      "spawnCount": 359
+    },
+    {
+      "shortName": "soldungc",
+      "zoneName": "The Caverns of Exile",
+      "expansion": "Legacy of Ykesha",
+      "spawnCount": 232
+    },
+    {
+      "shortName": "torgiran",
+      "zoneName": "The Torgiran Mines",
+      "expansion": "Legacy of Ykesha",
+      "spawnCount": 229
+    }
+  ],
+  "zonesExported": [],
+  "zonesSkipped": [],
+  "zonesFailed": [],
+  "indexRebuild": {
+    "ok": true,
+    "status": 0,
+    "stdout": "{\n  \"ok\": true,\n  \"summaries\": 185,\n  \"missing\": 0,\n  \"skipped\": 1,\n  \"expansionCoverage\": {\n    \"Classic\": 80,\n    \"Kunark\": 27,\n    \"Legacy of Ykesha\": 7,\n    \"Luclin\": 27,\n    \"Planes of Power\": 23,\n    \"Velious\": 21\n  },\n  \"totals\": {\n    \"zones\": 185,\n    \"spawnSlots\": 52478,\n    \"spawnCandidates\": 106257,\n    \"possibleMobs\": 26549,\n    \"mobsWithResolvedDrops\": 19648,\n    \"resolvedDropItems\": 466346\n  },\n  \"outputs\": [\n    \"C:\\\\frostreaver stuff\\\\data\\\\eqemu-real-spawn-zone-summaries.json\",\n    \"C:\\\\frostreaver stuff\\\\data\\\\eqemu-real-spawn-export-report.json\"\n  ]\n}",
+    "stderr": "",
+    "error": null
+  },
+  "itemReconciliation": {
+    "ok": true,
+    "status": 0,
+    "stdout": "{\n  \"ok\": true,\n  \"report\": \"C:\\\\frostreaver stuff\\\\data\\\\eqemu-item-reconciliation-report.json\",\n  \"matchedItemCount\": 4458,\n  \"unmatchedItemCount\": 10146,\n  \"itemTypeMismatchCount\": 43225,\n  \"slotMismatchCount\": 5074\n}",
+    "stderr": "",
+    "error": null
+  }
+}

@@ -1,0 +1,5179 @@
+{
+  "summary": {
+    "zoneSlug": "northern-felwithe",
+    "zoneName": "Northern Felwithe",
+    "requestedZoneShortName": "felwithea",
+    "zoneShortName": "felwithea",
+    "sourceFile": "local-eqemu-database",
+    "matched": true,
+    "expansion": "Classic",
+    "eqemuExpansionId": 0,
+    "expansionSource": "eqemu-zone-table",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobCount": 87,
+    "unknownLevelCount": 1,
+    "minLevel": 1,
+    "maxLevel": 70,
+    "averageLevel": 36.7,
+    "medianLevel": 40,
+    "levelCounts": {
+      "1": 13,
+      "25": 2,
+      "30": 1,
+      "35": 2,
+      "38": 1,
+      "39": 4,
+      "40": 43,
+      "41": 2,
+      "42": 5,
+      "50": 3,
+      "55": 1,
+      "61": 4,
+      "65": 3,
+      "70": 2
+    },
+    "levelBuckets": {
+      "1-10": 13,
+      "11-20": 0,
+      "21-30": 3,
+      "31-40": 50,
+      "41-50": 10,
+      "51-60": 1,
+      "61+": 9
+    },
+    "levelProfileLabel": "Wide level spread",
+    "mobGroupNameCounts": {
+      "A Rodent": 10,
+      "A Frostfell Goblin": 1,
+      "Alladria Skyetcher": 1,
+      "Allia Moondancer": 1,
+      "Ann Oma": 1,
+      "Arrias Arcanum": 1,
+      "Assa Leafwind": 1,
+      "Banker Rylisan": 1,
+      "Banker Tintal": 1,
+      "Bedida Claygrinder": 1,
+      "Celest Palestream": 1,
+      "Challice": 1,
+      "Chenori Berinal": 1,
+      "Elia The Pure": 1,
+      "Elytan Rantas": 1,
+      "Exterminator Valern": 1,
+      "Feraniel Leafsway": 1,
+      "Fireworks Engineer Fabdabus": 1,
+      "Fishmonger Issa": 1,
+      "Fishmonger Jassa": 1,
+      "Galrun Starforge": 1,
+      "General Jyleel": 1,
+      "Guard Allmayn": 1,
+      "Guard Crucorn": 1,
+      "Guard Evital": 1,
+      "Guard Hutian": 1,
+      "Guard Jassong": 1,
+      "Guard Kiston": 1,
+      "Guard Legver": 1,
+      "Guard Lovayn": 1,
+      "Guard Meadom": 1,
+      "Guard Mystan": 1,
+      "Guard Settine": 1,
+      "Guard Trerun": 1,
+      "Guard Wisnyw": 1,
+      "Hargar The Velium Chef": 1,
+      "Inkeeper Freegraze": 1,
+      "Isyna Firspanyl": 1,
+      "Laernian Caelael": 1,
+      "Larroniae Huial": 1,
+      "Lieutenant Rosaed": 1,
+      "Lord Nethryn": 1,
+      "Merchant Dantree": 1,
+      "Merchant Deerchaser": 1,
+      "Merchant Irontree": 1,
+      "Merchant Issynal": 1,
+      "Merchant Longarrow": 1,
+      "Merchant Nora": 1,
+      "Merchant Silspin": 1,
+      "Merchant Silvenspin": 1,
+      "Merchant Silverkale": 1,
+      "Merchant Sorintal": 1,
+      "Merchant Tearlan": 1,
+      "Merchant Tissan": 1,
+      "Merchant Tyslin": 1,
+      "Nerrisia Irontree": 1,
+      "Opal Leganyn": 1,
+      "Priest Of Discord": 1,
+      "Rolyn Longwalker": 1,
+      "Santug Claugg": 1,
+      "Seleni Treekeeper": 1,
+      "Serenica Greenfinger": 1,
+      "Seria Woodwind": 1,
+      "Soulbinder Elendalira": 1,
+      "Tacar Tissleplay": 1,
+      "Tam Slyspan": 1,
+      "Tanalin Silverkale": 1,
+      "Terren Starwatcher": 1,
+      "Terri Woodshape": 1,
+      "Tolis Fearnone": 1,
+      "Tolkar Parlone": 1,
+      "Tylar Windspirit": 1,
+      "Tyle Songwhisper": 1,
+      "Tynkale": 1,
+      "Unknown": 1,
+      "Wela Muselender": 1,
+      "Wellin Brookleap": 1,
+      "Yeolarn Bronzeleaf": 1
+    },
+    "classCounts": {
+      "Banker": 41,
+      "Warrior": 16,
+      "Paladin": 15,
+      "Cleric": 5,
+      "Class 40": 2,
+      "Paladin GM": 2,
+      "Bard": 1,
+      "Cleric GM": 1,
+      "Enchanter": 1,
+      "Tribute Master": 1,
+      "Unknown": 1,
+      "Wizard": 1
+    },
+    "raceCounts": {
+      "High Elf": 55,
+      "Guard": 14,
+      "Rat": 10,
+      "Dwarf": 2,
+      "Gnome": 1,
+      "Goblin": 1,
+      "Human": 1,
+      "Ogre": 1,
+      "Unknown": 1,
+      "Wood Elf": 1
+    },
+    "normalizedRaceCounts": {
+      "High Elf": 55,
+      "Guard": 14,
+      "Rat": 10,
+      "Dwarf": 2,
+      "Gnome": 1,
+      "Goblin": 1,
+      "Human": 1,
+      "Ogre": 1,
+      "Unknown": 1,
+      "Wood Elf": 1
+    },
+    "normalizedRaceLevelCounts": {
+      "Dwarf": {
+        "1": 1,
+        "40": 1
+      },
+      "Gnome": {
+        "1": 1
+      },
+      "Goblin": {
+        "1": 1
+      },
+      "Guard": {
+        "38": 1,
+        "39": 4,
+        "40": 2,
+        "41": 2,
+        "42": 5
+      },
+      "High Elf": {
+        "25": 1,
+        "30": 1,
+        "35": 2,
+        "40": 40,
+        "50": 2,
+        "55": 1,
+        "61": 4,
+        "65": 3,
+        "70": 1
+      },
+      "Human": {
+        "50": 1
+      },
+      "Ogre": {
+        "70": 1
+      },
+      "Rat": {
+        "1": 10
+      },
+      "Wood Elf": {
+        "25": 1
+      }
+    },
+    "raceAliases": {
+      "Dwarf": [
+        "Dwarf"
+      ],
+      "Gnome": [
+        "Gnome"
+      ],
+      "Goblin": [
+        "Goblin"
+      ],
+      "Guard": [
+        "Guard"
+      ],
+      "High Elf": [
+        "High Elf"
+      ],
+      "Human": [
+        "Human"
+      ],
+      "Ogre": [
+        "Ogre"
+      ],
+      "Rat": [
+        "Rat"
+      ],
+      "Unknown": [
+        "Unknown"
+      ],
+      "Wood Elf": [
+        "Wood Elf"
+      ]
+    },
+    "typeCounts": {
+      "Spawn Slot": 87
+    },
+    "notes": [
+      "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+      "Read-only test export; not wired into production /zones data."
+    ],
+    "spawnMapPrototype": {
+      "sourceKind": "Local EQEmu/PEQ database export",
+      "coordinateNote": "Original EQEmu spawn2 x/y/z coordinates are preserved for map prototyping.",
+      "points": [
+        {
+          "spawn2Id": 8710,
+          "spawngroupId": 5748,
+          "name": "Guard_Evital",
+          "displayName": "Guard Evital",
+          "level": 39,
+          "race": "Guard",
+          "rawRace": "Guard",
+          "className": "Paladin",
+          "x": -444,
+          "y": -64,
+          "z": 3.75,
+          "heading": 374,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8711,
+          "spawngroupId": 5747,
+          "name": "Guard_Hutian",
+          "displayName": "Guard Hutian",
+          "level": 41,
+          "race": "Guard",
+          "rawRace": "Guard",
+          "className": "Paladin",
+          "x": -562,
+          "y": 7,
+          "z": 3.75,
+          "heading": 0,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8712,
+          "spawngroupId": 5746,
+          "name": "Guard_Jassong",
+          "displayName": "Guard Jassong",
+          "level": 42,
+          "race": "Guard",
+          "rawRace": "Guard",
+          "className": "Paladin",
+          "x": -304,
+          "y": 95,
+          "z": 3.75,
+          "heading": 0,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8713,
+          "spawngroupId": 5745,
+          "name": "Guard_Settine",
+          "displayName": "Guard Settine",
+          "level": 39,
+          "race": "Guard",
+          "rawRace": "Guard",
+          "className": "Paladin",
+          "x": -163,
+          "y": -24,
+          "z": 3.75,
+          "heading": 0,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8714,
+          "spawngroupId": 5743,
+          "name": "Guard_Allmayn",
+          "displayName": "Guard Allmayn",
+          "level": 42,
+          "race": "Guard",
+          "rawRace": "Guard",
+          "className": "Paladin",
+          "x": -163,
+          "y": 27,
+          "z": 3.75,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8715,
+          "spawngroupId": 5742,
+          "name": "Guard_Mystan",
+          "displayName": "Guard Mystan",
+          "level": 42,
+          "race": "Guard",
+          "rawRace": "Guard",
+          "className": "Paladin",
+          "x": -186.880005,
+          "y": 1,
+          "z": 3.75,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8716,
+          "spawngroupId": 5741,
+          "name": "Guard_Wisnyw",
+          "displayName": "Guard Wisnyw",
+          "level": 42,
+          "race": "Guard",
+          "rawRace": "Guard",
+          "className": "Paladin",
+          "x": -47,
+          "y": 14,
+          "z": 3.38,
+          "heading": 126,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8717,
+          "spawngroupId": 5740,
+          "name": "Guard_Legver",
+          "displayName": "Guard Legver",
+          "level": 40,
+          "race": "Guard",
+          "rawRace": "Guard",
+          "className": "Paladin",
+          "x": -41.630001,
+          "y": -0.13,
+          "z": 3.75,
+          "heading": 131.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8718,
+          "spawngroupId": 5739,
+          "name": "Guard_Meadom",
+          "displayName": "Guard Meadom",
+          "level": 38,
+          "race": "Guard",
+          "rawRace": "Guard",
+          "className": "Paladin",
+          "x": -47,
+          "y": -14,
+          "z": 3.38,
+          "heading": 126,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8719,
+          "spawngroupId": 5738,
+          "name": "Elytan_Rantas",
+          "displayName": "Elytan Rantas",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -673,
+          "y": 41,
+          "z": -10.13,
+          "heading": 368,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8720,
+          "spawngroupId": 5737,
+          "name": "Tolkar_Parlone",
+          "displayName": "Tolkar Parlone",
+          "level": 35,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Enchanter",
+          "x": -691,
+          "y": -64,
+          "z": -10.13,
+          "heading": 336,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8721,
+          "spawngroupId": 5736,
+          "name": "a_rodent",
+          "displayName": "A Rodent",
+          "level": 1,
+          "race": "Rat",
+          "rawRace": "Rat",
+          "className": "Warrior",
+          "x": -641.25,
+          "y": -67.379997,
+          "z": -12.63,
+          "heading": 133.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8722,
+          "spawngroupId": 5736,
+          "name": "a_rodent",
+          "displayName": "A Rodent",
+          "level": 1,
+          "race": "Rat",
+          "rawRace": "Rat",
+          "className": "Warrior",
+          "x": -532.130005,
+          "y": 11.5,
+          "z": 1.25,
+          "heading": 502.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8723,
+          "spawngroupId": 5736,
+          "name": "a_rodent",
+          "displayName": "A Rodent",
+          "level": 1,
+          "race": "Rat",
+          "rawRace": "Rat",
+          "className": "Warrior",
+          "x": -517,
+          "y": 9.88,
+          "z": -2.6,
+          "heading": 28,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8724,
+          "spawngroupId": 5736,
+          "name": "a_rodent",
+          "displayName": "A Rodent",
+          "level": 1,
+          "race": "Rat",
+          "rawRace": "Rat",
+          "className": "Warrior",
+          "x": -356.130005,
+          "y": -71.379997,
+          "z": 1.3,
+          "heading": 1,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8725,
+          "spawngroupId": 5736,
+          "name": "a_rodent",
+          "displayName": "A Rodent",
+          "level": 1,
+          "race": "Rat",
+          "rawRace": "Rat",
+          "className": "Warrior",
+          "x": -703.630005,
+          "y": 261.25,
+          "z": -17.9,
+          "heading": 268.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8726,
+          "spawngroupId": 5736,
+          "name": "a_rodent",
+          "displayName": "A Rodent",
+          "level": 1,
+          "race": "Rat",
+          "rawRace": "Rat",
+          "className": "Warrior",
+          "x": -266.25,
+          "y": 96.75,
+          "z": 1.25,
+          "heading": 392.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8727,
+          "spawngroupId": 5736,
+          "name": "a_rodent",
+          "displayName": "A Rodent",
+          "level": 1,
+          "race": "Rat",
+          "rawRace": "Rat",
+          "className": "Warrior",
+          "x": -421,
+          "y": 160,
+          "z": 2,
+          "heading": 146,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8728,
+          "spawngroupId": 5736,
+          "name": "a_rodent",
+          "displayName": "A Rodent",
+          "level": 1,
+          "race": "Rat",
+          "rawRace": "Rat",
+          "className": "Warrior",
+          "x": -349,
+          "y": 186,
+          "z": 1,
+          "heading": 64,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8729,
+          "spawngroupId": 5736,
+          "name": "a_rodent",
+          "displayName": "A Rodent",
+          "level": 1,
+          "race": "Rat",
+          "rawRace": "Rat",
+          "className": "Warrior",
+          "x": -619,
+          "y": 281.880005,
+          "z": -12.63,
+          "heading": 70,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8730,
+          "spawngroupId": 5736,
+          "name": "a_rodent",
+          "displayName": "A Rodent",
+          "level": 1,
+          "race": "Rat",
+          "rawRace": "Rat",
+          "className": "Warrior",
+          "x": 6,
+          "y": 28,
+          "z": 1,
+          "heading": 382,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8731,
+          "spawngroupId": 5735,
+          "name": "Challice",
+          "displayName": "Challice",
+          "level": 30,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Cleric",
+          "x": -262,
+          "y": -13.5,
+          "z": -12.13,
+          "heading": 1.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8732,
+          "spawngroupId": 5734,
+          "name": "Elia_the_Pure",
+          "displayName": "Elia The Pure",
+          "level": 55,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Cleric",
+          "x": -713,
+          "y": 247,
+          "z": -21.379999,
+          "heading": 273,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8733,
+          "spawngroupId": 5733,
+          "name": "Exterminator_Valern",
+          "displayName": "Exterminator Valern",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Warrior",
+          "x": -6,
+          "y": -29,
+          "z": 3.75,
+          "heading": 15,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8734,
+          "spawngroupId": 1257,
+          "name": "Seria_Woodwind",
+          "displayName": "Seria Woodwind",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -197,
+          "y": -15,
+          "z": -18.129999,
+          "heading": 427,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8735,
+          "spawngroupId": 1258,
+          "name": "Seleni_Treekeeper",
+          "displayName": "Seleni Treekeeper",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -255,
+          "y": -6,
+          "z": 3.75,
+          "heading": 420,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8736,
+          "spawngroupId": 1259,
+          "name": "Terren_Starwatcher",
+          "displayName": "Terren Starwatcher",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -427,
+          "y": 15,
+          "z": -0.13,
+          "heading": 381,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8737,
+          "spawngroupId": 1260,
+          "name": "Terri_Woodshape",
+          "displayName": "Terri Woodshape",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -457,
+          "y": 0,
+          "z": -0.13,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8738,
+          "spawngroupId": 1261,
+          "name": "Allia_Moondancer",
+          "displayName": "Allia Moondancer",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -445,
+          "y": 0,
+          "z": -0.13,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8739,
+          "spawngroupId": 1262,
+          "name": "Celest_Palestream",
+          "displayName": "Celest Palestream",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -445,
+          "y": 26,
+          "z": -0.13,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8740,
+          "spawngroupId": 1263,
+          "name": "Wellin_Brookleap",
+          "displayName": "Wellin Brookleap",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -457,
+          "y": 26,
+          "z": -0.13,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8741,
+          "spawngroupId": 1264,
+          "name": "Assa_Leafwind",
+          "displayName": "Assa Leafwind",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -467,
+          "y": 28,
+          "z": -0.13,
+          "heading": 244,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8742,
+          "spawngroupId": 1265,
+          "name": "Ann_Oma",
+          "displayName": "Ann Oma",
+          "level": 65,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Tribute Master",
+          "x": -198,
+          "y": -53,
+          "z": 3.75,
+          "heading": 384,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8743,
+          "spawngroupId": 1266,
+          "name": "Tynkale",
+          "displayName": "Tynkale",
+          "level": 61,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Paladin GM",
+          "x": -328,
+          "y": 11,
+          "z": 11.75,
+          "heading": 151,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8744,
+          "spawngroupId": 1267,
+          "name": "Yeolarn_Bronzeleaf",
+          "displayName": "Yeolarn Bronzeleaf",
+          "level": 61,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Cleric GM",
+          "x": -435,
+          "y": 13,
+          "z": -0.13,
+          "heading": 372,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8745,
+          "spawngroupId": 1302,
+          "name": "General_Jyleel",
+          "displayName": "General Jyleel",
+          "level": 61,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Paladin GM",
+          "x": -198,
+          "y": 17,
+          "z": -18.129999,
+          "heading": 268,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8746,
+          "spawngroupId": 1301,
+          "name": "Arrias_Arcanum",
+          "displayName": "Arrias Arcanum",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Cleric",
+          "x": -292,
+          "y": 21,
+          "z": -12.13,
+          "heading": 114,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8747,
+          "spawngroupId": 1299,
+          "name": "Bedida_Claygrinder",
+          "displayName": "Bedida Claygrinder",
+          "level": 40,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Banker",
+          "x": -423,
+          "y": 104,
+          "z": 16.5,
+          "heading": 510,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8748,
+          "spawngroupId": 1298,
+          "name": "Serenica_Greenfinger",
+          "displayName": "Serenica Greenfinger",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -455,
+          "y": 147,
+          "z": 3.75,
+          "heading": 211,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8749,
+          "spawngroupId": 1297,
+          "name": "Alladria_Skyetcher",
+          "displayName": "Alladria Skyetcher",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -414,
+          "y": 129,
+          "z": 3.75,
+          "heading": 385,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8750,
+          "spawngroupId": 1296,
+          "name": "Feraniel_Leafsway",
+          "displayName": "Feraniel Leafsway",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -346,
+          "y": 80,
+          "z": 3.75,
+          "heading": 463,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8751,
+          "spawngroupId": 1295,
+          "name": "Nerrisia_Irontree",
+          "displayName": "Nerrisia Irontree",
+          "level": 50,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -395,
+          "y": -88,
+          "z": 17.75,
+          "heading": 257,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8752,
+          "spawngroupId": 1294,
+          "name": "Tanalin_Silverkale",
+          "displayName": "Tanalin Silverkale",
+          "level": 50,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -414,
+          "y": 117,
+          "z": 17.75,
+          "heading": 386,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8753,
+          "spawngroupId": 1293,
+          "name": "Merchant_Nora",
+          "displayName": "Merchant Nora",
+          "level": 35,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -414,
+          "y": 144,
+          "z": 3.75,
+          "heading": 381,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8754,
+          "spawngroupId": 1292,
+          "name": "Lieutenant_Rosaed",
+          "displayName": "Lieutenant Rosaed",
+          "level": 42,
+          "race": "Guard",
+          "rawRace": "Guard",
+          "className": "Paladin",
+          "x": -140,
+          "y": 163,
+          "z": 59.630001,
+          "heading": 221,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8755,
+          "spawngroupId": 1291,
+          "name": "Guard_Crucorn",
+          "displayName": "Guard Crucorn",
+          "level": 39,
+          "race": "Guard",
+          "rawRace": "Guard",
+          "className": "Paladin",
+          "x": -440,
+          "y": -49.880001,
+          "z": 3.75,
+          "heading": 453,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8756,
+          "spawngroupId": 1290,
+          "name": "Guard_Lovayn",
+          "displayName": "Guard Lovayn",
+          "level": 39,
+          "race": "Guard",
+          "rawRace": "Guard",
+          "className": "Paladin",
+          "x": -155,
+          "y": 55.630001,
+          "z": 31.75,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8757,
+          "spawngroupId": 1289,
+          "name": "Guard_Trerun",
+          "displayName": "Guard Trerun",
+          "level": 40,
+          "race": "Guard",
+          "rawRace": "Guard",
+          "className": "Paladin",
+          "x": -644.130005,
+          "y": -6.75,
+          "z": 47.630001,
+          "heading": 0.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8758,
+          "spawngroupId": 1288,
+          "name": "Guard_Kiston",
+          "displayName": "Guard Kiston",
+          "level": 41,
+          "race": "Guard",
+          "rawRace": "Guard",
+          "className": "Paladin",
+          "x": -216.880005,
+          "y": -117.5,
+          "z": -7.38,
+          "heading": 265.25,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8759,
+          "spawngroupId": 1287,
+          "name": "Tam_Slyspan",
+          "displayName": "Tam Slyspan",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -703,
+          "y": 245,
+          "z": -20,
+          "heading": 261,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8760,
+          "spawngroupId": 1286,
+          "name": "Fishmonger_Jassa",
+          "displayName": "Fishmonger Jassa",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -588,
+          "y": 162,
+          "z": -10.13,
+          "heading": 382,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8761,
+          "spawngroupId": 1285,
+          "name": "Rolyn_Longwalker",
+          "displayName": "Rolyn Longwalker",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -384,
+          "y": 4,
+          "z": 3.75,
+          "heading": 174,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8762,
+          "spawngroupId": 1284,
+          "name": "Merchant_Silspin",
+          "displayName": "Merchant Silspin",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -606,
+          "y": 242,
+          "z": -10.13,
+          "heading": 360,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8763,
+          "spawngroupId": 1282,
+          "name": "Merchant_Tyslin",
+          "displayName": "Merchant Tyslin",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -439,
+          "y": 107,
+          "z": 17.75,
+          "heading": 446,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8764,
+          "spawngroupId": 1281,
+          "name": "Merchant_Issynal",
+          "displayName": "Merchant Issynal",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -412,
+          "y": 147,
+          "z": 17.75,
+          "heading": 308,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8765,
+          "spawngroupId": 1280,
+          "name": "Merchant_Longarrow",
+          "displayName": "Merchant Longarrow",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -342,
+          "y": -70,
+          "z": 3.75,
+          "heading": 289,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8766,
+          "spawngroupId": 1279,
+          "name": "Merchant_Dantree",
+          "displayName": "Merchant Dantree",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -413,
+          "y": -70,
+          "z": 3.75,
+          "heading": 141,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8767,
+          "spawngroupId": 1278,
+          "name": "Opal_Leganyn",
+          "displayName": "Opal Leganyn",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -413,
+          "y": -80,
+          "z": 3.75,
+          "heading": 204,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8768,
+          "spawngroupId": 1277,
+          "name": "Tolis_Fearnone",
+          "displayName": "Tolis Fearnone",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -339,
+          "y": -105,
+          "z": 3.75,
+          "heading": 208,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8769,
+          "spawngroupId": 1276,
+          "name": "Inkeeper_Freegraze",
+          "displayName": "Inkeeper Freegraze",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -374,
+          "y": 147,
+          "z": 3.75,
+          "heading": 389,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8770,
+          "spawngroupId": 1275,
+          "name": "Fishmonger_Issa",
+          "displayName": "Fishmonger Issa",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -626,
+          "y": 258,
+          "z": -10.13,
+          "heading": 503,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8771,
+          "spawngroupId": 1274,
+          "name": "Wela_Muselender",
+          "displayName": "Wela Muselender",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -343,
+          "y": 102,
+          "z": 3.75,
+          "heading": 506,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8772,
+          "spawngroupId": 1273,
+          "name": "Tyle_Songwhisper",
+          "displayName": "Tyle Songwhisper",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -368,
+          "y": 76,
+          "z": 3.75,
+          "heading": 384,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8773,
+          "spawngroupId": 1272,
+          "name": "Merchant_Sorintal",
+          "displayName": "Merchant Sorintal",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -415,
+          "y": 136,
+          "z": 3.75,
+          "heading": 377,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8774,
+          "spawngroupId": 1271,
+          "name": "Merchant_Deerchaser",
+          "displayName": "Merchant Deerchaser",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -456,
+          "y": 148,
+          "z": 17.75,
+          "heading": 184,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8775,
+          "spawngroupId": 1270,
+          "name": "Merchant_Tearlan",
+          "displayName": "Merchant Tearlan",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -385,
+          "y": -79,
+          "z": 3.75,
+          "heading": 383,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8776,
+          "spawngroupId": 1269,
+          "name": "Merchant_Irontree",
+          "displayName": "Merchant Irontree",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -384,
+          "y": -106,
+          "z": 3.75,
+          "heading": 435,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8777,
+          "spawngroupId": 1268,
+          "name": "Merchant_Silverkale",
+          "displayName": "Merchant Silverkale",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -436,
+          "y": -90,
+          "z": 3.75,
+          "heading": 253,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8778,
+          "spawngroupId": 7193,
+          "name": "Merchant_Tissan",
+          "displayName": "Merchant Tissan",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -359,
+          "y": -122,
+          "z": 3.75,
+          "heading": 67,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8779,
+          "spawngroupId": 7194,
+          "name": "Merchant_Silvenspin",
+          "displayName": "Merchant Silvenspin",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -454,
+          "y": 106,
+          "z": 3.75,
+          "heading": 67,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8780,
+          "spawngroupId": 7195,
+          "name": "Banker_Rylisan",
+          "displayName": "Banker Rylisan",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Class 40",
+          "x": -441,
+          "y": -34,
+          "z": 3.75,
+          "heading": 354,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8781,
+          "spawngroupId": 7196,
+          "name": "Banker_Tintal",
+          "displayName": "Banker Tintal",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Class 40",
+          "x": -453,
+          "y": -50,
+          "z": 3.75,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8782,
+          "spawngroupId": 7197,
+          "name": "Tylar_Windspirit",
+          "displayName": "Tylar Windspirit",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -256,
+          "y": 7,
+          "z": 3.75,
+          "heading": 384,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8783,
+          "spawngroupId": 7198,
+          "name": "Isyna_Firspanyl",
+          "displayName": "Isyna Firspanyl",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -468,
+          "y": 2,
+          "z": -0.13,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8784,
+          "spawngroupId": 7199,
+          "name": "Laernian_Caelael",
+          "displayName": "Laernian Caelael",
+          "level": 25,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -6,
+          "y": 38,
+          "z": 3.75,
+          "heading": 265,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8785,
+          "spawngroupId": 7200,
+          "name": "Lord_Nethryn",
+          "displayName": "Lord Nethryn",
+          "level": 61,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Cleric",
+          "x": -342,
+          "y": 155,
+          "z": 3.75,
+          "heading": 388,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8786,
+          "spawngroupId": 7201,
+          "name": "Soulbinder_Elendalira",
+          "displayName": "Soulbinder Elendalira",
+          "level": 65,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Warrior",
+          "x": -225,
+          "y": 0,
+          "z": 3.75,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8787,
+          "spawngroupId": 7202,
+          "name": "Chenori_Berinal",
+          "displayName": "Chenori Berinal",
+          "level": 40,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": -280.347656,
+          "y": -43.373886,
+          "z": -12.872994,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8788,
+          "spawngroupId": 7203,
+          "name": "Tacar_Tissleplay",
+          "displayName": "Tacar Tissleplay",
+          "level": 25,
+          "race": "Wood Elf",
+          "rawRace": "Wood Elf",
+          "className": "Bard",
+          "x": -326,
+          "y": -90,
+          "z": 3.13,
+          "heading": 62,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8789,
+          "spawngroupId": 7204,
+          "name": "Larroniae_Huial",
+          "displayName": "Larroniae Huial",
+          "level": 65,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Wizard",
+          "x": -431,
+          "y": 147,
+          "z": 3.75,
+          "heading": 270,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8790,
+          "spawngroupId": 7205,
+          "name": "Priest_of_Discord",
+          "displayName": "Priest Of Discord",
+          "level": 50,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Cleric",
+          "x": 103,
+          "y": -39,
+          "z": 3.75,
+          "heading": 404,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 58378,
+          "spawngroupId": 12515,
+          "name": "Unknown",
+          "displayName": "Unknown",
+          "level": null,
+          "race": "Unknown",
+          "rawRace": "Unknown",
+          "className": "Unknown",
+          "x": 28.674469,
+          "y": 32.022354,
+          "z": 3.226999,
+          "heading": 247.25,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 148706,
+          "spawngroupId": 110222,
+          "name": "Santug_Claugg",
+          "displayName": "Santug Claugg",
+          "level": 70,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Warrior",
+          "x": 32,
+          "y": -2,
+          "z": 6,
+          "heading": 136,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 148723,
+          "spawngroupId": 110239,
+          "name": "a_Frostfell_Goblin",
+          "displayName": "A Frostfell Goblin",
+          "level": 1,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": 59,
+          "y": 17,
+          "z": 2,
+          "heading": 316,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 148740,
+          "spawngroupId": 110256,
+          "name": "Hargar_the_Velium_Chef",
+          "displayName": "Hargar The Velium Chef",
+          "level": 1,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior",
+          "x": 20,
+          "y": -25,
+          "z": 2.5,
+          "heading": 107,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 148757,
+          "spawngroupId": 110273,
+          "name": "Fireworks_Engineer_Fabdabus",
+          "displayName": "Fireworks Engineer Fabdabus",
+          "level": 1,
+          "race": "Gnome",
+          "rawRace": "Gnome",
+          "className": "Warrior",
+          "x": 98,
+          "y": -10,
+          "z": 1.875,
+          "heading": 332.75,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 250548,
+          "spawngroupId": 275169,
+          "name": "#Galrun_Starforge",
+          "displayName": "Galrun Starforge",
+          "level": 70,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Paladin",
+          "x": -198.339996,
+          "y": 54.799999,
+          "z": 2.2,
+          "heading": 350,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        }
+      ]
+    }
+  },
+  "details": {
+    "zoneSlug": "northern-felwithe",
+    "routeSlug": "felwithea",
+    "zoneName": "Northern Felwithe",
+    "sourceFile": "local-eqemu-database",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobGroups": [
+      {
+        "displayName": "A Rodent",
+        "rawNames": [
+          "a_rodent"
+        ],
+        "count": 10,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Rat": 10
+        },
+        "rawRaceCounts": {
+          "Rat": 10
+        },
+        "classCounts": {
+          "Warrior": 10
+        },
+        "typeCounts": {
+          "Spawn Slot": 10
+        }
+      },
+      {
+        "displayName": "A Frostfell Goblin",
+        "rawNames": [
+          "a_Frostfell_Goblin"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Goblin": 1
+        },
+        "rawRaceCounts": {
+          "Goblin": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Fireworks Engineer Fabdabus",
+        "rawNames": [
+          "Fireworks_Engineer_Fabdabus"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Gnome": 1
+        },
+        "rawRaceCounts": {
+          "Gnome": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Hargar The Velium Chef",
+        "rawNames": [
+          "Hargar_the_Velium_Chef"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Laernian Caelael",
+        "rawNames": [
+          "Laernian_Caelael"
+        ],
+        "count": 1,
+        "levelMin": 25,
+        "levelMax": 25,
+        "levels": [
+          25
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Tacar Tissleplay",
+        "rawNames": [
+          "Tacar_Tissleplay"
+        ],
+        "count": 1,
+        "levelMin": 25,
+        "levelMax": 25,
+        "levels": [
+          25
+        ],
+        "raceCounts": {
+          "Wood Elf": 1
+        },
+        "rawRaceCounts": {
+          "Wood Elf": 1
+        },
+        "classCounts": {
+          "Bard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Challice",
+        "rawNames": [
+          "Challice"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Cleric": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Merchant Nora",
+        "rawNames": [
+          "Merchant_Nora"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Tolkar Parlone",
+        "rawNames": [
+          "Tolkar_Parlone"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Enchanter": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Meadom",
+        "rawNames": [
+          "Guard_Meadom"
+        ],
+        "count": 1,
+        "levelMin": 38,
+        "levelMax": 38,
+        "levels": [
+          38
+        ],
+        "raceCounts": {
+          "Guard": 1
+        },
+        "rawRaceCounts": {
+          "Guard": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Crucorn",
+        "rawNames": [
+          "Guard_Crucorn"
+        ],
+        "count": 1,
+        "levelMin": 39,
+        "levelMax": 39,
+        "levels": [
+          39
+        ],
+        "raceCounts": {
+          "Guard": 1
+        },
+        "rawRaceCounts": {
+          "Guard": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Evital",
+        "rawNames": [
+          "Guard_Evital"
+        ],
+        "count": 1,
+        "levelMin": 39,
+        "levelMax": 39,
+        "levels": [
+          39
+        ],
+        "raceCounts": {
+          "Guard": 1
+        },
+        "rawRaceCounts": {
+          "Guard": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Lovayn",
+        "rawNames": [
+          "Guard_Lovayn"
+        ],
+        "count": 1,
+        "levelMin": 39,
+        "levelMax": 39,
+        "levels": [
+          39
+        ],
+        "raceCounts": {
+          "Guard": 1
+        },
+        "rawRaceCounts": {
+          "Guard": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Settine",
+        "rawNames": [
+          "Guard_Settine"
+        ],
+        "count": 1,
+        "levelMin": 39,
+        "levelMax": 39,
+        "levels": [
+          39
+        ],
+        "raceCounts": {
+          "Guard": 1
+        },
+        "rawRaceCounts": {
+          "Guard": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Alladria Skyetcher",
+        "rawNames": [
+          "Alladria_Skyetcher"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Allia Moondancer",
+        "rawNames": [
+          "Allia_Moondancer"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Arrias Arcanum",
+        "rawNames": [
+          "Arrias_Arcanum"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Cleric": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Assa Leafwind",
+        "rawNames": [
+          "Assa_Leafwind"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Banker Rylisan",
+        "rawNames": [
+          "Banker_Rylisan"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Class 40": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Banker Tintal",
+        "rawNames": [
+          "Banker_Tintal"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Class 40": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Bedida Claygrinder",
+        "rawNames": [
+          "Bedida_Claygrinder"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Celest Palestream",
+        "rawNames": [
+          "Celest_Palestream"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Chenori Berinal",
+        "rawNames": [
+          "Chenori_Berinal"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Elytan Rantas",
+        "rawNames": [
+          "Elytan_Rantas"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Exterminator Valern",
+        "rawNames": [
+          "Exterminator_Valern"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Feraniel Leafsway",
+        "rawNames": [
+          "Feraniel_Leafsway"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Fishmonger Issa",
+        "rawNames": [
+          "Fishmonger_Issa"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Fishmonger Jassa",
+        "rawNames": [
+          "Fishmonger_Jassa"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Legver",
+        "rawNames": [
+          "Guard_Legver"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Guard": 1
+        },
+        "rawRaceCounts": {
+          "Guard": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Trerun",
+        "rawNames": [
+          "Guard_Trerun"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Guard": 1
+        },
+        "rawRaceCounts": {
+          "Guard": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Inkeeper Freegraze",
+        "rawNames": [
+          "Inkeeper_Freegraze"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Isyna Firspanyl",
+        "rawNames": [
+          "Isyna_Firspanyl"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Merchant Dantree",
+        "rawNames": [
+          "Merchant_Dantree"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Merchant Deerchaser",
+        "rawNames": [
+          "Merchant_Deerchaser"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Merchant Irontree",
+        "rawNames": [
+          "Merchant_Irontree"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Merchant Issynal",
+        "rawNames": [
+          "Merchant_Issynal"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Merchant Longarrow",
+        "rawNames": [
+          "Merchant_Longarrow"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Merchant Silspin",
+        "rawNames": [
+          "Merchant_Silspin"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Merchant Silvenspin",
+        "rawNames": [
+          "Merchant_Silvenspin"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Merchant Silverkale",
+        "rawNames": [
+          "Merchant_Silverkale"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Merchant Sorintal",
+        "rawNames": [
+          "Merchant_Sorintal"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Merchant Tearlan",
+        "rawNames": [
+          "Merchant_Tearlan"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Merchant Tissan",
+        "rawNames": [
+          "Merchant_Tissan"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Merchant Tyslin",
+        "rawNames": [
+          "Merchant_Tyslin"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Opal Leganyn",
+        "rawNames": [
+          "Opal_Leganyn"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Rolyn Longwalker",
+        "rawNames": [
+          "Rolyn_Longwalker"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Seleni Treekeeper",
+        "rawNames": [
+          "Seleni_Treekeeper"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Serenica Greenfinger",
+        "rawNames": [
+          "Serenica_Greenfinger"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Seria Woodwind",
+        "rawNames": [
+          "Seria_Woodwind"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Tam Slyspan",
+        "rawNames": [
+          "Tam_Slyspan"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Terren Starwatcher",
+        "rawNames": [
+          "Terren_Starwatcher"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Terri Woodshape",
+        "rawNames": [
+          "Terri_Woodshape"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Tolis Fearnone",
+        "rawNames": [
+          "Tolis_Fearnone"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Tylar Windspirit",
+        "rawNames": [
+          "Tylar_Windspirit"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Tyle Songwhisper",
+        "rawNames": [
+          "Tyle_Songwhisper"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Wela Muselender",
+        "rawNames": [
+          "Wela_Muselender"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Wellin Brookleap",
+        "rawNames": [
+          "Wellin_Brookleap"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Hutian",
+        "rawNames": [
+          "Guard_Hutian"
+        ],
+        "count": 1,
+        "levelMin": 41,
+        "levelMax": 41,
+        "levels": [
+          41
+        ],
+        "raceCounts": {
+          "Guard": 1
+        },
+        "rawRaceCounts": {
+          "Guard": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Kiston",
+        "rawNames": [
+          "Guard_Kiston"
+        ],
+        "count": 1,
+        "levelMin": 41,
+        "levelMax": 41,
+        "levels": [
+          41
+        ],
+        "raceCounts": {
+          "Guard": 1
+        },
+        "rawRaceCounts": {
+          "Guard": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Allmayn",
+        "rawNames": [
+          "Guard_Allmayn"
+        ],
+        "count": 1,
+        "levelMin": 42,
+        "levelMax": 42,
+        "levels": [
+          42
+        ],
+        "raceCounts": {
+          "Guard": 1
+        },
+        "rawRaceCounts": {
+          "Guard": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Jassong",
+        "rawNames": [
+          "Guard_Jassong"
+        ],
+        "count": 1,
+        "levelMin": 42,
+        "levelMax": 42,
+        "levels": [
+          42
+        ],
+        "raceCounts": {
+          "Guard": 1
+        },
+        "rawRaceCounts": {
+          "Guard": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Mystan",
+        "rawNames": [
+          "Guard_Mystan"
+        ],
+        "count": 1,
+        "levelMin": 42,
+        "levelMax": 42,
+        "levels": [
+          42
+        ],
+        "raceCounts": {
+          "Guard": 1
+        },
+        "rawRaceCounts": {
+          "Guard": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Wisnyw",
+        "rawNames": [
+          "Guard_Wisnyw"
+        ],
+        "count": 1,
+        "levelMin": 42,
+        "levelMax": 42,
+        "levels": [
+          42
+        ],
+        "raceCounts": {
+          "Guard": 1
+        },
+        "rawRaceCounts": {
+          "Guard": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Lieutenant Rosaed",
+        "rawNames": [
+          "Lieutenant_Rosaed"
+        ],
+        "count": 1,
+        "levelMin": 42,
+        "levelMax": 42,
+        "levels": [
+          42
+        ],
+        "raceCounts": {
+          "Guard": 1
+        },
+        "rawRaceCounts": {
+          "Guard": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Nerrisia Irontree",
+        "rawNames": [
+          "Nerrisia_Irontree"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Priest Of Discord",
+        "rawNames": [
+          "Priest_of_Discord"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Cleric": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Tanalin Silverkale",
+        "rawNames": [
+          "Tanalin_Silverkale"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Elia The Pure",
+        "rawNames": [
+          "Elia_the_Pure"
+        ],
+        "count": 1,
+        "levelMin": 55,
+        "levelMax": 55,
+        "levels": [
+          55
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Cleric": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "General Jyleel",
+        "rawNames": [
+          "General_Jyleel"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Paladin GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Lord Nethryn",
+        "rawNames": [
+          "Lord_Nethryn"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Cleric": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Tynkale",
+        "rawNames": [
+          "Tynkale"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Paladin GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Yeolarn Bronzeleaf",
+        "rawNames": [
+          "Yeolarn_Bronzeleaf"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Cleric GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Ann Oma",
+        "rawNames": [
+          "Ann_Oma"
+        ],
+        "count": 1,
+        "levelMin": 65,
+        "levelMax": 65,
+        "levels": [
+          65
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Tribute Master": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Larroniae Huial",
+        "rawNames": [
+          "Larroniae_Huial"
+        ],
+        "count": 1,
+        "levelMin": 65,
+        "levelMax": 65,
+        "levels": [
+          65
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Wizard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Soulbinder Elendalira",
+        "rawNames": [
+          "Soulbinder_Elendalira"
+        ],
+        "count": 1,
+        "levelMin": 65,
+        "levelMax": 65,
+        "levels": [
+          65
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Galrun Starforge",
+        "rawNames": [
+          "#Galrun_Starforge"
+        ],
+        "count": 1,
+        "levelMin": 70,
+        "levelMax": 70,
+        "levels": [
+          70
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Santug Claugg",
+        "rawNames": [
+          "Santug_Claugg"
+        ],
+        "count": 1,
+        "levelMin": 70,
+        "levelMax": 70,
+        "levels": [
+          70
+        ],
+        "raceCounts": {
+          "Ogre": 1
+        },
+        "rawRaceCounts": {
+          "Ogre": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Unknown",
+        "rawNames": [
+          "Unknown"
+        ],
+        "count": 1,
+        "levelMin": null,
+        "levelMax": null,
+        "levels": [],
+        "raceCounts": {
+          "Unknown": 1
+        },
+        "rawRaceCounts": {
+          "Unknown": 1
+        },
+        "classCounts": {
+          "Unknown": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      }
+    ],
+    "rows": [
+      {
+        "displayName": "A Frostfell Goblin",
+        "rawName": "a_Frostfell_Goblin",
+        "level": 1,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 59,
+        "y": 17,
+        "z": 2,
+        "heading": 316,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 148723,
+        "spawngroupId": 110239,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Rodent",
+        "rawName": "a_rodent",
+        "level": 1,
+        "race": "Rat",
+        "rawRace": "Rat",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -641.25,
+        "y": -67.379997,
+        "z": -12.63,
+        "heading": 133.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8721,
+        "spawngroupId": 5736,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Rodent",
+        "rawName": "a_rodent",
+        "level": 1,
+        "race": "Rat",
+        "rawRace": "Rat",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -532.130005,
+        "y": 11.5,
+        "z": 1.25,
+        "heading": 502.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8722,
+        "spawngroupId": 5736,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Rodent",
+        "rawName": "a_rodent",
+        "level": 1,
+        "race": "Rat",
+        "rawRace": "Rat",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -517,
+        "y": 9.88,
+        "z": -2.6,
+        "heading": 28,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8723,
+        "spawngroupId": 5736,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Rodent",
+        "rawName": "a_rodent",
+        "level": 1,
+        "race": "Rat",
+        "rawRace": "Rat",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -356.130005,
+        "y": -71.379997,
+        "z": 1.3,
+        "heading": 1,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8724,
+        "spawngroupId": 5736,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Rodent",
+        "rawName": "a_rodent",
+        "level": 1,
+        "race": "Rat",
+        "rawRace": "Rat",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -703.630005,
+        "y": 261.25,
+        "z": -17.9,
+        "heading": 268.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8725,
+        "spawngroupId": 5736,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Rodent",
+        "rawName": "a_rodent",
+        "level": 1,
+        "race": "Rat",
+        "rawRace": "Rat",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -266.25,
+        "y": 96.75,
+        "z": 1.25,
+        "heading": 392.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8726,
+        "spawngroupId": 5736,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Rodent",
+        "rawName": "a_rodent",
+        "level": 1,
+        "race": "Rat",
+        "rawRace": "Rat",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -421,
+        "y": 160,
+        "z": 2,
+        "heading": 146,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8727,
+        "spawngroupId": 5736,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Rodent",
+        "rawName": "a_rodent",
+        "level": 1,
+        "race": "Rat",
+        "rawRace": "Rat",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -349,
+        "y": 186,
+        "z": 1,
+        "heading": 64,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8728,
+        "spawngroupId": 5736,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Rodent",
+        "rawName": "a_rodent",
+        "level": 1,
+        "race": "Rat",
+        "rawRace": "Rat",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -619,
+        "y": 281.880005,
+        "z": -12.63,
+        "heading": 70,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8729,
+        "spawngroupId": 5736,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Rodent",
+        "rawName": "a_rodent",
+        "level": 1,
+        "race": "Rat",
+        "rawRace": "Rat",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 6,
+        "y": 28,
+        "z": 1,
+        "heading": 382,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8730,
+        "spawngroupId": 5736,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Fireworks Engineer Fabdabus",
+        "rawName": "Fireworks_Engineer_Fabdabus",
+        "level": 1,
+        "race": "Gnome",
+        "rawRace": "Gnome",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 98,
+        "y": -10,
+        "z": 1.875,
+        "heading": 332.75,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 148757,
+        "spawngroupId": 110273,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Hargar The Velium Chef",
+        "rawName": "Hargar_the_Velium_Chef",
+        "level": 1,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 20,
+        "y": -25,
+        "z": 2.5,
+        "heading": 107,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 148740,
+        "spawngroupId": 110256,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Laernian Caelael",
+        "rawName": "Laernian_Caelael",
+        "level": 25,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -6,
+        "y": 38,
+        "z": 3.75,
+        "heading": 265,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8784,
+        "spawngroupId": 7199,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Tacar Tissleplay",
+        "rawName": "Tacar_Tissleplay",
+        "level": 25,
+        "race": "Wood Elf",
+        "rawRace": "Wood Elf",
+        "className": "Bard",
+        "type": "Spawn Slot",
+        "x": -326,
+        "y": -90,
+        "z": 3.13,
+        "heading": 62,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8788,
+        "spawngroupId": 7203,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Challice",
+        "rawName": "Challice",
+        "level": 30,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": -262,
+        "y": -13.5,
+        "z": -12.13,
+        "heading": 1.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8731,
+        "spawngroupId": 5735,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Merchant Nora",
+        "rawName": "Merchant_Nora",
+        "level": 35,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -414,
+        "y": 144,
+        "z": 3.75,
+        "heading": 381,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8753,
+        "spawngroupId": 1293,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Tolkar Parlone",
+        "rawName": "Tolkar_Parlone",
+        "level": 35,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Enchanter",
+        "type": "Spawn Slot",
+        "x": -691,
+        "y": -64,
+        "z": -10.13,
+        "heading": 336,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8720,
+        "spawngroupId": 5737,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard Meadom",
+        "rawName": "Guard_Meadom",
+        "level": 38,
+        "race": "Guard",
+        "rawRace": "Guard",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": -47,
+        "y": -14,
+        "z": 3.38,
+        "heading": 126,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 8718,
+        "spawngroupId": 5739,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Guard Crucorn",
+        "rawName": "Guard_Crucorn",
+        "level": 39,
+        "race": "Guard",
+        "rawRace": "Guard",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": -440,
+        "y": -49.880001,
+        "z": 3.75,
+        "heading": 453,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8755,
+        "spawngroupId": 1291,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Guard Evital",
+        "rawName": "Guard_Evital",
+        "level": 39,
+        "race": "Guard",
+        "rawRace": "Guard",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": -444,
+        "y": -64,
+        "z": 3.75,
+        "heading": 374,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8710,
+        "spawngroupId": 5748,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Guard Lovayn",
+        "rawName": "Guard_Lovayn",
+        "level": 39,
+        "race": "Guard",
+        "rawRace": "Guard",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": -155,
+        "y": 55.630001,
+        "z": 31.75,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8756,
+        "spawngroupId": 1290,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard Settine",
+        "rawName": "Guard_Settine",
+        "level": 39,
+        "race": "Guard",
+        "rawRace": "Guard",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": -163,
+        "y": -24,
+        "z": 3.75,
+        "heading": 0,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8713,
+        "spawngroupId": 5745,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Alladria Skyetcher",
+        "rawName": "Alladria_Skyetcher",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -414,
+        "y": 129,
+        "z": 3.75,
+        "heading": 385,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8749,
+        "spawngroupId": 1297,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Allia Moondancer",
+        "rawName": "Allia_Moondancer",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -445,
+        "y": 0,
+        "z": -0.13,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8738,
+        "spawngroupId": 1261,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Arrias Arcanum",
+        "rawName": "Arrias_Arcanum",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": -292,
+        "y": 21,
+        "z": -12.13,
+        "heading": 114,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8746,
+        "spawngroupId": 1301,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Assa Leafwind",
+        "rawName": "Assa_Leafwind",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -467,
+        "y": 28,
+        "z": -0.13,
+        "heading": 244,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8741,
+        "spawngroupId": 1264,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Banker Rylisan",
+        "rawName": "Banker_Rylisan",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Class 40",
+        "type": "Spawn Slot",
+        "x": -441,
+        "y": -34,
+        "z": 3.75,
+        "heading": 354,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8780,
+        "spawngroupId": 7195,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Banker Tintal",
+        "rawName": "Banker_Tintal",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Class 40",
+        "type": "Spawn Slot",
+        "x": -453,
+        "y": -50,
+        "z": 3.75,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8781,
+        "spawngroupId": 7196,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Bedida Claygrinder",
+        "rawName": "Bedida_Claygrinder",
+        "level": 40,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -423,
+        "y": 104,
+        "z": 16.5,
+        "heading": 510,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8747,
+        "spawngroupId": 1299,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Celest Palestream",
+        "rawName": "Celest_Palestream",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -445,
+        "y": 26,
+        "z": -0.13,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8739,
+        "spawngroupId": 1262,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Chenori Berinal",
+        "rawName": "Chenori_Berinal",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -280.347656,
+        "y": -43.373886,
+        "z": -12.872994,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8787,
+        "spawngroupId": 7202,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Elytan Rantas",
+        "rawName": "Elytan_Rantas",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -673,
+        "y": 41,
+        "z": -10.13,
+        "heading": 368,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8719,
+        "spawngroupId": 5738,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Exterminator Valern",
+        "rawName": "Exterminator_Valern",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -6,
+        "y": -29,
+        "z": 3.75,
+        "heading": 15,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8733,
+        "spawngroupId": 5733,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Feraniel Leafsway",
+        "rawName": "Feraniel_Leafsway",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -346,
+        "y": 80,
+        "z": 3.75,
+        "heading": 463,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8750,
+        "spawngroupId": 1296,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Fishmonger Issa",
+        "rawName": "Fishmonger_Issa",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -626,
+        "y": 258,
+        "z": -10.13,
+        "heading": 503,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8770,
+        "spawngroupId": 1275,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Fishmonger Jassa",
+        "rawName": "Fishmonger_Jassa",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -588,
+        "y": 162,
+        "z": -10.13,
+        "heading": 382,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8760,
+        "spawngroupId": 1286,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard Legver",
+        "rawName": "Guard_Legver",
+        "level": 40,
+        "race": "Guard",
+        "rawRace": "Guard",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": -41.630001,
+        "y": -0.13,
+        "z": 3.75,
+        "heading": 131.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8717,
+        "spawngroupId": 5740,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard Trerun",
+        "rawName": "Guard_Trerun",
+        "level": 40,
+        "race": "Guard",
+        "rawRace": "Guard",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": -644.130005,
+        "y": -6.75,
+        "z": 47.630001,
+        "heading": 0.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8757,
+        "spawngroupId": 1289,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Inkeeper Freegraze",
+        "rawName": "Inkeeper_Freegraze",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -374,
+        "y": 147,
+        "z": 3.75,
+        "heading": 389,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8769,
+        "spawngroupId": 1276,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Isyna Firspanyl",
+        "rawName": "Isyna_Firspanyl",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -468,
+        "y": 2,
+        "z": -0.13,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8783,
+        "spawngroupId": 7198,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Merchant Dantree",
+        "rawName": "Merchant_Dantree",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -413,
+        "y": -70,
+        "z": 3.75,
+        "heading": 141,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8766,
+        "spawngroupId": 1279,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Merchant Deerchaser",
+        "rawName": "Merchant_Deerchaser",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -456,
+        "y": 148,
+        "z": 17.75,
+        "heading": 184,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8774,
+        "spawngroupId": 1271,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Merchant Irontree",
+        "rawName": "Merchant_Irontree",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -384,
+        "y": -106,
+        "z": 3.75,
+        "heading": 435,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8776,
+        "spawngroupId": 1269,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Merchant Issynal",
+        "rawName": "Merchant_Issynal",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -412,
+        "y": 147,
+        "z": 17.75,
+        "heading": 308,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8764,
+        "spawngroupId": 1281,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Merchant Longarrow",
+        "rawName": "Merchant_Longarrow",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -342,
+        "y": -70,
+        "z": 3.75,
+        "heading": 289,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8765,
+        "spawngroupId": 1280,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Merchant Silspin",
+        "rawName": "Merchant_Silspin",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -606,
+        "y": 242,
+        "z": -10.13,
+        "heading": 360,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8762,
+        "spawngroupId": 1284,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Merchant Silvenspin",
+        "rawName": "Merchant_Silvenspin",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -454,
+        "y": 106,
+        "z": 3.75,
+        "heading": 67,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8779,
+        "spawngroupId": 7194,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Merchant Silverkale",
+        "rawName": "Merchant_Silverkale",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -436,
+        "y": -90,
+        "z": 3.75,
+        "heading": 253,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8777,
+        "spawngroupId": 1268,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Merchant Sorintal",
+        "rawName": "Merchant_Sorintal",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -415,
+        "y": 136,
+        "z": 3.75,
+        "heading": 377,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8773,
+        "spawngroupId": 1272,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Merchant Tearlan",
+        "rawName": "Merchant_Tearlan",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -385,
+        "y": -79,
+        "z": 3.75,
+        "heading": 383,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8775,
+        "spawngroupId": 1270,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Merchant Tissan",
+        "rawName": "Merchant_Tissan",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -359,
+        "y": -122,
+        "z": 3.75,
+        "heading": 67,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8778,
+        "spawngroupId": 7193,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Merchant Tyslin",
+        "rawName": "Merchant_Tyslin",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -439,
+        "y": 107,
+        "z": 17.75,
+        "heading": 446,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8763,
+        "spawngroupId": 1282,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Opal Leganyn",
+        "rawName": "Opal_Leganyn",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -413,
+        "y": -80,
+        "z": 3.75,
+        "heading": 204,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8767,
+        "spawngroupId": 1278,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Rolyn Longwalker",
+        "rawName": "Rolyn_Longwalker",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -384,
+        "y": 4,
+        "z": 3.75,
+        "heading": 174,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8761,
+        "spawngroupId": 1285,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Seleni Treekeeper",
+        "rawName": "Seleni_Treekeeper",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -255,
+        "y": -6,
+        "z": 3.75,
+        "heading": 420,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8735,
+        "spawngroupId": 1258,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Serenica Greenfinger",
+        "rawName": "Serenica_Greenfinger",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -455,
+        "y": 147,
+        "z": 3.75,
+        "heading": 211,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8748,
+        "spawngroupId": 1298,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Seria Woodwind",
+        "rawName": "Seria_Woodwind",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -197,
+        "y": -15,
+        "z": -18.129999,
+        "heading": 427,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8734,
+        "spawngroupId": 1257,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Tam Slyspan",
+        "rawName": "Tam_Slyspan",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -703,
+        "y": 245,
+        "z": -20,
+        "heading": 261,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8759,
+        "spawngroupId": 1287,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Terren Starwatcher",
+        "rawName": "Terren_Starwatcher",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -427,
+        "y": 15,
+        "z": -0.13,
+        "heading": 381,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8736,
+        "spawngroupId": 1259,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Terri Woodshape",
+        "rawName": "Terri_Woodshape",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -457,
+        "y": 0,
+        "z": -0.13,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8737,
+        "spawngroupId": 1260,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Tolis Fearnone",
+        "rawName": "Tolis_Fearnone",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -339,
+        "y": -105,
+        "z": 3.75,
+        "heading": 208,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8768,
+        "spawngroupId": 1277,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Tylar Windspirit",
+        "rawName": "Tylar_Windspirit",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -256,
+        "y": 7,
+        "z": 3.75,
+        "heading": 384,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8782,
+        "spawngroupId": 7197,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Tyle Songwhisper",
+        "rawName": "Tyle_Songwhisper",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -368,
+        "y": 76,
+        "z": 3.75,
+        "heading": 384,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8772,
+        "spawngroupId": 1273,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Wela Muselender",
+        "rawName": "Wela_Muselender",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -343,
+        "y": 102,
+        "z": 3.75,
+        "heading": 506,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8771,
+        "spawngroupId": 1274,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Wellin Brookleap",
+        "rawName": "Wellin_Brookleap",
+        "level": 40,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -457,
+        "y": 26,
+        "z": -0.13,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8740,
+        "spawngroupId": 1263,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard Hutian",
+        "rawName": "Guard_Hutian",
+        "level": 41,
+        "race": "Guard",
+        "rawRace": "Guard",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": -562,
+        "y": 7,
+        "z": 3.75,
+        "heading": 0,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8711,
+        "spawngroupId": 5747,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Guard Kiston",
+        "rawName": "Guard_Kiston",
+        "level": 41,
+        "race": "Guard",
+        "rawRace": "Guard",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": -216.880005,
+        "y": -117.5,
+        "z": -7.38,
+        "heading": 265.25,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8758,
+        "spawngroupId": 1288,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Guard Allmayn",
+        "rawName": "Guard_Allmayn",
+        "level": 42,
+        "race": "Guard",
+        "rawRace": "Guard",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": -163,
+        "y": 27,
+        "z": 3.75,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8714,
+        "spawngroupId": 5743,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard Jassong",
+        "rawName": "Guard_Jassong",
+        "level": 42,
+        "race": "Guard",
+        "rawRace": "Guard",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": -304,
+        "y": 95,
+        "z": 3.75,
+        "heading": 0,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8712,
+        "spawngroupId": 5746,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Guard Mystan",
+        "rawName": "Guard_Mystan",
+        "level": 42,
+        "race": "Guard",
+        "rawRace": "Guard",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": -186.880005,
+        "y": 1,
+        "z": 3.75,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8715,
+        "spawngroupId": 5742,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard Wisnyw",
+        "rawName": "Guard_Wisnyw",
+        "level": 42,
+        "race": "Guard",
+        "rawRace": "Guard",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": -47,
+        "y": 14,
+        "z": 3.38,
+        "heading": 126,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8716,
+        "spawngroupId": 5741,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Lieutenant Rosaed",
+        "rawName": "Lieutenant_Rosaed",
+        "level": 42,
+        "race": "Guard",
+        "rawRace": "Guard",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": -140,
+        "y": 163,
+        "z": 59.630001,
+        "heading": 221,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8754,
+        "spawngroupId": 1292,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Nerrisia Irontree",
+        "rawName": "Nerrisia_Irontree",
+        "level": 50,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -395,
+        "y": -88,
+        "z": 17.75,
+        "heading": 257,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8751,
+        "spawngroupId": 1295,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Priest Of Discord",
+        "rawName": "Priest_of_Discord",
+        "level": 50,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": 103,
+        "y": -39,
+        "z": 3.75,
+        "heading": 404,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8790,
+        "spawngroupId": 7205,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Tanalin Silverkale",
+        "rawName": "Tanalin_Silverkale",
+        "level": 50,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -414,
+        "y": 117,
+        "z": 17.75,
+        "heading": 386,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8752,
+        "spawngroupId": 1294,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Elia The Pure",
+        "rawName": "Elia_the_Pure",
+        "level": 55,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": -713,
+        "y": 247,
+        "z": -21.379999,
+        "heading": 273,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8732,
+        "spawngroupId": 5734,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "General Jyleel",
+        "rawName": "General_Jyleel",
+        "level": 61,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Paladin GM",
+        "type": "Spawn Slot",
+        "x": -198,
+        "y": 17,
+        "z": -18.129999,
+        "heading": 268,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8745,
+        "spawngroupId": 1302,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Lord Nethryn",
+        "rawName": "Lord_Nethryn",
+        "level": 61,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": -342,
+        "y": 155,
+        "z": 3.75,
+        "heading": 388,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8785,
+        "spawngroupId": 7200,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Tynkale",
+        "rawName": "Tynkale",
+        "level": 61,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Paladin GM",
+        "type": "Spawn Slot",
+        "x": -328,
+        "y": 11,
+        "z": 11.75,
+        "heading": 151,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8743,
+        "spawngroupId": 1266,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Yeolarn Bronzeleaf",
+        "rawName": "Yeolarn_Bronzeleaf",
+        "level": 61,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Cleric GM",
+        "type": "Spawn Slot",
+        "x": -435,
+        "y": 13,
+        "z": -0.13,
+        "heading": 372,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8744,
+        "spawngroupId": 1267,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Ann Oma",
+        "rawName": "Ann_Oma",
+        "level": 65,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Tribute Master",
+        "type": "Spawn Slot",
+        "x": -198,
+        "y": -53,
+        "z": 3.75,
+        "heading": 384,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8742,
+        "spawngroupId": 1265,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Larroniae Huial",
+        "rawName": "Larroniae_Huial",
+        "level": 65,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -431,
+        "y": 147,
+        "z": 3.75,
+        "heading": 270,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8789,
+        "spawngroupId": 7204,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Soulbinder Elendalira",
+        "rawName": "Soulbinder_Elendalira",
+        "level": 65,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -225,
+        "y": 0,
+        "z": 3.75,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8786,
+        "spawngroupId": 7201,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Galrun Starforge",
+        "rawName": "#Galrun_Starforge",
+        "level": 70,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": -198.339996,
+        "y": 54.799999,
+        "z": 2.2,
+        "heading": 350,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 250548,
+        "spawngroupId": 275169,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Santug Claugg",
+        "rawName": "Santug_Claugg",
+        "level": 70,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 32,
+        "y": -2,
+        "z": 6,
+        "heading": 136,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 148706,
+        "spawngroupId": 110222,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Unknown",
+        "rawName": "Unknown",
+        "level": null,
+        "race": "Unknown",
+        "rawRace": "Unknown",
+        "className": "Unknown",
+        "type": "Spawn Slot",
+        "x": 28.674469,
+        "y": 32.022354,
+        "z": 3.226999,
+        "heading": 247.25,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 58378,
+        "spawngroupId": 12515,
+        "candidateCount": 1
+      }
+    ]
+  }
+}

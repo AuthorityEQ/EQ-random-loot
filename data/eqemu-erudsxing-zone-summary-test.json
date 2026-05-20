@@ -1,0 +1,4466 @@
+{
+  "summary": {
+    "zoneSlug": "erud-s-crossing",
+    "zoneName": "Erud's Crossing",
+    "requestedZoneShortName": "erudsxing",
+    "zoneShortName": "erudsxing",
+    "sourceFile": "local-eqemu-database",
+    "matched": true,
+    "expansion": "Classic",
+    "eqemuExpansionId": 0,
+    "expansionSource": "eqemu-zone-table",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobCount": 96,
+    "unknownLevelCount": 0,
+    "minLevel": 1,
+    "maxLevel": 50,
+    "averageLevel": 16.2,
+    "medianLevel": 14,
+    "levelCounts": {
+      "1": 2,
+      "2": 5,
+      "4": 1,
+      "7": 3,
+      "8": 7,
+      "9": 1,
+      "10": 9,
+      "11": 5,
+      "12": 2,
+      "13": 8,
+      "14": 6,
+      "15": 6,
+      "16": 9,
+      "17": 13,
+      "19": 1,
+      "20": 2,
+      "26": 4,
+      "33": 1,
+      "35": 4,
+      "40": 2,
+      "41": 1,
+      "42": 1,
+      "45": 1,
+      "50": 2
+    },
+    "levelBuckets": {
+      "1-10": 28,
+      "11-20": 52,
+      "21-30": 4,
+      "31-40": 7,
+      "41-50": 5,
+      "51-60": 0,
+      "61+": 0
+    },
+    "levelProfileLabel": "Wide level spread",
+    "mobGroupNameCounts": {
+      "A Shark": 34,
+      "A Kerra Snake": 6,
+      "A Kerra Spider": 5,
+      "A Willowisp": 5,
+      "Kerra Isle Beetle": 5,
+      "A Killer Shark": 4,
+      "A Zombie Guardian": 4,
+      "A Vampire Bat": 3,
+      "A Zombie Sailor": 3,
+      "A Seahorse": 2,
+      "Undead Erudite Sailor": 2,
+      "Undead Troll Sailor": 2,
+      "Zombie Sailor": 2,
+      "A Fish": 1,
+      "A Frantic Kerran": 1,
+      "A Plague Shark": 1,
+      "Captain Vekeros": 1,
+      "Golden Maiden": 1,
+      "Hojo": 1,
+      "Jarra": 1,
+      "Kala": 1,
+      "Milla": 1,
+      "Monala": 1,
+      "Nifta": 1,
+      "Nomala": 1,
+      "Ooglyn": 1,
+      "Renna": 1,
+      "Sea King": 1,
+      "Tolo": 1,
+      "Translocator Jempar": 1,
+      "Yelesom Paust": 1,
+      "Yun Assistant Maldok": 1
+    },
+    "classCounts": {
+      "Warrior": 90,
+      "Shaman": 2,
+      "Wizard": 2,
+      "Banker": 1,
+      "Rogue": 1
+    },
+    "raceCounts": {
+      "Shark": 39,
+      "Kerran": 10,
+      "Zombie": 10,
+      "Snake": 6,
+      "Beetle": 5,
+      "Spider": 5,
+      "Will-O-Wisp": 5,
+      "Skeleton": 4,
+      "Bat": 3,
+      "Seahorse": 2,
+      "Ship": 2,
+      "Erudite": 1,
+      "Fish": 1,
+      "Froglok": 1,
+      "Gnome": 1,
+      "Ogre": 1
+    },
+    "normalizedRaceCounts": {
+      "Shark": 39,
+      "Kerran": 10,
+      "Zombie": 10,
+      "Snake": 6,
+      "Beetle": 5,
+      "Spider": 5,
+      "Will-o-Wisp": 5,
+      "Skeleton": 4,
+      "Bat": 3,
+      "Seahorse": 2,
+      "Ship": 2,
+      "Erudite": 1,
+      "Fish": 1,
+      "Froglok": 1,
+      "Gnome": 1,
+      "Ogre": 1
+    },
+    "normalizedRaceLevelCounts": {
+      "Bat": {
+        "8": 2,
+        "10": 1
+      },
+      "Beetle": {
+        "2": 5
+      },
+      "Erudite": {
+        "20": 1
+      },
+      "Fish": {
+        "1": 1
+      },
+      "Froglok": {
+        "20": 1
+      },
+      "Gnome": {
+        "1": 1
+      },
+      "Kerran": {
+        "4": 1,
+        "13": 3,
+        "14": 1,
+        "16": 2,
+        "17": 2,
+        "19": 1
+      },
+      "Ogre": {
+        "45": 1
+      },
+      "Seahorse": {
+        "8": 2
+      },
+      "Shark": {
+        "13": 5,
+        "14": 5,
+        "15": 6,
+        "16": 7,
+        "17": 11,
+        "33": 1,
+        "40": 2,
+        "41": 1,
+        "42": 1
+      },
+      "Ship": {
+        "50": 2
+      },
+      "Skeleton": {
+        "35": 4
+      },
+      "Snake": {
+        "7": 3,
+        "8": 3
+      },
+      "Spider": {
+        "10": 3,
+        "12": 2
+      },
+      "Will-o-Wisp": {
+        "10": 3,
+        "11": 2
+      },
+      "Zombie": {
+        "9": 1,
+        "10": 2,
+        "11": 3,
+        "26": 4
+      }
+    },
+    "raceAliases": {
+      "Bat": [
+        "Bat"
+      ],
+      "Beetle": [
+        "Beetle"
+      ],
+      "Erudite": [
+        "Erudite"
+      ],
+      "Fish": [
+        "Fish"
+      ],
+      "Froglok": [
+        "Froglok"
+      ],
+      "Gnome": [
+        "Gnome"
+      ],
+      "Kerran": [
+        "Kerran"
+      ],
+      "Ogre": [
+        "Ogre"
+      ],
+      "Seahorse": [
+        "Seahorse"
+      ],
+      "Shark": [
+        "Shark"
+      ],
+      "Ship": [
+        "Ship"
+      ],
+      "Skeleton": [
+        "Skeleton"
+      ],
+      "Snake": [
+        "Snake"
+      ],
+      "Spider": [
+        "Spider"
+      ],
+      "Will-o-Wisp": [
+        "Will-O-Wisp"
+      ],
+      "Zombie": [
+        "Zombie"
+      ]
+    },
+    "typeCounts": {
+      "Spawn Slot": 96
+    },
+    "notes": [
+      "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+      "Read-only test export; not wired into production /zones data."
+    ],
+    "spawnMapPrototype": {
+      "sourceKind": "Local EQEmu/PEQ database export",
+      "coordinateNote": "Original EQEmu spawn2 x/y/z coordinates are preserved for map prototyping.",
+      "points": [
+        {
+          "spawn2Id": 2500,
+          "spawngroupId": 5457,
+          "name": "a_zombie_sailor",
+          "displayName": "A Zombie Sailor",
+          "level": 10,
+          "race": "Zombie",
+          "rawRace": "Zombie",
+          "className": "Warrior",
+          "x": 2108,
+          "y": -1157,
+          "z": -54.380001,
+          "heading": 340,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2501,
+          "spawngroupId": 5456,
+          "name": "a_killer_shark",
+          "displayName": "A Killer Shark",
+          "level": 40,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": 3982.879883,
+          "y": -1108,
+          "z": -121.900002,
+          "heading": 44,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2502,
+          "spawngroupId": 5456,
+          "name": "a_killer_shark",
+          "displayName": "A Killer Shark",
+          "level": 40,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": 2799,
+          "y": 1319.880005,
+          "z": -241.899994,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2503,
+          "spawngroupId": 5455,
+          "name": "a_willowisp",
+          "displayName": "A Willowisp",
+          "level": 11,
+          "race": "Will-o-Wisp",
+          "rawRace": "Will-O-Wisp",
+          "className": "Warrior",
+          "x": 806.130005,
+          "y": -432.75,
+          "z": -55,
+          "heading": 0,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2504,
+          "spawngroupId": 5454,
+          "name": "a_willowisp",
+          "displayName": "A Willowisp",
+          "level": 10,
+          "race": "Will-o-Wisp",
+          "rawRace": "Will-O-Wisp",
+          "className": "Warrior",
+          "x": 1596.380005,
+          "y": -870.880005,
+          "z": 47.630001,
+          "heading": 121.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2505,
+          "spawngroupId": 5454,
+          "name": "a_willowisp",
+          "displayName": "A Willowisp",
+          "level": 10,
+          "race": "Will-o-Wisp",
+          "rawRace": "Will-O-Wisp",
+          "className": "Warrior",
+          "x": 797.130005,
+          "y": -513.630005,
+          "z": -46.299999,
+          "heading": 21,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2506,
+          "spawngroupId": 5454,
+          "name": "a_willowisp",
+          "displayName": "A Willowisp",
+          "level": 10,
+          "race": "Will-o-Wisp",
+          "rawRace": "Will-O-Wisp",
+          "className": "Warrior",
+          "x": 1598.25,
+          "y": -933.130005,
+          "z": 63.380001,
+          "heading": 125,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2507,
+          "spawngroupId": 5453,
+          "name": "Ooglyn",
+          "displayName": "Ooglyn",
+          "level": 45,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Shaman",
+          "x": 1638.25,
+          "y": -918.75,
+          "z": 53.880001,
+          "heading": 133.5,
+          "chance": 100,
+          "respawnTime": 4000,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2508,
+          "spawngroupId": 5452,
+          "name": "Nomala",
+          "displayName": "Nomala",
+          "level": 4,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Warrior",
+          "x": 1125.880005,
+          "y": -1780.880005,
+          "z": 3.8,
+          "heading": 490,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2509,
+          "spawngroupId": 5451,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 17,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": 4472.879883,
+          "y": -2582.879883,
+          "z": -197.380005,
+          "heading": 198.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2510,
+          "spawngroupId": 5451,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 17,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": 3837.879883,
+          "y": 332.880005,
+          "z": -52.400002,
+          "heading": 51,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2511,
+          "spawngroupId": 5451,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 17,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": 3799,
+          "y": -4616.879883,
+          "z": -246.399994,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2512,
+          "spawngroupId": 5451,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 17,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": 2596,
+          "y": -2922.879883,
+          "z": -78.400002,
+          "heading": 63,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2513,
+          "spawngroupId": 5451,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 17,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": 3821,
+          "y": -2366.879883,
+          "z": -195.399994,
+          "heading": 484.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2514,
+          "spawngroupId": 5451,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 17,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": 4801.75,
+          "y": 2747.879883,
+          "z": -280.100006,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2515,
+          "spawngroupId": 5451,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 17,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": 4037,
+          "y": -2776.879883,
+          "z": -56.400002,
+          "heading": 477,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2516,
+          "spawngroupId": 5451,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 17,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": 2976,
+          "y": 2368.879883,
+          "z": -280.100006,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2517,
+          "spawngroupId": 5451,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 17,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": 2951,
+          "y": -1481,
+          "z": -264.399994,
+          "heading": 23.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2518,
+          "spawngroupId": 5451,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 17,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": 4110,
+          "y": -1705.880005,
+          "z": -68.379997,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2519,
+          "spawngroupId": 5451,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 17,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": 3418,
+          "y": -4532.879883,
+          "z": -111.400002,
+          "heading": 481.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2520,
+          "spawngroupId": 5447,
+          "name": "Yun_Assistant_Maldok",
+          "displayName": "Yun Assistant Maldok",
+          "level": 20,
+          "race": "Froglok",
+          "rawRace": "Froglok",
+          "className": "Shaman",
+          "x": 2130,
+          "y": -1293,
+          "z": -34.880001,
+          "heading": 511,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2521,
+          "spawngroupId": 5448,
+          "name": "a_kerra_spider",
+          "displayName": "A Kerra Spider",
+          "level": 12,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": 1252.5,
+          "y": -1303.75,
+          "z": 96.879997,
+          "heading": 318.5,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2522,
+          "spawngroupId": 5449,
+          "name": "a_kerra_snake",
+          "displayName": "A Kerra Snake",
+          "level": 8,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": 1457.130005,
+          "y": -1152.25,
+          "z": 120.5,
+          "heading": 276,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2523,
+          "spawngroupId": 5449,
+          "name": "a_kerra_snake",
+          "displayName": "A Kerra Snake",
+          "level": 8,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": 1153.75,
+          "y": -1130.630005,
+          "z": 120.900002,
+          "heading": 325.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2524,
+          "spawngroupId": 5449,
+          "name": "a_kerra_snake",
+          "displayName": "A Kerra Snake",
+          "level": 8,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": 1288.75,
+          "y": -1285.630005,
+          "z": 72.75,
+          "heading": 170,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2525,
+          "spawngroupId": 5450,
+          "name": "a_zombie_sailor",
+          "displayName": "A Zombie Sailor",
+          "level": 11,
+          "race": "Zombie",
+          "rawRace": "Zombie",
+          "className": "Warrior",
+          "x": 2094,
+          "y": -1195,
+          "z": -51.130001,
+          "heading": 360,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2526,
+          "spawngroupId": 5383,
+          "name": "a_zombie_sailor",
+          "displayName": "A Zombie Sailor",
+          "level": 9,
+          "race": "Zombie",
+          "rawRace": "Zombie",
+          "className": "Warrior",
+          "x": 2100,
+          "y": -1224,
+          "z": -52.75,
+          "heading": 360,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2527,
+          "spawngroupId": 5430,
+          "name": "a_fish",
+          "displayName": "A Fish",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": 2736.25,
+          "y": -3149,
+          "z": -103.900002,
+          "heading": 103,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2528,
+          "spawngroupId": 5431,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 14,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": 4613.879883,
+          "y": -140.880005,
+          "z": -236.399994,
+          "heading": 396.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2529,
+          "spawngroupId": 5431,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 14,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": 3320.879883,
+          "y": 2161.879883,
+          "z": -278.380005,
+          "heading": 11,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2530,
+          "spawngroupId": 5431,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 14,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": 4709.879883,
+          "y": -1226.880005,
+          "z": -276.399994,
+          "heading": 438,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2531,
+          "spawngroupId": 5431,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 14,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": 3117,
+          "y": -4025.879883,
+          "z": -182.399994,
+          "heading": 511.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2532,
+          "spawngroupId": 5431,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 14,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": 4375.879883,
+          "y": -2121,
+          "z": -230.380005,
+          "heading": 105.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2533,
+          "spawngroupId": 5432,
+          "name": "a_kerra_snake",
+          "displayName": "A Kerra Snake",
+          "level": 7,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": 1671,
+          "y": -1383.130005,
+          "z": 74.629997,
+          "heading": 477.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2534,
+          "spawngroupId": 5432,
+          "name": "a_kerra_snake",
+          "displayName": "A Kerra Snake",
+          "level": 7,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": 1453.25,
+          "y": -1243.630005,
+          "z": -39.880001,
+          "heading": 117.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2535,
+          "spawngroupId": 5432,
+          "name": "a_kerra_snake",
+          "displayName": "A Kerra Snake",
+          "level": 7,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": 1288.25,
+          "y": -1307.130005,
+          "z": 100.129997,
+          "heading": 166.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2536,
+          "spawngroupId": 5433,
+          "name": "a_kerra_spider",
+          "displayName": "A Kerra Spider",
+          "level": 10,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": 1192.630005,
+          "y": -1211.5,
+          "z": 104,
+          "heading": 451.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2537,
+          "spawngroupId": 5433,
+          "name": "a_kerra_spider",
+          "displayName": "A Kerra Spider",
+          "level": 10,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": 1340.380005,
+          "y": -1270.75,
+          "z": 69.629997,
+          "heading": 319.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2538,
+          "spawngroupId": 5433,
+          "name": "a_kerra_spider",
+          "displayName": "A Kerra Spider",
+          "level": 10,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": 1241.75,
+          "y": -1145.880005,
+          "z": 58,
+          "heading": 437.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2539,
+          "spawngroupId": 5434,
+          "name": "a_vampire_bat",
+          "displayName": "A Vampire Bat",
+          "level": 8,
+          "race": "Bat",
+          "rawRace": "Bat",
+          "className": "Warrior",
+          "x": 1574.630005,
+          "y": -1439.5,
+          "z": 74.5,
+          "heading": 443.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2540,
+          "spawngroupId": 5434,
+          "name": "a_vampire_bat",
+          "displayName": "A Vampire Bat",
+          "level": 8,
+          "race": "Bat",
+          "rawRace": "Bat",
+          "className": "Warrior",
+          "x": 1283.5,
+          "y": -1211.5,
+          "z": -1.25,
+          "heading": 372.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2541,
+          "spawngroupId": 5435,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 13,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": 4801.75,
+          "y": -4637.25,
+          "z": -280,
+          "heading": 448.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2542,
+          "spawngroupId": 5435,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 13,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": 3304,
+          "y": -843.880005,
+          "z": -192.399994,
+          "heading": 54.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2543,
+          "spawngroupId": 5435,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 13,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": 3506,
+          "y": -4367.879883,
+          "z": -191.399994,
+          "heading": 503,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2544,
+          "spawngroupId": 5435,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 13,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": 3383,
+          "y": 1969.880005,
+          "z": -203.399994,
+          "heading": 504.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2545,
+          "spawngroupId": 5435,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 13,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": 4172,
+          "y": 2100.879883,
+          "z": -167.399994,
+          "heading": 33.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2546,
+          "spawngroupId": 5436,
+          "name": "a_frantic_kerran",
+          "displayName": "A Frantic Kerran",
+          "level": 19,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Rogue",
+          "x": 3165,
+          "y": 33.880001,
+          "z": -22.379999,
+          "heading": 142,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2547,
+          "spawngroupId": 5437,
+          "name": "a_kerra_spider",
+          "displayName": "A Kerra Spider",
+          "level": 12,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": 1349,
+          "y": -1150.630005,
+          "z": 40.25,
+          "heading": 62.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2548,
+          "spawngroupId": 5438,
+          "name": "undead_troll_sailor",
+          "displayName": "Undead Troll Sailor",
+          "level": 35,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 1918,
+          "y": -131,
+          "z": -290.880005,
+          "heading": 25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2549,
+          "spawngroupId": 5438,
+          "name": "undead_troll_sailor",
+          "displayName": "Undead Troll Sailor",
+          "level": 35,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 1971,
+          "y": -77,
+          "z": -290.880005,
+          "heading": 427,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2550,
+          "spawngroupId": 5439,
+          "name": "undead_erudite_sailor",
+          "displayName": "Undead Erudite Sailor",
+          "level": 35,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 1988,
+          "y": -131,
+          "z": -290.880005,
+          "heading": 445,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2551,
+          "spawngroupId": 5439,
+          "name": "undead_erudite_sailor",
+          "displayName": "Undead Erudite Sailor",
+          "level": 35,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 1930,
+          "y": -60,
+          "z": -290.880005,
+          "heading": 219,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2552,
+          "spawngroupId": 5440,
+          "name": "Zombie_Sailor",
+          "displayName": "Zombie Sailor",
+          "level": 10,
+          "race": "Zombie",
+          "rawRace": "Zombie",
+          "className": "Warrior",
+          "x": 3305,
+          "y": -1215,
+          "z": -292,
+          "heading": 143,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2553,
+          "spawngroupId": 5441,
+          "name": "Zombie_Sailor",
+          "displayName": "Zombie Sailor",
+          "level": 11,
+          "race": "Zombie",
+          "rawRace": "Zombie",
+          "className": "Warrior",
+          "x": 3326,
+          "y": -1197,
+          "z": -292,
+          "heading": 252,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2554,
+          "spawngroupId": 5442,
+          "name": "Captain_Vekeros",
+          "displayName": "Captain Vekeros",
+          "level": 11,
+          "race": "Zombie",
+          "rawRace": "Zombie",
+          "className": "Warrior",
+          "x": 3351,
+          "y": -1218,
+          "z": -292,
+          "heading": 366,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2555,
+          "spawngroupId": 5443,
+          "name": "a_plague_shark",
+          "displayName": "A Plague Shark",
+          "level": 33,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": -2179,
+          "y": -2400,
+          "z": -277.630005,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 7200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2556,
+          "spawngroupId": 5444,
+          "name": "a_killer_shark",
+          "displayName": "A Killer Shark",
+          "level": 42,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": 2385,
+          "y": 388.880005,
+          "z": -241.899994,
+          "heading": 412.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2557,
+          "spawngroupId": 5445,
+          "name": "a_killer_shark",
+          "displayName": "A Killer Shark",
+          "level": 41,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": 3281,
+          "y": -1147,
+          "z": -277.600006,
+          "heading": 408.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2558,
+          "spawngroupId": 5446,
+          "name": "a_seahorse",
+          "displayName": "A Seahorse",
+          "level": 8,
+          "race": "Seahorse",
+          "rawRace": "Seahorse",
+          "className": "Warrior",
+          "x": 795.880005,
+          "y": -433.880005,
+          "z": -55,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2559,
+          "spawngroupId": 5446,
+          "name": "a_seahorse",
+          "displayName": "A Seahorse",
+          "level": 8,
+          "race": "Seahorse",
+          "rawRace": "Seahorse",
+          "className": "Warrior",
+          "x": 784.75,
+          "y": -625.380005,
+          "z": -30.879999,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2560,
+          "spawngroupId": 5429,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 16,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": 4420,
+          "y": -1122.880005,
+          "z": -51.400002,
+          "heading": 10,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2561,
+          "spawngroupId": 5429,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 16,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": 3557,
+          "y": -2145.879883,
+          "z": -30.4,
+          "heading": 31.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2562,
+          "spawngroupId": 5429,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 16,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": 2771,
+          "y": 1008.880005,
+          "z": -69.379997,
+          "heading": 509.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2563,
+          "spawngroupId": 5429,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 16,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": 3033,
+          "y": 2122.879883,
+          "z": -79.400002,
+          "heading": 482,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2564,
+          "spawngroupId": 5429,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 16,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": 4405.879883,
+          "y": -4572.879883,
+          "z": -232.399994,
+          "heading": 432,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2565,
+          "spawngroupId": 5429,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 16,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": 2899,
+          "y": -1245,
+          "z": -37.380001,
+          "heading": 471.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2566,
+          "spawngroupId": 5429,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 16,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": 4735,
+          "y": -2367.879883,
+          "z": -224.399994,
+          "heading": 470,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2567,
+          "spawngroupId": 5458,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 15,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": 2680,
+          "y": 2353.879883,
+          "z": -279.399994,
+          "heading": 504.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2568,
+          "spawngroupId": 5458,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 15,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": 2452,
+          "y": -1566.880005,
+          "z": -129.380005,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2569,
+          "spawngroupId": 5458,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 15,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": 2755,
+          "y": -656,
+          "z": -253.399994,
+          "heading": 32.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2570,
+          "spawngroupId": 5458,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 15,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": 3626,
+          "y": -1438.880005,
+          "z": -107.400002,
+          "heading": 490.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2571,
+          "spawngroupId": 5458,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 15,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": 4047.879883,
+          "y": -4003.879883,
+          "z": -185.399994,
+          "heading": 458.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2572,
+          "spawngroupId": 5458,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 15,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": 3349.879883,
+          "y": 1214,
+          "z": -25.379999,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2573,
+          "spawngroupId": 5459,
+          "name": "a_vampire_bat",
+          "displayName": "A Vampire Bat",
+          "level": 10,
+          "race": "Bat",
+          "rawRace": "Bat",
+          "className": "Warrior",
+          "x": 1359.5,
+          "y": -1338.630005,
+          "z": 123.629997,
+          "heading": 129.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2574,
+          "spawngroupId": 5460,
+          "name": "Kerra_Isle_beetle",
+          "displayName": "Kerra Isle Beetle",
+          "level": 2,
+          "race": "Beetle",
+          "rawRace": "Beetle",
+          "className": "Warrior",
+          "x": 1452.75,
+          "y": -1243.75,
+          "z": 128.899994,
+          "heading": 224.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2575,
+          "spawngroupId": 5460,
+          "name": "Kerra_Isle_beetle",
+          "displayName": "Kerra Isle Beetle",
+          "level": 2,
+          "race": "Beetle",
+          "rawRace": "Beetle",
+          "className": "Warrior",
+          "x": 1383.75,
+          "y": -1323.130005,
+          "z": 126.25,
+          "heading": 184.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2576,
+          "spawngroupId": 5460,
+          "name": "Kerra_Isle_beetle",
+          "displayName": "Kerra Isle Beetle",
+          "level": 2,
+          "race": "Beetle",
+          "rawRace": "Beetle",
+          "className": "Warrior",
+          "x": 1211.25,
+          "y": -1211.880005,
+          "z": 80.629997,
+          "heading": 294.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2577,
+          "spawngroupId": 5460,
+          "name": "Kerra_Isle_beetle",
+          "displayName": "Kerra Isle Beetle",
+          "level": 2,
+          "race": "Beetle",
+          "rawRace": "Beetle",
+          "className": "Warrior",
+          "x": 1362.25,
+          "y": -1137.380005,
+          "z": 57.880001,
+          "heading": 58.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2578,
+          "spawngroupId": 5460,
+          "name": "Kerra_Isle_beetle",
+          "displayName": "Kerra Isle Beetle",
+          "level": 2,
+          "race": "Beetle",
+          "rawRace": "Beetle",
+          "className": "Warrior",
+          "x": 1238,
+          "y": -1030.5,
+          "z": 118.5,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2579,
+          "spawngroupId": 5461,
+          "name": "Hojo",
+          "displayName": "Hojo",
+          "level": 13,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Warrior",
+          "x": 1407.130005,
+          "y": -1306.25,
+          "z": 129.800003,
+          "heading": 299,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2580,
+          "spawngroupId": 5462,
+          "name": "Milla",
+          "displayName": "Milla",
+          "level": 17,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Warrior",
+          "x": 798.130005,
+          "y": -1772.380005,
+          "z": 12.3,
+          "heading": 508,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2581,
+          "spawngroupId": 5463,
+          "name": "Monala",
+          "displayName": "Monala",
+          "level": 17,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Warrior",
+          "x": 679,
+          "y": -1780,
+          "z": 3.75,
+          "heading": 412,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2582,
+          "spawngroupId": 5464,
+          "name": "Nifta",
+          "displayName": "Nifta",
+          "level": 13,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Warrior",
+          "x": 963,
+          "y": -1591.880005,
+          "z": 34.25,
+          "heading": 390,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2583,
+          "spawngroupId": 5465,
+          "name": "Renna",
+          "displayName": "Renna",
+          "level": 16,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Banker",
+          "x": 857,
+          "y": -1479,
+          "z": 14,
+          "heading": 255,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2584,
+          "spawngroupId": 5466,
+          "name": "Kala",
+          "displayName": "Kala",
+          "level": 13,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Warrior",
+          "x": 753,
+          "y": -1313,
+          "z": -16.25,
+          "heading": 433,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2585,
+          "spawngroupId": 5467,
+          "name": "Jarra",
+          "displayName": "Jarra",
+          "level": 14,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Warrior",
+          "x": 746,
+          "y": -1335,
+          "z": -16.5,
+          "heading": 434,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2586,
+          "spawngroupId": 5468,
+          "name": "Tolo",
+          "displayName": "Tolo",
+          "level": 16,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Warrior",
+          "x": 780,
+          "y": -719,
+          "z": -15,
+          "heading": 38,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2587,
+          "spawngroupId": 5469,
+          "name": "a_willowisp",
+          "displayName": "A Willowisp",
+          "level": 11,
+          "race": "Will-o-Wisp",
+          "rawRace": "Will-O-Wisp",
+          "className": "Warrior",
+          "x": 1371.380005,
+          "y": -1294.880005,
+          "z": 118,
+          "heading": 481,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2588,
+          "spawngroupId": 5470,
+          "name": "a_zombie_guardian",
+          "displayName": "A Zombie Guardian",
+          "level": 26,
+          "race": "Zombie",
+          "rawRace": "Zombie",
+          "className": "Warrior",
+          "x": 2118,
+          "y": -1320,
+          "z": -40.75,
+          "heading": 58,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2589,
+          "spawngroupId": 5470,
+          "name": "a_zombie_guardian",
+          "displayName": "A Zombie Guardian",
+          "level": 26,
+          "race": "Zombie",
+          "rawRace": "Zombie",
+          "className": "Warrior",
+          "x": 2148,
+          "y": -1268,
+          "z": -46.880001,
+          "heading": 309,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2590,
+          "spawngroupId": 5470,
+          "name": "a_zombie_guardian",
+          "displayName": "A Zombie Guardian",
+          "level": 26,
+          "race": "Zombie",
+          "rawRace": "Zombie",
+          "className": "Warrior",
+          "x": 2114,
+          "y": -1268,
+          "z": -40.880001,
+          "heading": 178,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2591,
+          "spawngroupId": 5470,
+          "name": "a_zombie_guardian",
+          "displayName": "A Zombie Guardian",
+          "level": 26,
+          "race": "Zombie",
+          "rawRace": "Zombie",
+          "className": "Warrior",
+          "x": 2140,
+          "y": -1320,
+          "z": -46.630001,
+          "heading": 462,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2592,
+          "spawngroupId": 5471,
+          "name": "Yelesom_Paust",
+          "displayName": "Yelesom Paust",
+          "level": 20,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Wizard",
+          "x": 1239.880005,
+          "y": -1175,
+          "z": 55.380001,
+          "heading": 142,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2593,
+          "spawngroupId": 5472,
+          "name": "#Translocator_Jempar",
+          "displayName": "Translocator Jempar",
+          "level": 1,
+          "race": "Gnome",
+          "rawRace": "Gnome",
+          "className": "Wizard",
+          "x": 663,
+          "y": -1768,
+          "z": 1.88,
+          "heading": 157,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 58419,
+          "spawngroupId": 13005,
+          "name": "Golden_Maiden",
+          "displayName": "Golden Maiden",
+          "level": 50,
+          "race": "Ship",
+          "rawRace": "Ship",
+          "className": "Warrior",
+          "x": 612.435303,
+          "y": -1781.482178,
+          "z": -17,
+          "heading": 254,
+          "chance": 100,
+          "respawnTime": 400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 58421,
+          "spawngroupId": 12367,
+          "name": "Sea_King",
+          "displayName": "Sea King",
+          "level": 50,
+          "race": "Ship",
+          "rawRace": "Ship",
+          "className": "Warrior",
+          "x": -1628.119995,
+          "y": -1976.069946,
+          "z": -16.73,
+          "heading": 258.399994,
+          "chance": 100,
+          "respawnTime": 400,
+          "candidateCount": 1
+        }
+      ]
+    }
+  },
+  "details": {
+    "zoneSlug": "erud-s-crossing",
+    "routeSlug": "erudsxing",
+    "zoneName": "Erud's Crossing",
+    "sourceFile": "local-eqemu-database",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobGroups": [
+      {
+        "displayName": "A Fish",
+        "rawNames": [
+          "a_fish"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Fish": 1
+        },
+        "rawRaceCounts": {
+          "Fish": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Translocator Jempar",
+        "rawNames": [
+          "#Translocator_Jempar"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Gnome": 1
+        },
+        "rawRaceCounts": {
+          "Gnome": 1
+        },
+        "classCounts": {
+          "Wizard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Kerra Isle Beetle",
+        "rawNames": [
+          "Kerra_Isle_beetle"
+        ],
+        "count": 5,
+        "levelMin": 2,
+        "levelMax": 2,
+        "levels": [
+          2
+        ],
+        "raceCounts": {
+          "Beetle": 5
+        },
+        "rawRaceCounts": {
+          "Beetle": 5
+        },
+        "classCounts": {
+          "Warrior": 5
+        },
+        "typeCounts": {
+          "Spawn Slot": 5
+        }
+      },
+      {
+        "displayName": "Nomala",
+        "rawNames": [
+          "Nomala"
+        ],
+        "count": 1,
+        "levelMin": 4,
+        "levelMax": 4,
+        "levels": [
+          4
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Kerra Snake",
+        "rawNames": [
+          "a_kerra_snake"
+        ],
+        "count": 6,
+        "levelMin": 7,
+        "levelMax": 8,
+        "levels": [
+          7,
+          8
+        ],
+        "raceCounts": {
+          "Snake": 6
+        },
+        "rawRaceCounts": {
+          "Snake": 6
+        },
+        "classCounts": {
+          "Warrior": 6
+        },
+        "typeCounts": {
+          "Spawn Slot": 6
+        }
+      },
+      {
+        "displayName": "A Seahorse",
+        "rawNames": [
+          "a_seahorse"
+        ],
+        "count": 2,
+        "levelMin": 8,
+        "levelMax": 8,
+        "levels": [
+          8
+        ],
+        "raceCounts": {
+          "Seahorse": 2
+        },
+        "rawRaceCounts": {
+          "Seahorse": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Vampire Bat",
+        "rawNames": [
+          "a_vampire_bat"
+        ],
+        "count": 2,
+        "levelMin": 8,
+        "levelMax": 8,
+        "levels": [
+          8
+        ],
+        "raceCounts": {
+          "Bat": 2
+        },
+        "rawRaceCounts": {
+          "Bat": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Zombie Sailor",
+        "rawNames": [
+          "a_zombie_sailor"
+        ],
+        "count": 3,
+        "levelMin": 9,
+        "levelMax": 11,
+        "levels": [
+          9,
+          10,
+          11
+        ],
+        "raceCounts": {
+          "Zombie": 3
+        },
+        "rawRaceCounts": {
+          "Zombie": 3
+        },
+        "classCounts": {
+          "Warrior": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "A Willowisp",
+        "rawNames": [
+          "a_willowisp"
+        ],
+        "count": 5,
+        "levelMin": 10,
+        "levelMax": 11,
+        "levels": [
+          10,
+          11
+        ],
+        "raceCounts": {
+          "Will-o-Wisp": 5
+        },
+        "rawRaceCounts": {
+          "Will-O-Wisp": 5
+        },
+        "classCounts": {
+          "Warrior": 5
+        },
+        "typeCounts": {
+          "Spawn Slot": 5
+        }
+      },
+      {
+        "displayName": "A Kerra Spider",
+        "rawNames": [
+          "a_kerra_spider"
+        ],
+        "count": 3,
+        "levelMin": 10,
+        "levelMax": 10,
+        "levels": [
+          10
+        ],
+        "raceCounts": {
+          "Spider": 3
+        },
+        "rawRaceCounts": {
+          "Spider": 3
+        },
+        "classCounts": {
+          "Warrior": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "Zombie Sailor",
+        "rawNames": [
+          "Zombie_Sailor"
+        ],
+        "count": 2,
+        "levelMin": 10,
+        "levelMax": 11,
+        "levels": [
+          10,
+          11
+        ],
+        "raceCounts": {
+          "Zombie": 2
+        },
+        "rawRaceCounts": {
+          "Zombie": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Vampire Bat",
+        "rawNames": [
+          "a_vampire_bat"
+        ],
+        "count": 1,
+        "levelMin": 10,
+        "levelMax": 10,
+        "levels": [
+          10
+        ],
+        "raceCounts": {
+          "Bat": 1
+        },
+        "rawRaceCounts": {
+          "Bat": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Captain Vekeros",
+        "rawNames": [
+          "Captain_Vekeros"
+        ],
+        "count": 1,
+        "levelMin": 11,
+        "levelMax": 11,
+        "levels": [
+          11
+        ],
+        "raceCounts": {
+          "Zombie": 1
+        },
+        "rawRaceCounts": {
+          "Zombie": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Kerra Spider",
+        "rawNames": [
+          "a_kerra_spider"
+        ],
+        "count": 2,
+        "levelMin": 12,
+        "levelMax": 12,
+        "levels": [
+          12
+        ],
+        "raceCounts": {
+          "Spider": 2
+        },
+        "rawRaceCounts": {
+          "Spider": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Shark",
+        "rawNames": [
+          "a_shark"
+        ],
+        "count": 34,
+        "levelMin": 13,
+        "levelMax": 17,
+        "levels": [
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "raceCounts": {
+          "Shark": 34
+        },
+        "rawRaceCounts": {
+          "Shark": 34
+        },
+        "classCounts": {
+          "Warrior": 34
+        },
+        "typeCounts": {
+          "Spawn Slot": 34
+        }
+      },
+      {
+        "displayName": "Hojo",
+        "rawNames": [
+          "Hojo"
+        ],
+        "count": 1,
+        "levelMin": 13,
+        "levelMax": 13,
+        "levels": [
+          13
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Kala",
+        "rawNames": [
+          "Kala"
+        ],
+        "count": 1,
+        "levelMin": 13,
+        "levelMax": 13,
+        "levels": [
+          13
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Nifta",
+        "rawNames": [
+          "Nifta"
+        ],
+        "count": 1,
+        "levelMin": 13,
+        "levelMax": 13,
+        "levels": [
+          13
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Jarra",
+        "rawNames": [
+          "Jarra"
+        ],
+        "count": 1,
+        "levelMin": 14,
+        "levelMax": 14,
+        "levels": [
+          14
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Renna",
+        "rawNames": [
+          "Renna"
+        ],
+        "count": 1,
+        "levelMin": 16,
+        "levelMax": 16,
+        "levels": [
+          16
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Tolo",
+        "rawNames": [
+          "Tolo"
+        ],
+        "count": 1,
+        "levelMin": 16,
+        "levelMax": 16,
+        "levels": [
+          16
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Milla",
+        "rawNames": [
+          "Milla"
+        ],
+        "count": 1,
+        "levelMin": 17,
+        "levelMax": 17,
+        "levels": [
+          17
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Monala",
+        "rawNames": [
+          "Monala"
+        ],
+        "count": 1,
+        "levelMin": 17,
+        "levelMax": 17,
+        "levels": [
+          17
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Frantic Kerran",
+        "rawNames": [
+          "a_frantic_kerran"
+        ],
+        "count": 1,
+        "levelMin": 19,
+        "levelMax": 19,
+        "levels": [
+          19
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Rogue": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Yelesom Paust",
+        "rawNames": [
+          "Yelesom_Paust"
+        ],
+        "count": 1,
+        "levelMin": 20,
+        "levelMax": 20,
+        "levels": [
+          20
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Wizard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Yun Assistant Maldok",
+        "rawNames": [
+          "Yun_Assistant_Maldok"
+        ],
+        "count": 1,
+        "levelMin": 20,
+        "levelMax": 20,
+        "levels": [
+          20
+        ],
+        "raceCounts": {
+          "Froglok": 1
+        },
+        "rawRaceCounts": {
+          "Froglok": 1
+        },
+        "classCounts": {
+          "Shaman": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Zombie Guardian",
+        "rawNames": [
+          "a_zombie_guardian"
+        ],
+        "count": 4,
+        "levelMin": 26,
+        "levelMax": 26,
+        "levels": [
+          26
+        ],
+        "raceCounts": {
+          "Zombie": 4
+        },
+        "rawRaceCounts": {
+          "Zombie": 4
+        },
+        "classCounts": {
+          "Warrior": 4
+        },
+        "typeCounts": {
+          "Spawn Slot": 4
+        }
+      },
+      {
+        "displayName": "A Plague Shark",
+        "rawNames": [
+          "a_plague_shark"
+        ],
+        "count": 1,
+        "levelMin": 33,
+        "levelMax": 33,
+        "levels": [
+          33
+        ],
+        "raceCounts": {
+          "Shark": 1
+        },
+        "rawRaceCounts": {
+          "Shark": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Undead Erudite Sailor",
+        "rawNames": [
+          "undead_erudite_sailor"
+        ],
+        "count": 2,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Skeleton": 2
+        },
+        "rawRaceCounts": {
+          "Skeleton": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "Undead Troll Sailor",
+        "rawNames": [
+          "undead_troll_sailor"
+        ],
+        "count": 2,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Skeleton": 2
+        },
+        "rawRaceCounts": {
+          "Skeleton": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Killer Shark",
+        "rawNames": [
+          "a_killer_shark"
+        ],
+        "count": 4,
+        "levelMin": 40,
+        "levelMax": 42,
+        "levels": [
+          40,
+          41,
+          42
+        ],
+        "raceCounts": {
+          "Shark": 4
+        },
+        "rawRaceCounts": {
+          "Shark": 4
+        },
+        "classCounts": {
+          "Warrior": 4
+        },
+        "typeCounts": {
+          "Spawn Slot": 4
+        }
+      },
+      {
+        "displayName": "Ooglyn",
+        "rawNames": [
+          "Ooglyn"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Ogre": 1
+        },
+        "rawRaceCounts": {
+          "Ogre": 1
+        },
+        "classCounts": {
+          "Shaman": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Golden Maiden",
+        "rawNames": [
+          "Golden_Maiden"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Ship": 1
+        },
+        "rawRaceCounts": {
+          "Ship": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Sea King",
+        "rawNames": [
+          "Sea_King"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Ship": 1
+        },
+        "rawRaceCounts": {
+          "Ship": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      }
+    ],
+    "rows": [
+      {
+        "displayName": "A Fish",
+        "rawName": "a_fish",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2736.25,
+        "y": -3149,
+        "z": -103.900002,
+        "heading": 103,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2527,
+        "spawngroupId": 5430,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Translocator Jempar",
+        "rawName": "#Translocator_Jempar",
+        "level": 1,
+        "race": "Gnome",
+        "rawRace": "Gnome",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": 663,
+        "y": -1768,
+        "z": 1.88,
+        "heading": 157,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2593,
+        "spawngroupId": 5472,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Kerra Isle Beetle",
+        "rawName": "Kerra_Isle_beetle",
+        "level": 2,
+        "race": "Beetle",
+        "rawRace": "Beetle",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1452.75,
+        "y": -1243.75,
+        "z": 128.899994,
+        "heading": 224.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2574,
+        "spawngroupId": 5460,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Kerra Isle Beetle",
+        "rawName": "Kerra_Isle_beetle",
+        "level": 2,
+        "race": "Beetle",
+        "rawRace": "Beetle",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1383.75,
+        "y": -1323.130005,
+        "z": 126.25,
+        "heading": 184.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2575,
+        "spawngroupId": 5460,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Kerra Isle Beetle",
+        "rawName": "Kerra_Isle_beetle",
+        "level": 2,
+        "race": "Beetle",
+        "rawRace": "Beetle",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1211.25,
+        "y": -1211.880005,
+        "z": 80.629997,
+        "heading": 294.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2576,
+        "spawngroupId": 5460,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Kerra Isle Beetle",
+        "rawName": "Kerra_Isle_beetle",
+        "level": 2,
+        "race": "Beetle",
+        "rawRace": "Beetle",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1362.25,
+        "y": -1137.380005,
+        "z": 57.880001,
+        "heading": 58.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2577,
+        "spawngroupId": 5460,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Kerra Isle Beetle",
+        "rawName": "Kerra_Isle_beetle",
+        "level": 2,
+        "race": "Beetle",
+        "rawRace": "Beetle",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1238,
+        "y": -1030.5,
+        "z": 118.5,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2578,
+        "spawngroupId": 5460,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Nomala",
+        "rawName": "Nomala",
+        "level": 4,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1125.880005,
+        "y": -1780.880005,
+        "z": 3.8,
+        "heading": 490,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2508,
+        "spawngroupId": 5452,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerra Snake",
+        "rawName": "a_kerra_snake",
+        "level": 7,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1671,
+        "y": -1383.130005,
+        "z": 74.629997,
+        "heading": 477.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2533,
+        "spawngroupId": 5432,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerra Snake",
+        "rawName": "a_kerra_snake",
+        "level": 7,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1453.25,
+        "y": -1243.630005,
+        "z": -39.880001,
+        "heading": 117.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2534,
+        "spawngroupId": 5432,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerra Snake",
+        "rawName": "a_kerra_snake",
+        "level": 7,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1288.25,
+        "y": -1307.130005,
+        "z": 100.129997,
+        "heading": 166.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2535,
+        "spawngroupId": 5432,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerra Snake",
+        "rawName": "a_kerra_snake",
+        "level": 8,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1457.130005,
+        "y": -1152.25,
+        "z": 120.5,
+        "heading": 276,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2522,
+        "spawngroupId": 5449,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerra Snake",
+        "rawName": "a_kerra_snake",
+        "level": 8,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1153.75,
+        "y": -1130.630005,
+        "z": 120.900002,
+        "heading": 325.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2523,
+        "spawngroupId": 5449,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerra Snake",
+        "rawName": "a_kerra_snake",
+        "level": 8,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1288.75,
+        "y": -1285.630005,
+        "z": 72.75,
+        "heading": 170,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2524,
+        "spawngroupId": 5449,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Seahorse",
+        "rawName": "a_seahorse",
+        "level": 8,
+        "race": "Seahorse",
+        "rawRace": "Seahorse",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 795.880005,
+        "y": -433.880005,
+        "z": -55,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2558,
+        "spawngroupId": 5446,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Seahorse",
+        "rawName": "a_seahorse",
+        "level": 8,
+        "race": "Seahorse",
+        "rawRace": "Seahorse",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 784.75,
+        "y": -625.380005,
+        "z": -30.879999,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2559,
+        "spawngroupId": 5446,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Vampire Bat",
+        "rawName": "a_vampire_bat",
+        "level": 8,
+        "race": "Bat",
+        "rawRace": "Bat",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1574.630005,
+        "y": -1439.5,
+        "z": 74.5,
+        "heading": 443.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2539,
+        "spawngroupId": 5434,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Vampire Bat",
+        "rawName": "a_vampire_bat",
+        "level": 8,
+        "race": "Bat",
+        "rawRace": "Bat",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1283.5,
+        "y": -1211.5,
+        "z": -1.25,
+        "heading": 372.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2540,
+        "spawngroupId": 5434,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Zombie Sailor",
+        "rawName": "a_zombie_sailor",
+        "level": 9,
+        "race": "Zombie",
+        "rawRace": "Zombie",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2100,
+        "y": -1224,
+        "z": -52.75,
+        "heading": 360,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2526,
+        "spawngroupId": 5383,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerra Spider",
+        "rawName": "a_kerra_spider",
+        "level": 10,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1192.630005,
+        "y": -1211.5,
+        "z": 104,
+        "heading": 451.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2536,
+        "spawngroupId": 5433,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerra Spider",
+        "rawName": "a_kerra_spider",
+        "level": 10,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1340.380005,
+        "y": -1270.75,
+        "z": 69.629997,
+        "heading": 319.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2537,
+        "spawngroupId": 5433,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerra Spider",
+        "rawName": "a_kerra_spider",
+        "level": 10,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1241.75,
+        "y": -1145.880005,
+        "z": 58,
+        "heading": 437.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2538,
+        "spawngroupId": 5433,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Vampire Bat",
+        "rawName": "a_vampire_bat",
+        "level": 10,
+        "race": "Bat",
+        "rawRace": "Bat",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1359.5,
+        "y": -1338.630005,
+        "z": 123.629997,
+        "heading": 129.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2573,
+        "spawngroupId": 5459,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Willowisp",
+        "rawName": "a_willowisp",
+        "level": 10,
+        "race": "Will-o-Wisp",
+        "rawRace": "Will-O-Wisp",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1596.380005,
+        "y": -870.880005,
+        "z": 47.630001,
+        "heading": 121.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2504,
+        "spawngroupId": 5454,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Willowisp",
+        "rawName": "a_willowisp",
+        "level": 10,
+        "race": "Will-o-Wisp",
+        "rawRace": "Will-O-Wisp",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 797.130005,
+        "y": -513.630005,
+        "z": -46.299999,
+        "heading": 21,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2505,
+        "spawngroupId": 5454,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Willowisp",
+        "rawName": "a_willowisp",
+        "level": 10,
+        "race": "Will-o-Wisp",
+        "rawRace": "Will-O-Wisp",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1598.25,
+        "y": -933.130005,
+        "z": 63.380001,
+        "heading": 125,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2506,
+        "spawngroupId": 5454,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Zombie Sailor",
+        "rawName": "a_zombie_sailor",
+        "level": 10,
+        "race": "Zombie",
+        "rawRace": "Zombie",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2108,
+        "y": -1157,
+        "z": -54.380001,
+        "heading": 340,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2500,
+        "spawngroupId": 5457,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Zombie Sailor",
+        "rawName": "Zombie_Sailor",
+        "level": 10,
+        "race": "Zombie",
+        "rawRace": "Zombie",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 3305,
+        "y": -1215,
+        "z": -292,
+        "heading": 143,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2552,
+        "spawngroupId": 5440,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Willowisp",
+        "rawName": "a_willowisp",
+        "level": 11,
+        "race": "Will-o-Wisp",
+        "rawRace": "Will-O-Wisp",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 806.130005,
+        "y": -432.75,
+        "z": -55,
+        "heading": 0,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 2503,
+        "spawngroupId": 5455,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Willowisp",
+        "rawName": "a_willowisp",
+        "level": 11,
+        "race": "Will-o-Wisp",
+        "rawRace": "Will-O-Wisp",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1371.380005,
+        "y": -1294.880005,
+        "z": 118,
+        "heading": 481,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 2587,
+        "spawngroupId": 5469,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Zombie Sailor",
+        "rawName": "a_zombie_sailor",
+        "level": 11,
+        "race": "Zombie",
+        "rawRace": "Zombie",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2094,
+        "y": -1195,
+        "z": -51.130001,
+        "heading": 360,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2525,
+        "spawngroupId": 5450,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Captain Vekeros",
+        "rawName": "Captain_Vekeros",
+        "level": 11,
+        "race": "Zombie",
+        "rawRace": "Zombie",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 3351,
+        "y": -1218,
+        "z": -292,
+        "heading": 366,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2554,
+        "spawngroupId": 5442,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Zombie Sailor",
+        "rawName": "Zombie_Sailor",
+        "level": 11,
+        "race": "Zombie",
+        "rawRace": "Zombie",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 3326,
+        "y": -1197,
+        "z": -292,
+        "heading": 252,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2553,
+        "spawngroupId": 5441,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerra Spider",
+        "rawName": "a_kerra_spider",
+        "level": 12,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1252.5,
+        "y": -1303.75,
+        "z": 96.879997,
+        "heading": 318.5,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 2521,
+        "spawngroupId": 5448,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerra Spider",
+        "rawName": "a_kerra_spider",
+        "level": 12,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1349,
+        "y": -1150.630005,
+        "z": 40.25,
+        "heading": 62.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2547,
+        "spawngroupId": 5437,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 13,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 4801.75,
+        "y": -4637.25,
+        "z": -280,
+        "heading": 448.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2541,
+        "spawngroupId": 5435,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 13,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 3304,
+        "y": -843.880005,
+        "z": -192.399994,
+        "heading": 54.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2542,
+        "spawngroupId": 5435,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 13,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 3506,
+        "y": -4367.879883,
+        "z": -191.399994,
+        "heading": 503,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2543,
+        "spawngroupId": 5435,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 13,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 3383,
+        "y": 1969.880005,
+        "z": -203.399994,
+        "heading": 504.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2544,
+        "spawngroupId": 5435,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 13,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 4172,
+        "y": 2100.879883,
+        "z": -167.399994,
+        "heading": 33.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2545,
+        "spawngroupId": 5435,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Hojo",
+        "rawName": "Hojo",
+        "level": 13,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1407.130005,
+        "y": -1306.25,
+        "z": 129.800003,
+        "heading": 299,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2579,
+        "spawngroupId": 5461,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Kala",
+        "rawName": "Kala",
+        "level": 13,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 753,
+        "y": -1313,
+        "z": -16.25,
+        "heading": 433,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2584,
+        "spawngroupId": 5466,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Nifta",
+        "rawName": "Nifta",
+        "level": 13,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 963,
+        "y": -1591.880005,
+        "z": 34.25,
+        "heading": 390,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2582,
+        "spawngroupId": 5464,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 14,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 4613.879883,
+        "y": -140.880005,
+        "z": -236.399994,
+        "heading": 396.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2528,
+        "spawngroupId": 5431,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 14,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 3320.879883,
+        "y": 2161.879883,
+        "z": -278.380005,
+        "heading": 11,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2529,
+        "spawngroupId": 5431,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 14,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 4709.879883,
+        "y": -1226.880005,
+        "z": -276.399994,
+        "heading": 438,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2530,
+        "spawngroupId": 5431,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 14,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 3117,
+        "y": -4025.879883,
+        "z": -182.399994,
+        "heading": 511.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2531,
+        "spawngroupId": 5431,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 14,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 4375.879883,
+        "y": -2121,
+        "z": -230.380005,
+        "heading": 105.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2532,
+        "spawngroupId": 5431,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Jarra",
+        "rawName": "Jarra",
+        "level": 14,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 746,
+        "y": -1335,
+        "z": -16.5,
+        "heading": 434,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2585,
+        "spawngroupId": 5467,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 15,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2680,
+        "y": 2353.879883,
+        "z": -279.399994,
+        "heading": 504.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2567,
+        "spawngroupId": 5458,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 15,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2452,
+        "y": -1566.880005,
+        "z": -129.380005,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2568,
+        "spawngroupId": 5458,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 15,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2755,
+        "y": -656,
+        "z": -253.399994,
+        "heading": 32.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2569,
+        "spawngroupId": 5458,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 15,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 3626,
+        "y": -1438.880005,
+        "z": -107.400002,
+        "heading": 490.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2570,
+        "spawngroupId": 5458,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 15,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 4047.879883,
+        "y": -4003.879883,
+        "z": -185.399994,
+        "heading": 458.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2571,
+        "spawngroupId": 5458,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 15,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 3349.879883,
+        "y": 1214,
+        "z": -25.379999,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2572,
+        "spawngroupId": 5458,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 16,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 4420,
+        "y": -1122.880005,
+        "z": -51.400002,
+        "heading": 10,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2560,
+        "spawngroupId": 5429,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 16,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 3557,
+        "y": -2145.879883,
+        "z": -30.4,
+        "heading": 31.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2561,
+        "spawngroupId": 5429,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 16,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2771,
+        "y": 1008.880005,
+        "z": -69.379997,
+        "heading": 509.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2562,
+        "spawngroupId": 5429,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 16,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 3033,
+        "y": 2122.879883,
+        "z": -79.400002,
+        "heading": 482,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2563,
+        "spawngroupId": 5429,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 16,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 4405.879883,
+        "y": -4572.879883,
+        "z": -232.399994,
+        "heading": 432,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2564,
+        "spawngroupId": 5429,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 16,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2899,
+        "y": -1245,
+        "z": -37.380001,
+        "heading": 471.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2565,
+        "spawngroupId": 5429,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 16,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 4735,
+        "y": -2367.879883,
+        "z": -224.399994,
+        "heading": 470,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2566,
+        "spawngroupId": 5429,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Renna",
+        "rawName": "Renna",
+        "level": 16,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 857,
+        "y": -1479,
+        "z": 14,
+        "heading": 255,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2583,
+        "spawngroupId": 5465,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Tolo",
+        "rawName": "Tolo",
+        "level": 16,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 780,
+        "y": -719,
+        "z": -15,
+        "heading": 38,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2586,
+        "spawngroupId": 5468,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 17,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 4472.879883,
+        "y": -2582.879883,
+        "z": -197.380005,
+        "heading": 198.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2509,
+        "spawngroupId": 5451,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 17,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 3837.879883,
+        "y": 332.880005,
+        "z": -52.400002,
+        "heading": 51,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2510,
+        "spawngroupId": 5451,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 17,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 3799,
+        "y": -4616.879883,
+        "z": -246.399994,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2511,
+        "spawngroupId": 5451,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 17,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2596,
+        "y": -2922.879883,
+        "z": -78.400002,
+        "heading": 63,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2512,
+        "spawngroupId": 5451,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 17,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 3821,
+        "y": -2366.879883,
+        "z": -195.399994,
+        "heading": 484.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2513,
+        "spawngroupId": 5451,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 17,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 4801.75,
+        "y": 2747.879883,
+        "z": -280.100006,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2514,
+        "spawngroupId": 5451,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 17,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 4037,
+        "y": -2776.879883,
+        "z": -56.400002,
+        "heading": 477,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2515,
+        "spawngroupId": 5451,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 17,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2976,
+        "y": 2368.879883,
+        "z": -280.100006,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2516,
+        "spawngroupId": 5451,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 17,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2951,
+        "y": -1481,
+        "z": -264.399994,
+        "heading": 23.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2517,
+        "spawngroupId": 5451,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 17,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 4110,
+        "y": -1705.880005,
+        "z": -68.379997,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2518,
+        "spawngroupId": 5451,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 17,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 3418,
+        "y": -4532.879883,
+        "z": -111.400002,
+        "heading": 481.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2519,
+        "spawngroupId": 5451,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Milla",
+        "rawName": "Milla",
+        "level": 17,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 798.130005,
+        "y": -1772.380005,
+        "z": 12.3,
+        "heading": 508,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2580,
+        "spawngroupId": 5462,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Monala",
+        "rawName": "Monala",
+        "level": 17,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 679,
+        "y": -1780,
+        "z": 3.75,
+        "heading": 412,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2581,
+        "spawngroupId": 5463,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Frantic Kerran",
+        "rawName": "a_frantic_kerran",
+        "level": 19,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 3165,
+        "y": 33.880001,
+        "z": -22.379999,
+        "heading": 142,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2546,
+        "spawngroupId": 5436,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Yelesom Paust",
+        "rawName": "Yelesom_Paust",
+        "level": 20,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": 1239.880005,
+        "y": -1175,
+        "z": 55.380001,
+        "heading": 142,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2592,
+        "spawngroupId": 5471,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Yun Assistant Maldok",
+        "rawName": "Yun_Assistant_Maldok",
+        "level": 20,
+        "race": "Froglok",
+        "rawRace": "Froglok",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 2130,
+        "y": -1293,
+        "z": -34.880001,
+        "heading": 511,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2520,
+        "spawngroupId": 5447,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Zombie Guardian",
+        "rawName": "a_zombie_guardian",
+        "level": 26,
+        "race": "Zombie",
+        "rawRace": "Zombie",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2118,
+        "y": -1320,
+        "z": -40.75,
+        "heading": 58,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2588,
+        "spawngroupId": 5470,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Zombie Guardian",
+        "rawName": "a_zombie_guardian",
+        "level": 26,
+        "race": "Zombie",
+        "rawRace": "Zombie",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2148,
+        "y": -1268,
+        "z": -46.880001,
+        "heading": 309,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2589,
+        "spawngroupId": 5470,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Zombie Guardian",
+        "rawName": "a_zombie_guardian",
+        "level": 26,
+        "race": "Zombie",
+        "rawRace": "Zombie",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2114,
+        "y": -1268,
+        "z": -40.880001,
+        "heading": 178,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2590,
+        "spawngroupId": 5470,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Zombie Guardian",
+        "rawName": "a_zombie_guardian",
+        "level": 26,
+        "race": "Zombie",
+        "rawRace": "Zombie",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2140,
+        "y": -1320,
+        "z": -46.630001,
+        "heading": 462,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2591,
+        "spawngroupId": 5470,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Plague Shark",
+        "rawName": "a_plague_shark",
+        "level": 33,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -2179,
+        "y": -2400,
+        "z": -277.630005,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 7200,
+        "spawn2Id": 2555,
+        "spawngroupId": 5443,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Undead Erudite Sailor",
+        "rawName": "undead_erudite_sailor",
+        "level": 35,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1988,
+        "y": -131,
+        "z": -290.880005,
+        "heading": 445,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2550,
+        "spawngroupId": 5439,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Undead Erudite Sailor",
+        "rawName": "undead_erudite_sailor",
+        "level": 35,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1930,
+        "y": -60,
+        "z": -290.880005,
+        "heading": 219,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2551,
+        "spawngroupId": 5439,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Undead Troll Sailor",
+        "rawName": "undead_troll_sailor",
+        "level": 35,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1918,
+        "y": -131,
+        "z": -290.880005,
+        "heading": 25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2548,
+        "spawngroupId": 5438,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Undead Troll Sailor",
+        "rawName": "undead_troll_sailor",
+        "level": 35,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1971,
+        "y": -77,
+        "z": -290.880005,
+        "heading": 427,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2549,
+        "spawngroupId": 5438,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Killer Shark",
+        "rawName": "a_killer_shark",
+        "level": 40,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 3982.879883,
+        "y": -1108,
+        "z": -121.900002,
+        "heading": 44,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2501,
+        "spawngroupId": 5456,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Killer Shark",
+        "rawName": "a_killer_shark",
+        "level": 40,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2799,
+        "y": 1319.880005,
+        "z": -241.899994,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2502,
+        "spawngroupId": 5456,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Killer Shark",
+        "rawName": "a_killer_shark",
+        "level": 41,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 3281,
+        "y": -1147,
+        "z": -277.600006,
+        "heading": 408.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2557,
+        "spawngroupId": 5445,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Killer Shark",
+        "rawName": "a_killer_shark",
+        "level": 42,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2385,
+        "y": 388.880005,
+        "z": -241.899994,
+        "heading": 412.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2556,
+        "spawngroupId": 5444,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Ooglyn",
+        "rawName": "Ooglyn",
+        "level": 45,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 1638.25,
+        "y": -918.75,
+        "z": 53.880001,
+        "heading": 133.5,
+        "chance": 100,
+        "respawnTime": 4000,
+        "spawn2Id": 2507,
+        "spawngroupId": 5453,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Golden Maiden",
+        "rawName": "Golden_Maiden",
+        "level": 50,
+        "race": "Ship",
+        "rawRace": "Ship",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 612.435303,
+        "y": -1781.482178,
+        "z": -17,
+        "heading": 254,
+        "chance": 100,
+        "respawnTime": 400,
+        "spawn2Id": 58419,
+        "spawngroupId": 13005,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Sea King",
+        "rawName": "Sea_King",
+        "level": 50,
+        "race": "Ship",
+        "rawRace": "Ship",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1628.119995,
+        "y": -1976.069946,
+        "z": -16.73,
+        "heading": 258.399994,
+        "chance": 100,
+        "respawnTime": 400,
+        "spawn2Id": 58421,
+        "spawngroupId": 12367,
+        "candidateCount": 1
+      }
+    ]
+  }
+}

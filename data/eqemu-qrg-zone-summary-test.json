@@ -1,0 +1,3838 @@
+{
+  "summary": {
+    "zoneSlug": "the-surefall-glade",
+    "zoneName": "The Surefall Glade",
+    "requestedZoneShortName": "qrg",
+    "zoneShortName": "qrg",
+    "sourceFile": "local-eqemu-database",
+    "matched": true,
+    "expansion": "Classic",
+    "eqemuExpansionId": 0,
+    "expansionSource": "eqemu-zone-table",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobCount": 68,
+    "unknownLevelCount": 0,
+    "minLevel": 1,
+    "maxLevel": 65,
+    "averageLevel": 27.8,
+    "medianLevel": 25,
+    "levelCounts": {
+      "1": 7,
+      "2": 10,
+      "3": 3,
+      "4": 1,
+      "5": 1,
+      "6": 2,
+      "7": 2,
+      "9": 2,
+      "11": 2,
+      "12": 1,
+      "14": 1,
+      "24": 1,
+      "25": 2,
+      "30": 2,
+      "31": 1,
+      "38": 1,
+      "39": 1,
+      "40": 1,
+      "42": 1,
+      "45": 10,
+      "50": 1,
+      "60": 2,
+      "61": 9,
+      "65": 4
+    },
+    "levelBuckets": {
+      "1-10": 28,
+      "11-20": 4,
+      "21-30": 5,
+      "31-40": 4,
+      "41-50": 12,
+      "51-60": 2,
+      "61+": 13
+    },
+    "levelProfileLabel": "Wide level spread",
+    "mobGroupNameCounts": {
+      "A Bear Cub": 6,
+      "A Brown Bear": 5,
+      "A Fish": 4,
+      "A Grizzly Bear": 4,
+      "A Piranha": 4,
+      "A Bloodsaber Defiler": 1,
+      "A Poacher": 1,
+      "Arrivae Valleren": 1,
+      "Bren Treeclimber": 1,
+      "Bukem Breewood": 1,
+      "Corun Finisc": 1,
+      "Dannos Safecoin": 1,
+      "Donka Leafkeeper": 1,
+      "Durvinna Barkkis": 1,
+      "Errin Pinewhisper": 1,
+      "Frannie": 1,
+      "Frenway Marthank": 1,
+      "Gemcrafter Anuk": 1,
+      "Gerael Woodone": 1,
+      "Gillarian Naelev": 1,
+      "Grathin Nilm": 1,
+      "Guaril Leafkeeper": 1,
+      "Gurrin Nitestorm": 1,
+      "Hager Sureshot": 1,
+      "Jarse Kedison": 1,
+      "Jhaya Wyndrunner": 1,
+      "Jpetimer": 1,
+      "Krystal Aspen": 1,
+      "Larsk Juton": 1,
+      "Lerian Wyndrunner": 1,
+      "Livam T`lant": 1,
+      "Merdan Fleetfoot": 1,
+      "Merona Castekin": 1,
+      "Mikkai Nomak": 1,
+      "Narwkend Falgon": 1,
+      "Niera Farbreeze": 1,
+      "Poacher": 1,
+      "Qaelin Hailstorm": 1,
+      "Qomber Roblen": 1,
+      "Raken": 1,
+      "Ran Walker": 1,
+      "Sallah": 1,
+      "Salmekia Treherth": 1,
+      "Sequea Erthinon": 1,
+      "Sivina Lutewhisper": 1,
+      "Talym Shoontar": 1,
+      "Teanara": 1,
+      "Tonsia": 1,
+      "Tralo Songsword": 1,
+      "Vesteri Nomanoi": 1
+    },
+    "classCounts": {
+      "Warrior": 30,
+      "Banker": 14,
+      "Druid": 5,
+      "Ranger": 5,
+      "Ranger GM": 5,
+      "Druid GM": 4,
+      "Tribute Master": 2,
+      "Bard": 1,
+      "Class 40": 1,
+      "Necromancer": 1
+    },
+    "raceCounts": {
+      "Human": 38,
+      "Bear": 15,
+      "Half Elf": 5,
+      "Fish": 4,
+      "Piranha": 4,
+      "Barbarian": 1,
+      "Teleport Man": 1
+    },
+    "normalizedRaceCounts": {
+      "Human": 38,
+      "Bear": 15,
+      "Half Elf": 5,
+      "Fish": 4,
+      "Piranha": 4,
+      "Barbarian": 1,
+      "Teleport Man": 1
+    },
+    "normalizedRaceLevelCounts": {
+      "Barbarian": {
+        "14": 1
+      },
+      "Bear": {
+        "2": 6,
+        "3": 3,
+        "4": 1,
+        "5": 1,
+        "9": 2,
+        "11": 2
+      },
+      "Fish": {
+        "1": 4
+      },
+      "Half Elf": {
+        "1": 2,
+        "30": 1,
+        "65": 2
+      },
+      "Human": {
+        "6": 2,
+        "7": 2,
+        "12": 1,
+        "24": 1,
+        "25": 2,
+        "30": 1,
+        "31": 1,
+        "38": 1,
+        "39": 1,
+        "40": 1,
+        "42": 1,
+        "45": 10,
+        "50": 1,
+        "60": 2,
+        "61": 9,
+        "65": 2
+      },
+      "Piranha": {
+        "2": 4
+      },
+      "Teleport Man": {
+        "1": 1
+      }
+    },
+    "raceAliases": {
+      "Barbarian": [
+        "Barbarian"
+      ],
+      "Bear": [
+        "Bear"
+      ],
+      "Fish": [
+        "Fish"
+      ],
+      "Half Elf": [
+        "Half Elf"
+      ],
+      "Human": [
+        "Human"
+      ],
+      "Piranha": [
+        "Piranha"
+      ],
+      "Teleport Man": [
+        "Teleport Man"
+      ]
+    },
+    "typeCounts": {
+      "Spawn Slot": 68
+    },
+    "notes": [
+      "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+      "Read-only test export; not wired into production /zones data."
+    ],
+    "spawnMapPrototype": {
+      "sourceKind": "Local EQEmu/PEQ database export",
+      "coordinateNote": "Original EQEmu spawn2 x/y/z coordinates are preserved for map prototyping.",
+      "points": [
+        {
+          "spawn2Id": 2821,
+          "spawngroupId": 4277,
+          "name": "a_brown_bear",
+          "displayName": "A Brown Bear",
+          "level": 5,
+          "race": "Bear",
+          "rawRace": "Bear",
+          "className": "Warrior",
+          "x": -231.880005,
+          "y": 313.880005,
+          "z": 2.5,
+          "heading": 498,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2822,
+          "spawngroupId": 4276,
+          "name": "a_bloodsaber_defiler",
+          "displayName": "A Bloodsaber Defiler",
+          "level": 12,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Necromancer",
+          "x": -448,
+          "y": 13,
+          "z": 22.75,
+          "heading": 75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2823,
+          "spawngroupId": 4275,
+          "name": "Ran_Walker",
+          "displayName": "Ran Walker",
+          "level": 30,
+          "race": "Half Elf",
+          "rawRace": "Half Elf",
+          "className": "Druid",
+          "x": 147,
+          "y": -37,
+          "z": 3.38,
+          "heading": 498,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2824,
+          "spawngroupId": 4274,
+          "name": "a_fish",
+          "displayName": "A Fish",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -163.630005,
+          "y": 208.880005,
+          "z": -6.38,
+          "heading": 452,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2825,
+          "spawngroupId": 4274,
+          "name": "a_fish",
+          "displayName": "A Fish",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": 17.25,
+          "y": 143.75,
+          "z": -6.38,
+          "heading": 509.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2826,
+          "spawngroupId": 4274,
+          "name": "a_fish",
+          "displayName": "A Fish",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -133.880005,
+          "y": 194,
+          "z": -4.1,
+          "heading": 492,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2827,
+          "spawngroupId": 4274,
+          "name": "a_fish",
+          "displayName": "A Fish",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": 14,
+          "y": 181.880005,
+          "z": -10.13,
+          "heading": 503.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2828,
+          "spawngroupId": 4273,
+          "name": "Sivina_Lutewhisper",
+          "displayName": "Sivina Lutewhisper",
+          "level": 25,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Bard",
+          "x": -64,
+          "y": 118,
+          "z": 3.75,
+          "heading": 66,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2829,
+          "spawngroupId": 4272,
+          "name": "a_piranha",
+          "displayName": "A Piranha",
+          "level": 2,
+          "race": "Piranha",
+          "rawRace": "Piranha",
+          "className": "Warrior",
+          "x": -333.130005,
+          "y": 224,
+          "z": -26.379999,
+          "heading": 117,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2830,
+          "spawngroupId": 4272,
+          "name": "a_piranha",
+          "displayName": "A Piranha",
+          "level": 2,
+          "race": "Piranha",
+          "rawRace": "Piranha",
+          "className": "Warrior",
+          "x": -478.880005,
+          "y": 140.25,
+          "z": -28,
+          "heading": 195,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2831,
+          "spawngroupId": 4272,
+          "name": "a_piranha",
+          "displayName": "A Piranha",
+          "level": 2,
+          "race": "Piranha",
+          "rawRace": "Piranha",
+          "className": "Warrior",
+          "x": -288,
+          "y": 567.880005,
+          "z": -16.129999,
+          "heading": 309,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2832,
+          "spawngroupId": 4272,
+          "name": "a_piranha",
+          "displayName": "A Piranha",
+          "level": 2,
+          "race": "Piranha",
+          "rawRace": "Piranha",
+          "className": "Warrior",
+          "x": -286.880005,
+          "y": 372.880005,
+          "z": -23.879999,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2833,
+          "spawngroupId": 4271,
+          "name": "Durvinna_Barkkis",
+          "displayName": "Durvinna Barkkis",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -114,
+          "y": 105,
+          "z": 3.75,
+          "heading": 110,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2834,
+          "spawngroupId": 4270,
+          "name": "Raken",
+          "displayName": "Raken",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -93,
+          "y": 105,
+          "z": 3.75,
+          "heading": 8,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2835,
+          "spawngroupId": 4269,
+          "name": "Arrivae_Valleren",
+          "displayName": "Arrivae Valleren",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -301,
+          "y": -160,
+          "z": 3.75,
+          "heading": 24,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2836,
+          "spawngroupId": 4268,
+          "name": "Sallah",
+          "displayName": "Sallah",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -287,
+          "y": -156,
+          "z": 3.75,
+          "heading": 482,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2837,
+          "spawngroupId": 4267,
+          "name": "Qomber_Roblen",
+          "displayName": "Qomber Roblen",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -259.78595,
+          "y": -105.813469,
+          "z": 3.314499,
+          "heading": 88,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2838,
+          "spawngroupId": 4266,
+          "name": "Mikkai_Nomak",
+          "displayName": "Mikkai Nomak",
+          "level": 65,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Tribute Master",
+          "x": -27,
+          "y": 275,
+          "z": 2.13,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2839,
+          "spawngroupId": 4265,
+          "name": "Tralo_Songsword",
+          "displayName": "Tralo Songsword",
+          "level": 65,
+          "race": "Half Elf",
+          "rawRace": "Half Elf",
+          "className": "Tribute Master",
+          "x": -10,
+          "y": 144,
+          "z": 3.38,
+          "heading": 384,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2840,
+          "spawngroupId": 4264,
+          "name": "Gurrin_Nitestorm",
+          "displayName": "Gurrin Nitestorm",
+          "level": 50,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Druid",
+          "x": -57,
+          "y": 269,
+          "z": 1.88,
+          "heading": 227,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2841,
+          "spawngroupId": 4263,
+          "name": "Jhaya_Wyndrunner",
+          "displayName": "Jhaya Wyndrunner",
+          "level": 60,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Druid",
+          "x": -477,
+          "y": -321,
+          "z": 3.75,
+          "heading": 32,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2842,
+          "spawngroupId": 4262,
+          "name": "Lerian_Wyndrunner",
+          "displayName": "Lerian Wyndrunner",
+          "level": 65,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Druid",
+          "x": -342,
+          "y": -13,
+          "z": 3.75,
+          "heading": 195,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2843,
+          "spawngroupId": 4261,
+          "name": "Merdan_Fleetfoot",
+          "displayName": "Merdan Fleetfoot",
+          "level": 38,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -70,
+          "y": 243,
+          "z": 1,
+          "heading": 318,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2844,
+          "spawngroupId": 4260,
+          "name": "Niera_Farbreeze",
+          "displayName": "Niera Farbreeze",
+          "level": 40,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Ranger",
+          "x": -192.880005,
+          "y": 106.879997,
+          "z": 2,
+          "heading": 52,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2845,
+          "spawngroupId": 4259,
+          "name": "Tonsia",
+          "displayName": "Tonsia",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -111,
+          "y": 125,
+          "z": 3.75,
+          "heading": 105,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2846,
+          "spawngroupId": 4258,
+          "name": "Frannie",
+          "displayName": "Frannie",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": 12,
+          "y": -43,
+          "z": 3.75,
+          "heading": 479,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2847,
+          "spawngroupId": 4257,
+          "name": "Frenway_Marthank",
+          "displayName": "Frenway Marthank",
+          "level": 31,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Ranger",
+          "x": -303,
+          "y": -103,
+          "z": 3.75,
+          "heading": 200,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2848,
+          "spawngroupId": 4256,
+          "name": "Corun_Finisc",
+          "displayName": "Corun Finisc",
+          "level": 6,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Druid",
+          "x": -191.880005,
+          "y": 67.879997,
+          "z": 3.75,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2849,
+          "spawngroupId": 4255,
+          "name": "Merona_Castekin",
+          "displayName": "Merona Castekin",
+          "level": 61,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Ranger GM",
+          "x": -106,
+          "y": 138,
+          "z": 3.75,
+          "heading": 180,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2850,
+          "spawngroupId": 4254,
+          "name": "Larsk_Juton",
+          "displayName": "Larsk Juton",
+          "level": 61,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Ranger GM",
+          "x": -18,
+          "y": 244,
+          "z": 1.25,
+          "heading": 240,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2851,
+          "spawngroupId": 4253,
+          "name": "Gillarian_Naelev",
+          "displayName": "Gillarian Naelev",
+          "level": 61,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Ranger GM",
+          "x": -36,
+          "y": 179,
+          "z": 3.75,
+          "heading": 238,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2852,
+          "spawngroupId": 4252,
+          "name": "Krystal_Aspen",
+          "displayName": "Krystal Aspen",
+          "level": 30,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Ranger",
+          "x": 82,
+          "y": 81,
+          "z": 3.31,
+          "heading": 510,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2853,
+          "spawngroupId": 4251,
+          "name": "Bren_Treeclimber",
+          "displayName": "Bren Treeclimber",
+          "level": 7,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Ranger",
+          "x": -222,
+          "y": 664,
+          "z": 20.007,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2854,
+          "spawngroupId": 4250,
+          "name": "a_bear_cub",
+          "displayName": "A Bear Cub",
+          "level": 2,
+          "race": "Bear",
+          "rawRace": "Bear",
+          "className": "Warrior",
+          "x": -263,
+          "y": 633,
+          "z": 28.879999,
+          "heading": 352,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2855,
+          "spawngroupId": 4250,
+          "name": "a_bear_cub",
+          "displayName": "A Bear Cub",
+          "level": 2,
+          "race": "Bear",
+          "rawRace": "Bear",
+          "className": "Warrior",
+          "x": -274.380005,
+          "y": 305.380005,
+          "z": 10,
+          "heading": 119,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2856,
+          "spawngroupId": 4250,
+          "name": "a_bear_cub",
+          "displayName": "A Bear Cub",
+          "level": 2,
+          "race": "Bear",
+          "rawRace": "Bear",
+          "className": "Warrior",
+          "x": -222,
+          "y": 664,
+          "z": 17.629999,
+          "heading": 65,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2857,
+          "spawngroupId": 4250,
+          "name": "a_bear_cub",
+          "displayName": "A Bear Cub",
+          "level": 2,
+          "race": "Bear",
+          "rawRace": "Bear",
+          "className": "Warrior",
+          "x": -408,
+          "y": 616,
+          "z": 1.88,
+          "heading": 500,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2858,
+          "spawngroupId": 4250,
+          "name": "a_bear_cub",
+          "displayName": "A Bear Cub",
+          "level": 2,
+          "race": "Bear",
+          "rawRace": "Bear",
+          "className": "Warrior",
+          "x": -481,
+          "y": 647,
+          "z": 49.75,
+          "heading": 243,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2859,
+          "spawngroupId": 4250,
+          "name": "a_bear_cub",
+          "displayName": "A Bear Cub",
+          "level": 2,
+          "race": "Bear",
+          "rawRace": "Bear",
+          "className": "Warrior",
+          "x": -411,
+          "y": 497,
+          "z": 63.130001,
+          "heading": 263,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2860,
+          "spawngroupId": 4249,
+          "name": "a_grizzly_bear",
+          "displayName": "A Grizzly Bear",
+          "level": 11,
+          "race": "Bear",
+          "rawRace": "Bear",
+          "className": "Warrior",
+          "x": -325,
+          "y": 773,
+          "z": 32.380001,
+          "heading": 357,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2861,
+          "spawngroupId": 4249,
+          "name": "a_grizzly_bear",
+          "displayName": "A Grizzly Bear",
+          "level": 11,
+          "race": "Bear",
+          "rawRace": "Bear",
+          "className": "Warrior",
+          "x": -501,
+          "y": 528,
+          "z": 56,
+          "heading": 113,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2862,
+          "spawngroupId": 4248,
+          "name": "a_grizzly_bear",
+          "displayName": "A Grizzly Bear",
+          "level": 9,
+          "race": "Bear",
+          "rawRace": "Bear",
+          "className": "Warrior",
+          "x": -362,
+          "y": 847,
+          "z": 5.75,
+          "heading": 301,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2863,
+          "spawngroupId": 4248,
+          "name": "a_grizzly_bear",
+          "displayName": "A Grizzly Bear",
+          "level": 9,
+          "race": "Bear",
+          "rawRace": "Bear",
+          "className": "Warrior",
+          "x": -272.880005,
+          "y": 467,
+          "z": 3.75,
+          "heading": 17,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2864,
+          "spawngroupId": 4247,
+          "name": "a_brown_bear",
+          "displayName": "A Brown Bear",
+          "level": 3,
+          "race": "Bear",
+          "rawRace": "Bear",
+          "className": "Warrior",
+          "x": -498,
+          "y": 552,
+          "z": 54.380001,
+          "heading": 245,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2865,
+          "spawngroupId": 4247,
+          "name": "a_brown_bear",
+          "displayName": "A Brown Bear",
+          "level": 3,
+          "race": "Bear",
+          "rawRace": "Bear",
+          "className": "Warrior",
+          "x": -198,
+          "y": 541,
+          "z": 13.5,
+          "heading": 508,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2866,
+          "spawngroupId": 4247,
+          "name": "a_brown_bear",
+          "displayName": "A Brown Bear",
+          "level": 3,
+          "race": "Bear",
+          "rawRace": "Bear",
+          "className": "Warrior",
+          "x": -528,
+          "y": 581,
+          "z": 36,
+          "heading": 504,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2867,
+          "spawngroupId": 4246,
+          "name": "a_brown_bear",
+          "displayName": "A Brown Bear",
+          "level": 4,
+          "race": "Bear",
+          "rawRace": "Bear",
+          "className": "Warrior",
+          "x": -546,
+          "y": 227,
+          "z": 41.5,
+          "heading": 78,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2868,
+          "spawngroupId": 4245,
+          "name": "Hager_Sureshot",
+          "displayName": "Hager Sureshot",
+          "level": 61,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Ranger GM",
+          "x": 84,
+          "y": 108,
+          "z": 2.75,
+          "heading": 4,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2869,
+          "spawngroupId": 4244,
+          "name": "Sequea_Erthinon",
+          "displayName": "Sequea Erthinon",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -293,
+          "y": -155,
+          "z": 3.75,
+          "heading": 511,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2870,
+          "spawngroupId": 4243,
+          "name": "Gerael_Woodone",
+          "displayName": "Gerael Woodone",
+          "level": 61,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Druid GM",
+          "x": -396,
+          "y": -177,
+          "z": 3.75,
+          "heading": 200,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2871,
+          "spawngroupId": 4242,
+          "name": "TeAnara",
+          "displayName": "Teanara",
+          "level": 61,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Druid GM",
+          "x": -441,
+          "y": -209,
+          "z": 6.75,
+          "heading": 129,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2872,
+          "spawngroupId": 4241,
+          "name": "Grathin_Nilm",
+          "displayName": "Grathin Nilm",
+          "level": 24,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -86,
+          "y": 104,
+          "z": 3.75,
+          "heading": 505,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2873,
+          "spawngroupId": 4240,
+          "name": "Salmekia_Treherth",
+          "displayName": "Salmekia Treherth",
+          "level": 61,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Druid GM",
+          "x": -437,
+          "y": -220,
+          "z": 6.75,
+          "heading": 90,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2874,
+          "spawngroupId": 4239,
+          "name": "Vesteri_Nomanoi",
+          "displayName": "Vesteri Nomanoi",
+          "level": 61,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Druid GM",
+          "x": -302,
+          "y": -122,
+          "z": 3.75,
+          "heading": 130,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2875,
+          "spawngroupId": 4238,
+          "name": "Bukem_Breewood",
+          "displayName": "Bukem Breewood",
+          "level": 39,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -79,
+          "y": 106,
+          "z": 3.75,
+          "heading": 484,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2876,
+          "spawngroupId": 4237,
+          "name": "Livam_T`Lant",
+          "displayName": "Livam T`lant",
+          "level": 42,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -271,
+          "y": -108,
+          "z": 3.75,
+          "heading": 262,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2877,
+          "spawngroupId": 4236,
+          "name": "Errin_Pinewhisper",
+          "displayName": "Errin Pinewhisper",
+          "level": 61,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Ranger GM",
+          "x": -7,
+          "y": 177,
+          "z": 3.75,
+          "heading": 306,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2878,
+          "spawngroupId": 4235,
+          "name": "Qaelin_Hailstorm",
+          "displayName": "Qaelin Hailstorm",
+          "level": 60,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": 140,
+          "y": 176,
+          "z": 3.75,
+          "heading": 360,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2879,
+          "spawngroupId": 4234,
+          "name": "Jarse_Kedison",
+          "displayName": "Jarse Kedison",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": 105,
+          "y": 105,
+          "z": 3.75,
+          "heading": 475,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2880,
+          "spawngroupId": 5864,
+          "name": "a_poacher",
+          "displayName": "A Poacher",
+          "level": 7,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -419,
+          "y": 143,
+          "z": 20,
+          "heading": 209,
+          "chance": 40,
+          "respawnTime": 320,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 2881,
+          "spawngroupId": 5865,
+          "name": "Poacher",
+          "displayName": "Poacher",
+          "level": 6,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -179,
+          "y": 220,
+          "z": 2,
+          "heading": 180,
+          "chance": 40,
+          "respawnTime": 320,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 21351,
+          "spawngroupId": 13015,
+          "name": "JPETimer",
+          "displayName": "Jpetimer",
+          "level": 1,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": 0,
+          "y": 0,
+          "z": 2.7,
+          "heading": 508,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 21918,
+          "spawngroupId": 13589,
+          "name": "Talym_Shoontar",
+          "displayName": "Talym Shoontar",
+          "level": 14,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Warrior",
+          "x": -175.784973,
+          "y": 473.695251,
+          "z": 39.11414,
+          "heading": 61.75,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 59307,
+          "spawngroupId": 48627,
+          "name": "Dannos_Safecoin",
+          "displayName": "Dannos Safecoin",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Class 40",
+          "x": -18,
+          "y": 188,
+          "z": 3.75,
+          "heading": 267,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 68501,
+          "spawngroupId": 52571,
+          "name": "Narwkend_Falgon",
+          "displayName": "Narwkend Falgon",
+          "level": 65,
+          "race": "Half Elf",
+          "rawRace": "Half Elf",
+          "className": "Ranger",
+          "x": -60,
+          "y": 180,
+          "z": 2.288499,
+          "heading": 256.75,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 157391,
+          "spawngroupId": 117694,
+          "name": "Donka_Leafkeeper",
+          "displayName": "Donka Leafkeeper",
+          "level": 1,
+          "race": "Half Elf",
+          "rawRace": "Half Elf",
+          "className": "Warrior",
+          "x": -74,
+          "y": -70,
+          "z": 2.375,
+          "heading": 453,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 157392,
+          "spawngroupId": 117695,
+          "name": "Gemcrafter_Anuk",
+          "displayName": "Gemcrafter Anuk",
+          "level": 25,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": 176,
+          "y": 322,
+          "z": 3.75,
+          "heading": 280,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 157393,
+          "spawngroupId": 117696,
+          "name": "Guaril_Leafkeeper",
+          "displayName": "Guaril Leafkeeper",
+          "level": 1,
+          "race": "Half Elf",
+          "rawRace": "Half Elf",
+          "className": "Warrior",
+          "x": -60,
+          "y": -61,
+          "z": 2.375,
+          "heading": 453,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        }
+      ]
+    }
+  },
+  "details": {
+    "zoneSlug": "the-surefall-glade",
+    "routeSlug": "qrg",
+    "zoneName": "The Surefall Glade",
+    "sourceFile": "local-eqemu-database",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobGroups": [
+      {
+        "displayName": "A Fish",
+        "rawNames": [
+          "a_fish"
+        ],
+        "count": 4,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Fish": 4
+        },
+        "rawRaceCounts": {
+          "Fish": 4
+        },
+        "classCounts": {
+          "Warrior": 4
+        },
+        "typeCounts": {
+          "Spawn Slot": 4
+        }
+      },
+      {
+        "displayName": "Donka Leafkeeper",
+        "rawNames": [
+          "Donka_Leafkeeper"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Half Elf": 1
+        },
+        "rawRaceCounts": {
+          "Half Elf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guaril Leafkeeper",
+        "rawNames": [
+          "Guaril_Leafkeeper"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Half Elf": 1
+        },
+        "rawRaceCounts": {
+          "Half Elf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Jpetimer",
+        "rawNames": [
+          "JPETimer"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Teleport Man": 1
+        },
+        "rawRaceCounts": {
+          "Teleport Man": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Bear Cub",
+        "rawNames": [
+          "a_bear_cub"
+        ],
+        "count": 6,
+        "levelMin": 2,
+        "levelMax": 2,
+        "levels": [
+          2
+        ],
+        "raceCounts": {
+          "Bear": 6
+        },
+        "rawRaceCounts": {
+          "Bear": 6
+        },
+        "classCounts": {
+          "Warrior": 6
+        },
+        "typeCounts": {
+          "Spawn Slot": 6
+        }
+      },
+      {
+        "displayName": "A Piranha",
+        "rawNames": [
+          "a_piranha"
+        ],
+        "count": 4,
+        "levelMin": 2,
+        "levelMax": 2,
+        "levels": [
+          2
+        ],
+        "raceCounts": {
+          "Piranha": 4
+        },
+        "rawRaceCounts": {
+          "Piranha": 4
+        },
+        "classCounts": {
+          "Warrior": 4
+        },
+        "typeCounts": {
+          "Spawn Slot": 4
+        }
+      },
+      {
+        "displayName": "A Brown Bear",
+        "rawNames": [
+          "a_brown_bear"
+        ],
+        "count": 5,
+        "levelMin": 3,
+        "levelMax": 5,
+        "levels": [
+          3,
+          4,
+          5
+        ],
+        "raceCounts": {
+          "Bear": 5
+        },
+        "rawRaceCounts": {
+          "Bear": 5
+        },
+        "classCounts": {
+          "Warrior": 5
+        },
+        "typeCounts": {
+          "Spawn Slot": 5
+        }
+      },
+      {
+        "displayName": "Corun Finisc",
+        "rawNames": [
+          "Corun_Finisc"
+        ],
+        "count": 1,
+        "levelMin": 6,
+        "levelMax": 6,
+        "levels": [
+          6
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Druid": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Poacher",
+        "rawNames": [
+          "Poacher"
+        ],
+        "count": 1,
+        "levelMin": 6,
+        "levelMax": 6,
+        "levels": [
+          6
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Poacher",
+        "rawNames": [
+          "a_poacher"
+        ],
+        "count": 1,
+        "levelMin": 7,
+        "levelMax": 7,
+        "levels": [
+          7
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Bren Treeclimber",
+        "rawNames": [
+          "Bren_Treeclimber"
+        ],
+        "count": 1,
+        "levelMin": 7,
+        "levelMax": 7,
+        "levels": [
+          7
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Ranger": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Grizzly Bear",
+        "rawNames": [
+          "a_grizzly_bear"
+        ],
+        "count": 2,
+        "levelMin": 9,
+        "levelMax": 9,
+        "levels": [
+          9
+        ],
+        "raceCounts": {
+          "Bear": 2
+        },
+        "rawRaceCounts": {
+          "Bear": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Grizzly Bear",
+        "rawNames": [
+          "a_grizzly_bear"
+        ],
+        "count": 2,
+        "levelMin": 11,
+        "levelMax": 11,
+        "levels": [
+          11
+        ],
+        "raceCounts": {
+          "Bear": 2
+        },
+        "rawRaceCounts": {
+          "Bear": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Bloodsaber Defiler",
+        "rawNames": [
+          "a_bloodsaber_defiler"
+        ],
+        "count": 1,
+        "levelMin": 12,
+        "levelMax": 12,
+        "levels": [
+          12
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Necromancer": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Talym Shoontar",
+        "rawNames": [
+          "Talym_Shoontar"
+        ],
+        "count": 1,
+        "levelMin": 14,
+        "levelMax": 14,
+        "levels": [
+          14
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Grathin Nilm",
+        "rawNames": [
+          "Grathin_Nilm"
+        ],
+        "count": 1,
+        "levelMin": 24,
+        "levelMax": 24,
+        "levels": [
+          24
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Gemcrafter Anuk",
+        "rawNames": [
+          "Gemcrafter_Anuk"
+        ],
+        "count": 1,
+        "levelMin": 25,
+        "levelMax": 25,
+        "levels": [
+          25
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Sivina Lutewhisper",
+        "rawNames": [
+          "Sivina_Lutewhisper"
+        ],
+        "count": 1,
+        "levelMin": 25,
+        "levelMax": 25,
+        "levels": [
+          25
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Bard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Krystal Aspen",
+        "rawNames": [
+          "Krystal_Aspen"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Ranger": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Ran Walker",
+        "rawNames": [
+          "Ran_Walker"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Half Elf": 1
+        },
+        "rawRaceCounts": {
+          "Half Elf": 1
+        },
+        "classCounts": {
+          "Druid": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Frenway Marthank",
+        "rawNames": [
+          "Frenway_Marthank"
+        ],
+        "count": 1,
+        "levelMin": 31,
+        "levelMax": 31,
+        "levels": [
+          31
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Ranger": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Merdan Fleetfoot",
+        "rawNames": [
+          "Merdan_Fleetfoot"
+        ],
+        "count": 1,
+        "levelMin": 38,
+        "levelMax": 38,
+        "levels": [
+          38
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Bukem Breewood",
+        "rawNames": [
+          "Bukem_Breewood"
+        ],
+        "count": 1,
+        "levelMin": 39,
+        "levelMax": 39,
+        "levels": [
+          39
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Niera Farbreeze",
+        "rawNames": [
+          "Niera_Farbreeze"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Ranger": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Livam T`lant",
+        "rawNames": [
+          "Livam_T`Lant"
+        ],
+        "count": 1,
+        "levelMin": 42,
+        "levelMax": 42,
+        "levels": [
+          42
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Arrivae Valleren",
+        "rawNames": [
+          "Arrivae_Valleren"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Dannos Safecoin",
+        "rawNames": [
+          "Dannos_Safecoin"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Class 40": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Durvinna Barkkis",
+        "rawNames": [
+          "Durvinna_Barkkis"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Frannie",
+        "rawNames": [
+          "Frannie"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Jarse Kedison",
+        "rawNames": [
+          "Jarse_Kedison"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Qomber Roblen",
+        "rawNames": [
+          "Qomber_Roblen"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Raken",
+        "rawNames": [
+          "Raken"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Sallah",
+        "rawNames": [
+          "Sallah"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Sequea Erthinon",
+        "rawNames": [
+          "Sequea_Erthinon"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Tonsia",
+        "rawNames": [
+          "Tonsia"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Gurrin Nitestorm",
+        "rawNames": [
+          "Gurrin_Nitestorm"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Druid": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Jhaya Wyndrunner",
+        "rawNames": [
+          "Jhaya_Wyndrunner"
+        ],
+        "count": 1,
+        "levelMin": 60,
+        "levelMax": 60,
+        "levels": [
+          60
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Druid": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Qaelin Hailstorm",
+        "rawNames": [
+          "Qaelin_Hailstorm"
+        ],
+        "count": 1,
+        "levelMin": 60,
+        "levelMax": 60,
+        "levels": [
+          60
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Errin Pinewhisper",
+        "rawNames": [
+          "Errin_Pinewhisper"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Ranger GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Gerael Woodone",
+        "rawNames": [
+          "Gerael_Woodone"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Druid GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Gillarian Naelev",
+        "rawNames": [
+          "Gillarian_Naelev"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Ranger GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Hager Sureshot",
+        "rawNames": [
+          "Hager_Sureshot"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Ranger GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Larsk Juton",
+        "rawNames": [
+          "Larsk_Juton"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Ranger GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Merona Castekin",
+        "rawNames": [
+          "Merona_Castekin"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Ranger GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Salmekia Treherth",
+        "rawNames": [
+          "Salmekia_Treherth"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Druid GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Teanara",
+        "rawNames": [
+          "TeAnara"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Druid GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Vesteri Nomanoi",
+        "rawNames": [
+          "Vesteri_Nomanoi"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Druid GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Lerian Wyndrunner",
+        "rawNames": [
+          "Lerian_Wyndrunner"
+        ],
+        "count": 1,
+        "levelMin": 65,
+        "levelMax": 65,
+        "levels": [
+          65
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Druid": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Mikkai Nomak",
+        "rawNames": [
+          "Mikkai_Nomak"
+        ],
+        "count": 1,
+        "levelMin": 65,
+        "levelMax": 65,
+        "levels": [
+          65
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Tribute Master": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Narwkend Falgon",
+        "rawNames": [
+          "Narwkend_Falgon"
+        ],
+        "count": 1,
+        "levelMin": 65,
+        "levelMax": 65,
+        "levels": [
+          65
+        ],
+        "raceCounts": {
+          "Half Elf": 1
+        },
+        "rawRaceCounts": {
+          "Half Elf": 1
+        },
+        "classCounts": {
+          "Ranger": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Tralo Songsword",
+        "rawNames": [
+          "Tralo_Songsword"
+        ],
+        "count": 1,
+        "levelMin": 65,
+        "levelMax": 65,
+        "levels": [
+          65
+        ],
+        "raceCounts": {
+          "Half Elf": 1
+        },
+        "rawRaceCounts": {
+          "Half Elf": 1
+        },
+        "classCounts": {
+          "Tribute Master": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      }
+    ],
+    "rows": [
+      {
+        "displayName": "A Fish",
+        "rawName": "a_fish",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -163.630005,
+        "y": 208.880005,
+        "z": -6.38,
+        "heading": 452,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2824,
+        "spawngroupId": 4274,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Fish",
+        "rawName": "a_fish",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 17.25,
+        "y": 143.75,
+        "z": -6.38,
+        "heading": 509.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2825,
+        "spawngroupId": 4274,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Fish",
+        "rawName": "a_fish",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -133.880005,
+        "y": 194,
+        "z": -4.1,
+        "heading": 492,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2826,
+        "spawngroupId": 4274,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Fish",
+        "rawName": "a_fish",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 14,
+        "y": 181.880005,
+        "z": -10.13,
+        "heading": 503.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2827,
+        "spawngroupId": 4274,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Donka Leafkeeper",
+        "rawName": "Donka_Leafkeeper",
+        "level": 1,
+        "race": "Half Elf",
+        "rawRace": "Half Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -74,
+        "y": -70,
+        "z": 2.375,
+        "heading": 453,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 157391,
+        "spawngroupId": 117694,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guaril Leafkeeper",
+        "rawName": "Guaril_Leafkeeper",
+        "level": 1,
+        "race": "Half Elf",
+        "rawRace": "Half Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -60,
+        "y": -61,
+        "z": 2.375,
+        "heading": 453,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 157393,
+        "spawngroupId": 117696,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Jpetimer",
+        "rawName": "JPETimer",
+        "level": 1,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 0,
+        "y": 0,
+        "z": 2.7,
+        "heading": 508,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 21351,
+        "spawngroupId": 13015,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Bear Cub",
+        "rawName": "a_bear_cub",
+        "level": 2,
+        "race": "Bear",
+        "rawRace": "Bear",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -263,
+        "y": 633,
+        "z": 28.879999,
+        "heading": 352,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2854,
+        "spawngroupId": 4250,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Bear Cub",
+        "rawName": "a_bear_cub",
+        "level": 2,
+        "race": "Bear",
+        "rawRace": "Bear",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -274.380005,
+        "y": 305.380005,
+        "z": 10,
+        "heading": 119,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2855,
+        "spawngroupId": 4250,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Bear Cub",
+        "rawName": "a_bear_cub",
+        "level": 2,
+        "race": "Bear",
+        "rawRace": "Bear",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -222,
+        "y": 664,
+        "z": 17.629999,
+        "heading": 65,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2856,
+        "spawngroupId": 4250,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Bear Cub",
+        "rawName": "a_bear_cub",
+        "level": 2,
+        "race": "Bear",
+        "rawRace": "Bear",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -408,
+        "y": 616,
+        "z": 1.88,
+        "heading": 500,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2857,
+        "spawngroupId": 4250,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Bear Cub",
+        "rawName": "a_bear_cub",
+        "level": 2,
+        "race": "Bear",
+        "rawRace": "Bear",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -481,
+        "y": 647,
+        "z": 49.75,
+        "heading": 243,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2858,
+        "spawngroupId": 4250,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Bear Cub",
+        "rawName": "a_bear_cub",
+        "level": 2,
+        "race": "Bear",
+        "rawRace": "Bear",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -411,
+        "y": 497,
+        "z": 63.130001,
+        "heading": 263,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2859,
+        "spawngroupId": 4250,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Piranha",
+        "rawName": "a_piranha",
+        "level": 2,
+        "race": "Piranha",
+        "rawRace": "Piranha",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -333.130005,
+        "y": 224,
+        "z": -26.379999,
+        "heading": 117,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2829,
+        "spawngroupId": 4272,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Piranha",
+        "rawName": "a_piranha",
+        "level": 2,
+        "race": "Piranha",
+        "rawRace": "Piranha",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -478.880005,
+        "y": 140.25,
+        "z": -28,
+        "heading": 195,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2830,
+        "spawngroupId": 4272,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Piranha",
+        "rawName": "a_piranha",
+        "level": 2,
+        "race": "Piranha",
+        "rawRace": "Piranha",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -288,
+        "y": 567.880005,
+        "z": -16.129999,
+        "heading": 309,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2831,
+        "spawngroupId": 4272,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Piranha",
+        "rawName": "a_piranha",
+        "level": 2,
+        "race": "Piranha",
+        "rawRace": "Piranha",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -286.880005,
+        "y": 372.880005,
+        "z": -23.879999,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2832,
+        "spawngroupId": 4272,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Brown Bear",
+        "rawName": "a_brown_bear",
+        "level": 3,
+        "race": "Bear",
+        "rawRace": "Bear",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -498,
+        "y": 552,
+        "z": 54.380001,
+        "heading": 245,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2864,
+        "spawngroupId": 4247,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Brown Bear",
+        "rawName": "a_brown_bear",
+        "level": 3,
+        "race": "Bear",
+        "rawRace": "Bear",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -198,
+        "y": 541,
+        "z": 13.5,
+        "heading": 508,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2865,
+        "spawngroupId": 4247,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Brown Bear",
+        "rawName": "a_brown_bear",
+        "level": 3,
+        "race": "Bear",
+        "rawRace": "Bear",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -528,
+        "y": 581,
+        "z": 36,
+        "heading": 504,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2866,
+        "spawngroupId": 4247,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Brown Bear",
+        "rawName": "a_brown_bear",
+        "level": 4,
+        "race": "Bear",
+        "rawRace": "Bear",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -546,
+        "y": 227,
+        "z": 41.5,
+        "heading": 78,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2867,
+        "spawngroupId": 4246,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Brown Bear",
+        "rawName": "a_brown_bear",
+        "level": 5,
+        "race": "Bear",
+        "rawRace": "Bear",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -231.880005,
+        "y": 313.880005,
+        "z": 2.5,
+        "heading": 498,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2821,
+        "spawngroupId": 4277,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Corun Finisc",
+        "rawName": "Corun_Finisc",
+        "level": 6,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Druid",
+        "type": "Spawn Slot",
+        "x": -191.880005,
+        "y": 67.879997,
+        "z": 3.75,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2848,
+        "spawngroupId": 4256,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Poacher",
+        "rawName": "Poacher",
+        "level": 6,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -179,
+        "y": 220,
+        "z": 2,
+        "heading": 180,
+        "chance": 40,
+        "respawnTime": 320,
+        "spawn2Id": 2881,
+        "spawngroupId": 5865,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Poacher",
+        "rawName": "a_poacher",
+        "level": 7,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -419,
+        "y": 143,
+        "z": 20,
+        "heading": 209,
+        "chance": 40,
+        "respawnTime": 320,
+        "spawn2Id": 2880,
+        "spawngroupId": 5864,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "Bren Treeclimber",
+        "rawName": "Bren_Treeclimber",
+        "level": 7,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Ranger",
+        "type": "Spawn Slot",
+        "x": -222,
+        "y": 664,
+        "z": 20.007,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2853,
+        "spawngroupId": 4251,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Grizzly Bear",
+        "rawName": "a_grizzly_bear",
+        "level": 9,
+        "race": "Bear",
+        "rawRace": "Bear",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -362,
+        "y": 847,
+        "z": 5.75,
+        "heading": 301,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2862,
+        "spawngroupId": 4248,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Grizzly Bear",
+        "rawName": "a_grizzly_bear",
+        "level": 9,
+        "race": "Bear",
+        "rawRace": "Bear",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -272.880005,
+        "y": 467,
+        "z": 3.75,
+        "heading": 17,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2863,
+        "spawngroupId": 4248,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Grizzly Bear",
+        "rawName": "a_grizzly_bear",
+        "level": 11,
+        "race": "Bear",
+        "rawRace": "Bear",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -325,
+        "y": 773,
+        "z": 32.380001,
+        "heading": 357,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2860,
+        "spawngroupId": 4249,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Grizzly Bear",
+        "rawName": "a_grizzly_bear",
+        "level": 11,
+        "race": "Bear",
+        "rawRace": "Bear",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -501,
+        "y": 528,
+        "z": 56,
+        "heading": 113,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2861,
+        "spawngroupId": 4249,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Bloodsaber Defiler",
+        "rawName": "a_bloodsaber_defiler",
+        "level": 12,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Necromancer",
+        "type": "Spawn Slot",
+        "x": -448,
+        "y": 13,
+        "z": 22.75,
+        "heading": 75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2822,
+        "spawngroupId": 4276,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Talym Shoontar",
+        "rawName": "Talym_Shoontar",
+        "level": 14,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -175.784973,
+        "y": 473.695251,
+        "z": 39.11414,
+        "heading": 61.75,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 21918,
+        "spawngroupId": 13589,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Grathin Nilm",
+        "rawName": "Grathin_Nilm",
+        "level": 24,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -86,
+        "y": 104,
+        "z": 3.75,
+        "heading": 505,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2872,
+        "spawngroupId": 4241,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Gemcrafter Anuk",
+        "rawName": "Gemcrafter_Anuk",
+        "level": 25,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 176,
+        "y": 322,
+        "z": 3.75,
+        "heading": 280,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 157392,
+        "spawngroupId": 117695,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Sivina Lutewhisper",
+        "rawName": "Sivina_Lutewhisper",
+        "level": 25,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Bard",
+        "type": "Spawn Slot",
+        "x": -64,
+        "y": 118,
+        "z": 3.75,
+        "heading": 66,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2828,
+        "spawngroupId": 4273,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Krystal Aspen",
+        "rawName": "Krystal_Aspen",
+        "level": 30,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Ranger",
+        "type": "Spawn Slot",
+        "x": 82,
+        "y": 81,
+        "z": 3.31,
+        "heading": 510,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2852,
+        "spawngroupId": 4252,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Ran Walker",
+        "rawName": "Ran_Walker",
+        "level": 30,
+        "race": "Half Elf",
+        "rawRace": "Half Elf",
+        "className": "Druid",
+        "type": "Spawn Slot",
+        "x": 147,
+        "y": -37,
+        "z": 3.38,
+        "heading": 498,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2823,
+        "spawngroupId": 4275,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Frenway Marthank",
+        "rawName": "Frenway_Marthank",
+        "level": 31,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Ranger",
+        "type": "Spawn Slot",
+        "x": -303,
+        "y": -103,
+        "z": 3.75,
+        "heading": 200,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2847,
+        "spawngroupId": 4257,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Merdan Fleetfoot",
+        "rawName": "Merdan_Fleetfoot",
+        "level": 38,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -70,
+        "y": 243,
+        "z": 1,
+        "heading": 318,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2843,
+        "spawngroupId": 4261,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Bukem Breewood",
+        "rawName": "Bukem_Breewood",
+        "level": 39,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -79,
+        "y": 106,
+        "z": 3.75,
+        "heading": 484,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2875,
+        "spawngroupId": 4238,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Niera Farbreeze",
+        "rawName": "Niera_Farbreeze",
+        "level": 40,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Ranger",
+        "type": "Spawn Slot",
+        "x": -192.880005,
+        "y": 106.879997,
+        "z": 2,
+        "heading": 52,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2844,
+        "spawngroupId": 4260,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Livam T`lant",
+        "rawName": "Livam_T`Lant",
+        "level": 42,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -271,
+        "y": -108,
+        "z": 3.75,
+        "heading": 262,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2876,
+        "spawngroupId": 4237,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Arrivae Valleren",
+        "rawName": "Arrivae_Valleren",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -301,
+        "y": -160,
+        "z": 3.75,
+        "heading": 24,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2835,
+        "spawngroupId": 4269,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Dannos Safecoin",
+        "rawName": "Dannos_Safecoin",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Class 40",
+        "type": "Spawn Slot",
+        "x": -18,
+        "y": 188,
+        "z": 3.75,
+        "heading": 267,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 59307,
+        "spawngroupId": 48627,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Durvinna Barkkis",
+        "rawName": "Durvinna_Barkkis",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -114,
+        "y": 105,
+        "z": 3.75,
+        "heading": 110,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2833,
+        "spawngroupId": 4271,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Frannie",
+        "rawName": "Frannie",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 12,
+        "y": -43,
+        "z": 3.75,
+        "heading": 479,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2846,
+        "spawngroupId": 4258,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Jarse Kedison",
+        "rawName": "Jarse_Kedison",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 105,
+        "y": 105,
+        "z": 3.75,
+        "heading": 475,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2879,
+        "spawngroupId": 4234,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Qomber Roblen",
+        "rawName": "Qomber_Roblen",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -259.78595,
+        "y": -105.813469,
+        "z": 3.314499,
+        "heading": 88,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2837,
+        "spawngroupId": 4267,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Raken",
+        "rawName": "Raken",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -93,
+        "y": 105,
+        "z": 3.75,
+        "heading": 8,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2834,
+        "spawngroupId": 4270,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Sallah",
+        "rawName": "Sallah",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -287,
+        "y": -156,
+        "z": 3.75,
+        "heading": 482,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2836,
+        "spawngroupId": 4268,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Sequea Erthinon",
+        "rawName": "Sequea_Erthinon",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -293,
+        "y": -155,
+        "z": 3.75,
+        "heading": 511,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2869,
+        "spawngroupId": 4244,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Tonsia",
+        "rawName": "Tonsia",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -111,
+        "y": 125,
+        "z": 3.75,
+        "heading": 105,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2845,
+        "spawngroupId": 4259,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Gurrin Nitestorm",
+        "rawName": "Gurrin_Nitestorm",
+        "level": 50,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Druid",
+        "type": "Spawn Slot",
+        "x": -57,
+        "y": 269,
+        "z": 1.88,
+        "heading": 227,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2840,
+        "spawngroupId": 4264,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Jhaya Wyndrunner",
+        "rawName": "Jhaya_Wyndrunner",
+        "level": 60,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Druid",
+        "type": "Spawn Slot",
+        "x": -477,
+        "y": -321,
+        "z": 3.75,
+        "heading": 32,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2841,
+        "spawngroupId": 4263,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Qaelin Hailstorm",
+        "rawName": "Qaelin_Hailstorm",
+        "level": 60,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 140,
+        "y": 176,
+        "z": 3.75,
+        "heading": 360,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2878,
+        "spawngroupId": 4235,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Errin Pinewhisper",
+        "rawName": "Errin_Pinewhisper",
+        "level": 61,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Ranger GM",
+        "type": "Spawn Slot",
+        "x": -7,
+        "y": 177,
+        "z": 3.75,
+        "heading": 306,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2877,
+        "spawngroupId": 4236,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Gerael Woodone",
+        "rawName": "Gerael_Woodone",
+        "level": 61,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Druid GM",
+        "type": "Spawn Slot",
+        "x": -396,
+        "y": -177,
+        "z": 3.75,
+        "heading": 200,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2870,
+        "spawngroupId": 4243,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Gillarian Naelev",
+        "rawName": "Gillarian_Naelev",
+        "level": 61,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Ranger GM",
+        "type": "Spawn Slot",
+        "x": -36,
+        "y": 179,
+        "z": 3.75,
+        "heading": 238,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2851,
+        "spawngroupId": 4253,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Hager Sureshot",
+        "rawName": "Hager_Sureshot",
+        "level": 61,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Ranger GM",
+        "type": "Spawn Slot",
+        "x": 84,
+        "y": 108,
+        "z": 2.75,
+        "heading": 4,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2868,
+        "spawngroupId": 4245,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Larsk Juton",
+        "rawName": "Larsk_Juton",
+        "level": 61,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Ranger GM",
+        "type": "Spawn Slot",
+        "x": -18,
+        "y": 244,
+        "z": 1.25,
+        "heading": 240,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2850,
+        "spawngroupId": 4254,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Merona Castekin",
+        "rawName": "Merona_Castekin",
+        "level": 61,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Ranger GM",
+        "type": "Spawn Slot",
+        "x": -106,
+        "y": 138,
+        "z": 3.75,
+        "heading": 180,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2849,
+        "spawngroupId": 4255,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Salmekia Treherth",
+        "rawName": "Salmekia_Treherth",
+        "level": 61,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Druid GM",
+        "type": "Spawn Slot",
+        "x": -437,
+        "y": -220,
+        "z": 6.75,
+        "heading": 90,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2873,
+        "spawngroupId": 4240,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Teanara",
+        "rawName": "TeAnara",
+        "level": 61,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Druid GM",
+        "type": "Spawn Slot",
+        "x": -441,
+        "y": -209,
+        "z": 6.75,
+        "heading": 129,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2871,
+        "spawngroupId": 4242,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Vesteri Nomanoi",
+        "rawName": "Vesteri_Nomanoi",
+        "level": 61,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Druid GM",
+        "type": "Spawn Slot",
+        "x": -302,
+        "y": -122,
+        "z": 3.75,
+        "heading": 130,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2874,
+        "spawngroupId": 4239,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Lerian Wyndrunner",
+        "rawName": "Lerian_Wyndrunner",
+        "level": 65,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Druid",
+        "type": "Spawn Slot",
+        "x": -342,
+        "y": -13,
+        "z": 3.75,
+        "heading": 195,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2842,
+        "spawngroupId": 4262,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Mikkai Nomak",
+        "rawName": "Mikkai_Nomak",
+        "level": 65,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Tribute Master",
+        "type": "Spawn Slot",
+        "x": -27,
+        "y": 275,
+        "z": 2.13,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2838,
+        "spawngroupId": 4266,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Narwkend Falgon",
+        "rawName": "Narwkend_Falgon",
+        "level": 65,
+        "race": "Half Elf",
+        "rawRace": "Half Elf",
+        "className": "Ranger",
+        "type": "Spawn Slot",
+        "x": -60,
+        "y": 180,
+        "z": 2.288499,
+        "heading": 256.75,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 68501,
+        "spawngroupId": 52571,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Tralo Songsword",
+        "rawName": "Tralo_Songsword",
+        "level": 65,
+        "race": "Half Elf",
+        "rawRace": "Half Elf",
+        "className": "Tribute Master",
+        "type": "Spawn Slot",
+        "x": -10,
+        "y": 144,
+        "z": 3.38,
+        "heading": 384,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2839,
+        "spawngroupId": 4265,
+        "candidateCount": 1
+      }
+    ]
+  }
+}

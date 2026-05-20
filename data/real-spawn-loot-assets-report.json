@@ -1,0 +1,1660 @@
+{
+  "generatedAt": "2026-05-19T20:47:34.087Z",
+  "zoneCount": 186,
+  "itemAssetCount": 11828,
+  "totalSourceBytes": 1040821149,
+  "totalStrippedBytes": 108555135,
+  "totalSavedBytes": 932266014,
+  "largestStrippedAssets": [
+    {
+      "zoneShortName": "grimling",
+      "sourceFile": "data/eqemu-grimling-loot-test.json",
+      "sourceBytes": 41183005,
+      "strippedBytes": 4122072,
+      "savedBytes": 37060933,
+      "mobCount": 639
+    },
+    {
+      "zoneShortName": "dulak",
+      "sourceFile": "data/eqemu-dulak-loot-test.json",
+      "sourceBytes": 39162749,
+      "strippedBytes": 3906066,
+      "savedBytes": 35256683,
+      "mobCount": 317
+    },
+    {
+      "zoneShortName": "charasis",
+      "sourceFile": "data/eqemu-charasis-loot-test.json",
+      "sourceBytes": 29234395,
+      "strippedBytes": 2887995,
+      "savedBytes": 26346400,
+      "mobCount": 172
+    },
+    {
+      "zoneShortName": "sebilis",
+      "sourceFile": "data/eqemu-sebilis-loot-test.json",
+      "sourceBytes": 24181915,
+      "strippedBytes": 2411003,
+      "savedBytes": 21770912,
+      "mobCount": 184
+    },
+    {
+      "zoneShortName": "sseru",
+      "sourceFile": "data/eqemu-sseru-loot-test.json",
+      "sourceBytes": 20097540,
+      "strippedBytes": 2176908,
+      "savedBytes": 17920632,
+      "mobCount": 689
+    },
+    {
+      "zoneShortName": "hateplaneb",
+      "sourceFile": "data/eqemu-hateplaneb-loot-test.json",
+      "sourceBytes": 20980298,
+      "strippedBytes": 2119259,
+      "savedBytes": 18861039,
+      "mobCount": 189
+    },
+    {
+      "zoneShortName": "gukbottom",
+      "sourceFile": "data/eqemu-gukbottom-loot-test.json",
+      "sourceBytes": 19140408,
+      "strippedBytes": 1899174,
+      "savedBytes": 17241234,
+      "mobCount": 170
+    },
+    {
+      "zoneShortName": "permafrost",
+      "sourceFile": "data/eqemu-permafrost-loot-test.json",
+      "sourceBytes": 18335371,
+      "strippedBytes": 1798647,
+      "savedBytes": 16536724,
+      "mobCount": 103
+    },
+    {
+      "zoneShortName": "scarlet",
+      "sourceFile": "data/eqemu-scarlet-loot-test.json",
+      "sourceBytes": 16225728,
+      "strippedBytes": 1642532,
+      "savedBytes": 14583196,
+      "mobCount": 275
+    },
+    {
+      "zoneShortName": "gunthak",
+      "sourceFile": "data/eqemu-gunthak-loot-test.json",
+      "sourceBytes": 15486390,
+      "strippedBytes": 1596798,
+      "savedBytes": 13889592,
+      "mobCount": 292
+    },
+    {
+      "zoneShortName": "mistmoore",
+      "sourceFile": "data/eqemu-mistmoore-loot-test.json",
+      "sourceBytes": 15652679,
+      "strippedBytes": 1564949,
+      "savedBytes": 14087730,
+      "mobCount": 153
+    },
+    {
+      "zoneShortName": "citymist",
+      "sourceFile": "data/eqemu-citymist-loot-test.json",
+      "sourceBytes": 15120156,
+      "strippedBytes": 1527534,
+      "savedBytes": 13592622,
+      "mobCount": 164
+    },
+    {
+      "zoneShortName": "soldunga",
+      "sourceFile": "data/eqemu-soldunga-loot-test.json",
+      "sourceBytes": 15198967,
+      "strippedBytes": 1510190,
+      "savedBytes": 13688777,
+      "mobCount": 139
+    },
+    {
+      "zoneShortName": "skyshrine",
+      "sourceFile": "data/eqemu-skyshrine-loot-test.json",
+      "sourceBytes": 13460964,
+      "strippedBytes": 1439615,
+      "savedBytes": 12021349,
+      "mobCount": 617
+    },
+    {
+      "zoneShortName": "chardok",
+      "sourceFile": "data/eqemu-chardok-loot-test.json",
+      "sourceBytes": 13323585,
+      "strippedBytes": 1360590,
+      "savedBytes": 11962995,
+      "mobCount": 221
+    },
+    {
+      "zoneShortName": "twilight",
+      "sourceFile": "data/eqemu-twilight-loot-test.json",
+      "sourceBytes": 13348377,
+      "strippedBytes": 1351846,
+      "savedBytes": 11996531,
+      "mobCount": 231
+    },
+    {
+      "zoneShortName": "burningwood",
+      "sourceFile": "data/eqemu-burningwood-loot-test.json",
+      "sourceBytes": 12917652,
+      "strippedBytes": 1296679,
+      "savedBytes": 11620973,
+      "mobCount": 137
+    },
+    {
+      "zoneShortName": "acrylia",
+      "sourceFile": "data/eqemu-acrylia-loot-test.json",
+      "sourceBytes": 12785007,
+      "strippedBytes": 1290298,
+      "savedBytes": 11494709,
+      "mobCount": 124
+    },
+    {
+      "zoneShortName": "eastwastes",
+      "sourceFile": "data/eqemu-eastwastes-loot-test.json",
+      "sourceBytes": 12563515,
+      "strippedBytes": 1289971,
+      "savedBytes": 11273544,
+      "mobCount": 208
+    },
+    {
+      "zoneShortName": "karnor",
+      "sourceFile": "data/eqemu-karnor-loot-test.json",
+      "sourceBytes": 12540610,
+      "strippedBytes": 1259007,
+      "savedBytes": 11281603,
+      "mobCount": 127
+    }
+  ],
+  "zones": [
+    {
+      "zoneShortName": "acrylia",
+      "sourceFile": "data/eqemu-acrylia-loot-test.json",
+      "sourceBytes": 12785007,
+      "strippedBytes": 1290298,
+      "savedBytes": 11494709,
+      "mobCount": 124
+    },
+    {
+      "zoneShortName": "airplane",
+      "sourceFile": "data/eqemu-airplane-loot-test.json",
+      "sourceBytes": 2984446,
+      "strippedBytes": 307652,
+      "savedBytes": 2676794,
+      "mobCount": 62
+    },
+    {
+      "zoneShortName": "akanon",
+      "sourceFile": "data/eqemu-akanon-loot-test.json",
+      "sourceBytes": 1297167,
+      "strippedBytes": 182422,
+      "savedBytes": 1114745,
+      "mobCount": 253
+    },
+    {
+      "zoneShortName": "akheva",
+      "sourceFile": "data/eqemu-akheva-loot-test.json",
+      "sourceBytes": 5672669,
+      "strippedBytes": 613086,
+      "savedBytes": 5059583,
+      "mobCount": 160
+    },
+    {
+      "zoneShortName": "arena",
+      "sourceFile": "data/eqemu-arena-loot-test.json",
+      "sourceBytes": 1595,
+      "strippedBytes": 1126,
+      "savedBytes": 469,
+      "mobCount": 6
+    },
+    {
+      "zoneShortName": "bazaar",
+      "sourceFile": "data/eqemu-bazaar-loot-test.json",
+      "sourceBytes": 267094,
+      "strippedBytes": 43521,
+      "savedBytes": 223573,
+      "mobCount": 113
+    },
+    {
+      "zoneShortName": "befallen",
+      "sourceFile": "data/eqemu-befallen-loot-test.json",
+      "sourceBytes": 6676802,
+      "strippedBytes": 675867,
+      "savedBytes": 6000935,
+      "mobCount": 98
+    },
+    {
+      "zoneShortName": "beholder",
+      "sourceFile": "data/eqemu-beholder-loot-test.json",
+      "sourceBytes": 2244030,
+      "strippedBytes": 230300,
+      "savedBytes": 2013730,
+      "mobCount": 35
+    },
+    {
+      "zoneShortName": "blackburrow",
+      "sourceFile": "data/eqemu-blackburrow-loot-test.json",
+      "sourceBytes": 5262382,
+      "strippedBytes": 522330,
+      "savedBytes": 4740052,
+      "mobCount": 46
+    },
+    {
+      "zoneShortName": "bothunder",
+      "sourceFile": "data/eqemu-bothunder-loot-test.json",
+      "sourceBytes": 4039174,
+      "strippedBytes": 426703,
+      "savedBytes": 3612471,
+      "mobCount": 99
+    },
+    {
+      "zoneShortName": "burningwood",
+      "sourceFile": "data/eqemu-burningwood-loot-test.json",
+      "sourceBytes": 12917652,
+      "strippedBytes": 1296679,
+      "savedBytes": 11620973,
+      "mobCount": 137
+    },
+    {
+      "zoneShortName": "butcher",
+      "sourceFile": "data/eqemu-butcher-loot-test.json",
+      "sourceBytes": 3711257,
+      "strippedBytes": 420138,
+      "savedBytes": 3291119,
+      "mobCount": 212
+    },
+    {
+      "zoneShortName": "cabeast",
+      "sourceFile": "data/eqemu-cabeast-loot-test.json",
+      "sourceBytes": 190905,
+      "strippedBytes": 43836,
+      "savedBytes": 147069,
+      "mobCount": 133
+    },
+    {
+      "zoneShortName": "cabwest",
+      "sourceFile": "data/eqemu-cabwest-loot-test.json",
+      "sourceBytes": 86741,
+      "strippedBytes": 19412,
+      "savedBytes": 67329,
+      "mobCount": 50
+    },
+    {
+      "zoneShortName": "cauldron",
+      "sourceFile": "data/eqemu-cauldron-loot-test.json",
+      "sourceBytes": 698616,
+      "strippedBytes": 82032,
+      "savedBytes": 616584,
+      "mobCount": 50
+    },
+    {
+      "zoneShortName": "cazicthule",
+      "sourceFile": "data/eqemu-cazicthule-loot-test.json",
+      "sourceBytes": 8035422,
+      "strippedBytes": 847224,
+      "savedBytes": 7188198,
+      "mobCount": 190
+    },
+    {
+      "zoneShortName": "charasis",
+      "sourceFile": "data/eqemu-charasis-loot-test.json",
+      "sourceBytes": 29234395,
+      "strippedBytes": 2887995,
+      "savedBytes": 26346400,
+      "mobCount": 172
+    },
+    {
+      "zoneShortName": "chardok",
+      "sourceFile": "data/eqemu-chardok-loot-test.json",
+      "sourceBytes": 13323585,
+      "strippedBytes": 1360590,
+      "savedBytes": 11962995,
+      "mobCount": 221
+    },
+    {
+      "zoneShortName": "chardokb",
+      "sourceFile": "data/eqemu-chardokb-loot-test.json",
+      "sourceBytes": 10208531,
+      "strippedBytes": 1046151,
+      "savedBytes": 9162380,
+      "mobCount": 134
+    },
+    {
+      "zoneShortName": "citymist",
+      "sourceFile": "data/eqemu-citymist-loot-test.json",
+      "sourceBytes": 15120156,
+      "strippedBytes": 1527534,
+      "savedBytes": 13592622,
+      "mobCount": 164
+    },
+    {
+      "zoneShortName": "cobaltscar",
+      "sourceFile": "data/eqemu-cobaltscar-loot-test.json",
+      "sourceBytes": 7196377,
+      "strippedBytes": 719363,
+      "savedBytes": 6477014,
+      "mobCount": 68
+    },
+    {
+      "zoneShortName": "codecay",
+      "sourceFile": "data/eqemu-codecay-loot-test.json",
+      "sourceBytes": 1937469,
+      "strippedBytes": 204386,
+      "savedBytes": 1733083,
+      "mobCount": 55
+    },
+    {
+      "zoneShortName": "commons",
+      "sourceFile": "data/eqemu-commons-loot-test.json",
+      "sourceBytes": 3869302,
+      "strippedBytes": 398262,
+      "savedBytes": 3471040,
+      "mobCount": 115
+    },
+    {
+      "zoneShortName": "crushbone",
+      "sourceFile": "data/eqemu-crushbone-loot-test.json",
+      "sourceBytes": 3863126,
+      "strippedBytes": 397206,
+      "savedBytes": 3465920,
+      "mobCount": 60
+    },
+    {
+      "zoneShortName": "crystal",
+      "sourceFile": "data/eqemu-crystal-loot-test.json",
+      "sourceBytes": 8064264,
+      "strippedBytes": 804474,
+      "savedBytes": 7259790,
+      "mobCount": 91
+    },
+    {
+      "zoneShortName": "cshome",
+      "sourceFile": "data/eqemu-cshome-loot-test.json",
+      "sourceBytes": 17095,
+      "strippedBytes": 7684,
+      "savedBytes": 9411,
+      "mobCount": 41
+    },
+    {
+      "zoneShortName": "dalnir",
+      "sourceFile": "data/eqemu-dalnir-loot-test.json",
+      "sourceBytes": 2445767,
+      "strippedBytes": 263027,
+      "savedBytes": 2182740,
+      "mobCount": 80
+    },
+    {
+      "zoneShortName": "dawnshroud",
+      "sourceFile": "data/eqemu-dawnshroud-loot-test.json",
+      "sourceBytes": 9011663,
+      "strippedBytes": 950207,
+      "savedBytes": 8061456,
+      "mobCount": 246
+    },
+    {
+      "zoneShortName": "dreadlands",
+      "sourceFile": "data/eqemu-dreadlands-loot-test.json",
+      "sourceBytes": 8961304,
+      "strippedBytes": 916418,
+      "savedBytes": 8044886,
+      "mobCount": 133
+    },
+    {
+      "zoneShortName": "droga",
+      "sourceFile": "data/eqemu-droga-loot-test.json",
+      "sourceBytes": 10335758,
+      "strippedBytes": 1061427,
+      "savedBytes": 9274331,
+      "mobCount": 194
+    },
+    {
+      "zoneShortName": "dulak",
+      "sourceFile": "data/eqemu-dulak-loot-test.json",
+      "sourceBytes": 39162749,
+      "strippedBytes": 3906066,
+      "savedBytes": 35256683,
+      "mobCount": 317
+    },
+    {
+      "zoneShortName": "eastkarana",
+      "sourceFile": "data/eqemu-eastkarana-loot-test.json",
+      "sourceBytes": 3152443,
+      "strippedBytes": 348723,
+      "savedBytes": 2803720,
+      "mobCount": 157
+    },
+    {
+      "zoneShortName": "eastwastes",
+      "sourceFile": "data/eqemu-eastwastes-loot-test.json",
+      "sourceBytes": 12563515,
+      "strippedBytes": 1289971,
+      "savedBytes": 11273544,
+      "mobCount": 208
+    },
+    {
+      "zoneShortName": "echo",
+      "sourceFile": "data/eqemu-echo-loot-test.json",
+      "sourceBytes": 1027604,
+      "strippedBytes": 135372,
+      "savedBytes": 892232,
+      "mobCount": 144
+    },
+    {
+      "zoneShortName": "ecommons",
+      "sourceFile": "data/eqemu-ecommons-loot-test.json",
+      "sourceBytes": 2409670,
+      "strippedBytes": 272063,
+      "savedBytes": 2137607,
+      "mobCount": 170
+    },
+    {
+      "zoneShortName": "emeraldjungle",
+      "sourceFile": "data/eqemu-emeraldjungle-loot-test.json",
+      "sourceBytes": 2973502,
+      "strippedBytes": 321315,
+      "savedBytes": 2652187,
+      "mobCount": 104
+    },
+    {
+      "zoneShortName": "erudnext",
+      "sourceFile": "data/eqemu-erudnext-loot-test.json",
+      "sourceBytes": 554685,
+      "strippedBytes": 77103,
+      "savedBytes": 477582,
+      "mobCount": 115
+    },
+    {
+      "zoneShortName": "erudnint",
+      "sourceFile": "data/eqemu-erudnint-loot-test.json",
+      "sourceBytes": 179101,
+      "strippedBytes": 33657,
+      "savedBytes": 145444,
+      "mobCount": 79
+    },
+    {
+      "zoneShortName": "erudsxing",
+      "sourceFile": "data/eqemu-erudsxing-loot-test.json",
+      "sourceBytes": 630235,
+      "strippedBytes": 75840,
+      "savedBytes": 554395,
+      "mobCount": 48
+    },
+    {
+      "zoneShortName": "everfrost",
+      "sourceFile": "data/eqemu-everfrost-loot-test.json",
+      "sourceBytes": 2667525,
+      "strippedBytes": 295387,
+      "savedBytes": 2372138,
+      "mobCount": 105
+    },
+    {
+      "zoneShortName": "fearplane",
+      "sourceFile": "data/eqemu-fearplane-loot-test.json",
+      "sourceBytes": 9789887,
+      "strippedBytes": 978265,
+      "savedBytes": 8811622,
+      "mobCount": 97
+    },
+    {
+      "zoneShortName": "feerrott",
+      "sourceFile": "data/eqemu-feerrott-loot-test.json",
+      "sourceBytes": 8686262,
+      "strippedBytes": 893480,
+      "savedBytes": 7792782,
+      "mobCount": 174
+    },
+    {
+      "zoneShortName": "felwithea",
+      "sourceFile": "data/eqemu-felwithea-loot-test.json",
+      "sourceBytes": 648193,
+      "strippedBytes": 80288,
+      "savedBytes": 567905,
+      "mobCount": 87
+    },
+    {
+      "zoneShortName": "felwitheb",
+      "sourceFile": "data/eqemu-felwitheb-loot-test.json",
+      "sourceBytes": 195549,
+      "strippedBytes": 26342,
+      "savedBytes": 169207,
+      "mobCount": 38
+    },
+    {
+      "zoneShortName": "fieldofbone",
+      "sourceFile": "data/eqemu-fieldofbone-loot-test.json",
+      "sourceBytes": 3215318,
+      "strippedBytes": 365082,
+      "savedBytes": 2850236,
+      "mobCount": 150
+    },
+    {
+      "zoneShortName": "firiona",
+      "sourceFile": "data/eqemu-firiona-loot-test.json",
+      "sourceBytes": 7329013,
+      "strippedBytes": 785345,
+      "savedBytes": 6543668,
+      "mobCount": 267
+    },
+    {
+      "zoneShortName": "freporte",
+      "sourceFile": "data/eqemu-freporte-loot-test.json",
+      "sourceBytes": 1483573,
+      "strippedBytes": 177074,
+      "savedBytes": 1306499,
+      "mobCount": 187
+    },
+    {
+      "zoneShortName": "freportn",
+      "sourceFile": "data/eqemu-freportn-loot-test.json",
+      "sourceBytes": 267870,
+      "strippedBytes": 45131,
+      "savedBytes": 222739,
+      "mobCount": 116
+    },
+    {
+      "zoneShortName": "freportw",
+      "sourceFile": "data/eqemu-freportw-loot-test.json",
+      "sourceBytes": 1306327,
+      "strippedBytes": 151878,
+      "savedBytes": 1154449,
+      "mobCount": 142
+    },
+    {
+      "zoneShortName": "frontiermtns",
+      "sourceFile": "data/eqemu-frontiermtns-loot-test.json",
+      "sourceBytes": 10520590,
+      "strippedBytes": 1076586,
+      "savedBytes": 9444004,
+      "mobCount": 167
+    },
+    {
+      "zoneShortName": "frozenshadow",
+      "sourceFile": "data/eqemu-frozenshadow-loot-test.json",
+      "sourceBytes": 9656305,
+      "strippedBytes": 989991,
+      "savedBytes": 8666314,
+      "mobCount": 158
+    },
+    {
+      "zoneShortName": "fungusgrove",
+      "sourceFile": "data/eqemu-fungusgrove-loot-test.json",
+      "sourceBytes": 1891851,
+      "strippedBytes": 216806,
+      "savedBytes": 1675045,
+      "mobCount": 106
+    },
+    {
+      "zoneShortName": "gfaydark",
+      "sourceFile": "data/eqemu-gfaydark-loot-test.json",
+      "sourceBytes": 3546478,
+      "strippedBytes": 409862,
+      "savedBytes": 3136616,
+      "mobCount": 251
+    },
+    {
+      "zoneShortName": "greatdivide",
+      "sourceFile": "data/eqemu-greatdivide-loot-test.json",
+      "sourceBytes": 6941853,
+      "strippedBytes": 725034,
+      "savedBytes": 6216819,
+      "mobCount": 141
+    },
+    {
+      "zoneShortName": "griegsend",
+      "sourceFile": "data/eqemu-griegsend-loot-test.json",
+      "sourceBytes": 7174290,
+      "strippedBytes": 731020,
+      "savedBytes": 6443270,
+      "mobCount": 160
+    },
+    {
+      "zoneShortName": "grimling",
+      "sourceFile": "data/eqemu-grimling-loot-test.json",
+      "sourceBytes": 41183005,
+      "strippedBytes": 4122072,
+      "savedBytes": 37060933,
+      "mobCount": 639
+    },
+    {
+      "zoneShortName": "grobb",
+      "sourceFile": "data/eqemu-grobb-loot-test.json",
+      "sourceBytes": 243226,
+      "strippedBytes": 45860,
+      "savedBytes": 197366,
+      "mobCount": 104
+    },
+    {
+      "zoneShortName": "growthplane",
+      "sourceFile": "data/eqemu-growthplane-loot-test.json",
+      "sourceBytes": 5948650,
+      "strippedBytes": 618127,
+      "savedBytes": 5330523,
+      "mobCount": 103
+    },
+    {
+      "zoneShortName": "gukbottom",
+      "sourceFile": "data/eqemu-gukbottom-loot-test.json",
+      "sourceBytes": 19140408,
+      "strippedBytes": 1899174,
+      "savedBytes": 17241234,
+      "mobCount": 170
+    },
+    {
+      "zoneShortName": "guktop",
+      "sourceFile": "data/eqemu-guktop-loot-test.json",
+      "sourceBytes": 10453489,
+      "strippedBytes": 1057417,
+      "savedBytes": 9396072,
+      "mobCount": 143
+    },
+    {
+      "zoneShortName": "gunthak",
+      "sourceFile": "data/eqemu-gunthak-loot-test.json",
+      "sourceBytes": 15486390,
+      "strippedBytes": 1596798,
+      "savedBytes": 13889592,
+      "mobCount": 292
+    },
+    {
+      "zoneShortName": "halas",
+      "sourceFile": "data/eqemu-halas-loot-test.json",
+      "sourceBytes": 61748,
+      "strippedBytes": 20880,
+      "savedBytes": 40868,
+      "mobCount": 93
+    },
+    {
+      "zoneShortName": "hateplane",
+      "sourceFile": "data/eqemu-hateplane-loot-test.json",
+      "sourceBytes": 914348,
+      "strippedBytes": 103197,
+      "savedBytes": 811151,
+      "mobCount": 61
+    },
+    {
+      "zoneShortName": "hateplaneb",
+      "sourceFile": "data/eqemu-hateplaneb-loot-test.json",
+      "sourceBytes": 20980298,
+      "strippedBytes": 2119259,
+      "savedBytes": 18861039,
+      "mobCount": 189
+    },
+    {
+      "zoneShortName": "hatesfury",
+      "sourceFile": "data/eqemu-hatesfury-loot-test.json",
+      "sourceBytes": 3413782,
+      "strippedBytes": 372679,
+      "savedBytes": 3041103,
+      "mobCount": 114
+    },
+    {
+      "zoneShortName": "highkeep",
+      "sourceFile": "data/eqemu-highkeep-loot-test.json",
+      "sourceBytes": 3850198,
+      "strippedBytes": 432806,
+      "savedBytes": 3417392,
+      "mobCount": 179
+    },
+    {
+      "zoneShortName": "highpass",
+      "sourceFile": "data/eqemu-highpass-loot-test.json",
+      "sourceBytes": 2027126,
+      "strippedBytes": 226759,
+      "savedBytes": 1800367,
+      "mobCount": 134
+    },
+    {
+      "zoneShortName": "hohonora",
+      "sourceFile": "data/eqemu-hohonora-loot-test.json",
+      "sourceBytes": 2624947,
+      "strippedBytes": 276755,
+      "savedBytes": 2348192,
+      "mobCount": 69
+    },
+    {
+      "zoneShortName": "hohonorb",
+      "sourceFile": "data/eqemu-hohonorb-loot-test.json",
+      "sourceBytes": 312615,
+      "strippedBytes": 35140,
+      "savedBytes": 277475,
+      "mobCount": 15
+    },
+    {
+      "zoneShortName": "hole",
+      "sourceFile": "data/eqemu-hole-loot-test.json",
+      "sourceBytes": 11293379,
+      "strippedBytes": 1147905,
+      "savedBytes": 10145474,
+      "mobCount": 163
+    },
+    {
+      "zoneShortName": "hollowshade",
+      "sourceFile": "data/eqemu-hollowshade-loot-test.json",
+      "sourceBytes": 10245084,
+      "strippedBytes": 1096396,
+      "savedBytes": 9148688,
+      "mobCount": 236
+    },
+    {
+      "zoneShortName": "iceclad",
+      "sourceFile": "data/eqemu-iceclad-loot-test.json",
+      "sourceBytes": 4020443,
+      "strippedBytes": 413379,
+      "savedBytes": 3607064,
+      "mobCount": 94
+    },
+    {
+      "zoneShortName": "innothule",
+      "sourceFile": "data/eqemu-innothule-loot-test.json",
+      "sourceBytes": 1009991,
+      "strippedBytes": 116534,
+      "savedBytes": 893457,
+      "mobCount": 78
+    },
+    {
+      "zoneShortName": "jaggedpine",
+      "sourceFile": "data/eqemu-jaggedpine-loot-test.json",
+      "sourceBytes": 6622555,
+      "strippedBytes": 693606,
+      "savedBytes": 5928949,
+      "mobCount": 179
+    },
+    {
+      "zoneShortName": "kael",
+      "sourceFile": "data/eqemu-kael-loot-test.json",
+      "sourceBytes": 11023198,
+      "strippedBytes": 1251769,
+      "savedBytes": 9771429,
+      "mobCount": 512
+    },
+    {
+      "zoneShortName": "kaesora",
+      "sourceFile": "data/eqemu-kaesora-loot-test.json",
+      "sourceBytes": 7505860,
+      "strippedBytes": 763726,
+      "savedBytes": 6742134,
+      "mobCount": 86
+    },
+    {
+      "zoneShortName": "kaladima",
+      "sourceFile": "data/eqemu-kaladima-loot-test.json",
+      "sourceBytes": 467582,
+      "strippedBytes": 63695,
+      "savedBytes": 403887,
+      "mobCount": 68
+    },
+    {
+      "zoneShortName": "kaladimb",
+      "sourceFile": "data/eqemu-kaladimb-loot-test.json",
+      "sourceBytes": 200994,
+      "strippedBytes": 33479,
+      "savedBytes": 167515,
+      "mobCount": 72
+    },
+    {
+      "zoneShortName": "karnor",
+      "sourceFile": "data/eqemu-karnor-loot-test.json",
+      "sourceBytes": 12540610,
+      "strippedBytes": 1259007,
+      "savedBytes": 11281603,
+      "mobCount": 127
+    },
+    {
+      "zoneShortName": "katta",
+      "sourceFile": "data/eqemu-katta-loot-test.json",
+      "sourceBytes": 2920954,
+      "strippedBytes": 410999,
+      "savedBytes": 2509955,
+      "mobCount": 448
+    },
+    {
+      "zoneShortName": "kedge",
+      "sourceFile": "data/eqemu-kedge-loot-test.json",
+      "sourceBytes": 6254637,
+      "strippedBytes": 643986,
+      "savedBytes": 5610651,
+      "mobCount": 93
+    },
+    {
+      "zoneShortName": "kerraridge",
+      "sourceFile": "data/eqemu-kerraridge-loot-test.json",
+      "sourceBytes": 278925,
+      "strippedBytes": 52667,
+      "savedBytes": 226258,
+      "mobCount": 118
+    },
+    {
+      "zoneShortName": "kithicor",
+      "sourceFile": "data/eqemu-kithicor-loot-test.json",
+      "sourceBytes": 4875995,
+      "strippedBytes": 522553,
+      "savedBytes": 4353442,
+      "mobCount": 190
+    },
+    {
+      "zoneShortName": "kurn",
+      "sourceFile": "data/eqemu-kurn-loot-test.json",
+      "sourceBytes": 9260086,
+      "strippedBytes": 920305,
+      "savedBytes": 8339781,
+      "mobCount": 76
+    },
+    {
+      "zoneShortName": "lakeofillomen",
+      "sourceFile": "data/eqemu-lakeofillomen-loot-test.json",
+      "sourceBytes": 8989480,
+      "strippedBytes": 943445,
+      "savedBytes": 8046035,
+      "mobCount": 193
+    },
+    {
+      "zoneShortName": "lakerathe",
+      "sourceFile": "data/eqemu-lakerathe-loot-test.json",
+      "sourceBytes": 4459762,
+      "strippedBytes": 468422,
+      "savedBytes": 3991340,
+      "mobCount": 143
+    },
+    {
+      "zoneShortName": "lavastorm",
+      "sourceFile": "data/eqemu-lavastorm-loot-test.json",
+      "sourceBytes": 5230791,
+      "strippedBytes": 551969,
+      "savedBytes": 4678822,
+      "mobCount": 158
+    },
+    {
+      "zoneShortName": "letalis",
+      "sourceFile": "data/eqemu-letalis-loot-test.json",
+      "sourceBytes": 3250464,
+      "strippedBytes": 342105,
+      "savedBytes": 2908359,
+      "mobCount": 99
+    },
+    {
+      "zoneShortName": "lfaydark",
+      "sourceFile": "data/eqemu-lfaydark-loot-test.json",
+      "sourceBytes": 3556569,
+      "strippedBytes": 383602,
+      "savedBytes": 3172967,
+      "mobCount": 126
+    },
+    {
+      "zoneShortName": "maiden",
+      "sourceFile": "data/eqemu-maiden-loot-test.json",
+      "sourceBytes": 11751405,
+      "strippedBytes": 1196844,
+      "savedBytes": 10554561,
+      "mobCount": 141
+    },
+    {
+      "zoneShortName": "mischiefplane",
+      "sourceFile": "data/eqemu-mischiefplane-loot-test.json",
+      "sourceBytes": 7060699,
+      "strippedBytes": 767979,
+      "savedBytes": 6292720,
+      "mobCount": 336
+    },
+    {
+      "zoneShortName": "mistmoore",
+      "sourceFile": "data/eqemu-mistmoore-loot-test.json",
+      "sourceBytes": 15652679,
+      "strippedBytes": 1564949,
+      "savedBytes": 14087730,
+      "mobCount": 153
+    },
+    {
+      "zoneShortName": "misty",
+      "sourceFile": "data/eqemu-misty-loot-test.json",
+      "sourceBytes": 2272422,
+      "strippedBytes": 251336,
+      "savedBytes": 2021086,
+      "mobCount": 134
+    },
+    {
+      "zoneShortName": "mseru",
+      "sourceFile": "data/eqemu-mseru-loot-test.json",
+      "sourceBytes": 5423925,
+      "strippedBytes": 561296,
+      "savedBytes": 4862629,
+      "mobCount": 91
+    },
+    {
+      "zoneShortName": "nadox",
+      "sourceFile": "data/eqemu-nadox-loot-test.json",
+      "sourceBytes": 10460203,
+      "strippedBytes": 1062322,
+      "savedBytes": 9397881,
+      "mobCount": 130
+    },
+    {
+      "zoneShortName": "najena",
+      "sourceFile": "data/eqemu-najena-loot-test.json",
+      "sourceBytes": 11856756,
+      "strippedBytes": 1175354,
+      "savedBytes": 10681402,
+      "mobCount": 101
+    },
+    {
+      "zoneShortName": "necropolis",
+      "sourceFile": "data/eqemu-necropolis-loot-test.json",
+      "sourceBytes": 9014830,
+      "strippedBytes": 918778,
+      "savedBytes": 8096052,
+      "mobCount": 149
+    },
+    {
+      "zoneShortName": "nedaria",
+      "sourceFile": "data/eqemu-nedaria-loot-test.json",
+      "sourceBytes": 908800,
+      "strippedBytes": 125160,
+      "savedBytes": 783640,
+      "mobCount": 135
+    },
+    {
+      "zoneShortName": "nektulos",
+      "sourceFile": "data/eqemu-nektulos-loot-test.json",
+      "sourceBytes": 2761908,
+      "strippedBytes": 311969,
+      "savedBytes": 2449939,
+      "mobCount": 147
+    },
+    {
+      "zoneShortName": "neriaka",
+      "sourceFile": "data/eqemu-neriaka-loot-test.json",
+      "sourceBytes": 180143,
+      "strippedBytes": 31442,
+      "savedBytes": 148701,
+      "mobCount": 71
+    },
+    {
+      "zoneShortName": "neriakb",
+      "sourceFile": "data/eqemu-neriakb-loot-test.json",
+      "sourceBytes": 429760,
+      "strippedBytes": 63380,
+      "savedBytes": 366380,
+      "mobCount": 104
+    },
+    {
+      "zoneShortName": "neriakc",
+      "sourceFile": "data/eqemu-neriakc-loot-test.json",
+      "sourceBytes": 707188,
+      "strippedBytes": 90736,
+      "savedBytes": 616452,
+      "mobCount": 108
+    },
+    {
+      "zoneShortName": "netherbian",
+      "sourceFile": "data/eqemu-netherbian-loot-test.json",
+      "sourceBytes": 4101918,
+      "strippedBytes": 421574,
+      "savedBytes": 3680344,
+      "mobCount": 64
+    },
+    {
+      "zoneShortName": "nexus",
+      "sourceFile": "data/eqemu-nexus-loot-test.json",
+      "sourceBytes": 25889,
+      "strippedBytes": 7096,
+      "savedBytes": 18793,
+      "mobCount": 26
+    },
+    {
+      "zoneShortName": "nightmareb",
+      "sourceFile": "data/eqemu-nightmareb-loot-test.json",
+      "sourceBytes": 120000,
+      "strippedBytes": 13500,
+      "savedBytes": 106500,
+      "mobCount": 7
+    },
+    {
+      "zoneShortName": "northkarana",
+      "sourceFile": "data/eqemu-northkarana-loot-test.json",
+      "sourceBytes": 2976485,
+      "strippedBytes": 322727,
+      "savedBytes": 2653758,
+      "mobCount": 108
+    },
+    {
+      "zoneShortName": "nro",
+      "sourceFile": "data/eqemu-nro-loot-test.json",
+      "sourceBytes": 3735994,
+      "strippedBytes": 383210,
+      "savedBytes": 3352784,
+      "mobCount": 106
+    },
+    {
+      "zoneShortName": "nurga",
+      "sourceFile": "data/eqemu-nurga-loot-test.json",
+      "sourceBytes": 4523711,
+      "strippedBytes": 493746,
+      "savedBytes": 4029965,
+      "mobCount": 159
+    },
+    {
+      "zoneShortName": "oasis",
+      "sourceFile": "data/eqemu-oasis-loot-test.json",
+      "sourceBytes": 4973373,
+      "strippedBytes": 503329,
+      "savedBytes": 4470044,
+      "mobCount": 117
+    },
+    {
+      "zoneShortName": "oggok",
+      "sourceFile": "data/eqemu-oggok-loot-test.json",
+      "sourceBytes": 679818,
+      "strippedBytes": 97624,
+      "savedBytes": 582194,
+      "mobCount": 122
+    },
+    {
+      "zoneShortName": "oot",
+      "sourceFile": "data/eqemu-oot-loot-test.json",
+      "sourceBytes": 1523076,
+      "strippedBytes": 178901,
+      "savedBytes": 1344175,
+      "mobCount": 136
+    },
+    {
+      "zoneShortName": "overthere",
+      "sourceFile": "data/eqemu-overthere-loot-test.json",
+      "sourceBytes": 7891145,
+      "strippedBytes": 827952,
+      "savedBytes": 7063193,
+      "mobCount": 186
+    },
+    {
+      "zoneShortName": "paineel",
+      "sourceFile": "data/eqemu-paineel-loot-test.json",
+      "sourceBytes": 568986,
+      "strippedBytes": 96053,
+      "savedBytes": 472933,
+      "mobCount": 160
+    },
+    {
+      "zoneShortName": "paludal",
+      "sourceFile": "data/eqemu-paludal-loot-test.json",
+      "sourceBytes": 9770786,
+      "strippedBytes": 990591,
+      "savedBytes": 8780195,
+      "mobCount": 117
+    },
+    {
+      "zoneShortName": "paw",
+      "sourceFile": "data/eqemu-paw-loot-test.json",
+      "sourceBytes": 4701666,
+      "strippedBytes": 474034,
+      "savedBytes": 4227632,
+      "mobCount": 66
+    },
+    {
+      "zoneShortName": "permafrost",
+      "sourceFile": "data/eqemu-permafrost-loot-test.json",
+      "sourceBytes": 18335371,
+      "strippedBytes": 1798647,
+      "savedBytes": 16536724,
+      "mobCount": 103
+    },
+    {
+      "zoneShortName": "poair",
+      "sourceFile": "data/eqemu-poair-loot-test.json",
+      "sourceBytes": 1677630,
+      "strippedBytes": 185067,
+      "savedBytes": 1492563,
+      "mobCount": 71
+    },
+    {
+      "zoneShortName": "podisease",
+      "sourceFile": "data/eqemu-podisease-loot-test.json",
+      "sourceBytes": 4173202,
+      "strippedBytes": 468336,
+      "savedBytes": 3704866,
+      "mobCount": 156
+    },
+    {
+      "zoneShortName": "poeartha",
+      "sourceFile": "data/eqemu-poeartha-loot-test.json",
+      "sourceBytes": 1113806,
+      "strippedBytes": 123497,
+      "savedBytes": 990309,
+      "mobCount": 51
+    },
+    {
+      "zoneShortName": "poearthb",
+      "sourceFile": "data/eqemu-poearthb-loot-test.json",
+      "sourceBytes": 269245,
+      "strippedBytes": 30347,
+      "savedBytes": 238898,
+      "mobCount": 15
+    },
+    {
+      "zoneShortName": "pofire",
+      "sourceFile": "data/eqemu-pofire-loot-test.json",
+      "sourceBytes": 4285000,
+      "strippedBytes": 448350,
+      "savedBytes": 3836650,
+      "mobCount": 91
+    },
+    {
+      "zoneShortName": "poinnovation",
+      "sourceFile": "data/eqemu-poinnovation-loot-test.json",
+      "sourceBytes": 3073268,
+      "strippedBytes": 319105,
+      "savedBytes": 2754163,
+      "mobCount": 61
+    },
+    {
+      "zoneShortName": "pojustice",
+      "sourceFile": "data/eqemu-pojustice-loot-test.json",
+      "sourceBytes": 3419263,
+      "strippedBytes": 443182,
+      "savedBytes": 2976081,
+      "mobCount": 397
+    },
+    {
+      "zoneShortName": "poknowledge",
+      "sourceFile": "data/eqemu-poknowledge-loot-test.json",
+      "sourceBytes": 158352,
+      "strippedBytes": 92352,
+      "savedBytes": 66000,
+      "mobCount": 528
+    },
+    {
+      "zoneShortName": "ponightmare",
+      "sourceFile": "data/eqemu-ponightmare-loot-test.json",
+      "sourceBytes": 1493123,
+      "strippedBytes": 167002,
+      "savedBytes": 1326121,
+      "mobCount": 58
+    },
+    {
+      "zoneShortName": "postorms",
+      "sourceFile": "data/eqemu-postorms-loot-test.json",
+      "sourceBytes": 4960077,
+      "strippedBytes": 546852,
+      "savedBytes": 4413225,
+      "mobCount": 234
+    },
+    {
+      "zoneShortName": "potactics",
+      "sourceFile": "data/eqemu-potactics-loot-test.json",
+      "sourceBytes": 3864849,
+      "strippedBytes": 406456,
+      "savedBytes": 3458393,
+      "mobCount": 100
+    },
+    {
+      "zoneShortName": "potimea",
+      "sourceFile": "data/eqemu-potimea-loot-test.json",
+      "sourceBytes": 718475,
+      "strippedBytes": 83059,
+      "savedBytes": 635416,
+      "mobCount": 56
+    },
+    {
+      "zoneShortName": "potimeb",
+      "sourceFile": "data/eqemu-potimeb-loot-test.json",
+      "sourceBytes": 17347,
+      "strippedBytes": 12368,
+      "savedBytes": 4979,
+      "mobCount": 61
+    },
+    {
+      "zoneShortName": "potorment",
+      "sourceFile": "data/eqemu-potorment-loot-test.json",
+      "sourceBytes": 1704896,
+      "strippedBytes": 185992,
+      "savedBytes": 1518904,
+      "mobCount": 68
+    },
+    {
+      "zoneShortName": "potranquility",
+      "sourceFile": "data/eqemu-potranquility-loot-test.json",
+      "sourceBytes": 18642,
+      "strippedBytes": 12597,
+      "savedBytes": 6045,
+      "mobCount": 74
+    },
+    {
+      "zoneShortName": "povalor",
+      "sourceFile": "data/eqemu-povalor-loot-test.json",
+      "sourceBytes": 2589308,
+      "strippedBytes": 285423,
+      "savedBytes": 2303885,
+      "mobCount": 95
+    },
+    {
+      "zoneShortName": "powater",
+      "sourceFile": "data/eqemu-powater-loot-test.json",
+      "sourceBytes": 2137813,
+      "strippedBytes": 231220,
+      "savedBytes": 1906593,
+      "mobCount": 67
+    },
+    {
+      "zoneShortName": "qcat",
+      "sourceFile": "data/eqemu-qcat-loot-test.json",
+      "sourceBytes": 1207469,
+      "strippedBytes": 146757,
+      "savedBytes": 1060712,
+      "mobCount": 120
+    },
+    {
+      "zoneShortName": "qey2hh1",
+      "sourceFile": "data/eqemu-qey2hh1-loot-test.json",
+      "sourceBytes": 4158202,
+      "strippedBytes": 448818,
+      "savedBytes": 3709384,
+      "mobCount": 172
+    },
+    {
+      "zoneShortName": "qeynos",
+      "sourceFile": "data/eqemu-qeynos-loot-test.json",
+      "sourceBytes": 262810,
+      "strippedBytes": 59202,
+      "savedBytes": 203608,
+      "mobCount": 197
+    },
+    {
+      "zoneShortName": "qeynos2",
+      "sourceFile": "data/eqemu-qeynos2-loot-test.json",
+      "sourceBytes": 819620,
+      "strippedBytes": 113837,
+      "savedBytes": 705783,
+      "mobCount": 149
+    },
+    {
+      "zoneShortName": "qeytoqrg",
+      "sourceFile": "data/eqemu-qeytoqrg-loot-test.json",
+      "sourceBytes": 1951873,
+      "strippedBytes": 229873,
+      "savedBytes": 1722000,
+      "mobCount": 135
+    },
+    {
+      "zoneShortName": "qrg",
+      "sourceFile": "data/eqemu-qrg-loot-test.json",
+      "sourceBytes": 203154,
+      "strippedBytes": 32054,
+      "savedBytes": 171100,
+      "mobCount": 58
+    },
+    {
+      "zoneShortName": "rathemtn",
+      "sourceFile": "data/eqemu-rathemtn-loot-test.json",
+      "sourceBytes": 6110488,
+      "strippedBytes": 674020,
+      "savedBytes": 5436468,
+      "mobCount": 328
+    },
+    {
+      "zoneShortName": "rivervale",
+      "sourceFile": "data/eqemu-rivervale-loot-test.json",
+      "sourceBytes": 535309,
+      "strippedBytes": 88406,
+      "savedBytes": 446903,
+      "mobCount": 154
+    },
+    {
+      "zoneShortName": "runnyeye",
+      "sourceFile": "data/eqemu-runnyeye-loot-test.json",
+      "sourceBytes": 5161706,
+      "strippedBytes": 539355,
+      "savedBytes": 4622351,
+      "mobCount": 145
+    },
+    {
+      "zoneShortName": "scarlet",
+      "sourceFile": "data/eqemu-scarlet-loot-test.json",
+      "sourceBytes": 16225728,
+      "strippedBytes": 1642532,
+      "savedBytes": 14583196,
+      "mobCount": 275
+    },
+    {
+      "zoneShortName": "sebilis",
+      "sourceFile": "data/eqemu-sebilis-loot-test.json",
+      "sourceBytes": 24181915,
+      "strippedBytes": 2411003,
+      "savedBytes": 21770912,
+      "mobCount": 184
+    },
+    {
+      "zoneShortName": "shadeweaver",
+      "sourceFile": "data/eqemu-shadeweaver-loot-test.json",
+      "sourceBytes": 9599852,
+      "strippedBytes": 1030951,
+      "savedBytes": 8568901,
+      "mobCount": 297
+    },
+    {
+      "zoneShortName": "shadowhaven",
+      "sourceFile": "data/eqemu-shadowhaven-loot-test.json",
+      "sourceBytes": 394580,
+      "strippedBytes": 97195,
+      "savedBytes": 297385,
+      "mobCount": 318
+    },
+    {
+      "zoneShortName": "shadowrest",
+      "sourceFile": "data/eqemu-shadowrest-loot-test.json",
+      "sourceBytes": 1347,
+      "strippedBytes": 960,
+      "savedBytes": 387,
+      "mobCount": 5
+    },
+    {
+      "zoneShortName": "sharvahl",
+      "sourceFile": "data/eqemu-sharvahl-loot-test.json",
+      "sourceBytes": 1244423,
+      "strippedBytes": 185621,
+      "savedBytes": 1058802,
+      "mobCount": 339
+    },
+    {
+      "zoneShortName": "sirens",
+      "sourceFile": "data/eqemu-sirens-loot-test.json",
+      "sourceBytes": 8821191,
+      "strippedBytes": 893324,
+      "savedBytes": 7927867,
+      "mobCount": 95
+    },
+    {
+      "zoneShortName": "skyfire",
+      "sourceFile": "data/eqemu-skyfire-loot-test.json",
+      "sourceBytes": 12598392,
+      "strippedBytes": 1248669,
+      "savedBytes": 11349723,
+      "mobCount": 84
+    },
+    {
+      "zoneShortName": "skyshrine",
+      "sourceFile": "data/eqemu-skyshrine-loot-test.json",
+      "sourceBytes": 13460964,
+      "strippedBytes": 1439615,
+      "savedBytes": 12021349,
+      "mobCount": 617
+    },
+    {
+      "zoneShortName": "sleeper",
+      "sourceFile": "data/eqemu-sleeper-loot-test.json",
+      "sourceBytes": 2509201,
+      "strippedBytes": 267336,
+      "savedBytes": 2241865,
+      "mobCount": 95
+    },
+    {
+      "zoneShortName": "soldunga",
+      "sourceFile": "data/eqemu-soldunga-loot-test.json",
+      "sourceBytes": 15198967,
+      "strippedBytes": 1510190,
+      "savedBytes": 13688777,
+      "mobCount": 139
+    },
+    {
+      "zoneShortName": "soldungb",
+      "sourceFile": "data/eqemu-soldungb-loot-test.json",
+      "sourceBytes": 6610026,
+      "strippedBytes": 660910,
+      "savedBytes": 5949116,
+      "mobCount": 69
+    },
+    {
+      "zoneShortName": "soldungc",
+      "sourceFile": "data/eqemu-soldungc-loot-test.json",
+      "sourceBytes": 973541,
+      "strippedBytes": 123591,
+      "savedBytes": 849950,
+      "mobCount": 114
+    },
+    {
+      "zoneShortName": "solrotower",
+      "sourceFile": "data/eqemu-solrotower-loot-test.json",
+      "sourceBytes": 2587011,
+      "strippedBytes": 275197,
+      "savedBytes": 2311814,
+      "mobCount": 65
+    },
+    {
+      "zoneShortName": "soltemple",
+      "sourceFile": "data/eqemu-soltemple-loot-test.json",
+      "sourceBytes": 199752,
+      "strippedBytes": 30593,
+      "savedBytes": 169159,
+      "mobCount": 40
+    },
+    {
+      "zoneShortName": "southkarana",
+      "sourceFile": "data/eqemu-southkarana-loot-test.json",
+      "sourceBytes": 3815339,
+      "strippedBytes": 400492,
+      "savedBytes": 3414847,
+      "mobCount": 113
+    },
+    {
+      "zoneShortName": "sro",
+      "sourceFile": "data/eqemu-sro-loot-test.json",
+      "sourceBytes": 4623299,
+      "strippedBytes": 473344,
+      "savedBytes": 4149955,
+      "mobCount": 128
+    },
+    {
+      "zoneShortName": "sseru",
+      "sourceFile": "data/eqemu-sseru-loot-test.json",
+      "sourceBytes": 20097540,
+      "strippedBytes": 2176908,
+      "savedBytes": 17920632,
+      "mobCount": 689
+    },
+    {
+      "zoneShortName": "ssratemple",
+      "sourceFile": "data/eqemu-ssratemple-loot-test.json",
+      "sourceBytes": 11957367,
+      "strippedBytes": 1246327,
+      "savedBytes": 10711040,
+      "mobCount": 213
+    },
+    {
+      "zoneShortName": "steamfont",
+      "sourceFile": "data/eqemu-steamfont-loot-test.json",
+      "sourceBytes": 2653021,
+      "strippedBytes": 298065,
+      "savedBytes": 2354956,
+      "mobCount": 157
+    },
+    {
+      "zoneShortName": "stonebrunt",
+      "sourceFile": "data/eqemu-stonebrunt-loot-test.json",
+      "sourceBytes": 8752666,
+      "strippedBytes": 907403,
+      "savedBytes": 7845263,
+      "mobCount": 190
+    },
+    {
+      "zoneShortName": "swampofnohope",
+      "sourceFile": "data/eqemu-swampofnohope-loot-test.json",
+      "sourceBytes": 5448469,
+      "strippedBytes": 589275,
+      "savedBytes": 4859194,
+      "mobCount": 205
+    },
+    {
+      "zoneShortName": "templeveeshan",
+      "sourceFile": "data/eqemu-templeveeshan-loot-test.json",
+      "sourceBytes": 3700896,
+      "strippedBytes": 397341,
+      "savedBytes": 3303555,
+      "mobCount": 123
+    },
+    {
+      "zoneShortName": "tenebrous",
+      "sourceFile": "data/eqemu-tenebrous-loot-test.json",
+      "sourceBytes": 4003092,
+      "strippedBytes": 425559,
+      "savedBytes": 3577533,
+      "mobCount": 122
+    },
+    {
+      "zoneShortName": "thedeep",
+      "sourceFile": "data/eqemu-thedeep-loot-test.json",
+      "sourceBytes": 9757567,
+      "strippedBytes": 988866,
+      "savedBytes": 8768701,
+      "mobCount": 100
+    },
+    {
+      "zoneShortName": "thegrey",
+      "sourceFile": "data/eqemu-thegrey-loot-test.json",
+      "sourceBytes": 536777,
+      "strippedBytes": 73037,
+      "savedBytes": 463740,
+      "mobCount": 64
+    },
+    {
+      "zoneShortName": "thurgadina",
+      "sourceFile": "data/eqemu-thurgadina-loot-test.json",
+      "sourceBytes": 331405,
+      "strippedBytes": 74247,
+      "savedBytes": 257158,
+      "mobCount": 232
+    },
+    {
+      "zoneShortName": "thurgadinb",
+      "sourceFile": "data/eqemu-thurgadinb-loot-test.json",
+      "sourceBytes": 4178172,
+      "strippedBytes": 445021,
+      "savedBytes": 3733151,
+      "mobCount": 97
+    },
+    {
+      "zoneShortName": "timorous",
+      "sourceFile": "data/eqemu-timorous-loot-test.json",
+      "sourceBytes": 2302601,
+      "strippedBytes": 250075,
+      "savedBytes": 2052526,
+      "mobCount": 105
+    },
+    {
+      "zoneShortName": "torgiran",
+      "sourceFile": "data/eqemu-torgiran-loot-test.json",
+      "sourceBytes": 4659649,
+      "strippedBytes": 504118,
+      "savedBytes": 4155531,
+      "mobCount": 113
+    },
+    {
+      "zoneShortName": "tox",
+      "sourceFile": "data/eqemu-tox-loot-test.json",
+      "sourceBytes": 1342386,
+      "strippedBytes": 160332,
+      "savedBytes": 1182054,
+      "mobCount": 117
+    },
+    {
+      "zoneShortName": "trakanon",
+      "sourceFile": "data/eqemu-trakanon-loot-test.json",
+      "sourceBytes": 8606722,
+      "strippedBytes": 886848,
+      "savedBytes": 7719874,
+      "mobCount": 157
+    },
+    {
+      "zoneShortName": "tutoriala",
+      "sourceFile": "data/eqemu-tutoriala-loot-test.json",
+      "sourceBytes": 333,
+      "strippedBytes": 274,
+      "savedBytes": 59,
+      "mobCount": 1
+    },
+    {
+      "zoneShortName": "tutorialb",
+      "sourceFile": "data/eqemu-tutorialb-loot-test.json",
+      "sourceBytes": 1758556,
+      "strippedBytes": 195914,
+      "savedBytes": 1562642,
+      "mobCount": 100
+    },
+    {
+      "zoneShortName": "twilight",
+      "sourceFile": "data/eqemu-twilight-loot-test.json",
+      "sourceBytes": 13348377,
+      "strippedBytes": 1351846,
+      "savedBytes": 11996531,
+      "mobCount": 231
+    },
+    {
+      "zoneShortName": "umbral",
+      "sourceFile": "data/eqemu-umbral-loot-test.json",
+      "sourceBytes": 4535656,
+      "strippedBytes": 475826,
+      "savedBytes": 4059830,
+      "mobCount": 105
+    },
+    {
+      "zoneShortName": "unrest",
+      "sourceFile": "data/eqemu-unrest-loot-test.json",
+      "sourceBytes": 8668556,
+      "strippedBytes": 860206,
+      "savedBytes": 7808350,
+      "mobCount": 76
+    },
+    {
+      "zoneShortName": "veeshan",
+      "sourceFile": "data/eqemu-veeshan-loot-test.json",
+      "sourceBytes": 3361159,
+      "strippedBytes": 345688,
+      "savedBytes": 3015471,
+      "mobCount": 71
+    },
+    {
+      "zoneShortName": "velketor",
+      "sourceFile": "data/eqemu-velketor-loot-test.json",
+      "sourceBytes": 5243305,
+      "strippedBytes": 540435,
+      "savedBytes": 4702870,
+      "mobCount": 100
+    },
+    {
+      "zoneShortName": "vexthal",
+      "sourceFile": "data/eqemu-vexthal-loot-test.json",
+      "sourceBytes": 2098918,
+      "strippedBytes": 231994,
+      "savedBytes": 1866924,
+      "mobCount": 92
+    },
+    {
+      "zoneShortName": "wakening",
+      "sourceFile": "data/eqemu-wakening-loot-test.json",
+      "sourceBytes": 7072553,
+      "strippedBytes": 729377,
+      "savedBytes": 6343176,
+      "mobCount": 145
+    },
+    {
+      "zoneShortName": "warrens",
+      "sourceFile": "data/eqemu-warrens-loot-test.json",
+      "sourceBytes": 8343702,
+      "strippedBytes": 849444,
+      "savedBytes": 7494258,
+      "mobCount": 134
+    },
+    {
+      "zoneShortName": "warslikswood",
+      "sourceFile": "data/eqemu-warslikswood-loot-test.json",
+      "sourceBytes": 3482200,
+      "strippedBytes": 378819,
+      "savedBytes": 3103381,
+      "mobCount": 128
+    },
+    {
+      "zoneShortName": "westwastes",
+      "sourceFile": "data/eqemu-westwastes-loot-test.json",
+      "sourceBytes": 3958385,
+      "strippedBytes": 414808,
+      "savedBytes": 3543577,
+      "mobCount": 106
+    }
+  ]
+}

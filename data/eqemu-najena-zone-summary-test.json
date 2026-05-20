@@ -1,0 +1,5062 @@
+{
+  "summary": {
+    "zoneSlug": "najena",
+    "zoneName": "Najena",
+    "requestedZoneShortName": "najena",
+    "zoneShortName": "najena",
+    "sourceFile": "local-eqemu-database",
+    "matched": true,
+    "expansion": "Classic",
+    "eqemuExpansionId": 0,
+    "expansionSource": "eqemu-zone-table",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobCount": 109,
+    "unknownLevelCount": 0,
+    "minLevel": 8,
+    "maxLevel": 36,
+    "averageLevel": 16.2,
+    "medianLevel": 16,
+    "levelCounts": {
+      "8": 3,
+      "9": 6,
+      "10": 8,
+      "11": 9,
+      "12": 9,
+      "13": 12,
+      "14": 2,
+      "15": 2,
+      "16": 7,
+      "17": 9,
+      "18": 7,
+      "19": 7,
+      "20": 7,
+      "21": 3,
+      "22": 2,
+      "23": 3,
+      "24": 4,
+      "25": 5,
+      "27": 1,
+      "28": 1,
+      "31": 1,
+      "36": 1
+    },
+    "levelBuckets": {
+      "1-10": 17,
+      "11-20": 71,
+      "21-30": 19,
+      "31-40": 2,
+      "41-50": 0,
+      "51-60": 0,
+      "61+": 0
+    },
+    "levelProfileLabel": "Mostly 11-20",
+    "mobGroupNameCounts": {
+      "A Greater Skeleton": 17,
+      "A Large Skeleton": 13,
+      "An Ogre Guard": 13,
+      "A Mist Elemental": 7,
+      "A Goblin Magician": 6,
+      "A Magician": 6,
+      "An Earth Elemental": 5,
+      "Dark Boned Skeleton": 5,
+      "A Goblin Warrior": 4,
+      "A Necromancer": 4,
+      "A Skeleton": 4,
+      "A Giant Black Widow": 3,
+      "A Guard Officer": 3,
+      "A Tentacle Terror": 3,
+      "A Fire Elemental": 2,
+      "Ekeros": 2,
+      "A Froglok Ghoul": 1,
+      "Akksstaff": 1,
+      "An Injured Halfling": 1,
+      "Bonecracker": 1,
+      "Drelzna": 1,
+      "Linara Parlone": 1,
+      "Moosh": 1,
+      "Najena": 1,
+      "Tentacle Terror": 1,
+      "The Guard Captain": 1,
+      "The Widowmistress": 1,
+      "Trazdon": 1
+    },
+    "classCounts": {
+      "Warrior": 86,
+      "Magician": 14,
+      "Necromancer": 5,
+      "Rogue": 3,
+      "Enchanter": 1
+    },
+    "raceCounts": {
+      "Skeleton": 39,
+      "Ogre": 18,
+      "Dark Elf": 15,
+      "Elemental": 14,
+      "Goblin": 10,
+      "Tentacle Terror": 4,
+      "Spider": 3,
+      "Froglok": 2,
+      "Human": 2,
+      "Halfling": 1,
+      "High Elf": 1
+    },
+    "normalizedRaceCounts": {
+      "Skeleton": 39,
+      "Ogre": 18,
+      "Dark Elf": 15,
+      "Elemental": 14,
+      "Goblin": 10,
+      "Tentacle Terror": 4,
+      "Spider": 3,
+      "Froglok": 2,
+      "Human": 2,
+      "Halfling": 1,
+      "High Elf": 1
+    },
+    "normalizedRaceLevelCounts": {
+      "Dark Elf": {
+        "10": 1,
+        "12": 1,
+        "16": 1,
+        "18": 1,
+        "19": 2,
+        "20": 1,
+        "22": 2,
+        "24": 1,
+        "25": 2,
+        "28": 1,
+        "31": 1,
+        "36": 1
+      },
+      "Elemental": {
+        "9": 1,
+        "11": 2,
+        "12": 3,
+        "13": 5,
+        "14": 1,
+        "16": 1,
+        "17": 1
+      },
+      "Froglok": {
+        "20": 1,
+        "23": 1
+      },
+      "Goblin": {
+        "16": 1,
+        "17": 4,
+        "18": 2,
+        "19": 3
+      },
+      "Halfling": {
+        "20": 1
+      },
+      "High Elf": {
+        "25": 1
+      },
+      "Human": {
+        "18": 2
+      },
+      "Ogre": {
+        "10": 2,
+        "13": 2,
+        "14": 1,
+        "15": 2,
+        "16": 2,
+        "17": 3,
+        "19": 1,
+        "20": 1,
+        "23": 1,
+        "24": 1,
+        "25": 1,
+        "27": 1
+      },
+      "Skeleton": {
+        "8": 3,
+        "9": 5,
+        "10": 5,
+        "11": 7,
+        "12": 5,
+        "13": 5,
+        "16": 2,
+        "17": 1,
+        "18": 1,
+        "19": 1,
+        "23": 1,
+        "24": 2,
+        "25": 1
+      },
+      "Spider": {
+        "20": 2,
+        "21": 1
+      },
+      "Tentacle Terror": {
+        "18": 1,
+        "20": 1,
+        "21": 2
+      }
+    },
+    "raceAliases": {
+      "Dark Elf": [
+        "Dark Elf"
+      ],
+      "Elemental": [
+        "Elemental"
+      ],
+      "Froglok": [
+        "Froglok"
+      ],
+      "Goblin": [
+        "Goblin"
+      ],
+      "Halfling": [
+        "Halfling"
+      ],
+      "High Elf": [
+        "High Elf"
+      ],
+      "Human": [
+        "Human"
+      ],
+      "Ogre": [
+        "Ogre"
+      ],
+      "Skeleton": [
+        "Skeleton"
+      ],
+      "Spider": [
+        "Spider"
+      ],
+      "Tentacle Terror": [
+        "Tentacle Terror"
+      ]
+    },
+    "typeCounts": {
+      "Spawn Slot": 109
+    },
+    "notes": [
+      "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+      "Read-only test export; not wired into production /zones data."
+    ],
+    "spawnMapPrototype": {
+      "sourceKind": "Local EQEmu/PEQ database export",
+      "coordinateNote": "Original EQEmu spawn2 x/y/z coordinates are preserved for map prototyping.",
+      "points": [
+        {
+          "spawn2Id": 8229,
+          "spawngroupId": 2961,
+          "name": "a_fire_elemental",
+          "displayName": "A Fire Elemental",
+          "level": 13,
+          "race": "Elemental",
+          "rawRace": "Elemental",
+          "className": "Warrior",
+          "x": 327,
+          "y": 59,
+          "z": 2.88,
+          "heading": 130,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8230,
+          "spawngroupId": 2960,
+          "name": "dark-boned_skeleton",
+          "displayName": "Dark Boned Skeleton",
+          "level": 17,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 189,
+          "y": 134,
+          "z": -23.629999,
+          "heading": 11,
+          "chance": 50,
+          "respawnTime": 1200,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8231,
+          "spawngroupId": 2959,
+          "name": "a_guard_officer",
+          "displayName": "A Guard Officer",
+          "level": 25,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Warrior",
+          "x": 215,
+          "y": 291,
+          "z": 5.63,
+          "heading": 503,
+          "chance": 50,
+          "respawnTime": 1200,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8232,
+          "spawngroupId": 2958,
+          "name": "Trazdon",
+          "displayName": "Trazdon",
+          "level": 25,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Necromancer",
+          "x": 219,
+          "y": 358,
+          "z": -10.75,
+          "heading": 324,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8233,
+          "spawngroupId": 2957,
+          "name": "a_magician",
+          "displayName": "A Magician",
+          "level": 19,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Magician",
+          "x": 173,
+          "y": 358,
+          "z": -17.75,
+          "heading": 63.75,
+          "chance": 50,
+          "respawnTime": 1200,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8234,
+          "spawngroupId": 2956,
+          "name": "a_necromancer",
+          "displayName": "A Necromancer",
+          "level": 20,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Necromancer",
+          "x": 181,
+          "y": 271,
+          "z": -24.75,
+          "heading": 278,
+          "chance": 50,
+          "respawnTime": 1200,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8235,
+          "spawngroupId": 2955,
+          "name": "a_necromancer",
+          "displayName": "A Necromancer",
+          "level": 19,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Necromancer",
+          "x": 158,
+          "y": 265,
+          "z": -24.75,
+          "heading": 200,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8236,
+          "spawngroupId": 2954,
+          "name": "BoneCracker",
+          "displayName": "Bonecracker",
+          "level": 23,
+          "race": "Froglok",
+          "rawRace": "Froglok",
+          "className": "Warrior",
+          "x": 173,
+          "y": 254,
+          "z": -24.129999,
+          "heading": 224,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8237,
+          "spawngroupId": 2953,
+          "name": "dark-boned_skeleton",
+          "displayName": "Dark Boned Skeleton",
+          "level": 19,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 297,
+          "y": 222,
+          "z": 3.75,
+          "heading": 87,
+          "chance": 50,
+          "respawnTime": 1200,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8238,
+          "spawngroupId": 2952,
+          "name": "dark-boned_skeleton",
+          "displayName": "Dark Boned Skeleton",
+          "level": 18,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 316,
+          "y": 221,
+          "z": 3.75,
+          "heading": 53,
+          "chance": 50,
+          "respawnTime": 1200,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8239,
+          "spawngroupId": 2951,
+          "name": "a_tentacle_terror",
+          "displayName": "A Tentacle Terror",
+          "level": 18,
+          "race": "Tentacle Terror",
+          "rawRace": "Tentacle Terror",
+          "className": "Warrior",
+          "x": -160,
+          "y": -37,
+          "z": -25.129999,
+          "heading": 185,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8240,
+          "spawngroupId": 2950,
+          "name": "a_skeleton",
+          "displayName": "A Skeleton",
+          "level": 24,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 286,
+          "y": 138,
+          "z": 3.75,
+          "heading": 256,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8241,
+          "spawngroupId": 2949,
+          "name": "The_Widowmistress",
+          "displayName": "The Widowmistress",
+          "level": 36,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Rogue",
+          "x": 219,
+          "y": 460,
+          "z": 4.38,
+          "heading": 405,
+          "chance": 25,
+          "respawnTime": 1200,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 8242,
+          "spawngroupId": 2948,
+          "name": "a_giant_black_widow",
+          "displayName": "A Giant Black Widow",
+          "level": 21,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": 122,
+          "y": 413,
+          "z": 4.38,
+          "heading": 72,
+          "chance": 50,
+          "respawnTime": 1200,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8243,
+          "spawngroupId": 2947,
+          "name": "a_goblin_warrior",
+          "displayName": "A Goblin Warrior",
+          "level": 17,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -68,
+          "y": 270,
+          "z": -10.13,
+          "heading": 0,
+          "chance": 50,
+          "respawnTime": 1200,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8244,
+          "spawngroupId": 2946,
+          "name": "a_goblin_magician",
+          "displayName": "A Goblin Magician",
+          "level": 19,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Magician",
+          "x": 26,
+          "y": 435,
+          "z": 3.75,
+          "heading": 170,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8245,
+          "spawngroupId": 2945,
+          "name": "a_goblin_magician",
+          "displayName": "A Goblin Magician",
+          "level": 19,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Magician",
+          "x": 27,
+          "y": 423,
+          "z": 4.38,
+          "heading": 75,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8246,
+          "spawngroupId": 2944,
+          "name": "a_goblin_magician",
+          "displayName": "A Goblin Magician",
+          "level": 18,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Magician",
+          "x": 44,
+          "y": 425,
+          "z": 3.75,
+          "heading": 434,
+          "chance": 50,
+          "respawnTime": 1200,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8247,
+          "spawngroupId": 2944,
+          "name": "a_goblin_magician",
+          "displayName": "A Goblin Magician",
+          "level": 18,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Magician",
+          "x": -75,
+          "y": 192,
+          "z": -10.13,
+          "heading": 328,
+          "chance": 50,
+          "respawnTime": 1200,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8248,
+          "spawngroupId": 2943,
+          "name": "a_goblin_magician",
+          "displayName": "A Goblin Magician",
+          "level": 19,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Magician",
+          "x": 43,
+          "y": 438,
+          "z": 6.25,
+          "heading": 331,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8249,
+          "spawngroupId": 2942,
+          "name": "a_goblin_warrior",
+          "displayName": "A Goblin Warrior",
+          "level": 17,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": 32,
+          "y": 441,
+          "z": 3.75,
+          "heading": 234,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8250,
+          "spawngroupId": 2941,
+          "name": "a_giant_black_widow",
+          "displayName": "A Giant Black Widow",
+          "level": 20,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": -98,
+          "y": 427,
+          "z": 4.38,
+          "heading": 207,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8251,
+          "spawngroupId": 2940,
+          "name": "a_necromancer",
+          "displayName": "A Necromancer",
+          "level": 24,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Necromancer",
+          "x": -217,
+          "y": -18,
+          "z": -10.75,
+          "heading": 255,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8252,
+          "spawngroupId": 2939,
+          "name": "a_necromancer",
+          "displayName": "A Necromancer",
+          "level": 22,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Necromancer",
+          "x": -217,
+          "y": -52,
+          "z": -10.75,
+          "heading": 6,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8253,
+          "spawngroupId": 2938,
+          "name": "Drelzna",
+          "displayName": "Drelzna",
+          "level": 25,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Warrior",
+          "x": -222,
+          "y": -35,
+          "z": -10.75,
+          "heading": 125,
+          "chance": 30,
+          "respawnTime": 1200,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 8254,
+          "spawngroupId": 2937,
+          "name": "a_magician",
+          "displayName": "A Magician",
+          "level": 18,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Magician",
+          "x": -119,
+          "y": -154,
+          "z": -23.75,
+          "heading": 87,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8255,
+          "spawngroupId": 2936,
+          "name": "a_skeleton",
+          "displayName": "A Skeleton",
+          "level": 24,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": -57,
+          "y": 65,
+          "z": -10.13,
+          "heading": 0,
+          "chance": 50,
+          "respawnTime": 1200,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8256,
+          "spawngroupId": 2935,
+          "name": "Ekeros",
+          "displayName": "Ekeros",
+          "level": 18,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": -49,
+          "y": -161,
+          "z": -23.5,
+          "heading": 438,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8257,
+          "spawngroupId": 2935,
+          "name": "Ekeros",
+          "displayName": "Ekeros",
+          "level": 18,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": -52,
+          "y": -149,
+          "z": -23.75,
+          "heading": 95,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8258,
+          "spawngroupId": 2934,
+          "name": "a_magician",
+          "displayName": "A Magician",
+          "level": 16,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Magician",
+          "x": -68,
+          "y": -154,
+          "z": -23.75,
+          "heading": 254,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8259,
+          "spawngroupId": 2933,
+          "name": "dark-boned_skeleton",
+          "displayName": "Dark Boned Skeleton",
+          "level": 16,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 3,
+          "y": -105,
+          "z": -23.129999,
+          "heading": 428,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8260,
+          "spawngroupId": 2933,
+          "name": "dark-boned_skeleton",
+          "displayName": "Dark Boned Skeleton",
+          "level": 16,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 2,
+          "y": -93,
+          "z": -23.129999,
+          "heading": 384,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8261,
+          "spawngroupId": 2932,
+          "name": "a_skeleton",
+          "displayName": "A Skeleton",
+          "level": 25,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 45,
+          "y": 257,
+          "z": -11.13,
+          "heading": 384,
+          "chance": 50,
+          "respawnTime": 1200,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8262,
+          "spawngroupId": 2931,
+          "name": "a_giant_black_widow",
+          "displayName": "A Giant Black Widow",
+          "level": 20,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": 147.880005,
+          "y": 503.880005,
+          "z": 4.38,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8263,
+          "spawngroupId": 2930,
+          "name": "an_ogre_guard",
+          "displayName": "An Ogre Guard",
+          "level": 20,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Warrior",
+          "x": 203,
+          "y": 54,
+          "z": -22.25,
+          "heading": 459,
+          "chance": 48,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8264,
+          "spawngroupId": 2929,
+          "name": "a_guard_officer",
+          "displayName": "A Guard Officer",
+          "level": 23,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Warrior",
+          "x": 175,
+          "y": 57,
+          "z": -22.25,
+          "heading": 43,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8265,
+          "spawngroupId": 2928,
+          "name": "the_guard_captain",
+          "displayName": "The Guard Captain",
+          "level": 27,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Warrior",
+          "x": 187,
+          "y": 52,
+          "z": -22.25,
+          "heading": 502,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8266,
+          "spawngroupId": 2927,
+          "name": "a_guard_officer",
+          "displayName": "A Guard Officer",
+          "level": 24,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Warrior",
+          "x": 232,
+          "y": 91,
+          "z": -22.25,
+          "heading": 14,
+          "chance": 50,
+          "respawnTime": 1200,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8267,
+          "spawngroupId": 2926,
+          "name": "an_earth_elemental",
+          "displayName": "An Earth Elemental",
+          "level": 12,
+          "race": "Elemental",
+          "rawRace": "Elemental",
+          "className": "Warrior",
+          "x": 222,
+          "y": 145,
+          "z": -24.75,
+          "heading": 510,
+          "chance": 50,
+          "respawnTime": 1200,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8268,
+          "spawngroupId": 2925,
+          "name": "an_earth_elemental",
+          "displayName": "An Earth Elemental",
+          "level": 16,
+          "race": "Elemental",
+          "rawRace": "Elemental",
+          "className": "Warrior",
+          "x": 225,
+          "y": 162,
+          "z": -24.129999,
+          "heading": 510,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8269,
+          "spawngroupId": 2924,
+          "name": "a_mist_elemental",
+          "displayName": "A Mist Elemental",
+          "level": 13,
+          "race": "Elemental",
+          "rawRace": "Elemental",
+          "className": "Warrior",
+          "x": -133,
+          "y": -149,
+          "z": -23.129999,
+          "heading": 119,
+          "chance": 50,
+          "respawnTime": 1200,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8270,
+          "spawngroupId": 2923,
+          "name": "a_greater_skeleton",
+          "displayName": "A Greater Skeleton",
+          "level": 11,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": -23,
+          "y": -107,
+          "z": -22.5,
+          "heading": 66,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8271,
+          "spawngroupId": 2923,
+          "name": "a_greater_skeleton",
+          "displayName": "A Greater Skeleton",
+          "level": 11,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 134,
+          "y": 281,
+          "z": -23.5,
+          "heading": 511,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8272,
+          "spawngroupId": 2922,
+          "name": "a_mist_elemental",
+          "displayName": "A Mist Elemental",
+          "level": 9,
+          "race": "Elemental",
+          "rawRace": "Elemental",
+          "className": "Warrior",
+          "x": 1,
+          "y": 15,
+          "z": 3.13,
+          "heading": 253,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8273,
+          "spawngroupId": 2921,
+          "name": "a_fire_elemental",
+          "displayName": "A Fire Elemental",
+          "level": 12,
+          "race": "Elemental",
+          "rawRace": "Elemental",
+          "className": "Warrior",
+          "x": 22,
+          "y": -22,
+          "z": 3.13,
+          "heading": 444,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8274,
+          "spawngroupId": 2920,
+          "name": "a_skeleton",
+          "displayName": "A Skeleton",
+          "level": 23,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 116,
+          "y": 145,
+          "z": -13.13,
+          "heading": 384,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8275,
+          "spawngroupId": 2919,
+          "name": "an_ogre_guard",
+          "displayName": "An Ogre Guard",
+          "level": 15,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Warrior",
+          "x": -172.880005,
+          "y": 21.879999,
+          "z": -8.3,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8276,
+          "spawngroupId": 2918,
+          "name": "a_tentacle_terror",
+          "displayName": "A Tentacle Terror",
+          "level": 21,
+          "race": "Tentacle Terror",
+          "rawRace": "Tentacle Terror",
+          "className": "Warrior",
+          "x": 216,
+          "y": 52,
+          "z": 3.75,
+          "heading": 225,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8277,
+          "spawngroupId": 2917,
+          "name": "an_ogre_guard",
+          "displayName": "An Ogre Guard",
+          "level": 16,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Warrior",
+          "x": -173,
+          "y": -122,
+          "z": -22.25,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8278,
+          "spawngroupId": 2916,
+          "name": "a_mist_elemental",
+          "displayName": "A Mist Elemental",
+          "level": 11,
+          "race": "Elemental",
+          "rawRace": "Elemental",
+          "className": "Warrior",
+          "x": -282,
+          "y": -131,
+          "z": -24.75,
+          "heading": 0,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8279,
+          "spawngroupId": 2915,
+          "name": "an_earth_elemental",
+          "displayName": "An Earth Elemental",
+          "level": 13,
+          "race": "Elemental",
+          "rawRace": "Elemental",
+          "className": "Warrior",
+          "x": -264,
+          "y": -131,
+          "z": -24.75,
+          "heading": 0,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8280,
+          "spawngroupId": 2914,
+          "name": "an_ogre_guard",
+          "displayName": "An Ogre Guard",
+          "level": 17,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Warrior",
+          "x": 164,
+          "y": 121,
+          "z": -22.25,
+          "heading": 379,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8281,
+          "spawngroupId": 2913,
+          "name": "a_mist_elemental",
+          "displayName": "A Mist Elemental",
+          "level": 13,
+          "race": "Elemental",
+          "rawRace": "Elemental",
+          "className": "Warrior",
+          "x": 426,
+          "y": 65,
+          "z": 3.13,
+          "heading": 252,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8282,
+          "spawngroupId": 2912,
+          "name": "an_earth_elemental",
+          "displayName": "An Earth Elemental",
+          "level": 14,
+          "race": "Elemental",
+          "rawRace": "Elemental",
+          "className": "Warrior",
+          "x": 381,
+          "y": 23,
+          "z": 4.63,
+          "heading": 45,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8283,
+          "spawngroupId": 2911,
+          "name": "a_mist_elemental",
+          "displayName": "A Mist Elemental",
+          "level": 11,
+          "race": "Elemental",
+          "rawRace": "Elemental",
+          "className": "Warrior",
+          "x": 369,
+          "y": 72,
+          "z": 3.25,
+          "heading": 240,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8284,
+          "spawngroupId": 2910,
+          "name": "an_earth_elemental",
+          "displayName": "An Earth Elemental",
+          "level": 13,
+          "race": "Elemental",
+          "rawRace": "Elemental",
+          "className": "Warrior",
+          "x": 202,
+          "y": 318,
+          "z": -26.129999,
+          "heading": 354,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8285,
+          "spawngroupId": 2909,
+          "name": "a_goblin_warrior",
+          "displayName": "A Goblin Warrior",
+          "level": 17,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -85,
+          "y": 183,
+          "z": -9.5,
+          "heading": 122,
+          "chance": 50,
+          "respawnTime": 1200,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8286,
+          "spawngroupId": 2908,
+          "name": "Najena",
+          "displayName": "Najena",
+          "level": 28,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Magician",
+          "x": 105,
+          "y": 353,
+          "z": 3.75,
+          "heading": 254,
+          "chance": 30,
+          "respawnTime": 1200,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 8287,
+          "spawngroupId": 2907,
+          "name": "a_greater_skeleton",
+          "displayName": "A Greater Skeleton",
+          "level": 11,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": -12,
+          "y": -92,
+          "z": -22.5,
+          "heading": 391,
+          "chance": 50,
+          "respawnTime": 1200,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8288,
+          "spawngroupId": 2906,
+          "name": "a_goblin_magician",
+          "displayName": "A Goblin Magician",
+          "level": 17,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Magician",
+          "x": -65,
+          "y": 184,
+          "z": -10.13,
+          "heading": 411,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8289,
+          "spawngroupId": 2905,
+          "name": "an_injured_halfling",
+          "displayName": "An Injured Halfling",
+          "level": 20,
+          "race": "Halfling",
+          "rawRace": "Halfling",
+          "className": "Warrior",
+          "x": -75,
+          "y": -50,
+          "z": -26.75,
+          "heading": 447,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8290,
+          "spawngroupId": 2904,
+          "name": "a_greater_skeleton",
+          "displayName": "A Greater Skeleton",
+          "level": 12,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 287,
+          "y": 119,
+          "z": 4.38,
+          "heading": 0,
+          "chance": 50,
+          "respawnTime": 1200,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8291,
+          "spawngroupId": 2904,
+          "name": "a_greater_skeleton",
+          "displayName": "A Greater Skeleton",
+          "level": 12,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 328,
+          "y": 149,
+          "z": 4.38,
+          "heading": 260,
+          "chance": 50,
+          "respawnTime": 1200,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8292,
+          "spawngroupId": 2904,
+          "name": "a_greater_skeleton",
+          "displayName": "A Greater Skeleton",
+          "level": 12,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": -297,
+          "y": 17.5,
+          "z": -9.5,
+          "heading": 453,
+          "chance": 50,
+          "respawnTime": 1200,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8293,
+          "spawngroupId": 2903,
+          "name": "a_goblin_warrior",
+          "displayName": "A Goblin Warrior",
+          "level": 16,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": 4,
+          "y": 117,
+          "z": -21.129999,
+          "heading": 24,
+          "chance": 50,
+          "respawnTime": 1200,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8294,
+          "spawngroupId": 2902,
+          "name": "a_large_skeleton",
+          "displayName": "A Large Skeleton",
+          "level": 10,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 598,
+          "y": -61,
+          "z": 3.75,
+          "heading": 268,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8295,
+          "spawngroupId": 2901,
+          "name": "an_ogre_guard",
+          "displayName": "An Ogre Guard",
+          "level": 15,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Warrior",
+          "x": 508,
+          "y": -54.880001,
+          "z": 6,
+          "heading": 139,
+          "chance": 50,
+          "respawnTime": 1200,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8296,
+          "spawngroupId": 2900,
+          "name": "a_mist_elemental",
+          "displayName": "A Mist Elemental",
+          "level": 12,
+          "race": "Elemental",
+          "rawRace": "Elemental",
+          "className": "Warrior",
+          "x": 193,
+          "y": 338,
+          "z": -26.75,
+          "heading": 283,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8297,
+          "spawngroupId": 2899,
+          "name": "an_ogre_guard",
+          "displayName": "An Ogre Guard",
+          "level": 17,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Warrior",
+          "x": 249,
+          "y": 119,
+          "z": -22.25,
+          "heading": 139,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8298,
+          "spawngroupId": 2898,
+          "name": "a_greater_skeleton",
+          "displayName": "A Greater Skeleton",
+          "level": 13,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 228,
+          "y": 258.880005,
+          "z": -9.5,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8299,
+          "spawngroupId": 2897,
+          "name": "an_ogre_guard",
+          "displayName": "An Ogre Guard",
+          "level": 14,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Warrior",
+          "x": 219,
+          "y": 119,
+          "z": -22.25,
+          "heading": 192,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8300,
+          "spawngroupId": 2896,
+          "name": "an_ogre_guard",
+          "displayName": "An Ogre Guard",
+          "level": 13,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Warrior",
+          "x": 168,
+          "y": 190,
+          "z": -22.299999,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8301,
+          "spawngroupId": 2896,
+          "name": "an_ogre_guard",
+          "displayName": "An Ogre Guard",
+          "level": 13,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Warrior",
+          "x": 9,
+          "y": 165,
+          "z": -10.25,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8302,
+          "spawngroupId": 2895,
+          "name": "a_large_skeleton",
+          "displayName": "A Large Skeleton",
+          "level": 8,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 172,
+          "y": 153,
+          "z": 3.75,
+          "heading": 125,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8303,
+          "spawngroupId": 2894,
+          "name": "a_greater_skeleton",
+          "displayName": "A Greater Skeleton",
+          "level": 13,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 211,
+          "y": 153.880005,
+          "z": 4.38,
+          "heading": 238,
+          "chance": 50,
+          "respawnTime": 1200,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8304,
+          "spawngroupId": 2894,
+          "name": "a_greater_skeleton",
+          "displayName": "A Greater Skeleton",
+          "level": 13,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 5,
+          "y": -76,
+          "z": -22.5,
+          "heading": 338,
+          "chance": 50,
+          "respawnTime": 1200,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8305,
+          "spawngroupId": 2893,
+          "name": "an_ogre_guard",
+          "displayName": "An Ogre Guard",
+          "level": 10,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Warrior",
+          "x": 217,
+          "y": -21,
+          "z": 5.63,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8306,
+          "spawngroupId": 2892,
+          "name": "an_ogre_guard",
+          "displayName": "An Ogre Guard",
+          "level": 19,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Warrior",
+          "x": 316,
+          "y": 253,
+          "z": 5.63,
+          "heading": 0,
+          "chance": 50,
+          "respawnTime": 1200,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8307,
+          "spawngroupId": 2891,
+          "name": "an_ogre_guard",
+          "displayName": "An Ogre Guard",
+          "level": 10,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Warrior",
+          "x": 29,
+          "y": 130,
+          "z": -18.25,
+          "heading": 335,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8308,
+          "spawngroupId": 2890,
+          "name": "an_ogre_guard",
+          "displayName": "An Ogre Guard",
+          "level": 16,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Warrior",
+          "x": 20,
+          "y": 119,
+          "z": -18.25,
+          "heading": 403,
+          "chance": 50,
+          "respawnTime": 1200,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8309,
+          "spawngroupId": 2889,
+          "name": "Linara_Parlone",
+          "displayName": "Linara Parlone",
+          "level": 25,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Enchanter",
+          "x": -106,
+          "y": -19,
+          "z": -25.129999,
+          "heading": 196,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8310,
+          "spawngroupId": 2888,
+          "name": "a_large_skeleton",
+          "displayName": "A Large Skeleton",
+          "level": 9,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 484.630005,
+          "y": -15.5,
+          "z": 4.63,
+          "heading": 207,
+          "chance": 50,
+          "respawnTime": 1200,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8311,
+          "spawngroupId": 2888,
+          "name": "a_large_skeleton",
+          "displayName": "A Large Skeleton",
+          "level": 9,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 506,
+          "y": -47,
+          "z": 4,
+          "heading": 156,
+          "chance": 50,
+          "respawnTime": 1200,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8312,
+          "spawngroupId": 2887,
+          "name": "a_large_skeleton",
+          "displayName": "A Large Skeleton",
+          "level": 10,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 469,
+          "y": 60,
+          "z": 4.13,
+          "heading": 176,
+          "chance": 50,
+          "respawnTime": 1200,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8313,
+          "spawngroupId": 2887,
+          "name": "a_large_skeleton",
+          "displayName": "A Large Skeleton",
+          "level": 10,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 515,
+          "y": -86.879997,
+          "z": 4.63,
+          "heading": 40,
+          "chance": 50,
+          "respawnTime": 1200,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8314,
+          "spawngroupId": 2887,
+          "name": "a_large_skeleton",
+          "displayName": "A Large Skeleton",
+          "level": 10,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 505,
+          "y": -69,
+          "z": 4.38,
+          "heading": 104,
+          "chance": 50,
+          "respawnTime": 1200,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8315,
+          "spawngroupId": 2887,
+          "name": "a_large_skeleton",
+          "displayName": "A Large Skeleton",
+          "level": 10,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 852,
+          "y": -77,
+          "z": 3,
+          "heading": 507,
+          "chance": 50,
+          "respawnTime": 1200,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8316,
+          "spawngroupId": 2886,
+          "name": "a_large_skeleton",
+          "displayName": "A Large Skeleton",
+          "level": 9,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 495,
+          "y": 63,
+          "z": 4,
+          "heading": 307,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8317,
+          "spawngroupId": 2886,
+          "name": "a_large_skeleton",
+          "displayName": "A Large Skeleton",
+          "level": 9,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 228.880005,
+          "y": 173.880005,
+          "z": 3.75,
+          "heading": 314,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8318,
+          "spawngroupId": 2885,
+          "name": "a_large_skeleton",
+          "displayName": "A Large Skeleton",
+          "level": 9,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 549.880005,
+          "y": -23,
+          "z": 3.88,
+          "heading": 318,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8319,
+          "spawngroupId": 2884,
+          "name": "a_greater_skeleton",
+          "displayName": "A Greater Skeleton",
+          "level": 13,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": -22,
+          "y": -75,
+          "z": -22.5,
+          "heading": 211,
+          "chance": 50,
+          "respawnTime": 1200,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8320,
+          "spawngroupId": 2884,
+          "name": "a_greater_skeleton",
+          "displayName": "A Greater Skeleton",
+          "level": 13,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": -314,
+          "y": 36,
+          "z": -9.5,
+          "heading": 133,
+          "chance": 50,
+          "respawnTime": 1200,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8321,
+          "spawngroupId": 2883,
+          "name": "a_greater_skeleton",
+          "displayName": "A Greater Skeleton",
+          "level": 11,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": -300,
+          "y": 51,
+          "z": -9.5,
+          "heading": 314,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8322,
+          "spawngroupId": 2883,
+          "name": "a_greater_skeleton",
+          "displayName": "A Greater Skeleton",
+          "level": 11,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 358,
+          "y": 149,
+          "z": 4.38,
+          "heading": 260,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8323,
+          "spawngroupId": 2883,
+          "name": "a_greater_skeleton",
+          "displayName": "A Greater Skeleton",
+          "level": 11,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": -333,
+          "y": 18,
+          "z": -9.5,
+          "heading": 53,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8324,
+          "spawngroupId": 2883,
+          "name": "a_greater_skeleton",
+          "displayName": "A Greater Skeleton",
+          "level": 11,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": -330,
+          "y": 35,
+          "z": -9.5,
+          "heading": 133,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8325,
+          "spawngroupId": 2882,
+          "name": "a_greater_skeleton",
+          "displayName": "A Greater Skeleton",
+          "level": 12,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": -332,
+          "y": 53,
+          "z": -9.5,
+          "heading": 168,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8326,
+          "spawngroupId": 2881,
+          "name": "a_mist_elemental",
+          "displayName": "A Mist Elemental",
+          "level": 17,
+          "race": "Elemental",
+          "rawRace": "Elemental",
+          "className": "Warrior",
+          "x": 235.880005,
+          "y": 79,
+          "z": 3.75,
+          "heading": 132,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8327,
+          "spawngroupId": 2880,
+          "name": "a_tentacle_terror",
+          "displayName": "A Tentacle Terror",
+          "level": 21,
+          "race": "Tentacle Terror",
+          "rawRace": "Tentacle Terror",
+          "className": "Warrior",
+          "x": 357,
+          "y": -27,
+          "z": 4.13,
+          "heading": 84,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8328,
+          "spawngroupId": 2879,
+          "name": "Tentacle_Terror",
+          "displayName": "Tentacle Terror",
+          "level": 20,
+          "race": "Tentacle Terror",
+          "rawRace": "Tentacle Terror",
+          "className": "Warrior",
+          "x": 413,
+          "y": 8,
+          "z": 3.75,
+          "heading": 267,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8329,
+          "spawngroupId": 2878,
+          "name": "a_large_skeleton",
+          "displayName": "A Large Skeleton",
+          "level": 8,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 205,
+          "y": -76,
+          "z": 3.75,
+          "heading": 7,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8330,
+          "spawngroupId": 2877,
+          "name": "Akksstaff",
+          "displayName": "Akksstaff",
+          "level": 31,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Magician",
+          "x": -73,
+          "y": 372,
+          "z": 3.13,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8331,
+          "spawngroupId": 2876,
+          "name": "a_large_skeleton",
+          "displayName": "A Large Skeleton",
+          "level": 8,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 714,
+          "y": -45,
+          "z": 3,
+          "heading": 134,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8332,
+          "spawngroupId": 2875,
+          "name": "a_greater_skeleton",
+          "displayName": "A Greater Skeleton",
+          "level": 12,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 710,
+          "y": -83,
+          "z": 3,
+          "heading": 115,
+          "chance": 25,
+          "respawnTime": 1200,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 8333,
+          "spawngroupId": 2874,
+          "name": "a_froglok_ghoul",
+          "displayName": "A Froglok Ghoul",
+          "level": 20,
+          "race": "Froglok",
+          "rawRace": "Froglok",
+          "className": "Warrior",
+          "x": 106.129997,
+          "y": 242.130005,
+          "z": -22.129999,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8334,
+          "spawngroupId": 2873,
+          "name": "Moosh",
+          "displayName": "Moosh",
+          "level": 17,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Warrior",
+          "x": -92,
+          "y": -6,
+          "z": -22.25,
+          "heading": 0,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8335,
+          "spawngroupId": 2872,
+          "name": "a_magician",
+          "displayName": "A Magician",
+          "level": 22,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Magician",
+          "x": 89,
+          "y": 343,
+          "z": 3.13,
+          "heading": 82.25,
+          "chance": 50,
+          "respawnTime": 1200,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8336,
+          "spawngroupId": 2871,
+          "name": "a_magician",
+          "displayName": "A Magician",
+          "level": 10,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Magician",
+          "x": -24,
+          "y": -22,
+          "z": 3.13,
+          "heading": 48.25,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8337,
+          "spawngroupId": 2870,
+          "name": "a_magician",
+          "displayName": "A Magician",
+          "level": 12,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Magician",
+          "x": 100,
+          "y": -12,
+          "z": 3.13,
+          "heading": 160.25,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        }
+      ]
+    }
+  },
+  "details": {
+    "zoneSlug": "najena",
+    "routeSlug": "najena",
+    "zoneName": "Najena",
+    "sourceFile": "local-eqemu-database",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobGroups": [
+      {
+        "displayName": "A Large Skeleton",
+        "rawNames": [
+          "a_large_skeleton"
+        ],
+        "count": 13,
+        "levelMin": 8,
+        "levelMax": 10,
+        "levels": [
+          8,
+          9,
+          10
+        ],
+        "raceCounts": {
+          "Skeleton": 13
+        },
+        "rawRaceCounts": {
+          "Skeleton": 13
+        },
+        "classCounts": {
+          "Warrior": 13
+        },
+        "typeCounts": {
+          "Spawn Slot": 13
+        }
+      },
+      {
+        "displayName": "A Mist Elemental",
+        "rawNames": [
+          "a_mist_elemental"
+        ],
+        "count": 1,
+        "levelMin": 9,
+        "levelMax": 9,
+        "levels": [
+          9
+        ],
+        "raceCounts": {
+          "Elemental": 1
+        },
+        "rawRaceCounts": {
+          "Elemental": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "An Ogre Guard",
+        "rawNames": [
+          "an_ogre_guard"
+        ],
+        "count": 2,
+        "levelMin": 10,
+        "levelMax": 10,
+        "levels": [
+          10
+        ],
+        "raceCounts": {
+          "Ogre": 2
+        },
+        "rawRaceCounts": {
+          "Ogre": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Magician",
+        "rawNames": [
+          "a_magician"
+        ],
+        "count": 1,
+        "levelMin": 10,
+        "levelMax": 10,
+        "levels": [
+          10
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Magician": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Greater Skeleton",
+        "rawNames": [
+          "a_greater_skeleton"
+        ],
+        "count": 17,
+        "levelMin": 11,
+        "levelMax": 13,
+        "levels": [
+          11,
+          12,
+          13
+        ],
+        "raceCounts": {
+          "Skeleton": 17
+        },
+        "rawRaceCounts": {
+          "Skeleton": 17
+        },
+        "classCounts": {
+          "Warrior": 17
+        },
+        "typeCounts": {
+          "Spawn Slot": 17
+        }
+      },
+      {
+        "displayName": "A Mist Elemental",
+        "rawNames": [
+          "a_mist_elemental"
+        ],
+        "count": 5,
+        "levelMin": 11,
+        "levelMax": 13,
+        "levels": [
+          11,
+          12,
+          13
+        ],
+        "raceCounts": {
+          "Elemental": 5
+        },
+        "rawRaceCounts": {
+          "Elemental": 5
+        },
+        "classCounts": {
+          "Warrior": 5
+        },
+        "typeCounts": {
+          "Spawn Slot": 5
+        }
+      },
+      {
+        "displayName": "An Earth Elemental",
+        "rawNames": [
+          "an_earth_elemental"
+        ],
+        "count": 4,
+        "levelMin": 12,
+        "levelMax": 14,
+        "levels": [
+          12,
+          13,
+          14
+        ],
+        "raceCounts": {
+          "Elemental": 4
+        },
+        "rawRaceCounts": {
+          "Elemental": 4
+        },
+        "classCounts": {
+          "Warrior": 4
+        },
+        "typeCounts": {
+          "Spawn Slot": 4
+        }
+      },
+      {
+        "displayName": "A Fire Elemental",
+        "rawNames": [
+          "a_fire_elemental"
+        ],
+        "count": 2,
+        "levelMin": 12,
+        "levelMax": 13,
+        "levels": [
+          12,
+          13
+        ],
+        "raceCounts": {
+          "Elemental": 2
+        },
+        "rawRaceCounts": {
+          "Elemental": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Magician",
+        "rawNames": [
+          "a_magician"
+        ],
+        "count": 1,
+        "levelMin": 12,
+        "levelMax": 12,
+        "levels": [
+          12
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Magician": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "An Ogre Guard",
+        "rawNames": [
+          "an_ogre_guard"
+        ],
+        "count": 9,
+        "levelMin": 13,
+        "levelMax": 17,
+        "levels": [
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "raceCounts": {
+          "Ogre": 9
+        },
+        "rawRaceCounts": {
+          "Ogre": 9
+        },
+        "classCounts": {
+          "Warrior": 9
+        },
+        "typeCounts": {
+          "Spawn Slot": 9
+        }
+      },
+      {
+        "displayName": "Dark Boned Skeleton",
+        "rawNames": [
+          "dark-boned_skeleton"
+        ],
+        "count": 5,
+        "levelMin": 16,
+        "levelMax": 19,
+        "levels": [
+          16,
+          17,
+          18,
+          19
+        ],
+        "raceCounts": {
+          "Skeleton": 5
+        },
+        "rawRaceCounts": {
+          "Skeleton": 5
+        },
+        "classCounts": {
+          "Warrior": 5
+        },
+        "typeCounts": {
+          "Spawn Slot": 5
+        }
+      },
+      {
+        "displayName": "A Goblin Warrior",
+        "rawNames": [
+          "a_goblin_warrior"
+        ],
+        "count": 4,
+        "levelMin": 16,
+        "levelMax": 17,
+        "levels": [
+          16,
+          17
+        ],
+        "raceCounts": {
+          "Goblin": 4
+        },
+        "rawRaceCounts": {
+          "Goblin": 4
+        },
+        "classCounts": {
+          "Warrior": 4
+        },
+        "typeCounts": {
+          "Spawn Slot": 4
+        }
+      },
+      {
+        "displayName": "A Magician",
+        "rawNames": [
+          "a_magician"
+        ],
+        "count": 1,
+        "levelMin": 16,
+        "levelMax": 16,
+        "levels": [
+          16
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Magician": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "An Earth Elemental",
+        "rawNames": [
+          "an_earth_elemental"
+        ],
+        "count": 1,
+        "levelMin": 16,
+        "levelMax": 16,
+        "levels": [
+          16
+        ],
+        "raceCounts": {
+          "Elemental": 1
+        },
+        "rawRaceCounts": {
+          "Elemental": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Goblin Magician",
+        "rawNames": [
+          "a_goblin_magician"
+        ],
+        "count": 6,
+        "levelMin": 17,
+        "levelMax": 19,
+        "levels": [
+          17,
+          18,
+          19
+        ],
+        "raceCounts": {
+          "Goblin": 6
+        },
+        "rawRaceCounts": {
+          "Goblin": 6
+        },
+        "classCounts": {
+          "Magician": 6
+        },
+        "typeCounts": {
+          "Spawn Slot": 6
+        }
+      },
+      {
+        "displayName": "A Mist Elemental",
+        "rawNames": [
+          "a_mist_elemental"
+        ],
+        "count": 1,
+        "levelMin": 17,
+        "levelMax": 17,
+        "levels": [
+          17
+        ],
+        "raceCounts": {
+          "Elemental": 1
+        },
+        "rawRaceCounts": {
+          "Elemental": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Moosh",
+        "rawNames": [
+          "Moosh"
+        ],
+        "count": 1,
+        "levelMin": 17,
+        "levelMax": 17,
+        "levels": [
+          17
+        ],
+        "raceCounts": {
+          "Ogre": 1
+        },
+        "rawRaceCounts": {
+          "Ogre": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Magician",
+        "rawNames": [
+          "a_magician"
+        ],
+        "count": 2,
+        "levelMin": 18,
+        "levelMax": 19,
+        "levels": [
+          18,
+          19
+        ],
+        "raceCounts": {
+          "Dark Elf": 2
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 2
+        },
+        "classCounts": {
+          "Magician": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "Ekeros",
+        "rawNames": [
+          "Ekeros"
+        ],
+        "count": 2,
+        "levelMin": 18,
+        "levelMax": 18,
+        "levels": [
+          18
+        ],
+        "raceCounts": {
+          "Human": 2
+        },
+        "rawRaceCounts": {
+          "Human": 2
+        },
+        "classCounts": {
+          "Rogue": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Tentacle Terror",
+        "rawNames": [
+          "a_tentacle_terror"
+        ],
+        "count": 1,
+        "levelMin": 18,
+        "levelMax": 18,
+        "levels": [
+          18
+        ],
+        "raceCounts": {
+          "Tentacle Terror": 1
+        },
+        "rawRaceCounts": {
+          "Tentacle Terror": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Necromancer",
+        "rawNames": [
+          "a_necromancer"
+        ],
+        "count": 2,
+        "levelMin": 19,
+        "levelMax": 20,
+        "levels": [
+          19,
+          20
+        ],
+        "raceCounts": {
+          "Dark Elf": 2
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 2
+        },
+        "classCounts": {
+          "Necromancer": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "An Ogre Guard",
+        "rawNames": [
+          "an_ogre_guard"
+        ],
+        "count": 2,
+        "levelMin": 19,
+        "levelMax": 20,
+        "levels": [
+          19,
+          20
+        ],
+        "raceCounts": {
+          "Ogre": 2
+        },
+        "rawRaceCounts": {
+          "Ogre": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Giant Black Widow",
+        "rawNames": [
+          "a_giant_black_widow"
+        ],
+        "count": 3,
+        "levelMin": 20,
+        "levelMax": 21,
+        "levels": [
+          20,
+          21
+        ],
+        "raceCounts": {
+          "Spider": 3
+        },
+        "rawRaceCounts": {
+          "Spider": 3
+        },
+        "classCounts": {
+          "Warrior": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "A Froglok Ghoul",
+        "rawNames": [
+          "a_froglok_ghoul"
+        ],
+        "count": 1,
+        "levelMin": 20,
+        "levelMax": 20,
+        "levels": [
+          20
+        ],
+        "raceCounts": {
+          "Froglok": 1
+        },
+        "rawRaceCounts": {
+          "Froglok": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "An Injured Halfling",
+        "rawNames": [
+          "an_injured_halfling"
+        ],
+        "count": 1,
+        "levelMin": 20,
+        "levelMax": 20,
+        "levels": [
+          20
+        ],
+        "raceCounts": {
+          "Halfling": 1
+        },
+        "rawRaceCounts": {
+          "Halfling": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Tentacle Terror",
+        "rawNames": [
+          "Tentacle_Terror"
+        ],
+        "count": 1,
+        "levelMin": 20,
+        "levelMax": 20,
+        "levels": [
+          20
+        ],
+        "raceCounts": {
+          "Tentacle Terror": 1
+        },
+        "rawRaceCounts": {
+          "Tentacle Terror": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Tentacle Terror",
+        "rawNames": [
+          "a_tentacle_terror"
+        ],
+        "count": 2,
+        "levelMin": 21,
+        "levelMax": 21,
+        "levels": [
+          21
+        ],
+        "raceCounts": {
+          "Tentacle Terror": 2
+        },
+        "rawRaceCounts": {
+          "Tentacle Terror": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Magician",
+        "rawNames": [
+          "a_magician"
+        ],
+        "count": 1,
+        "levelMin": 22,
+        "levelMax": 22,
+        "levels": [
+          22
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Magician": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Necromancer",
+        "rawNames": [
+          "a_necromancer"
+        ],
+        "count": 1,
+        "levelMin": 22,
+        "levelMax": 22,
+        "levels": [
+          22
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Necromancer": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Skeleton",
+        "rawNames": [
+          "a_skeleton"
+        ],
+        "count": 4,
+        "levelMin": 23,
+        "levelMax": 25,
+        "levels": [
+          23,
+          24,
+          25
+        ],
+        "raceCounts": {
+          "Skeleton": 4
+        },
+        "rawRaceCounts": {
+          "Skeleton": 4
+        },
+        "classCounts": {
+          "Warrior": 4
+        },
+        "typeCounts": {
+          "Spawn Slot": 4
+        }
+      },
+      {
+        "displayName": "A Guard Officer",
+        "rawNames": [
+          "a_guard_officer"
+        ],
+        "count": 3,
+        "levelMin": 23,
+        "levelMax": 25,
+        "levels": [
+          23,
+          24,
+          25
+        ],
+        "raceCounts": {
+          "Ogre": 3
+        },
+        "rawRaceCounts": {
+          "Ogre": 3
+        },
+        "classCounts": {
+          "Warrior": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "Bonecracker",
+        "rawNames": [
+          "BoneCracker"
+        ],
+        "count": 1,
+        "levelMin": 23,
+        "levelMax": 23,
+        "levels": [
+          23
+        ],
+        "raceCounts": {
+          "Froglok": 1
+        },
+        "rawRaceCounts": {
+          "Froglok": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Necromancer",
+        "rawNames": [
+          "a_necromancer"
+        ],
+        "count": 1,
+        "levelMin": 24,
+        "levelMax": 24,
+        "levels": [
+          24
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Necromancer": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Drelzna",
+        "rawNames": [
+          "Drelzna"
+        ],
+        "count": 1,
+        "levelMin": 25,
+        "levelMax": 25,
+        "levels": [
+          25
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Linara Parlone",
+        "rawNames": [
+          "Linara_Parlone"
+        ],
+        "count": 1,
+        "levelMin": 25,
+        "levelMax": 25,
+        "levels": [
+          25
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Enchanter": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Trazdon",
+        "rawNames": [
+          "Trazdon"
+        ],
+        "count": 1,
+        "levelMin": 25,
+        "levelMax": 25,
+        "levels": [
+          25
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Necromancer": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "The Guard Captain",
+        "rawNames": [
+          "the_guard_captain"
+        ],
+        "count": 1,
+        "levelMin": 27,
+        "levelMax": 27,
+        "levels": [
+          27
+        ],
+        "raceCounts": {
+          "Ogre": 1
+        },
+        "rawRaceCounts": {
+          "Ogre": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Najena",
+        "rawNames": [
+          "Najena"
+        ],
+        "count": 1,
+        "levelMin": 28,
+        "levelMax": 28,
+        "levels": [
+          28
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Magician": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Akksstaff",
+        "rawNames": [
+          "Akksstaff"
+        ],
+        "count": 1,
+        "levelMin": 31,
+        "levelMax": 31,
+        "levels": [
+          31
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Magician": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "The Widowmistress",
+        "rawNames": [
+          "The_Widowmistress"
+        ],
+        "count": 1,
+        "levelMin": 36,
+        "levelMax": 36,
+        "levels": [
+          36
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Rogue": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      }
+    ],
+    "rows": [
+      {
+        "displayName": "A Large Skeleton",
+        "rawName": "a_large_skeleton",
+        "level": 8,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 172,
+        "y": 153,
+        "z": 3.75,
+        "heading": 125,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8302,
+        "spawngroupId": 2895,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Large Skeleton",
+        "rawName": "a_large_skeleton",
+        "level": 8,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 205,
+        "y": -76,
+        "z": 3.75,
+        "heading": 7,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8329,
+        "spawngroupId": 2878,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Large Skeleton",
+        "rawName": "a_large_skeleton",
+        "level": 8,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 714,
+        "y": -45,
+        "z": 3,
+        "heading": 134,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8331,
+        "spawngroupId": 2876,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Large Skeleton",
+        "rawName": "a_large_skeleton",
+        "level": 9,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 484.630005,
+        "y": -15.5,
+        "z": 4.63,
+        "heading": 207,
+        "chance": 50,
+        "respawnTime": 1200,
+        "spawn2Id": 8310,
+        "spawngroupId": 2888,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Large Skeleton",
+        "rawName": "a_large_skeleton",
+        "level": 9,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 506,
+        "y": -47,
+        "z": 4,
+        "heading": 156,
+        "chance": 50,
+        "respawnTime": 1200,
+        "spawn2Id": 8311,
+        "spawngroupId": 2888,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Large Skeleton",
+        "rawName": "a_large_skeleton",
+        "level": 9,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 495,
+        "y": 63,
+        "z": 4,
+        "heading": 307,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 8316,
+        "spawngroupId": 2886,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Large Skeleton",
+        "rawName": "a_large_skeleton",
+        "level": 9,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 228.880005,
+        "y": 173.880005,
+        "z": 3.75,
+        "heading": 314,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 8317,
+        "spawngroupId": 2886,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Large Skeleton",
+        "rawName": "a_large_skeleton",
+        "level": 9,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 549.880005,
+        "y": -23,
+        "z": 3.88,
+        "heading": 318,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8318,
+        "spawngroupId": 2885,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Mist Elemental",
+        "rawName": "a_mist_elemental",
+        "level": 9,
+        "race": "Elemental",
+        "rawRace": "Elemental",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1,
+        "y": 15,
+        "z": 3.13,
+        "heading": 253,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8272,
+        "spawngroupId": 2922,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Large Skeleton",
+        "rawName": "a_large_skeleton",
+        "level": 10,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 598,
+        "y": -61,
+        "z": 3.75,
+        "heading": 268,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 8294,
+        "spawngroupId": 2902,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Large Skeleton",
+        "rawName": "a_large_skeleton",
+        "level": 10,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 469,
+        "y": 60,
+        "z": 4.13,
+        "heading": 176,
+        "chance": 50,
+        "respawnTime": 1200,
+        "spawn2Id": 8312,
+        "spawngroupId": 2887,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Large Skeleton",
+        "rawName": "a_large_skeleton",
+        "level": 10,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 515,
+        "y": -86.879997,
+        "z": 4.63,
+        "heading": 40,
+        "chance": 50,
+        "respawnTime": 1200,
+        "spawn2Id": 8313,
+        "spawngroupId": 2887,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Large Skeleton",
+        "rawName": "a_large_skeleton",
+        "level": 10,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 505,
+        "y": -69,
+        "z": 4.38,
+        "heading": 104,
+        "chance": 50,
+        "respawnTime": 1200,
+        "spawn2Id": 8314,
+        "spawngroupId": 2887,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Large Skeleton",
+        "rawName": "a_large_skeleton",
+        "level": 10,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 852,
+        "y": -77,
+        "z": 3,
+        "heading": 507,
+        "chance": 50,
+        "respawnTime": 1200,
+        "spawn2Id": 8315,
+        "spawngroupId": 2887,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Magician",
+        "rawName": "a_magician",
+        "level": 10,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Magician",
+        "type": "Spawn Slot",
+        "x": -24,
+        "y": -22,
+        "z": 3.13,
+        "heading": 48.25,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 8336,
+        "spawngroupId": 2871,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Ogre Guard",
+        "rawName": "an_ogre_guard",
+        "level": 10,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 217,
+        "y": -21,
+        "z": 5.63,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 8305,
+        "spawngroupId": 2893,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Ogre Guard",
+        "rawName": "an_ogre_guard",
+        "level": 10,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 29,
+        "y": 130,
+        "z": -18.25,
+        "heading": 335,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8307,
+        "spawngroupId": 2891,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Greater Skeleton",
+        "rawName": "a_greater_skeleton",
+        "level": 11,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -23,
+        "y": -107,
+        "z": -22.5,
+        "heading": 66,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8270,
+        "spawngroupId": 2923,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Greater Skeleton",
+        "rawName": "a_greater_skeleton",
+        "level": 11,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 134,
+        "y": 281,
+        "z": -23.5,
+        "heading": 511,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8271,
+        "spawngroupId": 2923,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Greater Skeleton",
+        "rawName": "a_greater_skeleton",
+        "level": 11,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -12,
+        "y": -92,
+        "z": -22.5,
+        "heading": 391,
+        "chance": 50,
+        "respawnTime": 1200,
+        "spawn2Id": 8287,
+        "spawngroupId": 2907,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Greater Skeleton",
+        "rawName": "a_greater_skeleton",
+        "level": 11,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -300,
+        "y": 51,
+        "z": -9.5,
+        "heading": 314,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8321,
+        "spawngroupId": 2883,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Greater Skeleton",
+        "rawName": "a_greater_skeleton",
+        "level": 11,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 358,
+        "y": 149,
+        "z": 4.38,
+        "heading": 260,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8322,
+        "spawngroupId": 2883,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Greater Skeleton",
+        "rawName": "a_greater_skeleton",
+        "level": 11,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -333,
+        "y": 18,
+        "z": -9.5,
+        "heading": 53,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8323,
+        "spawngroupId": 2883,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Greater Skeleton",
+        "rawName": "a_greater_skeleton",
+        "level": 11,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -330,
+        "y": 35,
+        "z": -9.5,
+        "heading": 133,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8324,
+        "spawngroupId": 2883,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Mist Elemental",
+        "rawName": "a_mist_elemental",
+        "level": 11,
+        "race": "Elemental",
+        "rawRace": "Elemental",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -282,
+        "y": -131,
+        "z": -24.75,
+        "heading": 0,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8278,
+        "spawngroupId": 2916,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Mist Elemental",
+        "rawName": "a_mist_elemental",
+        "level": 11,
+        "race": "Elemental",
+        "rawRace": "Elemental",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 369,
+        "y": 72,
+        "z": 3.25,
+        "heading": 240,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8283,
+        "spawngroupId": 2911,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Fire Elemental",
+        "rawName": "a_fire_elemental",
+        "level": 12,
+        "race": "Elemental",
+        "rawRace": "Elemental",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 22,
+        "y": -22,
+        "z": 3.13,
+        "heading": 444,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8273,
+        "spawngroupId": 2921,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Greater Skeleton",
+        "rawName": "a_greater_skeleton",
+        "level": 12,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 287,
+        "y": 119,
+        "z": 4.38,
+        "heading": 0,
+        "chance": 50,
+        "respawnTime": 1200,
+        "spawn2Id": 8290,
+        "spawngroupId": 2904,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Greater Skeleton",
+        "rawName": "a_greater_skeleton",
+        "level": 12,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 328,
+        "y": 149,
+        "z": 4.38,
+        "heading": 260,
+        "chance": 50,
+        "respawnTime": 1200,
+        "spawn2Id": 8291,
+        "spawngroupId": 2904,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Greater Skeleton",
+        "rawName": "a_greater_skeleton",
+        "level": 12,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -297,
+        "y": 17.5,
+        "z": -9.5,
+        "heading": 453,
+        "chance": 50,
+        "respawnTime": 1200,
+        "spawn2Id": 8292,
+        "spawngroupId": 2904,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Greater Skeleton",
+        "rawName": "a_greater_skeleton",
+        "level": 12,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -332,
+        "y": 53,
+        "z": -9.5,
+        "heading": 168,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 8325,
+        "spawngroupId": 2882,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Greater Skeleton",
+        "rawName": "a_greater_skeleton",
+        "level": 12,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 710,
+        "y": -83,
+        "z": 3,
+        "heading": 115,
+        "chance": 25,
+        "respawnTime": 1200,
+        "spawn2Id": 8332,
+        "spawngroupId": 2875,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Magician",
+        "rawName": "a_magician",
+        "level": 12,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Magician",
+        "type": "Spawn Slot",
+        "x": 100,
+        "y": -12,
+        "z": 3.13,
+        "heading": 160.25,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 8337,
+        "spawngroupId": 2870,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Mist Elemental",
+        "rawName": "a_mist_elemental",
+        "level": 12,
+        "race": "Elemental",
+        "rawRace": "Elemental",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 193,
+        "y": 338,
+        "z": -26.75,
+        "heading": 283,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8296,
+        "spawngroupId": 2900,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "An Earth Elemental",
+        "rawName": "an_earth_elemental",
+        "level": 12,
+        "race": "Elemental",
+        "rawRace": "Elemental",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 222,
+        "y": 145,
+        "z": -24.75,
+        "heading": 510,
+        "chance": 50,
+        "respawnTime": 1200,
+        "spawn2Id": 8267,
+        "spawngroupId": 2926,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Fire Elemental",
+        "rawName": "a_fire_elemental",
+        "level": 13,
+        "race": "Elemental",
+        "rawRace": "Elemental",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 327,
+        "y": 59,
+        "z": 2.88,
+        "heading": 130,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8229,
+        "spawngroupId": 2961,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Greater Skeleton",
+        "rawName": "a_greater_skeleton",
+        "level": 13,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 228,
+        "y": 258.880005,
+        "z": -9.5,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 8298,
+        "spawngroupId": 2898,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Greater Skeleton",
+        "rawName": "a_greater_skeleton",
+        "level": 13,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 211,
+        "y": 153.880005,
+        "z": 4.38,
+        "heading": 238,
+        "chance": 50,
+        "respawnTime": 1200,
+        "spawn2Id": 8303,
+        "spawngroupId": 2894,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Greater Skeleton",
+        "rawName": "a_greater_skeleton",
+        "level": 13,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 5,
+        "y": -76,
+        "z": -22.5,
+        "heading": 338,
+        "chance": 50,
+        "respawnTime": 1200,
+        "spawn2Id": 8304,
+        "spawngroupId": 2894,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Greater Skeleton",
+        "rawName": "a_greater_skeleton",
+        "level": 13,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -22,
+        "y": -75,
+        "z": -22.5,
+        "heading": 211,
+        "chance": 50,
+        "respawnTime": 1200,
+        "spawn2Id": 8319,
+        "spawngroupId": 2884,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Greater Skeleton",
+        "rawName": "a_greater_skeleton",
+        "level": 13,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -314,
+        "y": 36,
+        "z": -9.5,
+        "heading": 133,
+        "chance": 50,
+        "respawnTime": 1200,
+        "spawn2Id": 8320,
+        "spawngroupId": 2884,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Mist Elemental",
+        "rawName": "a_mist_elemental",
+        "level": 13,
+        "race": "Elemental",
+        "rawRace": "Elemental",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -133,
+        "y": -149,
+        "z": -23.129999,
+        "heading": 119,
+        "chance": 50,
+        "respawnTime": 1200,
+        "spawn2Id": 8269,
+        "spawngroupId": 2924,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Mist Elemental",
+        "rawName": "a_mist_elemental",
+        "level": 13,
+        "race": "Elemental",
+        "rawRace": "Elemental",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 426,
+        "y": 65,
+        "z": 3.13,
+        "heading": 252,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8281,
+        "spawngroupId": 2913,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "An Earth Elemental",
+        "rawName": "an_earth_elemental",
+        "level": 13,
+        "race": "Elemental",
+        "rawRace": "Elemental",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -264,
+        "y": -131,
+        "z": -24.75,
+        "heading": 0,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8279,
+        "spawngroupId": 2915,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "An Earth Elemental",
+        "rawName": "an_earth_elemental",
+        "level": 13,
+        "race": "Elemental",
+        "rawRace": "Elemental",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 202,
+        "y": 318,
+        "z": -26.129999,
+        "heading": 354,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8284,
+        "spawngroupId": 2910,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "An Ogre Guard",
+        "rawName": "an_ogre_guard",
+        "level": 13,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 168,
+        "y": 190,
+        "z": -22.299999,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 8300,
+        "spawngroupId": 2896,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Ogre Guard",
+        "rawName": "an_ogre_guard",
+        "level": 13,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 9,
+        "y": 165,
+        "z": -10.25,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 8301,
+        "spawngroupId": 2896,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Earth Elemental",
+        "rawName": "an_earth_elemental",
+        "level": 14,
+        "race": "Elemental",
+        "rawRace": "Elemental",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 381,
+        "y": 23,
+        "z": 4.63,
+        "heading": 45,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8282,
+        "spawngroupId": 2912,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "An Ogre Guard",
+        "rawName": "an_ogre_guard",
+        "level": 14,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 219,
+        "y": 119,
+        "z": -22.25,
+        "heading": 192,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8299,
+        "spawngroupId": 2897,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "An Ogre Guard",
+        "rawName": "an_ogre_guard",
+        "level": 15,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -172.880005,
+        "y": 21.879999,
+        "z": -8.3,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 8275,
+        "spawngroupId": 2919,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Ogre Guard",
+        "rawName": "an_ogre_guard",
+        "level": 15,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 508,
+        "y": -54.880001,
+        "z": 6,
+        "heading": 139,
+        "chance": 50,
+        "respawnTime": 1200,
+        "spawn2Id": 8295,
+        "spawngroupId": 2901,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Goblin Warrior",
+        "rawName": "a_goblin_warrior",
+        "level": 16,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 4,
+        "y": 117,
+        "z": -21.129999,
+        "heading": 24,
+        "chance": 50,
+        "respawnTime": 1200,
+        "spawn2Id": 8293,
+        "spawngroupId": 2903,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Magician",
+        "rawName": "a_magician",
+        "level": 16,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Magician",
+        "type": "Spawn Slot",
+        "x": -68,
+        "y": -154,
+        "z": -23.75,
+        "heading": 254,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8258,
+        "spawngroupId": 2934,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "An Earth Elemental",
+        "rawName": "an_earth_elemental",
+        "level": 16,
+        "race": "Elemental",
+        "rawRace": "Elemental",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 225,
+        "y": 162,
+        "z": -24.129999,
+        "heading": 510,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8268,
+        "spawngroupId": 2925,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "An Ogre Guard",
+        "rawName": "an_ogre_guard",
+        "level": 16,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -173,
+        "y": -122,
+        "z": -22.25,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 8277,
+        "spawngroupId": 2917,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Ogre Guard",
+        "rawName": "an_ogre_guard",
+        "level": 16,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 20,
+        "y": 119,
+        "z": -18.25,
+        "heading": 403,
+        "chance": 50,
+        "respawnTime": 1200,
+        "spawn2Id": 8308,
+        "spawngroupId": 2890,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Dark Boned Skeleton",
+        "rawName": "dark-boned_skeleton",
+        "level": 16,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 3,
+        "y": -105,
+        "z": -23.129999,
+        "heading": 428,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8259,
+        "spawngroupId": 2933,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Dark Boned Skeleton",
+        "rawName": "dark-boned_skeleton",
+        "level": 16,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2,
+        "y": -93,
+        "z": -23.129999,
+        "heading": 384,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8260,
+        "spawngroupId": 2933,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Goblin Magician",
+        "rawName": "a_goblin_magician",
+        "level": 17,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Magician",
+        "type": "Spawn Slot",
+        "x": -65,
+        "y": 184,
+        "z": -10.13,
+        "heading": 411,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8288,
+        "spawngroupId": 2906,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Goblin Warrior",
+        "rawName": "a_goblin_warrior",
+        "level": 17,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -68,
+        "y": 270,
+        "z": -10.13,
+        "heading": 0,
+        "chance": 50,
+        "respawnTime": 1200,
+        "spawn2Id": 8243,
+        "spawngroupId": 2947,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Goblin Warrior",
+        "rawName": "a_goblin_warrior",
+        "level": 17,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 32,
+        "y": 441,
+        "z": 3.75,
+        "heading": 234,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8249,
+        "spawngroupId": 2942,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Goblin Warrior",
+        "rawName": "a_goblin_warrior",
+        "level": 17,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -85,
+        "y": 183,
+        "z": -9.5,
+        "heading": 122,
+        "chance": 50,
+        "respawnTime": 1200,
+        "spawn2Id": 8285,
+        "spawngroupId": 2909,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Mist Elemental",
+        "rawName": "a_mist_elemental",
+        "level": 17,
+        "race": "Elemental",
+        "rawRace": "Elemental",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 235.880005,
+        "y": 79,
+        "z": 3.75,
+        "heading": 132,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8326,
+        "spawngroupId": 2881,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "An Ogre Guard",
+        "rawName": "an_ogre_guard",
+        "level": 17,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 164,
+        "y": 121,
+        "z": -22.25,
+        "heading": 379,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 8280,
+        "spawngroupId": 2914,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Ogre Guard",
+        "rawName": "an_ogre_guard",
+        "level": 17,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 249,
+        "y": 119,
+        "z": -22.25,
+        "heading": 139,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8297,
+        "spawngroupId": 2899,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Dark Boned Skeleton",
+        "rawName": "dark-boned_skeleton",
+        "level": 17,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 189,
+        "y": 134,
+        "z": -23.629999,
+        "heading": 11,
+        "chance": 50,
+        "respawnTime": 1200,
+        "spawn2Id": 8230,
+        "spawngroupId": 2960,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Moosh",
+        "rawName": "Moosh",
+        "level": 17,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -92,
+        "y": -6,
+        "z": -22.25,
+        "heading": 0,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8334,
+        "spawngroupId": 2873,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Goblin Magician",
+        "rawName": "a_goblin_magician",
+        "level": 18,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Magician",
+        "type": "Spawn Slot",
+        "x": 44,
+        "y": 425,
+        "z": 3.75,
+        "heading": 434,
+        "chance": 50,
+        "respawnTime": 1200,
+        "spawn2Id": 8246,
+        "spawngroupId": 2944,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Goblin Magician",
+        "rawName": "a_goblin_magician",
+        "level": 18,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Magician",
+        "type": "Spawn Slot",
+        "x": -75,
+        "y": 192,
+        "z": -10.13,
+        "heading": 328,
+        "chance": 50,
+        "respawnTime": 1200,
+        "spawn2Id": 8247,
+        "spawngroupId": 2944,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Magician",
+        "rawName": "a_magician",
+        "level": 18,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Magician",
+        "type": "Spawn Slot",
+        "x": -119,
+        "y": -154,
+        "z": -23.75,
+        "heading": 87,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8254,
+        "spawngroupId": 2937,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Tentacle Terror",
+        "rawName": "a_tentacle_terror",
+        "level": 18,
+        "race": "Tentacle Terror",
+        "rawRace": "Tentacle Terror",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -160,
+        "y": -37,
+        "z": -25.129999,
+        "heading": 185,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8239,
+        "spawngroupId": 2951,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Dark Boned Skeleton",
+        "rawName": "dark-boned_skeleton",
+        "level": 18,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 316,
+        "y": 221,
+        "z": 3.75,
+        "heading": 53,
+        "chance": 50,
+        "respawnTime": 1200,
+        "spawn2Id": 8238,
+        "spawngroupId": 2952,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Ekeros",
+        "rawName": "Ekeros",
+        "level": 18,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -49,
+        "y": -161,
+        "z": -23.5,
+        "heading": 438,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8256,
+        "spawngroupId": 2935,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Ekeros",
+        "rawName": "Ekeros",
+        "level": 18,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -52,
+        "y": -149,
+        "z": -23.75,
+        "heading": 95,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8257,
+        "spawngroupId": 2935,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Goblin Magician",
+        "rawName": "a_goblin_magician",
+        "level": 19,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Magician",
+        "type": "Spawn Slot",
+        "x": 26,
+        "y": 435,
+        "z": 3.75,
+        "heading": 170,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8244,
+        "spawngroupId": 2946,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Goblin Magician",
+        "rawName": "a_goblin_magician",
+        "level": 19,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Magician",
+        "type": "Spawn Slot",
+        "x": 27,
+        "y": 423,
+        "z": 4.38,
+        "heading": 75,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8245,
+        "spawngroupId": 2945,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Goblin Magician",
+        "rawName": "a_goblin_magician",
+        "level": 19,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Magician",
+        "type": "Spawn Slot",
+        "x": 43,
+        "y": 438,
+        "z": 6.25,
+        "heading": 331,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8248,
+        "spawngroupId": 2943,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Magician",
+        "rawName": "a_magician",
+        "level": 19,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Magician",
+        "type": "Spawn Slot",
+        "x": 173,
+        "y": 358,
+        "z": -17.75,
+        "heading": 63.75,
+        "chance": 50,
+        "respawnTime": 1200,
+        "spawn2Id": 8233,
+        "spawngroupId": 2957,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Necromancer",
+        "rawName": "a_necromancer",
+        "level": 19,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Necromancer",
+        "type": "Spawn Slot",
+        "x": 158,
+        "y": 265,
+        "z": -24.75,
+        "heading": 200,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8235,
+        "spawngroupId": 2955,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "An Ogre Guard",
+        "rawName": "an_ogre_guard",
+        "level": 19,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 316,
+        "y": 253,
+        "z": 5.63,
+        "heading": 0,
+        "chance": 50,
+        "respawnTime": 1200,
+        "spawn2Id": 8306,
+        "spawngroupId": 2892,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Dark Boned Skeleton",
+        "rawName": "dark-boned_skeleton",
+        "level": 19,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 297,
+        "y": 222,
+        "z": 3.75,
+        "heading": 87,
+        "chance": 50,
+        "respawnTime": 1200,
+        "spawn2Id": 8237,
+        "spawngroupId": 2953,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Froglok Ghoul",
+        "rawName": "a_froglok_ghoul",
+        "level": 20,
+        "race": "Froglok",
+        "rawRace": "Froglok",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 106.129997,
+        "y": 242.130005,
+        "z": -22.129999,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 8333,
+        "spawngroupId": 2874,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Giant Black Widow",
+        "rawName": "a_giant_black_widow",
+        "level": 20,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -98,
+        "y": 427,
+        "z": 4.38,
+        "heading": 207,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8250,
+        "spawngroupId": 2941,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Giant Black Widow",
+        "rawName": "a_giant_black_widow",
+        "level": 20,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 147.880005,
+        "y": 503.880005,
+        "z": 4.38,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 8262,
+        "spawngroupId": 2931,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Necromancer",
+        "rawName": "a_necromancer",
+        "level": 20,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Necromancer",
+        "type": "Spawn Slot",
+        "x": 181,
+        "y": 271,
+        "z": -24.75,
+        "heading": 278,
+        "chance": 50,
+        "respawnTime": 1200,
+        "spawn2Id": 8234,
+        "spawngroupId": 2956,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "An Injured Halfling",
+        "rawName": "an_injured_halfling",
+        "level": 20,
+        "race": "Halfling",
+        "rawRace": "Halfling",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -75,
+        "y": -50,
+        "z": -26.75,
+        "heading": 447,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 8289,
+        "spawngroupId": 2905,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Ogre Guard",
+        "rawName": "an_ogre_guard",
+        "level": 20,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 203,
+        "y": 54,
+        "z": -22.25,
+        "heading": 459,
+        "chance": 48,
+        "respawnTime": 1200,
+        "spawn2Id": 8263,
+        "spawngroupId": 2930,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Tentacle Terror",
+        "rawName": "Tentacle_Terror",
+        "level": 20,
+        "race": "Tentacle Terror",
+        "rawRace": "Tentacle Terror",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 413,
+        "y": 8,
+        "z": 3.75,
+        "heading": 267,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8328,
+        "spawngroupId": 2879,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Giant Black Widow",
+        "rawName": "a_giant_black_widow",
+        "level": 21,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 122,
+        "y": 413,
+        "z": 4.38,
+        "heading": 72,
+        "chance": 50,
+        "respawnTime": 1200,
+        "spawn2Id": 8242,
+        "spawngroupId": 2948,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Tentacle Terror",
+        "rawName": "a_tentacle_terror",
+        "level": 21,
+        "race": "Tentacle Terror",
+        "rawRace": "Tentacle Terror",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 216,
+        "y": 52,
+        "z": 3.75,
+        "heading": 225,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8276,
+        "spawngroupId": 2918,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Tentacle Terror",
+        "rawName": "a_tentacle_terror",
+        "level": 21,
+        "race": "Tentacle Terror",
+        "rawRace": "Tentacle Terror",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 357,
+        "y": -27,
+        "z": 4.13,
+        "heading": 84,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8327,
+        "spawngroupId": 2880,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Magician",
+        "rawName": "a_magician",
+        "level": 22,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Magician",
+        "type": "Spawn Slot",
+        "x": 89,
+        "y": 343,
+        "z": 3.13,
+        "heading": 82.25,
+        "chance": 50,
+        "respawnTime": 1200,
+        "spawn2Id": 8335,
+        "spawngroupId": 2872,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Necromancer",
+        "rawName": "a_necromancer",
+        "level": 22,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Necromancer",
+        "type": "Spawn Slot",
+        "x": -217,
+        "y": -52,
+        "z": -10.75,
+        "heading": 6,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8252,
+        "spawngroupId": 2939,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Guard Officer",
+        "rawName": "a_guard_officer",
+        "level": 23,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 175,
+        "y": 57,
+        "z": -22.25,
+        "heading": 43,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8264,
+        "spawngroupId": 2929,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Skeleton",
+        "rawName": "a_skeleton",
+        "level": 23,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 116,
+        "y": 145,
+        "z": -13.13,
+        "heading": 384,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8274,
+        "spawngroupId": 2920,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Bonecracker",
+        "rawName": "BoneCracker",
+        "level": 23,
+        "race": "Froglok",
+        "rawRace": "Froglok",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 173,
+        "y": 254,
+        "z": -24.129999,
+        "heading": 224,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8236,
+        "spawngroupId": 2954,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Guard Officer",
+        "rawName": "a_guard_officer",
+        "level": 24,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 232,
+        "y": 91,
+        "z": -22.25,
+        "heading": 14,
+        "chance": 50,
+        "respawnTime": 1200,
+        "spawn2Id": 8266,
+        "spawngroupId": 2927,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Necromancer",
+        "rawName": "a_necromancer",
+        "level": 24,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Necromancer",
+        "type": "Spawn Slot",
+        "x": -217,
+        "y": -18,
+        "z": -10.75,
+        "heading": 255,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8251,
+        "spawngroupId": 2940,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Skeleton",
+        "rawName": "a_skeleton",
+        "level": 24,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 286,
+        "y": 138,
+        "z": 3.75,
+        "heading": 256,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 8240,
+        "spawngroupId": 2950,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Skeleton",
+        "rawName": "a_skeleton",
+        "level": 24,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -57,
+        "y": 65,
+        "z": -10.13,
+        "heading": 0,
+        "chance": 50,
+        "respawnTime": 1200,
+        "spawn2Id": 8255,
+        "spawngroupId": 2936,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Guard Officer",
+        "rawName": "a_guard_officer",
+        "level": 25,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 215,
+        "y": 291,
+        "z": 5.63,
+        "heading": 503,
+        "chance": 50,
+        "respawnTime": 1200,
+        "spawn2Id": 8231,
+        "spawngroupId": 2959,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Skeleton",
+        "rawName": "a_skeleton",
+        "level": 25,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 45,
+        "y": 257,
+        "z": -11.13,
+        "heading": 384,
+        "chance": 50,
+        "respawnTime": 1200,
+        "spawn2Id": 8261,
+        "spawngroupId": 2932,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Drelzna",
+        "rawName": "Drelzna",
+        "level": 25,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -222,
+        "y": -35,
+        "z": -10.75,
+        "heading": 125,
+        "chance": 30,
+        "respawnTime": 1200,
+        "spawn2Id": 8253,
+        "spawngroupId": 2938,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "Linara Parlone",
+        "rawName": "Linara_Parlone",
+        "level": 25,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Enchanter",
+        "type": "Spawn Slot",
+        "x": -106,
+        "y": -19,
+        "z": -25.129999,
+        "heading": 196,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 8309,
+        "spawngroupId": 2889,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Trazdon",
+        "rawName": "Trazdon",
+        "level": 25,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Necromancer",
+        "type": "Spawn Slot",
+        "x": 219,
+        "y": 358,
+        "z": -10.75,
+        "heading": 324,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 8232,
+        "spawngroupId": 2958,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "The Guard Captain",
+        "rawName": "the_guard_captain",
+        "level": 27,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 187,
+        "y": 52,
+        "z": -22.25,
+        "heading": 502,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 8265,
+        "spawngroupId": 2928,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Najena",
+        "rawName": "Najena",
+        "level": 28,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Magician",
+        "type": "Spawn Slot",
+        "x": 105,
+        "y": 353,
+        "z": 3.75,
+        "heading": 254,
+        "chance": 30,
+        "respawnTime": 1200,
+        "spawn2Id": 8286,
+        "spawngroupId": 2908,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "Akksstaff",
+        "rawName": "Akksstaff",
+        "level": 31,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Magician",
+        "type": "Spawn Slot",
+        "x": -73,
+        "y": 372,
+        "z": 3.13,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 8330,
+        "spawngroupId": 2877,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "The Widowmistress",
+        "rawName": "The_Widowmistress",
+        "level": 36,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 219,
+        "y": 460,
+        "z": 4.38,
+        "heading": 405,
+        "chance": 25,
+        "respawnTime": 1200,
+        "spawn2Id": 8241,
+        "spawngroupId": 2949,
+        "candidateCount": 4
+      }
+    ]
+  }
+}

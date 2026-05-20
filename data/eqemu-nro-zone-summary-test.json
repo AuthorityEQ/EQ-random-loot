@@ -1,0 +1,7725 @@
+{
+  "summary": {
+    "zoneSlug": "northern-desert-of-ro",
+    "zoneName": "Northern Desert of Ro",
+    "requestedZoneShortName": "nro",
+    "zoneShortName": "nro",
+    "sourceFile": "local-eqemu-database",
+    "matched": true,
+    "expansion": "Classic",
+    "eqemuExpansionId": 0,
+    "expansionSource": "eqemu-zone-table",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobCount": 165,
+    "unknownLevelCount": 0,
+    "minLevel": 1,
+    "maxLevel": 70,
+    "averageLevel": 14.1,
+    "medianLevel": 7,
+    "levelCounts": {
+      "1": 32,
+      "2": 4,
+      "3": 3,
+      "4": 10,
+      "5": 12,
+      "6": 19,
+      "7": 12,
+      "8": 3,
+      "9": 4,
+      "10": 9,
+      "11": 2,
+      "12": 4,
+      "13": 16,
+      "14": 7,
+      "15": 1,
+      "30": 2,
+      "33": 1,
+      "40": 3,
+      "45": 5,
+      "50": 1,
+      "52": 1,
+      "60": 3,
+      "65": 10,
+      "70": 1
+    },
+    "levelBuckets": {
+      "1-10": 108,
+      "11-20": 30,
+      "21-30": 2,
+      "31-40": 4,
+      "41-50": 6,
+      "51-60": 4,
+      "61+": 11
+    },
+    "levelProfileLabel": "Wide level spread",
+    "mobGroupNameCounts": {
+      "A Decaying Skeleton": 28,
+      "A Large Rattlesnake": 15,
+      "A Dune Tarantula": 14,
+      "A Dervish Cutthroat": 10,
+      "A Dune Spiderling": 8,
+      "A Sand Scarab Hatchling": 8,
+      "A Giant Rattlesnake": 6,
+      "A Madman": 5,
+      "A Shriveled Mummy": 5,
+      "A Gila Monster Hatchling": 4,
+      "A Jackal": 3,
+      "A Sand Scarab": 3,
+      "A Skeleton": 3,
+      "A Young Puma": 3,
+      "An Armadillo": 3,
+      "A Coyote": 2,
+      "A Deathfist Warrior": 2,
+      "A Gila Monster": 2,
+      "A Puma": 2,
+      "A Rattlesnake": 2,
+      "#": 1,
+      "A Brown Asp": 1,
+      "A Crypt Mummy": 1,
+      "A Dervish Thug": 1,
+      "A Desert Spiderling": 1,
+      "A Fire Beetle": 1,
+      "A Moss Snake": 1,
+      "A Sand Giant": 1,
+      "A Zombie": 1,
+      "An Orc Raider": 1,
+      "Daevyd Londayl": 1,
+      "Dereu Ztr`tn": 1,
+      "Dizzl Nulzik": 1,
+      "Dorn B`dynn": 1,
+      "Efrelle Treiui": 1,
+      "Escon Quickbow": 1,
+      "Frankel The Pirate": 1,
+      "Guard Brendyl": 1,
+      "Guard Fintran": 1,
+      "Guard Stoutman": 1,
+      "Innkeep Tozie": 1,
+      "Innkeep Valon": 1,
+      "Juni Sandfisher": 1,
+      "Magus Arindri": 1,
+      "Murissa Sandwhisper": 1,
+      "Odwren Werat": 1,
+      "Paege Stirratin": 1,
+      "Pirate Runners Skiff": 1,
+      "Puntar Sandfisher": 1,
+      "Ruanya Windleaf": 1,
+      "Shelie Dikop": 1,
+      "Soulbinder Ragni": 1,
+      "Spoolie Gee": 1,
+      "Tira Sandfisher": 1,
+      "Translocator Ionie": 1,
+      "Trees Need No Money": 1,
+      "Verrell Cogswin": 1
+    },
+    "classCounts": {
+      "Warrior": 137,
+      "Banker": 8,
+      "Rogue": 6,
+      "Wizard": 5,
+      "Class 0": 2,
+      "Discord Merchant": 2,
+      "Beastlord": 1,
+      "Druid": 1,
+      "Magician": 1,
+      "Merchant": 1,
+      "Shaman": 1
+    },
+    "raceCounts": {
+      "Skeleton": 31,
+      "Snake": 25,
+      "Spider": 23,
+      "Beetle": 12,
+      "Human": 10,
+      "Barbarian": 7,
+      "Zombie": 7,
+      "Alligator": 6,
+      "Beggar": 5,
+      "Puma": 5,
+      "Wolf": 5,
+      "Gnome": 4,
+      "Armadillo": 3,
+      "Guard": 3,
+      "High Elf": 3,
+      "Orc": 3,
+      "Dark Elf": 2,
+      "Ogre": 2,
+      "Wood Elf": 2,
+      "Dwarf": 1,
+      "Erudite": 1,
+      "Giant": 1,
+      "Invisible Man": 1,
+      "Launch": 1,
+      "Teleport Man": 1,
+      "Vah Shir": 1
+    },
+    "normalizedRaceCounts": {
+      "Skeleton": 31,
+      "Snake": 25,
+      "Spider": 23,
+      "Beetle": 12,
+      "Human": 10,
+      "Barbarian": 7,
+      "Zombie": 7,
+      "Alligator": 6,
+      "Beggar": 5,
+      "Puma": 5,
+      "Wolf": 5,
+      "Gnome": 4,
+      "Armadillo": 3,
+      "Guard": 3,
+      "High Elf": 3,
+      "Orc": 3,
+      "Dark Elf": 2,
+      "Ogre": 2,
+      "Wood Elf": 2,
+      "Dwarf": 1,
+      "Erudite": 1,
+      "Giant": 1,
+      "Invisible Man": 1,
+      "Launch": 1,
+      "Teleport Man": 1,
+      "Vah Shir": 1
+    },
+    "normalizedRaceLevelCounts": {
+      "Alligator": {
+        "6": 4,
+        "9": 1,
+        "11": 1
+      },
+      "Armadillo": {
+        "2": 3
+      },
+      "Barbarian": {
+        "6": 1,
+        "12": 1,
+        "14": 3,
+        "45": 2
+      },
+      "Beetle": {
+        "2": 1,
+        "4": 2,
+        "5": 2,
+        "6": 4,
+        "10": 2,
+        "11": 1
+      },
+      "Beggar": {
+        "8": 2,
+        "9": 2,
+        "52": 1
+      },
+      "Dark Elf": {
+        "14": 1,
+        "65": 1
+      },
+      "Dwarf": {
+        "65": 1
+      },
+      "Erudite": {
+        "13": 1
+      },
+      "Giant": {
+        "33": 1
+      },
+      "Gnome": {
+        "1": 1,
+        "30": 1,
+        "65": 1,
+        "70": 1
+      },
+      "Guard": {
+        "40": 3
+      },
+      "High Elf": {
+        "60": 1,
+        "65": 2
+      },
+      "Human": {
+        "12": 1,
+        "13": 1,
+        "14": 3,
+        "30": 1,
+        "45": 3,
+        "65": 1
+      },
+      "Invisible Man": {
+        "60": 1
+      },
+      "Launch": {
+        "60": 1
+      },
+      "Ogre": {
+        "15": 1,
+        "65": 1
+      },
+      "Orc": {
+        "4": 1,
+        "9": 1,
+        "10": 1
+      },
+      "Puma": {
+        "3": 1,
+        "4": 2,
+        "5": 1,
+        "7": 1
+      },
+      "Skeleton": {
+        "1": 28,
+        "6": 3
+      },
+      "Snake": {
+        "1": 1,
+        "4": 1,
+        "5": 5,
+        "6": 5,
+        "7": 11,
+        "10": 2
+      },
+      "Spider": {
+        "1": 1,
+        "4": 3,
+        "5": 3,
+        "6": 2,
+        "12": 1,
+        "13": 13
+      },
+      "Teleport Man": {
+        "50": 1
+      },
+      "Vah Shir": {
+        "65": 1
+      },
+      "Wolf": {
+        "1": 1,
+        "3": 2,
+        "4": 1,
+        "5": 1
+      },
+      "Wood Elf": {
+        "65": 2
+      },
+      "Zombie": {
+        "8": 1,
+        "10": 4,
+        "12": 1,
+        "13": 1
+      }
+    },
+    "raceAliases": {
+      "Alligator": [
+        "Alligator"
+      ],
+      "Armadillo": [
+        "Armadillo"
+      ],
+      "Barbarian": [
+        "Barbarian"
+      ],
+      "Beetle": [
+        "Beetle"
+      ],
+      "Beggar": [
+        "Beggar"
+      ],
+      "Dark Elf": [
+        "Dark Elf"
+      ],
+      "Dwarf": [
+        "Dwarf"
+      ],
+      "Erudite": [
+        "Erudite"
+      ],
+      "Giant": [
+        "Giant"
+      ],
+      "Gnome": [
+        "Gnome"
+      ],
+      "Guard": [
+        "Guard"
+      ],
+      "High Elf": [
+        "High Elf"
+      ],
+      "Human": [
+        "Human"
+      ],
+      "Invisible Man": [
+        "Invisible Man"
+      ],
+      "Launch": [
+        "Launch"
+      ],
+      "Ogre": [
+        "Ogre"
+      ],
+      "Orc": [
+        "Orc"
+      ],
+      "Puma": [
+        "Puma"
+      ],
+      "Skeleton": [
+        "Skeleton"
+      ],
+      "Snake": [
+        "Snake"
+      ],
+      "Spider": [
+        "Spider"
+      ],
+      "Teleport Man": [
+        "Teleport Man"
+      ],
+      "Vah Shir": [
+        "Vah Shir"
+      ],
+      "Wolf": [
+        "Wolf"
+      ],
+      "Wood Elf": [
+        "Wood Elf"
+      ],
+      "Zombie": [
+        "Zombie"
+      ]
+    },
+    "typeCounts": {
+      "Spawn Slot": 165
+    },
+    "notes": [
+      "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+      "Read-only test export; not wired into production /zones data."
+    ],
+    "spawnMapPrototype": {
+      "sourceKind": "Local EQEmu/PEQ database export",
+      "coordinateNote": "Original EQEmu spawn2 x/y/z coordinates are preserved for map prototyping.",
+      "points": [
+        {
+          "spawn2Id": 335,
+          "spawngroupId": 3262,
+          "name": "a_Dervish_Cutthroat",
+          "displayName": "A Dervish Cutthroat",
+          "level": 14,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": 312,
+          "y": 47,
+          "z": -31.379999,
+          "heading": 134,
+          "chance": 20,
+          "respawnTime": 640,
+          "candidateCount": 5
+        },
+        {
+          "spawn2Id": 336,
+          "spawngroupId": 3263,
+          "name": "a_large_rattlesnake",
+          "displayName": "A Large Rattlesnake",
+          "level": 6,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": 264.880005,
+          "y": -1813.880005,
+          "z": 32.400002,
+          "heading": 467,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 337,
+          "spawngroupId": 3263,
+          "name": "a_large_rattlesnake",
+          "displayName": "A Large Rattlesnake",
+          "level": 6,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": 40,
+          "y": -1447,
+          "z": -71.25,
+          "heading": 500.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 338,
+          "spawngroupId": 3263,
+          "name": "a_large_rattlesnake",
+          "displayName": "A Large Rattlesnake",
+          "level": 6,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": 941.880005,
+          "y": -1042.880005,
+          "z": 14.9,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 339,
+          "spawngroupId": 3263,
+          "name": "a_large_rattlesnake",
+          "displayName": "A Large Rattlesnake",
+          "level": 6,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": 137.880005,
+          "y": -1800.880005,
+          "z": 55.630001,
+          "heading": 248,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 340,
+          "spawngroupId": 3263,
+          "name": "a_large_rattlesnake",
+          "displayName": "A Large Rattlesnake",
+          "level": 6,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": 148.130005,
+          "y": -1588.630005,
+          "z": 14.63,
+          "heading": 233.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 341,
+          "spawngroupId": 3264,
+          "name": "a_skeleton",
+          "displayName": "A Skeleton",
+          "level": 6,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 422,
+          "y": 478,
+          "z": 8.5,
+          "heading": 216,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 342,
+          "spawngroupId": 3265,
+          "name": "a_skeleton",
+          "displayName": "A Skeleton",
+          "level": 6,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 411,
+          "y": 467,
+          "z": 8.75,
+          "heading": 216,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 343,
+          "spawngroupId": 3265,
+          "name": "a_skeleton",
+          "displayName": "A Skeleton",
+          "level": 6,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 499,
+          "y": 462,
+          "z": 5.5,
+          "heading": 0,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 344,
+          "spawngroupId": 3266,
+          "name": "a_zombie",
+          "displayName": "A Zombie",
+          "level": 8,
+          "race": "Zombie",
+          "rawRace": "Zombie",
+          "className": "Warrior",
+          "x": 510,
+          "y": 473,
+          "z": 5.5,
+          "heading": 0,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 345,
+          "spawngroupId": 3268,
+          "name": "a_jackal",
+          "displayName": "A Jackal",
+          "level": 3,
+          "race": "Wolf",
+          "rawRace": "Wolf",
+          "className": "Warrior",
+          "x": 634.880005,
+          "y": 1531,
+          "z": 24.5,
+          "heading": 501,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 346,
+          "spawngroupId": 3269,
+          "name": "a_madman",
+          "displayName": "A Madman",
+          "level": 8,
+          "race": "Beggar",
+          "rawRace": "Beggar",
+          "className": "Warrior",
+          "x": 1212.880005,
+          "y": -1371,
+          "z": -12.88,
+          "heading": 100,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 347,
+          "spawngroupId": 3270,
+          "name": "a_large_rattlesnake",
+          "displayName": "A Large Rattlesnake",
+          "level": 7,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": -396.880005,
+          "y": -413,
+          "z": 27.299999,
+          "heading": 373,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 348,
+          "spawngroupId": 3271,
+          "name": "a_sand_giant",
+          "displayName": "A Sand Giant",
+          "level": 33,
+          "race": "Giant",
+          "rawRace": "Giant",
+          "className": "Warrior",
+          "x": 366.880005,
+          "y": -152,
+          "z": -3.6,
+          "heading": 59,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 349,
+          "spawngroupId": 3272,
+          "name": "a_dune_tarantula",
+          "displayName": "A Dune Tarantula",
+          "level": 13,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": 574.880005,
+          "y": -1022.880005,
+          "z": -31.1,
+          "heading": 478.5,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 350,
+          "spawngroupId": 3272,
+          "name": "a_dune_tarantula",
+          "displayName": "A Dune Tarantula",
+          "level": 13,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": 318.880005,
+          "y": -184,
+          "z": 22.629999,
+          "heading": 69.75,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 351,
+          "spawngroupId": 3272,
+          "name": "a_dune_tarantula",
+          "displayName": "A Dune Tarantula",
+          "level": 13,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": 748.880005,
+          "y": -1047.880005,
+          "z": 49.130001,
+          "heading": 189.25,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 352,
+          "spawngroupId": 3272,
+          "name": "a_dune_tarantula",
+          "displayName": "A Dune Tarantula",
+          "level": 13,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": -192.880005,
+          "y": -1292.880005,
+          "z": 5.6,
+          "heading": 144.5,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 353,
+          "spawngroupId": 3273,
+          "name": "a_Dervish_Cutthroat",
+          "displayName": "A Dervish Cutthroat",
+          "level": 14,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Warrior",
+          "x": 345,
+          "y": 86.879997,
+          "z": -29.629999,
+          "heading": 34,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 354,
+          "spawngroupId": 3274,
+          "name": "a_sand_scarab",
+          "displayName": "A Sand Scarab",
+          "level": 11,
+          "race": "Beetle",
+          "rawRace": "Beetle",
+          "className": "Warrior",
+          "x": 674.880005,
+          "y": 2089.879883,
+          "z": 3.6,
+          "heading": 174.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 355,
+          "spawngroupId": 3275,
+          "name": "a_Dervish_Cutthroat",
+          "displayName": "A Dervish Cutthroat",
+          "level": 14,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": -443,
+          "y": 1360,
+          "z": 7.5,
+          "heading": 364,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 356,
+          "spawngroupId": 3276,
+          "name": "a_shriveled_mummy",
+          "displayName": "A Shriveled Mummy",
+          "level": 10,
+          "race": "Zombie",
+          "rawRace": "Zombie",
+          "className": "Warrior",
+          "x": 1070.880005,
+          "y": -986.880005,
+          "z": 30.799999,
+          "heading": 342.5,
+          "chance": 95,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 357,
+          "spawngroupId": 3276,
+          "name": "a_shriveled_mummy",
+          "displayName": "A Shriveled Mummy",
+          "level": 10,
+          "race": "Zombie",
+          "rawRace": "Zombie",
+          "className": "Warrior",
+          "x": 370,
+          "y": -125,
+          "z": -25.4,
+          "heading": 484.5,
+          "chance": 95,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 358,
+          "spawngroupId": 3276,
+          "name": "a_shriveled_mummy",
+          "displayName": "A Shriveled Mummy",
+          "level": 10,
+          "race": "Zombie",
+          "rawRace": "Zombie",
+          "className": "Warrior",
+          "x": -172.880005,
+          "y": -218,
+          "z": 9.1,
+          "heading": 0,
+          "chance": 95,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 359,
+          "spawngroupId": 3276,
+          "name": "a_shriveled_mummy",
+          "displayName": "A Shriveled Mummy",
+          "level": 10,
+          "race": "Zombie",
+          "rawRace": "Zombie",
+          "className": "Warrior",
+          "x": 614.880005,
+          "y": -1503,
+          "z": 31.1,
+          "heading": 250.5,
+          "chance": 95,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 360,
+          "spawngroupId": 3277,
+          "name": "a_sand_scarab",
+          "displayName": "A Sand Scarab",
+          "level": 10,
+          "race": "Beetle",
+          "rawRace": "Beetle",
+          "className": "Warrior",
+          "x": -604.880005,
+          "y": -573.880005,
+          "z": 13.6,
+          "heading": 214,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 361,
+          "spawngroupId": 3277,
+          "name": "a_sand_scarab",
+          "displayName": "A Sand Scarab",
+          "level": 10,
+          "race": "Beetle",
+          "rawRace": "Beetle",
+          "className": "Warrior",
+          "x": 222,
+          "y": 148,
+          "z": -32.299999,
+          "heading": 62.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 362,
+          "spawngroupId": 3278,
+          "name": "a_dune_tarantula",
+          "displayName": "A Dune Tarantula",
+          "level": 13,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": -140.880005,
+          "y": -732.880005,
+          "z": 9.13,
+          "heading": 325,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 363,
+          "spawngroupId": 3278,
+          "name": "a_dune_tarantula",
+          "displayName": "A Dune Tarantula",
+          "level": 13,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": -29.879999,
+          "y": -1799.880005,
+          "z": 57,
+          "heading": 375.25,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 364,
+          "spawngroupId": 3279,
+          "name": "a_Dervish_Cutthroat",
+          "displayName": "A Dervish Cutthroat",
+          "level": 13,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Wizard",
+          "x": -366,
+          "y": 1298,
+          "z": 5.13,
+          "heading": 504,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 365,
+          "spawngroupId": 3280,
+          "name": "a_Dervish_Cutthroat",
+          "displayName": "A Dervish Cutthroat",
+          "level": 13,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": -335,
+          "y": 1348,
+          "z": 8.5,
+          "heading": 300.75,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 366,
+          "spawngroupId": 3281,
+          "name": "a_puma",
+          "displayName": "A Puma",
+          "level": 5,
+          "race": "Puma",
+          "rawRace": "Puma",
+          "className": "Warrior",
+          "x": 1277.880005,
+          "y": -1031.880005,
+          "z": 29,
+          "heading": 169.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 367,
+          "spawngroupId": 3282,
+          "name": "a_decaying_skeleton",
+          "displayName": "A Decaying Skeleton",
+          "level": 1,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 802.880005,
+          "y": 3506.879883,
+          "z": -20.799999,
+          "heading": 197,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 368,
+          "spawngroupId": 3282,
+          "name": "a_decaying_skeleton",
+          "displayName": "A Decaying Skeleton",
+          "level": 1,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": -363.880005,
+          "y": 2679,
+          "z": 11.9,
+          "heading": 234,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 369,
+          "spawngroupId": 3282,
+          "name": "a_decaying_skeleton",
+          "displayName": "A Decaying Skeleton",
+          "level": 1,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 614.880005,
+          "y": 3022.879883,
+          "z": -8.5,
+          "heading": 10.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 370,
+          "spawngroupId": 3282,
+          "name": "a_decaying_skeleton",
+          "displayName": "A Decaying Skeleton",
+          "level": 1,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": -68.879997,
+          "y": 2661,
+          "z": -22.5,
+          "heading": 368.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 371,
+          "spawngroupId": 3282,
+          "name": "a_decaying_skeleton",
+          "displayName": "A Decaying Skeleton",
+          "level": 1,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 113,
+          "y": 2700,
+          "z": -24.799999,
+          "heading": 259.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 372,
+          "spawngroupId": 3282,
+          "name": "a_decaying_skeleton",
+          "displayName": "A Decaying Skeleton",
+          "level": 1,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": -182.880005,
+          "y": 2645,
+          "z": -8.6,
+          "heading": 206.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 373,
+          "spawngroupId": 3282,
+          "name": "a_decaying_skeleton",
+          "displayName": "A Decaying Skeleton",
+          "level": 1,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 115,
+          "y": 2807,
+          "z": -24.799999,
+          "heading": 224.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 374,
+          "spawngroupId": 3282,
+          "name": "a_decaying_skeleton",
+          "displayName": "A Decaying Skeleton",
+          "level": 1,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 1067,
+          "y": 2643,
+          "z": -11.25,
+          "heading": 287.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 375,
+          "spawngroupId": 3282,
+          "name": "a_decaying_skeleton",
+          "displayName": "A Decaying Skeleton",
+          "level": 1,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 810.880005,
+          "y": 3462.879883,
+          "z": -21.1,
+          "heading": 162,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 376,
+          "spawngroupId": 3282,
+          "name": "a_decaying_skeleton",
+          "displayName": "A Decaying Skeleton",
+          "level": 1,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 700.880005,
+          "y": 2858,
+          "z": -20.6,
+          "heading": 259.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 377,
+          "spawngroupId": 3282,
+          "name": "a_decaying_skeleton",
+          "displayName": "A Decaying Skeleton",
+          "level": 1,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 233.880005,
+          "y": 2703,
+          "z": -24.799999,
+          "heading": 300.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 378,
+          "spawngroupId": 3282,
+          "name": "a_decaying_skeleton",
+          "displayName": "A Decaying Skeleton",
+          "level": 1,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 375.880005,
+          "y": 3605,
+          "z": -24.299999,
+          "heading": 317.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 379,
+          "spawngroupId": 3282,
+          "name": "a_decaying_skeleton",
+          "displayName": "A Decaying Skeleton",
+          "level": 1,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 744.880005,
+          "y": 2746,
+          "z": -24.5,
+          "heading": 350,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 380,
+          "spawngroupId": 3282,
+          "name": "a_decaying_skeleton",
+          "displayName": "A Decaying Skeleton",
+          "level": 1,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 720.880005,
+          "y": 3966.879883,
+          "z": -24.25,
+          "heading": 23.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 381,
+          "spawngroupId": 3282,
+          "name": "a_decaying_skeleton",
+          "displayName": "A Decaying Skeleton",
+          "level": 1,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": -154,
+          "y": 3808.879883,
+          "z": -24.299999,
+          "heading": 28.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 382,
+          "spawngroupId": 3282,
+          "name": "a_decaying_skeleton",
+          "displayName": "A Decaying Skeleton",
+          "level": 1,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 264.880005,
+          "y": 4143.879883,
+          "z": -24.299999,
+          "heading": 164.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 383,
+          "spawngroupId": 3282,
+          "name": "a_decaying_skeleton",
+          "displayName": "A Decaying Skeleton",
+          "level": 1,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 609.880005,
+          "y": 3986.879883,
+          "z": -24.299999,
+          "heading": 184,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 384,
+          "spawngroupId": 3282,
+          "name": "a_decaying_skeleton",
+          "displayName": "A Decaying Skeleton",
+          "level": 1,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": -185.880005,
+          "y": 3106,
+          "z": -24.799999,
+          "heading": 242,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 385,
+          "spawngroupId": 3282,
+          "name": "a_decaying_skeleton",
+          "displayName": "A Decaying Skeleton",
+          "level": 1,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 264.880005,
+          "y": 3229,
+          "z": -24.75,
+          "heading": 253.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 386,
+          "spawngroupId": 3282,
+          "name": "a_decaying_skeleton",
+          "displayName": "A Decaying Skeleton",
+          "level": 1,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 73,
+          "y": 4115.879883,
+          "z": -24.299999,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 387,
+          "spawngroupId": 3282,
+          "name": "a_decaying_skeleton",
+          "displayName": "A Decaying Skeleton",
+          "level": 1,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 561.880005,
+          "y": 4156.879883,
+          "z": -24.299999,
+          "heading": 214,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 388,
+          "spawngroupId": 3282,
+          "name": "a_decaying_skeleton",
+          "displayName": "A Decaying Skeleton",
+          "level": 1,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 530.880005,
+          "y": 3459.879883,
+          "z": -24.799999,
+          "heading": 199,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 389,
+          "spawngroupId": 3282,
+          "name": "a_decaying_skeleton",
+          "displayName": "A Decaying Skeleton",
+          "level": 1,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": -294,
+          "y": 2869,
+          "z": -18.379999,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 390,
+          "spawngroupId": 3282,
+          "name": "a_decaying_skeleton",
+          "displayName": "A Decaying Skeleton",
+          "level": 1,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": -68,
+          "y": 4079,
+          "z": -19,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 391,
+          "spawngroupId": 3282,
+          "name": "a_decaying_skeleton",
+          "displayName": "A Decaying Skeleton",
+          "level": 1,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 98.879997,
+          "y": 3567.879883,
+          "z": -24.299999,
+          "heading": 48.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 392,
+          "spawngroupId": 3282,
+          "name": "a_decaying_skeleton",
+          "displayName": "A Decaying Skeleton",
+          "level": 1,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": -155.880005,
+          "y": 4037.879883,
+          "z": -24.25,
+          "heading": 450.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 393,
+          "spawngroupId": 3282,
+          "name": "a_decaying_skeleton",
+          "displayName": "A Decaying Skeleton",
+          "level": 1,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 587,
+          "y": 3314,
+          "z": -24.799999,
+          "heading": 86.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 394,
+          "spawngroupId": 3282,
+          "name": "a_decaying_skeleton",
+          "displayName": "A Decaying Skeleton",
+          "level": 1,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 452,
+          "y": 3087,
+          "z": -16,
+          "heading": 307.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 395,
+          "spawngroupId": 3283,
+          "name": "a_sand_scarab_hatchling",
+          "displayName": "A Sand Scarab Hatchling",
+          "level": 6,
+          "race": "Beetle",
+          "rawRace": "Beetle",
+          "className": "Warrior",
+          "x": 748,
+          "y": 2062.379883,
+          "z": 4.25,
+          "heading": 43.25,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 396,
+          "spawngroupId": 3284,
+          "name": "a_dune_spiderling",
+          "displayName": "A Dune Spiderling",
+          "level": 6,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": 656.380005,
+          "y": 1884.880005,
+          "z": 6.13,
+          "heading": 212.5,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 397,
+          "spawngroupId": 3285,
+          "name": "a_desert_spiderling",
+          "displayName": "A Desert Spiderling",
+          "level": 1,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": 919.380005,
+          "y": 3674.879883,
+          "z": -26.75,
+          "heading": 245.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 398,
+          "spawngroupId": 3286,
+          "name": "a_large_rattlesnake",
+          "displayName": "A Large Rattlesnake",
+          "level": 7,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": -435.880005,
+          "y": -1604.880005,
+          "z": -64.900002,
+          "heading": 195.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 399,
+          "spawngroupId": 3286,
+          "name": "a_large_rattlesnake",
+          "displayName": "A Large Rattlesnake",
+          "level": 7,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": 472.880005,
+          "y": -79,
+          "z": -22.129999,
+          "heading": 50.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 400,
+          "spawngroupId": 3286,
+          "name": "a_large_rattlesnake",
+          "displayName": "A Large Rattlesnake",
+          "level": 7,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": -32.880001,
+          "y": -3,
+          "z": 19,
+          "heading": 473.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 401,
+          "spawngroupId": 3286,
+          "name": "a_large_rattlesnake",
+          "displayName": "A Large Rattlesnake",
+          "level": 7,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": 1148.130005,
+          "y": -800.380005,
+          "z": 22.75,
+          "heading": 240.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 402,
+          "spawngroupId": 3287,
+          "name": "a_Dervish_Cutthroat",
+          "displayName": "A Dervish Cutthroat",
+          "level": 14,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Warrior",
+          "x": 1282,
+          "y": -1243,
+          "z": 4.5,
+          "heading": 430,
+          "chance": 13,
+          "respawnTime": 640,
+          "candidateCount": 8
+        },
+        {
+          "spawn2Id": 403,
+          "spawngroupId": 3288,
+          "name": "a_dune_tarantula",
+          "displayName": "A Dune Tarantula",
+          "level": 13,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": -221.880005,
+          "y": -953.880005,
+          "z": 8.3,
+          "heading": 124,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 404,
+          "spawngroupId": 3288,
+          "name": "a_dune_tarantula",
+          "displayName": "A Dune Tarantula",
+          "level": 13,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": 288,
+          "y": -996.880005,
+          "z": -49.099998,
+          "heading": 174.5,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 405,
+          "spawngroupId": 3288,
+          "name": "a_dune_tarantula",
+          "displayName": "A Dune Tarantula",
+          "level": 13,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": 570.880005,
+          "y": -1775.880005,
+          "z": 7.75,
+          "heading": 241.5,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 406,
+          "spawngroupId": 3288,
+          "name": "a_dune_tarantula",
+          "displayName": "A Dune Tarantula",
+          "level": 13,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": -581.880005,
+          "y": -312,
+          "z": 46.599998,
+          "heading": 362,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 407,
+          "spawngroupId": 3288,
+          "name": "a_dune_tarantula",
+          "displayName": "A Dune Tarantula",
+          "level": 13,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": -614.880005,
+          "y": -1465,
+          "z": 9.5,
+          "heading": 0,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 408,
+          "spawngroupId": 3288,
+          "name": "a_dune_tarantula",
+          "displayName": "A Dune Tarantula",
+          "level": 13,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": -625.880005,
+          "y": -1447.880005,
+          "z": 6.1,
+          "heading": 66.5,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 409,
+          "spawngroupId": 3289,
+          "name": "a_dune_tarantula",
+          "displayName": "A Dune Tarantula",
+          "level": 13,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": -560.880005,
+          "y": -85.879997,
+          "z": -11.13,
+          "heading": 380.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 410,
+          "spawngroupId": 3290,
+          "name": "Puntar_Sandfisher",
+          "displayName": "Puntar Sandfisher",
+          "level": 6,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Warrior",
+          "x": -865,
+          "y": 2158,
+          "z": -3,
+          "heading": 370,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 411,
+          "spawngroupId": 3291,
+          "name": "a_giant_rattlesnake",
+          "displayName": "A Giant Rattlesnake",
+          "level": 7,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": -262.880005,
+          "y": -1712.880005,
+          "z": 0,
+          "heading": 91,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 412,
+          "spawngroupId": 3291,
+          "name": "a_giant_rattlesnake",
+          "displayName": "A Giant Rattlesnake",
+          "level": 7,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": 339.880005,
+          "y": -1148.880005,
+          "z": 34.400002,
+          "heading": 332,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 413,
+          "spawngroupId": 3291,
+          "name": "a_giant_rattlesnake",
+          "displayName": "A Giant Rattlesnake",
+          "level": 7,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": 775,
+          "y": -1606.880005,
+          "z": 43.900002,
+          "heading": 45.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 414,
+          "spawngroupId": 3291,
+          "name": "a_giant_rattlesnake",
+          "displayName": "A Giant Rattlesnake",
+          "level": 7,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": 385,
+          "y": -827.880005,
+          "z": 4.25,
+          "heading": 329.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 415,
+          "spawngroupId": 3292,
+          "name": "a_gila_monster",
+          "displayName": "A Gila Monster",
+          "level": 9,
+          "race": "Alligator",
+          "rawRace": "Alligator",
+          "className": "Warrior",
+          "x": -523.880005,
+          "y": -779,
+          "z": 6.1,
+          "heading": 283,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 416,
+          "spawngroupId": 3293,
+          "name": "a_dune_spiderling",
+          "displayName": "A Dune Spiderling",
+          "level": 4,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": 934.380005,
+          "y": 2261.629883,
+          "z": -68.129997,
+          "heading": 389.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 417,
+          "spawngroupId": 3293,
+          "name": "a_dune_spiderling",
+          "displayName": "A Dune Spiderling",
+          "level": 4,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": 948,
+          "y": 987.5,
+          "z": 52.25,
+          "heading": 287.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 418,
+          "spawngroupId": 3293,
+          "name": "a_dune_spiderling",
+          "displayName": "A Dune Spiderling",
+          "level": 4,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": -526.75,
+          "y": 899.630005,
+          "z": 17.75,
+          "heading": 263.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 419,
+          "spawngroupId": 3294,
+          "name": "a_Dervish_Cutthroat",
+          "displayName": "A Dervish Cutthroat",
+          "level": 12,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": 369,
+          "y": 35,
+          "z": -32.5,
+          "heading": 468,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 420,
+          "spawngroupId": 3295,
+          "name": "a_Dervish_Cutthroat",
+          "displayName": "A Dervish Cutthroat",
+          "level": 14,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": 369.380005,
+          "y": 49.630001,
+          "z": -30.25,
+          "heading": 379,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 421,
+          "spawngroupId": 3296,
+          "name": "a_gila_monster",
+          "displayName": "A Gila Monster",
+          "level": 11,
+          "race": "Alligator",
+          "rawRace": "Alligator",
+          "className": "Warrior",
+          "x": 1007.880005,
+          "y": -1409.880005,
+          "z": -23.6,
+          "heading": 463.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 422,
+          "spawngroupId": 3297,
+          "name": "a_giant_rattlesnake",
+          "displayName": "A Giant Rattlesnake",
+          "level": 10,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": -607.880005,
+          "y": -629.880005,
+          "z": 5.5,
+          "heading": 242,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 423,
+          "spawngroupId": 3297,
+          "name": "a_giant_rattlesnake",
+          "displayName": "A Giant Rattlesnake",
+          "level": 10,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": 870.880005,
+          "y": -1417.880005,
+          "z": -12.1,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 424,
+          "spawngroupId": 3298,
+          "name": "a_sand_scarab_hatchling",
+          "displayName": "A Sand Scarab Hatchling",
+          "level": 5,
+          "race": "Beetle",
+          "rawRace": "Beetle",
+          "className": "Warrior",
+          "x": 908.880005,
+          "y": 2236.129883,
+          "z": -30.25,
+          "heading": 355.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 425,
+          "spawngroupId": 3298,
+          "name": "a_sand_scarab_hatchling",
+          "displayName": "A Sand Scarab Hatchling",
+          "level": 5,
+          "race": "Beetle",
+          "rawRace": "Beetle",
+          "className": "Warrior",
+          "x": 697.5,
+          "y": 1926,
+          "z": -37.630001,
+          "heading": 234.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 426,
+          "spawngroupId": 3299,
+          "name": "a_gila_monster_hatchling",
+          "displayName": "A Gila Monster Hatchling",
+          "level": 6,
+          "race": "Alligator",
+          "rawRace": "Alligator",
+          "className": "Warrior",
+          "x": 675.75,
+          "y": 1904.130005,
+          "z": -14.38,
+          "heading": 226.25,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 427,
+          "spawngroupId": 3300,
+          "name": "a_Dervish_Thug",
+          "displayName": "A Dervish Thug",
+          "level": 15,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Warrior",
+          "x": 1251,
+          "y": -1218,
+          "z": 5.4,
+          "heading": 184,
+          "chance": 10,
+          "respawnTime": 640,
+          "candidateCount": 11
+        },
+        {
+          "spawn2Id": 428,
+          "spawngroupId": 3301,
+          "name": "a_large_rattlesnake",
+          "displayName": "A Large Rattlesnake",
+          "level": 7,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": 148.130005,
+          "y": -1533.630005,
+          "z": -58.880001,
+          "heading": 234.25,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 429,
+          "spawngroupId": 3302,
+          "name": "Guard_Brendyl",
+          "displayName": "Guard Brendyl",
+          "level": 40,
+          "race": "Guard",
+          "rawRace": "Guard",
+          "className": "Warrior",
+          "x": 304.880005,
+          "y": 2885.879883,
+          "z": -24.75,
+          "heading": 248,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 430,
+          "spawngroupId": 3303,
+          "name": "Guard_Fintran",
+          "displayName": "Guard Fintran",
+          "level": 40,
+          "race": "Guard",
+          "rawRace": "Guard",
+          "className": "Warrior",
+          "x": 464,
+          "y": 3458,
+          "z": -24.75,
+          "heading": 402,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 431,
+          "spawngroupId": 3304,
+          "name": "a_brown_asp",
+          "displayName": "A Brown Asp",
+          "level": 7,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": -145.880005,
+          "y": -1757.880005,
+          "z": 36.299999,
+          "heading": 140,
+          "chance": 95,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 432,
+          "spawngroupId": 3305,
+          "name": "Guard_Stoutman",
+          "displayName": "Guard Stoutman",
+          "level": 40,
+          "race": "Guard",
+          "rawRace": "Guard",
+          "className": "Warrior",
+          "x": 459.880005,
+          "y": 3381,
+          "z": -24.75,
+          "heading": 396,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 433,
+          "spawngroupId": 3306,
+          "name": "a_sand_scarab_hatchling",
+          "displayName": "A Sand Scarab Hatchling",
+          "level": 6,
+          "race": "Beetle",
+          "rawRace": "Beetle",
+          "className": "Warrior",
+          "x": -441,
+          "y": 975.880005,
+          "z": -68.75,
+          "heading": 148.5,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 434,
+          "spawngroupId": 3307,
+          "name": "a_dune_spiderling",
+          "displayName": "A Dune Spiderling",
+          "level": 5,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": 77.879997,
+          "y": 1403.630005,
+          "z": 4.38,
+          "heading": 257.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 435,
+          "spawngroupId": 3307,
+          "name": "a_dune_spiderling",
+          "displayName": "A Dune Spiderling",
+          "level": 5,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": 748,
+          "y": 1991.25,
+          "z": -73.5,
+          "heading": 64.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 436,
+          "spawngroupId": 3307,
+          "name": "a_dune_spiderling",
+          "displayName": "A Dune Spiderling",
+          "level": 5,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": 687,
+          "y": 1915.380005,
+          "z": -26.379999,
+          "heading": 212.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 437,
+          "spawngroupId": 3308,
+          "name": "a_sand_scarab_hatchling",
+          "displayName": "A Sand Scarab Hatchling",
+          "level": 4,
+          "race": "Beetle",
+          "rawRace": "Beetle",
+          "className": "Warrior",
+          "x": 735.880005,
+          "y": 1964.25,
+          "z": -78.629997,
+          "heading": 248.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 438,
+          "spawngroupId": 3308,
+          "name": "a_sand_scarab_hatchling",
+          "displayName": "A Sand Scarab Hatchling",
+          "level": 4,
+          "race": "Beetle",
+          "rawRace": "Beetle",
+          "className": "Warrior",
+          "x": 748,
+          "y": 2034.630005,
+          "z": -26,
+          "heading": 22.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 439,
+          "spawngroupId": 3309,
+          "name": "#Verrell_Cogswin",
+          "displayName": "Verrell Cogswin",
+          "level": 70,
+          "race": "Gnome",
+          "rawRace": "Gnome",
+          "className": "Magician",
+          "x": -480,
+          "y": -813,
+          "z": 5,
+          "heading": 71.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 440,
+          "spawngroupId": 3310,
+          "name": "a_gila_monster_hatchling",
+          "displayName": "A Gila Monster Hatchling",
+          "level": 6,
+          "race": "Alligator",
+          "rawRace": "Alligator",
+          "className": "Warrior",
+          "x": 794.380005,
+          "y": 2021.630005,
+          "z": -28.5,
+          "heading": 53.75,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 441,
+          "spawngroupId": 3311,
+          "name": "a_sand_scarab_hatchling",
+          "displayName": "A Sand Scarab Hatchling",
+          "level": 6,
+          "race": "Beetle",
+          "rawRace": "Beetle",
+          "className": "Warrior",
+          "x": 747.75,
+          "y": 1956.130005,
+          "z": -68.629997,
+          "heading": 243.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 442,
+          "spawngroupId": 3311,
+          "name": "a_sand_scarab_hatchling",
+          "displayName": "A Sand Scarab Hatchling",
+          "level": 6,
+          "race": "Beetle",
+          "rawRace": "Beetle",
+          "className": "Warrior",
+          "x": 526,
+          "y": 2946,
+          "z": 4.25,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 443,
+          "spawngroupId": 3312,
+          "name": "a_large_rattlesnake",
+          "displayName": "A Large Rattlesnake",
+          "level": 5,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": 1247.75,
+          "y": -778.130005,
+          "z": 3.38,
+          "heading": 240.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 444,
+          "spawngroupId": 3312,
+          "name": "a_large_rattlesnake",
+          "displayName": "A Large Rattlesnake",
+          "level": 5,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": 285,
+          "y": 2198.879883,
+          "z": -23.25,
+          "heading": 482,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 445,
+          "spawngroupId": 3312,
+          "name": "a_large_rattlesnake",
+          "displayName": "A Large Rattlesnake",
+          "level": 5,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": 1169.880005,
+          "y": -1229.880005,
+          "z": 4.5,
+          "heading": 404.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 446,
+          "spawngroupId": 3312,
+          "name": "a_large_rattlesnake",
+          "displayName": "A Large Rattlesnake",
+          "level": 5,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": 148.130005,
+          "y": -1546.75,
+          "z": -41.25,
+          "heading": 251.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 447,
+          "spawngroupId": 3313,
+          "name": "a_gila_monster_hatchling",
+          "displayName": "A Gila Monster Hatchling",
+          "level": 6,
+          "race": "Alligator",
+          "rawRace": "Alligator",
+          "className": "Warrior",
+          "x": 850.5,
+          "y": 2177.75,
+          "z": 56.130001,
+          "heading": 374,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 448,
+          "spawngroupId": 3314,
+          "name": "a_dune_spiderling",
+          "displayName": "A Dune Spiderling",
+          "level": 6,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": -410.380005,
+          "y": 976,
+          "z": -33.880001,
+          "heading": 173.25,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 449,
+          "spawngroupId": 3315,
+          "name": "Murissa_Sandwhisper",
+          "displayName": "Murissa Sandwhisper",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": 126.879997,
+          "y": 3712,
+          "z": -24.25,
+          "heading": 127,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 450,
+          "spawngroupId": 3316,
+          "name": "Spoolie_Gee",
+          "displayName": "Spoolie Gee",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": 488.880005,
+          "y": 3371.879883,
+          "z": -23.25,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 451,
+          "spawngroupId": 3317,
+          "name": "Innkeep_Tozie",
+          "displayName": "Innkeep Tozie",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": 489,
+          "y": 3466,
+          "z": -23.25,
+          "heading": 255,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 452,
+          "spawngroupId": 3318,
+          "name": "Innkeep_Valon",
+          "displayName": "Innkeep Valon",
+          "level": 30,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": 503,
+          "y": 3415,
+          "z": -23.25,
+          "heading": 380,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 453,
+          "spawngroupId": 3319,
+          "name": "Juni_Sandfisher",
+          "displayName": "Juni Sandfisher",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": -754,
+          "y": 2185,
+          "z": 8.5,
+          "heading": 444,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 454,
+          "spawngroupId": 3320,
+          "name": "Tira_Sandfisher",
+          "displayName": "Tira Sandfisher",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": -790,
+          "y": 2294,
+          "z": 3.88,
+          "heading": 330,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 455,
+          "spawngroupId": 3323,
+          "name": "Odwren_Werat",
+          "displayName": "Odwren Werat",
+          "level": 65,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Warrior",
+          "x": 124,
+          "y": 3178,
+          "z": -24.25,
+          "heading": 193,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 456,
+          "spawngroupId": 3325,
+          "name": "a_deathfist_warrior",
+          "displayName": "A Deathfist Warrior",
+          "level": 10,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": -389,
+          "y": -1052,
+          "z": 36.880001,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 457,
+          "spawngroupId": 3326,
+          "name": "an_armadillo",
+          "displayName": "An Armadillo",
+          "level": 2,
+          "race": "Armadillo",
+          "rawRace": "Armadillo",
+          "className": "Warrior",
+          "x": 644,
+          "y": 2750,
+          "z": -23,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 458,
+          "spawngroupId": 3326,
+          "name": "an_armadillo",
+          "displayName": "An Armadillo",
+          "level": 2,
+          "race": "Armadillo",
+          "rawRace": "Armadillo",
+          "className": "Warrior",
+          "x": 471,
+          "y": 2802,
+          "z": -17.129999,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 459,
+          "spawngroupId": 3326,
+          "name": "an_armadillo",
+          "displayName": "An Armadillo",
+          "level": 2,
+          "race": "Armadillo",
+          "rawRace": "Armadillo",
+          "className": "Warrior",
+          "x": 595,
+          "y": 3297,
+          "z": -19.5,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 460,
+          "spawngroupId": 3327,
+          "name": "a_crypt_mummy",
+          "displayName": "A Crypt Mummy",
+          "level": 13,
+          "race": "Zombie",
+          "rawRace": "Zombie",
+          "className": "Warrior",
+          "x": -492,
+          "y": -1401,
+          "z": -1.13,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 461,
+          "spawngroupId": 3328,
+          "name": "a_young_puma",
+          "displayName": "A Young Puma",
+          "level": 3,
+          "race": "Puma",
+          "rawRace": "Puma",
+          "className": "Warrior",
+          "x": 884,
+          "y": 2700,
+          "z": -19.5,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 462,
+          "spawngroupId": 3329,
+          "name": "a_fire_beetle",
+          "displayName": "A Fire Beetle",
+          "level": 2,
+          "race": "Beetle",
+          "rawRace": "Beetle",
+          "className": "Warrior",
+          "x": 618,
+          "y": 3929,
+          "z": -19,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 463,
+          "spawngroupId": 3330,
+          "name": "a_coyote",
+          "displayName": "A Coyote",
+          "level": 3,
+          "race": "Wolf",
+          "rawRace": "Wolf",
+          "className": "Warrior",
+          "x": 214,
+          "y": 3827,
+          "z": -19,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 464,
+          "spawngroupId": 3331,
+          "name": "a_rattlesnake",
+          "displayName": "A Rattlesnake",
+          "level": 4,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": 881,
+          "y": 4070,
+          "z": -19,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 465,
+          "spawngroupId": 3332,
+          "name": "a_coyote",
+          "displayName": "A Coyote",
+          "level": 1,
+          "race": "Wolf",
+          "rawRace": "Wolf",
+          "className": "Warrior",
+          "x": -22,
+          "y": 3618,
+          "z": -19,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 466,
+          "spawngroupId": 3333,
+          "name": "a_moss_snake",
+          "displayName": "A Moss Snake",
+          "level": 1,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": -25,
+          "y": 3017,
+          "z": -19.5,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 467,
+          "spawngroupId": 3334,
+          "name": "a_puma",
+          "displayName": "A Puma",
+          "level": 7,
+          "race": "Puma",
+          "rawRace": "Puma",
+          "className": "Warrior",
+          "x": -320,
+          "y": -994,
+          "z": 38.880001,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 468,
+          "spawngroupId": 3335,
+          "name": "a_dune_tarantula",
+          "displayName": "A Dune Tarantula",
+          "level": 12,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": -295,
+          "y": -63,
+          "z": 33.130001,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 469,
+          "spawngroupId": 3336,
+          "name": "a_young_puma",
+          "displayName": "A Young Puma",
+          "level": 4,
+          "race": "Puma",
+          "rawRace": "Puma",
+          "className": "Warrior",
+          "x": 415,
+          "y": 3654,
+          "z": -19,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 470,
+          "spawngroupId": 3336,
+          "name": "a_young_puma",
+          "displayName": "A Young Puma",
+          "level": 4,
+          "race": "Puma",
+          "rawRace": "Puma",
+          "className": "Warrior",
+          "x": 1027,
+          "y": 2975,
+          "z": 10.5,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 471,
+          "spawngroupId": 3337,
+          "name": "a_gila_monster_hatchling",
+          "displayName": "A Gila Monster Hatchling",
+          "level": 6,
+          "race": "Alligator",
+          "rawRace": "Alligator",
+          "className": "Warrior",
+          "x": 776,
+          "y": 3283,
+          "z": -19.5,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 472,
+          "spawngroupId": 3338,
+          "name": "a_Dervish_Cutthroat",
+          "displayName": "A Dervish Cutthroat",
+          "level": 12,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Warrior",
+          "x": 1221,
+          "y": -1261,
+          "z": 7,
+          "heading": 451,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 473,
+          "spawngroupId": 3339,
+          "name": "a_jackal",
+          "displayName": "A Jackal",
+          "level": 5,
+          "race": "Wolf",
+          "rawRace": "Wolf",
+          "className": "Warrior",
+          "x": 911,
+          "y": 2446,
+          "z": 8.13,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 474,
+          "spawngroupId": 3340,
+          "name": "Dorn_B`Dynn",
+          "displayName": "Dorn B`dynn",
+          "level": 14,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Warrior",
+          "x": -391,
+          "y": 1311,
+          "z": 6,
+          "heading": 105,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 475,
+          "spawngroupId": 3341,
+          "name": "a_deathfist_warrior",
+          "displayName": "A Deathfist Warrior",
+          "level": 9,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 704.880005,
+          "y": -700,
+          "z": 36.5,
+          "heading": 58.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 476,
+          "spawngroupId": 3342,
+          "name": "a_shriveled_mummy",
+          "displayName": "A Shriveled Mummy",
+          "level": 12,
+          "race": "Zombie",
+          "rawRace": "Zombie",
+          "className": "Warrior",
+          "x": -161.880005,
+          "y": -1452.880005,
+          "z": -2.13,
+          "heading": 360.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 477,
+          "spawngroupId": 3343,
+          "name": "a_madman",
+          "displayName": "A Madman",
+          "level": 8,
+          "race": "Beggar",
+          "rawRace": "Beggar",
+          "className": "Wizard",
+          "x": -239.880005,
+          "y": -1060.880005,
+          "z": 48.380001,
+          "heading": 317,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 478,
+          "spawngroupId": 3344,
+          "name": "a_jackal",
+          "displayName": "A Jackal",
+          "level": 4,
+          "race": "Wolf",
+          "rawRace": "Wolf",
+          "className": "Warrior",
+          "x": -192,
+          "y": 1488.880005,
+          "z": 49.5,
+          "heading": 113.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 479,
+          "spawngroupId": 3345,
+          "name": "a_madman",
+          "displayName": "A Madman",
+          "level": 9,
+          "race": "Beggar",
+          "rawRace": "Beggar",
+          "className": "Warrior",
+          "x": 655,
+          "y": 796.880005,
+          "z": 11.5,
+          "heading": 452.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 480,
+          "spawngroupId": 3346,
+          "name": "an_orc_raider",
+          "displayName": "An Orc Raider",
+          "level": 4,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 241,
+          "y": 37,
+          "z": -27.25,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 481,
+          "spawngroupId": 3347,
+          "name": "pirate_runners_skiff",
+          "displayName": "Pirate Runners Skiff",
+          "level": 60,
+          "race": "Launch",
+          "rawRace": "Launch",
+          "className": "Banker",
+          "x": -949.817932,
+          "y": 801,
+          "z": -5.555597,
+          "heading": 10.2,
+          "chance": 100,
+          "respawnTime": 400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 482,
+          "spawngroupId": 3348,
+          "name": "a_rattlesnake",
+          "displayName": "A Rattlesnake",
+          "level": 5,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": -310,
+          "y": 3026,
+          "z": -19.5,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 483,
+          "spawngroupId": 3349,
+          "name": "a_madman",
+          "displayName": "A Madman",
+          "level": 9,
+          "race": "Beggar",
+          "rawRace": "Beggar",
+          "className": "Wizard",
+          "x": 464,
+          "y": -1587,
+          "z": 38.880001,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 1146,
+          "spawngroupId": 16999,
+          "name": "#_#_5",
+          "displayName": "#",
+          "level": 60,
+          "race": "Invisible Man",
+          "rawRace": "Invisible Man",
+          "className": "Warrior",
+          "x": -1149.321045,
+          "y": 1846.376953,
+          "z": -1.79546,
+          "heading": 441.25,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 21421,
+          "spawngroupId": 13097,
+          "name": "trees_need_no_money",
+          "displayName": "Trees Need No Money",
+          "level": 50,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": 1313,
+          "y": 2763,
+          "z": -9.1,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 21422,
+          "spawngroupId": 13098,
+          "name": "Paege_Stirratin",
+          "displayName": "Paege Stirratin",
+          "level": 65,
+          "race": "Vah Shir",
+          "rawRace": "Vah Shir",
+          "className": "Beastlord",
+          "x": 942.759827,
+          "y": 2707.023926,
+          "z": -26.40424,
+          "heading": 336.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 21423,
+          "spawngroupId": 13099,
+          "name": "Soulbinder_Ragni",
+          "displayName": "Soulbinder Ragni",
+          "level": 65,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 893,
+          "y": 2750,
+          "z": -24.75,
+          "heading": 348,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 21424,
+          "spawngroupId": 13100,
+          "name": "Shelie_Dikop",
+          "displayName": "Shelie Dikop",
+          "level": 65,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Shaman",
+          "x": 921.509583,
+          "y": 2712.573975,
+          "z": -26.40424,
+          "heading": 258.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 21425,
+          "spawngroupId": 13101,
+          "name": "Ruanya_Windleaf",
+          "displayName": "Ruanya Windleaf",
+          "level": 65,
+          "race": "Wood Elf",
+          "rawRace": "Wood Elf",
+          "className": "Druid",
+          "x": 902,
+          "y": 2713,
+          "z": -26.403244,
+          "heading": 190.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 21426,
+          "spawngroupId": 13102,
+          "name": "Frankel_the_Pirate",
+          "displayName": "Frankel The Pirate",
+          "level": 30,
+          "race": "Gnome",
+          "rawRace": "Gnome",
+          "className": "Rogue",
+          "x": -854.089417,
+          "y": 792.060852,
+          "z": -2.228028,
+          "heading": 155.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 62173,
+          "spawngroupId": 50673,
+          "name": "Efrelle_Treiui",
+          "displayName": "Efrelle Treiui",
+          "level": 65,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Class 0",
+          "x": 906,
+          "y": 2662,
+          "z": -24.5,
+          "heading": 35.599998,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 62174,
+          "spawngroupId": 50674,
+          "name": "Dizzl_Nulzik",
+          "displayName": "Dizzl Nulzik",
+          "level": 65,
+          "race": "Gnome",
+          "rawRace": "Gnome",
+          "className": "Class 0",
+          "x": 899,
+          "y": 2680,
+          "z": -24.75,
+          "heading": 76,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 62175,
+          "spawngroupId": 50675,
+          "name": "Daevyd_Londayl",
+          "displayName": "Daevyd Londayl",
+          "level": 65,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Discord Merchant",
+          "x": 965,
+          "y": 2696,
+          "z": -24.129999,
+          "heading": 380,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 62176,
+          "spawngroupId": 50676,
+          "name": "Dereu_Ztr`Tn",
+          "displayName": "Dereu Ztr`tn",
+          "level": 65,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Discord Merchant",
+          "x": 928.75,
+          "y": 2666.25,
+          "z": -22.879999,
+          "heading": 500,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 62177,
+          "spawngroupId": 50677,
+          "name": "Escon_Quickbow",
+          "displayName": "Escon Quickbow",
+          "level": 65,
+          "race": "Wood Elf",
+          "rawRace": "Wood Elf",
+          "className": "Merchant",
+          "x": 945,
+          "y": 2684,
+          "z": -26.629999,
+          "heading": 397,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 76052,
+          "spawngroupId": 54755,
+          "name": "Magus_Arindri",
+          "displayName": "Magus Arindri",
+          "level": 60,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Banker",
+          "x": 923,
+          "y": 2649,
+          "z": -24.5,
+          "heading": 484,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 151576,
+          "spawngroupId": 3273,
+          "name": "a_Dervish_Cutthroat",
+          "displayName": "A Dervish Cutthroat",
+          "level": 14,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Warrior",
+          "x": 320,
+          "y": 58,
+          "z": -32,
+          "heading": 188,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 250471,
+          "spawngroupId": 275107,
+          "name": "#a_madman",
+          "displayName": "A Madman",
+          "level": 52,
+          "race": "Beggar",
+          "rawRace": "Beggar",
+          "className": "Wizard",
+          "x": 237,
+          "y": -804,
+          "z": 6,
+          "heading": 30,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 250536,
+          "spawngroupId": 275156,
+          "name": "#Translocator_Ionie",
+          "displayName": "Translocator Ionie",
+          "level": 1,
+          "race": "Gnome",
+          "rawRace": "Gnome",
+          "className": "Wizard",
+          "x": -889.169983,
+          "y": 786.900024,
+          "z": 2.36,
+          "heading": 132,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        }
+      ]
+    }
+  },
+  "details": {
+    "zoneSlug": "northern-desert-of-ro",
+    "routeSlug": "nro",
+    "zoneName": "Northern Desert of Ro",
+    "sourceFile": "local-eqemu-database",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobGroups": [
+      {
+        "displayName": "A Decaying Skeleton",
+        "rawNames": [
+          "a_decaying_skeleton"
+        ],
+        "count": 28,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Skeleton": 28
+        },
+        "rawRaceCounts": {
+          "Skeleton": 28
+        },
+        "classCounts": {
+          "Warrior": 28
+        },
+        "typeCounts": {
+          "Spawn Slot": 28
+        }
+      },
+      {
+        "displayName": "A Coyote",
+        "rawNames": [
+          "a_coyote"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Wolf": 1
+        },
+        "rawRaceCounts": {
+          "Wolf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Desert Spiderling",
+        "rawNames": [
+          "a_desert_spiderling"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Spider": 1
+        },
+        "rawRaceCounts": {
+          "Spider": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Moss Snake",
+        "rawNames": [
+          "a_moss_snake"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Snake": 1
+        },
+        "rawRaceCounts": {
+          "Snake": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Translocator Ionie",
+        "rawNames": [
+          "#Translocator_Ionie"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Gnome": 1
+        },
+        "rawRaceCounts": {
+          "Gnome": 1
+        },
+        "classCounts": {
+          "Wizard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "An Armadillo",
+        "rawNames": [
+          "an_armadillo"
+        ],
+        "count": 3,
+        "levelMin": 2,
+        "levelMax": 2,
+        "levels": [
+          2
+        ],
+        "raceCounts": {
+          "Armadillo": 3
+        },
+        "rawRaceCounts": {
+          "Armadillo": 3
+        },
+        "classCounts": {
+          "Warrior": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "A Fire Beetle",
+        "rawNames": [
+          "a_fire_beetle"
+        ],
+        "count": 1,
+        "levelMin": 2,
+        "levelMax": 2,
+        "levels": [
+          2
+        ],
+        "raceCounts": {
+          "Beetle": 1
+        },
+        "rawRaceCounts": {
+          "Beetle": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Jackal",
+        "rawNames": [
+          "a_jackal"
+        ],
+        "count": 3,
+        "levelMin": 3,
+        "levelMax": 5,
+        "levels": [
+          3,
+          4,
+          5
+        ],
+        "raceCounts": {
+          "Wolf": 3
+        },
+        "rawRaceCounts": {
+          "Wolf": 3
+        },
+        "classCounts": {
+          "Warrior": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "A Young Puma",
+        "rawNames": [
+          "a_young_puma"
+        ],
+        "count": 3,
+        "levelMin": 3,
+        "levelMax": 4,
+        "levels": [
+          3,
+          4
+        ],
+        "raceCounts": {
+          "Puma": 3
+        },
+        "rawRaceCounts": {
+          "Puma": 3
+        },
+        "classCounts": {
+          "Warrior": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "A Coyote",
+        "rawNames": [
+          "a_coyote"
+        ],
+        "count": 1,
+        "levelMin": 3,
+        "levelMax": 3,
+        "levels": [
+          3
+        ],
+        "raceCounts": {
+          "Wolf": 1
+        },
+        "rawRaceCounts": {
+          "Wolf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Dune Spiderling",
+        "rawNames": [
+          "a_dune_spiderling"
+        ],
+        "count": 8,
+        "levelMin": 4,
+        "levelMax": 6,
+        "levels": [
+          4,
+          5,
+          6
+        ],
+        "raceCounts": {
+          "Spider": 8
+        },
+        "rawRaceCounts": {
+          "Spider": 8
+        },
+        "classCounts": {
+          "Warrior": 8
+        },
+        "typeCounts": {
+          "Spawn Slot": 8
+        }
+      },
+      {
+        "displayName": "A Sand Scarab Hatchling",
+        "rawNames": [
+          "a_sand_scarab_hatchling"
+        ],
+        "count": 8,
+        "levelMin": 4,
+        "levelMax": 6,
+        "levels": [
+          4,
+          5,
+          6
+        ],
+        "raceCounts": {
+          "Beetle": 8
+        },
+        "rawRaceCounts": {
+          "Beetle": 8
+        },
+        "classCounts": {
+          "Warrior": 8
+        },
+        "typeCounts": {
+          "Spawn Slot": 8
+        }
+      },
+      {
+        "displayName": "A Rattlesnake",
+        "rawNames": [
+          "a_rattlesnake"
+        ],
+        "count": 2,
+        "levelMin": 4,
+        "levelMax": 5,
+        "levels": [
+          4,
+          5
+        ],
+        "raceCounts": {
+          "Snake": 2
+        },
+        "rawRaceCounts": {
+          "Snake": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "An Orc Raider",
+        "rawNames": [
+          "an_orc_raider"
+        ],
+        "count": 1,
+        "levelMin": 4,
+        "levelMax": 4,
+        "levels": [
+          4
+        ],
+        "raceCounts": {
+          "Orc": 1
+        },
+        "rawRaceCounts": {
+          "Orc": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Large Rattlesnake",
+        "rawNames": [
+          "a_large_rattlesnake"
+        ],
+        "count": 15,
+        "levelMin": 5,
+        "levelMax": 7,
+        "levels": [
+          5,
+          6,
+          7
+        ],
+        "raceCounts": {
+          "Snake": 15
+        },
+        "rawRaceCounts": {
+          "Snake": 15
+        },
+        "classCounts": {
+          "Warrior": 15
+        },
+        "typeCounts": {
+          "Spawn Slot": 15
+        }
+      },
+      {
+        "displayName": "A Puma",
+        "rawNames": [
+          "a_puma"
+        ],
+        "count": 1,
+        "levelMin": 5,
+        "levelMax": 5,
+        "levels": [
+          5
+        ],
+        "raceCounts": {
+          "Puma": 1
+        },
+        "rawRaceCounts": {
+          "Puma": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Gila Monster Hatchling",
+        "rawNames": [
+          "a_gila_monster_hatchling"
+        ],
+        "count": 4,
+        "levelMin": 6,
+        "levelMax": 6,
+        "levels": [
+          6
+        ],
+        "raceCounts": {
+          "Alligator": 4
+        },
+        "rawRaceCounts": {
+          "Alligator": 4
+        },
+        "classCounts": {
+          "Warrior": 4
+        },
+        "typeCounts": {
+          "Spawn Slot": 4
+        }
+      },
+      {
+        "displayName": "A Skeleton",
+        "rawNames": [
+          "a_skeleton"
+        ],
+        "count": 3,
+        "levelMin": 6,
+        "levelMax": 6,
+        "levels": [
+          6
+        ],
+        "raceCounts": {
+          "Skeleton": 3
+        },
+        "rawRaceCounts": {
+          "Skeleton": 3
+        },
+        "classCounts": {
+          "Warrior": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "Puntar Sandfisher",
+        "rawNames": [
+          "Puntar_Sandfisher"
+        ],
+        "count": 1,
+        "levelMin": 6,
+        "levelMax": 6,
+        "levels": [
+          6
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Giant Rattlesnake",
+        "rawNames": [
+          "a_giant_rattlesnake"
+        ],
+        "count": 4,
+        "levelMin": 7,
+        "levelMax": 7,
+        "levels": [
+          7
+        ],
+        "raceCounts": {
+          "Snake": 4
+        },
+        "rawRaceCounts": {
+          "Snake": 4
+        },
+        "classCounts": {
+          "Warrior": 4
+        },
+        "typeCounts": {
+          "Spawn Slot": 4
+        }
+      },
+      {
+        "displayName": "A Brown Asp",
+        "rawNames": [
+          "a_brown_asp"
+        ],
+        "count": 1,
+        "levelMin": 7,
+        "levelMax": 7,
+        "levels": [
+          7
+        ],
+        "raceCounts": {
+          "Snake": 1
+        },
+        "rawRaceCounts": {
+          "Snake": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Puma",
+        "rawNames": [
+          "a_puma"
+        ],
+        "count": 1,
+        "levelMin": 7,
+        "levelMax": 7,
+        "levels": [
+          7
+        ],
+        "raceCounts": {
+          "Puma": 1
+        },
+        "rawRaceCounts": {
+          "Puma": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Madman",
+        "rawNames": [
+          "a_madman"
+        ],
+        "count": 4,
+        "levelMin": 8,
+        "levelMax": 9,
+        "levels": [
+          8,
+          9
+        ],
+        "raceCounts": {
+          "Beggar": 4
+        },
+        "rawRaceCounts": {
+          "Beggar": 4
+        },
+        "classCounts": {
+          "Warrior": 2,
+          "Wizard": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 4
+        }
+      },
+      {
+        "displayName": "A Zombie",
+        "rawNames": [
+          "a_zombie"
+        ],
+        "count": 1,
+        "levelMin": 8,
+        "levelMax": 8,
+        "levels": [
+          8
+        ],
+        "raceCounts": {
+          "Zombie": 1
+        },
+        "rawRaceCounts": {
+          "Zombie": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Deathfist Warrior",
+        "rawNames": [
+          "a_deathfist_warrior"
+        ],
+        "count": 2,
+        "levelMin": 9,
+        "levelMax": 10,
+        "levels": [
+          9,
+          10
+        ],
+        "raceCounts": {
+          "Orc": 2
+        },
+        "rawRaceCounts": {
+          "Orc": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Gila Monster",
+        "rawNames": [
+          "a_gila_monster"
+        ],
+        "count": 1,
+        "levelMin": 9,
+        "levelMax": 9,
+        "levels": [
+          9
+        ],
+        "raceCounts": {
+          "Alligator": 1
+        },
+        "rawRaceCounts": {
+          "Alligator": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Shriveled Mummy",
+        "rawNames": [
+          "a_shriveled_mummy"
+        ],
+        "count": 4,
+        "levelMin": 10,
+        "levelMax": 10,
+        "levels": [
+          10
+        ],
+        "raceCounts": {
+          "Zombie": 4
+        },
+        "rawRaceCounts": {
+          "Zombie": 4
+        },
+        "classCounts": {
+          "Warrior": 4
+        },
+        "typeCounts": {
+          "Spawn Slot": 4
+        }
+      },
+      {
+        "displayName": "A Sand Scarab",
+        "rawNames": [
+          "a_sand_scarab"
+        ],
+        "count": 3,
+        "levelMin": 10,
+        "levelMax": 11,
+        "levels": [
+          10,
+          11
+        ],
+        "raceCounts": {
+          "Beetle": 3
+        },
+        "rawRaceCounts": {
+          "Beetle": 3
+        },
+        "classCounts": {
+          "Warrior": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "A Giant Rattlesnake",
+        "rawNames": [
+          "a_giant_rattlesnake"
+        ],
+        "count": 2,
+        "levelMin": 10,
+        "levelMax": 10,
+        "levels": [
+          10
+        ],
+        "raceCounts": {
+          "Snake": 2
+        },
+        "rawRaceCounts": {
+          "Snake": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Gila Monster",
+        "rawNames": [
+          "a_gila_monster"
+        ],
+        "count": 1,
+        "levelMin": 11,
+        "levelMax": 11,
+        "levels": [
+          11
+        ],
+        "raceCounts": {
+          "Alligator": 1
+        },
+        "rawRaceCounts": {
+          "Alligator": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Dune Tarantula",
+        "rawNames": [
+          "a_dune_tarantula"
+        ],
+        "count": 14,
+        "levelMin": 12,
+        "levelMax": 13,
+        "levels": [
+          12,
+          13
+        ],
+        "raceCounts": {
+          "Spider": 14
+        },
+        "rawRaceCounts": {
+          "Spider": 14
+        },
+        "classCounts": {
+          "Warrior": 14
+        },
+        "typeCounts": {
+          "Spawn Slot": 14
+        }
+      },
+      {
+        "displayName": "A Dervish Cutthroat",
+        "rawNames": [
+          "a_Dervish_Cutthroat"
+        ],
+        "count": 10,
+        "levelMin": 12,
+        "levelMax": 14,
+        "levels": [
+          12,
+          13,
+          14
+        ],
+        "raceCounts": {
+          "Human": 5,
+          "Barbarian": 4,
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Human": 5,
+          "Barbarian": 4,
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Rogue": 5,
+          "Warrior": 4,
+          "Wizard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 10
+        }
+      },
+      {
+        "displayName": "A Shriveled Mummy",
+        "rawNames": [
+          "a_shriveled_mummy"
+        ],
+        "count": 1,
+        "levelMin": 12,
+        "levelMax": 12,
+        "levels": [
+          12
+        ],
+        "raceCounts": {
+          "Zombie": 1
+        },
+        "rawRaceCounts": {
+          "Zombie": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Crypt Mummy",
+        "rawNames": [
+          "a_crypt_mummy"
+        ],
+        "count": 1,
+        "levelMin": 13,
+        "levelMax": 13,
+        "levels": [
+          13
+        ],
+        "raceCounts": {
+          "Zombie": 1
+        },
+        "rawRaceCounts": {
+          "Zombie": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Dorn B`dynn",
+        "rawNames": [
+          "Dorn_B`Dynn"
+        ],
+        "count": 1,
+        "levelMin": 14,
+        "levelMax": 14,
+        "levels": [
+          14
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Dervish Thug",
+        "rawNames": [
+          "a_Dervish_Thug"
+        ],
+        "count": 1,
+        "levelMin": 15,
+        "levelMax": 15,
+        "levels": [
+          15
+        ],
+        "raceCounts": {
+          "Ogre": 1
+        },
+        "rawRaceCounts": {
+          "Ogre": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Frankel The Pirate",
+        "rawNames": [
+          "Frankel_the_Pirate"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Gnome": 1
+        },
+        "rawRaceCounts": {
+          "Gnome": 1
+        },
+        "classCounts": {
+          "Rogue": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Innkeep Valon",
+        "rawNames": [
+          "Innkeep_Valon"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Sand Giant",
+        "rawNames": [
+          "a_sand_giant"
+        ],
+        "count": 1,
+        "levelMin": 33,
+        "levelMax": 33,
+        "levels": [
+          33
+        ],
+        "raceCounts": {
+          "Giant": 1
+        },
+        "rawRaceCounts": {
+          "Giant": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Brendyl",
+        "rawNames": [
+          "Guard_Brendyl"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Guard": 1
+        },
+        "rawRaceCounts": {
+          "Guard": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Fintran",
+        "rawNames": [
+          "Guard_Fintran"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Guard": 1
+        },
+        "rawRaceCounts": {
+          "Guard": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Stoutman",
+        "rawNames": [
+          "Guard_Stoutman"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Guard": 1
+        },
+        "rawRaceCounts": {
+          "Guard": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Innkeep Tozie",
+        "rawNames": [
+          "Innkeep_Tozie"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Juni Sandfisher",
+        "rawNames": [
+          "Juni_Sandfisher"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Murissa Sandwhisper",
+        "rawNames": [
+          "Murissa_Sandwhisper"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Spoolie Gee",
+        "rawNames": [
+          "Spoolie_Gee"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Tira Sandfisher",
+        "rawNames": [
+          "Tira_Sandfisher"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Trees Need No Money",
+        "rawNames": [
+          "trees_need_no_money"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Teleport Man": 1
+        },
+        "rawRaceCounts": {
+          "Teleport Man": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Madman",
+        "rawNames": [
+          "#a_madman"
+        ],
+        "count": 1,
+        "levelMin": 52,
+        "levelMax": 52,
+        "levels": [
+          52
+        ],
+        "raceCounts": {
+          "Beggar": 1
+        },
+        "rawRaceCounts": {
+          "Beggar": 1
+        },
+        "classCounts": {
+          "Wizard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "#",
+        "rawNames": [
+          "#_#_5"
+        ],
+        "count": 1,
+        "levelMin": 60,
+        "levelMax": 60,
+        "levels": [
+          60
+        ],
+        "raceCounts": {
+          "Invisible Man": 1
+        },
+        "rawRaceCounts": {
+          "Invisible Man": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Magus Arindri",
+        "rawNames": [
+          "Magus_Arindri"
+        ],
+        "count": 1,
+        "levelMin": 60,
+        "levelMax": 60,
+        "levels": [
+          60
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Pirate Runners Skiff",
+        "rawNames": [
+          "pirate_runners_skiff"
+        ],
+        "count": 1,
+        "levelMin": 60,
+        "levelMax": 60,
+        "levels": [
+          60
+        ],
+        "raceCounts": {
+          "Launch": 1
+        },
+        "rawRaceCounts": {
+          "Launch": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Daevyd Londayl",
+        "rawNames": [
+          "Daevyd_Londayl"
+        ],
+        "count": 1,
+        "levelMin": 65,
+        "levelMax": 65,
+        "levels": [
+          65
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Discord Merchant": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Dereu Ztr`tn",
+        "rawNames": [
+          "Dereu_Ztr`Tn"
+        ],
+        "count": 1,
+        "levelMin": 65,
+        "levelMax": 65,
+        "levels": [
+          65
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Discord Merchant": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Dizzl Nulzik",
+        "rawNames": [
+          "Dizzl_Nulzik"
+        ],
+        "count": 1,
+        "levelMin": 65,
+        "levelMax": 65,
+        "levels": [
+          65
+        ],
+        "raceCounts": {
+          "Gnome": 1
+        },
+        "rawRaceCounts": {
+          "Gnome": 1
+        },
+        "classCounts": {
+          "Class 0": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Efrelle Treiui",
+        "rawNames": [
+          "Efrelle_Treiui"
+        ],
+        "count": 1,
+        "levelMin": 65,
+        "levelMax": 65,
+        "levels": [
+          65
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Class 0": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Escon Quickbow",
+        "rawNames": [
+          "Escon_Quickbow"
+        ],
+        "count": 1,
+        "levelMin": 65,
+        "levelMax": 65,
+        "levels": [
+          65
+        ],
+        "raceCounts": {
+          "Wood Elf": 1
+        },
+        "rawRaceCounts": {
+          "Wood Elf": 1
+        },
+        "classCounts": {
+          "Merchant": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Odwren Werat",
+        "rawNames": [
+          "Odwren_Werat"
+        ],
+        "count": 1,
+        "levelMin": 65,
+        "levelMax": 65,
+        "levels": [
+          65
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Paege Stirratin",
+        "rawNames": [
+          "Paege_Stirratin"
+        ],
+        "count": 1,
+        "levelMin": 65,
+        "levelMax": 65,
+        "levels": [
+          65
+        ],
+        "raceCounts": {
+          "Vah Shir": 1
+        },
+        "rawRaceCounts": {
+          "Vah Shir": 1
+        },
+        "classCounts": {
+          "Beastlord": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Ruanya Windleaf",
+        "rawNames": [
+          "Ruanya_Windleaf"
+        ],
+        "count": 1,
+        "levelMin": 65,
+        "levelMax": 65,
+        "levels": [
+          65
+        ],
+        "raceCounts": {
+          "Wood Elf": 1
+        },
+        "rawRaceCounts": {
+          "Wood Elf": 1
+        },
+        "classCounts": {
+          "Druid": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Shelie Dikop",
+        "rawNames": [
+          "Shelie_Dikop"
+        ],
+        "count": 1,
+        "levelMin": 65,
+        "levelMax": 65,
+        "levels": [
+          65
+        ],
+        "raceCounts": {
+          "Ogre": 1
+        },
+        "rawRaceCounts": {
+          "Ogre": 1
+        },
+        "classCounts": {
+          "Shaman": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Soulbinder Ragni",
+        "rawNames": [
+          "Soulbinder_Ragni"
+        ],
+        "count": 1,
+        "levelMin": 65,
+        "levelMax": 65,
+        "levels": [
+          65
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Verrell Cogswin",
+        "rawNames": [
+          "#Verrell_Cogswin"
+        ],
+        "count": 1,
+        "levelMin": 70,
+        "levelMax": 70,
+        "levels": [
+          70
+        ],
+        "raceCounts": {
+          "Gnome": 1
+        },
+        "rawRaceCounts": {
+          "Gnome": 1
+        },
+        "classCounts": {
+          "Magician": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      }
+    ],
+    "rows": [
+      {
+        "displayName": "A Coyote",
+        "rawName": "a_coyote",
+        "level": 1,
+        "race": "Wolf",
+        "rawRace": "Wolf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -22,
+        "y": 3618,
+        "z": -19,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 465,
+        "spawngroupId": 3332,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Decaying Skeleton",
+        "rawName": "a_decaying_skeleton",
+        "level": 1,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 802.880005,
+        "y": 3506.879883,
+        "z": -20.799999,
+        "heading": 197,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 367,
+        "spawngroupId": 3282,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Decaying Skeleton",
+        "rawName": "a_decaying_skeleton",
+        "level": 1,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -363.880005,
+        "y": 2679,
+        "z": 11.9,
+        "heading": 234,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 368,
+        "spawngroupId": 3282,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Decaying Skeleton",
+        "rawName": "a_decaying_skeleton",
+        "level": 1,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 614.880005,
+        "y": 3022.879883,
+        "z": -8.5,
+        "heading": 10.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 369,
+        "spawngroupId": 3282,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Decaying Skeleton",
+        "rawName": "a_decaying_skeleton",
+        "level": 1,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -68.879997,
+        "y": 2661,
+        "z": -22.5,
+        "heading": 368.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 370,
+        "spawngroupId": 3282,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Decaying Skeleton",
+        "rawName": "a_decaying_skeleton",
+        "level": 1,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 113,
+        "y": 2700,
+        "z": -24.799999,
+        "heading": 259.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 371,
+        "spawngroupId": 3282,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Decaying Skeleton",
+        "rawName": "a_decaying_skeleton",
+        "level": 1,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -182.880005,
+        "y": 2645,
+        "z": -8.6,
+        "heading": 206.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 372,
+        "spawngroupId": 3282,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Decaying Skeleton",
+        "rawName": "a_decaying_skeleton",
+        "level": 1,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 115,
+        "y": 2807,
+        "z": -24.799999,
+        "heading": 224.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 373,
+        "spawngroupId": 3282,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Decaying Skeleton",
+        "rawName": "a_decaying_skeleton",
+        "level": 1,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1067,
+        "y": 2643,
+        "z": -11.25,
+        "heading": 287.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 374,
+        "spawngroupId": 3282,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Decaying Skeleton",
+        "rawName": "a_decaying_skeleton",
+        "level": 1,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 810.880005,
+        "y": 3462.879883,
+        "z": -21.1,
+        "heading": 162,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 375,
+        "spawngroupId": 3282,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Decaying Skeleton",
+        "rawName": "a_decaying_skeleton",
+        "level": 1,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 700.880005,
+        "y": 2858,
+        "z": -20.6,
+        "heading": 259.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 376,
+        "spawngroupId": 3282,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Decaying Skeleton",
+        "rawName": "a_decaying_skeleton",
+        "level": 1,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 233.880005,
+        "y": 2703,
+        "z": -24.799999,
+        "heading": 300.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 377,
+        "spawngroupId": 3282,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Decaying Skeleton",
+        "rawName": "a_decaying_skeleton",
+        "level": 1,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 375.880005,
+        "y": 3605,
+        "z": -24.299999,
+        "heading": 317.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 378,
+        "spawngroupId": 3282,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Decaying Skeleton",
+        "rawName": "a_decaying_skeleton",
+        "level": 1,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 744.880005,
+        "y": 2746,
+        "z": -24.5,
+        "heading": 350,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 379,
+        "spawngroupId": 3282,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Decaying Skeleton",
+        "rawName": "a_decaying_skeleton",
+        "level": 1,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 720.880005,
+        "y": 3966.879883,
+        "z": -24.25,
+        "heading": 23.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 380,
+        "spawngroupId": 3282,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Decaying Skeleton",
+        "rawName": "a_decaying_skeleton",
+        "level": 1,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -154,
+        "y": 3808.879883,
+        "z": -24.299999,
+        "heading": 28.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 381,
+        "spawngroupId": 3282,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Decaying Skeleton",
+        "rawName": "a_decaying_skeleton",
+        "level": 1,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 264.880005,
+        "y": 4143.879883,
+        "z": -24.299999,
+        "heading": 164.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 382,
+        "spawngroupId": 3282,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Decaying Skeleton",
+        "rawName": "a_decaying_skeleton",
+        "level": 1,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 609.880005,
+        "y": 3986.879883,
+        "z": -24.299999,
+        "heading": 184,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 383,
+        "spawngroupId": 3282,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Decaying Skeleton",
+        "rawName": "a_decaying_skeleton",
+        "level": 1,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -185.880005,
+        "y": 3106,
+        "z": -24.799999,
+        "heading": 242,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 384,
+        "spawngroupId": 3282,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Decaying Skeleton",
+        "rawName": "a_decaying_skeleton",
+        "level": 1,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 264.880005,
+        "y": 3229,
+        "z": -24.75,
+        "heading": 253.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 385,
+        "spawngroupId": 3282,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Decaying Skeleton",
+        "rawName": "a_decaying_skeleton",
+        "level": 1,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 73,
+        "y": 4115.879883,
+        "z": -24.299999,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 386,
+        "spawngroupId": 3282,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Decaying Skeleton",
+        "rawName": "a_decaying_skeleton",
+        "level": 1,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 561.880005,
+        "y": 4156.879883,
+        "z": -24.299999,
+        "heading": 214,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 387,
+        "spawngroupId": 3282,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Decaying Skeleton",
+        "rawName": "a_decaying_skeleton",
+        "level": 1,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 530.880005,
+        "y": 3459.879883,
+        "z": -24.799999,
+        "heading": 199,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 388,
+        "spawngroupId": 3282,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Decaying Skeleton",
+        "rawName": "a_decaying_skeleton",
+        "level": 1,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -294,
+        "y": 2869,
+        "z": -18.379999,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 389,
+        "spawngroupId": 3282,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Decaying Skeleton",
+        "rawName": "a_decaying_skeleton",
+        "level": 1,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -68,
+        "y": 4079,
+        "z": -19,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 390,
+        "spawngroupId": 3282,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Decaying Skeleton",
+        "rawName": "a_decaying_skeleton",
+        "level": 1,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 98.879997,
+        "y": 3567.879883,
+        "z": -24.299999,
+        "heading": 48.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 391,
+        "spawngroupId": 3282,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Decaying Skeleton",
+        "rawName": "a_decaying_skeleton",
+        "level": 1,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -155.880005,
+        "y": 4037.879883,
+        "z": -24.25,
+        "heading": 450.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 392,
+        "spawngroupId": 3282,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Decaying Skeleton",
+        "rawName": "a_decaying_skeleton",
+        "level": 1,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 587,
+        "y": 3314,
+        "z": -24.799999,
+        "heading": 86.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 393,
+        "spawngroupId": 3282,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Decaying Skeleton",
+        "rawName": "a_decaying_skeleton",
+        "level": 1,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 452,
+        "y": 3087,
+        "z": -16,
+        "heading": 307.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 394,
+        "spawngroupId": 3282,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Desert Spiderling",
+        "rawName": "a_desert_spiderling",
+        "level": 1,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 919.380005,
+        "y": 3674.879883,
+        "z": -26.75,
+        "heading": 245.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 397,
+        "spawngroupId": 3285,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Moss Snake",
+        "rawName": "a_moss_snake",
+        "level": 1,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -25,
+        "y": 3017,
+        "z": -19.5,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 466,
+        "spawngroupId": 3333,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Translocator Ionie",
+        "rawName": "#Translocator_Ionie",
+        "level": 1,
+        "race": "Gnome",
+        "rawRace": "Gnome",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -889.169983,
+        "y": 786.900024,
+        "z": 2.36,
+        "heading": 132,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 250536,
+        "spawngroupId": 275156,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Fire Beetle",
+        "rawName": "a_fire_beetle",
+        "level": 2,
+        "race": "Beetle",
+        "rawRace": "Beetle",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 618,
+        "y": 3929,
+        "z": -19,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 462,
+        "spawngroupId": 3329,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Armadillo",
+        "rawName": "an_armadillo",
+        "level": 2,
+        "race": "Armadillo",
+        "rawRace": "Armadillo",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 644,
+        "y": 2750,
+        "z": -23,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 457,
+        "spawngroupId": 3326,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Armadillo",
+        "rawName": "an_armadillo",
+        "level": 2,
+        "race": "Armadillo",
+        "rawRace": "Armadillo",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 471,
+        "y": 2802,
+        "z": -17.129999,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 458,
+        "spawngroupId": 3326,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Armadillo",
+        "rawName": "an_armadillo",
+        "level": 2,
+        "race": "Armadillo",
+        "rawRace": "Armadillo",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 595,
+        "y": 3297,
+        "z": -19.5,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 459,
+        "spawngroupId": 3326,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Coyote",
+        "rawName": "a_coyote",
+        "level": 3,
+        "race": "Wolf",
+        "rawRace": "Wolf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 214,
+        "y": 3827,
+        "z": -19,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 463,
+        "spawngroupId": 3330,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Jackal",
+        "rawName": "a_jackal",
+        "level": 3,
+        "race": "Wolf",
+        "rawRace": "Wolf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 634.880005,
+        "y": 1531,
+        "z": 24.5,
+        "heading": 501,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 345,
+        "spawngroupId": 3268,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Young Puma",
+        "rawName": "a_young_puma",
+        "level": 3,
+        "race": "Puma",
+        "rawRace": "Puma",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 884,
+        "y": 2700,
+        "z": -19.5,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 461,
+        "spawngroupId": 3328,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Dune Spiderling",
+        "rawName": "a_dune_spiderling",
+        "level": 4,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 934.380005,
+        "y": 2261.629883,
+        "z": -68.129997,
+        "heading": 389.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 416,
+        "spawngroupId": 3293,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Dune Spiderling",
+        "rawName": "a_dune_spiderling",
+        "level": 4,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 948,
+        "y": 987.5,
+        "z": 52.25,
+        "heading": 287.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 417,
+        "spawngroupId": 3293,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Dune Spiderling",
+        "rawName": "a_dune_spiderling",
+        "level": 4,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -526.75,
+        "y": 899.630005,
+        "z": 17.75,
+        "heading": 263.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 418,
+        "spawngroupId": 3293,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Jackal",
+        "rawName": "a_jackal",
+        "level": 4,
+        "race": "Wolf",
+        "rawRace": "Wolf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -192,
+        "y": 1488.880005,
+        "z": 49.5,
+        "heading": 113.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 478,
+        "spawngroupId": 3344,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Rattlesnake",
+        "rawName": "a_rattlesnake",
+        "level": 4,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 881,
+        "y": 4070,
+        "z": -19,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 464,
+        "spawngroupId": 3331,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Sand Scarab Hatchling",
+        "rawName": "a_sand_scarab_hatchling",
+        "level": 4,
+        "race": "Beetle",
+        "rawRace": "Beetle",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 735.880005,
+        "y": 1964.25,
+        "z": -78.629997,
+        "heading": 248.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 437,
+        "spawngroupId": 3308,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Sand Scarab Hatchling",
+        "rawName": "a_sand_scarab_hatchling",
+        "level": 4,
+        "race": "Beetle",
+        "rawRace": "Beetle",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 748,
+        "y": 2034.630005,
+        "z": -26,
+        "heading": 22.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 438,
+        "spawngroupId": 3308,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Young Puma",
+        "rawName": "a_young_puma",
+        "level": 4,
+        "race": "Puma",
+        "rawRace": "Puma",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 415,
+        "y": 3654,
+        "z": -19,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 469,
+        "spawngroupId": 3336,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Young Puma",
+        "rawName": "a_young_puma",
+        "level": 4,
+        "race": "Puma",
+        "rawRace": "Puma",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1027,
+        "y": 2975,
+        "z": 10.5,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 470,
+        "spawngroupId": 3336,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Orc Raider",
+        "rawName": "an_orc_raider",
+        "level": 4,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 241,
+        "y": 37,
+        "z": -27.25,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 480,
+        "spawngroupId": 3346,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Dune Spiderling",
+        "rawName": "a_dune_spiderling",
+        "level": 5,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 77.879997,
+        "y": 1403.630005,
+        "z": 4.38,
+        "heading": 257.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 434,
+        "spawngroupId": 3307,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Dune Spiderling",
+        "rawName": "a_dune_spiderling",
+        "level": 5,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 748,
+        "y": 1991.25,
+        "z": -73.5,
+        "heading": 64.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 435,
+        "spawngroupId": 3307,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Dune Spiderling",
+        "rawName": "a_dune_spiderling",
+        "level": 5,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 687,
+        "y": 1915.380005,
+        "z": -26.379999,
+        "heading": 212.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 436,
+        "spawngroupId": 3307,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Jackal",
+        "rawName": "a_jackal",
+        "level": 5,
+        "race": "Wolf",
+        "rawRace": "Wolf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 911,
+        "y": 2446,
+        "z": 8.13,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 473,
+        "spawngroupId": 3339,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Large Rattlesnake",
+        "rawName": "a_large_rattlesnake",
+        "level": 5,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1247.75,
+        "y": -778.130005,
+        "z": 3.38,
+        "heading": 240.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 443,
+        "spawngroupId": 3312,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Large Rattlesnake",
+        "rawName": "a_large_rattlesnake",
+        "level": 5,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 285,
+        "y": 2198.879883,
+        "z": -23.25,
+        "heading": 482,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 444,
+        "spawngroupId": 3312,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Large Rattlesnake",
+        "rawName": "a_large_rattlesnake",
+        "level": 5,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1169.880005,
+        "y": -1229.880005,
+        "z": 4.5,
+        "heading": 404.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 445,
+        "spawngroupId": 3312,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Large Rattlesnake",
+        "rawName": "a_large_rattlesnake",
+        "level": 5,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 148.130005,
+        "y": -1546.75,
+        "z": -41.25,
+        "heading": 251.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 446,
+        "spawngroupId": 3312,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Puma",
+        "rawName": "a_puma",
+        "level": 5,
+        "race": "Puma",
+        "rawRace": "Puma",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1277.880005,
+        "y": -1031.880005,
+        "z": 29,
+        "heading": 169.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 366,
+        "spawngroupId": 3281,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Rattlesnake",
+        "rawName": "a_rattlesnake",
+        "level": 5,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -310,
+        "y": 3026,
+        "z": -19.5,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 482,
+        "spawngroupId": 3348,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Sand Scarab Hatchling",
+        "rawName": "a_sand_scarab_hatchling",
+        "level": 5,
+        "race": "Beetle",
+        "rawRace": "Beetle",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 908.880005,
+        "y": 2236.129883,
+        "z": -30.25,
+        "heading": 355.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 424,
+        "spawngroupId": 3298,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Sand Scarab Hatchling",
+        "rawName": "a_sand_scarab_hatchling",
+        "level": 5,
+        "race": "Beetle",
+        "rawRace": "Beetle",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 697.5,
+        "y": 1926,
+        "z": -37.630001,
+        "heading": 234.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 425,
+        "spawngroupId": 3298,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Dune Spiderling",
+        "rawName": "a_dune_spiderling",
+        "level": 6,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 656.380005,
+        "y": 1884.880005,
+        "z": 6.13,
+        "heading": 212.5,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 396,
+        "spawngroupId": 3284,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Dune Spiderling",
+        "rawName": "a_dune_spiderling",
+        "level": 6,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -410.380005,
+        "y": 976,
+        "z": -33.880001,
+        "heading": 173.25,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 448,
+        "spawngroupId": 3314,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Gila Monster Hatchling",
+        "rawName": "a_gila_monster_hatchling",
+        "level": 6,
+        "race": "Alligator",
+        "rawRace": "Alligator",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 675.75,
+        "y": 1904.130005,
+        "z": -14.38,
+        "heading": 226.25,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 426,
+        "spawngroupId": 3299,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Gila Monster Hatchling",
+        "rawName": "a_gila_monster_hatchling",
+        "level": 6,
+        "race": "Alligator",
+        "rawRace": "Alligator",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 794.380005,
+        "y": 2021.630005,
+        "z": -28.5,
+        "heading": 53.75,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 440,
+        "spawngroupId": 3310,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Gila Monster Hatchling",
+        "rawName": "a_gila_monster_hatchling",
+        "level": 6,
+        "race": "Alligator",
+        "rawRace": "Alligator",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 850.5,
+        "y": 2177.75,
+        "z": 56.130001,
+        "heading": 374,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 447,
+        "spawngroupId": 3313,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Gila Monster Hatchling",
+        "rawName": "a_gila_monster_hatchling",
+        "level": 6,
+        "race": "Alligator",
+        "rawRace": "Alligator",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 776,
+        "y": 3283,
+        "z": -19.5,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 471,
+        "spawngroupId": 3337,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Large Rattlesnake",
+        "rawName": "a_large_rattlesnake",
+        "level": 6,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 264.880005,
+        "y": -1813.880005,
+        "z": 32.400002,
+        "heading": 467,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 336,
+        "spawngroupId": 3263,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Large Rattlesnake",
+        "rawName": "a_large_rattlesnake",
+        "level": 6,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 40,
+        "y": -1447,
+        "z": -71.25,
+        "heading": 500.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 337,
+        "spawngroupId": 3263,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Large Rattlesnake",
+        "rawName": "a_large_rattlesnake",
+        "level": 6,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 941.880005,
+        "y": -1042.880005,
+        "z": 14.9,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 338,
+        "spawngroupId": 3263,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Large Rattlesnake",
+        "rawName": "a_large_rattlesnake",
+        "level": 6,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 137.880005,
+        "y": -1800.880005,
+        "z": 55.630001,
+        "heading": 248,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 339,
+        "spawngroupId": 3263,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Large Rattlesnake",
+        "rawName": "a_large_rattlesnake",
+        "level": 6,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 148.130005,
+        "y": -1588.630005,
+        "z": 14.63,
+        "heading": 233.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 340,
+        "spawngroupId": 3263,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Sand Scarab Hatchling",
+        "rawName": "a_sand_scarab_hatchling",
+        "level": 6,
+        "race": "Beetle",
+        "rawRace": "Beetle",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 748,
+        "y": 2062.379883,
+        "z": 4.25,
+        "heading": 43.25,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 395,
+        "spawngroupId": 3283,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Sand Scarab Hatchling",
+        "rawName": "a_sand_scarab_hatchling",
+        "level": 6,
+        "race": "Beetle",
+        "rawRace": "Beetle",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -441,
+        "y": 975.880005,
+        "z": -68.75,
+        "heading": 148.5,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 433,
+        "spawngroupId": 3306,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Sand Scarab Hatchling",
+        "rawName": "a_sand_scarab_hatchling",
+        "level": 6,
+        "race": "Beetle",
+        "rawRace": "Beetle",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 747.75,
+        "y": 1956.130005,
+        "z": -68.629997,
+        "heading": 243.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 441,
+        "spawngroupId": 3311,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Sand Scarab Hatchling",
+        "rawName": "a_sand_scarab_hatchling",
+        "level": 6,
+        "race": "Beetle",
+        "rawRace": "Beetle",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 526,
+        "y": 2946,
+        "z": 4.25,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 442,
+        "spawngroupId": 3311,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Skeleton",
+        "rawName": "a_skeleton",
+        "level": 6,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 422,
+        "y": 478,
+        "z": 8.5,
+        "heading": 216,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 341,
+        "spawngroupId": 3264,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Skeleton",
+        "rawName": "a_skeleton",
+        "level": 6,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 411,
+        "y": 467,
+        "z": 8.75,
+        "heading": 216,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 342,
+        "spawngroupId": 3265,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Skeleton",
+        "rawName": "a_skeleton",
+        "level": 6,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 499,
+        "y": 462,
+        "z": 5.5,
+        "heading": 0,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 343,
+        "spawngroupId": 3265,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Puntar Sandfisher",
+        "rawName": "Puntar_Sandfisher",
+        "level": 6,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -865,
+        "y": 2158,
+        "z": -3,
+        "heading": 370,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 410,
+        "spawngroupId": 3290,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Brown Asp",
+        "rawName": "a_brown_asp",
+        "level": 7,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -145.880005,
+        "y": -1757.880005,
+        "z": 36.299999,
+        "heading": 140,
+        "chance": 95,
+        "respawnTime": 640,
+        "spawn2Id": 431,
+        "spawngroupId": 3304,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Giant Rattlesnake",
+        "rawName": "a_giant_rattlesnake",
+        "level": 7,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -262.880005,
+        "y": -1712.880005,
+        "z": 0,
+        "heading": 91,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 411,
+        "spawngroupId": 3291,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Giant Rattlesnake",
+        "rawName": "a_giant_rattlesnake",
+        "level": 7,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 339.880005,
+        "y": -1148.880005,
+        "z": 34.400002,
+        "heading": 332,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 412,
+        "spawngroupId": 3291,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Giant Rattlesnake",
+        "rawName": "a_giant_rattlesnake",
+        "level": 7,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 775,
+        "y": -1606.880005,
+        "z": 43.900002,
+        "heading": 45.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 413,
+        "spawngroupId": 3291,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Giant Rattlesnake",
+        "rawName": "a_giant_rattlesnake",
+        "level": 7,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 385,
+        "y": -827.880005,
+        "z": 4.25,
+        "heading": 329.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 414,
+        "spawngroupId": 3291,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Large Rattlesnake",
+        "rawName": "a_large_rattlesnake",
+        "level": 7,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -396.880005,
+        "y": -413,
+        "z": 27.299999,
+        "heading": 373,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 347,
+        "spawngroupId": 3270,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Large Rattlesnake",
+        "rawName": "a_large_rattlesnake",
+        "level": 7,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -435.880005,
+        "y": -1604.880005,
+        "z": -64.900002,
+        "heading": 195.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 398,
+        "spawngroupId": 3286,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Large Rattlesnake",
+        "rawName": "a_large_rattlesnake",
+        "level": 7,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 472.880005,
+        "y": -79,
+        "z": -22.129999,
+        "heading": 50.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 399,
+        "spawngroupId": 3286,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Large Rattlesnake",
+        "rawName": "a_large_rattlesnake",
+        "level": 7,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -32.880001,
+        "y": -3,
+        "z": 19,
+        "heading": 473.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 400,
+        "spawngroupId": 3286,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Large Rattlesnake",
+        "rawName": "a_large_rattlesnake",
+        "level": 7,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1148.130005,
+        "y": -800.380005,
+        "z": 22.75,
+        "heading": 240.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 401,
+        "spawngroupId": 3286,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Large Rattlesnake",
+        "rawName": "a_large_rattlesnake",
+        "level": 7,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 148.130005,
+        "y": -1533.630005,
+        "z": -58.880001,
+        "heading": 234.25,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 428,
+        "spawngroupId": 3301,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Puma",
+        "rawName": "a_puma",
+        "level": 7,
+        "race": "Puma",
+        "rawRace": "Puma",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -320,
+        "y": -994,
+        "z": 38.880001,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 467,
+        "spawngroupId": 3334,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Madman",
+        "rawName": "a_madman",
+        "level": 8,
+        "race": "Beggar",
+        "rawRace": "Beggar",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1212.880005,
+        "y": -1371,
+        "z": -12.88,
+        "heading": 100,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 346,
+        "spawngroupId": 3269,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Madman",
+        "rawName": "a_madman",
+        "level": 8,
+        "race": "Beggar",
+        "rawRace": "Beggar",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -239.880005,
+        "y": -1060.880005,
+        "z": 48.380001,
+        "heading": 317,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 477,
+        "spawngroupId": 3343,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Zombie",
+        "rawName": "a_zombie",
+        "level": 8,
+        "race": "Zombie",
+        "rawRace": "Zombie",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 510,
+        "y": 473,
+        "z": 5.5,
+        "heading": 0,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 344,
+        "spawngroupId": 3266,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Deathfist Warrior",
+        "rawName": "a_deathfist_warrior",
+        "level": 9,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 704.880005,
+        "y": -700,
+        "z": 36.5,
+        "heading": 58.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 475,
+        "spawngroupId": 3341,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Gila Monster",
+        "rawName": "a_gila_monster",
+        "level": 9,
+        "race": "Alligator",
+        "rawRace": "Alligator",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -523.880005,
+        "y": -779,
+        "z": 6.1,
+        "heading": 283,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 415,
+        "spawngroupId": 3292,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Madman",
+        "rawName": "a_madman",
+        "level": 9,
+        "race": "Beggar",
+        "rawRace": "Beggar",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 655,
+        "y": 796.880005,
+        "z": 11.5,
+        "heading": 452.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 479,
+        "spawngroupId": 3345,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Madman",
+        "rawName": "a_madman",
+        "level": 9,
+        "race": "Beggar",
+        "rawRace": "Beggar",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": 464,
+        "y": -1587,
+        "z": 38.880001,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 483,
+        "spawngroupId": 3349,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Deathfist Warrior",
+        "rawName": "a_deathfist_warrior",
+        "level": 10,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -389,
+        "y": -1052,
+        "z": 36.880001,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 456,
+        "spawngroupId": 3325,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Giant Rattlesnake",
+        "rawName": "a_giant_rattlesnake",
+        "level": 10,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -607.880005,
+        "y": -629.880005,
+        "z": 5.5,
+        "heading": 242,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 422,
+        "spawngroupId": 3297,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Giant Rattlesnake",
+        "rawName": "a_giant_rattlesnake",
+        "level": 10,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 870.880005,
+        "y": -1417.880005,
+        "z": -12.1,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 423,
+        "spawngroupId": 3297,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Sand Scarab",
+        "rawName": "a_sand_scarab",
+        "level": 10,
+        "race": "Beetle",
+        "rawRace": "Beetle",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -604.880005,
+        "y": -573.880005,
+        "z": 13.6,
+        "heading": 214,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 360,
+        "spawngroupId": 3277,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Sand Scarab",
+        "rawName": "a_sand_scarab",
+        "level": 10,
+        "race": "Beetle",
+        "rawRace": "Beetle",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 222,
+        "y": 148,
+        "z": -32.299999,
+        "heading": 62.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 361,
+        "spawngroupId": 3277,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shriveled Mummy",
+        "rawName": "a_shriveled_mummy",
+        "level": 10,
+        "race": "Zombie",
+        "rawRace": "Zombie",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1070.880005,
+        "y": -986.880005,
+        "z": 30.799999,
+        "heading": 342.5,
+        "chance": 95,
+        "respawnTime": 640,
+        "spawn2Id": 356,
+        "spawngroupId": 3276,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Shriveled Mummy",
+        "rawName": "a_shriveled_mummy",
+        "level": 10,
+        "race": "Zombie",
+        "rawRace": "Zombie",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 370,
+        "y": -125,
+        "z": -25.4,
+        "heading": 484.5,
+        "chance": 95,
+        "respawnTime": 640,
+        "spawn2Id": 357,
+        "spawngroupId": 3276,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Shriveled Mummy",
+        "rawName": "a_shriveled_mummy",
+        "level": 10,
+        "race": "Zombie",
+        "rawRace": "Zombie",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -172.880005,
+        "y": -218,
+        "z": 9.1,
+        "heading": 0,
+        "chance": 95,
+        "respawnTime": 640,
+        "spawn2Id": 358,
+        "spawngroupId": 3276,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Shriveled Mummy",
+        "rawName": "a_shriveled_mummy",
+        "level": 10,
+        "race": "Zombie",
+        "rawRace": "Zombie",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 614.880005,
+        "y": -1503,
+        "z": 31.1,
+        "heading": 250.5,
+        "chance": 95,
+        "respawnTime": 640,
+        "spawn2Id": 359,
+        "spawngroupId": 3276,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Gila Monster",
+        "rawName": "a_gila_monster",
+        "level": 11,
+        "race": "Alligator",
+        "rawRace": "Alligator",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1007.880005,
+        "y": -1409.880005,
+        "z": -23.6,
+        "heading": 463.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 421,
+        "spawngroupId": 3296,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Sand Scarab",
+        "rawName": "a_sand_scarab",
+        "level": 11,
+        "race": "Beetle",
+        "rawRace": "Beetle",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 674.880005,
+        "y": 2089.879883,
+        "z": 3.6,
+        "heading": 174.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 354,
+        "spawngroupId": 3274,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Dervish Cutthroat",
+        "rawName": "a_Dervish_Cutthroat",
+        "level": 12,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 369,
+        "y": 35,
+        "z": -32.5,
+        "heading": 468,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 419,
+        "spawngroupId": 3294,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Dervish Cutthroat",
+        "rawName": "a_Dervish_Cutthroat",
+        "level": 12,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1221,
+        "y": -1261,
+        "z": 7,
+        "heading": 451,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 472,
+        "spawngroupId": 3338,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Dune Tarantula",
+        "rawName": "a_dune_tarantula",
+        "level": 12,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -295,
+        "y": -63,
+        "z": 33.130001,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 468,
+        "spawngroupId": 3335,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shriveled Mummy",
+        "rawName": "a_shriveled_mummy",
+        "level": 12,
+        "race": "Zombie",
+        "rawRace": "Zombie",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -161.880005,
+        "y": -1452.880005,
+        "z": -2.13,
+        "heading": 360.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 476,
+        "spawngroupId": 3342,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Crypt Mummy",
+        "rawName": "a_crypt_mummy",
+        "level": 13,
+        "race": "Zombie",
+        "rawRace": "Zombie",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -492,
+        "y": -1401,
+        "z": -1.13,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 460,
+        "spawngroupId": 3327,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Dervish Cutthroat",
+        "rawName": "a_Dervish_Cutthroat",
+        "level": 13,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -366,
+        "y": 1298,
+        "z": 5.13,
+        "heading": 504,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 364,
+        "spawngroupId": 3279,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Dervish Cutthroat",
+        "rawName": "a_Dervish_Cutthroat",
+        "level": 13,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -335,
+        "y": 1348,
+        "z": 8.5,
+        "heading": 300.75,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 365,
+        "spawngroupId": 3280,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Dune Tarantula",
+        "rawName": "a_dune_tarantula",
+        "level": 13,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 574.880005,
+        "y": -1022.880005,
+        "z": -31.1,
+        "heading": 478.5,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 349,
+        "spawngroupId": 3272,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Dune Tarantula",
+        "rawName": "a_dune_tarantula",
+        "level": 13,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 318.880005,
+        "y": -184,
+        "z": 22.629999,
+        "heading": 69.75,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 350,
+        "spawngroupId": 3272,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Dune Tarantula",
+        "rawName": "a_dune_tarantula",
+        "level": 13,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 748.880005,
+        "y": -1047.880005,
+        "z": 49.130001,
+        "heading": 189.25,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 351,
+        "spawngroupId": 3272,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Dune Tarantula",
+        "rawName": "a_dune_tarantula",
+        "level": 13,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -192.880005,
+        "y": -1292.880005,
+        "z": 5.6,
+        "heading": 144.5,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 352,
+        "spawngroupId": 3272,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Dune Tarantula",
+        "rawName": "a_dune_tarantula",
+        "level": 13,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -140.880005,
+        "y": -732.880005,
+        "z": 9.13,
+        "heading": 325,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 362,
+        "spawngroupId": 3278,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Dune Tarantula",
+        "rawName": "a_dune_tarantula",
+        "level": 13,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -29.879999,
+        "y": -1799.880005,
+        "z": 57,
+        "heading": 375.25,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 363,
+        "spawngroupId": 3278,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Dune Tarantula",
+        "rawName": "a_dune_tarantula",
+        "level": 13,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -221.880005,
+        "y": -953.880005,
+        "z": 8.3,
+        "heading": 124,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 403,
+        "spawngroupId": 3288,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Dune Tarantula",
+        "rawName": "a_dune_tarantula",
+        "level": 13,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 288,
+        "y": -996.880005,
+        "z": -49.099998,
+        "heading": 174.5,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 404,
+        "spawngroupId": 3288,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Dune Tarantula",
+        "rawName": "a_dune_tarantula",
+        "level": 13,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 570.880005,
+        "y": -1775.880005,
+        "z": 7.75,
+        "heading": 241.5,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 405,
+        "spawngroupId": 3288,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Dune Tarantula",
+        "rawName": "a_dune_tarantula",
+        "level": 13,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -581.880005,
+        "y": -312,
+        "z": 46.599998,
+        "heading": 362,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 406,
+        "spawngroupId": 3288,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Dune Tarantula",
+        "rawName": "a_dune_tarantula",
+        "level": 13,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -614.880005,
+        "y": -1465,
+        "z": 9.5,
+        "heading": 0,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 407,
+        "spawngroupId": 3288,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Dune Tarantula",
+        "rawName": "a_dune_tarantula",
+        "level": 13,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -625.880005,
+        "y": -1447.880005,
+        "z": 6.1,
+        "heading": 66.5,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 408,
+        "spawngroupId": 3288,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Dune Tarantula",
+        "rawName": "a_dune_tarantula",
+        "level": 13,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -560.880005,
+        "y": -85.879997,
+        "z": -11.13,
+        "heading": 380.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 409,
+        "spawngroupId": 3289,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Dervish Cutthroat",
+        "rawName": "a_Dervish_Cutthroat",
+        "level": 14,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 312,
+        "y": 47,
+        "z": -31.379999,
+        "heading": 134,
+        "chance": 20,
+        "respawnTime": 640,
+        "spawn2Id": 335,
+        "spawngroupId": 3262,
+        "candidateCount": 5
+      },
+      {
+        "displayName": "A Dervish Cutthroat",
+        "rawName": "a_Dervish_Cutthroat",
+        "level": 14,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 345,
+        "y": 86.879997,
+        "z": -29.629999,
+        "heading": 34,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 353,
+        "spawngroupId": 3273,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Dervish Cutthroat",
+        "rawName": "a_Dervish_Cutthroat",
+        "level": 14,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -443,
+        "y": 1360,
+        "z": 7.5,
+        "heading": 364,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 355,
+        "spawngroupId": 3275,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Dervish Cutthroat",
+        "rawName": "a_Dervish_Cutthroat",
+        "level": 14,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1282,
+        "y": -1243,
+        "z": 4.5,
+        "heading": 430,
+        "chance": 13,
+        "respawnTime": 640,
+        "spawn2Id": 402,
+        "spawngroupId": 3287,
+        "candidateCount": 8
+      },
+      {
+        "displayName": "A Dervish Cutthroat",
+        "rawName": "a_Dervish_Cutthroat",
+        "level": 14,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 369.380005,
+        "y": 49.630001,
+        "z": -30.25,
+        "heading": 379,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 420,
+        "spawngroupId": 3295,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Dervish Cutthroat",
+        "rawName": "a_Dervish_Cutthroat",
+        "level": 14,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 320,
+        "y": 58,
+        "z": -32,
+        "heading": 188,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 151576,
+        "spawngroupId": 3273,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Dorn B`dynn",
+        "rawName": "Dorn_B`Dynn",
+        "level": 14,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -391,
+        "y": 1311,
+        "z": 6,
+        "heading": 105,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 474,
+        "spawngroupId": 3340,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Dervish Thug",
+        "rawName": "a_Dervish_Thug",
+        "level": 15,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1251,
+        "y": -1218,
+        "z": 5.4,
+        "heading": 184,
+        "chance": 10,
+        "respawnTime": 640,
+        "spawn2Id": 427,
+        "spawngroupId": 3300,
+        "candidateCount": 11
+      },
+      {
+        "displayName": "Frankel The Pirate",
+        "rawName": "Frankel_the_Pirate",
+        "level": 30,
+        "race": "Gnome",
+        "rawRace": "Gnome",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -854.089417,
+        "y": 792.060852,
+        "z": -2.228028,
+        "heading": 155.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 21426,
+        "spawngroupId": 13102,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Innkeep Valon",
+        "rawName": "Innkeep_Valon",
+        "level": 30,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 503,
+        "y": 3415,
+        "z": -23.25,
+        "heading": 380,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 452,
+        "spawngroupId": 3318,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Sand Giant",
+        "rawName": "a_sand_giant",
+        "level": 33,
+        "race": "Giant",
+        "rawRace": "Giant",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 366.880005,
+        "y": -152,
+        "z": -3.6,
+        "heading": 59,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 348,
+        "spawngroupId": 3271,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Guard Brendyl",
+        "rawName": "Guard_Brendyl",
+        "level": 40,
+        "race": "Guard",
+        "rawRace": "Guard",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 304.880005,
+        "y": 2885.879883,
+        "z": -24.75,
+        "heading": 248,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 429,
+        "spawngroupId": 3302,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard Fintran",
+        "rawName": "Guard_Fintran",
+        "level": 40,
+        "race": "Guard",
+        "rawRace": "Guard",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 464,
+        "y": 3458,
+        "z": -24.75,
+        "heading": 402,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 430,
+        "spawngroupId": 3303,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard Stoutman",
+        "rawName": "Guard_Stoutman",
+        "level": 40,
+        "race": "Guard",
+        "rawRace": "Guard",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 459.880005,
+        "y": 3381,
+        "z": -24.75,
+        "heading": 396,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 432,
+        "spawngroupId": 3305,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Innkeep Tozie",
+        "rawName": "Innkeep_Tozie",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 489,
+        "y": 3466,
+        "z": -23.25,
+        "heading": 255,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 451,
+        "spawngroupId": 3317,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Juni Sandfisher",
+        "rawName": "Juni_Sandfisher",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -754,
+        "y": 2185,
+        "z": 8.5,
+        "heading": 444,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 453,
+        "spawngroupId": 3319,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Murissa Sandwhisper",
+        "rawName": "Murissa_Sandwhisper",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 126.879997,
+        "y": 3712,
+        "z": -24.25,
+        "heading": 127,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 449,
+        "spawngroupId": 3315,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Spoolie Gee",
+        "rawName": "Spoolie_Gee",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 488.880005,
+        "y": 3371.879883,
+        "z": -23.25,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 450,
+        "spawngroupId": 3316,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Tira Sandfisher",
+        "rawName": "Tira_Sandfisher",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -790,
+        "y": 2294,
+        "z": 3.88,
+        "heading": 330,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 454,
+        "spawngroupId": 3320,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Trees Need No Money",
+        "rawName": "trees_need_no_money",
+        "level": 50,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1313,
+        "y": 2763,
+        "z": -9.1,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 21421,
+        "spawngroupId": 13097,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Madman",
+        "rawName": "#a_madman",
+        "level": 52,
+        "race": "Beggar",
+        "rawRace": "Beggar",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": 237,
+        "y": -804,
+        "z": 6,
+        "heading": 30,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 250471,
+        "spawngroupId": 275107,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "#",
+        "rawName": "#_#_5",
+        "level": 60,
+        "race": "Invisible Man",
+        "rawRace": "Invisible Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1149.321045,
+        "y": 1846.376953,
+        "z": -1.79546,
+        "heading": 441.25,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 1146,
+        "spawngroupId": 16999,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Magus Arindri",
+        "rawName": "Magus_Arindri",
+        "level": 60,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 923,
+        "y": 2649,
+        "z": -24.5,
+        "heading": 484,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 76052,
+        "spawngroupId": 54755,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Pirate Runners Skiff",
+        "rawName": "pirate_runners_skiff",
+        "level": 60,
+        "race": "Launch",
+        "rawRace": "Launch",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -949.817932,
+        "y": 801,
+        "z": -5.555597,
+        "heading": 10.2,
+        "chance": 100,
+        "respawnTime": 400,
+        "spawn2Id": 481,
+        "spawngroupId": 3347,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Daevyd Londayl",
+        "rawName": "Daevyd_Londayl",
+        "level": 65,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Discord Merchant",
+        "type": "Spawn Slot",
+        "x": 965,
+        "y": 2696,
+        "z": -24.129999,
+        "heading": 380,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 62175,
+        "spawngroupId": 50675,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Dereu Ztr`tn",
+        "rawName": "Dereu_Ztr`Tn",
+        "level": 65,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Discord Merchant",
+        "type": "Spawn Slot",
+        "x": 928.75,
+        "y": 2666.25,
+        "z": -22.879999,
+        "heading": 500,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 62176,
+        "spawngroupId": 50676,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Dizzl Nulzik",
+        "rawName": "Dizzl_Nulzik",
+        "level": 65,
+        "race": "Gnome",
+        "rawRace": "Gnome",
+        "className": "Class 0",
+        "type": "Spawn Slot",
+        "x": 899,
+        "y": 2680,
+        "z": -24.75,
+        "heading": 76,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 62174,
+        "spawngroupId": 50674,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Efrelle Treiui",
+        "rawName": "Efrelle_Treiui",
+        "level": 65,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Class 0",
+        "type": "Spawn Slot",
+        "x": 906,
+        "y": 2662,
+        "z": -24.5,
+        "heading": 35.599998,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 62173,
+        "spawngroupId": 50673,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Escon Quickbow",
+        "rawName": "Escon_Quickbow",
+        "level": 65,
+        "race": "Wood Elf",
+        "rawRace": "Wood Elf",
+        "className": "Merchant",
+        "type": "Spawn Slot",
+        "x": 945,
+        "y": 2684,
+        "z": -26.629999,
+        "heading": 397,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 62177,
+        "spawngroupId": 50677,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Odwren Werat",
+        "rawName": "Odwren_Werat",
+        "level": 65,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 124,
+        "y": 3178,
+        "z": -24.25,
+        "heading": 193,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 455,
+        "spawngroupId": 3323,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Paege Stirratin",
+        "rawName": "Paege_Stirratin",
+        "level": 65,
+        "race": "Vah Shir",
+        "rawRace": "Vah Shir",
+        "className": "Beastlord",
+        "type": "Spawn Slot",
+        "x": 942.759827,
+        "y": 2707.023926,
+        "z": -26.40424,
+        "heading": 336.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 21422,
+        "spawngroupId": 13098,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Ruanya Windleaf",
+        "rawName": "Ruanya_Windleaf",
+        "level": 65,
+        "race": "Wood Elf",
+        "rawRace": "Wood Elf",
+        "className": "Druid",
+        "type": "Spawn Slot",
+        "x": 902,
+        "y": 2713,
+        "z": -26.403244,
+        "heading": 190.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 21425,
+        "spawngroupId": 13101,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Shelie Dikop",
+        "rawName": "Shelie_Dikop",
+        "level": 65,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 921.509583,
+        "y": 2712.573975,
+        "z": -26.40424,
+        "heading": 258.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 21424,
+        "spawngroupId": 13100,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Soulbinder Ragni",
+        "rawName": "Soulbinder_Ragni",
+        "level": 65,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 893,
+        "y": 2750,
+        "z": -24.75,
+        "heading": 348,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 21423,
+        "spawngroupId": 13099,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Verrell Cogswin",
+        "rawName": "#Verrell_Cogswin",
+        "level": 70,
+        "race": "Gnome",
+        "rawRace": "Gnome",
+        "className": "Magician",
+        "type": "Spawn Slot",
+        "x": -480,
+        "y": -813,
+        "z": 5,
+        "heading": 71.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 439,
+        "spawngroupId": 3309,
+        "candidateCount": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,7222 @@
+{
+  "summary": {
+    "zoneSlug": "kerra-isle",
+    "zoneName": "Kerra Isle",
+    "requestedZoneShortName": "kerraridge",
+    "zoneShortName": "kerraridge",
+    "sourceFile": "local-eqemu-database",
+    "matched": true,
+    "expansion": "Classic",
+    "eqemuExpansionId": 0,
+    "expansionSource": "eqemu-zone-table",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobCount": 155,
+    "unknownLevelCount": 0,
+    "minLevel": 2,
+    "maxLevel": 60,
+    "averageLevel": 16.7,
+    "medianLevel": 17,
+    "levelCounts": {
+      "2": 1,
+      "3": 1,
+      "4": 3,
+      "5": 3,
+      "11": 5,
+      "12": 10,
+      "13": 14,
+      "14": 5,
+      "15": 10,
+      "16": 8,
+      "17": 23,
+      "18": 21,
+      "19": 17,
+      "20": 12,
+      "21": 15,
+      "22": 2,
+      "23": 2,
+      "25": 1,
+      "35": 1,
+      "60": 1
+    },
+    "levelBuckets": {
+      "1-10": 8,
+      "11-20": 125,
+      "21-30": 20,
+      "31-40": 1,
+      "41-50": 0,
+      "51-60": 1,
+      "61+": 0
+    },
+    "levelProfileLabel": "Wide level spread",
+    "mobGroupNameCounts": {
+      "A Kerran Mamluk": 12,
+      "A Kerran Ghazi Shaman": 11,
+      "A Kerran Ghulam": 11,
+      "A Kerran Pasdar": 10,
+      "A Kerra Puma": 7,
+      "A Kerran Mujahed": 7,
+      "A Kerran Awrat": 6,
+      "A Kerran Pazdar": 6,
+      "A Kerran Pazdar Shaman": 6,
+      "A Kobold Prisoner": 6,
+      "A Kerran `amir": 5,
+      "A Kerran Ispusar": 4,
+      "Spikefish": 4,
+      "A Kerran Ghazi": 3,
+      "A Kerran Gorilla": 3,
+      "A Wild Tiger": 3,
+      "Wharf Rat": 3,
+      "A Catfisher": 2,
+      "A Gorilla Protector": 2,
+      "A Kerra Lion": 2,
+      "A Kerran Ademzada Shaman": 2,
+      "A Kerran Ghazi`amir": 2,
+      "A Kerran Pazhal": 2,
+      "Kerran Tseq": 2,
+      "A Banished Kerran": 1,
+      "A Gorilla Guard": 1,
+      "A Kerran Ademzada": 1,
+      "A Kerran Ademzada`amir": 1,
+      "A Kerran Ahmad Shaman": 1,
+      "A Kerran Amira Guardian": 1,
+      "A Kerran Amira Priestess": 1,
+      "A Kerran Amira Protector": 1,
+      "A Kerran Sha`rr Apprentice": 1,
+      "A Patrolling Tiger": 1,
+      "A Venomous Spikefish": 1,
+      "Allix": 1,
+      "Dozing Ghulam": 1,
+      "Drunken Ghulam": 1,
+      "Erfer Longclaw": 1,
+      "Errrak Thickshank": 1,
+      "Falthrik Lothoro": 1,
+      "Feren": 1,
+      "Feskr Drinkmaker": 1,
+      "Graalf Sharpclaw": 1,
+      "Iffrir Soulcaller": 1,
+      "Jo Jo": 1,
+      "Kerran Tiger Spahi": 1,
+      "Kirran Mirrah": 1,
+      "Lord Gongo": 1,
+      "Marl Kastane": 1,
+      "Maugarim": 1,
+      "Melixis": 1,
+      "Raarrk": 1,
+      "Roary Fishpouncer": 1,
+      "Shazda Asad": 1,
+      "Thalith Mamluk": 1,
+      "Urkath Greyface": 1,
+      "Wislen Mamluk": 1
+    },
+    "classCounts": {
+      "Monk": 64,
+      "Shaman": 48,
+      "Warrior": 35,
+      "Banker": 3,
+      "Ranger": 2,
+      "Cleric": 1,
+      "Necromancer": 1,
+      "Wizard": 1
+    },
+    "raceCounts": {
+      "Kerran": 118,
+      "Gorilla": 7,
+      "Puma": 7,
+      "Kobold": 6,
+      "Fish": 5,
+      "Tiger": 5,
+      "Rat": 3,
+      "Lion": 2,
+      "Erudite": 1,
+      "Human": 1
+    },
+    "normalizedRaceCounts": {
+      "Kerran": 118,
+      "Gorilla": 7,
+      "Puma": 7,
+      "Kobold": 6,
+      "Fish": 5,
+      "Tiger": 5,
+      "Rat": 3,
+      "Lion": 2,
+      "Erudite": 1,
+      "Human": 1
+    },
+    "normalizedRaceLevelCounts": {
+      "Erudite": {
+        "25": 1
+      },
+      "Fish": {
+        "13": 5
+      },
+      "Gorilla": {
+        "18": 6,
+        "20": 1
+      },
+      "Human": {
+        "60": 1
+      },
+      "Kerran": {
+        "2": 1,
+        "3": 1,
+        "11": 3,
+        "12": 10,
+        "13": 9,
+        "14": 5,
+        "15": 6,
+        "16": 6,
+        "17": 17,
+        "18": 14,
+        "19": 17,
+        "20": 10,
+        "21": 14,
+        "22": 2,
+        "23": 2,
+        "35": 1
+      },
+      "Kobold": {
+        "4": 3,
+        "5": 3
+      },
+      "Lion": {
+        "20": 1,
+        "21": 1
+      },
+      "Puma": {
+        "15": 1,
+        "16": 2,
+        "17": 4
+      },
+      "Rat": {
+        "11": 2,
+        "15": 1
+      },
+      "Tiger": {
+        "15": 2,
+        "17": 2,
+        "18": 1
+      }
+    },
+    "raceAliases": {
+      "Erudite": [
+        "Erudite"
+      ],
+      "Fish": [
+        "Fish"
+      ],
+      "Gorilla": [
+        "Gorilla"
+      ],
+      "Human": [
+        "Human"
+      ],
+      "Kerran": [
+        "Kerran"
+      ],
+      "Kobold": [
+        "Kobold"
+      ],
+      "Lion": [
+        "Lion"
+      ],
+      "Puma": [
+        "Puma"
+      ],
+      "Rat": [
+        "Rat"
+      ],
+      "Tiger": [
+        "Tiger"
+      ]
+    },
+    "typeCounts": {
+      "Spawn Slot": 155
+    },
+    "notes": [
+      "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+      "Read-only test export; not wired into production /zones data."
+    ],
+    "spawnMapPrototype": {
+      "sourceKind": "Local EQEmu/PEQ database export",
+      "coordinateNote": "Original EQEmu spawn2 x/y/z coordinates are preserved for map prototyping.",
+      "points": [
+        {
+          "spawn2Id": 8074,
+          "spawngroupId": 2297,
+          "name": "a_kerran_awrat",
+          "displayName": "A Kerran Awrat",
+          "level": 12,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": -753,
+          "y": 505,
+          "z": 19.75,
+          "heading": 385,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8075,
+          "spawngroupId": 2297,
+          "name": "a_kerran_awrat",
+          "displayName": "A Kerran Awrat",
+          "level": 12,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": -341.5,
+          "y": 565.25,
+          "z": 19.75,
+          "heading": 352,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8076,
+          "spawngroupId": 2296,
+          "name": "a_kerran_ispusar",
+          "displayName": "A Kerran Ispusar",
+          "level": 15,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": -23,
+          "y": 857,
+          "z": 11.38,
+          "heading": 380,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8077,
+          "spawngroupId": 2295,
+          "name": "kerran_tseq",
+          "displayName": "Kerran Tseq",
+          "level": 12,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": -163,
+          "y": 240,
+          "z": 10.5,
+          "heading": 240,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8078,
+          "spawngroupId": 2294,
+          "name": "kerran_tseq",
+          "displayName": "Kerran Tseq",
+          "level": 12,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": -157,
+          "y": 232,
+          "z": 10.5,
+          "heading": 461,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8079,
+          "spawngroupId": 2293,
+          "name": "a_kerran_ghulam",
+          "displayName": "A Kerran Ghulam",
+          "level": 17,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": -292,
+          "y": 176,
+          "z": 13.75,
+          "heading": 188,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8080,
+          "spawngroupId": 2293,
+          "name": "a_kerran_ghulam",
+          "displayName": "A Kerran Ghulam",
+          "level": 17,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": 54,
+          "y": 308,
+          "z": 3,
+          "heading": 255,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8081,
+          "spawngroupId": 2293,
+          "name": "a_kerran_ghulam",
+          "displayName": "A Kerran Ghulam",
+          "level": 17,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": -129,
+          "y": -30,
+          "z": 3.13,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8082,
+          "spawngroupId": 2293,
+          "name": "a_kerran_ghulam",
+          "displayName": "A Kerran Ghulam",
+          "level": 17,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": 167,
+          "y": 260,
+          "z": 9.13,
+          "heading": 370,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8083,
+          "spawngroupId": 2293,
+          "name": "a_kerran_ghulam",
+          "displayName": "A Kerran Ghulam",
+          "level": 17,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": 323,
+          "y": -188,
+          "z": 3.13,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8084,
+          "spawngroupId": 2292,
+          "name": "Wislen_Mamluk",
+          "displayName": "Wislen Mamluk",
+          "level": 14,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": -87,
+          "y": -204,
+          "z": 9.13,
+          "heading": 257,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8085,
+          "spawngroupId": 2291,
+          "name": "a_kerran_mamluk",
+          "displayName": "A Kerran Mamluk",
+          "level": 12,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": -446,
+          "y": 276,
+          "z": 19.129999,
+          "heading": 486,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8086,
+          "spawngroupId": 2291,
+          "name": "a_kerran_mamluk",
+          "displayName": "A Kerran Mamluk",
+          "level": 12,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": -512,
+          "y": 474,
+          "z": 19.129999,
+          "heading": 134,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8087,
+          "spawngroupId": 2291,
+          "name": "a_kerran_mamluk",
+          "displayName": "A Kerran Mamluk",
+          "level": 12,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": -625,
+          "y": 379,
+          "z": 19.129999,
+          "heading": 134,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8088,
+          "spawngroupId": 2291,
+          "name": "a_kerran_mamluk",
+          "displayName": "A Kerran Mamluk",
+          "level": 12,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": -347,
+          "y": 530,
+          "z": 19.129999,
+          "heading": 416,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8089,
+          "spawngroupId": 2290,
+          "name": "a_kerran_mamluk",
+          "displayName": "A Kerran Mamluk",
+          "level": 11,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": -412,
+          "y": 306,
+          "z": 19.129999,
+          "heading": 467,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8090,
+          "spawngroupId": 2289,
+          "name": "a_kerran_mamluk",
+          "displayName": "A Kerran Mamluk",
+          "level": 13,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": -644,
+          "y": 518,
+          "z": 19.129999,
+          "heading": 392,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8091,
+          "spawngroupId": 2289,
+          "name": "a_kerran_mamluk",
+          "displayName": "A Kerran Mamluk",
+          "level": 13,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": -503,
+          "y": 526,
+          "z": 19.129999,
+          "heading": 127,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8092,
+          "spawngroupId": 2288,
+          "name": "a_kerran_mamluk",
+          "displayName": "A Kerran Mamluk",
+          "level": 13,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": -655,
+          "y": 413,
+          "z": 19.129999,
+          "heading": 6,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8093,
+          "spawngroupId": 2288,
+          "name": "a_kerran_mamluk",
+          "displayName": "A Kerran Mamluk",
+          "level": 13,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": -653,
+          "y": 745,
+          "z": 6.88,
+          "heading": 49,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8094,
+          "spawngroupId": 2288,
+          "name": "a_kerran_mamluk",
+          "displayName": "A Kerran Mamluk",
+          "level": 13,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": -647,
+          "y": 483,
+          "z": 19,
+          "heading": 392,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8095,
+          "spawngroupId": 2287,
+          "name": "a_kerran_awrat",
+          "displayName": "A Kerran Awrat",
+          "level": 13,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": -747,
+          "y": 464,
+          "z": 19.75,
+          "heading": 390,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8096,
+          "spawngroupId": 2287,
+          "name": "a_kerran_awrat",
+          "displayName": "A Kerran Awrat",
+          "level": 13,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": -636,
+          "y": 762,
+          "z": 6.38,
+          "heading": 259,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8097,
+          "spawngroupId": 2286,
+          "name": "Kirran_Mirrah",
+          "displayName": "Kirran Mirrah",
+          "level": 14,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Wizard",
+          "x": -648,
+          "y": 392,
+          "z": 22.25,
+          "heading": 52,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8098,
+          "spawngroupId": 2285,
+          "name": "a_kerran_mamluk",
+          "displayName": "A Kerran Mamluk",
+          "level": 12,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": -677,
+          "y": 610,
+          "z": 15.25,
+          "heading": 204,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8099,
+          "spawngroupId": 2285,
+          "name": "a_kerran_mamluk",
+          "displayName": "A Kerran Mamluk",
+          "level": 12,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": -674,
+          "y": 669,
+          "z": 11.63,
+          "heading": 10,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8100,
+          "spawngroupId": 2284,
+          "name": "a_kerran_ghazi_shaman",
+          "displayName": "A Kerran Ghazi Shaman",
+          "level": 18,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": 375,
+          "y": 654,
+          "z": 3.75,
+          "heading": 354,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8101,
+          "spawngroupId": 2284,
+          "name": "a_kerran_ghazi_shaman",
+          "displayName": "A Kerran Ghazi Shaman",
+          "level": 18,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": 32,
+          "y": 630,
+          "z": 3.75,
+          "heading": 478,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8102,
+          "spawngroupId": 2284,
+          "name": "a_kerran_ghazi_shaman",
+          "displayName": "A Kerran Ghazi Shaman",
+          "level": 18,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": 305,
+          "y": 706,
+          "z": 3.75,
+          "heading": 58,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8103,
+          "spawngroupId": 2283,
+          "name": "a_kerran_pasdar",
+          "displayName": "A Kerran Pasdar",
+          "level": 18,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": 375,
+          "y": 644,
+          "z": 3.75,
+          "heading": 438,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8104,
+          "spawngroupId": 2282,
+          "name": "a_Kerran_pazdar_shaman",
+          "displayName": "A Kerran Pazdar Shaman",
+          "level": 19,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": 352,
+          "y": 874,
+          "z": -6.13,
+          "heading": 452,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8105,
+          "spawngroupId": 2281,
+          "name": "a_kerran_sha`rr_apprentice",
+          "displayName": "A Kerran Sha`rr Apprentice",
+          "level": 22,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": 348,
+          "y": 903,
+          "z": -6.13,
+          "heading": 252,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8106,
+          "spawngroupId": 2280,
+          "name": "a_kerran_mujahed",
+          "displayName": "A Kerran Mujahed",
+          "level": 20,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": 362,
+          "y": 525,
+          "z": 17.75,
+          "heading": 255,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8107,
+          "spawngroupId": 2280,
+          "name": "a_kerran_mujahed",
+          "displayName": "A Kerran Mujahed",
+          "level": 20,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": -151,
+          "y": -597,
+          "z": 5.75,
+          "heading": 106,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8108,
+          "spawngroupId": 2279,
+          "name": "a_kerran_mujahed",
+          "displayName": "A Kerran Mujahed",
+          "level": 21,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": 290,
+          "y": 528,
+          "z": 17.75,
+          "heading": 339,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8109,
+          "spawngroupId": 2279,
+          "name": "a_kerran_mujahed",
+          "displayName": "A Kerran Mujahed",
+          "level": 21,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": 299,
+          "y": 947,
+          "z": -6.13,
+          "heading": 386,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8110,
+          "spawngroupId": 2278,
+          "name": "a_kerran_mujahed",
+          "displayName": "A Kerran Mujahed",
+          "level": 21,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": 290,
+          "y": 486,
+          "z": 17.75,
+          "heading": 0,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8111,
+          "spawngroupId": 2278,
+          "name": "a_kerran_mujahed",
+          "displayName": "A Kerran Mujahed",
+          "level": 21,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": -99,
+          "y": -507,
+          "z": 5.75,
+          "heading": 304,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8112,
+          "spawngroupId": 2277,
+          "name": "a_kerran_ghazi",
+          "displayName": "A Kerran Ghazi",
+          "level": 18,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": 379,
+          "y": 808,
+          "z": 3.75,
+          "heading": 400,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8113,
+          "spawngroupId": 2276,
+          "name": "a_kerran_gorilla",
+          "displayName": "A Kerran Gorilla",
+          "level": 18,
+          "race": "Gorilla",
+          "rawRace": "Gorilla",
+          "className": "Warrior",
+          "x": 385,
+          "y": 880,
+          "z": 9.75,
+          "heading": 262,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8114,
+          "spawngroupId": 2276,
+          "name": "a_kerran_gorilla",
+          "displayName": "A Kerran Gorilla",
+          "level": 18,
+          "race": "Gorilla",
+          "rawRace": "Gorilla",
+          "className": "Warrior",
+          "x": 208,
+          "y": 504,
+          "z": 17.75,
+          "heading": 3,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8115,
+          "spawngroupId": 2275,
+          "name": "a_kerran_gorilla",
+          "displayName": "A Kerran Gorilla",
+          "level": 18,
+          "race": "Gorilla",
+          "rawRace": "Gorilla",
+          "className": "Warrior",
+          "x": 369,
+          "y": 880,
+          "z": 9.75,
+          "heading": 262,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8116,
+          "spawngroupId": 2274,
+          "name": "Lord_Gongo",
+          "displayName": "Lord Gongo",
+          "level": 20,
+          "race": "Gorilla",
+          "rawRace": "Gorilla",
+          "className": "Shaman",
+          "x": 378,
+          "y": 905,
+          "z": 9.75,
+          "heading": 252,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 8117,
+          "spawngroupId": 2273,
+          "name": "a_kerran_pazdar",
+          "displayName": "A Kerran Pazdar",
+          "level": 19,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": 152,
+          "y": 783,
+          "z": 3.13,
+          "heading": 332,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8118,
+          "spawngroupId": 2273,
+          "name": "a_kerran_pazdar",
+          "displayName": "A Kerran Pazdar",
+          "level": 19,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": 93,
+          "y": 655,
+          "z": 3.13,
+          "heading": 54,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8119,
+          "spawngroupId": 2272,
+          "name": "Urkath_Greyface",
+          "displayName": "Urkath Greyface",
+          "level": 18,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": 127,
+          "y": 309,
+          "z": 9.13,
+          "heading": 235,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8120,
+          "spawngroupId": 2271,
+          "name": "Iffrir_Soulcaller",
+          "displayName": "Iffrir Soulcaller",
+          "level": 18,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": 118,
+          "y": 85,
+          "z": 3.75,
+          "heading": 78,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8121,
+          "spawngroupId": 2270,
+          "name": "Erfer_Longclaw",
+          "displayName": "Erfer Longclaw",
+          "level": 18,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": 132,
+          "y": 93,
+          "z": 3.13,
+          "heading": 510,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8122,
+          "spawngroupId": 2269,
+          "name": "a_kerran_`amir",
+          "displayName": "A Kerran `amir",
+          "level": 21,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": -196,
+          "y": -312,
+          "z": 5.13,
+          "heading": 332,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8123,
+          "spawngroupId": 2269,
+          "name": "a_kerran_`amir",
+          "displayName": "A Kerran `amir",
+          "level": 21,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": -258,
+          "y": -302,
+          "z": 5.13,
+          "heading": 308,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8124,
+          "spawngroupId": 2269,
+          "name": "a_kerran_`amir",
+          "displayName": "A Kerran `amir",
+          "level": 21,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": -255,
+          "y": 415,
+          "z": -2.75,
+          "heading": 184,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8125,
+          "spawngroupId": 2268,
+          "name": "a_kerran_`amir",
+          "displayName": "A Kerran `amir",
+          "level": 21,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": -119,
+          "y": -546,
+          "z": 5.13,
+          "heading": 86,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8126,
+          "spawngroupId": 2267,
+          "name": "Feren",
+          "displayName": "Feren",
+          "level": 14,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": -196,
+          "y": -738,
+          "z": 3.13,
+          "heading": 386,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8127,
+          "spawngroupId": 2266,
+          "name": "Spikefish",
+          "displayName": "Spikefish",
+          "level": 13,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -532.25,
+          "y": 632.5,
+          "z": -5,
+          "heading": 21.5,
+          "chance": 95,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8128,
+          "spawngroupId": 2266,
+          "name": "Spikefish",
+          "displayName": "Spikefish",
+          "level": 13,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -0.75,
+          "y": -215.880005,
+          "z": -9.88,
+          "heading": 116,
+          "chance": 95,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8129,
+          "spawngroupId": 2266,
+          "name": "Spikefish",
+          "displayName": "Spikefish",
+          "level": 13,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -288,
+          "y": -170,
+          "z": -32.099998,
+          "heading": 488,
+          "chance": 95,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8130,
+          "spawngroupId": 2266,
+          "name": "Spikefish",
+          "displayName": "Spikefish",
+          "level": 13,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -605.880005,
+          "y": 574.130005,
+          "z": -5,
+          "heading": 506,
+          "chance": 95,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8131,
+          "spawngroupId": 2265,
+          "name": "Falthrik_Lothoro",
+          "displayName": "Falthrik Lothoro",
+          "level": 20,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": 25,
+          "y": 210,
+          "z": 3.13,
+          "heading": 500,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8132,
+          "spawngroupId": 2264,
+          "name": "a_kerran_ghazi_shaman",
+          "displayName": "A Kerran Ghazi Shaman",
+          "level": 19,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": 10.63,
+          "y": 627.630005,
+          "z": 3.75,
+          "heading": 29,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8133,
+          "spawngroupId": 2263,
+          "name": "a_kerra_lion",
+          "displayName": "A Kerra Lion",
+          "level": 21,
+          "race": "Lion",
+          "rawRace": "Lion",
+          "className": "Warrior",
+          "x": -282,
+          "y": 430,
+          "z": 0.38,
+          "heading": 130,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8134,
+          "spawngroupId": 2262,
+          "name": "a_kerra_lion",
+          "displayName": "A Kerra Lion",
+          "level": 20,
+          "race": "Lion",
+          "rawRace": "Lion",
+          "className": "Warrior",
+          "x": -281,
+          "y": 367,
+          "z": 0.38,
+          "heading": 130,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8135,
+          "spawngroupId": 2261,
+          "name": "Shazda_Asad",
+          "displayName": "Shazda Asad",
+          "level": 23,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": -277,
+          "y": 398,
+          "z": 3.75,
+          "heading": 126,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8136,
+          "spawngroupId": 2260,
+          "name": "a_kerran_`amir",
+          "displayName": "A Kerran `amir",
+          "level": 20,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": -253,
+          "y": 380,
+          "z": -2.75,
+          "heading": 84,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8137,
+          "spawngroupId": 2259,
+          "name": "kerran_tiger_spahi",
+          "displayName": "Kerran Tiger Spahi",
+          "level": 22,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Warrior",
+          "x": -150,
+          "y": -503,
+          "z": 3.75,
+          "heading": 180,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8138,
+          "spawngroupId": 2258,
+          "name": "a_Kerran_ademzada_shaman",
+          "displayName": "A Kerran Ademzada Shaman",
+          "level": 17,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": 118,
+          "y": 910,
+          "z": 9.75,
+          "heading": 134,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8139,
+          "spawngroupId": 2257,
+          "name": "a_Kerran_ademzada_shaman",
+          "displayName": "A Kerran Ademzada Shaman",
+          "level": 18,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": 143,
+          "y": 892,
+          "z": 9.75,
+          "heading": 480,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8140,
+          "spawngroupId": 2256,
+          "name": "a_patrolling_tiger",
+          "displayName": "A Patrolling Tiger",
+          "level": 17,
+          "race": "Tiger",
+          "rawRace": "Tiger",
+          "className": "Warrior",
+          "x": 278.5,
+          "y": 949.880005,
+          "z": -6.13,
+          "heading": 255,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8141,
+          "spawngroupId": 2255,
+          "name": "a_Kerran_pazdar_shaman",
+          "displayName": "A Kerran Pazdar Shaman",
+          "level": 21,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": 302,
+          "y": 905,
+          "z": -6.13,
+          "heading": 56,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8142,
+          "spawngroupId": 2254,
+          "name": "a_kerran_pazdar_shaman",
+          "displayName": "A Kerran Pazdar Shaman",
+          "level": 19,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": 330,
+          "y": 938,
+          "z": -6.13,
+          "heading": 260,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8143,
+          "spawngroupId": 2254,
+          "name": "a_kerran_pazdar_shaman",
+          "displayName": "A Kerran Pazdar Shaman",
+          "level": 19,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": 297,
+          "y": 874,
+          "z": -6.13,
+          "heading": 84,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8144,
+          "spawngroupId": 2254,
+          "name": "a_kerran_pazdar_shaman",
+          "displayName": "A Kerran Pazdar Shaman",
+          "level": 19,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": 212,
+          "y": 930,
+          "z": -6.13,
+          "heading": 132,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8145,
+          "spawngroupId": 2253,
+          "name": "a_Kerran_pazdar_shaman",
+          "displayName": "A Kerran Pazdar Shaman",
+          "level": 21,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": 332,
+          "y": 905,
+          "z": -6.13,
+          "heading": 406,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8146,
+          "spawngroupId": 2252,
+          "name": "a_kerran_pazhal",
+          "displayName": "A Kerran Pazhal",
+          "level": 18,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Ranger",
+          "x": 225,
+          "y": 886,
+          "z": 9.75,
+          "heading": 64,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8147,
+          "spawngroupId": 2251,
+          "name": "a_banished_kerran",
+          "displayName": "A Banished Kerran",
+          "level": 20,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": 487,
+          "y": 463,
+          "z": 3.75,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8148,
+          "spawngroupId": 2250,
+          "name": "Maugarim",
+          "displayName": "Maugarim",
+          "level": 25,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Necromancer",
+          "x": 435,
+          "y": 460,
+          "z": 3.75,
+          "heading": 60,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8149,
+          "spawngroupId": 2249,
+          "name": "a_gorilla_guard",
+          "displayName": "A Gorilla Guard",
+          "level": 18,
+          "race": "Gorilla",
+          "rawRace": "Gorilla",
+          "className": "Warrior",
+          "x": 462,
+          "y": 508,
+          "z": 3.75,
+          "heading": 378,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8150,
+          "spawngroupId": 2248,
+          "name": "a_kerran_ahmad_shaman",
+          "displayName": "A Kerran Ahmad Shaman",
+          "level": 20,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": 192,
+          "y": 560,
+          "z": 3.75,
+          "heading": 218,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8151,
+          "spawngroupId": 2247,
+          "name": "a_kerran_ghazi`amir",
+          "displayName": "A Kerran Ghazi`amir",
+          "level": 20,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": 204,
+          "y": 546,
+          "z": 3.75,
+          "heading": 74,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8152,
+          "spawngroupId": 2246,
+          "name": "a_kerran_ademzada`amir",
+          "displayName": "A Kerran Ademzada`amir",
+          "level": 21,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Warrior",
+          "x": 220,
+          "y": 556,
+          "z": 3.75,
+          "heading": 396,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8153,
+          "spawngroupId": 2245,
+          "name": "a_kerran_ghazi`amir",
+          "displayName": "A Kerran Ghazi`amir",
+          "level": 21,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": 209,
+          "y": 516,
+          "z": 3.75,
+          "heading": 34,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8154,
+          "spawngroupId": 2244,
+          "name": "a_kerran_pasdar",
+          "displayName": "A Kerran Pasdar",
+          "level": 18,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": 110,
+          "y": 694,
+          "z": 17.75,
+          "heading": 382,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8155,
+          "spawngroupId": 2244,
+          "name": "a_kerran_pasdar",
+          "displayName": "A Kerran Pasdar",
+          "level": 18,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": -9,
+          "y": 762,
+          "z": 3.75,
+          "heading": 30,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8156,
+          "spawngroupId": 2243,
+          "name": "a_kerran_pazdar",
+          "displayName": "A Kerran Pazdar",
+          "level": 17,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": 195,
+          "y": 888,
+          "z": 9.13,
+          "heading": 280,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8157,
+          "spawngroupId": 2242,
+          "name": "a_kerran_ghazi",
+          "displayName": "A Kerran Ghazi",
+          "level": 17,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": 341,
+          "y": 764,
+          "z": 3.75,
+          "heading": 400,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8158,
+          "spawngroupId": 2241,
+          "name": "a_gorilla_protector",
+          "displayName": "A Gorilla Protector",
+          "level": 18,
+          "race": "Gorilla",
+          "rawRace": "Gorilla",
+          "className": "Shaman",
+          "x": 322,
+          "y": 522,
+          "z": 17.75,
+          "heading": 255,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8159,
+          "spawngroupId": 2241,
+          "name": "a_gorilla_protector",
+          "displayName": "A Gorilla Protector",
+          "level": 18,
+          "race": "Gorilla",
+          "rawRace": "Gorilla",
+          "className": "Shaman",
+          "x": 322,
+          "y": 490,
+          "z": 17.75,
+          "heading": 0,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8160,
+          "spawngroupId": 2240,
+          "name": "a_kerran_amira_priestess",
+          "displayName": "A Kerran Amira Priestess",
+          "level": 23,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Cleric",
+          "x": 407,
+          "y": 508,
+          "z": 19.75,
+          "heading": 382,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8161,
+          "spawngroupId": 2239,
+          "name": "a_kerran_mujahed",
+          "displayName": "A Kerran Mujahed",
+          "level": 21,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": 362,
+          "y": 490,
+          "z": 17.75,
+          "heading": 0,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8162,
+          "spawngroupId": 2238,
+          "name": "a_kerran_amira_protector",
+          "displayName": "A Kerran Amira Protector",
+          "level": 20,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": 400,
+          "y": 530,
+          "z": 17.75,
+          "heading": 255,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8163,
+          "spawngroupId": 2237,
+          "name": "a_kerran_amira_guardian",
+          "displayName": "A Kerran Amira Guardian",
+          "level": 21,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": 400,
+          "y": 490,
+          "z": 17.75,
+          "heading": 0,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8164,
+          "spawngroupId": 2236,
+          "name": "a_kerran_pazdar",
+          "displayName": "A Kerran Pazdar",
+          "level": 19,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": 285,
+          "y": 622,
+          "z": 3.13,
+          "heading": 186,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8165,
+          "spawngroupId": 2236,
+          "name": "a_kerran_pazdar",
+          "displayName": "A Kerran Pazdar",
+          "level": 19,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": 168,
+          "y": 888,
+          "z": 9.13,
+          "heading": 262,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8166,
+          "spawngroupId": 2235,
+          "name": "Errrak_Thickshank",
+          "displayName": "Errrak Thickshank",
+          "level": 17,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": 282,
+          "y": -96,
+          "z": 5.13,
+          "heading": 411,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8167,
+          "spawngroupId": 2234,
+          "name": "a_wild_tiger",
+          "displayName": "A Wild Tiger",
+          "level": 15,
+          "race": "Tiger",
+          "rawRace": "Tiger",
+          "className": "Warrior",
+          "x": -160,
+          "y": -475,
+          "z": -44.130001,
+          "heading": 118,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8168,
+          "spawngroupId": 2234,
+          "name": "a_wild_tiger",
+          "displayName": "A Wild Tiger",
+          "level": 15,
+          "race": "Tiger",
+          "rawRace": "Tiger",
+          "className": "Warrior",
+          "x": -172,
+          "y": -516,
+          "z": -44.130001,
+          "heading": 18,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8169,
+          "spawngroupId": 2233,
+          "name": "Graalf_Sharpclaw",
+          "displayName": "Graalf Sharpclaw",
+          "level": 14,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": 281,
+          "y": -79,
+          "z": 4.5,
+          "heading": 387,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8170,
+          "spawngroupId": 2232,
+          "name": "Feskr_Drinkmaker",
+          "displayName": "Feskr Drinkmaker",
+          "level": 15,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": 42,
+          "y": 109,
+          "z": 19.129999,
+          "heading": 125,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8171,
+          "spawngroupId": 2231,
+          "name": "a_kerran_pasdar",
+          "displayName": "A Kerran Pasdar",
+          "level": 18,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": 255,
+          "y": 763,
+          "z": -4.75,
+          "heading": 454,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8172,
+          "spawngroupId": 2230,
+          "name": "Jo_Jo",
+          "displayName": "Jo Jo",
+          "level": 18,
+          "race": "Tiger",
+          "rawRace": "Tiger",
+          "className": "Warrior",
+          "x": 246,
+          "y": 888,
+          "z": 9.75,
+          "heading": 442,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8173,
+          "spawngroupId": 2229,
+          "name": "a_kerran_pazhal",
+          "displayName": "A Kerran Pazhal",
+          "level": 16,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Ranger",
+          "x": 252,
+          "y": 909,
+          "z": 9.75,
+          "heading": 334,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8174,
+          "spawngroupId": 2228,
+          "name": "a_kerran_ademzada",
+          "displayName": "A Kerran Ademzada",
+          "level": 18,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": 147,
+          "y": 921,
+          "z": 9.75,
+          "heading": 302,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8175,
+          "spawngroupId": 2227,
+          "name": "a_kerran_pasdar",
+          "displayName": "A Kerran Pasdar",
+          "level": 19,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": 256,
+          "y": 790,
+          "z": -4.13,
+          "heading": 326,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8176,
+          "spawngroupId": 2227,
+          "name": "a_kerran_pasdar",
+          "displayName": "A Kerran Pasdar",
+          "level": 19,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": 229,
+          "y": 762,
+          "z": -4.25,
+          "heading": 64,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8177,
+          "spawngroupId": 2227,
+          "name": "a_kerran_pasdar",
+          "displayName": "A Kerran Pasdar",
+          "level": 19,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": -207,
+          "y": 410,
+          "z": 1.25,
+          "heading": 318,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8178,
+          "spawngroupId": 2227,
+          "name": "a_kerran_pasdar",
+          "displayName": "A Kerran Pasdar",
+          "level": 19,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": -207,
+          "y": 386,
+          "z": 1.25,
+          "heading": 438,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8179,
+          "spawngroupId": 2226,
+          "name": "a_kerran_ghazi_shaman",
+          "displayName": "A Kerran Ghazi Shaman",
+          "level": 19,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": -2,
+          "y": 748,
+          "z": 3.75,
+          "heading": 10,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8180,
+          "spawngroupId": 2226,
+          "name": "a_kerran_ghazi_shaman",
+          "displayName": "A Kerran Ghazi Shaman",
+          "level": 19,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": 318,
+          "y": 703,
+          "z": 3.75,
+          "heading": 466,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8181,
+          "spawngroupId": 2226,
+          "name": "a_kerran_ghazi_shaman",
+          "displayName": "A Kerran Ghazi Shaman",
+          "level": 19,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": 92,
+          "y": 816,
+          "z": 3.75,
+          "heading": 122,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8182,
+          "spawngroupId": 2225,
+          "name": "a_kerran_ghulam",
+          "displayName": "A Kerran Ghulam",
+          "level": 15,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": -87,
+          "y": 605,
+          "z": 8,
+          "heading": 295,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8183,
+          "spawngroupId": 2225,
+          "name": "a_kerran_ghulam",
+          "displayName": "A Kerran Ghulam",
+          "level": 15,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": -114,
+          "y": 608,
+          "z": 8.5,
+          "heading": 264,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8184,
+          "spawngroupId": 2224,
+          "name": "a_kerran_ispusar",
+          "displayName": "A Kerran Ispusar",
+          "level": 16,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": -106,
+          "y": 531,
+          "z": 3.75,
+          "heading": 377,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8185,
+          "spawngroupId": 2224,
+          "name": "a_kerran_ispusar",
+          "displayName": "A Kerran Ispusar",
+          "level": 16,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": -97,
+          "y": 405,
+          "z": 3.75,
+          "heading": 478,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8186,
+          "spawngroupId": 2223,
+          "name": "a_kerran_ghulam",
+          "displayName": "A Kerran Ghulam",
+          "level": 15,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": -75,
+          "y": 466,
+          "z": 3.13,
+          "heading": 457,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8187,
+          "spawngroupId": 2222,
+          "name": "a_kerran_ghulam",
+          "displayName": "A Kerran Ghulam",
+          "level": 16,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": -94,
+          "y": 477,
+          "z": 3.13,
+          "heading": 24,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8188,
+          "spawngroupId": 2221,
+          "name": "a_kerra_puma",
+          "displayName": "A Kerra Puma",
+          "level": 16,
+          "race": "Puma",
+          "rawRace": "Puma",
+          "className": "Warrior",
+          "x": -192,
+          "y": 793,
+          "z": 49.630001,
+          "heading": 200,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8189,
+          "spawngroupId": 2220,
+          "name": "a_kerran_pasdar",
+          "displayName": "A Kerran Pasdar",
+          "level": 17,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": 341,
+          "y": 787,
+          "z": 3.13,
+          "heading": 325,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8190,
+          "spawngroupId": 2220,
+          "name": "a_kerran_pasdar",
+          "displayName": "A Kerran Pasdar",
+          "level": 17,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": -194,
+          "y": 399,
+          "z": 3.13,
+          "heading": 382,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8191,
+          "spawngroupId": 2219,
+          "name": "a_kerran_ghazi_shaman",
+          "displayName": "A Kerran Ghazi Shaman",
+          "level": 17,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": 22,
+          "y": 646,
+          "z": 3.75,
+          "heading": 507,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8192,
+          "spawngroupId": 2219,
+          "name": "a_kerran_ghazi_shaman",
+          "displayName": "A Kerran Ghazi Shaman",
+          "level": 17,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": 313,
+          "y": 722,
+          "z": 3.75,
+          "heading": 304,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8193,
+          "spawngroupId": 2219,
+          "name": "a_kerran_ghazi_shaman",
+          "displayName": "A Kerran Ghazi Shaman",
+          "level": 17,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": 125,
+          "y": 567,
+          "z": 17.75,
+          "heading": 134,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8194,
+          "spawngroupId": 2218,
+          "name": "drunken_ghulam",
+          "displayName": "Drunken Ghulam",
+          "level": 17,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": 136,
+          "y": 73,
+          "z": 3.13,
+          "heading": 496,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8195,
+          "spawngroupId": 2217,
+          "name": "a_kerra_puma",
+          "displayName": "A Kerra Puma",
+          "level": 17,
+          "race": "Puma",
+          "rawRace": "Puma",
+          "className": "Warrior",
+          "x": -209,
+          "y": -380,
+          "z": 5.75,
+          "heading": 127,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8196,
+          "spawngroupId": 2216,
+          "name": "wharf_rat",
+          "displayName": "Wharf Rat",
+          "level": 11,
+          "race": "Rat",
+          "rawRace": "Rat",
+          "className": "Monk",
+          "x": 331.880005,
+          "y": -200.880005,
+          "z": 1.25,
+          "heading": 500,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8197,
+          "spawngroupId": 2216,
+          "name": "wharf_rat",
+          "displayName": "Wharf Rat",
+          "level": 11,
+          "race": "Rat",
+          "rawRace": "Rat",
+          "className": "Monk",
+          "x": -4,
+          "y": -47.880001,
+          "z": 1.25,
+          "heading": 500,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8198,
+          "spawngroupId": 2215,
+          "name": "a_kerra_puma",
+          "displayName": "A Kerra Puma",
+          "level": 17,
+          "race": "Puma",
+          "rawRace": "Puma",
+          "className": "Warrior",
+          "x": -214,
+          "y": -437,
+          "z": 5.75,
+          "heading": 53,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8199,
+          "spawngroupId": 2215,
+          "name": "a_kerra_puma",
+          "displayName": "A Kerra Puma",
+          "level": 17,
+          "race": "Puma",
+          "rawRace": "Puma",
+          "className": "Warrior",
+          "x": -244,
+          "y": -612,
+          "z": 5.75,
+          "heading": 470,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8200,
+          "spawngroupId": 2214,
+          "name": "a_wild_tiger",
+          "displayName": "A Wild Tiger",
+          "level": 17,
+          "race": "Tiger",
+          "rawRace": "Tiger",
+          "className": "Warrior",
+          "x": -121,
+          "y": -520,
+          "z": -44.130001,
+          "heading": 318,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8201,
+          "spawngroupId": 2213,
+          "name": "Roary_Fishpouncer",
+          "displayName": "Roary Fishpouncer",
+          "level": 13,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Banker",
+          "x": -681,
+          "y": 632,
+          "z": 17,
+          "heading": 156,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8202,
+          "spawngroupId": 2212,
+          "name": "Raarrk",
+          "displayName": "Raarrk",
+          "level": 35,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Banker",
+          "x": 131,
+          "y": 108,
+          "z": 3.13,
+          "heading": 258,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8203,
+          "spawngroupId": 2211,
+          "name": "a_kerra_puma",
+          "displayName": "A Kerra Puma",
+          "level": 15,
+          "race": "Puma",
+          "rawRace": "Puma",
+          "className": "Warrior",
+          "x": -231,
+          "y": -604,
+          "z": 5.75,
+          "heading": 426,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8204,
+          "spawngroupId": 2210,
+          "name": "a_kerra_puma",
+          "displayName": "A Kerra Puma",
+          "level": 16,
+          "race": "Puma",
+          "rawRace": "Puma",
+          "className": "Warrior",
+          "x": -321,
+          "y": -556,
+          "z": 5.75,
+          "heading": 396,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8205,
+          "spawngroupId": 2209,
+          "name": "a_kerran_ghazi_shaman",
+          "displayName": "A Kerran Ghazi Shaman",
+          "level": 17,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": 107.629997,
+          "y": -113.379997,
+          "z": 9.75,
+          "heading": 510,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8206,
+          "spawngroupId": 2208,
+          "name": "wharf_rat",
+          "displayName": "Wharf Rat",
+          "level": 15,
+          "race": "Rat",
+          "rawRace": "Rat",
+          "className": "Monk",
+          "x": 100,
+          "y": 131.880005,
+          "z": 2.25,
+          "heading": 500,
+          "chance": 70,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8207,
+          "spawngroupId": 2207,
+          "name": "a_kerran_awrat",
+          "displayName": "A Kerran Awrat",
+          "level": 11,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": 180.880005,
+          "y": -77.879997,
+          "z": 3.75,
+          "heading": 422,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8208,
+          "spawngroupId": 2207,
+          "name": "a_kerran_awrat",
+          "displayName": "A Kerran Awrat",
+          "level": 11,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": -668,
+          "y": 693,
+          "z": 10.75,
+          "heading": 302,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8209,
+          "spawngroupId": 2206,
+          "name": "Allix",
+          "displayName": "Allix",
+          "level": 13,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": 273,
+          "y": -149,
+          "z": 3.13,
+          "heading": 435,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8210,
+          "spawngroupId": 2205,
+          "name": "Thalith_Mamluk",
+          "displayName": "Thalith Mamluk",
+          "level": 14,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": 106,
+          "y": -175,
+          "z": 9.13,
+          "heading": 259,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8211,
+          "spawngroupId": 2204,
+          "name": "a_kerra_puma",
+          "displayName": "A Kerra Puma",
+          "level": 17,
+          "race": "Puma",
+          "rawRace": "Puma",
+          "className": "Warrior",
+          "x": -216,
+          "y": 768,
+          "z": 49.630001,
+          "heading": 100,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8212,
+          "spawngroupId": 6973,
+          "name": "a_kerran_ghulam",
+          "displayName": "A Kerran Ghulam",
+          "level": 16,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": -471,
+          "y": 640,
+          "z": 19.129999,
+          "heading": 295,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8213,
+          "spawngroupId": 6973,
+          "name": "a_kerran_ghulam",
+          "displayName": "A Kerran Ghulam",
+          "level": 16,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": -545,
+          "y": 277,
+          "z": 19.129999,
+          "heading": 95,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8214,
+          "spawngroupId": 6974,
+          "name": "a_Kerran_ghazi",
+          "displayName": "A Kerran Ghazi",
+          "level": 19,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": 142,
+          "y": 516,
+          "z": 17.75,
+          "heading": 22,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8215,
+          "spawngroupId": 6975,
+          "name": "Melixis",
+          "displayName": "Melixis",
+          "level": 20,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Banker",
+          "x": 179,
+          "y": 519,
+          "z": 17.129999,
+          "heading": 460,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8216,
+          "spawngroupId": 6976,
+          "name": "a_kobold_prisoner",
+          "displayName": "A Kobold Prisoner",
+          "level": 5,
+          "race": "Kobold",
+          "rawRace": "Kobold",
+          "className": "Warrior",
+          "x": 107,
+          "y": 676,
+          "z": 3.75,
+          "heading": 248,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8217,
+          "spawngroupId": 6976,
+          "name": "a_kobold_prisoner",
+          "displayName": "A Kobold Prisoner",
+          "level": 5,
+          "race": "Kobold",
+          "rawRace": "Kobold",
+          "className": "Warrior",
+          "x": 137,
+          "y": 675,
+          "z": 3.75,
+          "heading": 262,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8218,
+          "spawngroupId": 6977,
+          "name": "a_kerran_pazdar",
+          "displayName": "A Kerran Pazdar",
+          "level": 20,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Warrior",
+          "x": 152,
+          "y": 529,
+          "z": 17.75,
+          "heading": 136,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8219,
+          "spawngroupId": 6978,
+          "name": "a_kobold_prisoner",
+          "displayName": "A Kobold Prisoner",
+          "level": 4,
+          "race": "Kobold",
+          "rawRace": "Kobold",
+          "className": "Warrior",
+          "x": 143,
+          "y": 704,
+          "z": 3.75,
+          "heading": 96,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8220,
+          "spawngroupId": 6979,
+          "name": "a_kobold_prisoner",
+          "displayName": "A Kobold Prisoner",
+          "level": 4,
+          "race": "Kobold",
+          "rawRace": "Kobold",
+          "className": "Warrior",
+          "x": 103,
+          "y": 714,
+          "z": 3.75,
+          "heading": 44,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8221,
+          "spawngroupId": 6979,
+          "name": "a_kobold_prisoner",
+          "displayName": "A Kobold Prisoner",
+          "level": 4,
+          "race": "Kobold",
+          "rawRace": "Kobold",
+          "className": "Warrior",
+          "x": 279,
+          "y": 643,
+          "z": 3.75,
+          "heading": 252,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 8222,
+          "spawngroupId": 6980,
+          "name": "a_kobold_prisoner",
+          "displayName": "A Kobold Prisoner",
+          "level": 5,
+          "race": "Kobold",
+          "rawRace": "Kobold",
+          "className": "Warrior",
+          "x": 290,
+          "y": 645,
+          "z": 3.75,
+          "heading": 45,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8223,
+          "spawngroupId": 6981,
+          "name": "a_kerran_ispusar",
+          "displayName": "A Kerran Ispusar",
+          "level": 15,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Shaman",
+          "x": -190,
+          "y": 772,
+          "z": 49.630001,
+          "heading": 104,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8224,
+          "spawngroupId": 6982,
+          "name": "a_catfisher",
+          "displayName": "A Catfisher",
+          "level": 2,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Warrior",
+          "x": -504.880005,
+          "y": 670.880005,
+          "z": 19.799999,
+          "heading": 408,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8225,
+          "spawngroupId": 6983,
+          "name": "dozing_ghulam",
+          "displayName": "Dozing Ghulam",
+          "level": 17,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Monk",
+          "x": 53,
+          "y": 147.380005,
+          "z": 3.13,
+          "heading": 21,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8226,
+          "spawngroupId": 6984,
+          "name": "a_venomous_spikefish",
+          "displayName": "A Venomous Spikefish",
+          "level": 13,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -568.130005,
+          "y": 397.380005,
+          "z": -1.3,
+          "heading": 437,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8227,
+          "spawngroupId": 6985,
+          "name": "Marl_Kastane",
+          "displayName": "Marl Kastane",
+          "level": 60,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 63,
+          "y": 565,
+          "z": 17.75,
+          "heading": 509.5,
+          "chance": 100,
+          "respawnTime": 86400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 8228,
+          "spawngroupId": 6986,
+          "name": "a_catfisher",
+          "displayName": "A Catfisher",
+          "level": 3,
+          "race": "Kerran",
+          "rawRace": "Kerran",
+          "className": "Warrior",
+          "x": -505,
+          "y": 671,
+          "z": 19.75,
+          "heading": 460,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        }
+      ]
+    }
+  },
+  "details": {
+    "zoneSlug": "kerra-isle",
+    "routeSlug": "kerraridge",
+    "zoneName": "Kerra Isle",
+    "sourceFile": "local-eqemu-database",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobGroups": [
+      {
+        "displayName": "A Catfisher",
+        "rawNames": [
+          "a_catfisher"
+        ],
+        "count": 2,
+        "levelMin": 2,
+        "levelMax": 3,
+        "levels": [
+          2,
+          3
+        ],
+        "raceCounts": {
+          "Kerran": 2
+        },
+        "rawRaceCounts": {
+          "Kerran": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Kobold Prisoner",
+        "rawNames": [
+          "a_kobold_prisoner"
+        ],
+        "count": 6,
+        "levelMin": 4,
+        "levelMax": 5,
+        "levels": [
+          4,
+          5
+        ],
+        "raceCounts": {
+          "Kobold": 6
+        },
+        "rawRaceCounts": {
+          "Kobold": 6
+        },
+        "classCounts": {
+          "Warrior": 6
+        },
+        "typeCounts": {
+          "Spawn Slot": 6
+        }
+      },
+      {
+        "displayName": "A Kerran Mamluk",
+        "rawNames": [
+          "a_kerran_mamluk"
+        ],
+        "count": 12,
+        "levelMin": 11,
+        "levelMax": 13,
+        "levels": [
+          11,
+          12,
+          13
+        ],
+        "raceCounts": {
+          "Kerran": 12
+        },
+        "rawRaceCounts": {
+          "Kerran": 12
+        },
+        "classCounts": {
+          "Monk": 12
+        },
+        "typeCounts": {
+          "Spawn Slot": 12
+        }
+      },
+      {
+        "displayName": "A Kerran Awrat",
+        "rawNames": [
+          "a_kerran_awrat"
+        ],
+        "count": 6,
+        "levelMin": 11,
+        "levelMax": 13,
+        "levels": [
+          11,
+          12,
+          13
+        ],
+        "raceCounts": {
+          "Kerran": 6
+        },
+        "rawRaceCounts": {
+          "Kerran": 6
+        },
+        "classCounts": {
+          "Shaman": 6
+        },
+        "typeCounts": {
+          "Spawn Slot": 6
+        }
+      },
+      {
+        "displayName": "Wharf Rat",
+        "rawNames": [
+          "wharf_rat"
+        ],
+        "count": 2,
+        "levelMin": 11,
+        "levelMax": 11,
+        "levels": [
+          11
+        ],
+        "raceCounts": {
+          "Rat": 2
+        },
+        "rawRaceCounts": {
+          "Rat": 2
+        },
+        "classCounts": {
+          "Monk": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "Kerran Tseq",
+        "rawNames": [
+          "kerran_tseq"
+        ],
+        "count": 2,
+        "levelMin": 12,
+        "levelMax": 12,
+        "levels": [
+          12
+        ],
+        "raceCounts": {
+          "Kerran": 2
+        },
+        "rawRaceCounts": {
+          "Kerran": 2
+        },
+        "classCounts": {
+          "Monk": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "Spikefish",
+        "rawNames": [
+          "Spikefish"
+        ],
+        "count": 4,
+        "levelMin": 13,
+        "levelMax": 13,
+        "levels": [
+          13
+        ],
+        "raceCounts": {
+          "Fish": 4
+        },
+        "rawRaceCounts": {
+          "Fish": 4
+        },
+        "classCounts": {
+          "Warrior": 4
+        },
+        "typeCounts": {
+          "Spawn Slot": 4
+        }
+      },
+      {
+        "displayName": "A Venomous Spikefish",
+        "rawNames": [
+          "a_venomous_spikefish"
+        ],
+        "count": 1,
+        "levelMin": 13,
+        "levelMax": 13,
+        "levels": [
+          13
+        ],
+        "raceCounts": {
+          "Fish": 1
+        },
+        "rawRaceCounts": {
+          "Fish": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Allix",
+        "rawNames": [
+          "Allix"
+        ],
+        "count": 1,
+        "levelMin": 13,
+        "levelMax": 13,
+        "levels": [
+          13
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Monk": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Roary Fishpouncer",
+        "rawNames": [
+          "Roary_Fishpouncer"
+        ],
+        "count": 1,
+        "levelMin": 13,
+        "levelMax": 13,
+        "levels": [
+          13
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Feren",
+        "rawNames": [
+          "Feren"
+        ],
+        "count": 1,
+        "levelMin": 14,
+        "levelMax": 14,
+        "levels": [
+          14
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Monk": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Graalf Sharpclaw",
+        "rawNames": [
+          "Graalf_Sharpclaw"
+        ],
+        "count": 1,
+        "levelMin": 14,
+        "levelMax": 14,
+        "levels": [
+          14
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Monk": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Kirran Mirrah",
+        "rawNames": [
+          "Kirran_Mirrah"
+        ],
+        "count": 1,
+        "levelMin": 14,
+        "levelMax": 14,
+        "levels": [
+          14
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Wizard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Thalith Mamluk",
+        "rawNames": [
+          "Thalith_Mamluk"
+        ],
+        "count": 1,
+        "levelMin": 14,
+        "levelMax": 14,
+        "levels": [
+          14
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Monk": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Wislen Mamluk",
+        "rawNames": [
+          "Wislen_Mamluk"
+        ],
+        "count": 1,
+        "levelMin": 14,
+        "levelMax": 14,
+        "levels": [
+          14
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Monk": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Kerran Ghulam",
+        "rawNames": [
+          "a_kerran_ghulam"
+        ],
+        "count": 11,
+        "levelMin": 15,
+        "levelMax": 17,
+        "levels": [
+          15,
+          16,
+          17
+        ],
+        "raceCounts": {
+          "Kerran": 11
+        },
+        "rawRaceCounts": {
+          "Kerran": 11
+        },
+        "classCounts": {
+          "Monk": 11
+        },
+        "typeCounts": {
+          "Spawn Slot": 11
+        }
+      },
+      {
+        "displayName": "A Kerra Puma",
+        "rawNames": [
+          "a_kerra_puma"
+        ],
+        "count": 7,
+        "levelMin": 15,
+        "levelMax": 17,
+        "levels": [
+          15,
+          16,
+          17
+        ],
+        "raceCounts": {
+          "Puma": 7
+        },
+        "rawRaceCounts": {
+          "Puma": 7
+        },
+        "classCounts": {
+          "Warrior": 7
+        },
+        "typeCounts": {
+          "Spawn Slot": 7
+        }
+      },
+      {
+        "displayName": "A Kerran Ispusar",
+        "rawNames": [
+          "a_kerran_ispusar"
+        ],
+        "count": 4,
+        "levelMin": 15,
+        "levelMax": 16,
+        "levels": [
+          15,
+          16
+        ],
+        "raceCounts": {
+          "Kerran": 4
+        },
+        "rawRaceCounts": {
+          "Kerran": 4
+        },
+        "classCounts": {
+          "Shaman": 4
+        },
+        "typeCounts": {
+          "Spawn Slot": 4
+        }
+      },
+      {
+        "displayName": "A Wild Tiger",
+        "rawNames": [
+          "a_wild_tiger"
+        ],
+        "count": 2,
+        "levelMin": 15,
+        "levelMax": 15,
+        "levels": [
+          15
+        ],
+        "raceCounts": {
+          "Tiger": 2
+        },
+        "rawRaceCounts": {
+          "Tiger": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "Feskr Drinkmaker",
+        "rawNames": [
+          "Feskr_Drinkmaker"
+        ],
+        "count": 1,
+        "levelMin": 15,
+        "levelMax": 15,
+        "levels": [
+          15
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Monk": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Wharf Rat",
+        "rawNames": [
+          "wharf_rat"
+        ],
+        "count": 1,
+        "levelMin": 15,
+        "levelMax": 15,
+        "levels": [
+          15
+        ],
+        "raceCounts": {
+          "Rat": 1
+        },
+        "rawRaceCounts": {
+          "Rat": 1
+        },
+        "classCounts": {
+          "Monk": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Kerran Pazhal",
+        "rawNames": [
+          "a_kerran_pazhal"
+        ],
+        "count": 1,
+        "levelMin": 16,
+        "levelMax": 16,
+        "levels": [
+          16
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Ranger": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Kerran Ghazi Shaman",
+        "rawNames": [
+          "a_kerran_ghazi_shaman"
+        ],
+        "count": 11,
+        "levelMin": 17,
+        "levelMax": 19,
+        "levels": [
+          17,
+          18,
+          19
+        ],
+        "raceCounts": {
+          "Kerran": 11
+        },
+        "rawRaceCounts": {
+          "Kerran": 11
+        },
+        "classCounts": {
+          "Shaman": 11
+        },
+        "typeCounts": {
+          "Spawn Slot": 11
+        }
+      },
+      {
+        "displayName": "A Kerran Pasdar",
+        "rawNames": [
+          "a_kerran_pasdar"
+        ],
+        "count": 10,
+        "levelMin": 17,
+        "levelMax": 19,
+        "levels": [
+          17,
+          18,
+          19
+        ],
+        "raceCounts": {
+          "Kerran": 10
+        },
+        "rawRaceCounts": {
+          "Kerran": 10
+        },
+        "classCounts": {
+          "Monk": 10
+        },
+        "typeCounts": {
+          "Spawn Slot": 10
+        }
+      },
+      {
+        "displayName": "A Kerran Ghazi",
+        "rawNames": [
+          "a_kerran_ghazi",
+          "a_Kerran_ghazi"
+        ],
+        "count": 3,
+        "levelMin": 17,
+        "levelMax": 19,
+        "levels": [
+          17,
+          18,
+          19
+        ],
+        "raceCounts": {
+          "Kerran": 3
+        },
+        "rawRaceCounts": {
+          "Kerran": 3
+        },
+        "classCounts": {
+          "Shaman": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "A Kerran Ademzada Shaman",
+        "rawNames": [
+          "a_Kerran_ademzada_shaman"
+        ],
+        "count": 2,
+        "levelMin": 17,
+        "levelMax": 18,
+        "levels": [
+          17,
+          18
+        ],
+        "raceCounts": {
+          "Kerran": 2
+        },
+        "rawRaceCounts": {
+          "Kerran": 2
+        },
+        "classCounts": {
+          "Shaman": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Kerran Pazdar",
+        "rawNames": [
+          "a_kerran_pazdar"
+        ],
+        "count": 1,
+        "levelMin": 17,
+        "levelMax": 17,
+        "levels": [
+          17
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Monk": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Patrolling Tiger",
+        "rawNames": [
+          "a_patrolling_tiger"
+        ],
+        "count": 1,
+        "levelMin": 17,
+        "levelMax": 17,
+        "levels": [
+          17
+        ],
+        "raceCounts": {
+          "Tiger": 1
+        },
+        "rawRaceCounts": {
+          "Tiger": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Wild Tiger",
+        "rawNames": [
+          "a_wild_tiger"
+        ],
+        "count": 1,
+        "levelMin": 17,
+        "levelMax": 17,
+        "levels": [
+          17
+        ],
+        "raceCounts": {
+          "Tiger": 1
+        },
+        "rawRaceCounts": {
+          "Tiger": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Dozing Ghulam",
+        "rawNames": [
+          "dozing_ghulam"
+        ],
+        "count": 1,
+        "levelMin": 17,
+        "levelMax": 17,
+        "levels": [
+          17
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Monk": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Drunken Ghulam",
+        "rawNames": [
+          "drunken_ghulam"
+        ],
+        "count": 1,
+        "levelMin": 17,
+        "levelMax": 17,
+        "levels": [
+          17
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Monk": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Errrak Thickshank",
+        "rawNames": [
+          "Errrak_Thickshank"
+        ],
+        "count": 1,
+        "levelMin": 17,
+        "levelMax": 17,
+        "levels": [
+          17
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Monk": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Kerran Gorilla",
+        "rawNames": [
+          "a_kerran_gorilla"
+        ],
+        "count": 3,
+        "levelMin": 18,
+        "levelMax": 18,
+        "levels": [
+          18
+        ],
+        "raceCounts": {
+          "Gorilla": 3
+        },
+        "rawRaceCounts": {
+          "Gorilla": 3
+        },
+        "classCounts": {
+          "Warrior": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "A Gorilla Protector",
+        "rawNames": [
+          "a_gorilla_protector"
+        ],
+        "count": 2,
+        "levelMin": 18,
+        "levelMax": 18,
+        "levels": [
+          18
+        ],
+        "raceCounts": {
+          "Gorilla": 2
+        },
+        "rawRaceCounts": {
+          "Gorilla": 2
+        },
+        "classCounts": {
+          "Shaman": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Gorilla Guard",
+        "rawNames": [
+          "a_gorilla_guard"
+        ],
+        "count": 1,
+        "levelMin": 18,
+        "levelMax": 18,
+        "levels": [
+          18
+        ],
+        "raceCounts": {
+          "Gorilla": 1
+        },
+        "rawRaceCounts": {
+          "Gorilla": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Kerran Ademzada",
+        "rawNames": [
+          "a_kerran_ademzada"
+        ],
+        "count": 1,
+        "levelMin": 18,
+        "levelMax": 18,
+        "levels": [
+          18
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Monk": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Kerran Pazhal",
+        "rawNames": [
+          "a_kerran_pazhal"
+        ],
+        "count": 1,
+        "levelMin": 18,
+        "levelMax": 18,
+        "levels": [
+          18
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Ranger": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Erfer Longclaw",
+        "rawNames": [
+          "Erfer_Longclaw"
+        ],
+        "count": 1,
+        "levelMin": 18,
+        "levelMax": 18,
+        "levels": [
+          18
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Monk": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Iffrir Soulcaller",
+        "rawNames": [
+          "Iffrir_Soulcaller"
+        ],
+        "count": 1,
+        "levelMin": 18,
+        "levelMax": 18,
+        "levels": [
+          18
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Shaman": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Jo Jo",
+        "rawNames": [
+          "Jo_Jo"
+        ],
+        "count": 1,
+        "levelMin": 18,
+        "levelMax": 18,
+        "levels": [
+          18
+        ],
+        "raceCounts": {
+          "Tiger": 1
+        },
+        "rawRaceCounts": {
+          "Tiger": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Urkath Greyface",
+        "rawNames": [
+          "Urkath_Greyface"
+        ],
+        "count": 1,
+        "levelMin": 18,
+        "levelMax": 18,
+        "levels": [
+          18
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Monk": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Kerran Pazdar",
+        "rawNames": [
+          "a_kerran_pazdar"
+        ],
+        "count": 5,
+        "levelMin": 19,
+        "levelMax": 20,
+        "levels": [
+          19,
+          20
+        ],
+        "raceCounts": {
+          "Kerran": 5
+        },
+        "rawRaceCounts": {
+          "Kerran": 5
+        },
+        "classCounts": {
+          "Monk": 4,
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 5
+        }
+      },
+      {
+        "displayName": "A Kerran Pazdar Shaman",
+        "rawNames": [
+          "a_kerran_pazdar_shaman",
+          "a_Kerran_pazdar_shaman"
+        ],
+        "count": 4,
+        "levelMin": 19,
+        "levelMax": 19,
+        "levels": [
+          19
+        ],
+        "raceCounts": {
+          "Kerran": 4
+        },
+        "rawRaceCounts": {
+          "Kerran": 4
+        },
+        "classCounts": {
+          "Shaman": 4
+        },
+        "typeCounts": {
+          "Spawn Slot": 4
+        }
+      },
+      {
+        "displayName": "A Kerran Mujahed",
+        "rawNames": [
+          "a_kerran_mujahed"
+        ],
+        "count": 7,
+        "levelMin": 20,
+        "levelMax": 21,
+        "levels": [
+          20,
+          21
+        ],
+        "raceCounts": {
+          "Kerran": 7
+        },
+        "rawRaceCounts": {
+          "Kerran": 7
+        },
+        "classCounts": {
+          "Shaman": 7
+        },
+        "typeCounts": {
+          "Spawn Slot": 7
+        }
+      },
+      {
+        "displayName": "A Kerran `amir",
+        "rawNames": [
+          "a_kerran_`amir"
+        ],
+        "count": 5,
+        "levelMin": 20,
+        "levelMax": 21,
+        "levels": [
+          20,
+          21
+        ],
+        "raceCounts": {
+          "Kerran": 5
+        },
+        "rawRaceCounts": {
+          "Kerran": 5
+        },
+        "classCounts": {
+          "Monk": 5
+        },
+        "typeCounts": {
+          "Spawn Slot": 5
+        }
+      },
+      {
+        "displayName": "A Kerra Lion",
+        "rawNames": [
+          "a_kerra_lion"
+        ],
+        "count": 2,
+        "levelMin": 20,
+        "levelMax": 21,
+        "levels": [
+          20,
+          21
+        ],
+        "raceCounts": {
+          "Lion": 2
+        },
+        "rawRaceCounts": {
+          "Lion": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Kerran Ghazi`amir",
+        "rawNames": [
+          "a_kerran_ghazi`amir"
+        ],
+        "count": 2,
+        "levelMin": 20,
+        "levelMax": 21,
+        "levels": [
+          20,
+          21
+        ],
+        "raceCounts": {
+          "Kerran": 2
+        },
+        "rawRaceCounts": {
+          "Kerran": 2
+        },
+        "classCounts": {
+          "Shaman": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Banished Kerran",
+        "rawNames": [
+          "a_banished_kerran"
+        ],
+        "count": 1,
+        "levelMin": 20,
+        "levelMax": 20,
+        "levels": [
+          20
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Monk": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Kerran Ahmad Shaman",
+        "rawNames": [
+          "a_kerran_ahmad_shaman"
+        ],
+        "count": 1,
+        "levelMin": 20,
+        "levelMax": 20,
+        "levels": [
+          20
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Shaman": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Kerran Amira Protector",
+        "rawNames": [
+          "a_kerran_amira_protector"
+        ],
+        "count": 1,
+        "levelMin": 20,
+        "levelMax": 20,
+        "levels": [
+          20
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Monk": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Falthrik Lothoro",
+        "rawNames": [
+          "Falthrik_Lothoro"
+        ],
+        "count": 1,
+        "levelMin": 20,
+        "levelMax": 20,
+        "levels": [
+          20
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Monk": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Lord Gongo",
+        "rawNames": [
+          "Lord_Gongo"
+        ],
+        "count": 1,
+        "levelMin": 20,
+        "levelMax": 20,
+        "levels": [
+          20
+        ],
+        "raceCounts": {
+          "Gorilla": 1
+        },
+        "rawRaceCounts": {
+          "Gorilla": 1
+        },
+        "classCounts": {
+          "Shaman": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Melixis",
+        "rawNames": [
+          "Melixis"
+        ],
+        "count": 1,
+        "levelMin": 20,
+        "levelMax": 20,
+        "levels": [
+          20
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Kerran Pazdar Shaman",
+        "rawNames": [
+          "a_Kerran_pazdar_shaman"
+        ],
+        "count": 2,
+        "levelMin": 21,
+        "levelMax": 21,
+        "levels": [
+          21
+        ],
+        "raceCounts": {
+          "Kerran": 2
+        },
+        "rawRaceCounts": {
+          "Kerran": 2
+        },
+        "classCounts": {
+          "Shaman": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Kerran Ademzada`amir",
+        "rawNames": [
+          "a_kerran_ademzada`amir"
+        ],
+        "count": 1,
+        "levelMin": 21,
+        "levelMax": 21,
+        "levels": [
+          21
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Kerran Amira Guardian",
+        "rawNames": [
+          "a_kerran_amira_guardian"
+        ],
+        "count": 1,
+        "levelMin": 21,
+        "levelMax": 21,
+        "levels": [
+          21
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Shaman": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Kerran Sha`rr Apprentice",
+        "rawNames": [
+          "a_kerran_sha`rr_apprentice"
+        ],
+        "count": 1,
+        "levelMin": 22,
+        "levelMax": 22,
+        "levels": [
+          22
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Shaman": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Kerran Tiger Spahi",
+        "rawNames": [
+          "kerran_tiger_spahi"
+        ],
+        "count": 1,
+        "levelMin": 22,
+        "levelMax": 22,
+        "levels": [
+          22
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Kerran Amira Priestess",
+        "rawNames": [
+          "a_kerran_amira_priestess"
+        ],
+        "count": 1,
+        "levelMin": 23,
+        "levelMax": 23,
+        "levels": [
+          23
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Cleric": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Shazda Asad",
+        "rawNames": [
+          "Shazda_Asad"
+        ],
+        "count": 1,
+        "levelMin": 23,
+        "levelMax": 23,
+        "levels": [
+          23
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Monk": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Maugarim",
+        "rawNames": [
+          "Maugarim"
+        ],
+        "count": 1,
+        "levelMin": 25,
+        "levelMax": 25,
+        "levels": [
+          25
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Necromancer": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Raarrk",
+        "rawNames": [
+          "Raarrk"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Kerran": 1
+        },
+        "rawRaceCounts": {
+          "Kerran": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Marl Kastane",
+        "rawNames": [
+          "Marl_Kastane"
+        ],
+        "count": 1,
+        "levelMin": 60,
+        "levelMax": 60,
+        "levels": [
+          60
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      }
+    ],
+    "rows": [
+      {
+        "displayName": "A Catfisher",
+        "rawName": "a_catfisher",
+        "level": 2,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -504.880005,
+        "y": 670.880005,
+        "z": 19.799999,
+        "heading": 408,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8224,
+        "spawngroupId": 6982,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Catfisher",
+        "rawName": "a_catfisher",
+        "level": 3,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -505,
+        "y": 671,
+        "z": 19.75,
+        "heading": 460,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8228,
+        "spawngroupId": 6986,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kobold Prisoner",
+        "rawName": "a_kobold_prisoner",
+        "level": 4,
+        "race": "Kobold",
+        "rawRace": "Kobold",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 143,
+        "y": 704,
+        "z": 3.75,
+        "heading": 96,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8219,
+        "spawngroupId": 6978,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kobold Prisoner",
+        "rawName": "a_kobold_prisoner",
+        "level": 4,
+        "race": "Kobold",
+        "rawRace": "Kobold",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 103,
+        "y": 714,
+        "z": 3.75,
+        "heading": 44,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8220,
+        "spawngroupId": 6979,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kobold Prisoner",
+        "rawName": "a_kobold_prisoner",
+        "level": 4,
+        "race": "Kobold",
+        "rawRace": "Kobold",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 279,
+        "y": 643,
+        "z": 3.75,
+        "heading": 252,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8221,
+        "spawngroupId": 6979,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kobold Prisoner",
+        "rawName": "a_kobold_prisoner",
+        "level": 5,
+        "race": "Kobold",
+        "rawRace": "Kobold",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 107,
+        "y": 676,
+        "z": 3.75,
+        "heading": 248,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8216,
+        "spawngroupId": 6976,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kobold Prisoner",
+        "rawName": "a_kobold_prisoner",
+        "level": 5,
+        "race": "Kobold",
+        "rawRace": "Kobold",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 137,
+        "y": 675,
+        "z": 3.75,
+        "heading": 262,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8217,
+        "spawngroupId": 6976,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kobold Prisoner",
+        "rawName": "a_kobold_prisoner",
+        "level": 5,
+        "race": "Kobold",
+        "rawRace": "Kobold",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 290,
+        "y": 645,
+        "z": 3.75,
+        "heading": 45,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8222,
+        "spawngroupId": 6980,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerran Awrat",
+        "rawName": "a_kerran_awrat",
+        "level": 11,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 180.880005,
+        "y": -77.879997,
+        "z": 3.75,
+        "heading": 422,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8207,
+        "spawngroupId": 2207,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerran Awrat",
+        "rawName": "a_kerran_awrat",
+        "level": 11,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": -668,
+        "y": 693,
+        "z": 10.75,
+        "heading": 302,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8208,
+        "spawngroupId": 2207,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerran Mamluk",
+        "rawName": "a_kerran_mamluk",
+        "level": 11,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": -412,
+        "y": 306,
+        "z": 19.129999,
+        "heading": 467,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8089,
+        "spawngroupId": 2290,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Wharf Rat",
+        "rawName": "wharf_rat",
+        "level": 11,
+        "race": "Rat",
+        "rawRace": "Rat",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": 331.880005,
+        "y": -200.880005,
+        "z": 1.25,
+        "heading": 500,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8196,
+        "spawngroupId": 2216,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Wharf Rat",
+        "rawName": "wharf_rat",
+        "level": 11,
+        "race": "Rat",
+        "rawRace": "Rat",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": -4,
+        "y": -47.880001,
+        "z": 1.25,
+        "heading": 500,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8197,
+        "spawngroupId": 2216,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerran Awrat",
+        "rawName": "a_kerran_awrat",
+        "level": 12,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": -753,
+        "y": 505,
+        "z": 19.75,
+        "heading": 385,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8074,
+        "spawngroupId": 2297,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Awrat",
+        "rawName": "a_kerran_awrat",
+        "level": 12,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": -341.5,
+        "y": 565.25,
+        "z": 19.75,
+        "heading": 352,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8075,
+        "spawngroupId": 2297,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Mamluk",
+        "rawName": "a_kerran_mamluk",
+        "level": 12,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": -446,
+        "y": 276,
+        "z": 19.129999,
+        "heading": 486,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8085,
+        "spawngroupId": 2291,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Mamluk",
+        "rawName": "a_kerran_mamluk",
+        "level": 12,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": -512,
+        "y": 474,
+        "z": 19.129999,
+        "heading": 134,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8086,
+        "spawngroupId": 2291,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Mamluk",
+        "rawName": "a_kerran_mamluk",
+        "level": 12,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": -625,
+        "y": 379,
+        "z": 19.129999,
+        "heading": 134,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8087,
+        "spawngroupId": 2291,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Mamluk",
+        "rawName": "a_kerran_mamluk",
+        "level": 12,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": -347,
+        "y": 530,
+        "z": 19.129999,
+        "heading": 416,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8088,
+        "spawngroupId": 2291,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Mamluk",
+        "rawName": "a_kerran_mamluk",
+        "level": 12,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": -677,
+        "y": 610,
+        "z": 15.25,
+        "heading": 204,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8098,
+        "spawngroupId": 2285,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerran Mamluk",
+        "rawName": "a_kerran_mamluk",
+        "level": 12,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": -674,
+        "y": 669,
+        "z": 11.63,
+        "heading": 10,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8099,
+        "spawngroupId": 2285,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Kerran Tseq",
+        "rawName": "kerran_tseq",
+        "level": 12,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": -163,
+        "y": 240,
+        "z": 10.5,
+        "heading": 240,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8077,
+        "spawngroupId": 2295,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Kerran Tseq",
+        "rawName": "kerran_tseq",
+        "level": 12,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": -157,
+        "y": 232,
+        "z": 10.5,
+        "heading": 461,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8078,
+        "spawngroupId": 2294,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerran Awrat",
+        "rawName": "a_kerran_awrat",
+        "level": 13,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": -747,
+        "y": 464,
+        "z": 19.75,
+        "heading": 390,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8095,
+        "spawngroupId": 2287,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Awrat",
+        "rawName": "a_kerran_awrat",
+        "level": 13,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": -636,
+        "y": 762,
+        "z": 6.38,
+        "heading": 259,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8096,
+        "spawngroupId": 2287,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Mamluk",
+        "rawName": "a_kerran_mamluk",
+        "level": 13,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": -644,
+        "y": 518,
+        "z": 19.129999,
+        "heading": 392,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8090,
+        "spawngroupId": 2289,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerran Mamluk",
+        "rawName": "a_kerran_mamluk",
+        "level": 13,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": -503,
+        "y": 526,
+        "z": 19.129999,
+        "heading": 127,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8091,
+        "spawngroupId": 2289,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerran Mamluk",
+        "rawName": "a_kerran_mamluk",
+        "level": 13,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": -655,
+        "y": 413,
+        "z": 19.129999,
+        "heading": 6,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8092,
+        "spawngroupId": 2288,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Mamluk",
+        "rawName": "a_kerran_mamluk",
+        "level": 13,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": -653,
+        "y": 745,
+        "z": 6.88,
+        "heading": 49,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8093,
+        "spawngroupId": 2288,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Mamluk",
+        "rawName": "a_kerran_mamluk",
+        "level": 13,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": -647,
+        "y": 483,
+        "z": 19,
+        "heading": 392,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8094,
+        "spawngroupId": 2288,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Venomous Spikefish",
+        "rawName": "a_venomous_spikefish",
+        "level": 13,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -568.130005,
+        "y": 397.380005,
+        "z": -1.3,
+        "heading": 437,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8226,
+        "spawngroupId": 6984,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Allix",
+        "rawName": "Allix",
+        "level": 13,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": 273,
+        "y": -149,
+        "z": 3.13,
+        "heading": 435,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8209,
+        "spawngroupId": 2206,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Roary Fishpouncer",
+        "rawName": "Roary_Fishpouncer",
+        "level": 13,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -681,
+        "y": 632,
+        "z": 17,
+        "heading": 156,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8201,
+        "spawngroupId": 2213,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Spikefish",
+        "rawName": "Spikefish",
+        "level": 13,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -532.25,
+        "y": 632.5,
+        "z": -5,
+        "heading": 21.5,
+        "chance": 95,
+        "respawnTime": 640,
+        "spawn2Id": 8127,
+        "spawngroupId": 2266,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Spikefish",
+        "rawName": "Spikefish",
+        "level": 13,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -0.75,
+        "y": -215.880005,
+        "z": -9.88,
+        "heading": 116,
+        "chance": 95,
+        "respawnTime": 640,
+        "spawn2Id": 8128,
+        "spawngroupId": 2266,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Spikefish",
+        "rawName": "Spikefish",
+        "level": 13,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -288,
+        "y": -170,
+        "z": -32.099998,
+        "heading": 488,
+        "chance": 95,
+        "respawnTime": 640,
+        "spawn2Id": 8129,
+        "spawngroupId": 2266,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Spikefish",
+        "rawName": "Spikefish",
+        "level": 13,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -605.880005,
+        "y": 574.130005,
+        "z": -5,
+        "heading": 506,
+        "chance": 95,
+        "respawnTime": 640,
+        "spawn2Id": 8130,
+        "spawngroupId": 2266,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Feren",
+        "rawName": "Feren",
+        "level": 14,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": -196,
+        "y": -738,
+        "z": 3.13,
+        "heading": 386,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8126,
+        "spawngroupId": 2267,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Graalf Sharpclaw",
+        "rawName": "Graalf_Sharpclaw",
+        "level": 14,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": 281,
+        "y": -79,
+        "z": 4.5,
+        "heading": 387,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8169,
+        "spawngroupId": 2233,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Kirran Mirrah",
+        "rawName": "Kirran_Mirrah",
+        "level": 14,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -648,
+        "y": 392,
+        "z": 22.25,
+        "heading": 52,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 8097,
+        "spawngroupId": 2286,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Thalith Mamluk",
+        "rawName": "Thalith_Mamluk",
+        "level": 14,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": 106,
+        "y": -175,
+        "z": 9.13,
+        "heading": 259,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8210,
+        "spawngroupId": 2205,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Wislen Mamluk",
+        "rawName": "Wislen_Mamluk",
+        "level": 14,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": -87,
+        "y": -204,
+        "z": 9.13,
+        "heading": 257,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8084,
+        "spawngroupId": 2292,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerra Puma",
+        "rawName": "a_kerra_puma",
+        "level": 15,
+        "race": "Puma",
+        "rawRace": "Puma",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -231,
+        "y": -604,
+        "z": 5.75,
+        "heading": 426,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8203,
+        "spawngroupId": 2211,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerran Ghulam",
+        "rawName": "a_kerran_ghulam",
+        "level": 15,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": -87,
+        "y": 605,
+        "z": 8,
+        "heading": 295,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8182,
+        "spawngroupId": 2225,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerran Ghulam",
+        "rawName": "a_kerran_ghulam",
+        "level": 15,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": -114,
+        "y": 608,
+        "z": 8.5,
+        "heading": 264,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8183,
+        "spawngroupId": 2225,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerran Ghulam",
+        "rawName": "a_kerran_ghulam",
+        "level": 15,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": -75,
+        "y": 466,
+        "z": 3.13,
+        "heading": 457,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8186,
+        "spawngroupId": 2223,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Ispusar",
+        "rawName": "a_kerran_ispusar",
+        "level": 15,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": -23,
+        "y": 857,
+        "z": 11.38,
+        "heading": 380,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8076,
+        "spawngroupId": 2296,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Ispusar",
+        "rawName": "a_kerran_ispusar",
+        "level": 15,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": -190,
+        "y": 772,
+        "z": 49.630001,
+        "heading": 104,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8223,
+        "spawngroupId": 6981,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Wild Tiger",
+        "rawName": "a_wild_tiger",
+        "level": 15,
+        "race": "Tiger",
+        "rawRace": "Tiger",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -160,
+        "y": -475,
+        "z": -44.130001,
+        "heading": 118,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8167,
+        "spawngroupId": 2234,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Wild Tiger",
+        "rawName": "a_wild_tiger",
+        "level": 15,
+        "race": "Tiger",
+        "rawRace": "Tiger",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -172,
+        "y": -516,
+        "z": -44.130001,
+        "heading": 18,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8168,
+        "spawngroupId": 2234,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Feskr Drinkmaker",
+        "rawName": "Feskr_Drinkmaker",
+        "level": 15,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": 42,
+        "y": 109,
+        "z": 19.129999,
+        "heading": 125,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8170,
+        "spawngroupId": 2232,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Wharf Rat",
+        "rawName": "wharf_rat",
+        "level": 15,
+        "race": "Rat",
+        "rawRace": "Rat",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": 100,
+        "y": 131.880005,
+        "z": 2.25,
+        "heading": 500,
+        "chance": 70,
+        "respawnTime": 640,
+        "spawn2Id": 8206,
+        "spawngroupId": 2208,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerra Puma",
+        "rawName": "a_kerra_puma",
+        "level": 16,
+        "race": "Puma",
+        "rawRace": "Puma",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -192,
+        "y": 793,
+        "z": 49.630001,
+        "heading": 200,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8188,
+        "spawngroupId": 2221,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerra Puma",
+        "rawName": "a_kerra_puma",
+        "level": 16,
+        "race": "Puma",
+        "rawRace": "Puma",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -321,
+        "y": -556,
+        "z": 5.75,
+        "heading": 396,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8204,
+        "spawngroupId": 2210,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerran Ghulam",
+        "rawName": "a_kerran_ghulam",
+        "level": 16,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": -94,
+        "y": 477,
+        "z": 3.13,
+        "heading": 24,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8187,
+        "spawngroupId": 2222,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerran Ghulam",
+        "rawName": "a_kerran_ghulam",
+        "level": 16,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": -471,
+        "y": 640,
+        "z": 19.129999,
+        "heading": 295,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8212,
+        "spawngroupId": 6973,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Ghulam",
+        "rawName": "a_kerran_ghulam",
+        "level": 16,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": -545,
+        "y": 277,
+        "z": 19.129999,
+        "heading": 95,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8213,
+        "spawngroupId": 6973,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Ispusar",
+        "rawName": "a_kerran_ispusar",
+        "level": 16,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": -106,
+        "y": 531,
+        "z": 3.75,
+        "heading": 377,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8184,
+        "spawngroupId": 2224,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Ispusar",
+        "rawName": "a_kerran_ispusar",
+        "level": 16,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": -97,
+        "y": 405,
+        "z": 3.75,
+        "heading": 478,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8185,
+        "spawngroupId": 2224,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Pazhal",
+        "rawName": "a_kerran_pazhal",
+        "level": 16,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Ranger",
+        "type": "Spawn Slot",
+        "x": 252,
+        "y": 909,
+        "z": 9.75,
+        "heading": 334,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8173,
+        "spawngroupId": 2229,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerra Puma",
+        "rawName": "a_kerra_puma",
+        "level": 17,
+        "race": "Puma",
+        "rawRace": "Puma",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -209,
+        "y": -380,
+        "z": 5.75,
+        "heading": 127,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8195,
+        "spawngroupId": 2217,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerra Puma",
+        "rawName": "a_kerra_puma",
+        "level": 17,
+        "race": "Puma",
+        "rawRace": "Puma",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -214,
+        "y": -437,
+        "z": 5.75,
+        "heading": 53,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8198,
+        "spawngroupId": 2215,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerra Puma",
+        "rawName": "a_kerra_puma",
+        "level": 17,
+        "race": "Puma",
+        "rawRace": "Puma",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -244,
+        "y": -612,
+        "z": 5.75,
+        "heading": 470,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8199,
+        "spawngroupId": 2215,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerra Puma",
+        "rawName": "a_kerra_puma",
+        "level": 17,
+        "race": "Puma",
+        "rawRace": "Puma",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -216,
+        "y": 768,
+        "z": 49.630001,
+        "heading": 100,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8211,
+        "spawngroupId": 2204,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Ademzada Shaman",
+        "rawName": "a_Kerran_ademzada_shaman",
+        "level": 17,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 118,
+        "y": 910,
+        "z": 9.75,
+        "heading": 134,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8138,
+        "spawngroupId": 2258,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerran Ghazi",
+        "rawName": "a_kerran_ghazi",
+        "level": 17,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 341,
+        "y": 764,
+        "z": 3.75,
+        "heading": 400,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8157,
+        "spawngroupId": 2242,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerran Ghazi Shaman",
+        "rawName": "a_kerran_ghazi_shaman",
+        "level": 17,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 22,
+        "y": 646,
+        "z": 3.75,
+        "heading": 507,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8191,
+        "spawngroupId": 2219,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Ghazi Shaman",
+        "rawName": "a_kerran_ghazi_shaman",
+        "level": 17,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 313,
+        "y": 722,
+        "z": 3.75,
+        "heading": 304,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8192,
+        "spawngroupId": 2219,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Ghazi Shaman",
+        "rawName": "a_kerran_ghazi_shaman",
+        "level": 17,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 125,
+        "y": 567,
+        "z": 17.75,
+        "heading": 134,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8193,
+        "spawngroupId": 2219,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Ghazi Shaman",
+        "rawName": "a_kerran_ghazi_shaman",
+        "level": 17,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 107.629997,
+        "y": -113.379997,
+        "z": 9.75,
+        "heading": 510,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8205,
+        "spawngroupId": 2209,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerran Ghulam",
+        "rawName": "a_kerran_ghulam",
+        "level": 17,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": -292,
+        "y": 176,
+        "z": 13.75,
+        "heading": 188,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8079,
+        "spawngroupId": 2293,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerran Ghulam",
+        "rawName": "a_kerran_ghulam",
+        "level": 17,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": 54,
+        "y": 308,
+        "z": 3,
+        "heading": 255,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8080,
+        "spawngroupId": 2293,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerran Ghulam",
+        "rawName": "a_kerran_ghulam",
+        "level": 17,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": -129,
+        "y": -30,
+        "z": 3.13,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8081,
+        "spawngroupId": 2293,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerran Ghulam",
+        "rawName": "a_kerran_ghulam",
+        "level": 17,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": 167,
+        "y": 260,
+        "z": 9.13,
+        "heading": 370,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8082,
+        "spawngroupId": 2293,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerran Ghulam",
+        "rawName": "a_kerran_ghulam",
+        "level": 17,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": 323,
+        "y": -188,
+        "z": 3.13,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8083,
+        "spawngroupId": 2293,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerran Pasdar",
+        "rawName": "a_kerran_pasdar",
+        "level": 17,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": 341,
+        "y": 787,
+        "z": 3.13,
+        "heading": 325,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8189,
+        "spawngroupId": 2220,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerran Pasdar",
+        "rawName": "a_kerran_pasdar",
+        "level": 17,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": -194,
+        "y": 399,
+        "z": 3.13,
+        "heading": 382,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8190,
+        "spawngroupId": 2220,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerran Pazdar",
+        "rawName": "a_kerran_pazdar",
+        "level": 17,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": 195,
+        "y": 888,
+        "z": 9.13,
+        "heading": 280,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8156,
+        "spawngroupId": 2243,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Patrolling Tiger",
+        "rawName": "a_patrolling_tiger",
+        "level": 17,
+        "race": "Tiger",
+        "rawRace": "Tiger",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 278.5,
+        "y": 949.880005,
+        "z": -6.13,
+        "heading": 255,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8140,
+        "spawngroupId": 2256,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Wild Tiger",
+        "rawName": "a_wild_tiger",
+        "level": 17,
+        "race": "Tiger",
+        "rawRace": "Tiger",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -121,
+        "y": -520,
+        "z": -44.130001,
+        "heading": 318,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8200,
+        "spawngroupId": 2214,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Dozing Ghulam",
+        "rawName": "dozing_ghulam",
+        "level": 17,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": 53,
+        "y": 147.380005,
+        "z": 3.13,
+        "heading": 21,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8225,
+        "spawngroupId": 6983,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Drunken Ghulam",
+        "rawName": "drunken_ghulam",
+        "level": 17,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": 136,
+        "y": 73,
+        "z": 3.13,
+        "heading": 496,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8194,
+        "spawngroupId": 2218,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Errrak Thickshank",
+        "rawName": "Errrak_Thickshank",
+        "level": 17,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": 282,
+        "y": -96,
+        "z": 5.13,
+        "heading": 411,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8166,
+        "spawngroupId": 2235,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Gorilla Guard",
+        "rawName": "a_gorilla_guard",
+        "level": 18,
+        "race": "Gorilla",
+        "rawRace": "Gorilla",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 462,
+        "y": 508,
+        "z": 3.75,
+        "heading": 378,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8149,
+        "spawngroupId": 2249,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Gorilla Protector",
+        "rawName": "a_gorilla_protector",
+        "level": 18,
+        "race": "Gorilla",
+        "rawRace": "Gorilla",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 322,
+        "y": 522,
+        "z": 17.75,
+        "heading": 255,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8158,
+        "spawngroupId": 2241,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Gorilla Protector",
+        "rawName": "a_gorilla_protector",
+        "level": 18,
+        "race": "Gorilla",
+        "rawRace": "Gorilla",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 322,
+        "y": 490,
+        "z": 17.75,
+        "heading": 0,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8159,
+        "spawngroupId": 2241,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Ademzada",
+        "rawName": "a_kerran_ademzada",
+        "level": 18,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": 147,
+        "y": 921,
+        "z": 9.75,
+        "heading": 302,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8174,
+        "spawngroupId": 2228,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Ademzada Shaman",
+        "rawName": "a_Kerran_ademzada_shaman",
+        "level": 18,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 143,
+        "y": 892,
+        "z": 9.75,
+        "heading": 480,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8139,
+        "spawngroupId": 2257,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Ghazi",
+        "rawName": "a_kerran_ghazi",
+        "level": 18,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 379,
+        "y": 808,
+        "z": 3.75,
+        "heading": 400,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8112,
+        "spawngroupId": 2277,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Ghazi Shaman",
+        "rawName": "a_kerran_ghazi_shaman",
+        "level": 18,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 375,
+        "y": 654,
+        "z": 3.75,
+        "heading": 354,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8100,
+        "spawngroupId": 2284,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Ghazi Shaman",
+        "rawName": "a_kerran_ghazi_shaman",
+        "level": 18,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 32,
+        "y": 630,
+        "z": 3.75,
+        "heading": 478,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8101,
+        "spawngroupId": 2284,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Ghazi Shaman",
+        "rawName": "a_kerran_ghazi_shaman",
+        "level": 18,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 305,
+        "y": 706,
+        "z": 3.75,
+        "heading": 58,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8102,
+        "spawngroupId": 2284,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Gorilla",
+        "rawName": "a_kerran_gorilla",
+        "level": 18,
+        "race": "Gorilla",
+        "rawRace": "Gorilla",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 385,
+        "y": 880,
+        "z": 9.75,
+        "heading": 262,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8113,
+        "spawngroupId": 2276,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Gorilla",
+        "rawName": "a_kerran_gorilla",
+        "level": 18,
+        "race": "Gorilla",
+        "rawRace": "Gorilla",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 208,
+        "y": 504,
+        "z": 17.75,
+        "heading": 3,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8114,
+        "spawngroupId": 2276,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Gorilla",
+        "rawName": "a_kerran_gorilla",
+        "level": 18,
+        "race": "Gorilla",
+        "rawRace": "Gorilla",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 369,
+        "y": 880,
+        "z": 9.75,
+        "heading": 262,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8115,
+        "spawngroupId": 2275,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Pasdar",
+        "rawName": "a_kerran_pasdar",
+        "level": 18,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": 375,
+        "y": 644,
+        "z": 3.75,
+        "heading": 438,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8103,
+        "spawngroupId": 2283,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Pasdar",
+        "rawName": "a_kerran_pasdar",
+        "level": 18,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": 110,
+        "y": 694,
+        "z": 17.75,
+        "heading": 382,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8154,
+        "spawngroupId": 2244,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Pasdar",
+        "rawName": "a_kerran_pasdar",
+        "level": 18,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": -9,
+        "y": 762,
+        "z": 3.75,
+        "heading": 30,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8155,
+        "spawngroupId": 2244,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Pasdar",
+        "rawName": "a_kerran_pasdar",
+        "level": 18,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": 255,
+        "y": 763,
+        "z": -4.75,
+        "heading": 454,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8171,
+        "spawngroupId": 2231,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Pazhal",
+        "rawName": "a_kerran_pazhal",
+        "level": 18,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Ranger",
+        "type": "Spawn Slot",
+        "x": 225,
+        "y": 886,
+        "z": 9.75,
+        "heading": 64,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8146,
+        "spawngroupId": 2252,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Erfer Longclaw",
+        "rawName": "Erfer_Longclaw",
+        "level": 18,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": 132,
+        "y": 93,
+        "z": 3.13,
+        "heading": 510,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8121,
+        "spawngroupId": 2270,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Iffrir Soulcaller",
+        "rawName": "Iffrir_Soulcaller",
+        "level": 18,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 118,
+        "y": 85,
+        "z": 3.75,
+        "heading": 78,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8120,
+        "spawngroupId": 2271,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Jo Jo",
+        "rawName": "Jo_Jo",
+        "level": 18,
+        "race": "Tiger",
+        "rawRace": "Tiger",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 246,
+        "y": 888,
+        "z": 9.75,
+        "heading": 442,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8172,
+        "spawngroupId": 2230,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Urkath Greyface",
+        "rawName": "Urkath_Greyface",
+        "level": 18,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": 127,
+        "y": 309,
+        "z": 9.13,
+        "heading": 235,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8119,
+        "spawngroupId": 2272,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerran Ghazi",
+        "rawName": "a_Kerran_ghazi",
+        "level": 19,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 142,
+        "y": 516,
+        "z": 17.75,
+        "heading": 22,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8214,
+        "spawngroupId": 6974,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Ghazi Shaman",
+        "rawName": "a_kerran_ghazi_shaman",
+        "level": 19,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 10.63,
+        "y": 627.630005,
+        "z": 3.75,
+        "heading": 29,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8132,
+        "spawngroupId": 2264,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Ghazi Shaman",
+        "rawName": "a_kerran_ghazi_shaman",
+        "level": 19,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": -2,
+        "y": 748,
+        "z": 3.75,
+        "heading": 10,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8179,
+        "spawngroupId": 2226,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Ghazi Shaman",
+        "rawName": "a_kerran_ghazi_shaman",
+        "level": 19,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 318,
+        "y": 703,
+        "z": 3.75,
+        "heading": 466,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8180,
+        "spawngroupId": 2226,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Ghazi Shaman",
+        "rawName": "a_kerran_ghazi_shaman",
+        "level": 19,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 92,
+        "y": 816,
+        "z": 3.75,
+        "heading": 122,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8181,
+        "spawngroupId": 2226,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Pasdar",
+        "rawName": "a_kerran_pasdar",
+        "level": 19,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": 256,
+        "y": 790,
+        "z": -4.13,
+        "heading": 326,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8175,
+        "spawngroupId": 2227,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Pasdar",
+        "rawName": "a_kerran_pasdar",
+        "level": 19,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": 229,
+        "y": 762,
+        "z": -4.25,
+        "heading": 64,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8176,
+        "spawngroupId": 2227,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Pasdar",
+        "rawName": "a_kerran_pasdar",
+        "level": 19,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": -207,
+        "y": 410,
+        "z": 1.25,
+        "heading": 318,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8177,
+        "spawngroupId": 2227,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Pasdar",
+        "rawName": "a_kerran_pasdar",
+        "level": 19,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": -207,
+        "y": 386,
+        "z": 1.25,
+        "heading": 438,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8178,
+        "spawngroupId": 2227,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Pazdar",
+        "rawName": "a_kerran_pazdar",
+        "level": 19,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": 152,
+        "y": 783,
+        "z": 3.13,
+        "heading": 332,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8117,
+        "spawngroupId": 2273,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Pazdar",
+        "rawName": "a_kerran_pazdar",
+        "level": 19,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": 93,
+        "y": 655,
+        "z": 3.13,
+        "heading": 54,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8118,
+        "spawngroupId": 2273,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Pazdar",
+        "rawName": "a_kerran_pazdar",
+        "level": 19,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": 285,
+        "y": 622,
+        "z": 3.13,
+        "heading": 186,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8164,
+        "spawngroupId": 2236,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Pazdar",
+        "rawName": "a_kerran_pazdar",
+        "level": 19,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": 168,
+        "y": 888,
+        "z": 9.13,
+        "heading": 262,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8165,
+        "spawngroupId": 2236,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Pazdar Shaman",
+        "rawName": "a_Kerran_pazdar_shaman",
+        "level": 19,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 352,
+        "y": 874,
+        "z": -6.13,
+        "heading": 452,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8104,
+        "spawngroupId": 2282,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Pazdar Shaman",
+        "rawName": "a_kerran_pazdar_shaman",
+        "level": 19,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 330,
+        "y": 938,
+        "z": -6.13,
+        "heading": 260,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8142,
+        "spawngroupId": 2254,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Pazdar Shaman",
+        "rawName": "a_kerran_pazdar_shaman",
+        "level": 19,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 297,
+        "y": 874,
+        "z": -6.13,
+        "heading": 84,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8143,
+        "spawngroupId": 2254,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Pazdar Shaman",
+        "rawName": "a_kerran_pazdar_shaman",
+        "level": 19,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 212,
+        "y": 930,
+        "z": -6.13,
+        "heading": 132,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8144,
+        "spawngroupId": 2254,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Banished Kerran",
+        "rawName": "a_banished_kerran",
+        "level": 20,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": 487,
+        "y": 463,
+        "z": 3.75,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8147,
+        "spawngroupId": 2251,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerra Lion",
+        "rawName": "a_kerra_lion",
+        "level": 20,
+        "race": "Lion",
+        "rawRace": "Lion",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -281,
+        "y": 367,
+        "z": 0.38,
+        "heading": 130,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8134,
+        "spawngroupId": 2262,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran `amir",
+        "rawName": "a_kerran_`amir",
+        "level": 20,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": -253,
+        "y": 380,
+        "z": -2.75,
+        "heading": 84,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8136,
+        "spawngroupId": 2260,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerran Ahmad Shaman",
+        "rawName": "a_kerran_ahmad_shaman",
+        "level": 20,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 192,
+        "y": 560,
+        "z": 3.75,
+        "heading": 218,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8150,
+        "spawngroupId": 2248,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Amira Protector",
+        "rawName": "a_kerran_amira_protector",
+        "level": 20,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": 400,
+        "y": 530,
+        "z": 17.75,
+        "heading": 255,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8162,
+        "spawngroupId": 2238,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Ghazi`amir",
+        "rawName": "a_kerran_ghazi`amir",
+        "level": 20,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 204,
+        "y": 546,
+        "z": 3.75,
+        "heading": 74,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8151,
+        "spawngroupId": 2247,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Mujahed",
+        "rawName": "a_kerran_mujahed",
+        "level": 20,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 362,
+        "y": 525,
+        "z": 17.75,
+        "heading": 255,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8106,
+        "spawngroupId": 2280,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Mujahed",
+        "rawName": "a_kerran_mujahed",
+        "level": 20,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": -151,
+        "y": -597,
+        "z": 5.75,
+        "heading": 106,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8107,
+        "spawngroupId": 2280,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Pazdar",
+        "rawName": "a_kerran_pazdar",
+        "level": 20,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 152,
+        "y": 529,
+        "z": 17.75,
+        "heading": 136,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8218,
+        "spawngroupId": 6977,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Falthrik Lothoro",
+        "rawName": "Falthrik_Lothoro",
+        "level": 20,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": 25,
+        "y": 210,
+        "z": 3.13,
+        "heading": 500,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8131,
+        "spawngroupId": 2265,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Lord Gongo",
+        "rawName": "Lord_Gongo",
+        "level": 20,
+        "race": "Gorilla",
+        "rawRace": "Gorilla",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 378,
+        "y": 905,
+        "z": 9.75,
+        "heading": 252,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 8116,
+        "spawngroupId": 2274,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Melixis",
+        "rawName": "Melixis",
+        "level": 20,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 179,
+        "y": 519,
+        "z": 17.129999,
+        "heading": 460,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8215,
+        "spawngroupId": 6975,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerra Lion",
+        "rawName": "a_kerra_lion",
+        "level": 21,
+        "race": "Lion",
+        "rawRace": "Lion",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -282,
+        "y": 430,
+        "z": 0.38,
+        "heading": 130,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8133,
+        "spawngroupId": 2263,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran `amir",
+        "rawName": "a_kerran_`amir",
+        "level": 21,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": -196,
+        "y": -312,
+        "z": 5.13,
+        "heading": 332,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8122,
+        "spawngroupId": 2269,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran `amir",
+        "rawName": "a_kerran_`amir",
+        "level": 21,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": -258,
+        "y": -302,
+        "z": 5.13,
+        "heading": 308,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8123,
+        "spawngroupId": 2269,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran `amir",
+        "rawName": "a_kerran_`amir",
+        "level": 21,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": -255,
+        "y": 415,
+        "z": -2.75,
+        "heading": 184,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8124,
+        "spawngroupId": 2269,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran `amir",
+        "rawName": "a_kerran_`amir",
+        "level": 21,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": -119,
+        "y": -546,
+        "z": 5.13,
+        "heading": 86,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8125,
+        "spawngroupId": 2268,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerran Ademzada`amir",
+        "rawName": "a_kerran_ademzada`amir",
+        "level": 21,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 220,
+        "y": 556,
+        "z": 3.75,
+        "heading": 396,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8152,
+        "spawngroupId": 2246,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Amira Guardian",
+        "rawName": "a_kerran_amira_guardian",
+        "level": 21,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 400,
+        "y": 490,
+        "z": 17.75,
+        "heading": 0,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8163,
+        "spawngroupId": 2237,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Ghazi`amir",
+        "rawName": "a_kerran_ghazi`amir",
+        "level": 21,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 209,
+        "y": 516,
+        "z": 3.75,
+        "heading": 34,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8153,
+        "spawngroupId": 2245,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Mujahed",
+        "rawName": "a_kerran_mujahed",
+        "level": 21,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 290,
+        "y": 528,
+        "z": 17.75,
+        "heading": 339,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8108,
+        "spawngroupId": 2279,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerran Mujahed",
+        "rawName": "a_kerran_mujahed",
+        "level": 21,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 299,
+        "y": 947,
+        "z": -6.13,
+        "heading": 386,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8109,
+        "spawngroupId": 2279,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerran Mujahed",
+        "rawName": "a_kerran_mujahed",
+        "level": 21,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 290,
+        "y": 486,
+        "z": 17.75,
+        "heading": 0,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8110,
+        "spawngroupId": 2278,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Mujahed",
+        "rawName": "a_kerran_mujahed",
+        "level": 21,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": -99,
+        "y": -507,
+        "z": 5.75,
+        "heading": 304,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8111,
+        "spawngroupId": 2278,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Mujahed",
+        "rawName": "a_kerran_mujahed",
+        "level": 21,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 362,
+        "y": 490,
+        "z": 17.75,
+        "heading": 0,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8161,
+        "spawngroupId": 2239,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Pazdar Shaman",
+        "rawName": "a_Kerran_pazdar_shaman",
+        "level": 21,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 302,
+        "y": 905,
+        "z": -6.13,
+        "heading": 56,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8141,
+        "spawngroupId": 2255,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Pazdar Shaman",
+        "rawName": "a_Kerran_pazdar_shaman",
+        "level": 21,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 332,
+        "y": 905,
+        "z": -6.13,
+        "heading": 406,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8145,
+        "spawngroupId": 2253,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kerran Sha`rr Apprentice",
+        "rawName": "a_kerran_sha`rr_apprentice",
+        "level": 22,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": 348,
+        "y": 903,
+        "z": -6.13,
+        "heading": 252,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8105,
+        "spawngroupId": 2281,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Kerran Tiger Spahi",
+        "rawName": "kerran_tiger_spahi",
+        "level": 22,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -150,
+        "y": -503,
+        "z": 3.75,
+        "heading": 180,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8137,
+        "spawngroupId": 2259,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kerran Amira Priestess",
+        "rawName": "a_kerran_amira_priestess",
+        "level": 23,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": 407,
+        "y": 508,
+        "z": 19.75,
+        "heading": 382,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 8160,
+        "spawngroupId": 2240,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Shazda Asad",
+        "rawName": "Shazda_Asad",
+        "level": 23,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": -277,
+        "y": 398,
+        "z": 3.75,
+        "heading": 126,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8135,
+        "spawngroupId": 2261,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Maugarim",
+        "rawName": "Maugarim",
+        "level": 25,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Necromancer",
+        "type": "Spawn Slot",
+        "x": 435,
+        "y": 460,
+        "z": 3.75,
+        "heading": 60,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8148,
+        "spawngroupId": 2250,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Raarrk",
+        "rawName": "Raarrk",
+        "level": 35,
+        "race": "Kerran",
+        "rawRace": "Kerran",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 131,
+        "y": 108,
+        "z": 3.13,
+        "heading": 258,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 8202,
+        "spawngroupId": 2212,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Marl Kastane",
+        "rawName": "Marl_Kastane",
+        "level": 60,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 63,
+        "y": 565,
+        "z": 17.75,
+        "heading": 509.5,
+        "chance": 100,
+        "respawnTime": 86400,
+        "spawn2Id": 8227,
+        "spawngroupId": 6985,
+        "candidateCount": 1
+      }
+    ]
+  }
+}

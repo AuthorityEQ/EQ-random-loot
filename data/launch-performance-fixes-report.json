@@ -1,0 +1,153 @@
+{
+  "generatedAt": "2026-05-19",
+  "scope": "Low-risk launch performance fixes from data/launch-performance-audit-report.json",
+  "summary": {
+    "behaviorRedesigns": false,
+    "coreUiRemoved": false,
+    "zoneSnapshotPreserved": true,
+    "realSpawnDataPreserved": true,
+    "buildStatus": "passed",
+    "browserSmokeStatus": "Acrylia Real Spawn page loaded with Real Spawn Intelligence and Spawn Map visible; no console errors were reported."
+  },
+  "changesMade": [
+    {
+      "area": "Real Spawn Data payloads",
+      "change": "Stopped loading full per-zone EQEmu loot JSON in app/zones/[slug]/page.tsx. The dynamic zone route now loads summary/spawn data only for Real Spawn mode.",
+      "impact": "Avoids serializing very large loot/debug payloads into the initial server-rendered zone response."
+    },
+    {
+      "area": "Static stripped loot assets",
+      "change": "Added scripts/generate-real-spawn-loot-assets.mjs and generated public/real-spawn-loot-assets/{zone}.json files with itemDetails stripped out.",
+      "impact": "Drop rows still get item names, chances, icons, and loot table context from cache-friendly static JSON, while large EQEmu item detail blobs are removed from the zone loot payload."
+    },
+    {
+      "area": "On-demand EQEmu item detail assets",
+      "change": "Generated public/real-spawn-item-assets/{itemId}.json fallback item detail files and lazy-load them from drop rows on hover/click when richer existing item data is unavailable.",
+      "impact": "Heavy EQEmu fallback item stats are deferred until the user inspects an item."
+    },
+    {
+      "area": "Map metadata/debug payload",
+      "change": "Removed the eager client import of data/eqemu-native-map-debug-index.json from ZoneDetailExplorer. Spawn-map data now derives minimal spawn point data from the already loaded Real Spawn spawn rows and uses the small zone-map asset manifest.",
+      "impact": "Avoids bundling a multi-megabyte debug index into the zone detail client component."
+    },
+    {
+      "area": "Lazy map geometry loading",
+      "change": "Kept map geometry in public/zone-map-assets and added IntersectionObserver-based loading so the per-zone map asset is fetched only when the map section is near the viewport.",
+      "impact": "Preserves maps while deferring dot/geometry-heavy payloads until they are actually needed."
+    },
+    {
+      "area": "Item preview rendering",
+      "change": "Throttled item preview mousemove updates so the tooltip does not rerender on tiny cursor movements across dense drop rows.",
+      "impact": "Reduces client-side render churn without changing hover/click behavior."
+    },
+    {
+      "area": "/api/status",
+      "change": "Changed /api/status from revalidate=0 to revalidate=60 and updated the route comment.",
+      "impact": "Reduces Function Invocation risk from public status checks while keeping status fresh enough for launch use."
+    },
+    {
+      "area": "/api/bonus/reports",
+      "change": "Reviewed usage. The client loads reports once on Bonus page mount and on explicit user actions; no automatic polling loop was found.",
+      "impact": "No code change made. Route remains no-store because report mutations/admin state need fresh data, but it is not currently poll-driven."
+    }
+  ],
+  "payloadsSplitOrDeferred": {
+    "realSpawnLootAssets": {
+      "zoneCount": 186,
+      "sourceBytesBefore": 1040821149,
+      "strippedStaticBytesAfter": 108555135,
+      "bytesDeferredOrRemovedFromLootPayload": 932266014,
+      "largestStrippedAssets": [
+        {
+          "zoneShortName": "grimling",
+          "sourceBytes": 41183005,
+          "strippedBytes": 4122072
+        },
+        {
+          "zoneShortName": "dulak",
+          "sourceBytes": 39162749,
+          "strippedBytes": 3906066
+        },
+        {
+          "zoneShortName": "charasis",
+          "sourceBytes": 29234395,
+          "strippedBytes": 2887995
+        },
+        {
+          "zoneShortName": "sebilis",
+          "sourceBytes": 24181915,
+          "strippedBytes": 2411003
+        },
+        {
+          "zoneShortName": "sseru",
+          "sourceBytes": 20097540,
+          "strippedBytes": 2176908
+        }
+      ]
+    },
+    "eqemuItemDetailAssets": {
+      "assetCount": 11828,
+      "path": "public/real-spawn-item-assets/{itemId}.json",
+      "loadingBehavior": "Fetched on demand from drop row hover/click for EQEmu fallback details."
+    },
+    "mapGeometryAssets": {
+      "path": "public/zone-map-assets/{zone}.json",
+      "loadingBehavior": "Fetched client-side only when the map section intersects or nears the viewport.",
+      "debugIndexStatus": "data/eqemu-native-map-debug-index.json is no longer imported by ZoneDetailExplorer."
+    }
+  },
+  "apiReview": {
+    "/api/status": {
+      "before": "revalidate=0",
+      "after": "revalidate=60",
+      "riskAfter": "Low unless externally hammered."
+    },
+    "/api/bonus/reports": {
+      "before": "no-store DB-backed route",
+      "after": "unchanged",
+      "pollingFound": false,
+      "riskAfter": "Moderate for admin/report-heavy use. Keep watching during launch, but no broad rewrite was made."
+    },
+    "staticZoneData": {
+      "status": "Real Spawn loot and map assets use public static JSON instead of new server/API calls."
+    }
+  },
+  "clientSideFilteringStatus": {
+    "/zones": "Search, expansion, level, race, and sort filters remain client-side after initial data load.",
+    "/zones/[slug] Real Spawn": "Real Spawn filters/search/sort remain client-side after spawn data and static loot asset load.",
+    "/picks": "Search/filter behavior remains client-side.",
+    "/crafting": "Tradeskill/category/search/trivial filters remain client-side."
+  },
+  "remainingRisks": [
+    {
+      "risk": "Some stripped Real Spawn loot assets are still several MB for dense zones.",
+      "suggestedNextStep": "Split large loot assets by mob initial, npcTypeId, or only fetch drops for expanded rows."
+    },
+    {
+      "risk": "Existing item-details.json is still imported by several client components, including ZoneDetailExplorer for rich item matching.",
+      "suggestedNextStep": "Shard existing item details into an item lookup service/static chunk loaded on hover or route demand."
+    },
+    {
+      "risk": "Large PNG assets remain unchanged.",
+      "suggestedNextStep": "Convert the largest PNGs to WebP/AVIF and use responsive image loading."
+    },
+    {
+      "risk": "SVG map rendering can still be DOM-heavy for large zones.",
+      "suggestedNextStep": "Consider canvas rendering or per-layer geometry simplification after launch."
+    },
+    {
+      "risk": "/api/bonus/reports remains no-store.",
+      "suggestedNextStep": "Add short-lived server caching or stricter pagination if report traffic rises."
+    }
+  ],
+  "verification": {
+    "buildCommand": "npm run build",
+    "buildResult": "passed",
+    "browserSmoke": {
+      "url": "http://127.0.0.1:3000/zones/acrylia?source=spawns",
+      "realSpawnIntelligenceVisible": true,
+      "spawnMapVisible": true,
+      "consoleErrors": 0
+    }
+  }
+}

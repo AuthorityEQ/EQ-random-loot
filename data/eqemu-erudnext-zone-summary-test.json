@@ -1,0 +1,6819 @@
+{
+  "summary": {
+    "zoneSlug": "erudin",
+    "zoneName": "Erudin",
+    "requestedZoneShortName": "erudnext",
+    "zoneShortName": "erudnext",
+    "sourceFile": "local-eqemu-database",
+    "matched": true,
+    "expansion": "Classic",
+    "eqemuExpansionId": 0,
+    "expansionSource": "eqemu-zone-table",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobCount": 115,
+    "unknownLevelCount": 1,
+    "minLevel": 1,
+    "maxLevel": 70,
+    "averageLevel": 34.1,
+    "medianLevel": 32.5,
+    "levelCounts": {
+      "1": 13,
+      "3": 3,
+      "4": 1,
+      "5": 1,
+      "13": 2,
+      "14": 2,
+      "15": 1,
+      "16": 1,
+      "17": 1,
+      "20": 3,
+      "22": 1,
+      "24": 8,
+      "25": 3,
+      "26": 1,
+      "28": 2,
+      "30": 14,
+      "35": 11,
+      "40": 1,
+      "45": 16,
+      "50": 4,
+      "61": 20,
+      "65": 3,
+      "70": 2
+    },
+    "levelBuckets": {
+      "1-10": 18,
+      "11-20": 10,
+      "21-30": 29,
+      "31-40": 12,
+      "41-50": 20,
+      "51-60": 0,
+      "61+": 25
+    },
+    "levelProfileLabel": "Wide level spread",
+    "mobGroupNameCounts": {
+      "A Fish": 6,
+      "A Shark": 6,
+      "A Sand Shark": 4,
+      "A Frostfell Goblin": 1,
+      "A Young Shark": 1,
+      "Alimaja Shanthun": 1,
+      "Altrusan Belstince": 1,
+      "Alysa Eltern": 1,
+      "Ayth Niphiria": 1,
+      "Bazma Brinstar": 1,
+      "Beth Breadmaker": 1,
+      "Borge Finleather": 1,
+      "Breya Nostulia": 1,
+      "Brianna Falsruinay": 1,
+      "Camin": 1,
+      "Chembla Ellent": 1,
+      "Cipse Tospyr": 1,
+      "Collier": 1,
+      "Demicla Tanner": 1,
+      "Depnar Bulrious": 1,
+      "Dleria Mausrel": 1,
+      "Dunore Steelfinger": 1,
+      "Fhania Aserdon": 1,
+      "Fireworks Engineer Fabdabus": 1,
+      "Galbasi Weaver": 1,
+      "Gans Paust": 1,
+      "Gayle Weaven": 1,
+      "Geoard Bluehawk": 1,
+      "Ghemna Nyjuss": 1,
+      "Hargar The Velium Chef": 1,
+      "Helia Bluehawk": 1,
+      "Ignacia Rellasp": 1,
+      "Illithi Nollith": 1,
+      "Issibla Belstince": 1,
+      "Jagen Kindlor": 1,
+      "Jordin Sretin": 1,
+      "Jras Solsier": 1,
+      "Junice Weslent": 1,
+      "Kathar Varselli": 1,
+      "Kisrin Breezeshadow": 1,
+      "Kordian Keshalian": 1,
+      "Laoni Reista": 1,
+      "Leraena Shelyrak": 1,
+      "Lissa Respelti": 1,
+      "Lumi Stergnon": 1,
+      "Luren Renthalis": 1,
+      "Mertitt Phentilly": 1,
+      "Mikeana Tolstaub": 1,
+      "Monita Weaver": 1,
+      "Nerth Sailwind": 1,
+      "Nolusia Finharn": 1,
+      "Orwin Flintmaker": 1,
+      "Palus Weaponsmith": 1,
+      "Phloatin Highbrow": 1,
+      "Priest Of Discord": 1,
+      "Qualtis Weslent": 1,
+      "Raine Beteria": 1,
+      "Rarnan Lapice": 1,
+      "Reihan Wilhemson": 1,
+      "Reklon Gnallen": 1,
+      "Reko Saltamer": 1,
+      "Rem Knarjon": 1,
+      "Sabrina": 1,
+      "Santug Claugg": 1,
+      "Sea King": 1,
+      "Selint Chency": 1,
+      "Senina Jolik": 1,
+      "Sentinel Adrial": 1,
+      "Sentinel Aegeo": 1,
+      "Sentinel Belario": 1,
+      "Sentinel Cymbelin": 1,
+      "Sentinel Demitri": 1,
+      "Sentinel Gressio": 1,
+      "Sentinel Malvol": 1,
+      "Sentinel Mercutil": 1,
+      "Sentinel Phylos": 1,
+      "Sentinel Polix": 1,
+      "Sentinel Silvis": 1,
+      "Sentinel Tybal": 1,
+      "Sentinel Ursulo": 1,
+      "Sentinel Venci": 1,
+      "Shinan Orefinder": 1,
+      "Sinnkin Highbrow": 1,
+      "Sornita Eltern": 1,
+      "Soulbinder Altira Mamar": 1,
+      "Stella Breezemoon": 1,
+      "Stofo Olan": 1,
+      "Stolace Printell": 1,
+      "Syra Printell": 1,
+      "Teria Finleather": 1,
+      "Tiam Khonsir": 1,
+      "Ticar Lorestring": 1,
+      "Tol Nicelot": 1,
+      "Tollari Mistell": 1,
+      "Tomekeeper Danl": 1,
+      "Translocator Eniela": 1,
+      "Unknown": 1,
+      "Valani Gadriek": 1,
+      "Vynon Estaliun": 1,
+      "Weligon Steelherder": 1,
+      "Weltria Ostriss": 1,
+      "Zure Bavuior": 1
+    },
+    "classCounts": {
+      "Banker": 41,
+      "Warrior": 33,
+      "Paladin": 16,
+      "Cleric GM": 8,
+      "Paladin GM": 8,
+      "Cleric": 2,
+      "Enchanter": 2,
+      "Wizard": 2,
+      "Rogue": 1,
+      "Tribute Master": 1,
+      "Unknown": 1
+    },
+    "raceCounts": {
+      "Erudite": 86,
+      "Shark": 11,
+      "Fish": 6,
+      "Human": 3,
+      "Gnome": 2,
+      "Dwarf": 1,
+      "Goblin": 1,
+      "Half Elf": 1,
+      "Launch": 1,
+      "Ogre": 1,
+      "Ship": 1,
+      "Unknown": 1
+    },
+    "normalizedRaceCounts": {
+      "Erudite": 86,
+      "Shark": 11,
+      "Fish": 6,
+      "Human": 3,
+      "Gnome": 2,
+      "Dwarf": 1,
+      "Goblin": 1,
+      "Half Elf": 1,
+      "Launch": 1,
+      "Ogre": 1,
+      "Ship": 1,
+      "Unknown": 1
+    },
+    "normalizedRaceLevelCounts": {
+      "Dwarf": {
+        "1": 1
+      },
+      "Erudite": {
+        "1": 1,
+        "4": 1,
+        "17": 1,
+        "20": 3,
+        "22": 1,
+        "24": 8,
+        "25": 2,
+        "26": 1,
+        "28": 2,
+        "30": 14,
+        "35": 10,
+        "40": 1,
+        "45": 16,
+        "50": 2,
+        "61": 20,
+        "65": 3
+      },
+      "Fish": {
+        "1": 6
+      },
+      "Gnome": {
+        "1": 2
+      },
+      "Goblin": {
+        "1": 1
+      },
+      "Half Elf": {
+        "25": 1
+      },
+      "Human": {
+        "35": 1,
+        "50": 2
+      },
+      "Launch": {
+        "1": 1
+      },
+      "Ogre": {
+        "70": 1
+      },
+      "Shark": {
+        "1": 1,
+        "3": 3,
+        "5": 1,
+        "13": 2,
+        "14": 2,
+        "15": 1,
+        "16": 1
+      },
+      "Ship": {
+        "70": 1
+      }
+    },
+    "raceAliases": {
+      "Dwarf": [
+        "Dwarf"
+      ],
+      "Erudite": [
+        "Erudite"
+      ],
+      "Fish": [
+        "Fish"
+      ],
+      "Gnome": [
+        "Gnome"
+      ],
+      "Goblin": [
+        "Goblin"
+      ],
+      "Half Elf": [
+        "Half Elf"
+      ],
+      "Human": [
+        "Human"
+      ],
+      "Launch": [
+        "Launch"
+      ],
+      "Ogre": [
+        "Ogre"
+      ],
+      "Shark": [
+        "Shark"
+      ],
+      "Ship": [
+        "Ship"
+      ],
+      "Unknown": [
+        "Unknown"
+      ]
+    },
+    "typeCounts": {
+      "Spawn Slot": 115
+    },
+    "notes": [
+      "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+      "Read-only test export; not wired into production /zones data."
+    ],
+    "spawnMapPrototype": {
+      "sourceKind": "Local EQEmu/PEQ database export",
+      "coordinateNote": "Original EQEmu spawn2 x/y/z coordinates are preserved for map prototyping.",
+      "points": [
+        {
+          "spawn2Id": 2402,
+          "spawngroupId": 804,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 15,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": -9.5,
+          "y": 86.129997,
+          "z": -2.38,
+          "heading": 492,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2404,
+          "spawngroupId": 803,
+          "name": "Nolusia_Finharn",
+          "displayName": "Nolusia Finharn",
+          "level": 61,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Warrior",
+          "x": -104,
+          "y": -1099,
+          "z": 67.629997,
+          "heading": 357,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2405,
+          "spawngroupId": 939,
+          "name": "Camin",
+          "displayName": "Camin",
+          "level": 50,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Wizard",
+          "x": -12.63,
+          "y": -1166,
+          "z": 83.629997,
+          "heading": 384.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2406,
+          "spawngroupId": 924,
+          "name": "a_fish",
+          "displayName": "A Fish",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -754.880005,
+          "y": -45.880001,
+          "z": -14.88,
+          "heading": 266,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2407,
+          "spawngroupId": 924,
+          "name": "a_fish",
+          "displayName": "A Fish",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -734.880005,
+          "y": -30.379999,
+          "z": -32.599998,
+          "heading": 183,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2408,
+          "spawngroupId": 924,
+          "name": "a_fish",
+          "displayName": "A Fish",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -669,
+          "y": 42.630001,
+          "z": -34.630001,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2409,
+          "spawngroupId": 925,
+          "name": "a_fish",
+          "displayName": "A Fish",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -907.880005,
+          "y": 103.879997,
+          "z": -24.9,
+          "heading": 285.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2410,
+          "spawngroupId": 926,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 13,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": -1251.880005,
+          "y": 469.630005,
+          "z": -5.4,
+          "heading": 271.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2411,
+          "spawngroupId": 926,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 13,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": -751.880005,
+          "y": -202.130005,
+          "z": -23.799999,
+          "heading": 320.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2412,
+          "spawngroupId": 927,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 14,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": -273.380005,
+          "y": 810.130005,
+          "z": -8.63,
+          "heading": 4.5,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 2413,
+          "spawngroupId": 928,
+          "name": "a_fish",
+          "displayName": "A Fish",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -202.380005,
+          "y": 126.379997,
+          "z": -26,
+          "heading": 385,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2414,
+          "spawngroupId": 929,
+          "name": "a_fish",
+          "displayName": "A Fish",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -421.5,
+          "y": -141.75,
+          "z": -16.25,
+          "heading": 202,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 2415,
+          "spawngroupId": 930,
+          "name": "Stofo_Olan",
+          "displayName": "Stofo Olan",
+          "level": 50,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Enchanter",
+          "x": -70,
+          "y": -1109,
+          "z": 83.629997,
+          "heading": 92,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2416,
+          "spawngroupId": 931,
+          "name": "Chembla_Ellent",
+          "displayName": "Chembla Ellent",
+          "level": 35,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -244,
+          "y": -1048,
+          "z": 83.629997,
+          "heading": 252,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2417,
+          "spawngroupId": 932,
+          "name": "Ignacia_Rellasp",
+          "displayName": "Ignacia Rellasp",
+          "level": 24,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -223,
+          "y": -1093,
+          "z": 83.599998,
+          "heading": 356,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2418,
+          "spawngroupId": 933,
+          "name": "Qualtis_Weslent",
+          "displayName": "Qualtis Weslent",
+          "level": 24,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -253,
+          "y": -1111,
+          "z": 83.629997,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2419,
+          "spawngroupId": 934,
+          "name": "Weltria_Ostriss",
+          "displayName": "Weltria Ostriss",
+          "level": 35,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -242,
+          "y": -1111,
+          "z": 83.629997,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2420,
+          "spawngroupId": 935,
+          "name": "Sornita_Eltern",
+          "displayName": "Sornita Eltern",
+          "level": 35,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -230,
+          "y": -1109,
+          "z": 83.629997,
+          "heading": 405,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2421,
+          "spawngroupId": 936,
+          "name": "Altrusan_Belstince",
+          "displayName": "Altrusan Belstince",
+          "level": 24,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -213,
+          "y": -1105,
+          "z": 51.630001,
+          "heading": 497,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2422,
+          "spawngroupId": 937,
+          "name": "Tollari_Mistell",
+          "displayName": "Tollari Mistell",
+          "level": 24,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -258,
+          "y": -1069,
+          "z": 51.630001,
+          "heading": 78,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2423,
+          "spawngroupId": 938,
+          "name": "Raine_Beteria",
+          "displayName": "Raine Beteria",
+          "level": 35,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -212,
+          "y": -1050,
+          "z": 67.629997,
+          "heading": 370,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2424,
+          "spawngroupId": 811,
+          "name": "Issibla_Belstince",
+          "displayName": "Issibla Belstince",
+          "level": 35,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -374,
+          "y": -1031,
+          "z": 67.629997,
+          "heading": 70,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2425,
+          "spawngroupId": 801,
+          "name": "Kathar_Varselli",
+          "displayName": "Kathar Varselli",
+          "level": 24,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -417,
+          "y": -1066,
+          "z": 51.630001,
+          "heading": 250,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2426,
+          "spawngroupId": 802,
+          "name": "Selint_Chency",
+          "displayName": "Selint Chency",
+          "level": 24,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -46,
+          "y": -636,
+          "z": 67.629997,
+          "heading": 336,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2427,
+          "spawngroupId": 810,
+          "name": "Junice_Weslent",
+          "displayName": "Junice Weslent",
+          "level": 35,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -54,
+          "y": -698,
+          "z": 67.629997,
+          "heading": 410,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2428,
+          "spawngroupId": 807,
+          "name": "Alysa_Eltern",
+          "displayName": "Alysa Eltern",
+          "level": 35,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -56,
+          "y": -709,
+          "z": 67.629997,
+          "heading": 410,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2429,
+          "spawngroupId": 809,
+          "name": "Stolace_Printell",
+          "displayName": "Stolace Printell",
+          "level": 24,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -57,
+          "y": -720,
+          "z": 67.629997,
+          "heading": 374,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2430,
+          "spawngroupId": 906,
+          "name": "Mertitt_Phentilly",
+          "displayName": "Mertitt Phentilly",
+          "level": 24,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -54,
+          "y": -743,
+          "z": 67.629997,
+          "heading": 381,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2431,
+          "spawngroupId": 905,
+          "name": "Lissa_Respelti",
+          "displayName": "Lissa Respelti",
+          "level": 35,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -44,
+          "y": -651,
+          "z": 67.629997,
+          "heading": 381,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2432,
+          "spawngroupId": 904,
+          "name": "Bazma_Brinstar",
+          "displayName": "Bazma Brinstar",
+          "level": 65,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Tribute Master",
+          "x": -177,
+          "y": -664,
+          "z": 67.629997,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2433,
+          "spawngroupId": 903,
+          "name": "#Jordin_Sretin",
+          "displayName": "Jordin Sretin",
+          "level": 1,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Warrior",
+          "x": 14,
+          "y": 244,
+          "z": 19.75,
+          "heading": 245,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2434,
+          "spawngroupId": 902,
+          "name": "#Senina_Jolik",
+          "displayName": "Senina Jolik",
+          "level": 50,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Enchanter",
+          "x": -168,
+          "y": -979,
+          "z": 51.630001,
+          "heading": 487,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2435,
+          "spawngroupId": 901,
+          "name": "Tomekeeper_Danl",
+          "displayName": "Tomekeeper Danl",
+          "level": 35,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Warrior",
+          "x": -243,
+          "y": -1093,
+          "z": 67.629997,
+          "heading": 371.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2436,
+          "spawngroupId": 900,
+          "name": "Soulbinder_Altira_Mamar",
+          "displayName": "Soulbinder Altira Mamar",
+          "level": 65,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Warrior",
+          "x": -55,
+          "y": -115,
+          "z": 39.75,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2437,
+          "spawngroupId": 899,
+          "name": "Illithi_Nollith",
+          "displayName": "Illithi Nollith",
+          "level": 20,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Warrior",
+          "x": -217,
+          "y": -1074,
+          "z": 51.630001,
+          "heading": 393,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2438,
+          "spawngroupId": 898,
+          "name": "Sinnkin_Highbrow",
+          "displayName": "Sinnkin Highbrow",
+          "level": 4,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Warrior",
+          "x": -255,
+          "y": -1053,
+          "z": 83.629997,
+          "heading": 234,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2439,
+          "spawngroupId": 897,
+          "name": "Phloatin_Highbrow",
+          "displayName": "Phloatin Highbrow",
+          "level": 17,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Warrior",
+          "x": -318,
+          "y": -1183,
+          "z": 51.630001,
+          "heading": 386,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2440,
+          "spawngroupId": 896,
+          "name": "Gayle_Weaven",
+          "displayName": "Gayle Weaven",
+          "level": 45,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": 88,
+          "y": 245,
+          "z": 19.75,
+          "heading": 287,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2441,
+          "spawngroupId": 895,
+          "name": "Shinan_Orefinder",
+          "displayName": "Shinan Orefinder",
+          "level": 45,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -246,
+          "y": -683,
+          "z": 52.630001,
+          "heading": 205,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2442,
+          "spawngroupId": 894,
+          "name": "Ayth_Niphiria",
+          "displayName": "Ayth Niphiria",
+          "level": 22,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -83,
+          "y": -622,
+          "z": 67.629997,
+          "heading": 126,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2443,
+          "spawngroupId": 893,
+          "name": "Jras_Solsier",
+          "displayName": "Jras Solsier",
+          "level": 61,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Paladin GM",
+          "x": -135,
+          "y": -602,
+          "z": 67.629997,
+          "heading": 68,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2444,
+          "spawngroupId": 892,
+          "name": "Reklon_Gnallen",
+          "displayName": "Reklon Gnallen",
+          "level": 61,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Paladin GM",
+          "x": -89,
+          "y": -724,
+          "z": 67.629997,
+          "heading": 220,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2445,
+          "spawngroupId": 891,
+          "name": "Vynon_Estaliun",
+          "displayName": "Vynon Estaliun",
+          "level": 61,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Paladin GM",
+          "x": -112,
+          "y": -755,
+          "z": 52.630001,
+          "heading": 442,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2446,
+          "spawngroupId": 890,
+          "name": "Cipse_Tospyr",
+          "displayName": "Cipse Tospyr",
+          "level": 61,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Cleric GM",
+          "x": -71,
+          "y": -682,
+          "z": 67.629997,
+          "heading": 388,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2447,
+          "spawngroupId": 889,
+          "name": "Leraena_Shelyrak",
+          "displayName": "Leraena Shelyrak",
+          "level": 61,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Cleric GM",
+          "x": -91,
+          "y": -649,
+          "z": 68,
+          "heading": 31,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2448,
+          "spawngroupId": 888,
+          "name": "Fhania_Aserdon",
+          "displayName": "Fhania Aserdon",
+          "level": 28,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -470,
+          "y": -1094,
+          "z": 51.630001,
+          "heading": 159,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2449,
+          "spawngroupId": 887,
+          "name": "Zure_Bavuior",
+          "displayName": "Zure Bavuior",
+          "level": 61,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Cleric GM",
+          "x": -428,
+          "y": -1121,
+          "z": 51.630001,
+          "heading": 190,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2450,
+          "spawngroupId": 886,
+          "name": "Mikeana_Tolstaub",
+          "displayName": "Mikeana Tolstaub",
+          "level": 61,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Cleric GM",
+          "x": -369,
+          "y": -1115,
+          "z": 67.629997,
+          "heading": 307,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2451,
+          "spawngroupId": 885,
+          "name": "Laoni_Reista",
+          "displayName": "Laoni Reista",
+          "level": 61,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Paladin GM",
+          "x": -399,
+          "y": -1109,
+          "z": 51.630001,
+          "heading": 98,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2452,
+          "spawngroupId": 884,
+          "name": "Breya_Nostulia",
+          "displayName": "Breya Nostulia",
+          "level": 61,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Paladin GM",
+          "x": -387,
+          "y": -1062,
+          "z": 67.629997,
+          "heading": 449,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2453,
+          "spawngroupId": 883,
+          "name": "Sabrina",
+          "displayName": "Sabrina",
+          "level": 1,
+          "race": "Launch",
+          "rawRace": "Launch",
+          "className": "Warrior",
+          "x": -350,
+          "y": 48,
+          "z": 0,
+          "heading": 384,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2454,
+          "spawngroupId": 882,
+          "name": "a_sand_shark",
+          "displayName": "A Sand Shark",
+          "level": 5,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": -461,
+          "y": -274,
+          "z": -26.879999,
+          "heading": 490,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2455,
+          "spawngroupId": 881,
+          "name": "a_sand_shark",
+          "displayName": "A Sand Shark",
+          "level": 3,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": -619,
+          "y": 951,
+          "z": -42.880001,
+          "heading": 320,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2456,
+          "spawngroupId": 881,
+          "name": "a_sand_shark",
+          "displayName": "A Sand Shark",
+          "level": 3,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": -482,
+          "y": -212,
+          "z": -26.879999,
+          "heading": 15,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2457,
+          "spawngroupId": 881,
+          "name": "a_sand_shark",
+          "displayName": "A Sand Shark",
+          "level": 3,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": -484,
+          "y": 9,
+          "z": -26.879999,
+          "heading": 80,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2458,
+          "spawngroupId": 880,
+          "name": "Beth_Breadmaker",
+          "displayName": "Beth Breadmaker",
+          "level": 45,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": 109,
+          "y": 136,
+          "z": 19.75,
+          "heading": 326,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2459,
+          "spawngroupId": 879,
+          "name": "Palus_Weaponsmith",
+          "displayName": "Palus Weaponsmith",
+          "level": 45,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -94,
+          "y": -1023,
+          "z": 51.630001,
+          "heading": 387,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2460,
+          "spawngroupId": 878,
+          "name": "Nerth_Sailwind",
+          "displayName": "Nerth Sailwind",
+          "level": 45,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": 96,
+          "y": 232,
+          "z": 19.75,
+          "heading": 322,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2461,
+          "spawngroupId": 877,
+          "name": "Monita_Weaver",
+          "displayName": "Monita Weaver",
+          "level": 45,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -159,
+          "y": -899,
+          "z": 51.630001,
+          "heading": 316,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2462,
+          "spawngroupId": 876,
+          "name": "Gans_Paust",
+          "displayName": "Gans Paust",
+          "level": 61,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Cleric GM",
+          "x": -384,
+          "y": -1045,
+          "z": 72.629997,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2463,
+          "spawngroupId": 875,
+          "name": "Weligon_Steelherder",
+          "displayName": "Weligon Steelherder",
+          "level": 61,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Paladin GM",
+          "x": -395,
+          "y": -1041,
+          "z": 51.630001,
+          "heading": 146,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2464,
+          "spawngroupId": 874,
+          "name": "Ghemna_Nyjuss",
+          "displayName": "Ghemna Nyjuss",
+          "level": 26,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -398,
+          "y": -1070,
+          "z": 51.630001,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2465,
+          "spawngroupId": 873,
+          "name": "Helia_BlueHawk",
+          "displayName": "Helia Bluehawk",
+          "level": 20,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -333,
+          "y": -1186,
+          "z": 51.630001,
+          "heading": 250,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2466,
+          "spawngroupId": 872,
+          "name": "Sentinel_Venci",
+          "displayName": "Sentinel Venci",
+          "level": 30,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Paladin",
+          "x": -316,
+          "y": -1224,
+          "z": 51.630001,
+          "heading": 452,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2467,
+          "spawngroupId": 871,
+          "name": "Luren_Renthalis",
+          "displayName": "Luren Renthalis",
+          "level": 45,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -61,
+          "y": -1156,
+          "z": 67.629997,
+          "heading": 259,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2468,
+          "spawngroupId": 870,
+          "name": "Teria_Finleather",
+          "displayName": "Teria Finleather",
+          "level": 45,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -98,
+          "y": -956,
+          "z": 51.630001,
+          "heading": 253,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2469,
+          "spawngroupId": 869,
+          "name": "Borge_Finleather",
+          "displayName": "Borge Finleather",
+          "level": 45,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -78,
+          "y": -994,
+          "z": 51.630001,
+          "heading": 379,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2470,
+          "spawngroupId": 868,
+          "name": "Sentinel_Demitri",
+          "displayName": "Sentinel Demitri",
+          "level": 30,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Paladin",
+          "x": -153,
+          "y": -1002,
+          "z": 51.630001,
+          "heading": 75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2471,
+          "spawngroupId": 867,
+          "name": "Reihan_Wilhemson",
+          "displayName": "Reihan Wilhemson",
+          "level": 45,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -88,
+          "y": -906,
+          "z": 51.630001,
+          "heading": 379,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2472,
+          "spawngroupId": 866,
+          "name": "Demicla_Tanner",
+          "displayName": "Demicla Tanner",
+          "level": 45,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -101,
+          "y": -689,
+          "z": 52.630001,
+          "heading": 320,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2473,
+          "spawngroupId": 865,
+          "name": "Sentinel_Phylos",
+          "displayName": "Sentinel Phylos",
+          "level": 30,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Paladin",
+          "x": -262,
+          "y": -730,
+          "z": 51.630001,
+          "heading": 441,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2474,
+          "spawngroupId": 864,
+          "name": "Jagen_Kindlor",
+          "displayName": "Jagen Kindlor",
+          "level": 45,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -286,
+          "y": -709,
+          "z": 51.630001,
+          "heading": 126,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2475,
+          "spawngroupId": 863,
+          "name": "Dunore_Steelfinger",
+          "displayName": "Dunore Steelfinger",
+          "level": 45,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -286,
+          "y": -725,
+          "z": 51.630001,
+          "heading": 126,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2476,
+          "spawngroupId": 862,
+          "name": "Sentinel_Polix",
+          "displayName": "Sentinel Polix",
+          "level": 30,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Paladin",
+          "x": -22,
+          "y": -55,
+          "z": 25.75,
+          "heading": 500,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2477,
+          "spawngroupId": 5406,
+          "name": "Sentinel_Silvis",
+          "displayName": "Sentinel Silvis",
+          "level": 30,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Paladin",
+          "x": 6,
+          "y": -55,
+          "z": 25.75,
+          "heading": 500,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2478,
+          "spawngroupId": 5407,
+          "name": "Kisrin_Breezeshadow",
+          "displayName": "Kisrin Breezeshadow",
+          "level": 45,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -5,
+          "y": 230,
+          "z": 19.75,
+          "heading": 135,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2479,
+          "spawngroupId": 5408,
+          "name": "Reko_Saltamer",
+          "displayName": "Reko Saltamer",
+          "level": 45,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -5,
+          "y": 207,
+          "z": 19.75,
+          "heading": 135,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2480,
+          "spawngroupId": 5409,
+          "name": "Sentinel_Gressio",
+          "displayName": "Sentinel Gressio",
+          "level": 30,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Paladin",
+          "x": 55,
+          "y": 264,
+          "z": 19.75,
+          "heading": 250,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2481,
+          "spawngroupId": 5410,
+          "name": "Sentinel_Tybal",
+          "displayName": "Sentinel Tybal",
+          "level": 30,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Paladin",
+          "x": -318.880005,
+          "y": -948.880005,
+          "z": 67.629997,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2482,
+          "spawngroupId": 5411,
+          "name": "Sentinel_Malvol",
+          "displayName": "Sentinel Malvol",
+          "level": 30,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Paladin",
+          "x": -252,
+          "y": -753,
+          "z": 52.630001,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2483,
+          "spawngroupId": 5412,
+          "name": "Sentinel_Cymbelin",
+          "displayName": "Sentinel Cymbelin",
+          "level": 30,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Paladin",
+          "x": -233.880005,
+          "y": -729.880005,
+          "z": 52.630001,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2484,
+          "spawngroupId": 5413,
+          "name": "Sentinel_Ursulo",
+          "displayName": "Sentinel Ursulo",
+          "level": 30,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Paladin",
+          "x": 57,
+          "y": -390.880005,
+          "z": 39.75,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2485,
+          "spawngroupId": 5414,
+          "name": "Sentinel_Aegeo",
+          "displayName": "Sentinel Aegeo",
+          "level": 30,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Paladin",
+          "x": -43,
+          "y": -81,
+          "z": 31.75,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2486,
+          "spawngroupId": 5415,
+          "name": "Sentinel_Mercutil",
+          "displayName": "Sentinel Mercutil",
+          "level": 30,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Paladin",
+          "x": -4.88,
+          "y": 17.879999,
+          "z": 19.75,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2487,
+          "spawngroupId": 5416,
+          "name": "Sentinel_Belario",
+          "displayName": "Sentinel Belario",
+          "level": 30,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Paladin",
+          "x": -47.880001,
+          "y": 146.880005,
+          "z": 6.75,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2488,
+          "spawngroupId": 5417,
+          "name": "Sentinel_Adrial",
+          "displayName": "Sentinel Adrial",
+          "level": 30,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Paladin",
+          "x": -331,
+          "y": 166,
+          "z": 19.75,
+          "heading": 312,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2489,
+          "spawngroupId": 5418,
+          "name": "Brianna_Falsruinay",
+          "displayName": "Brianna Falsruinay",
+          "level": 61,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Warrior",
+          "x": 55,
+          "y": 201,
+          "z": 35.75,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2490,
+          "spawngroupId": 5419,
+          "name": "Valani_Gadriek",
+          "displayName": "Valani Gadriek",
+          "level": 40,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -252,
+          "y": -1376,
+          "z": 35.75,
+          "heading": 259,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2491,
+          "spawngroupId": 5420,
+          "name": "Ticar_Lorestring",
+          "displayName": "Ticar Lorestring",
+          "level": 25,
+          "race": "Half Elf",
+          "rawRace": "Half Elf",
+          "className": "Warrior",
+          "x": -227.880005,
+          "y": -628,
+          "z": 67.379997,
+          "heading": 208,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2492,
+          "spawngroupId": 5421,
+          "name": "Kordian_Keshalian",
+          "displayName": "Kordian Keshalian",
+          "level": 61,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Paladin",
+          "x": -473,
+          "y": -1113,
+          "z": 67.629997,
+          "heading": 126,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2493,
+          "spawngroupId": 5422,
+          "name": "Alimaja_Shanthun",
+          "displayName": "Alimaja Shanthun",
+          "level": 61,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Cleric",
+          "x": -359,
+          "y": -1101,
+          "z": 67.629997,
+          "heading": 118,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2495,
+          "spawngroupId": 5424,
+          "name": "#Translocator_Eniela",
+          "displayName": "Translocator Eniela",
+          "level": 1,
+          "race": "Gnome",
+          "rawRace": "Gnome",
+          "className": "Wizard",
+          "x": -361,
+          "y": 96,
+          "z": 21.879999,
+          "heading": 125,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2496,
+          "spawngroupId": 5425,
+          "name": "Collier",
+          "displayName": "Collier",
+          "level": 35,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": -72,
+          "y": -1170,
+          "z": 83.629997,
+          "heading": 129,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2497,
+          "spawngroupId": 5426,
+          "name": "Priest_of_Discord",
+          "displayName": "Priest Of Discord",
+          "level": 50,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Cleric",
+          "x": 84,
+          "y": -25,
+          "z": 19.75,
+          "heading": 454,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2498,
+          "spawngroupId": 5427,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 14,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": -634,
+          "y": 291,
+          "z": -22,
+          "heading": 222,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2499,
+          "spawngroupId": 5428,
+          "name": "a_shark",
+          "displayName": "A Shark",
+          "level": 16,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": -345,
+          "y": 470,
+          "z": -28,
+          "heading": 260,
+          "chance": 20,
+          "respawnTime": 640,
+          "candidateCount": 6
+        },
+        {
+          "spawn2Id": 21418,
+          "spawngroupId": 13082,
+          "name": "a_young_shark",
+          "displayName": "A Young Shark",
+          "level": 1,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": -22,
+          "y": 67,
+          "z": -1.6,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 21419,
+          "spawngroupId": 13083,
+          "name": "Rem_Knarjon",
+          "displayName": "Rem Knarjon",
+          "level": 25,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -72,
+          "y": -624,
+          "z": 67.699997,
+          "heading": 258,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40794,
+          "spawngroupId": 34772,
+          "name": "Syra_Printell",
+          "displayName": "Syra Printell",
+          "level": 35,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -46,
+          "y": -736,
+          "z": 68,
+          "heading": 385,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40842,
+          "spawngroupId": 34751,
+          "name": "Stella_Breezemoon",
+          "displayName": "Stella Breezemoon",
+          "level": 28,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -77,
+          "y": -621,
+          "z": 68,
+          "heading": 255,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 40899,
+          "spawngroupId": 34774,
+          "name": "Galbasi_Weaver",
+          "displayName": "Galbasi Weaver",
+          "level": 45,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -106,
+          "y": -754,
+          "z": 52.625,
+          "heading": 413,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 58371,
+          "spawngroupId": 12522,
+          "name": "Unknown",
+          "displayName": "Unknown",
+          "level": null,
+          "race": "Unknown",
+          "rawRace": "Unknown",
+          "className": "Unknown",
+          "x": -351.155579,
+          "y": 117.388878,
+          "z": 23.226994,
+          "heading": 145.75,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 58416,
+          "spawngroupId": 5608,
+          "name": "Lumi_Stergnon",
+          "displayName": "Lumi Stergnon",
+          "level": 61,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Cleric GM",
+          "x": -94,
+          "y": -640,
+          "z": 66.258179,
+          "heading": 153,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 58420,
+          "spawngroupId": 31153,
+          "name": "Sea_King",
+          "displayName": "Sea King",
+          "level": 70,
+          "race": "Ship",
+          "rawRace": "Ship",
+          "className": "Warrior",
+          "x": -1645.247559,
+          "y": 64.458321,
+          "z": 0.216953,
+          "heading": 8.5,
+          "chance": 100,
+          "respawnTime": 400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 58613,
+          "spawngroupId": 48187,
+          "name": "Dleria_Mausrel",
+          "displayName": "Dleria Mausrel",
+          "level": 61,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Cleric GM",
+          "x": -422,
+          "y": -1064,
+          "z": 68,
+          "heading": 102,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 58672,
+          "spawngroupId": 48254,
+          "name": "Tiam_Khonsir",
+          "displayName": "Tiam Khonsir",
+          "level": 61,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Paladin GM",
+          "x": -418.070465,
+          "y": -1126.045654,
+          "z": 50.258228,
+          "heading": 293.75,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 59377,
+          "spawngroupId": 48652,
+          "name": "Depnar_Bulrious",
+          "displayName": "Depnar Bulrious",
+          "level": 61,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Paladin GM",
+          "x": -41,
+          "y": -643,
+          "z": 68,
+          "heading": 340,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 68523,
+          "spawngroupId": 52580,
+          "name": "Orwin_Flintmaker",
+          "displayName": "Orwin Flintmaker",
+          "level": 65,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Warrior",
+          "x": -140,
+          "y": -1160,
+          "z": 52.375,
+          "heading": 387,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 72005,
+          "spawngroupId": 53505,
+          "name": "Tol_Nicelot",
+          "displayName": "Tol Nicelot",
+          "level": 20,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Paladin",
+          "x": -232,
+          "y": -1096,
+          "z": 82.259216,
+          "heading": 388.25,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 72006,
+          "spawngroupId": 53506,
+          "name": "Rarnan_Lapice",
+          "displayName": "Rarnan Lapice",
+          "level": 61,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Cleric GM",
+          "x": -87,
+          "y": -732,
+          "z": 68,
+          "heading": 501,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 76332,
+          "spawngroupId": 54789,
+          "name": "Geoard_BlueHawk",
+          "displayName": "Geoard Bluehawk",
+          "level": 25,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -331,
+          "y": -1175,
+          "z": 51.700001,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 148697,
+          "spawngroupId": 110213,
+          "name": "Santug_Claugg",
+          "displayName": "Santug Claugg",
+          "level": 70,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Warrior",
+          "x": -240,
+          "y": -1130,
+          "z": 54,
+          "heading": 254,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 148714,
+          "spawngroupId": 110230,
+          "name": "a_Frostfell_Goblin",
+          "displayName": "A Frostfell Goblin",
+          "level": 1,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -214,
+          "y": -1124,
+          "z": 50,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 148731,
+          "spawngroupId": 110247,
+          "name": "Hargar_the_Velium_Chef",
+          "displayName": "Hargar The Velium Chef",
+          "level": 1,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior",
+          "x": -272,
+          "y": -1125,
+          "z": 50.375,
+          "heading": 252,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 148748,
+          "spawngroupId": 110264,
+          "name": "Fireworks_Engineer_Fabdabus",
+          "displayName": "Fireworks Engineer Fabdabus",
+          "level": 1,
+          "race": "Gnome",
+          "rawRace": "Gnome",
+          "className": "Warrior",
+          "x": -241,
+          "y": -1186,
+          "z": 50.75,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        }
+      ]
+    }
+  },
+  "details": {
+    "zoneSlug": "erudin",
+    "routeSlug": "erudnext",
+    "zoneName": "Erudin",
+    "sourceFile": "local-eqemu-database",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobGroups": [
+      {
+        "displayName": "A Fish",
+        "rawNames": [
+          "a_fish"
+        ],
+        "count": 6,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Fish": 6
+        },
+        "rawRaceCounts": {
+          "Fish": 6
+        },
+        "classCounts": {
+          "Warrior": 6
+        },
+        "typeCounts": {
+          "Spawn Slot": 6
+        }
+      },
+      {
+        "displayName": "A Frostfell Goblin",
+        "rawNames": [
+          "a_Frostfell_Goblin"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Goblin": 1
+        },
+        "rawRaceCounts": {
+          "Goblin": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Young Shark",
+        "rawNames": [
+          "a_young_shark"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Shark": 1
+        },
+        "rawRaceCounts": {
+          "Shark": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Fireworks Engineer Fabdabus",
+        "rawNames": [
+          "Fireworks_Engineer_Fabdabus"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Gnome": 1
+        },
+        "rawRaceCounts": {
+          "Gnome": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Hargar The Velium Chef",
+        "rawNames": [
+          "Hargar_the_Velium_Chef"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Jordin Sretin",
+        "rawNames": [
+          "#Jordin_Sretin"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Sabrina",
+        "rawNames": [
+          "Sabrina"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Launch": 1
+        },
+        "rawRaceCounts": {
+          "Launch": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Translocator Eniela",
+        "rawNames": [
+          "#Translocator_Eniela"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Gnome": 1
+        },
+        "rawRaceCounts": {
+          "Gnome": 1
+        },
+        "classCounts": {
+          "Wizard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Sand Shark",
+        "rawNames": [
+          "a_sand_shark"
+        ],
+        "count": 3,
+        "levelMin": 3,
+        "levelMax": 3,
+        "levels": [
+          3
+        ],
+        "raceCounts": {
+          "Shark": 3
+        },
+        "rawRaceCounts": {
+          "Shark": 3
+        },
+        "classCounts": {
+          "Warrior": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "Sinnkin Highbrow",
+        "rawNames": [
+          "Sinnkin_Highbrow"
+        ],
+        "count": 1,
+        "levelMin": 4,
+        "levelMax": 4,
+        "levels": [
+          4
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Sand Shark",
+        "rawNames": [
+          "a_sand_shark"
+        ],
+        "count": 1,
+        "levelMin": 5,
+        "levelMax": 5,
+        "levels": [
+          5
+        ],
+        "raceCounts": {
+          "Shark": 1
+        },
+        "rawRaceCounts": {
+          "Shark": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Shark",
+        "rawNames": [
+          "a_shark"
+        ],
+        "count": 6,
+        "levelMin": 13,
+        "levelMax": 16,
+        "levels": [
+          13,
+          14,
+          15,
+          16
+        ],
+        "raceCounts": {
+          "Shark": 6
+        },
+        "rawRaceCounts": {
+          "Shark": 6
+        },
+        "classCounts": {
+          "Warrior": 6
+        },
+        "typeCounts": {
+          "Spawn Slot": 6
+        }
+      },
+      {
+        "displayName": "Phloatin Highbrow",
+        "rawNames": [
+          "Phloatin_Highbrow"
+        ],
+        "count": 1,
+        "levelMin": 17,
+        "levelMax": 17,
+        "levels": [
+          17
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Helia Bluehawk",
+        "rawNames": [
+          "Helia_BlueHawk"
+        ],
+        "count": 1,
+        "levelMin": 20,
+        "levelMax": 20,
+        "levels": [
+          20
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Illithi Nollith",
+        "rawNames": [
+          "Illithi_Nollith"
+        ],
+        "count": 1,
+        "levelMin": 20,
+        "levelMax": 20,
+        "levels": [
+          20
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Tol Nicelot",
+        "rawNames": [
+          "Tol_Nicelot"
+        ],
+        "count": 1,
+        "levelMin": 20,
+        "levelMax": 20,
+        "levels": [
+          20
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Ayth Niphiria",
+        "rawNames": [
+          "Ayth_Niphiria"
+        ],
+        "count": 1,
+        "levelMin": 22,
+        "levelMax": 22,
+        "levels": [
+          22
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Altrusan Belstince",
+        "rawNames": [
+          "Altrusan_Belstince"
+        ],
+        "count": 1,
+        "levelMin": 24,
+        "levelMax": 24,
+        "levels": [
+          24
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Ignacia Rellasp",
+        "rawNames": [
+          "Ignacia_Rellasp"
+        ],
+        "count": 1,
+        "levelMin": 24,
+        "levelMax": 24,
+        "levels": [
+          24
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Kathar Varselli",
+        "rawNames": [
+          "Kathar_Varselli"
+        ],
+        "count": 1,
+        "levelMin": 24,
+        "levelMax": 24,
+        "levels": [
+          24
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Mertitt Phentilly",
+        "rawNames": [
+          "Mertitt_Phentilly"
+        ],
+        "count": 1,
+        "levelMin": 24,
+        "levelMax": 24,
+        "levels": [
+          24
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Qualtis Weslent",
+        "rawNames": [
+          "Qualtis_Weslent"
+        ],
+        "count": 1,
+        "levelMin": 24,
+        "levelMax": 24,
+        "levels": [
+          24
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Selint Chency",
+        "rawNames": [
+          "Selint_Chency"
+        ],
+        "count": 1,
+        "levelMin": 24,
+        "levelMax": 24,
+        "levels": [
+          24
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Stolace Printell",
+        "rawNames": [
+          "Stolace_Printell"
+        ],
+        "count": 1,
+        "levelMin": 24,
+        "levelMax": 24,
+        "levels": [
+          24
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Tollari Mistell",
+        "rawNames": [
+          "Tollari_Mistell"
+        ],
+        "count": 1,
+        "levelMin": 24,
+        "levelMax": 24,
+        "levels": [
+          24
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Geoard Bluehawk",
+        "rawNames": [
+          "Geoard_BlueHawk"
+        ],
+        "count": 1,
+        "levelMin": 25,
+        "levelMax": 25,
+        "levels": [
+          25
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Rem Knarjon",
+        "rawNames": [
+          "Rem_Knarjon"
+        ],
+        "count": 1,
+        "levelMin": 25,
+        "levelMax": 25,
+        "levels": [
+          25
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Ticar Lorestring",
+        "rawNames": [
+          "Ticar_Lorestring"
+        ],
+        "count": 1,
+        "levelMin": 25,
+        "levelMax": 25,
+        "levels": [
+          25
+        ],
+        "raceCounts": {
+          "Half Elf": 1
+        },
+        "rawRaceCounts": {
+          "Half Elf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Ghemna Nyjuss",
+        "rawNames": [
+          "Ghemna_Nyjuss"
+        ],
+        "count": 1,
+        "levelMin": 26,
+        "levelMax": 26,
+        "levels": [
+          26
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Fhania Aserdon",
+        "rawNames": [
+          "Fhania_Aserdon"
+        ],
+        "count": 1,
+        "levelMin": 28,
+        "levelMax": 28,
+        "levels": [
+          28
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Stella Breezemoon",
+        "rawNames": [
+          "Stella_Breezemoon"
+        ],
+        "count": 1,
+        "levelMin": 28,
+        "levelMax": 28,
+        "levels": [
+          28
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Sentinel Adrial",
+        "rawNames": [
+          "Sentinel_Adrial"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Sentinel Aegeo",
+        "rawNames": [
+          "Sentinel_Aegeo"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Sentinel Belario",
+        "rawNames": [
+          "Sentinel_Belario"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Sentinel Cymbelin",
+        "rawNames": [
+          "Sentinel_Cymbelin"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Sentinel Demitri",
+        "rawNames": [
+          "Sentinel_Demitri"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Sentinel Gressio",
+        "rawNames": [
+          "Sentinel_Gressio"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Sentinel Malvol",
+        "rawNames": [
+          "Sentinel_Malvol"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Sentinel Mercutil",
+        "rawNames": [
+          "Sentinel_Mercutil"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Sentinel Phylos",
+        "rawNames": [
+          "Sentinel_Phylos"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Sentinel Polix",
+        "rawNames": [
+          "Sentinel_Polix"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Sentinel Silvis",
+        "rawNames": [
+          "Sentinel_Silvis"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Sentinel Tybal",
+        "rawNames": [
+          "Sentinel_Tybal"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Sentinel Ursulo",
+        "rawNames": [
+          "Sentinel_Ursulo"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Sentinel Venci",
+        "rawNames": [
+          "Sentinel_Venci"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Alysa Eltern",
+        "rawNames": [
+          "Alysa_Eltern"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Chembla Ellent",
+        "rawNames": [
+          "Chembla_Ellent"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Collier",
+        "rawNames": [
+          "Collier"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Rogue": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Issibla Belstince",
+        "rawNames": [
+          "Issibla_Belstince"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Junice Weslent",
+        "rawNames": [
+          "Junice_Weslent"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Lissa Respelti",
+        "rawNames": [
+          "Lissa_Respelti"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Raine Beteria",
+        "rawNames": [
+          "Raine_Beteria"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Sornita Eltern",
+        "rawNames": [
+          "Sornita_Eltern"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Syra Printell",
+        "rawNames": [
+          "Syra_Printell"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Tomekeeper Danl",
+        "rawNames": [
+          "Tomekeeper_Danl"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Weltria Ostriss",
+        "rawNames": [
+          "Weltria_Ostriss"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Valani Gadriek",
+        "rawNames": [
+          "Valani_Gadriek"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Beth Breadmaker",
+        "rawNames": [
+          "Beth_Breadmaker"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Borge Finleather",
+        "rawNames": [
+          "Borge_Finleather"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Demicla Tanner",
+        "rawNames": [
+          "Demicla_Tanner"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Dunore Steelfinger",
+        "rawNames": [
+          "Dunore_Steelfinger"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Galbasi Weaver",
+        "rawNames": [
+          "Galbasi_Weaver"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Gayle Weaven",
+        "rawNames": [
+          "Gayle_Weaven"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Jagen Kindlor",
+        "rawNames": [
+          "Jagen_Kindlor"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Kisrin Breezeshadow",
+        "rawNames": [
+          "Kisrin_Breezeshadow"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Luren Renthalis",
+        "rawNames": [
+          "Luren_Renthalis"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Monita Weaver",
+        "rawNames": [
+          "Monita_Weaver"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Nerth Sailwind",
+        "rawNames": [
+          "Nerth_Sailwind"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Palus Weaponsmith",
+        "rawNames": [
+          "Palus_Weaponsmith"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Reihan Wilhemson",
+        "rawNames": [
+          "Reihan_Wilhemson"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Reko Saltamer",
+        "rawNames": [
+          "Reko_Saltamer"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Shinan Orefinder",
+        "rawNames": [
+          "Shinan_Orefinder"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Teria Finleather",
+        "rawNames": [
+          "Teria_Finleather"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Camin",
+        "rawNames": [
+          "Camin"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Wizard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Priest Of Discord",
+        "rawNames": [
+          "Priest_of_Discord"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Cleric": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Senina Jolik",
+        "rawNames": [
+          "#Senina_Jolik"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Enchanter": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Stofo Olan",
+        "rawNames": [
+          "Stofo_Olan"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Enchanter": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Alimaja Shanthun",
+        "rawNames": [
+          "Alimaja_Shanthun"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Cleric": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Breya Nostulia",
+        "rawNames": [
+          "Breya_Nostulia"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Paladin GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Brianna Falsruinay",
+        "rawNames": [
+          "Brianna_Falsruinay"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Cipse Tospyr",
+        "rawNames": [
+          "Cipse_Tospyr"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Cleric GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Depnar Bulrious",
+        "rawNames": [
+          "Depnar_Bulrious"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Paladin GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Dleria Mausrel",
+        "rawNames": [
+          "Dleria_Mausrel"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Cleric GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Gans Paust",
+        "rawNames": [
+          "Gans_Paust"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Cleric GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Jras Solsier",
+        "rawNames": [
+          "Jras_Solsier"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Paladin GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Kordian Keshalian",
+        "rawNames": [
+          "Kordian_Keshalian"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Laoni Reista",
+        "rawNames": [
+          "Laoni_Reista"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Paladin GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Leraena Shelyrak",
+        "rawNames": [
+          "Leraena_Shelyrak"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Cleric GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Lumi Stergnon",
+        "rawNames": [
+          "Lumi_Stergnon"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Cleric GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Mikeana Tolstaub",
+        "rawNames": [
+          "Mikeana_Tolstaub"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Cleric GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Nolusia Finharn",
+        "rawNames": [
+          "Nolusia_Finharn"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Rarnan Lapice",
+        "rawNames": [
+          "Rarnan_Lapice"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Cleric GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Reklon Gnallen",
+        "rawNames": [
+          "Reklon_Gnallen"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Paladin GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Tiam Khonsir",
+        "rawNames": [
+          "Tiam_Khonsir"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Paladin GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Vynon Estaliun",
+        "rawNames": [
+          "Vynon_Estaliun"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Paladin GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Weligon Steelherder",
+        "rawNames": [
+          "Weligon_Steelherder"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Paladin GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Zure Bavuior",
+        "rawNames": [
+          "Zure_Bavuior"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Cleric GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Bazma Brinstar",
+        "rawNames": [
+          "Bazma_Brinstar"
+        ],
+        "count": 1,
+        "levelMin": 65,
+        "levelMax": 65,
+        "levels": [
+          65
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Tribute Master": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Orwin Flintmaker",
+        "rawNames": [
+          "Orwin_Flintmaker"
+        ],
+        "count": 1,
+        "levelMin": 65,
+        "levelMax": 65,
+        "levels": [
+          65
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Soulbinder Altira Mamar",
+        "rawNames": [
+          "Soulbinder_Altira_Mamar"
+        ],
+        "count": 1,
+        "levelMin": 65,
+        "levelMax": 65,
+        "levels": [
+          65
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Santug Claugg",
+        "rawNames": [
+          "Santug_Claugg"
+        ],
+        "count": 1,
+        "levelMin": 70,
+        "levelMax": 70,
+        "levels": [
+          70
+        ],
+        "raceCounts": {
+          "Ogre": 1
+        },
+        "rawRaceCounts": {
+          "Ogre": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Sea King",
+        "rawNames": [
+          "Sea_King"
+        ],
+        "count": 1,
+        "levelMin": 70,
+        "levelMax": 70,
+        "levels": [
+          70
+        ],
+        "raceCounts": {
+          "Ship": 1
+        },
+        "rawRaceCounts": {
+          "Ship": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Unknown",
+        "rawNames": [
+          "Unknown"
+        ],
+        "count": 1,
+        "levelMin": null,
+        "levelMax": null,
+        "levels": [],
+        "raceCounts": {
+          "Unknown": 1
+        },
+        "rawRaceCounts": {
+          "Unknown": 1
+        },
+        "classCounts": {
+          "Unknown": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      }
+    ],
+    "rows": [
+      {
+        "displayName": "A Fish",
+        "rawName": "a_fish",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -754.880005,
+        "y": -45.880001,
+        "z": -14.88,
+        "heading": 266,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2406,
+        "spawngroupId": 924,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Fish",
+        "rawName": "a_fish",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -734.880005,
+        "y": -30.379999,
+        "z": -32.599998,
+        "heading": 183,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2407,
+        "spawngroupId": 924,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Fish",
+        "rawName": "a_fish",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -669,
+        "y": 42.630001,
+        "z": -34.630001,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2408,
+        "spawngroupId": 924,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Fish",
+        "rawName": "a_fish",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -907.880005,
+        "y": 103.879997,
+        "z": -24.9,
+        "heading": 285.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2409,
+        "spawngroupId": 925,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Fish",
+        "rawName": "a_fish",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -202.380005,
+        "y": 126.379997,
+        "z": -26,
+        "heading": 385,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2413,
+        "spawngroupId": 928,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Fish",
+        "rawName": "a_fish",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -421.5,
+        "y": -141.75,
+        "z": -16.25,
+        "heading": 202,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 2414,
+        "spawngroupId": 929,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Frostfell Goblin",
+        "rawName": "a_Frostfell_Goblin",
+        "level": 1,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -214,
+        "y": -1124,
+        "z": 50,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 148714,
+        "spawngroupId": 110230,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Young Shark",
+        "rawName": "a_young_shark",
+        "level": 1,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -22,
+        "y": 67,
+        "z": -1.6,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 21418,
+        "spawngroupId": 13082,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Fireworks Engineer Fabdabus",
+        "rawName": "Fireworks_Engineer_Fabdabus",
+        "level": 1,
+        "race": "Gnome",
+        "rawRace": "Gnome",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -241,
+        "y": -1186,
+        "z": 50.75,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 148748,
+        "spawngroupId": 110264,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Hargar The Velium Chef",
+        "rawName": "Hargar_the_Velium_Chef",
+        "level": 1,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -272,
+        "y": -1125,
+        "z": 50.375,
+        "heading": 252,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 148731,
+        "spawngroupId": 110247,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Jordin Sretin",
+        "rawName": "#Jordin_Sretin",
+        "level": 1,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 14,
+        "y": 244,
+        "z": 19.75,
+        "heading": 245,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2433,
+        "spawngroupId": 903,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Sabrina",
+        "rawName": "Sabrina",
+        "level": 1,
+        "race": "Launch",
+        "rawRace": "Launch",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -350,
+        "y": 48,
+        "z": 0,
+        "heading": 384,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2453,
+        "spawngroupId": 883,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Translocator Eniela",
+        "rawName": "#Translocator_Eniela",
+        "level": 1,
+        "race": "Gnome",
+        "rawRace": "Gnome",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -361,
+        "y": 96,
+        "z": 21.879999,
+        "heading": 125,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2495,
+        "spawngroupId": 5424,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Sand Shark",
+        "rawName": "a_sand_shark",
+        "level": 3,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -619,
+        "y": 951,
+        "z": -42.880001,
+        "heading": 320,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2455,
+        "spawngroupId": 881,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Sand Shark",
+        "rawName": "a_sand_shark",
+        "level": 3,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -482,
+        "y": -212,
+        "z": -26.879999,
+        "heading": 15,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2456,
+        "spawngroupId": 881,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Sand Shark",
+        "rawName": "a_sand_shark",
+        "level": 3,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -484,
+        "y": 9,
+        "z": -26.879999,
+        "heading": 80,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2457,
+        "spawngroupId": 881,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Sinnkin Highbrow",
+        "rawName": "Sinnkin_Highbrow",
+        "level": 4,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -255,
+        "y": -1053,
+        "z": 83.629997,
+        "heading": 234,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2438,
+        "spawngroupId": 898,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Sand Shark",
+        "rawName": "a_sand_shark",
+        "level": 5,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -461,
+        "y": -274,
+        "z": -26.879999,
+        "heading": 490,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2454,
+        "spawngroupId": 882,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 13,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1251.880005,
+        "y": 469.630005,
+        "z": -5.4,
+        "heading": 271.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2410,
+        "spawngroupId": 926,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 13,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -751.880005,
+        "y": -202.130005,
+        "z": -23.799999,
+        "heading": 320.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2411,
+        "spawngroupId": 926,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 14,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -273.380005,
+        "y": 810.130005,
+        "z": -8.63,
+        "heading": 4.5,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 2412,
+        "spawngroupId": 927,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 14,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -634,
+        "y": 291,
+        "z": -22,
+        "heading": 222,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2498,
+        "spawngroupId": 5427,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 15,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -9.5,
+        "y": 86.129997,
+        "z": -2.38,
+        "heading": 492,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2402,
+        "spawngroupId": 804,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shark",
+        "rawName": "a_shark",
+        "level": 16,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -345,
+        "y": 470,
+        "z": -28,
+        "heading": 260,
+        "chance": 20,
+        "respawnTime": 640,
+        "spawn2Id": 2499,
+        "spawngroupId": 5428,
+        "candidateCount": 6
+      },
+      {
+        "displayName": "Phloatin Highbrow",
+        "rawName": "Phloatin_Highbrow",
+        "level": 17,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -318,
+        "y": -1183,
+        "z": 51.630001,
+        "heading": 386,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2439,
+        "spawngroupId": 897,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Helia Bluehawk",
+        "rawName": "Helia_BlueHawk",
+        "level": 20,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -333,
+        "y": -1186,
+        "z": 51.630001,
+        "heading": 250,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2465,
+        "spawngroupId": 873,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Illithi Nollith",
+        "rawName": "Illithi_Nollith",
+        "level": 20,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -217,
+        "y": -1074,
+        "z": 51.630001,
+        "heading": 393,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2437,
+        "spawngroupId": 899,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Tol Nicelot",
+        "rawName": "Tol_Nicelot",
+        "level": 20,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": -232,
+        "y": -1096,
+        "z": 82.259216,
+        "heading": 388.25,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 72005,
+        "spawngroupId": 53505,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Ayth Niphiria",
+        "rawName": "Ayth_Niphiria",
+        "level": 22,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -83,
+        "y": -622,
+        "z": 67.629997,
+        "heading": 126,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2442,
+        "spawngroupId": 894,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Altrusan Belstince",
+        "rawName": "Altrusan_Belstince",
+        "level": 24,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -213,
+        "y": -1105,
+        "z": 51.630001,
+        "heading": 497,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2421,
+        "spawngroupId": 936,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Ignacia Rellasp",
+        "rawName": "Ignacia_Rellasp",
+        "level": 24,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -223,
+        "y": -1093,
+        "z": 83.599998,
+        "heading": 356,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2417,
+        "spawngroupId": 932,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Kathar Varselli",
+        "rawName": "Kathar_Varselli",
+        "level": 24,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -417,
+        "y": -1066,
+        "z": 51.630001,
+        "heading": 250,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2425,
+        "spawngroupId": 801,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Mertitt Phentilly",
+        "rawName": "Mertitt_Phentilly",
+        "level": 24,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -54,
+        "y": -743,
+        "z": 67.629997,
+        "heading": 381,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2430,
+        "spawngroupId": 906,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Qualtis Weslent",
+        "rawName": "Qualtis_Weslent",
+        "level": 24,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -253,
+        "y": -1111,
+        "z": 83.629997,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2418,
+        "spawngroupId": 933,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Selint Chency",
+        "rawName": "Selint_Chency",
+        "level": 24,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -46,
+        "y": -636,
+        "z": 67.629997,
+        "heading": 336,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2426,
+        "spawngroupId": 802,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Stolace Printell",
+        "rawName": "Stolace_Printell",
+        "level": 24,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -57,
+        "y": -720,
+        "z": 67.629997,
+        "heading": 374,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2429,
+        "spawngroupId": 809,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Tollari Mistell",
+        "rawName": "Tollari_Mistell",
+        "level": 24,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -258,
+        "y": -1069,
+        "z": 51.630001,
+        "heading": 78,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2422,
+        "spawngroupId": 937,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Geoard Bluehawk",
+        "rawName": "Geoard_BlueHawk",
+        "level": 25,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -331,
+        "y": -1175,
+        "z": 51.700001,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 76332,
+        "spawngroupId": 54789,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Rem Knarjon",
+        "rawName": "Rem_Knarjon",
+        "level": 25,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -72,
+        "y": -624,
+        "z": 67.699997,
+        "heading": 258,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 21419,
+        "spawngroupId": 13083,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Ticar Lorestring",
+        "rawName": "Ticar_Lorestring",
+        "level": 25,
+        "race": "Half Elf",
+        "rawRace": "Half Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -227.880005,
+        "y": -628,
+        "z": 67.379997,
+        "heading": 208,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2491,
+        "spawngroupId": 5420,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Ghemna Nyjuss",
+        "rawName": "Ghemna_Nyjuss",
+        "level": 26,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -398,
+        "y": -1070,
+        "z": 51.630001,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2464,
+        "spawngroupId": 874,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Fhania Aserdon",
+        "rawName": "Fhania_Aserdon",
+        "level": 28,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -470,
+        "y": -1094,
+        "z": 51.630001,
+        "heading": 159,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2448,
+        "spawngroupId": 888,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Stella Breezemoon",
+        "rawName": "Stella_Breezemoon",
+        "level": 28,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -77,
+        "y": -621,
+        "z": 68,
+        "heading": 255,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40842,
+        "spawngroupId": 34751,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Sentinel Adrial",
+        "rawName": "Sentinel_Adrial",
+        "level": 30,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": -331,
+        "y": 166,
+        "z": 19.75,
+        "heading": 312,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2488,
+        "spawngroupId": 5417,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Sentinel Aegeo",
+        "rawName": "Sentinel_Aegeo",
+        "level": 30,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": -43,
+        "y": -81,
+        "z": 31.75,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2485,
+        "spawngroupId": 5414,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Sentinel Belario",
+        "rawName": "Sentinel_Belario",
+        "level": 30,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": -47.880001,
+        "y": 146.880005,
+        "z": 6.75,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2487,
+        "spawngroupId": 5416,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Sentinel Cymbelin",
+        "rawName": "Sentinel_Cymbelin",
+        "level": 30,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": -233.880005,
+        "y": -729.880005,
+        "z": 52.630001,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2483,
+        "spawngroupId": 5412,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Sentinel Demitri",
+        "rawName": "Sentinel_Demitri",
+        "level": 30,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": -153,
+        "y": -1002,
+        "z": 51.630001,
+        "heading": 75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2470,
+        "spawngroupId": 868,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Sentinel Gressio",
+        "rawName": "Sentinel_Gressio",
+        "level": 30,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": 55,
+        "y": 264,
+        "z": 19.75,
+        "heading": 250,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2480,
+        "spawngroupId": 5409,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Sentinel Malvol",
+        "rawName": "Sentinel_Malvol",
+        "level": 30,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": -252,
+        "y": -753,
+        "z": 52.630001,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2482,
+        "spawngroupId": 5411,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Sentinel Mercutil",
+        "rawName": "Sentinel_Mercutil",
+        "level": 30,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": -4.88,
+        "y": 17.879999,
+        "z": 19.75,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2486,
+        "spawngroupId": 5415,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Sentinel Phylos",
+        "rawName": "Sentinel_Phylos",
+        "level": 30,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": -262,
+        "y": -730,
+        "z": 51.630001,
+        "heading": 441,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2473,
+        "spawngroupId": 865,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Sentinel Polix",
+        "rawName": "Sentinel_Polix",
+        "level": 30,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": -22,
+        "y": -55,
+        "z": 25.75,
+        "heading": 500,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2476,
+        "spawngroupId": 862,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Sentinel Silvis",
+        "rawName": "Sentinel_Silvis",
+        "level": 30,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": 6,
+        "y": -55,
+        "z": 25.75,
+        "heading": 500,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2477,
+        "spawngroupId": 5406,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Sentinel Tybal",
+        "rawName": "Sentinel_Tybal",
+        "level": 30,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": -318.880005,
+        "y": -948.880005,
+        "z": 67.629997,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2481,
+        "spawngroupId": 5410,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Sentinel Ursulo",
+        "rawName": "Sentinel_Ursulo",
+        "level": 30,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": 57,
+        "y": -390.880005,
+        "z": 39.75,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2484,
+        "spawngroupId": 5413,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Sentinel Venci",
+        "rawName": "Sentinel_Venci",
+        "level": 30,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": -316,
+        "y": -1224,
+        "z": 51.630001,
+        "heading": 452,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2466,
+        "spawngroupId": 872,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Alysa Eltern",
+        "rawName": "Alysa_Eltern",
+        "level": 35,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -56,
+        "y": -709,
+        "z": 67.629997,
+        "heading": 410,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2428,
+        "spawngroupId": 807,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Chembla Ellent",
+        "rawName": "Chembla_Ellent",
+        "level": 35,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -244,
+        "y": -1048,
+        "z": 83.629997,
+        "heading": 252,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2416,
+        "spawngroupId": 931,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Collier",
+        "rawName": "Collier",
+        "level": 35,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -72,
+        "y": -1170,
+        "z": 83.629997,
+        "heading": 129,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2496,
+        "spawngroupId": 5425,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Issibla Belstince",
+        "rawName": "Issibla_Belstince",
+        "level": 35,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -374,
+        "y": -1031,
+        "z": 67.629997,
+        "heading": 70,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2424,
+        "spawngroupId": 811,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Junice Weslent",
+        "rawName": "Junice_Weslent",
+        "level": 35,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -54,
+        "y": -698,
+        "z": 67.629997,
+        "heading": 410,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2427,
+        "spawngroupId": 810,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Lissa Respelti",
+        "rawName": "Lissa_Respelti",
+        "level": 35,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -44,
+        "y": -651,
+        "z": 67.629997,
+        "heading": 381,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2431,
+        "spawngroupId": 905,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Raine Beteria",
+        "rawName": "Raine_Beteria",
+        "level": 35,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -212,
+        "y": -1050,
+        "z": 67.629997,
+        "heading": 370,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2423,
+        "spawngroupId": 938,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Sornita Eltern",
+        "rawName": "Sornita_Eltern",
+        "level": 35,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -230,
+        "y": -1109,
+        "z": 83.629997,
+        "heading": 405,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2420,
+        "spawngroupId": 935,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Syra Printell",
+        "rawName": "Syra_Printell",
+        "level": 35,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -46,
+        "y": -736,
+        "z": 68,
+        "heading": 385,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40794,
+        "spawngroupId": 34772,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Tomekeeper Danl",
+        "rawName": "Tomekeeper_Danl",
+        "level": 35,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -243,
+        "y": -1093,
+        "z": 67.629997,
+        "heading": 371.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2435,
+        "spawngroupId": 901,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Weltria Ostriss",
+        "rawName": "Weltria_Ostriss",
+        "level": 35,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -242,
+        "y": -1111,
+        "z": 83.629997,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2419,
+        "spawngroupId": 934,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Valani Gadriek",
+        "rawName": "Valani_Gadriek",
+        "level": 40,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -252,
+        "y": -1376,
+        "z": 35.75,
+        "heading": 259,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2490,
+        "spawngroupId": 5419,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Beth Breadmaker",
+        "rawName": "Beth_Breadmaker",
+        "level": 45,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 109,
+        "y": 136,
+        "z": 19.75,
+        "heading": 326,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2458,
+        "spawngroupId": 880,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Borge Finleather",
+        "rawName": "Borge_Finleather",
+        "level": 45,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -78,
+        "y": -994,
+        "z": 51.630001,
+        "heading": 379,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2469,
+        "spawngroupId": 869,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Demicla Tanner",
+        "rawName": "Demicla_Tanner",
+        "level": 45,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -101,
+        "y": -689,
+        "z": 52.630001,
+        "heading": 320,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2472,
+        "spawngroupId": 866,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Dunore Steelfinger",
+        "rawName": "Dunore_Steelfinger",
+        "level": 45,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -286,
+        "y": -725,
+        "z": 51.630001,
+        "heading": 126,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2475,
+        "spawngroupId": 863,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Galbasi Weaver",
+        "rawName": "Galbasi_Weaver",
+        "level": 45,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -106,
+        "y": -754,
+        "z": 52.625,
+        "heading": 413,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 40899,
+        "spawngroupId": 34774,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Gayle Weaven",
+        "rawName": "Gayle_Weaven",
+        "level": 45,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 88,
+        "y": 245,
+        "z": 19.75,
+        "heading": 287,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2440,
+        "spawngroupId": 896,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Jagen Kindlor",
+        "rawName": "Jagen_Kindlor",
+        "level": 45,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -286,
+        "y": -709,
+        "z": 51.630001,
+        "heading": 126,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2474,
+        "spawngroupId": 864,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Kisrin Breezeshadow",
+        "rawName": "Kisrin_Breezeshadow",
+        "level": 45,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -5,
+        "y": 230,
+        "z": 19.75,
+        "heading": 135,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2478,
+        "spawngroupId": 5407,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Luren Renthalis",
+        "rawName": "Luren_Renthalis",
+        "level": 45,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -61,
+        "y": -1156,
+        "z": 67.629997,
+        "heading": 259,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2467,
+        "spawngroupId": 871,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Monita Weaver",
+        "rawName": "Monita_Weaver",
+        "level": 45,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -159,
+        "y": -899,
+        "z": 51.630001,
+        "heading": 316,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2461,
+        "spawngroupId": 877,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Nerth Sailwind",
+        "rawName": "Nerth_Sailwind",
+        "level": 45,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 96,
+        "y": 232,
+        "z": 19.75,
+        "heading": 322,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2460,
+        "spawngroupId": 878,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Palus Weaponsmith",
+        "rawName": "Palus_Weaponsmith",
+        "level": 45,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -94,
+        "y": -1023,
+        "z": 51.630001,
+        "heading": 387,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2459,
+        "spawngroupId": 879,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Reihan Wilhemson",
+        "rawName": "Reihan_Wilhemson",
+        "level": 45,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -88,
+        "y": -906,
+        "z": 51.630001,
+        "heading": 379,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2471,
+        "spawngroupId": 867,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Reko Saltamer",
+        "rawName": "Reko_Saltamer",
+        "level": 45,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -5,
+        "y": 207,
+        "z": 19.75,
+        "heading": 135,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2479,
+        "spawngroupId": 5408,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Shinan Orefinder",
+        "rawName": "Shinan_Orefinder",
+        "level": 45,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -246,
+        "y": -683,
+        "z": 52.630001,
+        "heading": 205,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2441,
+        "spawngroupId": 895,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Teria Finleather",
+        "rawName": "Teria_Finleather",
+        "level": 45,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -98,
+        "y": -956,
+        "z": 51.630001,
+        "heading": 253,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2468,
+        "spawngroupId": 870,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Camin",
+        "rawName": "Camin",
+        "level": 50,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -12.63,
+        "y": -1166,
+        "z": 83.629997,
+        "heading": 384.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2405,
+        "spawngroupId": 939,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Priest Of Discord",
+        "rawName": "Priest_of_Discord",
+        "level": 50,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": 84,
+        "y": -25,
+        "z": 19.75,
+        "heading": 454,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2497,
+        "spawngroupId": 5426,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Senina Jolik",
+        "rawName": "#Senina_Jolik",
+        "level": 50,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Enchanter",
+        "type": "Spawn Slot",
+        "x": -168,
+        "y": -979,
+        "z": 51.630001,
+        "heading": 487,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2434,
+        "spawngroupId": 902,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Stofo Olan",
+        "rawName": "Stofo_Olan",
+        "level": 50,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Enchanter",
+        "type": "Spawn Slot",
+        "x": -70,
+        "y": -1109,
+        "z": 83.629997,
+        "heading": 92,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2415,
+        "spawngroupId": 930,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Alimaja Shanthun",
+        "rawName": "Alimaja_Shanthun",
+        "level": 61,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": -359,
+        "y": -1101,
+        "z": 67.629997,
+        "heading": 118,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2493,
+        "spawngroupId": 5422,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Breya Nostulia",
+        "rawName": "Breya_Nostulia",
+        "level": 61,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Paladin GM",
+        "type": "Spawn Slot",
+        "x": -387,
+        "y": -1062,
+        "z": 67.629997,
+        "heading": 449,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2452,
+        "spawngroupId": 884,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Brianna Falsruinay",
+        "rawName": "Brianna_Falsruinay",
+        "level": 61,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 55,
+        "y": 201,
+        "z": 35.75,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2489,
+        "spawngroupId": 5418,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Cipse Tospyr",
+        "rawName": "Cipse_Tospyr",
+        "level": 61,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Cleric GM",
+        "type": "Spawn Slot",
+        "x": -71,
+        "y": -682,
+        "z": 67.629997,
+        "heading": 388,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2446,
+        "spawngroupId": 890,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Depnar Bulrious",
+        "rawName": "Depnar_Bulrious",
+        "level": 61,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Paladin GM",
+        "type": "Spawn Slot",
+        "x": -41,
+        "y": -643,
+        "z": 68,
+        "heading": 340,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 59377,
+        "spawngroupId": 48652,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Dleria Mausrel",
+        "rawName": "Dleria_Mausrel",
+        "level": 61,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Cleric GM",
+        "type": "Spawn Slot",
+        "x": -422,
+        "y": -1064,
+        "z": 68,
+        "heading": 102,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 58613,
+        "spawngroupId": 48187,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Gans Paust",
+        "rawName": "Gans_Paust",
+        "level": 61,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Cleric GM",
+        "type": "Spawn Slot",
+        "x": -384,
+        "y": -1045,
+        "z": 72.629997,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2462,
+        "spawngroupId": 876,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Jras Solsier",
+        "rawName": "Jras_Solsier",
+        "level": 61,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Paladin GM",
+        "type": "Spawn Slot",
+        "x": -135,
+        "y": -602,
+        "z": 67.629997,
+        "heading": 68,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2443,
+        "spawngroupId": 893,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Kordian Keshalian",
+        "rawName": "Kordian_Keshalian",
+        "level": 61,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": -473,
+        "y": -1113,
+        "z": 67.629997,
+        "heading": 126,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2492,
+        "spawngroupId": 5421,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Laoni Reista",
+        "rawName": "Laoni_Reista",
+        "level": 61,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Paladin GM",
+        "type": "Spawn Slot",
+        "x": -399,
+        "y": -1109,
+        "z": 51.630001,
+        "heading": 98,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2451,
+        "spawngroupId": 885,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Leraena Shelyrak",
+        "rawName": "Leraena_Shelyrak",
+        "level": 61,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Cleric GM",
+        "type": "Spawn Slot",
+        "x": -91,
+        "y": -649,
+        "z": 68,
+        "heading": 31,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2447,
+        "spawngroupId": 889,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Lumi Stergnon",
+        "rawName": "Lumi_Stergnon",
+        "level": 61,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Cleric GM",
+        "type": "Spawn Slot",
+        "x": -94,
+        "y": -640,
+        "z": 66.258179,
+        "heading": 153,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 58416,
+        "spawngroupId": 5608,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Mikeana Tolstaub",
+        "rawName": "Mikeana_Tolstaub",
+        "level": 61,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Cleric GM",
+        "type": "Spawn Slot",
+        "x": -369,
+        "y": -1115,
+        "z": 67.629997,
+        "heading": 307,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2450,
+        "spawngroupId": 886,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Nolusia Finharn",
+        "rawName": "Nolusia_Finharn",
+        "level": 61,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -104,
+        "y": -1099,
+        "z": 67.629997,
+        "heading": 357,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2404,
+        "spawngroupId": 803,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Rarnan Lapice",
+        "rawName": "Rarnan_Lapice",
+        "level": 61,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Cleric GM",
+        "type": "Spawn Slot",
+        "x": -87,
+        "y": -732,
+        "z": 68,
+        "heading": 501,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 72006,
+        "spawngroupId": 53506,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Reklon Gnallen",
+        "rawName": "Reklon_Gnallen",
+        "level": 61,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Paladin GM",
+        "type": "Spawn Slot",
+        "x": -89,
+        "y": -724,
+        "z": 67.629997,
+        "heading": 220,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2444,
+        "spawngroupId": 892,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Tiam Khonsir",
+        "rawName": "Tiam_Khonsir",
+        "level": 61,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Paladin GM",
+        "type": "Spawn Slot",
+        "x": -418.070465,
+        "y": -1126.045654,
+        "z": 50.258228,
+        "heading": 293.75,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 58672,
+        "spawngroupId": 48254,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Vynon Estaliun",
+        "rawName": "Vynon_Estaliun",
+        "level": 61,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Paladin GM",
+        "type": "Spawn Slot",
+        "x": -112,
+        "y": -755,
+        "z": 52.630001,
+        "heading": 442,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2445,
+        "spawngroupId": 891,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Weligon Steelherder",
+        "rawName": "Weligon_Steelherder",
+        "level": 61,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Paladin GM",
+        "type": "Spawn Slot",
+        "x": -395,
+        "y": -1041,
+        "z": 51.630001,
+        "heading": 146,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2463,
+        "spawngroupId": 875,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Zure Bavuior",
+        "rawName": "Zure_Bavuior",
+        "level": 61,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Cleric GM",
+        "type": "Spawn Slot",
+        "x": -428,
+        "y": -1121,
+        "z": 51.630001,
+        "heading": 190,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2449,
+        "spawngroupId": 887,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Bazma Brinstar",
+        "rawName": "Bazma_Brinstar",
+        "level": 65,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Tribute Master",
+        "type": "Spawn Slot",
+        "x": -177,
+        "y": -664,
+        "z": 67.629997,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2432,
+        "spawngroupId": 904,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Orwin Flintmaker",
+        "rawName": "Orwin_Flintmaker",
+        "level": 65,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -140,
+        "y": -1160,
+        "z": 52.375,
+        "heading": 387,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 68523,
+        "spawngroupId": 52580,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Soulbinder Altira Mamar",
+        "rawName": "Soulbinder_Altira_Mamar",
+        "level": 65,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -55,
+        "y": -115,
+        "z": 39.75,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2436,
+        "spawngroupId": 900,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Santug Claugg",
+        "rawName": "Santug_Claugg",
+        "level": 70,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -240,
+        "y": -1130,
+        "z": 54,
+        "heading": 254,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 148697,
+        "spawngroupId": 110213,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Sea King",
+        "rawName": "Sea_King",
+        "level": 70,
+        "race": "Ship",
+        "rawRace": "Ship",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1645.247559,
+        "y": 64.458321,
+        "z": 0.216953,
+        "heading": 8.5,
+        "chance": 100,
+        "respawnTime": 400,
+        "spawn2Id": 58420,
+        "spawngroupId": 31153,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Unknown",
+        "rawName": "Unknown",
+        "level": null,
+        "race": "Unknown",
+        "rawRace": "Unknown",
+        "className": "Unknown",
+        "type": "Spawn Slot",
+        "x": -351.155579,
+        "y": 117.388878,
+        "z": 23.226994,
+        "heading": 145.75,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 58371,
+        "spawngroupId": 12522,
+        "candidateCount": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "requestedZoneShortName": "tutoriala",
+  "zoneShortName": "tutoriala",
+  "zoneName": "The Mines of Gloomingdeep",
+  "sourceKind": "Local EQEmu/PEQ database export",
+  "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+  "spawnSlotCount": 1,
+  "candidateCount": 1,
+  "primarySpawnRows": [
+    {
+      "spawn2Id": 39964,
+      "spawngroupId": 30581,
+      "spawngroupName": "tutoriala1880000",
+      "x": 146,
+      "y": 12,
+      "z": -25.25,
+      "heading": 62.57,
+      "respawnTime": 640,
+      "variance": 0,
+      "pathgrid": 0,
+      "primaryNpcId": 188000,
+      "primaryNpcName": "#Arias",
+      "displayName": "Arias",
+      "level": 5,
+      "raceId": 2,
+      "race": "Barbarian",
+      "rawRace": "Barbarian",
+      "classId": 1,
+      "className": "Warrior",
+      "bodytype": 1,
+      "hp": 75,
+      "chance": 100,
+      "candidateCount": 1,
+      "candidates": [
+        {
+          "npcTypeId": 188000,
+          "name": "#Arias",
+          "displayName": "Arias",
+          "level": 5,
+          "raceId": 2,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "classId": 1,
+          "className": "Warrior",
+          "bodytype": 1,
+          "hp": 75,
+          "chance": 100,
+          "spawnentryMinExpansion": -1,
+          "spawnentryMaxExpansion": -1
+        }
+      ]
+    }
+  ]
+}

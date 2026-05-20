@@ -1,0 +1,55 @@
+{
+  "generatedAt": "2026-05-20T00:54:21.436Z",
+  "zoneShortName": "chardok",
+  "zoneName": "Chardok",
+  "sourceKind": "Local EQEmu/PEQ database export",
+  "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+  "warning": "Emulator-derived spawn data; verify against the target server era before treating it as authoritative.",
+  "totalSpawnSlots": 370,
+  "totalCandidates": 757,
+  "namedRareSpawnSlots": 89,
+  "uniquePrimaryMobs": 110,
+  "uniqueMapRepresentatives": 132,
+  "coordinateBounds": {
+    "x": {
+      "min": -561,
+      "max": 1360
+    },
+    "y": {
+      "min": -1084.75,
+      "max": 553
+    },
+    "z": {
+      "min": -316.630005,
+      "max": 104.879997
+    }
+  },
+  "classificationSource": "data/real-spawn-map-representative-report.json",
+  "transformCalibration": {
+    "note": "No transform is applied to export coordinates. Use raw EQEmu x/y/z values for map alignment."
+  },
+  "axisNotes": [
+    "Coordinates are original EQEmu spawn2 x/y/z values.",
+    "No map-image transform, rotation, flip, or scale has been applied.",
+    "Use x/y/z as raw coordinate candidates for map alignment experiments."
+  ],
+  "sourceTablesUsed": [
+    "spawn2",
+    "spawngroup",
+    "spawnentry",
+    "npc_types"
+  ],
+  "assumptions": [
+    "One spawn2 row equals one spawn slot.",
+    "Primary mob is the highest-chance spawnentry candidate, using the exporter tie-breakers.",
+    "All spawn candidates are retained in the JSON export.",
+    "CSV contains one row per spawn slot using the primary candidate."
+  ],
+  "outputs": {
+    "csv": "C:\\frostreaver stuff\\data\\exports\\chardok-mob-locations.csv",
+    "json": "C:\\frostreaver stuff\\data\\exports\\chardok-mob-locations.json",
+    "shareCsv": "C:\\frostreaver stuff\\data\\chardok-spawn-export.csv",
+    "shareJson": "C:\\frostreaver stuff\\data\\chardok-spawn-export.json",
+    "report": "C:\\frostreaver stuff\\data\\exports\\chardok-mob-locations-report.json"
+  }
+}

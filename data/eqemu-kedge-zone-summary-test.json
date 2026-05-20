@@ -1,0 +1,5118 @@
+{
+  "summary": {
+    "zoneSlug": "kedge-keep",
+    "zoneName": "Kedge Keep",
+    "requestedZoneShortName": "kedge",
+    "zoneShortName": "kedge",
+    "sourceFile": "local-eqemu-database",
+    "matched": true,
+    "expansion": "Classic",
+    "eqemuExpansionId": 0,
+    "expansionSource": "eqemu-zone-table",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobCount": 113,
+    "unknownLevelCount": 0,
+    "minLevel": 1,
+    "maxLevel": 53,
+    "averageLevel": 28.2,
+    "medianLevel": 37,
+    "levelCounts": {
+      "1": 35,
+      "5": 1,
+      "10": 2,
+      "28": 1,
+      "29": 1,
+      "32": 4,
+      "33": 1,
+      "34": 2,
+      "35": 3,
+      "36": 5,
+      "37": 3,
+      "38": 1,
+      "39": 5,
+      "40": 4,
+      "41": 2,
+      "42": 10,
+      "43": 6,
+      "44": 6,
+      "45": 3,
+      "46": 4,
+      "47": 2,
+      "49": 1,
+      "50": 5,
+      "51": 3,
+      "52": 2,
+      "53": 1
+    },
+    "levelBuckets": {
+      "1-10": 38,
+      "11-20": 0,
+      "21-30": 2,
+      "31-40": 28,
+      "41-50": 39,
+      "51-60": 6,
+      "61+": 0
+    },
+    "levelProfileLabel": "Wide level spread",
+    "mobGroupNameCounts": {
+      "A Cerulean Sailfin": 11,
+      "A Cobalt Sailfin": 10,
+      "A Spinereef Seahorse": 8,
+      "A Crimson Sailfin": 7,
+      "A Gloomwater Mermaid": 7,
+      "An Emerald Sailfin": 7,
+      "A Cauldron Hammerhead": 6,
+      "A Cauldron Shark": 6,
+      "A Gloomstalker Mermaid": 6,
+      "A Lancer Swordfish": 6,
+      "A Stingtooth Piranha": 6,
+      "A Piercer Swordfish": 5,
+      "A Squallsurge Seahorse": 4,
+      "A Swirlspine Seahorse": 4,
+      "A Stiletto Tooth Piranha": 3,
+      "Auraline": 3,
+      "A Stiletto Fang Piranha": 2,
+      "Aqua Goblin Prisoner": 2,
+      "A Bull Shark": 1,
+      "A Golden Haired Mermaid": 1,
+      "A Seahorse Matriarch": 1,
+      "A Shimmering Sailfin": 1,
+      "Coralyn Kelpmaiden": 1,
+      "Estrella Of Gloomwater": 1,
+      "Nyrein The Beguiled": 1,
+      "Phinigel Autropos": 1,
+      "Priestess Auraia": 1,
+      "Undertow": 1
+    },
+    "classCounts": {
+      "Warrior": 73,
+      "Ranger": 15,
+      "Druid": 9,
+      "Wizard": 7,
+      "Cleric": 6,
+      "Enchanter": 3
+    },
+    "raceCounts": {
+      "Fish": 36,
+      "Mermaid": 21,
+      "Seahorse": 18,
+      "Shark": 13,
+      "Piranha": 11,
+      "Swordfish": 11,
+      "Goblin": 2,
+      "Kedge": 1
+    },
+    "normalizedRaceCounts": {
+      "Fish": 36,
+      "Mermaid": 21,
+      "Seahorse": 18,
+      "Shark": 13,
+      "Piranha": 11,
+      "Swordfish": 11,
+      "Goblin": 2,
+      "Kedge": 1
+    },
+    "normalizedRaceLevelCounts": {
+      "Fish": {
+        "1": 35,
+        "5": 1
+      },
+      "Goblin": {
+        "10": 2
+      },
+      "Kedge": {
+        "53": 1
+      },
+      "Mermaid": {
+        "40": 3,
+        "42": 3,
+        "43": 2,
+        "44": 2,
+        "45": 2,
+        "46": 3,
+        "50": 3,
+        "51": 1,
+        "52": 2
+      },
+      "Piranha": {
+        "35": 2,
+        "36": 3,
+        "37": 1,
+        "39": 3,
+        "42": 2
+      },
+      "Seahorse": {
+        "39": 2,
+        "40": 1,
+        "41": 1,
+        "42": 1,
+        "43": 1,
+        "44": 3,
+        "45": 1,
+        "46": 1,
+        "47": 2,
+        "49": 1,
+        "50": 2,
+        "51": 2
+      },
+      "Shark": {
+        "34": 1,
+        "36": 1,
+        "37": 1,
+        "38": 1,
+        "41": 1,
+        "42": 4,
+        "43": 3,
+        "44": 1
+      },
+      "Swordfish": {
+        "28": 1,
+        "29": 1,
+        "32": 4,
+        "33": 1,
+        "34": 1,
+        "35": 1,
+        "36": 1,
+        "37": 1
+      }
+    },
+    "raceAliases": {
+      "Fish": [
+        "Fish"
+      ],
+      "Goblin": [
+        "Goblin"
+      ],
+      "Kedge": [
+        "Kedge"
+      ],
+      "Mermaid": [
+        "Mermaid"
+      ],
+      "Piranha": [
+        "Piranha"
+      ],
+      "Seahorse": [
+        "Seahorse"
+      ],
+      "Shark": [
+        "Shark"
+      ],
+      "Swordfish": [
+        "Swordfish"
+      ]
+    },
+    "typeCounts": {
+      "Spawn Slot": 113
+    },
+    "notes": [
+      "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+      "Read-only test export; not wired into production /zones data."
+    ],
+    "spawnMapPrototype": {
+      "sourceKind": "Local EQEmu/PEQ database export",
+      "coordinateNote": "Original EQEmu spawn2 x/y/z coordinates are preserved for map prototyping.",
+      "points": [
+        {
+          "spawn2Id": 4684,
+          "spawngroupId": 2183,
+          "name": "a_lancer_swordfish",
+          "displayName": "A Lancer Swordfish",
+          "level": 28,
+          "race": "Swordfish",
+          "rawRace": "Swordfish",
+          "className": "Warrior",
+          "x": -9.25,
+          "y": 36,
+          "z": 300.380005,
+          "heading": 32,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 4685,
+          "spawngroupId": 2182,
+          "name": "Phinigel_Autropos",
+          "displayName": "Phinigel Autropos",
+          "level": 53,
+          "race": "Kedge",
+          "rawRace": "Kedge",
+          "className": "Wizard",
+          "x": 111.5,
+          "y": 37,
+          "z": -275.799988,
+          "heading": 179.5,
+          "chance": 100,
+          "respawnTime": 43200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 4686,
+          "spawngroupId": 2181,
+          "name": "a_golden_haired_mermaid",
+          "displayName": "A Golden Haired Mermaid",
+          "level": 40,
+          "race": "Mermaid",
+          "rawRace": "Mermaid",
+          "className": "Ranger",
+          "x": -32,
+          "y": -178,
+          "z": 95,
+          "heading": 507,
+          "chance": 20,
+          "respawnTime": 640,
+          "candidateCount": 5
+        },
+        {
+          "spawn2Id": 4687,
+          "spawngroupId": 2180,
+          "name": "a_gloomstalker_mermaid",
+          "displayName": "A Gloomstalker Mermaid",
+          "level": 44,
+          "race": "Mermaid",
+          "rawRace": "Mermaid",
+          "className": "Ranger",
+          "x": -252,
+          "y": 91,
+          "z": -136,
+          "heading": 226,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 4688,
+          "spawngroupId": 2179,
+          "name": "a_spinereef_seahorse",
+          "displayName": "A Spinereef Seahorse",
+          "level": 46,
+          "race": "Seahorse",
+          "rawRace": "Seahorse",
+          "className": "Ranger",
+          "x": -315.5,
+          "y": 255.5,
+          "z": -48.130001,
+          "heading": 286.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 4689,
+          "spawngroupId": 2178,
+          "name": "a_stingtooth_piranha",
+          "displayName": "A Stingtooth Piranha",
+          "level": 36,
+          "race": "Piranha",
+          "rawRace": "Piranha",
+          "className": "Warrior",
+          "x": -272,
+          "y": 164,
+          "z": -44,
+          "heading": 305,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 4690,
+          "spawngroupId": 2178,
+          "name": "a_stingtooth_piranha",
+          "displayName": "A Stingtooth Piranha",
+          "level": 36,
+          "race": "Piranha",
+          "rawRace": "Piranha",
+          "className": "Warrior",
+          "x": -302,
+          "y": 192,
+          "z": -44,
+          "heading": 220,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 4691,
+          "spawngroupId": 2177,
+          "name": "a_spinereef_seahorse",
+          "displayName": "A Spinereef Seahorse",
+          "level": 47,
+          "race": "Seahorse",
+          "rawRace": "Seahorse",
+          "className": "Ranger",
+          "x": -297.75,
+          "y": 233.380005,
+          "z": -48.130001,
+          "heading": 379,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 4692,
+          "spawngroupId": 2176,
+          "name": "a_stingtooth_piranha",
+          "displayName": "A Stingtooth Piranha",
+          "level": 36,
+          "race": "Piranha",
+          "rawRace": "Piranha",
+          "className": "Warrior",
+          "x": -274,
+          "y": 187,
+          "z": -44,
+          "heading": 65,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 4693,
+          "spawngroupId": 2175,
+          "name": "a_stingtooth_piranha",
+          "displayName": "A Stingtooth Piranha",
+          "level": 37,
+          "race": "Piranha",
+          "rawRace": "Piranha",
+          "className": "Warrior",
+          "x": -285,
+          "y": 176,
+          "z": -44,
+          "heading": 295,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 4694,
+          "spawngroupId": 2174,
+          "name": "a_stingtooth_piranha",
+          "displayName": "A Stingtooth Piranha",
+          "level": 35,
+          "race": "Piranha",
+          "rawRace": "Piranha",
+          "className": "Warrior",
+          "x": -300,
+          "y": 161,
+          "z": -44,
+          "heading": 88,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 4695,
+          "spawngroupId": 2173,
+          "name": "Coralyn_Kelpmaiden",
+          "displayName": "Coralyn Kelpmaiden",
+          "level": 46,
+          "race": "Mermaid",
+          "rawRace": "Mermaid",
+          "className": "Druid",
+          "x": -329,
+          "y": 127,
+          "z": -77,
+          "heading": 475,
+          "chance": 20,
+          "respawnTime": 640,
+          "candidateCount": 5
+        },
+        {
+          "spawn2Id": 4696,
+          "spawngroupId": 2172,
+          "name": "a_lancer_swordfish",
+          "displayName": "A Lancer Swordfish",
+          "level": 32,
+          "race": "Swordfish",
+          "rawRace": "Swordfish",
+          "className": "Warrior",
+          "x": -14.13,
+          "y": 30.5,
+          "z": 353.630005,
+          "heading": 505,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 4697,
+          "spawngroupId": 2172,
+          "name": "a_lancer_swordfish",
+          "displayName": "A Lancer Swordfish",
+          "level": 32,
+          "race": "Swordfish",
+          "rawRace": "Swordfish",
+          "className": "Warrior",
+          "x": 6.63,
+          "y": 35.75,
+          "z": 300.380005,
+          "heading": 41.25,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 4698,
+          "spawngroupId": 2171,
+          "name": "a_piercer_swordfish",
+          "displayName": "A Piercer Swordfish",
+          "level": 33,
+          "race": "Swordfish",
+          "rawRace": "Swordfish",
+          "className": "Warrior",
+          "x": -37.880001,
+          "y": -3,
+          "z": 331.880005,
+          "heading": 511,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 4699,
+          "spawngroupId": 2170,
+          "name": "a_lancer_swordfish",
+          "displayName": "A Lancer Swordfish",
+          "level": 32,
+          "race": "Swordfish",
+          "rawRace": "Swordfish",
+          "className": "Warrior",
+          "x": -1.88,
+          "y": 29.5,
+          "z": 349.25,
+          "heading": 437.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 4700,
+          "spawngroupId": 2170,
+          "name": "a_lancer_swordfish",
+          "displayName": "A Lancer Swordfish",
+          "level": 32,
+          "race": "Swordfish",
+          "rawRace": "Swordfish",
+          "className": "Warrior",
+          "x": -0.88,
+          "y": -38.880001,
+          "z": 318.880005,
+          "heading": 511,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 4701,
+          "spawngroupId": 2169,
+          "name": "a_lancer_swordfish",
+          "displayName": "A Lancer Swordfish",
+          "level": 29,
+          "race": "Swordfish",
+          "rawRace": "Swordfish",
+          "className": "Warrior",
+          "x": -35.630001,
+          "y": -4.63,
+          "z": 292.130005,
+          "heading": 3.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 4702,
+          "spawngroupId": 2168,
+          "name": "Estrella_of_Gloomwater",
+          "displayName": "Estrella Of Gloomwater",
+          "level": 51,
+          "race": "Mermaid",
+          "rawRace": "Mermaid",
+          "className": "Druid",
+          "x": -308,
+          "y": 5,
+          "z": -119,
+          "heading": 129,
+          "chance": 100,
+          "respawnTime": 259200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 4703,
+          "spawngroupId": 2167,
+          "name": "a_cauldron_hammerhead",
+          "displayName": "A Cauldron Hammerhead",
+          "level": 37,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": -69.379997,
+          "y": 4.75,
+          "z": -154.5,
+          "heading": 148.75,
+          "chance": 80,
+          "respawnTime": 21600,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 4704,
+          "spawngroupId": 2166,
+          "name": "#Auraline",
+          "displayName": "Auraline",
+          "level": 50,
+          "race": "Mermaid",
+          "rawRace": "Mermaid",
+          "className": "Enchanter",
+          "x": -194,
+          "y": -14,
+          "z": -65,
+          "heading": 3.75,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 4705,
+          "spawngroupId": 2165,
+          "name": "a_gloomstalker_mermaid",
+          "displayName": "A Gloomstalker Mermaid",
+          "level": 42,
+          "race": "Mermaid",
+          "rawRace": "Mermaid",
+          "className": "Ranger",
+          "x": -192,
+          "y": 28,
+          "z": -65,
+          "heading": 329,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 4706,
+          "spawngroupId": 2164,
+          "name": "a_gloomwater_mermaid",
+          "displayName": "A Gloomwater Mermaid",
+          "level": 45,
+          "race": "Mermaid",
+          "rawRace": "Mermaid",
+          "className": "Druid",
+          "x": -247.75,
+          "y": 8,
+          "z": -66.129997,
+          "heading": 0,
+          "chance": 20,
+          "respawnTime": 640,
+          "candidateCount": 6
+        },
+        {
+          "spawn2Id": 4707,
+          "spawngroupId": 2163,
+          "name": "a_crimson_sailfin",
+          "displayName": "A Crimson Sailfin",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -236,
+          "y": 197,
+          "z": -72.629997,
+          "heading": 158.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 4708,
+          "spawngroupId": 2163,
+          "name": "a_crimson_sailfin",
+          "displayName": "A Crimson Sailfin",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -100.879997,
+          "y": -63.130001,
+          "z": -25.379999,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 4709,
+          "spawngroupId": 2163,
+          "name": "a_crimson_sailfin",
+          "displayName": "A Crimson Sailfin",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -90.629997,
+          "y": 23.5,
+          "z": -52.130001,
+          "heading": 262.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 4710,
+          "spawngroupId": 2163,
+          "name": "a_crimson_sailfin",
+          "displayName": "A Crimson Sailfin",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": 165.5,
+          "y": 85,
+          "z": -250.880005,
+          "heading": 74.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 4711,
+          "spawngroupId": 2162,
+          "name": "a_cerulean_sailfin",
+          "displayName": "A Cerulean Sailfin",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -333,
+          "y": 135,
+          "z": -72.25,
+          "heading": 205,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 4712,
+          "spawngroupId": 2162,
+          "name": "a_cerulean_sailfin",
+          "displayName": "A Cerulean Sailfin",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": 4.5,
+          "y": -36,
+          "z": -76.25,
+          "heading": 118.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 4713,
+          "spawngroupId": 2162,
+          "name": "a_cerulean_sailfin",
+          "displayName": "A Cerulean Sailfin",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -335,
+          "y": 156,
+          "z": -63.299999,
+          "heading": 474,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 4714,
+          "spawngroupId": 2162,
+          "name": "a_cerulean_sailfin",
+          "displayName": "A Cerulean Sailfin",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": 231.380005,
+          "y": -41.5,
+          "z": -181,
+          "heading": 258,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 4715,
+          "spawngroupId": 2162,
+          "name": "a_cerulean_sailfin",
+          "displayName": "A Cerulean Sailfin",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -147.630005,
+          "y": -160.880005,
+          "z": -79.400002,
+          "heading": 1,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 4716,
+          "spawngroupId": 2161,
+          "name": "a_cauldron_hammerhead",
+          "displayName": "A Cauldron Hammerhead",
+          "level": 38,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": -91.629997,
+          "y": 5.5,
+          "z": -154.25,
+          "heading": 257.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 4717,
+          "spawngroupId": 2160,
+          "name": "a_cauldron_hammerhead",
+          "displayName": "A Cauldron Hammerhead",
+          "level": 43,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": 15.88,
+          "y": 86.879997,
+          "z": 49.130001,
+          "heading": 320,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 4718,
+          "spawngroupId": 2159,
+          "name": "a_piercer_swordfish",
+          "displayName": "A Piercer Swordfish",
+          "level": 36,
+          "race": "Swordfish",
+          "rawRace": "Swordfish",
+          "className": "Warrior",
+          "x": 0.5,
+          "y": -36.630001,
+          "z": 40.25,
+          "heading": 285.75,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 4719,
+          "spawngroupId": 2158,
+          "name": "a_piercer_swordfish",
+          "displayName": "A Piercer Swordfish",
+          "level": 37,
+          "race": "Swordfish",
+          "rawRace": "Swordfish",
+          "className": "Warrior",
+          "x": 28.25,
+          "y": -23.25,
+          "z": 40.25,
+          "heading": 167.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 4720,
+          "spawngroupId": 2157,
+          "name": "a_piercer_swordfish",
+          "displayName": "A Piercer Swordfish",
+          "level": 35,
+          "race": "Swordfish",
+          "rawRace": "Swordfish",
+          "className": "Warrior",
+          "x": -2,
+          "y": 35.880001,
+          "z": 40.75,
+          "heading": 511,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 4721,
+          "spawngroupId": 2156,
+          "name": "a_swirlspine_seahorse",
+          "displayName": "A Swirlspine Seahorse",
+          "level": 51,
+          "race": "Seahorse",
+          "rawRace": "Seahorse",
+          "className": "Cleric",
+          "x": 193,
+          "y": -28,
+          "z": -169,
+          "heading": 384.75,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 4722,
+          "spawngroupId": 2156,
+          "name": "a_swirlspine_seahorse",
+          "displayName": "A Swirlspine Seahorse",
+          "level": 51,
+          "race": "Seahorse",
+          "rawRace": "Seahorse",
+          "className": "Cleric",
+          "x": 140,
+          "y": -84,
+          "z": -170,
+          "heading": 6,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 4723,
+          "spawngroupId": 2155,
+          "name": "a_cauldron_shark",
+          "displayName": "A Cauldron Shark",
+          "level": 34,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": -192.630005,
+          "y": -150.630005,
+          "z": 61.130001,
+          "heading": 54.25,
+          "chance": 90,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 4724,
+          "spawngroupId": 2154,
+          "name": "a_cauldron_shark",
+          "displayName": "A Cauldron Shark",
+          "level": 42,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": -187.880005,
+          "y": -200,
+          "z": 47.130001,
+          "heading": 511,
+          "chance": 45,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 4725,
+          "spawngroupId": 2153,
+          "name": "#Nyrein_the_Beguiled",
+          "displayName": "Nyrein The Beguiled",
+          "level": 52,
+          "race": "Mermaid",
+          "rawRace": "Mermaid",
+          "className": "Warrior",
+          "x": -334,
+          "y": -6,
+          "z": -108,
+          "heading": 131,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 4726,
+          "spawngroupId": 2152,
+          "name": "a_cobalt_sailfin",
+          "displayName": "A Cobalt Sailfin",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": 62.75,
+          "y": -35.25,
+          "z": -76.879997,
+          "heading": 128.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 4727,
+          "spawngroupId": 2152,
+          "name": "a_cobalt_sailfin",
+          "displayName": "A Cobalt Sailfin",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -88.379997,
+          "y": -117.75,
+          "z": -48.099998,
+          "heading": 266,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 4728,
+          "spawngroupId": 2152,
+          "name": "a_cobalt_sailfin",
+          "displayName": "A Cobalt Sailfin",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -120.879997,
+          "y": -258.880005,
+          "z": -123,
+          "heading": 133.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 4729,
+          "spawngroupId": 2151,
+          "name": "Priestess_Auraia",
+          "displayName": "Priestess Auraia",
+          "level": 52,
+          "race": "Mermaid",
+          "rawRace": "Mermaid",
+          "className": "Cleric",
+          "x": -290,
+          "y": -63,
+          "z": -122,
+          "heading": 140,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 4730,
+          "spawngroupId": 2150,
+          "name": "a_cauldron_shark",
+          "displayName": "A Cauldron Shark",
+          "level": 42,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": -155.880005,
+          "y": -190.630005,
+          "z": 40.25,
+          "heading": 202.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 4731,
+          "spawngroupId": 2150,
+          "name": "a_cauldron_shark",
+          "displayName": "A Cauldron Shark",
+          "level": 42,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": -126.879997,
+          "y": -290.880005,
+          "z": -119.629997,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 4732,
+          "spawngroupId": 2149,
+          "name": "a_stiletto_tooth_piranha",
+          "displayName": "A Stiletto Tooth Piranha",
+          "level": 39,
+          "race": "Piranha",
+          "rawRace": "Piranha",
+          "className": "Warrior",
+          "x": 79.879997,
+          "y": 17.879999,
+          "z": 43.75,
+          "heading": 313,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 4733,
+          "spawngroupId": 2148,
+          "name": "a_gloomwater_mermaid",
+          "displayName": "A Gloomwater Mermaid",
+          "level": 42,
+          "race": "Mermaid",
+          "rawRace": "Mermaid",
+          "className": "Druid",
+          "x": -218.880005,
+          "y": 87.879997,
+          "z": -132.25,
+          "heading": 202,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 4734,
+          "spawngroupId": 2147,
+          "name": "a_spinereef_seahorse",
+          "displayName": "A Spinereef Seahorse",
+          "level": 44,
+          "race": "Seahorse",
+          "rawRace": "Seahorse",
+          "className": "Ranger",
+          "x": -32.630001,
+          "y": -173.25,
+          "z": 17.5,
+          "heading": 231.75,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 4735,
+          "spawngroupId": 2146,
+          "name": "a_cauldron_hammerhead",
+          "displayName": "A Cauldron Hammerhead",
+          "level": 44,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": -34,
+          "y": -218.880005,
+          "z": 11.63,
+          "heading": 511,
+          "chance": 80,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 4736,
+          "spawngroupId": 2145,
+          "name": "a_bull_shark",
+          "displayName": "A Bull Shark",
+          "level": 36,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": -102.879997,
+          "y": -117.629997,
+          "z": -47.630001,
+          "heading": 244,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 4737,
+          "spawngroupId": 2144,
+          "name": "a_gloomstalker_mermaid",
+          "displayName": "A Gloomstalker Mermaid",
+          "level": 44,
+          "race": "Mermaid",
+          "rawRace": "Mermaid",
+          "className": "Ranger",
+          "x": -180,
+          "y": 67,
+          "z": -131.130005,
+          "heading": 463,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 4738,
+          "spawngroupId": 2143,
+          "name": "a_cerulean_sailfin",
+          "displayName": "A Cerulean Sailfin",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -5.5,
+          "y": -91.25,
+          "z": 96.099998,
+          "heading": 4.5,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 4739,
+          "spawngroupId": 2143,
+          "name": "a_cerulean_sailfin",
+          "displayName": "A Cerulean Sailfin",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -104.629997,
+          "y": -164,
+          "z": -52.099998,
+          "heading": 0,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 4740,
+          "spawngroupId": 2143,
+          "name": "a_cerulean_sailfin",
+          "displayName": "A Cerulean Sailfin",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -212,
+          "y": 36,
+          "z": -117,
+          "heading": 0,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 4741,
+          "spawngroupId": 2142,
+          "name": "a_cauldron_shark",
+          "displayName": "A Cauldron Shark",
+          "level": 42,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": -148.5,
+          "y": -280.75,
+          "z": -107.879997,
+          "heading": 511,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 4742,
+          "spawngroupId": 2141,
+          "name": "an_emerald_sailfin",
+          "displayName": "An Emerald Sailfin",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -151.880005,
+          "y": -232,
+          "z": -85.75,
+          "heading": 441,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 4743,
+          "spawngroupId": 2140,
+          "name": "#Auraline",
+          "displayName": "Auraline",
+          "level": 50,
+          "race": "Mermaid",
+          "rawRace": "Mermaid",
+          "className": "Enchanter",
+          "x": -245,
+          "y": -76,
+          "z": -134,
+          "heading": 4,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 4744,
+          "spawngroupId": 2139,
+          "name": "a_gloomwater_mermaid",
+          "displayName": "A Gloomwater Mermaid",
+          "level": 46,
+          "race": "Mermaid",
+          "rawRace": "Mermaid",
+          "className": "Druid",
+          "x": -220,
+          "y": -74,
+          "z": -133,
+          "heading": 4,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 4745,
+          "spawngroupId": 2138,
+          "name": "a_gloomstalker_mermaid",
+          "displayName": "A Gloomstalker Mermaid",
+          "level": 42,
+          "race": "Mermaid",
+          "rawRace": "Mermaid",
+          "className": "Ranger",
+          "x": -282.880005,
+          "y": 31,
+          "z": -115.25,
+          "heading": 202,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 4746,
+          "spawngroupId": 2137,
+          "name": "#Auraline",
+          "displayName": "Auraline",
+          "level": 50,
+          "race": "Mermaid",
+          "rawRace": "Mermaid",
+          "className": "Enchanter",
+          "x": -285,
+          "y": -19,
+          "z": -119,
+          "heading": 60,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 4747,
+          "spawngroupId": 5382,
+          "name": "a_cauldron_hammerhead",
+          "displayName": "A Cauldron Hammerhead",
+          "level": 43,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": -165.880005,
+          "y": -233,
+          "z": -79.75,
+          "heading": 510.5,
+          "chance": 80,
+          "respawnTime": 21600,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 4748,
+          "spawngroupId": 2184,
+          "name": "a_gloomwater_mermaid",
+          "displayName": "A Gloomwater Mermaid",
+          "level": 46,
+          "race": "Mermaid",
+          "rawRace": "Mermaid",
+          "className": "Druid",
+          "x": -192,
+          "y": -361,
+          "z": -67,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 4749,
+          "spawngroupId": 2185,
+          "name": "a_stiletto_fang_piranha",
+          "displayName": "A Stiletto Fang Piranha",
+          "level": 42,
+          "race": "Piranha",
+          "rawRace": "Piranha",
+          "className": "Warrior",
+          "x": -19,
+          "y": -167,
+          "z": 95,
+          "heading": 304,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 4750,
+          "spawngroupId": 2186,
+          "name": "a_stiletto_tooth_piranha",
+          "displayName": "A Stiletto Tooth Piranha",
+          "level": 39,
+          "race": "Piranha",
+          "rawRace": "Piranha",
+          "className": "Warrior",
+          "x": -34,
+          "y": -176,
+          "z": 118,
+          "heading": 450,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 4751,
+          "spawngroupId": 2187,
+          "name": "a_cobalt_sailfin",
+          "displayName": "A Cobalt Sailfin",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -72,
+          "y": -11,
+          "z": -162,
+          "heading": 421,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 4752,
+          "spawngroupId": 2188,
+          "name": "a_cobalt_sailfin",
+          "displayName": "A Cobalt Sailfin",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -121,
+          "y": 13,
+          "z": -164,
+          "heading": 180,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 4753,
+          "spawngroupId": 2188,
+          "name": "a_cobalt_sailfin",
+          "displayName": "A Cobalt Sailfin",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -19,
+          "y": 94,
+          "z": 43.75,
+          "heading": 165,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 4754,
+          "spawngroupId": 2189,
+          "name": "an_emerald_sailfin",
+          "displayName": "An Emerald Sailfin",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -264.130005,
+          "y": 141.75,
+          "z": -57.75,
+          "heading": 207.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 4755,
+          "spawngroupId": 2189,
+          "name": "an_emerald_sailfin",
+          "displayName": "An Emerald Sailfin",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -244,
+          "y": 202.880005,
+          "z": -59.25,
+          "heading": 91.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 4756,
+          "spawngroupId": 2189,
+          "name": "an_emerald_sailfin",
+          "displayName": "An Emerald Sailfin",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -249,
+          "y": 201.880005,
+          "z": -76.25,
+          "heading": 76.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 4757,
+          "spawngroupId": 2189,
+          "name": "an_emerald_sailfin",
+          "displayName": "An Emerald Sailfin",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": 240.380005,
+          "y": 26.379999,
+          "z": -250.899994,
+          "heading": 490,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 4758,
+          "spawngroupId": 2189,
+          "name": "an_emerald_sailfin",
+          "displayName": "An Emerald Sailfin",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -50.130001,
+          "y": -100.629997,
+          "z": -48.130001,
+          "heading": 508.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 4759,
+          "spawngroupId": 2189,
+          "name": "an_emerald_sailfin",
+          "displayName": "An Emerald Sailfin",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -181.380005,
+          "y": -172.630005,
+          "z": 50.75,
+          "heading": 6,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 4760,
+          "spawngroupId": 2203,
+          "name": "a_stiletto_tooth_piranha",
+          "displayName": "A Stiletto Tooth Piranha",
+          "level": 39,
+          "race": "Piranha",
+          "rawRace": "Piranha",
+          "className": "Warrior",
+          "x": 8,
+          "y": -8,
+          "z": -31,
+          "heading": 460,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 4761,
+          "spawngroupId": 2202,
+          "name": "a_stiletto_fang_piranha",
+          "displayName": "A Stiletto Fang Piranha",
+          "level": 42,
+          "race": "Piranha",
+          "rawRace": "Piranha",
+          "className": "Warrior",
+          "x": -8,
+          "y": 7,
+          "z": -31,
+          "heading": 205,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 4762,
+          "spawngroupId": 2201,
+          "name": "a_gloomwater_mermaid",
+          "displayName": "A Gloomwater Mermaid",
+          "level": 43,
+          "race": "Mermaid",
+          "rawRace": "Mermaid",
+          "className": "Druid",
+          "x": -40,
+          "y": 65,
+          "z": -31,
+          "heading": 37.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 4763,
+          "spawngroupId": 2200,
+          "name": "a_cerulean_sailfin",
+          "displayName": "A Cerulean Sailfin",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -61,
+          "y": -249,
+          "z": -103,
+          "heading": 128,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 4764,
+          "spawngroupId": 2199,
+          "name": "a_squallsurge_seahorse",
+          "displayName": "A Squallsurge Seahorse",
+          "level": 39,
+          "race": "Seahorse",
+          "rawRace": "Seahorse",
+          "className": "Wizard",
+          "x": -45.75,
+          "y": -132.5,
+          "z": 15,
+          "heading": 258.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 4765,
+          "spawngroupId": 2198,
+          "name": "aqua_goblin_prisoner",
+          "displayName": "Aqua Goblin Prisoner",
+          "level": 10,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -114,
+          "y": -343,
+          "z": -156,
+          "heading": 451,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 4766,
+          "spawngroupId": 2197,
+          "name": "a_cobalt_sailfin",
+          "displayName": "A Cobalt Sailfin",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": 221,
+          "y": -79.129997,
+          "z": -309.130005,
+          "heading": 268.25,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 4767,
+          "spawngroupId": 2197,
+          "name": "a_cobalt_sailfin",
+          "displayName": "A Cobalt Sailfin",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -36.380001,
+          "y": -130.130005,
+          "z": 99.879997,
+          "heading": 258.25,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 4768,
+          "spawngroupId": 2196,
+          "name": "a_shimmering_sailfin",
+          "displayName": "A Shimmering Sailfin",
+          "level": 5,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Wizard",
+          "x": 66.25,
+          "y": 50.75,
+          "z": -181,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 4769,
+          "spawngroupId": 2195,
+          "name": "aqua_goblin_prisoner",
+          "displayName": "Aqua Goblin Prisoner",
+          "level": 10,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -190,
+          "y": -340,
+          "z": -73,
+          "heading": 13,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 4770,
+          "spawngroupId": 2194,
+          "name": "a_cerulean_sailfin",
+          "displayName": "A Cerulean Sailfin",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": 82.25,
+          "y": -85,
+          "z": -309.25,
+          "heading": 209,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 4771,
+          "spawngroupId": 2194,
+          "name": "a_cerulean_sailfin",
+          "displayName": "A Cerulean Sailfin",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -50,
+          "y": -177,
+          "z": 90,
+          "heading": 25,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 4772,
+          "spawngroupId": 2193,
+          "name": "a_crimson_sailfin",
+          "displayName": "A Crimson Sailfin",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -105.879997,
+          "y": -163.75,
+          "z": 8.38,
+          "heading": 0,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 4773,
+          "spawngroupId": 2193,
+          "name": "a_crimson_sailfin",
+          "displayName": "A Crimson Sailfin",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -161.880005,
+          "y": -60.880001,
+          "z": -21.25,
+          "heading": 391,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 4774,
+          "spawngroupId": 2193,
+          "name": "a_crimson_sailfin",
+          "displayName": "A Crimson Sailfin",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -73.629997,
+          "y": -99.629997,
+          "z": 8.38,
+          "heading": 218.5,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 4775,
+          "spawngroupId": 2192,
+          "name": "a_gloomwater_mermaid",
+          "displayName": "A Gloomwater Mermaid",
+          "level": 43,
+          "race": "Mermaid",
+          "rawRace": "Mermaid",
+          "className": "Druid",
+          "x": -33,
+          "y": 50,
+          "z": -49,
+          "heading": 424,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 4776,
+          "spawngroupId": 2191,
+          "name": "a_gloomwater_mermaid",
+          "displayName": "A Gloomwater Mermaid",
+          "level": 40,
+          "race": "Mermaid",
+          "rawRace": "Mermaid",
+          "className": "Druid",
+          "x": -62,
+          "y": 120,
+          "z": -80,
+          "heading": 363,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 4777,
+          "spawngroupId": 2190,
+          "name": "a_gloomstalker_mermaid",
+          "displayName": "A Gloomstalker Mermaid",
+          "level": 40,
+          "race": "Mermaid",
+          "rawRace": "Mermaid",
+          "className": "Ranger",
+          "x": -91,
+          "y": 124,
+          "z": -80,
+          "heading": 146,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 4778,
+          "spawngroupId": 6481,
+          "name": "a_gloomstalker_mermaid",
+          "displayName": "A Gloomstalker Mermaid",
+          "level": 45,
+          "race": "Mermaid",
+          "rawRace": "Mermaid",
+          "className": "Ranger",
+          "x": -33,
+          "y": 79,
+          "z": -50,
+          "heading": 281,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 4779,
+          "spawngroupId": 6482,
+          "name": "a_cobalt_sailfin",
+          "displayName": "A Cobalt Sailfin",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -232,
+          "y": -243,
+          "z": -105,
+          "heading": 139,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 4780,
+          "spawngroupId": 6483,
+          "name": "a_cobalt_sailfin",
+          "displayName": "A Cobalt Sailfin",
+          "level": 1,
+          "race": "Fish",
+          "rawRace": "Fish",
+          "className": "Warrior",
+          "x": -228,
+          "y": -162,
+          "z": 41.630001,
+          "heading": 511,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 4781,
+          "spawngroupId": 6484,
+          "name": "a_cauldron_hammerhead",
+          "displayName": "A Cauldron Hammerhead",
+          "level": 43,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": -171.25,
+          "y": -146.380005,
+          "z": 48.75,
+          "heading": 328,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 4782,
+          "spawngroupId": 6485,
+          "name": "a_squallsurge_seahorse",
+          "displayName": "A Squallsurge Seahorse",
+          "level": 42,
+          "race": "Seahorse",
+          "rawRace": "Seahorse",
+          "className": "Wizard",
+          "x": -46.380001,
+          "y": -75.5,
+          "z": 15,
+          "heading": 1,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 4783,
+          "spawngroupId": 6486,
+          "name": "a_piercer_swordfish",
+          "displayName": "A Piercer Swordfish",
+          "level": 34,
+          "race": "Swordfish",
+          "rawRace": "Swordfish",
+          "className": "Warrior",
+          "x": 33.380001,
+          "y": -15.63,
+          "z": 39.630001,
+          "heading": 317.25,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 4784,
+          "spawngroupId": 6487,
+          "name": "a_spinereef_seahorse",
+          "displayName": "A Spinereef Seahorse",
+          "level": 39,
+          "race": "Seahorse",
+          "rawRace": "Seahorse",
+          "className": "Ranger",
+          "x": -535,
+          "y": 178,
+          "z": -68,
+          "heading": 156,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 4785,
+          "spawngroupId": 6488,
+          "name": "a_spinereef_seahorse",
+          "displayName": "A Spinereef Seahorse",
+          "level": 44,
+          "race": "Seahorse",
+          "rawRace": "Seahorse",
+          "className": "Ranger",
+          "x": -456,
+          "y": 179,
+          "z": -68,
+          "heading": 78,
+          "chance": 23,
+          "respawnTime": 640,
+          "candidateCount": 5
+        },
+        {
+          "spawn2Id": 4786,
+          "spawngroupId": 6489,
+          "name": "a_swirlspine_seahorse",
+          "displayName": "A Swirlspine Seahorse",
+          "level": 50,
+          "race": "Seahorse",
+          "rawRace": "Seahorse",
+          "className": "Cleric",
+          "x": 92,
+          "y": -28,
+          "z": -169,
+          "heading": 128.25,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 4787,
+          "spawngroupId": 6489,
+          "name": "a_swirlspine_seahorse",
+          "displayName": "A Swirlspine Seahorse",
+          "level": 50,
+          "race": "Seahorse",
+          "rawRace": "Seahorse",
+          "className": "Cleric",
+          "x": 140,
+          "y": 24,
+          "z": -169,
+          "heading": 257,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 4788,
+          "spawngroupId": 6490,
+          "name": "a_spinereef_seahorse",
+          "displayName": "A Spinereef Seahorse",
+          "level": 41,
+          "race": "Seahorse",
+          "rawRace": "Seahorse",
+          "className": "Ranger",
+          "x": -392.880005,
+          "y": 111.379997,
+          "z": -68.25,
+          "heading": 0,
+          "chance": 30,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 4789,
+          "spawngroupId": 6491,
+          "name": "a_squallsurge_seahorse",
+          "displayName": "A Squallsurge Seahorse",
+          "level": 43,
+          "race": "Seahorse",
+          "rawRace": "Seahorse",
+          "className": "Wizard",
+          "x": -519,
+          "y": 190,
+          "z": -73,
+          "heading": 280,
+          "chance": 20,
+          "respawnTime": 640,
+          "candidateCount": 5
+        },
+        {
+          "spawn2Id": 4790,
+          "spawngroupId": 6492,
+          "name": "a_seahorse_matriarch",
+          "displayName": "A Seahorse Matriarch",
+          "level": 47,
+          "race": "Seahorse",
+          "rawRace": "Seahorse",
+          "className": "Cleric",
+          "x": -494,
+          "y": 55,
+          "z": -83,
+          "heading": 91,
+          "chance": 17,
+          "respawnTime": 640,
+          "candidateCount": 6
+        },
+        {
+          "spawn2Id": 4791,
+          "spawngroupId": 6493,
+          "name": "a_spinereef_seahorse",
+          "displayName": "A Spinereef Seahorse",
+          "level": 44,
+          "race": "Seahorse",
+          "rawRace": "Seahorse",
+          "className": "Ranger",
+          "x": -405,
+          "y": 150,
+          "z": -74,
+          "heading": 199,
+          "chance": 40,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 4792,
+          "spawngroupId": 6494,
+          "name": "a_spinereef_seahorse",
+          "displayName": "A Spinereef Seahorse",
+          "level": 45,
+          "race": "Seahorse",
+          "rawRace": "Seahorse",
+          "className": "Ranger",
+          "x": -403,
+          "y": 99,
+          "z": -71,
+          "heading": 507,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 4793,
+          "spawngroupId": 6495,
+          "name": "a_cauldron_shark",
+          "displayName": "A Cauldron Shark",
+          "level": 41,
+          "race": "Shark",
+          "rawRace": "Shark",
+          "className": "Warrior",
+          "x": -120,
+          "y": -286,
+          "z": -100.75,
+          "heading": 127.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 4794,
+          "spawngroupId": 6496,
+          "name": "Undertow",
+          "displayName": "Undertow",
+          "level": 49,
+          "race": "Seahorse",
+          "rawRace": "Seahorse",
+          "className": "Wizard",
+          "x": -288,
+          "y": 259,
+          "z": 62,
+          "heading": 191,
+          "chance": 100,
+          "respawnTime": 25200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 76538,
+          "spawngroupId": 54825,
+          "name": "a_squallsurge_seahorse",
+          "displayName": "A Squallsurge Seahorse",
+          "level": 40,
+          "race": "Seahorse",
+          "rawRace": "Seahorse",
+          "className": "Wizard",
+          "x": -33,
+          "y": -222,
+          "z": 5,
+          "heading": 2,
+          "chance": 45,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 258454,
+          "spawngroupId": 2174,
+          "name": "a_stingtooth_piranha",
+          "displayName": "A Stingtooth Piranha",
+          "level": 35,
+          "race": "Piranha",
+          "rawRace": "Piranha",
+          "className": "Warrior",
+          "x": -5.2,
+          "y": -120.089996,
+          "z": 101.32,
+          "heading": 510.200012,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        }
+      ]
+    }
+  },
+  "details": {
+    "zoneSlug": "kedge-keep",
+    "routeSlug": "kedge",
+    "zoneName": "Kedge Keep",
+    "sourceFile": "local-eqemu-database",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobGroups": [
+      {
+        "displayName": "A Cerulean Sailfin",
+        "rawNames": [
+          "a_cerulean_sailfin"
+        ],
+        "count": 11,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Fish": 11
+        },
+        "rawRaceCounts": {
+          "Fish": 11
+        },
+        "classCounts": {
+          "Warrior": 11
+        },
+        "typeCounts": {
+          "Spawn Slot": 11
+        }
+      },
+      {
+        "displayName": "A Cobalt Sailfin",
+        "rawNames": [
+          "a_cobalt_sailfin"
+        ],
+        "count": 10,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Fish": 10
+        },
+        "rawRaceCounts": {
+          "Fish": 10
+        },
+        "classCounts": {
+          "Warrior": 10
+        },
+        "typeCounts": {
+          "Spawn Slot": 10
+        }
+      },
+      {
+        "displayName": "A Crimson Sailfin",
+        "rawNames": [
+          "a_crimson_sailfin"
+        ],
+        "count": 7,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Fish": 7
+        },
+        "rawRaceCounts": {
+          "Fish": 7
+        },
+        "classCounts": {
+          "Warrior": 7
+        },
+        "typeCounts": {
+          "Spawn Slot": 7
+        }
+      },
+      {
+        "displayName": "An Emerald Sailfin",
+        "rawNames": [
+          "an_emerald_sailfin"
+        ],
+        "count": 7,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Fish": 7
+        },
+        "rawRaceCounts": {
+          "Fish": 7
+        },
+        "classCounts": {
+          "Warrior": 7
+        },
+        "typeCounts": {
+          "Spawn Slot": 7
+        }
+      },
+      {
+        "displayName": "A Shimmering Sailfin",
+        "rawNames": [
+          "a_shimmering_sailfin"
+        ],
+        "count": 1,
+        "levelMin": 5,
+        "levelMax": 5,
+        "levels": [
+          5
+        ],
+        "raceCounts": {
+          "Fish": 1
+        },
+        "rawRaceCounts": {
+          "Fish": 1
+        },
+        "classCounts": {
+          "Wizard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Aqua Goblin Prisoner",
+        "rawNames": [
+          "aqua_goblin_prisoner"
+        ],
+        "count": 2,
+        "levelMin": 10,
+        "levelMax": 10,
+        "levels": [
+          10
+        ],
+        "raceCounts": {
+          "Goblin": 2
+        },
+        "rawRaceCounts": {
+          "Goblin": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Lancer Swordfish",
+        "rawNames": [
+          "a_lancer_swordfish"
+        ],
+        "count": 2,
+        "levelMin": 28,
+        "levelMax": 29,
+        "levels": [
+          28,
+          29
+        ],
+        "raceCounts": {
+          "Swordfish": 2
+        },
+        "rawRaceCounts": {
+          "Swordfish": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Lancer Swordfish",
+        "rawNames": [
+          "a_lancer_swordfish"
+        ],
+        "count": 4,
+        "levelMin": 32,
+        "levelMax": 32,
+        "levels": [
+          32
+        ],
+        "raceCounts": {
+          "Swordfish": 4
+        },
+        "rawRaceCounts": {
+          "Swordfish": 4
+        },
+        "classCounts": {
+          "Warrior": 4
+        },
+        "typeCounts": {
+          "Spawn Slot": 4
+        }
+      },
+      {
+        "displayName": "A Piercer Swordfish",
+        "rawNames": [
+          "a_piercer_swordfish"
+        ],
+        "count": 5,
+        "levelMin": 33,
+        "levelMax": 37,
+        "levels": [
+          33,
+          34,
+          35,
+          36,
+          37
+        ],
+        "raceCounts": {
+          "Swordfish": 5
+        },
+        "rawRaceCounts": {
+          "Swordfish": 5
+        },
+        "classCounts": {
+          "Warrior": 5
+        },
+        "typeCounts": {
+          "Spawn Slot": 5
+        }
+      },
+      {
+        "displayName": "A Cauldron Shark",
+        "rawNames": [
+          "a_cauldron_shark"
+        ],
+        "count": 1,
+        "levelMin": 34,
+        "levelMax": 34,
+        "levels": [
+          34
+        ],
+        "raceCounts": {
+          "Shark": 1
+        },
+        "rawRaceCounts": {
+          "Shark": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Stingtooth Piranha",
+        "rawNames": [
+          "a_stingtooth_piranha"
+        ],
+        "count": 6,
+        "levelMin": 35,
+        "levelMax": 37,
+        "levels": [
+          35,
+          36,
+          37
+        ],
+        "raceCounts": {
+          "Piranha": 6
+        },
+        "rawRaceCounts": {
+          "Piranha": 6
+        },
+        "classCounts": {
+          "Warrior": 6
+        },
+        "typeCounts": {
+          "Spawn Slot": 6
+        }
+      },
+      {
+        "displayName": "A Bull Shark",
+        "rawNames": [
+          "a_bull_shark"
+        ],
+        "count": 1,
+        "levelMin": 36,
+        "levelMax": 36,
+        "levels": [
+          36
+        ],
+        "raceCounts": {
+          "Shark": 1
+        },
+        "rawRaceCounts": {
+          "Shark": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Cauldron Hammerhead",
+        "rawNames": [
+          "a_cauldron_hammerhead"
+        ],
+        "count": 2,
+        "levelMin": 37,
+        "levelMax": 38,
+        "levels": [
+          37,
+          38
+        ],
+        "raceCounts": {
+          "Shark": 2
+        },
+        "rawRaceCounts": {
+          "Shark": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Stiletto Tooth Piranha",
+        "rawNames": [
+          "a_stiletto_tooth_piranha"
+        ],
+        "count": 3,
+        "levelMin": 39,
+        "levelMax": 39,
+        "levels": [
+          39
+        ],
+        "raceCounts": {
+          "Piranha": 3
+        },
+        "rawRaceCounts": {
+          "Piranha": 3
+        },
+        "classCounts": {
+          "Warrior": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "A Squallsurge Seahorse",
+        "rawNames": [
+          "a_squallsurge_seahorse"
+        ],
+        "count": 2,
+        "levelMin": 39,
+        "levelMax": 40,
+        "levels": [
+          39,
+          40
+        ],
+        "raceCounts": {
+          "Seahorse": 2
+        },
+        "rawRaceCounts": {
+          "Seahorse": 2
+        },
+        "classCounts": {
+          "Wizard": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Spinereef Seahorse",
+        "rawNames": [
+          "a_spinereef_seahorse"
+        ],
+        "count": 1,
+        "levelMin": 39,
+        "levelMax": 39,
+        "levels": [
+          39
+        ],
+        "raceCounts": {
+          "Seahorse": 1
+        },
+        "rawRaceCounts": {
+          "Seahorse": 1
+        },
+        "classCounts": {
+          "Ranger": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Gloomstalker Mermaid",
+        "rawNames": [
+          "a_gloomstalker_mermaid"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Mermaid": 1
+        },
+        "rawRaceCounts": {
+          "Mermaid": 1
+        },
+        "classCounts": {
+          "Ranger": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Gloomwater Mermaid",
+        "rawNames": [
+          "a_gloomwater_mermaid"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Mermaid": 1
+        },
+        "rawRaceCounts": {
+          "Mermaid": 1
+        },
+        "classCounts": {
+          "Druid": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Golden Haired Mermaid",
+        "rawNames": [
+          "a_golden_haired_mermaid"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Mermaid": 1
+        },
+        "rawRaceCounts": {
+          "Mermaid": 1
+        },
+        "classCounts": {
+          "Ranger": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Cauldron Shark",
+        "rawNames": [
+          "a_cauldron_shark"
+        ],
+        "count": 5,
+        "levelMin": 41,
+        "levelMax": 42,
+        "levels": [
+          41,
+          42
+        ],
+        "raceCounts": {
+          "Shark": 5
+        },
+        "rawRaceCounts": {
+          "Shark": 5
+        },
+        "classCounts": {
+          "Warrior": 5
+        },
+        "typeCounts": {
+          "Spawn Slot": 5
+        }
+      },
+      {
+        "displayName": "A Spinereef Seahorse",
+        "rawNames": [
+          "a_spinereef_seahorse"
+        ],
+        "count": 1,
+        "levelMin": 41,
+        "levelMax": 41,
+        "levels": [
+          41
+        ],
+        "raceCounts": {
+          "Seahorse": 1
+        },
+        "rawRaceCounts": {
+          "Seahorse": 1
+        },
+        "classCounts": {
+          "Ranger": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Gloomwater Mermaid",
+        "rawNames": [
+          "a_gloomwater_mermaid"
+        ],
+        "count": 3,
+        "levelMin": 42,
+        "levelMax": 43,
+        "levels": [
+          42,
+          43
+        ],
+        "raceCounts": {
+          "Mermaid": 3
+        },
+        "rawRaceCounts": {
+          "Mermaid": 3
+        },
+        "classCounts": {
+          "Druid": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "A Gloomstalker Mermaid",
+        "rawNames": [
+          "a_gloomstalker_mermaid"
+        ],
+        "count": 2,
+        "levelMin": 42,
+        "levelMax": 42,
+        "levels": [
+          42
+        ],
+        "raceCounts": {
+          "Mermaid": 2
+        },
+        "rawRaceCounts": {
+          "Mermaid": 2
+        },
+        "classCounts": {
+          "Ranger": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Squallsurge Seahorse",
+        "rawNames": [
+          "a_squallsurge_seahorse"
+        ],
+        "count": 2,
+        "levelMin": 42,
+        "levelMax": 43,
+        "levels": [
+          42,
+          43
+        ],
+        "raceCounts": {
+          "Seahorse": 2
+        },
+        "rawRaceCounts": {
+          "Seahorse": 2
+        },
+        "classCounts": {
+          "Wizard": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Stiletto Fang Piranha",
+        "rawNames": [
+          "a_stiletto_fang_piranha"
+        ],
+        "count": 2,
+        "levelMin": 42,
+        "levelMax": 42,
+        "levels": [
+          42
+        ],
+        "raceCounts": {
+          "Piranha": 2
+        },
+        "rawRaceCounts": {
+          "Piranha": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Cauldron Hammerhead",
+        "rawNames": [
+          "a_cauldron_hammerhead"
+        ],
+        "count": 4,
+        "levelMin": 43,
+        "levelMax": 44,
+        "levels": [
+          43,
+          44
+        ],
+        "raceCounts": {
+          "Shark": 4
+        },
+        "rawRaceCounts": {
+          "Shark": 4
+        },
+        "classCounts": {
+          "Warrior": 4
+        },
+        "typeCounts": {
+          "Spawn Slot": 4
+        }
+      },
+      {
+        "displayName": "A Spinereef Seahorse",
+        "rawNames": [
+          "a_spinereef_seahorse"
+        ],
+        "count": 6,
+        "levelMin": 44,
+        "levelMax": 47,
+        "levels": [
+          44,
+          45,
+          46,
+          47
+        ],
+        "raceCounts": {
+          "Seahorse": 6
+        },
+        "rawRaceCounts": {
+          "Seahorse": 6
+        },
+        "classCounts": {
+          "Ranger": 6
+        },
+        "typeCounts": {
+          "Spawn Slot": 6
+        }
+      },
+      {
+        "displayName": "A Gloomstalker Mermaid",
+        "rawNames": [
+          "a_gloomstalker_mermaid"
+        ],
+        "count": 3,
+        "levelMin": 44,
+        "levelMax": 45,
+        "levels": [
+          44,
+          45
+        ],
+        "raceCounts": {
+          "Mermaid": 3
+        },
+        "rawRaceCounts": {
+          "Mermaid": 3
+        },
+        "classCounts": {
+          "Ranger": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "A Gloomwater Mermaid",
+        "rawNames": [
+          "a_gloomwater_mermaid"
+        ],
+        "count": 3,
+        "levelMin": 45,
+        "levelMax": 46,
+        "levels": [
+          45,
+          46
+        ],
+        "raceCounts": {
+          "Mermaid": 3
+        },
+        "rawRaceCounts": {
+          "Mermaid": 3
+        },
+        "classCounts": {
+          "Druid": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "Coralyn Kelpmaiden",
+        "rawNames": [
+          "Coralyn_Kelpmaiden"
+        ],
+        "count": 1,
+        "levelMin": 46,
+        "levelMax": 46,
+        "levels": [
+          46
+        ],
+        "raceCounts": {
+          "Mermaid": 1
+        },
+        "rawRaceCounts": {
+          "Mermaid": 1
+        },
+        "classCounts": {
+          "Druid": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Seahorse Matriarch",
+        "rawNames": [
+          "a_seahorse_matriarch"
+        ],
+        "count": 1,
+        "levelMin": 47,
+        "levelMax": 47,
+        "levels": [
+          47
+        ],
+        "raceCounts": {
+          "Seahorse": 1
+        },
+        "rawRaceCounts": {
+          "Seahorse": 1
+        },
+        "classCounts": {
+          "Cleric": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Undertow",
+        "rawNames": [
+          "Undertow"
+        ],
+        "count": 1,
+        "levelMin": 49,
+        "levelMax": 49,
+        "levels": [
+          49
+        ],
+        "raceCounts": {
+          "Seahorse": 1
+        },
+        "rawRaceCounts": {
+          "Seahorse": 1
+        },
+        "classCounts": {
+          "Wizard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Swirlspine Seahorse",
+        "rawNames": [
+          "a_swirlspine_seahorse"
+        ],
+        "count": 4,
+        "levelMin": 50,
+        "levelMax": 51,
+        "levels": [
+          50,
+          51
+        ],
+        "raceCounts": {
+          "Seahorse": 4
+        },
+        "rawRaceCounts": {
+          "Seahorse": 4
+        },
+        "classCounts": {
+          "Cleric": 4
+        },
+        "typeCounts": {
+          "Spawn Slot": 4
+        }
+      },
+      {
+        "displayName": "Auraline",
+        "rawNames": [
+          "#Auraline"
+        ],
+        "count": 3,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Mermaid": 3
+        },
+        "rawRaceCounts": {
+          "Mermaid": 3
+        },
+        "classCounts": {
+          "Enchanter": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "Estrella Of Gloomwater",
+        "rawNames": [
+          "Estrella_of_Gloomwater"
+        ],
+        "count": 1,
+        "levelMin": 51,
+        "levelMax": 51,
+        "levels": [
+          51
+        ],
+        "raceCounts": {
+          "Mermaid": 1
+        },
+        "rawRaceCounts": {
+          "Mermaid": 1
+        },
+        "classCounts": {
+          "Druid": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Nyrein The Beguiled",
+        "rawNames": [
+          "#Nyrein_the_Beguiled"
+        ],
+        "count": 1,
+        "levelMin": 52,
+        "levelMax": 52,
+        "levels": [
+          52
+        ],
+        "raceCounts": {
+          "Mermaid": 1
+        },
+        "rawRaceCounts": {
+          "Mermaid": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Priestess Auraia",
+        "rawNames": [
+          "Priestess_Auraia"
+        ],
+        "count": 1,
+        "levelMin": 52,
+        "levelMax": 52,
+        "levels": [
+          52
+        ],
+        "raceCounts": {
+          "Mermaid": 1
+        },
+        "rawRaceCounts": {
+          "Mermaid": 1
+        },
+        "classCounts": {
+          "Cleric": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Phinigel Autropos",
+        "rawNames": [
+          "Phinigel_Autropos"
+        ],
+        "count": 1,
+        "levelMin": 53,
+        "levelMax": 53,
+        "levels": [
+          53
+        ],
+        "raceCounts": {
+          "Kedge": 1
+        },
+        "rawRaceCounts": {
+          "Kedge": 1
+        },
+        "classCounts": {
+          "Wizard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      }
+    ],
+    "rows": [
+      {
+        "displayName": "A Cerulean Sailfin",
+        "rawName": "a_cerulean_sailfin",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -333,
+        "y": 135,
+        "z": -72.25,
+        "heading": 205,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 4711,
+        "spawngroupId": 2162,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Cerulean Sailfin",
+        "rawName": "a_cerulean_sailfin",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 4.5,
+        "y": -36,
+        "z": -76.25,
+        "heading": 118.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 4712,
+        "spawngroupId": 2162,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Cerulean Sailfin",
+        "rawName": "a_cerulean_sailfin",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -335,
+        "y": 156,
+        "z": -63.299999,
+        "heading": 474,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 4713,
+        "spawngroupId": 2162,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Cerulean Sailfin",
+        "rawName": "a_cerulean_sailfin",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 231.380005,
+        "y": -41.5,
+        "z": -181,
+        "heading": 258,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 4714,
+        "spawngroupId": 2162,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Cerulean Sailfin",
+        "rawName": "a_cerulean_sailfin",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -147.630005,
+        "y": -160.880005,
+        "z": -79.400002,
+        "heading": 1,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 4715,
+        "spawngroupId": 2162,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Cerulean Sailfin",
+        "rawName": "a_cerulean_sailfin",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -5.5,
+        "y": -91.25,
+        "z": 96.099998,
+        "heading": 4.5,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 4738,
+        "spawngroupId": 2143,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Cerulean Sailfin",
+        "rawName": "a_cerulean_sailfin",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -104.629997,
+        "y": -164,
+        "z": -52.099998,
+        "heading": 0,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 4739,
+        "spawngroupId": 2143,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Cerulean Sailfin",
+        "rawName": "a_cerulean_sailfin",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -212,
+        "y": 36,
+        "z": -117,
+        "heading": 0,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 4740,
+        "spawngroupId": 2143,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Cerulean Sailfin",
+        "rawName": "a_cerulean_sailfin",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -61,
+        "y": -249,
+        "z": -103,
+        "heading": 128,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 4763,
+        "spawngroupId": 2200,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Cerulean Sailfin",
+        "rawName": "a_cerulean_sailfin",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 82.25,
+        "y": -85,
+        "z": -309.25,
+        "heading": 209,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 4770,
+        "spawngroupId": 2194,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Cerulean Sailfin",
+        "rawName": "a_cerulean_sailfin",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -50,
+        "y": -177,
+        "z": 90,
+        "heading": 25,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 4771,
+        "spawngroupId": 2194,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Cobalt Sailfin",
+        "rawName": "a_cobalt_sailfin",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 62.75,
+        "y": -35.25,
+        "z": -76.879997,
+        "heading": 128.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 4726,
+        "spawngroupId": 2152,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Cobalt Sailfin",
+        "rawName": "a_cobalt_sailfin",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -88.379997,
+        "y": -117.75,
+        "z": -48.099998,
+        "heading": 266,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 4727,
+        "spawngroupId": 2152,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Cobalt Sailfin",
+        "rawName": "a_cobalt_sailfin",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -120.879997,
+        "y": -258.880005,
+        "z": -123,
+        "heading": 133.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 4728,
+        "spawngroupId": 2152,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Cobalt Sailfin",
+        "rawName": "a_cobalt_sailfin",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -72,
+        "y": -11,
+        "z": -162,
+        "heading": 421,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 4751,
+        "spawngroupId": 2187,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Cobalt Sailfin",
+        "rawName": "a_cobalt_sailfin",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -121,
+        "y": 13,
+        "z": -164,
+        "heading": 180,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 4752,
+        "spawngroupId": 2188,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Cobalt Sailfin",
+        "rawName": "a_cobalt_sailfin",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -19,
+        "y": 94,
+        "z": 43.75,
+        "heading": 165,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 4753,
+        "spawngroupId": 2188,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Cobalt Sailfin",
+        "rawName": "a_cobalt_sailfin",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 221,
+        "y": -79.129997,
+        "z": -309.130005,
+        "heading": 268.25,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 4766,
+        "spawngroupId": 2197,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Cobalt Sailfin",
+        "rawName": "a_cobalt_sailfin",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -36.380001,
+        "y": -130.130005,
+        "z": 99.879997,
+        "heading": 258.25,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 4767,
+        "spawngroupId": 2197,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Cobalt Sailfin",
+        "rawName": "a_cobalt_sailfin",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -232,
+        "y": -243,
+        "z": -105,
+        "heading": 139,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 4779,
+        "spawngroupId": 6482,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Cobalt Sailfin",
+        "rawName": "a_cobalt_sailfin",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -228,
+        "y": -162,
+        "z": 41.630001,
+        "heading": 511,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 4780,
+        "spawngroupId": 6483,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Crimson Sailfin",
+        "rawName": "a_crimson_sailfin",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -236,
+        "y": 197,
+        "z": -72.629997,
+        "heading": 158.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 4707,
+        "spawngroupId": 2163,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Crimson Sailfin",
+        "rawName": "a_crimson_sailfin",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -100.879997,
+        "y": -63.130001,
+        "z": -25.379999,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 4708,
+        "spawngroupId": 2163,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Crimson Sailfin",
+        "rawName": "a_crimson_sailfin",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -90.629997,
+        "y": 23.5,
+        "z": -52.130001,
+        "heading": 262.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 4709,
+        "spawngroupId": 2163,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Crimson Sailfin",
+        "rawName": "a_crimson_sailfin",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 165.5,
+        "y": 85,
+        "z": -250.880005,
+        "heading": 74.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 4710,
+        "spawngroupId": 2163,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Crimson Sailfin",
+        "rawName": "a_crimson_sailfin",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -105.879997,
+        "y": -163.75,
+        "z": 8.38,
+        "heading": 0,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 4772,
+        "spawngroupId": 2193,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Crimson Sailfin",
+        "rawName": "a_crimson_sailfin",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -161.880005,
+        "y": -60.880001,
+        "z": -21.25,
+        "heading": 391,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 4773,
+        "spawngroupId": 2193,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Crimson Sailfin",
+        "rawName": "a_crimson_sailfin",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -73.629997,
+        "y": -99.629997,
+        "z": 8.38,
+        "heading": 218.5,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 4774,
+        "spawngroupId": 2193,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "An Emerald Sailfin",
+        "rawName": "an_emerald_sailfin",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -151.880005,
+        "y": -232,
+        "z": -85.75,
+        "heading": 441,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 4742,
+        "spawngroupId": 2141,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "An Emerald Sailfin",
+        "rawName": "an_emerald_sailfin",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -264.130005,
+        "y": 141.75,
+        "z": -57.75,
+        "heading": 207.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 4754,
+        "spawngroupId": 2189,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Emerald Sailfin",
+        "rawName": "an_emerald_sailfin",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -244,
+        "y": 202.880005,
+        "z": -59.25,
+        "heading": 91.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 4755,
+        "spawngroupId": 2189,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Emerald Sailfin",
+        "rawName": "an_emerald_sailfin",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -249,
+        "y": 201.880005,
+        "z": -76.25,
+        "heading": 76.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 4756,
+        "spawngroupId": 2189,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Emerald Sailfin",
+        "rawName": "an_emerald_sailfin",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 240.380005,
+        "y": 26.379999,
+        "z": -250.899994,
+        "heading": 490,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 4757,
+        "spawngroupId": 2189,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Emerald Sailfin",
+        "rawName": "an_emerald_sailfin",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -50.130001,
+        "y": -100.629997,
+        "z": -48.130001,
+        "heading": 508.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 4758,
+        "spawngroupId": 2189,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Emerald Sailfin",
+        "rawName": "an_emerald_sailfin",
+        "level": 1,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -181.380005,
+        "y": -172.630005,
+        "z": 50.75,
+        "heading": 6,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 4759,
+        "spawngroupId": 2189,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shimmering Sailfin",
+        "rawName": "a_shimmering_sailfin",
+        "level": 5,
+        "race": "Fish",
+        "rawRace": "Fish",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": 66.25,
+        "y": 50.75,
+        "z": -181,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 4768,
+        "spawngroupId": 2196,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Aqua Goblin Prisoner",
+        "rawName": "aqua_goblin_prisoner",
+        "level": 10,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -114,
+        "y": -343,
+        "z": -156,
+        "heading": 451,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 4765,
+        "spawngroupId": 2198,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Aqua Goblin Prisoner",
+        "rawName": "aqua_goblin_prisoner",
+        "level": 10,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -190,
+        "y": -340,
+        "z": -73,
+        "heading": 13,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 4769,
+        "spawngroupId": 2195,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Lancer Swordfish",
+        "rawName": "a_lancer_swordfish",
+        "level": 28,
+        "race": "Swordfish",
+        "rawRace": "Swordfish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -9.25,
+        "y": 36,
+        "z": 300.380005,
+        "heading": 32,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 4684,
+        "spawngroupId": 2183,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Lancer Swordfish",
+        "rawName": "a_lancer_swordfish",
+        "level": 29,
+        "race": "Swordfish",
+        "rawRace": "Swordfish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -35.630001,
+        "y": -4.63,
+        "z": 292.130005,
+        "heading": 3.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 4701,
+        "spawngroupId": 2169,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Lancer Swordfish",
+        "rawName": "a_lancer_swordfish",
+        "level": 32,
+        "race": "Swordfish",
+        "rawRace": "Swordfish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -14.13,
+        "y": 30.5,
+        "z": 353.630005,
+        "heading": 505,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 4696,
+        "spawngroupId": 2172,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Lancer Swordfish",
+        "rawName": "a_lancer_swordfish",
+        "level": 32,
+        "race": "Swordfish",
+        "rawRace": "Swordfish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 6.63,
+        "y": 35.75,
+        "z": 300.380005,
+        "heading": 41.25,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 4697,
+        "spawngroupId": 2172,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Lancer Swordfish",
+        "rawName": "a_lancer_swordfish",
+        "level": 32,
+        "race": "Swordfish",
+        "rawRace": "Swordfish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1.88,
+        "y": 29.5,
+        "z": 349.25,
+        "heading": 437.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 4699,
+        "spawngroupId": 2170,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Lancer Swordfish",
+        "rawName": "a_lancer_swordfish",
+        "level": 32,
+        "race": "Swordfish",
+        "rawRace": "Swordfish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -0.88,
+        "y": -38.880001,
+        "z": 318.880005,
+        "heading": 511,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 4700,
+        "spawngroupId": 2170,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Piercer Swordfish",
+        "rawName": "a_piercer_swordfish",
+        "level": 33,
+        "race": "Swordfish",
+        "rawRace": "Swordfish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -37.880001,
+        "y": -3,
+        "z": 331.880005,
+        "heading": 511,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 4698,
+        "spawngroupId": 2171,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Cauldron Shark",
+        "rawName": "a_cauldron_shark",
+        "level": 34,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -192.630005,
+        "y": -150.630005,
+        "z": 61.130001,
+        "heading": 54.25,
+        "chance": 90,
+        "respawnTime": 640,
+        "spawn2Id": 4723,
+        "spawngroupId": 2155,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Piercer Swordfish",
+        "rawName": "a_piercer_swordfish",
+        "level": 34,
+        "race": "Swordfish",
+        "rawRace": "Swordfish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 33.380001,
+        "y": -15.63,
+        "z": 39.630001,
+        "heading": 317.25,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 4783,
+        "spawngroupId": 6486,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Piercer Swordfish",
+        "rawName": "a_piercer_swordfish",
+        "level": 35,
+        "race": "Swordfish",
+        "rawRace": "Swordfish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -2,
+        "y": 35.880001,
+        "z": 40.75,
+        "heading": 511,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 4720,
+        "spawngroupId": 2157,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Stingtooth Piranha",
+        "rawName": "a_stingtooth_piranha",
+        "level": 35,
+        "race": "Piranha",
+        "rawRace": "Piranha",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -300,
+        "y": 161,
+        "z": -44,
+        "heading": 88,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 4694,
+        "spawngroupId": 2174,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Stingtooth Piranha",
+        "rawName": "a_stingtooth_piranha",
+        "level": 35,
+        "race": "Piranha",
+        "rawRace": "Piranha",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -5.2,
+        "y": -120.089996,
+        "z": 101.32,
+        "heading": 510.200012,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 258454,
+        "spawngroupId": 2174,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Bull Shark",
+        "rawName": "a_bull_shark",
+        "level": 36,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -102.879997,
+        "y": -117.629997,
+        "z": -47.630001,
+        "heading": 244,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 4736,
+        "spawngroupId": 2145,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Piercer Swordfish",
+        "rawName": "a_piercer_swordfish",
+        "level": 36,
+        "race": "Swordfish",
+        "rawRace": "Swordfish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 0.5,
+        "y": -36.630001,
+        "z": 40.25,
+        "heading": 285.75,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 4718,
+        "spawngroupId": 2159,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Stingtooth Piranha",
+        "rawName": "a_stingtooth_piranha",
+        "level": 36,
+        "race": "Piranha",
+        "rawRace": "Piranha",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -272,
+        "y": 164,
+        "z": -44,
+        "heading": 305,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 4689,
+        "spawngroupId": 2178,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Stingtooth Piranha",
+        "rawName": "a_stingtooth_piranha",
+        "level": 36,
+        "race": "Piranha",
+        "rawRace": "Piranha",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -302,
+        "y": 192,
+        "z": -44,
+        "heading": 220,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 4690,
+        "spawngroupId": 2178,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Stingtooth Piranha",
+        "rawName": "a_stingtooth_piranha",
+        "level": 36,
+        "race": "Piranha",
+        "rawRace": "Piranha",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -274,
+        "y": 187,
+        "z": -44,
+        "heading": 65,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 4692,
+        "spawngroupId": 2176,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Cauldron Hammerhead",
+        "rawName": "a_cauldron_hammerhead",
+        "level": 37,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -69.379997,
+        "y": 4.75,
+        "z": -154.5,
+        "heading": 148.75,
+        "chance": 80,
+        "respawnTime": 21600,
+        "spawn2Id": 4703,
+        "spawngroupId": 2167,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Piercer Swordfish",
+        "rawName": "a_piercer_swordfish",
+        "level": 37,
+        "race": "Swordfish",
+        "rawRace": "Swordfish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 28.25,
+        "y": -23.25,
+        "z": 40.25,
+        "heading": 167.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 4719,
+        "spawngroupId": 2158,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Stingtooth Piranha",
+        "rawName": "a_stingtooth_piranha",
+        "level": 37,
+        "race": "Piranha",
+        "rawRace": "Piranha",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -285,
+        "y": 176,
+        "z": -44,
+        "heading": 295,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 4693,
+        "spawngroupId": 2175,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Cauldron Hammerhead",
+        "rawName": "a_cauldron_hammerhead",
+        "level": 38,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -91.629997,
+        "y": 5.5,
+        "z": -154.25,
+        "heading": 257.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 4716,
+        "spawngroupId": 2161,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Spinereef Seahorse",
+        "rawName": "a_spinereef_seahorse",
+        "level": 39,
+        "race": "Seahorse",
+        "rawRace": "Seahorse",
+        "className": "Ranger",
+        "type": "Spawn Slot",
+        "x": -535,
+        "y": 178,
+        "z": -68,
+        "heading": 156,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 4784,
+        "spawngroupId": 6487,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Squallsurge Seahorse",
+        "rawName": "a_squallsurge_seahorse",
+        "level": 39,
+        "race": "Seahorse",
+        "rawRace": "Seahorse",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -45.75,
+        "y": -132.5,
+        "z": 15,
+        "heading": 258.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 4764,
+        "spawngroupId": 2199,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Stiletto Tooth Piranha",
+        "rawName": "a_stiletto_tooth_piranha",
+        "level": 39,
+        "race": "Piranha",
+        "rawRace": "Piranha",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 79.879997,
+        "y": 17.879999,
+        "z": 43.75,
+        "heading": 313,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 4732,
+        "spawngroupId": 2149,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Stiletto Tooth Piranha",
+        "rawName": "a_stiletto_tooth_piranha",
+        "level": 39,
+        "race": "Piranha",
+        "rawRace": "Piranha",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -34,
+        "y": -176,
+        "z": 118,
+        "heading": 450,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 4750,
+        "spawngroupId": 2186,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Stiletto Tooth Piranha",
+        "rawName": "a_stiletto_tooth_piranha",
+        "level": 39,
+        "race": "Piranha",
+        "rawRace": "Piranha",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 8,
+        "y": -8,
+        "z": -31,
+        "heading": 460,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 4760,
+        "spawngroupId": 2203,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Gloomstalker Mermaid",
+        "rawName": "a_gloomstalker_mermaid",
+        "level": 40,
+        "race": "Mermaid",
+        "rawRace": "Mermaid",
+        "className": "Ranger",
+        "type": "Spawn Slot",
+        "x": -91,
+        "y": 124,
+        "z": -80,
+        "heading": 146,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 4777,
+        "spawngroupId": 2190,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Gloomwater Mermaid",
+        "rawName": "a_gloomwater_mermaid",
+        "level": 40,
+        "race": "Mermaid",
+        "rawRace": "Mermaid",
+        "className": "Druid",
+        "type": "Spawn Slot",
+        "x": -62,
+        "y": 120,
+        "z": -80,
+        "heading": 363,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 4776,
+        "spawngroupId": 2191,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Golden Haired Mermaid",
+        "rawName": "a_golden_haired_mermaid",
+        "level": 40,
+        "race": "Mermaid",
+        "rawRace": "Mermaid",
+        "className": "Ranger",
+        "type": "Spawn Slot",
+        "x": -32,
+        "y": -178,
+        "z": 95,
+        "heading": 507,
+        "chance": 20,
+        "respawnTime": 640,
+        "spawn2Id": 4686,
+        "spawngroupId": 2181,
+        "candidateCount": 5
+      },
+      {
+        "displayName": "A Squallsurge Seahorse",
+        "rawName": "a_squallsurge_seahorse",
+        "level": 40,
+        "race": "Seahorse",
+        "rawRace": "Seahorse",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -33,
+        "y": -222,
+        "z": 5,
+        "heading": 2,
+        "chance": 45,
+        "respawnTime": 1200,
+        "spawn2Id": 76538,
+        "spawngroupId": 54825,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Cauldron Shark",
+        "rawName": "a_cauldron_shark",
+        "level": 41,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -120,
+        "y": -286,
+        "z": -100.75,
+        "heading": 127.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 4793,
+        "spawngroupId": 6495,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Spinereef Seahorse",
+        "rawName": "a_spinereef_seahorse",
+        "level": 41,
+        "race": "Seahorse",
+        "rawRace": "Seahorse",
+        "className": "Ranger",
+        "type": "Spawn Slot",
+        "x": -392.880005,
+        "y": 111.379997,
+        "z": -68.25,
+        "heading": 0,
+        "chance": 30,
+        "respawnTime": 640,
+        "spawn2Id": 4788,
+        "spawngroupId": 6490,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Cauldron Shark",
+        "rawName": "a_cauldron_shark",
+        "level": 42,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -187.880005,
+        "y": -200,
+        "z": 47.130001,
+        "heading": 511,
+        "chance": 45,
+        "respawnTime": 640,
+        "spawn2Id": 4724,
+        "spawngroupId": 2154,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Cauldron Shark",
+        "rawName": "a_cauldron_shark",
+        "level": 42,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -155.880005,
+        "y": -190.630005,
+        "z": 40.25,
+        "heading": 202.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 4730,
+        "spawngroupId": 2150,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Cauldron Shark",
+        "rawName": "a_cauldron_shark",
+        "level": 42,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -126.879997,
+        "y": -290.880005,
+        "z": -119.629997,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 4731,
+        "spawngroupId": 2150,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Cauldron Shark",
+        "rawName": "a_cauldron_shark",
+        "level": 42,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -148.5,
+        "y": -280.75,
+        "z": -107.879997,
+        "heading": 511,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 4741,
+        "spawngroupId": 2142,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Gloomstalker Mermaid",
+        "rawName": "a_gloomstalker_mermaid",
+        "level": 42,
+        "race": "Mermaid",
+        "rawRace": "Mermaid",
+        "className": "Ranger",
+        "type": "Spawn Slot",
+        "x": -192,
+        "y": 28,
+        "z": -65,
+        "heading": 329,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 4705,
+        "spawngroupId": 2165,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Gloomstalker Mermaid",
+        "rawName": "a_gloomstalker_mermaid",
+        "level": 42,
+        "race": "Mermaid",
+        "rawRace": "Mermaid",
+        "className": "Ranger",
+        "type": "Spawn Slot",
+        "x": -282.880005,
+        "y": 31,
+        "z": -115.25,
+        "heading": 202,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 4745,
+        "spawngroupId": 2138,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Gloomwater Mermaid",
+        "rawName": "a_gloomwater_mermaid",
+        "level": 42,
+        "race": "Mermaid",
+        "rawRace": "Mermaid",
+        "className": "Druid",
+        "type": "Spawn Slot",
+        "x": -218.880005,
+        "y": 87.879997,
+        "z": -132.25,
+        "heading": 202,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 4733,
+        "spawngroupId": 2148,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Squallsurge Seahorse",
+        "rawName": "a_squallsurge_seahorse",
+        "level": 42,
+        "race": "Seahorse",
+        "rawRace": "Seahorse",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -46.380001,
+        "y": -75.5,
+        "z": 15,
+        "heading": 1,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 4782,
+        "spawngroupId": 6485,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Stiletto Fang Piranha",
+        "rawName": "a_stiletto_fang_piranha",
+        "level": 42,
+        "race": "Piranha",
+        "rawRace": "Piranha",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -19,
+        "y": -167,
+        "z": 95,
+        "heading": 304,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 4749,
+        "spawngroupId": 2185,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Stiletto Fang Piranha",
+        "rawName": "a_stiletto_fang_piranha",
+        "level": 42,
+        "race": "Piranha",
+        "rawRace": "Piranha",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -8,
+        "y": 7,
+        "z": -31,
+        "heading": 205,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 4761,
+        "spawngroupId": 2202,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Cauldron Hammerhead",
+        "rawName": "a_cauldron_hammerhead",
+        "level": 43,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 15.88,
+        "y": 86.879997,
+        "z": 49.130001,
+        "heading": 320,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 4717,
+        "spawngroupId": 2160,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Cauldron Hammerhead",
+        "rawName": "a_cauldron_hammerhead",
+        "level": 43,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -165.880005,
+        "y": -233,
+        "z": -79.75,
+        "heading": 510.5,
+        "chance": 80,
+        "respawnTime": 21600,
+        "spawn2Id": 4747,
+        "spawngroupId": 5382,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Cauldron Hammerhead",
+        "rawName": "a_cauldron_hammerhead",
+        "level": 43,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -171.25,
+        "y": -146.380005,
+        "z": 48.75,
+        "heading": 328,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 4781,
+        "spawngroupId": 6484,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Gloomwater Mermaid",
+        "rawName": "a_gloomwater_mermaid",
+        "level": 43,
+        "race": "Mermaid",
+        "rawRace": "Mermaid",
+        "className": "Druid",
+        "type": "Spawn Slot",
+        "x": -40,
+        "y": 65,
+        "z": -31,
+        "heading": 37.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 4762,
+        "spawngroupId": 2201,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Gloomwater Mermaid",
+        "rawName": "a_gloomwater_mermaid",
+        "level": 43,
+        "race": "Mermaid",
+        "rawRace": "Mermaid",
+        "className": "Druid",
+        "type": "Spawn Slot",
+        "x": -33,
+        "y": 50,
+        "z": -49,
+        "heading": 424,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 4775,
+        "spawngroupId": 2192,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Squallsurge Seahorse",
+        "rawName": "a_squallsurge_seahorse",
+        "level": 43,
+        "race": "Seahorse",
+        "rawRace": "Seahorse",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -519,
+        "y": 190,
+        "z": -73,
+        "heading": 280,
+        "chance": 20,
+        "respawnTime": 640,
+        "spawn2Id": 4789,
+        "spawngroupId": 6491,
+        "candidateCount": 5
+      },
+      {
+        "displayName": "A Cauldron Hammerhead",
+        "rawName": "a_cauldron_hammerhead",
+        "level": 44,
+        "race": "Shark",
+        "rawRace": "Shark",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -34,
+        "y": -218.880005,
+        "z": 11.63,
+        "heading": 511,
+        "chance": 80,
+        "respawnTime": 640,
+        "spawn2Id": 4735,
+        "spawngroupId": 2146,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Gloomstalker Mermaid",
+        "rawName": "a_gloomstalker_mermaid",
+        "level": 44,
+        "race": "Mermaid",
+        "rawRace": "Mermaid",
+        "className": "Ranger",
+        "type": "Spawn Slot",
+        "x": -252,
+        "y": 91,
+        "z": -136,
+        "heading": 226,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 4687,
+        "spawngroupId": 2180,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Gloomstalker Mermaid",
+        "rawName": "a_gloomstalker_mermaid",
+        "level": 44,
+        "race": "Mermaid",
+        "rawRace": "Mermaid",
+        "className": "Ranger",
+        "type": "Spawn Slot",
+        "x": -180,
+        "y": 67,
+        "z": -131.130005,
+        "heading": 463,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 4737,
+        "spawngroupId": 2144,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Spinereef Seahorse",
+        "rawName": "a_spinereef_seahorse",
+        "level": 44,
+        "race": "Seahorse",
+        "rawRace": "Seahorse",
+        "className": "Ranger",
+        "type": "Spawn Slot",
+        "x": -32.630001,
+        "y": -173.25,
+        "z": 17.5,
+        "heading": 231.75,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 4734,
+        "spawngroupId": 2147,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Spinereef Seahorse",
+        "rawName": "a_spinereef_seahorse",
+        "level": 44,
+        "race": "Seahorse",
+        "rawRace": "Seahorse",
+        "className": "Ranger",
+        "type": "Spawn Slot",
+        "x": -456,
+        "y": 179,
+        "z": -68,
+        "heading": 78,
+        "chance": 23,
+        "respawnTime": 640,
+        "spawn2Id": 4785,
+        "spawngroupId": 6488,
+        "candidateCount": 5
+      },
+      {
+        "displayName": "A Spinereef Seahorse",
+        "rawName": "a_spinereef_seahorse",
+        "level": 44,
+        "race": "Seahorse",
+        "rawRace": "Seahorse",
+        "className": "Ranger",
+        "type": "Spawn Slot",
+        "x": -405,
+        "y": 150,
+        "z": -74,
+        "heading": 199,
+        "chance": 40,
+        "respawnTime": 640,
+        "spawn2Id": 4791,
+        "spawngroupId": 6493,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Gloomstalker Mermaid",
+        "rawName": "a_gloomstalker_mermaid",
+        "level": 45,
+        "race": "Mermaid",
+        "rawRace": "Mermaid",
+        "className": "Ranger",
+        "type": "Spawn Slot",
+        "x": -33,
+        "y": 79,
+        "z": -50,
+        "heading": 281,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 4778,
+        "spawngroupId": 6481,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Gloomwater Mermaid",
+        "rawName": "a_gloomwater_mermaid",
+        "level": 45,
+        "race": "Mermaid",
+        "rawRace": "Mermaid",
+        "className": "Druid",
+        "type": "Spawn Slot",
+        "x": -247.75,
+        "y": 8,
+        "z": -66.129997,
+        "heading": 0,
+        "chance": 20,
+        "respawnTime": 640,
+        "spawn2Id": 4706,
+        "spawngroupId": 2164,
+        "candidateCount": 6
+      },
+      {
+        "displayName": "A Spinereef Seahorse",
+        "rawName": "a_spinereef_seahorse",
+        "level": 45,
+        "race": "Seahorse",
+        "rawRace": "Seahorse",
+        "className": "Ranger",
+        "type": "Spawn Slot",
+        "x": -403,
+        "y": 99,
+        "z": -71,
+        "heading": 507,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 4792,
+        "spawngroupId": 6494,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Gloomwater Mermaid",
+        "rawName": "a_gloomwater_mermaid",
+        "level": 46,
+        "race": "Mermaid",
+        "rawRace": "Mermaid",
+        "className": "Druid",
+        "type": "Spawn Slot",
+        "x": -220,
+        "y": -74,
+        "z": -133,
+        "heading": 4,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 4744,
+        "spawngroupId": 2139,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Gloomwater Mermaid",
+        "rawName": "a_gloomwater_mermaid",
+        "level": 46,
+        "race": "Mermaid",
+        "rawRace": "Mermaid",
+        "className": "Druid",
+        "type": "Spawn Slot",
+        "x": -192,
+        "y": -361,
+        "z": -67,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 4748,
+        "spawngroupId": 2184,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Spinereef Seahorse",
+        "rawName": "a_spinereef_seahorse",
+        "level": 46,
+        "race": "Seahorse",
+        "rawRace": "Seahorse",
+        "className": "Ranger",
+        "type": "Spawn Slot",
+        "x": -315.5,
+        "y": 255.5,
+        "z": -48.130001,
+        "heading": 286.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 4688,
+        "spawngroupId": 2179,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Coralyn Kelpmaiden",
+        "rawName": "Coralyn_Kelpmaiden",
+        "level": 46,
+        "race": "Mermaid",
+        "rawRace": "Mermaid",
+        "className": "Druid",
+        "type": "Spawn Slot",
+        "x": -329,
+        "y": 127,
+        "z": -77,
+        "heading": 475,
+        "chance": 20,
+        "respawnTime": 640,
+        "spawn2Id": 4695,
+        "spawngroupId": 2173,
+        "candidateCount": 5
+      },
+      {
+        "displayName": "A Seahorse Matriarch",
+        "rawName": "a_seahorse_matriarch",
+        "level": 47,
+        "race": "Seahorse",
+        "rawRace": "Seahorse",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": -494,
+        "y": 55,
+        "z": -83,
+        "heading": 91,
+        "chance": 17,
+        "respawnTime": 640,
+        "spawn2Id": 4790,
+        "spawngroupId": 6492,
+        "candidateCount": 6
+      },
+      {
+        "displayName": "A Spinereef Seahorse",
+        "rawName": "a_spinereef_seahorse",
+        "level": 47,
+        "race": "Seahorse",
+        "rawRace": "Seahorse",
+        "className": "Ranger",
+        "type": "Spawn Slot",
+        "x": -297.75,
+        "y": 233.380005,
+        "z": -48.130001,
+        "heading": 379,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 4691,
+        "spawngroupId": 2177,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Undertow",
+        "rawName": "Undertow",
+        "level": 49,
+        "race": "Seahorse",
+        "rawRace": "Seahorse",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -288,
+        "y": 259,
+        "z": 62,
+        "heading": 191,
+        "chance": 100,
+        "respawnTime": 25200,
+        "spawn2Id": 4794,
+        "spawngroupId": 6496,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Swirlspine Seahorse",
+        "rawName": "a_swirlspine_seahorse",
+        "level": 50,
+        "race": "Seahorse",
+        "rawRace": "Seahorse",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": 92,
+        "y": -28,
+        "z": -169,
+        "heading": 128.25,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 4786,
+        "spawngroupId": 6489,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Swirlspine Seahorse",
+        "rawName": "a_swirlspine_seahorse",
+        "level": 50,
+        "race": "Seahorse",
+        "rawRace": "Seahorse",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": 140,
+        "y": 24,
+        "z": -169,
+        "heading": 257,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 4787,
+        "spawngroupId": 6489,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Auraline",
+        "rawName": "#Auraline",
+        "level": 50,
+        "race": "Mermaid",
+        "rawRace": "Mermaid",
+        "className": "Enchanter",
+        "type": "Spawn Slot",
+        "x": -194,
+        "y": -14,
+        "z": -65,
+        "heading": 3.75,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 4704,
+        "spawngroupId": 2166,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Auraline",
+        "rawName": "#Auraline",
+        "level": 50,
+        "race": "Mermaid",
+        "rawRace": "Mermaid",
+        "className": "Enchanter",
+        "type": "Spawn Slot",
+        "x": -245,
+        "y": -76,
+        "z": -134,
+        "heading": 4,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 4743,
+        "spawngroupId": 2140,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "Auraline",
+        "rawName": "#Auraline",
+        "level": 50,
+        "race": "Mermaid",
+        "rawRace": "Mermaid",
+        "className": "Enchanter",
+        "type": "Spawn Slot",
+        "x": -285,
+        "y": -19,
+        "z": -119,
+        "heading": 60,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 4746,
+        "spawngroupId": 2137,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Swirlspine Seahorse",
+        "rawName": "a_swirlspine_seahorse",
+        "level": 51,
+        "race": "Seahorse",
+        "rawRace": "Seahorse",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": 193,
+        "y": -28,
+        "z": -169,
+        "heading": 384.75,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 4721,
+        "spawngroupId": 2156,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Swirlspine Seahorse",
+        "rawName": "a_swirlspine_seahorse",
+        "level": 51,
+        "race": "Seahorse",
+        "rawRace": "Seahorse",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": 140,
+        "y": -84,
+        "z": -170,
+        "heading": 6,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 4722,
+        "spawngroupId": 2156,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Estrella Of Gloomwater",
+        "rawName": "Estrella_of_Gloomwater",
+        "level": 51,
+        "race": "Mermaid",
+        "rawRace": "Mermaid",
+        "className": "Druid",
+        "type": "Spawn Slot",
+        "x": -308,
+        "y": 5,
+        "z": -119,
+        "heading": 129,
+        "chance": 100,
+        "respawnTime": 259200,
+        "spawn2Id": 4702,
+        "spawngroupId": 2168,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Nyrein The Beguiled",
+        "rawName": "#Nyrein_the_Beguiled",
+        "level": 52,
+        "race": "Mermaid",
+        "rawRace": "Mermaid",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -334,
+        "y": -6,
+        "z": -108,
+        "heading": 131,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 4725,
+        "spawngroupId": 2153,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Priestess Auraia",
+        "rawName": "Priestess_Auraia",
+        "level": 52,
+        "race": "Mermaid",
+        "rawRace": "Mermaid",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": -290,
+        "y": -63,
+        "z": -122,
+        "heading": 140,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 4729,
+        "spawngroupId": 2151,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Phinigel Autropos",
+        "rawName": "Phinigel_Autropos",
+        "level": 53,
+        "race": "Kedge",
+        "rawRace": "Kedge",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": 111.5,
+        "y": 37,
+        "z": -275.799988,
+        "heading": 179.5,
+        "chance": 100,
+        "respawnTime": 43200,
+        "spawn2Id": 4685,
+        "spawngroupId": 2182,
+        "candidateCount": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,7090 @@
+{
+  "summary": {
+    "zoneSlug": "west-commonlands",
+    "zoneName": "West Commonlands",
+    "requestedZoneShortName": "commons",
+    "zoneShortName": "commons",
+    "sourceFile": "local-eqemu-database",
+    "matched": true,
+    "expansion": "Classic",
+    "eqemuExpansionId": 0,
+    "expansionSource": "eqemu-zone-table",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobCount": 148,
+    "unknownLevelCount": 1,
+    "minLevel": 1,
+    "maxLevel": 99,
+    "averageLevel": 16.5,
+    "medianLevel": 10,
+    "levelCounts": {
+      "1": 6,
+      "3": 3,
+      "4": 3,
+      "5": 11,
+      "6": 10,
+      "7": 12,
+      "8": 12,
+      "9": 10,
+      "10": 17,
+      "11": 10,
+      "12": 4,
+      "13": 3,
+      "14": 8,
+      "15": 2,
+      "18": 1,
+      "25": 5,
+      "29": 2,
+      "30": 4,
+      "31": 3,
+      "32": 1,
+      "34": 1,
+      "36": 1,
+      "37": 1,
+      "45": 10,
+      "60": 1,
+      "65": 3,
+      "72": 1,
+      "80": 1,
+      "99": 1
+    },
+    "levelBuckets": {
+      "1-10": 84,
+      "11-20": 28,
+      "21-30": 11,
+      "31-40": 7,
+      "41-50": 10,
+      "51-60": 1,
+      "61+": 6
+    },
+    "levelProfileLabel": "Wide level spread",
+    "mobGroupNameCounts": {
+      "A Willowisp": 16,
+      "A Giant Spider": 14,
+      "A Darkweed Snake": 9,
+      "A Dervish Cutthroat": 8,
+      "A Rattlesnake": 8,
+      "A Skeleton": 8,
+      "A Large Piranha": 6,
+      "A Puma": 6,
+      "Orc Centurion": 6,
+      "Orc Pawn": 6,
+      "A Black Bear": 4,
+      "A Shadowed Man": 4,
+      "An Asp": 4,
+      "A Ghoul": 2,
+      "A Hill Giant": 2,
+      "A Large Rattlesnake": 2,
+      "An Orc Legionnaire": 2,
+      "Orc Legionnaire": 2,
+      "A Dervish Thug": 1,
+      "A Legendary Hill Giant": 1,
+      "A Plains Cat": 1,
+      "A Werewolf": 1,
+      "A Young Kodiak": 1,
+      "An Orc Centurion": 1,
+      "Bealya Tanilsuia": 1,
+      "Brizzenoth Scyth": 1,
+      "Ceel Moonwhisper": 1,
+      "Guard Colin": 1,
+      "Guard Valon": 1,
+      "Innkeep Olissa": 1,
+      "Innkeep Redthorn": 1,
+      "Innkeep Roster": 1,
+      "Innkeep Seke": 1,
+      "Jahsohn Aksot": 1,
+      "Kizdean Gix": 1,
+      "Maula Fishcatcher": 1,
+      "Modren Fishcatcher": 1,
+      "Mojax Hikspin": 1,
+      "Nightfall Giant": 1,
+      "Noresa Sparkle": 1,
+      "Opal Woodchopper": 1,
+      "Parus The Strong": 1,
+      "Peron Threadspinner": 1,
+      "Ranon Strongarm": 1,
+      "Ranvigoz Tonsmith": 1,
+      "Ruby Boxcrafter": 1,
+      "Sasha The Seer": 1,
+      "Shadow Treebright": 1,
+      "Simon Aldicott": 1,
+      "Skipynn Stoneheart": 1,
+      "Slea Pinewhisper": 1,
+      "Sorsha Hobbitfriend": 1,
+      "Spider": 1,
+      "Timtok Tonsmith": 1,
+      "Trigger": 1,
+      "Unknown": 1,
+      "Wallin Slyfoot": 1
+    },
+    "classCounts": {
+      "Warrior": 122,
+      "Banker": 13,
+      "Rogue": 4,
+      "Druid": 2,
+      "Cleric": 1,
+      "Enchanter": 1,
+      "Magician": 1,
+      "Paladin": 1,
+      "Shadowknight": 1,
+      "Unknown": 1,
+      "Wizard": 1
+    },
+    "raceCounts": {
+      "Snake": 23,
+      "Human": 21,
+      "Orc": 17,
+      "Will-O-Wisp": 16,
+      "Spider": 14,
+      "Skeleton": 8,
+      "Puma": 7,
+      "Piranha": 6,
+      "Barbarian": 5,
+      "Bear": 5,
+      "Giant": 4,
+      "Invisible Man": 4,
+      "Dwarf": 3,
+      "Dark Elf": 2,
+      "Ghoul": 2,
+      "Guard": 2,
+      "Half Elf": 2,
+      "Teleport Man": 2,
+      "Erudite": 1,
+      "Halfling": 1,
+      "Ogre": 1,
+      "Unknown": 1,
+      "Werewolf": 1
+    },
+    "normalizedRaceCounts": {
+      "Snake": 23,
+      "Human": 21,
+      "Orc": 17,
+      "Will-o-Wisp": 16,
+      "Spider": 14,
+      "Skeleton": 8,
+      "Puma": 7,
+      "Piranha": 6,
+      "Barbarian": 5,
+      "Bear": 5,
+      "Giant": 4,
+      "Invisible Man": 4,
+      "Dwarf": 3,
+      "Dark Elf": 2,
+      "Ghoul": 2,
+      "Guard": 2,
+      "Half Elf": 2,
+      "Teleport Man": 2,
+      "Erudite": 1,
+      "Halfling": 1,
+      "Ogre": 1,
+      "Unknown": 1,
+      "Wolf": 1
+    },
+    "normalizedRaceLevelCounts": {
+      "Barbarian": {
+        "5": 1,
+        "12": 2,
+        "14": 1,
+        "45": 1
+      },
+      "Bear": {
+        "3": 2,
+        "4": 1,
+        "5": 1,
+        "10": 1
+      },
+      "Dark Elf": {
+        "18": 1,
+        "65": 1
+      },
+      "Dwarf": {
+        "29": 1,
+        "31": 1,
+        "65": 1
+      },
+      "Erudite": {
+        "10": 1
+      },
+      "Ghoul": {
+        "13": 1,
+        "14": 1
+      },
+      "Giant": {
+        "34": 1,
+        "36": 1,
+        "37": 1,
+        "72": 1
+      },
+      "Guard": {
+        "31": 2
+      },
+      "Half Elf": {
+        "30": 2
+      },
+      "Halfling": {
+        "25": 1
+      },
+      "Human": {
+        "3": 1,
+        "6": 1,
+        "11": 1,
+        "12": 1,
+        "13": 1,
+        "14": 2,
+        "29": 1,
+        "30": 2,
+        "45": 9,
+        "65": 1,
+        "80": 1
+      },
+      "Invisible Man": {
+        "25": 4
+      },
+      "Ogre": {
+        "15": 1
+      },
+      "Orc": {
+        "1": 6,
+        "7": 1,
+        "8": 1,
+        "10": 5,
+        "11": 1,
+        "12": 1,
+        "14": 1,
+        "15": 1
+      },
+      "Piranha": {
+        "10": 1,
+        "11": 1,
+        "13": 1,
+        "14": 3
+      },
+      "Puma": {
+        "5": 3,
+        "6": 4
+      },
+      "Skeleton": {
+        "4": 2,
+        "5": 2,
+        "6": 4
+      },
+      "Snake": {
+        "5": 4,
+        "6": 1,
+        "7": 6,
+        "8": 4,
+        "9": 1,
+        "10": 6,
+        "11": 1
+      },
+      "Spider": {
+        "7": 5,
+        "8": 7,
+        "9": 2
+      },
+      "Teleport Man": {
+        "60": 1,
+        "99": 1
+      },
+      "Will-o-Wisp": {
+        "9": 7,
+        "10": 3,
+        "11": 6
+      },
+      "Wolf": {
+        "32": 1
+      }
+    },
+    "raceAliases": {
+      "Barbarian": [
+        "Barbarian"
+      ],
+      "Bear": [
+        "Bear"
+      ],
+      "Dark Elf": [
+        "Dark Elf"
+      ],
+      "Dwarf": [
+        "Dwarf"
+      ],
+      "Erudite": [
+        "Erudite"
+      ],
+      "Ghoul": [
+        "Ghoul"
+      ],
+      "Giant": [
+        "Giant"
+      ],
+      "Guard": [
+        "Guard"
+      ],
+      "Half Elf": [
+        "Half Elf"
+      ],
+      "Halfling": [
+        "Halfling"
+      ],
+      "Human": [
+        "Human"
+      ],
+      "Invisible Man": [
+        "Invisible Man"
+      ],
+      "Ogre": [
+        "Ogre"
+      ],
+      "Orc": [
+        "Orc"
+      ],
+      "Piranha": [
+        "Piranha"
+      ],
+      "Puma": [
+        "Puma"
+      ],
+      "Skeleton": [
+        "Skeleton"
+      ],
+      "Snake": [
+        "Snake"
+      ],
+      "Spider": [
+        "Spider"
+      ],
+      "Teleport Man": [
+        "Teleport Man"
+      ],
+      "Unknown": [
+        "Unknown"
+      ],
+      "Will-o-Wisp": [
+        "Will-O-Wisp"
+      ],
+      "Wolf": [
+        "Werewolf"
+      ]
+    },
+    "typeCounts": {
+      "Spawn Slot": 148
+    },
+    "notes": [
+      "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+      "Read-only test export; not wired into production /zones data."
+    ],
+    "spawnMapPrototype": {
+      "sourceKind": "Local EQEmu/PEQ database export",
+      "coordinateNote": "Original EQEmu spawn2 x/y/z coordinates are preserved for map prototyping.",
+      "points": [
+        {
+          "spawn2Id": 5664,
+          "spawngroupId": 540,
+          "name": "a_giant_spider",
+          "displayName": "A Giant Spider",
+          "level": 8,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": -1411.880005,
+          "y": -283.880005,
+          "z": -43,
+          "heading": 216.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5665,
+          "spawngroupId": 540,
+          "name": "a_giant_spider",
+          "displayName": "A Giant Spider",
+          "level": 8,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": 289.880005,
+          "y": -223.880005,
+          "z": -49.400002,
+          "heading": 328,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5666,
+          "spawngroupId": 540,
+          "name": "a_giant_spider",
+          "displayName": "A Giant Spider",
+          "level": 8,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": -571,
+          "y": -888.880005,
+          "z": -14.38,
+          "heading": 137,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5667,
+          "spawngroupId": 540,
+          "name": "a_giant_spider",
+          "displayName": "A Giant Spider",
+          "level": 8,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": 105,
+          "y": -612,
+          "z": -49.5,
+          "heading": 279,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5668,
+          "spawngroupId": 540,
+          "name": "a_giant_spider",
+          "displayName": "A Giant Spider",
+          "level": 8,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": 3451.879883,
+          "y": 46,
+          "z": -49.400002,
+          "heading": 483.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5669,
+          "spawngroupId": 540,
+          "name": "a_giant_spider",
+          "displayName": "A Giant Spider",
+          "level": 8,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": -300.130005,
+          "y": 968.880005,
+          "z": -284.299988,
+          "heading": 253.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5670,
+          "spawngroupId": 540,
+          "name": "a_giant_spider",
+          "displayName": "A Giant Spider",
+          "level": 8,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": 39,
+          "y": 210,
+          "z": -46.130001,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5671,
+          "spawngroupId": 539,
+          "name": "orc_pawn",
+          "displayName": "Orc Pawn",
+          "level": 1,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 2825.879883,
+          "y": 703,
+          "z": -51.25,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5672,
+          "spawngroupId": 539,
+          "name": "orc_pawn",
+          "displayName": "Orc Pawn",
+          "level": 1,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": -957.880005,
+          "y": 80,
+          "z": -51.400002,
+          "heading": 178.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5673,
+          "spawngroupId": 539,
+          "name": "orc_pawn",
+          "displayName": "Orc Pawn",
+          "level": 1,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 3681.879883,
+          "y": 890.880005,
+          "z": -51.299999,
+          "heading": 58.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5674,
+          "spawngroupId": 539,
+          "name": "orc_pawn",
+          "displayName": "Orc Pawn",
+          "level": 1,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 3233,
+          "y": 469,
+          "z": -51.25,
+          "heading": 282.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5675,
+          "spawngroupId": 539,
+          "name": "orc_pawn",
+          "displayName": "Orc Pawn",
+          "level": 1,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 3633,
+          "y": 465.880005,
+          "z": -51.25,
+          "heading": 7.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5676,
+          "spawngroupId": 539,
+          "name": "orc_pawn",
+          "displayName": "Orc Pawn",
+          "level": 1,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 1619,
+          "y": 584,
+          "z": -46,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5677,
+          "spawngroupId": 538,
+          "name": "Kizdean_Gix",
+          "displayName": "Kizdean Gix",
+          "level": 18,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Shadowknight",
+          "x": 262,
+          "y": -162,
+          "z": -51.880001,
+          "heading": 276,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5678,
+          "spawngroupId": 537,
+          "name": "a_black_bear",
+          "displayName": "A Black Bear",
+          "level": 5,
+          "race": "Bear",
+          "rawRace": "Bear",
+          "className": "Warrior",
+          "x": -501.880005,
+          "y": 763,
+          "z": -60.400002,
+          "heading": 247,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5679,
+          "spawngroupId": 536,
+          "name": "a_skeleton",
+          "displayName": "A Skeleton",
+          "level": 6,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 1221.880005,
+          "y": 1118.880005,
+          "z": -30,
+          "heading": 101.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5680,
+          "spawngroupId": 536,
+          "name": "a_skeleton",
+          "displayName": "A Skeleton",
+          "level": 6,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 29,
+          "y": 344,
+          "z": -51.400002,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5681,
+          "spawngroupId": 535,
+          "name": "a_skeleton",
+          "displayName": "A Skeleton",
+          "level": 5,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 2037.880005,
+          "y": -189.880005,
+          "z": -33.900002,
+          "heading": 319.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5682,
+          "spawngroupId": 534,
+          "name": "a_black_bear",
+          "displayName": "A Black Bear",
+          "level": 3,
+          "race": "Bear",
+          "rawRace": "Bear",
+          "className": "Warrior",
+          "x": 1085.880005,
+          "y": 286,
+          "z": -36.400002,
+          "heading": 268.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5683,
+          "spawngroupId": 534,
+          "name": "a_black_bear",
+          "displayName": "A Black Bear",
+          "level": 3,
+          "race": "Bear",
+          "rawRace": "Bear",
+          "className": "Warrior",
+          "x": 1045.880005,
+          "y": 390,
+          "z": -52.5,
+          "heading": 293.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5684,
+          "spawngroupId": 533,
+          "name": "a_giant_spider",
+          "displayName": "A Giant Spider",
+          "level": 7,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": -928.880005,
+          "y": -410.880005,
+          "z": -49.5,
+          "heading": 346.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5685,
+          "spawngroupId": 533,
+          "name": "a_giant_spider",
+          "displayName": "A Giant Spider",
+          "level": 7,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": -462.880005,
+          "y": -611,
+          "z": -38.299999,
+          "heading": 282.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5686,
+          "spawngroupId": 533,
+          "name": "a_giant_spider",
+          "displayName": "A Giant Spider",
+          "level": 7,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": -831.880005,
+          "y": -613,
+          "z": -66.599998,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5687,
+          "spawngroupId": 533,
+          "name": "a_giant_spider",
+          "displayName": "A Giant Spider",
+          "level": 7,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": 3049.879883,
+          "y": -727.880005,
+          "z": -35.5,
+          "heading": 136.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5688,
+          "spawngroupId": 533,
+          "name": "a_giant_spider",
+          "displayName": "A Giant Spider",
+          "level": 7,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": 3340.879883,
+          "y": -807,
+          "z": -39.599998,
+          "heading": 244.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5689,
+          "spawngroupId": 532,
+          "name": "Simon_Aldicott",
+          "displayName": "Simon Aldicott",
+          "level": 65,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Cleric",
+          "x": 2906,
+          "y": 268,
+          "z": -51.25,
+          "heading": 65,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5690,
+          "spawngroupId": 531,
+          "name": "an_orc_legionnaire",
+          "displayName": "An Orc Legionnaire",
+          "level": 11,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": -22,
+          "y": 637.880005,
+          "z": -50.130001,
+          "heading": 7,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5691,
+          "spawngroupId": 530,
+          "name": "a_ghoul",
+          "displayName": "A Ghoul",
+          "level": 13,
+          "race": "Ghoul",
+          "rawRace": "Ghoul",
+          "className": "Warrior",
+          "x": -83.879997,
+          "y": -965,
+          "z": -40.880001,
+          "heading": 391.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5692,
+          "spawngroupId": 529,
+          "name": "a_Dervish_Cutthroat",
+          "displayName": "A Dervish Cutthroat",
+          "level": 11,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": 922,
+          "y": 1129,
+          "z": -44.380001,
+          "heading": 275,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 5693,
+          "spawngroupId": 528,
+          "name": "a_plains_cat",
+          "displayName": "A Plains Cat",
+          "level": 6,
+          "race": "Puma",
+          "rawRace": "Puma",
+          "className": "Warrior",
+          "x": 1176.880005,
+          "y": 578.880005,
+          "z": -49.400002,
+          "heading": 243,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5694,
+          "spawngroupId": 527,
+          "name": "a_hill_giant",
+          "displayName": "A Hill Giant",
+          "level": 34,
+          "race": "Giant",
+          "rawRace": "Giant",
+          "className": "Warrior",
+          "x": 1161,
+          "y": -720,
+          "z": -40,
+          "heading": 381.25,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 5695,
+          "spawngroupId": 526,
+          "name": "a_willowisp",
+          "displayName": "A Willowisp",
+          "level": 10,
+          "race": "Will-o-Wisp",
+          "rawRace": "Will-O-Wisp",
+          "className": "Warrior",
+          "x": 742.880005,
+          "y": 302.880005,
+          "z": -53.130001,
+          "heading": 119.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5696,
+          "spawngroupId": 526,
+          "name": "a_willowisp",
+          "displayName": "A Willowisp",
+          "level": 10,
+          "race": "Will-o-Wisp",
+          "rawRace": "Will-O-Wisp",
+          "className": "Warrior",
+          "x": 1997.880005,
+          "y": -181.880005,
+          "z": -38.599998,
+          "heading": 376,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5697,
+          "spawngroupId": 526,
+          "name": "a_willowisp",
+          "displayName": "A Willowisp",
+          "level": 10,
+          "race": "Will-o-Wisp",
+          "rawRace": "Will-O-Wisp",
+          "className": "Warrior",
+          "x": 568,
+          "y": 846.880005,
+          "z": -53.130001,
+          "heading": 491.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5698,
+          "spawngroupId": 525,
+          "name": "a_Dervish_Cutthroat",
+          "displayName": "A Dervish Cutthroat",
+          "level": 13,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": 970,
+          "y": 1040.880005,
+          "z": -37.380001,
+          "heading": 498.5,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 5699,
+          "spawngroupId": 524,
+          "name": "a_Dervish_Cutthroat",
+          "displayName": "A Dervish Cutthroat",
+          "level": 12,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": 739,
+          "y": 830.880005,
+          "z": -51.299999,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5700,
+          "spawngroupId": 523,
+          "name": "a_willowisp",
+          "displayName": "A Willowisp",
+          "level": 11,
+          "race": "Will-o-Wisp",
+          "rawRace": "Will-O-Wisp",
+          "className": "Warrior",
+          "x": 64,
+          "y": -127.879997,
+          "z": -53.299999,
+          "heading": 182,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5701,
+          "spawngroupId": 523,
+          "name": "a_willowisp",
+          "displayName": "A Willowisp",
+          "level": 11,
+          "race": "Will-o-Wisp",
+          "rawRace": "Will-O-Wisp",
+          "className": "Warrior",
+          "x": 442,
+          "y": 533.880005,
+          "z": -53.099998,
+          "heading": 415,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5702,
+          "spawngroupId": 523,
+          "name": "a_willowisp",
+          "displayName": "A Willowisp",
+          "level": 11,
+          "race": "Will-o-Wisp",
+          "rawRace": "Will-O-Wisp",
+          "className": "Warrior",
+          "x": -591,
+          "y": 826.880005,
+          "z": -54.799999,
+          "heading": 11,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5703,
+          "spawngroupId": 523,
+          "name": "a_willowisp",
+          "displayName": "A Willowisp",
+          "level": 11,
+          "race": "Will-o-Wisp",
+          "rawRace": "Will-O-Wisp",
+          "className": "Warrior",
+          "x": -1538.880005,
+          "y": -449,
+          "z": -79.800003,
+          "heading": 253.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5704,
+          "spawngroupId": 523,
+          "name": "a_willowisp",
+          "displayName": "A Willowisp",
+          "level": 11,
+          "race": "Will-o-Wisp",
+          "rawRace": "Will-O-Wisp",
+          "className": "Warrior",
+          "x": 1504,
+          "y": 613,
+          "z": -53.099998,
+          "heading": 110,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5705,
+          "spawngroupId": 523,
+          "name": "a_willowisp",
+          "displayName": "A Willowisp",
+          "level": 11,
+          "race": "Will-o-Wisp",
+          "rawRace": "Will-O-Wisp",
+          "className": "Warrior",
+          "x": 1029,
+          "y": -89.879997,
+          "z": -48.900002,
+          "heading": 256.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5706,
+          "spawngroupId": 522,
+          "name": "a_Dervish_Cutthroat",
+          "displayName": "A Dervish Cutthroat",
+          "level": 14,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": 929.880005,
+          "y": 1014.880005,
+          "z": -44.75,
+          "heading": 150,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 5707,
+          "spawngroupId": 521,
+          "name": "a_Dervish_Cutthroat",
+          "displayName": "A Dervish Cutthroat",
+          "level": 14,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Warrior",
+          "x": 959,
+          "y": 1110,
+          "z": -39.5,
+          "heading": 260,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 5708,
+          "spawngroupId": 520,
+          "name": "a_Dervish_Cutthroat",
+          "displayName": "A Dervish Cutthroat",
+          "level": 12,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Warrior",
+          "x": 991,
+          "y": 993,
+          "z": -37.25,
+          "heading": 229,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 5709,
+          "spawngroupId": 519,
+          "name": "orc_centurion",
+          "displayName": "Orc Centurion",
+          "level": 10,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 2473.879883,
+          "y": 668,
+          "z": -18.1,
+          "heading": 400,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5710,
+          "spawngroupId": 518,
+          "name": "a_willowisp",
+          "displayName": "A Willowisp",
+          "level": 9,
+          "race": "Will-o-Wisp",
+          "rawRace": "Will-O-Wisp",
+          "className": "Warrior",
+          "x": -7.88,
+          "y": -490.630005,
+          "z": -20,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5711,
+          "spawngroupId": 518,
+          "name": "a_willowisp",
+          "displayName": "A Willowisp",
+          "level": 9,
+          "race": "Will-o-Wisp",
+          "rawRace": "Will-O-Wisp",
+          "className": "Warrior",
+          "x": -278.130005,
+          "y": 309.25,
+          "z": -7.8,
+          "heading": 496,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5712,
+          "spawngroupId": 518,
+          "name": "a_willowisp",
+          "displayName": "A Willowisp",
+          "level": 9,
+          "race": "Will-o-Wisp",
+          "rawRace": "Will-O-Wisp",
+          "className": "Warrior",
+          "x": -1559,
+          "y": 343,
+          "z": -53.25,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5713,
+          "spawngroupId": 518,
+          "name": "a_willowisp",
+          "displayName": "A Willowisp",
+          "level": 9,
+          "race": "Will-o-Wisp",
+          "rawRace": "Will-O-Wisp",
+          "className": "Warrior",
+          "x": -891.880005,
+          "y": 523.880005,
+          "z": -14.8,
+          "heading": 309,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5714,
+          "spawngroupId": 518,
+          "name": "a_willowisp",
+          "displayName": "A Willowisp",
+          "level": 9,
+          "race": "Will-o-Wisp",
+          "rawRace": "Will-O-Wisp",
+          "className": "Warrior",
+          "x": 2069.879883,
+          "y": 323.880005,
+          "z": -53.099998,
+          "heading": 210,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5715,
+          "spawngroupId": 518,
+          "name": "a_willowisp",
+          "displayName": "A Willowisp",
+          "level": 9,
+          "race": "Will-o-Wisp",
+          "rawRace": "Will-O-Wisp",
+          "className": "Warrior",
+          "x": 1435.130005,
+          "y": 42.880001,
+          "z": -48.900002,
+          "heading": 266,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5716,
+          "spawngroupId": 518,
+          "name": "a_willowisp",
+          "displayName": "A Willowisp",
+          "level": 9,
+          "race": "Will-o-Wisp",
+          "rawRace": "Will-O-Wisp",
+          "className": "Warrior",
+          "x": 1341.880005,
+          "y": 99.879997,
+          "z": -26.6,
+          "heading": 152,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5717,
+          "spawngroupId": 517,
+          "name": "a_puma",
+          "displayName": "A Puma",
+          "level": 5,
+          "race": "Puma",
+          "rawRace": "Puma",
+          "className": "Warrior",
+          "x": 2213.879883,
+          "y": -851.880005,
+          "z": -31.9,
+          "heading": 266,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5718,
+          "spawngroupId": 517,
+          "name": "a_puma",
+          "displayName": "A Puma",
+          "level": 5,
+          "race": "Puma",
+          "rawRace": "Puma",
+          "className": "Warrior",
+          "x": -1652.880005,
+          "y": -661,
+          "z": -43,
+          "heading": 279,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5719,
+          "spawngroupId": 517,
+          "name": "a_puma",
+          "displayName": "A Puma",
+          "level": 5,
+          "race": "Puma",
+          "rawRace": "Puma",
+          "className": "Warrior",
+          "x": 1561.880005,
+          "y": -712.880005,
+          "z": -49.400002,
+          "heading": 267,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5720,
+          "spawngroupId": 516,
+          "name": "Shadow_Treebright",
+          "displayName": "Shadow Treebright",
+          "level": 30,
+          "race": "Half Elf",
+          "rawRace": "Half Elf",
+          "className": "Druid",
+          "x": 1406,
+          "y": 378,
+          "z": -51.25,
+          "heading": 479,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 5721,
+          "spawngroupId": 515,
+          "name": "Ceel_Moonwhisper",
+          "displayName": "Ceel Moonwhisper",
+          "level": 30,
+          "race": "Half Elf",
+          "rawRace": "Half Elf",
+          "className": "Druid",
+          "x": 1430,
+          "y": 391,
+          "z": -51.5,
+          "heading": 437,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 5722,
+          "spawngroupId": 514,
+          "name": "a_puma",
+          "displayName": "A Puma",
+          "level": 6,
+          "race": "Puma",
+          "rawRace": "Puma",
+          "className": "Warrior",
+          "x": 1520,
+          "y": -997,
+          "z": -25.4,
+          "heading": 250.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5723,
+          "spawngroupId": 514,
+          "name": "a_puma",
+          "displayName": "A Puma",
+          "level": 6,
+          "race": "Puma",
+          "rawRace": "Puma",
+          "className": "Warrior",
+          "x": 691,
+          "y": -968.880005,
+          "z": 10.6,
+          "heading": 226.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5724,
+          "spawngroupId": 514,
+          "name": "a_puma",
+          "displayName": "A Puma",
+          "level": 6,
+          "race": "Puma",
+          "rawRace": "Puma",
+          "className": "Warrior",
+          "x": 2611,
+          "y": -478,
+          "z": -49.900002,
+          "heading": 387.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5725,
+          "spawngroupId": 513,
+          "name": "Guard_Valon",
+          "displayName": "Guard Valon",
+          "level": 31,
+          "race": "Guard",
+          "rawRace": "Guard",
+          "className": "Warrior",
+          "x": 69,
+          "y": -13,
+          "z": -51.380001,
+          "heading": 81,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 5726,
+          "spawngroupId": 512,
+          "name": "Guard_Colin",
+          "displayName": "Guard Colin",
+          "level": 31,
+          "race": "Guard",
+          "rawRace": "Guard",
+          "className": "Warrior",
+          "x": 60,
+          "y": 37,
+          "z": -51.380001,
+          "heading": 172,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 5727,
+          "spawngroupId": 511,
+          "name": "a_large_rattlesnake",
+          "displayName": "A Large Rattlesnake",
+          "level": 5,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": 1053,
+          "y": -683,
+          "z": -52.130001,
+          "heading": 502.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5728,
+          "spawngroupId": 510,
+          "name": "a_rattlesnake",
+          "displayName": "A Rattlesnake",
+          "level": 7,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": 3299,
+          "y": 670.880005,
+          "z": -52.099998,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5729,
+          "spawngroupId": 510,
+          "name": "a_rattlesnake",
+          "displayName": "A Rattlesnake",
+          "level": 7,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": 3690.879883,
+          "y": -986.880005,
+          "z": -32.299999,
+          "heading": 270.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5730,
+          "spawngroupId": 510,
+          "name": "a_rattlesnake",
+          "displayName": "A Rattlesnake",
+          "level": 7,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": -890.880005,
+          "y": -474,
+          "z": -57.599998,
+          "heading": 294,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5731,
+          "spawngroupId": 510,
+          "name": "a_rattlesnake",
+          "displayName": "A Rattlesnake",
+          "level": 7,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": -1375.880005,
+          "y": 1041.880005,
+          "z": -42.799999,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5732,
+          "spawngroupId": 509,
+          "name": "a_skeleton",
+          "displayName": "A Skeleton",
+          "level": 6,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 491,
+          "y": 1066,
+          "z": -50.630001,
+          "heading": 378,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 5733,
+          "spawngroupId": 509,
+          "name": "a_skeleton",
+          "displayName": "A Skeleton",
+          "level": 6,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 480,
+          "y": 1055,
+          "z": -51,
+          "heading": 378,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 5734,
+          "spawngroupId": 508,
+          "name": "a_skeleton",
+          "displayName": "A Skeleton",
+          "level": 5,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 439,
+          "y": 1086,
+          "z": -48.5,
+          "heading": 230,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 5735,
+          "spawngroupId": 507,
+          "name": "a_skeleton",
+          "displayName": "A Skeleton",
+          "level": 4,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 1611.880005,
+          "y": -850.880005,
+          "z": -31.6,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5736,
+          "spawngroupId": 507,
+          "name": "a_skeleton",
+          "displayName": "A Skeleton",
+          "level": 4,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": -162,
+          "y": 212,
+          "z": -46.130001,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5737,
+          "spawngroupId": 506,
+          "name": "a_large_piranha",
+          "displayName": "A Large Piranha",
+          "level": 13,
+          "race": "Piranha",
+          "rawRace": "Piranha",
+          "className": "Warrior",
+          "x": 2372,
+          "y": 297.880005,
+          "z": -85.879997,
+          "heading": 0,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 5738,
+          "spawngroupId": 505,
+          "name": "an_asp",
+          "displayName": "An Asp",
+          "level": 10,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": 1664.880005,
+          "y": -634,
+          "z": -51.299999,
+          "heading": 255,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5739,
+          "spawngroupId": 505,
+          "name": "an_asp",
+          "displayName": "An Asp",
+          "level": 10,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": -851.880005,
+          "y": -479,
+          "z": -57.5,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5740,
+          "spawngroupId": 504,
+          "name": "orc_centurion",
+          "displayName": "Orc Centurion",
+          "level": 8,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 2544,
+          "y": 1148,
+          "z": -45,
+          "heading": 337,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 5741,
+          "spawngroupId": 503,
+          "name": "orc_centurion",
+          "displayName": "Orc Centurion",
+          "level": 10,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 2556,
+          "y": 1140,
+          "z": -43.5,
+          "heading": 329,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 5742,
+          "spawngroupId": 502,
+          "name": "orc_centurion",
+          "displayName": "Orc Centurion",
+          "level": 10,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 2463,
+          "y": 1107,
+          "z": -48.880001,
+          "heading": 262,
+          "chance": 20,
+          "respawnTime": 640,
+          "candidateCount": 5
+        },
+        {
+          "spawn2Id": 5743,
+          "spawngroupId": 501,
+          "name": "orc_legionnaire",
+          "displayName": "Orc Legionnaire",
+          "level": 14,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 2343,
+          "y": 1127,
+          "z": -23.879999,
+          "heading": 194,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 5744,
+          "spawngroupId": 500,
+          "name": "orc_centurion",
+          "displayName": "Orc Centurion",
+          "level": 10,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 2445,
+          "y": 1105,
+          "z": -49.380001,
+          "heading": 251,
+          "chance": 20,
+          "respawnTime": 640,
+          "candidateCount": 5
+        },
+        {
+          "spawn2Id": 5745,
+          "spawngroupId": 499,
+          "name": "orc_centurion",
+          "displayName": "Orc Centurion",
+          "level": 10,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 2423,
+          "y": 1043,
+          "z": -49,
+          "heading": 249,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 5746,
+          "spawngroupId": 498,
+          "name": "Timtok_Tonsmith",
+          "displayName": "Timtok Tonsmith",
+          "level": 29,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior",
+          "x": 493,
+          "y": -166,
+          "z": -52.5,
+          "heading": 166,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5747,
+          "spawngroupId": 497,
+          "name": "Ranvigoz_Tonsmith",
+          "displayName": "Ranvigoz Tonsmith",
+          "level": 31,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior",
+          "x": 498,
+          "y": -173.880005,
+          "z": -52.5,
+          "heading": 87,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5748,
+          "spawngroupId": 496,
+          "name": "an_asp",
+          "displayName": "An Asp",
+          "level": 11,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": -1636.880005,
+          "y": -685,
+          "z": -35.400002,
+          "heading": 273,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5749,
+          "spawngroupId": 495,
+          "name": "a_darkweed_snake",
+          "displayName": "A Darkweed Snake",
+          "level": 8,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": 1816.880005,
+          "y": 760.880005,
+          "z": -33.599998,
+          "heading": 240,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5750,
+          "spawngroupId": 495,
+          "name": "a_darkweed_snake",
+          "displayName": "A Darkweed Snake",
+          "level": 8,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": -489.880005,
+          "y": -351.880005,
+          "z": -24.299999,
+          "heading": 37.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5751,
+          "spawngroupId": 495,
+          "name": "a_darkweed_snake",
+          "displayName": "A Darkweed Snake",
+          "level": 8,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": -1221.880005,
+          "y": -261.880005,
+          "z": -27.879999,
+          "heading": 311,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5752,
+          "spawngroupId": 495,
+          "name": "a_darkweed_snake",
+          "displayName": "A Darkweed Snake",
+          "level": 8,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": 2109.379883,
+          "y": 879.630005,
+          "z": -286.100006,
+          "heading": 223,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5753,
+          "spawngroupId": 494,
+          "name": "a_giant_spider",
+          "displayName": "A Giant Spider",
+          "level": 9,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": -429.880005,
+          "y": -893,
+          "z": -11.4,
+          "heading": 260.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5754,
+          "spawngroupId": 494,
+          "name": "a_giant_spider",
+          "displayName": "A Giant Spider",
+          "level": 9,
+          "race": "Spider",
+          "rawRace": "Spider",
+          "className": "Warrior",
+          "x": 235,
+          "y": 1126,
+          "z": -8.63,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5755,
+          "spawngroupId": 493,
+          "name": "Jahsohn_Aksot",
+          "displayName": "Jahsohn Aksot",
+          "level": 29,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Magician",
+          "x": 3216,
+          "y": 1067.880005,
+          "z": -46.799999,
+          "heading": 0.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5756,
+          "spawngroupId": 492,
+          "name": "a_rattlesnake",
+          "displayName": "A Rattlesnake",
+          "level": 5,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": -457,
+          "y": -750,
+          "z": -48.799999,
+          "heading": 243.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5757,
+          "spawngroupId": 492,
+          "name": "a_rattlesnake",
+          "displayName": "A Rattlesnake",
+          "level": 5,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": -439.880005,
+          "y": 1048.880005,
+          "z": -39.799999,
+          "heading": 280,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5758,
+          "spawngroupId": 492,
+          "name": "a_rattlesnake",
+          "displayName": "A Rattlesnake",
+          "level": 5,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": -786.5,
+          "y": 429.25,
+          "z": -287.100006,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5759,
+          "spawngroupId": 491,
+          "name": "a_large_rattlesnake",
+          "displayName": "A Large Rattlesnake",
+          "level": 7,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": 2937.879883,
+          "y": -754.880005,
+          "z": -36.900002,
+          "heading": 262.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5760,
+          "spawngroupId": 490,
+          "name": "Modren_Fishcatcher",
+          "displayName": "Modren Fishcatcher",
+          "level": 5,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Warrior",
+          "x": 2446.75,
+          "y": 352,
+          "z": -56.75,
+          "heading": 284,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5761,
+          "spawngroupId": 489,
+          "name": "a_large_piranha",
+          "displayName": "A Large Piranha",
+          "level": 10,
+          "race": "Piranha",
+          "rawRace": "Piranha",
+          "className": "Warrior",
+          "x": 2983,
+          "y": -155,
+          "z": -131,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5762,
+          "spawngroupId": 488,
+          "name": "a_rattlesnake",
+          "displayName": "A Rattlesnake",
+          "level": 6,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": 1582,
+          "y": 455,
+          "z": -52.099998,
+          "heading": 216.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5763,
+          "spawngroupId": 487,
+          "name": "an_asp",
+          "displayName": "An Asp",
+          "level": 7,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": -1603.880005,
+          "y": -662,
+          "z": -40.400002,
+          "heading": 273,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5764,
+          "spawngroupId": 486,
+          "name": "Wallin_Slyfoot",
+          "displayName": "Wallin Slyfoot",
+          "level": 25,
+          "race": "Halfling",
+          "rawRace": "Halfling",
+          "className": "Warrior",
+          "x": 3371,
+          "y": 185.880005,
+          "z": -52.75,
+          "heading": 496.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5765,
+          "spawngroupId": 485,
+          "name": "Mojax_Hikspin",
+          "displayName": "Mojax Hikspin",
+          "level": 3,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 2770,
+          "y": -307,
+          "z": -62,
+          "heading": 26,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 5766,
+          "spawngroupId": 484,
+          "name": "a_darkweed_snake",
+          "displayName": "A Darkweed Snake",
+          "level": 9,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": 3795.879883,
+          "y": -352.880005,
+          "z": -51.130001,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5767,
+          "spawngroupId": 483,
+          "name": "a_darkweed_snake",
+          "displayName": "A Darkweed Snake",
+          "level": 10,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": 3645,
+          "y": 293,
+          "z": -51.299999,
+          "heading": 493.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5768,
+          "spawngroupId": 483,
+          "name": "a_darkweed_snake",
+          "displayName": "A Darkweed Snake",
+          "level": 10,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": 3471.879883,
+          "y": -304.880005,
+          "z": -20.1,
+          "heading": 481,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5769,
+          "spawngroupId": 483,
+          "name": "a_darkweed_snake",
+          "displayName": "A Darkweed Snake",
+          "level": 10,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": 3244,
+          "y": 818.880005,
+          "z": -51.25,
+          "heading": 419.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5770,
+          "spawngroupId": 483,
+          "name": "a_darkweed_snake",
+          "displayName": "A Darkweed Snake",
+          "level": 10,
+          "race": "Snake",
+          "rawRace": "Snake",
+          "className": "Warrior",
+          "x": 3519,
+          "y": 554,
+          "z": -51.25,
+          "heading": 296,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5771,
+          "spawngroupId": 482,
+          "name": "Slea_Pinewhisper",
+          "displayName": "Slea Pinewhisper",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": 1383.880005,
+          "y": 450,
+          "z": -51.25,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5772,
+          "spawngroupId": 481,
+          "name": "a_large_piranha",
+          "displayName": "A Large Piranha",
+          "level": 14,
+          "race": "Piranha",
+          "rawRace": "Piranha",
+          "className": "Warrior",
+          "x": 2481,
+          "y": 122,
+          "z": -127.879997,
+          "heading": 0,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 5773,
+          "spawngroupId": 481,
+          "name": "a_large_piranha",
+          "displayName": "A Large Piranha",
+          "level": 14,
+          "race": "Piranha",
+          "rawRace": "Piranha",
+          "className": "Warrior",
+          "x": 2814,
+          "y": 129,
+          "z": -131,
+          "heading": 0,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 5774,
+          "spawngroupId": 480,
+          "name": "Parus_the_Strong",
+          "displayName": "Parus The Strong",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": 534,
+          "y": -279,
+          "z": -48.130001,
+          "heading": 502,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5775,
+          "spawngroupId": 479,
+          "name": "a_large_piranha",
+          "displayName": "A Large Piranha",
+          "level": 14,
+          "race": "Piranha",
+          "rawRace": "Piranha",
+          "className": "Warrior",
+          "x": 2643,
+          "y": 46.880001,
+          "z": -127.879997,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5776,
+          "spawngroupId": 478,
+          "name": "a_large_piranha",
+          "displayName": "A Large Piranha",
+          "level": 11,
+          "race": "Piranha",
+          "rawRace": "Piranha",
+          "className": "Warrior",
+          "x": 2924,
+          "y": 24,
+          "z": -127.879997,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5777,
+          "spawngroupId": 477,
+          "name": "Sorsha_Hobbitfriend",
+          "displayName": "Sorsha Hobbitfriend",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": 468,
+          "y": -196,
+          "z": -48.130001,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5778,
+          "spawngroupId": 476,
+          "name": "Innkeep_Seke",
+          "displayName": "Innkeep Seke",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": 465.880005,
+          "y": -103.879997,
+          "z": -48.130001,
+          "heading": 259,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5779,
+          "spawngroupId": 475,
+          "name": "Innkeep_Roster",
+          "displayName": "Innkeep Roster",
+          "level": 30,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": 452,
+          "y": -149,
+          "z": -48.130001,
+          "heading": 131,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5780,
+          "spawngroupId": 474,
+          "name": "Ruby_Boxcrafter",
+          "displayName": "Ruby Boxcrafter",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": 591.75,
+          "y": -212.130005,
+          "z": -48.630001,
+          "heading": 468,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5781,
+          "spawngroupId": 473,
+          "name": "Peron_ThreadSpinner",
+          "displayName": "Peron Threadspinner",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": 2666,
+          "y": -400,
+          "z": -51.380001,
+          "heading": 130,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5782,
+          "spawngroupId": 472,
+          "name": "Innkeep_Redthorn",
+          "displayName": "Innkeep Redthorn",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": 2763,
+          "y": -401,
+          "z": -51.380001,
+          "heading": 380,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5783,
+          "spawngroupId": 471,
+          "name": "Innkeep_Olissa",
+          "displayName": "Innkeep Olissa",
+          "level": 30,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": 2714,
+          "y": -384,
+          "z": -51.380001,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5784,
+          "spawngroupId": 470,
+          "name": "Ranon_Strongarm",
+          "displayName": "Ranon Strongarm",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": 2827,
+          "y": -463,
+          "z": -48.130001,
+          "heading": 389,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5785,
+          "spawngroupId": 469,
+          "name": "Opal_Woodchopper",
+          "displayName": "Opal Woodchopper",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": 2576,
+          "y": -515,
+          "z": -49,
+          "heading": 116,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5786,
+          "spawngroupId": 468,
+          "name": "Maula_Fishcatcher",
+          "displayName": "Maula Fishcatcher",
+          "level": 45,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Banker",
+          "x": 2408.879883,
+          "y": 405,
+          "z": -47.25,
+          "heading": 214,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5787,
+          "spawngroupId": 467,
+          "name": "Noresa_Sparkle",
+          "displayName": "Noresa Sparkle",
+          "level": 14,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": 267,
+          "y": -701,
+          "z": -50.630001,
+          "heading": 347,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5788,
+          "spawngroupId": 466,
+          "name": "Bealya_Tanilsuia",
+          "displayName": "Bealya Tanilsuia",
+          "level": 65,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Paladin",
+          "x": 2627,
+          "y": -462,
+          "z": -49.880001,
+          "heading": 122,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5789,
+          "spawngroupId": 465,
+          "name": "a_black_bear",
+          "displayName": "A Black Bear",
+          "level": 4,
+          "race": "Bear",
+          "rawRace": "Bear",
+          "className": "Warrior",
+          "x": -1133,
+          "y": -244,
+          "z": -32.880001,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5790,
+          "spawngroupId": 464,
+          "name": "a_young_kodiak",
+          "displayName": "A Young Kodiak",
+          "level": 10,
+          "race": "Bear",
+          "rawRace": "Bear",
+          "className": "Warrior",
+          "x": -540,
+          "y": 106,
+          "z": -10.25,
+          "heading": 0,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 5791,
+          "spawngroupId": 463,
+          "name": "a_Dervish_Cutthroat",
+          "displayName": "A Dervish Cutthroat",
+          "level": 10,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Wizard",
+          "x": 999.25,
+          "y": 999.5,
+          "z": -37,
+          "heading": 229,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5792,
+          "spawngroupId": 461,
+          "name": "an_orc_centurion",
+          "displayName": "An Orc Centurion",
+          "level": 7,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": -795,
+          "y": -62,
+          "z": -44.880001,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5793,
+          "spawngroupId": 460,
+          "name": "a_hill_giant",
+          "displayName": "A Hill Giant",
+          "level": 36,
+          "race": "Giant",
+          "rawRace": "Giant",
+          "className": "Warrior",
+          "x": 739.880005,
+          "y": 17.879999,
+          "z": -40,
+          "heading": 117.5,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 5794,
+          "spawngroupId": 459,
+          "name": "an_orc_legionnaire",
+          "displayName": "An Orc Legionnaire",
+          "level": 12,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 3456,
+          "y": -110.879997,
+          "z": -28.25,
+          "heading": 371.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5795,
+          "spawngroupId": 6544,
+          "name": "a_ghoul",
+          "displayName": "A Ghoul",
+          "level": 14,
+          "race": "Ghoul",
+          "rawRace": "Ghoul",
+          "className": "Warrior",
+          "x": -1006.880005,
+          "y": -605,
+          "z": -63.75,
+          "heading": 397.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5796,
+          "spawngroupId": 6545,
+          "name": "a_Dervish_Thug",
+          "displayName": "A Dervish Thug",
+          "level": 15,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Warrior",
+          "x": 928,
+          "y": 1080,
+          "z": -44,
+          "heading": 153,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 5797,
+          "spawngroupId": 6546,
+          "name": "a_Dervish_Cutthroat",
+          "displayName": "A Dervish Cutthroat",
+          "level": 12,
+          "race": "Barbarian",
+          "rawRace": "Barbarian",
+          "className": "Warrior",
+          "x": 980,
+          "y": 967.880005,
+          "z": -41.25,
+          "heading": 200,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 5798,
+          "spawngroupId": 6547,
+          "name": "orc_legionnaire",
+          "displayName": "Orc Legionnaire",
+          "level": 15,
+          "race": "Orc",
+          "rawRace": "Orc",
+          "className": "Warrior",
+          "x": 2451,
+          "y": 1023.880005,
+          "z": -47.630001,
+          "heading": 200,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 21416,
+          "spawngroupId": 13080,
+          "name": "spider",
+          "displayName": "Spider",
+          "level": 60,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": 2689,
+          "y": -400,
+          "z": -33.630001,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 21945,
+          "spawngroupId": 13482,
+          "name": "Unknown",
+          "displayName": "Unknown",
+          "level": null,
+          "race": "Unknown",
+          "rawRace": "Unknown",
+          "className": "Unknown",
+          "x": 2025.325684,
+          "y": -713.327332,
+          "z": -51.935493,
+          "heading": 438.5,
+          "chance": null,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 57649,
+          "spawngroupId": 34547,
+          "name": "Sasha_the_Seer",
+          "displayName": "Sasha The Seer",
+          "level": 80,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Enchanter",
+          "x": 2396.374023,
+          "y": -51.251019,
+          "z": -55.095116,
+          "heading": 37.25,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 58436,
+          "spawngroupId": 48023,
+          "name": "Nightfall_Giant",
+          "displayName": "Nightfall Giant",
+          "level": 37,
+          "race": "Giant",
+          "rawRace": "Giant",
+          "className": "Warrior",
+          "x": -1502.498413,
+          "y": -1032.603271,
+          "z": -19.956329,
+          "heading": 128,
+          "chance": 50,
+          "respawnTime": 400,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 58437,
+          "spawngroupId": 48024,
+          "name": "Trigger",
+          "displayName": "Trigger",
+          "level": 99,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": -1342.409546,
+          "y": 214.059341,
+          "z": -54.21875,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 58466,
+          "spawngroupId": 48033,
+          "name": "a_werewolf",
+          "displayName": "A Werewolf",
+          "level": 32,
+          "race": "Wolf",
+          "rawRace": "Werewolf",
+          "className": "Warrior",
+          "x": -803.967468,
+          "y": -539.600586,
+          "z": -63.45105,
+          "heading": 510,
+          "chance": 20,
+          "respawnTime": 400,
+          "candidateCount": 5
+        },
+        {
+          "spawn2Id": 58630,
+          "spawngroupId": 48204,
+          "name": "Skipynn_Stoneheart",
+          "displayName": "Skipynn Stoneheart",
+          "level": 6,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 2781.58252,
+          "y": -304.252686,
+          "z": -63.573029,
+          "heading": 13.5,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 68497,
+          "spawngroupId": 52567,
+          "name": "Brizzenoth_Scyth",
+          "displayName": "Brizzenoth Scyth",
+          "level": 65,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Warrior",
+          "x": 2284.5,
+          "y": 43.400002,
+          "z": -50.700001,
+          "heading": 377.799988,
+          "chance": 100,
+          "respawnTime": 60,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 76194,
+          "spawngroupId": 54770,
+          "name": "a_shadowed_man",
+          "displayName": "A Shadowed Man",
+          "level": 25,
+          "race": "Invisible Man",
+          "rawRace": "Invisible Man",
+          "className": "Warrior",
+          "x": 2682.643311,
+          "y": -927.728638,
+          "z": -47.74015,
+          "heading": 502,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 76195,
+          "spawngroupId": 54771,
+          "name": "a_shadowed_man",
+          "displayName": "A Shadowed Man",
+          "level": 25,
+          "race": "Invisible Man",
+          "rawRace": "Invisible Man",
+          "className": "Warrior",
+          "x": 2727.43042,
+          "y": -900.409363,
+          "z": -48.436665,
+          "heading": 477,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 76196,
+          "spawngroupId": 54772,
+          "name": "a_shadowed_man",
+          "displayName": "A Shadowed Man",
+          "level": 25,
+          "race": "Invisible Man",
+          "rawRace": "Invisible Man",
+          "className": "Warrior",
+          "x": 2711.931152,
+          "y": -963.673645,
+          "z": -38.852425,
+          "heading": 489.75,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 76197,
+          "spawngroupId": 54773,
+          "name": "a_shadowed_man",
+          "displayName": "A Shadowed Man",
+          "level": 25,
+          "race": "Invisible Man",
+          "rawRace": "Invisible Man",
+          "className": "Warrior",
+          "x": 2698.554688,
+          "y": -904.63092,
+          "z": -48.266109,
+          "heading": 482.25,
+          "chance": 34,
+          "respawnTime": 1200,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 137416,
+          "spawngroupId": 98970,
+          "name": "A_Legendary_Hill_Giant",
+          "displayName": "A Legendary Hill Giant",
+          "level": 72,
+          "race": "Giant",
+          "rawRace": "Giant",
+          "className": "Warrior",
+          "x": 2088,
+          "y": 40.799999,
+          "z": -51.900002,
+          "heading": 372,
+          "chance": 100,
+          "respawnTime": 10800,
+          "candidateCount": 1
+        }
+      ]
+    }
+  },
+  "details": {
+    "zoneSlug": "west-commonlands",
+    "routeSlug": "commons",
+    "zoneName": "West Commonlands",
+    "sourceFile": "local-eqemu-database",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobGroups": [
+      {
+        "displayName": "Orc Pawn",
+        "rawNames": [
+          "orc_pawn"
+        ],
+        "count": 6,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Orc": 6
+        },
+        "rawRaceCounts": {
+          "Orc": 6
+        },
+        "classCounts": {
+          "Warrior": 6
+        },
+        "typeCounts": {
+          "Spawn Slot": 6
+        }
+      },
+      {
+        "displayName": "A Black Bear",
+        "rawNames": [
+          "a_black_bear"
+        ],
+        "count": 4,
+        "levelMin": 3,
+        "levelMax": 5,
+        "levels": [
+          3,
+          4,
+          5
+        ],
+        "raceCounts": {
+          "Bear": 4
+        },
+        "rawRaceCounts": {
+          "Bear": 4
+        },
+        "classCounts": {
+          "Warrior": 4
+        },
+        "typeCounts": {
+          "Spawn Slot": 4
+        }
+      },
+      {
+        "displayName": "Mojax Hikspin",
+        "rawNames": [
+          "Mojax_Hikspin"
+        ],
+        "count": 1,
+        "levelMin": 3,
+        "levelMax": 3,
+        "levels": [
+          3
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Skeleton",
+        "rawNames": [
+          "a_skeleton"
+        ],
+        "count": 8,
+        "levelMin": 4,
+        "levelMax": 6,
+        "levels": [
+          4,
+          5,
+          6
+        ],
+        "raceCounts": {
+          "Skeleton": 8
+        },
+        "rawRaceCounts": {
+          "Skeleton": 8
+        },
+        "classCounts": {
+          "Warrior": 8
+        },
+        "typeCounts": {
+          "Spawn Slot": 8
+        }
+      },
+      {
+        "displayName": "A Rattlesnake",
+        "rawNames": [
+          "a_rattlesnake"
+        ],
+        "count": 8,
+        "levelMin": 5,
+        "levelMax": 7,
+        "levels": [
+          5,
+          6,
+          7
+        ],
+        "raceCounts": {
+          "Snake": 8
+        },
+        "rawRaceCounts": {
+          "Snake": 8
+        },
+        "classCounts": {
+          "Warrior": 8
+        },
+        "typeCounts": {
+          "Spawn Slot": 8
+        }
+      },
+      {
+        "displayName": "A Puma",
+        "rawNames": [
+          "a_puma"
+        ],
+        "count": 6,
+        "levelMin": 5,
+        "levelMax": 6,
+        "levels": [
+          5,
+          6
+        ],
+        "raceCounts": {
+          "Puma": 6
+        },
+        "rawRaceCounts": {
+          "Puma": 6
+        },
+        "classCounts": {
+          "Warrior": 6
+        },
+        "typeCounts": {
+          "Spawn Slot": 6
+        }
+      },
+      {
+        "displayName": "A Large Rattlesnake",
+        "rawNames": [
+          "a_large_rattlesnake"
+        ],
+        "count": 1,
+        "levelMin": 5,
+        "levelMax": 5,
+        "levels": [
+          5
+        ],
+        "raceCounts": {
+          "Snake": 1
+        },
+        "rawRaceCounts": {
+          "Snake": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Modren Fishcatcher",
+        "rawNames": [
+          "Modren_Fishcatcher"
+        ],
+        "count": 1,
+        "levelMin": 5,
+        "levelMax": 5,
+        "levels": [
+          5
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Plains Cat",
+        "rawNames": [
+          "a_plains_cat"
+        ],
+        "count": 1,
+        "levelMin": 6,
+        "levelMax": 6,
+        "levels": [
+          6
+        ],
+        "raceCounts": {
+          "Puma": 1
+        },
+        "rawRaceCounts": {
+          "Puma": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Skipynn Stoneheart",
+        "rawNames": [
+          "Skipynn_Stoneheart"
+        ],
+        "count": 1,
+        "levelMin": 6,
+        "levelMax": 6,
+        "levels": [
+          6
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Giant Spider",
+        "rawNames": [
+          "a_giant_spider"
+        ],
+        "count": 14,
+        "levelMin": 7,
+        "levelMax": 9,
+        "levels": [
+          7,
+          8,
+          9
+        ],
+        "raceCounts": {
+          "Spider": 14
+        },
+        "rawRaceCounts": {
+          "Spider": 14
+        },
+        "classCounts": {
+          "Warrior": 14
+        },
+        "typeCounts": {
+          "Spawn Slot": 14
+        }
+      },
+      {
+        "displayName": "A Large Rattlesnake",
+        "rawNames": [
+          "a_large_rattlesnake"
+        ],
+        "count": 1,
+        "levelMin": 7,
+        "levelMax": 7,
+        "levels": [
+          7
+        ],
+        "raceCounts": {
+          "Snake": 1
+        },
+        "rawRaceCounts": {
+          "Snake": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "An Asp",
+        "rawNames": [
+          "an_asp"
+        ],
+        "count": 1,
+        "levelMin": 7,
+        "levelMax": 7,
+        "levels": [
+          7
+        ],
+        "raceCounts": {
+          "Snake": 1
+        },
+        "rawRaceCounts": {
+          "Snake": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "An Orc Centurion",
+        "rawNames": [
+          "an_orc_centurion"
+        ],
+        "count": 1,
+        "levelMin": 7,
+        "levelMax": 7,
+        "levels": [
+          7
+        ],
+        "raceCounts": {
+          "Orc": 1
+        },
+        "rawRaceCounts": {
+          "Orc": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Darkweed Snake",
+        "rawNames": [
+          "a_darkweed_snake"
+        ],
+        "count": 9,
+        "levelMin": 8,
+        "levelMax": 10,
+        "levels": [
+          8,
+          9,
+          10
+        ],
+        "raceCounts": {
+          "Snake": 9
+        },
+        "rawRaceCounts": {
+          "Snake": 9
+        },
+        "classCounts": {
+          "Warrior": 9
+        },
+        "typeCounts": {
+          "Spawn Slot": 9
+        }
+      },
+      {
+        "displayName": "Orc Centurion",
+        "rawNames": [
+          "orc_centurion"
+        ],
+        "count": 1,
+        "levelMin": 8,
+        "levelMax": 8,
+        "levels": [
+          8
+        ],
+        "raceCounts": {
+          "Orc": 1
+        },
+        "rawRaceCounts": {
+          "Orc": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Willowisp",
+        "rawNames": [
+          "a_willowisp"
+        ],
+        "count": 16,
+        "levelMin": 9,
+        "levelMax": 11,
+        "levels": [
+          9,
+          10,
+          11
+        ],
+        "raceCounts": {
+          "Will-o-Wisp": 16
+        },
+        "rawRaceCounts": {
+          "Will-O-Wisp": 16
+        },
+        "classCounts": {
+          "Warrior": 16
+        },
+        "typeCounts": {
+          "Spawn Slot": 16
+        }
+      },
+      {
+        "displayName": "A Dervish Cutthroat",
+        "rawNames": [
+          "a_Dervish_Cutthroat"
+        ],
+        "count": 8,
+        "levelMin": 10,
+        "levelMax": 14,
+        "levels": [
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "raceCounts": {
+          "Human": 4,
+          "Barbarian": 3,
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Human": 4,
+          "Barbarian": 3,
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Rogue": 4,
+          "Warrior": 3,
+          "Wizard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 8
+        }
+      },
+      {
+        "displayName": "Orc Centurion",
+        "rawNames": [
+          "orc_centurion"
+        ],
+        "count": 5,
+        "levelMin": 10,
+        "levelMax": 10,
+        "levels": [
+          10
+        ],
+        "raceCounts": {
+          "Orc": 5
+        },
+        "rawRaceCounts": {
+          "Orc": 5
+        },
+        "classCounts": {
+          "Warrior": 5
+        },
+        "typeCounts": {
+          "Spawn Slot": 5
+        }
+      },
+      {
+        "displayName": "An Asp",
+        "rawNames": [
+          "an_asp"
+        ],
+        "count": 3,
+        "levelMin": 10,
+        "levelMax": 11,
+        "levels": [
+          10,
+          11
+        ],
+        "raceCounts": {
+          "Snake": 3
+        },
+        "rawRaceCounts": {
+          "Snake": 3
+        },
+        "classCounts": {
+          "Warrior": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "A Large Piranha",
+        "rawNames": [
+          "a_large_piranha"
+        ],
+        "count": 2,
+        "levelMin": 10,
+        "levelMax": 11,
+        "levels": [
+          10,
+          11
+        ],
+        "raceCounts": {
+          "Piranha": 2
+        },
+        "rawRaceCounts": {
+          "Piranha": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Young Kodiak",
+        "rawNames": [
+          "a_young_kodiak"
+        ],
+        "count": 1,
+        "levelMin": 10,
+        "levelMax": 10,
+        "levels": [
+          10
+        ],
+        "raceCounts": {
+          "Bear": 1
+        },
+        "rawRaceCounts": {
+          "Bear": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "An Orc Legionnaire",
+        "rawNames": [
+          "an_orc_legionnaire"
+        ],
+        "count": 2,
+        "levelMin": 11,
+        "levelMax": 12,
+        "levels": [
+          11,
+          12
+        ],
+        "raceCounts": {
+          "Orc": 2
+        },
+        "rawRaceCounts": {
+          "Orc": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Large Piranha",
+        "rawNames": [
+          "a_large_piranha"
+        ],
+        "count": 4,
+        "levelMin": 13,
+        "levelMax": 14,
+        "levels": [
+          13,
+          14
+        ],
+        "raceCounts": {
+          "Piranha": 4
+        },
+        "rawRaceCounts": {
+          "Piranha": 4
+        },
+        "classCounts": {
+          "Warrior": 4
+        },
+        "typeCounts": {
+          "Spawn Slot": 4
+        }
+      },
+      {
+        "displayName": "A Ghoul",
+        "rawNames": [
+          "a_ghoul"
+        ],
+        "count": 2,
+        "levelMin": 13,
+        "levelMax": 14,
+        "levels": [
+          13,
+          14
+        ],
+        "raceCounts": {
+          "Ghoul": 2
+        },
+        "rawRaceCounts": {
+          "Ghoul": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "Orc Legionnaire",
+        "rawNames": [
+          "orc_legionnaire"
+        ],
+        "count": 2,
+        "levelMin": 14,
+        "levelMax": 15,
+        "levels": [
+          14,
+          15
+        ],
+        "raceCounts": {
+          "Orc": 2
+        },
+        "rawRaceCounts": {
+          "Orc": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "Noresa Sparkle",
+        "rawNames": [
+          "Noresa_Sparkle"
+        ],
+        "count": 1,
+        "levelMin": 14,
+        "levelMax": 14,
+        "levels": [
+          14
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Dervish Thug",
+        "rawNames": [
+          "a_Dervish_Thug"
+        ],
+        "count": 1,
+        "levelMin": 15,
+        "levelMax": 15,
+        "levels": [
+          15
+        ],
+        "raceCounts": {
+          "Ogre": 1
+        },
+        "rawRaceCounts": {
+          "Ogre": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Kizdean Gix",
+        "rawNames": [
+          "Kizdean_Gix"
+        ],
+        "count": 1,
+        "levelMin": 18,
+        "levelMax": 18,
+        "levels": [
+          18
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Shadowknight": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Shadowed Man",
+        "rawNames": [
+          "a_shadowed_man"
+        ],
+        "count": 4,
+        "levelMin": 25,
+        "levelMax": 25,
+        "levels": [
+          25
+        ],
+        "raceCounts": {
+          "Invisible Man": 4
+        },
+        "rawRaceCounts": {
+          "Invisible Man": 4
+        },
+        "classCounts": {
+          "Warrior": 4
+        },
+        "typeCounts": {
+          "Spawn Slot": 4
+        }
+      },
+      {
+        "displayName": "Wallin Slyfoot",
+        "rawNames": [
+          "Wallin_Slyfoot"
+        ],
+        "count": 1,
+        "levelMin": 25,
+        "levelMax": 25,
+        "levels": [
+          25
+        ],
+        "raceCounts": {
+          "Halfling": 1
+        },
+        "rawRaceCounts": {
+          "Halfling": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Jahsohn Aksot",
+        "rawNames": [
+          "Jahsohn_Aksot"
+        ],
+        "count": 1,
+        "levelMin": 29,
+        "levelMax": 29,
+        "levels": [
+          29
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Magician": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Timtok Tonsmith",
+        "rawNames": [
+          "Timtok_Tonsmith"
+        ],
+        "count": 1,
+        "levelMin": 29,
+        "levelMax": 29,
+        "levels": [
+          29
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Ceel Moonwhisper",
+        "rawNames": [
+          "Ceel_Moonwhisper"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Half Elf": 1
+        },
+        "rawRaceCounts": {
+          "Half Elf": 1
+        },
+        "classCounts": {
+          "Druid": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Innkeep Olissa",
+        "rawNames": [
+          "Innkeep_Olissa"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Innkeep Roster",
+        "rawNames": [
+          "Innkeep_Roster"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Shadow Treebright",
+        "rawNames": [
+          "Shadow_Treebright"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Half Elf": 1
+        },
+        "rawRaceCounts": {
+          "Half Elf": 1
+        },
+        "classCounts": {
+          "Druid": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Colin",
+        "rawNames": [
+          "Guard_Colin"
+        ],
+        "count": 1,
+        "levelMin": 31,
+        "levelMax": 31,
+        "levels": [
+          31
+        ],
+        "raceCounts": {
+          "Guard": 1
+        },
+        "rawRaceCounts": {
+          "Guard": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Valon",
+        "rawNames": [
+          "Guard_Valon"
+        ],
+        "count": 1,
+        "levelMin": 31,
+        "levelMax": 31,
+        "levels": [
+          31
+        ],
+        "raceCounts": {
+          "Guard": 1
+        },
+        "rawRaceCounts": {
+          "Guard": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Ranvigoz Tonsmith",
+        "rawNames": [
+          "Ranvigoz_Tonsmith"
+        ],
+        "count": 1,
+        "levelMin": 31,
+        "levelMax": 31,
+        "levels": [
+          31
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Werewolf",
+        "rawNames": [
+          "a_werewolf"
+        ],
+        "count": 1,
+        "levelMin": 32,
+        "levelMax": 32,
+        "levels": [
+          32
+        ],
+        "raceCounts": {
+          "Wolf": 1
+        },
+        "rawRaceCounts": {
+          "Werewolf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Hill Giant",
+        "rawNames": [
+          "a_hill_giant"
+        ],
+        "count": 1,
+        "levelMin": 34,
+        "levelMax": 34,
+        "levels": [
+          34
+        ],
+        "raceCounts": {
+          "Giant": 1
+        },
+        "rawRaceCounts": {
+          "Giant": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Hill Giant",
+        "rawNames": [
+          "a_hill_giant"
+        ],
+        "count": 1,
+        "levelMin": 36,
+        "levelMax": 36,
+        "levels": [
+          36
+        ],
+        "raceCounts": {
+          "Giant": 1
+        },
+        "rawRaceCounts": {
+          "Giant": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Nightfall Giant",
+        "rawNames": [
+          "Nightfall_Giant"
+        ],
+        "count": 1,
+        "levelMin": 37,
+        "levelMax": 37,
+        "levels": [
+          37
+        ],
+        "raceCounts": {
+          "Giant": 1
+        },
+        "rawRaceCounts": {
+          "Giant": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Innkeep Redthorn",
+        "rawNames": [
+          "Innkeep_Redthorn"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Innkeep Seke",
+        "rawNames": [
+          "Innkeep_Seke"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Maula Fishcatcher",
+        "rawNames": [
+          "Maula_Fishcatcher"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Barbarian": 1
+        },
+        "rawRaceCounts": {
+          "Barbarian": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Opal Woodchopper",
+        "rawNames": [
+          "Opal_Woodchopper"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Parus The Strong",
+        "rawNames": [
+          "Parus_the_Strong"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Peron Threadspinner",
+        "rawNames": [
+          "Peron_ThreadSpinner"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Ranon Strongarm",
+        "rawNames": [
+          "Ranon_Strongarm"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Ruby Boxcrafter",
+        "rawNames": [
+          "Ruby_Boxcrafter"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Slea Pinewhisper",
+        "rawNames": [
+          "Slea_Pinewhisper"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Sorsha Hobbitfriend",
+        "rawNames": [
+          "Sorsha_Hobbitfriend"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Spider",
+        "rawNames": [
+          "spider"
+        ],
+        "count": 1,
+        "levelMin": 60,
+        "levelMax": 60,
+        "levels": [
+          60
+        ],
+        "raceCounts": {
+          "Teleport Man": 1
+        },
+        "rawRaceCounts": {
+          "Teleport Man": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Bealya Tanilsuia",
+        "rawNames": [
+          "Bealya_Tanilsuia"
+        ],
+        "count": 1,
+        "levelMin": 65,
+        "levelMax": 65,
+        "levels": [
+          65
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Brizzenoth Scyth",
+        "rawNames": [
+          "Brizzenoth_Scyth"
+        ],
+        "count": 1,
+        "levelMin": 65,
+        "levelMax": 65,
+        "levels": [
+          65
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Simon Aldicott",
+        "rawNames": [
+          "Simon_Aldicott"
+        ],
+        "count": 1,
+        "levelMin": 65,
+        "levelMax": 65,
+        "levels": [
+          65
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Cleric": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Legendary Hill Giant",
+        "rawNames": [
+          "A_Legendary_Hill_Giant"
+        ],
+        "count": 1,
+        "levelMin": 72,
+        "levelMax": 72,
+        "levels": [
+          72
+        ],
+        "raceCounts": {
+          "Giant": 1
+        },
+        "rawRaceCounts": {
+          "Giant": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Sasha The Seer",
+        "rawNames": [
+          "Sasha_the_Seer"
+        ],
+        "count": 1,
+        "levelMin": 80,
+        "levelMax": 80,
+        "levels": [
+          80
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Enchanter": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Trigger",
+        "rawNames": [
+          "Trigger"
+        ],
+        "count": 1,
+        "levelMin": 99,
+        "levelMax": 99,
+        "levels": [
+          99
+        ],
+        "raceCounts": {
+          "Teleport Man": 1
+        },
+        "rawRaceCounts": {
+          "Teleport Man": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Unknown",
+        "rawNames": [
+          "Unknown"
+        ],
+        "count": 1,
+        "levelMin": null,
+        "levelMax": null,
+        "levels": [],
+        "raceCounts": {
+          "Unknown": 1
+        },
+        "rawRaceCounts": {
+          "Unknown": 1
+        },
+        "classCounts": {
+          "Unknown": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      }
+    ],
+    "rows": [
+      {
+        "displayName": "Orc Pawn",
+        "rawName": "orc_pawn",
+        "level": 1,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2825.879883,
+        "y": 703,
+        "z": -51.25,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5671,
+        "spawngroupId": 539,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Orc Pawn",
+        "rawName": "orc_pawn",
+        "level": 1,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -957.880005,
+        "y": 80,
+        "z": -51.400002,
+        "heading": 178.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5672,
+        "spawngroupId": 539,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Orc Pawn",
+        "rawName": "orc_pawn",
+        "level": 1,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 3681.879883,
+        "y": 890.880005,
+        "z": -51.299999,
+        "heading": 58.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5673,
+        "spawngroupId": 539,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Orc Pawn",
+        "rawName": "orc_pawn",
+        "level": 1,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 3233,
+        "y": 469,
+        "z": -51.25,
+        "heading": 282.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5674,
+        "spawngroupId": 539,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Orc Pawn",
+        "rawName": "orc_pawn",
+        "level": 1,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 3633,
+        "y": 465.880005,
+        "z": -51.25,
+        "heading": 7.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5675,
+        "spawngroupId": 539,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Orc Pawn",
+        "rawName": "orc_pawn",
+        "level": 1,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1619,
+        "y": 584,
+        "z": -46,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5676,
+        "spawngroupId": 539,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Black Bear",
+        "rawName": "a_black_bear",
+        "level": 3,
+        "race": "Bear",
+        "rawRace": "Bear",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1085.880005,
+        "y": 286,
+        "z": -36.400002,
+        "heading": 268.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5682,
+        "spawngroupId": 534,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Black Bear",
+        "rawName": "a_black_bear",
+        "level": 3,
+        "race": "Bear",
+        "rawRace": "Bear",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1045.880005,
+        "y": 390,
+        "z": -52.5,
+        "heading": 293.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5683,
+        "spawngroupId": 534,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Mojax Hikspin",
+        "rawName": "Mojax_Hikspin",
+        "level": 3,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2770,
+        "y": -307,
+        "z": -62,
+        "heading": 26,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 5765,
+        "spawngroupId": 485,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Black Bear",
+        "rawName": "a_black_bear",
+        "level": 4,
+        "race": "Bear",
+        "rawRace": "Bear",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1133,
+        "y": -244,
+        "z": -32.880001,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5789,
+        "spawngroupId": 465,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Skeleton",
+        "rawName": "a_skeleton",
+        "level": 4,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1611.880005,
+        "y": -850.880005,
+        "z": -31.6,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5735,
+        "spawngroupId": 507,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Skeleton",
+        "rawName": "a_skeleton",
+        "level": 4,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -162,
+        "y": 212,
+        "z": -46.130001,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5736,
+        "spawngroupId": 507,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Black Bear",
+        "rawName": "a_black_bear",
+        "level": 5,
+        "race": "Bear",
+        "rawRace": "Bear",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -501.880005,
+        "y": 763,
+        "z": -60.400002,
+        "heading": 247,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5678,
+        "spawngroupId": 537,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Large Rattlesnake",
+        "rawName": "a_large_rattlesnake",
+        "level": 5,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1053,
+        "y": -683,
+        "z": -52.130001,
+        "heading": 502.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5727,
+        "spawngroupId": 511,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Puma",
+        "rawName": "a_puma",
+        "level": 5,
+        "race": "Puma",
+        "rawRace": "Puma",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2213.879883,
+        "y": -851.880005,
+        "z": -31.9,
+        "heading": 266,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5717,
+        "spawngroupId": 517,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Puma",
+        "rawName": "a_puma",
+        "level": 5,
+        "race": "Puma",
+        "rawRace": "Puma",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1652.880005,
+        "y": -661,
+        "z": -43,
+        "heading": 279,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5718,
+        "spawngroupId": 517,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Puma",
+        "rawName": "a_puma",
+        "level": 5,
+        "race": "Puma",
+        "rawRace": "Puma",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1561.880005,
+        "y": -712.880005,
+        "z": -49.400002,
+        "heading": 267,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5719,
+        "spawngroupId": 517,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Rattlesnake",
+        "rawName": "a_rattlesnake",
+        "level": 5,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -457,
+        "y": -750,
+        "z": -48.799999,
+        "heading": 243.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5756,
+        "spawngroupId": 492,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Rattlesnake",
+        "rawName": "a_rattlesnake",
+        "level": 5,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -439.880005,
+        "y": 1048.880005,
+        "z": -39.799999,
+        "heading": 280,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5757,
+        "spawngroupId": 492,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Rattlesnake",
+        "rawName": "a_rattlesnake",
+        "level": 5,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -786.5,
+        "y": 429.25,
+        "z": -287.100006,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5758,
+        "spawngroupId": 492,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Skeleton",
+        "rawName": "a_skeleton",
+        "level": 5,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2037.880005,
+        "y": -189.880005,
+        "z": -33.900002,
+        "heading": 319.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5681,
+        "spawngroupId": 535,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Skeleton",
+        "rawName": "a_skeleton",
+        "level": 5,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 439,
+        "y": 1086,
+        "z": -48.5,
+        "heading": 230,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 5734,
+        "spawngroupId": 508,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Modren Fishcatcher",
+        "rawName": "Modren_Fishcatcher",
+        "level": 5,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2446.75,
+        "y": 352,
+        "z": -56.75,
+        "heading": 284,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5760,
+        "spawngroupId": 490,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Plains Cat",
+        "rawName": "a_plains_cat",
+        "level": 6,
+        "race": "Puma",
+        "rawRace": "Puma",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1176.880005,
+        "y": 578.880005,
+        "z": -49.400002,
+        "heading": 243,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5693,
+        "spawngroupId": 528,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Puma",
+        "rawName": "a_puma",
+        "level": 6,
+        "race": "Puma",
+        "rawRace": "Puma",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1520,
+        "y": -997,
+        "z": -25.4,
+        "heading": 250.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5722,
+        "spawngroupId": 514,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Puma",
+        "rawName": "a_puma",
+        "level": 6,
+        "race": "Puma",
+        "rawRace": "Puma",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 691,
+        "y": -968.880005,
+        "z": 10.6,
+        "heading": 226.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5723,
+        "spawngroupId": 514,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Puma",
+        "rawName": "a_puma",
+        "level": 6,
+        "race": "Puma",
+        "rawRace": "Puma",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2611,
+        "y": -478,
+        "z": -49.900002,
+        "heading": 387.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5724,
+        "spawngroupId": 514,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Rattlesnake",
+        "rawName": "a_rattlesnake",
+        "level": 6,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1582,
+        "y": 455,
+        "z": -52.099998,
+        "heading": 216.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5762,
+        "spawngroupId": 488,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Skeleton",
+        "rawName": "a_skeleton",
+        "level": 6,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1221.880005,
+        "y": 1118.880005,
+        "z": -30,
+        "heading": 101.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5679,
+        "spawngroupId": 536,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Skeleton",
+        "rawName": "a_skeleton",
+        "level": 6,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 29,
+        "y": 344,
+        "z": -51.400002,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5680,
+        "spawngroupId": 536,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Skeleton",
+        "rawName": "a_skeleton",
+        "level": 6,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 491,
+        "y": 1066,
+        "z": -50.630001,
+        "heading": 378,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 5732,
+        "spawngroupId": 509,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Skeleton",
+        "rawName": "a_skeleton",
+        "level": 6,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 480,
+        "y": 1055,
+        "z": -51,
+        "heading": 378,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 5733,
+        "spawngroupId": 509,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Skipynn Stoneheart",
+        "rawName": "Skipynn_Stoneheart",
+        "level": 6,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2781.58252,
+        "y": -304.252686,
+        "z": -63.573029,
+        "heading": 13.5,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 58630,
+        "spawngroupId": 48204,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Giant Spider",
+        "rawName": "a_giant_spider",
+        "level": 7,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -928.880005,
+        "y": -410.880005,
+        "z": -49.5,
+        "heading": 346.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5684,
+        "spawngroupId": 533,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Giant Spider",
+        "rawName": "a_giant_spider",
+        "level": 7,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -462.880005,
+        "y": -611,
+        "z": -38.299999,
+        "heading": 282.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5685,
+        "spawngroupId": 533,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Giant Spider",
+        "rawName": "a_giant_spider",
+        "level": 7,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -831.880005,
+        "y": -613,
+        "z": -66.599998,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5686,
+        "spawngroupId": 533,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Giant Spider",
+        "rawName": "a_giant_spider",
+        "level": 7,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 3049.879883,
+        "y": -727.880005,
+        "z": -35.5,
+        "heading": 136.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5687,
+        "spawngroupId": 533,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Giant Spider",
+        "rawName": "a_giant_spider",
+        "level": 7,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 3340.879883,
+        "y": -807,
+        "z": -39.599998,
+        "heading": 244.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5688,
+        "spawngroupId": 533,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Large Rattlesnake",
+        "rawName": "a_large_rattlesnake",
+        "level": 7,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2937.879883,
+        "y": -754.880005,
+        "z": -36.900002,
+        "heading": 262.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5759,
+        "spawngroupId": 491,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Rattlesnake",
+        "rawName": "a_rattlesnake",
+        "level": 7,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 3299,
+        "y": 670.880005,
+        "z": -52.099998,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5728,
+        "spawngroupId": 510,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Rattlesnake",
+        "rawName": "a_rattlesnake",
+        "level": 7,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 3690.879883,
+        "y": -986.880005,
+        "z": -32.299999,
+        "heading": 270.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5729,
+        "spawngroupId": 510,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Rattlesnake",
+        "rawName": "a_rattlesnake",
+        "level": 7,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -890.880005,
+        "y": -474,
+        "z": -57.599998,
+        "heading": 294,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5730,
+        "spawngroupId": 510,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Rattlesnake",
+        "rawName": "a_rattlesnake",
+        "level": 7,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1375.880005,
+        "y": 1041.880005,
+        "z": -42.799999,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5731,
+        "spawngroupId": 510,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Asp",
+        "rawName": "an_asp",
+        "level": 7,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1603.880005,
+        "y": -662,
+        "z": -40.400002,
+        "heading": 273,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5763,
+        "spawngroupId": 487,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Orc Centurion",
+        "rawName": "an_orc_centurion",
+        "level": 7,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -795,
+        "y": -62,
+        "z": -44.880001,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5792,
+        "spawngroupId": 461,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Darkweed Snake",
+        "rawName": "a_darkweed_snake",
+        "level": 8,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1816.880005,
+        "y": 760.880005,
+        "z": -33.599998,
+        "heading": 240,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5749,
+        "spawngroupId": 495,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Darkweed Snake",
+        "rawName": "a_darkweed_snake",
+        "level": 8,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -489.880005,
+        "y": -351.880005,
+        "z": -24.299999,
+        "heading": 37.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5750,
+        "spawngroupId": 495,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Darkweed Snake",
+        "rawName": "a_darkweed_snake",
+        "level": 8,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1221.880005,
+        "y": -261.880005,
+        "z": -27.879999,
+        "heading": 311,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5751,
+        "spawngroupId": 495,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Darkweed Snake",
+        "rawName": "a_darkweed_snake",
+        "level": 8,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2109.379883,
+        "y": 879.630005,
+        "z": -286.100006,
+        "heading": 223,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5752,
+        "spawngroupId": 495,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Giant Spider",
+        "rawName": "a_giant_spider",
+        "level": 8,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1411.880005,
+        "y": -283.880005,
+        "z": -43,
+        "heading": 216.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5664,
+        "spawngroupId": 540,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Giant Spider",
+        "rawName": "a_giant_spider",
+        "level": 8,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 289.880005,
+        "y": -223.880005,
+        "z": -49.400002,
+        "heading": 328,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5665,
+        "spawngroupId": 540,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Giant Spider",
+        "rawName": "a_giant_spider",
+        "level": 8,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -571,
+        "y": -888.880005,
+        "z": -14.38,
+        "heading": 137,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5666,
+        "spawngroupId": 540,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Giant Spider",
+        "rawName": "a_giant_spider",
+        "level": 8,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 105,
+        "y": -612,
+        "z": -49.5,
+        "heading": 279,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5667,
+        "spawngroupId": 540,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Giant Spider",
+        "rawName": "a_giant_spider",
+        "level": 8,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 3451.879883,
+        "y": 46,
+        "z": -49.400002,
+        "heading": 483.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5668,
+        "spawngroupId": 540,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Giant Spider",
+        "rawName": "a_giant_spider",
+        "level": 8,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -300.130005,
+        "y": 968.880005,
+        "z": -284.299988,
+        "heading": 253.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5669,
+        "spawngroupId": 540,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Giant Spider",
+        "rawName": "a_giant_spider",
+        "level": 8,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 39,
+        "y": 210,
+        "z": -46.130001,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5670,
+        "spawngroupId": 540,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Orc Centurion",
+        "rawName": "orc_centurion",
+        "level": 8,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2544,
+        "y": 1148,
+        "z": -45,
+        "heading": 337,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 5740,
+        "spawngroupId": 504,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Darkweed Snake",
+        "rawName": "a_darkweed_snake",
+        "level": 9,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 3795.879883,
+        "y": -352.880005,
+        "z": -51.130001,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5766,
+        "spawngroupId": 484,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Giant Spider",
+        "rawName": "a_giant_spider",
+        "level": 9,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -429.880005,
+        "y": -893,
+        "z": -11.4,
+        "heading": 260.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5753,
+        "spawngroupId": 494,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Giant Spider",
+        "rawName": "a_giant_spider",
+        "level": 9,
+        "race": "Spider",
+        "rawRace": "Spider",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 235,
+        "y": 1126,
+        "z": -8.63,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5754,
+        "spawngroupId": 494,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Willowisp",
+        "rawName": "a_willowisp",
+        "level": 9,
+        "race": "Will-o-Wisp",
+        "rawRace": "Will-O-Wisp",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -7.88,
+        "y": -490.630005,
+        "z": -20,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5710,
+        "spawngroupId": 518,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Willowisp",
+        "rawName": "a_willowisp",
+        "level": 9,
+        "race": "Will-o-Wisp",
+        "rawRace": "Will-O-Wisp",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -278.130005,
+        "y": 309.25,
+        "z": -7.8,
+        "heading": 496,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5711,
+        "spawngroupId": 518,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Willowisp",
+        "rawName": "a_willowisp",
+        "level": 9,
+        "race": "Will-o-Wisp",
+        "rawRace": "Will-O-Wisp",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1559,
+        "y": 343,
+        "z": -53.25,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5712,
+        "spawngroupId": 518,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Willowisp",
+        "rawName": "a_willowisp",
+        "level": 9,
+        "race": "Will-o-Wisp",
+        "rawRace": "Will-O-Wisp",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -891.880005,
+        "y": 523.880005,
+        "z": -14.8,
+        "heading": 309,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5713,
+        "spawngroupId": 518,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Willowisp",
+        "rawName": "a_willowisp",
+        "level": 9,
+        "race": "Will-o-Wisp",
+        "rawRace": "Will-O-Wisp",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2069.879883,
+        "y": 323.880005,
+        "z": -53.099998,
+        "heading": 210,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5714,
+        "spawngroupId": 518,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Willowisp",
+        "rawName": "a_willowisp",
+        "level": 9,
+        "race": "Will-o-Wisp",
+        "rawRace": "Will-O-Wisp",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1435.130005,
+        "y": 42.880001,
+        "z": -48.900002,
+        "heading": 266,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5715,
+        "spawngroupId": 518,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Willowisp",
+        "rawName": "a_willowisp",
+        "level": 9,
+        "race": "Will-o-Wisp",
+        "rawRace": "Will-O-Wisp",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1341.880005,
+        "y": 99.879997,
+        "z": -26.6,
+        "heading": 152,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5716,
+        "spawngroupId": 518,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Darkweed Snake",
+        "rawName": "a_darkweed_snake",
+        "level": 10,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 3645,
+        "y": 293,
+        "z": -51.299999,
+        "heading": 493.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5767,
+        "spawngroupId": 483,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Darkweed Snake",
+        "rawName": "a_darkweed_snake",
+        "level": 10,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 3471.879883,
+        "y": -304.880005,
+        "z": -20.1,
+        "heading": 481,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5768,
+        "spawngroupId": 483,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Darkweed Snake",
+        "rawName": "a_darkweed_snake",
+        "level": 10,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 3244,
+        "y": 818.880005,
+        "z": -51.25,
+        "heading": 419.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5769,
+        "spawngroupId": 483,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Darkweed Snake",
+        "rawName": "a_darkweed_snake",
+        "level": 10,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 3519,
+        "y": 554,
+        "z": -51.25,
+        "heading": 296,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5770,
+        "spawngroupId": 483,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Dervish Cutthroat",
+        "rawName": "a_Dervish_Cutthroat",
+        "level": 10,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": 999.25,
+        "y": 999.5,
+        "z": -37,
+        "heading": 229,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5791,
+        "spawngroupId": 463,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Large Piranha",
+        "rawName": "a_large_piranha",
+        "level": 10,
+        "race": "Piranha",
+        "rawRace": "Piranha",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2983,
+        "y": -155,
+        "z": -131,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5761,
+        "spawngroupId": 489,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Willowisp",
+        "rawName": "a_willowisp",
+        "level": 10,
+        "race": "Will-o-Wisp",
+        "rawRace": "Will-O-Wisp",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 742.880005,
+        "y": 302.880005,
+        "z": -53.130001,
+        "heading": 119.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5695,
+        "spawngroupId": 526,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Willowisp",
+        "rawName": "a_willowisp",
+        "level": 10,
+        "race": "Will-o-Wisp",
+        "rawRace": "Will-O-Wisp",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1997.880005,
+        "y": -181.880005,
+        "z": -38.599998,
+        "heading": 376,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5696,
+        "spawngroupId": 526,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Willowisp",
+        "rawName": "a_willowisp",
+        "level": 10,
+        "race": "Will-o-Wisp",
+        "rawRace": "Will-O-Wisp",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 568,
+        "y": 846.880005,
+        "z": -53.130001,
+        "heading": 491.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5697,
+        "spawngroupId": 526,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Young Kodiak",
+        "rawName": "a_young_kodiak",
+        "level": 10,
+        "race": "Bear",
+        "rawRace": "Bear",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -540,
+        "y": 106,
+        "z": -10.25,
+        "heading": 0,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 5790,
+        "spawngroupId": 464,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "An Asp",
+        "rawName": "an_asp",
+        "level": 10,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1664.880005,
+        "y": -634,
+        "z": -51.299999,
+        "heading": 255,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5738,
+        "spawngroupId": 505,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Asp",
+        "rawName": "an_asp",
+        "level": 10,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -851.880005,
+        "y": -479,
+        "z": -57.5,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5739,
+        "spawngroupId": 505,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Orc Centurion",
+        "rawName": "orc_centurion",
+        "level": 10,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2473.879883,
+        "y": 668,
+        "z": -18.1,
+        "heading": 400,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5709,
+        "spawngroupId": 519,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Orc Centurion",
+        "rawName": "orc_centurion",
+        "level": 10,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2556,
+        "y": 1140,
+        "z": -43.5,
+        "heading": 329,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 5741,
+        "spawngroupId": 503,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "Orc Centurion",
+        "rawName": "orc_centurion",
+        "level": 10,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2463,
+        "y": 1107,
+        "z": -48.880001,
+        "heading": 262,
+        "chance": 20,
+        "respawnTime": 640,
+        "spawn2Id": 5742,
+        "spawngroupId": 502,
+        "candidateCount": 5
+      },
+      {
+        "displayName": "Orc Centurion",
+        "rawName": "orc_centurion",
+        "level": 10,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2445,
+        "y": 1105,
+        "z": -49.380001,
+        "heading": 251,
+        "chance": 20,
+        "respawnTime": 640,
+        "spawn2Id": 5744,
+        "spawngroupId": 500,
+        "candidateCount": 5
+      },
+      {
+        "displayName": "Orc Centurion",
+        "rawName": "orc_centurion",
+        "level": 10,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2423,
+        "y": 1043,
+        "z": -49,
+        "heading": 249,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 5745,
+        "spawngroupId": 499,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Dervish Cutthroat",
+        "rawName": "a_Dervish_Cutthroat",
+        "level": 11,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 922,
+        "y": 1129,
+        "z": -44.380001,
+        "heading": 275,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 5692,
+        "spawngroupId": 529,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Large Piranha",
+        "rawName": "a_large_piranha",
+        "level": 11,
+        "race": "Piranha",
+        "rawRace": "Piranha",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2924,
+        "y": 24,
+        "z": -127.879997,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5776,
+        "spawngroupId": 478,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Willowisp",
+        "rawName": "a_willowisp",
+        "level": 11,
+        "race": "Will-o-Wisp",
+        "rawRace": "Will-O-Wisp",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 64,
+        "y": -127.879997,
+        "z": -53.299999,
+        "heading": 182,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5700,
+        "spawngroupId": 523,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Willowisp",
+        "rawName": "a_willowisp",
+        "level": 11,
+        "race": "Will-o-Wisp",
+        "rawRace": "Will-O-Wisp",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 442,
+        "y": 533.880005,
+        "z": -53.099998,
+        "heading": 415,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5701,
+        "spawngroupId": 523,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Willowisp",
+        "rawName": "a_willowisp",
+        "level": 11,
+        "race": "Will-o-Wisp",
+        "rawRace": "Will-O-Wisp",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -591,
+        "y": 826.880005,
+        "z": -54.799999,
+        "heading": 11,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5702,
+        "spawngroupId": 523,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Willowisp",
+        "rawName": "a_willowisp",
+        "level": 11,
+        "race": "Will-o-Wisp",
+        "rawRace": "Will-O-Wisp",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1538.880005,
+        "y": -449,
+        "z": -79.800003,
+        "heading": 253.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5703,
+        "spawngroupId": 523,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Willowisp",
+        "rawName": "a_willowisp",
+        "level": 11,
+        "race": "Will-o-Wisp",
+        "rawRace": "Will-O-Wisp",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1504,
+        "y": 613,
+        "z": -53.099998,
+        "heading": 110,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5704,
+        "spawngroupId": 523,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Willowisp",
+        "rawName": "a_willowisp",
+        "level": 11,
+        "race": "Will-o-Wisp",
+        "rawRace": "Will-O-Wisp",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1029,
+        "y": -89.879997,
+        "z": -48.900002,
+        "heading": 256.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5705,
+        "spawngroupId": 523,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Asp",
+        "rawName": "an_asp",
+        "level": 11,
+        "race": "Snake",
+        "rawRace": "Snake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1636.880005,
+        "y": -685,
+        "z": -35.400002,
+        "heading": 273,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5748,
+        "spawngroupId": 496,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Orc Legionnaire",
+        "rawName": "an_orc_legionnaire",
+        "level": 11,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -22,
+        "y": 637.880005,
+        "z": -50.130001,
+        "heading": 7,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5690,
+        "spawngroupId": 531,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Dervish Cutthroat",
+        "rawName": "a_Dervish_Cutthroat",
+        "level": 12,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 739,
+        "y": 830.880005,
+        "z": -51.299999,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5699,
+        "spawngroupId": 524,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Dervish Cutthroat",
+        "rawName": "a_Dervish_Cutthroat",
+        "level": 12,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 991,
+        "y": 993,
+        "z": -37.25,
+        "heading": 229,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 5708,
+        "spawngroupId": 520,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Dervish Cutthroat",
+        "rawName": "a_Dervish_Cutthroat",
+        "level": 12,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 980,
+        "y": 967.880005,
+        "z": -41.25,
+        "heading": 200,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5797,
+        "spawngroupId": 6546,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Orc Legionnaire",
+        "rawName": "an_orc_legionnaire",
+        "level": 12,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 3456,
+        "y": -110.879997,
+        "z": -28.25,
+        "heading": 371.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5794,
+        "spawngroupId": 459,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Dervish Cutthroat",
+        "rawName": "a_Dervish_Cutthroat",
+        "level": 13,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 970,
+        "y": 1040.880005,
+        "z": -37.380001,
+        "heading": 498.5,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 5698,
+        "spawngroupId": 525,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Ghoul",
+        "rawName": "a_ghoul",
+        "level": 13,
+        "race": "Ghoul",
+        "rawRace": "Ghoul",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -83.879997,
+        "y": -965,
+        "z": -40.880001,
+        "heading": 391.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5691,
+        "spawngroupId": 530,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Large Piranha",
+        "rawName": "a_large_piranha",
+        "level": 13,
+        "race": "Piranha",
+        "rawRace": "Piranha",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2372,
+        "y": 297.880005,
+        "z": -85.879997,
+        "heading": 0,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 5737,
+        "spawngroupId": 506,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Dervish Cutthroat",
+        "rawName": "a_Dervish_Cutthroat",
+        "level": 14,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": 929.880005,
+        "y": 1014.880005,
+        "z": -44.75,
+        "heading": 150,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 5706,
+        "spawngroupId": 522,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Dervish Cutthroat",
+        "rawName": "a_Dervish_Cutthroat",
+        "level": 14,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 959,
+        "y": 1110,
+        "z": -39.5,
+        "heading": 260,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 5707,
+        "spawngroupId": 521,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Ghoul",
+        "rawName": "a_ghoul",
+        "level": 14,
+        "race": "Ghoul",
+        "rawRace": "Ghoul",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1006.880005,
+        "y": -605,
+        "z": -63.75,
+        "heading": 397.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5795,
+        "spawngroupId": 6544,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Large Piranha",
+        "rawName": "a_large_piranha",
+        "level": 14,
+        "race": "Piranha",
+        "rawRace": "Piranha",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2481,
+        "y": 122,
+        "z": -127.879997,
+        "heading": 0,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 5772,
+        "spawngroupId": 481,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Large Piranha",
+        "rawName": "a_large_piranha",
+        "level": 14,
+        "race": "Piranha",
+        "rawRace": "Piranha",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2814,
+        "y": 129,
+        "z": -131,
+        "heading": 0,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 5773,
+        "spawngroupId": 481,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Large Piranha",
+        "rawName": "a_large_piranha",
+        "level": 14,
+        "race": "Piranha",
+        "rawRace": "Piranha",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2643,
+        "y": 46.880001,
+        "z": -127.879997,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5775,
+        "spawngroupId": 479,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Noresa Sparkle",
+        "rawName": "Noresa_Sparkle",
+        "level": 14,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 267,
+        "y": -701,
+        "z": -50.630001,
+        "heading": 347,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5787,
+        "spawngroupId": 467,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Orc Legionnaire",
+        "rawName": "orc_legionnaire",
+        "level": 14,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2343,
+        "y": 1127,
+        "z": -23.879999,
+        "heading": 194,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 5743,
+        "spawngroupId": 501,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Dervish Thug",
+        "rawName": "a_Dervish_Thug",
+        "level": 15,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 928,
+        "y": 1080,
+        "z": -44,
+        "heading": 153,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 5796,
+        "spawngroupId": 6545,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Orc Legionnaire",
+        "rawName": "orc_legionnaire",
+        "level": 15,
+        "race": "Orc",
+        "rawRace": "Orc",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2451,
+        "y": 1023.880005,
+        "z": -47.630001,
+        "heading": 200,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5798,
+        "spawngroupId": 6547,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Kizdean Gix",
+        "rawName": "Kizdean_Gix",
+        "level": 18,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Shadowknight",
+        "type": "Spawn Slot",
+        "x": 262,
+        "y": -162,
+        "z": -51.880001,
+        "heading": 276,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5677,
+        "spawngroupId": 538,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shadowed Man",
+        "rawName": "a_shadowed_man",
+        "level": 25,
+        "race": "Invisible Man",
+        "rawRace": "Invisible Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2682.643311,
+        "y": -927.728638,
+        "z": -47.74015,
+        "heading": 502,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 76194,
+        "spawngroupId": 54770,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Shadowed Man",
+        "rawName": "a_shadowed_man",
+        "level": 25,
+        "race": "Invisible Man",
+        "rawRace": "Invisible Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2727.43042,
+        "y": -900.409363,
+        "z": -48.436665,
+        "heading": 477,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 76195,
+        "spawngroupId": 54771,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Shadowed Man",
+        "rawName": "a_shadowed_man",
+        "level": 25,
+        "race": "Invisible Man",
+        "rawRace": "Invisible Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2711.931152,
+        "y": -963.673645,
+        "z": -38.852425,
+        "heading": 489.75,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 76196,
+        "spawngroupId": 54772,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Shadowed Man",
+        "rawName": "a_shadowed_man",
+        "level": 25,
+        "race": "Invisible Man",
+        "rawRace": "Invisible Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2698.554688,
+        "y": -904.63092,
+        "z": -48.266109,
+        "heading": 482.25,
+        "chance": 34,
+        "respawnTime": 1200,
+        "spawn2Id": 76197,
+        "spawngroupId": 54773,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Wallin Slyfoot",
+        "rawName": "Wallin_Slyfoot",
+        "level": 25,
+        "race": "Halfling",
+        "rawRace": "Halfling",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 3371,
+        "y": 185.880005,
+        "z": -52.75,
+        "heading": 496.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5764,
+        "spawngroupId": 486,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Jahsohn Aksot",
+        "rawName": "Jahsohn_Aksot",
+        "level": 29,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Magician",
+        "type": "Spawn Slot",
+        "x": 3216,
+        "y": 1067.880005,
+        "z": -46.799999,
+        "heading": 0.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5755,
+        "spawngroupId": 493,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Timtok Tonsmith",
+        "rawName": "Timtok_Tonsmith",
+        "level": 29,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 493,
+        "y": -166,
+        "z": -52.5,
+        "heading": 166,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5746,
+        "spawngroupId": 498,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Ceel Moonwhisper",
+        "rawName": "Ceel_Moonwhisper",
+        "level": 30,
+        "race": "Half Elf",
+        "rawRace": "Half Elf",
+        "className": "Druid",
+        "type": "Spawn Slot",
+        "x": 1430,
+        "y": 391,
+        "z": -51.5,
+        "heading": 437,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 5721,
+        "spawngroupId": 515,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Innkeep Olissa",
+        "rawName": "Innkeep_Olissa",
+        "level": 30,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 2714,
+        "y": -384,
+        "z": -51.380001,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5783,
+        "spawngroupId": 471,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Innkeep Roster",
+        "rawName": "Innkeep_Roster",
+        "level": 30,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 452,
+        "y": -149,
+        "z": -48.130001,
+        "heading": 131,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5779,
+        "spawngroupId": 475,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Shadow Treebright",
+        "rawName": "Shadow_Treebright",
+        "level": 30,
+        "race": "Half Elf",
+        "rawRace": "Half Elf",
+        "className": "Druid",
+        "type": "Spawn Slot",
+        "x": 1406,
+        "y": 378,
+        "z": -51.25,
+        "heading": 479,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 5720,
+        "spawngroupId": 516,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Guard Colin",
+        "rawName": "Guard_Colin",
+        "level": 31,
+        "race": "Guard",
+        "rawRace": "Guard",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 60,
+        "y": 37,
+        "z": -51.380001,
+        "heading": 172,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 5726,
+        "spawngroupId": 512,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Guard Valon",
+        "rawName": "Guard_Valon",
+        "level": 31,
+        "race": "Guard",
+        "rawRace": "Guard",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 69,
+        "y": -13,
+        "z": -51.380001,
+        "heading": 81,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 5725,
+        "spawngroupId": 513,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Ranvigoz Tonsmith",
+        "rawName": "Ranvigoz_Tonsmith",
+        "level": 31,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 498,
+        "y": -173.880005,
+        "z": -52.5,
+        "heading": 87,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5747,
+        "spawngroupId": 497,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Werewolf",
+        "rawName": "a_werewolf",
+        "level": 32,
+        "race": "Wolf",
+        "rawRace": "Werewolf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -803.967468,
+        "y": -539.600586,
+        "z": -63.45105,
+        "heading": 510,
+        "chance": 20,
+        "respawnTime": 400,
+        "spawn2Id": 58466,
+        "spawngroupId": 48033,
+        "candidateCount": 5
+      },
+      {
+        "displayName": "A Hill Giant",
+        "rawName": "a_hill_giant",
+        "level": 34,
+        "race": "Giant",
+        "rawRace": "Giant",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1161,
+        "y": -720,
+        "z": -40,
+        "heading": 381.25,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 5694,
+        "spawngroupId": 527,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Hill Giant",
+        "rawName": "a_hill_giant",
+        "level": 36,
+        "race": "Giant",
+        "rawRace": "Giant",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 739.880005,
+        "y": 17.879999,
+        "z": -40,
+        "heading": 117.5,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 5793,
+        "spawngroupId": 460,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Nightfall Giant",
+        "rawName": "Nightfall_Giant",
+        "level": 37,
+        "race": "Giant",
+        "rawRace": "Giant",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1502.498413,
+        "y": -1032.603271,
+        "z": -19.956329,
+        "heading": 128,
+        "chance": 50,
+        "respawnTime": 400,
+        "spawn2Id": 58436,
+        "spawngroupId": 48023,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Innkeep Redthorn",
+        "rawName": "Innkeep_Redthorn",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 2763,
+        "y": -401,
+        "z": -51.380001,
+        "heading": 380,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5782,
+        "spawngroupId": 472,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Innkeep Seke",
+        "rawName": "Innkeep_Seke",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 465.880005,
+        "y": -103.879997,
+        "z": -48.130001,
+        "heading": 259,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5778,
+        "spawngroupId": 476,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Maula Fishcatcher",
+        "rawName": "Maula_Fishcatcher",
+        "level": 45,
+        "race": "Barbarian",
+        "rawRace": "Barbarian",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 2408.879883,
+        "y": 405,
+        "z": -47.25,
+        "heading": 214,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5786,
+        "spawngroupId": 468,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Opal Woodchopper",
+        "rawName": "Opal_Woodchopper",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 2576,
+        "y": -515,
+        "z": -49,
+        "heading": 116,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5785,
+        "spawngroupId": 469,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Parus The Strong",
+        "rawName": "Parus_the_Strong",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 534,
+        "y": -279,
+        "z": -48.130001,
+        "heading": 502,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5774,
+        "spawngroupId": 480,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Peron Threadspinner",
+        "rawName": "Peron_ThreadSpinner",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 2666,
+        "y": -400,
+        "z": -51.380001,
+        "heading": 130,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5781,
+        "spawngroupId": 473,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Ranon Strongarm",
+        "rawName": "Ranon_Strongarm",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 2827,
+        "y": -463,
+        "z": -48.130001,
+        "heading": 389,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5784,
+        "spawngroupId": 470,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Ruby Boxcrafter",
+        "rawName": "Ruby_Boxcrafter",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 591.75,
+        "y": -212.130005,
+        "z": -48.630001,
+        "heading": 468,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5780,
+        "spawngroupId": 474,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Slea Pinewhisper",
+        "rawName": "Slea_Pinewhisper",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 1383.880005,
+        "y": 450,
+        "z": -51.25,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5771,
+        "spawngroupId": 482,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Sorsha Hobbitfriend",
+        "rawName": "Sorsha_Hobbitfriend",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 468,
+        "y": -196,
+        "z": -48.130001,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5777,
+        "spawngroupId": 477,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Spider",
+        "rawName": "spider",
+        "level": 60,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2689,
+        "y": -400,
+        "z": -33.630001,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 21416,
+        "spawngroupId": 13080,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Bealya Tanilsuia",
+        "rawName": "Bealya_Tanilsuia",
+        "level": 65,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": 2627,
+        "y": -462,
+        "z": -49.880001,
+        "heading": 122,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5788,
+        "spawngroupId": 466,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Brizzenoth Scyth",
+        "rawName": "Brizzenoth_Scyth",
+        "level": 65,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2284.5,
+        "y": 43.400002,
+        "z": -50.700001,
+        "heading": 377.799988,
+        "chance": 100,
+        "respawnTime": 60,
+        "spawn2Id": 68497,
+        "spawngroupId": 52567,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Simon Aldicott",
+        "rawName": "Simon_Aldicott",
+        "level": 65,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": 2906,
+        "y": 268,
+        "z": -51.25,
+        "heading": 65,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 5689,
+        "spawngroupId": 532,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Legendary Hill Giant",
+        "rawName": "A_Legendary_Hill_Giant",
+        "level": 72,
+        "race": "Giant",
+        "rawRace": "Giant",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 2088,
+        "y": 40.799999,
+        "z": -51.900002,
+        "heading": 372,
+        "chance": 100,
+        "respawnTime": 10800,
+        "spawn2Id": 137416,
+        "spawngroupId": 98970,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Sasha The Seer",
+        "rawName": "Sasha_the_Seer",
+        "level": 80,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Enchanter",
+        "type": "Spawn Slot",
+        "x": 2396.374023,
+        "y": -51.251019,
+        "z": -55.095116,
+        "heading": 37.25,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 57649,
+        "spawngroupId": 34547,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Trigger",
+        "rawName": "Trigger",
+        "level": 99,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1342.409546,
+        "y": 214.059341,
+        "z": -54.21875,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 400,
+        "spawn2Id": 58437,
+        "spawngroupId": 48024,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Unknown",
+        "rawName": "Unknown",
+        "level": null,
+        "race": "Unknown",
+        "rawRace": "Unknown",
+        "className": "Unknown",
+        "type": "Spawn Slot",
+        "x": 2025.325684,
+        "y": -713.327332,
+        "z": -51.935493,
+        "heading": 438.5,
+        "chance": null,
+        "respawnTime": 1200,
+        "spawn2Id": 21945,
+        "spawngroupId": 13482,
+        "candidateCount": 1
+      }
+    ]
+  }
+}

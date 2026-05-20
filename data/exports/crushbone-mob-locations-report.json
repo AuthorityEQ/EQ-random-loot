@@ -1,0 +1,44 @@
+{
+  "zoneShortName": "crushbone",
+  "zoneName": "Crushbone",
+  "sourceKind": "Local EQEmu/PEQ database export",
+  "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+  "totalSpawnSlots": 105,
+  "totalCandidates": 236,
+  "coordinateBounds": {
+    "x": {
+      "min": -258,
+      "max": 870
+    },
+    "y": {
+      "min": -616,
+      "max": 353
+    },
+    "z": {
+      "min": -28,
+      "max": 90
+    }
+  },
+  "axisNotes": [
+    "Coordinates are original EQEmu spawn2 x/y/z values.",
+    "No map-image transform, rotation, flip, or scale has been applied.",
+    "Use x/y/z as raw coordinate candidates for map alignment experiments."
+  ],
+  "sourceTablesUsed": [
+    "spawn2",
+    "spawngroup",
+    "spawnentry",
+    "npc_types"
+  ],
+  "assumptions": [
+    "One spawn2 row equals one spawn slot.",
+    "Primary mob is the highest-chance spawnentry candidate, using the exporter tie-breakers.",
+    "All spawn candidates are retained in the JSON export.",
+    "CSV contains one row per spawn slot using the primary candidate."
+  ],
+  "outputs": {
+    "csv": "C:\\frostreaver stuff\\data\\exports\\crushbone-mob-locations.csv",
+    "json": "C:\\frostreaver stuff\\data\\exports\\crushbone-mob-locations.json",
+    "report": "C:\\frostreaver stuff\\data\\exports\\crushbone-mob-locations-report.json"
+  }
+}

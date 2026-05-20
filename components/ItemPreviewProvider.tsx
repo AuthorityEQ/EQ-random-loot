@@ -1,7 +1,9 @@
 "use client";
 
-import { createContext, useContext, useEffect, useMemo, useState } from "react";
+import "@/components/item-drawer.css";
+import { createContext, useContext, useEffect, useMemo, useRef, useState } from "react";
 import type React from "react";
+import { createPortal } from "react-dom";
 import { useSession } from "next-auth/react";
 import { EqItemInspect } from "@/components/EqItemInspect";
 import type { ItemDetails } from "@/lib/search";
@@ -10,6 +12,7 @@ import { fetchUserSettings, saveUserSettings } from "@/lib/user-settings-client"
 type PreviewState = {
   itemName: string;
   details?: ItemDetails;
+  footer?: React.ReactNode;
   x: number;
   y: number;
 };
@@ -18,7 +21,7 @@ type ItemPreviewContextValue = {
   enabled: boolean;
   setEnabled: (enabled: boolean) => void;
   hidePreview: () => void;
-  previewProps: (itemName: string, details?: ItemDetails) => {
+  previewProps: (itemName: string, details?: ItemDetails, footer?: React.ReactNode) => {
     onMouseEnter: (event: React.MouseEvent<HTMLElement>) => void;
     onMouseMove: (event: React.MouseEvent<HTMLElement>) => void;
     onMouseLeave: () => void;
@@ -45,6 +48,8 @@ export function ItemPreviewProvider({ children }: { children: React.ReactNode })
   const [enabled, setEnabledState] = useState(true);
   const [preview, setPreview] = useState<PreviewState | null>(null);
   const [ready, setReady] = useState(false);
+  const hideTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const previewPositionRef = useRef<{ details?: ItemDetails; itemName: string; x: number; y: number } | null>(null);
   const { status: authStatus, data: session } = useSession();
   const isSignedIn = authStatus === "authenticated" && Boolean(session?.user?.discordUserId);
 
@@ -82,19 +87,48 @@ export function ItemPreviewProvider({ children }: { children: React.ReactNode })
   }
 
   const value = useMemo<ItemPreviewContextValue>(() => {
-    function updatePreview(itemName: string, details: ItemDetails | undefined, event: React.MouseEvent<HTMLElement>) {
+    function hidePreviewSoon() {
+      if (hideTimer.current) {
+        clearTimeout(hideTimer.current);
+      }
+      hideTimer.current = setTimeout(() => {
+        previewPositionRef.current = null;
+        setPreview(null);
+      }, 90);
+    }
+
+    function updatePreview(itemName: string, details: ItemDetails | undefined, footer: React.ReactNode | undefined, event: React.MouseEvent<HTMLElement>) {
       if (!enabled || !canHoverPreview() || !details) return;
-      setPreview({ itemName, details, x: event.clientX, y: event.clientY });
+      if (hideTimer.current) {
+        clearTimeout(hideTimer.current);
+        hideTimer.current = null;
+      }
+      const previous = previewPositionRef.current;
+      if (
+        previous
+        && previous.itemName === itemName
+        && previous.details === details
+        && Math.abs(previous.x - event.clientX) < 8
+        && Math.abs(previous.y - event.clientY) < 8
+      ) {
+        return;
+      }
+      previewPositionRef.current = { details, itemName, x: event.clientX, y: event.clientY };
+      setPreview({ itemName, details, footer, x: event.clientX, y: event.clientY });
     }
 
     return {
       enabled,
       setEnabled,
-      hidePreview: () => setPreview(null),
-      previewProps: (itemName: string, details?: ItemDetails) => ({
-        onMouseEnter: (event) => updatePreview(itemName, details, event),
-        onMouseMove: (event) => updatePreview(itemName, details, event),
-        onMouseLeave: () => setPreview(null),
+      hidePreview: () => {
+        if (hideTimer.current) clearTimeout(hideTimer.current);
+        previewPositionRef.current = null;
+        setPreview(null);
+      },
+      previewProps: (itemName: string, details?: ItemDetails, footer?: React.ReactNode) => ({
+        onMouseEnter: (event) => updatePreview(itemName, details, footer, event),
+        onMouseMove: (event) => updatePreview(itemName, details, footer, event),
+        onMouseLeave: hidePreviewSoon,
       }),
     };
   }, [enabled]);
@@ -119,21 +153,33 @@ function ItemPreviewTooltip({ preview }: { preview: PreviewState }) {
   const style = getTooltipStyle(preview.x, preview.y);
   const details = preview.details;
   if (!details) return null;
+  if (typeof document === "undefined") return null;
 
-  return (
+  return createPortal(
     <aside className="item-preview-tooltip" style={style} aria-hidden="true">
       <EqItemInspect compact details={details} itemName={preview.itemName} />
-    </aside>
+      {preview.footer ? <div className="item-preview-footer">{preview.footer}</div> : null}
+    </aside>,
+    document.body,
   );
 }
 
 function getTooltipStyle(x: number, y: number) {
-  const width = 320;
-  const height = 280;
-  const left = Math.min(x + 18, window.innerWidth - width - 12);
-  const top = Math.min(y + 18, window.innerHeight - height - 12);
+  const margin = 12;
+  const offset = 18;
+  const width = Math.min(420, window.innerWidth - margin * 2);
+  const estimatedHeight = Math.min(520, window.innerHeight - margin * 2);
+  const spaceRight = window.innerWidth - x - margin;
+  const spaceBelow = window.innerHeight - y - margin;
+  const preferredLeft = spaceRight >= width + offset ? x + offset : x - width - offset;
+  const preferredTop = spaceBelow >= estimatedHeight * 0.68 ? y + offset : y - estimatedHeight - offset;
+  const left = Math.min(Math.max(margin, preferredLeft), window.innerWidth - width - margin);
+  const top = Math.min(Math.max(margin, preferredTop), window.innerHeight - estimatedHeight - margin);
+
   return {
-    left: Math.max(12, left),
-    top: Math.max(12, top),
+    left,
+    maxHeight: estimatedHeight,
+    top,
+    width,
   };
 }

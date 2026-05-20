@@ -1,0 +1,435 @@
+{
+  "summary": {
+    "zoneSlug": "the-arena",
+    "zoneName": "The Arena",
+    "requestedZoneShortName": "arena",
+    "zoneShortName": "arena",
+    "sourceFile": "local-eqemu-database",
+    "matched": true,
+    "expansion": "Classic",
+    "eqemuExpansionId": 0,
+    "expansionSource": "eqemu-zone-table",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobCount": 6,
+    "unknownLevelCount": 0,
+    "minLevel": 65,
+    "maxLevel": 99,
+    "averageLevel": 79,
+    "medianLevel": 77.5,
+    "levelCounts": {
+      "65": 1,
+      "75": 2,
+      "80": 2,
+      "99": 1
+    },
+    "levelBuckets": {
+      "1-10": 0,
+      "11-20": 0,
+      "21-30": 0,
+      "31-40": 0,
+      "41-50": 0,
+      "51-60": 0,
+      "61+": 6
+    },
+    "levelProfileLabel": "Wide level spread",
+    "mobGroupNameCounts": {
+      "Dps Machine": 2,
+      "A Training Dummy": 1,
+      "An Undead Training Dummy": 1,
+      "Soulbinder Gendal": 1,
+      "Unknown": 1
+    },
+    "classCounts": {
+      "Warrior": 6
+    },
+    "raceCounts": {
+      "Elemental": 4,
+      "Skeleton": 1,
+      "Teleport Man": 1
+    },
+    "normalizedRaceCounts": {
+      "Elemental": 4,
+      "Skeleton": 1,
+      "Teleport Man": 1
+    },
+    "normalizedRaceLevelCounts": {
+      "Elemental": {
+        "75": 2,
+        "80": 2
+      },
+      "Skeleton": {
+        "65": 1
+      },
+      "Teleport Man": {
+        "99": 1
+      }
+    },
+    "raceAliases": {
+      "Elemental": [
+        "Elemental"
+      ],
+      "Skeleton": [
+        "Skeleton"
+      ],
+      "Teleport Man": [
+        "Teleport Man"
+      ]
+    },
+    "typeCounts": {
+      "Spawn Slot": 6
+    },
+    "notes": [
+      "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+      "Read-only test export; not wired into production /zones data."
+    ],
+    "spawnMapPrototype": {
+      "sourceKind": "Local EQEmu/PEQ database export",
+      "coordinateNote": "Original EQEmu spawn2 x/y/z coordinates are preserved for map prototyping.",
+      "points": [
+        {
+          "spawn2Id": 57775,
+          "spawngroupId": 47295,
+          "name": "Soulbinder_Gendal",
+          "displayName": "Soulbinder Gendal",
+          "level": 65,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Warrior",
+          "x": 167.550003,
+          "y": -1020.72998,
+          "z": 49.082737,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 600,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 68500,
+          "spawngroupId": 52570,
+          "name": "a_training_dummy",
+          "displayName": "A Training Dummy",
+          "level": 75,
+          "race": "Elemental",
+          "rawRace": "Elemental",
+          "className": "Warrior",
+          "x": -73.5,
+          "y": -979,
+          "z": 49.900002,
+          "heading": 3.2,
+          "chance": 100,
+          "respawnTime": 5,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 68527,
+          "spawngroupId": 52584,
+          "name": "an_undead_training_dummy",
+          "displayName": "An Undead Training Dummy",
+          "level": 75,
+          "race": "Elemental",
+          "rawRace": "Elemental",
+          "className": "Warrior",
+          "x": -53.5,
+          "y": -979,
+          "z": 49.900002,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 5,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 137543,
+          "spawngroupId": 99086,
+          "name": "DPS_Machine",
+          "displayName": "Dps Machine",
+          "level": 80,
+          "race": "Elemental",
+          "rawRace": "Elemental",
+          "className": "Warrior",
+          "x": -78.5,
+          "y": -974,
+          "z": 49.900002,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 5,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 142540,
+          "spawngroupId": 104065,
+          "name": "#____________",
+          "displayName": "Unknown",
+          "level": 99,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 1,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 156657,
+          "spawngroupId": 117639,
+          "name": "DPS_Machine",
+          "displayName": "Dps Machine",
+          "level": 80,
+          "race": "Elemental",
+          "rawRace": "Elemental",
+          "className": "Warrior",
+          "x": -103.10218,
+          "y": -978.518738,
+          "z": 49.078232,
+          "heading": 6.25,
+          "chance": 100,
+          "respawnTime": 6,
+          "candidateCount": 1
+        }
+      ]
+    }
+  },
+  "details": {
+    "zoneSlug": "the-arena",
+    "routeSlug": "arena",
+    "zoneName": "The Arena",
+    "sourceFile": "local-eqemu-database",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobGroups": [
+      {
+        "displayName": "Soulbinder Gendal",
+        "rawNames": [
+          "Soulbinder_Gendal"
+        ],
+        "count": 1,
+        "levelMin": 65,
+        "levelMax": 65,
+        "levels": [
+          65
+        ],
+        "raceCounts": {
+          "Skeleton": 1
+        },
+        "rawRaceCounts": {
+          "Skeleton": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Training Dummy",
+        "rawNames": [
+          "a_training_dummy"
+        ],
+        "count": 1,
+        "levelMin": 75,
+        "levelMax": 75,
+        "levels": [
+          75
+        ],
+        "raceCounts": {
+          "Elemental": 1
+        },
+        "rawRaceCounts": {
+          "Elemental": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "An Undead Training Dummy",
+        "rawNames": [
+          "an_undead_training_dummy"
+        ],
+        "count": 1,
+        "levelMin": 75,
+        "levelMax": 75,
+        "levels": [
+          75
+        ],
+        "raceCounts": {
+          "Elemental": 1
+        },
+        "rawRaceCounts": {
+          "Elemental": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Dps Machine",
+        "rawNames": [
+          "DPS_Machine"
+        ],
+        "count": 2,
+        "levelMin": 80,
+        "levelMax": 80,
+        "levels": [
+          80
+        ],
+        "raceCounts": {
+          "Elemental": 2
+        },
+        "rawRaceCounts": {
+          "Elemental": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "Unknown",
+        "rawNames": [
+          "#____________"
+        ],
+        "count": 1,
+        "levelMin": 99,
+        "levelMax": 99,
+        "levels": [
+          99
+        ],
+        "raceCounts": {
+          "Teleport Man": 1
+        },
+        "rawRaceCounts": {
+          "Teleport Man": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      }
+    ],
+    "rows": [
+      {
+        "displayName": "Soulbinder Gendal",
+        "rawName": "Soulbinder_Gendal",
+        "level": 65,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 167.550003,
+        "y": -1020.72998,
+        "z": 49.082737,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 600,
+        "spawn2Id": 57775,
+        "spawngroupId": 47295,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Training Dummy",
+        "rawName": "a_training_dummy",
+        "level": 75,
+        "race": "Elemental",
+        "rawRace": "Elemental",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -73.5,
+        "y": -979,
+        "z": 49.900002,
+        "heading": 3.2,
+        "chance": 100,
+        "respawnTime": 5,
+        "spawn2Id": 68500,
+        "spawngroupId": 52570,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Undead Training Dummy",
+        "rawName": "an_undead_training_dummy",
+        "level": 75,
+        "race": "Elemental",
+        "rawRace": "Elemental",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -53.5,
+        "y": -979,
+        "z": 49.900002,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 5,
+        "spawn2Id": 68527,
+        "spawngroupId": 52584,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Dps Machine",
+        "rawName": "DPS_Machine",
+        "level": 80,
+        "race": "Elemental",
+        "rawRace": "Elemental",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -78.5,
+        "y": -974,
+        "z": 49.900002,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 5,
+        "spawn2Id": 137543,
+        "spawngroupId": 99086,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Dps Machine",
+        "rawName": "DPS_Machine",
+        "level": 80,
+        "race": "Elemental",
+        "rawRace": "Elemental",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -103.10218,
+        "y": -978.518738,
+        "z": 49.078232,
+        "heading": 6.25,
+        "chance": 100,
+        "respawnTime": 6,
+        "spawn2Id": 156657,
+        "spawngroupId": 117639,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Unknown",
+        "rawName": "#____________",
+        "level": 99,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 1,
+        "spawn2Id": 142540,
+        "spawngroupId": 104065,
+        "candidateCount": 1
+      }
+    ]
+  }
+}

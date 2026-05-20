@@ -1,0 +1,4191 @@
+{
+  "source": "Local EQEmu/PEQ database",
+  "configPath": "C:\\eqserver\\eqemu server\\eqemu_config.json",
+  "mysqlPath": "C:/Program Files/MariaDB 10.11/bin/mysql.exe",
+  "zoneShortName": "torgiran",
+  "credentialsCommitted": false,
+  "credentialsHandling": "Credentials were read from the local EQEmu config and passed to mysql through a temporary defaults file that is deleted after the export.",
+  "tables": {
+    "zone": {
+      "found": true,
+      "columns": [
+        {
+          "field": "id",
+          "type": "int(10)",
+          "null": "NO",
+          "key": "PRI",
+          "default": null
+        },
+        {
+          "field": "zoneidnumber",
+          "type": "int(4)",
+          "null": "NO",
+          "key": "MUL",
+          "default": "0"
+        },
+        {
+          "field": "version",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "short_name",
+          "type": "varchar(32)",
+          "null": "YES",
+          "key": "MUL",
+          "default": null
+        },
+        {
+          "field": "long_name",
+          "type": "text",
+          "null": "NO",
+          "key": "",
+          "default": null
+        },
+        {
+          "field": "min_status",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "map_file_name",
+          "type": "varchar(100)",
+          "null": "YES",
+          "key": "",
+          "default": null
+        },
+        {
+          "field": "note",
+          "type": "varchar(200)",
+          "null": "YES",
+          "key": "",
+          "default": null
+        },
+        {
+          "field": "min_expansion",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "-1"
+        },
+        {
+          "field": "max_expansion",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "-1"
+        },
+        {
+          "field": "content_flags",
+          "type": "varchar(100)",
+          "null": "YES",
+          "key": "",
+          "default": null
+        },
+        {
+          "field": "content_flags_disabled",
+          "type": "varchar(100)",
+          "null": "YES",
+          "key": "",
+          "default": null
+        },
+        {
+          "field": "expansion",
+          "type": "tinyint(3)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "file_name",
+          "type": "varchar(16)",
+          "null": "YES",
+          "key": "",
+          "default": null
+        },
+        {
+          "field": "safe_x",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "safe_y",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "safe_z",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "safe_heading",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "graveyard_id",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "min_level",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "max_level",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "255"
+        },
+        {
+          "field": "timezone",
+          "type": "int(5)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "maxclients",
+          "type": "int(5)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "ruleset",
+          "type": "int(10) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "underworld",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "minclip",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "450"
+        },
+        {
+          "field": "maxclip",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "450"
+        },
+        {
+          "field": "fog_minclip",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "450"
+        },
+        {
+          "field": "fog_maxclip",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "450"
+        },
+        {
+          "field": "fog_blue",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "fog_red",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "fog_green",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "sky",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "1"
+        },
+        {
+          "field": "ztype",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "1"
+        },
+        {
+          "field": "zone_exp_multiplier",
+          "type": "decimal(6,2)",
+          "null": "NO",
+          "key": "",
+          "default": "0.00"
+        },
+        {
+          "field": "walkspeed",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "0.4"
+        },
+        {
+          "field": "time_type",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "2"
+        },
+        {
+          "field": "fog_red1",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "fog_green1",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "fog_blue1",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "fog_minclip1",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "450"
+        },
+        {
+          "field": "fog_maxclip1",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "450"
+        },
+        {
+          "field": "fog_red2",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "fog_green2",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "fog_blue2",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "fog_minclip2",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "450"
+        },
+        {
+          "field": "fog_maxclip2",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "450"
+        },
+        {
+          "field": "fog_red3",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "fog_green3",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "fog_blue3",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "fog_minclip3",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "450"
+        },
+        {
+          "field": "fog_maxclip3",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "450"
+        },
+        {
+          "field": "fog_red4",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "fog_green4",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "fog_blue4",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "fog_minclip4",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "450"
+        },
+        {
+          "field": "fog_maxclip4",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "450"
+        },
+        {
+          "field": "fog_density",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "flag_needed",
+          "type": "varchar(128)",
+          "null": "NO",
+          "key": "",
+          "default": ""
+        },
+        {
+          "field": "canbind",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "1"
+        },
+        {
+          "field": "cancombat",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "1"
+        },
+        {
+          "field": "canlevitate",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "1"
+        },
+        {
+          "field": "castoutdoor",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "1"
+        },
+        {
+          "field": "hotzone",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "insttype",
+          "type": "tinyint(1) unsigned zerofill",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "shutdowndelay",
+          "type": "bigint(16) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "5000"
+        },
+        {
+          "field": "peqzone",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "1"
+        },
+        {
+          "field": "bypass_expansion_check",
+          "type": "tinyint(3)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "suspendbuffs",
+          "type": "tinyint(1) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "rain_chance1",
+          "type": "int(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "rain_chance2",
+          "type": "int(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "rain_chance3",
+          "type": "int(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "rain_chance4",
+          "type": "int(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "rain_duration1",
+          "type": "int(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "rain_duration2",
+          "type": "int(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "rain_duration3",
+          "type": "int(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "rain_duration4",
+          "type": "int(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "snow_chance1",
+          "type": "int(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "snow_chance2",
+          "type": "int(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "snow_chance3",
+          "type": "int(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "snow_chance4",
+          "type": "int(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "snow_duration1",
+          "type": "int(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "snow_duration2",
+          "type": "int(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "snow_duration3",
+          "type": "int(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "snow_duration4",
+          "type": "int(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "gravity",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "0.4"
+        },
+        {
+          "field": "type",
+          "type": "int(3)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "skylock",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "fast_regen_hp",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "180"
+        },
+        {
+          "field": "fast_regen_mana",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "180"
+        },
+        {
+          "field": "fast_regen_endurance",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "180"
+        },
+        {
+          "field": "npc_max_aggro_dist",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "600"
+        },
+        {
+          "field": "client_update_range",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "600"
+        },
+        {
+          "field": "underworld_teleport_index",
+          "type": "int(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "lava_damage",
+          "type": "int(11)",
+          "null": "YES",
+          "key": "",
+          "default": "50"
+        },
+        {
+          "field": "min_lava_damage",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "10"
+        },
+        {
+          "field": "idle_when_empty",
+          "type": "tinyint(1) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "1"
+        },
+        {
+          "field": "seconds_before_idle",
+          "type": "int(11) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "60"
+        },
+        {
+          "field": "shard_at_player_count",
+          "type": "int(11)",
+          "null": "YES",
+          "key": "",
+          "default": "0"
+        }
+      ]
+    },
+    "npc_types": {
+      "found": true,
+      "columns": [
+        {
+          "field": "id",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "PRI",
+          "default": null
+        },
+        {
+          "field": "name",
+          "type": "text",
+          "null": "NO",
+          "key": "",
+          "default": null
+        },
+        {
+          "field": "lastname",
+          "type": "varchar(32)",
+          "null": "YES",
+          "key": "",
+          "default": null
+        },
+        {
+          "field": "level",
+          "type": "tinyint(2) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "race",
+          "type": "smallint(5) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "class",
+          "type": "tinyint(2) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "bodytype",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "1"
+        },
+        {
+          "field": "hp",
+          "type": "bigint(20)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "mana",
+          "type": "bigint(20)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "gender",
+          "type": "tinyint(2) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "texture",
+          "type": "tinyint(2) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "helmtexture",
+          "type": "tinyint(2) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "herosforgemodel",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "size",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "hp_regen_rate",
+          "type": "bigint(20)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "hp_regen_per_second",
+          "type": "bigint(20)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "mana_regen_rate",
+          "type": "bigint(20)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "loottable_id",
+          "type": "int(11) unsigned",
+          "null": "NO",
+          "key": "MUL",
+          "default": "0"
+        },
+        {
+          "field": "merchant_id",
+          "type": "int(11) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "greed",
+          "type": "tinyint(8) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "alt_currency_id",
+          "type": "int(11) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "npc_spells_id",
+          "type": "int(11) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "npc_spells_effects_id",
+          "type": "int(11) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "npc_faction_id",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "adventure_template_id",
+          "type": "int(10) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "trap_template",
+          "type": "int(10) unsigned",
+          "null": "YES",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "mindmg",
+          "type": "int(10) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "maxdmg",
+          "type": "int(10) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "attack_count",
+          "type": "smallint(6)",
+          "null": "NO",
+          "key": "",
+          "default": "-1"
+        },
+        {
+          "field": "npcspecialattks",
+          "type": "varchar(36)",
+          "null": "NO",
+          "key": "",
+          "default": ""
+        },
+        {
+          "field": "special_abilities",
+          "type": "text",
+          "null": "YES",
+          "key": "",
+          "default": null
+        },
+        {
+          "field": "aggroradius",
+          "type": "int(10) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "assistradius",
+          "type": "int(10) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "face",
+          "type": "int(10) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "1"
+        },
+        {
+          "field": "luclin_hairstyle",
+          "type": "int(10) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "1"
+        },
+        {
+          "field": "luclin_haircolor",
+          "type": "int(10) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "1"
+        },
+        {
+          "field": "luclin_eyecolor",
+          "type": "int(10) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "1"
+        },
+        {
+          "field": "luclin_eyecolor2",
+          "type": "int(10) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "1"
+        },
+        {
+          "field": "luclin_beardcolor",
+          "type": "int(10) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "1"
+        },
+        {
+          "field": "luclin_beard",
+          "type": "int(10) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "drakkin_heritage",
+          "type": "int(10)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "drakkin_tattoo",
+          "type": "int(10)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "drakkin_details",
+          "type": "int(10)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "armortint_id",
+          "type": "int(10) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "armortint_red",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "armortint_green",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "armortint_blue",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "d_melee_texture1",
+          "type": "int(11) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "d_melee_texture2",
+          "type": "int(11) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "ammo_idfile",
+          "type": "varchar(30)",
+          "null": "NO",
+          "key": "",
+          "default": "IT10"
+        },
+        {
+          "field": "prim_melee_type",
+          "type": "tinyint(4) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "28"
+        },
+        {
+          "field": "sec_melee_type",
+          "type": "tinyint(4) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "28"
+        },
+        {
+          "field": "ranged_type",
+          "type": "tinyint(4) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "7"
+        },
+        {
+          "field": "runspeed",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "MR",
+          "type": "smallint(5)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "CR",
+          "type": "smallint(5)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "DR",
+          "type": "smallint(5)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "FR",
+          "type": "smallint(5)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "PR",
+          "type": "smallint(5)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "Corrup",
+          "type": "smallint(5)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "PhR",
+          "type": "smallint(5) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "see_invis",
+          "type": "smallint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "see_invis_undead",
+          "type": "smallint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "qglobal",
+          "type": "int(2) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "AC",
+          "type": "smallint(5)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "npc_aggro",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "spawn_limit",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "attack_speed",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "attack_delay",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "30"
+        },
+        {
+          "field": "findable",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "STR",
+          "type": "mediumint(8) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "75"
+        },
+        {
+          "field": "STA",
+          "type": "mediumint(8) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "75"
+        },
+        {
+          "field": "DEX",
+          "type": "mediumint(8) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "75"
+        },
+        {
+          "field": "AGI",
+          "type": "mediumint(8) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "75"
+        },
+        {
+          "field": "_INT",
+          "type": "mediumint(8) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "80"
+        },
+        {
+          "field": "WIS",
+          "type": "mediumint(8) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "75"
+        },
+        {
+          "field": "CHA",
+          "type": "mediumint(8) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "75"
+        },
+        {
+          "field": "see_hide",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "see_improved_hide",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "trackable",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "1"
+        },
+        {
+          "field": "isbot",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "exclude",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "1"
+        },
+        {
+          "field": "ATK",
+          "type": "mediumint(9)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "Accuracy",
+          "type": "mediumint(9)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "Avoidance",
+          "type": "mediumint(9) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "slow_mitigation",
+          "type": "smallint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "version",
+          "type": "smallint(5) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "maxlevel",
+          "type": "tinyint(3)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "scalerate",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "100"
+        },
+        {
+          "field": "private_corpse",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "unique_spawn_by_name",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "underwater",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "isquest",
+          "type": "tinyint(3)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "emoteid",
+          "type": "int(10) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "spellscale",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "100"
+        },
+        {
+          "field": "healscale",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "100"
+        },
+        {
+          "field": "no_target_hotkey",
+          "type": "tinyint(1) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "raid_target",
+          "type": "tinyint(1) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "armtexture",
+          "type": "tinyint(2)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "bracertexture",
+          "type": "tinyint(2)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "handtexture",
+          "type": "tinyint(2)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "legtexture",
+          "type": "tinyint(2)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "feettexture",
+          "type": "tinyint(2)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "light",
+          "type": "tinyint(2)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "walkspeed",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "peqid",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "unique_",
+          "type": "tinyint(2)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "fixed",
+          "type": "tinyint(2)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "ignore_despawn",
+          "type": "tinyint(2)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "show_name",
+          "type": "tinyint(2)",
+          "null": "NO",
+          "key": "",
+          "default": "1"
+        },
+        {
+          "field": "untargetable",
+          "type": "tinyint(2)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "charm_ac",
+          "type": "smallint(5)",
+          "null": "YES",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "charm_min_dmg",
+          "type": "int(10)",
+          "null": "YES",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "charm_max_dmg",
+          "type": "int(10)",
+          "null": "YES",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "charm_attack_delay",
+          "type": "tinyint(3)",
+          "null": "YES",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "charm_accuracy_rating",
+          "type": "mediumint(9)",
+          "null": "YES",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "charm_avoidance_rating",
+          "type": "mediumint(9)",
+          "null": "YES",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "charm_atk",
+          "type": "mediumint(9)",
+          "null": "YES",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "skip_global_loot",
+          "type": "tinyint(4)",
+          "null": "YES",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "rare_spawn",
+          "type": "tinyint(4)",
+          "null": "YES",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "stuck_behavior",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "model",
+          "type": "smallint(5)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "flymode",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "-1"
+        },
+        {
+          "field": "always_aggro",
+          "type": "tinyint(1)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "exp_mod",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "100"
+        },
+        {
+          "field": "heroic_strikethrough",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "faction_amount",
+          "type": "int(10)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "keeps_sold_items",
+          "type": "tinyint(1) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "1"
+        },
+        {
+          "field": "is_parcel_merchant",
+          "type": "tinyint(1) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "multiquest_enabled",
+          "type": "tinyint(1) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "npc_tint_id",
+          "type": "smallint(5) unsigned",
+          "null": "YES",
+          "key": "",
+          "default": "0"
+        }
+      ]
+    },
+    "spawn2": {
+      "found": true,
+      "columns": [
+        {
+          "field": "id",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "PRI",
+          "default": null
+        },
+        {
+          "field": "spawngroupID",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "MUL",
+          "default": "0"
+        },
+        {
+          "field": "zone",
+          "type": "varchar(32)",
+          "null": "YES",
+          "key": "MUL",
+          "default": null
+        },
+        {
+          "field": "version",
+          "type": "smallint(5)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "x",
+          "type": "float(14,6)",
+          "null": "NO",
+          "key": "",
+          "default": "0.000000"
+        },
+        {
+          "field": "y",
+          "type": "float(14,6)",
+          "null": "NO",
+          "key": "",
+          "default": "0.000000"
+        },
+        {
+          "field": "z",
+          "type": "float(14,6)",
+          "null": "NO",
+          "key": "",
+          "default": "0.000000"
+        },
+        {
+          "field": "heading",
+          "type": "float(14,6)",
+          "null": "NO",
+          "key": "",
+          "default": "0.000000"
+        },
+        {
+          "field": "respawntime",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "variance",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "pathgrid",
+          "type": "int(10)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "path_when_zone_idle",
+          "type": "tinyint(1)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "_condition",
+          "type": "mediumint(8) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "cond_value",
+          "type": "mediumint(9)",
+          "null": "NO",
+          "key": "",
+          "default": "1"
+        },
+        {
+          "field": "animation",
+          "type": "tinyint(3) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "min_expansion",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "-1"
+        },
+        {
+          "field": "max_expansion",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "-1"
+        },
+        {
+          "field": "content_flags",
+          "type": "varchar(100)",
+          "null": "YES",
+          "key": "",
+          "default": null
+        },
+        {
+          "field": "content_flags_disabled",
+          "type": "varchar(100)",
+          "null": "YES",
+          "key": "",
+          "default": null
+        }
+      ]
+    },
+    "spawngroup": {
+      "found": true,
+      "columns": [
+        {
+          "field": "id",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "PRI",
+          "default": null
+        },
+        {
+          "field": "name",
+          "type": "varchar(200)",
+          "null": "NO",
+          "key": "UNI",
+          "default": ""
+        },
+        {
+          "field": "spawn_limit",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "dist",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "max_x",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "min_x",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "max_y",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "min_y",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "delay",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "45000"
+        },
+        {
+          "field": "mindelay",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "15000"
+        },
+        {
+          "field": "despawn",
+          "type": "tinyint(3)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "despawn_timer",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "",
+          "default": "100"
+        },
+        {
+          "field": "wp_spawns",
+          "type": "tinyint(1) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        }
+      ]
+    },
+    "spawnentry": {
+      "found": true,
+      "columns": [
+        {
+          "field": "spawngroupID",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "PRI",
+          "default": "0"
+        },
+        {
+          "field": "npcID",
+          "type": "int(11)",
+          "null": "NO",
+          "key": "PRI",
+          "default": "0"
+        },
+        {
+          "field": "chance",
+          "type": "smallint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "condition_value_filter",
+          "type": "mediumint(9)",
+          "null": "NO",
+          "key": "",
+          "default": "1"
+        },
+        {
+          "field": "min_time",
+          "type": "smallint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "max_time",
+          "type": "smallint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "min_expansion",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "-1"
+        },
+        {
+          "field": "max_expansion",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "-1"
+        },
+        {
+          "field": "content_flags",
+          "type": "varchar(100)",
+          "null": "YES",
+          "key": "",
+          "default": null
+        },
+        {
+          "field": "content_flags_disabled",
+          "type": "varchar(100)",
+          "null": "YES",
+          "key": "",
+          "default": null
+        }
+      ]
+    },
+    "loottable": {
+      "found": true,
+      "columns": [
+        {
+          "field": "id",
+          "type": "int(11) unsigned",
+          "null": "NO",
+          "key": "PRI",
+          "default": null
+        },
+        {
+          "field": "name",
+          "type": "varchar(255)",
+          "null": "NO",
+          "key": "",
+          "default": ""
+        },
+        {
+          "field": "mincash",
+          "type": "int(11) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "maxcash",
+          "type": "int(11) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "avgcoin",
+          "type": "int(10) unsigned",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "done",
+          "type": "tinyint(3)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "min_expansion",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "-1"
+        },
+        {
+          "field": "max_expansion",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "-1"
+        },
+        {
+          "field": "content_flags",
+          "type": "varchar(100)",
+          "null": "YES",
+          "key": "",
+          "default": null
+        },
+        {
+          "field": "content_flags_disabled",
+          "type": "varchar(100)",
+          "null": "YES",
+          "key": "",
+          "default": null
+        }
+      ]
+    },
+    "lootdrop": {
+      "found": true,
+      "columns": [
+        {
+          "field": "id",
+          "type": "int(11) unsigned",
+          "null": "NO",
+          "key": "PRI",
+          "default": null
+        },
+        {
+          "field": "name",
+          "type": "varchar(255)",
+          "null": "NO",
+          "key": "",
+          "default": ""
+        },
+        {
+          "field": "min_expansion",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "-1"
+        },
+        {
+          "field": "max_expansion",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "-1"
+        },
+        {
+          "field": "content_flags",
+          "type": "varchar(100)",
+          "null": "YES",
+          "key": "",
+          "default": null
+        },
+        {
+          "field": "content_flags_disabled",
+          "type": "varchar(100)",
+          "null": "YES",
+          "key": "",
+          "default": null
+        }
+      ]
+    },
+    "grid": {
+      "found": true,
+      "columns": [
+        {
+          "field": "id",
+          "type": "int(10)",
+          "null": "NO",
+          "key": "PRI",
+          "default": "0"
+        },
+        {
+          "field": "zoneid",
+          "type": "int(10)",
+          "null": "NO",
+          "key": "PRI",
+          "default": "0"
+        },
+        {
+          "field": "type",
+          "type": "int(10)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "type2",
+          "type": "int(10)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        }
+      ]
+    },
+    "grid_entries": {
+      "found": true,
+      "columns": [
+        {
+          "field": "gridid",
+          "type": "int(10)",
+          "null": "NO",
+          "key": "PRI",
+          "default": "0"
+        },
+        {
+          "field": "zoneid",
+          "type": "int(10)",
+          "null": "NO",
+          "key": "PRI",
+          "default": "0"
+        },
+        {
+          "field": "number",
+          "type": "int(10)",
+          "null": "NO",
+          "key": "PRI",
+          "default": "0"
+        },
+        {
+          "field": "x",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "y",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "z",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "heading",
+          "type": "float",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "pause",
+          "type": "int(10)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        },
+        {
+          "field": "centerpoint",
+          "type": "tinyint(4)",
+          "null": "NO",
+          "key": "",
+          "default": "0"
+        }
+      ]
+    }
+  },
+  "zoneLookupAttempts": [
+    {
+      "type": "exact-short-name",
+      "value": "torgiran",
+      "matches": 1
+    }
+  ],
+  "zonesAvailableSample": [
+    {
+      "zoneidnumber": "279",
+      "short_name": "abysmal",
+      "long_name": "The Abysmal Sea",
+      "expansion": "7",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "154",
+      "short_name": "acrylia",
+      "long_name": "The Acrylia Caverns",
+      "expansion": "3",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "71",
+      "short_name": "airplane",
+      "long_name": "The Plane of Sky",
+      "expansion": "0",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "55",
+      "short_name": "akanon",
+      "long_name": "Ak'Anon",
+      "expansion": "0",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "179",
+      "short_name": "akheva",
+      "long_name": "The Akheva Ruins",
+      "expansion": "3",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "709",
+      "short_name": "alkabormare",
+      "long_name": "Al'Kabor's Nightmare",
+      "expansion": "17",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "317",
+      "short_name": "anguish",
+      "long_name": "Anguish, the Fallen Palace",
+      "expansion": "8",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "999",
+      "short_name": "apprentice",
+      "long_name": "Designer Apprentice",
+      "expansion": "99",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "369",
+      "short_name": "arcstone",
+      "long_name": "Arcstone, Isle of Spirits",
+      "expansion": "11",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "725",
+      "short_name": "arelis",
+      "long_name": "Valley of Lunanyn",
+      "expansion": "18",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "77",
+      "short_name": "arena",
+      "long_name": "The Arena",
+      "expansion": "0",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "180",
+      "short_name": "arena2",
+      "long_name": "The Arena Two",
+      "expansion": "99",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "724",
+      "short_name": "argath",
+      "long_name": "Argath, Bastion of Illdaera",
+      "expansion": "18",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "485",
+      "short_name": "arthicrex",
+      "long_name": "Arthicrex",
+      "expansion": "16",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "996",
+      "short_name": "arttest",
+      "long_name": "Art Testing Domain",
+      "expansion": "99",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "406",
+      "short_name": "ashengate",
+      "long_name": "Ashengate, Reliquary of the Scale",
+      "expansion": "12",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "418",
+      "short_name": "atiiki",
+      "long_name": "Jewel of Atiiki",
+      "expansion": "13",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "53",
+      "short_name": "aviak",
+      "long_name": "Aviak Village",
+      "expansion": "99",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "283",
+      "short_name": "barindu",
+      "long_name": "Barindu, Hanging Gardens",
+      "expansion": "7",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "422",
+      "short_name": "barren",
+      "long_name": "Barren Coast",
+      "expansion": "13",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "346",
+      "short_name": "barter",
+      "long_name": "The Barter Hall",
+      "expansion": "9",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "151",
+      "short_name": "bazaar",
+      "long_name": "The Bazaar",
+      "expansion": "9",
+      "min_expansion": "9",
+      "max_expansion": "99"
+    },
+    {
+      "zoneidnumber": "151",
+      "short_name": "bazaar",
+      "long_name": "The Bazaar",
+      "expansion": "3",
+      "min_expansion": "3",
+      "max_expansion": "8"
+    },
+    {
+      "zoneidnumber": "728",
+      "short_name": "beastdomain",
+      "long_name": "Beasts' Domain",
+      "expansion": "18",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "36",
+      "short_name": "befallen",
+      "long_name": "Befallen",
+      "expansion": "0",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "411",
+      "short_name": "befallenb",
+      "long_name": "Befallen",
+      "expansion": "12",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "16",
+      "short_name": "beholder",
+      "long_name": "Gorge of King Xorbb",
+      "expansion": "0",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "469",
+      "short_name": "bertoxtemple",
+      "long_name": "Temple of Bertoxxulous",
+      "expansion": "15",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "17",
+      "short_name": "blackburrow",
+      "long_name": "Blackburrow",
+      "expansion": "0",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "428",
+      "short_name": "blacksail",
+      "long_name": "Blacksail Folly",
+      "expansion": "13",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "301",
+      "short_name": "bloodfields",
+      "long_name": "The Bloodfields",
+      "expansion": "8",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "445",
+      "short_name": "bloodmoon",
+      "long_name": "Bloodmoon Keep",
+      "expansion": "14",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "209",
+      "short_name": "bothunder",
+      "long_name": "Bastion of Thunder",
+      "expansion": "4",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "757",
+      "short_name": "breedinggrounds",
+      "long_name": "The Breeding Grounds",
+      "expansion": "19",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "492",
+      "short_name": "brellsarena",
+      "long_name": "Brell's Arena",
+      "expansion": "16",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "480",
+      "short_name": "brellsrest",
+      "long_name": "Brell's Rest",
+      "expansion": "16",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "490",
+      "short_name": "brellstemple",
+      "long_name": "Brell's Temple",
+      "expansion": "16",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "337",
+      "short_name": "broodlands",
+      "long_name": "The Broodlands",
+      "expansion": "9",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "423",
+      "short_name": "buriedsea",
+      "long_name": "The Buried Sea",
+      "expansion": "13",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "87",
+      "short_name": "burningwood",
+      "long_name": "The Burning Wood",
+      "expansion": "1",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "68",
+      "short_name": "butcher",
+      "long_name": "Butcherblock Mountains",
+      "expansion": "0",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "106",
+      "short_name": "cabeast",
+      "long_name": "Cabilis East",
+      "expansion": "1",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "82",
+      "short_name": "cabwest",
+      "long_name": "Cabilis West",
+      "expansion": "1",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "70",
+      "short_name": "cauldron",
+      "long_name": "Dagnor's Cauldron",
+      "expansion": "0",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "303",
+      "short_name": "causeway",
+      "long_name": "Nobles' Causeway",
+      "expansion": "8",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "48",
+      "short_name": "cazicthule",
+      "long_name": "Accursed Temple of CazicThule",
+      "expansion": "0",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "304",
+      "short_name": "chambersa",
+      "long_name": "Muramite Proving Grounds",
+      "expansion": "8",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "304",
+      "short_name": "chambersa",
+      "long_name": "Muramite Proving Grounds",
+      "expansion": "8",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "304",
+      "short_name": "chambersa",
+      "long_name": "Muramite Proving Grounds",
+      "expansion": "8",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "305",
+      "short_name": "chambersb",
+      "long_name": "Muramite Proving Grounds",
+      "expansion": "8",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "305",
+      "short_name": "chambersb",
+      "long_name": "Muramite Proving Grounds",
+      "expansion": "8",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "305",
+      "short_name": "chambersb",
+      "long_name": "Muramite Proving Grounds",
+      "expansion": "8",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "306",
+      "short_name": "chambersc",
+      "long_name": "Muramite Proving Grounds",
+      "expansion": "8",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "306",
+      "short_name": "chambersc",
+      "long_name": "Muramite Proving Grounds",
+      "expansion": "8",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "306",
+      "short_name": "chambersc",
+      "long_name": "Muramite Proving Grounds",
+      "expansion": "8",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "307",
+      "short_name": "chambersd",
+      "long_name": "Muramite Proving Grounds",
+      "expansion": "8",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "307",
+      "short_name": "chambersd",
+      "long_name": "Muramite Proving Grounds",
+      "expansion": "8",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "307",
+      "short_name": "chambersd",
+      "long_name": "Muramite Proving Grounds",
+      "expansion": "8",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "308",
+      "short_name": "chamberse",
+      "long_name": "Muramite Proving Grounds",
+      "expansion": "8",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "308",
+      "short_name": "chamberse",
+      "long_name": "Muramite Proving Grounds",
+      "expansion": "8",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "308",
+      "short_name": "chamberse",
+      "long_name": "Muramite Proving Grounds",
+      "expansion": "8",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "309",
+      "short_name": "chambersf",
+      "long_name": "Muramite Proving Grounds",
+      "expansion": "8",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "309",
+      "short_name": "chambersf",
+      "long_name": "Muramite Proving Grounds",
+      "expansion": "8",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "309",
+      "short_name": "chambersf",
+      "long_name": "Muramite Proving Grounds",
+      "expansion": "8",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "760",
+      "short_name": "chapterhouse",
+      "long_name": "Chapterhouse of the Fallen",
+      "expansion": "19",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "105",
+      "short_name": "charasis",
+      "long_name": "The Howling Stones",
+      "expansion": "1",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "103",
+      "short_name": "chardok",
+      "long_name": "Chardok",
+      "expansion": "1",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "277",
+      "short_name": "chardokb",
+      "long_name": "Chardok: The Halls of Betrayal",
+      "expansion": "5",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "90",
+      "short_name": "citymist",
+      "long_name": "The City of Mist",
+      "expansion": "1",
+      "min_expansion": "6",
+      "max_expansion": "99"
+    },
+    {
+      "zoneidnumber": "90",
+      "short_name": "citymist",
+      "long_name": "The City of Mist",
+      "expansion": "1",
+      "min_expansion": "0",
+      "max_expansion": "5"
+    },
+    {
+      "zoneidnumber": "732",
+      "short_name": "cityofbronze",
+      "long_name": "Erillion, City of Bronze",
+      "expansion": "18",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "190",
+      "short_name": "clz",
+      "long_name": "Loading",
+      "expansion": "99",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "117",
+      "short_name": "cobaltscar",
+      "long_name": "Cobaltscar",
+      "expansion": "2",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "200",
+      "short_name": "codecay",
+      "long_name": "The Crypt of Decay",
+      "expansion": "4",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "408",
+      "short_name": "commonlands",
+      "long_name": "The Commonlands",
+      "expansion": "12",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "21",
+      "short_name": "commons",
+      "long_name": "West Commonlands",
+      "expansion": "0",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "491",
+      "short_name": "convorteum",
+      "long_name": "The Convorteum",
+      "expansion": "16",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "483",
+      "short_name": "coolingchamber",
+      "long_name": "The Cooling Chamber",
+      "expansion": "16",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "365",
+      "short_name": "corathus",
+      "long_name": "Corathus Creep",
+      "expansion": "10",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "366",
+      "short_name": "corathusa",
+      "long_name": "Sporali Caverns",
+      "expansion": "10",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "366",
+      "short_name": "corathusa",
+      "long_name": "Sporali Caverns: Antraygus, Sporali King",
+      "expansion": "10",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "366",
+      "short_name": "corathusa",
+      "long_name": "Sporali Caverns: Cavern Botany",
+      "expansion": "10",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "367",
+      "short_name": "corathusb",
+      "long_name": "The Corathus Mines",
+      "expansion": "10",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "367",
+      "short_name": "corathusb",
+      "long_name": "Corathus Lair: Find Fibblebrap 1 The mines",
+      "expansion": "10",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "367",
+      "short_name": "corathusb",
+      "long_name": "Corathus Lair: Find Fibblebrap 5 The Rescue",
+      "expansion": "10",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "367",
+      "short_name": "corathusb",
+      "long_name": "The Lair of the Creep Beast: Lair of the Haru",
+      "expansion": "10",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "394",
+      "short_name": "crescent",
+      "long_name": "Crescent Reach",
+      "expansion": "12",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "58",
+      "short_name": "crushbone",
+      "long_name": "Crushbone",
+      "expansion": "0",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "449",
+      "short_name": "cryptofshade",
+      "long_name": "Crypt of Shade",
+      "expansion": "14",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "121",
+      "short_name": "crystal",
+      "long_name": "The Crystal Caverns",
+      "expansion": "2",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "446",
+      "short_name": "crystallos",
+      "long_name": "Crystallos, Lair of the Awakened",
+      "expansion": "14",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "756",
+      "short_name": "crystalshard",
+      "long_name": "The Crystal Caverns: Fragment of Fear",
+      "expansion": "19",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "26",
+      "short_name": "cshome",
+      "long_name": "Sunset Home",
+      "expansion": "0",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "104",
+      "short_name": "dalnir",
+      "long_name": "The Crypt of Dalnir",
+      "expansion": "1",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "174",
+      "short_name": "dawnshroud",
+      "long_name": "The Dawnshroud Peaks",
+      "expansion": "3",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "427",
+      "short_name": "deadbone",
+      "long_name": "Deadbone Reef",
+      "expansion": "13",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "341",
+      "short_name": "delvea",
+      "long_name": "Lavaspinner's Lair: Grounding the Drakes",
+      "expansion": "9",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "341",
+      "short_name": "delvea",
+      "long_name": "Lavaspinner's Lair: A Halfling's Greed",
+      "expansion": "9",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "341",
+      "short_name": "delvea",
+      "long_name": "Lavaspinner's Lair: Forbin's Elixir",
+      "expansion": "9",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "341",
+      "short_name": "delvea",
+      "long_name": "Lavaspinner's Lair: Lavaspinner's Locals",
+      "expansion": "9",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "341",
+      "short_name": "delvea",
+      "long_name": "Lavaspinner's Lair: The Drake Menace",
+      "expansion": "9",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "341",
+      "short_name": "delvea",
+      "long_name": "Lavaspinner's Lair",
+      "expansion": "9",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "341",
+      "short_name": "delvea",
+      "long_name": "Lavaspinner's Lair: Diving for Lavarocks",
+      "expansion": "9",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "341",
+      "short_name": "delvea",
+      "long_name": "Lavaspinner's Lair: Infested",
+      "expansion": "9",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "341",
+      "short_name": "delvea",
+      "long_name": "Lavaspinner's Lair: Treasure Hunting",
+      "expansion": "9",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "341",
+      "short_name": "delvea",
+      "long_name": "Lavaspinner's Lair: Volkara's Bite",
+      "expansion": "9",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "342",
+      "short_name": "delveb",
+      "long_name": "Tirranun's Delve: Storming the Goblin Palace",
+      "expansion": "9",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "342",
+      "short_name": "delveb",
+      "long_name": "Tirranun's Delve",
+      "expansion": "9",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "342",
+      "short_name": "delveb",
+      "long_name": "Tirranun's Delve: A Goblin's Escort",
+      "expansion": "9",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "342",
+      "short_name": "delveb",
+      "long_name": "Tirranun's Delve: Calling Emoush",
+      "expansion": "9",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "342",
+      "short_name": "delveb",
+      "long_name": "Tirranun's Delve: Children of Gimblax",
+      "expansion": "9",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "342",
+      "short_name": "delveb",
+      "long_name": "Tirranun's Delve: Fanning the Flames",
+      "expansion": "9",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "342",
+      "short_name": "delveb",
+      "long_name": "Tirranun's Delve: Have Note Will Travel",
+      "expansion": "9",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "372",
+      "short_name": "devastation",
+      "long_name": "The Devastation",
+      "expansion": "11",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "373",
+      "short_name": "devastationa",
+      "long_name": "The Seething Wall",
+      "expansion": "11",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "405",
+      "short_name": "direwind",
+      "long_name": "Direwind Cliffs",
+      "expansion": "12",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "470",
+      "short_name": "discord",
+      "long_name": "Korafax, Home of the Riders",
+      "expansion": "15",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "471",
+      "short_name": "discordtower",
+      "long_name": "Citadel of the Worldslayer",
+      "expansion": "15",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "354",
+      "short_name": "drachnidhive",
+      "long_name": "The Hive",
+      "expansion": "10",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "354",
+      "short_name": "drachnidhive",
+      "long_name": "The Hive: Freeing an Elder",
+      "expansion": "10",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "354",
+      "short_name": "drachnidhive",
+      "long_name": "The Hive: Hides You Seek",
+      "expansion": "10",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "354",
+      "short_name": "drachnidhive",
+      "long_name": "The Hive: Sabotage!",
+      "expansion": "10",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "354",
+      "short_name": "drachnidhive",
+      "long_name": "The Hive: The Lost Notebook",
+      "expansion": "10",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "354",
+      "short_name": "drachnidhive",
+      "long_name": "The Hive: The Orb of Subversion",
+      "expansion": "10",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "355",
+      "short_name": "drachnidhivea",
+      "long_name": "The Hatchery",
+      "expansion": "10",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "355",
+      "short_name": "drachnidhivea",
+      "long_name": "The Hatchery: Find Fibblebrap 3 The Hive",
+      "expansion": "10",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "355",
+      "short_name": "drachnidhivea",
+      "long_name": "The Hatchery: The Lost Gnomes",
+      "expansion": "10",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "355",
+      "short_name": "drachnidhivea",
+      "long_name": "The Hatchery: The Search for Clues",
+      "expansion": "10",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "356",
+      "short_name": "drachnidhiveb",
+      "long_name": "The Cocoons",
+      "expansion": "10",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "356",
+      "short_name": "drachnidhiveb",
+      "long_name": "The Cocoons: Rescue Cicero!",
+      "expansion": "10",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "357",
+      "short_name": "drachnidhivec",
+      "long_name": "Queen Sendaii`s Lair",
+      "expansion": "10",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "357",
+      "short_name": "drachnidhivec",
+      "long_name": "Queen Sendaii`s Lair: Sendaii the Hive Queen",
+      "expansion": "10",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "495",
+      "short_name": "dragoncrypt",
+      "long_name": "Lair of the Risen",
+      "expansion": "16",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "442",
+      "short_name": "dragonscale",
+      "long_name": "Dragonscale Hills",
+      "expansion": "14",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "450",
+      "short_name": "dragonscalea",
+      "long_name": "Tinmizers Wunderwerks",
+      "expansion": "14",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "451",
+      "short_name": "dragonscaleb",
+      "long_name": "Deepscar's Den",
+      "expansion": "14",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "336",
+      "short_name": "dranik",
+      "long_name": "The Ruined City of Dranik",
+      "expansion": "8",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "328",
+      "short_name": "dranikcatacombsa",
+      "long_name": "Catacombs of Dranik",
+      "expansion": "8",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "329",
+      "short_name": "dranikcatacombsb",
+      "long_name": "Catacombs of Dranik",
+      "expansion": "8",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "330",
+      "short_name": "dranikcatacombsc",
+      "long_name": "Catacombs of Dranik",
+      "expansion": "8",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "318",
+      "short_name": "dranikhollowsa",
+      "long_name": "Dranik's Hollows",
+      "expansion": "8",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "319",
+      "short_name": "dranikhollowsb",
+      "long_name": "Dranik's Hollows",
+      "expansion": "8",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "320",
+      "short_name": "dranikhollowsc",
+      "long_name": "Dranik's Hollows",
+      "expansion": "8",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "331",
+      "short_name": "draniksewersa",
+      "long_name": "Sewers of Dranik",
+      "expansion": "8",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "332",
+      "short_name": "draniksewersb",
+      "long_name": "Sewers of Dranik",
+      "expansion": "8",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "333",
+      "short_name": "draniksewersc",
+      "long_name": "Sewers of Dranik",
+      "expansion": "8",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "302",
+      "short_name": "draniksscar",
+      "long_name": "Dranik's Scar",
+      "expansion": "8",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "86",
+      "short_name": "dreadlands",
+      "long_name": "The Dreadlands",
+      "expansion": "1",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "351",
+      "short_name": "dreadspire",
+      "long_name": "Dreadspire Keep: Demi-Plane of Blood",
+      "expansion": "10",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "351",
+      "short_name": "dreadspire",
+      "long_name": "Dreadspire Keep",
+      "expansion": "10",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "81",
+      "short_name": "droga",
+      "long_name": "The Temple of Droga",
+      "expansion": "1",
+      "min_expansion": "6",
+      "max_expansion": "99"
+    },
+    {
+      "zoneidnumber": "81",
+      "short_name": "droga",
+      "long_name": "Mines of Droga",
+      "expansion": "1",
+      "min_expansion": "0",
+      "max_expansion": "5"
+    },
+    {
+      "zoneidnumber": "225",
+      "short_name": "dulak",
+      "long_name": "Dulak's Harbor",
+      "expansion": "5",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "15",
+      "short_name": "eastkarana",
+      "long_name": "Eastern Plains of Karana",
+      "expansion": "0",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "362",
+      "short_name": "eastkorlach",
+      "long_name": "The Undershore",
+      "expansion": "10",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "362",
+      "short_name": "eastkorlach",
+      "long_name": "The Undershore: Trailing Longshadow",
+      "expansion": "10",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "363",
+      "short_name": "eastkorlacha",
+      "long_name": "Snarlstone Dens",
+      "expansion": "10",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "363",
+      "short_name": "eastkorlacha",
+      "long_name": "Snarlstone Dens: A Plea for Help",
+      "expansion": "10",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "363",
+      "short_name": "eastkorlacha",
+      "long_name": "Snarlstone Dens: Bloodeye",
+      "expansion": "10",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "363",
+      "short_name": "eastkorlacha",
+      "long_name": "Snarlstone Dens: Confronting a Traitor",
+      "expansion": "10",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "734",
+      "short_name": "eastsepulcher",
+      "long_name": "Sepulcher East",
+      "expansion": "18",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "116",
+      "short_name": "eastwastes",
+      "long_name": "Eastern Wastes",
+      "expansion": "2",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "755",
+      "short_name": "eastwastesshard",
+      "long_name": "East Wastes: Zeixshi-Kar's Awakening",
+      "expansion": "19",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "153",
+      "short_name": "echo",
+      "long_name": "The Echo Caverns",
+      "expansion": "3",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "22",
+      "short_name": "ecommons",
+      "long_name": "East Commonlands",
+      "expansion": "0",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "378",
+      "short_name": "elddar",
+      "long_name": "The Elddar Forest",
+      "expansion": "11",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "379",
+      "short_name": "elddara",
+      "long_name": "Tunare's Shrine",
+      "expansion": "11",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "94",
+      "short_name": "emeraldjungle",
+      "long_name": "The Emerald Jungle",
+      "expansion": "1",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "24",
+      "short_name": "erudnext",
+      "long_name": "Erudin",
+      "expansion": "0",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "23",
+      "short_name": "erudnint",
+      "long_name": "The Erudin Palace",
+      "expansion": "0",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "98",
+      "short_name": "erudsxing",
+      "long_name": "Erud's Crossing",
+      "expansion": "0",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "130",
+      "short_name": "erudsxing2",
+      "long_name": "Marauders Mire",
+      "expansion": "99",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "30",
+      "short_name": "everfrost",
+      "long_name": "Everfrost Peaks",
+      "expansion": "0",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "758",
+      "short_name": "eviltree",
+      "long_name": "Evantil, the Vile Oak",
+      "expansion": "19",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "706",
+      "short_name": "fallen",
+      "long_name": "Erudin Burning",
+      "expansion": "17",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "72",
+      "short_name": "fearplane",
+      "long_name": "The Plane of Fear",
+      "expansion": "0",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "47",
+      "short_name": "feerrott",
+      "long_name": "The Feerrott",
+      "expansion": "0",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "700",
+      "short_name": "feerrott2",
+      "long_name": "The Feerrott",
+      "expansion": "17",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "61",
+      "short_name": "felwithea",
+      "long_name": "Northern Felwithe",
+      "expansion": "0",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "62",
+      "short_name": "felwitheb",
+      "long_name": "Southern Felwithe",
+      "expansion": "0",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "284",
+      "short_name": "ferubi",
+      "long_name": "Ferubi, Forgotten Temple of Taelosia",
+      "expansion": "7",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "998",
+      "short_name": "fhalls",
+      "long_name": "The Forgotten Halls",
+      "expansion": "7",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "78",
+      "short_name": "fieldofbone",
+      "long_name": "The Field of Bone",
+      "expansion": "1",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "84",
+      "short_name": "firiona",
+      "long_name": "Firiona Vie",
+      "expansion": "1",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "486",
+      "short_name": "foundation",
+      "long_name": "The Foundation",
+      "expansion": "16",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "385",
+      "short_name": "freeportacademy",
+      "long_name": "Academy of Arcane Sciences",
+      "expansion": "11",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "388",
+      "short_name": "freeportarena",
+      "long_name": "Arena",
+      "expansion": "11",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "389",
+      "short_name": "freeportcityhall",
+      "long_name": "City Hall",
+      "expansion": "11",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "382",
+      "short_name": "freeporteast",
+      "long_name": "East Freeport",
+      "expansion": "11",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "391",
+      "short_name": "freeporthall",
+      "long_name": "Hall of Truth: Bounty",
+      "expansion": "11",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "387",
+      "short_name": "freeportmilitia",
+      "long_name": "Freeport Militia House: My Precious",
+      "expansion": "11",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "384",
+      "short_name": "freeportsewers",
+      "long_name": "Freeport Sewers",
+      "expansion": "11",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "386",
+      "short_name": "freeporttemple",
+      "long_name": "Temple of Marr",
+      "expansion": "11",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "390",
+      "short_name": "freeporttheater",
+      "long_name": "Theater of the Tranquil",
+      "expansion": "11",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "383",
+      "short_name": "freeportwest",
+      "long_name": "West Freeport",
+      "expansion": "11",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "10",
+      "short_name": "freporte",
+      "long_name": "East Freeport",
+      "expansion": "0",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "8",
+      "short_name": "freportn",
+      "long_name": "North Freeport",
+      "expansion": "0",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "9",
+      "short_name": "freportw",
+      "long_name": "West Freeport",
+      "expansion": "0",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "92",
+      "short_name": "frontiermtns",
+      "long_name": "Frontier Mountains",
+      "expansion": "1",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "402",
+      "short_name": "frostcrypt",
+      "long_name": "Frostcrypt, Throne of the Shade King",
+      "expansion": "12",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "111",
+      "short_name": "frozenshadow",
+      "long_name": "The Tower of Frozen Shadow",
+      "expansion": "2",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "481",
+      "short_name": "fungalforest",
+      "long_name": "Fungal Forest",
+      "expansion": "16",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "157",
+      "short_name": "fungusgrove",
+      "long_name": "The Fungus Grove",
+      "expansion": "3",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "54",
+      "short_name": "gfaydark",
+      "long_name": "The Greater Faydark",
+      "expansion": "0",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "118",
+      "short_name": "greatdivide",
+      "long_name": "The Great Divide",
+      "expansion": "2",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "759",
+      "short_name": "grelleth",
+      "long_name": "Grelleth's Palace, the Chateau of Filth",
+      "expansion": "19",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "163",
+      "short_name": "griegsend",
+      "long_name": "Grieg's End",
+      "expansion": "3",
+      "min_expansion": "6",
+      "max_expansion": "99"
+    },
+    {
+      "zoneidnumber": "163",
+      "short_name": "griegsend",
+      "long_name": "Grieg's End",
+      "expansion": "3",
+      "min_expansion": "0",
+      "max_expansion": "5"
+    },
+    {
+      "zoneidnumber": "167",
+      "short_name": "grimling",
+      "long_name": "Grimling Forest",
+      "expansion": "3",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "52",
+      "short_name": "grobb",
+      "long_name": "Grobb",
+      "expansion": "0",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "127",
+      "short_name": "growthplane",
+      "long_name": "The Plane of Growth",
+      "expansion": "2",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "447",
+      "short_name": "guardian",
+      "long_name": "The Mechamatic Guardian",
+      "expansion": "14",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "345",
+      "short_name": "guildhall",
+      "long_name": "Guild Hall",
+      "expansion": "9",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "344",
+      "short_name": "guildlobby",
+      "long_name": "Guild Lobby",
+      "expansion": "9",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "229",
+      "short_name": "guka",
+      "long_name": "Deepest Guk: Cauldron of Lost Souls",
+      "expansion": "6",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "234",
+      "short_name": "gukb",
+      "long_name": "The Drowning Crypt",
+      "expansion": "6",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "66",
+      "short_name": "gukbottom",
+      "long_name": "The Ruins of Old Guk",
+      "expansion": "0",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "239",
+      "short_name": "gukc",
+      "long_name": "Deepest Guk: The Rescue",
+      "expansion": "6",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "239",
+      "short_name": "gukc",
+      "long_name": "Deepest Guk: Ancient Aqueducts",
+      "expansion": "6",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "244",
+      "short_name": "gukd",
+      "long_name": "Deepest Guk: The Mushroom Grove",
+      "expansion": "6",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "249",
+      "short_name": "guke",
+      "long_name": "Deepest Guk: The Curse Reborn",
+      "expansion": "6",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "254",
+      "short_name": "gukf",
+      "long_name": "Deepest Guk: Chapel of the Witnesses",
+      "expansion": "6",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "259",
+      "short_name": "gukg",
+      "long_name": "Deepest Guk: Ritualist of Hate",
+      "expansion": "6",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "259",
+      "short_name": "gukg",
+      "long_name": "Deepest Guk: The Root Garden",
+      "expansion": "6",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "264",
+      "short_name": "gukh",
+      "long_name": "Deepest Guk: Accursed Sanctuary",
+      "expansion": "6",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "65",
+      "short_name": "guktop",
+      "long_name": "The City of Guk",
+      "expansion": "0",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "224",
+      "short_name": "gunthak",
+      "long_name": "The Gulf of Gunthak",
+      "expansion": "5",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "440",
+      "short_name": "gyrospireb",
+      "long_name": "Gyrospire Beza",
+      "expansion": "14",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "441",
+      "short_name": "gyrospirez",
+      "long_name": "Gyrospire Zeka",
+      "expansion": "14",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "29",
+      "short_name": "halas",
+      "long_name": "Halas",
+      "expansion": "0",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "335",
+      "short_name": "harbingers",
+      "long_name": "Harbinger's Spire",
+      "expansion": "8",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "76",
+      "short_name": "hateplane",
+      "long_name": "Plane of Hate",
+      "expansion": "0",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "186",
+      "short_name": "hateplaneb",
+      "long_name": "The Plane of Hate",
+      "expansion": "0",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "228",
+      "short_name": "hatesfury",
+      "long_name": "Hate's Fury",
+      "expansion": "5",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "6",
+      "short_name": "highkeep",
+      "long_name": "High Keep",
+      "expansion": "0",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "5",
+      "short_name": "highpass",
+      "long_name": "Highpass Hold",
+      "expansion": "0",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "407",
+      "short_name": "highpasshold",
+      "long_name": "Highpass Hold",
+      "expansion": "12",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "412",
+      "short_name": "highpasskeep",
+      "long_name": "HighKeep",
+      "expansion": "12",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "444",
+      "short_name": "hillsofshade",
+      "long_name": "Hills of Shade",
+      "expansion": "14",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "211",
+      "short_name": "hohonora",
+      "long_name": "The Halls of Honor",
+      "expansion": "4",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "220",
+      "short_name": "hohonorb",
+      "long_name": "The Temple of Marr",
+      "expansion": "4",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "39",
+      "short_name": "hole",
+      "long_name": "The Hole",
+      "expansion": "0",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "166",
+      "short_name": "hollowshade",
+      "long_name": "Hollowshade Moor",
+      "expansion": "3",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "703",
+      "short_name": "housegarden",
+      "long_name": "The Grounds",
+      "expansion": "17",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "110",
+      "short_name": "iceclad",
+      "long_name": "The Iceclad Ocean",
+      "expansion": "2",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "400",
+      "short_name": "icefall",
+      "long_name": "Icefall Glacier",
+      "expansion": "12",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "294",
+      "short_name": "ikkinz",
+      "long_name": "Ikkinz, Chambers of Transcendence",
+      "expansion": "7",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "347",
+      "short_name": "illsalin",
+      "long_name": "Ruins of Illsalin",
+      "expansion": "10",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "348",
+      "short_name": "illsalina",
+      "long_name": "Illsalin Marketplace: The Fall of Illsalin",
+      "expansion": "10",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    },
+    {
+      "zoneidnumber": "348",
+      "short_name": "illsalina",
+      "long_name": "Illsalin Marketplace",
+      "expansion": "10",
+      "min_expansion": "-1",
+      "max_expansion": "-1"
+    }
+  ],
+  "testZone": {
+    "zoneShortName": "torgiran",
+    "resolvedZoneShortName": "torgiran",
+    "zoneName": "The Torgiran Mines",
+    "zoneId": 226,
+    "matchedBy": "exact-short-name",
+    "spawnSlots": 229,
+    "candidateRows": 497,
+    "primaryRepresentatives": 229,
+    "outputFiles": {
+      "raw": "C:\\frostreaver stuff\\data\\eqemu-torgiran-spawns-test.json",
+      "summary": "C:\\frostreaver stuff\\data\\eqemu-torgiran-zone-summary-test.json"
+    }
+  },
+  "assumptions": [
+    "spawn2 rows are treated as active spawn slots.",
+    "The primary representative is the highest-chance spawnentry candidate, with level/name tie-breakers.",
+    "All spawnentry candidates are preserved in the raw test output for debugging."
+  ],
+  "missingFields": []
+}

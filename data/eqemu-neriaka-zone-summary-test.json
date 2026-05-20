@@ -1,0 +1,4659 @@
+{
+  "summary": {
+    "zoneSlug": "neriak-foreign-quarter",
+    "zoneName": "Neriak - Foreign Quarter",
+    "requestedZoneShortName": "neriaka",
+    "zoneShortName": "neriaka",
+    "sourceFile": "local-eqemu-database",
+    "matched": true,
+    "expansion": "Classic",
+    "eqemuExpansionId": 0,
+    "expansionSource": "eqemu-zone-table",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobCount": 80,
+    "unknownLevelCount": 0,
+    "minLevel": 1,
+    "maxLevel": 70,
+    "averageLevel": 30.6,
+    "medianLevel": 40,
+    "levelCounts": {
+      "1": 20,
+      "10": 1,
+      "16": 1,
+      "18": 1,
+      "32": 1,
+      "35": 8,
+      "36": 1,
+      "37": 1,
+      "40": 34,
+      "42": 1,
+      "44": 1,
+      "45": 1,
+      "47": 1,
+      "48": 1,
+      "50": 3,
+      "65": 3,
+      "70": 1
+    },
+    "levelBuckets": {
+      "1-10": 21,
+      "11-20": 2,
+      "21-30": 0,
+      "31-40": 45,
+      "41-50": 8,
+      "51-60": 0,
+      "61+": 4
+    },
+    "levelProfileLabel": "Wide level spread",
+    "mobGroupNameCounts": {
+      "A Rodent": 15,
+      "A Frostfell Goblin": 1,
+      "A Teir`dal Correspondent": 1,
+      "Bronk": 1,
+      "Bull Crusher": 1,
+      "Canarie": 1,
+      "Capee": 1,
+      "Chonchon": 1,
+      "Damar Nislan": 1,
+      "Darien Felton": 1,
+      "Divn L`crit": 1,
+      "Dran `slug` Rembor": 1,
+      "Farlain Stonethrower": 1,
+      "Fireworks Engineer Fabdabus": 1,
+      "Gambel Quick": 1,
+      "Ghrag": 1,
+      "Guard F`lok": 1,
+      "Guard Ixtaz": 1,
+      "Guard Lumpin": 1,
+      "Guard Punox": 1,
+      "Guard S`kor": 1,
+      "Guard Swang": 1,
+      "Guard Tolax": 1,
+      "Guard V`retta": 1,
+      "Hargar The Velium Chef": 1,
+      "Jacker": 1,
+      "Jarvah": 1,
+      "Jasma Tather": 1,
+      "Javen Tavos": 1,
+      "Karnan": 1,
+      "Kruna": 1,
+      "Lisv D`unnar": 1,
+      "Mordant Tather": 1,
+      "Mrak": 1,
+      "Nalissi K`ten": 1,
+      "Namarg": 1,
+      "Nerta D`vile": 1,
+      "Oosa Shadowthumper": 1,
+      "Palais Derekor": 1,
+      "Psal G`noir": 1,
+      "Pungla": 1,
+      "Putad": 1,
+      "Relgor": 1,
+      "Rolynn B`div": 1,
+      "Sal Drana": 1,
+      "Santug Claugg": 1,
+      "Sera Buelle": 1,
+      "Slunga": 1,
+      "Smaka": 1,
+      "Soulbinder Nola Z`ret": 1,
+      "Spinkit": 1,
+      "Svunsa": 1,
+      "Tal Drana": 1,
+      "Tala Felton": 1,
+      "Tanai Tanbor": 1,
+      "The Gobbler": 1,
+      "Timerone": 1,
+      "Timertwo": 1,
+      "Uawn Betell": 1,
+      "Uglan": 1,
+      "Vala Tanbor": 1,
+      "Wiska": 1,
+      "X`ta Tempi": 1,
+      "X`ta Timpi": 1,
+      "X`ta Tompi": 1,
+      "Yala Thiss": 1
+    },
+    "classCounts": {
+      "Warrior": 38,
+      "Banker": 32,
+      "Necromancer": 4,
+      "Shadowknight": 2,
+      "Class 40": 1,
+      "Cleric": 1,
+      "Rogue": 1,
+      "Tribute Master": 1
+    },
+    "raceCounts": {
+      "Dark Elf": 18,
+      "Rat": 15,
+      "Ogre": 14,
+      "Troll": 12,
+      "Human": 8,
+      "Dwarf": 6,
+      "Teleport Man": 2,
+      "Erudite": 1,
+      "Gnome": 1,
+      "Goblin": 1,
+      "Guard": 1,
+      "Halfling": 1
+    },
+    "normalizedRaceCounts": {
+      "Dark Elf": 18,
+      "Rat": 15,
+      "Ogre": 14,
+      "Troll": 12,
+      "Human": 8,
+      "Dwarf": 6,
+      "Teleport Man": 2,
+      "Erudite": 1,
+      "Gnome": 1,
+      "Goblin": 1,
+      "Guard": 1,
+      "Halfling": 1
+    },
+    "normalizedRaceLevelCounts": {
+      "Dark Elf": {
+        "10": 1,
+        "35": 7,
+        "40": 6,
+        "45": 1,
+        "65": 3
+      },
+      "Dwarf": {
+        "1": 1,
+        "40": 5
+      },
+      "Erudite": {
+        "40": 1
+      },
+      "Gnome": {
+        "1": 1
+      },
+      "Goblin": {
+        "1": 1
+      },
+      "Guard": {
+        "40": 1
+      },
+      "Halfling": {
+        "40": 1
+      },
+      "Human": {
+        "40": 8
+      },
+      "Ogre": {
+        "16": 1,
+        "35": 1,
+        "36": 1,
+        "40": 7,
+        "44": 1,
+        "48": 1,
+        "50": 1,
+        "70": 1
+      },
+      "Rat": {
+        "1": 15
+      },
+      "Teleport Man": {
+        "1": 2
+      },
+      "Troll": {
+        "18": 1,
+        "32": 1,
+        "37": 1,
+        "40": 5,
+        "42": 1,
+        "47": 1,
+        "50": 2
+      }
+    },
+    "raceAliases": {
+      "Dark Elf": [
+        "Dark Elf"
+      ],
+      "Dwarf": [
+        "Dwarf"
+      ],
+      "Erudite": [
+        "Erudite"
+      ],
+      "Gnome": [
+        "Gnome"
+      ],
+      "Goblin": [
+        "Goblin"
+      ],
+      "Guard": [
+        "Guard"
+      ],
+      "Halfling": [
+        "Halfling"
+      ],
+      "Human": [
+        "Human"
+      ],
+      "Ogre": [
+        "Ogre"
+      ],
+      "Rat": [
+        "Rat"
+      ],
+      "Teleport Man": [
+        "Teleport Man"
+      ],
+      "Troll": [
+        "Troll"
+      ]
+    },
+    "typeCounts": {
+      "Spawn Slot": 80
+    },
+    "notes": [
+      "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+      "Read-only test export; not wired into production /zones data."
+    ],
+    "spawnMapPrototype": {
+      "sourceKind": "Local EQEmu/PEQ database export",
+      "coordinateNote": "Original EQEmu spawn2 x/y/z coordinates are preserved for map prototyping.",
+      "points": [
+        {
+          "spawn2Id": 10216,
+          "spawngroupId": 5934,
+          "name": "X`Ta_Timpi",
+          "displayName": "X`ta Timpi",
+          "level": 40,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Necromancer",
+          "x": -37,
+          "y": 1,
+          "z": 45,
+          "heading": 377,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10217,
+          "spawngroupId": 3028,
+          "name": "X`Ta_Tompi",
+          "displayName": "X`ta Tompi",
+          "level": 40,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Necromancer",
+          "x": -50,
+          "y": -13,
+          "z": 45,
+          "heading": 68,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10218,
+          "spawngroupId": 3029,
+          "name": "Rolynn_B`Div",
+          "displayName": "Rolynn B`div",
+          "level": 10,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Warrior",
+          "x": -80.879997,
+          "y": 134,
+          "z": 3.13,
+          "heading": 390,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10219,
+          "spawngroupId": 3030,
+          "name": "a_rodent",
+          "displayName": "A Rodent",
+          "level": 1,
+          "race": "Rat",
+          "rawRace": "Rat",
+          "className": "Warrior",
+          "x": -197,
+          "y": -345,
+          "z": 19.5,
+          "heading": 504,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10220,
+          "spawngroupId": 3030,
+          "name": "a_rodent",
+          "displayName": "A Rodent",
+          "level": 1,
+          "race": "Rat",
+          "rawRace": "Rat",
+          "className": "Warrior",
+          "x": -258.25,
+          "y": 133.380005,
+          "z": 0.5,
+          "heading": 252.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10221,
+          "spawngroupId": 3030,
+          "name": "a_rodent",
+          "displayName": "A Rodent",
+          "level": 1,
+          "race": "Rat",
+          "rawRace": "Rat",
+          "className": "Warrior",
+          "x": -46.75,
+          "y": 203,
+          "z": 1.5,
+          "heading": 127.75,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10222,
+          "spawngroupId": 3030,
+          "name": "a_rodent",
+          "displayName": "A Rodent",
+          "level": 1,
+          "race": "Rat",
+          "rawRace": "Rat",
+          "className": "Warrior",
+          "x": -45.630001,
+          "y": 179,
+          "z": 6.38,
+          "heading": 61.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10223,
+          "spawngroupId": 3030,
+          "name": "a_rodent",
+          "displayName": "A Rodent",
+          "level": 1,
+          "race": "Rat",
+          "rawRace": "Rat",
+          "className": "Warrior",
+          "x": -164.130005,
+          "y": -44.5,
+          "z": 6.1,
+          "heading": 413.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10224,
+          "spawngroupId": 3030,
+          "name": "a_rodent",
+          "displayName": "A Rodent",
+          "level": 1,
+          "race": "Rat",
+          "rawRace": "Rat",
+          "className": "Warrior",
+          "x": -0.5,
+          "y": -179.75,
+          "z": 2.8,
+          "heading": 10.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10225,
+          "spawngroupId": 3030,
+          "name": "a_rodent",
+          "displayName": "A Rodent",
+          "level": 1,
+          "race": "Rat",
+          "rawRace": "Rat",
+          "className": "Warrior",
+          "x": -179.880005,
+          "y": -288,
+          "z": 25.379999,
+          "heading": 175,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10226,
+          "spawngroupId": 3030,
+          "name": "a_rodent",
+          "displayName": "A Rodent",
+          "level": 1,
+          "race": "Rat",
+          "rawRace": "Rat",
+          "className": "Warrior",
+          "x": -369.880005,
+          "y": -374.880005,
+          "z": 1.5,
+          "heading": 240,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10227,
+          "spawngroupId": 3030,
+          "name": "a_rodent",
+          "displayName": "A Rodent",
+          "level": 1,
+          "race": "Rat",
+          "rawRace": "Rat",
+          "className": "Warrior",
+          "x": -152.130005,
+          "y": -349.880005,
+          "z": 1.5,
+          "heading": 404,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10228,
+          "spawngroupId": 3030,
+          "name": "a_rodent",
+          "displayName": "A Rodent",
+          "level": 1,
+          "race": "Rat",
+          "rawRace": "Rat",
+          "className": "Warrior",
+          "x": -79,
+          "y": 89.25,
+          "z": 1.5,
+          "heading": 12,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10229,
+          "spawngroupId": 3030,
+          "name": "a_rodent",
+          "displayName": "A Rodent",
+          "level": 1,
+          "race": "Rat",
+          "rawRace": "Rat",
+          "className": "Warrior",
+          "x": -36,
+          "y": 258.880005,
+          "z": 15.5,
+          "heading": 82,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10230,
+          "spawngroupId": 3030,
+          "name": "a_rodent",
+          "displayName": "A Rodent",
+          "level": 1,
+          "race": "Rat",
+          "rawRace": "Rat",
+          "className": "Warrior",
+          "x": -27,
+          "y": -44,
+          "z": 1.5,
+          "heading": 194,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10231,
+          "spawngroupId": 3030,
+          "name": "a_rodent",
+          "displayName": "A Rodent",
+          "level": 1,
+          "race": "Rat",
+          "rawRace": "Rat",
+          "className": "Warrior",
+          "x": -348,
+          "y": -597.880005,
+          "z": 22.1,
+          "heading": 344,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10232,
+          "spawngroupId": 3030,
+          "name": "a_rodent",
+          "displayName": "A Rodent",
+          "level": 1,
+          "race": "Rat",
+          "rawRace": "Rat",
+          "className": "Warrior",
+          "x": -266,
+          "y": 253.880005,
+          "z": 15.5,
+          "heading": 276,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10233,
+          "spawngroupId": 3030,
+          "name": "a_rodent",
+          "displayName": "A Rodent",
+          "level": 1,
+          "race": "Rat",
+          "rawRace": "Rat",
+          "className": "Warrior",
+          "x": -443.880005,
+          "y": -310.880005,
+          "z": 40,
+          "heading": 176,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10236,
+          "spawngroupId": 3033,
+          "name": "Nerta_D`Vile",
+          "displayName": "Nerta D`vile",
+          "level": 65,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Tribute Master",
+          "x": -7,
+          "y": 48,
+          "z": 45,
+          "heading": 384,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10237,
+          "spawngroupId": 3034,
+          "name": "Soulbinder_Nola_Z`Ret",
+          "displayName": "Soulbinder Nola Z`ret",
+          "level": 65,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Warrior",
+          "x": -95,
+          "y": 205,
+          "z": 3.13,
+          "heading": 270,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10242,
+          "spawngroupId": 3039,
+          "name": "Jacker",
+          "displayName": "Jacker",
+          "level": 44,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Shadowknight",
+          "x": -237,
+          "y": -261,
+          "z": 19,
+          "heading": 354,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10244,
+          "spawngroupId": 3041,
+          "name": "Spinkit",
+          "displayName": "Spinkit",
+          "level": 40,
+          "race": "Troll",
+          "rawRace": "Troll",
+          "className": "Class 40",
+          "x": -376,
+          "y": -195,
+          "z": 8,
+          "heading": 350,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10257,
+          "spawngroupId": 3062,
+          "name": "Mordant_Tather",
+          "displayName": "Mordant Tather",
+          "level": 40,
+          "race": "Guard",
+          "rawRace": "Guard",
+          "className": "Banker",
+          "x": -175,
+          "y": 130,
+          "z": 3.75,
+          "heading": 126,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10258,
+          "spawngroupId": 3061,
+          "name": "Jasma_Tather",
+          "displayName": "Jasma Tather",
+          "level": 40,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -187,
+          "y": 147,
+          "z": 3.75,
+          "heading": 181,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10259,
+          "spawngroupId": 3060,
+          "name": "Canarie",
+          "displayName": "Canarie",
+          "level": 40,
+          "race": "Troll",
+          "rawRace": "Troll",
+          "className": "Banker",
+          "x": -172,
+          "y": -268,
+          "z": 5,
+          "heading": 258,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10260,
+          "spawngroupId": 3059,
+          "name": "Uglan",
+          "displayName": "Uglan",
+          "level": 50,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Warrior",
+          "x": -317,
+          "y": -371.880005,
+          "z": 5.63,
+          "heading": 58,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10261,
+          "spawngroupId": 3058,
+          "name": "Capee",
+          "displayName": "Capee",
+          "level": 50,
+          "race": "Troll",
+          "rawRace": "Troll",
+          "className": "Warrior",
+          "x": -222,
+          "y": -371.880005,
+          "z": 5,
+          "heading": 434,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10262,
+          "spawngroupId": 3057,
+          "name": "Divn_L`Crit",
+          "displayName": "Divn L`crit",
+          "level": 45,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Warrior",
+          "x": -115.879997,
+          "y": 0,
+          "z": 3.13,
+          "heading": 140,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10263,
+          "spawngroupId": 3056,
+          "name": "Kruna",
+          "displayName": "Kruna",
+          "level": 40,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Banker",
+          "x": -456,
+          "y": -308,
+          "z": 20.629999,
+          "heading": 124,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10264,
+          "spawngroupId": 3055,
+          "name": "Smaka",
+          "displayName": "Smaka",
+          "level": 40,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Banker",
+          "x": -107,
+          "y": -335,
+          "z": 5.63,
+          "heading": 378,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10265,
+          "spawngroupId": 3054,
+          "name": "Svunsa",
+          "displayName": "Svunsa",
+          "level": 50,
+          "race": "Troll",
+          "rawRace": "Troll",
+          "className": "Warrior",
+          "x": -209,
+          "y": -340,
+          "z": 23,
+          "heading": 383,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10267,
+          "spawngroupId": 3052,
+          "name": "Vala_Tanbor",
+          "displayName": "Vala Tanbor",
+          "level": 40,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Banker",
+          "x": -215,
+          "y": 210,
+          "z": 2.5,
+          "heading": 338,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10268,
+          "spawngroupId": 3051,
+          "name": "ChonChon",
+          "displayName": "Chonchon",
+          "level": 40,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Banker",
+          "x": -91.879997,
+          "y": 147,
+          "z": 4.63,
+          "heading": 257,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10269,
+          "spawngroupId": 5924,
+          "name": "Guard_V`Retta",
+          "displayName": "Guard V`retta",
+          "level": 35,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Warrior",
+          "x": -24,
+          "y": -112,
+          "z": 45,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10270,
+          "spawngroupId": 5925,
+          "name": "The_Gobbler",
+          "displayName": "The Gobbler",
+          "level": 40,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Banker",
+          "x": -125,
+          "y": -323,
+          "z": 5.63,
+          "heading": 259,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10272,
+          "spawngroupId": 5926,
+          "name": "Guard_Punox",
+          "displayName": "Guard Punox",
+          "level": 35,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Warrior",
+          "x": -60,
+          "y": -3,
+          "z": 3.13,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10273,
+          "spawngroupId": 5927,
+          "name": "Tal_Drana",
+          "displayName": "Tal Drana",
+          "level": 40,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -251,
+          "y": 106,
+          "z": 3.75,
+          "heading": 6,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10274,
+          "spawngroupId": 5928,
+          "name": "Putad",
+          "displayName": "Putad",
+          "level": 40,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Banker",
+          "x": -295,
+          "y": -213,
+          "z": 19.629999,
+          "heading": 242,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10275,
+          "spawngroupId": 5929,
+          "name": "X`Ta_Tempi",
+          "displayName": "X`ta Tempi",
+          "level": 40,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Necromancer",
+          "x": -30,
+          "y": 0,
+          "z": 45,
+          "heading": 127,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10276,
+          "spawngroupId": 5930,
+          "name": "Guard_F`Lok",
+          "displayName": "Guard F`lok",
+          "level": 35,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Warrior",
+          "x": 0,
+          "y": -14.88,
+          "z": 3.13,
+          "heading": 140,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 10277,
+          "spawngroupId": 5931,
+          "name": "Guard_Swang",
+          "displayName": "Guard Swang",
+          "level": 35,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Warrior",
+          "x": -289,
+          "y": -253,
+          "z": 19.629999,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10278,
+          "spawngroupId": 5932,
+          "name": "Guard_S`Kor",
+          "displayName": "Guard S`kor",
+          "level": 35,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Warrior",
+          "x": -108.879997,
+          "y": 0,
+          "z": 3.13,
+          "heading": 0,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 10279,
+          "spawngroupId": 5933,
+          "name": "Damar_Nislan",
+          "displayName": "Damar Nislan",
+          "level": 40,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -196,
+          "y": 177,
+          "z": 17.75,
+          "heading": 511,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10280,
+          "spawngroupId": 7523,
+          "name": "Bull_Crusher",
+          "displayName": "Bull Crusher",
+          "level": 40,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Banker",
+          "x": -252,
+          "y": -390,
+          "z": 5.63,
+          "heading": 386,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10281,
+          "spawngroupId": 7524,
+          "name": "Wiska",
+          "displayName": "Wiska",
+          "level": 40,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Banker",
+          "x": -104,
+          "y": 159,
+          "z": 19.629999,
+          "heading": 270,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10282,
+          "spawngroupId": 7525,
+          "name": "Pungla",
+          "displayName": "Pungla",
+          "level": 16,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Warrior",
+          "x": -337.880005,
+          "y": -336,
+          "z": 5.63,
+          "heading": 253,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 10283,
+          "spawngroupId": 7526,
+          "name": "Psal_G`Noir",
+          "displayName": "Psal G`noir",
+          "level": 40,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Cleric",
+          "x": -111,
+          "y": 32,
+          "z": 3.13,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10284,
+          "spawngroupId": 7527,
+          "name": "Palais_Derekor",
+          "displayName": "Palais Derekor",
+          "level": 40,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -110.879997,
+          "y": 205.880005,
+          "z": 3.75,
+          "heading": 237,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10285,
+          "spawngroupId": 7528,
+          "name": "Tala_Felton",
+          "displayName": "Tala Felton",
+          "level": 40,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -98,
+          "y": 136,
+          "z": 17.75,
+          "heading": 5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10286,
+          "spawngroupId": 7529,
+          "name": "Darien_Felton",
+          "displayName": "Darien Felton",
+          "level": 40,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -93,
+          "y": 136,
+          "z": 2.75,
+          "heading": 509,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10287,
+          "spawngroupId": 7530,
+          "name": "Gambel_Quick",
+          "displayName": "Gambel Quick",
+          "level": 40,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -60,
+          "y": 253,
+          "z": 17.75,
+          "heading": 389,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10288,
+          "spawngroupId": 7531,
+          "name": "Tanai_Tanbor",
+          "displayName": "Tanai Tanbor",
+          "level": 40,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Banker",
+          "x": -242,
+          "y": 215,
+          "z": 30.5,
+          "heading": 258,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10289,
+          "spawngroupId": 7532,
+          "name": "Sera_Buelle",
+          "displayName": "Sera Buelle",
+          "level": 40,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Banker",
+          "x": -261.880005,
+          "y": 255,
+          "z": 30.5,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10290,
+          "spawngroupId": 7533,
+          "name": "Uawn_Betell",
+          "displayName": "Uawn Betell",
+          "level": 40,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Banker",
+          "x": -227,
+          "y": 246,
+          "z": 16.5,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10291,
+          "spawngroupId": 7534,
+          "name": "Yala_Thiss",
+          "displayName": "Yala Thiss",
+          "level": 40,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Banker",
+          "x": -264.880005,
+          "y": 242.880005,
+          "z": 2.5,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10292,
+          "spawngroupId": 7535,
+          "name": "Dran_`slug`_Rembor",
+          "displayName": "Dran `slug` Rembor",
+          "level": 40,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -244,
+          "y": 210,
+          "z": 2.25,
+          "heading": 1,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10293,
+          "spawngroupId": 7536,
+          "name": "Farlain_Stonethrower",
+          "displayName": "Farlain Stonethrower",
+          "level": 40,
+          "race": "Halfling",
+          "rawRace": "Halfling",
+          "className": "Banker",
+          "x": -57,
+          "y": 199.880005,
+          "z": 2.13,
+          "heading": 331,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10294,
+          "spawngroupId": 7537,
+          "name": "Guard_Tolax",
+          "displayName": "Guard Tolax",
+          "level": 35,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Warrior",
+          "x": 0,
+          "y": 14.88,
+          "z": 3.13,
+          "heading": 140,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 10295,
+          "spawngroupId": 7538,
+          "name": "Lisv_D`Unnar",
+          "displayName": "Lisv D`unnar",
+          "level": 40,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Necromancer",
+          "x": -109,
+          "y": -32,
+          "z": 3.13,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10296,
+          "spawngroupId": 7539,
+          "name": "Slunga",
+          "displayName": "Slunga",
+          "level": 40,
+          "race": "Troll",
+          "rawRace": "Troll",
+          "className": "Banker",
+          "x": -194,
+          "y": -336,
+          "z": 5,
+          "heading": 254,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10297,
+          "spawngroupId": 7540,
+          "name": "Sal_Drana",
+          "displayName": "Sal Drana",
+          "level": 40,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -238,
+          "y": 106,
+          "z": 3.75,
+          "heading": 6,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10298,
+          "spawngroupId": 7541,
+          "name": "Guard_Lumpin",
+          "displayName": "Guard Lumpin",
+          "level": 18,
+          "race": "Troll",
+          "rawRace": "Troll",
+          "className": "Warrior",
+          "x": -417.880005,
+          "y": -556.880005,
+          "z": 24,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10299,
+          "spawngroupId": 7542,
+          "name": "Jarvah",
+          "displayName": "Jarvah",
+          "level": 40,
+          "race": "Troll",
+          "rawRace": "Troll",
+          "className": "Banker",
+          "x": -366,
+          "y": -222,
+          "z": 8,
+          "heading": 312,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10300,
+          "spawngroupId": 7543,
+          "name": "Bronk",
+          "displayName": "Bronk",
+          "level": 40,
+          "race": "Troll",
+          "rawRace": "Troll",
+          "className": "Banker",
+          "x": -388,
+          "y": -242,
+          "z": 8,
+          "heading": 159,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10303,
+          "spawngroupId": 7546,
+          "name": "Javen_TaVos",
+          "displayName": "Javen Tavos",
+          "level": 40,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Banker",
+          "x": -173,
+          "y": 175,
+          "z": 3.13,
+          "heading": 185,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10307,
+          "spawngroupId": 7550,
+          "name": "Nalissi_K`Ten",
+          "displayName": "Nalissi K`ten",
+          "level": 65,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Banker",
+          "x": -9,
+          "y": -110,
+          "z": 3.13,
+          "heading": 108,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10308,
+          "spawngroupId": 7551,
+          "name": "a_Teir`Dal_correspondent",
+          "displayName": "A Teir`dal Correspondent",
+          "level": 35,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Rogue",
+          "x": -102,
+          "y": -136,
+          "z": 17.129999,
+          "heading": 460,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10310,
+          "spawngroupId": 7553,
+          "name": "Guard_Ixtaz",
+          "displayName": "Guard Ixtaz",
+          "level": 35,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Warrior",
+          "x": -121,
+          "y": -189.880005,
+          "z": 31.129999,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10311,
+          "spawngroupId": 40090,
+          "name": "Oosa_Shadowthumper",
+          "displayName": "Oosa Shadowthumper",
+          "level": 42,
+          "race": "Troll",
+          "rawRace": "Troll",
+          "className": "Shadowknight",
+          "x": -438,
+          "y": -367,
+          "z": 19,
+          "heading": 31,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 21429,
+          "spawngroupId": 13105,
+          "name": "Relgor",
+          "displayName": "Relgor",
+          "level": 37,
+          "race": "Troll",
+          "rawRace": "Troll",
+          "className": "Banker",
+          "x": -353,
+          "y": -331,
+          "z": 23,
+          "heading": 226,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 21430,
+          "spawngroupId": 13106,
+          "name": "TimerTwo",
+          "displayName": "Timertwo",
+          "level": 1,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": -247,
+          "y": 214,
+          "z": 53.700001,
+          "heading": 252,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 21431,
+          "spawngroupId": 13107,
+          "name": "TimerOne",
+          "displayName": "Timerone",
+          "level": 1,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": -222,
+          "y": 214,
+          "z": 53.700001,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 21432,
+          "spawngroupId": 13108,
+          "name": "Karnan",
+          "displayName": "Karnan",
+          "level": 47,
+          "race": "Troll",
+          "rawRace": "Troll",
+          "className": "Warrior",
+          "x": -314,
+          "y": -316,
+          "z": 6,
+          "heading": 187,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 21433,
+          "spawngroupId": 13109,
+          "name": "Ghrag",
+          "displayName": "Ghrag",
+          "level": 36,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Banker",
+          "x": -261,
+          "y": -260,
+          "z": 5.6,
+          "heading": 286,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 21435,
+          "spawngroupId": 13111,
+          "name": "Namarg",
+          "displayName": "Namarg",
+          "level": 32,
+          "race": "Troll",
+          "rawRace": "Troll",
+          "className": "Banker",
+          "x": -426,
+          "y": -278,
+          "z": 18.126999,
+          "heading": 227,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 21436,
+          "spawngroupId": 13112,
+          "name": "Mrak",
+          "displayName": "Mrak",
+          "level": 48,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Warrior",
+          "x": -225,
+          "y": -315,
+          "z": 5.6,
+          "heading": 325,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 148699,
+          "spawngroupId": 110215,
+          "name": "Santug_Claugg",
+          "displayName": "Santug Claugg",
+          "level": 70,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Warrior",
+          "x": 3,
+          "y": 57,
+          "z": 6,
+          "heading": 222,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 148716,
+          "spawngroupId": 110232,
+          "name": "a_Frostfell_Goblin",
+          "displayName": "A Frostfell Goblin",
+          "level": 1,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": 48,
+          "y": 71,
+          "z": 12,
+          "heading": 302,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 148733,
+          "spawngroupId": 110249,
+          "name": "Hargar_the_Velium_Chef",
+          "displayName": "Hargar The Velium Chef",
+          "level": 1,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior",
+          "x": -10,
+          "y": 77,
+          "z": 2.5,
+          "heading": 157,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 148750,
+          "spawngroupId": 110266,
+          "name": "Fireworks_Engineer_Fabdabus",
+          "displayName": "Fireworks Engineer Fabdabus",
+          "level": 1,
+          "race": "Gnome",
+          "rawRace": "Gnome",
+          "className": "Warrior",
+          "x": 21,
+          "y": 84,
+          "z": 1.875,
+          "heading": 233,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        }
+      ]
+    }
+  },
+  "details": {
+    "zoneSlug": "neriak-foreign-quarter",
+    "routeSlug": "neriaka",
+    "zoneName": "Neriak - Foreign Quarter",
+    "sourceFile": "local-eqemu-database",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobGroups": [
+      {
+        "displayName": "A Rodent",
+        "rawNames": [
+          "a_rodent"
+        ],
+        "count": 15,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Rat": 15
+        },
+        "rawRaceCounts": {
+          "Rat": 15
+        },
+        "classCounts": {
+          "Warrior": 15
+        },
+        "typeCounts": {
+          "Spawn Slot": 15
+        }
+      },
+      {
+        "displayName": "A Frostfell Goblin",
+        "rawNames": [
+          "a_Frostfell_Goblin"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Goblin": 1
+        },
+        "rawRaceCounts": {
+          "Goblin": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Fireworks Engineer Fabdabus",
+        "rawNames": [
+          "Fireworks_Engineer_Fabdabus"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Gnome": 1
+        },
+        "rawRaceCounts": {
+          "Gnome": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Hargar The Velium Chef",
+        "rawNames": [
+          "Hargar_the_Velium_Chef"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Timerone",
+        "rawNames": [
+          "TimerOne"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Teleport Man": 1
+        },
+        "rawRaceCounts": {
+          "Teleport Man": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Timertwo",
+        "rawNames": [
+          "TimerTwo"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Teleport Man": 1
+        },
+        "rawRaceCounts": {
+          "Teleport Man": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Rolynn B`div",
+        "rawNames": [
+          "Rolynn_B`Div"
+        ],
+        "count": 1,
+        "levelMin": 10,
+        "levelMax": 10,
+        "levels": [
+          10
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Pungla",
+        "rawNames": [
+          "Pungla"
+        ],
+        "count": 1,
+        "levelMin": 16,
+        "levelMax": 16,
+        "levels": [
+          16
+        ],
+        "raceCounts": {
+          "Ogre": 1
+        },
+        "rawRaceCounts": {
+          "Ogre": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Lumpin",
+        "rawNames": [
+          "Guard_Lumpin"
+        ],
+        "count": 1,
+        "levelMin": 18,
+        "levelMax": 18,
+        "levels": [
+          18
+        ],
+        "raceCounts": {
+          "Troll": 1
+        },
+        "rawRaceCounts": {
+          "Troll": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Namarg",
+        "rawNames": [
+          "Namarg"
+        ],
+        "count": 1,
+        "levelMin": 32,
+        "levelMax": 32,
+        "levels": [
+          32
+        ],
+        "raceCounts": {
+          "Troll": 1
+        },
+        "rawRaceCounts": {
+          "Troll": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Teir`dal Correspondent",
+        "rawNames": [
+          "a_Teir`Dal_correspondent"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Rogue": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard F`lok",
+        "rawNames": [
+          "Guard_F`Lok"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Ixtaz",
+        "rawNames": [
+          "Guard_Ixtaz"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Punox",
+        "rawNames": [
+          "Guard_Punox"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard S`kor",
+        "rawNames": [
+          "Guard_S`Kor"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Swang",
+        "rawNames": [
+          "Guard_Swang"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Ogre": 1
+        },
+        "rawRaceCounts": {
+          "Ogre": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Tolax",
+        "rawNames": [
+          "Guard_Tolax"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard V`retta",
+        "rawNames": [
+          "Guard_V`Retta"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Ghrag",
+        "rawNames": [
+          "Ghrag"
+        ],
+        "count": 1,
+        "levelMin": 36,
+        "levelMax": 36,
+        "levels": [
+          36
+        ],
+        "raceCounts": {
+          "Ogre": 1
+        },
+        "rawRaceCounts": {
+          "Ogre": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Relgor",
+        "rawNames": [
+          "Relgor"
+        ],
+        "count": 1,
+        "levelMin": 37,
+        "levelMax": 37,
+        "levels": [
+          37
+        ],
+        "raceCounts": {
+          "Troll": 1
+        },
+        "rawRaceCounts": {
+          "Troll": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Bronk",
+        "rawNames": [
+          "Bronk"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Troll": 1
+        },
+        "rawRaceCounts": {
+          "Troll": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Bull Crusher",
+        "rawNames": [
+          "Bull_Crusher"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Ogre": 1
+        },
+        "rawRaceCounts": {
+          "Ogre": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Canarie",
+        "rawNames": [
+          "Canarie"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Troll": 1
+        },
+        "rawRaceCounts": {
+          "Troll": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Chonchon",
+        "rawNames": [
+          "ChonChon"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Ogre": 1
+        },
+        "rawRaceCounts": {
+          "Ogre": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Damar Nislan",
+        "rawNames": [
+          "Damar_Nislan"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Darien Felton",
+        "rawNames": [
+          "Darien_Felton"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Dran `slug` Rembor",
+        "rawNames": [
+          "Dran_`slug`_Rembor"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Farlain Stonethrower",
+        "rawNames": [
+          "Farlain_Stonethrower"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Halfling": 1
+        },
+        "rawRaceCounts": {
+          "Halfling": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Gambel Quick",
+        "rawNames": [
+          "Gambel_Quick"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Jarvah",
+        "rawNames": [
+          "Jarvah"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Troll": 1
+        },
+        "rawRaceCounts": {
+          "Troll": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Jasma Tather",
+        "rawNames": [
+          "Jasma_Tather"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Javen Tavos",
+        "rawNames": [
+          "Javen_TaVos"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Kruna",
+        "rawNames": [
+          "Kruna"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Ogre": 1
+        },
+        "rawRaceCounts": {
+          "Ogre": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Lisv D`unnar",
+        "rawNames": [
+          "Lisv_D`Unnar"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Necromancer": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Mordant Tather",
+        "rawNames": [
+          "Mordant_Tather"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Guard": 1
+        },
+        "rawRaceCounts": {
+          "Guard": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Palais Derekor",
+        "rawNames": [
+          "Palais_Derekor"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Psal G`noir",
+        "rawNames": [
+          "Psal_G`Noir"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Cleric": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Putad",
+        "rawNames": [
+          "Putad"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Ogre": 1
+        },
+        "rawRaceCounts": {
+          "Ogre": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Sal Drana",
+        "rawNames": [
+          "Sal_Drana"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Sera Buelle",
+        "rawNames": [
+          "Sera_Buelle"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Slunga",
+        "rawNames": [
+          "Slunga"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Troll": 1
+        },
+        "rawRaceCounts": {
+          "Troll": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Smaka",
+        "rawNames": [
+          "Smaka"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Ogre": 1
+        },
+        "rawRaceCounts": {
+          "Ogre": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Spinkit",
+        "rawNames": [
+          "Spinkit"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Troll": 1
+        },
+        "rawRaceCounts": {
+          "Troll": 1
+        },
+        "classCounts": {
+          "Class 40": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Tal Drana",
+        "rawNames": [
+          "Tal_Drana"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Tala Felton",
+        "rawNames": [
+          "Tala_Felton"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Tanai Tanbor",
+        "rawNames": [
+          "Tanai_Tanbor"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "The Gobbler",
+        "rawNames": [
+          "The_Gobbler"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Ogre": 1
+        },
+        "rawRaceCounts": {
+          "Ogre": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Uawn Betell",
+        "rawNames": [
+          "Uawn_Betell"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Vala Tanbor",
+        "rawNames": [
+          "Vala_Tanbor"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Wiska",
+        "rawNames": [
+          "Wiska"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Ogre": 1
+        },
+        "rawRaceCounts": {
+          "Ogre": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "X`ta Tempi",
+        "rawNames": [
+          "X`Ta_Tempi"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Necromancer": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "X`ta Timpi",
+        "rawNames": [
+          "X`Ta_Timpi"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Necromancer": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "X`ta Tompi",
+        "rawNames": [
+          "X`Ta_Tompi"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Necromancer": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Yala Thiss",
+        "rawNames": [
+          "Yala_Thiss"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Oosa Shadowthumper",
+        "rawNames": [
+          "Oosa_Shadowthumper"
+        ],
+        "count": 1,
+        "levelMin": 42,
+        "levelMax": 42,
+        "levels": [
+          42
+        ],
+        "raceCounts": {
+          "Troll": 1
+        },
+        "rawRaceCounts": {
+          "Troll": 1
+        },
+        "classCounts": {
+          "Shadowknight": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Jacker",
+        "rawNames": [
+          "Jacker"
+        ],
+        "count": 1,
+        "levelMin": 44,
+        "levelMax": 44,
+        "levels": [
+          44
+        ],
+        "raceCounts": {
+          "Ogre": 1
+        },
+        "rawRaceCounts": {
+          "Ogre": 1
+        },
+        "classCounts": {
+          "Shadowknight": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Divn L`crit",
+        "rawNames": [
+          "Divn_L`Crit"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Karnan",
+        "rawNames": [
+          "Karnan"
+        ],
+        "count": 1,
+        "levelMin": 47,
+        "levelMax": 47,
+        "levels": [
+          47
+        ],
+        "raceCounts": {
+          "Troll": 1
+        },
+        "rawRaceCounts": {
+          "Troll": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Mrak",
+        "rawNames": [
+          "Mrak"
+        ],
+        "count": 1,
+        "levelMin": 48,
+        "levelMax": 48,
+        "levels": [
+          48
+        ],
+        "raceCounts": {
+          "Ogre": 1
+        },
+        "rawRaceCounts": {
+          "Ogre": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Capee",
+        "rawNames": [
+          "Capee"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Troll": 1
+        },
+        "rawRaceCounts": {
+          "Troll": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Svunsa",
+        "rawNames": [
+          "Svunsa"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Troll": 1
+        },
+        "rawRaceCounts": {
+          "Troll": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Uglan",
+        "rawNames": [
+          "Uglan"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Ogre": 1
+        },
+        "rawRaceCounts": {
+          "Ogre": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Nalissi K`ten",
+        "rawNames": [
+          "Nalissi_K`Ten"
+        ],
+        "count": 1,
+        "levelMin": 65,
+        "levelMax": 65,
+        "levels": [
+          65
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Nerta D`vile",
+        "rawNames": [
+          "Nerta_D`Vile"
+        ],
+        "count": 1,
+        "levelMin": 65,
+        "levelMax": 65,
+        "levels": [
+          65
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Tribute Master": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Soulbinder Nola Z`ret",
+        "rawNames": [
+          "Soulbinder_Nola_Z`Ret"
+        ],
+        "count": 1,
+        "levelMin": 65,
+        "levelMax": 65,
+        "levels": [
+          65
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Santug Claugg",
+        "rawNames": [
+          "Santug_Claugg"
+        ],
+        "count": 1,
+        "levelMin": 70,
+        "levelMax": 70,
+        "levels": [
+          70
+        ],
+        "raceCounts": {
+          "Ogre": 1
+        },
+        "rawRaceCounts": {
+          "Ogre": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      }
+    ],
+    "rows": [
+      {
+        "displayName": "A Frostfell Goblin",
+        "rawName": "a_Frostfell_Goblin",
+        "level": 1,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 48,
+        "y": 71,
+        "z": 12,
+        "heading": 302,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 148716,
+        "spawngroupId": 110232,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Rodent",
+        "rawName": "a_rodent",
+        "level": 1,
+        "race": "Rat",
+        "rawRace": "Rat",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -197,
+        "y": -345,
+        "z": 19.5,
+        "heading": 504,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10219,
+        "spawngroupId": 3030,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Rodent",
+        "rawName": "a_rodent",
+        "level": 1,
+        "race": "Rat",
+        "rawRace": "Rat",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -258.25,
+        "y": 133.380005,
+        "z": 0.5,
+        "heading": 252.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10220,
+        "spawngroupId": 3030,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Rodent",
+        "rawName": "a_rodent",
+        "level": 1,
+        "race": "Rat",
+        "rawRace": "Rat",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -46.75,
+        "y": 203,
+        "z": 1.5,
+        "heading": 127.75,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10221,
+        "spawngroupId": 3030,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Rodent",
+        "rawName": "a_rodent",
+        "level": 1,
+        "race": "Rat",
+        "rawRace": "Rat",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -45.630001,
+        "y": 179,
+        "z": 6.38,
+        "heading": 61.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10222,
+        "spawngroupId": 3030,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Rodent",
+        "rawName": "a_rodent",
+        "level": 1,
+        "race": "Rat",
+        "rawRace": "Rat",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -164.130005,
+        "y": -44.5,
+        "z": 6.1,
+        "heading": 413.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10223,
+        "spawngroupId": 3030,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Rodent",
+        "rawName": "a_rodent",
+        "level": 1,
+        "race": "Rat",
+        "rawRace": "Rat",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -0.5,
+        "y": -179.75,
+        "z": 2.8,
+        "heading": 10.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10224,
+        "spawngroupId": 3030,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Rodent",
+        "rawName": "a_rodent",
+        "level": 1,
+        "race": "Rat",
+        "rawRace": "Rat",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -179.880005,
+        "y": -288,
+        "z": 25.379999,
+        "heading": 175,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10225,
+        "spawngroupId": 3030,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Rodent",
+        "rawName": "a_rodent",
+        "level": 1,
+        "race": "Rat",
+        "rawRace": "Rat",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -369.880005,
+        "y": -374.880005,
+        "z": 1.5,
+        "heading": 240,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10226,
+        "spawngroupId": 3030,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Rodent",
+        "rawName": "a_rodent",
+        "level": 1,
+        "race": "Rat",
+        "rawRace": "Rat",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -152.130005,
+        "y": -349.880005,
+        "z": 1.5,
+        "heading": 404,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10227,
+        "spawngroupId": 3030,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Rodent",
+        "rawName": "a_rodent",
+        "level": 1,
+        "race": "Rat",
+        "rawRace": "Rat",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -79,
+        "y": 89.25,
+        "z": 1.5,
+        "heading": 12,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10228,
+        "spawngroupId": 3030,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Rodent",
+        "rawName": "a_rodent",
+        "level": 1,
+        "race": "Rat",
+        "rawRace": "Rat",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -36,
+        "y": 258.880005,
+        "z": 15.5,
+        "heading": 82,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10229,
+        "spawngroupId": 3030,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Rodent",
+        "rawName": "a_rodent",
+        "level": 1,
+        "race": "Rat",
+        "rawRace": "Rat",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -27,
+        "y": -44,
+        "z": 1.5,
+        "heading": 194,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10230,
+        "spawngroupId": 3030,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Rodent",
+        "rawName": "a_rodent",
+        "level": 1,
+        "race": "Rat",
+        "rawRace": "Rat",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -348,
+        "y": -597.880005,
+        "z": 22.1,
+        "heading": 344,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10231,
+        "spawngroupId": 3030,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Rodent",
+        "rawName": "a_rodent",
+        "level": 1,
+        "race": "Rat",
+        "rawRace": "Rat",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -266,
+        "y": 253.880005,
+        "z": 15.5,
+        "heading": 276,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10232,
+        "spawngroupId": 3030,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Rodent",
+        "rawName": "a_rodent",
+        "level": 1,
+        "race": "Rat",
+        "rawRace": "Rat",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -443.880005,
+        "y": -310.880005,
+        "z": 40,
+        "heading": 176,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10233,
+        "spawngroupId": 3030,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Fireworks Engineer Fabdabus",
+        "rawName": "Fireworks_Engineer_Fabdabus",
+        "level": 1,
+        "race": "Gnome",
+        "rawRace": "Gnome",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 21,
+        "y": 84,
+        "z": 1.875,
+        "heading": 233,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 148750,
+        "spawngroupId": 110266,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Hargar The Velium Chef",
+        "rawName": "Hargar_the_Velium_Chef",
+        "level": 1,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -10,
+        "y": 77,
+        "z": 2.5,
+        "heading": 157,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 148733,
+        "spawngroupId": 110249,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Timerone",
+        "rawName": "TimerOne",
+        "level": 1,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -222,
+        "y": 214,
+        "z": 53.700001,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 21431,
+        "spawngroupId": 13107,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Timertwo",
+        "rawName": "TimerTwo",
+        "level": 1,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -247,
+        "y": 214,
+        "z": 53.700001,
+        "heading": 252,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 21430,
+        "spawngroupId": 13106,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Rolynn B`div",
+        "rawName": "Rolynn_B`Div",
+        "level": 10,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -80.879997,
+        "y": 134,
+        "z": 3.13,
+        "heading": 390,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10218,
+        "spawngroupId": 3029,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Pungla",
+        "rawName": "Pungla",
+        "level": 16,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -337.880005,
+        "y": -336,
+        "z": 5.63,
+        "heading": 253,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 10282,
+        "spawngroupId": 7525,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Guard Lumpin",
+        "rawName": "Guard_Lumpin",
+        "level": 18,
+        "race": "Troll",
+        "rawRace": "Troll",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -417.880005,
+        "y": -556.880005,
+        "z": 24,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10298,
+        "spawngroupId": 7541,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Namarg",
+        "rawName": "Namarg",
+        "level": 32,
+        "race": "Troll",
+        "rawRace": "Troll",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -426,
+        "y": -278,
+        "z": 18.126999,
+        "heading": 227,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 21435,
+        "spawngroupId": 13111,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Teir`dal Correspondent",
+        "rawName": "a_Teir`Dal_correspondent",
+        "level": 35,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -102,
+        "y": -136,
+        "z": 17.129999,
+        "heading": 460,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10308,
+        "spawngroupId": 7551,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard F`lok",
+        "rawName": "Guard_F`Lok",
+        "level": 35,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 0,
+        "y": -14.88,
+        "z": 3.13,
+        "heading": 140,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 10276,
+        "spawngroupId": 5930,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "Guard Ixtaz",
+        "rawName": "Guard_Ixtaz",
+        "level": 35,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -121,
+        "y": -189.880005,
+        "z": 31.129999,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10310,
+        "spawngroupId": 7553,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard Punox",
+        "rawName": "Guard_Punox",
+        "level": 35,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -60,
+        "y": -3,
+        "z": 3.13,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10272,
+        "spawngroupId": 5926,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard S`kor",
+        "rawName": "Guard_S`Kor",
+        "level": 35,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -108.879997,
+        "y": 0,
+        "z": 3.13,
+        "heading": 0,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 10278,
+        "spawngroupId": 5932,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Guard Swang",
+        "rawName": "Guard_Swang",
+        "level": 35,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -289,
+        "y": -253,
+        "z": 19.629999,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10277,
+        "spawngroupId": 5931,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard Tolax",
+        "rawName": "Guard_Tolax",
+        "level": 35,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 0,
+        "y": 14.88,
+        "z": 3.13,
+        "heading": 140,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 10294,
+        "spawngroupId": 7537,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Guard V`retta",
+        "rawName": "Guard_V`Retta",
+        "level": 35,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -24,
+        "y": -112,
+        "z": 45,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10269,
+        "spawngroupId": 5924,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Ghrag",
+        "rawName": "Ghrag",
+        "level": 36,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -261,
+        "y": -260,
+        "z": 5.6,
+        "heading": 286,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 21433,
+        "spawngroupId": 13109,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Relgor",
+        "rawName": "Relgor",
+        "level": 37,
+        "race": "Troll",
+        "rawRace": "Troll",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -353,
+        "y": -331,
+        "z": 23,
+        "heading": 226,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 21429,
+        "spawngroupId": 13105,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Bronk",
+        "rawName": "Bronk",
+        "level": 40,
+        "race": "Troll",
+        "rawRace": "Troll",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -388,
+        "y": -242,
+        "z": 8,
+        "heading": 159,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10300,
+        "spawngroupId": 7543,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Bull Crusher",
+        "rawName": "Bull_Crusher",
+        "level": 40,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -252,
+        "y": -390,
+        "z": 5.63,
+        "heading": 386,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10280,
+        "spawngroupId": 7523,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Canarie",
+        "rawName": "Canarie",
+        "level": 40,
+        "race": "Troll",
+        "rawRace": "Troll",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -172,
+        "y": -268,
+        "z": 5,
+        "heading": 258,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10259,
+        "spawngroupId": 3060,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Chonchon",
+        "rawName": "ChonChon",
+        "level": 40,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -91.879997,
+        "y": 147,
+        "z": 4.63,
+        "heading": 257,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10268,
+        "spawngroupId": 3051,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Damar Nislan",
+        "rawName": "Damar_Nislan",
+        "level": 40,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -196,
+        "y": 177,
+        "z": 17.75,
+        "heading": 511,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10279,
+        "spawngroupId": 5933,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Darien Felton",
+        "rawName": "Darien_Felton",
+        "level": 40,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -93,
+        "y": 136,
+        "z": 2.75,
+        "heading": 509,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10286,
+        "spawngroupId": 7529,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Dran `slug` Rembor",
+        "rawName": "Dran_`slug`_Rembor",
+        "level": 40,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -244,
+        "y": 210,
+        "z": 2.25,
+        "heading": 1,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10292,
+        "spawngroupId": 7535,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Farlain Stonethrower",
+        "rawName": "Farlain_Stonethrower",
+        "level": 40,
+        "race": "Halfling",
+        "rawRace": "Halfling",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -57,
+        "y": 199.880005,
+        "z": 2.13,
+        "heading": 331,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10293,
+        "spawngroupId": 7536,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Gambel Quick",
+        "rawName": "Gambel_Quick",
+        "level": 40,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -60,
+        "y": 253,
+        "z": 17.75,
+        "heading": 389,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10287,
+        "spawngroupId": 7530,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Jarvah",
+        "rawName": "Jarvah",
+        "level": 40,
+        "race": "Troll",
+        "rawRace": "Troll",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -366,
+        "y": -222,
+        "z": 8,
+        "heading": 312,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10299,
+        "spawngroupId": 7542,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Jasma Tather",
+        "rawName": "Jasma_Tather",
+        "level": 40,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -187,
+        "y": 147,
+        "z": 3.75,
+        "heading": 181,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10258,
+        "spawngroupId": 3061,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Javen Tavos",
+        "rawName": "Javen_TaVos",
+        "level": 40,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -173,
+        "y": 175,
+        "z": 3.13,
+        "heading": 185,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10303,
+        "spawngroupId": 7546,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Kruna",
+        "rawName": "Kruna",
+        "level": 40,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -456,
+        "y": -308,
+        "z": 20.629999,
+        "heading": 124,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10263,
+        "spawngroupId": 3056,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Lisv D`unnar",
+        "rawName": "Lisv_D`Unnar",
+        "level": 40,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Necromancer",
+        "type": "Spawn Slot",
+        "x": -109,
+        "y": -32,
+        "z": 3.13,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10295,
+        "spawngroupId": 7538,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Mordant Tather",
+        "rawName": "Mordant_Tather",
+        "level": 40,
+        "race": "Guard",
+        "rawRace": "Guard",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -175,
+        "y": 130,
+        "z": 3.75,
+        "heading": 126,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10257,
+        "spawngroupId": 3062,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Palais Derekor",
+        "rawName": "Palais_Derekor",
+        "level": 40,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -110.879997,
+        "y": 205.880005,
+        "z": 3.75,
+        "heading": 237,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10284,
+        "spawngroupId": 7527,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Psal G`noir",
+        "rawName": "Psal_G`Noir",
+        "level": 40,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": -111,
+        "y": 32,
+        "z": 3.13,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10283,
+        "spawngroupId": 7526,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Putad",
+        "rawName": "Putad",
+        "level": 40,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -295,
+        "y": -213,
+        "z": 19.629999,
+        "heading": 242,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10274,
+        "spawngroupId": 5928,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Sal Drana",
+        "rawName": "Sal_Drana",
+        "level": 40,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -238,
+        "y": 106,
+        "z": 3.75,
+        "heading": 6,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10297,
+        "spawngroupId": 7540,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Sera Buelle",
+        "rawName": "Sera_Buelle",
+        "level": 40,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -261.880005,
+        "y": 255,
+        "z": 30.5,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10289,
+        "spawngroupId": 7532,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Slunga",
+        "rawName": "Slunga",
+        "level": 40,
+        "race": "Troll",
+        "rawRace": "Troll",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -194,
+        "y": -336,
+        "z": 5,
+        "heading": 254,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10296,
+        "spawngroupId": 7539,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Smaka",
+        "rawName": "Smaka",
+        "level": 40,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -107,
+        "y": -335,
+        "z": 5.63,
+        "heading": 378,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10264,
+        "spawngroupId": 3055,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Spinkit",
+        "rawName": "Spinkit",
+        "level": 40,
+        "race": "Troll",
+        "rawRace": "Troll",
+        "className": "Class 40",
+        "type": "Spawn Slot",
+        "x": -376,
+        "y": -195,
+        "z": 8,
+        "heading": 350,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10244,
+        "spawngroupId": 3041,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Tal Drana",
+        "rawName": "Tal_Drana",
+        "level": 40,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -251,
+        "y": 106,
+        "z": 3.75,
+        "heading": 6,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10273,
+        "spawngroupId": 5927,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Tala Felton",
+        "rawName": "Tala_Felton",
+        "level": 40,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -98,
+        "y": 136,
+        "z": 17.75,
+        "heading": 5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10285,
+        "spawngroupId": 7528,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Tanai Tanbor",
+        "rawName": "Tanai_Tanbor",
+        "level": 40,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -242,
+        "y": 215,
+        "z": 30.5,
+        "heading": 258,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10288,
+        "spawngroupId": 7531,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "The Gobbler",
+        "rawName": "The_Gobbler",
+        "level": 40,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -125,
+        "y": -323,
+        "z": 5.63,
+        "heading": 259,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10270,
+        "spawngroupId": 5925,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Uawn Betell",
+        "rawName": "Uawn_Betell",
+        "level": 40,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -227,
+        "y": 246,
+        "z": 16.5,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10290,
+        "spawngroupId": 7533,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Vala Tanbor",
+        "rawName": "Vala_Tanbor",
+        "level": 40,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -215,
+        "y": 210,
+        "z": 2.5,
+        "heading": 338,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10267,
+        "spawngroupId": 3052,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Wiska",
+        "rawName": "Wiska",
+        "level": 40,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -104,
+        "y": 159,
+        "z": 19.629999,
+        "heading": 270,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10281,
+        "spawngroupId": 7524,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "X`ta Tempi",
+        "rawName": "X`Ta_Tempi",
+        "level": 40,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Necromancer",
+        "type": "Spawn Slot",
+        "x": -30,
+        "y": 0,
+        "z": 45,
+        "heading": 127,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10275,
+        "spawngroupId": 5929,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "X`ta Timpi",
+        "rawName": "X`Ta_Timpi",
+        "level": 40,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Necromancer",
+        "type": "Spawn Slot",
+        "x": -37,
+        "y": 1,
+        "z": 45,
+        "heading": 377,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10216,
+        "spawngroupId": 5934,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "X`ta Tompi",
+        "rawName": "X`Ta_Tompi",
+        "level": 40,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Necromancer",
+        "type": "Spawn Slot",
+        "x": -50,
+        "y": -13,
+        "z": 45,
+        "heading": 68,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10217,
+        "spawngroupId": 3028,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Yala Thiss",
+        "rawName": "Yala_Thiss",
+        "level": 40,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -264.880005,
+        "y": 242.880005,
+        "z": 2.5,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10291,
+        "spawngroupId": 7534,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Oosa Shadowthumper",
+        "rawName": "Oosa_Shadowthumper",
+        "level": 42,
+        "race": "Troll",
+        "rawRace": "Troll",
+        "className": "Shadowknight",
+        "type": "Spawn Slot",
+        "x": -438,
+        "y": -367,
+        "z": 19,
+        "heading": 31,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10311,
+        "spawngroupId": 40090,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Jacker",
+        "rawName": "Jacker",
+        "level": 44,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Shadowknight",
+        "type": "Spawn Slot",
+        "x": -237,
+        "y": -261,
+        "z": 19,
+        "heading": 354,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10242,
+        "spawngroupId": 3039,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Divn L`crit",
+        "rawName": "Divn_L`Crit",
+        "level": 45,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -115.879997,
+        "y": 0,
+        "z": 3.13,
+        "heading": 140,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10262,
+        "spawngroupId": 3057,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Karnan",
+        "rawName": "Karnan",
+        "level": 47,
+        "race": "Troll",
+        "rawRace": "Troll",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -314,
+        "y": -316,
+        "z": 6,
+        "heading": 187,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 21432,
+        "spawngroupId": 13108,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Mrak",
+        "rawName": "Mrak",
+        "level": 48,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -225,
+        "y": -315,
+        "z": 5.6,
+        "heading": 325,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 21436,
+        "spawngroupId": 13112,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Capee",
+        "rawName": "Capee",
+        "level": 50,
+        "race": "Troll",
+        "rawRace": "Troll",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -222,
+        "y": -371.880005,
+        "z": 5,
+        "heading": 434,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10261,
+        "spawngroupId": 3058,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Svunsa",
+        "rawName": "Svunsa",
+        "level": 50,
+        "race": "Troll",
+        "rawRace": "Troll",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -209,
+        "y": -340,
+        "z": 23,
+        "heading": 383,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10265,
+        "spawngroupId": 3054,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Uglan",
+        "rawName": "Uglan",
+        "level": 50,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -317,
+        "y": -371.880005,
+        "z": 5.63,
+        "heading": 58,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10260,
+        "spawngroupId": 3059,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Nalissi K`ten",
+        "rawName": "Nalissi_K`Ten",
+        "level": 65,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -9,
+        "y": -110,
+        "z": 3.13,
+        "heading": 108,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10307,
+        "spawngroupId": 7550,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Nerta D`vile",
+        "rawName": "Nerta_D`Vile",
+        "level": 65,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Tribute Master",
+        "type": "Spawn Slot",
+        "x": -7,
+        "y": 48,
+        "z": 45,
+        "heading": 384,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10236,
+        "spawngroupId": 3033,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Soulbinder Nola Z`ret",
+        "rawName": "Soulbinder_Nola_Z`Ret",
+        "level": 65,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -95,
+        "y": 205,
+        "z": 3.13,
+        "heading": 270,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10237,
+        "spawngroupId": 3034,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Santug Claugg",
+        "rawName": "Santug_Claugg",
+        "level": 70,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 3,
+        "y": 57,
+        "z": 6,
+        "heading": 222,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 148699,
+        "spawngroupId": 110215,
+        "candidateCount": 1
+      }
+    ]
+  }
+}

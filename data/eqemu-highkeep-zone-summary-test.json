@@ -1,0 +1,6268 @@
+{
+  "summary": {
+    "zoneSlug": "high-keep",
+    "zoneName": "High Keep",
+    "requestedZoneShortName": "highkeep",
+    "zoneShortName": "highkeep",
+    "sourceFile": "local-eqemu-database",
+    "matched": true,
+    "expansion": "Classic",
+    "eqemuExpansionId": 0,
+    "expansionSource": "eqemu-zone-table",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobCount": 110,
+    "unknownLevelCount": 0,
+    "minLevel": 6,
+    "maxLevel": 61,
+    "averageLevel": 28.4,
+    "medianLevel": 27,
+    "levelCounts": {
+      "6": 1,
+      "8": 2,
+      "9": 1,
+      "10": 2,
+      "11": 3,
+      "12": 3,
+      "13": 1,
+      "20": 2,
+      "21": 3,
+      "22": 2,
+      "23": 4,
+      "24": 6,
+      "25": 8,
+      "26": 9,
+      "27": 12,
+      "28": 2,
+      "29": 5,
+      "30": 9,
+      "31": 5,
+      "32": 2,
+      "34": 1,
+      "35": 2,
+      "37": 1,
+      "39": 2,
+      "40": 11,
+      "42": 3,
+      "43": 1,
+      "45": 6,
+      "61": 1
+    },
+    "levelBuckets": {
+      "1-10": 6,
+      "11-20": 9,
+      "21-30": 60,
+      "31-40": 24,
+      "41-50": 10,
+      "51-60": 0,
+      "61+": 1
+    },
+    "levelProfileLabel": "Wide level spread",
+    "mobGroupNameCounts": {
+      "A Prisoner": 6,
+      "A Pickclaw Guard": 4,
+      "A Pickclaw Warrior": 4,
+      "A Goblin Thief": 3,
+      "A Guard": 3,
+      "A Kitchen Drudge": 3,
+      "A Noble": 3,
+      "Carson Mccabe": 3,
+      "A Pickclaw Lookout": 2,
+      "A Pickclaw Raider": 2,
+      "Guard Queztin": 2,
+      "Guard Xantar": 2,
+      "A Clerk": 1,
+      "A Lady In Waiting": 1,
+      "A Maid": 1,
+      "A Pickclaw Cabalist": 1,
+      "A Pickclaw Spiritist": 1,
+      "Aeris Greymalkyn": 1,
+      "Assistant Kiolna": 1,
+      "Baker Jena": 1,
+      "Bank Clerk Jaylin": 1,
+      "Captain Bosec": 1,
+      "Captain Boshinko": 1,
+      "Dealer Maeline": 1,
+      "Dealer Shonta": 1,
+      "Dulcyna Blackhand": 1,
+      "Dyrna Nlith": 1,
+      "Flayer Hopkins": 1,
+      "Grahm Embersmith": 1,
+      "Guard Anleal": 1,
+      "Guard Antilles": 1,
+      "Guard Bach": 1,
+      "Guard Bicker": 1,
+      "Guard Blayle": 1,
+      "Guard Bolton": 1,
+      "Guard Bonner": 1,
+      "Guard Chin": 1,
+      "Guard Chopin": 1,
+      "Guard Clyzen": 1,
+      "Guard Diff": 1,
+      "Guard Dister": 1,
+      "Guard Drugan": 1,
+      "Guard Duras": 1,
+      "Guard Dwight": 1,
+      "Guard Folton": 1,
+      "Guard Gechop": 1,
+      "Guard Golgon": 1,
+      "Guard Handy": 1,
+      "Guard Heltch": 1,
+      "Guard Jaxon": 1,
+      "Guard Kheb": 1,
+      "Guard Kovan": 1,
+      "Guard Lancel": 1,
+      "Guard Lorton": 1,
+      "Guard Mytin": 1,
+      "Guard Onto": 1,
+      "Guard Qanyl": 1,
+      "Guard Rance": 1,
+      "Guard Ruan": 1,
+      "Guard Sintra": 1,
+      "Guard Sydl": 1,
+      "Guard Wextr": 1,
+      "Guard Yeltin": 1,
+      "Isabella Cellus": 1,
+      "Jail Clerk Maryl": 1,
+      "Justin Ryhmes": 1,
+      "Krystalle Corsair": 1,
+      "Lislia Goldtune": 1,
+      "Lucky The Beggar": 1,
+      "Merchant Dominik": 1,
+      "Merchant Edina": 1,
+      "Miner Harton": 1,
+      "Mistress Anna": 1,
+      "Osargen": 1,
+      "Princess Lenia": 1,
+      "Purchin Oddsbot": 1,
+      "Ran Flamespinner": 1,
+      "Rodrick Marslett": 1,
+      "Starr Dreamspinner": 1,
+      "Storm Dragonchaser": 1,
+      "Tarn Visilin": 1,
+      "Tearon Bleanix": 1,
+      "Treasurer Lynn": 1,
+      "Tsaria Jnarus": 1,
+      "Tyrana Slil": 1
+    },
+    "classCounts": {
+      "Warrior": 70,
+      "Rogue": 14,
+      "Banker": 12,
+      "Necromancer": 4,
+      "Bard": 3,
+      "Shaman": 2,
+      "Wizard": 2,
+      "Class 40": 1,
+      "Monk": 1,
+      "Paladin": 1
+    },
+    "raceCounts": {
+      "Human": 77,
+      "Goblin": 17,
+      "Beggar": 7,
+      "Dark Elf": 3,
+      "Erudite": 2,
+      "High Elf": 2,
+      "Half Elf": 1,
+      "Skeleton": 1
+    },
+    "normalizedRaceCounts": {
+      "Human": 77,
+      "Goblin": 17,
+      "Beggar": 7,
+      "Dark Elf": 3,
+      "Erudite": 2,
+      "High Elf": 2,
+      "Half Elf": 1,
+      "Skeleton": 1
+    },
+    "normalizedRaceLevelCounts": {
+      "Beggar": {
+        "6": 1,
+        "8": 1,
+        "11": 2,
+        "12": 3
+      },
+      "Dark Elf": {
+        "31": 1,
+        "42": 1,
+        "43": 1
+      },
+      "Erudite": {
+        "30": 1,
+        "45": 1
+      },
+      "Goblin": {
+        "21": 1,
+        "22": 1,
+        "23": 3,
+        "24": 2,
+        "26": 2,
+        "27": 2,
+        "30": 4,
+        "31": 2
+      },
+      "Half Elf": {
+        "25": 1
+      },
+      "High Elf": {
+        "13": 1,
+        "21": 1
+      },
+      "Human": {
+        "8": 1,
+        "9": 1,
+        "10": 2,
+        "11": 1,
+        "20": 2,
+        "21": 1,
+        "22": 1,
+        "23": 1,
+        "24": 4,
+        "25": 7,
+        "26": 7,
+        "27": 10,
+        "28": 2,
+        "29": 5,
+        "30": 3,
+        "31": 2,
+        "32": 2,
+        "34": 1,
+        "35": 2,
+        "37": 1,
+        "39": 2,
+        "40": 11,
+        "42": 2,
+        "45": 5,
+        "61": 1
+      },
+      "Skeleton": {
+        "30": 1
+      }
+    },
+    "raceAliases": {
+      "Beggar": [
+        "Beggar"
+      ],
+      "Dark Elf": [
+        "Dark Elf"
+      ],
+      "Erudite": [
+        "Erudite"
+      ],
+      "Goblin": [
+        "Goblin"
+      ],
+      "Half Elf": [
+        "Half Elf"
+      ],
+      "High Elf": [
+        "High Elf"
+      ],
+      "Human": [
+        "Human"
+      ],
+      "Skeleton": [
+        "Skeleton"
+      ]
+    },
+    "typeCounts": {
+      "Spawn Slot": 110
+    },
+    "notes": [
+      "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+      "Read-only test export; not wired into production /zones data."
+    ],
+    "spawnMapPrototype": {
+      "sourceKind": "Local EQEmu/PEQ database export",
+      "coordinateNote": "Original EQEmu spawn2 x/y/z coordinates are preserved for map prototyping.",
+      "points": [
+        {
+          "spawn2Id": 10105,
+          "spawngroupId": 6014,
+          "name": "Guard_Heltch",
+          "displayName": "Guard Heltch",
+          "level": 27,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -327,
+          "y": 6,
+          "z": 29.75,
+          "heading": 385,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 10106,
+          "spawngroupId": 6013,
+          "name": "Guard_Golgon",
+          "displayName": "Guard Golgon",
+          "level": 24,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -351,
+          "y": 5,
+          "z": 29.75,
+          "heading": 123,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 10107,
+          "spawngroupId": 6012,
+          "name": "Guard_Folton",
+          "displayName": "Guard Folton",
+          "level": 21,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -328,
+          "y": 66,
+          "z": 3.75,
+          "heading": 398,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 10108,
+          "spawngroupId": 6011,
+          "name": "Guard_Ruan",
+          "displayName": "Guard Ruan",
+          "level": 25,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -46,
+          "y": -51,
+          "z": 17.75,
+          "heading": 126,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 10109,
+          "spawngroupId": 6010,
+          "name": "Guard_Rance",
+          "displayName": "Guard Rance",
+          "level": 30,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 47,
+          "y": -1,
+          "z": 3.75,
+          "heading": 374,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 10110,
+          "spawngroupId": 6009,
+          "name": "Guard_Duras",
+          "displayName": "Guard Duras",
+          "level": 29,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": 48,
+          "y": -28,
+          "z": 3.75,
+          "heading": 411,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 10111,
+          "spawngroupId": 6008,
+          "name": "Guard_Drugan",
+          "displayName": "Guard Drugan",
+          "level": 26,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -322,
+          "y": -44,
+          "z": 3.75,
+          "heading": 212,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 10112,
+          "spawngroupId": 6007,
+          "name": "Lucky_the_Beggar",
+          "displayName": "Lucky The Beggar",
+          "level": 6,
+          "race": "Beggar",
+          "rawRace": "Beggar",
+          "className": "Rogue",
+          "x": -17,
+          "y": -76,
+          "z": -2.13,
+          "heading": 508,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 10113,
+          "spawngroupId": 6006,
+          "name": "Guard_Anleal",
+          "displayName": "Guard Anleal",
+          "level": 32,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -305,
+          "y": -77,
+          "z": 73.629997,
+          "heading": 122,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 10114,
+          "spawngroupId": 6005,
+          "name": "Guard_Dwight",
+          "displayName": "Guard Dwight",
+          "level": 29,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -307,
+          "y": -90,
+          "z": 73.629997,
+          "heading": 106,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 10115,
+          "spawngroupId": 6004,
+          "name": "Guard_Sydl",
+          "displayName": "Guard Sydl",
+          "level": 28,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -220,
+          "y": -134,
+          "z": 73.629997,
+          "heading": 511,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 10116,
+          "spawngroupId": 6003,
+          "name": "a_guard",
+          "displayName": "A Guard",
+          "level": 24,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -327,
+          "y": 102,
+          "z": 73.629997,
+          "heading": 374,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 10117,
+          "spawngroupId": 6002,
+          "name": "Carson_McCabe",
+          "displayName": "Carson Mccabe",
+          "level": 40,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": -327,
+          "y": 80,
+          "z": 73.629997,
+          "heading": 396,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 10118,
+          "spawngroupId": 6002,
+          "name": "Carson_McCabe",
+          "displayName": "Carson Mccabe",
+          "level": 40,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": -310,
+          "y": 125,
+          "z": 74.629997,
+          "heading": 176,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 10119,
+          "spawngroupId": 6002,
+          "name": "Carson_McCabe",
+          "displayName": "Carson Mccabe",
+          "level": 40,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": -85,
+          "y": -64,
+          "z": 65.629997,
+          "heading": 89,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 10120,
+          "spawngroupId": 6001,
+          "name": "a_guard",
+          "displayName": "A Guard",
+          "level": 26,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -259,
+          "y": 76,
+          "z": 76.629997,
+          "heading": 433,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 10121,
+          "spawngroupId": 6000,
+          "name": "Guard_Kheb",
+          "displayName": "Guard Kheb",
+          "level": 29,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -307,
+          "y": 8,
+          "z": 73.629997,
+          "heading": 56,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 10122,
+          "spawngroupId": 5999,
+          "name": "Guard_Sintra",
+          "displayName": "Guard Sintra",
+          "level": 31,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -191,
+          "y": 140,
+          "z": 73.629997,
+          "heading": 285,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 10123,
+          "spawngroupId": 5998,
+          "name": "Guard_Qanyl",
+          "displayName": "Guard Qanyl",
+          "level": 26,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -172,
+          "y": 9,
+          "z": 65.629997,
+          "heading": 261,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 10124,
+          "spawngroupId": 5997,
+          "name": "Guard_Mytin",
+          "displayName": "Guard Mytin",
+          "level": 29,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -111,
+          "y": 33,
+          "z": 65.629997,
+          "heading": 384,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 10125,
+          "spawngroupId": 5996,
+          "name": "Guard_Jaxon",
+          "displayName": "Guard Jaxon",
+          "level": 28,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -183,
+          "y": 13,
+          "z": 73.629997,
+          "heading": 337,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 10126,
+          "spawngroupId": 5995,
+          "name": "Guard_Gechop",
+          "displayName": "Guard Gechop",
+          "level": 27,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -185,
+          "y": 105,
+          "z": 73.9953,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10127,
+          "spawngroupId": 5994,
+          "name": "Guard_Antilles",
+          "displayName": "Guard Antilles",
+          "level": 30,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -211,
+          "y": 10,
+          "z": 73.629997,
+          "heading": 181,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 10128,
+          "spawngroupId": 5993,
+          "name": "Guard_Bonner",
+          "displayName": "Guard Bonner",
+          "level": 27,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -221,
+          "y": -32,
+          "z": 53.630001,
+          "heading": 391,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 10129,
+          "spawngroupId": 1839,
+          "name": "Guard_Clyzen",
+          "displayName": "Guard Clyzen",
+          "level": 27,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -269,
+          "y": -17,
+          "z": 53.630001,
+          "heading": 187,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 10130,
+          "spawngroupId": 5405,
+          "name": "Guard_Queztin",
+          "displayName": "Guard Queztin",
+          "level": 26,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -288,
+          "y": -41,
+          "z": 53.630001,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10131,
+          "spawngroupId": 4551,
+          "name": "Guard_Onto",
+          "displayName": "Guard Onto",
+          "level": 27,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -593,
+          "y": -5,
+          "z": -10.13,
+          "heading": 134,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 10132,
+          "spawngroupId": 1917,
+          "name": "Guard_Chin",
+          "displayName": "Guard Chin",
+          "level": 32,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -513,
+          "y": -3,
+          "z": -10.13,
+          "heading": 459,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10133,
+          "spawngroupId": 1916,
+          "name": "Guard_Handy",
+          "displayName": "Guard Handy",
+          "level": 31,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -398,
+          "y": 91,
+          "z": -10.1,
+          "heading": 0,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 10134,
+          "spawngroupId": 1915,
+          "name": "Guard_Bolton",
+          "displayName": "Guard Bolton",
+          "level": 25,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -278,
+          "y": 18,
+          "z": -10.13,
+          "heading": 508,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 10135,
+          "spawngroupId": 1914,
+          "name": "Captain_Bosec",
+          "displayName": "Captain Bosec",
+          "level": 34,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -306,
+          "y": 31,
+          "z": -10.13,
+          "heading": 315,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10136,
+          "spawngroupId": 1913,
+          "name": "Guard_Kovan",
+          "displayName": "Guard Kovan",
+          "level": 23,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -320,
+          "y": -104,
+          "z": 29.75,
+          "heading": 60,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10137,
+          "spawngroupId": 1912,
+          "name": "Lislia_Goldtune",
+          "displayName": "Lislia Goldtune",
+          "level": 25,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Bard",
+          "x": -46,
+          "y": 9,
+          "z": -2.13,
+          "heading": 148,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10138,
+          "spawngroupId": 1911,
+          "name": "a_pickclaw_cabalist",
+          "displayName": "A Pickclaw Cabalist",
+          "level": 23,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Shaman",
+          "x": -253,
+          "y": -99,
+          "z": -60.130001,
+          "heading": 49,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 10139,
+          "spawngroupId": 1910,
+          "name": "a_pickclaw_raider",
+          "displayName": "A Pickclaw Raider",
+          "level": 31,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -303,
+          "y": -23,
+          "z": -77.129997,
+          "heading": 277.5,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 10140,
+          "spawngroupId": 1909,
+          "name": "a_Pickclaw_guard",
+          "displayName": "A Pickclaw Guard",
+          "level": 26,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -317,
+          "y": -40,
+          "z": -77.129997,
+          "heading": 245,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 10141,
+          "spawngroupId": 1908,
+          "name": "a_pickclaw_raider",
+          "displayName": "A Pickclaw Raider",
+          "level": 31,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -314,
+          "y": -63,
+          "z": -77.129997,
+          "heading": 67,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 10142,
+          "spawngroupId": 1907,
+          "name": "a_goblin_thief",
+          "displayName": "A Goblin Thief",
+          "level": 22,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -282,
+          "y": 7,
+          "z": -71.129997,
+          "heading": 128,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 10143,
+          "spawngroupId": 1906,
+          "name": "a_Pickclaw_warrior",
+          "displayName": "A Pickclaw Warrior",
+          "level": 30,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -232,
+          "y": -100,
+          "z": -60.130001,
+          "heading": 10,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 10144,
+          "spawngroupId": 1905,
+          "name": "a_Pickclaw_warrior",
+          "displayName": "A Pickclaw Warrior",
+          "level": 30,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -256,
+          "y": -67,
+          "z": -60.130001,
+          "heading": 148,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 10145,
+          "spawngroupId": 1904,
+          "name": "Captain_Boshinko",
+          "displayName": "Captain Boshinko",
+          "level": 40,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -63,
+          "y": -64,
+          "z": 17.75,
+          "heading": 79,
+          "chance": 100,
+          "respawnTime": 290,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10146,
+          "spawngroupId": 1903,
+          "name": "a_prisoner",
+          "displayName": "A Prisoner",
+          "level": 12,
+          "race": "Beggar",
+          "rawRace": "Beggar",
+          "className": "Warrior",
+          "x": -551,
+          "y": -19,
+          "z": -10.13,
+          "heading": 510,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 10147,
+          "spawngroupId": 1902,
+          "name": "Tyrana_Slil",
+          "displayName": "Tyrana Slil",
+          "level": 31,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Necromancer",
+          "x": -209,
+          "y": 90,
+          "z": 73,
+          "heading": 117,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 10148,
+          "spawngroupId": 1901,
+          "name": "a_prisoner",
+          "displayName": "A Prisoner",
+          "level": 8,
+          "race": "Beggar",
+          "rawRace": "Beggar",
+          "className": "Warrior",
+          "x": -598,
+          "y": -59,
+          "z": -10.13,
+          "heading": 72,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 10149,
+          "spawngroupId": 1900,
+          "name": "Princess_Lenia",
+          "displayName": "Princess Lenia",
+          "level": 21,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Necromancer",
+          "x": -492,
+          "y": 176,
+          "z": -10.13,
+          "heading": 183,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 10150,
+          "spawngroupId": 1899,
+          "name": "a_prisoner",
+          "displayName": "A Prisoner",
+          "level": 11,
+          "race": "Beggar",
+          "rawRace": "Beggar",
+          "className": "Warrior",
+          "x": -475,
+          "y": 134,
+          "z": -10.13,
+          "heading": 509,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 10151,
+          "spawngroupId": 1899,
+          "name": "a_prisoner",
+          "displayName": "A Prisoner",
+          "level": 11,
+          "race": "Beggar",
+          "rawRace": "Beggar",
+          "className": "Warrior",
+          "x": -467,
+          "y": 178,
+          "z": -10.13,
+          "heading": 215,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 10152,
+          "spawngroupId": 1898,
+          "name": "Dyrna_Nlith",
+          "displayName": "Dyrna Nlith",
+          "level": 42,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Necromancer",
+          "x": -316,
+          "y": 96,
+          "z": -10.75,
+          "heading": 387,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 10153,
+          "spawngroupId": 1897,
+          "name": "Flayer_Hopkins",
+          "displayName": "Flayer Hopkins",
+          "level": 25,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -320,
+          "y": 89,
+          "z": -10.13,
+          "heading": 3,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10154,
+          "spawngroupId": 1896,
+          "name": "Baker_Jena",
+          "displayName": "Baker Jena",
+          "level": 40,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -260,
+          "y": 46,
+          "z": 29.75,
+          "heading": 510,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10155,
+          "spawngroupId": 1895,
+          "name": "Merchant_Dominik",
+          "displayName": "Merchant Dominik",
+          "level": 40,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": 31,
+          "y": 37,
+          "z": -2.13,
+          "heading": 276,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10156,
+          "spawngroupId": 1894,
+          "name": "Osargen",
+          "displayName": "Osargen",
+          "level": 22,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": -546,
+          "y": -52,
+          "z": -10.13,
+          "heading": 437,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10157,
+          "spawngroupId": 1893,
+          "name": "Grahm_Embersmith",
+          "displayName": "Grahm Embersmith",
+          "level": 40,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -267,
+          "y": 29,
+          "z": -10.13,
+          "heading": 383,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10158,
+          "spawngroupId": 1892,
+          "name": "a_prisoner",
+          "displayName": "A Prisoner",
+          "level": 12,
+          "race": "Beggar",
+          "rawRace": "Beggar",
+          "className": "Warrior",
+          "x": -435,
+          "y": 177,
+          "z": -10.13,
+          "heading": 279,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 10159,
+          "spawngroupId": 1891,
+          "name": "a_prisoner",
+          "displayName": "A Prisoner",
+          "level": 12,
+          "race": "Beggar",
+          "rawRace": "Beggar",
+          "className": "Warrior",
+          "x": -448,
+          "y": 132,
+          "z": -10.13,
+          "heading": 509,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 10160,
+          "spawngroupId": 1890,
+          "name": "Krystalle_Corsair",
+          "displayName": "Krystalle Corsair",
+          "level": 30,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -235,
+          "y": -94,
+          "z": 3.75,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10161,
+          "spawngroupId": 1889,
+          "name": "Rodrick_Marslett",
+          "displayName": "Rodrick Marslett",
+          "level": 13,
+          "race": "High Elf",
+          "rawRace": "High Elf",
+          "className": "Warrior",
+          "x": -309,
+          "y": 145,
+          "z": -11.13,
+          "heading": 341,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10162,
+          "spawngroupId": 1888,
+          "name": "Assistant_Kiolna",
+          "displayName": "Assistant Kiolna",
+          "level": 25,
+          "race": "Half Elf",
+          "rawRace": "Half Elf",
+          "className": "Warrior",
+          "x": -331,
+          "y": -38,
+          "z": -10.5,
+          "heading": 14,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10163,
+          "spawngroupId": 1887,
+          "name": "Jail_Clerk_Maryl",
+          "displayName": "Jail Clerk Maryl",
+          "level": 40,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -364,
+          "y": 3,
+          "z": -10.13,
+          "heading": 11,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10164,
+          "spawngroupId": 1886,
+          "name": "Bank_Clerk_Jaylin",
+          "displayName": "Bank Clerk Jaylin",
+          "level": 25,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Class 40",
+          "x": -338,
+          "y": -29,
+          "z": -10.13,
+          "heading": 509,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10165,
+          "spawngroupId": 1885,
+          "name": "Miner_Harton",
+          "displayName": "Miner Harton",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -273,
+          "y": 42,
+          "z": -10.13,
+          "heading": 316,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10166,
+          "spawngroupId": 1884,
+          "name": "Tarn_Visilin",
+          "displayName": "Tarn Visilin",
+          "level": 45,
+          "race": "Erudite",
+          "rawRace": "Erudite",
+          "className": "Banker",
+          "x": -223,
+          "y": 65,
+          "z": 3.75,
+          "heading": 70,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10167,
+          "spawngroupId": 1883,
+          "name": "Justin_Ryhmes",
+          "displayName": "Justin Ryhmes",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -221,
+          "y": 62,
+          "z": 3.75,
+          "heading": 10,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10168,
+          "spawngroupId": 1882,
+          "name": "Aeris_Greymalkyn",
+          "displayName": "Aeris Greymalkyn",
+          "level": 37,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Necromancer",
+          "x": -319,
+          "y": 65,
+          "z": 3.75,
+          "heading": 146,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10169,
+          "spawngroupId": 1881,
+          "name": "Dealer_Shonta",
+          "displayName": "Dealer Shonta",
+          "level": 20,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -324,
+          "y": -54,
+          "z": 29.75,
+          "heading": 264,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10170,
+          "spawngroupId": 1880,
+          "name": "Merchant_Edina",
+          "displayName": "Merchant Edina",
+          "level": 40,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -294,
+          "y": -97,
+          "z": 3.75,
+          "heading": 426,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10171,
+          "spawngroupId": 1879,
+          "name": "Ran_Flamespinner",
+          "displayName": "Ran Flamespinner",
+          "level": 61,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -356.880005,
+          "y": -42,
+          "z": 3.75,
+          "heading": 191,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10172,
+          "spawngroupId": 1878,
+          "name": "a_maid",
+          "displayName": "A Maid",
+          "level": 8,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": -80.879997,
+          "y": 21,
+          "z": 65.629997,
+          "heading": 497,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 10173,
+          "spawngroupId": 1877,
+          "name": "Mistress_Anna",
+          "displayName": "Mistress Anna",
+          "level": 35,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": -87,
+          "y": -78,
+          "z": 65.629997,
+          "heading": 355,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10174,
+          "spawngroupId": 1876,
+          "name": "a_lady_in_waiting",
+          "displayName": "A Lady In Waiting",
+          "level": 10,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": -159,
+          "y": 84,
+          "z": 65.629997,
+          "heading": 108,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10175,
+          "spawngroupId": 1875,
+          "name": "Dulcyna_Blackhand",
+          "displayName": "Dulcyna Blackhand",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Monk",
+          "x": -167,
+          "y": 76,
+          "z": 65.629997,
+          "heading": 108,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 10176,
+          "spawngroupId": 1874,
+          "name": "a_kitchen_drudge",
+          "displayName": "A Kitchen Drudge",
+          "level": 9,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": -258,
+          "y": 71,
+          "z": 29.75,
+          "heading": 251,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 10177,
+          "spawngroupId": 1873,
+          "name": "a_kitchen_drudge",
+          "displayName": "A Kitchen Drudge",
+          "level": 11,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": -219,
+          "y": 71,
+          "z": 29.75,
+          "heading": 503,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 10178,
+          "spawngroupId": 1872,
+          "name": "a_kitchen_drudge",
+          "displayName": "A Kitchen Drudge",
+          "level": 10,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": -209,
+          "y": 37,
+          "z": 29.75,
+          "heading": 287,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 10179,
+          "spawngroupId": 1871,
+          "name": "Purchin_Oddsbot",
+          "displayName": "Purchin Oddsbot",
+          "level": 35,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Wizard",
+          "x": -331,
+          "y": 139,
+          "z": -11.13,
+          "heading": 140,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10180,
+          "spawngroupId": 1870,
+          "name": "a_clerk",
+          "displayName": "A Clerk",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -187,
+          "y": -77,
+          "z": 3.75,
+          "heading": 463,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10183,
+          "spawngroupId": 1868,
+          "name": "Treasurer_Lynn",
+          "displayName": "Treasurer Lynn",
+          "level": 30,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -375,
+          "y": -70,
+          "z": -10.13,
+          "heading": 470,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10184,
+          "spawngroupId": 1867,
+          "name": "Tearon_Bleanix",
+          "displayName": "Tearon Bleanix",
+          "level": 30,
+          "race": "Skeleton",
+          "rawRace": "Skeleton",
+          "className": "Paladin",
+          "x": -296,
+          "y": -19,
+          "z": 53.630001,
+          "heading": 332,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10185,
+          "spawngroupId": 1866,
+          "name": "Guard_Xantar",
+          "displayName": "Guard Xantar",
+          "level": 26,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -204.5,
+          "y": 19.6,
+          "z": 29.985201,
+          "heading": 0,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 10186,
+          "spawngroupId": 1865,
+          "name": "a_Pickclaw_guard",
+          "displayName": "A Pickclaw Guard",
+          "level": 27,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -144,
+          "y": 5,
+          "z": -40,
+          "heading": 19,
+          "chance": 25,
+          "respawnTime": 640,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 10187,
+          "spawngroupId": 1864,
+          "name": "Guard_Bach",
+          "displayName": "Guard Bach",
+          "level": 25,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -294,
+          "y": 32,
+          "z": 31,
+          "heading": 408,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 10188,
+          "spawngroupId": 1863,
+          "name": "Isabella_Cellus",
+          "displayName": "Isabella Cellus",
+          "level": 39,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -305,
+          "y": -59,
+          "z": 29.753,
+          "heading": 384,
+          "chance": 34,
+          "respawnTime": 290,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 10189,
+          "spawngroupId": 1862,
+          "name": "Guard_Wextr",
+          "displayName": "Guard Wextr",
+          "level": 26,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -191,
+          "y": -42,
+          "z": 31,
+          "heading": 390,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 10190,
+          "spawngroupId": 1861,
+          "name": "Guard_Yeltin",
+          "displayName": "Guard Yeltin",
+          "level": 25,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -182,
+          "y": 18,
+          "z": 31,
+          "heading": 385,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 10191,
+          "spawngroupId": 1860,
+          "name": "a_guard",
+          "displayName": "A Guard",
+          "level": 27,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -196,
+          "y": -12,
+          "z": 31,
+          "heading": 11,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 10192,
+          "spawngroupId": 1859,
+          "name": "a_Pickclaw_warrior",
+          "displayName": "A Pickclaw Warrior",
+          "level": 30,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -213,
+          "y": -63,
+          "z": -51,
+          "heading": 73,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 10193,
+          "spawngroupId": 1858,
+          "name": "Guard_Diff",
+          "displayName": "Guard Diff",
+          "level": 27,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -208,
+          "y": 4,
+          "z": 31,
+          "heading": 136,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 10194,
+          "spawngroupId": 1857,
+          "name": "#a_noble",
+          "displayName": "A Noble",
+          "level": 39,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": -310,
+          "y": -90,
+          "z": 32,
+          "heading": 126,
+          "chance": 100,
+          "respawnTime": 290,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10195,
+          "spawngroupId": 1856,
+          "name": "a_goblin_thief",
+          "displayName": "A Goblin Thief",
+          "level": 23,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -64,
+          "y": 6,
+          "z": -42,
+          "heading": 384,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 10196,
+          "spawngroupId": 1855,
+          "name": "a_Pickclaw_warrior",
+          "displayName": "A Pickclaw Warrior",
+          "level": 30,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -226,
+          "y": -31,
+          "z": -59,
+          "heading": 220,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 10197,
+          "spawngroupId": 1854,
+          "name": "a_noble",
+          "displayName": "A Noble",
+          "level": 42,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": -310,
+          "y": -101,
+          "z": 31,
+          "heading": 47,
+          "chance": 25,
+          "respawnTime": 290,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 10198,
+          "spawngroupId": 1853,
+          "name": "Guard_Chopin",
+          "displayName": "Guard Chopin",
+          "level": 24,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -299,
+          "y": 6,
+          "z": 31,
+          "heading": 186,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 10199,
+          "spawngroupId": 1852,
+          "name": "Tsaria_Jnarus",
+          "displayName": "Tsaria Jnarus",
+          "level": 43,
+          "race": "Dark Elf",
+          "rawRace": "Dark Elf",
+          "className": "Wizard",
+          "x": -191,
+          "y": -92,
+          "z": 30,
+          "heading": 381,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 10200,
+          "spawngroupId": 1851,
+          "name": "a_Pickclaw_guard",
+          "displayName": "A Pickclaw Guard",
+          "level": 26,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -99,
+          "y": -27,
+          "z": -40,
+          "heading": 217,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 10201,
+          "spawngroupId": 1850,
+          "name": "a_noble",
+          "displayName": "A Noble",
+          "level": 42,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Rogue",
+          "x": -310,
+          "y": 10,
+          "z": 54,
+          "heading": 325,
+          "chance": 25,
+          "respawnTime": 290,
+          "candidateCount": 4
+        },
+        {
+          "spawn2Id": 10202,
+          "spawngroupId": 1849,
+          "name": "a_pickclaw_lookout",
+          "displayName": "A Pickclaw Lookout",
+          "level": 23,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -67,
+          "y": 126,
+          "z": -40,
+          "heading": 357,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10203,
+          "spawngroupId": 1848,
+          "name": "a_Pickclaw_guard",
+          "displayName": "A Pickclaw Guard",
+          "level": 27,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -165,
+          "y": 78,
+          "z": -40,
+          "heading": 308,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 10204,
+          "spawngroupId": 1847,
+          "name": "a_pickclaw_spiritist",
+          "displayName": "A Pickclaw Spiritist",
+          "level": 21,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Shaman",
+          "x": -77,
+          "y": 78,
+          "z": -40,
+          "heading": 360,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 10205,
+          "spawngroupId": 1846,
+          "name": "a_pickclaw_lookout",
+          "displayName": "A Pickclaw Lookout",
+          "level": 24,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -73,
+          "y": 101,
+          "z": -40,
+          "heading": 395,
+          "chance": 34,
+          "respawnTime": 640,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 10206,
+          "spawngroupId": 1845,
+          "name": "a_goblin_thief",
+          "displayName": "A Goblin Thief",
+          "level": 24,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -150,
+          "y": 96,
+          "z": -40.130001,
+          "heading": 128,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 10207,
+          "spawngroupId": 1844,
+          "name": "Guard_Queztin",
+          "displayName": "Guard Queztin",
+          "level": 27,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -199,
+          "y": 6,
+          "z": 53.630001,
+          "heading": 378,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 10208,
+          "spawngroupId": 1843,
+          "name": "Guard_Lorton",
+          "displayName": "Guard Lorton",
+          "level": 29,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -348,
+          "y": 39,
+          "z": 3.75,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10209,
+          "spawngroupId": 1842,
+          "name": "Guard_Lancel",
+          "displayName": "Guard Lancel",
+          "level": 26,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -137.880005,
+          "y": 9.88,
+          "z": 3.75,
+          "heading": 264,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 10210,
+          "spawngroupId": 1841,
+          "name": "Guard_Blayle",
+          "displayName": "Guard Blayle",
+          "level": 20,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -98,
+          "y": -11,
+          "z": 3.75,
+          "heading": 386,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10211,
+          "spawngroupId": 1840,
+          "name": "Guard_Xantar",
+          "displayName": "Guard Xantar",
+          "level": 27,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -204.5,
+          "y": 19.629999,
+          "z": 29.75,
+          "heading": 131,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10212,
+          "spawngroupId": 7436,
+          "name": "Guard_Dister",
+          "displayName": "Guard Dister",
+          "level": 24,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -204,
+          "y": 43,
+          "z": 3.75,
+          "heading": 256,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 10214,
+          "spawngroupId": 7438,
+          "name": "Starr_DreamSpinner",
+          "displayName": "Starr Dreamspinner",
+          "level": 40,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Bard",
+          "x": -329,
+          "y": 70,
+          "z": 34,
+          "heading": 254,
+          "chance": 100,
+          "respawnTime": 1350,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 10215,
+          "spawngroupId": 7439,
+          "name": "Storm_Dragonchaser",
+          "displayName": "Storm Dragonchaser",
+          "level": 40,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Bard",
+          "x": -319,
+          "y": 69,
+          "z": 34,
+          "heading": 245,
+          "chance": 100,
+          "respawnTime": 1350,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 142591,
+          "spawngroupId": 104116,
+          "name": "Guard_Bicker",
+          "displayName": "Guard Bicker",
+          "level": 27,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Warrior",
+          "x": -202.25,
+          "y": -13.375,
+          "z": 3.75,
+          "heading": 200,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 142592,
+          "spawngroupId": 104117,
+          "name": "Dealer_Maeline",
+          "displayName": "Dealer Maeline",
+          "level": 45,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Banker",
+          "x": -326,
+          "y": -101,
+          "z": 29.75,
+          "heading": 9,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        }
+      ]
+    }
+  },
+  "details": {
+    "zoneSlug": "high-keep",
+    "routeSlug": "highkeep",
+    "zoneName": "High Keep",
+    "sourceFile": "local-eqemu-database",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobGroups": [
+      {
+        "displayName": "Lucky The Beggar",
+        "rawNames": [
+          "Lucky_the_Beggar"
+        ],
+        "count": 1,
+        "levelMin": 6,
+        "levelMax": 6,
+        "levels": [
+          6
+        ],
+        "raceCounts": {
+          "Beggar": 1
+        },
+        "rawRaceCounts": {
+          "Beggar": 1
+        },
+        "classCounts": {
+          "Rogue": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Maid",
+        "rawNames": [
+          "a_maid"
+        ],
+        "count": 1,
+        "levelMin": 8,
+        "levelMax": 8,
+        "levels": [
+          8
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Rogue": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Prisoner",
+        "rawNames": [
+          "a_prisoner"
+        ],
+        "count": 1,
+        "levelMin": 8,
+        "levelMax": 8,
+        "levels": [
+          8
+        ],
+        "raceCounts": {
+          "Beggar": 1
+        },
+        "rawRaceCounts": {
+          "Beggar": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Kitchen Drudge",
+        "rawNames": [
+          "a_kitchen_drudge"
+        ],
+        "count": 3,
+        "levelMin": 9,
+        "levelMax": 11,
+        "levels": [
+          9,
+          10,
+          11
+        ],
+        "raceCounts": {
+          "Human": 3
+        },
+        "rawRaceCounts": {
+          "Human": 3
+        },
+        "classCounts": {
+          "Rogue": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "A Lady In Waiting",
+        "rawNames": [
+          "a_lady_in_waiting"
+        ],
+        "count": 1,
+        "levelMin": 10,
+        "levelMax": 10,
+        "levels": [
+          10
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Rogue": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Prisoner",
+        "rawNames": [
+          "a_prisoner"
+        ],
+        "count": 5,
+        "levelMin": 11,
+        "levelMax": 12,
+        "levels": [
+          11,
+          12
+        ],
+        "raceCounts": {
+          "Beggar": 5
+        },
+        "rawRaceCounts": {
+          "Beggar": 5
+        },
+        "classCounts": {
+          "Warrior": 5
+        },
+        "typeCounts": {
+          "Spawn Slot": 5
+        }
+      },
+      {
+        "displayName": "Rodrick Marslett",
+        "rawNames": [
+          "Rodrick_Marslett"
+        ],
+        "count": 1,
+        "levelMin": 13,
+        "levelMax": 13,
+        "levels": [
+          13
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Dealer Shonta",
+        "rawNames": [
+          "Dealer_Shonta"
+        ],
+        "count": 1,
+        "levelMin": 20,
+        "levelMax": 20,
+        "levels": [
+          20
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Blayle",
+        "rawNames": [
+          "Guard_Blayle"
+        ],
+        "count": 1,
+        "levelMin": 20,
+        "levelMax": 20,
+        "levels": [
+          20
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Pickclaw Spiritist",
+        "rawNames": [
+          "a_pickclaw_spiritist"
+        ],
+        "count": 1,
+        "levelMin": 21,
+        "levelMax": 21,
+        "levels": [
+          21
+        ],
+        "raceCounts": {
+          "Goblin": 1
+        },
+        "rawRaceCounts": {
+          "Goblin": 1
+        },
+        "classCounts": {
+          "Shaman": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Folton",
+        "rawNames": [
+          "Guard_Folton"
+        ],
+        "count": 1,
+        "levelMin": 21,
+        "levelMax": 21,
+        "levels": [
+          21
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Princess Lenia",
+        "rawNames": [
+          "Princess_Lenia"
+        ],
+        "count": 1,
+        "levelMin": 21,
+        "levelMax": 21,
+        "levels": [
+          21
+        ],
+        "raceCounts": {
+          "High Elf": 1
+        },
+        "rawRaceCounts": {
+          "High Elf": 1
+        },
+        "classCounts": {
+          "Necromancer": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Goblin Thief",
+        "rawNames": [
+          "a_goblin_thief"
+        ],
+        "count": 3,
+        "levelMin": 22,
+        "levelMax": 24,
+        "levels": [
+          22,
+          23,
+          24
+        ],
+        "raceCounts": {
+          "Goblin": 3
+        },
+        "rawRaceCounts": {
+          "Goblin": 3
+        },
+        "classCounts": {
+          "Warrior": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "Osargen",
+        "rawNames": [
+          "Osargen"
+        ],
+        "count": 1,
+        "levelMin": 22,
+        "levelMax": 22,
+        "levels": [
+          22
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Rogue": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Pickclaw Lookout",
+        "rawNames": [
+          "a_pickclaw_lookout"
+        ],
+        "count": 2,
+        "levelMin": 23,
+        "levelMax": 24,
+        "levels": [
+          23,
+          24
+        ],
+        "raceCounts": {
+          "Goblin": 2
+        },
+        "rawRaceCounts": {
+          "Goblin": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Pickclaw Cabalist",
+        "rawNames": [
+          "a_pickclaw_cabalist"
+        ],
+        "count": 1,
+        "levelMin": 23,
+        "levelMax": 23,
+        "levels": [
+          23
+        ],
+        "raceCounts": {
+          "Goblin": 1
+        },
+        "rawRaceCounts": {
+          "Goblin": 1
+        },
+        "classCounts": {
+          "Shaman": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Kovan",
+        "rawNames": [
+          "Guard_Kovan"
+        ],
+        "count": 1,
+        "levelMin": 23,
+        "levelMax": 23,
+        "levels": [
+          23
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Guard",
+        "rawNames": [
+          "a_guard"
+        ],
+        "count": 1,
+        "levelMin": 24,
+        "levelMax": 24,
+        "levels": [
+          24
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Chopin",
+        "rawNames": [
+          "Guard_Chopin"
+        ],
+        "count": 1,
+        "levelMin": 24,
+        "levelMax": 24,
+        "levels": [
+          24
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Dister",
+        "rawNames": [
+          "Guard_Dister"
+        ],
+        "count": 1,
+        "levelMin": 24,
+        "levelMax": 24,
+        "levels": [
+          24
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Golgon",
+        "rawNames": [
+          "Guard_Golgon"
+        ],
+        "count": 1,
+        "levelMin": 24,
+        "levelMax": 24,
+        "levels": [
+          24
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Assistant Kiolna",
+        "rawNames": [
+          "Assistant_Kiolna"
+        ],
+        "count": 1,
+        "levelMin": 25,
+        "levelMax": 25,
+        "levels": [
+          25
+        ],
+        "raceCounts": {
+          "Half Elf": 1
+        },
+        "rawRaceCounts": {
+          "Half Elf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Bank Clerk Jaylin",
+        "rawNames": [
+          "Bank_Clerk_Jaylin"
+        ],
+        "count": 1,
+        "levelMin": 25,
+        "levelMax": 25,
+        "levels": [
+          25
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Class 40": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Flayer Hopkins",
+        "rawNames": [
+          "Flayer_Hopkins"
+        ],
+        "count": 1,
+        "levelMin": 25,
+        "levelMax": 25,
+        "levels": [
+          25
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Bach",
+        "rawNames": [
+          "Guard_Bach"
+        ],
+        "count": 1,
+        "levelMin": 25,
+        "levelMax": 25,
+        "levels": [
+          25
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Bolton",
+        "rawNames": [
+          "Guard_Bolton"
+        ],
+        "count": 1,
+        "levelMin": 25,
+        "levelMax": 25,
+        "levels": [
+          25
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Ruan",
+        "rawNames": [
+          "Guard_Ruan"
+        ],
+        "count": 1,
+        "levelMin": 25,
+        "levelMax": 25,
+        "levels": [
+          25
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Yeltin",
+        "rawNames": [
+          "Guard_Yeltin"
+        ],
+        "count": 1,
+        "levelMin": 25,
+        "levelMax": 25,
+        "levels": [
+          25
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Lislia Goldtune",
+        "rawNames": [
+          "Lislia_Goldtune"
+        ],
+        "count": 1,
+        "levelMin": 25,
+        "levelMax": 25,
+        "levels": [
+          25
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Bard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Pickclaw Guard",
+        "rawNames": [
+          "a_Pickclaw_guard"
+        ],
+        "count": 4,
+        "levelMin": 26,
+        "levelMax": 27,
+        "levels": [
+          26,
+          27
+        ],
+        "raceCounts": {
+          "Goblin": 4
+        },
+        "rawRaceCounts": {
+          "Goblin": 4
+        },
+        "classCounts": {
+          "Warrior": 4
+        },
+        "typeCounts": {
+          "Spawn Slot": 4
+        }
+      },
+      {
+        "displayName": "A Guard",
+        "rawNames": [
+          "a_guard"
+        ],
+        "count": 2,
+        "levelMin": 26,
+        "levelMax": 27,
+        "levels": [
+          26,
+          27
+        ],
+        "raceCounts": {
+          "Human": 2
+        },
+        "rawRaceCounts": {
+          "Human": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "Guard Queztin",
+        "rawNames": [
+          "Guard_Queztin"
+        ],
+        "count": 2,
+        "levelMin": 26,
+        "levelMax": 27,
+        "levels": [
+          26,
+          27
+        ],
+        "raceCounts": {
+          "Human": 2
+        },
+        "rawRaceCounts": {
+          "Human": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "Guard Xantar",
+        "rawNames": [
+          "Guard_Xantar"
+        ],
+        "count": 2,
+        "levelMin": 26,
+        "levelMax": 27,
+        "levels": [
+          26,
+          27
+        ],
+        "raceCounts": {
+          "Human": 2
+        },
+        "rawRaceCounts": {
+          "Human": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "Guard Drugan",
+        "rawNames": [
+          "Guard_Drugan"
+        ],
+        "count": 1,
+        "levelMin": 26,
+        "levelMax": 26,
+        "levels": [
+          26
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Lancel",
+        "rawNames": [
+          "Guard_Lancel"
+        ],
+        "count": 1,
+        "levelMin": 26,
+        "levelMax": 26,
+        "levels": [
+          26
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Qanyl",
+        "rawNames": [
+          "Guard_Qanyl"
+        ],
+        "count": 1,
+        "levelMin": 26,
+        "levelMax": 26,
+        "levels": [
+          26
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Wextr",
+        "rawNames": [
+          "Guard_Wextr"
+        ],
+        "count": 1,
+        "levelMin": 26,
+        "levelMax": 26,
+        "levels": [
+          26
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Bicker",
+        "rawNames": [
+          "Guard_Bicker"
+        ],
+        "count": 1,
+        "levelMin": 27,
+        "levelMax": 27,
+        "levels": [
+          27
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Bonner",
+        "rawNames": [
+          "Guard_Bonner"
+        ],
+        "count": 1,
+        "levelMin": 27,
+        "levelMax": 27,
+        "levels": [
+          27
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Clyzen",
+        "rawNames": [
+          "Guard_Clyzen"
+        ],
+        "count": 1,
+        "levelMin": 27,
+        "levelMax": 27,
+        "levels": [
+          27
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Diff",
+        "rawNames": [
+          "Guard_Diff"
+        ],
+        "count": 1,
+        "levelMin": 27,
+        "levelMax": 27,
+        "levels": [
+          27
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Gechop",
+        "rawNames": [
+          "Guard_Gechop"
+        ],
+        "count": 1,
+        "levelMin": 27,
+        "levelMax": 27,
+        "levels": [
+          27
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Heltch",
+        "rawNames": [
+          "Guard_Heltch"
+        ],
+        "count": 1,
+        "levelMin": 27,
+        "levelMax": 27,
+        "levels": [
+          27
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Onto",
+        "rawNames": [
+          "Guard_Onto"
+        ],
+        "count": 1,
+        "levelMin": 27,
+        "levelMax": 27,
+        "levels": [
+          27
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Jaxon",
+        "rawNames": [
+          "Guard_Jaxon"
+        ],
+        "count": 1,
+        "levelMin": 28,
+        "levelMax": 28,
+        "levels": [
+          28
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Sydl",
+        "rawNames": [
+          "Guard_Sydl"
+        ],
+        "count": 1,
+        "levelMin": 28,
+        "levelMax": 28,
+        "levels": [
+          28
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Duras",
+        "rawNames": [
+          "Guard_Duras"
+        ],
+        "count": 1,
+        "levelMin": 29,
+        "levelMax": 29,
+        "levels": [
+          29
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Dwight",
+        "rawNames": [
+          "Guard_Dwight"
+        ],
+        "count": 1,
+        "levelMin": 29,
+        "levelMax": 29,
+        "levels": [
+          29
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Kheb",
+        "rawNames": [
+          "Guard_Kheb"
+        ],
+        "count": 1,
+        "levelMin": 29,
+        "levelMax": 29,
+        "levels": [
+          29
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Lorton",
+        "rawNames": [
+          "Guard_Lorton"
+        ],
+        "count": 1,
+        "levelMin": 29,
+        "levelMax": 29,
+        "levels": [
+          29
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Mytin",
+        "rawNames": [
+          "Guard_Mytin"
+        ],
+        "count": 1,
+        "levelMin": 29,
+        "levelMax": 29,
+        "levels": [
+          29
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Pickclaw Warrior",
+        "rawNames": [
+          "a_Pickclaw_warrior"
+        ],
+        "count": 4,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Goblin": 4
+        },
+        "rawRaceCounts": {
+          "Goblin": 4
+        },
+        "classCounts": {
+          "Warrior": 4
+        },
+        "typeCounts": {
+          "Spawn Slot": 4
+        }
+      },
+      {
+        "displayName": "Guard Antilles",
+        "rawNames": [
+          "Guard_Antilles"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Rance",
+        "rawNames": [
+          "Guard_Rance"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Krystalle Corsair",
+        "rawNames": [
+          "Krystalle_Corsair"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Tearon Bleanix",
+        "rawNames": [
+          "Tearon_Bleanix"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Skeleton": 1
+        },
+        "rawRaceCounts": {
+          "Skeleton": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Treasurer Lynn",
+        "rawNames": [
+          "Treasurer_Lynn"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Pickclaw Raider",
+        "rawNames": [
+          "a_pickclaw_raider"
+        ],
+        "count": 2,
+        "levelMin": 31,
+        "levelMax": 31,
+        "levels": [
+          31
+        ],
+        "raceCounts": {
+          "Goblin": 2
+        },
+        "rawRaceCounts": {
+          "Goblin": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "Guard Handy",
+        "rawNames": [
+          "Guard_Handy"
+        ],
+        "count": 1,
+        "levelMin": 31,
+        "levelMax": 31,
+        "levels": [
+          31
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Sintra",
+        "rawNames": [
+          "Guard_Sintra"
+        ],
+        "count": 1,
+        "levelMin": 31,
+        "levelMax": 31,
+        "levels": [
+          31
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Tyrana Slil",
+        "rawNames": [
+          "Tyrana_Slil"
+        ],
+        "count": 1,
+        "levelMin": 31,
+        "levelMax": 31,
+        "levels": [
+          31
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Necromancer": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Anleal",
+        "rawNames": [
+          "Guard_Anleal"
+        ],
+        "count": 1,
+        "levelMin": 32,
+        "levelMax": 32,
+        "levels": [
+          32
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Chin",
+        "rawNames": [
+          "Guard_Chin"
+        ],
+        "count": 1,
+        "levelMin": 32,
+        "levelMax": 32,
+        "levels": [
+          32
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Captain Bosec",
+        "rawNames": [
+          "Captain_Bosec"
+        ],
+        "count": 1,
+        "levelMin": 34,
+        "levelMax": 34,
+        "levels": [
+          34
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Mistress Anna",
+        "rawNames": [
+          "Mistress_Anna"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Rogue": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Purchin Oddsbot",
+        "rawNames": [
+          "Purchin_Oddsbot"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Wizard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Aeris Greymalkyn",
+        "rawNames": [
+          "Aeris_Greymalkyn"
+        ],
+        "count": 1,
+        "levelMin": 37,
+        "levelMax": 37,
+        "levels": [
+          37
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Necromancer": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Noble",
+        "rawNames": [
+          "#a_noble"
+        ],
+        "count": 1,
+        "levelMin": 39,
+        "levelMax": 39,
+        "levels": [
+          39
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Rogue": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Isabella Cellus",
+        "rawNames": [
+          "Isabella_Cellus"
+        ],
+        "count": 1,
+        "levelMin": 39,
+        "levelMax": 39,
+        "levels": [
+          39
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Carson Mccabe",
+        "rawNames": [
+          "Carson_McCabe"
+        ],
+        "count": 3,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Human": 3
+        },
+        "rawRaceCounts": {
+          "Human": 3
+        },
+        "classCounts": {
+          "Rogue": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "Baker Jena",
+        "rawNames": [
+          "Baker_Jena"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Captain Boshinko",
+        "rawNames": [
+          "Captain_Boshinko"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Grahm Embersmith",
+        "rawNames": [
+          "Grahm_Embersmith"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Jail Clerk Maryl",
+        "rawNames": [
+          "Jail_Clerk_Maryl"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Merchant Dominik",
+        "rawNames": [
+          "Merchant_Dominik"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Merchant Edina",
+        "rawNames": [
+          "Merchant_Edina"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Starr Dreamspinner",
+        "rawNames": [
+          "Starr_DreamSpinner"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Bard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Storm Dragonchaser",
+        "rawNames": [
+          "Storm_Dragonchaser"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Bard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Noble",
+        "rawNames": [
+          "a_noble"
+        ],
+        "count": 2,
+        "levelMin": 42,
+        "levelMax": 42,
+        "levels": [
+          42
+        ],
+        "raceCounts": {
+          "Human": 2
+        },
+        "rawRaceCounts": {
+          "Human": 2
+        },
+        "classCounts": {
+          "Rogue": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "Dyrna Nlith",
+        "rawNames": [
+          "Dyrna_Nlith"
+        ],
+        "count": 1,
+        "levelMin": 42,
+        "levelMax": 42,
+        "levels": [
+          42
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Necromancer": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Tsaria Jnarus",
+        "rawNames": [
+          "Tsaria_Jnarus"
+        ],
+        "count": 1,
+        "levelMin": 43,
+        "levelMax": 43,
+        "levels": [
+          43
+        ],
+        "raceCounts": {
+          "Dark Elf": 1
+        },
+        "rawRaceCounts": {
+          "Dark Elf": 1
+        },
+        "classCounts": {
+          "Wizard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Clerk",
+        "rawNames": [
+          "a_clerk"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Dealer Maeline",
+        "rawNames": [
+          "Dealer_Maeline"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Dulcyna Blackhand",
+        "rawNames": [
+          "Dulcyna_Blackhand"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Monk": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Justin Ryhmes",
+        "rawNames": [
+          "Justin_Ryhmes"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Miner Harton",
+        "rawNames": [
+          "Miner_Harton"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Tarn Visilin",
+        "rawNames": [
+          "Tarn_Visilin"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Erudite": 1
+        },
+        "rawRaceCounts": {
+          "Erudite": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Ran Flamespinner",
+        "rawNames": [
+          "Ran_Flamespinner"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      }
+    ],
+    "rows": [
+      {
+        "displayName": "Lucky The Beggar",
+        "rawName": "Lucky_the_Beggar",
+        "level": 6,
+        "race": "Beggar",
+        "rawRace": "Beggar",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -17,
+        "y": -76,
+        "z": -2.13,
+        "heading": 508,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 10112,
+        "spawngroupId": 6007,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Maid",
+        "rawName": "a_maid",
+        "level": 8,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -80.879997,
+        "y": 21,
+        "z": 65.629997,
+        "heading": 497,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 10172,
+        "spawngroupId": 1878,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Prisoner",
+        "rawName": "a_prisoner",
+        "level": 8,
+        "race": "Beggar",
+        "rawRace": "Beggar",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -598,
+        "y": -59,
+        "z": -10.13,
+        "heading": 72,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 10148,
+        "spawngroupId": 1901,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Kitchen Drudge",
+        "rawName": "a_kitchen_drudge",
+        "level": 9,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -258,
+        "y": 71,
+        "z": 29.75,
+        "heading": 251,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 10176,
+        "spawngroupId": 1874,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Kitchen Drudge",
+        "rawName": "a_kitchen_drudge",
+        "level": 10,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -209,
+        "y": 37,
+        "z": 29.75,
+        "heading": 287,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 10178,
+        "spawngroupId": 1872,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Lady In Waiting",
+        "rawName": "a_lady_in_waiting",
+        "level": 10,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -159,
+        "y": 84,
+        "z": 65.629997,
+        "heading": 108,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10174,
+        "spawngroupId": 1876,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Kitchen Drudge",
+        "rawName": "a_kitchen_drudge",
+        "level": 11,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -219,
+        "y": 71,
+        "z": 29.75,
+        "heading": 503,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 10177,
+        "spawngroupId": 1873,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Prisoner",
+        "rawName": "a_prisoner",
+        "level": 11,
+        "race": "Beggar",
+        "rawRace": "Beggar",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -475,
+        "y": 134,
+        "z": -10.13,
+        "heading": 509,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 10150,
+        "spawngroupId": 1899,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Prisoner",
+        "rawName": "a_prisoner",
+        "level": 11,
+        "race": "Beggar",
+        "rawRace": "Beggar",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -467,
+        "y": 178,
+        "z": -10.13,
+        "heading": 215,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 10151,
+        "spawngroupId": 1899,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Prisoner",
+        "rawName": "a_prisoner",
+        "level": 12,
+        "race": "Beggar",
+        "rawRace": "Beggar",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -551,
+        "y": -19,
+        "z": -10.13,
+        "heading": 510,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 10146,
+        "spawngroupId": 1903,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Prisoner",
+        "rawName": "a_prisoner",
+        "level": 12,
+        "race": "Beggar",
+        "rawRace": "Beggar",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -435,
+        "y": 177,
+        "z": -10.13,
+        "heading": 279,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 10158,
+        "spawngroupId": 1892,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Prisoner",
+        "rawName": "a_prisoner",
+        "level": 12,
+        "race": "Beggar",
+        "rawRace": "Beggar",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -448,
+        "y": 132,
+        "z": -10.13,
+        "heading": 509,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 10159,
+        "spawngroupId": 1891,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Rodrick Marslett",
+        "rawName": "Rodrick_Marslett",
+        "level": 13,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -309,
+        "y": 145,
+        "z": -11.13,
+        "heading": 341,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10161,
+        "spawngroupId": 1889,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Dealer Shonta",
+        "rawName": "Dealer_Shonta",
+        "level": 20,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -324,
+        "y": -54,
+        "z": 29.75,
+        "heading": 264,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10169,
+        "spawngroupId": 1881,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard Blayle",
+        "rawName": "Guard_Blayle",
+        "level": 20,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -98,
+        "y": -11,
+        "z": 3.75,
+        "heading": 386,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10210,
+        "spawngroupId": 1841,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Pickclaw Spiritist",
+        "rawName": "a_pickclaw_spiritist",
+        "level": 21,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": -77,
+        "y": 78,
+        "z": -40,
+        "heading": 360,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 10204,
+        "spawngroupId": 1847,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Guard Folton",
+        "rawName": "Guard_Folton",
+        "level": 21,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -328,
+        "y": 66,
+        "z": 3.75,
+        "heading": 398,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 10107,
+        "spawngroupId": 6012,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Princess Lenia",
+        "rawName": "Princess_Lenia",
+        "level": 21,
+        "race": "High Elf",
+        "rawRace": "High Elf",
+        "className": "Necromancer",
+        "type": "Spawn Slot",
+        "x": -492,
+        "y": 176,
+        "z": -10.13,
+        "heading": 183,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 10149,
+        "spawngroupId": 1900,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Goblin Thief",
+        "rawName": "a_goblin_thief",
+        "level": 22,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -282,
+        "y": 7,
+        "z": -71.129997,
+        "heading": 128,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 10142,
+        "spawngroupId": 1907,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Osargen",
+        "rawName": "Osargen",
+        "level": 22,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -546,
+        "y": -52,
+        "z": -10.13,
+        "heading": 437,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10156,
+        "spawngroupId": 1894,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Goblin Thief",
+        "rawName": "a_goblin_thief",
+        "level": 23,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -64,
+        "y": 6,
+        "z": -42,
+        "heading": 384,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 10195,
+        "spawngroupId": 1856,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Pickclaw Cabalist",
+        "rawName": "a_pickclaw_cabalist",
+        "level": 23,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": -253,
+        "y": -99,
+        "z": -60.130001,
+        "heading": 49,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 10138,
+        "spawngroupId": 1911,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Pickclaw Lookout",
+        "rawName": "a_pickclaw_lookout",
+        "level": 23,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -67,
+        "y": 126,
+        "z": -40,
+        "heading": 357,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10202,
+        "spawngroupId": 1849,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard Kovan",
+        "rawName": "Guard_Kovan",
+        "level": 23,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -320,
+        "y": -104,
+        "z": 29.75,
+        "heading": 60,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10136,
+        "spawngroupId": 1913,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Goblin Thief",
+        "rawName": "a_goblin_thief",
+        "level": 24,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -150,
+        "y": 96,
+        "z": -40.130001,
+        "heading": 128,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 10206,
+        "spawngroupId": 1845,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Guard",
+        "rawName": "a_guard",
+        "level": 24,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -327,
+        "y": 102,
+        "z": 73.629997,
+        "heading": 374,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 10116,
+        "spawngroupId": 6003,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Pickclaw Lookout",
+        "rawName": "a_pickclaw_lookout",
+        "level": 24,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -73,
+        "y": 101,
+        "z": -40,
+        "heading": 395,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 10205,
+        "spawngroupId": 1846,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Guard Chopin",
+        "rawName": "Guard_Chopin",
+        "level": 24,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -299,
+        "y": 6,
+        "z": 31,
+        "heading": 186,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 10198,
+        "spawngroupId": 1853,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Guard Dister",
+        "rawName": "Guard_Dister",
+        "level": 24,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -204,
+        "y": 43,
+        "z": 3.75,
+        "heading": 256,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 10212,
+        "spawngroupId": 7436,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Guard Golgon",
+        "rawName": "Guard_Golgon",
+        "level": 24,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -351,
+        "y": 5,
+        "z": 29.75,
+        "heading": 123,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 10106,
+        "spawngroupId": 6013,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Assistant Kiolna",
+        "rawName": "Assistant_Kiolna",
+        "level": 25,
+        "race": "Half Elf",
+        "rawRace": "Half Elf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -331,
+        "y": -38,
+        "z": -10.5,
+        "heading": 14,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10162,
+        "spawngroupId": 1888,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Bank Clerk Jaylin",
+        "rawName": "Bank_Clerk_Jaylin",
+        "level": 25,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Class 40",
+        "type": "Spawn Slot",
+        "x": -338,
+        "y": -29,
+        "z": -10.13,
+        "heading": 509,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10164,
+        "spawngroupId": 1886,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Flayer Hopkins",
+        "rawName": "Flayer_Hopkins",
+        "level": 25,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -320,
+        "y": 89,
+        "z": -10.13,
+        "heading": 3,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10153,
+        "spawngroupId": 1897,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard Bach",
+        "rawName": "Guard_Bach",
+        "level": 25,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -294,
+        "y": 32,
+        "z": 31,
+        "heading": 408,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 10187,
+        "spawngroupId": 1864,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Guard Bolton",
+        "rawName": "Guard_Bolton",
+        "level": 25,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -278,
+        "y": 18,
+        "z": -10.13,
+        "heading": 508,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 10134,
+        "spawngroupId": 1915,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Guard Ruan",
+        "rawName": "Guard_Ruan",
+        "level": 25,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -46,
+        "y": -51,
+        "z": 17.75,
+        "heading": 126,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 10108,
+        "spawngroupId": 6011,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Guard Yeltin",
+        "rawName": "Guard_Yeltin",
+        "level": 25,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -182,
+        "y": 18,
+        "z": 31,
+        "heading": 385,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 10190,
+        "spawngroupId": 1861,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Lislia Goldtune",
+        "rawName": "Lislia_Goldtune",
+        "level": 25,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Bard",
+        "type": "Spawn Slot",
+        "x": -46,
+        "y": 9,
+        "z": -2.13,
+        "heading": 148,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10137,
+        "spawngroupId": 1912,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Guard",
+        "rawName": "a_guard",
+        "level": 26,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -259,
+        "y": 76,
+        "z": 76.629997,
+        "heading": 433,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 10120,
+        "spawngroupId": 6001,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Pickclaw Guard",
+        "rawName": "a_Pickclaw_guard",
+        "level": 26,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -317,
+        "y": -40,
+        "z": -77.129997,
+        "heading": 245,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 10140,
+        "spawngroupId": 1909,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Pickclaw Guard",
+        "rawName": "a_Pickclaw_guard",
+        "level": 26,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -99,
+        "y": -27,
+        "z": -40,
+        "heading": 217,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 10200,
+        "spawngroupId": 1851,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Guard Drugan",
+        "rawName": "Guard_Drugan",
+        "level": 26,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -322,
+        "y": -44,
+        "z": 3.75,
+        "heading": 212,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 10111,
+        "spawngroupId": 6008,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Guard Lancel",
+        "rawName": "Guard_Lancel",
+        "level": 26,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -137.880005,
+        "y": 9.88,
+        "z": 3.75,
+        "heading": 264,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 10209,
+        "spawngroupId": 1842,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Guard Qanyl",
+        "rawName": "Guard_Qanyl",
+        "level": 26,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -172,
+        "y": 9,
+        "z": 65.629997,
+        "heading": 261,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 10123,
+        "spawngroupId": 5998,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Guard Queztin",
+        "rawName": "Guard_Queztin",
+        "level": 26,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -288,
+        "y": -41,
+        "z": 53.630001,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10130,
+        "spawngroupId": 5405,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard Wextr",
+        "rawName": "Guard_Wextr",
+        "level": 26,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -191,
+        "y": -42,
+        "z": 31,
+        "heading": 390,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 10189,
+        "spawngroupId": 1862,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Guard Xantar",
+        "rawName": "Guard_Xantar",
+        "level": 26,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -204.5,
+        "y": 19.6,
+        "z": 29.985201,
+        "heading": 0,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 10185,
+        "spawngroupId": 1866,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Guard",
+        "rawName": "a_guard",
+        "level": 27,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -196,
+        "y": -12,
+        "z": 31,
+        "heading": 11,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 10191,
+        "spawngroupId": 1860,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Pickclaw Guard",
+        "rawName": "a_Pickclaw_guard",
+        "level": 27,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -144,
+        "y": 5,
+        "z": -40,
+        "heading": 19,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 10186,
+        "spawngroupId": 1865,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Pickclaw Guard",
+        "rawName": "a_Pickclaw_guard",
+        "level": 27,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -165,
+        "y": 78,
+        "z": -40,
+        "heading": 308,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 10203,
+        "spawngroupId": 1848,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Guard Bicker",
+        "rawName": "Guard_Bicker",
+        "level": 27,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -202.25,
+        "y": -13.375,
+        "z": 3.75,
+        "heading": 200,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 142591,
+        "spawngroupId": 104116,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard Bonner",
+        "rawName": "Guard_Bonner",
+        "level": 27,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -221,
+        "y": -32,
+        "z": 53.630001,
+        "heading": 391,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 10128,
+        "spawngroupId": 5993,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Guard Clyzen",
+        "rawName": "Guard_Clyzen",
+        "level": 27,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -269,
+        "y": -17,
+        "z": 53.630001,
+        "heading": 187,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 10129,
+        "spawngroupId": 1839,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Guard Diff",
+        "rawName": "Guard_Diff",
+        "level": 27,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -208,
+        "y": 4,
+        "z": 31,
+        "heading": 136,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 10193,
+        "spawngroupId": 1858,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Guard Gechop",
+        "rawName": "Guard_Gechop",
+        "level": 27,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -185,
+        "y": 105,
+        "z": 73.9953,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10126,
+        "spawngroupId": 5995,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard Heltch",
+        "rawName": "Guard_Heltch",
+        "level": 27,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -327,
+        "y": 6,
+        "z": 29.75,
+        "heading": 385,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 10105,
+        "spawngroupId": 6014,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Guard Onto",
+        "rawName": "Guard_Onto",
+        "level": 27,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -593,
+        "y": -5,
+        "z": -10.13,
+        "heading": 134,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 10131,
+        "spawngroupId": 4551,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Guard Queztin",
+        "rawName": "Guard_Queztin",
+        "level": 27,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -199,
+        "y": 6,
+        "z": 53.630001,
+        "heading": 378,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 10207,
+        "spawngroupId": 1844,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Guard Xantar",
+        "rawName": "Guard_Xantar",
+        "level": 27,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -204.5,
+        "y": 19.629999,
+        "z": 29.75,
+        "heading": 131,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10211,
+        "spawngroupId": 1840,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard Jaxon",
+        "rawName": "Guard_Jaxon",
+        "level": 28,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -183,
+        "y": 13,
+        "z": 73.629997,
+        "heading": 337,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 10125,
+        "spawngroupId": 5996,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Guard Sydl",
+        "rawName": "Guard_Sydl",
+        "level": 28,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -220,
+        "y": -134,
+        "z": 73.629997,
+        "heading": 511,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 10115,
+        "spawngroupId": 6004,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Guard Duras",
+        "rawName": "Guard_Duras",
+        "level": 29,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 48,
+        "y": -28,
+        "z": 3.75,
+        "heading": 411,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 10110,
+        "spawngroupId": 6009,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Guard Dwight",
+        "rawName": "Guard_Dwight",
+        "level": 29,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -307,
+        "y": -90,
+        "z": 73.629997,
+        "heading": 106,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 10114,
+        "spawngroupId": 6005,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Guard Kheb",
+        "rawName": "Guard_Kheb",
+        "level": 29,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -307,
+        "y": 8,
+        "z": 73.629997,
+        "heading": 56,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 10121,
+        "spawngroupId": 6000,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Guard Lorton",
+        "rawName": "Guard_Lorton",
+        "level": 29,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -348,
+        "y": 39,
+        "z": 3.75,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10208,
+        "spawngroupId": 1843,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard Mytin",
+        "rawName": "Guard_Mytin",
+        "level": 29,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -111,
+        "y": 33,
+        "z": 65.629997,
+        "heading": 384,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 10124,
+        "spawngroupId": 5997,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Pickclaw Warrior",
+        "rawName": "a_Pickclaw_warrior",
+        "level": 30,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -232,
+        "y": -100,
+        "z": -60.130001,
+        "heading": 10,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 10143,
+        "spawngroupId": 1906,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Pickclaw Warrior",
+        "rawName": "a_Pickclaw_warrior",
+        "level": 30,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -256,
+        "y": -67,
+        "z": -60.130001,
+        "heading": 148,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 10144,
+        "spawngroupId": 1905,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Pickclaw Warrior",
+        "rawName": "a_Pickclaw_warrior",
+        "level": 30,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -213,
+        "y": -63,
+        "z": -51,
+        "heading": 73,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 10192,
+        "spawngroupId": 1859,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Pickclaw Warrior",
+        "rawName": "a_Pickclaw_warrior",
+        "level": 30,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -226,
+        "y": -31,
+        "z": -59,
+        "heading": 220,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 10196,
+        "spawngroupId": 1855,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Guard Antilles",
+        "rawName": "Guard_Antilles",
+        "level": 30,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -211,
+        "y": 10,
+        "z": 73.629997,
+        "heading": 181,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 10127,
+        "spawngroupId": 5994,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Guard Rance",
+        "rawName": "Guard_Rance",
+        "level": 30,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 47,
+        "y": -1,
+        "z": 3.75,
+        "heading": 374,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 10109,
+        "spawngroupId": 6010,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Krystalle Corsair",
+        "rawName": "Krystalle_Corsair",
+        "level": 30,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -235,
+        "y": -94,
+        "z": 3.75,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10160,
+        "spawngroupId": 1890,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Tearon Bleanix",
+        "rawName": "Tearon_Bleanix",
+        "level": 30,
+        "race": "Skeleton",
+        "rawRace": "Skeleton",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": -296,
+        "y": -19,
+        "z": 53.630001,
+        "heading": 332,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10184,
+        "spawngroupId": 1867,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Treasurer Lynn",
+        "rawName": "Treasurer_Lynn",
+        "level": 30,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -375,
+        "y": -70,
+        "z": -10.13,
+        "heading": 470,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10183,
+        "spawngroupId": 1868,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Pickclaw Raider",
+        "rawName": "a_pickclaw_raider",
+        "level": 31,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -303,
+        "y": -23,
+        "z": -77.129997,
+        "heading": 277.5,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 10139,
+        "spawngroupId": 1910,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Pickclaw Raider",
+        "rawName": "a_pickclaw_raider",
+        "level": 31,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -314,
+        "y": -63,
+        "z": -77.129997,
+        "heading": 67,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 10141,
+        "spawngroupId": 1908,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Guard Handy",
+        "rawName": "Guard_Handy",
+        "level": 31,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -398,
+        "y": 91,
+        "z": -10.1,
+        "heading": 0,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 10133,
+        "spawngroupId": 1916,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Guard Sintra",
+        "rawName": "Guard_Sintra",
+        "level": 31,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -191,
+        "y": 140,
+        "z": 73.629997,
+        "heading": 285,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 10122,
+        "spawngroupId": 5999,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Tyrana Slil",
+        "rawName": "Tyrana_Slil",
+        "level": 31,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Necromancer",
+        "type": "Spawn Slot",
+        "x": -209,
+        "y": 90,
+        "z": 73,
+        "heading": 117,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 10147,
+        "spawngroupId": 1902,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Guard Anleal",
+        "rawName": "Guard_Anleal",
+        "level": 32,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -305,
+        "y": -77,
+        "z": 73.629997,
+        "heading": 122,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 10113,
+        "spawngroupId": 6006,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Guard Chin",
+        "rawName": "Guard_Chin",
+        "level": 32,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -513,
+        "y": -3,
+        "z": -10.13,
+        "heading": 459,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10132,
+        "spawngroupId": 1917,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Captain Bosec",
+        "rawName": "Captain_Bosec",
+        "level": 34,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -306,
+        "y": 31,
+        "z": -10.13,
+        "heading": 315,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10135,
+        "spawngroupId": 1914,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Mistress Anna",
+        "rawName": "Mistress_Anna",
+        "level": 35,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -87,
+        "y": -78,
+        "z": 65.629997,
+        "heading": 355,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10173,
+        "spawngroupId": 1877,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Purchin Oddsbot",
+        "rawName": "Purchin_Oddsbot",
+        "level": 35,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -331,
+        "y": 139,
+        "z": -11.13,
+        "heading": 140,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10179,
+        "spawngroupId": 1871,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Aeris Greymalkyn",
+        "rawName": "Aeris_Greymalkyn",
+        "level": 37,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Necromancer",
+        "type": "Spawn Slot",
+        "x": -319,
+        "y": 65,
+        "z": 3.75,
+        "heading": 146,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10168,
+        "spawngroupId": 1882,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Noble",
+        "rawName": "#a_noble",
+        "level": 39,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -310,
+        "y": -90,
+        "z": 32,
+        "heading": 126,
+        "chance": 100,
+        "respawnTime": 290,
+        "spawn2Id": 10194,
+        "spawngroupId": 1857,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Isabella Cellus",
+        "rawName": "Isabella_Cellus",
+        "level": 39,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -305,
+        "y": -59,
+        "z": 29.753,
+        "heading": 384,
+        "chance": 34,
+        "respawnTime": 290,
+        "spawn2Id": 10188,
+        "spawngroupId": 1863,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Baker Jena",
+        "rawName": "Baker_Jena",
+        "level": 40,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -260,
+        "y": 46,
+        "z": 29.75,
+        "heading": 510,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10154,
+        "spawngroupId": 1896,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Captain Boshinko",
+        "rawName": "Captain_Boshinko",
+        "level": 40,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -63,
+        "y": -64,
+        "z": 17.75,
+        "heading": 79,
+        "chance": 100,
+        "respawnTime": 290,
+        "spawn2Id": 10145,
+        "spawngroupId": 1904,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Carson Mccabe",
+        "rawName": "Carson_McCabe",
+        "level": 40,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -327,
+        "y": 80,
+        "z": 73.629997,
+        "heading": 396,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 10117,
+        "spawngroupId": 6002,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Carson Mccabe",
+        "rawName": "Carson_McCabe",
+        "level": 40,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -310,
+        "y": 125,
+        "z": 74.629997,
+        "heading": 176,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 10118,
+        "spawngroupId": 6002,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Carson Mccabe",
+        "rawName": "Carson_McCabe",
+        "level": 40,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -85,
+        "y": -64,
+        "z": 65.629997,
+        "heading": 89,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 10119,
+        "spawngroupId": 6002,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Grahm Embersmith",
+        "rawName": "Grahm_Embersmith",
+        "level": 40,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -267,
+        "y": 29,
+        "z": -10.13,
+        "heading": 383,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10157,
+        "spawngroupId": 1893,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Jail Clerk Maryl",
+        "rawName": "Jail_Clerk_Maryl",
+        "level": 40,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -364,
+        "y": 3,
+        "z": -10.13,
+        "heading": 11,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10163,
+        "spawngroupId": 1887,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Merchant Dominik",
+        "rawName": "Merchant_Dominik",
+        "level": 40,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 31,
+        "y": 37,
+        "z": -2.13,
+        "heading": 276,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10155,
+        "spawngroupId": 1895,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Merchant Edina",
+        "rawName": "Merchant_Edina",
+        "level": 40,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -294,
+        "y": -97,
+        "z": 3.75,
+        "heading": 426,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10170,
+        "spawngroupId": 1880,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Starr Dreamspinner",
+        "rawName": "Starr_DreamSpinner",
+        "level": 40,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Bard",
+        "type": "Spawn Slot",
+        "x": -329,
+        "y": 70,
+        "z": 34,
+        "heading": 254,
+        "chance": 100,
+        "respawnTime": 1350,
+        "spawn2Id": 10214,
+        "spawngroupId": 7438,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Storm Dragonchaser",
+        "rawName": "Storm_Dragonchaser",
+        "level": 40,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Bard",
+        "type": "Spawn Slot",
+        "x": -319,
+        "y": 69,
+        "z": 34,
+        "heading": 245,
+        "chance": 100,
+        "respawnTime": 1350,
+        "spawn2Id": 10215,
+        "spawngroupId": 7439,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Noble",
+        "rawName": "a_noble",
+        "level": 42,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -310,
+        "y": -101,
+        "z": 31,
+        "heading": 47,
+        "chance": 25,
+        "respawnTime": 290,
+        "spawn2Id": 10197,
+        "spawngroupId": 1854,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "A Noble",
+        "rawName": "a_noble",
+        "level": 42,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -310,
+        "y": 10,
+        "z": 54,
+        "heading": 325,
+        "chance": 25,
+        "respawnTime": 290,
+        "spawn2Id": 10201,
+        "spawngroupId": 1850,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "Dyrna Nlith",
+        "rawName": "Dyrna_Nlith",
+        "level": 42,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Necromancer",
+        "type": "Spawn Slot",
+        "x": -316,
+        "y": 96,
+        "z": -10.75,
+        "heading": 387,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 10152,
+        "spawngroupId": 1898,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Tsaria Jnarus",
+        "rawName": "Tsaria_Jnarus",
+        "level": 43,
+        "race": "Dark Elf",
+        "rawRace": "Dark Elf",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -191,
+        "y": -92,
+        "z": 30,
+        "heading": 381,
+        "chance": 34,
+        "respawnTime": 640,
+        "spawn2Id": 10199,
+        "spawngroupId": 1852,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Clerk",
+        "rawName": "a_clerk",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -187,
+        "y": -77,
+        "z": 3.75,
+        "heading": 463,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10180,
+        "spawngroupId": 1870,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Dealer Maeline",
+        "rawName": "Dealer_Maeline",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -326,
+        "y": -101,
+        "z": 29.75,
+        "heading": 9,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 142592,
+        "spawngroupId": 104117,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Dulcyna Blackhand",
+        "rawName": "Dulcyna_Blackhand",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": -167,
+        "y": 76,
+        "z": 65.629997,
+        "heading": 108,
+        "chance": 25,
+        "respawnTime": 640,
+        "spawn2Id": 10175,
+        "spawngroupId": 1875,
+        "candidateCount": 4
+      },
+      {
+        "displayName": "Justin Ryhmes",
+        "rawName": "Justin_Ryhmes",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -221,
+        "y": 62,
+        "z": 3.75,
+        "heading": 10,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10167,
+        "spawngroupId": 1883,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Miner Harton",
+        "rawName": "Miner_Harton",
+        "level": 45,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -273,
+        "y": 42,
+        "z": -10.13,
+        "heading": 316,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10165,
+        "spawngroupId": 1885,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Tarn Visilin",
+        "rawName": "Tarn_Visilin",
+        "level": 45,
+        "race": "Erudite",
+        "rawRace": "Erudite",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -223,
+        "y": 65,
+        "z": 3.75,
+        "heading": 70,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10166,
+        "spawngroupId": 1884,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Ran Flamespinner",
+        "rawName": "Ran_Flamespinner",
+        "level": 61,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -356.880005,
+        "y": -42,
+        "z": 3.75,
+        "heading": 191,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 10171,
+        "spawngroupId": 1879,
+        "candidateCount": 1
+      }
+    ]
+  }
+}

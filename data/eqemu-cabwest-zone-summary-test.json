@@ -1,0 +1,3743 @@
+{
+  "summary": {
+    "zoneSlug": "cabilis-west",
+    "zoneName": "Cabilis West",
+    "requestedZoneShortName": "cabwest",
+    "zoneShortName": "cabwest",
+    "sourceFile": "local-eqemu-database",
+    "matched": true,
+    "expansion": "Kunark",
+    "eqemuExpansionId": 1,
+    "expansionSource": "eqemu-zone-table",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobCount": 68,
+    "unknownLevelCount": 0,
+    "minLevel": 1,
+    "maxLevel": 65,
+    "averageLevel": 32.8,
+    "medianLevel": 35,
+    "levelCounts": {
+      "1": 19,
+      "30": 15,
+      "40": 2,
+      "45": 2,
+      "50": 22,
+      "61": 7,
+      "65": 1
+    },
+    "levelBuckets": {
+      "1-10": 19,
+      "11-20": 0,
+      "21-30": 15,
+      "31-40": 2,
+      "41-50": 24,
+      "51-60": 0,
+      "61+": 8
+    },
+    "levelProfileLabel": "Wide level spread",
+    "mobGroupNameCounts": {
+      "A Young Scaled Wolf": 19,
+      "A Forbidden Scribe": 1,
+      "A Mortician": 1,
+      "An Iksar Hermit": 1,
+      "Crusader Axmo": 1,
+      "Crusader Ezrogz": 1,
+      "Crusader Mocdi": 1,
+      "Exterminator Jaliss": 1,
+      "Gondola": 1,
+      "Gryzil": 1,
+      "Harbinger Glosk": 1,
+      "Izarod Fristan": 1,
+      "Jaxxtz": 1,
+      "Jondin": 1,
+      "Kamzar": 1,
+      "Keeper Bile": 1,
+      "Keeper Pain": 1,
+      "Keeper Pestilence": 1,
+      "Keeper Plight": 1,
+      "Keeper Rott": 1,
+      "Keeper Suffering": 1,
+      "Klok Greyscale": 1,
+      "Klok Scaleroot": 1,
+      "Lithriss Frizen": 1,
+      "Lybar": 1,
+      "Marthor": 1,
+      "Master Kyvix": 1,
+      "Master Rixiz": 1,
+      "Master Xydoz": 1,
+      "Mohin": 1,
+      "Nihilist Yeegarn": 1,
+      "Nihilist Zeegarn": 1,
+      "Sartar The Unrivaled": 1,
+      "Trooper Dagnav": 1,
+      "Trooper Eglo": 1,
+      "Trooper Egrephit": 1,
+      "Trooper Gegren": 1,
+      "Trooper Gryfkyz": 1,
+      "Trooper Hylpik": 1,
+      "Trooper Moggoz": 1,
+      "Trooper Ogmire": 1,
+      "Trooper Ozlot": 1,
+      "Trooper Ryzee": 1,
+      "Trooper Shyzin": 1,
+      "Trooper Tygar": 1,
+      "Trooper Xaxxot": 1,
+      "Trooper Yegmesh": 1,
+      "Visar Glolith": 1,
+      "Yzilimn Pxikn": 1,
+      "Zotalz": 1
+    },
+    "classCounts": {
+      "Warrior": 40,
+      "Banker": 19,
+      "Necromancer GM": 5,
+      "Monk": 3,
+      "Necromancer": 1
+    },
+    "raceCounts": {
+      "Iksar": 47,
+      "Chokidai": 19,
+      "Launch": 1,
+      "Undead Iksar": 1
+    },
+    "normalizedRaceCounts": {
+      "Iksar": 48,
+      "Chokidai": 19,
+      "Launch": 1
+    },
+    "normalizedRaceLevelCounts": {
+      "Chokidai": {
+        "1": 19
+      },
+      "Iksar": {
+        "30": 15,
+        "40": 2,
+        "45": 2,
+        "50": 21,
+        "61": 7,
+        "65": 1
+      },
+      "Launch": {
+        "50": 1
+      }
+    },
+    "raceAliases": {
+      "Chokidai": [
+        "Chokidai"
+      ],
+      "Iksar": [
+        "Iksar",
+        "Undead Iksar"
+      ],
+      "Launch": [
+        "Launch"
+      ]
+    },
+    "typeCounts": {
+      "Spawn Slot": 68
+    },
+    "notes": [
+      "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+      "Read-only test export; not wired into production /zones data."
+    ],
+    "spawnMapPrototype": {
+      "sourceKind": "Local EQEmu/PEQ database export",
+      "coordinateNote": "Original EQEmu spawn2 x/y/z coordinates are preserved for map prototyping.",
+      "points": [
+        {
+          "spawn2Id": 11897,
+          "spawngroupId": 8000,
+          "name": "Exterminator_Jaliss",
+          "displayName": "Exterminator Jaliss",
+          "level": 30,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Warrior",
+          "x": 808,
+          "y": 465,
+          "z": 2.75,
+          "heading": 282,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11898,
+          "spawngroupId": 8001,
+          "name": "Gondola",
+          "displayName": "Gondola",
+          "level": 50,
+          "race": "Launch",
+          "rawRace": "Launch",
+          "className": "Warrior",
+          "x": 469.880005,
+          "y": -104.25,
+          "z": -14,
+          "heading": 3,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11899,
+          "spawngroupId": 8002,
+          "name": "Lithriss_Frizen",
+          "displayName": "Lithriss Frizen",
+          "level": 40,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Banker",
+          "x": 654,
+          "y": 173,
+          "z": 3.75,
+          "heading": 162,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11900,
+          "spawngroupId": 8003,
+          "name": "Keeper_Suffering",
+          "displayName": "Keeper Suffering",
+          "level": 50,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Banker",
+          "x": 821,
+          "y": 281,
+          "z": 17.75,
+          "heading": 400,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11901,
+          "spawngroupId": 8004,
+          "name": "Visar_Glolith",
+          "displayName": "Visar Glolith",
+          "level": 40,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Banker",
+          "x": 753,
+          "y": 330,
+          "z": 45.630001,
+          "heading": 233,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11902,
+          "spawngroupId": 8005,
+          "name": "Izarod_Fristan",
+          "displayName": "Izarod Fristan",
+          "level": 50,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Necromancer",
+          "x": 790,
+          "y": 325,
+          "z": 45.630001,
+          "heading": 364,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11903,
+          "spawngroupId": 8006,
+          "name": "Crusader_Ezrogz",
+          "displayName": "Crusader Ezrogz",
+          "level": 50,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Warrior",
+          "x": 832.75,
+          "y": 61.380001,
+          "z": 3.75,
+          "heading": 257.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11904,
+          "spawngroupId": 8007,
+          "name": "a_forbidden_scribe",
+          "displayName": "A Forbidden Scribe",
+          "level": 30,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Banker",
+          "x": 637,
+          "y": -107,
+          "z": 3.75,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11905,
+          "spawngroupId": 8008,
+          "name": "Zotalz",
+          "displayName": "Zotalz",
+          "level": 30,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Banker",
+          "x": 526,
+          "y": 344,
+          "z": 4.13,
+          "heading": 45,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11906,
+          "spawngroupId": 8009,
+          "name": "Crusader_Axmo",
+          "displayName": "Crusader Axmo",
+          "level": 50,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Warrior",
+          "x": 569.880005,
+          "y": -792.880005,
+          "z": 1.75,
+          "heading": 187,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11907,
+          "spawngroupId": 8010,
+          "name": "Crusader_Mocdi",
+          "displayName": "Crusader Mocdi",
+          "level": 50,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Warrior",
+          "x": 877.880005,
+          "y": 93,
+          "z": 3.75,
+          "heading": 383,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11908,
+          "spawngroupId": 8011,
+          "name": "Jaxxtz",
+          "displayName": "Jaxxtz",
+          "level": 30,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Banker",
+          "x": 513,
+          "y": -41,
+          "z": 1.75,
+          "heading": 110,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11909,
+          "spawngroupId": 8012,
+          "name": "a_mortician",
+          "displayName": "A Mortician",
+          "level": 30,
+          "race": "Iksar",
+          "rawRace": "Undead Iksar",
+          "className": "Banker",
+          "x": 667,
+          "y": 161,
+          "z": 16.75,
+          "heading": 489,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11910,
+          "spawngroupId": 8013,
+          "name": "Gryzil",
+          "displayName": "Gryzil",
+          "level": 30,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Banker",
+          "x": 515.539246,
+          "y": 391.725616,
+          "z": 2.633005,
+          "heading": 62,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11911,
+          "spawngroupId": 8014,
+          "name": "Mohin",
+          "displayName": "Mohin",
+          "level": 30,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Banker",
+          "x": 591,
+          "y": 428,
+          "z": 3.75,
+          "heading": 293,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11912,
+          "spawngroupId": 8015,
+          "name": "Lybar",
+          "displayName": "Lybar",
+          "level": 30,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Banker",
+          "x": 523,
+          "y": 292,
+          "z": -9.13,
+          "heading": 176,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11913,
+          "spawngroupId": 8016,
+          "name": "Kamzar",
+          "displayName": "Kamzar",
+          "level": 30,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Banker",
+          "x": 544,
+          "y": 184,
+          "z": -8.75,
+          "heading": 47,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11914,
+          "spawngroupId": 8017,
+          "name": "Jondin",
+          "displayName": "Jondin",
+          "level": 30,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Banker",
+          "x": 508,
+          "y": -36,
+          "z": 1.88,
+          "heading": 48,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11915,
+          "spawngroupId": 8018,
+          "name": "Trooper_Dagnav",
+          "displayName": "Trooper Dagnav",
+          "level": 50,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Warrior",
+          "x": 345,
+          "y": -344,
+          "z": 3.75,
+          "heading": 198,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11916,
+          "spawngroupId": 8019,
+          "name": "Trooper_Yegmesh",
+          "displayName": "Trooper Yegmesh",
+          "level": 50,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Warrior",
+          "x": 408,
+          "y": -348,
+          "z": 3.75,
+          "heading": 307,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11917,
+          "spawngroupId": 8020,
+          "name": "Trooper_Moggoz",
+          "displayName": "Trooper Moggoz",
+          "level": 50,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Warrior",
+          "x": 458,
+          "y": -668,
+          "z": 3.75,
+          "heading": 505,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11918,
+          "spawngroupId": 8021,
+          "name": "Trooper_Shyzin",
+          "displayName": "Trooper Shyzin",
+          "level": 50,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Warrior",
+          "x": 419,
+          "y": -668,
+          "z": 3.75,
+          "heading": 507,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11919,
+          "spawngroupId": 8022,
+          "name": "Trooper_Ogmire",
+          "displayName": "Trooper Ogmire",
+          "level": 50,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Warrior",
+          "x": 590,
+          "y": -810,
+          "z": 1.75,
+          "heading": 485,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11920,
+          "spawngroupId": 8023,
+          "name": "Trooper_Gryfkyz",
+          "displayName": "Trooper Gryfkyz",
+          "level": 50,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Warrior",
+          "x": 614,
+          "y": -766,
+          "z": 3.75,
+          "heading": 130,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11921,
+          "spawngroupId": 8024,
+          "name": "Trooper_Xaxxot",
+          "displayName": "Trooper Xaxxot",
+          "level": 50,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Warrior",
+          "x": 550,
+          "y": -836,
+          "z": 3.75,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11922,
+          "spawngroupId": 8025,
+          "name": "Trooper_Gegren",
+          "displayName": "Trooper Gegren",
+          "level": 50,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Warrior",
+          "x": 681,
+          "y": 134,
+          "z": 3.75,
+          "heading": 70,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11923,
+          "spawngroupId": 8026,
+          "name": "Nihilist_Zeegarn",
+          "displayName": "Nihilist Zeegarn",
+          "level": 50,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Warrior",
+          "x": 768,
+          "y": 263,
+          "z": 17.75,
+          "heading": 260,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11924,
+          "spawngroupId": 8027,
+          "name": "Nihilist_Yeegarn",
+          "displayName": "Nihilist Yeegarn",
+          "level": 50,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Warrior",
+          "x": 800,
+          "y": 263,
+          "z": 17.75,
+          "heading": 260,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11925,
+          "spawngroupId": 8028,
+          "name": "Trooper_Hylpik",
+          "displayName": "Trooper Hylpik",
+          "level": 50,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Warrior",
+          "x": 750,
+          "y": 137,
+          "z": 3.75,
+          "heading": 457,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11926,
+          "spawngroupId": 8029,
+          "name": "Trooper_Egrephit",
+          "displayName": "Trooper Egrephit",
+          "level": 50,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Warrior",
+          "x": 885,
+          "y": 138,
+          "z": 3.75,
+          "heading": 460,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11927,
+          "spawngroupId": 8030,
+          "name": "Trooper_Ryzee",
+          "displayName": "Trooper Ryzee",
+          "level": 50,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Warrior",
+          "x": 973,
+          "y": 528,
+          "z": 1.75,
+          "heading": 405,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11928,
+          "spawngroupId": 8031,
+          "name": "Trooper_Tygar",
+          "displayName": "Trooper Tygar",
+          "level": 50,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Warrior",
+          "x": 956,
+          "y": 525,
+          "z": 1.75,
+          "heading": 185,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11929,
+          "spawngroupId": 8032,
+          "name": "Trooper_Ozlot",
+          "displayName": "Trooper Ozlot",
+          "level": 50,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Warrior",
+          "x": 1148,
+          "y": 691,
+          "z": 1.75,
+          "heading": 315,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11930,
+          "spawngroupId": 8033,
+          "name": "Trooper_Eglo",
+          "displayName": "Trooper Eglo",
+          "level": 50,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Warrior",
+          "x": 1170,
+          "y": 653,
+          "z": 3.75,
+          "heading": 130,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11931,
+          "spawngroupId": 8034,
+          "name": "Keeper_Pain",
+          "displayName": "Keeper Pain",
+          "level": 30,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Banker",
+          "x": 806,
+          "y": 290,
+          "z": 17.75,
+          "heading": 251,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11932,
+          "spawngroupId": 8035,
+          "name": "Keeper_Rott",
+          "displayName": "Keeper Rott",
+          "level": 30,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Banker",
+          "x": 820,
+          "y": 288,
+          "z": 17.75,
+          "heading": 392,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11933,
+          "spawngroupId": 8036,
+          "name": "Keeper_Pestilence",
+          "displayName": "Keeper Pestilence",
+          "level": 30,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Banker",
+          "x": 803,
+          "y": 271,
+          "z": 17.75,
+          "heading": 7,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11934,
+          "spawngroupId": 8037,
+          "name": "Keeper_Plight",
+          "displayName": "Keeper Plight",
+          "level": 30,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Banker",
+          "x": 811,
+          "y": 270,
+          "z": 17.75,
+          "heading": 506,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11935,
+          "spawngroupId": 8038,
+          "name": "Keeper_Bile",
+          "displayName": "Keeper Bile",
+          "level": 30,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Banker",
+          "x": 819,
+          "y": 271,
+          "z": 17.75,
+          "heading": 454,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11936,
+          "spawngroupId": 8039,
+          "name": "Klok_Scaleroot",
+          "displayName": "Klok Scaleroot",
+          "level": 45,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Banker",
+          "x": 511,
+          "y": 407,
+          "z": 4.13,
+          "heading": 166,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11937,
+          "spawngroupId": 8040,
+          "name": "an_Iksar_hermit",
+          "displayName": "An Iksar Hermit",
+          "level": 61,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Necromancer GM",
+          "x": 502,
+          "y": -728,
+          "z": 3.75,
+          "heading": 160,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11938,
+          "spawngroupId": 8041,
+          "name": "Master_Kyvix",
+          "displayName": "Master Kyvix",
+          "level": 61,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Necromancer GM",
+          "x": 783,
+          "y": 291,
+          "z": 17.75,
+          "heading": 7,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11939,
+          "spawngroupId": 8042,
+          "name": "Master_Rixiz",
+          "displayName": "Master Rixiz",
+          "level": 61,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Necromancer GM",
+          "x": 786,
+          "y": 289,
+          "z": 46.130001,
+          "heading": 436,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11940,
+          "spawngroupId": 8043,
+          "name": "Master_Xydoz",
+          "displayName": "Master Xydoz",
+          "level": 61,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Necromancer GM",
+          "x": 812,
+          "y": 342,
+          "z": 67.129997,
+          "heading": 135,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11941,
+          "spawngroupId": 8044,
+          "name": "Harbinger_Glosk",
+          "displayName": "Harbinger Glosk",
+          "level": 61,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Necromancer GM",
+          "x": 778,
+          "y": 317,
+          "z": 76.629997,
+          "heading": 467,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11942,
+          "spawngroupId": 8045,
+          "name": "a_young_scaled_wolf",
+          "displayName": "A Young Scaled Wolf",
+          "level": 1,
+          "race": "Chokidai",
+          "rawRace": "Chokidai",
+          "className": "Warrior",
+          "x": 522.630005,
+          "y": -63.380001,
+          "z": 1.3,
+          "heading": 343,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11943,
+          "spawngroupId": 8045,
+          "name": "a_young_scaled_wolf",
+          "displayName": "A Young Scaled Wolf",
+          "level": 1,
+          "race": "Chokidai",
+          "rawRace": "Chokidai",
+          "className": "Warrior",
+          "x": 981.75,
+          "y": 563.380005,
+          "z": -0.63,
+          "heading": 76.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11944,
+          "spawngroupId": 8045,
+          "name": "a_young_scaled_wolf",
+          "displayName": "A Young Scaled Wolf",
+          "level": 1,
+          "race": "Chokidai",
+          "rawRace": "Chokidai",
+          "className": "Warrior",
+          "x": 624.380005,
+          "y": 373.630005,
+          "z": 1.3,
+          "heading": 321,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11945,
+          "spawngroupId": 8045,
+          "name": "a_young_scaled_wolf",
+          "displayName": "A Young Scaled Wolf",
+          "level": 1,
+          "race": "Chokidai",
+          "rawRace": "Chokidai",
+          "className": "Warrior",
+          "x": 1123.75,
+          "y": 844.75,
+          "z": 1.3,
+          "heading": 1,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11946,
+          "spawngroupId": 8045,
+          "name": "a_young_scaled_wolf",
+          "displayName": "A Young Scaled Wolf",
+          "level": 1,
+          "race": "Chokidai",
+          "rawRace": "Chokidai",
+          "className": "Warrior",
+          "x": 657.380005,
+          "y": 7.13,
+          "z": 1.25,
+          "heading": 386.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11947,
+          "spawngroupId": 8045,
+          "name": "a_young_scaled_wolf",
+          "displayName": "A Young Scaled Wolf",
+          "level": 1,
+          "race": "Chokidai",
+          "rawRace": "Chokidai",
+          "className": "Warrior",
+          "x": 916.25,
+          "y": 296.130005,
+          "z": -7.38,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11948,
+          "spawngroupId": 8045,
+          "name": "a_young_scaled_wolf",
+          "displayName": "A Young Scaled Wolf",
+          "level": 1,
+          "race": "Chokidai",
+          "rawRace": "Chokidai",
+          "className": "Warrior",
+          "x": 512,
+          "y": 440.75,
+          "z": 1.3,
+          "heading": 301.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11949,
+          "spawngroupId": 8045,
+          "name": "a_young_scaled_wolf",
+          "displayName": "A Young Scaled Wolf",
+          "level": 1,
+          "race": "Chokidai",
+          "rawRace": "Chokidai",
+          "className": "Warrior",
+          "x": 902.25,
+          "y": 304.25,
+          "z": 1.25,
+          "heading": 261.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11950,
+          "spawngroupId": 8045,
+          "name": "a_young_scaled_wolf",
+          "displayName": "A Young Scaled Wolf",
+          "level": 1,
+          "race": "Chokidai",
+          "rawRace": "Chokidai",
+          "className": "Warrior",
+          "x": 298.130005,
+          "y": -629.25,
+          "z": 1.3,
+          "heading": 1,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11951,
+          "spawngroupId": 8045,
+          "name": "a_young_scaled_wolf",
+          "displayName": "A Young Scaled Wolf",
+          "level": 1,
+          "race": "Chokidai",
+          "rawRace": "Chokidai",
+          "className": "Warrior",
+          "x": 870.880005,
+          "y": 680.880005,
+          "z": 1.25,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11952,
+          "spawngroupId": 8045,
+          "name": "a_young_scaled_wolf",
+          "displayName": "A Young Scaled Wolf",
+          "level": 1,
+          "race": "Chokidai",
+          "rawRace": "Chokidai",
+          "className": "Warrior",
+          "x": 782.130005,
+          "y": 258.880005,
+          "z": 15.25,
+          "heading": 1.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11953,
+          "spawngroupId": 8045,
+          "name": "a_young_scaled_wolf",
+          "displayName": "A Young Scaled Wolf",
+          "level": 1,
+          "race": "Chokidai",
+          "rawRace": "Chokidai",
+          "className": "Warrior",
+          "x": 734.25,
+          "y": 34.380001,
+          "z": 1.25,
+          "heading": 30.25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11954,
+          "spawngroupId": 8045,
+          "name": "a_young_scaled_wolf",
+          "displayName": "A Young Scaled Wolf",
+          "level": 1,
+          "race": "Chokidai",
+          "rawRace": "Chokidai",
+          "className": "Warrior",
+          "x": 624.380005,
+          "y": 373.630005,
+          "z": 1.3,
+          "heading": 155.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11955,
+          "spawngroupId": 8045,
+          "name": "a_young_scaled_wolf",
+          "displayName": "A Young Scaled Wolf",
+          "level": 1,
+          "race": "Chokidai",
+          "rawRace": "Chokidai",
+          "className": "Warrior",
+          "x": 398.25,
+          "y": -106.129997,
+          "z": 1.3,
+          "heading": 250,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11956,
+          "spawngroupId": 8045,
+          "name": "a_young_scaled_wolf",
+          "displayName": "A Young Scaled Wolf",
+          "level": 1,
+          "race": "Chokidai",
+          "rawRace": "Chokidai",
+          "className": "Warrior",
+          "x": 602.130005,
+          "y": 1,
+          "z": 1.3,
+          "heading": 212.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11957,
+          "spawngroupId": 8045,
+          "name": "a_young_scaled_wolf",
+          "displayName": "A Young Scaled Wolf",
+          "level": 1,
+          "race": "Chokidai",
+          "rawRace": "Chokidai",
+          "className": "Warrior",
+          "x": 552.380005,
+          "y": -22.379999,
+          "z": 1.3,
+          "heading": 33.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11958,
+          "spawngroupId": 8045,
+          "name": "a_young_scaled_wolf",
+          "displayName": "A Young Scaled Wolf",
+          "level": 1,
+          "race": "Chokidai",
+          "rawRace": "Chokidai",
+          "className": "Warrior",
+          "x": 296.130005,
+          "y": -543.880005,
+          "z": 1.3,
+          "heading": 25,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11959,
+          "spawngroupId": 8045,
+          "name": "a_young_scaled_wolf",
+          "displayName": "A Young Scaled Wolf",
+          "level": 1,
+          "race": "Chokidai",
+          "rawRace": "Chokidai",
+          "className": "Warrior",
+          "x": 441.130005,
+          "y": -737.130005,
+          "z": 1.3,
+          "heading": 8.5,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11960,
+          "spawngroupId": 8045,
+          "name": "a_young_scaled_wolf",
+          "displayName": "A Young Scaled Wolf",
+          "level": 1,
+          "race": "Chokidai",
+          "rawRace": "Chokidai",
+          "className": "Warrior",
+          "x": 781.75,
+          "y": 281.380005,
+          "z": 15.3,
+          "heading": 1,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11961,
+          "spawngroupId": 8046,
+          "name": "Sartar_the_Unrivaled",
+          "displayName": "Sartar The Unrivaled",
+          "level": 61,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Monk",
+          "x": 536,
+          "y": -88,
+          "z": -9.13,
+          "heading": 190,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11962,
+          "spawngroupId": 8047,
+          "name": "Yzilimn_Pxikn",
+          "displayName": "Yzilimn Pxikn",
+          "level": 65,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Monk",
+          "x": 511,
+          "y": 283,
+          "z": -8.75,
+          "heading": 191,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11963,
+          "spawngroupId": 8048,
+          "name": "Marthor",
+          "displayName": "Marthor",
+          "level": 61,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Monk",
+          "x": -118,
+          "y": -343,
+          "z": -52.130001,
+          "heading": 258,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 59038,
+          "spawngroupId": 48356,
+          "name": "Klok_Greyscale",
+          "displayName": "Klok Greyscale",
+          "level": 45,
+          "race": "Iksar",
+          "rawRace": "Iksar",
+          "className": "Banker",
+          "x": 525,
+          "y": 389,
+          "z": 2.290499,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        }
+      ]
+    }
+  },
+  "details": {
+    "zoneSlug": "cabilis-west",
+    "routeSlug": "cabwest",
+    "zoneName": "Cabilis West",
+    "sourceFile": "local-eqemu-database",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobGroups": [
+      {
+        "displayName": "A Young Scaled Wolf",
+        "rawNames": [
+          "a_young_scaled_wolf"
+        ],
+        "count": 19,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Chokidai": 19
+        },
+        "rawRaceCounts": {
+          "Chokidai": 19
+        },
+        "classCounts": {
+          "Warrior": 19
+        },
+        "typeCounts": {
+          "Spawn Slot": 19
+        }
+      },
+      {
+        "displayName": "A Forbidden Scribe",
+        "rawNames": [
+          "a_forbidden_scribe"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Mortician",
+        "rawNames": [
+          "a_mortician"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Undead Iksar": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Exterminator Jaliss",
+        "rawNames": [
+          "Exterminator_Jaliss"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Gryzil",
+        "rawNames": [
+          "Gryzil"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Jaxxtz",
+        "rawNames": [
+          "Jaxxtz"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Jondin",
+        "rawNames": [
+          "Jondin"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Kamzar",
+        "rawNames": [
+          "Kamzar"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Keeper Bile",
+        "rawNames": [
+          "Keeper_Bile"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Keeper Pain",
+        "rawNames": [
+          "Keeper_Pain"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Keeper Pestilence",
+        "rawNames": [
+          "Keeper_Pestilence"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Keeper Plight",
+        "rawNames": [
+          "Keeper_Plight"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Keeper Rott",
+        "rawNames": [
+          "Keeper_Rott"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Lybar",
+        "rawNames": [
+          "Lybar"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Mohin",
+        "rawNames": [
+          "Mohin"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Zotalz",
+        "rawNames": [
+          "Zotalz"
+        ],
+        "count": 1,
+        "levelMin": 30,
+        "levelMax": 30,
+        "levels": [
+          30
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Lithriss Frizen",
+        "rawNames": [
+          "Lithriss_Frizen"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Visar Glolith",
+        "rawNames": [
+          "Visar_Glolith"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Klok Greyscale",
+        "rawNames": [
+          "Klok_Greyscale"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Klok Scaleroot",
+        "rawNames": [
+          "Klok_Scaleroot"
+        ],
+        "count": 1,
+        "levelMin": 45,
+        "levelMax": 45,
+        "levels": [
+          45
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Crusader Axmo",
+        "rawNames": [
+          "Crusader_Axmo"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Crusader Ezrogz",
+        "rawNames": [
+          "Crusader_Ezrogz"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Crusader Mocdi",
+        "rawNames": [
+          "Crusader_Mocdi"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Gondola",
+        "rawNames": [
+          "Gondola"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Launch": 1
+        },
+        "rawRaceCounts": {
+          "Launch": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Izarod Fristan",
+        "rawNames": [
+          "Izarod_Fristan"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Necromancer": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Keeper Suffering",
+        "rawNames": [
+          "Keeper_Suffering"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Nihilist Yeegarn",
+        "rawNames": [
+          "Nihilist_Yeegarn"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Nihilist Zeegarn",
+        "rawNames": [
+          "Nihilist_Zeegarn"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Trooper Dagnav",
+        "rawNames": [
+          "Trooper_Dagnav"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Trooper Eglo",
+        "rawNames": [
+          "Trooper_Eglo"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Trooper Egrephit",
+        "rawNames": [
+          "Trooper_Egrephit"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Trooper Gegren",
+        "rawNames": [
+          "Trooper_Gegren"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Trooper Gryfkyz",
+        "rawNames": [
+          "Trooper_Gryfkyz"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Trooper Hylpik",
+        "rawNames": [
+          "Trooper_Hylpik"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Trooper Moggoz",
+        "rawNames": [
+          "Trooper_Moggoz"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Trooper Ogmire",
+        "rawNames": [
+          "Trooper_Ogmire"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Trooper Ozlot",
+        "rawNames": [
+          "Trooper_Ozlot"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Trooper Ryzee",
+        "rawNames": [
+          "Trooper_Ryzee"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Trooper Shyzin",
+        "rawNames": [
+          "Trooper_Shyzin"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Trooper Tygar",
+        "rawNames": [
+          "Trooper_Tygar"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Trooper Xaxxot",
+        "rawNames": [
+          "Trooper_Xaxxot"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Trooper Yegmesh",
+        "rawNames": [
+          "Trooper_Yegmesh"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "An Iksar Hermit",
+        "rawNames": [
+          "an_Iksar_hermit"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Necromancer GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Harbinger Glosk",
+        "rawNames": [
+          "Harbinger_Glosk"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Necromancer GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Marthor",
+        "rawNames": [
+          "Marthor"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Monk": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Master Kyvix",
+        "rawNames": [
+          "Master_Kyvix"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Necromancer GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Master Rixiz",
+        "rawNames": [
+          "Master_Rixiz"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Necromancer GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Master Xydoz",
+        "rawNames": [
+          "Master_Xydoz"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Necromancer GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Sartar The Unrivaled",
+        "rawNames": [
+          "Sartar_the_Unrivaled"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Monk": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Yzilimn Pxikn",
+        "rawNames": [
+          "Yzilimn_Pxikn"
+        ],
+        "count": 1,
+        "levelMin": 65,
+        "levelMax": 65,
+        "levels": [
+          65
+        ],
+        "raceCounts": {
+          "Iksar": 1
+        },
+        "rawRaceCounts": {
+          "Iksar": 1
+        },
+        "classCounts": {
+          "Monk": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      }
+    ],
+    "rows": [
+      {
+        "displayName": "A Young Scaled Wolf",
+        "rawName": "a_young_scaled_wolf",
+        "level": 1,
+        "race": "Chokidai",
+        "rawRace": "Chokidai",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 522.630005,
+        "y": -63.380001,
+        "z": 1.3,
+        "heading": 343,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11942,
+        "spawngroupId": 8045,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Young Scaled Wolf",
+        "rawName": "a_young_scaled_wolf",
+        "level": 1,
+        "race": "Chokidai",
+        "rawRace": "Chokidai",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 981.75,
+        "y": 563.380005,
+        "z": -0.63,
+        "heading": 76.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11943,
+        "spawngroupId": 8045,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Young Scaled Wolf",
+        "rawName": "a_young_scaled_wolf",
+        "level": 1,
+        "race": "Chokidai",
+        "rawRace": "Chokidai",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 624.380005,
+        "y": 373.630005,
+        "z": 1.3,
+        "heading": 321,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11944,
+        "spawngroupId": 8045,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Young Scaled Wolf",
+        "rawName": "a_young_scaled_wolf",
+        "level": 1,
+        "race": "Chokidai",
+        "rawRace": "Chokidai",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1123.75,
+        "y": 844.75,
+        "z": 1.3,
+        "heading": 1,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11945,
+        "spawngroupId": 8045,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Young Scaled Wolf",
+        "rawName": "a_young_scaled_wolf",
+        "level": 1,
+        "race": "Chokidai",
+        "rawRace": "Chokidai",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 657.380005,
+        "y": 7.13,
+        "z": 1.25,
+        "heading": 386.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11946,
+        "spawngroupId": 8045,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Young Scaled Wolf",
+        "rawName": "a_young_scaled_wolf",
+        "level": 1,
+        "race": "Chokidai",
+        "rawRace": "Chokidai",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 916.25,
+        "y": 296.130005,
+        "z": -7.38,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11947,
+        "spawngroupId": 8045,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Young Scaled Wolf",
+        "rawName": "a_young_scaled_wolf",
+        "level": 1,
+        "race": "Chokidai",
+        "rawRace": "Chokidai",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 512,
+        "y": 440.75,
+        "z": 1.3,
+        "heading": 301.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11948,
+        "spawngroupId": 8045,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Young Scaled Wolf",
+        "rawName": "a_young_scaled_wolf",
+        "level": 1,
+        "race": "Chokidai",
+        "rawRace": "Chokidai",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 902.25,
+        "y": 304.25,
+        "z": 1.25,
+        "heading": 261.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11949,
+        "spawngroupId": 8045,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Young Scaled Wolf",
+        "rawName": "a_young_scaled_wolf",
+        "level": 1,
+        "race": "Chokidai",
+        "rawRace": "Chokidai",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 298.130005,
+        "y": -629.25,
+        "z": 1.3,
+        "heading": 1,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11950,
+        "spawngroupId": 8045,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Young Scaled Wolf",
+        "rawName": "a_young_scaled_wolf",
+        "level": 1,
+        "race": "Chokidai",
+        "rawRace": "Chokidai",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 870.880005,
+        "y": 680.880005,
+        "z": 1.25,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11951,
+        "spawngroupId": 8045,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Young Scaled Wolf",
+        "rawName": "a_young_scaled_wolf",
+        "level": 1,
+        "race": "Chokidai",
+        "rawRace": "Chokidai",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 782.130005,
+        "y": 258.880005,
+        "z": 15.25,
+        "heading": 1.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11952,
+        "spawngroupId": 8045,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Young Scaled Wolf",
+        "rawName": "a_young_scaled_wolf",
+        "level": 1,
+        "race": "Chokidai",
+        "rawRace": "Chokidai",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 734.25,
+        "y": 34.380001,
+        "z": 1.25,
+        "heading": 30.25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11953,
+        "spawngroupId": 8045,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Young Scaled Wolf",
+        "rawName": "a_young_scaled_wolf",
+        "level": 1,
+        "race": "Chokidai",
+        "rawRace": "Chokidai",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 624.380005,
+        "y": 373.630005,
+        "z": 1.3,
+        "heading": 155.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11954,
+        "spawngroupId": 8045,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Young Scaled Wolf",
+        "rawName": "a_young_scaled_wolf",
+        "level": 1,
+        "race": "Chokidai",
+        "rawRace": "Chokidai",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 398.25,
+        "y": -106.129997,
+        "z": 1.3,
+        "heading": 250,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11955,
+        "spawngroupId": 8045,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Young Scaled Wolf",
+        "rawName": "a_young_scaled_wolf",
+        "level": 1,
+        "race": "Chokidai",
+        "rawRace": "Chokidai",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 602.130005,
+        "y": 1,
+        "z": 1.3,
+        "heading": 212.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11956,
+        "spawngroupId": 8045,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Young Scaled Wolf",
+        "rawName": "a_young_scaled_wolf",
+        "level": 1,
+        "race": "Chokidai",
+        "rawRace": "Chokidai",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 552.380005,
+        "y": -22.379999,
+        "z": 1.3,
+        "heading": 33.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11957,
+        "spawngroupId": 8045,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Young Scaled Wolf",
+        "rawName": "a_young_scaled_wolf",
+        "level": 1,
+        "race": "Chokidai",
+        "rawRace": "Chokidai",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 296.130005,
+        "y": -543.880005,
+        "z": 1.3,
+        "heading": 25,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11958,
+        "spawngroupId": 8045,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Young Scaled Wolf",
+        "rawName": "a_young_scaled_wolf",
+        "level": 1,
+        "race": "Chokidai",
+        "rawRace": "Chokidai",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 441.130005,
+        "y": -737.130005,
+        "z": 1.3,
+        "heading": 8.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11959,
+        "spawngroupId": 8045,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Young Scaled Wolf",
+        "rawName": "a_young_scaled_wolf",
+        "level": 1,
+        "race": "Chokidai",
+        "rawRace": "Chokidai",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 781.75,
+        "y": 281.380005,
+        "z": 15.3,
+        "heading": 1,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11960,
+        "spawngroupId": 8045,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Forbidden Scribe",
+        "rawName": "a_forbidden_scribe",
+        "level": 30,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 637,
+        "y": -107,
+        "z": 3.75,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11904,
+        "spawngroupId": 8007,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Mortician",
+        "rawName": "a_mortician",
+        "level": 30,
+        "race": "Iksar",
+        "rawRace": "Undead Iksar",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 667,
+        "y": 161,
+        "z": 16.75,
+        "heading": 489,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11909,
+        "spawngroupId": 8012,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Exterminator Jaliss",
+        "rawName": "Exterminator_Jaliss",
+        "level": 30,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 808,
+        "y": 465,
+        "z": 2.75,
+        "heading": 282,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11897,
+        "spawngroupId": 8000,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Gryzil",
+        "rawName": "Gryzil",
+        "level": 30,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 515.539246,
+        "y": 391.725616,
+        "z": 2.633005,
+        "heading": 62,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11910,
+        "spawngroupId": 8013,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Jaxxtz",
+        "rawName": "Jaxxtz",
+        "level": 30,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 513,
+        "y": -41,
+        "z": 1.75,
+        "heading": 110,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11908,
+        "spawngroupId": 8011,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Jondin",
+        "rawName": "Jondin",
+        "level": 30,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 508,
+        "y": -36,
+        "z": 1.88,
+        "heading": 48,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11914,
+        "spawngroupId": 8017,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Kamzar",
+        "rawName": "Kamzar",
+        "level": 30,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 544,
+        "y": 184,
+        "z": -8.75,
+        "heading": 47,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11913,
+        "spawngroupId": 8016,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Keeper Bile",
+        "rawName": "Keeper_Bile",
+        "level": 30,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 819,
+        "y": 271,
+        "z": 17.75,
+        "heading": 454,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11935,
+        "spawngroupId": 8038,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Keeper Pain",
+        "rawName": "Keeper_Pain",
+        "level": 30,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 806,
+        "y": 290,
+        "z": 17.75,
+        "heading": 251,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11931,
+        "spawngroupId": 8034,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Keeper Pestilence",
+        "rawName": "Keeper_Pestilence",
+        "level": 30,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 803,
+        "y": 271,
+        "z": 17.75,
+        "heading": 7,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11933,
+        "spawngroupId": 8036,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Keeper Plight",
+        "rawName": "Keeper_Plight",
+        "level": 30,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 811,
+        "y": 270,
+        "z": 17.75,
+        "heading": 506,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11934,
+        "spawngroupId": 8037,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Keeper Rott",
+        "rawName": "Keeper_Rott",
+        "level": 30,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 820,
+        "y": 288,
+        "z": 17.75,
+        "heading": 392,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11932,
+        "spawngroupId": 8035,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Lybar",
+        "rawName": "Lybar",
+        "level": 30,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 523,
+        "y": 292,
+        "z": -9.13,
+        "heading": 176,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11912,
+        "spawngroupId": 8015,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Mohin",
+        "rawName": "Mohin",
+        "level": 30,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 591,
+        "y": 428,
+        "z": 3.75,
+        "heading": 293,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11911,
+        "spawngroupId": 8014,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Zotalz",
+        "rawName": "Zotalz",
+        "level": 30,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 526,
+        "y": 344,
+        "z": 4.13,
+        "heading": 45,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11905,
+        "spawngroupId": 8008,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Lithriss Frizen",
+        "rawName": "Lithriss_Frizen",
+        "level": 40,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 654,
+        "y": 173,
+        "z": 3.75,
+        "heading": 162,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11899,
+        "spawngroupId": 8002,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Visar Glolith",
+        "rawName": "Visar_Glolith",
+        "level": 40,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 753,
+        "y": 330,
+        "z": 45.630001,
+        "heading": 233,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11901,
+        "spawngroupId": 8004,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Klok Greyscale",
+        "rawName": "Klok_Greyscale",
+        "level": 45,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 525,
+        "y": 389,
+        "z": 2.290499,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 59038,
+        "spawngroupId": 48356,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Klok Scaleroot",
+        "rawName": "Klok_Scaleroot",
+        "level": 45,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 511,
+        "y": 407,
+        "z": 4.13,
+        "heading": 166,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11936,
+        "spawngroupId": 8039,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Crusader Axmo",
+        "rawName": "Crusader_Axmo",
+        "level": 50,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 569.880005,
+        "y": -792.880005,
+        "z": 1.75,
+        "heading": 187,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11906,
+        "spawngroupId": 8009,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Crusader Ezrogz",
+        "rawName": "Crusader_Ezrogz",
+        "level": 50,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 832.75,
+        "y": 61.380001,
+        "z": 3.75,
+        "heading": 257.5,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11903,
+        "spawngroupId": 8006,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Crusader Mocdi",
+        "rawName": "Crusader_Mocdi",
+        "level": 50,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 877.880005,
+        "y": 93,
+        "z": 3.75,
+        "heading": 383,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11907,
+        "spawngroupId": 8010,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Gondola",
+        "rawName": "Gondola",
+        "level": 50,
+        "race": "Launch",
+        "rawRace": "Launch",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 469.880005,
+        "y": -104.25,
+        "z": -14,
+        "heading": 3,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11898,
+        "spawngroupId": 8001,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Izarod Fristan",
+        "rawName": "Izarod_Fristan",
+        "level": 50,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Necromancer",
+        "type": "Spawn Slot",
+        "x": 790,
+        "y": 325,
+        "z": 45.630001,
+        "heading": 364,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11902,
+        "spawngroupId": 8005,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Keeper Suffering",
+        "rawName": "Keeper_Suffering",
+        "level": 50,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 821,
+        "y": 281,
+        "z": 17.75,
+        "heading": 400,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11900,
+        "spawngroupId": 8003,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Nihilist Yeegarn",
+        "rawName": "Nihilist_Yeegarn",
+        "level": 50,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 800,
+        "y": 263,
+        "z": 17.75,
+        "heading": 260,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11924,
+        "spawngroupId": 8027,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Nihilist Zeegarn",
+        "rawName": "Nihilist_Zeegarn",
+        "level": 50,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 768,
+        "y": 263,
+        "z": 17.75,
+        "heading": 260,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11923,
+        "spawngroupId": 8026,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Trooper Dagnav",
+        "rawName": "Trooper_Dagnav",
+        "level": 50,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 345,
+        "y": -344,
+        "z": 3.75,
+        "heading": 198,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11915,
+        "spawngroupId": 8018,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Trooper Eglo",
+        "rawName": "Trooper_Eglo",
+        "level": 50,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1170,
+        "y": 653,
+        "z": 3.75,
+        "heading": 130,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11930,
+        "spawngroupId": 8033,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Trooper Egrephit",
+        "rawName": "Trooper_Egrephit",
+        "level": 50,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 885,
+        "y": 138,
+        "z": 3.75,
+        "heading": 460,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11926,
+        "spawngroupId": 8029,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Trooper Gegren",
+        "rawName": "Trooper_Gegren",
+        "level": 50,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 681,
+        "y": 134,
+        "z": 3.75,
+        "heading": 70,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11922,
+        "spawngroupId": 8025,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Trooper Gryfkyz",
+        "rawName": "Trooper_Gryfkyz",
+        "level": 50,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 614,
+        "y": -766,
+        "z": 3.75,
+        "heading": 130,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11920,
+        "spawngroupId": 8023,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Trooper Hylpik",
+        "rawName": "Trooper_Hylpik",
+        "level": 50,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 750,
+        "y": 137,
+        "z": 3.75,
+        "heading": 457,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11925,
+        "spawngroupId": 8028,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Trooper Moggoz",
+        "rawName": "Trooper_Moggoz",
+        "level": 50,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 458,
+        "y": -668,
+        "z": 3.75,
+        "heading": 505,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11917,
+        "spawngroupId": 8020,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Trooper Ogmire",
+        "rawName": "Trooper_Ogmire",
+        "level": 50,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 590,
+        "y": -810,
+        "z": 1.75,
+        "heading": 485,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11919,
+        "spawngroupId": 8022,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Trooper Ozlot",
+        "rawName": "Trooper_Ozlot",
+        "level": 50,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1148,
+        "y": 691,
+        "z": 1.75,
+        "heading": 315,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11929,
+        "spawngroupId": 8032,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Trooper Ryzee",
+        "rawName": "Trooper_Ryzee",
+        "level": 50,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 973,
+        "y": 528,
+        "z": 1.75,
+        "heading": 405,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11927,
+        "spawngroupId": 8030,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Trooper Shyzin",
+        "rawName": "Trooper_Shyzin",
+        "level": 50,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 419,
+        "y": -668,
+        "z": 3.75,
+        "heading": 507,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11918,
+        "spawngroupId": 8021,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Trooper Tygar",
+        "rawName": "Trooper_Tygar",
+        "level": 50,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 956,
+        "y": 525,
+        "z": 1.75,
+        "heading": 185,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11928,
+        "spawngroupId": 8031,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Trooper Xaxxot",
+        "rawName": "Trooper_Xaxxot",
+        "level": 50,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 550,
+        "y": -836,
+        "z": 3.75,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11921,
+        "spawngroupId": 8024,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Trooper Yegmesh",
+        "rawName": "Trooper_Yegmesh",
+        "level": 50,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 408,
+        "y": -348,
+        "z": 3.75,
+        "heading": 307,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11916,
+        "spawngroupId": 8019,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Iksar Hermit",
+        "rawName": "an_Iksar_hermit",
+        "level": 61,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Necromancer GM",
+        "type": "Spawn Slot",
+        "x": 502,
+        "y": -728,
+        "z": 3.75,
+        "heading": 160,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11937,
+        "spawngroupId": 8040,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Harbinger Glosk",
+        "rawName": "Harbinger_Glosk",
+        "level": 61,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Necromancer GM",
+        "type": "Spawn Slot",
+        "x": 778,
+        "y": 317,
+        "z": 76.629997,
+        "heading": 467,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11941,
+        "spawngroupId": 8044,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Marthor",
+        "rawName": "Marthor",
+        "level": 61,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": -118,
+        "y": -343,
+        "z": -52.130001,
+        "heading": 258,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11963,
+        "spawngroupId": 8048,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Master Kyvix",
+        "rawName": "Master_Kyvix",
+        "level": 61,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Necromancer GM",
+        "type": "Spawn Slot",
+        "x": 783,
+        "y": 291,
+        "z": 17.75,
+        "heading": 7,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11938,
+        "spawngroupId": 8041,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Master Rixiz",
+        "rawName": "Master_Rixiz",
+        "level": 61,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Necromancer GM",
+        "type": "Spawn Slot",
+        "x": 786,
+        "y": 289,
+        "z": 46.130001,
+        "heading": 436,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11939,
+        "spawngroupId": 8042,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Master Xydoz",
+        "rawName": "Master_Xydoz",
+        "level": 61,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Necromancer GM",
+        "type": "Spawn Slot",
+        "x": 812,
+        "y": 342,
+        "z": 67.129997,
+        "heading": 135,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11940,
+        "spawngroupId": 8043,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Sartar The Unrivaled",
+        "rawName": "Sartar_the_Unrivaled",
+        "level": 61,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": 536,
+        "y": -88,
+        "z": -9.13,
+        "heading": 190,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11961,
+        "spawngroupId": 8046,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Yzilimn Pxikn",
+        "rawName": "Yzilimn_Pxikn",
+        "level": 65,
+        "race": "Iksar",
+        "rawRace": "Iksar",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": 511,
+        "y": 283,
+        "z": -8.75,
+        "heading": 191,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11962,
+        "spawngroupId": 8047,
+        "candidateCount": 1
+      }
+    ]
+  }
+}

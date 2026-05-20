@@ -1,0 +1,5697 @@
+{
+  "summary": {
+    "zoneSlug": "the-plane-of-sky",
+    "zoneName": "The Plane of Sky",
+    "requestedZoneShortName": "airplane",
+    "zoneShortName": "airplane",
+    "sourceFile": "local-eqemu-database",
+    "matched": true,
+    "expansion": "Classic",
+    "eqemuExpansionId": 0,
+    "expansionSource": "eqemu-zone-table",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobCount": 116,
+    "unknownLevelCount": 1,
+    "minLevel": 1,
+    "maxLevel": 70,
+    "averageLevel": 54.3,
+    "medianLevel": 55,
+    "levelCounts": {
+      "1": 1,
+      "50": 12,
+      "52": 11,
+      "53": 18,
+      "54": 11,
+      "55": 27,
+      "56": 13,
+      "58": 10,
+      "59": 2,
+      "60": 6,
+      "61": 2,
+      "63": 1,
+      "70": 1
+    },
+    "levelBuckets": {
+      "1-10": 1,
+      "11-20": 0,
+      "21-30": 0,
+      "31-40": 0,
+      "41-50": 12,
+      "51-60": 98,
+      "61+": 4
+    },
+    "levelProfileLabel": "Wide level spread",
+    "mobGroupNameCounts": {
+      "An Azarack": 10,
+      "A Heartsbane Drake": 8,
+      "A Thunder Spirit": 8,
+      "A Greater Sphinx": 7,
+      "A Fatestealer Drake": 6,
+      "A Crystaline Cloud": 5,
+      "A Shimmering Meteor": 5,
+      "A Watchful Guard": 5,
+      "A Gorgalask": 4,
+      "A Sprited Harpie": 4,
+      "A Soul Carrier": 3,
+      "A Spiroc Vanquisher": 3,
+      "A Windrider Drake": 3,
+      "Bzzazzt": 3,
+      "A Blade Storm": 2,
+      "An Essence Harvester": 2,
+      "An Undine Spirit": 2,
+      "A Presence": 1,
+      "A Spiroc Arbiter": 1,
+      "A Spiroc Banisher": 1,
+      "A Spiroc Caller": 1,
+      "A Spiroc Expulser": 1,
+      "A Spiroc Revolter": 1,
+      "A Spiroc Walker": 1,
+      "A Thunder Spirit Princess": 1,
+      "An Avenging Gazer": 1,
+      "Cilin Spellsinger": 1,
+      "Dason Goldblade": 1,
+      "Drakis Bloodcaster": 1,
+      "Enchanter Jolas": 1,
+      "Eternal Spirit": 1,
+      "Eye Of Veeshan": 1,
+      "Gorgalosk": 1,
+      "Heart Harpie": 1,
+      "Holwin": 1,
+      "Josin Faithbringer": 1,
+      "Key Master": 1,
+      "Kihun Solstin": 1,
+      "Magus Frinon": 1,
+      "Medicine Man Veetra": 1,
+      "Noble Dojorn": 1,
+      "Ranger Spirit": 1,
+      "Sarkis Ebonblade": 1,
+      "Strandar Pinemist": 1,
+      "Thalik Silenthand": 1,
+      "The Gale Caller": 1,
+      "The Spiroc Guardian": 1,
+      "The Spiroc Lord": 1,
+      "The Storm Mistress": 1,
+      "Torgon Blademaster": 1,
+      "Unknown": 1,
+      "Wizard Schrock": 1,
+      "Zoner": 1
+    },
+    "classCounts": {
+      "Warrior": 44,
+      "Wizard": 18,
+      "Shadowknight": 14,
+      "Enchanter": 13,
+      "Rogue": 10,
+      "Druid": 4,
+      "Ranger": 4,
+      "Cleric": 2,
+      "Magician": 2,
+      "Banker": 1,
+      "Monk": 1,
+      "Paladin": 1,
+      "Shaman": 1,
+      "Unknown": 1
+    },
+    "raceCounts": {
+      "Drake": 17,
+      "Efreeti": 15,
+      "Aviak": 11,
+      "Imp": 10,
+      "Fairy": 9,
+      "Sphinx": 7,
+      "Will-O-Wisp": 7,
+      "Evil Eye": 6,
+      "Elemental": 5,
+      "Gorgon": 5,
+      "Harpy": 5,
+      "Pegasus": 4,
+      "Griffin": 3,
+      "Wasp": 3,
+      "Dervish": 2,
+      "Djinn": 1,
+      "Dwarf": 1,
+      "Fay Drake": 1,
+      "Human": 1,
+      "Invisible Man": 1,
+      "Teleport Man": 1,
+      "Unknown": 1
+    },
+    "normalizedRaceCounts": {
+      "Drake": 18,
+      "Efreeti": 15,
+      "Aviak": 11,
+      "Imp": 10,
+      "Fairy": 9,
+      "Sphinx": 7,
+      "Will-o-Wisp": 7,
+      "Evil Eye": 6,
+      "Elemental": 5,
+      "Gorgon": 5,
+      "Harpy": 5,
+      "Pegasus": 4,
+      "Griffin": 3,
+      "Wasp": 3,
+      "Dervish": 2,
+      "Djinn": 1,
+      "Dwarf": 1,
+      "Human": 1,
+      "Invisible Man": 1,
+      "Teleport Man": 1,
+      "Unknown": 1
+    },
+    "normalizedRaceLevelCounts": {
+      "Aviak": {
+        "52": 6,
+        "58": 3,
+        "60": 1,
+        "63": 1
+      },
+      "Dervish": {
+        "59": 1,
+        "61": 1
+      },
+      "Djinn": {
+        "55": 1
+      },
+      "Drake": {
+        "56": 8,
+        "58": 6,
+        "60": 3,
+        "70": 1
+      },
+      "Dwarf": {
+        "55": 1
+      },
+      "Efreeti": {
+        "55": 14,
+        "60": 1
+      },
+      "Elemental": {
+        "53": 5
+      },
+      "Evil Eye": {
+        "54": 2,
+        "55": 1,
+        "56": 2,
+        "59": 1
+      },
+      "Fairy": {
+        "50": 8,
+        "53": 1
+      },
+      "Gorgon": {
+        "54": 1,
+        "55": 2,
+        "56": 1,
+        "60": 1
+      },
+      "Griffin": {
+        "52": 3
+      },
+      "Harpy": {
+        "54": 1,
+        "55": 1,
+        "56": 2,
+        "58": 1
+      },
+      "Human": {
+        "61": 1
+      },
+      "Imp": {
+        "53": 10
+      },
+      "Invisible Man": {
+        "50": 1
+      },
+      "Pegasus": {
+        "52": 2,
+        "55": 2
+      },
+      "Sphinx": {
+        "54": 7
+      },
+      "Teleport Man": {
+        "1": 1
+      },
+      "Wasp": {
+        "50": 3
+      },
+      "Will-o-Wisp": {
+        "53": 2,
+        "55": 5
+      }
+    },
+    "raceAliases": {
+      "Aviak": [
+        "Aviak"
+      ],
+      "Dervish": [
+        "Dervish"
+      ],
+      "Djinn": [
+        "Djinn"
+      ],
+      "Drake": [
+        "Drake",
+        "Fay Drake"
+      ],
+      "Dwarf": [
+        "Dwarf"
+      ],
+      "Efreeti": [
+        "Efreeti"
+      ],
+      "Elemental": [
+        "Elemental"
+      ],
+      "Evil Eye": [
+        "Evil Eye"
+      ],
+      "Fairy": [
+        "Fairy"
+      ],
+      "Gorgon": [
+        "Gorgon"
+      ],
+      "Griffin": [
+        "Griffin"
+      ],
+      "Harpy": [
+        "Harpy"
+      ],
+      "Human": [
+        "Human"
+      ],
+      "Imp": [
+        "Imp"
+      ],
+      "Invisible Man": [
+        "Invisible Man"
+      ],
+      "Pegasus": [
+        "Pegasus"
+      ],
+      "Sphinx": [
+        "Sphinx"
+      ],
+      "Teleport Man": [
+        "Teleport Man"
+      ],
+      "Unknown": [
+        "Unknown"
+      ],
+      "Wasp": [
+        "Wasp"
+      ],
+      "Will-o-Wisp": [
+        "Will-O-Wisp"
+      ]
+    },
+    "typeCounts": {
+      "Spawn Slot": 116
+    },
+    "notes": [
+      "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+      "Read-only test export; not wired into production /zones data."
+    ],
+    "spawnMapPrototype": {
+      "sourceKind": "Local EQEmu/PEQ database export",
+      "coordinateNote": "Original EQEmu spawn2 x/y/z coordinates are preserved for map prototyping.",
+      "points": [
+        {
+          "spawn2Id": 2594,
+          "spawngroupId": 2050,
+          "name": "an_undine_spirit",
+          "displayName": "An Undine Spirit",
+          "level": 53,
+          "race": "Will-o-Wisp",
+          "rawRace": "Will-O-Wisp",
+          "className": "Cleric",
+          "x": -912,
+          "y": -1039,
+          "z": 1150.380005,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 86400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2595,
+          "spawngroupId": 2050,
+          "name": "an_undine_spirit",
+          "displayName": "An Undine Spirit",
+          "level": 53,
+          "race": "Will-o-Wisp",
+          "rawRace": "Will-O-Wisp",
+          "className": "Cleric",
+          "x": -936,
+          "y": -1063,
+          "z": 1150.380005,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 86400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2596,
+          "spawngroupId": 2051,
+          "name": "a_windrider_drake",
+          "displayName": "A Windrider Drake",
+          "level": 60,
+          "race": "Drake",
+          "rawRace": "Drake",
+          "className": "Wizard",
+          "x": -711.130005,
+          "y": -1148.630005,
+          "z": 1059,
+          "heading": 383.25,
+          "chance": 100,
+          "respawnTime": 86400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2597,
+          "spawngroupId": 2051,
+          "name": "a_windrider_drake",
+          "displayName": "A Windrider Drake",
+          "level": 60,
+          "race": "Drake",
+          "rawRace": "Drake",
+          "className": "Wizard",
+          "x": -718.880005,
+          "y": -1142,
+          "z": 1060,
+          "heading": 188.75,
+          "chance": 100,
+          "respawnTime": 86400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2598,
+          "spawngroupId": 2051,
+          "name": "a_windrider_drake",
+          "displayName": "A Windrider Drake",
+          "level": 60,
+          "race": "Drake",
+          "rawRace": "Drake",
+          "className": "Wizard",
+          "x": -642.25,
+          "y": -1145.630005,
+          "z": 1054,
+          "heading": 129,
+          "chance": 100,
+          "respawnTime": 86400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2599,
+          "spawngroupId": 2052,
+          "name": "a_greater_sphinx",
+          "displayName": "A Greater Sphinx",
+          "level": 54,
+          "race": "Sphinx",
+          "rawRace": "Sphinx",
+          "className": "Enchanter",
+          "x": -965,
+          "y": -1100,
+          "z": 1094.130005,
+          "heading": 267,
+          "chance": 100,
+          "respawnTime": 86400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2600,
+          "spawngroupId": 2052,
+          "name": "a_greater_sphinx",
+          "displayName": "A Greater Sphinx",
+          "level": 54,
+          "race": "Sphinx",
+          "rawRace": "Sphinx",
+          "className": "Enchanter",
+          "x": -753,
+          "y": -972,
+          "z": 1094.130005,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 86400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2601,
+          "spawngroupId": 2052,
+          "name": "a_greater_sphinx",
+          "displayName": "A Greater Sphinx",
+          "level": 54,
+          "race": "Sphinx",
+          "rawRace": "Sphinx",
+          "className": "Enchanter",
+          "x": -965,
+          "y": -955,
+          "z": 1094.130005,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 86400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2602,
+          "spawngroupId": 2052,
+          "name": "a_greater_sphinx",
+          "displayName": "A Greater Sphinx",
+          "level": 54,
+          "race": "Sphinx",
+          "rawRace": "Sphinx",
+          "className": "Enchanter",
+          "x": -990,
+          "y": -1039,
+          "z": 1094.130005,
+          "heading": 384,
+          "chance": 100,
+          "respawnTime": 86400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2603,
+          "spawngroupId": 2052,
+          "name": "a_greater_sphinx",
+          "displayName": "A Greater Sphinx",
+          "level": 54,
+          "race": "Sphinx",
+          "rawRace": "Sphinx",
+          "className": "Enchanter",
+          "x": -898,
+          "y": -1100,
+          "z": 1094.130005,
+          "heading": 383.5,
+          "chance": 100,
+          "respawnTime": 86400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2604,
+          "spawngroupId": 2052,
+          "name": "a_greater_sphinx",
+          "displayName": "A Greater Sphinx",
+          "level": 54,
+          "race": "Sphinx",
+          "rawRace": "Sphinx",
+          "className": "Enchanter",
+          "x": -753,
+          "y": -1100,
+          "z": 1094.130005,
+          "heading": 145,
+          "chance": 100,
+          "respawnTime": 86400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2605,
+          "spawngroupId": 2052,
+          "name": "a_greater_sphinx",
+          "displayName": "A Greater Sphinx",
+          "level": 54,
+          "race": "Sphinx",
+          "rawRace": "Sphinx",
+          "className": "Enchanter",
+          "x": -898,
+          "y": -955,
+          "z": 1094.130005,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 86400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2606,
+          "spawngroupId": 2053,
+          "name": "a_fatestealer_drake",
+          "displayName": "A Fatestealer Drake",
+          "level": 58,
+          "race": "Drake",
+          "rawRace": "Drake",
+          "className": "Wizard",
+          "x": -722.25,
+          "y": -1194.130005,
+          "z": 1070,
+          "heading": 129,
+          "chance": 100,
+          "respawnTime": 86400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2607,
+          "spawngroupId": 2053,
+          "name": "a_fatestealer_drake",
+          "displayName": "A Fatestealer Drake",
+          "level": 58,
+          "race": "Drake",
+          "rawRace": "Drake",
+          "className": "Wizard",
+          "x": -757.130005,
+          "y": -872.880005,
+          "z": 1067,
+          "heading": 383.75,
+          "chance": 100,
+          "respawnTime": 86400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2608,
+          "spawngroupId": 2053,
+          "name": "a_fatestealer_drake",
+          "displayName": "A Fatestealer Drake",
+          "level": 58,
+          "race": "Drake",
+          "rawRace": "Drake",
+          "className": "Wizard",
+          "x": -644.75,
+          "y": -1034.380005,
+          "z": 1055.880005,
+          "heading": 484,
+          "chance": 100,
+          "respawnTime": 86400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2609,
+          "spawngroupId": 2053,
+          "name": "a_fatestealer_drake",
+          "displayName": "A Fatestealer Drake",
+          "level": 58,
+          "race": "Drake",
+          "rawRace": "Drake",
+          "className": "Wizard",
+          "x": -1089.380005,
+          "y": -913,
+          "z": 1078,
+          "heading": 255.75,
+          "chance": 100,
+          "respawnTime": 86400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2610,
+          "spawngroupId": 2053,
+          "name": "a_fatestealer_drake",
+          "displayName": "A Fatestealer Drake",
+          "level": 58,
+          "race": "Drake",
+          "rawRace": "Drake",
+          "className": "Wizard",
+          "x": -1089,
+          "y": -945.75,
+          "z": 1084,
+          "heading": 255.75,
+          "chance": 100,
+          "respawnTime": 86400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2611,
+          "spawngroupId": 2053,
+          "name": "a_fatestealer_drake",
+          "displayName": "A Fatestealer Drake",
+          "level": 58,
+          "race": "Drake",
+          "rawRace": "Drake",
+          "className": "Wizard",
+          "x": -1013.630005,
+          "y": -1194,
+          "z": 1060,
+          "heading": 255.5,
+          "chance": 100,
+          "respawnTime": 86400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2612,
+          "spawngroupId": 2054,
+          "name": "a_heartsbane_drake",
+          "displayName": "A Heartsbane Drake",
+          "level": 56,
+          "race": "Drake",
+          "rawRace": "Drake",
+          "className": "Wizard",
+          "x": -909.25,
+          "y": -812.130005,
+          "z": 1049,
+          "heading": 383.5,
+          "chance": 100,
+          "respawnTime": 86400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2613,
+          "spawngroupId": 2054,
+          "name": "a_heartsbane_drake",
+          "displayName": "A Heartsbane Drake",
+          "level": 56,
+          "race": "Drake",
+          "rawRace": "Drake",
+          "className": "Wizard",
+          "x": -825.75,
+          "y": -1253.75,
+          "z": 1068,
+          "heading": 128.25,
+          "chance": 100,
+          "respawnTime": 86400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2614,
+          "spawngroupId": 2054,
+          "name": "a_heartsbane_drake",
+          "displayName": "A Heartsbane Drake",
+          "level": 56,
+          "race": "Drake",
+          "rawRace": "Drake",
+          "className": "Wizard",
+          "x": -676.25,
+          "y": -812.75,
+          "z": 1050,
+          "heading": 383.5,
+          "chance": 100,
+          "respawnTime": 86400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2615,
+          "spawngroupId": 2054,
+          "name": "a_heartsbane_drake",
+          "displayName": "A Heartsbane Drake",
+          "level": 56,
+          "race": "Drake",
+          "rawRace": "Drake",
+          "className": "Wizard",
+          "x": -1030.130005,
+          "y": -814,
+          "z": 1046,
+          "heading": 384.75,
+          "chance": 100,
+          "respawnTime": 86400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2616,
+          "spawngroupId": 2054,
+          "name": "a_heartsbane_drake",
+          "displayName": "A Heartsbane Drake",
+          "level": 56,
+          "race": "Drake",
+          "rawRace": "Drake",
+          "className": "Wizard",
+          "x": -809.380005,
+          "y": -1253.75,
+          "z": 1073,
+          "heading": 128.25,
+          "chance": 100,
+          "respawnTime": 86400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2617,
+          "spawngroupId": 2054,
+          "name": "a_heartsbane_drake",
+          "displayName": "A Heartsbane Drake",
+          "level": 56,
+          "race": "Drake",
+          "rawRace": "Drake",
+          "className": "Wizard",
+          "x": -1148.5,
+          "y": -1130.75,
+          "z": 1048,
+          "heading": 256.5,
+          "chance": 100,
+          "respawnTime": 86400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2618,
+          "spawngroupId": 2054,
+          "name": "a_heartsbane_drake",
+          "displayName": "A Heartsbane Drake",
+          "level": 56,
+          "race": "Drake",
+          "rawRace": "Drake",
+          "className": "Wizard",
+          "x": -610.5,
+          "y": -1246.630005,
+          "z": 1046,
+          "heading": 488.75,
+          "chance": 100,
+          "respawnTime": 86400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2619,
+          "spawngroupId": 2054,
+          "name": "a_heartsbane_drake",
+          "displayName": "A Heartsbane Drake",
+          "level": 56,
+          "race": "Drake",
+          "rawRace": "Drake",
+          "className": "Wizard",
+          "x": -1144.880005,
+          "y": -812.25,
+          "z": 1035,
+          "heading": 387.25,
+          "chance": 100,
+          "respawnTime": 86400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2620,
+          "spawngroupId": 2055,
+          "name": "Bzzazzt",
+          "displayName": "Bzzazzt",
+          "level": 50,
+          "race": "Wasp",
+          "rawRace": "Wasp",
+          "className": "Warrior",
+          "x": 94,
+          "y": -890,
+          "z": 843,
+          "heading": 0,
+          "chance": 34,
+          "respawnTime": 28800,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 2621,
+          "spawngroupId": 98625,
+          "name": "Bzzazzt",
+          "displayName": "Bzzazzt",
+          "level": 50,
+          "race": "Wasp",
+          "rawRace": "Wasp",
+          "className": "Warrior",
+          "x": 269,
+          "y": -881,
+          "z": 843,
+          "heading": 0,
+          "chance": 34,
+          "respawnTime": 28800,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 2622,
+          "spawngroupId": 2056,
+          "name": "Bzzazzt",
+          "displayName": "Bzzazzt",
+          "level": 50,
+          "race": "Wasp",
+          "rawRace": "Wasp",
+          "className": "Warrior",
+          "x": 160,
+          "y": -976,
+          "z": 843,
+          "heading": 0,
+          "chance": 34,
+          "respawnTime": 28800,
+          "candidateCount": 3
+        },
+        {
+          "spawn2Id": 2623,
+          "spawngroupId": 2057,
+          "name": "a_spiroc_banisher",
+          "displayName": "A Spiroc Banisher",
+          "level": 52,
+          "race": "Aviak",
+          "rawRace": "Aviak",
+          "className": "Ranger",
+          "x": 1051,
+          "y": -828.5,
+          "z": 435.75,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2624,
+          "spawngroupId": 2058,
+          "name": "a_spiroc_arbiter",
+          "displayName": "A Spiroc Arbiter",
+          "level": 52,
+          "race": "Aviak",
+          "rawRace": "Aviak",
+          "className": "Druid",
+          "x": 1072.25,
+          "y": -750.380005,
+          "z": 447.799988,
+          "heading": 135.5,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2625,
+          "spawngroupId": 2059,
+          "name": "a_spiroc_vanquisher",
+          "displayName": "A Spiroc Vanquisher",
+          "level": 58,
+          "race": "Aviak",
+          "rawRace": "Aviak",
+          "className": "Warrior",
+          "x": 610,
+          "y": -695,
+          "z": 420,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2626,
+          "spawngroupId": 2059,
+          "name": "a_spiroc_vanquisher",
+          "displayName": "A Spiroc Vanquisher",
+          "level": 58,
+          "race": "Aviak",
+          "rawRace": "Aviak",
+          "className": "Warrior",
+          "x": 668,
+          "y": -408,
+          "z": 434,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2627,
+          "spawngroupId": 2059,
+          "name": "a_spiroc_vanquisher",
+          "displayName": "A Spiroc Vanquisher",
+          "level": 58,
+          "race": "Aviak",
+          "rawRace": "Aviak",
+          "className": "Warrior",
+          "x": 1057,
+          "y": -338,
+          "z": 436,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2628,
+          "spawngroupId": 2060,
+          "name": "a_spiroc_revolter",
+          "displayName": "A Spiroc Revolter",
+          "level": 52,
+          "race": "Aviak",
+          "rawRace": "Aviak",
+          "className": "Ranger",
+          "x": 788,
+          "y": -571,
+          "z": 454,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2629,
+          "spawngroupId": 2061,
+          "name": "a_spiroc_expulser",
+          "displayName": "A Spiroc Expulser",
+          "level": 52,
+          "race": "Aviak",
+          "rawRace": "Aviak",
+          "className": "Druid",
+          "x": 705,
+          "y": -616,
+          "z": 447,
+          "heading": 179.5,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2630,
+          "spawngroupId": 2062,
+          "name": "The_Spiroc_Lord",
+          "displayName": "The Spiroc Lord",
+          "level": 63,
+          "race": "Aviak",
+          "rawRace": "Aviak",
+          "className": "Ranger",
+          "x": 760,
+          "y": -243,
+          "z": 416.25,
+          "heading": 201,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2631,
+          "spawngroupId": 2063,
+          "name": "The_Spiroc_Guardian",
+          "displayName": "The Spiroc Guardian",
+          "level": 60,
+          "race": "Aviak",
+          "rawRace": "Aviak",
+          "className": "Druid",
+          "x": 766.630005,
+          "y": -868.630005,
+          "z": 423.5,
+          "heading": 137,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2632,
+          "spawngroupId": 2064,
+          "name": "a_spiroc_caller",
+          "displayName": "A Spiroc Caller",
+          "level": 52,
+          "race": "Aviak",
+          "rawRace": "Aviak",
+          "className": "Druid",
+          "x": 1125.880005,
+          "y": -467.380005,
+          "z": 469.5,
+          "heading": 380.5,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2633,
+          "spawngroupId": 2065,
+          "name": "#The_Gale_Caller",
+          "displayName": "The Gale Caller",
+          "level": 55,
+          "race": "Pegasus",
+          "rawRace": "Pegasus",
+          "className": "Enchanter",
+          "x": -697,
+          "y": 866.880005,
+          "z": 171.100006,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2634,
+          "spawngroupId": 2066,
+          "name": "a_soul_carrier",
+          "displayName": "A Soul Carrier",
+          "level": 52,
+          "race": "Griffin",
+          "rawRace": "Griffin",
+          "className": "Warrior",
+          "x": -1106,
+          "y": 635,
+          "z": 179.600006,
+          "heading": 212.800003,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2635,
+          "spawngroupId": 2066,
+          "name": "a_soul_carrier",
+          "displayName": "A Soul Carrier",
+          "level": 52,
+          "race": "Griffin",
+          "rawRace": "Griffin",
+          "className": "Warrior",
+          "x": -660,
+          "y": 893,
+          "z": 164.875,
+          "heading": 100,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2636,
+          "spawngroupId": 2067,
+          "name": "an_essence_harvester",
+          "displayName": "An Essence Harvester",
+          "level": 52,
+          "race": "Pegasus",
+          "rawRace": "Pegasus",
+          "className": "Warrior",
+          "x": -1483.880005,
+          "y": 723.880005,
+          "z": 152.100006,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2638,
+          "spawngroupId": 2069,
+          "name": "heart_harpie",
+          "displayName": "Heart Harpie",
+          "level": 58,
+          "race": "Harpy",
+          "rawRace": "Harpy",
+          "className": "Shadowknight",
+          "x": 323,
+          "y": 633,
+          "z": -53.75,
+          "heading": 261,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2639,
+          "spawngroupId": 2070,
+          "name": "a_watchful_guard",
+          "displayName": "A Watchful Guard",
+          "level": 56,
+          "race": "Evil Eye",
+          "rawRace": "Evil Eye",
+          "className": "Enchanter",
+          "x": -30,
+          "y": 317,
+          "z": -110,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2640,
+          "spawngroupId": 2070,
+          "name": "a_watchful_guard",
+          "displayName": "A Watchful Guard",
+          "level": 56,
+          "race": "Evil Eye",
+          "rawRace": "Evil Eye",
+          "className": "Enchanter",
+          "x": 694.880005,
+          "y": 435,
+          "z": -115,
+          "heading": 32,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2641,
+          "spawngroupId": 2071,
+          "name": "Gorgalosk",
+          "displayName": "Gorgalosk",
+          "level": 60,
+          "race": "Gorgon",
+          "rawRace": "Gorgon",
+          "className": "Warrior",
+          "x": 290,
+          "y": 608,
+          "z": -53.75,
+          "heading": 66,
+          "chance": 100,
+          "respawnTime": 14440,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2642,
+          "spawngroupId": 2072,
+          "name": "a_watchful_guard",
+          "displayName": "A Watchful Guard",
+          "level": 55,
+          "race": "Evil Eye",
+          "rawRace": "Evil Eye",
+          "className": "Enchanter",
+          "x": 359.880005,
+          "y": 362,
+          "z": -77,
+          "heading": 165.5,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2643,
+          "spawngroupId": 2073,
+          "name": "a_gorgalask",
+          "displayName": "A Gorgalask",
+          "level": 56,
+          "race": "Gorgon",
+          "rawRace": "Gorgon",
+          "className": "Warrior",
+          "x": 738.880005,
+          "y": 838.880005,
+          "z": -115,
+          "heading": 44.25,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2644,
+          "spawngroupId": 2074,
+          "name": "a_sprited_harpie",
+          "displayName": "A Sprited Harpie",
+          "level": 55,
+          "race": "Harpy",
+          "rawRace": "Harpy",
+          "className": "Shadowknight",
+          "x": -6,
+          "y": 639,
+          "z": -88,
+          "heading": 392.5,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2645,
+          "spawngroupId": 2075,
+          "name": "a_sprited_harpie",
+          "displayName": "A Sprited Harpie",
+          "level": 54,
+          "race": "Harpy",
+          "rawRace": "Harpy",
+          "className": "Shadowknight",
+          "x": 750,
+          "y": 530,
+          "z": -116,
+          "heading": 209.5,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2646,
+          "spawngroupId": 2076,
+          "name": "a_gorgalask",
+          "displayName": "A Gorgalask",
+          "level": 55,
+          "race": "Gorgon",
+          "rawRace": "Gorgon",
+          "className": "Warrior",
+          "x": -0.88,
+          "y": 864.880005,
+          "z": -104,
+          "heading": 263,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2647,
+          "spawngroupId": 2076,
+          "name": "a_gorgalask",
+          "displayName": "A Gorgalask",
+          "level": 55,
+          "race": "Gorgon",
+          "rawRace": "Gorgon",
+          "className": "Warrior",
+          "x": 576.880005,
+          "y": 862.880005,
+          "z": -105,
+          "heading": 506,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2648,
+          "spawngroupId": 2077,
+          "name": "an_avenging_gazer",
+          "displayName": "An Avenging Gazer",
+          "level": 59,
+          "race": "Evil Eye",
+          "rawRace": "Evil Eye",
+          "className": "Wizard",
+          "x": 353,
+          "y": 608,
+          "z": -54,
+          "heading": 436,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2649,
+          "spawngroupId": 2078,
+          "name": "a_sprited_harpie",
+          "displayName": "A Sprited Harpie",
+          "level": 56,
+          "race": "Harpy",
+          "rawRace": "Harpy",
+          "className": "Shadowknight",
+          "x": 683.880005,
+          "y": 768.880005,
+          "z": -113,
+          "heading": 5.25,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2650,
+          "spawngroupId": 2078,
+          "name": "a_sprited_harpie",
+          "displayName": "A Sprited Harpie",
+          "level": 56,
+          "race": "Harpy",
+          "rawRace": "Harpy",
+          "className": "Shadowknight",
+          "x": 177,
+          "y": 860.880005,
+          "z": -73,
+          "heading": 447.5,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2651,
+          "spawngroupId": 2079,
+          "name": "a_gorgalask",
+          "displayName": "A Gorgalask",
+          "level": 54,
+          "race": "Gorgon",
+          "rawRace": "Gorgon",
+          "className": "Warrior",
+          "x": 60,
+          "y": 456.880005,
+          "z": -86,
+          "heading": 398.75,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2652,
+          "spawngroupId": 2080,
+          "name": "a_crystaline_cloud",
+          "displayName": "A Crystaline Cloud",
+          "level": 53,
+          "race": "Elemental",
+          "rawRace": "Elemental",
+          "className": "Warrior",
+          "x": 320,
+          "y": 359,
+          "z": -73.25,
+          "heading": 257.75,
+          "chance": 50,
+          "respawnTime": 14400,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2653,
+          "spawngroupId": 2080,
+          "name": "a_crystaline_cloud",
+          "displayName": "A Crystaline Cloud",
+          "level": 53,
+          "race": "Elemental",
+          "rawRace": "Elemental",
+          "className": "Warrior",
+          "x": 245,
+          "y": 703,
+          "z": -54,
+          "heading": 467,
+          "chance": 50,
+          "respawnTime": 14400,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2654,
+          "spawngroupId": 2080,
+          "name": "a_crystaline_cloud",
+          "displayName": "A Crystaline Cloud",
+          "level": 53,
+          "race": "Elemental",
+          "rawRace": "Elemental",
+          "className": "Warrior",
+          "x": 291,
+          "y": 493,
+          "z": -70,
+          "heading": 263,
+          "chance": 50,
+          "respawnTime": 14400,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2655,
+          "spawngroupId": 2080,
+          "name": "a_crystaline_cloud",
+          "displayName": "A Crystaline Cloud",
+          "level": 53,
+          "race": "Elemental",
+          "rawRace": "Elemental",
+          "className": "Warrior",
+          "x": 347,
+          "y": 493,
+          "z": -74,
+          "heading": 263,
+          "chance": 50,
+          "respawnTime": 14400,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2656,
+          "spawngroupId": 2080,
+          "name": "a_crystaline_cloud",
+          "displayName": "A Crystaline Cloud",
+          "level": 53,
+          "race": "Elemental",
+          "rawRace": "Elemental",
+          "className": "Warrior",
+          "x": 400,
+          "y": 703,
+          "z": -54,
+          "heading": 45,
+          "chance": 50,
+          "respawnTime": 14400,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 2657,
+          "spawngroupId": 2081,
+          "name": "an_azarack",
+          "displayName": "An Azarack",
+          "level": 53,
+          "race": "Imp",
+          "rawRace": "Imp",
+          "className": "Rogue",
+          "x": -659.630005,
+          "y": -384.130005,
+          "z": -340,
+          "heading": 52.5,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2658,
+          "spawngroupId": 2081,
+          "name": "an_azarack",
+          "displayName": "An Azarack",
+          "level": 53,
+          "race": "Imp",
+          "rawRace": "Imp",
+          "className": "Rogue",
+          "x": -591.880005,
+          "y": -282.630005,
+          "z": -342,
+          "heading": 258,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2659,
+          "spawngroupId": 2081,
+          "name": "an_azarack",
+          "displayName": "An Azarack",
+          "level": 53,
+          "race": "Imp",
+          "rawRace": "Imp",
+          "className": "Rogue",
+          "x": -733.630005,
+          "y": -334.5,
+          "z": -344,
+          "heading": 310.5,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2660,
+          "spawngroupId": 2081,
+          "name": "an_azarack",
+          "displayName": "An Azarack",
+          "level": 53,
+          "race": "Imp",
+          "rawRace": "Imp",
+          "className": "Rogue",
+          "x": -462.380005,
+          "y": -76,
+          "z": -360,
+          "heading": 81,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2661,
+          "spawngroupId": 2081,
+          "name": "an_azarack",
+          "displayName": "An Azarack",
+          "level": 53,
+          "race": "Imp",
+          "rawRace": "Imp",
+          "className": "Rogue",
+          "x": -475.380005,
+          "y": -340.75,
+          "z": -345,
+          "heading": 493.75,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2662,
+          "spawngroupId": 2081,
+          "name": "an_azarack",
+          "displayName": "An Azarack",
+          "level": 53,
+          "race": "Imp",
+          "rawRace": "Imp",
+          "className": "Rogue",
+          "x": -755,
+          "y": -388.630005,
+          "z": -349,
+          "heading": 492.25,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2663,
+          "spawngroupId": 2081,
+          "name": "an_azarack",
+          "displayName": "An Azarack",
+          "level": 53,
+          "race": "Imp",
+          "rawRace": "Imp",
+          "className": "Rogue",
+          "x": -718.5,
+          "y": -397.25,
+          "z": -345,
+          "heading": 62.5,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2664,
+          "spawngroupId": 2081,
+          "name": "an_azarack",
+          "displayName": "An Azarack",
+          "level": 53,
+          "race": "Imp",
+          "rawRace": "Imp",
+          "className": "Rogue",
+          "x": -585.75,
+          "y": -373.130005,
+          "z": -342,
+          "heading": 102.5,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2665,
+          "spawngroupId": 2081,
+          "name": "an_azarack",
+          "displayName": "An Azarack",
+          "level": 53,
+          "race": "Imp",
+          "rawRace": "Imp",
+          "className": "Rogue",
+          "x": -511.130005,
+          "y": -33.630001,
+          "z": -360,
+          "heading": 36.25,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2666,
+          "spawngroupId": 2082,
+          "name": "a_thunder_spirit_princess",
+          "displayName": "A Thunder Spirit Princess",
+          "level": 53,
+          "race": "Fairy",
+          "rawRace": "Fairy",
+          "className": "Shadowknight",
+          "x": 609,
+          "y": 1372,
+          "z": -658,
+          "heading": 385,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2667,
+          "spawngroupId": 2083,
+          "name": "a_thunder_spirit",
+          "displayName": "A Thunder Spirit",
+          "level": 50,
+          "race": "Fairy",
+          "rawRace": "Fairy",
+          "className": "Shadowknight",
+          "x": 731,
+          "y": 1520,
+          "z": -676,
+          "heading": 304,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2668,
+          "spawngroupId": 2083,
+          "name": "a_thunder_spirit",
+          "displayName": "A Thunder Spirit",
+          "level": 50,
+          "race": "Fairy",
+          "rawRace": "Fairy",
+          "className": "Shadowknight",
+          "x": 386,
+          "y": 1357,
+          "z": -679,
+          "heading": 124,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2669,
+          "spawngroupId": 2083,
+          "name": "a_thunder_spirit",
+          "displayName": "A Thunder Spirit",
+          "level": 50,
+          "race": "Fairy",
+          "rawRace": "Fairy",
+          "className": "Shadowknight",
+          "x": 548,
+          "y": 1216,
+          "z": -675,
+          "heading": 46,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2670,
+          "spawngroupId": 2083,
+          "name": "a_thunder_spirit",
+          "displayName": "A Thunder Spirit",
+          "level": 50,
+          "race": "Fairy",
+          "rawRace": "Fairy",
+          "className": "Shadowknight",
+          "x": 836,
+          "y": 1422,
+          "z": -679,
+          "heading": 387,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2671,
+          "spawngroupId": 2083,
+          "name": "a_thunder_spirit",
+          "displayName": "A Thunder Spirit",
+          "level": 50,
+          "race": "Fairy",
+          "rawRace": "Fairy",
+          "className": "Shadowknight",
+          "x": 573,
+          "y": 1579,
+          "z": -679,
+          "heading": 252,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2672,
+          "spawngroupId": 2083,
+          "name": "a_thunder_spirit",
+          "displayName": "A Thunder Spirit",
+          "level": 50,
+          "race": "Fairy",
+          "rawRace": "Fairy",
+          "className": "Shadowknight",
+          "x": 769,
+          "y": 1265,
+          "z": -679,
+          "heading": 449,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2673,
+          "spawngroupId": 2083,
+          "name": "a_thunder_spirit",
+          "displayName": "A Thunder Spirit",
+          "level": 50,
+          "race": "Fairy",
+          "rawRace": "Fairy",
+          "className": "Shadowknight",
+          "x": 632,
+          "y": 1197,
+          "z": -670,
+          "heading": 490,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2674,
+          "spawngroupId": 2083,
+          "name": "a_thunder_spirit",
+          "displayName": "A Thunder Spirit",
+          "level": 50,
+          "race": "Fairy",
+          "rawRace": "Fairy",
+          "className": "Shadowknight",
+          "x": 479,
+          "y": 1548,
+          "z": -679,
+          "heading": 192,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2676,
+          "spawngroupId": 2085,
+          "name": "a_watchful_guard",
+          "displayName": "A Watchful Guard",
+          "level": 54,
+          "race": "Evil Eye",
+          "rawRace": "Evil Eye",
+          "className": "Enchanter",
+          "x": 715,
+          "y": 868,
+          "z": -116,
+          "heading": 109,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2677,
+          "spawngroupId": 2085,
+          "name": "a_watchful_guard",
+          "displayName": "A Watchful Guard",
+          "level": 54,
+          "race": "Evil Eye",
+          "rawRace": "Evil Eye",
+          "className": "Enchanter",
+          "x": 323,
+          "y": 700,
+          "z": -55,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2678,
+          "spawngroupId": 2086,
+          "name": "a_blade_storm",
+          "displayName": "A Blade Storm",
+          "level": 61,
+          "race": "Dervish",
+          "rawRace": "Dervish",
+          "className": "Warrior",
+          "x": 1102,
+          "y": 286,
+          "z": 20.25,
+          "heading": 107,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2679,
+          "spawngroupId": 2087,
+          "name": "Dason_Goldblade",
+          "displayName": "Dason Goldblade",
+          "level": 55,
+          "race": "Efreeti",
+          "rawRace": "Efreeti",
+          "className": "Warrior",
+          "x": 564,
+          "y": 1340,
+          "z": -762.25,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2680,
+          "spawngroupId": 2088,
+          "name": "a_blade_storm",
+          "displayName": "A Blade Storm",
+          "level": 59,
+          "race": "Dervish",
+          "rawRace": "Dervish",
+          "className": "Warrior",
+          "x": 1098.880005,
+          "y": 460.880005,
+          "z": 23.629999,
+          "heading": 435,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2681,
+          "spawngroupId": 2089,
+          "name": "The_Storm_Mistress",
+          "displayName": "The Storm Mistress",
+          "level": 55,
+          "race": "Djinn",
+          "rawRace": "Djinn",
+          "className": "Magician",
+          "x": 1080,
+          "y": 378,
+          "z": 12.88,
+          "heading": 383,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2682,
+          "spawngroupId": 2090,
+          "name": "a_shimmering_meteor",
+          "displayName": "A Shimmering Meteor",
+          "level": 55,
+          "race": "Will-o-Wisp",
+          "rawRace": "Will-O-Wisp",
+          "className": "Warrior",
+          "x": 193,
+          "y": 589,
+          "z": 141.130005,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2683,
+          "spawngroupId": 2090,
+          "name": "a_shimmering_meteor",
+          "displayName": "A Shimmering Meteor",
+          "level": 55,
+          "race": "Will-o-Wisp",
+          "rawRace": "Will-O-Wisp",
+          "className": "Warrior",
+          "x": 322,
+          "y": 635,
+          "z": 166,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2684,
+          "spawngroupId": 2090,
+          "name": "a_shimmering_meteor",
+          "displayName": "A Shimmering Meteor",
+          "level": 55,
+          "race": "Will-o-Wisp",
+          "rawRace": "Will-O-Wisp",
+          "className": "Warrior",
+          "x": 402,
+          "y": 635,
+          "z": 141,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2685,
+          "spawngroupId": 2090,
+          "name": "a_shimmering_meteor",
+          "displayName": "A Shimmering Meteor",
+          "level": 55,
+          "race": "Will-o-Wisp",
+          "rawRace": "Will-O-Wisp",
+          "className": "Warrior",
+          "x": 243,
+          "y": 635,
+          "z": 141,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2686,
+          "spawngroupId": 2090,
+          "name": "a_shimmering_meteor",
+          "displayName": "A Shimmering Meteor",
+          "level": 55,
+          "race": "Will-o-Wisp",
+          "rawRace": "Will-O-Wisp",
+          "className": "Warrior",
+          "x": 450,
+          "y": 588,
+          "z": 140.880005,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2687,
+          "spawngroupId": 2091,
+          "name": "Cilin_Spellsinger",
+          "displayName": "Cilin Spellsinger",
+          "level": 55,
+          "race": "Efreeti",
+          "rawRace": "Efreeti",
+          "className": "Warrior",
+          "x": 659.880005,
+          "y": 1380,
+          "z": -762.25,
+          "heading": 384,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2688,
+          "spawngroupId": 5473,
+          "name": "Strandar_Pinemist",
+          "displayName": "Strandar Pinemist",
+          "level": 55,
+          "race": "Efreeti",
+          "rawRace": "Efreeti",
+          "className": "Warrior",
+          "x": 564,
+          "y": 1320,
+          "z": -762.25,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2689,
+          "spawngroupId": 5474,
+          "name": "Medicine_Man_Veetra",
+          "displayName": "Medicine Man Veetra",
+          "level": 55,
+          "race": "Efreeti",
+          "rawRace": "Efreeti",
+          "className": "Warrior",
+          "x": 639.880005,
+          "y": 1400,
+          "z": -762.25,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2690,
+          "spawngroupId": 5475,
+          "name": "Torgon_Blademaster",
+          "displayName": "Torgon Blademaster",
+          "level": 55,
+          "race": "Efreeti",
+          "rawRace": "Efreeti",
+          "className": "Warrior",
+          "x": 564,
+          "y": 1400,
+          "z": -762.25,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2691,
+          "spawngroupId": 5476,
+          "name": "Holwin",
+          "displayName": "Holwin",
+          "level": 55,
+          "race": "Efreeti",
+          "rawRace": "Efreeti",
+          "className": "Warrior",
+          "x": 659.880005,
+          "y": 1324.880005,
+          "z": -765.880005,
+          "heading": 384,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2692,
+          "spawngroupId": 5477,
+          "name": "Wizard_Schrock",
+          "displayName": "Wizard Schrock",
+          "level": 55,
+          "race": "Efreeti",
+          "rawRace": "Efreeti",
+          "className": "Warrior",
+          "x": 580,
+          "y": 1305,
+          "z": -766,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2693,
+          "spawngroupId": 5478,
+          "name": "Sarkis_Ebonblade",
+          "displayName": "Sarkis Ebonblade",
+          "level": 55,
+          "race": "Efreeti",
+          "rawRace": "Efreeti",
+          "className": "Warrior",
+          "x": 564,
+          "y": 1360,
+          "z": -765.880005,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2694,
+          "spawngroupId": 5479,
+          "name": "Enchanter_Jolas",
+          "displayName": "Enchanter Jolas",
+          "level": 55,
+          "race": "Efreeti",
+          "rawRace": "Efreeti",
+          "className": "Warrior",
+          "x": 629.880005,
+          "y": 1305,
+          "z": -766,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2695,
+          "spawngroupId": 5480,
+          "name": "Magus_Frinon",
+          "displayName": "Magus Frinon",
+          "level": 55,
+          "race": "Efreeti",
+          "rawRace": "Efreeti",
+          "className": "Warrior",
+          "x": 604.880005,
+          "y": 1305,
+          "z": -762.25,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2696,
+          "spawngroupId": 5481,
+          "name": "Thalik_Silenthand",
+          "displayName": "Thalik Silenthand",
+          "level": 55,
+          "race": "Efreeti",
+          "rawRace": "Efreeti",
+          "className": "Warrior",
+          "x": 564,
+          "y": 1380,
+          "z": -766,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2697,
+          "spawngroupId": 5482,
+          "name": "Josin_Faithbringer",
+          "displayName": "Josin Faithbringer",
+          "level": 55,
+          "race": "Efreeti",
+          "rawRace": "Efreeti",
+          "className": "Warrior",
+          "x": 659.880005,
+          "y": 1349.880005,
+          "z": -765.880005,
+          "heading": 384,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2698,
+          "spawngroupId": 5483,
+          "name": "Drakis_Bloodcaster",
+          "displayName": "Drakis Bloodcaster",
+          "level": 55,
+          "race": "Efreeti",
+          "rawRace": "Efreeti",
+          "className": "Warrior",
+          "x": 654.880005,
+          "y": 1305,
+          "z": -762.25,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2699,
+          "spawngroupId": 5484,
+          "name": "Ranger_Spirit",
+          "displayName": "Ranger Spirit",
+          "level": 55,
+          "race": "Efreeti",
+          "rawRace": "Efreeti",
+          "className": "Warrior",
+          "x": 609.880005,
+          "y": 1400,
+          "z": -762.25,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2700,
+          "spawngroupId": 5485,
+          "name": "Kihun_Solstin",
+          "displayName": "Kihun Solstin",
+          "level": 61,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Magician",
+          "x": 654,
+          "y": 1467,
+          "z": -765,
+          "heading": 388,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 2701,
+          "spawngroupId": 5486,
+          "name": "Key_Master",
+          "displayName": "Key Master",
+          "level": 55,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Banker",
+          "x": 601,
+          "y": 1384.75,
+          "z": -658.33728,
+          "heading": 371,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 3781,
+          "spawngroupId": 6040,
+          "name": "Noble_Dojorn",
+          "displayName": "Noble Dojorn",
+          "level": 60,
+          "race": "Efreeti",
+          "rawRace": "Efreeti",
+          "className": "Paladin",
+          "x": 1032,
+          "y": 376,
+          "z": 8,
+          "heading": 188,
+          "chance": 100,
+          "respawnTime": 259200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 21531,
+          "spawngroupId": 13209,
+          "name": "Eye_of_Veeshan",
+          "displayName": "Eye Of Veeshan",
+          "level": 70,
+          "race": "Drake",
+          "rawRace": "Fay Drake",
+          "className": "Warrior",
+          "x": -1371,
+          "y": -268,
+          "z": 1250,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 21600,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 21532,
+          "spawngroupId": 13210,
+          "name": "a_presence",
+          "displayName": "A Presence",
+          "level": 50,
+          "race": "Invisible Man",
+          "rawRace": "Invisible Man",
+          "className": "Monk",
+          "x": 1043,
+          "y": 286,
+          "z": -8,
+          "heading": 252,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 58532,
+          "spawngroupId": 48085,
+          "name": "Eternal_Spirit",
+          "displayName": "Eternal Spirit",
+          "level": 55,
+          "race": "Pegasus",
+          "rawRace": "Pegasus",
+          "className": "Shaman",
+          "x": -1194.5,
+          "y": 390.799988,
+          "z": 154.300003,
+          "heading": 17.200001,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 151390,
+          "spawngroupId": 112892,
+          "name": "zoner",
+          "displayName": "Zoner",
+          "level": 1,
+          "race": "Teleport Man",
+          "rawRace": "Teleport Man",
+          "className": "Warrior",
+          "x": 0,
+          "y": 0,
+          "z": -1100,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 5,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 156670,
+          "spawngroupId": 117649,
+          "name": "Unknown",
+          "displayName": "Unknown",
+          "level": null,
+          "race": "Unknown",
+          "rawRace": "Unknown",
+          "className": "Unknown",
+          "x": 295,
+          "y": -762,
+          "z": 770.433899,
+          "heading": 10.5,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 157331,
+          "spawngroupId": 2066,
+          "name": "a_soul_carrier",
+          "displayName": "A Soul Carrier",
+          "level": 52,
+          "race": "Griffin",
+          "rawRace": "Griffin",
+          "className": "Warrior",
+          "x": -813.875,
+          "y": 491,
+          "z": 190.625,
+          "heading": 70.5,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 157332,
+          "spawngroupId": 2067,
+          "name": "an_essence_harvester",
+          "displayName": "An Essence Harvester",
+          "level": 52,
+          "race": "Pegasus",
+          "rawRace": "Pegasus",
+          "className": "Warrior",
+          "x": -964,
+          "y": 807,
+          "z": 167,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 157334,
+          "spawngroupId": 117672,
+          "name": "a_spiroc_walker",
+          "displayName": "A Spiroc Walker",
+          "level": 52,
+          "race": "Aviak",
+          "rawRace": "Aviak",
+          "className": "Ranger",
+          "x": 951,
+          "y": -540,
+          "z": 456,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 258581,
+          "spawngroupId": 2081,
+          "name": "an_azarack",
+          "displayName": "An Azarack",
+          "level": 53,
+          "race": "Imp",
+          "rawRace": "Imp",
+          "className": "Rogue",
+          "x": -552.52002,
+          "y": -168.589996,
+          "z": -330.799988,
+          "heading": 350,
+          "chance": 100,
+          "respawnTime": 14400,
+          "candidateCount": 1
+        }
+      ]
+    }
+  },
+  "details": {
+    "zoneSlug": "the-plane-of-sky",
+    "routeSlug": "airplane",
+    "zoneName": "The Plane of Sky",
+    "sourceFile": "local-eqemu-database",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobGroups": [
+      {
+        "displayName": "Zoner",
+        "rawNames": [
+          "zoner"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Teleport Man": 1
+        },
+        "rawRaceCounts": {
+          "Teleport Man": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Thunder Spirit",
+        "rawNames": [
+          "a_thunder_spirit"
+        ],
+        "count": 8,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Fairy": 8
+        },
+        "rawRaceCounts": {
+          "Fairy": 8
+        },
+        "classCounts": {
+          "Shadowknight": 8
+        },
+        "typeCounts": {
+          "Spawn Slot": 8
+        }
+      },
+      {
+        "displayName": "Bzzazzt",
+        "rawNames": [
+          "Bzzazzt"
+        ],
+        "count": 3,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Wasp": 3
+        },
+        "rawRaceCounts": {
+          "Wasp": 3
+        },
+        "classCounts": {
+          "Warrior": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "A Presence",
+        "rawNames": [
+          "a_presence"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Invisible Man": 1
+        },
+        "rawRaceCounts": {
+          "Invisible Man": 1
+        },
+        "classCounts": {
+          "Monk": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Soul Carrier",
+        "rawNames": [
+          "a_soul_carrier"
+        ],
+        "count": 3,
+        "levelMin": 52,
+        "levelMax": 52,
+        "levels": [
+          52
+        ],
+        "raceCounts": {
+          "Griffin": 3
+        },
+        "rawRaceCounts": {
+          "Griffin": 3
+        },
+        "classCounts": {
+          "Warrior": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "An Essence Harvester",
+        "rawNames": [
+          "an_essence_harvester"
+        ],
+        "count": 2,
+        "levelMin": 52,
+        "levelMax": 52,
+        "levels": [
+          52
+        ],
+        "raceCounts": {
+          "Pegasus": 2
+        },
+        "rawRaceCounts": {
+          "Pegasus": 2
+        },
+        "classCounts": {
+          "Warrior": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Spiroc Arbiter",
+        "rawNames": [
+          "a_spiroc_arbiter"
+        ],
+        "count": 1,
+        "levelMin": 52,
+        "levelMax": 52,
+        "levels": [
+          52
+        ],
+        "raceCounts": {
+          "Aviak": 1
+        },
+        "rawRaceCounts": {
+          "Aviak": 1
+        },
+        "classCounts": {
+          "Druid": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Spiroc Banisher",
+        "rawNames": [
+          "a_spiroc_banisher"
+        ],
+        "count": 1,
+        "levelMin": 52,
+        "levelMax": 52,
+        "levels": [
+          52
+        ],
+        "raceCounts": {
+          "Aviak": 1
+        },
+        "rawRaceCounts": {
+          "Aviak": 1
+        },
+        "classCounts": {
+          "Ranger": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Spiroc Caller",
+        "rawNames": [
+          "a_spiroc_caller"
+        ],
+        "count": 1,
+        "levelMin": 52,
+        "levelMax": 52,
+        "levels": [
+          52
+        ],
+        "raceCounts": {
+          "Aviak": 1
+        },
+        "rawRaceCounts": {
+          "Aviak": 1
+        },
+        "classCounts": {
+          "Druid": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Spiroc Expulser",
+        "rawNames": [
+          "a_spiroc_expulser"
+        ],
+        "count": 1,
+        "levelMin": 52,
+        "levelMax": 52,
+        "levels": [
+          52
+        ],
+        "raceCounts": {
+          "Aviak": 1
+        },
+        "rawRaceCounts": {
+          "Aviak": 1
+        },
+        "classCounts": {
+          "Druid": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Spiroc Revolter",
+        "rawNames": [
+          "a_spiroc_revolter"
+        ],
+        "count": 1,
+        "levelMin": 52,
+        "levelMax": 52,
+        "levels": [
+          52
+        ],
+        "raceCounts": {
+          "Aviak": 1
+        },
+        "rawRaceCounts": {
+          "Aviak": 1
+        },
+        "classCounts": {
+          "Ranger": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Spiroc Walker",
+        "rawNames": [
+          "a_spiroc_walker"
+        ],
+        "count": 1,
+        "levelMin": 52,
+        "levelMax": 52,
+        "levels": [
+          52
+        ],
+        "raceCounts": {
+          "Aviak": 1
+        },
+        "rawRaceCounts": {
+          "Aviak": 1
+        },
+        "classCounts": {
+          "Ranger": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "An Azarack",
+        "rawNames": [
+          "an_azarack"
+        ],
+        "count": 10,
+        "levelMin": 53,
+        "levelMax": 53,
+        "levels": [
+          53
+        ],
+        "raceCounts": {
+          "Imp": 10
+        },
+        "rawRaceCounts": {
+          "Imp": 10
+        },
+        "classCounts": {
+          "Rogue": 10
+        },
+        "typeCounts": {
+          "Spawn Slot": 10
+        }
+      },
+      {
+        "displayName": "A Crystaline Cloud",
+        "rawNames": [
+          "a_crystaline_cloud"
+        ],
+        "count": 5,
+        "levelMin": 53,
+        "levelMax": 53,
+        "levels": [
+          53
+        ],
+        "raceCounts": {
+          "Elemental": 5
+        },
+        "rawRaceCounts": {
+          "Elemental": 5
+        },
+        "classCounts": {
+          "Warrior": 5
+        },
+        "typeCounts": {
+          "Spawn Slot": 5
+        }
+      },
+      {
+        "displayName": "An Undine Spirit",
+        "rawNames": [
+          "an_undine_spirit"
+        ],
+        "count": 2,
+        "levelMin": 53,
+        "levelMax": 53,
+        "levels": [
+          53
+        ],
+        "raceCounts": {
+          "Will-o-Wisp": 2
+        },
+        "rawRaceCounts": {
+          "Will-O-Wisp": 2
+        },
+        "classCounts": {
+          "Cleric": 2
+        },
+        "typeCounts": {
+          "Spawn Slot": 2
+        }
+      },
+      {
+        "displayName": "A Thunder Spirit Princess",
+        "rawNames": [
+          "a_thunder_spirit_princess"
+        ],
+        "count": 1,
+        "levelMin": 53,
+        "levelMax": 53,
+        "levels": [
+          53
+        ],
+        "raceCounts": {
+          "Fairy": 1
+        },
+        "rawRaceCounts": {
+          "Fairy": 1
+        },
+        "classCounts": {
+          "Shadowknight": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Greater Sphinx",
+        "rawNames": [
+          "a_greater_sphinx"
+        ],
+        "count": 7,
+        "levelMin": 54,
+        "levelMax": 54,
+        "levels": [
+          54
+        ],
+        "raceCounts": {
+          "Sphinx": 7
+        },
+        "rawRaceCounts": {
+          "Sphinx": 7
+        },
+        "classCounts": {
+          "Enchanter": 7
+        },
+        "typeCounts": {
+          "Spawn Slot": 7
+        }
+      },
+      {
+        "displayName": "A Watchful Guard",
+        "rawNames": [
+          "a_watchful_guard"
+        ],
+        "count": 5,
+        "levelMin": 54,
+        "levelMax": 56,
+        "levels": [
+          54,
+          55,
+          56
+        ],
+        "raceCounts": {
+          "Evil Eye": 5
+        },
+        "rawRaceCounts": {
+          "Evil Eye": 5
+        },
+        "classCounts": {
+          "Enchanter": 5
+        },
+        "typeCounts": {
+          "Spawn Slot": 5
+        }
+      },
+      {
+        "displayName": "A Gorgalask",
+        "rawNames": [
+          "a_gorgalask"
+        ],
+        "count": 4,
+        "levelMin": 54,
+        "levelMax": 56,
+        "levels": [
+          54,
+          55,
+          56
+        ],
+        "raceCounts": {
+          "Gorgon": 4
+        },
+        "rawRaceCounts": {
+          "Gorgon": 4
+        },
+        "classCounts": {
+          "Warrior": 4
+        },
+        "typeCounts": {
+          "Spawn Slot": 4
+        }
+      },
+      {
+        "displayName": "A Sprited Harpie",
+        "rawNames": [
+          "a_sprited_harpie"
+        ],
+        "count": 4,
+        "levelMin": 54,
+        "levelMax": 56,
+        "levels": [
+          54,
+          55,
+          56
+        ],
+        "raceCounts": {
+          "Harpy": 4
+        },
+        "rawRaceCounts": {
+          "Harpy": 4
+        },
+        "classCounts": {
+          "Shadowknight": 4
+        },
+        "typeCounts": {
+          "Spawn Slot": 4
+        }
+      },
+      {
+        "displayName": "A Shimmering Meteor",
+        "rawNames": [
+          "a_shimmering_meteor"
+        ],
+        "count": 5,
+        "levelMin": 55,
+        "levelMax": 55,
+        "levels": [
+          55
+        ],
+        "raceCounts": {
+          "Will-o-Wisp": 5
+        },
+        "rawRaceCounts": {
+          "Will-O-Wisp": 5
+        },
+        "classCounts": {
+          "Warrior": 5
+        },
+        "typeCounts": {
+          "Spawn Slot": 5
+        }
+      },
+      {
+        "displayName": "Cilin Spellsinger",
+        "rawNames": [
+          "Cilin_Spellsinger"
+        ],
+        "count": 1,
+        "levelMin": 55,
+        "levelMax": 55,
+        "levels": [
+          55
+        ],
+        "raceCounts": {
+          "Efreeti": 1
+        },
+        "rawRaceCounts": {
+          "Efreeti": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Dason Goldblade",
+        "rawNames": [
+          "Dason_Goldblade"
+        ],
+        "count": 1,
+        "levelMin": 55,
+        "levelMax": 55,
+        "levels": [
+          55
+        ],
+        "raceCounts": {
+          "Efreeti": 1
+        },
+        "rawRaceCounts": {
+          "Efreeti": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Drakis Bloodcaster",
+        "rawNames": [
+          "Drakis_Bloodcaster"
+        ],
+        "count": 1,
+        "levelMin": 55,
+        "levelMax": 55,
+        "levels": [
+          55
+        ],
+        "raceCounts": {
+          "Efreeti": 1
+        },
+        "rawRaceCounts": {
+          "Efreeti": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Enchanter Jolas",
+        "rawNames": [
+          "Enchanter_Jolas"
+        ],
+        "count": 1,
+        "levelMin": 55,
+        "levelMax": 55,
+        "levels": [
+          55
+        ],
+        "raceCounts": {
+          "Efreeti": 1
+        },
+        "rawRaceCounts": {
+          "Efreeti": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Eternal Spirit",
+        "rawNames": [
+          "Eternal_Spirit"
+        ],
+        "count": 1,
+        "levelMin": 55,
+        "levelMax": 55,
+        "levels": [
+          55
+        ],
+        "raceCounts": {
+          "Pegasus": 1
+        },
+        "rawRaceCounts": {
+          "Pegasus": 1
+        },
+        "classCounts": {
+          "Shaman": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Holwin",
+        "rawNames": [
+          "Holwin"
+        ],
+        "count": 1,
+        "levelMin": 55,
+        "levelMax": 55,
+        "levels": [
+          55
+        ],
+        "raceCounts": {
+          "Efreeti": 1
+        },
+        "rawRaceCounts": {
+          "Efreeti": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Josin Faithbringer",
+        "rawNames": [
+          "Josin_Faithbringer"
+        ],
+        "count": 1,
+        "levelMin": 55,
+        "levelMax": 55,
+        "levels": [
+          55
+        ],
+        "raceCounts": {
+          "Efreeti": 1
+        },
+        "rawRaceCounts": {
+          "Efreeti": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Key Master",
+        "rawNames": [
+          "Key_Master"
+        ],
+        "count": 1,
+        "levelMin": 55,
+        "levelMax": 55,
+        "levels": [
+          55
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Magus Frinon",
+        "rawNames": [
+          "Magus_Frinon"
+        ],
+        "count": 1,
+        "levelMin": 55,
+        "levelMax": 55,
+        "levels": [
+          55
+        ],
+        "raceCounts": {
+          "Efreeti": 1
+        },
+        "rawRaceCounts": {
+          "Efreeti": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Medicine Man Veetra",
+        "rawNames": [
+          "Medicine_Man_Veetra"
+        ],
+        "count": 1,
+        "levelMin": 55,
+        "levelMax": 55,
+        "levels": [
+          55
+        ],
+        "raceCounts": {
+          "Efreeti": 1
+        },
+        "rawRaceCounts": {
+          "Efreeti": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Ranger Spirit",
+        "rawNames": [
+          "Ranger_Spirit"
+        ],
+        "count": 1,
+        "levelMin": 55,
+        "levelMax": 55,
+        "levels": [
+          55
+        ],
+        "raceCounts": {
+          "Efreeti": 1
+        },
+        "rawRaceCounts": {
+          "Efreeti": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Sarkis Ebonblade",
+        "rawNames": [
+          "Sarkis_Ebonblade"
+        ],
+        "count": 1,
+        "levelMin": 55,
+        "levelMax": 55,
+        "levels": [
+          55
+        ],
+        "raceCounts": {
+          "Efreeti": 1
+        },
+        "rawRaceCounts": {
+          "Efreeti": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Strandar Pinemist",
+        "rawNames": [
+          "Strandar_Pinemist"
+        ],
+        "count": 1,
+        "levelMin": 55,
+        "levelMax": 55,
+        "levels": [
+          55
+        ],
+        "raceCounts": {
+          "Efreeti": 1
+        },
+        "rawRaceCounts": {
+          "Efreeti": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Thalik Silenthand",
+        "rawNames": [
+          "Thalik_Silenthand"
+        ],
+        "count": 1,
+        "levelMin": 55,
+        "levelMax": 55,
+        "levels": [
+          55
+        ],
+        "raceCounts": {
+          "Efreeti": 1
+        },
+        "rawRaceCounts": {
+          "Efreeti": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "The Gale Caller",
+        "rawNames": [
+          "#The_Gale_Caller"
+        ],
+        "count": 1,
+        "levelMin": 55,
+        "levelMax": 55,
+        "levels": [
+          55
+        ],
+        "raceCounts": {
+          "Pegasus": 1
+        },
+        "rawRaceCounts": {
+          "Pegasus": 1
+        },
+        "classCounts": {
+          "Enchanter": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "The Storm Mistress",
+        "rawNames": [
+          "The_Storm_Mistress"
+        ],
+        "count": 1,
+        "levelMin": 55,
+        "levelMax": 55,
+        "levels": [
+          55
+        ],
+        "raceCounts": {
+          "Djinn": 1
+        },
+        "rawRaceCounts": {
+          "Djinn": 1
+        },
+        "classCounts": {
+          "Magician": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Torgon Blademaster",
+        "rawNames": [
+          "Torgon_Blademaster"
+        ],
+        "count": 1,
+        "levelMin": 55,
+        "levelMax": 55,
+        "levels": [
+          55
+        ],
+        "raceCounts": {
+          "Efreeti": 1
+        },
+        "rawRaceCounts": {
+          "Efreeti": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Wizard Schrock",
+        "rawNames": [
+          "Wizard_Schrock"
+        ],
+        "count": 1,
+        "levelMin": 55,
+        "levelMax": 55,
+        "levels": [
+          55
+        ],
+        "raceCounts": {
+          "Efreeti": 1
+        },
+        "rawRaceCounts": {
+          "Efreeti": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Heartsbane Drake",
+        "rawNames": [
+          "a_heartsbane_drake"
+        ],
+        "count": 8,
+        "levelMin": 56,
+        "levelMax": 56,
+        "levels": [
+          56
+        ],
+        "raceCounts": {
+          "Drake": 8
+        },
+        "rawRaceCounts": {
+          "Drake": 8
+        },
+        "classCounts": {
+          "Wizard": 8
+        },
+        "typeCounts": {
+          "Spawn Slot": 8
+        }
+      },
+      {
+        "displayName": "A Fatestealer Drake",
+        "rawNames": [
+          "a_fatestealer_drake"
+        ],
+        "count": 6,
+        "levelMin": 58,
+        "levelMax": 58,
+        "levels": [
+          58
+        ],
+        "raceCounts": {
+          "Drake": 6
+        },
+        "rawRaceCounts": {
+          "Drake": 6
+        },
+        "classCounts": {
+          "Wizard": 6
+        },
+        "typeCounts": {
+          "Spawn Slot": 6
+        }
+      },
+      {
+        "displayName": "A Spiroc Vanquisher",
+        "rawNames": [
+          "a_spiroc_vanquisher"
+        ],
+        "count": 3,
+        "levelMin": 58,
+        "levelMax": 58,
+        "levels": [
+          58
+        ],
+        "raceCounts": {
+          "Aviak": 3
+        },
+        "rawRaceCounts": {
+          "Aviak": 3
+        },
+        "classCounts": {
+          "Warrior": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "Heart Harpie",
+        "rawNames": [
+          "heart_harpie"
+        ],
+        "count": 1,
+        "levelMin": 58,
+        "levelMax": 58,
+        "levels": [
+          58
+        ],
+        "raceCounts": {
+          "Harpy": 1
+        },
+        "rawRaceCounts": {
+          "Harpy": 1
+        },
+        "classCounts": {
+          "Shadowknight": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Blade Storm",
+        "rawNames": [
+          "a_blade_storm"
+        ],
+        "count": 1,
+        "levelMin": 59,
+        "levelMax": 59,
+        "levels": [
+          59
+        ],
+        "raceCounts": {
+          "Dervish": 1
+        },
+        "rawRaceCounts": {
+          "Dervish": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "An Avenging Gazer",
+        "rawNames": [
+          "an_avenging_gazer"
+        ],
+        "count": 1,
+        "levelMin": 59,
+        "levelMax": 59,
+        "levels": [
+          59
+        ],
+        "raceCounts": {
+          "Evil Eye": 1
+        },
+        "rawRaceCounts": {
+          "Evil Eye": 1
+        },
+        "classCounts": {
+          "Wizard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Windrider Drake",
+        "rawNames": [
+          "a_windrider_drake"
+        ],
+        "count": 3,
+        "levelMin": 60,
+        "levelMax": 60,
+        "levels": [
+          60
+        ],
+        "raceCounts": {
+          "Drake": 3
+        },
+        "rawRaceCounts": {
+          "Drake": 3
+        },
+        "classCounts": {
+          "Wizard": 3
+        },
+        "typeCounts": {
+          "Spawn Slot": 3
+        }
+      },
+      {
+        "displayName": "Gorgalosk",
+        "rawNames": [
+          "Gorgalosk"
+        ],
+        "count": 1,
+        "levelMin": 60,
+        "levelMax": 60,
+        "levels": [
+          60
+        ],
+        "raceCounts": {
+          "Gorgon": 1
+        },
+        "rawRaceCounts": {
+          "Gorgon": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Noble Dojorn",
+        "rawNames": [
+          "Noble_Dojorn"
+        ],
+        "count": 1,
+        "levelMin": 60,
+        "levelMax": 60,
+        "levels": [
+          60
+        ],
+        "raceCounts": {
+          "Efreeti": 1
+        },
+        "rawRaceCounts": {
+          "Efreeti": 1
+        },
+        "classCounts": {
+          "Paladin": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "The Spiroc Guardian",
+        "rawNames": [
+          "The_Spiroc_Guardian"
+        ],
+        "count": 1,
+        "levelMin": 60,
+        "levelMax": 60,
+        "levels": [
+          60
+        ],
+        "raceCounts": {
+          "Aviak": 1
+        },
+        "rawRaceCounts": {
+          "Aviak": 1
+        },
+        "classCounts": {
+          "Druid": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "A Blade Storm",
+        "rawNames": [
+          "a_blade_storm"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Dervish": 1
+        },
+        "rawRaceCounts": {
+          "Dervish": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Kihun Solstin",
+        "rawNames": [
+          "Kihun_Solstin"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Magician": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "The Spiroc Lord",
+        "rawNames": [
+          "The_Spiroc_Lord"
+        ],
+        "count": 1,
+        "levelMin": 63,
+        "levelMax": 63,
+        "levels": [
+          63
+        ],
+        "raceCounts": {
+          "Aviak": 1
+        },
+        "rawRaceCounts": {
+          "Aviak": 1
+        },
+        "classCounts": {
+          "Ranger": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Eye Of Veeshan",
+        "rawNames": [
+          "Eye_of_Veeshan"
+        ],
+        "count": 1,
+        "levelMin": 70,
+        "levelMax": 70,
+        "levels": [
+          70
+        ],
+        "raceCounts": {
+          "Drake": 1
+        },
+        "rawRaceCounts": {
+          "Fay Drake": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Unknown",
+        "rawNames": [
+          "Unknown"
+        ],
+        "count": 1,
+        "levelMin": null,
+        "levelMax": null,
+        "levels": [],
+        "raceCounts": {
+          "Unknown": 1
+        },
+        "rawRaceCounts": {
+          "Unknown": 1
+        },
+        "classCounts": {
+          "Unknown": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      }
+    ],
+    "rows": [
+      {
+        "displayName": "Zoner",
+        "rawName": "zoner",
+        "level": 1,
+        "race": "Teleport Man",
+        "rawRace": "Teleport Man",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 0,
+        "y": 0,
+        "z": -1100,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 5,
+        "spawn2Id": 151390,
+        "spawngroupId": 112892,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Presence",
+        "rawName": "a_presence",
+        "level": 50,
+        "race": "Invisible Man",
+        "rawRace": "Invisible Man",
+        "className": "Monk",
+        "type": "Spawn Slot",
+        "x": 1043,
+        "y": 286,
+        "z": -8,
+        "heading": 252,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 21532,
+        "spawngroupId": 13210,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Thunder Spirit",
+        "rawName": "a_thunder_spirit",
+        "level": 50,
+        "race": "Fairy",
+        "rawRace": "Fairy",
+        "className": "Shadowknight",
+        "type": "Spawn Slot",
+        "x": 731,
+        "y": 1520,
+        "z": -676,
+        "heading": 304,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2667,
+        "spawngroupId": 2083,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Thunder Spirit",
+        "rawName": "a_thunder_spirit",
+        "level": 50,
+        "race": "Fairy",
+        "rawRace": "Fairy",
+        "className": "Shadowknight",
+        "type": "Spawn Slot",
+        "x": 386,
+        "y": 1357,
+        "z": -679,
+        "heading": 124,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2668,
+        "spawngroupId": 2083,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Thunder Spirit",
+        "rawName": "a_thunder_spirit",
+        "level": 50,
+        "race": "Fairy",
+        "rawRace": "Fairy",
+        "className": "Shadowknight",
+        "type": "Spawn Slot",
+        "x": 548,
+        "y": 1216,
+        "z": -675,
+        "heading": 46,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2669,
+        "spawngroupId": 2083,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Thunder Spirit",
+        "rawName": "a_thunder_spirit",
+        "level": 50,
+        "race": "Fairy",
+        "rawRace": "Fairy",
+        "className": "Shadowknight",
+        "type": "Spawn Slot",
+        "x": 836,
+        "y": 1422,
+        "z": -679,
+        "heading": 387,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2670,
+        "spawngroupId": 2083,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Thunder Spirit",
+        "rawName": "a_thunder_spirit",
+        "level": 50,
+        "race": "Fairy",
+        "rawRace": "Fairy",
+        "className": "Shadowknight",
+        "type": "Spawn Slot",
+        "x": 573,
+        "y": 1579,
+        "z": -679,
+        "heading": 252,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2671,
+        "spawngroupId": 2083,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Thunder Spirit",
+        "rawName": "a_thunder_spirit",
+        "level": 50,
+        "race": "Fairy",
+        "rawRace": "Fairy",
+        "className": "Shadowknight",
+        "type": "Spawn Slot",
+        "x": 769,
+        "y": 1265,
+        "z": -679,
+        "heading": 449,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2672,
+        "spawngroupId": 2083,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Thunder Spirit",
+        "rawName": "a_thunder_spirit",
+        "level": 50,
+        "race": "Fairy",
+        "rawRace": "Fairy",
+        "className": "Shadowknight",
+        "type": "Spawn Slot",
+        "x": 632,
+        "y": 1197,
+        "z": -670,
+        "heading": 490,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2673,
+        "spawngroupId": 2083,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Thunder Spirit",
+        "rawName": "a_thunder_spirit",
+        "level": 50,
+        "race": "Fairy",
+        "rawRace": "Fairy",
+        "className": "Shadowknight",
+        "type": "Spawn Slot",
+        "x": 479,
+        "y": 1548,
+        "z": -679,
+        "heading": 192,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2674,
+        "spawngroupId": 2083,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Bzzazzt",
+        "rawName": "Bzzazzt",
+        "level": 50,
+        "race": "Wasp",
+        "rawRace": "Wasp",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 94,
+        "y": -890,
+        "z": 843,
+        "heading": 0,
+        "chance": 34,
+        "respawnTime": 28800,
+        "spawn2Id": 2620,
+        "spawngroupId": 2055,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Bzzazzt",
+        "rawName": "Bzzazzt",
+        "level": 50,
+        "race": "Wasp",
+        "rawRace": "Wasp",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 269,
+        "y": -881,
+        "z": 843,
+        "heading": 0,
+        "chance": 34,
+        "respawnTime": 28800,
+        "spawn2Id": 2621,
+        "spawngroupId": 98625,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "Bzzazzt",
+        "rawName": "Bzzazzt",
+        "level": 50,
+        "race": "Wasp",
+        "rawRace": "Wasp",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 160,
+        "y": -976,
+        "z": 843,
+        "heading": 0,
+        "chance": 34,
+        "respawnTime": 28800,
+        "spawn2Id": 2622,
+        "spawngroupId": 2056,
+        "candidateCount": 3
+      },
+      {
+        "displayName": "A Soul Carrier",
+        "rawName": "a_soul_carrier",
+        "level": 52,
+        "race": "Griffin",
+        "rawRace": "Griffin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1106,
+        "y": 635,
+        "z": 179.600006,
+        "heading": 212.800003,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2634,
+        "spawngroupId": 2066,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Soul Carrier",
+        "rawName": "a_soul_carrier",
+        "level": 52,
+        "race": "Griffin",
+        "rawRace": "Griffin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -660,
+        "y": 893,
+        "z": 164.875,
+        "heading": 100,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2635,
+        "spawngroupId": 2066,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Soul Carrier",
+        "rawName": "a_soul_carrier",
+        "level": 52,
+        "race": "Griffin",
+        "rawRace": "Griffin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -813.875,
+        "y": 491,
+        "z": 190.625,
+        "heading": 70.5,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 157331,
+        "spawngroupId": 2066,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Spiroc Arbiter",
+        "rawName": "a_spiroc_arbiter",
+        "level": 52,
+        "race": "Aviak",
+        "rawRace": "Aviak",
+        "className": "Druid",
+        "type": "Spawn Slot",
+        "x": 1072.25,
+        "y": -750.380005,
+        "z": 447.799988,
+        "heading": 135.5,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2624,
+        "spawngroupId": 2058,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Spiroc Banisher",
+        "rawName": "a_spiroc_banisher",
+        "level": 52,
+        "race": "Aviak",
+        "rawRace": "Aviak",
+        "className": "Ranger",
+        "type": "Spawn Slot",
+        "x": 1051,
+        "y": -828.5,
+        "z": 435.75,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2623,
+        "spawngroupId": 2057,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Spiroc Caller",
+        "rawName": "a_spiroc_caller",
+        "level": 52,
+        "race": "Aviak",
+        "rawRace": "Aviak",
+        "className": "Druid",
+        "type": "Spawn Slot",
+        "x": 1125.880005,
+        "y": -467.380005,
+        "z": 469.5,
+        "heading": 380.5,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2632,
+        "spawngroupId": 2064,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Spiroc Expulser",
+        "rawName": "a_spiroc_expulser",
+        "level": 52,
+        "race": "Aviak",
+        "rawRace": "Aviak",
+        "className": "Druid",
+        "type": "Spawn Slot",
+        "x": 705,
+        "y": -616,
+        "z": 447,
+        "heading": 179.5,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2629,
+        "spawngroupId": 2061,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Spiroc Revolter",
+        "rawName": "a_spiroc_revolter",
+        "level": 52,
+        "race": "Aviak",
+        "rawRace": "Aviak",
+        "className": "Ranger",
+        "type": "Spawn Slot",
+        "x": 788,
+        "y": -571,
+        "z": 454,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2628,
+        "spawngroupId": 2060,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Spiroc Walker",
+        "rawName": "a_spiroc_walker",
+        "level": 52,
+        "race": "Aviak",
+        "rawRace": "Aviak",
+        "className": "Ranger",
+        "type": "Spawn Slot",
+        "x": 951,
+        "y": -540,
+        "z": 456,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 157334,
+        "spawngroupId": 117672,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Essence Harvester",
+        "rawName": "an_essence_harvester",
+        "level": 52,
+        "race": "Pegasus",
+        "rawRace": "Pegasus",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1483.880005,
+        "y": 723.880005,
+        "z": 152.100006,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2636,
+        "spawngroupId": 2067,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Essence Harvester",
+        "rawName": "an_essence_harvester",
+        "level": 52,
+        "race": "Pegasus",
+        "rawRace": "Pegasus",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -964,
+        "y": 807,
+        "z": 167,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 157332,
+        "spawngroupId": 2067,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Crystaline Cloud",
+        "rawName": "a_crystaline_cloud",
+        "level": 53,
+        "race": "Elemental",
+        "rawRace": "Elemental",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 320,
+        "y": 359,
+        "z": -73.25,
+        "heading": 257.75,
+        "chance": 50,
+        "respawnTime": 14400,
+        "spawn2Id": 2652,
+        "spawngroupId": 2080,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Crystaline Cloud",
+        "rawName": "a_crystaline_cloud",
+        "level": 53,
+        "race": "Elemental",
+        "rawRace": "Elemental",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 245,
+        "y": 703,
+        "z": -54,
+        "heading": 467,
+        "chance": 50,
+        "respawnTime": 14400,
+        "spawn2Id": 2653,
+        "spawngroupId": 2080,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Crystaline Cloud",
+        "rawName": "a_crystaline_cloud",
+        "level": 53,
+        "race": "Elemental",
+        "rawRace": "Elemental",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 291,
+        "y": 493,
+        "z": -70,
+        "heading": 263,
+        "chance": 50,
+        "respawnTime": 14400,
+        "spawn2Id": 2654,
+        "spawngroupId": 2080,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Crystaline Cloud",
+        "rawName": "a_crystaline_cloud",
+        "level": 53,
+        "race": "Elemental",
+        "rawRace": "Elemental",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 347,
+        "y": 493,
+        "z": -74,
+        "heading": 263,
+        "chance": 50,
+        "respawnTime": 14400,
+        "spawn2Id": 2655,
+        "spawngroupId": 2080,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Crystaline Cloud",
+        "rawName": "a_crystaline_cloud",
+        "level": 53,
+        "race": "Elemental",
+        "rawRace": "Elemental",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 400,
+        "y": 703,
+        "z": -54,
+        "heading": 45,
+        "chance": 50,
+        "respawnTime": 14400,
+        "spawn2Id": 2656,
+        "spawngroupId": 2080,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "A Thunder Spirit Princess",
+        "rawName": "a_thunder_spirit_princess",
+        "level": 53,
+        "race": "Fairy",
+        "rawRace": "Fairy",
+        "className": "Shadowknight",
+        "type": "Spawn Slot",
+        "x": 609,
+        "y": 1372,
+        "z": -658,
+        "heading": 385,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2666,
+        "spawngroupId": 2082,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Azarack",
+        "rawName": "an_azarack",
+        "level": 53,
+        "race": "Imp",
+        "rawRace": "Imp",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -659.630005,
+        "y": -384.130005,
+        "z": -340,
+        "heading": 52.5,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2657,
+        "spawngroupId": 2081,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Azarack",
+        "rawName": "an_azarack",
+        "level": 53,
+        "race": "Imp",
+        "rawRace": "Imp",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -591.880005,
+        "y": -282.630005,
+        "z": -342,
+        "heading": 258,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2658,
+        "spawngroupId": 2081,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Azarack",
+        "rawName": "an_azarack",
+        "level": 53,
+        "race": "Imp",
+        "rawRace": "Imp",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -733.630005,
+        "y": -334.5,
+        "z": -344,
+        "heading": 310.5,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2659,
+        "spawngroupId": 2081,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Azarack",
+        "rawName": "an_azarack",
+        "level": 53,
+        "race": "Imp",
+        "rawRace": "Imp",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -462.380005,
+        "y": -76,
+        "z": -360,
+        "heading": 81,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2660,
+        "spawngroupId": 2081,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Azarack",
+        "rawName": "an_azarack",
+        "level": 53,
+        "race": "Imp",
+        "rawRace": "Imp",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -475.380005,
+        "y": -340.75,
+        "z": -345,
+        "heading": 493.75,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2661,
+        "spawngroupId": 2081,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Azarack",
+        "rawName": "an_azarack",
+        "level": 53,
+        "race": "Imp",
+        "rawRace": "Imp",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -755,
+        "y": -388.630005,
+        "z": -349,
+        "heading": 492.25,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2662,
+        "spawngroupId": 2081,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Azarack",
+        "rawName": "an_azarack",
+        "level": 53,
+        "race": "Imp",
+        "rawRace": "Imp",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -718.5,
+        "y": -397.25,
+        "z": -345,
+        "heading": 62.5,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2663,
+        "spawngroupId": 2081,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Azarack",
+        "rawName": "an_azarack",
+        "level": 53,
+        "race": "Imp",
+        "rawRace": "Imp",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -585.75,
+        "y": -373.130005,
+        "z": -342,
+        "heading": 102.5,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2664,
+        "spawngroupId": 2081,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Azarack",
+        "rawName": "an_azarack",
+        "level": 53,
+        "race": "Imp",
+        "rawRace": "Imp",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -511.130005,
+        "y": -33.630001,
+        "z": -360,
+        "heading": 36.25,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2665,
+        "spawngroupId": 2081,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Azarack",
+        "rawName": "an_azarack",
+        "level": 53,
+        "race": "Imp",
+        "rawRace": "Imp",
+        "className": "Rogue",
+        "type": "Spawn Slot",
+        "x": -552.52002,
+        "y": -168.589996,
+        "z": -330.799988,
+        "heading": 350,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 258581,
+        "spawngroupId": 2081,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Undine Spirit",
+        "rawName": "an_undine_spirit",
+        "level": 53,
+        "race": "Will-o-Wisp",
+        "rawRace": "Will-O-Wisp",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": -912,
+        "y": -1039,
+        "z": 1150.380005,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 86400,
+        "spawn2Id": 2594,
+        "spawngroupId": 2050,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Undine Spirit",
+        "rawName": "an_undine_spirit",
+        "level": 53,
+        "race": "Will-o-Wisp",
+        "rawRace": "Will-O-Wisp",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": -936,
+        "y": -1063,
+        "z": 1150.380005,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 86400,
+        "spawn2Id": 2595,
+        "spawngroupId": 2050,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Gorgalask",
+        "rawName": "a_gorgalask",
+        "level": 54,
+        "race": "Gorgon",
+        "rawRace": "Gorgon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 60,
+        "y": 456.880005,
+        "z": -86,
+        "heading": 398.75,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2651,
+        "spawngroupId": 2079,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Greater Sphinx",
+        "rawName": "a_greater_sphinx",
+        "level": 54,
+        "race": "Sphinx",
+        "rawRace": "Sphinx",
+        "className": "Enchanter",
+        "type": "Spawn Slot",
+        "x": -965,
+        "y": -1100,
+        "z": 1094.130005,
+        "heading": 267,
+        "chance": 100,
+        "respawnTime": 86400,
+        "spawn2Id": 2599,
+        "spawngroupId": 2052,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Greater Sphinx",
+        "rawName": "a_greater_sphinx",
+        "level": 54,
+        "race": "Sphinx",
+        "rawRace": "Sphinx",
+        "className": "Enchanter",
+        "type": "Spawn Slot",
+        "x": -753,
+        "y": -972,
+        "z": 1094.130005,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 86400,
+        "spawn2Id": 2600,
+        "spawngroupId": 2052,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Greater Sphinx",
+        "rawName": "a_greater_sphinx",
+        "level": 54,
+        "race": "Sphinx",
+        "rawRace": "Sphinx",
+        "className": "Enchanter",
+        "type": "Spawn Slot",
+        "x": -965,
+        "y": -955,
+        "z": 1094.130005,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 86400,
+        "spawn2Id": 2601,
+        "spawngroupId": 2052,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Greater Sphinx",
+        "rawName": "a_greater_sphinx",
+        "level": 54,
+        "race": "Sphinx",
+        "rawRace": "Sphinx",
+        "className": "Enchanter",
+        "type": "Spawn Slot",
+        "x": -990,
+        "y": -1039,
+        "z": 1094.130005,
+        "heading": 384,
+        "chance": 100,
+        "respawnTime": 86400,
+        "spawn2Id": 2602,
+        "spawngroupId": 2052,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Greater Sphinx",
+        "rawName": "a_greater_sphinx",
+        "level": 54,
+        "race": "Sphinx",
+        "rawRace": "Sphinx",
+        "className": "Enchanter",
+        "type": "Spawn Slot",
+        "x": -898,
+        "y": -1100,
+        "z": 1094.130005,
+        "heading": 383.5,
+        "chance": 100,
+        "respawnTime": 86400,
+        "spawn2Id": 2603,
+        "spawngroupId": 2052,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Greater Sphinx",
+        "rawName": "a_greater_sphinx",
+        "level": 54,
+        "race": "Sphinx",
+        "rawRace": "Sphinx",
+        "className": "Enchanter",
+        "type": "Spawn Slot",
+        "x": -753,
+        "y": -1100,
+        "z": 1094.130005,
+        "heading": 145,
+        "chance": 100,
+        "respawnTime": 86400,
+        "spawn2Id": 2604,
+        "spawngroupId": 2052,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Greater Sphinx",
+        "rawName": "a_greater_sphinx",
+        "level": 54,
+        "race": "Sphinx",
+        "rawRace": "Sphinx",
+        "className": "Enchanter",
+        "type": "Spawn Slot",
+        "x": -898,
+        "y": -955,
+        "z": 1094.130005,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 86400,
+        "spawn2Id": 2605,
+        "spawngroupId": 2052,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Sprited Harpie",
+        "rawName": "a_sprited_harpie",
+        "level": 54,
+        "race": "Harpy",
+        "rawRace": "Harpy",
+        "className": "Shadowknight",
+        "type": "Spawn Slot",
+        "x": 750,
+        "y": 530,
+        "z": -116,
+        "heading": 209.5,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2645,
+        "spawngroupId": 2075,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Watchful Guard",
+        "rawName": "a_watchful_guard",
+        "level": 54,
+        "race": "Evil Eye",
+        "rawRace": "Evil Eye",
+        "className": "Enchanter",
+        "type": "Spawn Slot",
+        "x": 715,
+        "y": 868,
+        "z": -116,
+        "heading": 109,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2676,
+        "spawngroupId": 2085,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Watchful Guard",
+        "rawName": "a_watchful_guard",
+        "level": 54,
+        "race": "Evil Eye",
+        "rawRace": "Evil Eye",
+        "className": "Enchanter",
+        "type": "Spawn Slot",
+        "x": 323,
+        "y": 700,
+        "z": -55,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2677,
+        "spawngroupId": 2085,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Gorgalask",
+        "rawName": "a_gorgalask",
+        "level": 55,
+        "race": "Gorgon",
+        "rawRace": "Gorgon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -0.88,
+        "y": 864.880005,
+        "z": -104,
+        "heading": 263,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2646,
+        "spawngroupId": 2076,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Gorgalask",
+        "rawName": "a_gorgalask",
+        "level": 55,
+        "race": "Gorgon",
+        "rawRace": "Gorgon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 576.880005,
+        "y": 862.880005,
+        "z": -105,
+        "heading": 506,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2647,
+        "spawngroupId": 2076,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shimmering Meteor",
+        "rawName": "a_shimmering_meteor",
+        "level": 55,
+        "race": "Will-o-Wisp",
+        "rawRace": "Will-O-Wisp",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 193,
+        "y": 589,
+        "z": 141.130005,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2682,
+        "spawngroupId": 2090,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shimmering Meteor",
+        "rawName": "a_shimmering_meteor",
+        "level": 55,
+        "race": "Will-o-Wisp",
+        "rawRace": "Will-O-Wisp",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 322,
+        "y": 635,
+        "z": 166,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2683,
+        "spawngroupId": 2090,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shimmering Meteor",
+        "rawName": "a_shimmering_meteor",
+        "level": 55,
+        "race": "Will-o-Wisp",
+        "rawRace": "Will-O-Wisp",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 402,
+        "y": 635,
+        "z": 141,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2684,
+        "spawngroupId": 2090,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shimmering Meteor",
+        "rawName": "a_shimmering_meteor",
+        "level": 55,
+        "race": "Will-o-Wisp",
+        "rawRace": "Will-O-Wisp",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 243,
+        "y": 635,
+        "z": 141,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2685,
+        "spawngroupId": 2090,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Shimmering Meteor",
+        "rawName": "a_shimmering_meteor",
+        "level": 55,
+        "race": "Will-o-Wisp",
+        "rawRace": "Will-O-Wisp",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 450,
+        "y": 588,
+        "z": 140.880005,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2686,
+        "spawngroupId": 2090,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Sprited Harpie",
+        "rawName": "a_sprited_harpie",
+        "level": 55,
+        "race": "Harpy",
+        "rawRace": "Harpy",
+        "className": "Shadowknight",
+        "type": "Spawn Slot",
+        "x": -6,
+        "y": 639,
+        "z": -88,
+        "heading": 392.5,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2644,
+        "spawngroupId": 2074,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Watchful Guard",
+        "rawName": "a_watchful_guard",
+        "level": 55,
+        "race": "Evil Eye",
+        "rawRace": "Evil Eye",
+        "className": "Enchanter",
+        "type": "Spawn Slot",
+        "x": 359.880005,
+        "y": 362,
+        "z": -77,
+        "heading": 165.5,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2642,
+        "spawngroupId": 2072,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Cilin Spellsinger",
+        "rawName": "Cilin_Spellsinger",
+        "level": 55,
+        "race": "Efreeti",
+        "rawRace": "Efreeti",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 659.880005,
+        "y": 1380,
+        "z": -762.25,
+        "heading": 384,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2687,
+        "spawngroupId": 2091,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Dason Goldblade",
+        "rawName": "Dason_Goldblade",
+        "level": 55,
+        "race": "Efreeti",
+        "rawRace": "Efreeti",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 564,
+        "y": 1340,
+        "z": -762.25,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2679,
+        "spawngroupId": 2087,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Drakis Bloodcaster",
+        "rawName": "Drakis_Bloodcaster",
+        "level": 55,
+        "race": "Efreeti",
+        "rawRace": "Efreeti",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 654.880005,
+        "y": 1305,
+        "z": -762.25,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2698,
+        "spawngroupId": 5483,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Enchanter Jolas",
+        "rawName": "Enchanter_Jolas",
+        "level": 55,
+        "race": "Efreeti",
+        "rawRace": "Efreeti",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 629.880005,
+        "y": 1305,
+        "z": -766,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2694,
+        "spawngroupId": 5479,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Eternal Spirit",
+        "rawName": "Eternal_Spirit",
+        "level": 55,
+        "race": "Pegasus",
+        "rawRace": "Pegasus",
+        "className": "Shaman",
+        "type": "Spawn Slot",
+        "x": -1194.5,
+        "y": 390.799988,
+        "z": 154.300003,
+        "heading": 17.200001,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 58532,
+        "spawngroupId": 48085,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Holwin",
+        "rawName": "Holwin",
+        "level": 55,
+        "race": "Efreeti",
+        "rawRace": "Efreeti",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 659.880005,
+        "y": 1324.880005,
+        "z": -765.880005,
+        "heading": 384,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2691,
+        "spawngroupId": 5476,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Josin Faithbringer",
+        "rawName": "Josin_Faithbringer",
+        "level": 55,
+        "race": "Efreeti",
+        "rawRace": "Efreeti",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 659.880005,
+        "y": 1349.880005,
+        "z": -765.880005,
+        "heading": 384,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2697,
+        "spawngroupId": 5482,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Key Master",
+        "rawName": "Key_Master",
+        "level": 55,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 601,
+        "y": 1384.75,
+        "z": -658.33728,
+        "heading": 371,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2701,
+        "spawngroupId": 5486,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Magus Frinon",
+        "rawName": "Magus_Frinon",
+        "level": 55,
+        "race": "Efreeti",
+        "rawRace": "Efreeti",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 604.880005,
+        "y": 1305,
+        "z": -762.25,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2695,
+        "spawngroupId": 5480,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Medicine Man Veetra",
+        "rawName": "Medicine_Man_Veetra",
+        "level": 55,
+        "race": "Efreeti",
+        "rawRace": "Efreeti",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 639.880005,
+        "y": 1400,
+        "z": -762.25,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2689,
+        "spawngroupId": 5474,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Ranger Spirit",
+        "rawName": "Ranger_Spirit",
+        "level": 55,
+        "race": "Efreeti",
+        "rawRace": "Efreeti",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 609.880005,
+        "y": 1400,
+        "z": -762.25,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2699,
+        "spawngroupId": 5484,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Sarkis Ebonblade",
+        "rawName": "Sarkis_Ebonblade",
+        "level": 55,
+        "race": "Efreeti",
+        "rawRace": "Efreeti",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 564,
+        "y": 1360,
+        "z": -765.880005,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2693,
+        "spawngroupId": 5478,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Strandar Pinemist",
+        "rawName": "Strandar_Pinemist",
+        "level": 55,
+        "race": "Efreeti",
+        "rawRace": "Efreeti",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 564,
+        "y": 1320,
+        "z": -762.25,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2688,
+        "spawngroupId": 5473,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Thalik Silenthand",
+        "rawName": "Thalik_Silenthand",
+        "level": 55,
+        "race": "Efreeti",
+        "rawRace": "Efreeti",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 564,
+        "y": 1380,
+        "z": -766,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2696,
+        "spawngroupId": 5481,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "The Gale Caller",
+        "rawName": "#The_Gale_Caller",
+        "level": 55,
+        "race": "Pegasus",
+        "rawRace": "Pegasus",
+        "className": "Enchanter",
+        "type": "Spawn Slot",
+        "x": -697,
+        "y": 866.880005,
+        "z": 171.100006,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2633,
+        "spawngroupId": 2065,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "The Storm Mistress",
+        "rawName": "The_Storm_Mistress",
+        "level": 55,
+        "race": "Djinn",
+        "rawRace": "Djinn",
+        "className": "Magician",
+        "type": "Spawn Slot",
+        "x": 1080,
+        "y": 378,
+        "z": 12.88,
+        "heading": 383,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2681,
+        "spawngroupId": 2089,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Torgon Blademaster",
+        "rawName": "Torgon_Blademaster",
+        "level": 55,
+        "race": "Efreeti",
+        "rawRace": "Efreeti",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 564,
+        "y": 1400,
+        "z": -762.25,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2690,
+        "spawngroupId": 5475,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Wizard Schrock",
+        "rawName": "Wizard_Schrock",
+        "level": 55,
+        "race": "Efreeti",
+        "rawRace": "Efreeti",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 580,
+        "y": 1305,
+        "z": -766,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2692,
+        "spawngroupId": 5477,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Gorgalask",
+        "rawName": "a_gorgalask",
+        "level": 56,
+        "race": "Gorgon",
+        "rawRace": "Gorgon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 738.880005,
+        "y": 838.880005,
+        "z": -115,
+        "heading": 44.25,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2643,
+        "spawngroupId": 2073,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Heartsbane Drake",
+        "rawName": "a_heartsbane_drake",
+        "level": 56,
+        "race": "Drake",
+        "rawRace": "Drake",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -909.25,
+        "y": -812.130005,
+        "z": 1049,
+        "heading": 383.5,
+        "chance": 100,
+        "respawnTime": 86400,
+        "spawn2Id": 2612,
+        "spawngroupId": 2054,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Heartsbane Drake",
+        "rawName": "a_heartsbane_drake",
+        "level": 56,
+        "race": "Drake",
+        "rawRace": "Drake",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -825.75,
+        "y": -1253.75,
+        "z": 1068,
+        "heading": 128.25,
+        "chance": 100,
+        "respawnTime": 86400,
+        "spawn2Id": 2613,
+        "spawngroupId": 2054,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Heartsbane Drake",
+        "rawName": "a_heartsbane_drake",
+        "level": 56,
+        "race": "Drake",
+        "rawRace": "Drake",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -676.25,
+        "y": -812.75,
+        "z": 1050,
+        "heading": 383.5,
+        "chance": 100,
+        "respawnTime": 86400,
+        "spawn2Id": 2614,
+        "spawngroupId": 2054,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Heartsbane Drake",
+        "rawName": "a_heartsbane_drake",
+        "level": 56,
+        "race": "Drake",
+        "rawRace": "Drake",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -1030.130005,
+        "y": -814,
+        "z": 1046,
+        "heading": 384.75,
+        "chance": 100,
+        "respawnTime": 86400,
+        "spawn2Id": 2615,
+        "spawngroupId": 2054,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Heartsbane Drake",
+        "rawName": "a_heartsbane_drake",
+        "level": 56,
+        "race": "Drake",
+        "rawRace": "Drake",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -809.380005,
+        "y": -1253.75,
+        "z": 1073,
+        "heading": 128.25,
+        "chance": 100,
+        "respawnTime": 86400,
+        "spawn2Id": 2616,
+        "spawngroupId": 2054,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Heartsbane Drake",
+        "rawName": "a_heartsbane_drake",
+        "level": 56,
+        "race": "Drake",
+        "rawRace": "Drake",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -1148.5,
+        "y": -1130.75,
+        "z": 1048,
+        "heading": 256.5,
+        "chance": 100,
+        "respawnTime": 86400,
+        "spawn2Id": 2617,
+        "spawngroupId": 2054,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Heartsbane Drake",
+        "rawName": "a_heartsbane_drake",
+        "level": 56,
+        "race": "Drake",
+        "rawRace": "Drake",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -610.5,
+        "y": -1246.630005,
+        "z": 1046,
+        "heading": 488.75,
+        "chance": 100,
+        "respawnTime": 86400,
+        "spawn2Id": 2618,
+        "spawngroupId": 2054,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Heartsbane Drake",
+        "rawName": "a_heartsbane_drake",
+        "level": 56,
+        "race": "Drake",
+        "rawRace": "Drake",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -1144.880005,
+        "y": -812.25,
+        "z": 1035,
+        "heading": 387.25,
+        "chance": 100,
+        "respawnTime": 86400,
+        "spawn2Id": 2619,
+        "spawngroupId": 2054,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Sprited Harpie",
+        "rawName": "a_sprited_harpie",
+        "level": 56,
+        "race": "Harpy",
+        "rawRace": "Harpy",
+        "className": "Shadowknight",
+        "type": "Spawn Slot",
+        "x": 683.880005,
+        "y": 768.880005,
+        "z": -113,
+        "heading": 5.25,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2649,
+        "spawngroupId": 2078,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Sprited Harpie",
+        "rawName": "a_sprited_harpie",
+        "level": 56,
+        "race": "Harpy",
+        "rawRace": "Harpy",
+        "className": "Shadowknight",
+        "type": "Spawn Slot",
+        "x": 177,
+        "y": 860.880005,
+        "z": -73,
+        "heading": 447.5,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2650,
+        "spawngroupId": 2078,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Watchful Guard",
+        "rawName": "a_watchful_guard",
+        "level": 56,
+        "race": "Evil Eye",
+        "rawRace": "Evil Eye",
+        "className": "Enchanter",
+        "type": "Spawn Slot",
+        "x": -30,
+        "y": 317,
+        "z": -110,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2639,
+        "spawngroupId": 2070,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Watchful Guard",
+        "rawName": "a_watchful_guard",
+        "level": 56,
+        "race": "Evil Eye",
+        "rawRace": "Evil Eye",
+        "className": "Enchanter",
+        "type": "Spawn Slot",
+        "x": 694.880005,
+        "y": 435,
+        "z": -115,
+        "heading": 32,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2640,
+        "spawngroupId": 2070,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Fatestealer Drake",
+        "rawName": "a_fatestealer_drake",
+        "level": 58,
+        "race": "Drake",
+        "rawRace": "Drake",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -722.25,
+        "y": -1194.130005,
+        "z": 1070,
+        "heading": 129,
+        "chance": 100,
+        "respawnTime": 86400,
+        "spawn2Id": 2606,
+        "spawngroupId": 2053,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Fatestealer Drake",
+        "rawName": "a_fatestealer_drake",
+        "level": 58,
+        "race": "Drake",
+        "rawRace": "Drake",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -757.130005,
+        "y": -872.880005,
+        "z": 1067,
+        "heading": 383.75,
+        "chance": 100,
+        "respawnTime": 86400,
+        "spawn2Id": 2607,
+        "spawngroupId": 2053,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Fatestealer Drake",
+        "rawName": "a_fatestealer_drake",
+        "level": 58,
+        "race": "Drake",
+        "rawRace": "Drake",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -644.75,
+        "y": -1034.380005,
+        "z": 1055.880005,
+        "heading": 484,
+        "chance": 100,
+        "respawnTime": 86400,
+        "spawn2Id": 2608,
+        "spawngroupId": 2053,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Fatestealer Drake",
+        "rawName": "a_fatestealer_drake",
+        "level": 58,
+        "race": "Drake",
+        "rawRace": "Drake",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -1089.380005,
+        "y": -913,
+        "z": 1078,
+        "heading": 255.75,
+        "chance": 100,
+        "respawnTime": 86400,
+        "spawn2Id": 2609,
+        "spawngroupId": 2053,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Fatestealer Drake",
+        "rawName": "a_fatestealer_drake",
+        "level": 58,
+        "race": "Drake",
+        "rawRace": "Drake",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -1089,
+        "y": -945.75,
+        "z": 1084,
+        "heading": 255.75,
+        "chance": 100,
+        "respawnTime": 86400,
+        "spawn2Id": 2610,
+        "spawngroupId": 2053,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Fatestealer Drake",
+        "rawName": "a_fatestealer_drake",
+        "level": 58,
+        "race": "Drake",
+        "rawRace": "Drake",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -1013.630005,
+        "y": -1194,
+        "z": 1060,
+        "heading": 255.5,
+        "chance": 100,
+        "respawnTime": 86400,
+        "spawn2Id": 2611,
+        "spawngroupId": 2053,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Spiroc Vanquisher",
+        "rawName": "a_spiroc_vanquisher",
+        "level": 58,
+        "race": "Aviak",
+        "rawRace": "Aviak",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 610,
+        "y": -695,
+        "z": 420,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2625,
+        "spawngroupId": 2059,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Spiroc Vanquisher",
+        "rawName": "a_spiroc_vanquisher",
+        "level": 58,
+        "race": "Aviak",
+        "rawRace": "Aviak",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 668,
+        "y": -408,
+        "z": 434,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2626,
+        "spawngroupId": 2059,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Spiroc Vanquisher",
+        "rawName": "a_spiroc_vanquisher",
+        "level": 58,
+        "race": "Aviak",
+        "rawRace": "Aviak",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1057,
+        "y": -338,
+        "z": 436,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2627,
+        "spawngroupId": 2059,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Heart Harpie",
+        "rawName": "heart_harpie",
+        "level": 58,
+        "race": "Harpy",
+        "rawRace": "Harpy",
+        "className": "Shadowknight",
+        "type": "Spawn Slot",
+        "x": 323,
+        "y": 633,
+        "z": -53.75,
+        "heading": 261,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2638,
+        "spawngroupId": 2069,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Blade Storm",
+        "rawName": "a_blade_storm",
+        "level": 59,
+        "race": "Dervish",
+        "rawRace": "Dervish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1098.880005,
+        "y": 460.880005,
+        "z": 23.629999,
+        "heading": 435,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2680,
+        "spawngroupId": 2088,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "An Avenging Gazer",
+        "rawName": "an_avenging_gazer",
+        "level": 59,
+        "race": "Evil Eye",
+        "rawRace": "Evil Eye",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": 353,
+        "y": 608,
+        "z": -54,
+        "heading": 436,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2648,
+        "spawngroupId": 2077,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Windrider Drake",
+        "rawName": "a_windrider_drake",
+        "level": 60,
+        "race": "Drake",
+        "rawRace": "Drake",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -711.130005,
+        "y": -1148.630005,
+        "z": 1059,
+        "heading": 383.25,
+        "chance": 100,
+        "respawnTime": 86400,
+        "spawn2Id": 2596,
+        "spawngroupId": 2051,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Windrider Drake",
+        "rawName": "a_windrider_drake",
+        "level": 60,
+        "race": "Drake",
+        "rawRace": "Drake",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -718.880005,
+        "y": -1142,
+        "z": 1060,
+        "heading": 188.75,
+        "chance": 100,
+        "respawnTime": 86400,
+        "spawn2Id": 2597,
+        "spawngroupId": 2051,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Windrider Drake",
+        "rawName": "a_windrider_drake",
+        "level": 60,
+        "race": "Drake",
+        "rawRace": "Drake",
+        "className": "Wizard",
+        "type": "Spawn Slot",
+        "x": -642.25,
+        "y": -1145.630005,
+        "z": 1054,
+        "heading": 129,
+        "chance": 100,
+        "respawnTime": 86400,
+        "spawn2Id": 2598,
+        "spawngroupId": 2051,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Gorgalosk",
+        "rawName": "Gorgalosk",
+        "level": 60,
+        "race": "Gorgon",
+        "rawRace": "Gorgon",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 290,
+        "y": 608,
+        "z": -53.75,
+        "heading": 66,
+        "chance": 100,
+        "respawnTime": 14440,
+        "spawn2Id": 2641,
+        "spawngroupId": 2071,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Noble Dojorn",
+        "rawName": "Noble_Dojorn",
+        "level": 60,
+        "race": "Efreeti",
+        "rawRace": "Efreeti",
+        "className": "Paladin",
+        "type": "Spawn Slot",
+        "x": 1032,
+        "y": 376,
+        "z": 8,
+        "heading": 188,
+        "chance": 100,
+        "respawnTime": 259200,
+        "spawn2Id": 3781,
+        "spawngroupId": 6040,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "The Spiroc Guardian",
+        "rawName": "The_Spiroc_Guardian",
+        "level": 60,
+        "race": "Aviak",
+        "rawRace": "Aviak",
+        "className": "Druid",
+        "type": "Spawn Slot",
+        "x": 766.630005,
+        "y": -868.630005,
+        "z": 423.5,
+        "heading": 137,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2631,
+        "spawngroupId": 2063,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "A Blade Storm",
+        "rawName": "a_blade_storm",
+        "level": 61,
+        "race": "Dervish",
+        "rawRace": "Dervish",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 1102,
+        "y": 286,
+        "z": 20.25,
+        "heading": 107,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2678,
+        "spawngroupId": 2086,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Kihun Solstin",
+        "rawName": "Kihun_Solstin",
+        "level": 61,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Magician",
+        "type": "Spawn Slot",
+        "x": 654,
+        "y": 1467,
+        "z": -765,
+        "heading": 388,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 2700,
+        "spawngroupId": 5485,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "The Spiroc Lord",
+        "rawName": "The_Spiroc_Lord",
+        "level": 63,
+        "race": "Aviak",
+        "rawRace": "Aviak",
+        "className": "Ranger",
+        "type": "Spawn Slot",
+        "x": 760,
+        "y": -243,
+        "z": 416.25,
+        "heading": 201,
+        "chance": 100,
+        "respawnTime": 14400,
+        "spawn2Id": 2630,
+        "spawngroupId": 2062,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Eye Of Veeshan",
+        "rawName": "Eye_of_Veeshan",
+        "level": 70,
+        "race": "Drake",
+        "rawRace": "Fay Drake",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -1371,
+        "y": -268,
+        "z": 1250,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 21600,
+        "spawn2Id": 21531,
+        "spawngroupId": 13209,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Unknown",
+        "rawName": "Unknown",
+        "level": null,
+        "race": "Unknown",
+        "rawRace": "Unknown",
+        "className": "Unknown",
+        "type": "Spawn Slot",
+        "x": 295,
+        "y": -762,
+        "z": 770.433899,
+        "heading": 10.5,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 156670,
+        "spawngroupId": 117649,
+        "candidateCount": 1
+      }
+    ]
+  }
+}

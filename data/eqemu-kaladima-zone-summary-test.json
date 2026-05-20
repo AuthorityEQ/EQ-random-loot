@@ -1,0 +1,3385 @@
+{
+  "summary": {
+    "zoneSlug": "south-kaladim",
+    "zoneName": "South Kaladim",
+    "requestedZoneShortName": "kaladima",
+    "zoneShortName": "kaladima",
+    "sourceFile": "local-eqemu-database",
+    "matched": true,
+    "expansion": "Classic",
+    "eqemuExpansionId": 0,
+    "expansionSource": "eqemu-zone-table",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobCount": 54,
+    "unknownLevelCount": 0,
+    "minLevel": 1,
+    "maxLevel": 70,
+    "averageLevel": 43.2,
+    "medianLevel": 41,
+    "levelCounts": {
+      "1": 3,
+      "25": 1,
+      "35": 2,
+      "38": 1,
+      "39": 4,
+      "40": 11,
+      "41": 10,
+      "42": 8,
+      "50": 2,
+      "61": 8,
+      "65": 3,
+      "70": 1
+    },
+    "levelBuckets": {
+      "1-10": 3,
+      "11-20": 0,
+      "21-30": 1,
+      "31-40": 18,
+      "41-50": 20,
+      "51-60": 0,
+      "61+": 12
+    },
+    "levelProfileLabel": "Wide level spread",
+    "mobGroupNameCounts": {
+      "A Frostfell Goblin": 1,
+      "Aarina Ratsbone": 1,
+      "Alanury Stormhammer": 1,
+      "Baldoleky Rockfinder": 1,
+      "Barrith The Brave": 1,
+      "Beno Targnarle": 1,
+      "Bindolmera Greybloom": 1,
+      "Bronlor Lightblade": 1,
+      "Byzar Bloodforge": 1,
+      "Canloe Nusback": 1,
+      "Didek Stormhammer": 1,
+      "Dirjadak Barbrawler": 1,
+      "Dooni": 1,
+      "Dura Darkfoam": 1,
+      "Fireworks Engineer Fabdabus": 1,
+      "Furtog Ogrebane": 1,
+      "Grasill Stoutale": 1,
+      "Gretta Mottle": 1,
+      "Guard Adolar": 1,
+      "Guard Adolmer": 1,
+      "Guard Anathur": 1,
+      "Guard Badmer": 1,
+      "Guard Bobbin": 1,
+      "Guard Cardaff": 1,
+      "Guard Didek": 1,
+      "Guard Dinamin": 1,
+      "Guard Dinler": 1,
+      "Guard Gabbles": 1,
+      "Guard Hinolmer": 1,
+      "Guard Humkor": 1,
+      "Guard Humphet": 1,
+      "Guard Kathur": 1,
+      "Guard Kindor": 1,
+      "Guard Koranin": 1,
+      "Guard Ninadek": 1,
+      "Guard Ninaf": 1,
+      "Guard Stump": 1,
+      "Guard Tantan": 1,
+      "Gurtha Yaptongue": 1,
+      "Hanamaf Darkfoam": 1,
+      "Handaaf Orcslicer": 1,
+      "Hanek Ogerbane": 1,
+      "Hargar The Velium Chef": 1,
+      "Hindaek Stormhammer": 1,
+      "Hogunk Ventille": 1,
+      "Kalameky Darkfoam": 1,
+      "Kennelia Gwieal": 1,
+      "Kilam Oresinger": 1,
+      "King Kazon Stormhammer": 1,
+      "Priest Of Discord": 1,
+      "Santug Claugg": 1,
+      "Soulbinder Torvald": 1,
+      "Tumpy Irontoe": 1,
+      "Vacto Molunel": 1
+    },
+    "classCounts": {
+      "Warrior": 28,
+      "Banker": 16,
+      "Warrior GM": 6,
+      "Cleric": 2,
+      "Bard": 1,
+      "Tribute Master": 1
+    },
+    "raceCounts": {
+      "Dwarf": 49,
+      "Gnome": 1,
+      "Goblin": 1,
+      "Human": 1,
+      "Ogre": 1,
+      "Wood Elf": 1
+    },
+    "normalizedRaceCounts": {
+      "Dwarf": 49,
+      "Gnome": 1,
+      "Goblin": 1,
+      "Human": 1,
+      "Ogre": 1,
+      "Wood Elf": 1
+    },
+    "normalizedRaceLevelCounts": {
+      "Dwarf": {
+        "1": 1,
+        "35": 2,
+        "38": 1,
+        "39": 4,
+        "40": 11,
+        "41": 10,
+        "42": 8,
+        "50": 1,
+        "61": 8,
+        "65": 3
+      },
+      "Gnome": {
+        "1": 1
+      },
+      "Goblin": {
+        "1": 1
+      },
+      "Human": {
+        "50": 1
+      },
+      "Ogre": {
+        "70": 1
+      },
+      "Wood Elf": {
+        "25": 1
+      }
+    },
+    "raceAliases": {
+      "Dwarf": [
+        "Dwarf"
+      ],
+      "Gnome": [
+        "Gnome"
+      ],
+      "Goblin": [
+        "Goblin"
+      ],
+      "Human": [
+        "Human"
+      ],
+      "Ogre": [
+        "Ogre"
+      ],
+      "Wood Elf": [
+        "Wood Elf"
+      ]
+    },
+    "typeCounts": {
+      "Spawn Slot": 54
+    },
+    "notes": [
+      "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+      "Read-only test export; not wired into production /zones data."
+    ],
+    "spawnMapPrototype": {
+      "sourceKind": "Local EQEmu/PEQ database export",
+      "coordinateNote": "Original EQEmu spawn2 x/y/z coordinates are preserved for map prototyping.",
+      "points": [
+        {
+          "spawn2Id": 11226,
+          "spawngroupId": 7488,
+          "name": "Gretta_Mottle",
+          "displayName": "Gretta Mottle",
+          "level": 35,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Banker",
+          "x": 299,
+          "y": 196,
+          "z": 2.5,
+          "heading": 151,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11227,
+          "spawngroupId": 7487,
+          "name": "Kilam_Oresinger",
+          "displayName": "Kilam Oresinger",
+          "level": 25,
+          "race": "Wood Elf",
+          "rawRace": "Wood Elf",
+          "className": "Bard",
+          "x": 221.880005,
+          "y": 104.879997,
+          "z": 3.13,
+          "heading": 406,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11228,
+          "spawngroupId": 7486,
+          "name": "Guard_Ninaf",
+          "displayName": "Guard Ninaf",
+          "level": 40,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior",
+          "x": -369,
+          "y": -65,
+          "z": 10.5,
+          "heading": 256,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 11229,
+          "spawngroupId": 7485,
+          "name": "Guard_Tantan",
+          "displayName": "Guard Tantan",
+          "level": 42,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior",
+          "x": -378,
+          "y": -96,
+          "z": 10.5,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11230,
+          "spawngroupId": 7484,
+          "name": "Guard_Adolmer",
+          "displayName": "Guard Adolmer",
+          "level": 42,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior",
+          "x": -303.880005,
+          "y": -108.879997,
+          "z": 10.5,
+          "heading": 0,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 11231,
+          "spawngroupId": 7483,
+          "name": "Guard_Bobbin",
+          "displayName": "Guard Bobbin",
+          "level": 41,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior",
+          "x": -341,
+          "y": -96,
+          "z": 10.5,
+          "heading": 386,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 11232,
+          "spawngroupId": 7482,
+          "name": "Guard_Didek",
+          "displayName": "Guard Didek",
+          "level": 40,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior",
+          "x": -351,
+          "y": -65,
+          "z": 10.5,
+          "heading": 256,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 11233,
+          "spawngroupId": 7481,
+          "name": "King_Kazon_Stormhammer",
+          "displayName": "King Kazon Stormhammer",
+          "level": 50,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior",
+          "x": -359.880005,
+          "y": -117.129997,
+          "z": 14.5,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11234,
+          "spawngroupId": 7480,
+          "name": "Guard_Dinamin",
+          "displayName": "Guard Dinamin",
+          "level": 41,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior",
+          "x": -342.880005,
+          "y": -159,
+          "z": 10.5,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11235,
+          "spawngroupId": 7478,
+          "name": "Guard_Ninadek",
+          "displayName": "Guard Ninadek",
+          "level": 41,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior",
+          "x": -377,
+          "y": 26.879999,
+          "z": 30.5,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11236,
+          "spawngroupId": 7479,
+          "name": "Guard_Badmer",
+          "displayName": "Guard Badmer",
+          "level": 42,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior",
+          "x": 34,
+          "y": 70,
+          "z": 22.5,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11237,
+          "spawngroupId": 7473,
+          "name": "Tumpy_Irontoe",
+          "displayName": "Tumpy Irontoe",
+          "level": 42,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Banker",
+          "x": 313,
+          "y": 178,
+          "z": 2.5,
+          "heading": 29,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11238,
+          "spawngroupId": 7474,
+          "name": "Guard_Gabbles",
+          "displayName": "Guard Gabbles",
+          "level": 40,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior",
+          "x": 12.88,
+          "y": 135,
+          "z": 2.5,
+          "heading": 384,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 11239,
+          "spawngroupId": 7475,
+          "name": "Guard_Kindor",
+          "displayName": "Guard Kindor",
+          "level": 40,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior",
+          "x": -367,
+          "y": 44,
+          "z": 10.5,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11240,
+          "spawngroupId": 7476,
+          "name": "Guard_Humkor",
+          "displayName": "Guard Humkor",
+          "level": 41,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior",
+          "x": -12.88,
+          "y": 134.880005,
+          "z": 2.5,
+          "heading": 127,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 11241,
+          "spawngroupId": 7477,
+          "name": "Guard_Koranin",
+          "displayName": "Guard Koranin",
+          "level": 42,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior",
+          "x": -3.88,
+          "y": 145,
+          "z": 2.5,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11242,
+          "spawngroupId": 7472,
+          "name": "Guard_Kathur",
+          "displayName": "Guard Kathur",
+          "level": 40,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior",
+          "x": 180.880005,
+          "y": 113,
+          "z": 2.5,
+          "heading": 0,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 11243,
+          "spawngroupId": 7471,
+          "name": "Guard_Adolar",
+          "displayName": "Guard Adolar",
+          "level": 41,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior",
+          "x": -352,
+          "y": 45,
+          "z": 10.5,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11244,
+          "spawngroupId": 7470,
+          "name": "Dirjadak_Barbrawler",
+          "displayName": "Dirjadak Barbrawler",
+          "level": 61,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior GM",
+          "x": 365,
+          "y": 43,
+          "z": 14.5,
+          "heading": 4,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11245,
+          "spawngroupId": 7469,
+          "name": "Vacto_Molunel",
+          "displayName": "Vacto Molunel",
+          "level": 35,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Banker",
+          "x": 408,
+          "y": 33,
+          "z": 8.5,
+          "heading": 452,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11246,
+          "spawngroupId": 7468,
+          "name": "Canloe_Nusback",
+          "displayName": "Canloe Nusback",
+          "level": 61,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior GM",
+          "x": 536,
+          "y": -16,
+          "z": 2.5,
+          "heading": 287,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11247,
+          "spawngroupId": 7467,
+          "name": "Hogunk_Ventille",
+          "displayName": "Hogunk Ventille",
+          "level": 61,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior GM",
+          "x": 306,
+          "y": 142,
+          "z": 3.5,
+          "heading": 260,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11248,
+          "spawngroupId": 7466,
+          "name": "Beno_Targnarle",
+          "displayName": "Beno Targnarle",
+          "level": 61,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior GM",
+          "x": 404,
+          "y": 83,
+          "z": 14.5,
+          "heading": 184,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11249,
+          "spawngroupId": 7465,
+          "name": "Furtog_Ogrebane",
+          "displayName": "Furtog Ogrebane",
+          "level": 61,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior GM",
+          "x": 300,
+          "y": 73,
+          "z": 14.5,
+          "heading": 14,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11250,
+          "spawngroupId": 7464,
+          "name": "Byzar_Bloodforge",
+          "displayName": "Byzar Bloodforge",
+          "level": 61,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior GM",
+          "x": 400,
+          "y": -38,
+          "z": 2.5,
+          "heading": 260,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11251,
+          "spawngroupId": 7463,
+          "name": "Grasill_Stoutale",
+          "displayName": "Grasill Stoutale",
+          "level": 65,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Tribute Master",
+          "x": -379,
+          "y": -80,
+          "z": 10.5,
+          "heading": 128,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11252,
+          "spawngroupId": 7462,
+          "name": "Bronlor_Lightblade",
+          "displayName": "Bronlor Lightblade",
+          "level": 61,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior",
+          "x": 416,
+          "y": -88,
+          "z": 2.5,
+          "heading": 127,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11253,
+          "spawngroupId": 7461,
+          "name": "Dooni",
+          "displayName": "Dooni",
+          "level": 40,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Banker",
+          "x": -254,
+          "y": 224,
+          "z": 13.5,
+          "heading": 132,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 11254,
+          "spawngroupId": 7460,
+          "name": "Guard_Hinolmer",
+          "displayName": "Guard Hinolmer",
+          "level": 41,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior",
+          "x": 467,
+          "y": -32.880001,
+          "z": 2.5,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11255,
+          "spawngroupId": 7459,
+          "name": "Guard_Humphet",
+          "displayName": "Guard Humphet",
+          "level": 39,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior",
+          "x": -373,
+          "y": 41,
+          "z": 30.5,
+          "heading": 27,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 11256,
+          "spawngroupId": 7458,
+          "name": "Guard_Anathur",
+          "displayName": "Guard Anathur",
+          "level": 40,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior",
+          "x": -30,
+          "y": 64,
+          "z": 22.5,
+          "heading": 256,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 11257,
+          "spawngroupId": 7457,
+          "name": "Guard_Stump",
+          "displayName": "Guard Stump",
+          "level": 41,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior",
+          "x": -12,
+          "y": 63,
+          "z": 2.5,
+          "heading": 256,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 11258,
+          "spawngroupId": 7456,
+          "name": "Guard_Cardaff",
+          "displayName": "Guard Cardaff",
+          "level": 42,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior",
+          "x": 14,
+          "y": 63,
+          "z": 2.5,
+          "heading": 256,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 11259,
+          "spawngroupId": 7455,
+          "name": "Baldoleky_Rockfinder",
+          "displayName": "Baldoleky Rockfinder",
+          "level": 39,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Banker",
+          "x": -186,
+          "y": 254,
+          "z": 2.5,
+          "heading": 301,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11260,
+          "spawngroupId": 7454,
+          "name": "Aarina_Ratsbone",
+          "displayName": "Aarina Ratsbone",
+          "level": 42,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Banker",
+          "x": -138,
+          "y": 183,
+          "z": 2.5,
+          "heading": 380,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 11261,
+          "spawngroupId": 7453,
+          "name": "Alanury_Stormhammer",
+          "displayName": "Alanury Stormhammer",
+          "level": 39,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Banker",
+          "x": 232,
+          "y": 137,
+          "z": 2.5,
+          "heading": 495,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11262,
+          "spawngroupId": 7452,
+          "name": "Hindaek_Stormhammer",
+          "displayName": "Hindaek Stormhammer",
+          "level": 38,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Banker",
+          "x": 371,
+          "y": 139,
+          "z": 2.5,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11263,
+          "spawngroupId": 7451,
+          "name": "Didek_Stormhammer",
+          "displayName": "Didek Stormhammer",
+          "level": 40,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Banker",
+          "x": 221,
+          "y": 136,
+          "z": 2.5,
+          "heading": 457,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11264,
+          "spawngroupId": 7450,
+          "name": "Dura_Darkfoam",
+          "displayName": "Dura Darkfoam",
+          "level": 41,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Banker",
+          "x": 236,
+          "y": 99,
+          "z": 2.5,
+          "heading": 131,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11265,
+          "spawngroupId": 7449,
+          "name": "Bindolmera_Greybloom",
+          "displayName": "Bindolmera Greybloom",
+          "level": 42,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Banker",
+          "x": 399,
+          "y": 125,
+          "z": 2.5,
+          "heading": 403,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11266,
+          "spawngroupId": 7448,
+          "name": "Kalameky_Darkfoam",
+          "displayName": "Kalameky Darkfoam",
+          "level": 40,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Banker",
+          "x": 389,
+          "y": 173,
+          "z": 2.5,
+          "heading": 381,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11267,
+          "spawngroupId": 7447,
+          "name": "Handaaf_Orcslicer",
+          "displayName": "Handaaf Orcslicer",
+          "level": 39,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Banker",
+          "x": 428,
+          "y": -42,
+          "z": 2.5,
+          "heading": 0,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11268,
+          "spawngroupId": 7446,
+          "name": "Barrith_the_Brave",
+          "displayName": "Barrith The Brave",
+          "level": 61,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior",
+          "x": 339,
+          "y": 137,
+          "z": 1.5,
+          "heading": 57,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11269,
+          "spawngroupId": 7445,
+          "name": "Soulbinder_Torvald",
+          "displayName": "Soulbinder Torvald",
+          "level": 65,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior",
+          "x": 215,
+          "y": 210,
+          "z": 2.5,
+          "heading": 250,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11270,
+          "spawngroupId": 7444,
+          "name": "Priest_of_Discord",
+          "displayName": "Priest Of Discord",
+          "level": 50,
+          "race": "Human",
+          "rawRace": "Human",
+          "className": "Cleric",
+          "x": -9,
+          "y": -47,
+          "z": 3.75,
+          "heading": 22,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11271,
+          "spawngroupId": 7443,
+          "name": "Guard_Dinler",
+          "displayName": "Guard Dinler",
+          "level": 41,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior",
+          "x": 29,
+          "y": 64,
+          "z": 22.5,
+          "heading": 256,
+          "chance": 50,
+          "respawnTime": 640,
+          "candidateCount": 2
+        },
+        {
+          "spawn2Id": 11272,
+          "spawngroupId": 7441,
+          "name": "Gurtha_Yaptongue",
+          "displayName": "Gurtha Yaptongue",
+          "level": 40,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Banker",
+          "x": -253,
+          "y": 230,
+          "z": 2.5,
+          "heading": 149,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 11273,
+          "spawngroupId": 7440,
+          "name": "Hanek_Ogerbane",
+          "displayName": "Hanek Ogerbane",
+          "level": 41,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Banker",
+          "x": -255,
+          "y": 221,
+          "z": 2.5,
+          "heading": 125,
+          "chance": 100,
+          "respawnTime": 640,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 72022,
+          "spawngroupId": 53519,
+          "name": "Kennelia_Gwieal",
+          "displayName": "Kennelia Gwieal",
+          "level": 65,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Cleric",
+          "x": 245,
+          "y": 90,
+          "z": 4.1,
+          "heading": 384,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 72023,
+          "spawngroupId": 53520,
+          "name": "Hanamaf_Darkfoam",
+          "displayName": "Hanamaf Darkfoam",
+          "level": 40,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Banker",
+          "x": 229,
+          "y": 89,
+          "z": 2.5,
+          "heading": 338,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 148705,
+          "spawngroupId": 110221,
+          "name": "Santug_Claugg",
+          "displayName": "Santug Claugg",
+          "level": 70,
+          "race": "Ogre",
+          "rawRace": "Ogre",
+          "className": "Warrior",
+          "x": 0,
+          "y": 36,
+          "z": 6,
+          "heading": 256,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 148722,
+          "spawngroupId": 110238,
+          "name": "a_Frostfell_Goblin",
+          "displayName": "A Frostfell Goblin",
+          "level": 1,
+          "race": "Goblin",
+          "rawRace": "Goblin",
+          "className": "Warrior",
+          "x": -28,
+          "y": 52,
+          "z": 2,
+          "heading": 213,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 148739,
+          "spawngroupId": 110255,
+          "name": "Hargar_the_Velium_Chef",
+          "displayName": "Hargar The Velium Chef",
+          "level": 1,
+          "race": "Dwarf",
+          "rawRace": "Dwarf",
+          "className": "Warrior",
+          "x": 37,
+          "y": 25,
+          "z": 2.5,
+          "heading": 50,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        },
+        {
+          "spawn2Id": 148756,
+          "spawngroupId": 110272,
+          "name": "Fireworks_Engineer_Fabdabus",
+          "displayName": "Fireworks Engineer Fabdabus",
+          "level": 1,
+          "race": "Gnome",
+          "rawRace": "Gnome",
+          "className": "Warrior",
+          "x": 30,
+          "y": 55,
+          "z": 1.875,
+          "heading": 303,
+          "chance": 100,
+          "respawnTime": 1200,
+          "candidateCount": 1
+        }
+      ]
+    }
+  },
+  "details": {
+    "zoneSlug": "south-kaladim",
+    "routeSlug": "kaladima",
+    "zoneName": "South Kaladim",
+    "sourceFile": "local-eqemu-database",
+    "sourceKind": "Local EQEmu/PEQ database export",
+    "sourceNote": "Source: local EQEmu/PEQ database export. Counts use one primary representative per spawn2 slot, selected from the highest-chance spawnentry candidate.",
+    "mobGroups": [
+      {
+        "displayName": "A Frostfell Goblin",
+        "rawNames": [
+          "a_Frostfell_Goblin"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Goblin": 1
+        },
+        "rawRaceCounts": {
+          "Goblin": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Fireworks Engineer Fabdabus",
+        "rawNames": [
+          "Fireworks_Engineer_Fabdabus"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Gnome": 1
+        },
+        "rawRaceCounts": {
+          "Gnome": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Hargar The Velium Chef",
+        "rawNames": [
+          "Hargar_the_Velium_Chef"
+        ],
+        "count": 1,
+        "levelMin": 1,
+        "levelMax": 1,
+        "levels": [
+          1
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Kilam Oresinger",
+        "rawNames": [
+          "Kilam_Oresinger"
+        ],
+        "count": 1,
+        "levelMin": 25,
+        "levelMax": 25,
+        "levels": [
+          25
+        ],
+        "raceCounts": {
+          "Wood Elf": 1
+        },
+        "rawRaceCounts": {
+          "Wood Elf": 1
+        },
+        "classCounts": {
+          "Bard": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Gretta Mottle",
+        "rawNames": [
+          "Gretta_Mottle"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Vacto Molunel",
+        "rawNames": [
+          "Vacto_Molunel"
+        ],
+        "count": 1,
+        "levelMin": 35,
+        "levelMax": 35,
+        "levels": [
+          35
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Hindaek Stormhammer",
+        "rawNames": [
+          "Hindaek_Stormhammer"
+        ],
+        "count": 1,
+        "levelMin": 38,
+        "levelMax": 38,
+        "levels": [
+          38
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Alanury Stormhammer",
+        "rawNames": [
+          "Alanury_Stormhammer"
+        ],
+        "count": 1,
+        "levelMin": 39,
+        "levelMax": 39,
+        "levels": [
+          39
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Baldoleky Rockfinder",
+        "rawNames": [
+          "Baldoleky_Rockfinder"
+        ],
+        "count": 1,
+        "levelMin": 39,
+        "levelMax": 39,
+        "levels": [
+          39
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Humphet",
+        "rawNames": [
+          "Guard_Humphet"
+        ],
+        "count": 1,
+        "levelMin": 39,
+        "levelMax": 39,
+        "levels": [
+          39
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Handaaf Orcslicer",
+        "rawNames": [
+          "Handaaf_Orcslicer"
+        ],
+        "count": 1,
+        "levelMin": 39,
+        "levelMax": 39,
+        "levels": [
+          39
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Didek Stormhammer",
+        "rawNames": [
+          "Didek_Stormhammer"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Dooni",
+        "rawNames": [
+          "Dooni"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Anathur",
+        "rawNames": [
+          "Guard_Anathur"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Didek",
+        "rawNames": [
+          "Guard_Didek"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Gabbles",
+        "rawNames": [
+          "Guard_Gabbles"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Kathur",
+        "rawNames": [
+          "Guard_Kathur"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Kindor",
+        "rawNames": [
+          "Guard_Kindor"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Ninaf",
+        "rawNames": [
+          "Guard_Ninaf"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Gurtha Yaptongue",
+        "rawNames": [
+          "Gurtha_Yaptongue"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Hanamaf Darkfoam",
+        "rawNames": [
+          "Hanamaf_Darkfoam"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Kalameky Darkfoam",
+        "rawNames": [
+          "Kalameky_Darkfoam"
+        ],
+        "count": 1,
+        "levelMin": 40,
+        "levelMax": 40,
+        "levels": [
+          40
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Dura Darkfoam",
+        "rawNames": [
+          "Dura_Darkfoam"
+        ],
+        "count": 1,
+        "levelMin": 41,
+        "levelMax": 41,
+        "levels": [
+          41
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Adolar",
+        "rawNames": [
+          "Guard_Adolar"
+        ],
+        "count": 1,
+        "levelMin": 41,
+        "levelMax": 41,
+        "levels": [
+          41
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Bobbin",
+        "rawNames": [
+          "Guard_Bobbin"
+        ],
+        "count": 1,
+        "levelMin": 41,
+        "levelMax": 41,
+        "levels": [
+          41
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Dinamin",
+        "rawNames": [
+          "Guard_Dinamin"
+        ],
+        "count": 1,
+        "levelMin": 41,
+        "levelMax": 41,
+        "levels": [
+          41
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Dinler",
+        "rawNames": [
+          "Guard_Dinler"
+        ],
+        "count": 1,
+        "levelMin": 41,
+        "levelMax": 41,
+        "levels": [
+          41
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Hinolmer",
+        "rawNames": [
+          "Guard_Hinolmer"
+        ],
+        "count": 1,
+        "levelMin": 41,
+        "levelMax": 41,
+        "levels": [
+          41
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Humkor",
+        "rawNames": [
+          "Guard_Humkor"
+        ],
+        "count": 1,
+        "levelMin": 41,
+        "levelMax": 41,
+        "levels": [
+          41
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Ninadek",
+        "rawNames": [
+          "Guard_Ninadek"
+        ],
+        "count": 1,
+        "levelMin": 41,
+        "levelMax": 41,
+        "levels": [
+          41
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Stump",
+        "rawNames": [
+          "Guard_Stump"
+        ],
+        "count": 1,
+        "levelMin": 41,
+        "levelMax": 41,
+        "levels": [
+          41
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Hanek Ogerbane",
+        "rawNames": [
+          "Hanek_Ogerbane"
+        ],
+        "count": 1,
+        "levelMin": 41,
+        "levelMax": 41,
+        "levels": [
+          41
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Aarina Ratsbone",
+        "rawNames": [
+          "Aarina_Ratsbone"
+        ],
+        "count": 1,
+        "levelMin": 42,
+        "levelMax": 42,
+        "levels": [
+          42
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Bindolmera Greybloom",
+        "rawNames": [
+          "Bindolmera_Greybloom"
+        ],
+        "count": 1,
+        "levelMin": 42,
+        "levelMax": 42,
+        "levels": [
+          42
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Adolmer",
+        "rawNames": [
+          "Guard_Adolmer"
+        ],
+        "count": 1,
+        "levelMin": 42,
+        "levelMax": 42,
+        "levels": [
+          42
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Badmer",
+        "rawNames": [
+          "Guard_Badmer"
+        ],
+        "count": 1,
+        "levelMin": 42,
+        "levelMax": 42,
+        "levels": [
+          42
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Cardaff",
+        "rawNames": [
+          "Guard_Cardaff"
+        ],
+        "count": 1,
+        "levelMin": 42,
+        "levelMax": 42,
+        "levels": [
+          42
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Koranin",
+        "rawNames": [
+          "Guard_Koranin"
+        ],
+        "count": 1,
+        "levelMin": 42,
+        "levelMax": 42,
+        "levels": [
+          42
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Guard Tantan",
+        "rawNames": [
+          "Guard_Tantan"
+        ],
+        "count": 1,
+        "levelMin": 42,
+        "levelMax": 42,
+        "levels": [
+          42
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Tumpy Irontoe",
+        "rawNames": [
+          "Tumpy_Irontoe"
+        ],
+        "count": 1,
+        "levelMin": 42,
+        "levelMax": 42,
+        "levels": [
+          42
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Banker": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "King Kazon Stormhammer",
+        "rawNames": [
+          "King_Kazon_Stormhammer"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Priest Of Discord",
+        "rawNames": [
+          "Priest_of_Discord"
+        ],
+        "count": 1,
+        "levelMin": 50,
+        "levelMax": 50,
+        "levels": [
+          50
+        ],
+        "raceCounts": {
+          "Human": 1
+        },
+        "rawRaceCounts": {
+          "Human": 1
+        },
+        "classCounts": {
+          "Cleric": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Barrith The Brave",
+        "rawNames": [
+          "Barrith_the_Brave"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Beno Targnarle",
+        "rawNames": [
+          "Beno_Targnarle"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Bronlor Lightblade",
+        "rawNames": [
+          "Bronlor_Lightblade"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Byzar Bloodforge",
+        "rawNames": [
+          "Byzar_Bloodforge"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Canloe Nusback",
+        "rawNames": [
+          "Canloe_Nusback"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Dirjadak Barbrawler",
+        "rawNames": [
+          "Dirjadak_Barbrawler"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Furtog Ogrebane",
+        "rawNames": [
+          "Furtog_Ogrebane"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Hogunk Ventille",
+        "rawNames": [
+          "Hogunk_Ventille"
+        ],
+        "count": 1,
+        "levelMin": 61,
+        "levelMax": 61,
+        "levels": [
+          61
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior GM": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Grasill Stoutale",
+        "rawNames": [
+          "Grasill_Stoutale"
+        ],
+        "count": 1,
+        "levelMin": 65,
+        "levelMax": 65,
+        "levels": [
+          65
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Tribute Master": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Kennelia Gwieal",
+        "rawNames": [
+          "Kennelia_Gwieal"
+        ],
+        "count": 1,
+        "levelMin": 65,
+        "levelMax": 65,
+        "levels": [
+          65
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Cleric": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Soulbinder Torvald",
+        "rawNames": [
+          "Soulbinder_Torvald"
+        ],
+        "count": 1,
+        "levelMin": 65,
+        "levelMax": 65,
+        "levels": [
+          65
+        ],
+        "raceCounts": {
+          "Dwarf": 1
+        },
+        "rawRaceCounts": {
+          "Dwarf": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      },
+      {
+        "displayName": "Santug Claugg",
+        "rawNames": [
+          "Santug_Claugg"
+        ],
+        "count": 1,
+        "levelMin": 70,
+        "levelMax": 70,
+        "levels": [
+          70
+        ],
+        "raceCounts": {
+          "Ogre": 1
+        },
+        "rawRaceCounts": {
+          "Ogre": 1
+        },
+        "classCounts": {
+          "Warrior": 1
+        },
+        "typeCounts": {
+          "Spawn Slot": 1
+        }
+      }
+    ],
+    "rows": [
+      {
+        "displayName": "A Frostfell Goblin",
+        "rawName": "a_Frostfell_Goblin",
+        "level": 1,
+        "race": "Goblin",
+        "rawRace": "Goblin",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -28,
+        "y": 52,
+        "z": 2,
+        "heading": 213,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 148722,
+        "spawngroupId": 110238,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Fireworks Engineer Fabdabus",
+        "rawName": "Fireworks_Engineer_Fabdabus",
+        "level": 1,
+        "race": "Gnome",
+        "rawRace": "Gnome",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 30,
+        "y": 55,
+        "z": 1.875,
+        "heading": 303,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 148756,
+        "spawngroupId": 110272,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Hargar The Velium Chef",
+        "rawName": "Hargar_the_Velium_Chef",
+        "level": 1,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 37,
+        "y": 25,
+        "z": 2.5,
+        "heading": 50,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 148739,
+        "spawngroupId": 110255,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Kilam Oresinger",
+        "rawName": "Kilam_Oresinger",
+        "level": 25,
+        "race": "Wood Elf",
+        "rawRace": "Wood Elf",
+        "className": "Bard",
+        "type": "Spawn Slot",
+        "x": 221.880005,
+        "y": 104.879997,
+        "z": 3.13,
+        "heading": 406,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11227,
+        "spawngroupId": 7487,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Gretta Mottle",
+        "rawName": "Gretta_Mottle",
+        "level": 35,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 299,
+        "y": 196,
+        "z": 2.5,
+        "heading": 151,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11226,
+        "spawngroupId": 7488,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Vacto Molunel",
+        "rawName": "Vacto_Molunel",
+        "level": 35,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 408,
+        "y": 33,
+        "z": 8.5,
+        "heading": 452,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11245,
+        "spawngroupId": 7469,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Hindaek Stormhammer",
+        "rawName": "Hindaek_Stormhammer",
+        "level": 38,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 371,
+        "y": 139,
+        "z": 2.5,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11262,
+        "spawngroupId": 7452,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Alanury Stormhammer",
+        "rawName": "Alanury_Stormhammer",
+        "level": 39,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 232,
+        "y": 137,
+        "z": 2.5,
+        "heading": 495,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11261,
+        "spawngroupId": 7453,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Baldoleky Rockfinder",
+        "rawName": "Baldoleky_Rockfinder",
+        "level": 39,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -186,
+        "y": 254,
+        "z": 2.5,
+        "heading": 301,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11259,
+        "spawngroupId": 7455,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard Humphet",
+        "rawName": "Guard_Humphet",
+        "level": 39,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -373,
+        "y": 41,
+        "z": 30.5,
+        "heading": 27,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 11255,
+        "spawngroupId": 7459,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Handaaf Orcslicer",
+        "rawName": "Handaaf_Orcslicer",
+        "level": 39,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 428,
+        "y": -42,
+        "z": 2.5,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11267,
+        "spawngroupId": 7447,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Didek Stormhammer",
+        "rawName": "Didek_Stormhammer",
+        "level": 40,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 221,
+        "y": 136,
+        "z": 2.5,
+        "heading": 457,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11263,
+        "spawngroupId": 7451,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Dooni",
+        "rawName": "Dooni",
+        "level": 40,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -254,
+        "y": 224,
+        "z": 13.5,
+        "heading": 132,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 11253,
+        "spawngroupId": 7461,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Guard Anathur",
+        "rawName": "Guard_Anathur",
+        "level": 40,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -30,
+        "y": 64,
+        "z": 22.5,
+        "heading": 256,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 11256,
+        "spawngroupId": 7458,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Guard Didek",
+        "rawName": "Guard_Didek",
+        "level": 40,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -351,
+        "y": -65,
+        "z": 10.5,
+        "heading": 256,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 11232,
+        "spawngroupId": 7482,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Guard Gabbles",
+        "rawName": "Guard_Gabbles",
+        "level": 40,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 12.88,
+        "y": 135,
+        "z": 2.5,
+        "heading": 384,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 11238,
+        "spawngroupId": 7474,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Guard Kathur",
+        "rawName": "Guard_Kathur",
+        "level": 40,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 180.880005,
+        "y": 113,
+        "z": 2.5,
+        "heading": 0,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 11242,
+        "spawngroupId": 7472,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Guard Kindor",
+        "rawName": "Guard_Kindor",
+        "level": 40,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -367,
+        "y": 44,
+        "z": 10.5,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11239,
+        "spawngroupId": 7475,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard Ninaf",
+        "rawName": "Guard_Ninaf",
+        "level": 40,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -369,
+        "y": -65,
+        "z": 10.5,
+        "heading": 256,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 11228,
+        "spawngroupId": 7486,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Gurtha Yaptongue",
+        "rawName": "Gurtha_Yaptongue",
+        "level": 40,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -253,
+        "y": 230,
+        "z": 2.5,
+        "heading": 149,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11272,
+        "spawngroupId": 7441,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Hanamaf Darkfoam",
+        "rawName": "Hanamaf_Darkfoam",
+        "level": 40,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 229,
+        "y": 89,
+        "z": 2.5,
+        "heading": 338,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 72023,
+        "spawngroupId": 53520,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Kalameky Darkfoam",
+        "rawName": "Kalameky_Darkfoam",
+        "level": 40,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 389,
+        "y": 173,
+        "z": 2.5,
+        "heading": 381,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11266,
+        "spawngroupId": 7448,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Dura Darkfoam",
+        "rawName": "Dura_Darkfoam",
+        "level": 41,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 236,
+        "y": 99,
+        "z": 2.5,
+        "heading": 131,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11264,
+        "spawngroupId": 7450,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard Adolar",
+        "rawName": "Guard_Adolar",
+        "level": 41,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -352,
+        "y": 45,
+        "z": 10.5,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11243,
+        "spawngroupId": 7471,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard Bobbin",
+        "rawName": "Guard_Bobbin",
+        "level": 41,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -341,
+        "y": -96,
+        "z": 10.5,
+        "heading": 386,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 11231,
+        "spawngroupId": 7483,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Guard Dinamin",
+        "rawName": "Guard_Dinamin",
+        "level": 41,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -342.880005,
+        "y": -159,
+        "z": 10.5,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11234,
+        "spawngroupId": 7480,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard Dinler",
+        "rawName": "Guard_Dinler",
+        "level": 41,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 29,
+        "y": 64,
+        "z": 22.5,
+        "heading": 256,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 11271,
+        "spawngroupId": 7443,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Guard Hinolmer",
+        "rawName": "Guard_Hinolmer",
+        "level": 41,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 467,
+        "y": -32.880001,
+        "z": 2.5,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11254,
+        "spawngroupId": 7460,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard Humkor",
+        "rawName": "Guard_Humkor",
+        "level": 41,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -12.88,
+        "y": 134.880005,
+        "z": 2.5,
+        "heading": 127,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 11240,
+        "spawngroupId": 7476,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Guard Ninadek",
+        "rawName": "Guard_Ninadek",
+        "level": 41,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -377,
+        "y": 26.879999,
+        "z": 30.5,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11235,
+        "spawngroupId": 7478,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard Stump",
+        "rawName": "Guard_Stump",
+        "level": 41,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -12,
+        "y": 63,
+        "z": 2.5,
+        "heading": 256,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 11257,
+        "spawngroupId": 7457,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Hanek Ogerbane",
+        "rawName": "Hanek_Ogerbane",
+        "level": 41,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -255,
+        "y": 221,
+        "z": 2.5,
+        "heading": 125,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11273,
+        "spawngroupId": 7440,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Aarina Ratsbone",
+        "rawName": "Aarina_Ratsbone",
+        "level": 42,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": -138,
+        "y": 183,
+        "z": 2.5,
+        "heading": 380,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 11260,
+        "spawngroupId": 7454,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Bindolmera Greybloom",
+        "rawName": "Bindolmera_Greybloom",
+        "level": 42,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 399,
+        "y": 125,
+        "z": 2.5,
+        "heading": 403,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11265,
+        "spawngroupId": 7449,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard Adolmer",
+        "rawName": "Guard_Adolmer",
+        "level": 42,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -303.880005,
+        "y": -108.879997,
+        "z": 10.5,
+        "heading": 0,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 11230,
+        "spawngroupId": 7484,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Guard Badmer",
+        "rawName": "Guard_Badmer",
+        "level": 42,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 34,
+        "y": 70,
+        "z": 22.5,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11236,
+        "spawngroupId": 7479,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard Cardaff",
+        "rawName": "Guard_Cardaff",
+        "level": 42,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 14,
+        "y": 63,
+        "z": 2.5,
+        "heading": 256,
+        "chance": 50,
+        "respawnTime": 640,
+        "spawn2Id": 11258,
+        "spawngroupId": 7456,
+        "candidateCount": 2
+      },
+      {
+        "displayName": "Guard Koranin",
+        "rawName": "Guard_Koranin",
+        "level": 42,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -3.88,
+        "y": 145,
+        "z": 2.5,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11241,
+        "spawngroupId": 7477,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Guard Tantan",
+        "rawName": "Guard_Tantan",
+        "level": 42,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -378,
+        "y": -96,
+        "z": 10.5,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11229,
+        "spawngroupId": 7485,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Tumpy Irontoe",
+        "rawName": "Tumpy_Irontoe",
+        "level": 42,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Banker",
+        "type": "Spawn Slot",
+        "x": 313,
+        "y": 178,
+        "z": 2.5,
+        "heading": 29,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11237,
+        "spawngroupId": 7473,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "King Kazon Stormhammer",
+        "rawName": "King_Kazon_Stormhammer",
+        "level": 50,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": -359.880005,
+        "y": -117.129997,
+        "z": 14.5,
+        "heading": 0,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11233,
+        "spawngroupId": 7481,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Priest Of Discord",
+        "rawName": "Priest_of_Discord",
+        "level": 50,
+        "race": "Human",
+        "rawRace": "Human",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": -9,
+        "y": -47,
+        "z": 3.75,
+        "heading": 22,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11270,
+        "spawngroupId": 7444,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Barrith The Brave",
+        "rawName": "Barrith_the_Brave",
+        "level": 61,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 339,
+        "y": 137,
+        "z": 1.5,
+        "heading": 57,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11268,
+        "spawngroupId": 7446,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Beno Targnarle",
+        "rawName": "Beno_Targnarle",
+        "level": 61,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior GM",
+        "type": "Spawn Slot",
+        "x": 404,
+        "y": 83,
+        "z": 14.5,
+        "heading": 184,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11248,
+        "spawngroupId": 7466,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Bronlor Lightblade",
+        "rawName": "Bronlor_Lightblade",
+        "level": 61,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 416,
+        "y": -88,
+        "z": 2.5,
+        "heading": 127,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11252,
+        "spawngroupId": 7462,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Byzar Bloodforge",
+        "rawName": "Byzar_Bloodforge",
+        "level": 61,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior GM",
+        "type": "Spawn Slot",
+        "x": 400,
+        "y": -38,
+        "z": 2.5,
+        "heading": 260,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11250,
+        "spawngroupId": 7464,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Canloe Nusback",
+        "rawName": "Canloe_Nusback",
+        "level": 61,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior GM",
+        "type": "Spawn Slot",
+        "x": 536,
+        "y": -16,
+        "z": 2.5,
+        "heading": 287,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11246,
+        "spawngroupId": 7468,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Dirjadak Barbrawler",
+        "rawName": "Dirjadak_Barbrawler",
+        "level": 61,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior GM",
+        "type": "Spawn Slot",
+        "x": 365,
+        "y": 43,
+        "z": 14.5,
+        "heading": 4,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11244,
+        "spawngroupId": 7470,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Furtog Ogrebane",
+        "rawName": "Furtog_Ogrebane",
+        "level": 61,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior GM",
+        "type": "Spawn Slot",
+        "x": 300,
+        "y": 73,
+        "z": 14.5,
+        "heading": 14,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11249,
+        "spawngroupId": 7465,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Hogunk Ventille",
+        "rawName": "Hogunk_Ventille",
+        "level": 61,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior GM",
+        "type": "Spawn Slot",
+        "x": 306,
+        "y": 142,
+        "z": 3.5,
+        "heading": 260,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11247,
+        "spawngroupId": 7467,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Grasill Stoutale",
+        "rawName": "Grasill_Stoutale",
+        "level": 65,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Tribute Master",
+        "type": "Spawn Slot",
+        "x": -379,
+        "y": -80,
+        "z": 10.5,
+        "heading": 128,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11251,
+        "spawngroupId": 7463,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Kennelia Gwieal",
+        "rawName": "Kennelia_Gwieal",
+        "level": 65,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Cleric",
+        "type": "Spawn Slot",
+        "x": 245,
+        "y": 90,
+        "z": 4.1,
+        "heading": 384,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 72022,
+        "spawngroupId": 53519,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Soulbinder Torvald",
+        "rawName": "Soulbinder_Torvald",
+        "level": 65,
+        "race": "Dwarf",
+        "rawRace": "Dwarf",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 215,
+        "y": 210,
+        "z": 2.5,
+        "heading": 250,
+        "chance": 100,
+        "respawnTime": 640,
+        "spawn2Id": 11269,
+        "spawngroupId": 7445,
+        "candidateCount": 1
+      },
+      {
+        "displayName": "Santug Claugg",
+        "rawName": "Santug_Claugg",
+        "level": 70,
+        "race": "Ogre",
+        "rawRace": "Ogre",
+        "className": "Warrior",
+        "type": "Spawn Slot",
+        "x": 0,
+        "y": 36,
+        "z": 6,
+        "heading": 256,
+        "chance": 100,
+        "respawnTime": 1200,
+        "spawn2Id": 148705,
+        "spawngroupId": 110221,
+        "candidateCount": 1
+      }
+    ]
+  }
+}
