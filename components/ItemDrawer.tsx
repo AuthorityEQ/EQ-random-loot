@@ -64,6 +64,7 @@ export function ItemDrawer({
         <ItemDetailBody
           allBuckets={allBuckets}
           bucket={bucket}
+          contentType={_contentType}
           details={details}
           itemName={itemName}
           onSelectZone={onSelectZone}

@@ -281,6 +281,12 @@ summary span:last-child {
   outline: none;
 }
 
+.loot-button.is-highlighted {
+  background: color-mix(in srgb, var(--accent) 18%, var(--card));
+  border-color: color-mix(in srgb, var(--accent) 62%, var(--line));
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 26%, transparent);
+}
+
 .loot-empty {
   color: var(--muted);
   margin: 0 0 16px;

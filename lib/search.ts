@@ -16,6 +16,7 @@ export type Bucket = {
   loot_pool: string[];
   zones: string[];
   source_buckets_included?: string[];
+  raidTierName?: string;
   mob_count?: number;
   loot_count?: number;
   zone_count?: number;

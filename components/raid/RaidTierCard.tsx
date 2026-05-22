@@ -13,6 +13,7 @@ type RaidTierCardProps = {
   bossBucketMap: Map<string, Bucket>;
   bossOpenRequest: { domId: string; requestId: number } | null;
   getItemDetails: (name: string) => ItemDetails | undefined;
+  highlightItemName?: string | null;
   onSelectLoot: (item: string, bucket: Bucket) => void;
 };
 
@@ -23,6 +24,7 @@ export function RaidTierCard({
   bossBucketMap,
   bossOpenRequest,
   getItemDetails,
+  highlightItemName,
   onSelectLoot,
 }: RaidTierCardProps) {
   const [openBossName, setOpenBossName] = useState<string | null>(null);
@@ -37,6 +39,16 @@ export function RaidTierCard({
       setOpenBossName(requestedBoss.name);
     }
   }, [bossOpenRequest, tier.bosses]);
+
+  useEffect(() => {
+    if (!highlightItemName) return;
+    const firstMatchingBoss = tier.bosses.find((boss) =>
+      (boss.loot_pool ?? []).includes(highlightItemName),
+    );
+    if (firstMatchingBoss) {
+      setOpenBossName(firstMatchingBoss.name);
+    }
+  }, [highlightItemName, tier.bosses]);
 
   useEffect(() => {
     if (!bossOpenRequest || !openBossName) return;
@@ -86,6 +98,7 @@ export function RaidTierCard({
                   detailsId={`${getBossDomId(expandedBoss.name)}-details`}
                   detailsRef={detailsRef}
                   getItemDetails={getItemDetails}
+                  highlightItemName={highlightItemName}
                   onSelectLoot={onSelectLoot}
                 />
               ) : null}

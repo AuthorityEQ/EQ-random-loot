@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { Suspense, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { ItemDrawer } from "@/components/ItemDrawer";
 import "@/components/item-drawer.css";
 import "@/components/bucket-card.css";
@@ -15,7 +15,7 @@ import veliousRaidData from "@/data/velious-raid.json";
 import { SharedPoolSection } from "@/components/SharedPoolSection";
 import { useBucketDisplay } from "@/components/BucketDisplayProvider";
 import { itemToSlug } from "@/lib/item-slug";
-import { raidTotals, dedupeTierLoot, bossesDroppingItem, type RaidBoss, type RaidDataset } from "@/lib/raidTiers";
+import { raidTotals, dedupeTierLoot, bossesDroppingItem, type RaidBoss, type RaidDataset, type RaidTier } from "@/lib/raidTiers";
 import { SERVER_META, isRandomLootServer } from "@/lib/server";
 import { type Bucket, type ItemDetailsMap } from "@/lib/search";
 import { zoneToSlug } from "@/lib/zone-slug";
@@ -40,8 +40,29 @@ function getItemDetails(name: string) {
   return itemDetailsMap[name];
 }
 
+function normalizeText(value: string) {
+  return value.trim().toLowerCase();
+}
+
+function findRaidItemByQuery(value: string | null) {
+  const query = normalizeText(value ?? "");
+  if (!query) return null;
+  for (const ds of datasets) {
+    for (const tier of ds.tiers) {
+      for (const boss of tier.bosses) {
+        for (const item of boss.loot_pool ?? []) {
+          if (itemToSlug(item) === query || normalizeText(item) === query) {
+            return item;
+          }
+        }
+      }
+    }
+  }
+  return null;
+}
+
 let _bossIdCounter = 0;
-function makeBossBucket(boss: RaidBoss, expansion: string): Bucket {
+function makeBossBucket(boss: RaidBoss, expansion: string, raidTierName?: string): Bucket {
   _bossIdCounter += 1;
   return {
     bucket: _bossIdCounter,
@@ -59,32 +80,85 @@ function makeBossBucket(boss: RaidBoss, expansion: string): Bucket {
     ],
     zones: [boss.zone],
     loot_pool: boss.loot_pool ?? [],
+    raidTierName,
     mob_count: 1,
     loot_count: boss.loot_pool?.length ?? 0,
     zone_count: 1,
   };
 }
 
-export default function RaidsPage() {
+function formatRaidTierLevelRange(bosses: RaidBoss[]) {
+  const levels = bosses.map((boss) => boss.level).filter((level) => level > 0);
+  if (levels.length === 0) return "N/A";
+  const min = Math.min(...levels);
+  const max = Math.max(...levels);
+  return min === max ? String(min) : `${min}-${max}`;
+}
+
+function makeRaidTierBucket(tier: RaidTier, expansion: string, bucketId: number): Bucket {
+  const zones = Array.from(new Set(tier.bosses.map((boss) => boss.zone)));
+  return {
+    bucket: bucketId,
+    expansion,
+    level_range: formatRaidTierLevelRange(tier.bosses),
+    loot_pool: dedupeTierLoot(tier),
+    mob_count: tier.bosses.length,
+    loot_count: dedupeTierLoot(tier).length,
+    mobs: tier.bosses.map((boss) => ({
+      expansion,
+      level: boss.level,
+      loot: boss.loot_pool ?? [],
+      name: boss.name,
+      source_bucket: tier.name ?? `Tier ${tier.tier}`,
+      zone: boss.zone,
+    })),
+    raidTierName: tier.name ?? `Tier ${tier.tier}`,
+    zone_count: zones.length,
+    zones,
+  };
+}
+
+function RaidsPageContent() {
   const [activeExpansion, setActiveExpansion] = useState(expansionOptions[0]);
   const dataset = datasets.find((candidate) => candidate.expansion === activeExpansion) ?? datasets[0];
   const totals = useMemo(() => raidTotals(dataset.tiers), [dataset]);
   const [searchQuery, setSearchQuery] = useState("");
+  const [raidItemFilter, setRaidItemFilter] = useState<string | null>(null);
   const { bucketed } = useBucketDisplay();
   const { server } = useServer();
   const randomLoot = isRandomLootServer(server);
   const router = useRouter();
+  const searchParams = useSearchParams();
 
   const [drawerItem, setDrawerItem] = useState<{ item: string; bucket: Bucket } | null>(null);
   const [bossOpenRequest, setBossOpenRequest] = useState<{ domId: string; requestId: number } | null>(null);
 
   useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    const requestedExpansion = params.get("expansion");
+    const requestedExpansion = searchParams.get("expansion");
     if (requestedExpansion && expansionOptions.includes(requestedExpansion)) {
       setActiveExpansion(requestedExpansion);
     }
-  }, []);
+    const requestedItem = findRaidItemByQuery(searchParams.get("item"));
+    if (requestedItem) {
+      setRaidItemFilter(requestedItem);
+      setSearchQuery("");
+      return;
+    }
+    const requestedSearch = searchParams.get("search")?.trim();
+    if (requestedSearch) {
+      const matchedItem = findRaidItemByQuery(requestedSearch);
+      if (matchedItem) {
+        setRaidItemFilter(matchedItem);
+        setSearchQuery("");
+      } else {
+        setRaidItemFilter(null);
+        setSearchQuery(requestedSearch);
+      }
+      return;
+    }
+    setRaidItemFilter(null);
+    setSearchQuery("");
+  }, [searchParams]);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
@@ -113,7 +187,7 @@ export default function RaidsPage() {
     for (const ds of datasets) {
       for (const tier of ds.tiers) {
         for (const boss of tier.bosses) {
-          map.set(`${ds.expansion}|${boss.name}`, makeBossBucket(boss, ds.expansion));
+          map.set(`${ds.expansion}|${boss.name}`, makeBossBucket(boss, ds.expansion, tier.name ?? `Tier ${tier.tier}`));
         }
       }
     }
@@ -123,24 +197,51 @@ export default function RaidsPage() {
   // Build item→Bucket[] map so multi-boss items show all farming locations in the drawer
   const itemToBuckets = useMemo(() => {
     const map = new Map<string, Bucket[]>();
+    let tierBucketId = 0;
     for (const ds of datasets) {
       for (const tier of ds.tiers) {
-        for (const boss of tier.bosses) {
-          const bucket = bossBucketMap.get(`${ds.expansion}|${boss.name}`);
-          if (!bucket) continue;
-          for (const item of boss.loot_pool ?? []) {
-            const existing = map.get(item);
-            if (existing) {
-              existing.push(bucket);
-            } else {
-              map.set(item, [bucket]);
-            }
+        const tierItems = dedupeTierLoot(tier);
+        if (tierItems.length === 0) continue;
+        tierBucketId += 1;
+        const bucket = makeRaidTierBucket(tier, ds.expansion, tierBucketId);
+        for (const item of tierItems) {
+          const existing = map.get(item);
+          if (existing) {
+            existing.push(bucket);
+          } else {
+            map.set(item, [bucket]);
           }
         }
       }
     }
     return map;
-  }, [bossBucketMap]);
+  }, []);
+
+  const filteredRaidDatasets = useMemo(() => {
+    if (!raidItemFilter) return [];
+    return datasets
+      .map((ds) => ({
+        ...ds,
+        tiers: ds.tiers
+          .map((tier) => ({
+            ...tier,
+            bosses: tier.bosses.filter((boss) => (boss.loot_pool ?? []).includes(raidItemFilter)),
+          }))
+          .filter((tier) => tier.bosses.length > 0),
+      }))
+      .filter((ds) => ds.tiers.length > 0);
+  }, [raidItemFilter]);
+
+  const matchingRaidBossCount = useMemo(
+    () =>
+      filteredRaidDatasets.reduce(
+        (sum, ds) => sum + ds.tiers.reduce((tierSum, tier) => tierSum + tier.bosses.length, 0),
+        0,
+      ),
+    [filteredRaidDatasets],
+  );
+
+  const visibleRaidDatasets = raidItemFilter ? filteredRaidDatasets : [dataset];
 
   type RaidSearchResult =
     | { type: "item"; itemName: string; bossName: string; tierName: string }
@@ -242,6 +343,28 @@ export default function RaidsPage() {
           className="raid-search-input"
           aria-label="Search raid items or bosses"
         />
+        {raidItemFilter ? (
+          <div className="raid-item-filter-banner">
+            <div>
+              <strong>{raidItemFilter}</strong>
+              <span>
+                {matchingRaidBossCount > 0
+                  ? ` drops from ${matchingRaidBossCount} tracked raid ${matchingRaidBossCount === 1 ? "boss" : "bosses"}.`
+                  : " was not found in tracked raid loot pools."}
+              </span>
+            </div>
+            <button
+              className="filter-button"
+              onClick={() => {
+                setRaidItemFilter(null);
+                router.push("/raids", { scroll: false });
+              }}
+              type="button"
+            >
+              Clear item filter
+            </button>
+          </div>
+        ) : null}
         {raidSearchResults.length > 0 && (
           <ul className="raid-search-results" role="listbox" aria-label="Search results">
             {raidSearchResults.map((r, i) =>
@@ -255,7 +378,8 @@ export default function RaidsPage() {
                         bossBucketMap.get(`${dataset.expansion}|${r.bossName}`) ??
                         makeBossBucket(
                           dataset.tiers.flatMap((t) => t.bosses).find((b) => b.name === r.bossName)!,
-                          dataset.expansion
+                          dataset.expansion,
+                          r.tierName,
                         );
                       handleSelectLoot(r.itemName, bossBucket);
                       setSearchQuery("");
@@ -294,38 +418,50 @@ export default function RaidsPage() {
       </div>
 
       <div className="raid-tier-list">
-        {bucketed
-          ? dataset.tiers.map((tier) => (
+        {raidItemFilter && matchingRaidBossCount === 0 ? (
+          <section className="raid-empty-state">
+            <strong>No tracked raid bosses found for this item.</strong>
+            <p>Try the normal raid search if the item has a variant spelling.</p>
+          </section>
+        ) : bucketed ? (
+          visibleRaidDatasets.flatMap((visibleDataset) =>
+            visibleDataset.tiers.map((tier) => (
               <RaidTierCard
                 bossBucketMap={bossBucketMap}
-                domId={getRaidTierDomId(dataset.expansion, tier.tier)}
-                expansion={dataset.expansion}
+                domId={getRaidTierDomId(visibleDataset.expansion, tier.tier)}
+                expansion={visibleDataset.expansion}
                 getItemDetails={getItemDetails}
-                key={tier.tier}
+                highlightItemName={raidItemFilter}
+                key={`${visibleDataset.expansion}-${tier.tier}`}
                 onSelectLoot={handleSelectLoot}
                 tier={tier}
                 bossOpenRequest={bossOpenRequest}
               />
-            ))
-          : dataset.tiers.map((tier) => (
+            )),
+          )
+        ) : (
+          visibleRaidDatasets.flatMap((visibleDataset) =>
+            visibleDataset.tiers.map((tier) => (
               <SharedPoolSection
-                key={tier.tier}
+                key={`${visibleDataset.expansion}-${tier.tier}`}
                 title={tier.name ?? `Tier ${tier.tier}`}
-                kicker={`${dataset.expansion} Raid Tier`}
-                summary={`${tier.bosses.length} bosses · ${dedupeTierLoot(tier).length} unique items`}
-                items={dedupeTierLoot(tier)}
+                kicker={`${visibleDataset.expansion} Raid Tier`}
+                summary={`${tier.bosses.length} bosses / ${dedupeTierLoot(tier).length} unique items`}
+                items={raidItemFilter ? [raidItemFilter] : dedupeTierLoot(tier)}
                 getItemDetails={getItemDetails}
                 getDroppedBy={(itemName) => bossesDroppingItem(tier, itemName).map((b) => b.name)}
                 getBucketForItem={(itemName) => {
                   const bosses = bossesDroppingItem(tier, itemName);
                   return (
-                    bossBucketMap.get(`${dataset.expansion}|${bosses[0]?.name}`) ??
-                    makeBossBucket(bosses[0], dataset.expansion)
+                    bossBucketMap.get(`${visibleDataset.expansion}|${bosses[0]?.name}`) ??
+                    makeBossBucket(bosses[0], visibleDataset.expansion, tier.name ?? `Tier ${tier.tier}`)
                   );
                 }}
                 onSelectLoot={handleSelectLoot}
               />
-            ))}
+            )),
+          )
+        )}
       </div>
 
       {drawerItem !== null ? (
@@ -344,5 +480,13 @@ export default function RaidsPage() {
         />
       ) : null}
     </main>
+  );
+}
+
+export default function RaidsPage() {
+  return (
+    <Suspense fallback={<main className="page" />}>
+      <RaidsPageContent />
+    </Suspense>
   );
 }

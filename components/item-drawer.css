@@ -537,6 +537,51 @@
   gap: 10px;
 }
 
+.raid-drop-source-list {
+  display: grid;
+  gap: 8px;
+}
+
+.raid-drop-source-row {
+  background: color-mix(in srgb, var(--surface) 86%, transparent);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--muted);
+  display: grid;
+  gap: 8px;
+  padding: 10px;
+}
+
+.raid-drop-source-heading {
+  display: grid;
+  gap: 3px;
+}
+
+.raid-drop-source-heading strong {
+  color: var(--accent);
+}
+
+.raid-drop-source-heading span {
+  font-size: 0.86rem;
+  overflow-wrap: anywhere;
+}
+
+.raid-drop-source-mobs {
+  column-gap: 18px;
+  columns: 2 180px;
+  list-style: disc;
+  margin: 0;
+  padding-left: 18px;
+}
+
+.raid-drop-source-mobs li {
+  break-inside: avoid;
+  color: var(--text);
+  font-size: 0.9rem;
+  line-height: 1.35;
+  margin-bottom: 3px;
+}
+
 .farming-zone {
   border-top: 1px solid var(--line);
   display: grid;

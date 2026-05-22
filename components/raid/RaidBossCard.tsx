@@ -22,6 +22,7 @@ type RaidBossDetailsProps = {
   detailsId?: string;
   detailsRef?: Ref<HTMLDivElement>;
   getItemDetails: (name: string) => ItemDetails | undefined;
+  highlightItemName?: string | null;
   onSelectLoot: (item: string, bucket: Bucket) => void;
 };
 
@@ -53,6 +54,7 @@ export function RaidBossDetails({
   detailsId,
   detailsRef,
   getItemDetails,
+  highlightItemName,
   onSelectLoot,
 }: RaidBossDetailsProps) {
   const { server } = useServer();
@@ -82,10 +84,11 @@ export function RaidBossDetails({
         <ul className="raid-loot-pool" aria-label={`${boss.name} random loot pool`}>
           {boss.loot_pool!.map((itemName) => {
             const details = getItemDetails(itemName);
+            const highlighted = itemName === highlightItemName;
             return (
               <li key={itemName}>
                 <button
-                  className="loot-button"
+                  className={highlighted ? "loot-button is-highlighted" : "loot-button"}
                   onClick={() => onSelectLoot(itemName, bossBucket)}
                   type="button"
                   {...previewProps(itemName, details)}

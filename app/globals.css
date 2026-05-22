@@ -10184,6 +10184,42 @@ button.zone-mob-item {
   font-size: 0.82rem;
 }
 
+.raid-item-filter-banner,
+.raid-empty-state {
+  background: color-mix(in srgb, var(--surface) 88%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent) 35%, var(--line));
+  border-radius: 12px;
+  color: var(--text);
+  margin-top: 10px;
+  padding: 12px 14px;
+}
+
+.raid-item-filter-banner {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+.raid-item-filter-banner div {
+  display: grid;
+  gap: 3px;
+}
+
+.raid-item-filter-banner strong {
+  color: var(--accent);
+}
+
+.raid-empty-state {
+  display: grid;
+  gap: 4px;
+}
+
+.raid-empty-state p {
+  color: var(--muted);
+  margin: 0;
+}
+
 .raid-boss-card.is-highlighted {
   box-shadow: 0 0 0 3px var(--focus-ring);
   transition: box-shadow 1.5s ease-out;

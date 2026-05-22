@@ -4573,7 +4573,7 @@ function LevelMobGroups({ rows }: { rows: ZoneMobDetailRow[] }) {
               );
               return (
                 <li key={mob.displayName}>
-                  <strong>{mob.count} {mob.displayName}</strong>
+                  <strong>{mob.count} - {mob.displayName}</strong>
                   <span>{classSummary}</span>
                 </li>
               );

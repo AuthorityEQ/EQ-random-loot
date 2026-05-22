@@ -16,6 +16,8 @@ export type ItemDetailBodyProps = {
   bucket?: Bucket;
   /** All buckets this item appears in (used for the bucket highlight list). */
   allBuckets: Bucket[];
+  contentType?: string;
+  showOpenPageAction?: boolean;
   /**
    * Called when the user clicks a zone button inside the body.
    * When undefined the zone button navigates to /?selectedZone=... instead.
@@ -28,7 +30,9 @@ export function ItemDetailBody({
   details,
   bucket,
   allBuckets,
+  contentType,
   onSelectZone,
+  showOpenPageAction = true,
 }: ItemDetailBodyProps) {
   const [copied, setCopied] = useState(false);
   const { isFavorite, toggleFavorite } = useFavorites();
@@ -44,6 +48,26 @@ export function ItemDetailBody({
     [primaryBucket],
   );
   const favorite = isFavorite(itemName, details);
+  const raidDropSources = useMemo(
+    () =>
+      contentType === "Raid Boss"
+        ? allBuckets
+            .map((itemBucket) => {
+              const mobs = itemBucket.mobs.filter((mob) => mob.name);
+              if (mobs.length === 0) return null;
+              const zones = Array.from(new Set(mobs.map((mob) => mob.zone).filter(Boolean)));
+              return {
+                expansion: itemBucket.expansion || mobs[0].expansion,
+                levelRange: itemBucket.level_range,
+                mobNames: mobs.map((mob) => mob.name),
+                raidTierName: itemBucket.raidTierName ?? mobs[0].source_bucket,
+                zones,
+              };
+            })
+            .filter((source): source is NonNullable<typeof source> => Boolean(source))
+        : [],
+    [allBuckets, contentType],
+  );
 
   // Derive bucket label and drop zones for the Discord share message.
   const discordBucketLabel = primaryBucket
@@ -97,13 +121,15 @@ export function ItemDetailBody({
           <span aria-hidden="true">{favorite ? "★" : "☆"}</span>
           Favorite
         </button>
-        <a
-          className="open-page-button"
-          href={`/item/${itemSlug}`}
-          title="Open standalone detail page"
-        >
-          Open as page
-        </a>
+        {showOpenPageAction ? (
+          <a
+            className="open-page-button"
+            href={`/item/${itemSlug}`}
+            title="Open standalone detail page"
+          >
+            Open as page
+          </a>
+        ) : null}
         <ShareToDiscordButton
           bucketLabel={discordBucketLabel}
           dropLocations={discordDropLocations}
@@ -134,7 +160,32 @@ export function ItemDetailBody({
         <p className="no-details">Item details not added yet.</p>
       )}
 
-      {primaryBucket ? (
+      {raidDropSources.length > 0 ? (
+        <section className="farming-panel is-highlighted" id="raid-drops-from">
+          <h3>Drops From</h3>
+          <div className="raid-drop-source-list">
+            {raidDropSources.map((source) => (
+              <div
+                className="raid-drop-source-row"
+                key={`${source.expansion}-${source.raidTierName}-${source.levelRange}`}
+              >
+                <div className="raid-drop-source-heading">
+                  <strong>{source.raidTierName}</strong>
+                  <span>
+                    {source.zones.join(", ")} · {source.expansion}
+                    {source.levelRange && source.levelRange !== "N/A" ? ` · Level ${source.levelRange}` : ""}
+                  </span>
+                </div>
+                <ul className="raid-drop-source-mobs">
+                  {source.mobNames.map((mobName) => (
+                    <li key={mobName}>{mobName}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </section>
+      ) : primaryBucket ? (
         <section className="farming-panel is-highlighted">
           <h3>Best Farming Locations</h3>
           <p>Zones ranked by number of possible mobs in this bucket</p>

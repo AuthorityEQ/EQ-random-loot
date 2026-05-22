@@ -6,13 +6,18 @@ import "./item-page.css";
 import { ItemDetailBody } from "@/components/ItemDetailBody";
 import { ItemPageBackButton } from "@/components/ItemPageBackButton";
 import classicData from "@/data/classic-group-named.json";
+import classicRaidData from "@/data/classic-raid.json";
 import itemDetailsData from "@/data/item-details.json";
 import kunarkData from "@/data/kunark-group-named.json";
+import kunarkRaidData from "@/data/kunark-raid.json";
 import veliousData from "@/data/velious-group-named.json";
+import veliousRaidData from "@/data/velious-raid.json";
 import { buildItemSlugMap, slugToItemName } from "@/lib/item-slug";
+import { dedupeTierLoot, type RaidBoss, type RaidDataset, type RaidTier } from "@/lib/raidTiers";
 import { type Bucket, type ItemDetailsMap, type LootDataset } from "@/lib/search";
 
 const datasets = [classicData, kunarkData, veliousData] as LootDataset[];
+const raidDatasets = [classicRaidData, kunarkRaidData, veliousRaidData] as RaidDataset[];
 const allBuckets: Bucket[] = datasets.flatMap((d) => d.buckets);
 const itemDetails = itemDetailsData as ItemDetailsMap;
 
@@ -22,6 +27,50 @@ const { slugToName, nameToSlug } = buildItemSlugMap(itemDetails);
 /** All buckets that contain a given item name in their loot pool. */
 function getBucketsForItem(itemName: string): Bucket[] {
   return allBuckets.filter((b) => b.loot_pool.includes(itemName));
+}
+
+function formatRaidTierLevelRange(bosses: RaidBoss[]) {
+  const levels = bosses.map((boss) => boss.level).filter((level) => level > 0);
+  if (levels.length === 0) return "N/A";
+  const min = Math.min(...levels);
+  const max = Math.max(...levels);
+  return min === max ? String(min) : `${min}-${max}`;
+}
+
+function makeRaidTierBucket(tier: RaidTier, expansion: string, bucketId: number): Bucket {
+  const zones = Array.from(new Set(tier.bosses.map((boss) => boss.zone)));
+  return {
+    bucket: bucketId,
+    expansion,
+    level_range: formatRaidTierLevelRange(tier.bosses),
+    loot_pool: dedupeTierLoot(tier),
+    mob_count: tier.bosses.length,
+    loot_count: dedupeTierLoot(tier).length,
+    mobs: tier.bosses.map((boss) => ({
+      expansion,
+      level: boss.level,
+      loot: boss.loot_pool ?? [],
+      name: boss.name,
+      source_bucket: tier.name ?? `Tier ${tier.tier}`,
+      zone: boss.zone,
+    })),
+    raidTierName: tier.name ?? `Tier ${tier.tier}`,
+    zone_count: zones.length,
+    zones,
+  };
+}
+
+function getRaidBucketsForItem(itemName: string): Bucket[] {
+  let bucketId = 0;
+  const buckets: Bucket[] = [];
+  for (const dataset of raidDatasets) {
+    for (const tier of dataset.tiers) {
+      if (!dedupeTierLoot(tier).includes(itemName)) continue;
+      bucketId += 1;
+      buckets.push(makeRaidTierBucket(tier, dataset.expansion, bucketId));
+    }
+  }
+  return buckets;
 }
 
 // ── Static generation ────────────────────────────────────────────────────────
@@ -94,7 +143,10 @@ export default async function ItemPage({
 
   const details = itemDetails[itemName];
   const buckets = getBucketsForItem(itemName);
-  const primaryBucket = buckets[0];
+  const raidBuckets = getRaidBucketsForItem(itemName);
+  const displayBuckets = raidBuckets.length > 0 ? raidBuckets : buckets;
+  const primaryBucket = displayBuckets[0];
+  const isRaidItem = raidBuckets.length > 0;
   const slot = details?.slot ?? null;
 
   return (
@@ -107,7 +159,13 @@ export default async function ItemPage({
         <nav aria-label="Breadcrumb">
           <ol className="item-page-breadcrumb">
             <li>
-              <a href="/loot">Loot</a>
+              {isRaidItem ? (
+                <a href={`/raids?item=${encodeURIComponent(nameToSlug.get(itemName) ?? slug)}`}>
+                  Raids
+                </a>
+              ) : (
+                <a href="/loot">Loot</a>
+              )}
             </li>
             {slot ? (
               <li>
@@ -121,18 +179,20 @@ export default async function ItemPage({
         </nav>
 
         {/* Sticky back button — client island */}
-        <ItemPageBackButton />
+        {isRaidItem ? null : <ItemPageBackButton />}
 
         {/* Item body — reuses the same markup as ItemDrawer */}
         <ItemDetailBody
-          allBuckets={buckets}
+          allBuckets={displayBuckets}
           bucket={primaryBucket}
+          contentType={isRaidItem ? "Raid Boss" : undefined}
           details={details}
           itemName={itemName}
+          showOpenPageAction={false}
         />
 
         {/* "Where to farm" section — visible even when allBuckets is empty */}
-        {buckets.length === 0 ? (
+        {displayBuckets.length === 0 ? (
           <section className="farming-panel" style={{ marginTop: "20px" }}>
             <h3>Where to farm</h3>
             <p className="no-details">
