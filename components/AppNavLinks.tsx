@@ -44,15 +44,28 @@ function isActive(pathname: string, href: string) {
 
 function getStoredSection(): NavSection {
   if (typeof window === "undefined") return "frostreaver";
-  const stored = window.localStorage.getItem(navSectionStorageKey);
+  let stored: string | null = null;
+  try {
+    stored = window.localStorage.getItem(navSectionStorageKey);
+  } catch {
+    return "frostreaver";
+  }
   if (showNormalTlpNavigation && stored === "normal-tlp") return "normal-tlp";
   return "frostreaver";
 }
 
 function saveSection(section: NavSection) {
   if (typeof window === "undefined") return;
-  window.localStorage.setItem(navSectionStorageKey, section);
-  window.dispatchEvent(new CustomEvent<NavSection>(navSectionEventName, { detail: section }));
+  try {
+    window.localStorage.setItem(navSectionStorageKey, section);
+  } catch {
+    // Navigation should never depend on localStorage being available.
+  }
+  try {
+    window.dispatchEvent(new CustomEvent<NavSection>(navSectionEventName, { detail: section }));
+  } catch {
+    // Keep the link click free to continue even if an event listener misbehaves.
+  }
 }
 
 function useActiveNavSection() {
@@ -111,7 +124,6 @@ export function AppSubNavLinks() {
             className={isActive(pathname, link.href) ? "is-active" : undefined}
             href={link.href}
             key={link.href}
-            onClick={() => saveSection(activeSection)}
           >
             {link.label}
           </Link>
