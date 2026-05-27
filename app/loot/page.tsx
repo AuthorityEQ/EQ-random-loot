@@ -9,7 +9,6 @@ import "@/components/bucket-card.css";
 import { ItemDrawer } from "@/components/ItemDrawer";
 import "@/components/item-drawer.css";
 import { ItemFarmView } from "@/components/ItemFarmView";
-import { ItemSlotFilter } from "@/components/ItemSlotFilter";
 import { LevelRecommendations } from "@/components/LevelRecommendations";
 import { MatchingItemList, type MatchingItemRow } from "@/components/MatchingItemList";
 import { SharedPoolSection } from "@/components/SharedPoolSection";
@@ -22,6 +21,7 @@ import kunarkData from "@/data/kunark-group-named.json";
 import veliousData from "@/data/velious-group-named.json";
 import {
   classOptions,
+  cleanSlotOptions,
   fallbackStatOptions,
   formatClassOption,
   formatItemStatValue,
@@ -38,7 +38,6 @@ import { itemToSlug, slugToItemName } from "@/lib/item-slug";
 import { visibleBucketsForLevel } from "@/lib/level-bucket-filter";
 import { lootModes, type LootMode } from "@/lib/lootModes";
 import { filterBuckets, type Bucket, type ItemDetailsMap, type LootDataset } from "@/lib/search";
-import { bucketHasMatchingItems, itemMatchesSlots, type SlotKey } from "@/lib/slot-filter";
 import { getUniversalSearchResults, type UniversalSearchResult } from "@/lib/universal-search";
 import { useUrlFilterState } from "@/lib/use-url-filter-state";
 import { getZoneView } from "@/lib/zones";
@@ -48,27 +47,6 @@ const buckets = datasets.flatMap((dataset) => dataset.buckets);
 const contentType = "Group Named";
 const itemDetails = itemDetailsData as ItemDetailsMap;
 const expansionOptions = ["Classic", "Kunark", "Velious"] as const;
-const fallbackSlotOptions = [
-  "Any",
-  "PRIMARY",
-  "SECONDARY",
-  "RANGE",
-  "AMMO",
-  "HEAD",
-  "FACE",
-  "EAR",
-  "NECK",
-  "SHOULDERS",
-  "ARMS",
-  "BACK",
-  "WRIST",
-  "HANDS",
-  "FINGER",
-  "CHEST",
-  "LEGS",
-  "FEET",
-  "WAIST",
-] as const;
 const statOptionGroups = [
   {
     label: "Primary",
@@ -135,9 +113,6 @@ function Home() {
   const [selectedStat, setSelectedStat] = useState<StatFilter>("Any");
   const [focusOnly, setFocusOnly] = useState(false);
 
-  // ── Slot-chip filter (from HEAD) ─────────────────────────────────────────
-  const [selectedSlots, setSelectedSlots] = useState<SlotKey[]>([]);
-
   // ── Cmd/Ctrl+click tracking ───────────────────────────────────────────────
   const modifierHeldRef = useRef(false);
   useEffect(() => {
@@ -183,18 +158,7 @@ function Home() {
       .filter(({ zones }) => zones.length > 0);
   }, [expansionBuckets, selectedExpansionSet]);
   const selectedZoneView = useMemo(() => getZoneView(expansionBuckets, selectedZone), [expansionBuckets, selectedZone]);
-  const slotOptions = useMemo(() => {
-    const slots = new Set<string>();
-    for (const details of Object.values(itemDetails)) {
-      if (!details.slot) continue;
-      for (const slot of details.slot.toUpperCase().split(/[,\s/]+/)) {
-        if (slot) slots.add(slot);
-      }
-    }
-
-    const derived = Array.from(slots).sort((a, b) => a.localeCompare(b));
-    return derived.length > 0 ? ["Any", ...derived] : [...fallbackSlotOptions];
-  }, []);
+  const slotOptions = cleanSlotOptions;
   const statOptions = useMemo(() => {
     const stats = new Set<string>();
     for (const details of Object.values(itemDetails)) {
@@ -235,22 +199,18 @@ function Home() {
   const getItemDetails = (itemName: string) => itemDetails[itemName];
   const levelVisibleBuckets = useMemo(() => visibleBucketsForLevel(expansionBuckets, playerLevel), [expansionBuckets, playerLevel]);
 
-  // useFilteredBuckets: class/race/slot/stat (main) + slot-chip filter (HEAD)
+  // useFilteredBuckets: class/race/slot/stat filters
   const useFilteredBuckets = useMemo(() => {
     return filterBuckets(expansionBuckets, "")
       .map((bucket) => {
-        // Apply class/race/slot/stat use-filter first, then slot-chip filter
-        const useFilteredLoot = bucket.loot_pool.filter(itemIsVisible);
-        const visibleLoot = selectedSlots.length === 0
-          ? useFilteredLoot
-          : useFilteredLoot.filter((item) => itemMatchesSlots(item, itemDetails, selectedSlots));
+        const visibleLoot = bucket.loot_pool.filter(itemIsVisible);
         return { bucket, visibleLoot: sortItemNamesByStat(visibleLoot, selectedStat) };
       })
       .filter(({ visibleLoot }) => visibleLoot.length > 0);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [expansionBuckets, focusOnly, selectedClass, selectedRace, selectedSlot, selectedStat, selectedSlots]);
+  }, [expansionBuckets, focusOnly, selectedClass, selectedRace, selectedSlot, selectedStat]);
 
-  // filteredBuckets: level filter + class/race/slot/stat + slot-chip filter
+  // filteredBuckets: level filter + class/race/slot/stat
   const filteredBuckets = useMemo(() => {
     if (selectedBucketNumber !== null) {
       return useFilteredBuckets.filter(({ bucket }) => bucket.bucket === selectedBucketNumber);
@@ -265,7 +225,6 @@ function Home() {
     || selectedSlot !== "Any"
     || selectedStat !== "Any"
     || focusOnly
-    || selectedSlots.length > 0
     || playerLevel > 1;
 
   const matchingItemRows = useMemo<MatchingItemRow[]>(() => {
@@ -403,7 +362,6 @@ function Home() {
     setSelectedSlot("Any");
     setSelectedStat("Any");
     setFocusOnly(false);
-    setSelectedSlots([]);
     setLevelInputValue("1");
     setIsEditingLevel(false);
     setSelectedLoot(null);
@@ -503,7 +461,6 @@ function Home() {
                   setUrlState({ zone: "" });
                   setSelectedLoot(null);
                   setSelectedItemSearch(null);
-                  setSelectedSlots([]);
                 }}
                 type="button"
               >
@@ -622,7 +579,6 @@ function Home() {
             value={levelInputValue}
           />
         </label>
-        <ItemSlotFilter selected={selectedSlots} onChange={setSelectedSlots} />
       </div>
 
       {!isItemsOnly && !selectedItemSearch && !selectedZoneView ? (

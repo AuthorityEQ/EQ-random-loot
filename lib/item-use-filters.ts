@@ -1,6 +1,7 @@
 import type { ItemDetails } from "@/lib/search";
 import { itemEffectsMatchQuery, itemHasFocusEffect } from "@/lib/item-effects";
 import { isShieldItem } from "@/lib/item-weapon";
+import { parseRawSlot, SLOT_CATEGORIES, type SlotKey } from "@/lib/slot-filter";
 
 export const classOptions = [
   "Any",
@@ -63,6 +64,54 @@ export const fallbackStatOptions = [
   "Attack",
 ] as const;
 
+export const cleanSlotOptions = [
+  "Any",
+  "Primary",
+  "Secondary",
+  "Range",
+  "Ammo",
+  "Head",
+  "Face",
+  "Ear",
+  "Neck",
+  "Shoulder",
+  "Arms",
+  "Back",
+  "Wrist",
+  "Hands",
+  "Finger",
+  "Chest",
+  "Legs",
+  "Feet",
+  "Waist",
+] as const;
+
+const slotFilterToKeys: Partial<Record<string, SlotKey[]>> = {
+  weapons: SLOT_CATEGORIES.weapons,
+  armor: SLOT_CATEGORIES.armor,
+  accessories: SLOT_CATEGORIES.accessories,
+  primary: ["primary"],
+  secondary: ["secondary"],
+  range: ["range"],
+  ammo: ["ammo"],
+  head: ["head"],
+  face: ["face"],
+  ear: ["ear"],
+  neck: ["neck"],
+  shoulder: ["shoulders"],
+  shoulders: ["shoulders"],
+  arms: ["arms"],
+  back: ["back"],
+  wrist: ["wrist"],
+  hands: ["hands"],
+  finger: ["finger"],
+  fingers: ["finger"],
+  chest: ["chest"],
+  legs: ["legs"],
+  feet: ["feet"],
+  waist: ["waist"],
+};
+
 export type ClassFilter = (typeof classOptions)[number];
 export type RaceFilter = (typeof raceOptions)[number];
 export type SlotFilter = "Any" | string;
@@ -114,14 +163,14 @@ function allowsSelected(values: string[] | string | null | undefined, selected: 
 }
 
 function matchesSlot(details: ItemDetails | undefined, slotFilter: SlotFilter) {
-  if (slotFilter === "Any") return true;
+  if (slotFilter === "Any" || slotFilter === "All slots") return true;
   if (!details?.slot) return false;
 
-  return details.slot
-    .toUpperCase()
-    .split(/[,\s/]+/)
-    .filter(Boolean)
-    .includes(slotFilter);
+  const requestedKeys = slotFilterToKeys[slotFilter.trim().toLowerCase()];
+  if (!requestedKeys?.length) return false;
+
+  const itemSlots = parseRawSlot(details.slot);
+  return requestedKeys.some((key) => itemSlots.has(key));
 }
 
 function hasValue(value: unknown) {
