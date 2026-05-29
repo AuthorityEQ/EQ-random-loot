@@ -49,6 +49,9 @@ const excludedVendorZones = new Set([
   "The Mines of Gloomingdeep",
   "Katta Castellum",
 ]);
+const excludedVendorNpcs = new Set([
+  "Eyon Swougius",
+]);
 
 const sourceLists: SourceList[] = [
   {
@@ -205,7 +208,7 @@ function parseVendors(html: string, spellUrl: string) {
       while ((vendorMatch = vendorPattern.exec(list)) !== null) {
         const npc = inlineText(vendorMatch[1]);
         if (!zone || !npc) continue;
-        if (excludedVendorZones.has(zone)) {
+        if (excludedVendorZones.has(zone) || excludedVendorNpcs.has(npc)) {
           filteredOut += 1;
           continue;
         }

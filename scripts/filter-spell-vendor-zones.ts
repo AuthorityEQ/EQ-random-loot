@@ -28,6 +28,9 @@ const excludedVendorZones = new Set([
   "The Mines of Gloomingdeep",
   "Katta Castellum",
 ]);
+const excludedVendorNpcs = new Set([
+  "Eyon Swougius",
+]);
 
 const spells = JSON.parse(await readFile(outputPath, "utf8")) as SpellRecord[];
 let filteredVendorEntries = 0;
@@ -37,7 +40,7 @@ for (const spell of spells) {
   if (!Array.isArray(spell.vendors)) continue;
 
   const filtered = spell.vendors.filter((vendor) => {
-    const keep = !excludedVendorZones.has(vendor.zone);
+    const keep = !excludedVendorZones.has(vendor.zone) && !excludedVendorNpcs.has(vendor.npc);
     if (!keep) filteredVendorEntries += 1;
     return keep;
   });
