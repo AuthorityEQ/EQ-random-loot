@@ -29,6 +29,7 @@ const excludedVendorZones = new Set([
   "Katta Castellum",
 ]);
 const excludedVendorNpcs = new Set([
+  "Ennarn Shotius",
   "Eyon Swougius",
 ]);
 
