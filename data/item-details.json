@@ -260900,5 +260900,394 @@
     "parsing_warnings": [
       "Icon-only record; item stats were not imported."
     ]
+  },
+  "Sash of the Dragonborn": {
+    "name": "Sash of the Dragonborn",
+    "slot": "WAIST",
+    "ac": 2,
+    "damage": null,
+    "delay": null,
+    "stats": {},
+    "resists": {},
+    "haste": "+24%",
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "ALL"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 0.1,
+    "size": "SMALL",
+    "lore": true,
+    "magic": true,
+    "no_drop": null,
+    "prestige": null,
+    "aug_slots": [],
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=916"
+      }
+    ],
+    "sourceUrl": "https://everquest.allakhazam.com/db/item.html?item=916",
+    "allaId": 916,
+    "expansion": "Kunark",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Targeted Crypt group loot import from Allakhazam item 916."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "iconPath": "https://everquest.allakhazam.com/pgfx/item_938.png",
+    "hp_regen": null,
+    "mana_regen": null,
+    "endurance_regen": null,
+    "item_type": "Armor",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "skill": null,
+    "damage_bonus": null
+  },
+  "Kylong Gauntlets": {
+    "name": "Kylong Gauntlets",
+    "slot": "HANDS",
+    "ac": 12,
+    "damage": null,
+    "delay": null,
+    "stats": {
+      "WIS": 4,
+      "AGI": 4
+    },
+    "resists": {
+      "DR": 2,
+      "MR": 2
+    },
+    "haste": null,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "WAR",
+      "CLR",
+      "PAL",
+      "RNG",
+      "SHD",
+      "BRD",
+      "ROG",
+      "SHM",
+      "BER"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 3,
+    "size": "SMALL",
+    "lore": null,
+    "magic": true,
+    "no_drop": null,
+    "prestige": null,
+    "aug_slots": [],
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=1608"
+      }
+    ],
+    "sourceUrl": "https://everquest.allakhazam.com/db/item.html?item=1608",
+    "allaId": 1608,
+    "expansion": "Kunark",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Targeted Crypt group loot import from Allakhazam item 1608."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "iconPath": "https://everquest.allakhazam.com/pgfx/item_526.png",
+    "hp_regen": null,
+    "mana_regen": null,
+    "endurance_regen": null,
+    "item_type": "Armor",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "skill": null,
+    "damage_bonus": null
+  },
+  "Steel Hilted Flint Dagger": {
+    "name": "Steel Hilted Flint Dagger",
+    "slot": "PRIMARY SECONDARY",
+    "ac": null,
+    "damage": 4,
+    "delay": 28,
+    "stats": {},
+    "resists": {},
+    "haste": null,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [
+      "Conflagration (Combat, Casting Time: Instant) at Level 50"
+    ],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "RNG",
+      "BST"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 1.7,
+    "size": "MEDIUM",
+    "lore": true,
+    "magic": true,
+    "no_drop": null,
+    "prestige": null,
+    "aug_slots": [],
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=618"
+      }
+    ],
+    "sourceUrl": "https://everquest.allakhazam.com/db/item.html?item=618",
+    "allaId": 618,
+    "expansion": "Kunark",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Targeted Crypt group loot import from Allakhazam item 618."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "iconPath": "https://everquest.allakhazam.com/pgfx/item_1165.png",
+    "hp_regen": null,
+    "mana_regen": null,
+    "endurance_regen": null,
+    "item_type": "1H Piercing",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "skill": "1H Piercing",
+    "damage_bonus": 35
+  },
+  "Vile Long Sword of Krissuz": {
+    "name": "Vile Long Sword of Krissuz",
+    "slot": "PRIMARY SECONDARY",
+    "ac": null,
+    "damage": 12,
+    "delay": 22,
+    "stats": {
+      "STR": 5,
+      "DEX": 5,
+      "AGI": 5,
+      "HP": 20
+    },
+    "resists": {},
+    "haste": null,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "WAR",
+      "PAL",
+      "RNG",
+      "SHD",
+      "BRD",
+      "ROG"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 4,
+    "size": "TINY",
+    "lore": true,
+    "magic": true,
+    "no_drop": true,
+    "prestige": null,
+    "aug_slots": [],
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=24622"
+      }
+    ],
+    "sourceUrl": "https://everquest.allakhazam.com/db/item.html?item=24622",
+    "allaId": 24622,
+    "expansion": "Kunark",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Targeted Crypt group loot import from Allakhazam item 24622."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "iconPath": "https://everquest.allakhazam.com/pgfx/item_1333.png",
+    "hp_regen": null,
+    "mana_regen": null,
+    "endurance_regen": null,
+    "item_type": "1H Slashing",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "skill": "1H Slashing",
+    "damage_bonus": 35
+  },
+  "Burnished Helm of Contemplation": {
+    "name": "Burnished Helm of Contemplation",
+    "slot": "HEAD",
+    "ac": 15,
+    "damage": null,
+    "delay": null,
+    "stats": {
+      "STR": 5,
+      "WIS": 5,
+      "HP": 25
+    },
+    "resists": {
+      "MR": 5
+    },
+    "haste": null,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "RNG",
+      "ROG",
+      "SHM",
+      "BER"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 3.5,
+    "size": "MEDIUM",
+    "lore": true,
+    "magic": true,
+    "no_drop": true,
+    "prestige": null,
+    "aug_slots": [],
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=24923"
+      }
+    ],
+    "sourceUrl": "https://everquest.allakhazam.com/db/item.html?item=24923",
+    "allaId": 24923,
+    "expansion": "Kunark",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Targeted Crypt group loot import from Allakhazam item 24923."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "iconPath": "https://everquest.allakhazam.com/pgfx/item_536.png",
+    "hp_regen": null,
+    "mana_regen": null,
+    "endurance_regen": null,
+    "item_type": "Armor",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "skill": null,
+    "damage_bonus": null
+  },
+  "Kylong Wrist Guards": {
+    "name": "Kylong Wrist Guards",
+    "slot": "WRIST",
+    "ac": 9,
+    "damage": null,
+    "delay": null,
+    "stats": {
+      "STR": 4,
+      "CHA": 4
+    },
+    "resists": {},
+    "haste": null,
+    "worn_effects": [],
+    "focus_effects": [],
+    "click_effects": [],
+    "proc_effects": [],
+    "required_level": null,
+    "recommended_level": null,
+    "classes": [
+      "WAR",
+      "CLR",
+      "PAL",
+      "RNG",
+      "SHD",
+      "BRD",
+      "ROG",
+      "SHM",
+      "BER"
+    ],
+    "races": [
+      "ALL"
+    ],
+    "weight": 1.5,
+    "size": "SMALL",
+    "lore": null,
+    "magic": true,
+    "no_drop": null,
+    "prestige": null,
+    "aug_slots": [],
+    "sources": [
+      {
+        "name": "Allakhazam",
+        "url": "https://everquest.allakhazam.com/db/item.html?item=867"
+      }
+    ],
+    "sourceUrl": "https://everquest.allakhazam.com/db/item.html?item=867",
+    "allaId": 867,
+    "expansion": "Kunark",
+    "confidence": "exact_match",
+    "match_notes": [
+      "Targeted Crypt group loot import from Allakhazam item 867."
+    ],
+    "missing_core_stats": false,
+    "duplicate_name_risk": false,
+    "parsing_warnings": [],
+    "match_confidence": "exact_match",
+    "iconPath": "https://everquest.allakhazam.com/pgfx/item_620.png",
+    "hp_regen": null,
+    "mana_regen": null,
+    "endurance_regen": null,
+    "item_type": "Armor",
+    "stackable": false,
+    "weight_reduction": null,
+    "capacity": null,
+    "size_capacity": null,
+    "skill": null,
+    "damage_bonus": null
   }
 }
