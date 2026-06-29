@@ -1,0 +1,411 @@
+.private-raid-page {
+  margin: 0 auto;
+  max-width: 1220px;
+  padding: 24px 16px 56px;
+}
+
+.private-raid-tool {
+  color: var(--text);
+  display: grid;
+  gap: 14px;
+}
+
+.private-raid-gate,
+.private-raid-panel,
+.private-raid-card,
+.private-raid-stat {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.private-raid-gate {
+  display: grid;
+  gap: 12px;
+  padding: 22px;
+}
+
+.private-raid-header {
+  align-items: end;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.private-raid-header h1,
+.private-raid-gate h1 {
+  color: var(--page-title-gold);
+  margin: 0;
+}
+
+.private-raid-header p,
+.private-raid-gate p,
+.private-raid-status,
+.private-raid-muted {
+  color: var(--muted);
+}
+
+.private-raid-actions,
+.private-raid-card-actions,
+.private-raid-import-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.private-raid-actions {
+  justify-content: flex-end;
+}
+
+.private-raid-button {
+  background: linear-gradient(180deg, rgba(37, 34, 28, 0.9), rgba(14, 14, 12, 0.94));
+  border: 1px solid rgba(128, 113, 82, 0.68);
+  border-radius: 7px;
+  color: var(--text);
+  cursor: pointer;
+  font-weight: 800;
+  min-height: 38px;
+  padding: 8px 12px;
+}
+
+.private-raid-button.is-primary,
+.private-raid-button.is-save {
+  background: linear-gradient(180deg, rgba(22, 78, 61, 0.95), rgba(8, 29, 25, 0.98));
+  border-color: rgba(83, 202, 155, 0.9);
+}
+
+.private-raid-button.is-danger {
+  background: linear-gradient(180deg, rgba(79, 29, 20, 0.94), rgba(24, 10, 9, 0.96));
+  border-color: rgba(198, 78, 55, 0.86);
+}
+
+.private-raid-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.private-raid-panel {
+  display: grid;
+  gap: 8px;
+  padding: 10px;
+}
+
+.private-raid-toolbar {
+  align-items: end;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: minmax(220px, 1fr) 150px 150px 150px;
+}
+
+.private-raid-tool label {
+  color: var(--muted);
+  display: grid;
+  font-size: 0.78rem;
+  font-weight: 900;
+  gap: 6px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.private-raid-tool input,
+.private-raid-tool select,
+.private-raid-tool textarea {
+  background: rgba(11, 14, 12, 0.72);
+  border: 1px solid rgba(126, 113, 82, 0.62);
+  border-radius: 7px;
+  color: var(--text);
+  font: inherit;
+  min-width: 0;
+  padding: 10px 11px;
+}
+
+.private-raid-stats {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.private-raid-stat {
+  display: grid;
+  gap: 4px;
+  min-height: 76px;
+  padding: 14px;
+}
+
+.private-raid-stat span {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.private-raid-stat strong {
+  color: var(--page-title-gold);
+  font-size: clamp(1.14rem, 2vw, 1.6rem);
+}
+
+.private-raid-grid {
+  display: grid;
+  gap: 6px;
+  grid-template-columns: minmax(0, 1fr) minmax(190px, 0.26fr);
+}
+
+.private-raid-list {
+  display: grid;
+  gap: 5px;
+}
+
+.private-raid-row {
+  align-items: center;
+  border-bottom: 1px solid rgba(86, 96, 79, 0.42);
+  display: grid;
+  font-size: 0.78rem;
+  gap: 4px;
+  grid-template-columns: minmax(96px, 0.8fr) minmax(130px, 1fr) 56px minmax(130px, 1fr);
+  padding: 3px 0;
+}
+
+.private-raid-row:last-child {
+  border-bottom: 0;
+}
+
+.private-raid-composition {
+  grid-column: 1 / -1;
+}
+
+.private-raid-composition .private-raid-list {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+}
+
+.private-raid-composition .private-raid-row {
+  background: rgba(53, 105, 82, 0.18);
+  border: 1px solid rgba(99, 197, 143, 0.28);
+  border-bottom: 0;
+  border-radius: 999px;
+  display: inline-flex;
+  font-size: 0.72rem;
+  gap: 5px;
+  padding: 2px 7px;
+}
+
+.private-raid-composition .private-raid-row strong {
+  color: var(--page-title-gold);
+}
+
+.private-raid-composition .private-raid-row strong::after {
+  content: none;
+}
+
+.private-raid-note-field {
+  display: grid;
+  gap: 4px;
+}
+
+.private-raid-note-field textarea {
+  min-height: 34px;
+  resize: vertical;
+}
+
+.private-raid-class-groups {
+  column-count: 2;
+  column-gap: 7px;
+  display: block;
+}
+
+.private-raid-class-group {
+  background: rgba(11, 14, 12, 0.42);
+  border: 1px solid rgba(126, 113, 82, 0.36);
+  border-radius: 6px;
+  break-inside: avoid;
+  display: inline-block;
+  margin: 0 0 7px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.private-raid-class-heading {
+  align-items: center;
+  background: rgba(53, 105, 82, 0.22);
+  border-bottom: 1px solid rgba(126, 113, 82, 0.36);
+  color: var(--page-title-gold);
+  display: flex;
+  font-size: 0.78rem;
+  justify-content: space-between;
+  padding: 3px 6px;
+}
+
+.private-raid-class-heading span {
+  background: rgba(99, 197, 143, 0.16);
+  border: 1px solid rgba(99, 197, 143, 0.42);
+  border-radius: 999px;
+  color: var(--text);
+  font-size: 0.7rem;
+  font-weight: 900;
+  min-width: 24px;
+  padding: 1px 6px;
+  text-align: center;
+}
+
+.private-raid-class-group .private-raid-list {
+  padding: 0 6px;
+}
+
+.private-raid-class-group .private-raid-row {
+  border-bottom-color: rgba(86, 96, 79, 0.25);
+  font-size: 0.7rem;
+  grid-template-columns: minmax(70px, 1fr) 24px minmax(82px, 1.05fr);
+  padding: 2px 0;
+}
+
+.private-raid-short {
+  color: #ff9b83;
+  font-weight: 900;
+}
+
+.private-raid-good {
+  color: #83e1ad;
+  font-weight: 900;
+}
+
+.private-raid-listing {
+  display: grid;
+  gap: 10px;
+}
+
+.private-raid-card {
+  overflow: hidden;
+}
+
+.private-raid-card-summary {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  color: var(--text);
+  cursor: pointer;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 32px minmax(160px, 1fr) 105px 105px minmax(180px, 1fr);
+  padding: 13px 14px;
+  text-align: left;
+  width: 100%;
+}
+
+.private-raid-card-summary:hover {
+  background: rgba(192, 170, 112, 0.08);
+}
+
+.private-raid-expand {
+  align-items: center;
+  aspect-ratio: 1;
+  border: 1px solid rgba(151, 128, 80, 0.68);
+  border-radius: 7px;
+  color: var(--page-title-gold);
+  display: inline-flex;
+  font-weight: 900;
+  justify-content: center;
+}
+
+.private-raid-pill {
+  background: rgba(53, 105, 82, 0.32);
+  border: 1px solid rgba(93, 158, 127, 0.42);
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 900;
+  padding: 6px 9px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.private-raid-pill.is-deactive {
+  background: rgba(224, 193, 93, 0.15);
+  border-color: rgba(224, 193, 93, 0.55);
+  color: #ffe39a;
+}
+
+.private-raid-pill.is-suspended {
+  background: rgba(225, 110, 85, 0.16);
+  border-color: rgba(225, 110, 85, 0.62);
+  color: #ffb6a4;
+}
+
+.private-raid-details {
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 12px;
+  padding: 14px;
+}
+
+.private-raid-account-fields {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 120px minmax(130px, 1fr) 140px 150px minmax(160px, 1.2fr);
+}
+
+.private-raid-toon-head,
+.private-raid-toon-row {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: minmax(150px, 1fr) minmax(130px, 0.8fr) 76px 110px minmax(150px, 1fr) 42px;
+  min-width: 790px;
+}
+
+.private-raid-toon-table {
+  display: grid;
+  gap: 7px;
+  overflow-x: auto;
+}
+
+.private-raid-toon-head {
+  color: var(--muted);
+  font-size: 0.74rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  padding: 0 6px;
+  text-transform: uppercase;
+}
+
+.private-raid-icon-button {
+  align-items: center;
+  aspect-ratio: 1;
+  background: rgba(91, 38, 32, 0.54);
+  border: 1px solid rgba(198, 78, 55, 0.86);
+  border-radius: 7px;
+  color: var(--text);
+  cursor: pointer;
+  display: inline-flex;
+  font-weight: 900;
+  justify-content: center;
+}
+
+.private-raid-import textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+@media (max-width: 900px) {
+  .private-raid-header,
+  .private-raid-toolbar,
+  .private-raid-stats,
+  .private-raid-grid,
+  .private-raid-card-summary,
+  .private-raid-account-fields {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .private-raid-actions {
+    justify-content: flex-start;
+  }
+
+  .private-raid-row {
+    grid-template-columns: 1fr;
+  }
+
+  .private-raid-class-groups {
+    column-count: 1;
+  }
+}
