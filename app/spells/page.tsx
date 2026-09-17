@@ -10,6 +10,7 @@ import kunarkData from "@/data/kunark-group-named.json";
 import veliousData from "@/data/velious-group-named.json";
 import classicRaidData from "@/data/classic-raid.json";
 import kunarkRaidData from "@/data/kunark-raid.json";
+import luclinRaidData from "@/data/luclin-raid.json";
 import veliousRaidData from "@/data/velious-raid.json";
 import { formatEqPriceTotal, getShoppingListMinTotal, getVendorOptionsForShoppingList, getZoneSpellPriceTotal, spellShoppingKey, type ShoppingListSpell, type SpellVendor } from "@/lib/spell-shopping";
 import { buildMobIndex, mobToSlug } from "@/lib/mob-slug";
@@ -25,7 +26,7 @@ import type { RaidDataset } from "@/lib/raidTiers";
 // ---------------------------------------------------------------------------
 
 const _groupDatasets = [classicData, kunarkData, veliousData] as LootDataset[];
-const _raidDatasets = [classicRaidData, kunarkRaidData, veliousRaidData] as RaidDataset[];
+const _raidDatasets = [classicRaidData, kunarkRaidData, veliousRaidData, luclinRaidData] as RaidDataset[];
 const _allGroupBuckets = _groupDatasets.flatMap((d) => d.buckets);
 const _mobIndex = buildMobIndex(_allGroupBuckets, _raidDatasets);
 

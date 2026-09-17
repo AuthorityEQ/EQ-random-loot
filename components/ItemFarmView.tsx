@@ -1,6 +1,7 @@
 "use client";
 
 import { bestZonesForBucket } from "@/lib/buckets";
+import { bucketWithItemSpecificMobs } from "@/lib/item-source-overrides";
 import type { Bucket } from "@/lib/search";
 
 type ItemFarmViewProps = {
@@ -30,7 +31,8 @@ export function ItemFarmView({ itemName, buckets, onOpenItem, onSelectZone }: It
 
       <div className="item-farm-grid">
         {buckets.map((bucket) => {
-          const zones = bestZonesForBucket(bucket, Number.POSITIVE_INFINITY);
+          const displayBucket = bucketWithItemSpecificMobs(bucket, itemName);
+          const zones = bestZonesForBucket(displayBucket, Number.POSITIVE_INFINITY);
 
           return (
             <article className={`item-farm-card is-highlighted ${expansionTone(bucket.expansion)}`} key={`${bucket.expansion}-${bucket.bucket}`}>
@@ -39,7 +41,7 @@ export function ItemFarmView({ itemName, buckets, onOpenItem, onSelectZone }: It
                 <h3>Bucket {bucket.bucket}, levels {bucket.level_range}</h3>
                 <p>
                   <span className={`expansion-pill is-compact ${expansionTone(bucket.expansion)}`}>{bucket.expansion}</span>
-                  {" "}/ {bucket.mob_count ?? bucket.mobs.length} possible mobs in this bucket
+                  {" "}/ {displayBucket.mob_count ?? displayBucket.mobs.length} possible mobs in this bucket
                 </p>
               </div>
 

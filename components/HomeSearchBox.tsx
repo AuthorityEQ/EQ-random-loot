@@ -8,6 +8,7 @@ import kunarkData from "@/data/kunark-group-named.json";
 import veliousData from "@/data/velious-group-named.json";
 import classicRaid from "@/data/classic-raid.json";
 import kunarkRaid from "@/data/kunark-raid.json";
+import luclinRaid from "@/data/luclin-raid.json";
 import veliousRaid from "@/data/velious-raid.json";
 import itemDetailsData from "@/data/item-details.json";
 import spellsData from "@/data/spells.json";
@@ -59,7 +60,7 @@ function buildIndex(): SearchEntry[] {
   }
 
   // --- Raid mobs + zones ---
-  for (const dataset of [classicRaid, kunarkRaid, veliousRaid]) {
+  for (const dataset of [classicRaid, kunarkRaid, veliousRaid, luclinRaid]) {
     for (const tier of dataset.tiers) {
       for (const boss of tier.bosses) {
         entries.push({

@@ -6,6 +6,7 @@ import { EqItemInspect } from "@/components/EqItemInspect";
 import { useFavorites } from "@/components/FavoritesProvider";
 import { ShareToDiscordButton } from "@/components/ShareToDiscordButton";
 import { bestZonesForBucket } from "@/lib/buckets";
+import { bucketWithItemSpecificMobs } from "@/lib/item-source-overrides";
 import { itemToSlug } from "@/lib/item-slug";
 import type { Bucket, ItemDetails } from "@/lib/search";
 
@@ -38,8 +39,15 @@ export function ItemDetailBody({
   const { isFavorite, toggleFavorite } = useFavorites();
   const router = useRouter();
 
+  const displayBuckets = useMemo(
+    () => allBuckets.map((itemBucket) => bucketWithItemSpecificMobs(itemBucket, itemName)),
+    [allBuckets, itemName],
+  );
   // Use the first bucket when no primary bucket is specified.
-  const primaryBucket = bucket ?? allBuckets[0];
+  const primaryBucket = useMemo(
+    () => (bucket ? bucketWithItemSpecificMobs(bucket, itemName) : displayBuckets[0]),
+    [bucket, displayBuckets, itemName],
+  );
   const farmingLocations = useMemo(
     () =>
       primaryBucket
@@ -53,7 +61,11 @@ export function ItemDetailBody({
       contentType === "Raid Boss"
         ? allBuckets
             .map((itemBucket) => {
-              const mobs = itemBucket.mobs.filter((mob) => mob.name);
+              const mobs = itemBucket.mobs.filter(
+                (mob) =>
+                  mob.name &&
+                  (itemBucket.sharedLoot !== false || mob.loot.includes(itemName)),
+              );
               if (mobs.length === 0) return null;
               const zones = Array.from(new Set(mobs.map((mob) => mob.zone).filter(Boolean)));
               return {
@@ -66,7 +78,7 @@ export function ItemDetailBody({
             })
             .filter((source): source is NonNullable<typeof source> => Boolean(source))
         : [],
-    [allBuckets, contentType],
+    [allBuckets, contentType, itemName],
   );
 
   // Derive bucket label and drop zones for the Discord share message.
@@ -190,7 +202,7 @@ export function ItemDetailBody({
           <h3>Best Farming Locations</h3>
           <p>Zones ranked by number of possible mobs in this bucket</p>
           <div className="item-bucket-highlight-list">
-            {allBuckets.map((itemBucket) => (
+            {displayBuckets.map((itemBucket) => (
               <div
                 className="item-bucket-highlight"
                 key={`${itemBucket.expansion}-${itemBucket.bucket}`}

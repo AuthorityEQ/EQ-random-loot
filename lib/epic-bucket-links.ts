@@ -4,6 +4,7 @@ import kunarkGroupData from "@/data/kunark-group-named.json";
 import veliousGroupData from "@/data/velious-group-named.json";
 import classicRaidData from "@/data/classic-raid.json";
 import kunarkRaidData from "@/data/kunark-raid.json";
+import luclinRaidData from "@/data/luclin-raid.json";
 import veliousRaidData from "@/data/velious-raid.json";
 import type { LootDataset } from "@/lib/search";
 import type { RaidDataset } from "@/lib/raidTiers";
@@ -20,7 +21,7 @@ type BucketLinkEntry = EpicBucketLink & {
 };
 
 const groupDatasets = [classicGroupData, kunarkGroupData, veliousGroupData] as LootDataset[];
-const raidDatasets = [classicRaidData, kunarkRaidData, veliousRaidData] as RaidDataset[];
+const raidDatasets = [classicRaidData, kunarkRaidData, veliousRaidData, luclinRaidData] as RaidDataset[];
 
 function makeGroupBucketLink({
   expansion,

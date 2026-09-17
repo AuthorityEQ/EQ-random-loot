@@ -10,6 +10,7 @@ import classicRaidData from "@/data/classic-raid.json";
 import itemDetailsData from "@/data/item-details.json";
 import kunarkData from "@/data/kunark-group-named.json";
 import kunarkRaidData from "@/data/kunark-raid.json";
+import luclinRaidData from "@/data/luclin-raid.json";
 import veliousData from "@/data/velious-group-named.json";
 import veliousRaidData from "@/data/velious-raid.json";
 import { buildItemSlugMap, slugToItemName } from "@/lib/item-slug";
@@ -17,7 +18,7 @@ import { dedupeTierLoot, type RaidBoss, type RaidDataset, type RaidTier } from "
 import { type Bucket, type ItemDetailsMap, type LootDataset } from "@/lib/search";
 
 const datasets = [classicData, kunarkData, veliousData] as LootDataset[];
-const raidDatasets = [classicRaidData, kunarkRaidData, veliousRaidData] as RaidDataset[];
+const raidDatasets = [classicRaidData, kunarkRaidData, veliousRaidData, luclinRaidData] as RaidDataset[];
 const allBuckets: Bucket[] = datasets.flatMap((d) => d.buckets);
 const itemDetails = itemDetailsData as ItemDetailsMap;
 
@@ -39,6 +40,7 @@ function formatRaidTierLevelRange(bosses: RaidBoss[]) {
 
 function makeRaidTierBucket(tier: RaidTier, expansion: string, bucketId: number): Bucket {
   const zones = Array.from(new Set(tier.bosses.map((boss) => boss.zone)));
+  const sharedLoot = !String(tier.tier).toLowerCase().includes("non-random");
   return {
     bucket: bucketId,
     expansion,
@@ -55,6 +57,7 @@ function makeRaidTierBucket(tier: RaidTier, expansion: string, bucketId: number)
       zone: boss.zone,
     })),
     raidTierName: tier.name ?? `Tier ${tier.tier}`,
+    sharedLoot,
     zone_count: zones.length,
     zones,
   };

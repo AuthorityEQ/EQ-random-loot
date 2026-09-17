@@ -153,9 +153,10 @@ function main(): number {
   const cr = lj<RaidDataset>("data/classic-raid.json");
   const kr = lj<RaidDataset>("data/kunark-raid.json");
   const vr = lj<RaidDataset>("data/velious-raid.json");
+  const lr = lj<RaidDataset>("data/luclin-raid.json");
   const itemDetails = lj<Record<string, unknown>>("data/item-details.json");
   const buckets = [...classic.buckets, ...kunark.buckets, ...velious.buckets];
-  const raids = [cr, kr, vr];
+  const raids = [cr, kr, vr, lr];
   const bosses = raids.flatMap((d) => d.tiers.flatMap((t) => t.bosses));
   const mobIdx = buildMobIndex(buckets, raids);
   const { slugToName: iSlugMap } = buildItemSlugMap(itemDetails);

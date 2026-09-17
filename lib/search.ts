@@ -17,6 +17,9 @@ export type Bucket = {
   zones: string[];
   source_buckets_included?: string[];
   raidTierName?: string;
+  /** Raid tiers normally share their combined loot pool. Non-random tiers keep
+   * each mob's loot independent, so item sources must use the mob loot arrays. */
+  sharedLoot?: boolean;
   mob_count?: number;
   loot_count?: number;
   zone_count?: number;

@@ -11,6 +11,7 @@ import { useServer } from "@/components/ServerProvider";
 import classicRaidData from "@/data/classic-raid.json";
 import itemDetailsData from "@/data/item-details.json";
 import kunarkRaidData from "@/data/kunark-raid.json";
+import luclinRaidData from "@/data/luclin-raid.json";
 import veliousRaidData from "@/data/velious-raid.json";
 import { SharedPoolSection } from "@/components/SharedPoolSection";
 import { useBucketDisplay } from "@/components/BucketDisplayProvider";
@@ -20,7 +21,7 @@ import { SERVER_META, isRandomLootServer } from "@/lib/server";
 import { type Bucket, type ItemDetailsMap } from "@/lib/search";
 import { zoneToSlug } from "@/lib/zone-slug";
 
-const datasets = [classicRaidData, kunarkRaidData, veliousRaidData] as RaidDataset[];
+const datasets = [classicRaidData, kunarkRaidData, veliousRaidData, luclinRaidData] as RaidDataset[];
 const expansionOptions = datasets.map((dataset) => dataset.expansion);
 const itemDetailsMap = itemDetailsData as ItemDetailsMap;
 
@@ -97,6 +98,7 @@ function formatRaidTierLevelRange(bosses: RaidBoss[]) {
 
 function makeRaidTierBucket(tier: RaidTier, expansion: string, bucketId: number): Bucket {
   const zones = Array.from(new Set(tier.bosses.map((boss) => boss.zone)));
+  const sharedLoot = !String(tier.tier).toLowerCase().includes("non-random");
   return {
     bucket: bucketId,
     expansion,
@@ -113,6 +115,7 @@ function makeRaidTierBucket(tier: RaidTier, expansion: string, bucketId: number)
       zone: boss.zone,
     })),
     raidTierName: tier.name ?? `Tier ${tier.tier}`,
+    sharedLoot,
     zone_count: zones.length,
     zones,
   };

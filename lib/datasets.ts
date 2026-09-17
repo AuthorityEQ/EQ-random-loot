@@ -3,6 +3,7 @@ import kunarkGroupNamedData from "@/data/kunark-group-named.json";
 import veliousGroupNamedData from "@/data/velious-group-named.json";
 import classicRaidData from "@/data/classic-raid.json";
 import kunarkRaidData from "@/data/kunark-raid.json";
+import luclinRaidData from "@/data/luclin-raid.json";
 import veliousRaidData from "@/data/velious-raid.json";
 import type { LootDataset } from "@/lib/search";
 import type { RaidDataset } from "@/lib/raidTiers";
@@ -14,14 +15,15 @@ export type DatasetKey =
   | "velious-group-named"
   | "classic-raid"
   | "kunark-raid"
-  | "velious-raid";
+  | "velious-raid"
+  | "luclin-raid";
 
 type GroupNamedKey =
   | "classic-group-named"
   | "kunark-group-named"
   | "velious-group-named";
 
-type RaidKey = "classic-raid" | "kunark-raid" | "velious-raid";
+type RaidKey = "classic-raid" | "kunark-raid" | "velious-raid" | "luclin-raid";
 
 const GROUP_NAMED_DATASETS: Record<GroupNamedKey, LootDataset> = {
   "classic-group-named": classicGroupNamedData as LootDataset,
@@ -33,6 +35,7 @@ const RAID_DATASETS: Record<RaidKey, RaidDataset> = {
   "classic-raid": classicRaidData as RaidDataset,
   "kunark-raid": kunarkRaidData as RaidDataset,
   "velious-raid": veliousRaidData as RaidDataset,
+  "luclin-raid": luclinRaidData as RaidDataset,
 };
 
 /**

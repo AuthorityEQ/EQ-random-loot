@@ -52,6 +52,7 @@
     "import:item-icons:raid:classic": "node --experimental-strip-types scripts/import-item-icons.ts classic raid",
     "import:item-icons:raid:kunark": "node --experimental-strip-types scripts/import-item-icons.ts kunark raid",
     "import:item-icons:raid:velious": "node --experimental-strip-types scripts/import-item-icons.ts velious raid",
+    "import:item-icons:raid:luclin": "node --experimental-strip-types scripts/import-item-icons.ts luclin raid",
     "ingest:excel:test": "node --experimental-strip-types scripts/ingest-excel.ts --all --max-rows=10 --dry-run",
     "ingest:excel:tier1": "node --experimental-strip-types scripts/ingest-excel.ts --all",
     "ingest:excel:all": "node --experimental-strip-types scripts/ingest-excel.ts --all",

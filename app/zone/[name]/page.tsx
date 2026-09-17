@@ -6,6 +6,7 @@ import kunarkData from "@/data/kunark-group-named.json";
 import veliousData from "@/data/velious-group-named.json";
 import classicRaidData from "@/data/classic-raid.json";
 import kunarkRaidData from "@/data/kunark-raid.json";
+import luclinRaidData from "@/data/luclin-raid.json";
 import veliousRaidData from "@/data/velious-raid.json";
 import { bucketLevelRange } from "@/lib/buckets";
 import type { Bucket, LootDataset } from "@/lib/search";
@@ -51,6 +52,7 @@ const allRaidDatasets: RaidDataset[] = [
   classicRaidData as RaidDataset,
   kunarkRaidData as RaidDataset,
   veliousRaidData as RaidDataset,
+  luclinRaidData as RaidDataset,
 ];
 
 /** All raid bosses across all expansions, with their expansion attached. */

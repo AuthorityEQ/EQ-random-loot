@@ -14,6 +14,7 @@ import classicRaidData from "@/data/classic-raid.json";
 import itemDetailsData from "@/data/item-details.json";
 import kunarkData from "@/data/kunark-group-named.json";
 import kunarkRaidData from "@/data/kunark-raid.json";
+import luclinRaidData from "@/data/luclin-raid.json";
 import veliousData from "@/data/velious-group-named.json";
 import veliousRaidData from "@/data/velious-raid.json";
 import {
@@ -171,7 +172,7 @@ const gearSlots: GearSlot[] = [
 ];
 
 const groupDatasets = [classicData, kunarkData, veliousData] as LootDataset[];
-const raidDatasets = [classicRaidData, kunarkRaidData, veliousRaidData] as RaidDataset[];
+const raidDatasets = [classicRaidData, kunarkRaidData, veliousRaidData, luclinRaidData] as RaidDataset[];
 const itemDetails = itemDetailsData as ItemDetailsMap;
 const classCodes = (Object.keys(CLASS_STAT_WEIGHTS) as ClassCode[]).sort((a, b) => a.localeCompare(b));
 const raceCodes = ["BAR", "DEF", "DWF", "ERU", "GNM", "HAF", "HEF", "HUM", "IKS", "OGR", "TRL", "VAH", "WEF"] as const;

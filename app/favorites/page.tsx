@@ -13,6 +13,7 @@ import classicRaidData from "@/data/classic-raid.json";
 import itemDetailsData from "@/data/item-details.json";
 import kunarkData from "@/data/kunark-group-named.json";
 import kunarkRaidData from "@/data/kunark-raid.json";
+import luclinRaidData from "@/data/luclin-raid.json";
 import veliousData from "@/data/velious-group-named.json";
 import veliousRaidData from "@/data/velious-raid.json";
 import type { Bucket, ItemDetailsMap, LootDataset } from "@/lib/search";
@@ -23,7 +24,7 @@ const buckets = datasets.flatMap((dataset) => dataset.buckets);
 
 // Build a synthetic Bucket for each raid boss so raid-only favorites
 // can open the item drawer (and be unfavorited) just like group-named items.
-const raidDatasets = [classicRaidData, kunarkRaidData, veliousRaidData] as RaidDataset[];
+const raidDatasets = [classicRaidData, kunarkRaidData, veliousRaidData, luclinRaidData] as RaidDataset[];
 let _raidBucketCounter = 0;
 /** Maps item name → first raid Bucket that contains it. */
 const raidItemBucketMap = new Map<string, Bucket>();

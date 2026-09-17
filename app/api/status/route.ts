@@ -18,6 +18,7 @@ import kunarkData from "@/data/kunark-group-named.json";
 import veliousData from "@/data/velious-group-named.json";
 import classicRaidData from "@/data/classic-raid.json";
 import kunarkRaidData from "@/data/kunark-raid.json";
+import luclinRaidData from "@/data/luclin-raid.json";
 import veliousRaidData from "@/data/velious-raid.json";
 import expansionSchedule from "@/data/expansion-schedule.json";
 import itemDetailsData from "@/data/item-details.json";
@@ -26,7 +27,7 @@ import type { RaidDataset } from "@/lib/raidTiers";
 import { API_VERSION, API_SOURCE, jsonOk, corsOptions } from "@/lib/api-helpers";
 
 const groupDatasets = [classicData, kunarkData, veliousData] as LootDataset[];
-const raidDatasets  = [classicRaidData, kunarkRaidData, veliousRaidData] as RaidDataset[];
+const raidDatasets  = [classicRaidData, kunarkRaidData, veliousRaidData, luclinRaidData] as RaidDataset[];
 const itemDetails   = itemDetailsData as ItemDetailsMap;
 
 function datasetStats() {

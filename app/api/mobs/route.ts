@@ -22,6 +22,7 @@ import kunarkData from "@/data/kunark-group-named.json";
 import veliousData from "@/data/velious-group-named.json";
 import classicRaidData from "@/data/classic-raid.json";
 import kunarkRaidData from "@/data/kunark-raid.json";
+import luclinRaidData from "@/data/luclin-raid.json";
 import veliousRaidData from "@/data/velious-raid.json";
 import type { LootDataset } from "@/lib/search";
 import type { RaidDataset } from "@/lib/raidTiers";
@@ -35,7 +36,7 @@ import {
 } from "@/lib/api-helpers";
 
 const groupDatasets = [classicData, kunarkData, veliousData] as LootDataset[];
-const raidDatasets = [classicRaidData, kunarkRaidData, veliousRaidData] as RaidDataset[];
+const raidDatasets = [classicRaidData, kunarkRaidData, veliousRaidData, luclinRaidData] as RaidDataset[];
 
 type MobResult = {
   name: string;
@@ -107,7 +108,7 @@ export async function GET(request: Request) {
   const levelMin = intParam(url, "level_min");
   const levelMax = intParam(url, "level_max");
 
-  const validExpansions = ["classic", "kunark", "velious"];
+  const validExpansions = ["classic", "kunark", "velious", "luclin"];
   if (exp && !validExpansions.includes(exp)) {
     return jsonBadRequest(
       `Unknown expansion "${exp}". Valid values: ${validExpansions.join(", ")}`,

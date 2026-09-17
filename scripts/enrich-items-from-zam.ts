@@ -198,21 +198,27 @@ async function fetchCached(url: string, label: string) {
     return readFile(filePath, "utf8");
   }
 
-  await sleep(requestDelayMs);
-  const response = await fetch(url, {
-    headers: {
-      "user-agent": userAgent,
-      accept: "text/html,application/xhtml+xml",
-    },
-  });
+  for (let attempt = 1; attempt <= 3; attempt += 1) {
+    await sleep(attempt === 1 ? requestDelayMs : 1000);
+    const separator = url.includes("?") ? "&" : "?";
+    const requestUrl = attempt === 1 ? url : `${url}${separator}frostreaver_retry=${attempt}`;
+    const response = await fetch(requestUrl, {
+      headers: {
+        "user-agent": userAgent,
+        accept: "text/html,application/xhtml+xml",
+      },
+    });
 
-  if (!response.ok) {
-    throw new Error(`HTTP ${response.status}`);
+    if (response.ok) {
+      const html = await response.text();
+      await writeFile(filePath, html);
+      return html;
+    }
+    if (response.status !== 403 || attempt === 3) {
+      throw new Error(`HTTP ${response.status}`);
+    }
   }
-
-  const html = await response.text();
-  await writeFile(filePath, html);
-  return html;
+  throw new Error("Allakhazam request failed after retries.");
 }
 
 function searchUrl(itemName: string) {
@@ -236,6 +242,12 @@ function readNumber(pattern: RegExp, text: string) {
 function readString(pattern: RegExp, text: string) {
   const match = text.match(pattern);
   return match ? match[1].replace(/\s+/g, " ").trim() : null;
+}
+
+function readMetaProperty(property: string, html: string) {
+  const escaped = property.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const match = html.match(new RegExp(`<meta\\s+property=["']${escaped}["']\\s+content=(["'])([\\s\\S]*?)\\1`, "i"));
+  return match ? htmlDecode(match[2]).replace(/\s+/g, " ").trim() : null;
 }
 
 function readCharges(text: string) {
@@ -413,7 +425,7 @@ function parseItemPage(
     warnings.push("Could not isolate the ZAM item stat block; parsed the full page.");
   }
 
-  const titleName = readString(/<meta property=["']og:title["'] content=["']([^"']+)["']/i, html)
+  const titleName = readMetaProperty("og:title", html)
     ?? readString(/^\s*([^\n]+?)\s*-\s*Project 1999/i, pageText)
     ?? itemName;
   const parsedName = titleName.replace(/^Item\s*:\s*/i, "").trim();
@@ -684,6 +696,7 @@ const errors: ErrorLog[] = [];
 const details: Record<string, ItemDetails> = { ...existing };
 
 for (const [index, itemName] of selectedNames.entries()) {
+  const previousItem = details[itemName];
   try {
     if (!force && isCompleteSchema(details[itemName]) && hasParserCoverageSchema(details[itemName])) {
       console.log(`[${index + 1}/${selectedNames.length}] Skipping processed item: ${itemName}`);
@@ -697,7 +710,7 @@ for (const [index, itemName] of selectedNames.entries()) {
       console.log(`[${index + 1}/${selectedNames.length}] Fetching exact item page ${exactUrl}`);
       const exactHtml = await fetchCached(exactUrl, `item:${exactUrl}`);
       const exactText = stripTags(exactHtml);
-      const parsedTitle = readString(/<meta property=["']og:title["'] content=["']([^"']+)["']/i, exactHtml)?.replace(/^Item\s*:\s*/i, "").trim();
+      const parsedTitle = readMetaProperty("og:title", exactHtml)?.replace(/^Item\s*:\s*/i, "").trim();
       const exactName = parsedTitle ? normalizeComparableItemName(parsedTitle) === normalizeComparableItemName(itemName) : true;
       const expansion = extractExpansion(exactHtml);
       const matchNotes = [
@@ -755,7 +768,7 @@ for (const [index, itemName] of selectedNames.entries()) {
       stage: "parse",
       message: error instanceof Error ? error.message : String(error),
     });
-    details[itemName] = notFoundItem(itemName, ["Enrichment failed; see item-enrichment-errors.json."]);
+    details[itemName] = previousItem ?? notFoundItem(itemName, ["Enrichment failed; see item-enrichment-errors.json."]);
   }
 }
 

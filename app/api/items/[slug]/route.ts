@@ -15,6 +15,7 @@ import kunarkData from "@/data/kunark-group-named.json";
 import veliousData from "@/data/velious-group-named.json";
 import type { ItemDetailsMap, LootDataset } from "@/lib/search";
 import { buildItemSlugMap } from "@/lib/item-slug";
+import { bucketWithItemSpecificMobs } from "@/lib/item-source-overrides";
 import { jsonOk, jsonNotFound, corsOptions } from "@/lib/api-helpers";
 
 const itemDetails = itemDetailsData as ItemDetailsMap;
@@ -27,12 +28,15 @@ function bucketsForItem(itemName: string) {
   return allDatasets.flatMap((ds) =>
     ds.buckets
       .filter((b) => b.loot_pool.includes(itemName))
-      .map((b) => ({
-        expansion: b.expansion,
-        bucket: b.bucket,
-        levelRange: b.level_range,
-        zones: b.zones,
-      })),
+      .map((b) => {
+        const displayBucket = bucketWithItemSpecificMobs(b, itemName);
+        return {
+          expansion: displayBucket.expansion,
+          bucket: displayBucket.bucket,
+          levelRange: displayBucket.level_range,
+          zones: displayBucket.zones,
+        };
+      }),
   );
 }
 

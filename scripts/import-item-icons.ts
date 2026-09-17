@@ -1,8 +1,9 @@
 import { existsSync } from "node:fs";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
+import crypto from "node:crypto";
 import path from "node:path";
 
-type ExpansionArg = "classic" | "kunark" | "velious";
+type ExpansionArg = "classic" | "kunark" | "velious" | "luclin";
 type ContentTypeArg = "group-named" | "raid" | "crafting" | "epic";
 
 type ItemDetails = {
@@ -92,6 +93,7 @@ type ImageCandidate = {
 const root = process.cwd();
 const detailsPath = path.join(root, "data", "item-details.json");
 const outputDir = path.join(root, "public", "item-icons");
+const zamCacheDir = path.join(root, "cache", "zam-pages");
 const userAgent = "FrostreaverLootReference/0.4 (+controlled batch item icon import)";
 const exactItemUrlPattern = /^https?:\/\/everquest\.allakhazam\.com\/db\/item\.html\?item=(\d+)(?:$|[&#])/i;
 
@@ -132,6 +134,7 @@ const log = {
 };
 
 await mkdir(outputDir, { recursive: true });
+const existingIconPathsByAssetId = await buildExistingIconAssetIndex(details);
 
 for (const itemName of itemNames) {
   const item = details[itemName];
@@ -166,7 +169,7 @@ for (const itemName of itemNames) {
 
   try {
     console.log(`Fetching item page: ${itemName} (${sourceUrl})`);
-    const html = await fetchText(sourceUrl, "text/html,application/xhtml+xml");
+    const html = await readCachedItemPage(sourceUrl) ?? await fetchText(sourceUrl, "text/html,application/xhtml+xml");
     const candidates = findImageCandidates(html, sourceUrl, itemName);
     const best = candidates[0];
 
@@ -180,6 +183,14 @@ for (const itemName of itemNames) {
       continue;
     }
 
+    const assetId = best.absoluteUrl.match(/\/pgfx\/item_(\d+)\.png$/i)?.[1];
+    const reusableIconPath = assetId ? existingIconPathsByAssetId.get(assetId) : undefined;
+    if (reusableIconPath) {
+      item.iconPath = reusableIconPath;
+      log.imported.push({ item: itemName, iconUrl: best.absoluteUrl, iconPath: reusableIconPath });
+      continue;
+    }
+
     await downloadImage(best.absoluteUrl, absoluteOutputPath);
     item.iconPath = publicIconPath;
     log.imported.push({ item: itemName, iconUrl: best.absoluteUrl, iconPath: publicIconPath });
@@ -189,6 +200,25 @@ for (const itemName of itemNames) {
       reason: error instanceof Error ? error.message : String(error),
     });
   }
+}
+
+async function readCachedItemPage(sourceUrl: string) {
+  const cacheKey = crypto.createHash("sha1").update(`item:${sourceUrl}`).digest("hex");
+  const cachePath = path.join(zamCacheDir, `${cacheKey}.html`);
+  return existsSync(cachePath) ? readFile(cachePath, "utf8") : null;
+}
+
+async function buildExistingIconAssetIndex(items: Record<string, ItemDetails>) {
+  const index = new Map<string, string>();
+  for (const item of Object.values(items)) {
+    if (!item.iconPath) continue;
+    const sourceUrl = item.sources?.find((source) => source.name === "Allakhazam")?.url;
+    if (!sourceUrl || !exactItemUrlPattern.test(sourceUrl)) continue;
+    const html = await readCachedItemPage(sourceUrl);
+    const assetId = html?.match(/\/pgfx\/item_(\d+)\.png/i)?.[1];
+    if (assetId && !index.has(assetId)) index.set(assetId, item.iconPath);
+  }
+  return index;
 }
 
 await writeFile(detailsPath, `${JSON.stringify(details, null, 2)}\n`);
@@ -218,14 +248,14 @@ function parseArgs(rawArgs: string[]) {
 }
 
 function printUsage() {
-  console.log("Usage: node --experimental-strip-types scripts/import-item-icons.ts <classic|kunark|velious> <group-named|raid|crafting|epic> [limit]");
+  console.log("Usage: node --experimental-strip-types scripts/import-item-icons.ts <classic|kunark|velious|luclin> <group-named|raid|crafting|epic> [limit]");
   console.log("Example: node --experimental-strip-types scripts/import-item-icons.ts classic group-named 10");
   console.log("Example: node --experimental-strip-types scripts/import-item-icons.ts classic raid");
   console.log("Note: for crafting and epic the expansion arg is accepted but ignored (data is not per-expansion).");
 }
 
 function isExpansion(value: string | undefined): value is ExpansionArg {
-  return value === "classic" || value === "kunark" || value === "velious";
+  return value === "classic" || value === "kunark" || value === "velious" || value === "luclin";
 }
 
 function isContentType(value: string | undefined): value is ContentTypeArg {
@@ -427,14 +457,28 @@ async function fetchText(url: string, accept: string) {
 }
 
 async function downloadImage(url: string, outputPath: string) {
-  const response = await fetch(url, {
+  let response = await fetch(url, {
     headers: {
       "user-agent": userAgent,
       accept: "image/png,image/gif,image/jpeg,image/webp,*/*",
     },
   });
 
-  if (!response.ok) throw new Error(`HTTP ${response.status} fetching image ${url}`);
+  if (!response.ok) {
+    const allakhazamIconId = url.match(/\/pgfx\/item_(\d+)\.png$/i)?.[1];
+    if (!allakhazamIconId) throw new Error(`HTTP ${response.status} fetching image ${url}`);
+
+    const fallbackUrl = `https://wiki.project1999.com/images/Item_${allakhazamIconId}.png`;
+    response = await fetch(fallbackUrl, {
+      headers: {
+        "user-agent": userAgent,
+        accept: "image/png,image/gif,image/jpeg,image/webp,*/*",
+      },
+    });
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status} fetching fallback image ${fallbackUrl} after ${url} failed`);
+    }
+  }
   const contentType = response.headers.get("content-type") ?? "";
   if (!contentType.startsWith("image/")) {
     throw new Error(`Candidate did not return an image content-type: ${contentType}`);
